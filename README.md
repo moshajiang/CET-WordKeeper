@@ -196,6 +196,8 @@ Linux:    ~/.config/cet-wordkeeper/keeper.db
 
 > 删除该文件后重启，会从 `data/keeper.db` 重新初始化 —— **学习记录会丢失，请先备份**。
 
+**升级软件后内置真题会自动补齐**：用户库只在首次启动时从种子库拷贝，所以新版换了数据后老用户拿不到新考次。为此应用每次启动都会做一次**增量同步** —— 按「级别 + 年 + 月 + 套号」比对，只把用户库里缺的考次补进来，**只新增、不覆盖、不删除**，`user_word` / `word_hit` / `review_log` 一律不动，你的学习记录始终安全。（可用 `node scripts/sync-check.mjs` 验证这一行为。）
+
 ---
 
 ## 扩充真题库
@@ -323,8 +325,9 @@ cet-wordkeeper/
 │   ├── scan-pdf-quality.mjs # 抽样扫描 PDF 文本层质量
 │   ├── build-db.mjs         # ECDICT 裁剪 + 真题导入 + 粘连词修补 → keeper.db
 │   ├── smoke-test.mjs       # 数据层冒烟测试
-│   ├── e2e-check.mjs        # 端到端功能验证（CDP，40 项断言，含界面级）
+│   ├── e2e-check.mjs        # 端到端功能验证（CDP，41 项断言，含界面级）
 │   ├── verify-all.mjs       # 启动 + 验证 + 清理 编排
+│   ├── sync-check.mjs       # 老用户库增量同步验证（补齐新考次且不动学习记录）
 │   ├── word-audit.mjs       # 词典查得率审计
 │   └── capture-shots.mjs    # 自动截取文档用截图（独立 user-data-dir）
 ├── data/
@@ -457,8 +460,11 @@ npm run dev          # 另开终端：npm start
 # 数据层冒烟测试：词典 / 词形还原 / 词频 / SM-2 调度
 node scripts/smoke-test.mjs
 
-# 端到端：启动应用 → 跑 40 项断言 → 清理用户数据
+# 端到端：启动应用 → 跑 41 项断言 → 清理用户数据
 node scripts/verify-all.mjs
+
+# 增量同步验证：模拟老用户库，确认新考次补齐且学习记录无损
+node scripts/sync-check.mjs
 
 # 词典查得率审计（走真实 lookup 链路，统计语料高频词的覆盖）
 node scripts/word-audit.mjs 500
@@ -470,7 +476,7 @@ ELECTRON_EXE="release/win-unpacked/CET WordKeeper.exe" node scripts/verify-all.m
 node scripts/capture-shots.mjs
 ```
 
-端到端验证覆盖 **40 项**断言，其中包含一组**界面级断言**（直接驱动 UI，而不只是调 IPC）：
+端到端验证覆盖 **41 项**断言，其中包含一组**界面级断言**（直接驱动 UI，而不只是调 IPC）：
 
 - 基础：界面渲染与导航、IPC 可用性、真题列表与篇章完整度
 - 文本质量：标点空格与粘连词已修补、词形还原（含不规则变形与缩写）

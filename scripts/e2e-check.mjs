@@ -46,6 +46,10 @@ check('应用信息 IPC', !!info && info.dbReady === true, JSON.stringify(info))
 console.log('\n===== 真题库 =====');
 const exams = await js('window.keeper.listExams()');
 check('真题列表', exams.length >= 10, exams.length + ' 套，最早 ' + exams[exams.length - 1].year + '.' + exams[exams.length - 1].month);
+// 防止「用旧数据打包」：这个坑踩过两次（exe 里的 keeper.db 早于上一次数据扩充）。
+// 下限用 70 而不是精确值，既能抓住明显的旧包，又不会因为补考次而频繁改动测试。
+check('数据为最新版（非旧包）', exams.length >= 70 && exams.some((e) => e.year >= 2025),
+  exams.length + ' 套，最新 ' + exams[0].title);
 // 用内容最完整的一套做后续验证（2024.06 六级第 1 套）
 const anchor = exams.find((e) => e.level === 'CET6' && e.year === 2024 && e.month === 6 && e.set_no === 1) || exams[0];
 const detail = await js(`window.keeper.examDetail(${anchor.id})`);

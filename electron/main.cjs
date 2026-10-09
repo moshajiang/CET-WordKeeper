@@ -20,6 +20,7 @@ let win = null;
 let db = null;
 let dbPath = null;
 let formIndex = null;
+let sqlModule = null; // initDb 里拿到，供 syncSeedExams 复用（打开种子库用）
 
 const SCHEMA = `
 CREATE TABLE IF NOT EXISTS exam(
@@ -77,6 +78,7 @@ async function initDb() {
   const SQL = await initSqlJs({
     locateFile: (f) => path.join(__dirname, '..', 'node_modules', 'sql.js', 'dist', f),
   });
+  sqlModule = SQL;
   const userDb = path.join(app.getPath('userData'), 'keeper.db');
   if (!fs.existsSync(userDb)) {
     const seed = path.join(__dirname, '..', 'data', 'keeper.db');
@@ -89,6 +91,57 @@ async function initDb() {
   db = fs.existsSync(userDb) ? new SQL.Database(fs.readFileSync(userDb)) : new SQL.Database();
   db.run(SCHEMA);
   buildFormIndex();
+  const added = syncSeedExams();
+  if (added) console.log(`已从内置数据同步 ${added} 套新真题`);
+}
+
+// 内置真题数据会随版本更新（例如补充新考次）。
+// 用户库只在「首次启动」时从种子库拷贝，所以老用户不会自动拿到新真题 —— 这里做一次增量同步：
+// 把种子库里「用户库还没有的考次」补进来。
+// 判定键 = 级别 + 年 + 月 + 套号；只新增、不删除、不覆盖，
+// 绝不触碰 user_word / word_hit / review_log，用户的学习记录始终安全。
+function syncSeedExams() {
+  const seedPath = path.join(__dirname, '..', 'data', 'keeper.db');
+  if (!fs.existsSync(seedPath) || !sqlModule) return 0;
+  let seed = null;
+  try {
+    seed = new sqlModule.Database(fs.readFileSync(seedPath));
+    const keyOf = (r) => `${r.level}|${r.year}|${r.month}|${r.set_no}`;
+    const mine = new Set(q('SELECT level, year, month, set_no FROM exam').map(keyOf));
+    const seedExams = [];
+    seed.each('SELECT * FROM exam', (r) => seedExams.push(r));
+
+    let added = 0;
+    for (const e of seedExams) {
+      if (mine.has(keyOf(e))) continue;
+      run('INSERT INTO exam(level, year, month, set_no, title, imported, created_at) VALUES (?,?,?,?,?,0,?)',
+        [e.level, e.year, e.month, e.set_no, e.title, now()]);
+      const examId = q('SELECT last_insert_rowid() AS id')[0].id;
+
+      const pList = [];
+      seed.each('SELECT * FROM passage WHERE exam_id = ?', [e.id], (p) => pList.push(p));
+      for (const p of pList) {
+        run('INSERT INTO passage(exam_id, section, seq, title, content) VALUES (?,?,?,?,?)',
+          [examId, p.section, p.seq, p.title, p.content]);
+        const pid = q('SELECT last_insert_rowid() AS id')[0].id;
+        const qList = [];
+        seed.each('SELECT * FROM question WHERE passage_id = ?', [p.id], (x) => qList.push(x));
+        for (const x of qList) {
+          run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
+            [pid, x.qtype, x.stem, x.options, x.answer, x.analysis]);
+        }
+      }
+      added++;
+    }
+    if (added) { rebuildWordFreq(); persist(); }
+    return added;
+  } catch (err) {
+    // 同步失败不能影响应用启动，用户原有的数据仍然可用
+    console.error('同步内置真题失败（不影响使用）:', err.message);
+    return 0;
+  } finally {
+    try { if (seed) seed.close(); } catch { /* 忽略 */ }
+  }
 }
 
 // ECDICT exchange 字段说明：
