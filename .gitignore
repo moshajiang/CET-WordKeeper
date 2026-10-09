@@ -3,7 +3,7 @@ node_modules/
 
 # 构建产物 / 打包产物
 dist/
-release/
+release*/
 
 # 原始素材（体积巨大，且含第三方数据包；用 scripts/ 里的管线可重新获取）
 # 其中 data/raw/repo 是用于枚举真题清单的独立 git 仓库

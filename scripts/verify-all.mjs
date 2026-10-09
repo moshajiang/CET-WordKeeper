@@ -17,8 +17,9 @@ function cleanUserDb(tag) {
   if (!fs.existsSync(userDataDir)) return;
   for (const f of fs.readdirSync(userDataDir)) {
     if (f.endsWith('.db')) {
-      fs.unlinkSync(path.join(userDataDir, f));
-      console.log(`已清理${tag}用户数据:`, f);
+      // 某些沙箱/杀软环境会拦删除或占用文件；清理失败不应影响验证结论
+      try { fs.unlinkSync(path.join(userDataDir, f)); console.log(`已清理${tag}用户数据:`, f); }
+      catch (e) { console.warn(`清理${tag}用户数据失败（可忽略）:`, f, e.message); }
     }
   }
 }
