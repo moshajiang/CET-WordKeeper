@@ -17,139 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 36 to 45 are based on the following passage.\nFear can be an effective way to change behavior. One study compared the effects of high-fear and low-fear appeals on changes in attitudes and behaviors related to dental hygiene (卫生）. One group of subjects was shown awful pictures of 36 teeth and diseased gums； another group was shown less frightening materials such as plastic teeth, charts, and graphs. Subjects who saw the frightening materials reported more anxiety and a greater 37 to change the way they took care of their teeth than the low-fear group did.\nBut were these reactions actually 38 into better dental hygiene practices? To answer this important question, subjects were called back to the laboratory on two 39 (five days and six weeks after the experiment). They chewed disclosing wafers(牙疾诊断片) that give a red stain to any uncleaned areas of the teeth and thus provided a direct 40 of how well they were really taking care of their teeth. The result showed that the high-fear appeal did actually result in greater and more 41 changes in dental hygiene. That is, the subjects 42 to high-fear warnings brushed their teeth more 43 than did those who saw low-fear warnings.\nHowever , to be an effective persuasive device it is very important that the message not be too frightening and that people be given 44 guidelines to help them to reduce the cause of the fear. If this isn’t done, they may reduce their anxiety by denying the message or the 45 of the communicator. If that happens, it is unlikely that either attitude or behavior change will occur.\n注意：此部分试题请在答题卡2上作答。",
+      "content": "Fear can be an effective way to change behavior. One study compared the effects of high-fear and low-fear appeals on changes in attitudes and behaviors related to dental hygiene (卫生）. One group of subjects was shown awful pictures of 36 teeth and diseased gums； another group was shown less frightening materials such as plastic teeth, charts, and graphs. Subjects who saw the frightening materials reported more anxiety and a greater 37 to change the way they took care of their teeth than the low-fear group did.\nBut were these reactions actually 38 into better dental hygiene practices? To answer this important question, subjects were called back to the laboratory on two 39 (five days and six weeks after the experiment). They chewed disclosing wafers(牙疾诊断片) that give a red stain to any uncleaned areas of the teeth and thus provided a direct 40 of how well they were really taking care of their teeth. The result showed that the high-fear appeal did actually result in greater and more 41 changes in dental hygiene. That is, the subjects 42 to high-fear warnings brushed their teeth more 43 than did those who saw low-fear warnings.\nHowever , to be an effective persuasive device it is very important that the message not be too frightening and that people be given 44 guidelines to help them to reduce the cause of the fear. If this isn’t done, they may reduce their anxiety by denying the message or the 45 of the communicator. If that happens, it is unlikely that either attitude or behavior change will occur.\n注意：此部分试题请在答题卡2上作答。",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "accustomed"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "decayed"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "indication"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "carefully"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "desire"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "occasions"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "cautiously"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "dimensions"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "permanent"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "concrete"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "eligible"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "sensitivity"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "credibility"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "exposed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "translated"
+            "A) accustomed",
+            "B) carefully",
+            "C) cautiously",
+            "D) concrete",
+            "E) credibility",
+            "F) decayed",
+            "G) desire",
+            "H) dimensions",
+            "I) eligible",
+            "J) exposed",
+            "K) indication",
+            "L) occasions",
+            "M) permanent",
+            "N) sensitivity",
+            "O) translated"
           ],
           "answer": "",
           "analysis": ""

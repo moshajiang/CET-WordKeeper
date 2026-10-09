@@ -17,274 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nWhen considering risk factors associated with serious chronic diseases, we often think about health indicators such as cholesterol, blood pressure, and body weight. But poor diet and physical inactivity also each increase the risk of heart disease and have a role to play in the development of some cancers. Perhaps worse, the 26 effects of an unhealthy diet and insufficient exercise are not limited to your body. Recent research has also shown that 27 in a high-fat and high-sugar diet may have negative effects on your brain, causing learning and memory 28.\nStudies have found obesity is associated with impairments in cognitive functioning, as 29 by a range of learning and memory tests, such as the ability to remember a list of words presented some minutes or hours earlier. There is also a growing body of evidence that diet-induced cognitive impairments can emerge 30—within weeks or even days. For example, one study found healthy adults 31 to a high-fat diet for five days showed impaired attention, memory, and mood compared with a low-fat diet control group. Another study also found eating a high-fat and highsugar breakfast each day for as little as four days resulted in problems with learning and memory 32 to those observed in overweight and obese individuals.\nBody weight was not hugely different between the groups eating a healthy diet and those on high fat and sugar diets. So this shows negative 33 of poor dietary intake can occur even when body weight has not changed 34. Thus, body weight is not always the best indicator of health and a thin person still needs to eat well and exercise 35.",
+      "content": "When considering risk factors associated with serious chronic diseases, we often think about health indicators such as cholesterol, blood pressure, and body weight. But poor diet and physical inactivity also each increase the risk of heart disease and have a role to play in the development of some cancers. Perhaps worse, the 26 effects of an unhealthy diet and insufficient exercise are not limited to your body. Recent research has also shown that 27 in a high-fat and high-sugar diet may have negative effects on your brain, causing learning and memory 28.\nStudies have found obesity is associated with impairments in cognitive functioning, as 29 by a range of learning and memory tests, such as the ability to remember a list of words presented some minutes or hours earlier. There is also a growing body of evidence that diet-induced cognitive impairments can emerge 30—within weeks or even days. For example, one study found healthy adults 31 to a high-fat diet for five days showed impaired attention, memory, and mood compared with a low-fat diet control group. Another study also found eating a high-fat and highsugar breakfast each day for as little as four days resulted in problems with learning and memory 32 to those observed in overweight and obese individuals.\nBody weight was not hugely different between the groups eating a healthy diet and those on high fat and sugar diets. So this shows negative 33 of poor dietary intake can occur even when body weight has not changed 34. Thus, body weight is not always the best indicator of health and a thin person still needs to eat well and exercise 35.\nexclusively\ninnovated\nexclusively\ninnovated",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "excelling"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "indulging"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "loopholes"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "rapidly"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "redundant"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "regularly"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "similar"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "assessed"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "assigned"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "consequences"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "conspicuously"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "deficits"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "designated"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "detrimental"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "digestion"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "excelling"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "indulging"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "loopholes"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "rapidly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "redundant"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "regularly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "similar"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "assessed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "assigned"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "consequences"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "conspicuously"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "52",
-          "options": [
-            "deficits"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "53",
-          "options": [
-            "designated"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "54",
-          "options": [
-            "detrimental"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "55",
-          "options": [
-            "digestion"
+            "A) assessed",
+            "B) assigned",
+            "C) consequences",
+            "D) conspicuously",
+            "E) deficits",
+            "F) designated",
+            "G) detrimental",
+            "H) digestion",
+            "I) excelling",
+            "J) indulging",
+            "K) loopholes",
+            "L) rapidly",
+            "M) redundant",
+            "N) regularly",
+            "O) similar"
           ],
           "answer": "",
           "analysis": ""

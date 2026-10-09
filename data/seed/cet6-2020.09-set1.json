@@ -10,274 +10,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nOverall, men are more likely than women to make excuses. Several studies suggest that men feel the need to appear competent in all 26, while women worry only about the skills in which they've invested 27. Ask a man and a woman to go diving for the first time, and the woman is likely to jump in, while the man is likely to say he's not feeling too well.\nIronically, it is often success that leads people to flirt with failure. Praise won for 28 a skill suddenly puts one in the position of having everything to lose. Rather than putting their reputation on the line again, many successful people develop a handicap—drinking, 29, depression—that allows them to keep their status no matter what the future brings. An advertising executive 30 for depression shortly after winning an award put it this way: “Without my depression, I’d be a failure now; with it, I’m a success ‘on hold.’”\nIn fact, the people most likely to become chronic excuse makers are those 31 with success. Such people are so afraid of being 32 a failure at anything that they constantly develop one handicap or another in order to explain away failure.\nThough self-handicapping can be an effective way of coping with performance anxiety now and then, in the end, researchers say, it will lead to 33. In the long run, excuse makers fail to live up to their true 34 and lose the status they care so much about. And despite their protests to the 35， they have only themselves to blame.",
+      "content": "Overall, men are more likely than women to make excuses. Several studies suggest that men feel the need to appear competent in all 26, while women worry only about the skills in which they've invested 27. Ask a man and a woman to go diving for the first time, and the woman is likely to jump in, while the man is likely to say he's not feeling too well.\nIronically, it is often success that leads people to flirt with failure. Praise won for 28 a skill suddenly puts one in the position of having everything to lose. Rather than putting their reputation on the line again, many successful people develop a handicap—drinking, 29, depression—that allows them to keep their status no matter what the future brings. An advertising executive 30 for depression shortly after winning an award put it this way: “Without my depression, I’d be a failure now; with it, I’m a success ‘on hold.’”\nIn fact, the people most likely to become chronic excuse makers are those 31 with success. Such people are so afraid of being 32 a failure at anything that they constantly develop one handicap or another in order to explain away failure.\nThough self-handicapping can be an effective way of coping with performance anxiety now and then, in the end, researchers say, it will lead to 33. In the long run, excuse makers fail to live up to their true 34 and lose the status they care so much about. And despite their protests to the 35， they have only themselves to blame.\nexclusively\ninnovated\nexclusively\ninnovated",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "momentum"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "obsessed"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "potential"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "realms"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "reciprocal"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "ruin"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "viciously"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "contrary"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "fatigue"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "heavily"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "heaving"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "hospitalized"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "labeled"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "legacies"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "mastering"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "momentum"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "obsessed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "potential"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "realms"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "reciprocal"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "ruin"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "viciously"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "contrary"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "fatigue"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "heavily"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "heaving"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "52",
-          "options": [
-            "hospitalized"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "53",
-          "options": [
-            "labeled"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "54",
-          "options": [
-            "legacies"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "55",
-          "options": [
-            "mastering"
+            "A) contrary",
+            "B) fatigue",
+            "C) heavily",
+            "D) heaving",
+            "E) hospitalized",
+            "F) labeled",
+            "G) legacies",
+            "H) mastering",
+            "I) momentum",
+            "J) obsessed",
+            "K) potential",
+            "L) realms",
+            "M) reciprocal",
+            "N) ruin",
+            "O) viciously"
           ],
           "answer": "",
           "analysis": ""

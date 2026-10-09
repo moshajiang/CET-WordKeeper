@@ -17,130 +17,214 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Moden U.S. cities were designed to make exercise unnecessary. Cars and elevators once symbolized urban\nareas as machines for more efficient living. Now it is clear that these improvements provide great benefits but\nalso. 26 _health costs. Recent studies show that urban. 27 encourages more driving and is associated with\nheavier weight. This 28 suggests that the layout and design of cities can hinder or promote healthier lifestyle\nchoices and it is. 29 that urban planners bear this in mind.\nUnfortunately, urban planning still centers in large part on solving the problems of the past. Of course cities still\nneed to- 30 standard public health practices, such as separating toxic facilities from homes and restricting heavy\ntruck traffic through. 31 residential areas. But it's also important to create healthier cities—and the discussion is\nalready underway. More and more city planners are paying increasing attention to encouraging physical activity by\nmaking it easier and safer for people to recreate, walk, bike and take public transportation. Many studies of\n32 show that people live the longest in environments where physical activity is part of everyday life.\nProviding more walkable spaces, better protected bike lanes and more_ 33 spaces are important steps. But\neven smaller changes can be effective.\nCities can close off streets on weekends to encourage communities to get out and walk. They also can\nprovide more seating in public places, so that less-fit residents can rest during their journeys. Using public spaces\nin cities as places where people can exercise promotes . 34 , rather than allowing physical activity to become\nrestricted to private gyms with often-expensive monthly fees that 35 less wealthy people from joining.\n19 ·2023年12月六级真题(第三套)·",
+      "content": "Moden U.S. cities were designed to make exercise unnecessary. Cars and elevators once symbolized urban\nareas as machines for more efficient living. Now it is clear that these improvements provide great benefits but\nalso. 26 _health costs. Recent studies show that urban. 27 encourages more driving and is associated with\nheavier weight. This 28 suggests that the layout and design of cities can hinder or promote healthier lifestyle\nchoices and it is. 29 that urban planners bear this in mind.\nUnfortunately, urban planning still centers in large part on solving the problems of the past. Of course cities still\nneed to- 30 standard public health practices, such as separating toxic facilities from homes and restricting heavy\ntruck traffic through. 31 residential areas. But it's also important to create healthier cities—and the discussion is\nalready underway. More and more city planners are paying increasing attention to encouraging physical activity by\nmaking it easier and safer for people to recreate, walk, bike and take public transportation. Many studies of\n32 show that people live the longest in environments where physical activity is part of everyday life.\nProviding more walkable spaces, better protected bike lanes and more_ 33 spaces are important steps. But\neven smaller changes can be effective.\nCities can close off streets on weekends to encourage communities to get out and walk. They also can\nprovide more seating in public places, so that less-fit residents can rest during their journeys. Using public spaces\nin cities as places where people can exercise promotes . 34 , rather than allowing physical activity to become\nrestricted to private gyms with often-expensive monthly fees that 35 less wealthy people from joining.\nO) vicinityG) impose\n19 ·2023年12月六级真题(第三套)·",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "correlation"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "longevity"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "dense"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "navigate"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "deter"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "recreational"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "equity"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "rotten"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "foster"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "sprawl"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "imperative"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "vibrate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "vicinityG"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "irrespective"
+            "A) Harm",
+            "B) Evil",
+            "C) Suffering",
+            "D) Aggression",
+            "E) foster",
+            "F) imperative",
+            "H) irrespective",
+            "I) longevity",
+            "J) navigate",
+            "K) recreational",
+            "L) rotten",
+            "M) sprawl",
+            "N) vibrate"
           ],
           "answer": "",
           "analysis": ""
@@ -220,12 +304,8 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What have spiders been associated with in the UK for centuries?",
+          "stem": "What have spiders been associated with in the UK for centuries?\n53.What partly accounts for the reduction in spiders'food supply?",
           "options": [
-            "A) Harm.",
-            "C) Suffering.",
-            "B) Evil",
-            "D)",
             "A) The long tradition of collecting insects.",
             "C)",
             "D) The extinction of a lot of wildlife.",

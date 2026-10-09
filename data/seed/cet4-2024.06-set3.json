@@ -20,136 +20,231 @@
       "content": "Over the coming decades, millions of jobs will be threatened by robotics and ar tificial\nintelligence. Despite intensive academic 26 on these developments, there has been little\nstudy on how workers 27 to being replaced through technology.\nTo find out, business researchers at TUM and Erasmus University Rott erdam conducted\n11 studies and surveys with over 2,000 persons from several countries.\nThe findings show: In principle, most people view it more 28 when workers are\nreplaced by other people than by robots or intelligent software. This preference 29 ,\nhowever, when it refers to people’s own jobs. When that is the case, the majority of workers\nfind it less upsetting to see their own jobs go to robots than to other employees. In the long term,\nhowever, the same people see machines as more threatening to their future role in the workforce.\nThese effects can also be observed among people who have recently become unemployed.\nThe researchers were able to identify the causes behind these 30 paradoxical results,\ntoo: People tend to 31 themselves less wi th machines than with other people.\nConsequently, being replaced by a robot or software 32 less of a threat to their feeling of\nself-worth. This reduced self-threat could even be observed when participants assumed that\nthey were being replaced by other employees who relied on technological abilities such as\nartificial intelligence in their work.\n“Even when unemployment results from the 33 of new technologies, peo ple still\njudge it in a social context,” says Christoph Fuchs, one of the authors of the study. “It is\nimportant to understand these 34 effects when trying to manage the massive changes in\nthe working world to minimize 35 in society.”",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "compare"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "drastically"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "poses"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "contradicts"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "favorably"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "psychological"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "conventional"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "guarantee"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "react"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "debate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "introduction"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "reverses"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "disruptions"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "modifications"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "seemingly"
+            "A) compare",
+            "B) contradicts",
+            "C) conventional",
+            "D) debate",
+            "E) disruptions",
+            "F) drastically",
+            "G) favorably",
+            "H) guarantee",
+            "I) introduction",
+            "J) modifications",
+            "K) poses",
+            "L) psychological",
+            "M) react",
+            "N) reverses",
+            "O) seemingly"
           ],
           "answer": "",
           "analysis": ""

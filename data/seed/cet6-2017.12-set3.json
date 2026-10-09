@@ -20,136 +20,231 @@
       "content": "Many European countries have been making the shift to electric vehicles and Germany has just stated that they plan to ban the sale of vehicles using gasoline and diesel as fuel by 2030. The country is also planning to reduce its carbon footprint by 80-95% by 2050, 26 a shift to green energy in the country. Effectively, the ban will include the registration of new cars in the country as they will not allow any gasoline 27 vehicle to be registered after 2030.\nPart of the reason this ban is being discussed and 28 is because energy officials see that they will not reach their emissions goals by 2050 if they do not 29 a large portion of vehicle emissions. The country is still 30 that it will meet its emissions goals, like reducing emissions by 40% by 2020, but the 31 of electric cars in the country has not occurred as fast as ejected.\nOther efforts to increase the use of electric vehicles include plans to build over 1 million hybrid and electric car battery changing stations across the country. By 2030, Germany plans on having over 6 million charging stations 32 . According to the International Business Times, electric car sales are expected to increase as Volkswagen is still recovering from its emissions scandal.\nThere are 33 around 155,000 registered hybrid and electric vehicles on German roads, dwarfed by the 45 million gasoline and diesel cars driving there now. As countries continue setting goals of reducing emissions, greater steps need to be taken to have a 34 effect on the surrounding environment. While the efforts are certainly not 35 , the results of such bans will likely only start to be seen by generations down the line, bettering the world for the future.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "acceptance"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "currently"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "disrupting"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "eliminate"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "exhaust"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "futile"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "hopeful"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "implemented"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "incidentally"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "installed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "noticeable"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "powered"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "restoration"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "skeptical"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "sparking"
+            "A) acceptance",
+            "B) currently",
+            "C) disrupting",
+            "D) eliminate",
+            "E) exhaust",
+            "F) futile",
+            "G) hopeful",
+            "H) implemented",
+            "I) incidentally",
+            "J) installed",
+            "K) noticeable",
+            "L) powered",
+            "M) restoration",
+            "N) skeptical",
+            "O) sparking"
           ],
           "answer": "",
           "analysis": ""

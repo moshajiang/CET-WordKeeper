@@ -20,136 +20,231 @@
       "content": "With the rapid progress in the economy, it is natural that people's ideology is bound for change. Being\n___26___ is no longer a virtue to some people, and they are not alone in holding this view. Each might have\ndifferent viewpoints on how to lead one's lifestyle: some prefer simplicity, some love luxuries, some spend\n___27___, some accumulate as much as they can like a country mouse. As I was born poor and in the\ncountryside, the simple rural life seldom loses its ___28___ to me, but as my station changes, I have an\nopportunity to ___29___ with the newly rich, an experience which has revolutionized my view of lifestyle.\n2024年12月英语六级真题第1套 第4页，共9页\nIt is evil or sinful to spend little and to save much, an idea only recently being revealed to me. Actually the\nwhole world is in a ___30___ to borrow and to spend, with the USA leading the trend. The USA is still the\nrichest and most powerful country in the world, but the ___31___ is that they borrow money from us. Though a\n___32___ of economics, at least I know that investing with borrowed money will turn the borrower into the\n___33___ rather than the decent and kind lender. An apparent case is real estate. Those who are ___34___ and\nhave got loans from the bank become relatively rich by selling their purchased home at a price several folds\nhigher. Even education is not immune from this theory. Many of those poor parents who have the vision to send\ntheir children to college have benefited from this investment, even though they have to ___35___ a living. It is\nreasonable to conclude that spending is praiseworthy. supposing it is not beyond your means.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "appeal"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "meadow"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "extravagantly"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "mingle"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "intrinsically"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "predator"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "irony"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "rage"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "layman"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "scrape"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "literally"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "shrewd"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "majestic"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "thrifty"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "malicious"
+            "A) appeal",
+            "B) extravagantly",
+            "C) intrinsically",
+            "D) irony",
+            "E) layman",
+            "F) literally",
+            "G) majestic",
+            "H) malicious",
+            "I) meadow",
+            "J) mingle",
+            "K) predator",
+            "L) rage",
+            "M) scrape",
+            "N) shrewd",
+            "O) thrifty"
           ],
           "answer": "",
           "analysis": ""

@@ -20,136 +20,231 @@
       "content": "Our brains respond to language expressing facts diferently than they do to words conveying possibility,\nscientists at New York University have recently found. Their work offers new insights into the impact word\nchoice has on how we. 26 between statements expressing what is real versus what is merely possible. The\n·2023年12月六级真题(第二套)· 12\nresearchers assert their findings are important because we are presented with false information all the time.\nSome of this is. 27 ,as is the case with deceptive advertisements, but the problem is 28 by individuals\nwho believe they are sharing correct information. Thus, it is more important than ever to separate the factual\nfrom the possible or merely. 29in how we communicate. This is especially true as the study makes clear that\ninformation presented as fact. 30 special responses in our brains, which are distinct from when we process the\nsame content with clear indicators of. 31\nIn their new study, the scientists intended to. 32 how the brain computes possibilities as expressed by\nwords such as“may,”“might,” and \"if.\" The researchers compared brain responses to statements expressing\nfactual 33 and those expressing possibility.\"There is a monster under my bed\" exemplifies a factual\nstatement.“I will stay home,\" is also factual. This is opposed to statements that express possibility, like \"There\nmight be a monster under my bed,\" or \"If it rains, I will stay home.\" The results of the study showed that factual\nlanguage 34 a rapid increase in brain activity, with the brain responding more powerfully and showing more\nengagement with factual phrases compared to those communicating possibility. Thus, facts rule when it comes to\nthe brain. Brain regions involved in processing. 35 rapidly distinguish facts from possibilities. Further, these\nregions respond in a much more robust fashion to factual statements.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "activated"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "manuscript"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "aggravated"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "marvels"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "ascertain"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "remnants"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "deliberate"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "scenarios"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "differentiate"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "speculative"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "discourse"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "unanimous"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "evokes"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "uncertainty"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "inhibit"
+            "A) activated",
+            "B) aggravated",
+            "C) ascertain",
+            "D) deliberate",
+            "E) differentiate",
+            "F) discourse",
+            "G) evokes",
+            "H) inhibit",
+            "I) manuscript",
+            "J) marvels",
+            "K) remnants",
+            "L) scenarios",
+            "M) speculative",
+            "N) unanimous",
+            "O) uncertainty"
           ],
           "answer": "",
           "analysis": ""

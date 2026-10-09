@@ -20,136 +20,231 @@
       "content": "A team of researchers led by Priyanka Joshi examined the degree to which men and women\nrelied on “communicative abstraction” to verbally convey their ideas and emotions.\nCommunicative abstraction, according to the researchers, reflects the tendency of people to use\n“abstract speech that focuses on the broader picture and 26 purpose of action rather than\nconcrete speech focusing on details and the means of 27 action.” Interestingly, they\nfound that men were far more likely to speak in the abstract than were women.\nTo arrive at this 28 , the researchers examined the linguistic (语言的) patterns of\nmen and women in over 600,000 blog posts written on websites. To do this, the researchers\ncomputed abstractness ratings for 29 40,000 commonly used words in the English\nlanguage. Words considered to be concrete could be easily visualized, such as “table” or “chair”.\nWords that were more 30 to visualize, for example, “justice” or “morality” were\nconsidered to be more abstract. They found that men used 31 more abstract language in\ntheir blog posts.\nWhat is the 32 of this effect? The researchers suggest that power differences\nbetween the genders— that is, men having more power in society—might be a key determinant\n(决定因素). For instance, in a follow-up study conducted with a sample of 300 students, the\nresearchers 33 power dynamics in an interpersonal setting to see if this would influence\ncommunicative abstraction. They found that participants in a high-power interviewer role were\nmore likely to give abstract descriptions of behaviors than were participants in a low-power\ninterviewee role. This suggests that communicating more abstractly does not reflect a 34\ntendency of men or women but rather 35 within specific contexts.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "approximately"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "fixed"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "refraining"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "attaining"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "ignored"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "signals"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "conclusion"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "legally"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "significantly"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "difficult"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "manipulated"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "source"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "emerges"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "recommended"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "ultimate"
+            "A) approximately",
+            "B) attaining",
+            "C) conclusion",
+            "D) difficult",
+            "E) emerges",
+            "F) fixed",
+            "G) ignored",
+            "H) legally",
+            "I) manipulated",
+            "J) recommended",
+            "K) refraining",
+            "L) signals",
+            "M) significantly",
+            "N) source",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""

@@ -11,10 +11,26 @@
         <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 5px; cursor: pointer;">
           <input type="checkbox" v-model="scanOn" /> 难词预扫
         </label>
+        <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
+        <button @click="loadAnalysis" :disabled="busy">{{ busy ? '处理中…' : '查看解析与翻译' }}</button>
+        <button @click="showTranslation = !showTranslation" :disabled="!activePassage || !activePassage.translation">
+          {{ showTranslation ? '隐藏翻译' : '全文翻译' }}
+        </button>
         <button @click="fontSize = Math.max(14, fontSize - 1)">A-</button>
         <button @click="fontSize = Math.min(22, fontSize + 1)">A+</button>
       </div>
     </div>
+
+    <div v-if="result" class="card" style="margin-bottom: 12px; padding: 12px 18px;">
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <span style="font-size: 15px; font-weight: 500;">
+          得分 {{ result.score }} 分 · 客观题 {{ result.correct }} / {{ result.total }} 正确
+        </span>
+        <button @click="clearAttempt">重做本套</button>
+      </div>
+    </div>
+    <div v-if="notice" class="card" style="margin-bottom: 12px; padding: 10px 16px; font-size: 13px;"
+         :style="{ color: noticeOk ? '#2e7d4f' : 'var(--red)' }">{{ notice }}</div>
 
     <div class="section-tabs">
       <button
@@ -42,13 +58,54 @@
           </div>
         </div>
 
+        <div v-if="showTranslation && activePassage && activePassage.translation" class="card" style="margin-top: 14px;">
+          <h3 style="font-size: 14px; margin-bottom: 8px;">全文翻译 <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看）</span></h3>
+          <div style="font-size: 14px; line-height: 1.9; white-space: pre-wrap;">{{ activePassage.translation }}</div>
+        </div>
+
         <div v-if="activePassage && activePassage.questions && activePassage.questions.length" class="card" style="margin-top: 16px;">
-          <h3 style="font-size: 15px; margin-bottom: 14px;">题目与解析（同样可以点词标注）</h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <h3 style="font-size: 15px; margin: 0;">题目</h3>
+            <span style="font-size: 12.5px; color: var(--muted);">
+              已作答 {{ answeredCount }} / {{ activePassage.questions.length }}
+            </span>
+          </div>
+
+          <div v-if="isCloze" class="bank-box">
+            <div style="font-size: 12.5px; color: var(--muted); margin-bottom: 6px;">词库（每个词最多用一次）</div>
+            <div class="bank-list">
+              <span v-for="b in parseOptions(activePassage.questions[0].options)" :key="b" class="bank-chip">{{ b }}</span>
+            </div>
+          </div>
+
           <div v-for="qs in activePassage.questions" :key="qs.id" class="qblock">
-            <div class="qstem">{{ qs.stem }}</div>
-            <div v-for="(opt, oi) in parseOptions(qs.options)" :key="oi" class="qopt">{{ opt }}</div>
-            <div v-if="qs.answer" class="qans">答案：{{ qs.answer }}</div>
-            <div v-if="qs.analysis" class="qanalysis">{{ qs.analysis }}</div>
+            <div class="qstem">
+              <span>{{ qs.stem }}</span>
+              <span v-if="graded && qs.answer" class="qmark" :class="isRight(qs) ? 'ok' : 'no'">
+                {{ isRight(qs) ? '✓ 正确' : '✗ 正确答案 ' + qs.answer }}
+              </span>
+            </div>
+
+            <template v-if="isCloze">
+              <select :value="answers[qs.id] || ''" :disabled="graded" @change="setAnswer(qs.id, $event.target.value)">
+                <option value="">未选</option>
+                <option v-for="o in parseOptions(qs.options)" :key="o" :value="o[0]">{{ o }}</option>
+              </select>
+            </template>
+            <template v-else>
+              <div
+                v-for="(opt, oi) in parseOptions(qs.options)"
+                :key="oi"
+                class="qopt pick"
+                :class="optClass(qs, opt)"
+                @click="setAnswer(qs.id, opt[0])"
+              >{{ opt }}</div>
+            </template>
+
+            <div v-if="graded && qs.answer" class="qanalysis">
+              <b>正确答案：{{ qs.answer }}</b>
+              <div style="margin-top: 4px;">{{ qs.analysis || '（暂无解析）' }}</div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,6 +192,97 @@ const hardWords = ref([]);
 const toast = ref('');
 const aiResult = ref(null);
 
+// ---- 做题 / 交卷 / 解析与翻译 ----
+const answers = ref({});        // questionId -> 所选字母
+const graded = ref(false);      // 是否已交卷
+const result = ref(null);       // { total, correct, score }
+const notice = ref('');
+const noticeOk = ref(false);
+const showTranslation = ref(false);
+const busy = ref(false);
+
+const isCloze = computed(() => !!activePassage.value && activePassage.value.section === 'cloze');
+const answeredCount = computed(() => {
+  const p = activePassage.value;
+  if (!p || !p.questions) return 0;
+  return p.questions.filter((q) => answers.value[q.id]).length;
+});
+
+function setAnswer(qid, letter) {
+  if (graded.value) return;
+  answers.value = { ...answers.value, [qid]: letter };
+}
+function isRight(qs) {
+  return String(answers.value[qs.id] || '') === String(qs.answer || '');
+}
+function optClass(qs, opt) {
+  const letter = opt[0];
+  const picked = String(answers.value[qs.id] || '');
+  if (!graded.value) return picked === letter ? 'picked' : '';
+  if (letter === String(qs.answer || '')) return 'right';
+  return picked === letter ? 'wrong' : '';
+}
+
+async function reloadDetail() {
+  detail.value = await window.keeper.examDetail(Number(props.examId));
+}
+
+async function restoreAttempt() {
+  const r = await window.keeper.attemptGet(Number(props.examId));
+  const map = {};
+  for (const a of r.answers || []) map[a.question_id] = a.choice;
+  answers.value = map;
+  if (r.attempt && r.attempt.total) {
+    result.value = { total: r.attempt.total, correct: r.attempt.correct, score: r.attempt.score };
+    graded.value = true;
+  }
+}
+
+async function loadAnalysis() {
+  busy.value = true;
+  notice.value = '';
+  const r = await window.keeper.examAnalysis(Number(props.examId));
+  busy.value = false;
+  if (!r.ok) {
+    noticeOk.value = false;
+    notice.value = r.error === 'no_key'
+      ? '中文解析与全文翻译由 AI 按需生成（首次），请先在「设置」里填写 API 地址与 Key；生成后会保存到本地，之后永久离线可看。'
+      : '生成失败：' + r.error;
+    return;
+  }
+  await reloadDetail();
+  noticeOk.value = true;
+  notice.value = r.cached ? '已显示本地缓存的解析与全文翻译。' : `已生成 ${r.generated} 个篇章的解析与翻译，并已保存到本地。`;
+}
+
+async function submit() {
+  busy.value = true;
+  notice.value = '';
+  const r = await window.keeper.attemptSubmit(Number(props.examId), { ...answers.value });
+  busy.value = false;
+  if (!r.ok) {
+    noticeOk.value = false;
+    notice.value = r.error === 'no_key'
+      ? '自动核对需要正确答案：首次由 AI 生成（请在「设置」里配置 Key），生成后永久离线可用。'
+      : '交卷失败：' + r.error;
+    return;
+  }
+  await reloadDetail();
+  graded.value = true;
+  result.value = r;
+  noticeOk.value = true;
+  notice.value = `已交卷：客观题 ${r.correct} / ${r.total} 正确，得分 ${r.score} 分。`;
+}
+
+async function clearAttempt() {
+  await window.keeper.attemptClear(Number(props.examId));
+  graded.value = false;
+  result.value = null;
+  notice.value = '';
+  answers.value = {};
+  await reloadDetail();
+}
+
 const popover = ref({ show: false, loading: false, data: null, x: 0, y: 0, ctx: '' });
 const selMenu = ref({ show: false, x: 0, y: 0, text: '' });
 
@@ -205,6 +353,12 @@ async function loadAll() {
   if (detail.value && !detail.value.passages.length) {
     showToast('该套真题没有结构化篇章数据');
   }
+  // 恢复上次的作答与交卷结果（换套或重开应用都还在）
+  graded.value = false;
+  result.value = null;
+  notice.value = '';
+  answers.value = {};
+  try { await restoreAttempt(); } catch { /* 忽略 */ }
 }
 
 async function onWordClick(ev, tk, para) {

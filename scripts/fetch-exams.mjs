@@ -134,7 +134,17 @@ const expected = new Set(
   targets.map((t) => `${t.level.toLowerCase()}-${t.year}.${String(t.month).padStart(2, '0')}-set${t.setNo}.json`)
 );
 const existing = fs.existsSync(seedDirOut) ? fs.readdirSync(seedDirOut).filter((f) => f.endsWith('.json')) : [];
-const stale = existing.filter((f) => !expected.has(f));
+// 只清理「docx 支线」自己的产物：PDF 支线（fetch-pdf-exams.mjs）产出的文件不在 expected 里，
+// 不能被当成失效文件（曾经因此把 cet6-2024.12-set3 等套误移走）。
+const stale = existing.filter((f) => {
+  if (expected.has(f)) return false;
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(seedDirOut, f), 'utf8'));
+    return !/\.pdf$/i.test(j.source || '');
+  } catch {
+    return true;
+  }
+});
 if (stale.length) {
   const staleDir = path.join(seedDirOut, '_stale');
   fs.mkdirSync(staleDir, { recursive: true });

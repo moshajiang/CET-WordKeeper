@@ -17,130 +17,224 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nAs if you needed another reason to hate the gym, it now turns out that exercise can exhaust not only your muscles, but also your eyes. Fear not, however, for coffee can stimulate them again. During (26)_______ exercise, our muscles tire as they run out of fuel and build up waste products. Muscle performance can also be affected by a (27)_______ called \"central fatigue,” in which an imbalance in the body’s chemical messengers prevents the central nervous system from directing muscle movements（28)_______. It was not known, however, whether central fatigue might also affect motor systems not directly (29)_______ in the exercise itself, such as those that move the eyes. To find out, researchers gave 11 volunteer cyclists a carbohydrate (碳水化合物的）(30)_______ either with a moderate dose of caffeine (咖啡因)，which is known to stimulate the central nervous system, or as a placebo (安慰剂） without, during 3 hours of (31)_______ . After exercising, the scientists tested the cyclists with eyetracking cameras to see how well their brains could still (32)_______ their visual system. The team found that exercise reduced the speed of rapid eye movements by about 8%, (33)_______ their ability to capture new visual information. The caffeine, the equivalent of two strong cups of coffee, was (34)_______ to reverse this effect, with some cyclists even displaying (35)_______ eye movement speeds. So it might be a good idea to get someone else to drive you home after that marathon.\ncautiously",
+      "content": "As if you needed another reason to hate the gym, it now turns out that exercise can exhaust not only your muscles, but also your eyes. Fear not, however, for coffee can stimulate them again. During (26)_______ exercise, our muscles tire as they run out of fuel and build up waste products. Muscle performance can also be affected by a (27)_______ called \"central fatigue,” in which an imbalance in the body’s chemical messengers prevents the central nervous system from directing muscle movements（28)_______. It was not known, however, whether central fatigue might also affect motor systems not directly (29)_______ in the exercise itself, such as those that move the eyes. To find out, researchers gave 11 volunteer cyclists a carbohydrate (碳水化合物的）(30)_______ either with a moderate dose of caffeine (咖啡因)，which is known to stimulate the central nervous system, or as a placebo (安慰剂） without, during 3 hours of (31)_______ . After exercising, the scientists tested the cyclists with eyetracking cameras to see how well their brains could still (32)_______ their visual system. The team found that exercise reduced the speed of rapid eye movements by about 8%, (33)_______ their ability to capture new visual information. The caffeine, the equivalent of two strong cups of coffee, was (34)_______ to reverse this effect, with some cyclists even displaying (35)_______ eye movement speeds. So it might be a good idea to get someone else to drive you home after that marathon.\ncautiously",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "commit"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "control"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "cycling"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "effectively"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "increased"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "involved"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "limited"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "phenomenon"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "preventing"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "sensitive"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "slowing"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "solution"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "sufficient"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "vigorous"
+            "A) commit",
+            "B) control",
+            "C) cycling",
+            "D) effectively",
+            "E) increased",
+            "F) involved",
+            "G) limited",
+            "H) phenomenon",
+            "I) preventing",
+            "J) sensitive",
+            "K) slowing",
+            "L) solution",
+            "M) sufficient",
+            "N) vigorous"
           ],
           "answer": "",
           "analysis": ""

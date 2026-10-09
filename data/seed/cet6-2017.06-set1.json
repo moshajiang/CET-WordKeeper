@@ -20,136 +20,231 @@
       "content": "After becoming president of Purdue University in 2013, Mitch Daniels asked the faculty to prove that their students have actually achieved one of higher education's most important goals: critical thinking skills. Two years before, a nationwide study of college graduates had shown that more than a third had made no __26__ gains in such mental abilities during their school years. Mr. Daniels needed to __27__ the high cost of attending Purdue to its students and their families. After all, the percentage of Americans who say a college degree is \"very important\" has fallen __28__ in the last 5-6 years.\nPurdue now has a pilot test to assess students' critical thinking skills. Yet like many college teachers around the U.S., the faculty remain __29__ that their work as educators can be measured by a \"learning __30__\" such as a graduate's ability to investigate and reason. However, the professors need not worry so much. The results of a recent experiment showed that professors can use __31__ metrics to measure how well students do in three key areas: critical thinking, written communication, and quantitative literacy.\nDespite the success of the experiment, the actual results are worrisome, and mostly __32__ earlier studies. The organizers of the experiment concluded that far fewer students were achieving at high levels on critical thinking than they were doing for written communication or quantitative literacy. And that conclusion is based only on students nearing graduation.\nAmerican universities, despite their global __33__ for excellence in teaching, have only begun to demonstrate what they can produce in real-world learning. Knowledge-based degrees are still important, but employers are __34__ advanced thinking skills from college graduates. If the intellectual worth of a college degree can be __35__ measured, more people will seek higher education—and come out better thinkers.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "accurately"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "confirm"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "demanding"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "doubtful"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "drastically"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "justify"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "monopolized"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "outcome"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "predominance"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "presuming"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "reputation"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "significant"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "signify"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "simultaneously"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "standardized"
+            "A) accurately",
+            "B) confirm",
+            "C) demanding",
+            "D) doubtful",
+            "E) drastically",
+            "F) justify",
+            "G) monopolized",
+            "H) outcome",
+            "I) predominance",
+            "J) presuming",
+            "K) reputation",
+            "L) significant",
+            "M) signify",
+            "N) simultaneously",
+            "O) standardized"
           ],
           "answer": "",
           "analysis": ""

@@ -204,6 +204,67 @@ check('设置页「保存」真正落库',
   !!uiSettings && uiSettings.api_base === 'https://api.example.com/v1' && uiSettings.api_model === 'ui-test-model',
   uiSaved);
 
+console.log('\n===== 做题 / 交卷 / 解析与翻译 =====');
+// 选词填空的正确模型是「10 个空共享一份词库」，不是「一个词对应一道题」
+const cloze = detail.passages.find((p) => p.section === 'cloze');
+const clozeQ = cloze ? cloze.questions : [];
+const clozeOpts = clozeQ.length ? JSON.parse(clozeQ[0].options) : [];
+check('选词填空每个空携带完整词库',
+  clozeQ.length >= 10 && clozeOpts.length >= 10 && clozeOpts.every((o) => /^[A-O]\)\s*\w/.test(o))
+    && clozeQ.every((q) => q.options === clozeQ[0].options),
+  `${clozeQ.length} 个空 × 每个 ${clozeOpts.length} 备选（${clozeOpts.slice(0, 3).join(' / ')}）`);
+
+// 未配置 AI 时，交卷必须明确返回 no_key，而不是静默失败
+const subNoKey = await js(`window.keeper.attemptSubmit(${anchor.id}, {})`);
+check('未配置 AI 时交卷优雅降级', subNoKey.ok === false && subNoKey.error === 'no_key', 'error=' + subNoKey.error);
+
+// 离线判分整链路：导入一套自带答案与翻译的题，全程不需要 AI
+const fullExam = {
+  level: 'CET6', year: 2031, month: 6, set_no: 8, title: '离线判分测试卷',
+  passages: [{
+    section: 'reading', seq: 1, title: '测试篇章',
+    content: 'The quick brown fox jumps over the lazy dog. '.repeat(40).trim(),
+    translation: '敏捷的棕色狐狸跳过了那只懒狗。',
+    questions: [
+      { qtype: 'choice', stem: '46. 测试题一', options: ['A) 甲', 'B) 乙', 'C) 丙', 'D) 丁'], answer: 'B', analysis: '解析一' },
+      { qtype: 'choice', stem: '47. 测试题二', options: ['A) 甲', 'B) 乙', 'C) 丙', 'D) 丁'], answer: 'D', analysis: '解析二' },
+    ],
+  }],
+};
+const impFull = await js(`window.keeper.importExam(${JSON.stringify(JSON.stringify(fullExam))})`);
+check('导入自带答案与翻译的测试卷', impFull.ok === true, 'examId=' + impFull.examId);
+const fullDetail = await js(`window.keeper.examDetail(${impFull.examId})`);
+const fqs = fullDetail.passages[0].questions;
+const ens = await js(`window.keeper.examAnalysis(${impFull.examId})`);
+check('自带解析与翻译时不触发 AI', ens.ok === true && ens.cached === true, JSON.stringify(ens));
+check('全文翻译可读取', fullDetail.passages[0].translation === '敏捷的棕色狐狸跳过了那只懒狗。',
+  String(fullDetail.passages[0].translation).slice(0, 24));
+const subOk = await js(`window.keeper.attemptSubmit(${impFull.examId}, ${JSON.stringify({ [fqs[0].id]: 'B', [fqs[1].id]: 'A' })})`);
+check('交卷自动核对并计分', subOk.ok === true && subOk.total === 2 && subOk.correct === 1 && Math.abs(subOk.score - 50) < 0.01,
+  `${subOk.correct}/${subOk.total} 得分 ${subOk.score}`);
+const gotAttempt = await js(`window.keeper.attemptGet(${impFull.examId})`);
+check('作答记录可读回', gotAttempt.answers.length === 2 && !!gotAttempt.attempt,
+  `${gotAttempt.answers.length} 条记录，得分 ${gotAttempt.attempt && gotAttempt.attempt.score}`);
+await js(`window.keeper.attemptClear(${impFull.examId})`);
+const cleared = await js(`window.keeper.attemptGet(${impFull.examId})`);
+check('重做可清空作答', cleared.answers.length === 0, `${cleared.answers.length} 条`);
+
+// 阅读器做题界面：切到选词填空，词库与每个空的下拉都应真实渲染
+await js(`location.hash = '#/reader/${anchor.id}'`);
+await sleep(2600);
+const clozeTabFound = await js(`(() => {
+  const b = [...document.querySelectorAll('.section-tabs button')].find(x => /选词填空/.test(x.textContent));
+  if (b) b.click();
+  return !!b;
+})()`);
+await sleep(900);
+const bankChips = await js('document.querySelectorAll(".bank-chip").length');
+const blankSelects = await js('document.querySelectorAll(".qblock select").length');
+check('阅读器渲染选词填空词库与选项', clozeTabFound && bankChips >= 15 && blankSelects >= 10,
+  `词库 ${bankChips} 项 / 下拉 ${blankSelects} 个`);
+const submitBtn = await js(`(() => [...document.querySelectorAll('button')].some(b => /交卷/.test(b.textContent)))()`);
+check('交卷按钮已渲染', submitBtn === true);
+
 const fail = results.filter((r) => !r.ok);
 console.log(`\n===== 结果：${results.length - fail.length}/${results.length} 通过 =====`);
 if (fail.length) { console.log('失败项:', fail.map((f) => f.name).join('、')); process.exit(1); }

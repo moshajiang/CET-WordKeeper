@@ -17,139 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nAmerica’s Internet is fester than ever before, but people still complain about their Internet being too slow.\nNew York’s Attorney General’s office (26)_______ an investigation in the fall into whether or not Verizon, Cablevision and Time Warner are delivering broadband that’s as fast as the providers (27)_______ it is. Earlier this month, the office asked for the public’s help to measure their speed results, saying consumers (28)_______ to get the speeds they were promised. “Too many of us may be paying for one thing, and getting another，” the Attorney General said.\nIf the investigation uncovers anything, it wouldn’t be the first time a telecom provider got into (29)_______ over the broadband speeds it promised and delivered customers. Back in June, the Federal Communications Commission fined AT& T $ 100 million over (30)_______ that the carrier secretly reduced wireless speeds after customers consumed a certain amount of (31)_______ .\nEven when they stay on the right side of the law, Internet providers arouse customers’ anger over bandwidth speed and cost. Just this week, an investigation found that media and telecom giant Comcast is\nthe most (32)_______ provider. Over 10 months, Comcast received nearly 12,000 customer complaints, many (33)_______ to its monthly data cap and overage (超过额度的）charges.\nSome Americans are getting so (34)_______ with Internet providers they’re just giving up. A recent\nstudy found that the number of Americans with high-speed Internet at home today (35)_______ fell during the last two years, and 15% of people now consider themselves to be “cord-cutters.”",
+      "content": "America’s Internet is fester than ever before, but people still complain about their Internet being too slow.\nNew York’s Attorney General’s office (26)_______ an investigation in the fall into whether or not Verizon, Cablevision and Time Warner are delivering broadband that’s as fast as the providers (27)_______ it is. Earlier this month, the office asked for the public’s help to measure their speed results, saying consumers (28)_______ to get the speeds they were promised. “Too many of us may be paying for one thing, and getting another，” the Attorney General said.\nIf the investigation uncovers anything, it wouldn’t be the first time a telecom provider got into (29)_______ over the broadband speeds it promised and delivered customers. Back in June, the Federal Communications Commission fined AT& T $ 100 million over (30)_______ that the carrier secretly reduced wireless speeds after customers consumed a certain amount of (31)_______ .\nEven when they stay on the right side of the law, Internet providers arouse customers’ anger over bandwidth speed and cost. Just this week, an investigation found that media and telecom giant Comcast is\nthe most (32)_______ provider. Over 10 months, Comcast received nearly 12,000 customer complaints, many (33)_______ to its monthly data cap and overage (超过额度的）charges.\nSome Americans are getting so (34)_______ with Internet providers they’re just giving up. A recent\nstudy found that the number of Americans with high-speed Internet at home today (35)_______ fell during the last two years, and 15% of people now consider themselves to be “cord-cutters.”",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "accusations"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "actually"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "claim"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "communicating"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "complain"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "data"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "deserved"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "frustrated"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "hated"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "launched"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "relating"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "times"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "trouble"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "usually"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "worried"
+            "A) accusations",
+            "B) actually",
+            "C) claim",
+            "D) communicating",
+            "E) complain",
+            "F) data",
+            "G) deserved",
+            "H) frustrated",
+            "I) hated",
+            "J) launched",
+            "K) relating",
+            "L) times",
+            "M) trouble",
+            "N) usually",
+            "O) worried"
           ],
           "answer": "",
           "analysis": ""

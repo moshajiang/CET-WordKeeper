@@ -20,118 +20,211 @@
       "content": "Exercising for just 10 minutes a week is linked to a longer life, according to a new study published in\nThe British Journal o f Sports Medicine.\nSeveral recent studies have found that even low-intensity exercise, done for a short amount of time, can\nhave a meaningful 26 on health. Still, the idea that exercising for just 10 minutes a week may be enough\nto increase your lifespan is novel. Ifs also somewhat 27 . since the federal physical activity guidelines\nrecommend getting at least 75 minutes of vigorous exercise or 150 minutes of 28 exercise each week.\nThe study was based on data from more than 88,000 U.S. adults who 29 in the National Health\nInterview Survey between 1997 and 2008.\nContrary to some research that has found an 30 limit to the amount of exercise that is healthy, the\nresearchers found that there was 31 no limit to the longevity (长寿)benefits of exercise. Even the small\ngroup of people who got 10 times the amount of exercise recommended by the federal government had a\n46% lower 32 of death than the least active group.\nStill, observational studies like this one cannot prove cause and effect; they can only find 33 . The\nresearchers also were not able to 34 for certain lifestyle factors that could affect lifespan, including\n3 • 2023年 12月四级真题（第一套）・\ndietary habits and changes in physical activity over time. Despite these 35 . the study,s results are yet\nanother indication of the power of physical activity, even in small amounts.\nG) limitations 0) upper",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "adjust"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "participated"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "alter"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "patterns"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "approximately"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "populated"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "controversial"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "risk"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "coordinates"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "seemingly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "impact"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "type"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "moderate"
+            "A) adjust",
+            "B) alter",
+            "C) approximately",
+            "D) controversial",
+            "E) coordinates",
+            "F) impact",
+            "H) moderate",
+            "I) participated",
+            "J) patterns",
+            "K) populated",
+            "L) risk",
+            "M) seemingly",
+            "N) type"
           ],
           "answer": "",
           "analysis": ""

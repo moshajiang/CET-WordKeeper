@@ -30,4 +30,8 @@ contextBridge.exposeInMainWorld('keeper', {
   exportAnki: (filter) => ipcRenderer.invoke('export:anki', plain(filter)),
   backupDialog: () => ipcRenderer.invoke('backup:dialog'),
   backupExport: (targetPath) => ipcRenderer.invoke('backup:export', targetPath),
+  examAnalysis: (examId) => ipcRenderer.invoke('exam:analysis', examId),
+  attemptGet: (examId) => ipcRenderer.invoke('attempt:get', examId),
+  attemptSubmit: (examId, answers) => ipcRenderer.invoke('attempt:submit', examId, plain(answers)),
+  attemptClear: (examId) => ipcRenderer.invoke('attempt:clear', examId),
 });

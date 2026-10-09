@@ -20,136 +20,231 @@
       "content": "Two proposals are before the state legislature that looks to put some limits on\never-increasing rent prices, which some lawmakers say are contributing to\nrising homelessness rates.\nThe proposals [26] caps on rent increases, preventing landlords in the state\nfrom raising rent more than the rate of inflation in most cases. There are\nexceptions for buildings less than 10 years old, public housing, improvements\nbeyond maintenance, and a hardship [27].\nIn a 2020 study, researchers at the U. S. Government Accountability Office\nestimated that every $100 in rent increase is [28] to a 9% rise in homelessness.\nRent increases have an even more detrimental effect on some demographic\ngroups, such as racial minorities.\nRepresentative Alex Ramel explained why he thought that this kind of\nlegislation was so important, telling the story of a [29] struggling to live in the\ncommunity.\nRamel pointed out the [30] effect of double-digit rent increases, saying that he\nmade the decision to introduce the legislation while talking to a young man in\nBellingham. \"He's a recent graduate from Western Washington University and\njust got a new job,\" Ramel said. \"He was leaving our community because his\nlandlord [31] him that his rent was going to go up by $600 a month.\"\nThe Rental Housing Association of Washington opposes the legislation. The\nassociation [32] that the policy won't actually solve the problem of rental prices.\nInstead, it will punish small landlords and allow wealthy renters easy access to\ncheap housing.\n\"The rent control policy has failed everywhere it has been [33] in this county. It\nhas not fixed one housing problem [34]. It also does not distinguish between\nrich and poor when [35] who gets the benefits of rent control,\" said Chester\nBaldwin with the Rental Housing Coalition.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "anywhere"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "asserts"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "constituent"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "correlated"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "determining"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "devastating"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "enacted"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "entails"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "exemption"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "impose"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "notified"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "notwithstanding"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "presume"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "rehabilitation"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "reproaching"
+            "A) anywhere",
+            "B) asserts",
+            "C) constituent",
+            "D) correlated",
+            "E) determining",
+            "F) devastating",
+            "G) enacted",
+            "H) entails",
+            "I) exemption",
+            "J) impose",
+            "K) notified",
+            "L) notwithstanding",
+            "M) presume",
+            "N) rehabilitation",
+            "O) reproaching"
           ],
           "answer": "",
           "analysis": ""

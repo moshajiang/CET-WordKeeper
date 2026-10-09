@@ -17,238 +17,214 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nThe United Nations issued a report last week warning that humans are destroying nature at such a rate that life on Earth is at risk. When the report came out, it naturally 26 headlines. But obviously it didn’t hijack the news agenda in the manner of a major terrorist attack or 27 of war.\nThe report from the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) is clear on what’s at 28 and what needs to change. IPBES chair Robert Watson says the “ 29 evidence” presents an “ominous (凶兆的) picture”. “The health of ecosystems on which we and all other species depend is 30 more rapidly than ever,” Robert Watson said. “We are 31 the very foundations of our economies, livelihoods, food security, health and quality of life worldwide.” The report says it’s not too late if we make “transformative change” —fundamental, system-wide reorganization—at every level from local to global , and we need to focus on how to make that happen.\nFirst, don’t indulge in despair, because despair leads to inertia and doing nothing means certain 32. Every action to save nature will improve our collective and personal futures and the only way to respond to a threat of this scale is with 33 action rooted in headstrong optimism. Second, we need relentless focus, just like when paramedics (救护人员) arrive on a scene and use the concept of “triage (伤员鉴别分类)” to ensure the most 34 cases get treated first. Saving the natural world needs that kind of thinking. We don’t have the 35 to do everything at once. We need to make hard choices.\nJunction\nMonotonous",
+      "content": "The United Nations issued a report last week warning that humans are destroying nature at such a rate that life on Earth is at risk. When the report came out, it naturally 26 headlines. But obviously it didn’t hijack the news agenda in the manner of a major terrorist attack or 27 of war.\nThe report from the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) is clear on what’s at 28 and what needs to change. IPBES chair Robert Watson says the “ 29 evidence” presents an “ominous (凶兆的) picture”. “The health of ecosystems on which we and all other species depend is 30 more rapidly than ever,” Robert Watson said. “We are 31 the very foundations of our economies, livelihoods, food security, health and quality of life worldwide.” The report says it’s not too late if we make “transformative change” —fundamental, system-wide reorganization—at every level from local to global , and we need to focus on how to make that happen.\nFirst, don’t indulge in despair, because despair leads to inertia and doing nothing means certain 32. Every action to save nature will improve our collective and personal futures and the only way to respond to a threat of this scale is with 33 action rooted in headstrong optimism. Second, we need relentless focus, just like when paramedics (救护人员) arrive on a scene and use the concept of “triage (伤员鉴别分类)” to ensure the most 34 cases get treated first. Saving the natural world needs that kind of thinking. We don’t have the 35 to do everything at once. We need to make hard choices.\nJunction\nMonotonous\nJunction\nMonotonous",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "overwhelming"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "stagnation"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "stake"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "stifled"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "urgent"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "capacity"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "declaration"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "deteriorating"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "determined"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "disaster"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "eroding"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "grabbed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "inventory"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "overwhelming"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "stagnation"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "stake"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "stifled"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "urgent"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "capacity"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "declaration"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "deteriorating"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "determined"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "disaster"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "eroding"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "grabbed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "inventory"
+            "A) capacity",
+            "B) declaration",
+            "C) deteriorating",
+            "D) determined",
+            "E) disaster",
+            "F) eroding",
+            "G) grabbed",
+            "H) inventory",
+            "I) overwhelming",
+            "J) stagnation",
+            "K) stake",
+            "L) stifled",
+            "M) urgent"
           ],
           "answer": "",
           "analysis": ""

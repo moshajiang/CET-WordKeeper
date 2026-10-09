@@ -60,11 +60,15 @@ const splitNumbered = (text, lo, hi) =>
       return m && Number(m[1]) >= lo && Number(m[1]) <= hi;
     });
 
-const isBankLine = (s) => {
-  if (!/^([A-O]\)\s*[A-Za-z'’-]+[ \t]*)+$/.test(s)) return false;
-  const groups = s.match(/[A-O]\)\s*[A-Za-z'’-]+/g) || [];
-  return groups.length >= 1 && groups.length <= 4;
-};
+// 选词填空的词库行：一份词库常被折成多行、每行多个词，甚至按栏排成三段；序号有 "A)" 也有 "A."。
+// 判据 —— 把词条全摘掉后该行不该再有实质内容，这样才不会把正文里的 A) 误认成词库。
+const BANK_ENTRY = /([A-O])\s*[)）.．、]\s*([A-Za-z][A-Za-z'’-]*)/g;
+function bankEntries(text) {
+  const rest = String(text).replace(BANK_ENTRY, '').replace(/[\s,，、;；.．]/g, '');
+  if (rest) return null;
+  const out = [...String(text).matchAll(BANK_ENTRY)].map((m) => ({ letter: m[1], word: m[2] }));
+  return out.length ? out : null;
+}
 
 const parts = [];
 let cur = null;
@@ -84,17 +88,15 @@ if (!reading) { console.error('未找到 Reading 部分'); process.exit(1); }
 const slice = (p) => (p ? lines.slice(p.from + 1, (p.to ?? lines.length - 1) + 1) : []);
 
 // ---- 词库（全局扫描：它可能被排版进别的 Section 里）----
-const BANK_RE = /^([A-O])\)\s*([A-Za-z'’-]+)$/;
-const bankWords = [];
+const bankMap = new Map();
 const bankLines = new Set();
 lines.forEach((s, i) => {
-  if (!isBankLine(s)) return;
+  const e = bankEntries(s);
+  if (!e) return;
   bankLines.add(i);
-  for (const g of s.match(/[A-O]\)\s*[A-Za-z'’-]+/g) || []) {
-    const m = g.match(BANK_RE);
-    if (m) bankWords.push({ letter: m[1], word: m[2] });
-  }
+  for (const x of e) bankMap.set(x.letter, x.word);
 });
+const bankWords = [...bankMap.keys()].sort().map((k) => ({ letter: k, word: bankMap.get(k) }));
 
 function parseOptions(chunk) {
   const idx = chunk.search(/[A-D]\)/);
@@ -132,10 +134,14 @@ for (let k = 0; k < sectionIdx.length - 1; k++) {
 
   if (name === 'A') {
     // 选词填空：正文 + 词库（词库可能被排版到别处，已全局收集）
+    // 每个空（26–35）的 options 都是同一份完整词库 —— 不是「一词一题」
     const text = body.filter((s) => !/^Questions?\s+\d/i.test(s));
+    const bankOptions = bankWords.map((w) => `${w.letter}) ${w.word}`);
     passages.push({
       section: 'cloze', seq: 1, title: '选词填空', content: text.join('\n'),
-      questions: bankWords.map((w, i) => ({ qtype: 'bank', stem: String(26 + i), options: [w.word], answer: '', analysis: '' })),
+      questions: bankOptions.length
+        ? Array.from({ length: 10 }, (_, i) => ({ qtype: 'cloze', stem: String(26 + i), options: bankOptions.slice(), answer: '', analysis: '' }))
+        : [],
     });
   } else if (name === 'B') {
     // 长篇阅读：段落（A-O）+ 匹配题（36-45）

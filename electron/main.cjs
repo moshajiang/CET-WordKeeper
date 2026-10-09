@@ -54,7 +54,21 @@ CREATE TABLE IF NOT EXISTS word_freq(
   word TEXT PRIMARY KEY, total INTEGER, exams INTEGER);
 CREATE TABLE IF NOT EXISTS settings(
   key TEXT PRIMARY KEY, value TEXT);
+CREATE TABLE IF NOT EXISTS user_answer(
+  id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, question_id INTEGER,
+  choice TEXT, is_correct INTEGER, updated_at TEXT, UNIQUE(exam_id, question_id));
+CREATE TABLE IF NOT EXISTS attempt(
+  id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, submitted_at TEXT,
+  total INTEGER, correct INTEGER, score REAL, detail TEXT);
 `;
+
+// 给已存在的用户库补列（CREATE TABLE IF NOT EXISTS 不会修改既有表结构）
+function migrate() {
+  const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
+  if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
+  const qcols = q('PRAGMA table_info(question)').map((c) => c.name);
+  if (!qcols.includes('bank')) run('ALTER TABLE question ADD COLUMN bank TEXT');
+}
 
 function q(sql, params = []) {
   const stmt = db.prepare(sql);
@@ -90,6 +104,7 @@ async function initDb() {
   dbPath = userDb;
   db = fs.existsSync(userDb) ? new SQL.Database(fs.readFileSync(userDb)) : new SQL.Database();
   db.run(SCHEMA);
+  migrate();
   buildFormIndex();
   const added = syncSeedExams();
   if (added) console.log(`已从内置数据同步 ${added} 套新真题`);
@@ -488,6 +503,28 @@ function registerIpc() {
     fs.copyFileSync(dbPath, targetPath);
     return { ok: true, path: targetPath };
   });
+
+  // ---- 做题 / 交卷 / 解析 ----
+  ipcMain.handle('exam:analysis', async (_e, examId) => ensureExamAnalysis(examId));
+
+  ipcMain.handle('attempt:get', (_e, examId) => {
+    const answers = q('SELECT question_id, choice, is_correct FROM user_answer WHERE exam_id = ?', [examId]);
+    const attempt = q('SELECT * FROM attempt WHERE exam_id = ? ORDER BY id DESC LIMIT 1', [examId])[0] || null;
+    return { answers, attempt };
+  });
+
+  ipcMain.handle('attempt:submit', async (_e, examId, userAnswers) => {
+    // 客观题判分依赖正确答案；本地没有就先让 AI 生成并落库（未配置 Key 时明确返回 no_key）
+    const ens = await ensureExamAnalysis(examId);
+    if (!ens.ok) return { ok: false, error: ens.error };
+    return gradeExam(examId, userAnswers);
+  });
+
+  ipcMain.handle('attempt:clear', (_e, examId) => {
+    run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
+    persist();
+    return { ok: true };
+  });
 }
 
 function runInsertExam(data) {
@@ -502,8 +539,8 @@ function runInsertExam(data) {
     [level, year, m, s, title || `${level} ${year}.${m}`, now()]);
   const examId = q('SELECT last_insert_rowid() id')[0].id;
   for (const p of passages) {
-    run('INSERT INTO passage(exam_id, section, seq, title, content) VALUES (?,?,?,?,?)',
-      [examId, p.section || 'reading', p.seq || 1, p.title || '', p.content || '']);
+    run('INSERT INTO passage(exam_id, section, seq, title, content, translation) VALUES (?,?,?,?,?,?)',
+      [examId, p.section || 'reading', p.seq || 1, p.title || '', p.content || '', p.translation || null]);
     const pid = q('SELECT last_insert_rowid() id')[0].id;
     for (const qs of p.questions || []) {
       run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
@@ -559,6 +596,8 @@ async function aiCall(kind, text) {
   const prompts = {
     translate: `You are a professional CET exam translator. Translate the following English into natural Chinese. Output ONLY the translation.\n\n${text}`,
     grammar: `You are an English grammar teacher for Chinese CET students. Analyze the sentence below. Output in this exact format (plain text, no markdown):\n主干: <subject-verb-object core>\n从句/结构: <clause types and layers, one per line; write "无" if none>\n语法要点: <2-4 key grammar points with brief explanation in Chinese>\n\nSentence: ${text}`,
+    // 真题解析：调用方已组装完整提示词（需要文章、词库与题号上下文）
+    examAnalysis: text,
   };
   try {
     const resp = await fetch(s.api_base.replace(/\/+$/, '') + '/chat/completions', {
@@ -580,6 +619,116 @@ async function aiCall(kind, text) {
   } catch (err) {
     return { ok: false, error: 'network: ' + err.message };
   }
+}
+
+// ---- 真题解析与全文翻译：首次由 AI 生成，随后永久离线复用 ----
+// 存进 passage.translation 与 question.answer / question.analysis，
+// 所以第二次打开是纯本地读取，不再产生任何请求。
+const OBJECTIVE_SECTIONS = ['cloze', 'match', 'reading'];
+
+function buildAnalysisPrompt(passage, questions) {
+  const list = questions
+    .filter((x) => x.stem)
+    .map((x) => {
+      let opts = [];
+      try { opts = JSON.parse(x.options || '[]'); } catch { opts = []; }
+      return `${x.stem}.${opts.length ? ' 选项: ' + opts.join(' | ') : ''}`;
+    })
+    .join('\n');
+  const isChineseSource = passage.section === 'translation';
+  return [
+    '你是中国大学英语四六级（CET）命题与解析专家。下面是一篇真题材料及其题目。',
+    '只返回一个 JSON 对象（不要 markdown 代码块、不要任何多余文字），结构严格如下：',
+    '{"translation":"...","answers":[{"n":26,"answer":"A","analysis":"..."}]}',
+    '',
+    '要求：',
+    isChineseSource
+      ? '- translation：正文是中文，请给出对应的英文参考译文。'
+      : '- translation：把正文完整、通顺地译成中文，并保留原有分段。',
+    '- answer：只填一个大写字母。仔细阅读题是 A–D；选词填空与长篇阅读是 A–O。',
+    '- 选词填空：从 A–O 词库中为每个空挑一个词，每个词最多使用一次。',
+    '- analysis：60–150 字中文解析，说明为什么选它，并指出最有迷惑性的干扰项错在哪。',
+    '- 题号必须与下面给出的题号完全一致，不要增删题目。',
+    '',
+    `【题型】${passage.section}`,
+    `【正文】\n${passage.content}`,
+    list ? `\n【题目】\n${list}` : '',
+  ].join('\n');
+}
+
+function parseAiJson(content) {
+  let s = String(content || '').trim();
+  s = s.replace(/^```(?:json)?/i, '').replace(/```\s*$/, '').trim();
+  const i = s.indexOf('{');
+  const j = s.lastIndexOf('}');
+  if (i >= 0 && j > i) s = s.slice(i, j + 1);
+  return JSON.parse(s);
+}
+
+async function ensureExamAnalysis(examId) {
+  const passages = q('SELECT * FROM passage WHERE exam_id = ? ORDER BY id', [examId]);
+  const todo = [];
+  for (const p of passages) {
+    const qs = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [p.id]);
+    const needTranslation = !p.translation && OBJECTIVE_SECTIONS.includes(p.section);
+    const needAnswers = qs.some((x) => !x.answer && x.stem);
+    if (needTranslation || needAnswers) todo.push({ p, qs });
+  }
+  if (!todo.length) return { ok: true, cached: true, pending: 0 };
+
+  const s = {};
+  for (const r of q('SELECT key, value FROM settings')) s[r.key] = r.value;
+  if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key', pending: todo.length };
+
+  let generated = 0;
+  for (const { p, qs } of todo) {
+    const r = await aiCall('examAnalysis', buildAnalysisPrompt(p, qs));
+    if (!r.ok) return { ok: false, error: r.error, pending: todo.length - generated };
+    let data;
+    try {
+      data = parseAiJson(r.response.content);
+    } catch {
+      return { ok: false, error: 'bad_json', pending: todo.length - generated };
+    }
+    if (data.translation) run('UPDATE passage SET translation = ? WHERE id = ?', [String(data.translation), p.id]);
+    for (const a of data.answers || []) {
+      const key = String(a.n).replace(/\D/g, '');
+      const hit = qs.find((x) => String(x.stem).replace(/\D/g, '') === key);
+      if (!hit) continue;
+      run('UPDATE question SET answer = ?, analysis = ? WHERE id = ?',
+        [String(a.answer || '').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 2), String(a.analysis || ''), hit.id]);
+    }
+    generated++;
+    persist();
+  }
+  return { ok: true, cached: false, pending: 0, generated };
+}
+
+function gradeExam(examId, userAnswers) {
+  const ua = userAnswers || {};
+  const questions = q(
+    `SELECT q.id, q.stem, q.answer FROM question q JOIN passage p ON p.id = q.passage_id
+     WHERE p.exam_id = ? AND p.section IN ('cloze','match','reading')`,
+    [examId]
+  );
+  let correct = 0;
+  const detail = [];
+  run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
+  for (const x of questions) {
+    const choice = String(ua[x.id] || '').toUpperCase().replace(/[^A-Z]/g, '');
+    const right = String(x.answer || '').toUpperCase().replace(/[^A-Z]/g, '');
+    const isCorrect = !!choice && !!right && choice === right;
+    if (isCorrect) correct++;
+    run('INSERT INTO user_answer(exam_id, question_id, choice, is_correct, updated_at) VALUES (?,?,?,?,?)',
+      [examId, x.id, choice, isCorrect ? 1 : 0, now()]);
+    detail.push({ question_id: x.id, stem: x.stem, choice, answer: right, correct: isCorrect });
+  }
+  const total = questions.length;
+  const score = total ? Math.round((correct / total) * 1000) / 10 : 0;
+  run('INSERT INTO attempt(exam_id, submitted_at, total, correct, score, detail) VALUES (?,?,?,?,?,?)',
+    [examId, now(), total, correct, score, JSON.stringify(detail)]);
+  persist();
+  return { ok: true, total, correct, score, detail };
 }
 
 function createWindow() {

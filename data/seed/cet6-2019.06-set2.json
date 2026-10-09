@@ -17,274 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nThe dream of personalised flight is still vivid in the minds of many inventors, some developing cycle-powered craft, others 26 money into jetpacks (喷气飞行背包). However, the flying car has always remained the 27 symbol of personal transport freedom.\nSeveral companies around the world have produced 28 that can drive on roads and fly. Airbus has a futuristic modular (组件式的) concept involving a passenger capsule that can be 29 from the road-going chassis (底盘) and picked up by a helicopter-type machine.\nBut all these concepts are massively expensive, require safety certification standards for road and air, need 30 controls, involve complex folding wings and propellers, and have to be flown from air-strips. So they are likely to remain rich people’s playthings rather than practical transport solutions for the masses.\n“A car that takes off from some London street and lands in another 31 street is unlikely to happen,” says Prof. Gray, a leading aeronautical engineer. “Sky taxis are much more likely.” But that won’t stop inventors from dreaming up new ways to fly and trying to persuade investors to back their sometimes 32 schemes.\nCivilian aviation is being disrupted, not by the age-old desires for speed, romanticism and 33, but by the pressing need to respond to a changing climate. New electric engines coupled with artificial intelligence and 34 systems will contribute to a more efficient, integrated transport system that is less polluting and less noisy. That may sound simple, but as Prof. Gray says, “When I travel somewhere I like this notion that when I finish my journey I feel better than when I started it. That’s completely at 35 with how I feel today.” Now that would be progress.",
+      "content": "The dream of personalised flight is still vivid in the minds of many inventors, some developing cycle-powered craft, others 26 money into jetpacks (喷气飞行背包). However, the flying car has always remained the 27 symbol of personal transport freedom.\nSeveral companies around the world have produced 28 that can drive on roads and fly. Airbus has a futuristic modular (组件式的) concept involving a passenger capsule that can be 29 from the road-going chassis (底盘) and picked up by a helicopter-type machine.\nBut all these concepts are massively expensive, require safety certification standards for road and air, need 30 controls, involve complex folding wings and propellers, and have to be flown from air-strips. So they are likely to remain rich people’s playthings rather than practical transport solutions for the masses.\n“A car that takes off from some London street and lands in another 31 street is unlikely to happen,” says Prof. Gray, a leading aeronautical engineer. “Sky taxis are much more likely.” But that won’t stop inventors from dreaming up new ways to fly and trying to persuade investors to back their sometimes 32 schemes.\nCivilian aviation is being disrupted, not by the age-old desires for speed, romanticism and 33, but by the pressing need to respond to a changing climate. New electric engines coupled with artificial intelligence and 34 systems will contribute to a more efficient, integrated transport system that is less polluting and less noisy. That may sound simple, but as Prof. Gray says, “When I travel somewhere I like this notion that when I finish my journey I feel better than when I started it. That’s completely at 35 with how I feel today.” Now that would be progress.\nexclusively\ninnovated\nexclusively\ninnovated",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "pouring"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "prototypes"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "random"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "repressing"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "segmented"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "spectrum"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "ultimate"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "autonomous"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "detached"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "dual"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "glamour"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "imminent"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "odds"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "opposites"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "outrageous"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "pouring"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "prototypes"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "random"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "repressing"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "segmented"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "spectrum"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "ultimate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "autonomous"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "detached"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "dual"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "glamour"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "52",
-          "options": [
-            "imminent"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "53",
-          "options": [
-            "odds"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "54",
-          "options": [
-            "opposites"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "55",
-          "options": [
-            "outrageous"
+            "A) autonomous",
+            "B) detached",
+            "C) dual",
+            "D) glamour",
+            "E) imminent",
+            "F) odds",
+            "G) opposites",
+            "H) outrageous",
+            "I) pouring",
+            "J) prototypes",
+            "K) random",
+            "L) repressing",
+            "M) segmented",
+            "N) spectrum",
+            "O) ultimate"
           ],
           "answer": "",
           "analysis": ""

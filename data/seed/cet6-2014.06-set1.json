@@ -17,139 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 36 to 45 are based on the following passage.\nFor investors who desire low risk and guaranteed income, US government bonds are a secure investment because these bonds have the financial backing and full faith and credit of the federal government. Municipal bonds, also secure, are offered by local governments and often have 36 such as tax-free interest. Some may even be 37 Corporate bonds are a bit more risky.\nTwo questions often 38 first-time corporate bond investors. The first is “If I purchase a corporate bond, do I have to hold it until the maturity date?,” The answer is no. Bonds are bought and sold daily on 39 securities exchanges. However, if you decide to sell your bond before its maturity date, you’re not guaranteed to get the face value of the bond. For example, if your bond does not have 40 that make it attractive to other investors, you may be forced to sell your bond at a 41, i.e., a price less than the bond’s face value. But if your bond is highly valued by other investors, you may be able to sell it at a premium, i.e., a price above its face value. Bond prices generally 42 inversely(相反地)with current market interest rates. As interest rates go up, bond prices fall, and versa（反之亦然）. Thus, like all investments, bonds have a degree of risk.\nThe second question is “ How can I 43 the investment risk of a particular bond issue? ” Standard & Poor’s and Moody’s Investors Service rate the level of risk of many corporate and government bonds. And 44 , the higher the market risk of a bond, the higher the interest rate. Investors will invest in a bond considered risky only if the 45 return is high enough.\n注意：此部分试题请在答题卡2上作答。",
+      "content": "For investors who desire low risk and guaranteed income, US government bonds are a secure investment because these bonds have the financial backing and full faith and credit of the federal government. Municipal bonds, also secure, are offered by local governments and often have 36 such as tax-free interest. Some may even be 37 Corporate bonds are a bit more risky.\nTwo questions often 38 first-time corporate bond investors. The first is “If I purchase a corporate bond, do I have to hold it until the maturity date?,” The answer is no. Bonds are bought and sold daily on 39 securities exchanges. However, if you decide to sell your bond before its maturity date, you’re not guaranteed to get the face value of the bond. For example, if your bond does not have 40 that make it attractive to other investors, you may be forced to sell your bond at a 41, i.e., a price less than the bond’s face value. But if your bond is highly valued by other investors, you may be able to sell it at a premium, i.e., a price above its face value. Bond prices generally 42 inversely(相反地)with current market interest rates. As interest rates go up, bond prices fall, and versa（反之亦然）. Thus, like all investments, bonds have a degree of risk.\nThe second question is “ How can I 43 the investment risk of a particular bond issue? ” Standard & Poor’s and Moody’s Investors Service rate the level of risk of many corporate and government bonds. And 44 , the higher the market risk of a bond, the higher the interest rate. Investors will invest in a bond considered risky only if the 45 return is high enough.\n注意：此部分试题请在答题卡2上作答。",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "advantages"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "discount"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "insured"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "assess"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "embarrass"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "major"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "bother"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "features"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "naturally"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "conserved"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "fluctuate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "potential"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "deduction"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "indefinite"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "simultaneously"
+            "A) advantages",
+            "B) assess",
+            "C) bother",
+            "D) conserved",
+            "E) deduction",
+            "F) discount",
+            "G) embarrass",
+            "H) features",
+            "I) fluctuate",
+            "J) indefinite",
+            "K) insured",
+            "L) major",
+            "M) naturally",
+            "N) potential",
+            "O) simultaneously"
           ],
           "answer": "",
           "analysis": ""

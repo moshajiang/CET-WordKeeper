@@ -20,136 +20,231 @@
       "content": "Half of your brain stays alert and prepared for danger when you sleep in a new place, a study has revealed. This phenomenon is often __26__ to as the \"first-night-effect\". Researchers from Brown University found that a network in the left hemisphere of the brain \"remained more active\" than the network in the right side of the brain. Playing sounds into the right ears (stimulating the left hemisphere) of __27__ was more likely to wake them up than if the noises were played into their left ear.\nIt was __28__ observed that the left side of the brain was more active during deep sleep. When the researchers repeated the laboratory experiment on the second and third nights they found the left hemisphere could not be stimulated in the same way during deep sleep. The researchers explained that the study demonstrated when we are in a __29__ environment the brain partly remains alert so that humans can defend themselves against any __30__ danger.\nThe researchers believe this is the first time that the \"first-night-effect\" of different brain states has been __31__ in humans. It isn't, however, the first time it has ever been seen. Some animal __32__ also display this phenomenon. For example, dolphins, as well as other __33__ animals, shut down one hemisphere of the brain when they go to sleep. A previous study noted that dolphins always __34__ control their breathing. Without keeping the brain active while sleeping, they would probably drown. But, as the human study suggest, another reason for dolphins keeping their eyes open during sleep is that they can look out for __35__ while asleep. It also keeps their physiological processes working.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "classified"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "consciously"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "dramatically"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "exotic"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "identified"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "inherent"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "marine"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "novel"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "potential"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "predators"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "referred"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "species"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "specifically"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "varieties"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "volunteers"
+            "A) classified",
+            "B) consciously",
+            "C) dramatically",
+            "D) exotic",
+            "E) identified",
+            "F) inherent",
+            "G) marine",
+            "H) novel",
+            "I) potential",
+            "J) predators",
+            "K) referred",
+            "L) species",
+            "M) specifically",
+            "N) varieties",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""

@@ -14,7 +14,9 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const pdfDir = path.join(root, 'data', 'raw', 'pdf');
 fs.mkdirSync(pdfDir, { recursive: true });
 const repoDir = path.join(root, 'data', 'raw', 'repo');
-const fromYear = Number(process.argv[2]) || 2022;
+const fromYear = Number(process.argv.find((a) => /^\d{4}$/.test(a))) || 2022;
+// --force: 即使已解析过也重跑（改了 parse-pdf.mjs 后需要）
+const force = process.argv.includes('--force');
 const PY = process.env.PDF_PYTHON || 'C:/Users/35695/.workbuddy/binaries/python/envs/default/Scripts/python.exe';
 
 if (!fs.existsSync(path.join(repoDir, '.git'))) {
@@ -69,7 +71,7 @@ console.log(`${fromYear} 年起共 ${groups.size} 个考次待处理（候选 PD
 let ok = 0, skipped = 0, noText = 0;
 for (const [key, list] of groups) {
   const outJson = path.join(root, 'data', 'seed', `${key.replace(/^(\w+)-/, (s, p) => p.toLowerCase() + '-')}.json`);
-  if (fs.existsSync(outJson)) { skipped++; continue; }
+  if (fs.existsSync(outJson) && !force) { skipped++; continue; }
 
   let done = false;
   for (const c of list) {

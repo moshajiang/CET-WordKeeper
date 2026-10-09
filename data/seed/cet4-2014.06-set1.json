@@ -17,139 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 36 to 45 are based on the following passage.\nMany Brazilians cannot read. In 2000, a quarter of those aged 15 and older were functionally illiterate (文盲). Many 36 do not want to. Only one literate adult in three reads book. The 37 Brazilian reads 1.8 non-academic books a year, less than half the figure in Europe and the United States. In a recent survey of reading habits, Brazilians came 27th out of 30 countries. Argentines, their neighbours, 38 18th.\nThe government and businesses are all struggling in different ways to change this. On March 13 the government 39 a National Plan for Books and Reading. This seeks to boost reading, by founding libraries and financing publishers among other things.\nOne discouragement to reading is that books are 40 . Most books have small print-runs, pushing up their price.\nBut Brazilians’ indifference to books has deeper roots. Centuries of slavery meant the country’s leaders long 41 education. Primary schooling became universal only in the 1990s.\nAll this means Brazil’s book market has the biggest growth 42 in the western world.\nBut reading is a difficult habit to form. Brazilians bought fewer books in 2004, 89 million, including textbooks 43 by the government, than they did in 1991. Last year the director of Brazil’s national library 44 . He complained that he had haft the librarians he needed and termites (白蚁) had eaten much of the 45 . That ought to be a cause for national shame.",
+      "content": "Many Brazilians cannot read. In 2000, a quarter of those aged 15 and older were functionally illiterate (文盲). Many 36 do not want to. Only one literate adult in three reads book. The 37 Brazilian reads 1.8 non-academic books a year, less than half the figure in Europe and the United States. In a recent survey of reading habits, Brazilians came 27th out of 30 countries. Argentines, their neighbours, 38 18th.\nThe government and businesses are all struggling in different ways to change this. On March 13 the government 39 a National Plan for Books and Reading. This seeks to boost reading, by founding libraries and financing publishers among other things.\nOne discouragement to reading is that books are 40 . Most books have small print-runs, pushing up their price.\nBut Brazilians’ indifference to books has deeper roots. Centuries of slavery meant the country’s leaders long 41 education. Primary schooling became universal only in the 1990s.\nAll this means Brazil’s book market has the biggest growth 42 in the western world.\nBut reading is a difficult habit to form. Brazilians bought fewer books in 2004, 89 million, including textbooks 43 by the government, than they did in 1991. Last year the director of Brazil’s national library 44 . He complained that he had haft the librarians he needed and termites (白蚁) had eaten much of the 45 . That ought to be a cause for national shame.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "average"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "collection"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "distributed"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "exhibition"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "expensive"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "launched"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "named"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "neglected"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "normal"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "particularly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "potential"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "quit"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "ranked"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "simply"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "treasured"
+            "A) average",
+            "B) collection",
+            "C) distributed",
+            "D) exhibition",
+            "E) expensive",
+            "F) launched",
+            "G) named",
+            "H) neglected",
+            "I) normal",
+            "J) particularly",
+            "K) potential",
+            "L) quit",
+            "M) ranked",
+            "N) simply",
+            "O) treasured"
           ],
           "answer": "",
           "analysis": ""

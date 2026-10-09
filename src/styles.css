@@ -224,6 +224,31 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .qblock .qans { margin-top: 6px; font-size: 13px; color: #2e7d4f; }
 .qblock .qanalysis { margin-top: 4px; font-size: 13px; color: var(--muted); white-space: pre-wrap; }
 
+/* ---- 做题：选项、词库、判分标记 ---- */
+.qblock .qstem { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.qblock .qmark { font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 5px; }
+.qblock .qmark.ok { color: #1c6b3f; background: #e3f2e8; }
+.qblock .qmark.no { color: #a32d2d; background: #fbeaea; }
+
+.qblock .qopt.pick {
+  cursor: pointer; padding: 4px 10px; border-radius: 7px;
+  border: 1px solid transparent; transition: background 0.12s, border-color 0.12s;
+  margin-bottom: 3px;
+}
+.qblock .qopt.pick:hover { background: var(--accent-soft); }
+.qblock .qopt.pick.picked { background: var(--accent-soft); border-color: var(--accent); color: var(--text); font-weight: 500; }
+.qblock .qopt.pick.right { background: #e3f2e8; border-color: #2e7d4f; color: #1c6b3f; font-weight: 500; }
+.qblock .qopt.pick.wrong { background: #fbeaea; border-color: #a32d2d; color: #a32d2d; }
+
+.bank-box { background: var(--bg); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }
+.bank-list { display: flex; flex-wrap: wrap; gap: 6px; }
+.bank-chip {
+  font-size: 12.5px; font-family: Georgia, serif; padding: 2px 8px;
+  background: var(--card); border: 1px solid var(--border); border-radius: 6px;
+}
+.qblock select { margin-top: 4px; padding: 4px 8px; border-radius: 7px; border: 1px solid var(--border); font-size: 13px; background: var(--card); color: var(--text); }
+.qblock select:disabled { opacity: 0.75; }
+
 table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .wtable th { text-align: left; font-size: 12.5px; color: var(--muted); font-weight: 600; padding: 8px 10px; border-bottom: 2px solid var(--border); }
 .wtable td { padding: 9px 10px; border-bottom: 1px solid var(--border); }

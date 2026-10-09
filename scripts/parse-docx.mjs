@@ -55,7 +55,30 @@ const partKind = (p) => {
 const isSection = (p) => /^Section\s+[ABC]\b/i.test(p);
 const isDirections = (p) => /^Directions\s*:/i.test(p);
 const isQNum = (p) => /^\d{2}\./.test(p);
-const isWordBank = (p) => /^[A-O]\)\s*\S+$/.test(p);
+
+// 选词填空的词库：一份词库常被折成 2–3 行、每行 5–7 个（"A) accustomed B) acquired C) assembly …"），
+// 序号写法有 "A)" 也有 "A."；个别文档甚至是「无序号裸词表」（表格排版，还会重复一遍）。
+// 判据：把词条全摘掉后该段不该再有实质内容 —— 这样才不会把正文里的 A) 误当词库。
+const BANK_ENTRY = /([A-O])\s*[)）.．、]\s*([A-Za-z][A-Za-z'’-]*)/g;
+function bankEntries(text) {
+  const rest = String(text).replace(BANK_ENTRY, '').replace(/[\s,，、;；.．]/g, '');
+  if (rest) return null;
+  const out = [...String(text).matchAll(BANK_ENTRY)].map((m) => ({ letter: m[1], word: m[2] }));
+  return out.length ? out : null;
+}
+
+// 收集一段范围内的词库；优先用字母序号，找不到则退回「裸词表」（按字母序补 A–O）
+function collectBank(paras) {
+  const map = new Map();
+  for (const p of paras) {
+    const e = bankEntries(p);
+    if (e) for (const x of e) map.set(x.letter, x.word);
+  }
+  if (map.size >= 10) return [...map.keys()].sort().map((k) => map.get(k));
+  const words = paras.filter((p) => /^[a-z][a-z'-]*$/i.test(p)).map((p) => p.toLowerCase());
+  const uniq = [...new Set(words)];
+  return uniq.length >= 12 && uniq.length <= 20 ? uniq.sort() : [];
+}
 
 // 按 Part 分块
 const parts = [];
@@ -120,15 +143,21 @@ if (writing) {
 
 for (const sec of sections) {
   if (/^Section\s+A/i.test(sec.name)) {
-    // 选词填空：文章段 + 词库
-    const bankStart = sec.paras.findIndex((p) => isWordBank(p));
-    const bank = bankStart >= 0 ? sec.paras.slice(bankStart).filter(isWordBank).map((p) => p.replace(/^[A-O]\)\s*/, '')) : [];
-    const body = (bankStart >= 0 ? sec.paras.slice(0, bankStart) : sec.paras)
-      .filter((p) => !isDirections(p) && !/Answer\s*Sheet/i.test(p));
+    // 选词填空：正文 + 词库（词库可能占多行、每行多个词，也可能无字母序号）
+    const bank = collectBank(sec.paras);
+    const body = sec.paras.filter(
+      (p) => !bankEntries(p) && !isDirections(p) && !/Answer\s*Sheet/i.test(p) && !/^Questions\s+\d+\s+to\s+\d+/i.test(p)
+    );
+    // 模型是「10 个空共享一份 15 词词库」，不是「一个词对应一道题」。
+    // 早期实现把每个备选词当成某道题的答案（26→adequate、27→natural…），完全错位，这里修正：
+    // 每个空（26–35）的 options 都是同一份带字母序号的完整词库。
+    const bankOptions = bank.map((w, i) => `${String.fromCharCode(65 + i)}) ${w}`);
     passages.push({
       section: 'cloze', seq: 1, title: '选词填空',
       content: body.join('\n'),
-      questions: bank.map((w, i) => ({ qtype: 'bank', stem: String(26 + i), options: [w], answer: '', analysis: '' })),
+      questions: bankOptions.length
+        ? Array.from({ length: 10 }, (_, i) => ({ qtype: 'cloze', stem: String(26 + i), options: bankOptions.slice(), answer: '', analysis: '' }))
+        : [],
     });
   } else if (/^Section\s+B/i.test(sec.name)) {
     // 长篇阅读：文章段落 + 匹配题

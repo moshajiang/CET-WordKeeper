@@ -20,136 +20,231 @@
       "content": "About 23% of the global population lives in absolute poverty. In developing countries there is a low life\nexpectancy, a high infant ___26___ rate, high levels of unemployment and illiteracy, nutritional levels below\nacceptable standards and widespread disease with very little or poor quality medical assistance. Others live\n___27___ wealthy and luxurious lives and so the wealth is distributed in a very ___28___ manner. These are\nthe central problems to questions of charity though charity also includes many other areas such as assisting the\nelderly.\nWe all ___29___ when very rich people pledge to give away most of their billions, but they are usually\nleft with millions to pass on, still much more than most people would expect to earn in their lifetime. Even\ncomparatively ___30___ salaries in the west are very high when compared globally. Someone on £20,000\ncould easily afford to give away £ 2,000 per year and still have plenty to live on plus some luxuries.\nMost people agree that giving to charity is morally ___31___ but charitable behaviour tends to be regarded\nas above and beyond the call of duty. Some argue, however, that charitable behaviour is morally required. This\nmeans that to fail to behave charitably would be wrong. The majority of arguments in this vein refer to giving\naid to poorer nations but they may also refer to giving time within one's ___32___ community. Arguments tend\nto place different requirements on people in different income brackets and ___33___ entirely people who are\nmerely making ends meet. Some argue that people should all contribute a certain percentage of their earnings. I\n2024年12月英语六级真题第3套 第2页，共7页\nwill ___34___ together all those arguments that place a moral requirement on people to give to charity, despite\nthe fact that there is wide disagreement as to the ___35___ of that moral requirement.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "applaud"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "moderate"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "casualty"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "mortality"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "exclude"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "overt"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "extent"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "praiseworthy"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "group"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "probe"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "hierarchical"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "sceptically"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "immediate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "unequal"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "incredibly"
+            "A) applaud",
+            "B) casualty",
+            "C) exclude",
+            "D) extent",
+            "E) group",
+            "F) hierarchical",
+            "G) immediate",
+            "H) incredibly",
+            "I) moderate",
+            "J) mortality",
+            "K) overt",
+            "L) praiseworthy",
+            "M) probe",
+            "N) sceptically",
+            "O) unequal"
           ],
           "answer": "",
           "analysis": ""

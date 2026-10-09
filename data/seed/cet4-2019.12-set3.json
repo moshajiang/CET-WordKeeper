@@ -17,139 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nMillions of people travel by plane every single day. If you’re planning on being one of them soon, you might not be looking forward to the ___26___ feeling air travel often leaves you with.\nBesides the airport crowds and stress, travelling at a high altitude has real effects on the body. Although the pressure of the cabin is ___27___ to prevent altitude sickness, you could still ___28___sleepiness or a headache. The lower oxygen pressure found in an aircraft cabin is ___29___ to that at 6,000-8,000 feet of altitude. A drop in oxygen pressure can cause headaches in certain ___30___. To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.\nAirplane food might not really be as tasteless as you ___31___ thought. The air you breathe in a plane dries out your mouth and nose, which can affect your sense of taste. Perception of sweet and salty foods dropped by almost 30 percent in a simulation of air travel. However, you can make your taste buds active again by drinking water. A dry mouth may ___32___ taste sensitivity, but taste is restored by drinking fluids.\nAlthough in-flight infections ___33___ in dry environments like airplanes, your risk of getting sick from an airplane is actually low because of the air ___34___ used. Unless you’re sitting next to someone who is coughing or sneezing, you shouldn’t worry too much about getting sick. However, bacteria have been shown to live on cabin surfaces, so wash your hands ___35___.",
+      "content": "Millions of people travel by plane every single day. If you’re planning on being one of them soon, you might not be looking forward to the ___26___ feeling air travel often leaves you with.\nBesides the airport crowds and stress, travelling at a high altitude has real effects on the body. Although the pressure of the cabin is ___27___ to prevent altitude sickness, you could still ___28___sleepiness or a headache. The lower oxygen pressure found in an aircraft cabin is ___29___ to that at 6,000-8,000 feet of altitude. A drop in oxygen pressure can cause headaches in certain ___30___. To help prevent headaches, drink plenty of water, and avoid alcohol and coffee.\nAirplane food might not really be as tasteless as you ___31___ thought. The air you breathe in a plane dries out your mouth and nose, which can affect your sense of taste. Perception of sweet and salty foods dropped by almost 30 percent in a simulation of air travel. However, you can make your taste buds active again by drinking water. A dry mouth may ___32___ taste sensitivity, but taste is restored by drinking fluids.\nAlthough in-flight infections ___33___ in dry environments like airplanes, your risk of getting sick from an airplane is actually low because of the air ___34___ used. Unless you’re sitting next to someone who is coughing or sneezing, you shouldn’t worry too much about getting sick. However, bacteria have been shown to live on cabin surfaces, so wash your hands ___35___.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "adjusted"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "particular"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "channels"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "primarily"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "equivalent"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "reduce"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "experience"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "renovated"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "filters"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "smooth"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "frequently"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "thrive"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "individuals"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "unpleasant"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "originally"
+            "A) adjusted",
+            "B) channels",
+            "C) equivalent",
+            "D) experience",
+            "E) filters",
+            "F) frequently",
+            "G) individuals",
+            "H) originally",
+            "I) particular",
+            "J) primarily",
+            "K) reduce",
+            "L) renovated",
+            "M) smooth",
+            "N) thrive",
+            "O) unpleasant"
           ],
           "answer": "",
           "analysis": ""

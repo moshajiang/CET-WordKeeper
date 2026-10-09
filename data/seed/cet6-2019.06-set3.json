@@ -17,274 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nSteel is valued for its reliability, but not when it gets cold. Most forms of steel 26 become brittle (脆的) at temperatures below about -25℃ unless they are mixed with other metals. Now, though, a novel type of steel has been developed that resists 27 at much lower temperatures, while retaining its strength and toughness—without the need for expensive 28.\nSteel’s fragility at low temperatures first became a major concern during the Second World War. After German U-boats torpedoed (用鱼雷攻击) numerous British ships, a 2700-strong fleet of cheap-and-cheerful “Liberty ships” was introduced to replace the lost vessels, providing a lifeline for the 29 British. But the steel shells of hundreds of the ships 30 in the icy north Atlantic, and 12 broke in half and sank.\nBrittleness remains a problem when building steel structures in cold conditions, such as oil rigs in the Arctic. So scientists have 31 to find a solution by mixing it with expensive metals such as nickel.\nYuuji Kimura and colleagues in Japan tried a more physical 32. Rather than adding other metals, they developed a complex mechanical process involving repeated heating and very severe mechanical deformation, known as temp forming.\nThe resulting steel appears to achieve a combination of strength and toughness that is 33 to that of modem steels that are very rich in alloy content and, therefore, very expensive.\nKimura’s team intends to use its tempformed steel to make ultra-high strength parts, such as bolts. They hope to reduce both the number of 34 needed in a construction job and their weight—by replacing solid supports with 35 tubes, for example. This could reduce the amount of steel needed to make everything from automobiles to buildings and bridges.",
+      "content": "Steel is valued for its reliability, but not when it gets cold. Most forms of steel 26 become brittle (脆的) at temperatures below about -25℃ unless they are mixed with other metals. Now, though, a novel type of steel has been developed that resists 27 at much lower temperatures, while retaining its strength and toughness—without the need for expensive 28.\nSteel’s fragility at low temperatures first became a major concern during the Second World War. After German U-boats torpedoed (用鱼雷攻击) numerous British ships, a 2700-strong fleet of cheap-and-cheerful “Liberty ships” was introduced to replace the lost vessels, providing a lifeline for the 29 British. But the steel shells of hundreds of the ships 30 in the icy north Atlantic, and 12 broke in half and sank.\nBrittleness remains a problem when building steel structures in cold conditions, such as oil rigs in the Arctic. So scientists have 31 to find a solution by mixing it with expensive metals such as nickel.\nYuuji Kimura and colleagues in Japan tried a more physical 32. Rather than adding other metals, they developed a complex mechanical process involving repeated heating and very severe mechanical deformation, known as temp forming.\nThe resulting steel appears to achieve a combination of strength and toughness that is 33 to that of modem steels that are very rich in alloy content and, therefore, very expensive.\nKimura’s team intends to use its tempformed steel to make ultra-high strength parts, such as bolts. They hope to reduce both the number of 34 needed in a construction job and their weight—by replacing solid supports with 35 tubes, for example. This could reduce the amount of steel needed to make everything from automobiles to buildings and bridges.\nexclusively\ninnovated\nexclusively\ninnovated",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "cracked"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "fractures"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "hollow"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "relevant"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "reshuffled"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "strived"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "violent"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "abruptly"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "additives"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "approach"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "ardently"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "besieged"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "channel"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "comparable"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "components"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "cracked"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "fractures"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "hollow"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "relevant"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "reshuffled"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "strived"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "violent"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "abruptly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "additives"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "approach"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "ardently"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "52",
-          "options": [
-            "besieged"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "53",
-          "options": [
-            "channel"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "54",
-          "options": [
-            "comparable"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "55",
-          "options": [
-            "components"
+            "A) abruptly",
+            "B) additives",
+            "C) approach",
+            "D) ardently",
+            "E) besieged",
+            "F) channel",
+            "G) comparable",
+            "H) components",
+            "I) cracked",
+            "J) fractures",
+            "K) hollow",
+            "L) relevant",
+            "M) reshuffled",
+            "N) strived",
+            "O) violent"
           ],
           "answer": "",
           "analysis": ""

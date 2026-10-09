@@ -17,274 +17,234 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Questions 26 to 35 are based on the following passage.\nIt was perhaps when my parents—who also happen to be my housemates—left to go travelling for a couple of months recently that it 26 on me why I had not yet left the family home.\nIt wasn't that I relied on them for 27 reasons, or to keep my life in order, or to ease the chaos of the home. These days, I rely on them for their company.\nI missed coming home and talking about my day at work, and I missed being able to read their faces and sense how their day was. I missed having unique 28 into tiny details that make a life.\nWhile the conversation about young adults staying longer at home is 29 by talk of laziness, of dependence, of an inability for young people to pull themselves together, 30 do we talk of the way, in my case at least, my relationship with my parents has 31 strengthened the longer we have lived together.\nOver the years the power dynamic has changed and is no longer defined by one being the giver and another, the taker. So, what does this say for our relationships within the family home?\nAccording to psychologist Sabina Read, there are “some very positive possible 32 when adult children share the family home”, noting the “parent-child relationship may indeed strengthen and mature” in the process.\nBut, she notes, a strong 33 doesn't simply come with time. “The many changing factors of the relationship need to be acknowledged, rather than hoping that the mere passage of time will 34 connect parents to their adult children. It's important to acknowledge that the relationship parameters have changed to avoid falling back into 35 from the teen years.",
+      "content": "It was perhaps when my parents—who also happen to be my housemates—left to go travelling for a couple of months recently that it 26 on me why I had not yet left the family home.\nIt wasn't that I relied on them for 27 reasons, or to keep my life in order, or to ease the chaos of the home. These days, I rely on them for their company.\nI missed coming home and talking about my day at work, and I missed being able to read their faces and sense how their day was. I missed having unique 28 into tiny details that make a life.\nWhile the conversation about young adults staying longer at home is 29 by talk of laziness, of dependence, of an inability for young people to pull themselves together, 30 do we talk of the way, in my case at least, my relationship with my parents has 31 strengthened the longer we have lived together.\nOver the years the power dynamic has changed and is no longer defined by one being the giver and another, the taker. So, what does this say for our relationships within the family home?\nAccording to psychologist Sabina Read, there are “some very positive possible 32 when adult children share the family home”, noting the “parent-child relationship may indeed strengthen and mature” in the process.\nBut, she notes, a strong 33 doesn't simply come with time. “The many changing factors of the relationship need to be acknowledged, rather than hoping that the mere passage of time will 34 connect parents to their adult children. It's important to acknowledge that the relationship parameters have changed to avoid falling back into 35 from the teen years.\nexclusively\ninnovated\nexclusively\ninnovated",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "magically"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "outcomes"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "patterns"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "rarely"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "saturated"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "stereotypes"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "undoubtedly"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "bond"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "contemplated"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "dawned"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "hierarchy"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "insight"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "legislative"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "leverage"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "logistical"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "41",
-          "options": [
-            "magically"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "42",
-          "options": [
-            "outcomes"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "43",
-          "options": [
-            "patterns"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "44",
-          "options": [
-            "rarely"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "45",
-          "options": [
-            "saturated"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "46",
-          "options": [
-            "stereotypes"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "47",
-          "options": [
-            "undoubtedly"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "48",
-          "options": [
-            "bond"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "49",
-          "options": [
-            "contemplated"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "50",
-          "options": [
-            "dawned"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "51",
-          "options": [
-            "hierarchy"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "52",
-          "options": [
-            "insight"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "53",
-          "options": [
-            "legislative"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "54",
-          "options": [
-            "leverage"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "55",
-          "options": [
-            "logistical"
+            "A) bond",
+            "B) contemplated",
+            "C) dawned",
+            "D) hierarchy",
+            "E) insight",
+            "F) legislative",
+            "G) leverage",
+            "H) logistical",
+            "I) magically",
+            "J) outcomes",
+            "K) patterns",
+            "L) rarely",
+            "M) saturated",
+            "N) stereotypes",
+            "O) undoubtedly"
           ],
           "answer": "",
           "analysis": ""

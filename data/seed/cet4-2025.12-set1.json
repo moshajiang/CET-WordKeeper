@@ -20,136 +20,231 @@
       "content": "People tend to want as many choices as possible. They believe this will maximize their ___26___ of making the best\ndecision. But research shows that, when it comes to actually making a ___27___ from all of these choices, people can become\n___28___ and avoid making a decision altogether. Even worse, when people finally do decide, they are generally less satisfied\nwith their decision and feel more regretful over whatever choice they made.\nWhy does this happen? Research shows that when people choose from many options, they ___29___ more in the decision,\nbut feel less confident in their ability to decide well. In other words, when we are ___30___ with more choices, making the\n“right” or “correct” decision begins to feel more ___31___ and, at the same time, more difficult to do. This may contribute to\nthe deep fear that we will make the wrong decision.\nHow can we solve this problem? I believe this fear could be tempered by putting decisions into perspective. It might help\nto remember that many of the choices you make, such as what to have for lunch, will not ___32___ much in the future and\nthat, even more important choices, like accepting a new job, can ___33___ be changed. It could also help to ___34___ these\nsituations with clear guideline s and ideas of what you want from the ___35___ of options, which can narrow the possible\nchoices, and also make you more confident about your ability to make the right decision.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "approximately"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "matter"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "case"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "presented"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "chance"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "range"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "confused"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "regular"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "crucial"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "seize"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "deposited"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "selection"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "enter"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "ultimately"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "invest"
+            "A) approximately",
+            "B) case",
+            "C) chance",
+            "D) confused",
+            "E) crucial",
+            "F) deposited",
+            "G) enter",
+            "H) invest",
+            "I) matter",
+            "J) presented",
+            "K) range",
+            "L) regular",
+            "M) seize",
+            "N) selection",
+            "O) ultimately"
           ],
           "answer": "",
           "analysis": ""

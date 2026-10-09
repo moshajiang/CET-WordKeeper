@@ -20,136 +20,231 @@
       "content": "Let's all stop judging people who talk to themselves. New research says that those who can't seem to keep their inner monologues (独白) in are actually more likely to stay on task, remain __26__ better and show improved perception capabilities. Not bad, really, for some extra muttering.\nAccording to a series of experiments published in the Quarterly Journal of Experimental Psychology by professors Gary Lupyan and Daniel Swignley, the act of using verbal clues to __27__ mental pictures helps people function quicker.\nIn one experiment, they showed pictures of various objects to twenty __28__ and asked them to find just one of those, a banana. Half were __29__ to repeat out loud what they were looking for and the other half kept their lips __30__. Those who talked to themselves found the banana slightly faster than those who didn't, the researchers say. In other experiments, Lupyan and Swignley found that __31__ the name of a common product when on the hunt for it helped quicken someone's pace, but talking about uncommon items showed no advantage and slowed you down.\nCommon research has long held that talking themselves through a task helps children learn, although doing so when you've __32__ matured is not a great sign of __33__. The two professors hope to refute that idea, __34__ that just as when kids walk themselves through a process, adults can benefit from using language not just to communicate, but also to help \"augment thinking\".\nOf course, you are still encouraged to keep the talking at library tones and, whatever you do, keep the information you share simple, like a grocery list. At any __35__, there's still such a thing as too much information.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "apparently"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "arrogance"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "brilliance"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "claiming"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "dedicated"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "focused"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "incur"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "instructed"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "obscurely"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "sealed"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "spectators"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "trigger"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "uttering"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "volume"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "volunteers"
+            "A) apparently",
+            "B) arrogance",
+            "C) brilliance",
+            "D) claiming",
+            "E) dedicated",
+            "F) focused",
+            "G) incur",
+            "H) instructed",
+            "I) obscurely",
+            "J) sealed",
+            "K) spectators",
+            "L) trigger",
+            "M) uttering",
+            "N) volume",
+            "O) volunteers"
           ],
           "answer": "",
           "analysis": ""

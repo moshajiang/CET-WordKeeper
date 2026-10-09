@@ -17,81 +17,8 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Virtually every activity that entails or facilitates in-person human interaction seems to be in the midst of a total meltdown as the coronavirus (冠状病毒)outbreak erases Americans’ desire to travel. Amtrak says bookings are down 50 percent and cancelations are up 300 percent. Hotels in San Francisco are experiencing 26 rates between 70 and 80 percent. Broadway goes dark on Thursday night. Universities, now emptying their campuses, have never tried online learning on this 27 _. White-collar companies like Amazon, Apple, and the New York Times are asking employees to work from home for the 28 future.\nBut what happens after the coronavirus?\nIn some ways, the answer is: All the old normal stuff. The pandemic(大流行病)will take lives, 29 economies and destroy routines, but it will pass. Americans will never stop going to basketball games. They won’t stop going on vacation. They’ll meet to do business. No decentralizing technology so far — not telephones, not television, and not the internet — has dented that human desire to shake hands, despite technologists’ 30 to the contrary.\nYet there are real reasons to think that things will not return to the way they were last week. Small 31 create small societal shifts; big ones change things for good. The New York transit strike of 1980 is 32 with prompting several long-term changes in the city, including bus and bike lanes, and women wearing sports shoes to work. The Spanish flu pandemic of 1918 prompted the development of national health care in Europe.\nHere and now, this might not even be a question of 33 . It’s not clear that the cruise industry will 34 . Or that public transit won’t go broke without 35 assistance. The infrastructure might not even be in place to do what we were doing in 2019.",
-      "questions": [
-        {
-          "qtype": "bank",
-          "stem": "26",
-          "options": [
-            "credentialsI)scale"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "27",
-          "options": [
-            "creditedJ)strangle"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "28",
-          "options": [
-            "cumulativeK)subtle"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "29",
-          "options": [
-            "disruptionsL)summoned"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "30",
-          "options": [
-            "federalM)survive"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "31",
-          "options": [
-            "foreseeableN)vacancy"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "32",
-          "options": [
-            "predictionsO)wedge"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "33",
-          "options": [
-            "preference"
-          ],
-          "answer": "",
-          "analysis": ""
-        }
-      ]
+      "content": "Virtually every activity that entails or facilitates in-person human interaction seems to be in the midst of a total meltdown as the coronavirus (冠状病毒)outbreak erases Americans’ desire to travel. Amtrak says bookings are down 50 percent and cancelations are up 300 percent. Hotels in San Francisco are experiencing 26 rates between 70 and 80 percent. Broadway goes dark on Thursday night. Universities, now emptying their campuses, have never tried online learning on this 27 _. White-collar companies like Amazon, Apple, and the New York Times are asking employees to work from home for the 28 future.\nBut what happens after the coronavirus?\nIn some ways, the answer is: All the old normal stuff. The pandemic(大流行病)will take lives, 29 economies and destroy routines, but it will pass. Americans will never stop going to basketball games. They won’t stop going on vacation. They’ll meet to do business. No decentralizing technology so far — not telephones, not television, and not the internet — has dented that human desire to shake hands, despite technologists’ 30 to the contrary.\nYet there are real reasons to think that things will not return to the way they were last week. Small 31 create small societal shifts; big ones change things for good. The New York transit strike of 1980 is 32 with prompting several long-term changes in the city, including bus and bike lanes, and women wearing sports shoes to work. The Spanish flu pandemic of 1918 prompted the development of national health care in Europe.\nHere and now, this might not even be a question of 33 . It’s not clear that the cruise industry will 34 . Or that public transit won’t go broke without 35 assistance. The infrastructure might not even be in place to do what we were doing in 2019.\nA)credentialsI)scale\nB)creditedJ)strangle\nC)cumulativeK)subtle\nD)disruptionsL)summoned\nE)federalM)survive\nF)foreseeableN)vacancy\nG)predictionsO)wedge",
+      "questions": []
     },
     {
       "section": "match",

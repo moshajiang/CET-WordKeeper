@@ -20,136 +20,231 @@
       "content": "When Toni Morrison died in 2019, the world lost one of its most influential authors. But Morrison was not an early success.\nHer first novel was not published until she was 39, and her last appeared when she was 84. And Morrison was not ___26___\nin this regard. Numerous writers produce masterpieces well into their 70s and beyond. Such ___27___ accomplishments\nhighlight an important point. Our capacity to speak, write and learn new vocabulary does not seem to ___28___ with age. Our\neyesight may dim and our recall may weaken, but by comparison, our ability to produce and to ___29___ language is well\npreserved into older adulthood.\nIndeed, the latest research that has emerged on language and aging shows that language mastery is a ___30___ that we begin\nas infants and continue on for the rest of our lives. Some aspects of our language abilities, such as our knowledge of word\nmeanings, ___31___ improve during middle and late adulthood. One study, for example, found that adults over sixty had an\naverage vocabulary size of over 21,000 words. The researchers also studied a ___32___ of college students and found that\ntheir average vocabulary contained ___33___ 16,000 words. In another study, older adults, with an average age of 75,\n___34___ better than participants in their youth or middle years on tasks that required them to determine the meaning of\nwords. Thus, language seems to be a skill that, contrary to what many might ___35___, does not weaken with age.",
       "questions": [
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "26",
           "options": [
-            "actually"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "27",
           "options": [
-            "literary"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "28",
           "options": [
-            "approximately"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "29",
           "options": [
-            "performed"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "30",
           "options": [
-            "assume"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "31",
           "options": [
-            "rarely"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "32",
           "options": [
-            "component"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "33",
           "options": [
-            "sample"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "34",
           "options": [
-            "comprehend"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""
         },
         {
-          "qtype": "bank",
+          "qtype": "cloze",
           "stem": "35",
           "options": [
-            "undermined"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "36",
-          "options": [
-            "deteriorate"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "37",
-          "options": [
-            "unique"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "38",
-          "options": [
-            "equivalent"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "39",
-          "options": [
-            "unit"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "40",
-          "options": [
-            "journey"
+            "A) actually",
+            "B) approximately",
+            "C) assume",
+            "D) component",
+            "E) comprehend",
+            "F) deteriorate",
+            "G) equivalent",
+            "H) journey",
+            "I) literary",
+            "J) performed",
+            "K) rarely",
+            "L) sample",
+            "M) undermined",
+            "N) unique",
+            "O) unit"
           ],
           "answer": "",
           "analysis": ""

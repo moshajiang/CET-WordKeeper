@@ -17,81 +17,8 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Social distancing is putting people out of work, canceling school and tanking the stock market. It has been 26 by fear, and it is creating even more fear as money problems and uncertainty grow. However, at its core is love, and a sacrifice to protect those most 27 to the coronavirus (冠状病毒)effects — the elderly, people with compromised immune systems, and those whose life-saving resources would be used up by a 28 epidemic.\nAmericans make life-saving decisions every day as a matter of course. We cut food into bite-sized pieces, we wear seatbelts, and we take care not to exceed the speed limit. But social distancing is 29 in that it is completely self-sacrificing. Those who will benefit may be the elderly relatives of the 30 person we didn’t pass in Starbucks, on the subway, or in the elevator.\nSocial distancing is millions of people making hundreds of sacrifices to keep the elderly alive. It doesn’t include the 31 to run from society or make an excuse to avoid one’s obligations — such as life-saving medical work or the parental obligation to buy groceries. What it does include is applying love through caution. And in doing so, it offers an 32 opportunity for those who care about the elderly to find new ways to love them.\nIf we’re not 33 as much in our normal work or school, we have extra time to call parents and grandparents. We can also ask elderly relatives how to best support them 34 and use our sacrifices as an opportunity to bring us, our community and the world 35 .",
-      "questions": [
-        {
-          "qtype": "bank",
-          "stem": "26",
-          "options": [
-            "amazingI)sentimentally"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "27",
-          "options": [
-            "closerJ)spiritually"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "28",
-          "options": [
-            "drivenK)temptations"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "29",
-          "options": [
-            "engagedL)thriftier"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "30",
-          "options": [
-            "malignantM)tickled"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "31",
-          "options": [
-            "oppressingN)unique"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "32",
-          "options": [
-            "premisesO)vulnerable"
-          ],
-          "answer": "",
-          "analysis": ""
-        },
-        {
-          "qtype": "bank",
-          "stem": "33",
-          "options": [
-            "random"
-          ],
-          "answer": "",
-          "analysis": ""
-        }
-      ]
+      "content": "Social distancing is putting people out of work, canceling school and tanking the stock market. It has been 26 by fear, and it is creating even more fear as money problems and uncertainty grow. However, at its core is love, and a sacrifice to protect those most 27 to the coronavirus (冠状病毒)effects — the elderly, people with compromised immune systems, and those whose life-saving resources would be used up by a 28 epidemic.\nAmericans make life-saving decisions every day as a matter of course. We cut food into bite-sized pieces, we wear seatbelts, and we take care not to exceed the speed limit. But social distancing is 29 in that it is completely self-sacrificing. Those who will benefit may be the elderly relatives of the 30 person we didn’t pass in Starbucks, on the subway, or in the elevator.\nSocial distancing is millions of people making hundreds of sacrifices to keep the elderly alive. It doesn’t include the 31 to run from society or make an excuse to avoid one’s obligations — such as life-saving medical work or the parental obligation to buy groceries. What it does include is applying love through caution. And in doing so, it offers an 32 opportunity for those who care about the elderly to find new ways to love them.\nIf we’re not 33 as much in our normal work or school, we have extra time to call parents and grandparents. We can also ask elderly relatives how to best support them 34 and use our sacrifices as an opportunity to bring us, our community and the world 35 .\nA)amazingI)sentimentally\nB)closerJ)spiritually\nC)drivenK)temptations\nD)engagedL)thriftier\nE)malignantM)tickled\nF)oppressingN)unique\nG)premisesO)vulnerable",
+      "questions": []
     },
     {
       "section": "match",
