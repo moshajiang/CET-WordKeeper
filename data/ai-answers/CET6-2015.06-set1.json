@@ -1,0 +1,206 @@
+{
+ "level": "CET6",
+ "year": 2015,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "创新，作为进步的灵丹妙药，一直让人们付出失业的代价。在工业革命中，手工织布工被机械织机淘汰。在过去30年里，数字革命已经取代了许多支撑20世纪中产阶级生活的中等技能工作。打字员、售票员、银行出纳员以及许多生产线上的工作都像织布工一样被舍弃了。\n对于那些相信技术进步让世界变得更美好的人来说，这种破坏是日益繁荣的自然组成部分。尽管创新淘汰了一些工作，但它也创造了新的更好的工作，因为一个更具生产力的社会变得更富裕，其更富有的居民需要更多的商品和服务。一百年前，三分之一的美国工人受雇于农场。如今，不到2%的他们生产出多得多的食物。从土地上解放出来的数百万人并没有失业，而是随着经济变得更加复杂而找到了报酬更高的工作。如今，秘书的数量已经减少，但计算机程序员和网页设计师却越来越多。\n乐观仍然是正确的出发点，但对工人来说，技术的扰乱效应可能比它的好处显现得更快。即使新工作和美妙的产品出现，短期内收入差距将会扩大，造成巨大的社会混乱，甚至可能改变政治。技术的影响将像一场龙卷风，首先冲击富裕世界，但最终也会席卷较贫穷的国家。没有哪个政府对此做好了准备。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "N",
+     "analysis": "语法：were ___ aside 需要过去分词作谓语，构成被动语态。搭配：swept aside 是固定短语，意为“被扫到一边，被淘汰”。语义：机械织机使手工织布工被淘汰，符合上下文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "语法：has ___ 需要过去分词构成现在完成时。搭配：displace jobs 意为取代工作。语义：数字革命取代了许多中等技能工作，与后文“dispensed with”呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "I",
+     "analysis": "语法：rising ___ 需要名词作宾语。搭配：rising prosperity 意为日益繁荣。语义：这种破坏是日益繁荣的自然组成部分，后文说明创新创造新工作使社会更富有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "H",
+     "analysis": "语法：more ___ society 需要形容词修饰 society。搭配：productive society 意为生产力更高的社会。语义：更具生产力的社会变得更富裕，居民需求更多。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "语法：was ___ on a farm 需要形容词或过去分词作表语。搭配：be employed on a farm 意为受雇于农场。语义：一百年前三分之一美国工人受雇于农场。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "语法：were not rendered ___ 中 rendered 后接形容词作宾语补足语。搭配：render sb jobless 意为使某人失业。语义：从土地解放出来的人并未失业，而是找到更好的工作。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "语法：has ___ 需要过去分词构成现在完成时。搭配：the pool of secretaries has shrunk 意为秘书人才库缩小。语义：秘书数量减少，与后文程序员和设计师增多形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "A",
+     "analysis": "语法：its ___ 需要名词，作介词 than 的宾语。搭配：faster than its benefits 意为比其好处更快。语义：技术的扰乱效应可能比其好处更快显现，与后文“短期内收入差距扩大”呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "语法：Technology's ___ 需要名词。搭配：technology's impact 意为技术的影响。语义：技术的影响像龙卷风，先后冲击富裕和贫穷国家。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "D",
+     "analysis": "语法：but ___ sweeping 中空格在 but 之后，修饰现在分词短语，需要副词。搭配：eventually 意为最终。语义：首先冲击富裕世界，但最终也会席卷贫穷国家。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "当合适的人在合适的时机担任合适的职位时，其影响力会大大增强。珍妮特·耶伦目前就处于这样的位置，她有望在一月份被确认为美联储下一任主席。如果你像许多人一样认为失业是当今主要的经济和社会问题，那么认为耶伦是眼下世界上最有权势的人并不夸张。在2008年金融危机以及随后的衰退和复苏过程中，各国央行扮演了最后刺激者的角色，通过大规模购买资产向全球经济注入巨额资金。耶伦曾任美联储副主席，是美联储3.8万亿美元注资计划的主要设计者之一。作为以劳动力市场开创性研究闻名的明星经济学家，耶伦在危机初期就曾对次级债危机发出警告，堪称预言家。现在，她的任务将是让美联储和市场退出史上规模最大、最非常规的货币计划，同时又不破坏脆弱的经济复苏。好消息是，现年67岁的耶伦特别适合应对这些挑战。她对金融市场有敏锐的理解，深知市场的不完善之处，并坚信人类的苦难与失业的关系比其他任何因素都更密切。一些专家担心耶伦会倾向于追求降低失业率而忽视通货膨胀。但由于工资仍然相对停滞，经济日益分化为富人和长期失业者，更多人担心的是相反的问题，即会加剧经济问题的通货紧缩。无论如何，这位即将上任的美联储主席在逐步结束刺激政策时必须小心把握分寸。退出步伐必须足够平稳，以去除泡沫、让市场回归现实，但又不能太快以至于引发另一场信贷危机。与许多前任美联储领导人不同，耶伦并不认同金融业所谓应让其自行监管的主张。她始终清楚美联储在金融监管方面过于宽松。耶伦可能会在将失业率降至6%以下、稳定市场并确保复苏更具包容性和稳健性之后，立即着手解决这一问题。正如普林斯顿大学教授艾伦·布林德所说：“她绝顶聪明，逻辑严密，既愿意争论又善于倾听。她能在不引起敌意的情况下说服他人。”作为全球经济新的掌权者，在应对最棘手的问题时，所有这些品质都将派上用场。",
+   "questions": [
+    {
+     "stem": "56. What do many people think is the biggest problem facing Janet Yellen?",
+     "answer": "C",
+     "analysis": "文章第一段明确指出，许多人认为失业是当今主要的经济和社会问题（“unemployment is the major economic and social concern of our day”），因此耶伦面临的最大问题就是失业。选项A、B、D均未在文中作为多数人认定的最大问题提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "57. What did Yellen help the Fed do to tackle the 2008 financial crisis?",
+     "answer": "D",
+     "analysis": "第二段提到耶伦是美联储3.8万亿美元“注资”计划的主要设计者之一，而前文说明央行通过购买资产向全球经济注入巨额资金，因此她帮助美联储通过资产购买向市场注入流动性。其他选项如抑制通胀、去泡沫、帮助金融机构均与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "58.What is a greater concern of the general public?",
+     "answer": "B",
+     "analysis": "第三段先提到一些专家担心耶伦会忽视通胀，但随后用“more people worry about the opposite, deflation”表明更多公众担心的是通货紧缩。因此B正确；A、C、D未被提及为更普遍的担忧。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "59. What is Yellen likely to do in her position as the Fed chief?",
+     "answer": "C",
+     "analysis": "最后部分指出耶伦不认同金融业自我监管，且认为美联储对金融监管过于宽松，“likely to address the issue”中的issue即指加强金融监管。因此她可能收紧金融监管，对应C；其他选项文中未体现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "60. How does Alan Blinder portray Yellen?",
+     "answer": "A",
+     "analysis": "布林德评价耶伦“能说服人而不引起敌意”，说明她具有很强的说服力。其他选项如自信、最伟大经济学家、史上最有权势美联储主席均未在布林德的话中体现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "为什么《蒙娜丽莎》脱颖而出\n\n[A] 你是否曾爱上一部小说，却惊讶地发现它不在伟大书籍的名单上？或者绕着一座被誉为经典的雕塑走一圈，却苦苦看不出它有什么特别之处？如果是这样，你很可能思考过心理学家詹姆斯·卡廷问自己的问题：一件艺术品是如何被认为是伟大的？\n\n[B] 直觉上的答案是，有些艺术品就是伟大：具有内在的优越品质。那些在美术馆占据最佳位置、在课堂上被讲授、在书中被复制的画作，是随着时间推移证明了自身艺术价值的作品。如果你看不出它们更优越，那是你的问题。这是一个令人敬畏的简洁解释。但一些社会科学家一直在对此提出尖锐的问题，指出艺术名作目录可能不过是石化的历史偶然。\n\n[C] 康奈尔大学教授卡廷想知道，一种被称为“纯粹曝光效应”的心理机制是否在决定哪些画作登上文化排行榜顶端方面起了作用。卡廷设计了一个实验来验证他的直觉。在一门讲座课程中，他定期向本科生展示印象派作品，每次两秒钟。其中一些画作是经典作品，出现在艺术史书籍中。另一些则不太知名，但质量相当。这些不太知名的作品被展示的频率是经典作品的四倍。之后，学生们更喜欢这些作品，而对照组的学生则最喜欢经典作品。卡廷的学生之所以更喜欢那些画作，仅仅是因为他们看得更多。\n\n[D] 卡廷认为他的实验为经典如何形成提供了线索。他指出，如今被复制最多的印象派作品，往往在19世纪末被五六个富有且有影响力的收藏家买下。这些人的偏好赋予某些作品声望，使这些作品更有可能被挂在美术馆并收录在画册中。名声代代相传，并在此过程中因纯粹曝光效应而获得动力。人们接触得越多，就越喜欢；越喜欢，它就越频繁地出现在书籍、海报和大型展览中。与此同时，学者和批评家为其卓越地位创造了复杂的理由。毕竟，不仅仅是大众倾向于更高评价他们更常看到的东西。正如沃霍尔和达米恩·赫斯特等当代艺术家所领悟的，批评家的赞誉与宣传深深交织在一起。卡廷认为：“在纯粹曝光效应方面，学者与公众并无不同。”\n\n[E] 卡廷描述的过程让人想起社会学家邓肯·沃茨所称的“累积优势”原则：一旦某事物变得流行，它往往会变得更加流行。几年前，受雇于微软研究社交网络动态的沃茨，在另一个巴黎博物馆有过与卡廷类似的经历。在卢浮宫排队观看防弹玻璃箱中恒温保护的《蒙娜丽莎》后，他离去时感到困惑：为什么它被认为比前一个展厅里另外三幅达芬奇的作品优越得多，而似乎没人对那三幅画投以丝毫关注？\n\n[F] 当沃茨研究“史上最伟大画作”的历史时，他发现，《蒙娜丽莎》在其生命的大部分时间里都相对默默无闻。在19世纪50年代，达芬奇被认为无法与提香、拉斐尔等文艺复兴艺术巨匠相提并论，这些巨匠的作品价值几乎是《蒙娜丽莎》的十倍。直到20世纪，达芬奇这幅其赞助人妻子的肖像画才飙升至第一的位置。推动它的不是学术上的重新评价，而是一次盗窃。\n\n[G] 1911年，卢浮宫的一名维修工把《蒙娜丽莎》藏在工作服下带出了博物馆。巴黎人对这幅画的失窃感到震惊，而在此之前，他们几乎没怎么注意过它。当博物馆重新开放时，人们排队去看《蒙娜丽莎》曾经悬挂的位置留下的空位，其热情程度是以前从未对画作本身表现过的。从那时起，《蒙娜丽莎》开始代表西方文化本身。\n\n[H] 尽管许多人尝试过，但似乎不可能把这幅画的独特地位完全归因于笔触的质量。有人说画中人物的眼睛会跟随观众在房间里移动。但正如该画的传记作者唐纳德·萨松冷淡地指出的：“实际上，任何肖像画都能达到这种效果。”邓肯·沃茨提出，《蒙娜丽莎》只是一般规律的一个极端例子。绘画、诗歌和流行歌曲被随机事件或偏好托起或击沉，这些随机因素转化为影响浪潮，代代相传。\n\n[I] 布莱恩·伊诺曾写道：“说文化物品有价值，就像说电话有对话。”我们消费的几乎所有文化物品都包裹在继承来的观点中；我们的偏好在某种程度上总是别人的。参观《蒙娜丽莎》的人知道自己即将参观最伟大的艺术品，离开时要么恰如其分地印象深刻，要么感到失望。《哈姆雷特》的观众知道它被视为天才之作，因此他们大多看到的就是天才之作。沃茨甚至称莎士比亚的卓越地位是“历史偶然”。\n\n[J] 尽管严格的高低文化区分在20世纪60年代瓦解了，我们仍然把文化用作身份的徽章。哥伦比亚大学心理学家沙姆斯·汗认为，如今折衷主义的时尚——“我爱巴赫、阿巴和杰斯”——是中产阶级将自己与社会等级中较低者狭隘品味区分开来的新方式。\n\n[K] 艺术品的内在品质开始显得像是它最不重要的属性。但也许它比我们的社会科学家所认为的更重要。首先，一件作品需要一定的品质才有资格被推到顶端。《蒙娜丽莎》可能不是一个名副其实的世界冠军，但它最初就在卢浮宫，而这并非偶然。其次，有些东西就是比其他东西好。读完《哈姆雷特》后再读莎士比亚同时代最伟大的作品，差异可能会让你觉得无可争辩。\n\n[L] 《英国美学杂志》上的一项研究表明，曝光效应并非对一切都以同样的方式起作用，并指出了关于经典如何形成的不同结论。社会科学家说得对，我们应该对伟大保持一点怀疑，并且应该总是看看隔壁房间。伟大的艺术和平庸之作可能会混淆，即使是专家也会。但这就是为什么我们需要尽可能多地看、尽可能多地读。我们接触好的和坏的作品越多，就越能分辨出差异。折衷主义者是对的。",
+   "questions": [
+    {
+     "stem": "46. According to Duncan Watts, the superiority of the “Mona Lisa” to Leonardo’s other works resulted from the cumulative advantage.",
+     "answer": "E",
+     "analysis": "E段提到邓肯·沃茨的“累积优势”原则，并讲述他在卢浮宫看到《蒙娜丽莎》后疑惑为何它被认为比达芬奇另外三幅作品优越得多，即其优越性源于累积优势。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. Some social scientists have raised doubts about the intrinsic value of certain works of art.",
+     "answer": "B",
+     "analysis": "B段指出一些社会科学家对某些艺术品的内在价值提出质疑，认为艺术名作目录可能只是石化的历史偶然。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. It is often random events or preferences that determine the fate of a piece of art.",
+     "answer": "H",
+     "analysis": "H段中邓肯·沃茨提出，绘画、诗歌和流行歌曲被随机事件或偏好托起或击沉，这些随机因素决定了一件艺术品的命运。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. In his experiment, Cutting found that his subjects liked lesser known works better than canonical works because of more exposure.",
+     "answer": "C",
+     "analysis": "C段描述卡廷的实验：学生因为更频繁地看到那些不太知名的作品而更喜欢它们，而非经典作品。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. The author thinks the greatness of an art work still lies in its intrinsic value.",
+     "answer": "K",
+     "analysis": "K段作者表示艺术品的内在品质可能比社会科学家认为的更重要，作品需要一定品质才能被推到顶端，且有些作品就是更好。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "51. It is true of critics as well as ordinary people that the popularity of artistic works is closely associated with publicity.",
+     "answer": "D",
+     "analysis": "D段提到批评家的赞誉与宣传深深交织，且卡廷认为学者在纯粹曝光效应方面与公众无异，说明批评家与普通人一样，艺术品流行与宣传密切相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. We need to expose ourselves to more art and literature in order to tell the superior from the inferior.",
+     "answer": "L",
+     "analysis": "L段指出我们接触好的和坏的作品越多，就越能分辨出差异，因此需要多接触艺术和文学以区分优劣。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. A study of the history of the greatest paintings suggests even a great work of art could experience years of neglect.",
+     "answer": "F",
+     "analysis": "F段通过研究《蒙娜丽莎》的历史发现，它在生命的大部分时间里相对默默无闻，说明伟大作品也可能经历多年的忽视。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. Culture is still used as a mark to distinguish one social class from another.",
+     "answer": "J",
+     "analysis": "J段提到我们仍把文化用作身份的徽章，折衷主义时尚是中产阶级区分自己与较低阶层的方式，即文化被用来区分社会阶层。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Opinions about and preferences for cultural objects are often inheritable.",
+     "answer": "I",
+     "analysis": "I段布莱恩·伊诺的话及后续指出文化物品包裹在继承来的观点中，我们的偏好总是别人的，即对文化物品的观点和偏好常常是继承来的。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:31:35.782Z"
+}

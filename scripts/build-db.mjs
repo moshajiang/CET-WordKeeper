@@ -37,7 +37,7 @@ db.run(`
 CREATE TABLE exam(id INTEGER PRIMARY KEY AUTOINCREMENT, level TEXT, year INTEGER, month INTEGER,
   set_no INTEGER, title TEXT, imported INTEGER DEFAULT 0, created_at TEXT);
 CREATE TABLE passage(id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, section TEXT,
-  seq INTEGER, title TEXT, content TEXT);
+  seq INTEGER, title TEXT, content TEXT, translation TEXT);
 CREATE TABLE question(id INTEGER PRIMARY KEY AUTOINCREMENT, passage_id INTEGER, qtype TEXT,
   stem TEXT, options TEXT, answer TEXT, analysis TEXT);
 CREATE TABLE dict(word TEXT PRIMARY KEY, phonetic TEXT, translation TEXT, definition TEXT,
@@ -129,26 +129,51 @@ function healPassage(text) {
 }
 
 // 2. 导入真题
+// 覆盖层 data/ai-answers/*.json：AI 预生成的答案 / 中文解析 / 全文翻译（由 scripts/gen-answers.mjs 产出）。
+// 与 seed JSON 分离，这样重新解析源文档不会覆盖已生成的解析内容。
+const aiDir = path.join(root, 'data', 'ai-answers');
+const aiOverlay = new Map();
+if (fs.existsSync(aiDir)) {
+  for (const f of fs.readdirSync(aiDir).filter((x) => x.endsWith('.json'))) {
+    try {
+      const o = JSON.parse(fs.readFileSync(path.join(aiDir, f), 'utf8'));
+      aiOverlay.set(`${o.level}-${o.year}.${String(o.month).padStart(2, '0')}-set${o.set_no}`, o);
+    } catch { /* 忽略坏文件 */ }
+  }
+}
+console.log('AI 覆盖层:', aiOverlay.size, '套');
+
 const files = fs.existsSync(seedDir) ? fs.readdirSync(seedDir).filter((f) => f.endsWith('.json')) : [];
-let examCount = 0;
+let examCount = 0, aiPassages = 0, aiAnswers = 0, aiStemMismatch = 0;
 for (const f of files) {
   const data = JSON.parse(fs.readFileSync(path.join(seedDir, f), 'utf8'));
+  const ov = aiOverlay.get(`${data.level}-${data.year}.${String(data.month).padStart(2, '0')}-set${data.set_no}`);
   db.run('INSERT INTO exam(level, year, month, set_no, title, imported, created_at) VALUES (?,?,?,?,?,0,?)',
     [data.level, data.year, data.month, data.set_no, data.title || f, new Date().toISOString()]);
   const examId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
   for (const p of data.passages || []) {
-    db.run('INSERT INTO passage(exam_id, section, seq, title, content) VALUES (?,?,?,?,?)',
-      [examId, p.section, p.seq, p.title, healPassage(p.content)]);
+    const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
+    db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation) VALUES (?,?,?,?,?,?)',
+      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) || null]);
+    if (ovP && ovP.translation) aiPassages++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
-    for (const qs of p.questions || []) {
+    const qlist = p.questions || [];
+    qlist.forEach((qs, qi) => {
       const opts = (qs.options || []).slice().sort((a, b) => (a || '')[0]?.localeCompare(b?.[0] || '')).filter(Boolean);
+      // 覆盖层按「篇章内题目顺序」对齐（与 apply-answers.mjs 一致）；题干变了只记数，不丢答案
+      const ovQ = ovP && (ovP.questions || [])[qi];
+      const useOv = !!(ovQ && ovQ.answer);
+      if (useOv && ovQ.stem && ovQ.stem.trim() !== String(qs.stem).trim()) aiStemMismatch++;
+      if (useOv) aiAnswers++;
       db.run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
-        [pid, qs.qtype, healGlued(qs.stem), JSON.stringify(opts), qs.answer || '', qs.analysis || '']);
-    }
+        [pid, qs.qtype, healGlued(qs.stem), JSON.stringify(opts),
+          (useOv && ovQ.answer) || qs.answer || '', (useOv && ovQ.analysis) || qs.analysis || '']);
+    });
   }
   examCount++;
 }
-console.log('真题套数:', examCount);
+console.log('真题套数:', examCount, '｜ 预置翻译篇章:', aiPassages, '｜ 预置答案题数:', aiAnswers,
+  aiStemMismatch ? `（其中 ${aiStemMismatch} 题题干与生成时不同，已按顺序对齐）` : '');
 console.log('修补粘连词篇章数:', glueFixed);
 
 // 3. 全局词频表（过滤停用词，只统计词典收录的实词）

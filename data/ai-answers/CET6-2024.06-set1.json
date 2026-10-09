@@ -1,0 +1,248 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "不同音乐流派能激发独特感受、情绪和记忆，这一点相当奇妙。研究表明，音乐能在手术前减轻压力和焦虑，而且我们都会被自己独特的人生原声所吸引。如果你想缓解压力，不妨试试古典音乐。古典音乐的声音会产生一种镇静效果，让大脑释放出带来愉悦的多巴胺，这种物质有助于控制注意力、学习和情绪反应。它还能下调身体的应激反应，从而带来整体上更愉快的情绪。事实证明，愉快的情绪能让人思维更加清晰。虽然古典音乐有许多伟大的作曲家，如巴赫、贝多芬和亨德尔，但这些艺术家的音乐似乎都不像莫扎特的音乐那样具有同样的健康功效。据研究人员称，听莫扎特的音乐可以增加脑波活动并改善认知功能。另一项研究发现，莫扎特音乐的独特特征会触发大脑中负责高级心理功能的部分。甚至产科病房也用莫扎特的音乐来帮助新生儿适应母亲体外的生活。人们发现，听古典音乐能显著降低血压。研究人员认为，古典音乐平静的声音可能有助于心脏从压力中恢复。古典音乐也是帮助睡眠困难者的好工具。一项研究发现，睡眠困难的学生在听古典音乐时睡得更好。无论你是否经常听古典音乐，每天抽出一点时间听你觉得舒缓的音乐都不会有坏处。你会惊讶地发现它让你感觉有多好，并可能给你的健康带来积极变化。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "A",
+     "analysis": "空前为不定式 to，后接名词 stress，需要及物动词原形；alleviate stress 为常见搭配，意为“缓解压力”，与文章减压语境相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "let loose 为固定短语，意为“释放”；此处表示古典音乐促使大脑释放带来愉悦的多巴胺，符合语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "B",
+     "analysis": "空前是介词 to，后面需要名词作宾语；clarity in thinking 表示“思维清晰”，与愉快情绪带来的正面认知效果一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "空格后列举 Bach、Beethoven、Handel，他们都是古典音乐作曲家；composers 为可数名词复数，语法和语义都合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "空格后是 function，需要形容词；cognitive function 是固定搭配，意为“认知功能”，与大脑活动相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "空前有 maternity，后为谓语 use，需复数名词作主语；maternity wards 指“产科病房”，符合帮助新生儿适应环境的情景。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "句子已有谓语 reduces，不缺少主要动词，需要副词修饰 reduces；significantly 意为“显著地”，表示古典音乐明显降低血压。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "help your heart 后接不带 to 的不定式，需要动词原形；recover from stress 表示“从压力中恢复”，符合心脏与压力的关系。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "it wouldn't hurt to do something 为固定句型，意为“做某事没有坏处”；hurt 在此为不及物动词，表示“有害、妨害”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "find 后可接宾语补足语，需要形容词；soothing 意为“令人舒缓的”，修饰 music，与古典音乐的安抚效果相符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A)在乔治亚州雅典市，有一个相当奇特的当地地标——一棵大白橡树，几乎所有人都说它拥有自己。正因如此，它被认为是世界上最著名的树之一。那么，这棵树是如何拥有它自己和周围土地的呢？ B)据说在19世纪的某个时候，一位名叫威廉·杰克逊上校的乔治亚人喜欢上了这棵树，并努力保护它免受任何危险。至于他为什么如此喜爱它，这个故事最早的文献记载是《雅典周报》1890年8月12日发表的一篇匿名头版文章。文中写道：“杰克逊上校从小看着这棵树长大，并且几乎像爱一个人一样爱它。它茂密的叶子和粗壮的枝干常常为他遮挡暴雨，他多次从最高的树枝上取过鸣禽的蛋。他看着它成长，当他到了晚年，看到这棵树以壮丽的姿态矗立时，想到自己死后它会落入可能毁掉它的人手中，他感到十分痛苦。” C)为此，杰克逊通过一份契约，将这棵树及其周围一小块土地的所有权转让给了树本身。契约中写道：“W.H.杰克逊出于对该树的深厚感情以及保护它的强烈愿望，将该橡树对其自身及四周各八英尺范围内所有土地的完全占有权转让给该橡树。” D)后来，这棵树逐渐成为旅游景点，被称为“拥有自己的树”。然而，在20世纪初，这棵树开始显现出缓慢死亡的迹象，人们对此无能为力。时间老人最终会降临到我们所有人身上，甚至包括我们这些高大、长寿、枝叶繁茂的地球守护者。最终，在1942年10月9日，这棵高30多米、树龄200到400年的树倒下了，有传言说是因为一场强风暴和/或此前已经死亡、根部腐烂。 E)大约四年后，少年女士园艺俱乐部（在这棵树不幸死亡前曾照料过它）的成员们找到了一棵由原树的坚果长成的小树。于是在1946年10月9日，在佐治亚大学农学院罗伊·鲍登教授的指导下，这棵小树被移植到它祖先所在的位置。几个月后，举行了一场正式仪式，雅典市长罗伯特·L·麦克沃特亲临现场纪念这一时刻。 F)这棵新树被称为“拥有自己的树之子”，人们认为，作为原树的继承人，它自然继承了它所站立的那块土地。当然，已知还有几十棵其他树是原树的后代，因为人们从它那里取坚果到别处种植是必然的。话虽如此，迄今为止，原树的其他子女都没有向法院申请分割土地，所以似乎一切安好。无论如何，“拥有自己的树之子”今天仍然矗立着，尽管通常被简称为“拥有自己的树”。 G)这一切让我们回到一个问题：杰克逊当初是否真的把树的法律所有权给了树本身，这样的契约是否具有法律约束力。 H)首先，事实证明杰克逊一生只在雅典度过了大约三年，从1829年到1832年，当时他43岁，这在一定程度上排除了他小时候在树下度过时光、看着它长大、然后担心死后它会怎样的说法。此外，对雅典土地所有权记录的大范围搜索似乎并未表明杰克逊曾经拥有这棵树所在的土地。 I)在那三年里，他确实住在紧邻该树的一块土地上，但不清楚他是否拥有那块土地。无论如何，1832年，一块四英亩的土地——包括树所在的土地和杰克逊居住的相邻土地等——被卖给了大学教授马尔萨斯·A·沃德。在这笔交易中，沃德被要求向杰克逊支付1200美元（约合今天的31000美元），要么是财产本身的价格，要么只是对杰克逊在该地块上所做改进的补偿。最终，无论他是否拥有相邻地块，还是只是据称在大学工作时被允许使用它，他肯定从未拥有过树所在的那个地块，这对我们讨论的话题来说是最重要的一点。 J)在沃德教授购买土地之后，杰克逊和他的家人在几英里外购买了一块655英亩的地块并搬到了那里。十年后，即1844年，杰克逊似乎陷入经济困难，他的小种植园被克拉克县警长办公室查封并拍卖以偿还抵押贷款。因此，如果他在雅典拥有一些土地，包括树所在的那块地，想必他会卖掉它来筹集资金，或者它也会同样被拿走。 K)而且不管怎样，杰克逊本应知道需要为契约所涉土地缴纳财产税，才能真正确保树的未来。然而，没有任何账目或记录表明曾设立信托或类似安排来促成此事。 L)除此之外，没有确凿证据表明这样一份契约曾经存在过，尽管雅典的契约记录可以追溯到杰克逊1876年去世前几十年，而且根据最初那位匿名新闻记者的说法，这份契约本应于1890年就存在于档案中，该记者声称自己亲眼见过它。 M)你可能会从这一切中想到，几乎没有人相信故事的这一面。那么这一切究竟是怎么产生的呢？ N)据推测，它是上述1890年头版文章《契约给它自己》的匿名作者凭想象编造出来的，顺便说一句，那篇文章包含了几个更容易被证明是虚假的内容。至于作者为什么这样做，据推测，这可能是19世纪版本的“标题党”思维实验，探讨一个人将这样一个无意识的生物契约给它自己是否合法。 O)不管怎样，下一次提到“拥有自己的树”是在1901年同一份报纸《雅典周报》的百年纪念版上。上面又有一篇明显只是抄袭大约十年前发表的原文章、仅稍作改写的报道。再下一次是在1906年，还是在《雅典周报》上，再次明显抄袭原报道，只是稍作改写，相当于19世纪的“转发”，此时读者已经忘记了原版。",
+   "questions": [
+    {
+     "stem": "36.Jackson was said to have transferred his ownership of the oak tree to itself in order to protect it from being destroyed.",
+     "answer": "C",
+     "analysis": "C段明确说Jackson通过契约将树和周围土地的所有权转让给树本身，目的是保护它不被毁坏。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37.No proof has been found from an extensive search that Jackson had ever owned the land where the oak tree grew",
+     "answer": "H",
+     "analysis": "H段提到对雅典土地所有权记录的大范围搜索未表明Jackson曾拥有树所在土地。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38.When it was raining heavily, Jackson often took shelter under a big tree that is said to own itself.",
+     "answer": "B",
+     "analysis": "B段引文提到树叶和枝干常为Jackson遮挡暴雨，对应下大雨时在树下躲避。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39.There is no evidence that Jacksonhad made arrangements to pay property taxes for the land onwhich the oak tree sat.",
+     "answer": "K",
+     "analysis": "K段说没有任何记录表明曾设立信托或类似安排来缴纳财产税。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40.Professor Ward paid Jackson over one thousand dollars when purchasing a piece of land from him.",
+     "answer": "I",
+     "analysis": "I段明确记载Ward被要求向Jackson支付1200美元，超过一千美元。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41.It is said the tree that owned itself fell in a heavy windstorm.",
+     "answer": "D",
+     "analysis": "D段记载1942年树倒下，传言是因强风所致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42.The story of the oak tree is suspected to have been invented as a thought exercise.",
+     "answer": "N",
+     "analysis": "N段推测该故事是匿名作者的思维实验。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43.Jackson's little plantation was auctioned off to settle his debt in the mid-19th century",
+     "answer": "J",
+     "analysis": "J段提到1844年Jackson的小种植园被查封并拍卖以偿还抵押贷款。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44.An official ceremony was held to celebrate the transplantingof a small tree to where its ancestor had stood.",
+     "answer": "E",
+     "analysis": "E段提到1946年举行正式仪式，纪念小树移植到原树位置。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45.The story of the Tree That Owns Itself appeared in the local paper several times, with slight alterations in wording.",
+     "answer": "O",
+     "analysis": "O段提到1901年和1906年该故事再次出现，且措辞略有改写。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "员工知道对错，这是无可辩驳的。那么，为什么当员工看到工作中有人做出有风险的行为时，没有更多人出面干预呢？\n影响人们是否干预的因素有很多。首先，他们需要能够看到风险情况开始出现。其次，公司文化需要让他们感到可以安全地直言不讳。第三，他们需要有沟通技巧来有效表达。\n这不仅仅是工作场所的问题；在工作之外，这也是一个日益严重的问题。每天人们都在街上目睹事情发生，却选择袖手旁观。这就是所谓的旁观者效应——目击事件的人越多，该群体中任何人帮助受害者的可能性就越小。这背后的心理学被称为责任分散。基本上，人群越大，越多的人认为别人会处理这件事——这意味着在需要帮助的时刻没有人有效地干预或采取行动。\n这种从众心理强大到足以让人们逃避自己已知的责任。但不仅一线工人在工作场所不做安全干预，也有主管不干预的情况。\n当一群员工看到不安全行为在领导层面没有得到处理时，就会形成一个先例，即这些情况就应该这样处理，从而为每个人定义了安全文化。\n尽管工人被鼓励在观察到不安全操作时进行干预，但这种情况发生的次数不到一半。恐惧是不干预的最终因素。人们害怕受到惩罚，害怕如果干预就必须做更多的工作。过去不成功的尝试是人们不干预的另一个重要因素——他们倾向于在未来的所有情况中把这一行动推迟给别人。\n在许多工作场所，必须指定合格的工作人员。他们的部分职责是在工人没有适当设备执行任务或条件不安全时进行干预。合格工作人员还需要在有危险时停止继续工作。\n主管也发挥着关键作用。即使不需要合格人员，主管也需要具备广泛的技能，不仅要识别和消除工作场所的危险，还要在团队中建立一种支持干预和开放沟通的安全氛围。\n除了合格工作人员和主管之外，重要的是教育组织中的每个人，如果他们目睹可能的不安全行为，无论你是指定的合格人员、主管还是一线工人，都有义务进行干预。",
+   "questions": [
+    {
+     "stem": "46.What is one of the factors contributing to failure of intervention in face of riskybehavior in the workplace?",
+     "answer": "B",
+     "analysis": "第二段明确指出影响因素包括公司文化要让员工感到能安全发言，不利的工作场所文化会导致员工不敢干预；A项监督松懈原文未提及，C项“不可预见的风险”与“需要能看到风险苗头”不一致，D项“沟通受阻”不同于原文所说缺乏沟通技巧。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47.What does the author mean by“diffusion of responsibility”(Line 4, Para.3)?",
+     "answer": "D",
+     "analysis": "原文用旁观者效应解释责任分散：目击者越多，越不可能有人帮助受害者，人群越大越假定别人会处理，导致无人有效干预。D项“人越多，有人上前干预的机会越小”最准确；B项“参与”不如“干预”贴合原文，A、C曲解原意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48.What happens when unsafe behavior at the workplace is not addressed by the leaders?",
+     "answer": "A",
+     "analysis": "原文说领导层不处理不安全行为会开创先例，使员工认为这就是处理此类情况的方式，因此再看到类似行为时不会干预；B项“最容易处理危机的方式”无依据，C项“额外谨慎”和D项“自己处理紧急情况”均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49.What is the ultimate reason workers won't act when they see unsafe operations?",
+     "answer": "D",
+     "analysis": "原文明确“恐惧是不干预的最终因素”，并列举了“担心如果干预就得干更多活”；A项“推迟给别人”是过去不成功尝试导致的另一个因素，不是终极原因；B、C项原文未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50.What is critical to ensuring workplace safety?",
+     "answer": "C",
+     "analysis": "最后几段强调主管的关键作用，需要建立支持干预和开放沟通的安全氛围，C项“主管创造安全环境以便及时干预”符合原文；D项只提到沟通，不够全面，A、B未作为核心措施出现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "“环保主义者”一词可以有不同的含义。它过去指那些努力保护野生生物和自然生态系统的人。进入21世纪，该词的含义已演变，涵盖了应对人为气候变化的必要性。这两种环保主义之间的区别，是科学界在核能问题上产生分歧的原因。一方是纯粹主义者，他们认为核能风险太大，不值得，解决气候危机的唯一方案是可再生能源。另一方同意可再生能源至关重要，但表示，当没有阳光、没有风时，社会需要一定量的电力来满足消费者的基本需求。核能远比石油、天然气和煤炭清洁，是一个自然的选择，尤其是在水电能力有限的地区。曾协助撰写联合国政府间气候变化专门委员会报告的莱昂·克拉克并非核能的不加批判的支持者，但他表示，如果我们真的想实现碳中和，核能是一个有价值的选择。“所有这一切的核心是，你认为我们实际上能在多大程度上实现100%可再生能源的气候目标，”他说。“如果你认为我们做不到，而你又关心气候，你就不得不考虑核能之类的方案。”普遍实现100%可再生能源的可行性同样存在争议。像佛蒙特州伯灵顿这样的城市多年来一直“100%使用可再生能源”。但这些城市往往人口稀少，偶尔仍依赖化石燃料能源，并且拥有丰富且可就地利用的可再生资源。与此同时，能够依靠可再生能源运行的国家通常得益于非凡的水电能力。德国是大型工业化国家推动绿色能源的最佳案例研究。总理安格拉·默克尔于2011年宣布了“能源转型”计划，该计划将逐步淘汰核能和煤炭，同时逐步引入可再生能源。自2010年以来，风能和太阳能发电量增长了400%以上，2019年可再生能源提供了该国46%的电力。但近年来进展停滞。可再生能源的不稳定性不仅意味着夜间往往无法发电，还意味着太阳能和风能在白天可能使电网不堪重负，迫使公用事业公司付费让客户用电。滞后的电网基础设施难以将过剩的绿色能源从德国北部输送到工业发达的南部，这意味着许多工厂仍在使用煤炭和天然气。一些地方也达到了政治上的极限，民众以大声抗议来反对新建风力涡轮机。结果是，自2010年以来，德国的温室气体排放量下降了约11.5%——低于欧盟13.5%的平均水平。",
+   "questions": [
+    {
+     "stem": "51.What accounts for the divide within the scientific community about nuclear energy?",
+     "answer": "D",
+     "analysis": "文章第一段末明确指出，两种环保主义（保护自然生态与应对气候变化）的差异导致科学界在核能问题上出现分歧，因此选D。A、B分别只提到其中一种取向，过于片面；C的“绿色能源”术语演变文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52.What is the solution to energy shortage proposed by purists'opponents?",
+     "answer": "C",
+     "analysis": "反对纯粹主义者的一方认为，在无风无光时仍需满足基本用电需求，而核能比化石燃料清洁，因此必要时会选择核能，故选C。A是纯粹主义者的排他性主张；B的“交替使用化石燃料”与原文不符；D的“限制非基本消费”文中未提。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53.What point does the author want to make with cities like Burlington as an example?",
+     "answer": "A",
+     "analysis": "作者举伯灵顿等城市为例，指出其虽宣称100%可再生，但人口少、偶尔依赖化石燃料且拥有丰富可再生资源，意在说明全球普遍实现100%可再生存在争议，故选A。B将“小城市”误为“大城市”；C强调水电能力是针对国家而非城市，且非主要论点；D的“彻底摆脱化石燃料”表述过宽。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54.What do we learn about Germany regarding renewable energy?",
+     "answer": "B",
+     "analysis": "文章称德国是“大型工业化国家推动绿色能源的最佳案例研究”，直接对应B选项。A的时间“过去二十年”与原文“自2010年以来”不符，且“四倍”表述不准确；C的“超过一半”与原文46%不符；D的“成功达到目标”与后文进展停滞相矛盾。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55.What may be one ofthe reasons for Germany's progress having halted in recent years?",
+     "answer": "A",
+     "analysis": "文中指出德国进展停滞的原因之一是电网基础设施滞后，难以将过剩绿色能源从北部输送到工业南方，即电网能力跟不上绿色能源发展，故选A。B的“电厂暂停运营”与原文“公用事业公司付费让客户用电”不符；C的“习惯使用传统能源”因果颠倒；D虽提及不稳定，但A更直接对应“lagging grid infrastructure”这一具体原因。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:28:12.337Z"
+}

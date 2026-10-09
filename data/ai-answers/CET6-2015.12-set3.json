@@ -1,0 +1,248 @@
+{
+ "level": "CET6",
+ "year": 2015,
+ "month": 12,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "B",
+     "analysis": "culture 作主语，谓语需用第三人称单数；cater to 表示迎合，符合语境。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "as recommended by sleep experts 表示“正如睡眠专家所推荐”，过去分词作定语。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "hotly debated topic 意为“热烈争论的话题”，符合句意。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "while it isn't ideal 意为“虽然不理想”，与后文 it might help 构成让步关系。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "chronically sleep-restricted people 指长期睡眠不足的人，副词修饰形容词。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "G",
+     "analysis": "show improvements in... 表示“在……方面表现出改善”，符合实验结果。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "sleep deprivation 为固定搭配，意为“睡眠剥夺”，作定语从句主语。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "be ready to endorse 意为“愿意支持”，符合刘的态度。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "H",
+     "analysis": "not necessarily an effective remedy 意为“不一定是一种有效疗法”，副词修饰整个判断。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "O",
+     "analysis": "target one area of the brain 表示“针对大脑的一个区域”，符合安眠药作用机制。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "36.When people find they are powerless to change a situation, they tend to live with it.",
+     "answer": "C",
+     "analysis": "当我们无法消除恐惧源时，会通过防御机制在心理上适应，即无力改变时倾向于忍受现状。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.To be effective, environmental messages should be carefully framed.",
+     "answer": "L",
+     "analysis": "信息需要被精心设计，将不良行为边缘化而非常态化，环境信息才有效。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.It is the government’s responsibility to persuade people into making environment-friendly decisions.",
+     "answer": "G",
+     "analysis": "政府应通过改变默认选项等策略说服人们做出更环保的决策。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.Politicians are beginning to realise the importance of enlisting psychologists, help in fighting climate change.",
+     "answer": "P",
+     "analysis": "美英政界开始重视心理学的力量，投入资金研究能源相关行为，借助心理学家推动环保。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.To find effective solutions to climate change, it is necessary to understand what motivates people to make change.",
+     "answer": "H",
+     "analysis": "需要理解是什么激励人们、什么让他们做出改变。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.In their evolution, humans have learned to pay attention to the most urgent issues instead of long-term concerns.",
+     "answer": "D",
+     "analysis": "进化使人类最关注眼前紧迫问题，而忽视长远问题。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.One study shows that our neighbours’ actions are influential in changing our behaviour.",
+     "answer": "J",
+     "analysis": "研究表明，提及邻居节电行为的信息最能降低用电量。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.Despite clear signs of global warming, it is not easy for most people to believe climate change will affect their own lives.",
+     "answer": "B",
+     "analysis": "尽管有悲观的北极熊图片和碳排放上升图表，大多数人仍难以相信全球变暖会影响自己。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.We should take our future into consideration in making decisions concerning climate change before it is too late.",
+     "answer": "F",
+     "analysis": "等到我们意识到气候变化威胁时可能为时已晚，所以需要为未来做出理性决策。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Existing social networks can be more effective in creating change in people’s behaviour.",
+     "answer": "O",
+     "analysis": "利用现有的公民社会结构或网络是更有效的改变行为方式。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "十多年前，当时都在范德堡大学的认知科学家约翰·布兰斯福德和丹尼尔·施瓦茨发现，区分年轻人和儿童的不是记忆事实或将已有知识应用于新情况的能力，而是一种他们称之为“为未来学习做好准备”的素质。研究人员让五年级学生和大学生制定一项保护白头鹰免于灭绝的恢复计划。令人震惊的是，两组提出的计划质量相似（尽管大学生的拼写技能更好）。从传统教育者的角度来看，这一结果表明学校教育未能帮助学生思考生态系统和灭绝等重大科学思想。\n\n然而，研究人员决定深入研究。他们让两组人就制定恢复计划所需的重要问题提出问题。在这项任务上，他们发现了巨大差异。大学生关注鹰与其栖息地相互依存的关键问题（栖息地），五年级学生则倾向于关注个体鹰的特征（“它们有多大？”“它们吃什么？”）。大学生培养了提问的能力，这是批判性思维的基石。他们学会了如何学习。\n\n博物馆和其他非正式学习机构可能比中小学更适合教授这种技能。在旧金山的探索馆，我们最近研究了学习提出好问题如何影响人们科学探究的质量。我们发现，当我们教参与者提出“如果……会怎样？”和“如何能……？”这类在场没有人知道答案、但会激发探索的问题时，他们在下一个展品前进行了更好的探究——提出更多问题、进行更多实验并对结果做出更好的解释。具体来说，他们在新展品上的问题变得更加全面。他们不再仅仅询问想尝试的事情，而是倾向于在问题中包含因果关系。提出“有料的问题”似乎是一种可迁移的技能，可以深化对展品中科学内容的合作探究。\n\n这种学习并不局限于博物馆或机构环境。非正式学习环境比学校更能容忍失败。也许许多老师时间太少，无法让学生形成并追求自己的问题，而课程内容又太多，难以覆盖。但人们必须在某个地方获得这种技能。我们的社会依赖于他们能够就自己的医疗方案或全球能源需求等问题做出关键决定。为此，我们拥有一个强大的非正式系统，它不给分数、来者不拒，甚至在节假日和周末也开放。",
+   "questions": [
+    {
+     "stem": "46.What is traditional educators’ interpretation of the research outcome mentioned in the first paragraph?",
+     "answer": "D",
+     "analysis": "第一段末句明确指出，传统教育者认为这一结果表明学校教育未能帮助学生思考生态系统和灭绝等重大科学思想，与D同义。A误解了研究结论，B、C原文未体现。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.In what way are college students different from children?",
+     "answer": "A",
+     "analysis": "第二段显示大学生能就鹰与栖息地相互依存等关键问题提问，并培养了提问能力，这是批判性思维的基石；五年级学生只关注具体特征。B过于笼统，C是儿童的特点，D未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.What is benefit of asking questions with no ready answers?",
+     "answer": "B",
+     "analysis": "第三段实验表明，教参与者提出无人能答且引发探索的问题后，他们提出更多问题、做更多实验、解释更好，提升了科学探究能力。C只是部分表现，A、D不是主要益处。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49.What is said to be the advantage of informal learning?",
+     "answer": "A",
+     "analysis": "末段明确说非正式学习环境比学校更能容忍失败，这是其优势。C将“不给分数”曲解为不收学费，B、D原文未提。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50.What does the author seem to encourage educators to do at the end of the passage?",
+     "answer": "C",
+     "analysis": "作者在结尾强调非正式系统强大、开放，暗示教育者应充分利用非正式学习资源培养学生的提问等能力。A、B、D与结尾重点不符。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "“航天界有句老话：业余人士谈技术，专业人士谈保险。”去年接受《经济学人》采访时，太空旅游公司维珍银河首席执行官乔治·怀特塞兹将自己的公司归入后一类。但在10月31日VSS企业号失事、导致一名飞行员死亡、另一名重伤之后，保险只能是一种无用的安慰。\n除了悲惨的生命损失，加利福尼亚的这次事故还将给太空旅游的未来蒙上长长的阴影，而太空旅游甚至尚未真正开始。\n2001年，富有冒险精神的百万富翁工程师丹尼斯·蒂托花费2000万美元搭乘俄罗斯飞船进入太空，太空旅游的概念由此确立。自那以后，只有六名度假者到达过轨道，票价同样高得惊人。但最近，一些公司开始计划更实惠的“亚轨道”飞行——这种短暂的旅行只到达浩瀚太空黑暗的边缘。在本周事故发生前，维珍银河似乎最接近开始定期飞行。该公司已经从大约800名潜在太空游客那里收取了定金，其中包括斯蒂芬·霍金。\n在多年饱受技术延误困扰之后，维珍银河创始人理查德·布兰森爵士最近曾表示，一艘“太空船二号”最快将在2015年2月搭载首批付费乘客。现在这似乎是不可能的时间表。7月有报道称，失事太空飞机的一艘姐妹船已完工约一半。另一半将不得不等待，因为美国联邦航空管理局和国家运输安全委员会正在调查事故原因。\n与此同时，整个太空旅游行业都将坐立不安。2004年《商业太空发射修正案》旨在鼓励私营太空飞行器和服务，它禁止运输部长（以及联邦航空管理局）监管私营航天器的设计或运营，除非这些航天器已导致机组人员或乘客严重受伤或死亡。这意味着联邦航空管理局可以吊销维珍银河的飞行许可证。它还可以坚持像检查商业飞机一样彻底检查私营载人航天器。虽然这可能会使亚轨道旅行更安全，但也会给这个新兴产业增加巨大的成本和复杂性，而到目前为止，该行业很大程度上只是亿万富翁和梦想工程师的游乐场。\n维珍银河、监管机构和公众如何应对这起最新悲剧，将决定私人太空旅行能否以及多快超越那个游乐场。毫无疑问，太空飞行伴随着风险，而开拓一种新的旅行方式就是要面对这些风险，并借助来之不易的经验来降低它们。",
+   "questions": [
+    {
+     "stem": "61.What is said about the failure of VSS Enterprise?",
+     "answer": "B",
+     "analysis": "文章指出，这次事故“将给太空旅游的未来蒙上长长的阴影”，说明对太空旅游产生了强烈的负面影响。A项破产未提及；C项“劝阻富人”无依据；D项文意重在影响未来，而非公众关注安全问题。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "62.What do we learn about the space-tourism firm Virgin Galactic?",
+     "answer": "C",
+     "analysis": "文中提到“在本周事故发生前，维珍银河似乎最接近开始定期飞行”，且已收取约800人定金，说明它即将开始常规商业运营。A项姐妹船才完工一半，不是刚建好；B项六名乘客是搭乘俄罗斯飞船，并非维珍银河；D项文中未说它是第一家。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "63.What is the purpose of the 2004 Commercial Space Launch Amendments Act?",
+     "answer": "D",
+     "analysis": "该法案“旨在鼓励私营太空飞行器和服务”，即促进太空旅游业发展。A项安全不是其目的，它反而限制监管；B项限制联邦航空管理局职能只是手段；C项私营航天并非因此法案才合法。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "64.What might the FAA do after the recent accident in California?",
+     "answer": "D",
+     "analysis": "文中明确说，在发生严重伤亡后，联邦航空管理局可以吊销维珍银河的飞行许可证，D项直接对应。A项加强安全标准是可能措施之一，但不如D项直接；B项和C项文中均未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "65.What does the author think of private space travel?",
+     "answer": "A",
+     "analysis": "作者在最后表示，开拓新旅行方式必然伴随风险，但可以通过经验降低风险，说明他认为私人太空旅行值得推进。B项“不应仅限于富人”只是部分涉及“超越游乐场”，非主要观点；C项严格监管未必是作者主张；D项与文意相反。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:33:56.208Z"
+}

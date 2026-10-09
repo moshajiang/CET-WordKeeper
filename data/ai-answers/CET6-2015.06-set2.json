@@ -1,0 +1,171 @@
+{
+ "level": "CET6",
+ "year": 2015,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "“杀不死我们的，会使我们更强大。”但当青少年把这一理念付诸实践时，父母却无法接受。如今，科技已成为成年人与追求自由的孩子之间由来已久的斗争的新战场。\n\n由于被关在室内，无法骑自行车和朋友们出去玩，青少年转而通过社交媒体和手机与同龄人交往。在“直升机式育儿”时代，他们的行动自由受到严重限制；他们在网上做的事，往往反映了他们原本在现实世界可能会做的事。社交媒体和手机应用近年来越来越受欢迎，是因为青少年需要一个属于自己的空间。他们想要自由地探索自己的身份和周围的世界。他们不是偷偷溜出去，而是跳进网络世界。\n\n随着青少年转移到线上，父母也将自己的恐惧投射到互联网上，想象青少年可能面临的各种潜在危险——从暴力的陌生人到残忍的同龄人，再到可能在谷歌上困扰他们余生的图片或文字。\n\n忧心忡忡的父母不是帮助青少年培养应对公共生活和与人互动风险的策略，而是专注于追踪、监控和屏蔽。这些策略并不能帮助青少年培养管理复杂社交情境、评估风险以及在遇到麻烦时寻求帮助所需的技能。“保护”孩子也许感觉是正确的事，但它削弱了青少年在技术浸透的世界里走向成年时所需要的学习。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "J",
+     "analysis": "空格前为this，后为into practice，需要名词作put的宾语；put...into practice是固定搭配，且指前文引语所表达的“理念/哲学”，故选philosophy。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "主语What they do online是单数，谓语需用第三人称单数；语义上表示“反映”他们线下原本会做的事，故选mirrors。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "B",
+     "analysis": "空格前有were和副词heavily，需要过去分词构成被动语态；constrained意为“受限制的”，与mobility搭配表示行动自由受到严重限制。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "不定式to后接动词原形，且与identity和world搭配，表示“探索”身份和世界，故选explore。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "L",
+     "analysis": "介词Instead of后接动名词，sneaking out是固定短语，意为“偷偷溜出去”，与后文jump online形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "K",
+     "analysis": "空格后为名词dangers，需要形容词修饰；potential dangers意为“潜在的危险”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "空格前为介词from，后为strangers，需要形容词修饰；violent strangers意为“暴力的陌生人”，与cruel peers并列。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "F",
+     "analysis": "介词of后接动名词，interacting with others是固定搭配，意为“与他人互动”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "空格与manage、get构成并列不定式，需用动词原形；assess risks意为“评估风险”，为常见搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "主语it是单数，谓语用第三人称单数；语义上表示“削弱”青少年需要的学习，故选undermines。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "我承认我一直不太理解围绕转基因作物的那种执念。在环保主义反对者看来，转基因食品简直是邪恶的，是一种研究不足、可能有害的工具，被大型农业企业用来控制全球种子市场、压榨当地农民。他们认为转基因食品从未兑现其所谓的承诺，花在转基因作物上的钱不如投向有机农业，并且任何含有转基因成分的产品都应贴上警示标签以保护消费者。对支持者来说，转基因作物是为满足不断增长的全球人口而可持续提供食物的努力的关键部分。但更重要的是，支持者认为许多环保主义者对转基因的反对从根本上说是反科学的，与那些质疑人为气候变化基本事实的人无异。\n\n对双方而言，转基因食品似乎都成了一种象征：你要么支持农业企业，要么就是反科学。但在转基因食品问题上，我们恰恰需要更多的科学，因此我很高兴看到《自然》杂志专门刊发一系列文章讨论转基因食品争议。其结论是：虽然转基因作物尚未兑现最初的承诺，且一直被农业企业主导，但我们仍有理由继续使用和发展它们，以帮助应对可持续养活不断增长的地球人口这一巨大挑战。\n\n这并不意味着转基因作物完美无缺，也不是解决全球农业问题的一刀切方案。但任何能提高农业生产效率——即每英亩土地能产出的作物量——的方法都将极为有用。转基因作物能够而且几乎肯定会成为这套工具中的一部分，但传统植物育种、改良土壤和作物管理也同样会，而且也许最重要的是改善储存和运输基础设施，尤其是在发展中国家。（对于撒哈拉以南非洲等地的农民来说，如果生产出的粮食无法送到饥饿的消费者手中，增产也意义不大。）我希望看到更多非行业性的转基因作物研究——不仅因为这样我们可以少担心偏见，还因为孟山都、先锋等种子公司不应该是唯一致力于利用基因改造的实体。我希望看到对玉米等较少商业化的作物进行转基因研究。我认为在食品上标注转基因成分并非至关重要，但我也不反对——而且行业若主动配合标注会是明智之举，以此消除人们对这项技术的恐惧。\n\n不过，最重要的是，我希望那些无休止争论转基因作物所耗费的精力的十分之一，能集中到全球农业更紧迫的挑战上。还有更大的仗要打。",
+   "questions": [
+    {
+     "stem": "46.How do environmentalist opponents view GM foods according to the passage?",
+     "answer": "B",
+     "analysis": "第一段明确提到环保反对者认为转基因食品是大型农业企业用来控制全球种子市场、压榨当地农民的工具，这与 B 项“被大企业用来垄断农业”相符。A 项“毁掉农业和环境”过度推断；C 项“已证明对消费者健康有害”文中只是“可能有害”且未提健康；D 项“对当前耕作方式构成巨大威胁”无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47.What does the author say is vital to solving the controversy between the two sides of the debate?",
+     "answer": "D",
+     "analysis": "作者说“But science is exactly what we need more of when it comes to GM foods”，并因此欢迎《自然》的系列文章，可见解决争议的关键是更多科学研究。A、B、C 均未提及或非作者观点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48.What is the main point of the Nature articles?",
+     "answer": "A",
+     "analysis": "《自然》文章的结论是：尽管转基因作物尚未兑现承诺、被农业企业主导，但仍有理由继续使用和发展它们以帮助可持续养活不断增长的人口。A 项与此一致。B 项说普及转基因技术助其兑现承诺，曲解；C 项安全措施未涉及；D 项双方妥协未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49.What is the author’s view on the solution to agricultural problems?",
+     "answer": "D",
+     "analysis": "作者认为任何能提高农业生产效率的方法都极其有用，转基因作物只是工具之一，传统育种、土壤管理、基础设施等同样重要。D 项“鼓励一切有助于提高耕作效率的方法”吻合。A 项过于依赖转基因；B 项偏离；C 项“直到找到更好替代”不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50.What does the author think of the ongoing debate around GM crops?",
+     "answer": "C",
+     "analysis": "末段作者明确说希望把围绕转基因作物无休止争论的精力的一小部分集中到全球农业更紧迫的挑战上，C 项符合。B 项“转移公众对世界其他关键问题的注意力”扩大了范围，且不如 C 精确。A、D 未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "提前决定——你申请一所学校，而且录取具有约束力——对于紧张的申请者来说似乎是个很好的选择。各学校录取提前决定申请者的比例更高，这可以说意味着你有更大的机会被录取。如果你被录取了，那么到十二月你就完成了整个痛苦的过程。但大多数学生和家长没有意识到的是，学校提供提前决定有其隐藏的动机。由于提前决定具有约束力，它使学校能够用合格的学生填满班级；它使招生委员会能够挑选那些其学院特别需要的学生，并且知道这些学生会来。它还让学校获得更高的入学率，而入学率常被用作衡量大学选拔性和受欢迎程度的指标之一。问题在于，这一过程实际上缩短了学生必须做出他们人生中到那时为止最重要决定之一的时间窗口。在常规录取中，高三学生最晚可以在5月1日前选择就读哪所学校；而提前决定实际上从他们那里偷走了六个月的时间，这些时间本来可以用来参观更多学校、做更多研究、与在校学生和校友交谈，并且可以说做出更明智的决定。坦率地说，美国有数量惊人的优秀大学，对于任何一名学生来说，都有许多非常适合的学校。当学生在招生过程早期就过于专注于某一所学校时，这种专注可能导致严重的失望——如果他们没有被录取；或者即使被录取了，他们现在也可能被约束去一所如果给予进一步反思时间实际上可能并不适合他们的学校。就提前决定能提供真正的录取优势而言，这种优势主要流向了那些已经拥有众多优势的学生。使用提前决定的学生往往是那些接受过较高质量大学指导的学生，这通常是因为他们来自更优越的背景。在这方面，存在反对提前决定的理由，因为来自低收入家庭的学生远不太可能拥有招生方面的诀窍来应对常常令人困惑的提前截止日期。在现行制度下，已经做了研究并且确信有一所他们非常想进入的学校的学生，或许应该通过提前决定申请。但对于那些还没有做足够研究，或者仍在不断改变自己最喜爱学校的学生来说，提前决定制度不必要地、过早地缩小了可能性范围，而此时学生正应该向一系列激动人心的选择敞开自己。",
+   "questions": [
+    {
+     "stem": "51.What are students obliged to do under early decision?",
+     "answer": "B",
+     "analysis": "文章开头指出提前决定具有约束力（binding），第二段也说学校知道这些学生会来，因此被录取后必须入学。A只是建议而非义务；C、D属于常规申请中可做的事，不是提前决定的强制要求。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52.Why do schools offer early decision?",
+     "answer": "A",
+     "analysis": "第二段明确说提前决定让学校能用合格学生填满班级，并挑选特别需要的学生且确保他们会来。B、C、D均未作为学校提供提前录取的动机提及，与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53.What is said to be the problem with early decision for students?",
+     "answer": "C",
+     "analysis": "第三段指出问题在于缩短了学生做出人生重要决定的时间，并夺走了本可用于参观、研究和咨询以做出更明智决定的几个月。A、B、D原文未提及或不是核心问题。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54.Why are some people opposed to early decision?",
+     "answer": "D",
+     "analysis": "第五段提到反对提前决定的理由是低收入家庭学生不太可能具备应对提前截止日期的招生诀窍，因此处于不利地位。A、B、C均曲解或未提及该理由。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55.What does the author advise college applicants to do?",
+     "answer": "B",
+     "analysis": "最后一段建议只有已充分研究且确信某所学校的学生才适合提前决定，否则不应申请，对应“除非充分准备，否则避免提前决定”。A、C、D都只涉及部分内容或偏离主要建议。",
+     "verified": false,
+     "dissent": "D"
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:32:22.987Z"
+}

@@ -214,9 +214,34 @@ check('选词填空每个空携带完整词库',
     && clozeQ.every((q) => q.options === clozeQ[0].options),
   `${clozeQ.length} 个空 × 每个 ${clozeOpts.length} 备选（${clozeOpts.slice(0, 3).join(' / ')}）`);
 
-// 未配置 AI 时，交卷必须明确返回 no_key，而不是静默失败
-const subNoKey = await js(`window.keeper.attemptSubmit(${anchor.id}, {})`);
-check('未配置 AI 时交卷优雅降级', subNoKey.ok === false && subNoKey.error === 'no_key', 'error=' + subNoKey.error);
+// 预置答案与解析：内置真题的答案/解析/翻译已提前生成烘进种子库，
+// 因此「未配置 Key」也应当能直接交卷核对 —— 这正是预置数据的意义
+const anchorQs = detail.passages.flatMap((p) => p.questions || []);
+const withAnswer = anchorQs.filter((q) => q.answer && String(q.answer).trim()).length;
+const objPassages = detail.passages.filter((p) => ['cloze', 'match', 'reading'].includes(p.section));
+const withTrans = objPassages.filter((p) => p.translation && p.translation.length > 100).length;
+check('内置真题已预置答案', anchorQs.length >= 20 && withAnswer === anchorQs.length,
+  `${withAnswer}/${anchorQs.length} 题有答案`);
+check('内置真题已预置中文解析', anchorQs.every((q) => (q.analysis || '').length > 8),
+  '最短解析 ' + Math.min(...anchorQs.map((q) => (q.analysis || '').length)) + ' 字');
+check('内置真题已预置全文翻译', objPassages.length > 0 && withTrans === objPassages.length,
+  `${withTrans}/${objPassages.length} 篇有翻译`);
+
+const ensPre = await js(`window.keeper.examAnalysis(${anchor.id})`);
+check('预置数据下解析不再触发 AI', ensPre.ok === true && ensPre.cached === true && ensPre.pending === 0, JSON.stringify(ensPre));
+
+// 未配置 Key 也能离线交卷计分：前 6 题答对、其余故意答错，验证确实按预置答案判定
+const preUa = {};
+anchorQs.forEach((q, i) => {
+  const correct = String(q.answer || 'A').toUpperCase();
+  const wrong = ['A', 'B', 'C', 'D', 'E'].find((L) => L !== correct) || 'A';
+  preUa[q.id] = i < 6 ? correct : wrong;
+});
+const subPre = await js(`window.keeper.attemptSubmit(${anchor.id}, ${JSON.stringify(preUa)})`);
+check('未配置 Key 也能交卷核对（预置答案）',
+  subPre.ok === true && subPre.correct === 6 && subPre.total >= 6,
+  subPre.ok ? `对 ${subPre.correct}/${subPre.total}，得分 ${subPre.score}` : 'error=' + subPre.error);
+await js(`window.keeper.attemptClear(${anchor.id})`);
 
 // 离线判分整链路：导入一套自带答案与翻译的题，全程不需要 AI
 const fullExam = {

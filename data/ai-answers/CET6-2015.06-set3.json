@@ -1,0 +1,248 @@
+{
+ "level": "CET6",
+ "year": 2015,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "自20世纪90年代起，旅行网站就已出现，当时Expedia、Travelocity等度假预订网站上线，让旅行者只需点击鼠标就能比较机票和酒店价格。信息不再被旅行社控制或隐藏在商业网络中，旅行行业由此发生变革，因为更高的透明度有助于大幅降低价格。\n如今，该行业正经历一场新变革——这次是提升服务质量。专门提供酒店、餐厅、公寓和出租车评价的在线评分平台让旅行者可以交流点评和体验，供所有人查看。\n酒店、餐饮等服务企业现在不是由业内专业人士，而是由服务的对象——顾客——来排名、分析和比较。这造就了买卖双方之间的一种新关系。顾客一向用脚投票；现在他们可以向任何感兴趣的人解释自己的决定。因此，企业变得更加负责，而且往往体现在非常具体的方面，这为改进服务创造了强大的动力。\n虽然一些读者可能对关于柏林不友好行李员或休斯顿酒店吹风机故障的八卦报道不感兴趣，但在线点评的真正力量不仅在于这些零散的故事，还在于网站汇总大量评分的能力。\n这种影响怎么强调都不为过。获得最高评分的企业能够快速增长，因为新顾客被好评吸引，随后又提供更多的正面反馈。在线评分的影响力如此之大，以至于许多公司现在聘请数字声誉经理来确保良好的网络形象。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "空格前为 no longer，后接过去分词构成被动，表示信息不再被旅行社控制，与 hidden 并列；controlled 符合语法和语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "helped 后接省 to 不定式，需动词原形；slash prices 是固定搭配，意为大幅降价，符合透明度提高压低价格的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "M",
+     "analysis": "破折号后为插入语修饰平台，specializing in 表示专注于某领域，说明这些平台专门针对酒店、餐厅等提供服务，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "K",
+     "analysis": "not by industry ... but by the customer 形成对比，空格处需名词表示与顾客相对的业内人士，industry professionals 为固定搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "E",
+     "analysis": "has 后需过去分词构成现在完成时；forge a relationship 表示建立、形成关系，符合在线点评造就买卖双方新关系的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "A",
+     "analysis": "more 后需形容词，且根据上下文，顾客点评使企业对其服务更加负责，accountable 表示负有责任的，语义恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "F",
+     "analysis": "creates 后需名词作宾语，powerful incentives to improve service 表示改善服务的强大动力，搭配合理。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "B",
+     "analysis": "websites' 后需名词，且常与 to do 连用表示做某事的能力；capacity to aggregate a large volume of ratings 指汇总大量评分的能力，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "H",
+     "analysis": "cannot be 后需过去分词或形容词；cannot be overstated 是固定表达，意为怎么强调也不为过，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "O",
+     "analysis": "句子主干完整，需副词作状语；新顾客被好评吸引，随后又提供更多正面反馈，subsequently 表示随后，符合时间顺序。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "一位好心的专业人士会给刚毕业的大学生什么忠告呢？中国？印度？巴西？贸易怎么样？上周商务部报告6月份贸易逆差接近500亿美元，这引发了新一轮的经济末日论。该月进口飙升至2003亿美元，在计算国内生产总值（GDP）时需要扣除。贸易逆差越大，GDP就越小。悲观者称，如果这种不平衡持续下去，可能会拖累经济增长。但对贸易数据还可以有另一种解读。过去两年，进出口数据似乎并未预示美国经济将陷入二次衰退——即整体经济活动再次下滑——而是表明经济在扩张。不断增长的贸易量——更多商品和服务进出美国——对许多行业都是好消息。从事航运、卡车运输、铁路货运、快递和物流的公司业绩均好于预期。不断上升的数字表明外国市场活力日益增强——当我们进口更多商品时，世界各地的人们手中就有了更多现金，而美国出口上升是因为更多外国人有能力购买我们生产和销售的产品。贸易涨潮对从事贸易敏感行业的人也是好消息，尤其是那些生产全球需求决定价格的商品的人——农产品、矿产品、金属、石油。虽然出口似乎总是滞后，但美国公司正逐月更加深入地参与全球经济。通用汽车每月在中国的汽车销量与在美国一样多。虽然这对进口可能没有多大帮助，但它确实改善了通用的资产负债表——从而使美国高管的工作更加稳定。美国经济面临的一大挑战是国内消费需求疲软。美国人正在偿还债务、增加储蓄、消费更加谨慎。考虑到我们所经历的，这在意料之中。但还有更大的挑战。美国大大小小的企业能否找到办法从不断增长的全球需求中分得一杯羹？除非你想搬去印度、巴西或中国，否则最好的办法就是通过贸易。这似乎显而易见，但仅仅与国内的朋友和邻居做生意已经不够了。那些没有制定更多出口战略、没有更深入参与外国市场或没有在全球贸易中发挥作用的企业和个人，正在将自己排除在世界经济机会的最大份额之外。",
+   "questions": [
+    {
+     "stem": "46. How do pessimists interpret the U, S. trade deficit in June?",
+     "answer": "C",
+     "analysis": "根据第一段末句，悲观者认为若贸易失衡持续，可能拖累经济增长，对应C。A、B、D均未在文中提及或与悲观者观点不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author say about the trade data of the past two years?",
+     "answer": "A",
+     "analysis": "作者指出过去两年进出口数据并未预示二次衰退，而是经济扩张，说明美国经济活动在增加。其他选项要么与文意相反（D），要么无关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. Who particularly benefit from the rising volume of trade?",
+     "answer": "C",
+     "analysis": "文中明确提到贸易涨潮对贸易敏感行业有利，尤其是农产品、矿产品、金属、石油等大宗商品生产者。A、B、D未提及或偏离重点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What is one of the challenges facing the American economy?",
+     "answer": "C",
+     "analysis": "文段指出美国经济一大挑战是国内消费需求疲软，美国人减少支出、增加储蓄，对应C“人们不愿消费”。D中“贸易活动疲软”与文中贸易增长相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is the author's advice to U.S. companies and individuals?",
+     "answer": "B",
+     "analysis": "作者建议美国企业和个人应扩大出口、更深入参与外国市场，即提高海外市场份额，对应B。D建议搬迁至劳动力廉价地区，文中虽提及但非作者建议，而是说不必如此。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "51. What does the author think of UK universities in terms of commercialisation?",
+     "answer": "A",
+     "analysis": "作者反对“大学商业化不力”的抱怨，指出英国目前在商业化多项指标上领先。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does the author say about the national data on UK universities’ performance in commercialisation?",
+     "answer": "B",
+     "analysis": "第四段指出全国数据掩盖了各大学表现的巨大差异。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. We can infer from Paragraph 5 that “policy interventions”(Line 1, Para. 4) refers to .",
+     "answer": "A",
+     "analysis": "第五段说明政策造成研究资源长期集中，即资源集中在少数大学。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author suggest research-led universities do?",
+     "answer": "A",
+     "analysis": "第六段建议研究主导型大学应最大化研究影响，产生广泛社会、经济和环境效益。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55.How can the university sector play a key role in the UK’s economic growth?",
+     "answer": "C",
+     "analysis": "末段指出加强区域技术转移协调和研究生院投资可助大学推动经济增长。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "信用卡“整形术”\n更安全的信用卡是应对日益严重黑客攻击的解决之道。\n\n[A] 一道薄薄的磁条是唯一挡在你的信用卡信息和不法分子之间的屏障，而他们一直在努力攻破它。正因如此，2014年正在成为一场重大对决：银行、执法部门和科技公司都在努力阻止一个黑客网络，这些黑客不断成功窃取账号、姓名、电子邮件地址以及其他用于身份盗窃的关键数据。从去年11月开始，在塔吉特、尼曼·马库斯和迈克尔斯商店发生的最近几次攻击中，有超过1亿个账户受到某种程度的影响。\n[B] “刷卡”是关键词：当你在商店购物时，信用卡越来越容易受到攻击。在最近几起事件中，黑客利用恶意软件偷偷插入零售商的销售终端系统——即结账收银机——获取了大量信用卡、借记卡或预付卡号码信息。随后，黑客将这些数据出售给在网络阴暗角落活动的第二拨犯罪分子。不久之后，被盗数据就出现在伪造卡上，并被用于网上购物。\n[C] 解决方案每张塑料卡只需多花2美元。这种补救措施是在美国以外广泛使用的一种安全技术。美国的信用卡使用已有40年历史的磁条技术处理交易，而世界其他大部分地区则使用更智能的卡，采用EMV（Europay、MasterCard、Visa的缩写）技术，该技术在卡中嵌入芯片，并要求客户输入PIN（个人识别码）以当场验证每笔交易。如果购买者在结账时未能输入正确的PIN，交易就会被拒绝。（网上购物可以通过设置单独的交易码来进行。）\n[D] 为什么大银行没有采用更安全的技术？行业通讯《尼尔森报告》的负责人戴维·罗伯逊说，说到邮寄新信用卡，一切都是相对成本的问题。“制卡、贴标签、编码账号和有效期、凸印、小信封——全部加在一起，成本在1美元左右。”罗伯逊说，目前一张芯片加PIN卡的成本接近3美元，因为芯片价格高。（一旦大型发卡机构一起转换，芯片成本应该会下降。）\n[E] 将3美元乘以美国流通中的50多亿张磁条信用卡和预付卡。然后考虑罗伯逊说的全球范围内估计有124亿美元的信用卡欺诈，其中44%发生在美国。美国信用卡欺诈每年约55亿美元。发卡机构迄今计算，即使是像塔吉特这样的大规模黑客攻击，承担其赔偿责任仍比更换所有塑料卡便宜。\n[F] 这使得美国零售商在世界上几乎是唯一依赖磁条技术来收取购物款的——也使得消费者容易受害。支付安全专家、电子支付公司Credit Call的首席技术官杰里米·冈布利解释说，每条磁条有三条信息轨道。第一条和第三条由银行或发卡机构使用。你的重要账户信息位于第二条轨道上，黑客试图捕获的就是它。“恶意软件实时扫描内存并寻找数据，”他说，“它创建一个文本文件，然后被盗走。”\n[G] 相比之下，芯片加PIN卡使伪造卡或侧录不可能，因为被扫描的信息是加密的。颇具讽刺意味的是，美国坚持使用磁条的历史原因，竟是曾经优越的技术。我们廉价、超可靠的有线网络使通过电话进行信用卡认证毫无障碍。在法国，卡公司创造EMV的部分原因是电话垄断企业效率极低且费用高昂。EMV解决方案允许交易在当地安全地验证。\n[H] 一些大银行，如富国银行，现在提供将你的磁条卡转换为芯片加PIN卡的服务。（实际上是一种混合体，仍然带有磁条，因为大多数美国商户没有EMV终端。）你应该接受吗？如果你出国旅行，答案是肯定的。\n[I] 还要记住，信用卡通常比借记卡有更好的责任保护。如果有人冒用你的信用卡，承担责任的是发卡机构或商户，而不是你。借记卡的责任限额因银行和欺诈相关情况而异。CreditCardInsider.com的联合创始人埃里克·阿达莫斯基说：“如果可行，合乎逻辑的做法是从银行获取一张芯片加PIN卡。”“由于责任问题，我会使用信用卡而不是借记卡。”现金也仍然很好用。\n[J] 零售商和银行都能从芯片加PIN卡较低欺诈率中受益，但多年来一直不愿投资于该技术所需的新基础设施，尤其是如果消费者还没有这种卡。这是一个先有鸡还是先有蛋的问题：如果购物者不携带芯片卡，没有人愿意花钱升级能读取芯片卡的销售终端系统——而如果商店不配备使用，消费者携带高级塑料卡也没什么意义。（塔吉特早先转向芯片加PIN的努力没有取得进展。）据冈布利说，存在一种“你先请”的心态。“僵局必须被打破。”\n[K] 摩根大通首席执行官杰米·戴蒙最近表示愿意这样做，并指出银行和商户在过去十年里一直在就交换费——他们从交易价格中保留的百分比——互相起诉，而不是应对日益严重的黑客问题。大通银行以自己的品牌提供芯片卡，并为英国航空和丽思卡尔顿等旅游相关公司提供其他几种芯片卡。\n[L] 塔吉特和尼曼的黑客事件也改变了成本计算：虽然零售商一直不愿花费凯捷咨询估计的67.5亿美元将所有收银机转换为兼容芯片加PIN，但他们现在面临的潜在责任要大得多。塔吉特已遭到被黑消费者的集体诉讼。一家知名连锁店的一位零售高管向《时代》承认：“这是终极噩梦。”\n[M] 卡支付公司万事达和维萨正在大力推动变革。这两家公司已警告交易链中的所有各方——商户、网络、银行——如果他们在2015年10月之前不符合EMV标准，合规性最差的一方将承担欺诈风险。\n[N] 与此同时，配备应用程序的智能手机和数字钱包——它们都可以使用EMV技术——开始侵蚀卡和现金的地盘。例如，PayPal正在测试一款应用程序，让你可以在当地商户通过手机即时支付，而无需向他们交出任何卡信息。更远的未来还有生物识别认证，比如可以用指纹加密。\n[O] 不过，在可预见的未来，信用卡和借记卡仍将与我们同在，如果我们坚持磁条技术，黑客也会。英国人冈布利说：“在我看来，一个尖端科技国家依赖一项已有40年历史的技术，这太疯狂了。”正因如此，推动芯片加PIN的进展可能要靠消费者。罗伯逊说：“当你让消费者陷入担忧和不便的境地时，事情就会真正见分晓。”",
+   "questions": [
+    {
+     "stem": "36. It is best to use an EMV card for international travel.",
+     "answer": "H",
+     "analysis": "该段提到：“If you travel internationally, the answer is yes.”（如果你出国旅行，答案是肯定的。）",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. Personal information on credit and debit cards is increasingly vulnerable to hacking.",
+     "answer": "B",
+     "analysis": "该段提到：“cards are increasingly vulnerable to attacks when you make purchases in a store”（购物时信用卡越来越容易受到攻击），并说明黑客获取信用卡、借记卡等信息。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. The French card companies adopted EMV technology partly because of inefficient telephone service.",
+     "answer": "G",
+     "analysis": "该段提到：“In France, card companies created EMV in part because the telephone monopoly was so maddeningly inefficient and expensive.”（在法国，卡公司创建EMV部分是因为电话垄断企业效率极低且费用高昂。）",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. While many countries use the smarter EMV cards, the U.S. still clings to its old magstripe technology.",
+     "answer": "C",
+     "analysis": "该段对比：“While American credit cards use the 40-year-old magstripe technology... much of the rest of the world uses smarter cards with a technology called EMV”（美国使用磁条技术，世界其他大部分地区使用更智能的EMV卡）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. Attempts are being made to prevent hackers from carrying out identity theft.",
+     "answer": "A",
+     "analysis": "该段提到：“banks, law enforcement and technology companies are all trying to stop a network of hackers... used in identity theft”（银行、执法部门和科技公司都在努力阻止黑客进行身份盗窃）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Credit cards are much safer to use than debit cards.",
+     "answer": "I",
+     "analysis": "该段提到：“credit cards typically have better liability protection than debit cards”（信用卡通常比借记卡有更好的责任保护），并引述“use credit cards over debit cards because of liability issues.”",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Big banks have been reluctant to switch to more secure technology because of the higher costs involved.",
+     "answer": "D",
+     "analysis": "该段开头：“Why haven’t big banks adopted the more secure technology? ... it’s all about relative costs”（为什么大银行没有采用更安全的技术？都是相对成本问题），并说明芯片卡成本接近3美元。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. The potential liability for retailers using magstripe is far more costly than upgrading their registers.",
+     "answer": "L",
+     "analysis": "该段指出：“the potential liability they now face is dramatically greater”（他们现在面临的潜在责任要大得多），尽管升级需67.5亿美元。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. The use of magstripe cards by American retailers leaves consumers exposed to the risks of losing account information.",
+     "answer": "F",
+     "analysis": "该段指出：“That leaves American retailers... and leaves consumers vulnerable”（这使得美国零售商……并使得消费者容易受害），且重要账户信息在第二轨道易被黑客捕获。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Consumers will be a driving force behind the conversion from magstripe to EMV technology.",
+     "answer": "O",
+     "analysis": "该段指出：“it may be up to consumers to move the needle on chip and PIN”（推动芯片加PIN可能要靠消费者），并引述罗伯逊的话。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:32:54.618Z"
+}

@@ -1,0 +1,52 @@
+{
+ "level": "CET6",
+ "year": 2015,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "46. What do some most influential medical groups recommend doctors do?",
+     "answer": "C",
+     "analysis": "文章首句指出有影响力的医疗组织建议医生在决定治疗方案时权衡费用，而不仅看疗效，故选C。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What were doctors mainly concerned about in the past?",
+     "answer": "B",
+     "analysis": "文章第二段提到医生过去只关注病人个人，即主要关心治疗效果，故选B。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What may the new guidelines being developed lead to?",
+     "answer": "A",
+     "analysis": "新指南会使医生在行医时考虑费用，推动医生角色重新定义，故选A。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What risk do doctors see in their dual role as patient care providers and financial overseers?",
+     "answer": "D",
+     "analysis": "医生担心同时作为病人护理者和财务监督者会产生冲突，并可能失去病人信任/尊重，故选D。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do some experts say about doctors’ involvement in medical cost analysis?",
+     "answer": "C",
+     "analysis": "最后一段引用分析家观点，认为医生参与成本分析反映了社会未能处理该问题，故选C。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-09T17:34:07.346Z"
+}
