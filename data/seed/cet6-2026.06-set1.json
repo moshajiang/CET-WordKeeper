@@ -1,0 +1,310 @@
+{
+  "level": "CET6",
+  "year": 2026,
+  "month": 6,
+  "set_no": 1,
+  "title": "CET6 2026 年 6 月第 1 套",
+  "source": "cet6_2026_06_1.pdf",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: For this part, you are allowed 30 minutes to write an essay that\nbegins with the sentence \"Faced with growing globalization, students realize that\na deep understanding of traditional Chinese culture helps cultivate cultural\nconfidence.\" You can make comments, cite examples or use your personal\nexperiences to develop your essay. You should write at least 150 words but no\nmore than 200 words.\n[You should copy the sentence given in quotes at the beginning of your essay.]",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "Two proposals are before the state legislature that looks to put some limits on\never-increasing rent prices, which some lawmakers say are contributing to\nrising homelessness rates.\nThe proposals [26] caps on rent increases, preventing landlords in the state\nfrom raising rent more than the rate of inflation in most cases. There are\nexceptions for buildings less than 10 years old, public housing, improvements\nbeyond maintenance, and a hardship [27].\nIn a 2020 study, researchers at the U. S. Government Accountability Office\nestimated that every $100 in rent increase is [28] to a 9% rise in homelessness.\nRent increases have an even more detrimental effect on some demographic\ngroups, such as racial minorities.\nRepresentative Alex Ramel explained why he thought that this kind of\nlegislation was so important, telling the story of a [29] struggling to live in the\ncommunity.\nRamel pointed out the [30] effect of double-digit rent increases, saying that he\nmade the decision to introduce the legislation while talking to a young man in\nBellingham. \"He's a recent graduate from Western Washington University and\njust got a new job,\" Ramel said. \"He was leaving our community because his\nlandlord [31] him that his rent was going to go up by $600 a month.\"\nThe Rental Housing Association of Washington opposes the legislation. The\nassociation [32] that the policy won't actually solve the problem of rental prices.\nInstead, it will punish small landlords and allow wealthy renters easy access to\ncheap housing.\n\"The rent control policy has failed everywhere it has been [33] in this county. It\nhas not fixed one housing problem [34]. It also does not distinguish between\nrich and poor when [35] who gets the benefits of rent control,\" said Chester\nBaldwin with the Rental Housing Coalition.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "anywhere"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "asserts"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "constituent"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "correlated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "determining"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "devastating"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "enacted"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "entails"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "exemption"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "impose"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "notified"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "notwithstanding"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "presume"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "rehabilitation"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "reproaching"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读 · Meet the 'digital nomads' who travel the world in search of fast Wi-Fi",
+      "content": "Meet the 'digital nomads' who travel the world in search of fast Wi-Fi\nA) For those \"citizens of the world\", the office can be anything from a beach hut in\nBrisbane to a Starbucks in Seattle, thanks to the growing prevalence of remote-based\nwork. But roaming the globe from café to café is not without its challenges.\nB) When the average traveller lands in a city like Bangkok, Berlin, or Buenos Aires, their\nfirst step might be to drop their bags at their hotel and to log on to TripAdvisor to find\nout the hours of a popular tourist attraction or the best rooftop bar for happy hour.\nC) But people like Pieter Levels are not your average traveller. A Dutch website\ndeveloper, Levels has been living and working nomadically ( 像游牧民那样 ) in places like\nSingapore, Hong Kong, Tokyo and Manila for two years. With just a carry-on backpack,\nhe chooses his location at will, based on a variety of factors —— Wi-Fi speed, average\ntemperature, exotic food and cost of living —— that have little bearing on the work he\nactually does.\nD) Somewhere in his nomadic journey, Levels noticed that there was a growing need to\ncreate an online infrastructure for people like himself. That's when he created\n#nomads, a membership-based chat system which runs on the team communication\nplatform known as Slack. The channel allows users to ask people in their current city\nthe types of practical questions that a tourist would unlikely need to ask.\nE) Members of the geographically dispersed subculture that Levels is a part of call\nthemselves \"digital nomads\". They are borderless, mostly self-employed remote\nworkers who interact with cities in a way that's entirely different from a tourist, but still\ndoesn't quite reach the status of resident. A relatively new phenomenon, there are no\nhard statistics on the prevalence of digital nomads or location independent workers.\nBut thanks to the growing prevalence of freelance ( 自由职业的 ) livelihoods, a global\nsharing economy and numerous digital tools, the number of people who are able to\nlive this life is growing quickly. And in a rapidly urbanising world, where a major city in\nAsia increasingly offers the same comforts as one in Europe, many people are reaching\nthe realisation they don't need to stay in one place.\nF) So how does a nomad differ from a tourist or resident? In many ways, Levels says,\nyou can think of a digital nomad like a \"short-term independent expat ( 移居国外的人 )\".\nUnlike a resident expat, they don't work for a large multinational company in an air\nconditioned office building and they generally enter a country on a tourist visa, simply\nrenewing or moving on when it expires. But unlike a tourist, they don't arrive in a\nforeign city without any responsibilities. Travel isn't necessarily required for them to do\ntheir jobs, but neither is staying in one place.\nG) Janet Brent is an independent ebook designer. She says many people she knows\nassume she travels for work, but in reality her international destinations are largely up\nto her, and driven by cost. \"Contrary to what some people might think, I don't get paid\nto travel — I simply choose the lifestyle. Rather than rent in one given city, I choose to\ntravel and do short-term, temporary stays around the world, and my travel decisions\nare literally based on what makes the most sense financially for me,\" Brent said. \"It's\ncompletely different from vacationing —— you really sink into the city life and get your\nfeet wet in the communities.\"\nH) Bryce Adams is another such nomad. He works as a developer for a South African\ncompany WooThemes, which has a workforce that's more than 80% remote-based.\nThough Adams frequently posts pictures on Instagram of his enviable cooking\nadventures from Seoul to Bangkok, he says nomad life in foreign cities has its\ndownsides, including finding adequate Wi-Fi for the bandwidth-hungry work his\nlivelihood depends on. Contrary to the perception that he works under a mango tree in\na tropical haven, Adams says the reality of this life means that he often ends up staying\nin more western style places in globalised cities —— ones that are sure to have air\nconditioning and a decent connection —— rather than exotic beachfront cafés.\nI) \"A fellow nomad posted quite a funny but honest message on Twitter a few days ago\nthat stuck with me: 'It's funny that digital nomads spend 16 hours to fly to the other\nside of the world to sit in Starbucks,' and it's completely true,\" Adams said. \"When\nyou're a digital nomad, you don't actually have as much freedom as most people think\nyou do. We have deadlines, we all have people relying on us and a mouth (or two) that\nneeds to be fed. It's nice to be able to work anywhere in the world but it's not without\nits challenges.\"\nJ) But these challenges can often provide an opportunity for nomads to see a side of a\ncity they may not have if they were staying in a luxury hotel for a long weekend.\nHowever inconvenient, a trip to a local doctor, immigration office or laundry —— or a\nconflict with a local Airbnb host (the accommodation style of choice for most nomads)\n—— can be far more culturally instructive than a trip to the national museum. And\nbecause nomads often have to stay where the strongest internet connection is, they\ntend to spend more time in developing cities compared to the average tourist, who\noften flees to more touristy destinations soon after landing at the airport.\nK) The nomad life is, by all accounts, one built out of privilege. You not only need a\nrelatively powerful passport that makes tourist visas easy to attain, but also a\nknowledge economy job and access to the technology and devices that make remote\nworking possible. But nomads like Adams say that while they are aware of this\nprivilege, they believe living this way elevates what they're able to offer, by giving them\na broader perspective on what they're building, writing, or designing and expanding\ntheir world view.\nL) \"Being able to travel and get around makes it easy to stay inspired,\" he added. \"I\ntruly believe that it makes me a more sensible human being, as I tend to see and\nappreciate the creative solutions people come up with in other parts of the world, even\nthough many tend to have far more constraints than we have at home.\"\nM) So when you're constantly on the road and don't own any property or have a fixed\naddress, which city do you call home? It's no surprise that many nomads are dual\ncitizens or \"third culture kids,\" who have grown up with a notion of identity that's not\ntied to nationalism or staying in one place. Levels says that the nomad life has not only\nchanged his notions of citizenship, but the people he chooses to spend time with as\nwell. \"Saying you're a 'citizen of the world' is a super cliché, right? But it's becoming\nquite true,\" Levels said. \"This global awareness has been the reason I started Nomad\nList and it's affected who my friends are. It's normal to have dinner now and sit with a\nKorean girl, a British-Singaporean guy, a Mexican girl and a Nigerian guy. As much as\nthat sounds like a politically correct TV advertisement, it's great that that's the time\nwe're in now.\"\nStatements:\n1. 36. Pieter Levels created a chat system to satisfy the need of digital nomads for\ninformation tourists normally don't seek.\n2. 37. It is said that digital nomads do not enjoy as much freedom as most people\nsuppose.\n3. 38. Different from tourists, digital nomads travel to foreign places with work to do.\n4. 39. Digital nomads believe their lifestyle enables them to broaden their vision and\ndo a better job.\n5. 40. The first thing a typical traveller possibly does after arriving at a city is search\nfor information online about its popular tourist attractions.\n6. 41. One digital nomad thinks their life in foreign cities has its disadvantages.\n7. 42. Travelling around helps to keep digital nomads inspired.\n8. 43. The number of self-employed remote workers living a digital nomad's life is fast\nincreasing.\n9. 44. Pieter Levels says his life as a nomad has transformed not only his idea of\ncitizenship, but his choice of companions.\n10. 45. Interactions with local people and institutions provide nomads with far more\ncultural information than a visit to the national museum.",
+      "questions": []
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "Children's use of social media is a problem. That doesn't mean it should be\nstopped. While younger children should not be on platforms where 13 is the\nminimum age, it is neither practical nor desirable to imagine a world in which\nteenagers are prevented from accessing the platforms and messaging systems\nthat the adults around them use to organise their lives.\nBut the pleasure and stimulation that people of all ages find on their screens\nand smartphones must not blind us to the harm that spending time in this way\ncan cause. The finding that the alarmingly high rate of depression in British\nteenage girls is closely correlated to time spent on social media is extremely\nconcerning. Research found that two in five girls are on social media for at least\nthree hours a day —— with half as many boys engaged to the same extent. More\nthan a third of depressed girls have experienced online harassment. About half\nof affected girls suffered disrupted sleep, compared with 20% of depressed boys.\nAlthough the research does not prove that social media causes depression, the\nimportance of the finding that there is a connection should not be\nunderestimated. Schools have done important work in communicating key\nmessages about the risks of online abuse. But when it comes to broader\nquestions about \"screen time\", many professionals as well as parents are\nconfused and uncertain.\nThe health secretary, Matt Hancock, wants official guidelines on time and age\nlimits. This idea has the virtue of simplicity, though some experts question its\neffects and call for a greater degree of differentiation, arguing that time online\nby itself is not a bad thing and it all depends on what you are doing. Also due\nthis year is information commissioner Elizabeth Denham's Age Appropriate\nDesign Code, covering the use of children's personal data. Both initiatives are\nwelcome. But the government is playing catch-up. Statutory regulation of the\ndigital media giants is long overdue. The failure to protect children from data\nharvesting and targeted advertising thus far is as shocking as the lack of concern\nshown by the companies themselves with regard to children's psychological\nhealth.\nOf course, social media companies are not the source of all our ills, and can offer\na too-easy target for politicians keen to divert attention from inadequately\nresourced schools and health services. There are other reasons for the rising\nincidence of depression in young people, with increasing pressure to succeed in\neducation and in life more broadly —— to be famous, beautiful, rich —— often\ncited as a source of unhappiness or anxiety which can, if aggravated by other\nfactors, and not managed, tip into ill health. Safeguarding means more than the\navoidance of physical threat.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "What does the author believe regarding social media?",
+          "options": [
+            "A) To stop children using it is unrealistic and inadvisable.",
+            "B) It helps both adults and children to organise their lives.",
+            "C) It poses problems to both parents and children.",
+            "D)"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What do we learn from the passage about British teenage girls?",
+          "options": [
+            "A) The more frequently they interact on social media, the more they experience harassment.",
+            "B) The more time they spend on social media, the more likely they suffer from depression.",
+            "C) Most of them are engaged on social media for at least three hours a day.",
+            "D) They spend half as many hours on social media as"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What is the author's view on the research finding about British teenage girls?",
+          "options": [
+            "A) Its implications about online abuse are obvious.",
+            "B) Its key message calls for immediate attention.",
+            "C) Its importance should not be undervalued.",
+            "D) Its uncertainty should not go unnoticed."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What do experts think of health secretary Matt Hancock's idea?",
+          "options": [
+            "A) Its implementation requires prompt action.",
+            "B) It is a welcome initiative but is long overdue.",
+            "C) Its success depends on how it is implemented.",
+            "D) It is too simplistic to produce the desired effect."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "Besides social media companies, what factors contribute to young people's\npsychological health problems?",
+          "options": [
+            "A) Poorly financed schools and health services.",
+            "B) Politicians' eagerness to divert public attention.",
+            "C)",
+            "D) Their parents' educational background and life."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "About a decade ago, the G-20, a forum of the world's biggest economies, agreed\nto crack down on multinational corporations' abusive use of tax havens. This\nresulted in a plan that aimed to curb practices that shielded a large chunk of\ncorporate profits from tax authorities.\nBut, instead of reining in the use of tax havens —— countries such as the\nBahamas and Cayman Islands with very low or no effective tax rates —— the\nproblem has only gotten worse.\nIn a new study, we measured the excessive profits reported in tax havens that\ncannot be explained by ordinary economic activity such as employees, factories\nand research in that country. Our findings show a striking pattern of artificial\nshifting of paper profits to tax havens by corporations, which has been relentless\nsince the 1980s.\nWe found that the world's biggest multinational businesses shifted 37% of the\nprofits —— $969 billion —— they earned in other countries to tax havens in\n2019. The figure was less than 2% in the 1970s. The main reasons for the large\nincrease were the growth of the tax avoidance industry in the 1980s and U. S.\npolicies that made it easier to shift profits from high-tax countries to tax havens.\nWe estimate that the amount of corporate taxes lost as a result reached 10% of\ntotal corporate revenue in 2019, up from less than 0.1% in the 1970s. In 2019,\nthe total government tax loss globally was $250 billion. U. S. multinational\ncorporations alone accounted for about half of that, followed by the U. K. and\nGermany.\nHow do policymakers fix this? So far, the world as a whole has been trying to\nsolve this problem by cutting or scrapping corporate taxes in a very gradual way.\nIn the past 40 years, the global effective corporate tax rate has fallen from 23%\nto 17%. At the same time, governments have relied more heavily on\nconsumption taxes.\nBut the root cause of profit-shifting is the incentives involved, such as generous\nor lenient corporate tax rates in other countries. If countries could agree on a\nglobal minimum corporate tax rate of, say, 20%, the problem of profit-shifting\nwould largely disappear, as tax havens would simply cease to exist.\nThis type of mechanism is exactly what more than 130 countries signed onto in\n2021, with implementation of a 15% minimum tax set to begin soon in the EU,\nU. K., Japan, Indonesia and many other countries. The U. S. has notably not\nbeen able to pass this legislation.\nOur research suggests implementing this type of tax reform is necessary in\nreversing the shift of ever-greater amounts of corporate profits to tax havens\n—— instead of being taxed by the governments where they operate and create\nvalue.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "What do we learn about the G-20's agreement on curbing the use of tax havens?",
+          "options": [
+            "A) It has aggravated the problem in non-G-20 countries.",
+            "B) It has taken a toll on countries such as",
+            "C) It has failed to achieve the expected outcome.",
+            "D) It has failed to result in any long-term plan."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What mainly accounted for the large increase in the world's biggest multinational\ncorporations' shift of profits to tax havens?",
+          "options": [
+            "A) Fluctuating tax rates globally.",
+            "B) Lenient policies of the U. S.",
+            "C) Heavy taxes imposed on them.",
+            "D) Rapid growth of their business."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What have policymakers been doing to prevent government tax loss?",
+          "options": [
+            "A) Reducing corporate taxes step by step.",
+            "B) Scrapping consumption taxes gradually.",
+            "C) Making joint efforts to levy corporate taxes.",
+            "D)"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What does the author say would bring tax havens to an end?",
+          "options": [
+            "A) The alignment of corporate taxes with consumption taxes.",
+            "B) The implementation of generous tax rates in all countries.",
+            "C) The agreement on the root cause of global profit-shifting.",
+            "D) The imposition of a global minimum corporate tax rate."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What could be expected of the global problem of profit-shifting in the near future?",
+          "options": [
+            "A) It would be solved with more countries cutting tax rates.",
+            "B) It would end with governments' awareness of its severity.",
+            "C) It would cease to exist with worldwide corporate support.",
+            "D) It would continue because of noncooperation from the U. S."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "科技进步使中国的医疗事业得到快速发展。近年来，远程医疗使优质医疗资源惠\n及更多患者。医学专家可以通过视频为偏远地区患者提供咨询，指导当地医生制\n定并实施治疗方案。人工智能辅助诊断系统帮助医生识别患者的早期症状，提高\n诊断准确率。电子健康档案的普及让医生能够快速了解患者病史，避免重复检\n查。线上医疗咨询平台极大地方便了患者就诊。科技与医疗的深度融合更好地满\n足了人民的健康需求。\n答案速查（第 1 套）",
+      "questions": []
+    }
+  ]
+}

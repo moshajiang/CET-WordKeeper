@@ -1,0 +1,381 @@
+{
+  "level": "CET4",
+  "year": 2024,
+  "month": 6,
+  "set_no": 1,
+  "title": "CET4 2024 年 6 月第 1 套",
+  "source": "2024年06月大学英语四级考试真题（第1套）.pdf",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: Suppose your university is seeking students’ opinions on whether university\nlibraries should be open to the public. You are now to write an essay to express your view. You\nwill have 30 minutes for the task. You should write at least 120 words but no more than 180\nwords.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "It’s well known that physical exercise is beneficial not just to physical health but also to\nmental health. Yet whereas most countries have 26 , evidence-backed guidelines on the\ntype and intensity of exercise 27 for various physical health benefits, such guidelines do\nnot yet exist for exercise and mood.\nThis is 28 due to a lack of necessary evidence. However, a new systematic review brings\nus usefully up-to-date on the current findings in this area.\nBefore 29 into some of the key take-aways, an important 30 made in the\nreview is between aerobic exercise and anaerobic. The former 31 such things as walking,\njogging and cycling and means exercising in such a way that your body is able to use oxygen\nto burn fat for energy. In contrast, anaerobic exercise —such as lifting heavy weights —is of\nsuch 32 intensity that your body does not have time to use oxygen to create energy and\nso instead it breaks down glucose (葡萄糖) in your blood or muscles.\nBeginning first with the influence of exercise intensity on the mood benefits of aerobic\nexercise, the researchers, led by John Chan at Shenzhen University, found 33 results from\n19 relevant studies. Some favoured higher intensity, others low, while seven studies found that\nintensity made no 34 to mood benefits.\nIn relation to the intensity of anaerobic exercise, however, the results were far clearer —\nthe optimum (最佳选择 ) for improving mood is 35 intensity, perhaps because low\nintensity is too dull while high intensity is too unpleasant.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "constitutes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "dipping"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "notified"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "contradictory"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "distinction"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "partly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "decision"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "falling"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "required"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "detailed"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "involves"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "traditionally"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "difference"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "moderate"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "vigorous"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读 · Why Do Americans Work So Much?",
+      "content": "Why Do Americans Work So Much?\nA) How will we all keep busy when we only have to work 15 hours a week? That was the\nquestion that worried the British economist John Maynard Keynes when he wrote his short\nessay “Economic Possibilities for Our Grandchildren” in 1930. Over the next century, h e\npredicted, the economy would become so productive that people would barely need to work\nat all. For a while, it looked like Keynes was right. In 1930 the average working week was\n47 hours in the United States. But by 1970, the number of hours Americans w orked on\naverage had fallen to slightly less than 39.\nB) But then something changed. Instead of continuing to decline, the duration of the working\nweek remained stable. It has stayed at just below 40 hours for nearly five decades. So what\nhappened? Why are people working just as much today as in 1970?\nC) There would be no mystery in this if Keynes had been wrong about the power of technology\nto increase the economy’s productivity, which he thought would lead to a standard of living\n“between four and eight times as high as it is today.” But Keynes got that right: Technology\nhas made the economy massively more productive. According to Benjamin M. Friedman,\nan economist at Harvard, the U.S. economy is right on track to reach Keynes’s eight-fold\n(八倍) multiple by 2029. That is a century after the last data Keynes would have had access\nto.\nD) In a new paper, Friedman tries to figure out why that increased productivity has not\ntranslated into increased leisure time. Perhaps people just never feel ma terially satisfied,\nalways wanting more money to buy the next new thing. This is a theory that appeals to\nmany economists. “This argument is, at best, far from sufficient,” he writes. If that were\nthe case, why did the duration of the working week decline in the first place?\nE) Another theory Friedman considers is that, in an era of ever fewer settings that provide\neffective opportunities for personal connections and relationships, people may place more\nvalue on the socializing that happens at work. There is support for this theory. Many people\ntoday consider colleagues as friends. But Friedman argues that the evidence for this theory\nis far from conclusive. Many workers report that they would like to spend more time with\nfamily, rather than at work. Furthermore, this theory cannot explain the change in trend in\nthe U.S. working week in the 1970s.\nF) A third possibility proves more convincing for Friedman. That is: American inequality\nmeans that the gains of increasing productivity are not widely shared by everyone. In other\nwords, most Americans are too poor to work less. Unlike the other two explanations\nFriedman considers, this one fits chronologically (按年代). Inequality declined in America\nduring the period following World War II, along with the duration of the w orking week.\nBut since the early 1970s it has risen dramatically.\nG) Keynes’s prediction of a shorter working week rests on the idea that the standard of living\nwould continue rising for everyone. But Friedman says that this is not what has happened.\nAlthough Keynes’s eight-fold figure holds up for the economy as a whole, it is not at all\nthe case for the median (中位数的) American worker. For them, output by 2029 is likely\nto be around 3.5 times what it was when Keynes was writing. This is a bit below his four -\nto eight-fold predicted range.\nH) This can be seen in the median worker’s income over this time period, complete with a shift\nin 1973 that fits in precisely with when the working week stopped shrinking. According to\nFriedman, between 1947 and 1973 the average hourly wage for normal workers (those who\nwere not in management roles) in private industries other than agriculture nearly doubled\nin terms of what their money could buy. But by 2013 the average hourly wage for ordinary\nworkers had fallen 5 percent from the 1973 level in terms of actual purchasing power. Thus,\nthough American incomes may have gone up since 1973, the amount that American\nworkers can actually buy with their money has gone down. For most Americans, then, the\nmagic of increasing productivity s topped working around 1973. Thus, they had to keep\nworking just as much in order to maintain their standard of living.\nI) What Keynes predicted was a very optimistic version of what economists call technological\nunemployment. This is the idea that less labor will be necessary because machines can do\nso much. In Keynes’s vision, the resulting unemployment would be distributed more or less\nevenly across society in the form of increased leisure. But Friedman says that, for\nAmericans, reality is much darker. Americans now have a labor market in which millions\nof people—those with fewer skills and less education —are seeking whatever poorly paid\nwork they can get. This is confirmed by a recent poll that found that, for half of hourly\nworkers, their top concern is not that they work too much but that they work too little. This\nis most likely not because they like their jobs so much. Rather, we can assume it is because\nthey need the money.\nJ) This explanation leaves an important question. If the very rich —the workers who h ave\nreaped above-average gains from the increased productivity since Keynes’s time —can\nafford to work less, why do they continue to work so much? (Indeed, research has shown\nthat the highest earners in America tend to work the most.) Friedman believes that for many\ntop earners, work is a labor of love. They are doing work they care about and are interested\nin, and doing more of it is not necessarily a burden. For them, it may even be a pleasure.\nThese top earners derive meaning from their jobs and work is an important part of how they\nthink of themselves. And, of course, they are compensated for it at a level that makes it\nworth their while.\nK) Friedman concludes that the prosperity (繁荣) Keynes predicted is here. After all, the\neconomy as a whole has grown even more brilliantly than he expected. But for most\nAmericans, that prosperity is nowhere to be seen. And, as a result, neither are those shorter\nworking weeks.",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "Some people view socializing at the workplace as a chance to develop personal relationships.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "As ordinary American workers’ average hourly pay had decreased despite increasing\nproductivity, they had to work just as many hours as before to keep their living standards.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "American workers’ average weekly working time has not changed for nearly half a century.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "Friedman believes inequality in the U.S. largely explains why increasing productivity has\nnot resulted in reduced working hours.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "Man y economists assume people’s thirst for material things has prevented them from\nenjoying more leisure time.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "An economist’s prediction about a shorter average working week seemed to be correct for\na time in the 20th century.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "In the U.S. labor market, the primary concern of people with less schooling and fewer skills\nis to secure any employment even if it is low-paid.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "Keynes was right in predicting that technology would make th e economy much more\nproductive.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "Many of the highest earners have a keen interest in and love for what they are doing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "According to Keynes, there would be a shorter working week with everyone’s standard of\nliving continuing to rise.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "Lao Zi once said, “Care about what other people think and you will always be their\nprisoner.”\nPeople-pleasing, or seeking self-worth through others’ approval, is unproductive and an\nexhausting way to go through life. Why do we allow what others think of us to have so much\npower over how we feel about ourselves? If it’s true that you can’t please all people all of the\ntime, wouldn’t it make sense to stop trying?\nUnfortunately, sense often isn’t driving our behavior. For social beings who desire love\nand belonging, wanting to be liked, and caring about the effect we have on others, is healthy\nand allows us to make connections. However, where we get into trouble is when our self-worth\nis dependent upon whether we win someone’s approval or not.\nThis need to be liked can be traced back to when we were children and were completely\ndependent on others to take care of us: Small child ren are not just learning how to walk and\ncommunicate, they are also trying to learn how the world works. We learn about who we are\nand what is expected of us based on interactions with others, so, to a four-year-old, if Mommy\nor Daddy doesn’t like him or her, there is the danger that they will abandon them. We need to\nunderstand that when we desperately want someone to approve of us, it’s being driven by that\nlittle kid part of us that is still terrified of abandonment.\nAs you become more capable of providing yourself with the approval you seek, your need\nfor external validation will start to vanish, leaving you stronger, more confident, and yes,\nhappier in your life. Imagine how much time we lose each moment we restrain our authentic\nselves in an effort to be liked.\nIf we base our worth on the opinions of others, we cheat ourselves of the power to shape\nour experiences and embrace life not only for others but also for ourselves, because ultimately,\nthere is no difference. So embrace the cliché (老话) and love yourself as it’s highly doubtful\nthat you’ll regret it.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "What can we conclude from Lao Zi’s quotation?",
+          "options": [
+            "A) We should see through other people’s attempt to make a prisoner of us.",
+            "B) We can never really please other people even if we try as hard as we can.",
+            "C) We can never be truly free if taking to heart others’ opinion of us.",
+            "D) We should care about other people’s view as much as they care about our own."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What will happen if we base our self-worth on other people’s approval?",
+          "options": [
+            "A) Our desire to be loved will be fulfilled.",
+            "B) Our life will be unfruitful and exhausting.",
+            "C) Our identity as social beings will be affected.",
+            "D) Our sense of self will be sharpened and enhanced."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What may account for our need to be liked or approved of?",
+          "options": [
+            "A) Our desperate longing for interactions with others.",
+            "B) Our understanding of the workings of the world.",
+            "C) Our knowledge about the pain of abandonment.",
+            "D) Our early childhood fear of being deserted."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What can we do when we become better able to provide ourselves with the desired\napproval?",
+          "options": [
+            "A) Enjoy a happier life.",
+            "C) Receive more external validation.",
+            "B) Exercise self-restraint.",
+            "D) Strengthen our power of imagination."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What does the author advise us to do in the last paragraph?",
+          "options": [
+            "A) Embrace life for ourselves and for others.",
+            "C) See our experiences as assets.",
+            "B)",
+            "D) Love ourselves as we are."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Some people have said aging is more a slide into forgetfulness than a journey towards\nwisdom. However, a growing body of research suggests that late-in-life learning is possible. In\nreality, education does an aging brain good.\nThroughout life, people’s brains constantly renovate themselves. In the late 1960s, British\nbrain scientist Geoffrey Raisman spied growth in damaged brain regions of rats through an\nelectron microscope; their brains were forging new connections. This meant brains may change\nevery time a person learns something new.\nOf course, that doesn’t mean the brain isn’t affected by the effects of time. Just as height\nusually declines over the years, so does brain volume: Humans lose about 4 percent every\ndecade starting in their 40s. But that re duction doesn’t necessarily make people think slower;\nas long as we are alive and functioning, we can alter our brains with new information and\nexperiences.\nIn fact, scientists now suspect accumulating novel experiences, facts, and skills can keep\npeople’s minds more flexible. New pathways can strengthen our ever-changing mental structure,\neven as the brain shrinks.\nConventional fixes like word puzzles and brain-training apps can contribute to mental\ndurability. Even something as simple as taking a differ ent route to the grocery store or going\nsomewhere new on vacation can keep the brain healthy.\nA desire for new life challenges can further boost brainpower. Research about aging adults\nwho take on new enterprises shows improved function and memory as well as a reduced risk\nof ment al disease. Openness —a characteristic defined by curiosity and a desire for\nknowledge—may also help folks pass brain tests. Some folks are born with this take-in-the-\nworld attitude, but those who aren’t as genetically gifted aren’ t necessarily out of luck. While\ngenes can encourage an interest in doing new things, a 2012 study in the journal Psychology\nand Aging found completing reasoning tasks like puzzles and number games can enhance that\ndesire for novel experiences, which can, in turn, refresh the brain. That’s why brain scientist\nRichard Kennedy says “It’s not that old dogs can’t learn new tricks. It’s that maybe old dogs\ndon’t realize why they should. ”",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "What do some people think of aging adults?",
+          "options": [
+            "A) Their wisdom grows as time goes by.",
+            "C) They can benefit from late-in-life learning.",
+            "B) Their memory gradually deteriorates.",
+            "D) They are likely to have mental health issues."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What can we conclude from Geoffrey Raisman’s finding?",
+          "options": [
+            "A)",
+            "B)",
+            "C)",
+            "D)"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What is one thing that helps maintain the health of our brain even as it shrinks?",
+          "options": [
+            "A)",
+            "B)",
+            "C) Imitating old dogs’ way of learning new tricks.",
+            "D)"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What does the author say can contribute to the improvement of brain function?",
+          "options": [
+            "A)",
+            "B)",
+            "C) Rising to life’s challenges and avoiding risks.",
+            "D)"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What is the finding of the 2012 study in the journal Psychology and Aging?",
+          "options": [
+            "A) Wishing to solve puzzles enhances one’s reasoning power.",
+            "B) Playing number games unexpectedly stimulates one’s memory.",
+            "C)",
+            "D) Learning new tricks should not be confined to old dogs only."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "四合院 （siheyuan） 是中国一种传统的住宅建筑， 其特点是房屋建造在一个院子的四周，\n将院子合围在中间。 四合院通常冬暖夏凉， 环境舒适， 尤其适合大家庭居住。 四合院在中国\n各地有多种类型， 其中以北京的四合院最为典型。 如今， 随着现代城市的发展， 传统的四合\n院已逐渐减少， 但因其独特的建筑风格， 四合院对中国文化的传承和中国历史的研究具有重\n要意义。",
+      "questions": []
+    }
+  ]
+}

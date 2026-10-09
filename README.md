@@ -173,14 +173,14 @@ npm run pack:win
 
 ## 数据说明
 
-内置数据位于 **`data/keeper.db`**（单文件，约 7.9MB）：
+内置数据位于 **`data/keeper.db`**（单文件，约 8.5MB）：
 
 | 数据 | 规模 |
 |---|---|
 | 词典 | **28,667 条**（ECDICT 裁剪：考纲词 + 高频词，含音标 / 释义 / 词频 / 词形变化） |
-| 真题 | **48 套** —— 四级 12 套（2014–2019）、六级 36 套（2014–2024） |
+| 真题 | **78 套** —— 四级 32 套（2014–2026）、六级 46 套（2014–2026） |
 | 题型 | 写作、选词填空、长篇阅读、仔细阅读、翻译（不含听力，听力对照功能未纳入范围） |
-| 真题词频表 | **6,815 条**实词，跨全部真题按原形归并统计 |
+| 真题词频表 | **7,963 条**实词，跨全部真题按原形归并统计 |
 
 ### 数据放在哪
 
@@ -200,15 +200,18 @@ Linux:    ~/.config/cet-wordkeeper/keeper.db
 
 ## 扩充真题库
 
-数据管线是可复现的，三个脚本串成一条流水线：
+数据管线可复现。**旧考次走 docx，新考次走 PDF**，两条支线最终都产出同构的 JSON 并汇入同一个数据库：
 
 ```bash
-# 1. 只克隆文件树（几 MB，规避 GitHub API 限流）
+# 0. 只克隆文件树（几 MB，规避 GitHub API 限流）
 git clone --filter=blob:none --no-checkout --depth 1 \
   https://github.com/0609x/CET46-Resources.git data/raw/repo
 
-# 2. 批量下载 + 解析为结构化 JSON（参数为起始年份）
+# 1) Word 版（覆盖 2014–2019，质量最好）
 node scripts/fetch-exams.mjs 2014
+
+# 2) PDF 版（2020 年起只有 PDF）
+node scripts/fetch-pdf-exams.mjs 2022
 
 # 3. 重建数据库
 node scripts/build-db.mjs
@@ -216,12 +219,29 @@ node scripts/build-db.mjs
 
 > **注意**：步骤 3 需要 ECDICT 源库。从 [ECDICT Releases](https://github.com/skywind3000/ECDICT/releases) 下载
 > `ecdict-sqlite-28.zip`，解压出 `stardict.db` 放到 `data/raw/ecdict-sqlite/stardict.db`。
+>
+> PDF 支线还需要 Python 与 `pypdf`（`pip install pypdf`），可用环境变量 `PDF_PYTHON` 指定解释器路径。
+
+### 两条支线各自踩过的坑
+
+**套号解析（docx）**：源仓库命名极不统一 —— `第1套` / `第一套` / `卷二` / `（全1套）` / `真题1` / `（第三套)` 都有。早期只认「第N套」和「（汉字）」，导致「第一套/第二套/第三套」全被当成第 1 套互相覆盖、**静默丢题**（四级因此少了 9 套）。现在用多模式提取 + 撞名检测，并在每次运行后把不再产出的旧文件移入 `data/seed/_stale/`。
+
+**文本层（PDF）**：近年 PDF **质量参差且与命名无关** —— 同一考次的不同命名可能一个是重排版（有完整文本层）、一个是纯扫描图（只能提出十几个字符）。所以不按命名猜，而是逐个尝试 + 质量门禁判定。抽取出的文本还有两类特有噪声，都在 `parse-pdf.mjs` 里处理：
+
+| 现象 | 例子 | 处理 |
+|---|---|---|
+| 罗马数字被判读成字母 | `Part III` → `Part in` | Part 编号用宽松匹配 |
+| 非 ASCII 罗马数字无词边界 | `PartⅡ Listening` | 匹配式不能用 `\b` 收尾 |
+| 选项两栏排版 | `A) … C) …` / `B) … D) …` | 按 `A)`~`D)` 标记切分 |
+| 词库被排出 Section 外 | 词库行夹在 Section B 段落中 | 全局扫描词库行并剔除 |
+| 正文续行像题号 | `47 hours in the United States…` | 题号必须带小数点且落在 36–45 / 46–55 区间 |
 
 关于数据源的实际情况：
 
-- 公开源仓库的 **Word 版真题覆盖到 2024.06**；2023 年起的较新考次多为 PDF，解析成本高
-- 源仓库中 3 份文件本身残缺（`cet6-2018.06-set2/set3`、`cet6-2020.09-set3`，缺 Reading 正文），解析器按长度阈值**正确拒绝**而非产出脏数据
-- 想补充更新考次，用下面的「导入自定义真题」即可
+- 公开源只有 **Word 版覆盖 2014–2019**（四级 21 套 / 六级 40 套的 docx），2020 年起一律 PDF
+- 源仓库中 4 份 docx 本身残缺（`cet6-2018.06-set2/set3`、`cet6-2020.09-set3`、`cet6-2022.06-set3`），解析器按长度阈值**正确拒绝**而非产出脏数据
+- 仍有约 17 个考次只有纯扫描 PDF（提不出文本），需要 OCR 才能使用，故未纳入
+- 想补充遗漏考次，用下面的「导入自定义真题」即可
 
 ---
 
@@ -295,8 +315,12 @@ cet-wordkeeper/
 │   ├── router.js            # hash 路由
 │   └── styles.css           # 设计系统（纸张质感、标注配色）
 ├── scripts/                 # 数据工程与验证
-│   ├── fetch-exams.mjs      # 批量抓取真题 docx（blobless clone + raw 下载）
+│   ├── fetch-exams.mjs      # 抓取 docx 真题（blobless clone + raw 下载）
 │   ├── parse-docx.mjs       # docx → 结构化 JSON（含标点空格修补）
+│   ├── fetch-pdf-exams.mjs  # 抓取近年 PDF 真题（带文本层质量门禁）
+│   ├── parse-pdf.mjs        # PDF 提取文本 → 结构化 JSON
+│   ├── pdf-extract.py       # pypdf 抽文本（被 fetch-pdf-exams 调用）
+│   ├── scan-pdf-quality.mjs # 抽样扫描 PDF 文本层质量
 │   ├── build-db.mjs         # ECDICT 裁剪 + 真题导入 + 粘连词修补 → keeper.db
 │   ├── smoke-test.mjs       # 数据层冒烟测试
 │   ├── e2e-check.mjs        # 端到端功能验证（CDP，40 项断言，含界面级）
@@ -305,7 +329,7 @@ cet-wordkeeper/
 │   └── capture-shots.mjs    # 自动截取文档用截图（独立 user-data-dir）
 ├── data/
 │   ├── keeper.db            # 种子数据库（随软件分发）
-│   ├── seed/                # 结构化真题 JSON（48 套）
+│   ├── seed/                # 结构化真题 JSON（78 套）
 │   └── raw/                 # 原始素材（已 gitignore，用管线重新获取）
 ├── docs/screenshots/        # README 配图
 ├── electron-builder.json    # 打包配置（portable + nsis）

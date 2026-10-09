@@ -1,0 +1,255 @@
+{
+  "level": "CET4",
+  "year": 2016,
+  "month": 12,
+  "set_no": 3,
+  "title": "CET4 2016 年 12 月第 3 套",
+  "source": "cet4-2016.12-set3.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: For this part, you are allowed 30 minutes to write an essay. Suppose you have two options upon graduation: one is to find a job somewhere and the other to start a business of your own. You are to make a decision. Write an essay to explain the reasons for your choice. You should write at least 120 words but no more than 180words.\n说明：由于2016年12月四级考试全国共考了2套听力，本套真题听力与前2套内容完全一样，只是顺序不一样，因此在本套真题中不再重复出现。",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "When someone commits a criminal act, we always hope the punishment will match the offense. But when it comes to one of the crudest crimes—animal fighting—things __26__ work out that way. Dog-fighting victims are __27__ and killed for profit and “sport,” yet their criminal abusers often receive a __28__ sentence for causing a lifetime of pain. Roughly half of all federally-convicted animal fighters only get probation （缓刑）.\nSome progress has been made in the prosecution（起诉）of animal fighters. But federal judges often rely heavily on the U.S. Sentencing Guidelines when they __29__ penalties, and in the case of animal fighting, those guidelines are outdated and extremely __30__ .\nThe U.S. Sentencing Commission, which __31__ these sentencing guidelines, is revisiting them, proposing to raise the minimum sentence from 6-12 to 21-27 months. This is a step in the right __32__ , but we’d like to see the U.S. Sentencing Commission make further changes to the guidelines.\nAlong with this effort, we’re working with animal advocates and state and federal lawmakers to __33__ anti-cruelty laws across the country, as well as supporting laws and policies that assist overburdened animal __34__ that care for animal fighting victims. This help is__35__ important because the high cost of caring for animal victims is a major factor that prevents people from getting involved in cruelty cases in the first place.\nA) convenient B) creates C) critically D) determine E) direction F) hesitate G) inadequate\nH) inspired I) method J) minimal K) rarely L) shelters M) strengthen N) sufferings",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "tortured"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "When Work Becomes a Game\nA)What motivates employees to do their jobs well? Competition with coworkers, for some. The promise of rewards, for others. Pure enjoyment of problem-solving, for a lucky few.\nB)Increasingly, companies are tapping into these desires directly through what has come to be known as “gamification”: essentially, turning work into a game. “Gamification is about understanding what it is that makes games engaging and what game designers do to create a great experience in games, and taking those learnings and applying them to other contexts such as the workplace and education,” explains Kevin Werbach, a gamification expert who teaches at the Wharton School of Business at the University of Pennsylvania in the United States.\nC)It might mean monitoring employee productivity on a digital leaderboard and offering prizes to the winners, or giving employees digital badges or stars for completing certain activities. It could also mean training employees how to do their jobs through video game platforms. Companies from Google to L’Oreal to IBM to Wells Fargo are known to use some degree of gamification in their workplaces. And more and more companies are joining them. A recent report suggests that the global gamification market will grow from $1.65 billion in 2015 to $11.1 billion by 2020.\nD)The concept of gamification is not entirely new, Werbach says. Companies, marketers and teachers have long looked for fun ways to engage people’s reward-seeking or competitive spirits. Cracker Jacks has been “gamifying” its snack food by putting a small prize inside for more than 100 years, he adds, and the turn-of- the-century steel magnate（巨头）Charles Schwab is said to have often come into his factory and written the number of tons of steel produced on the past shift on the factory floor, thus motivating the next shift of workers to beat the previous one.\nE)But the word “gamification” and the widespread, conscious application of the concept only began in earnest about five years ago, Werbach says. Thanks in part to video games, the generation now entering the workforce is especially open to the idea of having their work gamified. “ We are at a point where in much of the developed world the vast majority of young people grew up playing video games, and an increasingly high percentage of adults play these video games too，” Werbach says.\nF)A number of companies have sprung up—GamEffective, Bunchball and Badgeville, to name a few—in recent years offering gamification platforms for businesses. The platforms that are most effective turn employees’ ordinary job tasks into part of a rich adventure narrative. “What makes a game game-like is that the player actually cares about the outcome,” Werbach says. “The principle is about understanding what is motivating to this group of players, which requires some understanding of psychology.”\nG)Some people, Werbach says, are motivated by competition. Sales people often fall into this category. For them, the right kind of gamification might be turning their sales pitches into a competition with other team members, complete with a digital leaderboard showing who is winning at all times. Others are more motivated by collaboration and social experiences. One company Werbach has studied uses gamification to create a sense of community and boost employees’ morale （士气）.When employees log in to their computers, they’re shown a picture of one of their coworkers and asked to guess that person’s name.\nH)Gamification does not have to be digital. Monica Cometti runs a company that gamifies employee trainings. Sometimes this involves technology, but often it does not. She recently designed a gamification strategy for a sales training company with a storm-chasing theme. Employees formed “storm chaser teams” and competed in storm-themed educational exercises to earn various rewards. “Rewards do not have to be stuff,” Cometti says. “Rewards can be flexible working hours.” Another training, this one for pay roll law, used a Snow White and the Seven Dwarfs theme. “Snow White” is available for everyone to use, but the “dwarfs” are still under copyright, so Cometti invented sound-alike characters (Grumpy Gus, Dopey Dan) to illustrate specific pay roll law principles.\nI)Some people do not take naturally to gamified work environments, Cometti says. In her experience, people in positions of power or people in finance or engineering do not tend to like the sound of the word. “If we are designing for engineers, I’m not talking about a ‘game’at all,” Cometti says. “I’m talking about a ‘simulation’（模拟） ，I’m talking about ‘ being able to solve this problem. ’ ”\nJ) Gamification is “not a magic bullet,” Werbach warns. A gamification strategy that is not sufficiently thought through or well tailored to its players may engage people for a little while, but it will not motivate people in the long term. It can also be exploitative, especially when used with vulnerable populations. For workers, especially low-paid workers, who desperately need their jobs yet know they can be easily replaced, gamification may feel more like the Hunger Games. Werbach gives the example of several Disneyland hotels in Anaheim, California, which used large digital leaderboards to display how efficiently laundry workers were working compared to one another. Some employees found the board motivating. To others, it was the opposite of fun. Some began to stop taking bathroom breaks, worried that if their productivity fell they would be fired. Pregnant employees struggled to keep up. In a Los Angeles Times article, one employee referred to the board as a “digital whip.” “It actually had a very negative effect on morale and performance, ” Werbach says.\nK) Still, gamification only stands to become more popular, he says, “as more and more people come into the workforce who are familiar with the structures and expressions of digital games.” “We are far from reaching the peak,” Cometti agrees. “There is no reason this will go away.”",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "36.Some famous companies are already using gamification and more are trying to do the same.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "37.Gamification is not a miracle cure for all workplaces as it may have negative results.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "38.To enhance morale, one company asks its employees to identify their fellow workers when starting their computers.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "39.The idea of gamification was practiced by some businesses more than a century ago.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40.There is reason to believe that gamification will be here to stay.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41.Video games contributed in some ways to the wide application of gamification.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "42.When turning work into a game, it is necessary to understand what makes games interesting.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "43.Gamification in employee training does not always need technology.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "44.The most successful gamification platforms transform daily work assignments into fun experiences.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "45.It is necessary to use terms other than “gamification” for some professions.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "Recently I attended several meetings where we talked about ways to retain students and keep younger faculty members from going elsewhere.\nIt seems higher education has become an industry of meeting-holders whose task it is to “solve” problems— real or imagined. And in my position as a professor at three different colleges, the actual problems in educating our young people and older students have deepened, while the number of people hired—not to teach but to hold meetings—has increased significantly. Every new problem creates a new job for an administrative fixer. Take our Center for Teaching Excellence. Contrary to its title, the center is a clearing house（信息交流中心）for using technology in classrooms and in online courses. It’s an administrative sham（欺诈）of the kind that has multiplied over the last 30 years.\nI offer a simple proposition in response: Many of our problems—class attendance, educational success, student happiness and well-being—might be improved by cutting down the bureaucratic（官僚的）mechanisms and meetings and instead hiring an army of good teachers. If we replaced half of our administrative staff with classroom teachers, we might actually get a majority of our classes back to 20 or fewer students per teacher. This would be an environment in which teachers and students actually knew each other.\nThe teachers must be free to teach in their own way—the curriculum should be flexible enough so that they can use their individual talents to achieve the goals of the course. Additionally, they should be allowed to teach, and be rewarded for doing it well. Teachers are not people who are great at and consumed by research and happen to appear in a classroom. Good teaching and research are not exclusive, but they are also not automatic companions. Teaching is an art and a craft, talent and practice; it is not something that just anyone can be good at. It is utterly confusing to me that people do not recognize this, despite the fact that pretty much anyone who has been a student can tell the difference between their best and worst teachers.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46.What does the author say about present-day universities?",
+          "options": [
+            "A)They are effectively tackling real or imagined problems.",
+            "B)They often fail to combine teaching with research.",
+            "C)They are over-burdened with administrative staff.",
+            "D)They lack talent to fix their deepening problems."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47.According to the author, what kind of people do universities lack most?",
+          "options": [
+            "A)Good classroom teachers.",
+            "B)Efficient administrators.",
+            "C) Talented researchers.",
+            "D) Motivated students."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48.What does the author imply about the classes at present?",
+          "options": [
+            "A)They facilitate students’ independent learning.",
+            "B)They help students form closer relationships.",
+            "C)They have more older students than before.",
+            "D)They are much bigger than is desirable."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49.What does the author think of teaching ability?",
+          "options": [
+            "A)It requires talent and practice.",
+            "B)It is closely related to research.",
+            "C)It is a chief factor affecting students’ learning.",
+            "D)It can be acquired through persistent practice."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50.What is the author’s suggestion for improving university teaching?",
+          "options": [
+            "A)Creating an environment for teachers to share their teaching experiences.",
+            "B)Hiring more classroom teachers and allowing them to teach in their own way.",
+            "C)Using high technology in classrooms and promoting exchange of information.",
+            "D)Cutting down meetings and encouraging administrative staff to go to classrooms."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "The secret to eating less and being happy about it may have been cracked years ago—by McDonald’s. According to a new study from Cornell University’s Food and Brand Lab, small non-food rewards—like the toys in McDonald’s Happy Meals—stimulate the same reward centers in the brain as food does.\nThe researchers, led by Martin Reimann, carried out a series of experiments to see if people would choose a smaller meal if it was paired with a non-food item.\nThey found that the majority of both kids and adults opted for a half-sized portion when combined with a prize. Both options were priced the same.\nEven more interesting is that the promise of a future reward was enough to make adults choose the smaller portion. One of the prizes used was a lottery ticket（彩票）, with a S10, $50 or $100 payout, and this was as effective as a tangible gift in persuading people to eat less.\n“The fact that participants were willing to substitute part of a food item for the mere prospect of a relatively small monetary award is interesting,” says Reimann.\nHe theorizes that it is the emotional component of these intangible prizes that make them effective. In fact, vaguely-stated possibilities of winning a prize were more effective than options with hard odds included.\n“One explanation for this finding is that possible awards may be more emotionally provoking than certainty awards,” says Reimann. “The uncertainty of winning provides added attraction and desirability through emotional ‘thrills.’ The possibility of receiving an award also produces a state of hope—a state that is in itself psychologically rewarding.” In other words, there’s a reason why people like to gamble.\nHow might this knowledge be used to help people eat more healthily?\nOne possibility is a healthy option that offers the chance to win a spa（温泉疗养）weekend. Or maybe the reward of a half-sized portion could be a half-sized dessert to be claimed only on a future date. That would get you back in the restaurant—and make you eat a little less.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51.What do we learn about McDonald’s inclusion of toys in its Happy Meals?",
+          "options": [
+            "A)It may shed light on people's desire to crack a secret.",
+            "B)It has proved to be key to McDonald’s business success.",
+            "C)It appeals to kid’s curiosity to find out what is hidden inside.",
+            "D)It may be a pleasant way for kids to reduce their food intake."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52.What is the finding of the researchers led by Martin Reimann?",
+          "options": [
+            "A)Reducing food intake is not that difficult if people go to McDonald’s more.",
+            "B)Most kids and adult s don’t actually feel hungry when they eat half of their meal.",
+            "C)Eating a smaller portion of food does good to the health of kids and adults alike.",
+            "D)Most kids and adults would choose a smaller meal that came with a non-food item."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53.What is most interesting in Martin Reimann’s finding?",
+          "options": [
+            "A)Kids preferred an award in the form of money to one in the form of a toy.",
+            "B)Adults chose the smaller portion on the mere promise of a future award.",
+            "C)Both kids and adults felt satisfied with only half of their meal portions.",
+            "D)Neither children nor adults could resit the temptation of a free toy."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54.How does Martin Reimann interpret his finding?",
+          "options": [
+            "A)The emotional component of the prizes is at work.",
+            "B)People now care more about quality than quantity.",
+            "C)People prefer certainty awards to possible awards.",
+            "D)The desire for a future reward is overwhelming."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55.What can we infer from Martin Reimann’s finding?",
+          "options": [
+            "A)People should eat much less if they wish to stay healthy and happy.",
+            "B)More fast food restaurants are likely to follow McDonald’s example.",
+            "C)We can lead people to eat less while helping the restaurant business.",
+            "D)More studies are needed to find out the impact of emotion on behavior."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "在中国文化中，黄颜色是一种很重要的颜色，因为它具有独特的象征意义。在封建(feudal)社会中，它象征统治者的权力和权威。那时，黄色是专为皇帝使用的颜色，皇家宫殿全部漆成黄色，皇袍总是黄色的， 而普通老百姓是禁止穿黄色衣服的。在中国，黄色也是收获的象征。秋天庄稼成熟时，田野变得一片金黄。 人们兴高采烈，庆祝丰收。",
+      "questions": []
+    }
+  ]
+}
