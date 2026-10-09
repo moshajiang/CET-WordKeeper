@@ -1,0 +1,516 @@
+{
+  "level": "CET6",
+  "year": 2019,
+  "month": 12,
+  "set_no": 1,
+  "title": "CET6 2019 年 12 月第 1 套",
+  "source": "cet6-2019.12-set1.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: For this part, you are allowed 30 minutes to write an essay on the importance of having a sense of social responsibility. You should write at least 150 words but no more than 200 words.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "Questions 26 to 35 are based on the following passage.\nWhen considering risk factors associated with serious chronic diseases, we often think about health indicators such as cholesterol, blood pressure, and body weight. But poor diet and physical inactivity also each increase the risk of heart disease and have a role to play in the development of some cancers. Perhaps worse, the 26 effects of an unhealthy diet and insufficient exercise are not limited to your body. Recent research has also shown that 27 in a high-fat and high-sugar diet may have negative effects on your brain, causing learning and memory 28.\nStudies have found obesity is associated with impairments in cognitive functioning, as 29 by a range of learning and memory tests, such as the ability to remember a list of words presented some minutes or hours earlier. There is also a growing body of evidence that diet-induced cognitive impairments can emerge 30—within weeks or even days. For example, one study found healthy adults 31 to a high-fat diet for five days showed impaired attention, memory, and mood compared with a low-fat diet control group. Another study also found eating a high-fat and highsugar breakfast each day for as little as four days resulted in problems with learning and memory 32 to those observed in overweight and obese individuals.\nBody weight was not hugely different between the groups eating a healthy diet and those on high fat and sugar diets. So this shows negative 33 of poor dietary intake can occur even when body weight has not changed 34. Thus, body weight is not always the best indicator of health and a thin person still needs to eat well and exercise 35.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "excelling"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "indulging"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "loopholes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "rapidly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "redundant"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "regularly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "similar"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "assessed"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "assigned"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "consequences"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "conspicuously"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "deficits"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "designated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "detrimental"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "digestion"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "41",
+          "options": [
+            "excelling"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "42",
+          "options": [
+            "indulging"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "43",
+          "options": [
+            "loopholes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "44",
+          "options": [
+            "rapidly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "45",
+          "options": [
+            "redundant"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "46",
+          "options": [
+            "regularly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "47",
+          "options": [
+            "similar"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "48",
+          "options": [
+            "assessed"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "49",
+          "options": [
+            "assigned"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "50",
+          "options": [
+            "consequences"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "51",
+          "options": [
+            "conspicuously"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "52",
+          "options": [
+            "deficits"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "53",
+          "options": [
+            "designated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "54",
+          "options": [
+            "detrimental"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "55",
+          "options": [
+            "digestion"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "Increased Screen Time and Wellbeing Decline in Youth\nA) Have young people never had it so good? Or do they face more challenges than any previous generation? Our current era in the West is one of high wealth. This means minors enjoy material benefits and legal protections that would have been the envy of those living in the past. But there is an increasing suspicion that all is not well for our youth. And one of the most popular explanations, among some experts and the popular media, is that excessive & quote; screen time & quote; is to blame. (This refers to all the attention young people devote to their phones, tablets and laptops.) However, this is a contentious theory and such claims have been treated skeptically by some scholars based on their reading of the relevant data.\nB) Now a new study has provided another contribution to the debate, uncovering strong evidence that adolescent wellbeing in the United States really is experiencing a decline and arguing that the most likely cause is the electronic riches we have given them. The background to this is that from the 1960s into the early 2000s, measures of average wellbeing went up in the US. This was especially true for younger people. It reflected the fact that these decades saw a climb in general standards of living and avoidance of mass societal traumas like full-scale war or economic deprivation. However, the & quote; screen time & quote; hypothesis, advanced by researchers such as Jean Twenge, is that electronic devices and excessive time spent online may have reversed these trends in recent years, causing problems for young people's psychological health.\nC) To investigate, Twenge and her colleagues dived into the & quote; Monitoring the Future & quot; dataset based on annual surveys of American school students from grades 8, 10, and 12 that started in 1991. In total, 1.1 million young people answered various questions related to their wellbeing. Twenge’s team’s analysis of the answers confirmed the earlier, well-established wellbeing climb, with scores rising across the 1990s, and into the later 2000s. This was found across measures like self-esteem, life satisfaction, happiness and satisfaction with individual domains like job, neighborhood, or friends. But around 2012 these measures started to decline. This continued through 2016, the most recent year for which data is available.\nD) Twenge and her colleagues wanted to understand why this change in average wellbeing occurred. However, it is very hard to demonstrate causes using non-experimental data such as this. In fact, when Twenge previously used this data to suggest a screen time effect, some commentators were quick to raise this problem. They argued that her causal-sounding claims rested on correlational data, and that she had not adequately accounted for other potential causal factors. This time around, Twenge and her team make a point of saying that they are not trying to establish causes as such, but that they are assessing the plausibility of potential causes.\nE) First, they explain that if a given variable is playing a role in affecting wellbeing, then we should expect any change in that variable to correlate with the observed changes in wellbeing. If not, it is not plausible that the variable is a causal factor. So the researchers looked at time spent in a number of activities that could plausibly be driving the wellbeing decline. Less sport, and fewer meetings with peers correlated with lower wellbeing, as did less time reading print media(newspapers) and, surprisingly, less time doing homework .(This last finding would appear to contradict another popular hypothesis that it is our burdening of students with assignments that is causing all the problems.) In addition, more TV watching and more electronic communication both correlated with lower wellbeing. All these effects held true for measures of happiness, life satisfaction and self-esteem, with the effects stronger in the 8th and 10th-graders.\nF) Next, Twenge’s team dug a little deeper into the data on screen time. They found that adolescents who spent a very small amount of time on digital devices—a couple of hours a week—had the highest wellbeing. Their wellbeing was even higher than those who never used such devices. However, higher doses of screen time were clearly associated with lower happiness. Those spending 10-19 hours per week on their devices were 41 percent more likely to be unhappy than lower-frequency users. Those who used such devices 40 hours a week or more (one in ten teenagers) were twice as likely to be unhappy. The data was slightly complicated by the fact that there was a tendency for kids who were social in the real world to also use more online communication, but by bracketing out different cases it became clear that the real-world sociality component correlated with greater wellbeing, whereas greater time on screens or online only correlated with poorer wellbeing.\nG) So far, so plausible. But the next question is, are the drops in average wellbeing happening at the same time strands toward increased electronic device usage? It looks like it-after all, 2012 was the tipping point when more than half of Americans began owning smartphones. Twenge and her colleagues also found that across the key years of 2013-16, wellbeing was indeed lowest in years where adolescents spent more time online, on social media, and reading news online, and when more youth in the United States had smartphones. And in a second analysis, they found that where technology went, dips in wellbeing followed. For instance, years with a larger increase in online usage were followed by years with lower wellbeing, rather than the other way around. This does not prove causality, but is consistent with it. Meanwhile, TV use did not show this tracking. TV might make you less happy, but this is not what seems to be driving the recent declines in young people's average happiness.\nH) A similar but reversed pattern was found for the activities associated with greater wellbeing. For example, years when people spent more time with friends were better years for wellbeing (and followed by better years). Sadly, the data also showed face-to-face socializing and sports activity had declined over the period covered by the survey.\nI) There is another explanation that Twenge and her colleagues wanted to address: the impact of the the great recession of 2007-2009, which hit a great number of American families and might be affecting adolescents. The dataset they used did not include economic data, so instead the researchers looked at whether the 2013-16 wellbeing decline was tracking economic indicators. They found some evidence that some crude measures, like income inequality, correlated with changes in wellbeing, but economic measures with a more direct impact, like family income and unemployment rates (which put families into difficulties), had no relationship with wellbeing. The researchers also note that the recession hit some years before we see the beginning of the wellbeing drop, and before the steepest wellbeing decline, which occurred in 2013.\nJ) The researchers conclude that electronic communication was the only adolescent activity that increased at the same time psychological wellbeing declined. I suspect that some experts in the field will be keen to address alternative explanations, such as unassessed variables playing a role in the wellbeing decline. But the new work does go further than previous research and suggests that screen time should still be considered a potential barrier to young people’s flourishing.",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "36. The year when most Americans began using smartphones was identified as a turning point in young Americans' level of happiness.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "37. Scores in various wellbeing measures began to go downward among young Americans in recent years.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "38. Unfortunately, activities involving direct contact with people, which contributed to better wellbeing, were found to be on the decline.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "39. In response to past critics, Twenge and her co-researchers stress they are not trying to prove that the use of digital devices reduces young people’s wellbeing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40. In the last few decades of the 20th century, living standards went up and economic depressions were largely averted in the US.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41. Contrary to popular belief, doing homework might add to students’ wellbeing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "42. The author believes the researchers’ new study has gone a step further regarding the impact of screen time on wellbeing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "43. The researchers found that extended screen time makes young people less happy.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "44. Data reveals that economic inequality rather than family income might affect people’s wellbeing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "45. Too much screen time is widely believed to be the cause of unhappiness among today’s young people.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "“The dangerous thing about lying is people don't understand how the act changes us.” says Dan Ariely behavioural psychologist at Duke University. Psychologists have documented children lying as early as the age of two. Some experts even consider lying a developmental milestone, like crawling and walking, because it requires sophisticated planning, attention and the ability to see a situation from someone else’s perspective to manipulate then. But, for most people, lying gets limited as we develop a sense of morality and the ability to self-regulate.\nHarvard cognitive neuroscientist Joshua Greene says, for most of us, lying takes work. In studies, he gave subjects a chance to deceive for monetary gain while examining their brains in a functional MRI machine, which maps blood flow to active parts of the brain. Some people told the truth instantly and instinctively. But others opted to lie, and they showed increased activity in their frontal parietal (颅腔壁的) control network, which is involved in difficult or complex thinking. This suggests that they were deciding between truth and dishonesty—and ultimately opting for the letter. For a follow-up analysis, he found that people whose neural (神经的) reward centers were more active when they won money were also more likely to be among the group of liars – suggesting that lying may have to do with the inability to resist temptation.\nExternal conditions also matter in terms of when and how often we lie. We are more likely to lie, when we are able to rationalise it, when we are stressed and fatigued or see others being dishonest. And we are less likely to lie when we have moral reminders or when we think others are watching. “We as a society need to understand that, when we don’t punish lying, we increase the probability it will happen again.” Ariely says.\nIn a 2016 study published in the journal Nature Neuroscience, Ariely and colleagues showed how dishonesty alters people’s brains, making it easier to tell ties in the future. When people uttered a falsehood, the scientists notice a burst of activity in their amygdala. The amygdala is crucial part of the brain that produces fear, anxiety and emotional responses— including that sinking, guilty feeling you get when you lie. But when scientists had their subjects play a game in which they won money by deceiving their partner, they noticed the negative signals from the amygdala began to decrease. Not only that, but when people faced no consequences for dishonesty, their falsehood tended to get even more sensational. This means that if you give people multiple opportunities to lie for their own benefit, they start with little lies which get bigger over time.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46. Why do some experts consider lying a milestone in a child’s development?",
+          "options": [
+            "A) It shows they have the ability to view complex situations from different angles.",
+            "B) It indicates they have an ability more remarkable than crawling and walking.",
+            "C) It represents their ability to actively interact with people around them.",
+            "D) It involves the coordination of both their mental and physical abilities."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47. Why does the Harvard neuroscientist say that lying takes work?",
+          "options": [
+            "A) It is hard to choose from several options.",
+            "B) It is difficult to sound natural or plausible.",
+            "C) It requires speedy blood flow into one’s brain.",
+            "D) It involves lots of sophisticated mental activity."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48. Under what circumstances do people tend to lie?",
+          "options": [
+            "A) When they become too emotional.",
+            "B) When they face too much peer pressure.",
+            "C) When the temptation is too strong.",
+            "D) When the consequences are not imminent."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49.When are people less likely to lie?",
+          "options": [
+            "A) When they are worn out and stressed.",
+            "B) When they are under watchful eyes.",
+            "C) When they think in a rational way",
+            "D) When they have a clear conscience."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50. What does the author say will happen when a liar does not get punished?",
+          "options": [
+            "A) They may feel justified.",
+            "B) They will tell bigger lies.",
+            "C) They will become complacent.",
+            "D) They may mix lies and truths."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Here’s how the Pacific Northwest is preparing for “The Big One”. It’s the mother of all disaster drills for what could be the worst disaster in American history. California has spent years preparing for “The Big One”—the inevitable earthquake that will undoubtedly unleash all kinds of havoc along the famous San Andreas fault (断层). But what if the fault that runs along the Pacific Northwest delivers a gigantic earthquake of its own? If the people of the Cascadia region have anything to do with it, they won’t be caught unawares.\nThe region is engaged in a multi-day earthquake-and-tsunami (海啸) drill involving around 20,000 people. The Cascadia Rising drill gives area residents and emergency responders a chance to practice what to do in case of a 9.0 magnitude earthquake and tsunami along one of the nation’s dangerous—and underestimated—faults.\nThe Cascadia Earthquake Zone is big enough to compete with San Andreas (it’s been called the most dangerous fault in America), but it’s much lesser known than its California cousin. Nearly 700 miles long, the earthquake zone is located by the North American Plate off the coast of Pacific British Columbia, Washington, Oregon and Northern California.\nCascadia is what’s known as a “megathrust” fault. Megathrusts are created in earthquake zones—land plate boundaries where two plates converge. In the areas where one plate is beneath another, stress builds up over time. During a megathrust event, all of that stress releases and some of the world’s most powerful earthquakes occur. Remember the 9.1 earthquake and tsunami in the Indian Ocean off Sumatra in 2004? It was caused by megathrust event as the India plate moved beneath the Burma micro-plate.\nThe last time a major earthquake occurred along the Cascadia fault was in 1700, so officials worry that another event could occur any time. To prevent that event from becoming a catastrophe, first responders will join members of the public in rehearsals that involve communication, evacuation, search and rescue, and other scenarios.\nThousands of casualties are expected if a 9.0 earthquake were to occur. Fist, the earthquake would shake metropolitan areas including Seattle and Portland. This could trigger a tsunami that would create havoc along the coast. Not all casualties can necessarily be prevented—but by coordinating across local, state, and even national borders, officials hope that the worst-case scenario can be averted. On the exercise’s website, officials explain that the report they prepare during this rehearsal will inform disaster management for years to come.\nFor hundreds of thousands of Cascadia residents. “The Big One” isn’t a question of if, only when. And it’s never too early to get ready for the inevitable.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51. What does “The Big One” refer to?",
+          "options": [
+            "A) A gigantic geological fault.",
+            "B) A large-scale exercise to prepare for disasters.",
+            "C) A massive natural catastrophe.",
+            "D) A huge tsunami on the Caledonia coast."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52. What is the purpose of the Cascadia Rising drill?",
+          "options": [
+            "A) To prepare people for a major earthquake and tsunami.",
+            "B) To increase residents’ awareness of imminent disasters.",
+            "C) To teach people how to adapt to post-disaster life.",
+            "D) To cope with the aftermath of a possible earthquake."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53. What happens in case of a megathrust earthquake according to the passage?",
+          "options": [
+            "A) Two plates merge into one.",
+            "B) A variety of forces converge.",
+            "C) Boundaries blur between plates.",
+            "D) Enormous stress is released."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54. What do the officials hope to achieve through the drills?",
+          "options": [
+            "A) Coordinating various disaster-relief efforts.",
+            "B) Reducing casualties in the event of a disaster.",
+            "C) Minimizing property loss caused by disaster.",
+            "D) Establishing disaster and emergency management."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55. What does the author say about “The Big One” ?",
+          "options": [
+            "A) Whether it will occur remains to be seen.",
+            "B) How it will arrive is too early to predict.",
+            "C) Its occurrence is just a matter of time.",
+            "D) It keeps haunting Cascadia residents."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "牡丹花色艳丽，形象高雅，象征着和平与繁荣，因而在中国被称为“花中之王”。中国许多地方都培育和种植牡丹。千百年来，创造了许多诗歌和绘画赞美牡丹。唐代时期，牡丹在皇家园林普遍种植并被誉为国花，因而特别风行。十世纪时，洛阳古城成为牡丹栽培中心，而且这一地位一直保持到今天。现在，成千上万的国内游客蜂拥到洛阳参加一年一度的牡丹节，欣赏洛阳牡丹独特之美，同时探索九朝古都的历史。",
+      "questions": []
+    }
+  ]
+}

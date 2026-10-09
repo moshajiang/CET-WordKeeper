@@ -1,0 +1,381 @@
+{
+  "level": "CET6",
+  "year": 2017,
+  "month": 6,
+  "set_no": 2,
+  "title": "CET6 2017 年 6 月第 2 套",
+  "source": "cet6-2017.06-set2.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: Suppose you are asked to give advice on whether to attend a vocational college or a university, write an essay to state your opinion. You are required to write at least 150 words but no more than 200 words.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "Half of your brain stays alert and prepared for danger when you sleep in a new place, a study has revealed. This phenomenon is often __26__ to as the \"first-night-effect\". Researchers from Brown University found that a network in the left hemisphere of the brain \"remained more active\" than the network in the right side of the brain. Playing sounds into the right ears (stimulating the left hemisphere) of __27__ was more likely to wake them up than if the noises were played into their left ear.\nIt was __28__ observed that the left side of the brain was more active during deep sleep. When the researchers repeated the laboratory experiment on the second and third nights they found the left hemisphere could not be stimulated in the same way during deep sleep. The researchers explained that the study demonstrated when we are in a __29__ environment the brain partly remains alert so that humans can defend themselves against any __30__ danger.\nThe researchers believe this is the first time that the \"first-night-effect\" of different brain states has been __31__ in humans. It isn't, however, the first time it has ever been seen. Some animal __32__ also display this phenomenon. For example, dolphins, as well as other __33__ animals, shut down one hemisphere of the brain when they go to sleep. A previous study noted that dolphins always __34__ control their breathing. Without keeping the brain active while sleeping, they would probably drown. But, as the human study suggest, another reason for dolphins keeping their eyes open during sleep is that they can look out for __35__ while asleep. It also keeps their physiological processes working.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "classified"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "consciously"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "dramatically"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "exotic"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "identified"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "inherent"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "marine"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "novel"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "potential"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "predators"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "referred"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "species"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "specifically"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "varieties"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "volunteers"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "Elite Math Competitions Struggle to Diversify Their Talent Pool\nA) Interest in elite high school math competitions has grown in recent years, and in light of last summer's U.S. win at the International Math Olympiad (IMO)—the first for an American team in more than two decades—the trend is likely to continue.\nB) But will such contests, which are overwhelmingly dominated by Asian and white students from middle-class and affluent families, become any more diverse? Many social and cultural factors play roles in determining which promising students get on the path toward international math recognition. But efforts are in place to expose more black, Hispanic, and low-income students to advanced math, in the hope that the demographic pool of high-level contenders will eventually begin to shift and become less exclusive.\nC) \"The challenge is if certain types of people are doing something, it's difficult for other people to break into it,\" said Po-Shen Loh, the head coach of last year's winning U.S. Math Olympiad team. Participation grows through friends and networks and if \"you realize that's how they're growing, you can start to take action\" and bring in other students, he said.\nD) Most of the training for advanced-math competitions happens outside the confines of the normal school day. Students attend after-school clubs, summer camps, online forums and classes, and university-based \"math circles\", to prepare for the competitions.\nE) One of the largest feeders for high school math competitions—including those that eventually lead to the IMO—is a middle school program called Math Counts. About 100,000 students around the country participate in the program's competition series, which culminates in a national game-show-style contest held each May. The most recent one took place last week in Washington, D.C. Students join a team through their schools, which provide a volunteer coach and pay a nominal fee to send students to regional and state competitions. The 224 students who make it to the national competition get an all-expenses- paid trip.\nF) Nearly all members of last year's winning U.S. IMO team took part in Math Counts as middle school students, as did Loh, the coach. \"Middle school is an important age because students have enough math capability to solve advanced problems, but they haven't really decided what they want to do with their lives,\" said Loh. \"They often get hooked then.\"\nG) Another influential feeder for advanced-math students is an online school called Art of Problem Solving, which began about 13 years ago and now has 15,000 users. Students use forums to chat, play games, and solve problems together at no cost, or they can pay a few hundred dollars to take courses with trained teachers. According to Richard Rusczyk, the company founder, the six U.S. team members who competed at the IMO last year collectively took more than 40 courses on the site. Parents of advanced- math students and Math Counts coaches say the children are on the website constantly.\nH) There are also dozens of summer camps—many attached to universities—that aim to prepare elite math students. Some are pricey---a three-week intensive program can cost $4,500 or more—but most offer scholarships. The Math Olympiad Summer Training Program is a three-week math camp held by the Mathematical Association of America that leads straight to the international championship and is free for those who make it. Only about 50 students are invited based on their performance on written tests and at the USA Math Olympiad.\nI) Students in university towns may also have access to another lever for involvement in accelerated math: math circles. In these groups, which came out of an Eastern European tradition of developing young talent, professors teach promising K-12 students advanced mathematics for several hours after school or on weekends. The Los Angeles Math Circle, held at the University of California, Los Angeles, began in 2007 with 20 students and now has more than 250. \"These math circles cost nothing, or they're very cheap for students to get involved in, but you have to know about them,\" said Rusczyk. \"Most people would love to get students from more underserved populations, but they just can't get them in the door. Part of it is communication; part of it is transportation.\"\nJ) It's no secret in the advanced-math community that diversity is a problem. According to Mark Saul, the director of competitions for the Mathematical Association of America, not a single African-American or Hispanic student—and only a handful of girls—has ever made it to the Math Olympiad team in its 50 years of existence. Many schools simply don't prioritize academic competitions. \"Do you know who we have to beat?\" asked Saul. \"The football team, the basketball team—that's our competition for resources, student time, attention, school dollars, parent efforts, school enthusiasm.\"\nK) Teachers in low-income urban and rural areas with no history of participating in math competitions may not know about advanced-math opportunities like Math Counts—and those who do may not have support or feel trained to lead them.\nL) But there are initiatives in place to try to get more underrepresented students involved in accelerated math. A New York City-based nonprofit called Bridge to Enter Mathematics runs a residential summer program aimed at getting underserved students，mostly black and Hispanic, working toward math and science careers. The summer after 7th grade, students spend three weeks on a college campus studying advanced math for seven hours a day. Over the next five years, the group helps the students get into other elite summer math programs, high-performing high schools, and eventually college. About 250 students so far have gone through the program, which receives funding from the Jack Kent Cooke Foundation.\nM) \"If you look at a lot of low-income communities in the United States, there are programs that are serving them, but they' re primarily centered around 'Let's get these kids' grades up', and not around 'Let's get these kids access to the same kinds of opportunities as more-affluent kids,'\" said Daniel Zaharopol, the founder and executive director of the program. \"We're trying to create that pathway.\" Students apply to the program directly through their schools. \"We want to reach parents who are not plugged into the system,\" said Zaharopol.\nN) In the past few years, Math Counts added two new middle school programs to try to diversify its participant pool---the National Math Club and the Math Video Challenge. Schools or teachers who sign up for the National Math Club receive a kit full of activities and resources, but there's no special teacher training and no competition attached.\nO) The Math Video Challenge is a competition, but a collaborative one. Teams of four students make a video illustrating a math problem and its real-world application. After the high-pressure Countdown round at this year's national Math Counts competition, in which the top 12 students went head to head solving complex problems in rapid fire, the finalists for the Math Video Challenge took the stage to show their videos. The demographics of that group looked quite different from those in the competition round—of the 16 video finalists, 13 were girls and eight were African-American students. The video challenge does not put individual students on the hot seat—so it's less intimidating by design. It also adds the element of artistic creativity to attract a new pool of students who may not see themselves as \"math people\".",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "36. Middle school is a crucial period when students may become keenly interested in advanced mathematics.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "37. Elite high school math competitions are attracting more interest throughout the United States.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "38. Math circles provide students with access to advanced-math training by university professors.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "39. Students may take advantage of online resources to learn to solve math problems.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40. The summer program run by a nonprofit organization has helped many underserved students learn advanced math.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41. Winners of local contests will participate in the national math competition for free.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "42. Many schools don't place academic competitions at the top of their priority list.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "43. Contestants of elite high school math competitions are mostly Asian and white students from well-off families.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "44. Some math training programs primarily focus on raising students' math scores.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "45. Some intensive summer programs are very expensive but most of them provide scholarships.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "We live today indebted to McCardell, Cashin, Hawes, Wilkins, and Maxwell, and other women who liberated American fashion from the confines of Parisian design. Independence came in tying, wrapping, storing, harmonizing, and rationalizing that wardrobe. These designers established the modem dress code, letting playsuits and other active wear outfits suffice for casual clothing, allowing pants to enter the wardrobe, and prizing rationalism and versatility in dress, in contradiction to dressing for an occasion or allotment of the day. Fashion in America was logical and answerable to the will of the women who wore it. Implicitly or explicitly, American fashion addressed a democracy, whereas traditional Paris-based fashion was prescriptive and imposed on women, willing or not.\nIn an earlier time, American fashion had also followed the dictates of Paris, or even copied and pirated specific French designs. Designer sportswear was not modeled on that of Europe, as \"modem art\" would later be; it was genuinely invented and developed in America. Its designers were not high-end with supplementary lines. The design objective and the business commitment were to sportswear, and the distinctive traits were problem-solving ingenuity and realistic lifestyle applications. Ease of care was most important: summer dresses and outfits, in particular, were chiefly cotton, readily capable of being washed and pressed at home. Closings were simple, practical, and accessible, as the modem woman depended on no personal maid to dress her. American designers prized resourcefulness and the freedom of women who wore the clothing.\nMany have argued that the women designers of this time were able to project their own clothing values into a new style. Of course, much of this argument in the 1930s-40s was advanced because there was little or no experience in justifying apparel (服装) on the basis of utility. If Paris was cast aside, the tradition of beauty was also to some degree slighted. Designer sportswear would have to be verified by a standard other than that of pure beauty; the emulation of a designer's life in designer sportswear was a crude version of this relationship. The consumer was ultimately to be mentioned as well, especially by the likes of Dorothy Shaver, who could point to the sales figures at Lord &amp; Taylor.\nCould utility alone justify the new ideas of the American designers? Fashion is often regarded as a pursuit of beauty, and some cherished fashion's trivial relationship to the fine arts. What the designers of the American sportswear proved was that fashion is a genuine design art, answering to the demanding needs of service. Of course these practical, insightful designers have determined the course of late twentieth-century fashion. They were the pioneers of gender equity, in their useful, adaptable clothing, which was both made for the masses and capable of self-expression.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46. What contribution did the women designers make to American fashion?",
+          "options": [
+            "A) They made some improvements on the traditional Parisian design.",
+            "B) They formulated a dress code with distinctive American features.",
+            "C) They came up with a brand new set of design procedures.",
+            "D) They made originality a top priority in their fashion design."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47. What do we learn about American designer sportswear?",
+          "options": [
+            "A) It imitated the European model.",
+            "B) It laid emphasis on women's beauty.",
+            "C) It represented genuine American art.",
+            "D) It was a completely new invention."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48. What characterized American designer sportswear?",
+          "options": [
+            "A) Pursuit of beauty.",
+            "B) Decorative closings.",
+            "C) Ease of care.",
+            "D) Fabric quality."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49. What occurred in the design of women's apparel in America during the 1930s-40s?",
+          "options": [
+            "A) A shift of emphasis from beauty to utility.",
+            "B) The emulation of traditional Parisian design.",
+            "C) A search for balance between tradition and novelty.",
+            "D) The involvement of more women in fashion design."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50. What do we learn about designers of American sportswear?",
+          "options": [
+            "A) They catered to the taste of the younger generation.",
+            "B) They radically changed people's concept of beauty.",
+            "C) They advocated equity between men and women.",
+            "D) They became rivals of their Parisian counterparts."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Massive rubbish dumps and sprawling landfills constitute one of the more uncomfortable impacts that humans have on wildlife. They have led some birds to give up on migration. Instead of flying thousands of miles in search of food, they make the waste sites their winter feeding grounds.\nResearchers in Germany used miniature GPS tags to track the migrations of 70 white storks (鹳) from different sites across Europe and Asia during the first five months of their lives. While many birds travelled along well-known routes to warmer climates, others stopped short and spent the winter on landfills, feeding on food waste, and the multitudes of insects that thrive on the dumps.\nIn the short-term, the birds seem to benefit from overwintering (过冬) on rubbish dumps. Andrea Flack of the Max Planck Institute found that birds following traditional migration routes were more likely to die than German storks that flew only as far as northern Morocco, and spent the winter there on rubbish dumps. \"For the birds it's a very convenient way to get food. There are huge clusters of organic waste they can feed on,\" said Flack. The meals are not particularly appetising, or even safe. Much of the waste is discarded rotten meat, mixed in with other human debris such as plastic bags and old toys.\n\"It's very risky. The birds can easily eat pieces of plastic or rubber bands and they can die,\" said Flack. \"And we don't know about the long-term consequences. They might eat something toxic and damage their health. We cannot estimate that yet.\"\nThe scientists tracked white storks from different colonies in Europe and Africa. The Russian, Greek and Polish storks flew as far as South Africa, while those from Spain, Tunisia and Germany flew only as far as the Sahel.\nLandfill sites on the Iberian peninsula have long attracted local white storks, but all of the Spanish birds tagged in the study flew across the Sahara desert to the western Sahel. Writing in the journal, the scientists describe how the storks from Germany were clearly affected by the presence of waste sites, with four out of six birds that survived for at least five months overwintering on rubbish dumps in northern Morocco, instead of migrating to the Sahel.\nFlack said it was too early to know whether the benefits of plentiful food outweighed the risks of feeding on landfills. But that's not the only uncertainty. Migrating birds affect ecosystems both at home and at their winter destinations, and disrupting the traditional routes could have unexpected side effects. White storks feed on locusts (蝗虫) and other insects that can become pests if their numbers get out of hand. \"They provide a useful service,\" said Flack.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51. What is the impact of rubbish dumps on wildlife?",
+          "options": [
+            "A) They have forced white storks to search for safer winter shelters.",
+            "B) They have seriously polluted the places where birds spend winter.",
+            "C) They have accelerated the reproduction of some harmful insects.",
+            "D) They have changed the previous migration habits of certain birds."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52. What do we learn about birds following the traditional migration routes?",
+          "options": [
+            "A) They can multiply at an accelerating rate.",
+            "B) They can better pull through the winter.",
+            "C) They help humans kill harmful insects.",
+            "D) They are more likely to be at risk of dying."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53. What does Andrea Flack say about the birds overwintering on rubbish dumps?",
+          "options": [
+            "A) They may end up staying there permanently.",
+            "B) They may eat something harmful.",
+            "C) They may evolve new feeding habits.",
+            "D) They may have trouble getting adequate food."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54. What can be inferred about the Spanish birds tagged in the study?",
+          "options": [
+            "A) They gradually lose the habit of migrating in winter.",
+            "B) They prefer rubbish dumps far away to those at home.",
+            "C) They are not attracted to the rubbish dumps on their migration routes.",
+            "D) They join the storks from Germany on rubbish dumps in Morocco."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55. What is scientists' other concern about white storks feeding on landfills?",
+          "options": [
+            "A) The potential harm to the ecosystem.",
+            "B) The genetic change in the stork species.",
+            "C) The spread of epidemics to their homeland.",
+            "D) The damaging effect on bio-diversity."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "宋朝始于960年，一直延续到1279年。这一时期，中国经济大幅增长，成为世界上最先进的经济体，科学、技术、哲学和数学蓬勃发展。宋代中国是世界历史上首先发行纸币的国家。宋朝还最早使用火药并发明了活字（movable-type）印刷。人口增长迅速，越来越多的人住进城市，那里有热闹的娱乐场所。社会生活多种多样。人们聚集在一起观看和交易珍贵艺术品。宋朝的政府体制在当时也是先进的。政府官员均通过竞争性考试选拔任用。",
+      "questions": []
+    }
+  ]
+}

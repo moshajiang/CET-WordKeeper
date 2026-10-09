@@ -1,0 +1,26 @@
+# 依赖
+node_modules/
+
+# 构建产物 / 打包产物
+dist/
+release/
+
+# 原始素材（体积巨大，且含第三方数据包；用 scripts/ 里的管线可重新获取）
+# 其中 data/raw/repo 是用于枚举真题清单的独立 git 仓库
+data/raw/
+
+# 运行期生成
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Vite 构建中途失败时可能残留的临时配置
+*.timestamp-*
+
+# 验证 / 截图 / 诊断脚本使用的隔离用户数据
+.tmp-*/
+
+# 编辑器
+.vscode/
+.idea/

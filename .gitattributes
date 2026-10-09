@@ -1,0 +1,18 @@
+# 统一换行符，避免跨平台协作时产生无意义的整文件 diff
+* text=auto eol=lf
+
+# Windows 批处理必须保持 CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# 二进制文件：禁止换行符转换与文本 diff
+*.png binary
+*.jpg binary
+*.ico binary
+*.db binary
+*.zip binary
+*.exe binary
+*.docx binary
+
+# 锁文件不参与 diff 统计，但仍保留变更记录
+package-lock.json -diff linguist-generated=true

@@ -1,0 +1,381 @@
+{
+  "level": "CET6",
+  "year": 2017,
+  "month": 6,
+  "set_no": 1,
+  "title": "CET6 2017 年 6 月第 1 套",
+  "source": "cet6-2017.06-set1.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: Suppose you are asked to give advice on whether to major in science or humanities at college, write an essay to state your opinion. You are required to write at least 150 words but no more than 200 words.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "After becoming president of Purdue University in 2013, Mitch Daniels asked the faculty to prove that their students have actually achieved one of higher education's most important goals: critical thinking skills. Two years before, a nationwide study of college graduates had shown that more than a third had made no __26__ gains in such mental abilities during their school years. Mr. Daniels needed to __27__ the high cost of attending Purdue to its students and their families. After all, the percentage of Americans who say a college degree is \"very important\" has fallen __28__ in the last 5-6 years.\nPurdue now has a pilot test to assess students' critical thinking skills. Yet like many college teachers around the U.S., the faculty remain __29__ that their work as educators can be measured by a \"learning __30__\" such as a graduate's ability to investigate and reason. However, the professors need not worry so much. The results of a recent experiment showed that professors can use __31__ metrics to measure how well students do in three key areas: critical thinking, written communication, and quantitative literacy.\nDespite the success of the experiment, the actual results are worrisome, and mostly __32__ earlier studies. The organizers of the experiment concluded that far fewer students were achieving at high levels on critical thinking than they were doing for written communication or quantitative literacy. And that conclusion is based only on students nearing graduation.\nAmerican universities, despite their global __33__ for excellence in teaching, have only begun to demonstrate what they can produce in real-world learning. Knowledge-based degrees are still important, but employers are __34__ advanced thinking skills from college graduates. If the intellectual worth of a college degree can be __35__ measured, more people will seek higher education—and come out better thinkers.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "accurately"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "confirm"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "demanding"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "doubtful"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "drastically"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "justify"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "monopolized"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "outcome"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "predominance"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "presuming"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "reputation"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "significant"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "signify"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "simultaneously"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "standardized"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "The Price of Oil and the Price of Carbon\nA) Fossil fuel prices are likely to stay \"low for long\". Notwithstanding important recent progress in developing renewable fuel sources, low fossil fuel prices could discourage further innovation in, and adoption of, cleaner energy technologies. The result would be higher emissions of carbon dioxide and other greenhouse gases.\nB) Policymakers should not allow low energy prices to derail the clean energy transition. Action to restore appropriate price incentives, notably through corrective carbon pricing, is urgently needed to lower the risk of irreversible and potentially devastating effects of climate change. That approach also offers fiscal benefits.\nC) Oil prices have dropped by over 60% since June 2014. A commonly held view in the oil industry is that \"the best cure for low oil prices is low oil prices\". The reasoning behind this saying is that low oil prices discourage investment in new production capacity, eventually shifting the oil supply curve backward and bringing prices back up as existing oil fields—which can be tapped at relatively low marginal cost—are depleted. In fact, in line with past experience, capital expenditure in the oil sector has dropped sharply in many producing countries, including the United States. The dynamic adjustment to low oil prices may, however, be different this time around.\nD) Oil prices are expected to remain lower for longer. The advent of new technologies has added about 4.2 million barrels per day to the crude oil market, contributing to a global over-supply. In addition, other factors are putting downward pressure on oil prices: change in the strategic behavior of the Organization of Petroleum Exporting Countries, the projected increase in Iranian exports, the scaling-down of global demand (especially from emerging markets), the long-term drop in petroleum consumption in the United States, and some displacement of oil by substitutes. These likely persistent forces, like the growth of shale (页岩) oil, point to a \"low for long\" scenario. Futures markets, which show only a modest recovery of prices to around $60 a barrel by 2019, support this view.\nE) Natural gas and coal—also fossil fuels—have similarly seen price declines that look to be long-lived. Coal and natural gas are mainly used for electricity generation, whereas oil is used mostly to power transportation, yet the prices of all these energy sources are linked. The North American shale gas boom has resulted in record low prices there. The recent discovery of the giant Zohr gas field off the Egyptian coast will eventually have impact on pricing in the Mediterranean region and Europe, and there is significant development potential in many other places, notably Argentina. Coal prices also are low, owing to over-supply and the scaling-down of demand, especially from China, which bums half of the world's coal.\nF) Technological innovations have unleashed the power of renewables such as wind, hydro, solar, and geothermal (地热). Even Africa and the Middle East, home to economies that are heavily dependent on fossil fuel exports, have enormous potential to develop renewables. For example, the United Arab Emirates has endorsed an ambitious target to draw 24% of its primary energy consumption from renewable sources by 2021.\nG) Progress in the development of renewables could be fragile, however, if fossil fuel prices remain low for long. Renewables account for only a small share of global primary energy consumption, which is still dominated by fossil fuels—30% each for coal and oil, 25% for natural gas. But renewable energy will have to displace fossil fuels to a much greater extent in the future to avoid unacceptable climate risks.\nH) Unfortunately, the current low prices for oil, gas, and coal may provide little incentive for research to find even cheaper substitutes for those fuels. There is strong evidence that both innovation and adoption of cleaner technology are strongly encouraged by higher fossil fuel prices. The same is true for new technologies for alleviating fossil fuel emissions.\nI) The current low fossil fuel price environment will thus certainly delay the energy transition from fossil fuel to clean energy sources. Unless renewables become cheap enough that substantial carbon deposits are left underground for a very long time, if not forever, the planet will likely be exposed to potentially catastrophic climate risks.\nJ) Some climate impacts may already be discernible. For example, the United Nations Children's Fund estimates that some 11 million children in Africa face hunger, disease, and water shortages as a result of the strongest El Nino (厄尔尼诺) weather phenomenon in decades. Many scientists believe that El Nino events, caused by warming in the Pacific, are becoming more intense as a result of climate change.\nK) Nations from around the world have gathered in Paris for the United Nations Climate Change Conference, COP 21, with the goal of a universal and potentially legally-binding agreement on reducing greenhouse gas emissions. We need very broad participation to fully address the global tragedy that results when countries fail to take into account the negative impact of their carbon emissions on the rest of the world. Moreover, non-participation by nations, if sufficiently widespread, can undermine the political will of participating countries to act.\nL) The nations participating at COP 21 are focusing on quantitative emissions-reduction commitments. Economic reasoning shows that the least expensive way for each country is to put a price on carbon emissions. The reason is that when carbon is priced, those emissions reductions that are least costly to implement will happen first. The International Monetary Fund calculates that countries can generate substantial fiscal revenues by eliminating fossil fuel subsidies and levying carbon charges that capture the domestic damage caused by emissions. A tax on upstream carbon sources is one easy way to put a price on carbon emissions, although some countries may wish to use other methods, such as emissions trading schemes. In order to maximize global welfare, every country's carbon pricing should reflect not only the purely domestic damage from emissions, but also the damage to foreign countries.\nM) Setting the right carbon price will therefore efficiently align the costs paid by carbon users with the true social opportunity cost of using carbon. By raising relative demand for clean energy sources, a carbon price would also help align the market return to clean-energy innovation with its social return, spurring the refinement of existing technologies and the development of new ones. And it would raise the demand for technologies such as carbon capture and storage, spurring their further development. If not corrected by the appropriate carbon price, low fossil fuel prices are not accurately signaling to markets the true social profitability of clean energy. While alternative estimates of the damage from carbon emissions differ, and it's especially hard to reckon the likely costs of possible catastrophic climate events, most estimates suggest substantial negative effects.\nN) Direct subsidies to research and development have been adopted by some governments but are a poor substitute for a carbon price: they do only part of the job, leaving in place market incentives to over-use fossil fuels and thereby add to the stock of atmospheric greenhouse gases without regard to the collateral (附带的) costs.\nO) The hope is that the success of COP 21 opens the door to future international agreement on carbon prices. Agreement on an international carbon-price floor would be a good starting point in that process. Failure to address comprehensively the problem of greenhouse gas emissions, however, exposes all generations, present and future, to incalculable risks.",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "36. A number of factors are driving down the global oil prices not just for now but in the foreseeable future.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "37. Pricing carbon proves the most economical way to reduce greenhouse gas emissions.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "38. It is estimated that extreme weather conditions have endangered the lives of millions of African children.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "39. The prices of coal are low as a result of over-supply and decreasing demand.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40. Higher fossil fuel prices prove to be conducive to innovation and application of cleaner technology.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41. If fossil fuel prices remain low for a long time, it may lead to higher emissions of greenhouse gases.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "42. Fossil fuels remain the major source of primary energy consumption in today's world.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "43. Even major fossil exporting countries have great potential to develop renewable energies.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "44. Greenhouse gas emissions, if not properly dealt with, will pose endless risks for mankind.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "45. It is urgent for governments to increase the cost of using fossil fuels to an appropriate level to lessen the catastrophic effects of climate change.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "Open data sharers are still in the minority in many fields. Although many researchers broadly agree that public access to raw data would accelerate science, most are reluctant to post the results of their own labors online.\nSome communities have agreed to share online—geneticists, for example, post DNA sequences at the GenBank repository (库) , and astronomers are accustomed to accessing images of galaxies and stars from, say, the Sloan Digital Sky Survey, a telescope that has observed some 500 million objects—but these remain the exception, not the rule. Historically, scientists have objected to sharing for many reasons: it is a lot of work; until recently, good databases did not exist; grant funders were not pushing for sharing; it has been difficult to agree on standards for formatting data; and there is no agreed way to assign credit for data.\nBut the barriers are disappearing, in part because journals and funding agencies worldwide are encouraging scientists to make their data public. Last year, the Royal Society in London said in its report that scientists need to \"shift away from a research culture where data is viewed as a private preserve\". Funding agencies note that data paid for with public money should be public information, and the scientific community is recognizing that data can now be shared digitally in ways that were not possible before. To match the growing demand, services are springing up to make it easier to publish research products online and enable other researchers to discover and cite them.\nAlthough calls to share data often concentrate on the moral advantages of sharing, the practice is not purely altruistic (利他的). Researchers who share get plenty of personal benefits, including more connections with colleagues, improved visibility and increased citations. The most successful sharers—those whose data are downloaded and cited the most often---get noticed, and their work gets used. For example, one of the most popular data sets on multidisciplinary repository Dryad is about wood density around the world; it has been downloaded 5,700 times. Co-author Amy Zanne thinks that users probably range from climate-change researchers wanting to estimate how much carbon is stored in biomass, to foresters looking for information on different grades of timber. \"I'd much prefer to have my data used by the maximum number of people to ask their own questions,\" she says. \"It's important to allow readers and reviewers to see exactly how you arrive at your results. Publishing data and code allows your science to be reproducible.\"\nEven people whose data are less popular can benefit. By making the effort to organize and label files so others can understand them, scientists become more organized and better disciplined themselves, thus avoiding confusion later on.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46. What do many researchers generally accept?",
+          "options": [
+            "A) It is imperative to protect scientists' patents.",
+            "B) Repositories are essential to scientific research.",
+            "C) Open data sharing is most important to medical science.",
+            "D) Open data sharing is conducive to scientific advancement."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47. What is the attitude of most researchers towards making their own data public?",
+          "options": [
+            "A) Opposed.",
+            "B) Ambiguous.",
+            "C) Liberal.",
+            "D) Neutral."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48. According to the passage, what might hinder open data sharing?",
+          "options": [
+            "A) The fear of massive copying.",
+            "B) The lack of a research culture.",
+            "C) The belief that research data is private intellectual property.",
+            "D) The concern that certain agencies may make a profit out of it."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49. What helps lift some of the barriers to open data sharing?",
+          "options": [
+            "A) The ever-growing demand for big data.",
+            "B) The advancement of digital technology.",
+            "C) The changing attitude of journals and funders.",
+            "D) The trend of social and economic development."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50. Dryad serves as an example to show how open data sharing ________.",
+          "options": [
+            "A) is becoming increasingly popular",
+            "B) benefits sharers and users alike",
+            "C) makes researchers successful",
+            "D) saves both money and labor"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Macy's reported its sales plunged 5.2% in November and December at stores open more than a year, a disappointing holiday season performance that capped a difficult year for a department store chain facing wide-ranging challenges. Its flagship stores in major U.S. cities depend heavily on international tourist spending, which shrank at many retailers due to a strong dollar. Meanwhile, Macy's has simply struggled to lure consumers who are more interested in spending on travel or dining out than on new clothes or accessories.\nThe company blamed much of the poor performance in November and December on unseasonably warm weather. \"About 80% of our company's year-over-year declines in comparable sales can be attributed to shortfalls (短缺) in cold-weather goods,\" said chief executive Teny Lundgren in a press release. This prompted the company to cut its forecasts for the full fourth quarter.\nHowever, it's clear that Macy's believes its troubles run deeper than a temporary aberration (偏离) off the thermometer. The retail giant said the poor financial performance this year has pushed it to begin implementing $400 million in cost-cutting measures. The company pledged to cut 600 back-office positions, though some 150 workers in those roles would be reassigned to other jobs. It also plans to offer \"voluntary separation\" packages to 165 senior executives. It will slash staffing at its fleet of 770 stores, a move affecting some 3,000 employees.\nThe retailer also announced the locations of 36 stores it will close in early 2016. The company had previously announced the planned closures, but had not said which locations would be affected. None of the chain's stores in the Washington metropolitan area are to be closed.\nMacy's has been moving aggressively to try to remake itself for a new era of shopping. It has plans to open more locations of Macy's Backstage, a newly-developed off-price concept which might help it better compete with ambitious T. J. Maxx. It's also pushing ahead in 2016 with an expansion of Bluemercury, the beauty chain it bought last year. At a time when young beauty shoppers are often turning to Sephora or Ulta instead of department store beauty counters, Macy's hopes Bluemercury will help strengthen its position in the category.\nOne relative bright spot for Macy's during the holiday season was the online channel, where it rang up \"double-digit\" increases in sales and a 25% increase in the number of orders it filled. That relative strength would be consistent with what was seen in the wilder retail industry during the early part of the holiday season. While Thanksgiving, Black Friday and Cyber Monday all saw record spending online, in-store sales plunged over the holiday weekend.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51. What does the author say about the shrinking spending of international tourists in the U.S.?",
+          "options": [
+            "A) It is attributable to the rising value of the U.S. dollar.",
+            "B) It is a direct result of the global economic recession.",
+            "C) It reflects a shift of their interest in consumer goods.",
+            "D) It poses a potential threat to the retail business in the U.S."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52. What does Macy's believe about its problems?",
+          "options": [
+            "A) They can be solved with better management.",
+            "B) They cannot be attributed to weather only.",
+            "C) They are not as serious in its online stores.",
+            "D) They call for increased investments."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53. In order to cut costs, Macy's decided to ________.",
+          "options": [
+            "A) cut the salary of senior executives",
+            "B) relocate some of its chain stores",
+            "C) adjust its promotion strategies",
+            "D) reduce the size of its staff"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54. Why does Macy's plan to expand Bluemercury in 2016?",
+          "options": [
+            "A) To experiment on its new business concept.",
+            "B) To focus more on beauty products than clothing.",
+            "C) To promote sales of its products by lowering prices.",
+            "D) To be more competitive in sales of beauty products."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55. What can we learn about Macy's during the holiday season?",
+          "options": [
+            "A) Sales dropped sharply in its physical stores.",
+            "B) Its retail sales exceeded those of T. J. Maxx.",
+            "C) It helped Bluemercury establish its position worldwide.",
+            "D) It filled its stores with abundant supply of merchandise."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "明朝统治中国276年，被人们描绘成人类历史上治理有序、社会稳定的最伟大的时代之一。这一时期，手工业的发展促进了市场经济和城市化。大量商品，包括酒和丝绸，都在市场销售。同时，还进口许多外国商品，如时钟和烟草。北京、南京、扬州、苏州这样的大商业中心相继形成。也是在明代，由郑和率领的船队曾到印度洋进行了七次大规模探险航行。还值得一提的是，中国文学的四大经典名著中有三部写于明代。",
+      "questions": []
+    }
+  ]
+}

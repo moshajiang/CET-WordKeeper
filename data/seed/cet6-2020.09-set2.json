@@ -1,0 +1,516 @@
+{
+  "level": "CET6",
+  "year": 2020,
+  "month": 9,
+  "set_no": 2,
+  "title": "CET6 2020 年 9 月第 2 套",
+  "source": "cet6-2020.09-set2.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: For this part, you are allowed 30 minutes to write an essay on the saying “What is worth doing is worth doing well ” You should write at least 150 words but no more than 200 words.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "Questions 26 to 35 are based on the following passage.\nIt was perhaps when my parents—who also happen to be my housemates—left to go travelling for a couple of months recently that it 26 on me why I had not yet left the family home.\nIt wasn't that I relied on them for 27 reasons, or to keep my life in order, or to ease the chaos of the home. These days, I rely on them for their company.\nI missed coming home and talking about my day at work, and I missed being able to read their faces and sense how their day was. I missed having unique 28 into tiny details that make a life.\nWhile the conversation about young adults staying longer at home is 29 by talk of laziness, of dependence, of an inability for young people to pull themselves together, 30 do we talk of the way, in my case at least, my relationship with my parents has 31 strengthened the longer we have lived together.\nOver the years the power dynamic has changed and is no longer defined by one being the giver and another, the taker. So, what does this say for our relationships within the family home?\nAccording to psychologist Sabina Read, there are “some very positive possible 32 when adult children share the family home”, noting the “parent-child relationship may indeed strengthen and mature” in the process.\nBut, she notes, a strong 33 doesn't simply come with time. “The many changing factors of the relationship need to be acknowledged, rather than hoping that the mere passage of time will 34 connect parents to their adult children. It's important to acknowledge that the relationship parameters have changed to avoid falling back into 35 from the teen years.",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "magically"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "outcomes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "patterns"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "rarely"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "saturated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "stereotypes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "undoubtedly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "bond"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "contemplated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "dawned"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "hierarchy"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "insight"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "legislative"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "leverage"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "logistical"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "41",
+          "options": [
+            "magically"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "42",
+          "options": [
+            "outcomes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "43",
+          "options": [
+            "patterns"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "44",
+          "options": [
+            "rarely"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "45",
+          "options": [
+            "saturated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "46",
+          "options": [
+            "stereotypes"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "47",
+          "options": [
+            "undoubtedly"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "48",
+          "options": [
+            "bond"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "49",
+          "options": [
+            "contemplated"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "50",
+          "options": [
+            "dawned"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "51",
+          "options": [
+            "hierarchy"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "52",
+          "options": [
+            "insight"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "53",
+          "options": [
+            "legislative"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "54",
+          "options": [
+            "leverage"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "55",
+          "options": [
+            "logistical"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "How Telemedicine Is Transforming Healthcare\nA) After years of big promises, telemedicine is finally living up to its potential. Driven by faster internet connections, ubiquitous(无处不在的) smartphones and changing insurance standards, more health providers are turning to electronic communications to do their jobs—and it's dramatically changing the delivery of healthcare.\nB) Doctors are linking up with patients by phone, email and webcam(网络摄像头) . They’re also consulting with each other electronically—sometimes to make split second decisions on heart attacks and strokes. Patients, meanwhile, are using new devices to relay their blood pressure, heart rate and other vital signs to their doctors so they can manage chronic conditions at home. Telemedicine also allows for better care in places where medical expertise is hard to come by. Five to 10 times a day, Doctors Without Borders relays questions about tough cases from its physicians in Niger, South Sudan and elsewhere to its network of 280 experts around the world, and back again via internet.\nC) As a measure of how rapidly telemedicine is spreading, consider: More than 15 million Americans received some kind of medical care remotely last year, according to the American Telemedicine Association, a trade group, which expects those numbers to grow by 30% this year.\nD) None of this is to say that telemedicine has found its way into all comers of medicine. A recent survey of 500 tech-savvy(精通技术的) consumers found that 39% hadn’t heard of telemedicine, and of those who haven’t used it, 42% said they preferred in-person doctor visits. In a poll of 1500 family physicians, only 15% had used it in their practices—but 90% said they would if it were appropriately reimbursed(补偿) .\nE) What's more, for all the rapid growth, significant questions and challenges remain. Rules defining and regulating telemedicine differ widely from state to state. Physicians groups are issuing different guidelines about what care they consider appropriate to deliver and in what form.\nF) Some critics also question whether the quality of care is keeping up with the rapid expansion of telemedicine. And there's the question of what services physicians should be paid for: Insurance coverage varies from health plan to health plan, and a big federal plan covers only a narrow range of services. Telemedicine's future will depend on how—and whether—regulators, providers, payers and patients can address these challenges. Here's a closer look at some of these issues:\nG) Do patients trade quality for convenience? The fastest-growing services in telemedicine connect consumers with clinicians they've never met for a phone, video or email visit—on-demand, 24/7. Typically, these are for nonemergency issues such as colds, flu, ear-aches and skin rashes, and they cost around $45, compared with approximately $100 at a doctor's office, $160 at an urgent-care clinic or $750 and up at an emergency room.\nH) Many health plans and employers have rushed to offer the services and promote them as a convenient way for plan members to get medical care without leaving home or work. Nearly three-quarters of large employers will offer virtual doctor visits as a benefit to employees this year, up from 48% last year. Web companies such as Tel a doc and American Well are expected to host some 1.2 million such virtual doctor visits this year, up 20% from last year, according to the American Telemedicine Association.\nI) But critics worry that such services maybe sacrificing quality for convenience. Consulting a random doctor patients will never meet, they say, further fragments the health-care system, and even minor issues such as upper respiratory(上呼吸道的) infections can’t be thoroughly evaluated by a doctor who can’t listen to your heart or feel your swollen glands. In a recent study, researchers posing as patients with skin problems sought help from 16 telemedicine sites—with unsettling results. In 62 encounters, fewer than one-third disclosed clinicians' credential or let patients choose; only 32% discussed potential side effects of prescribed medications. Several sites misdiagnosed serious conditions, largely because they failed to ask basic follow-up questions, the researchers said. “Telemedicine holds enormous promise, but these sites are just not ready for prime time,” says Jack Res neck, the study's lead author.\nJ) The American Telemedicine Association and other organizations have started accreditation(鉴定) programs to identify top-quality telemedicine sites. The American Medical Association this month approved new ethical guidelines for telemedicine, calling for participating doctors to recognize the limitations of such services and ensure that they have sufficient information to make clinical recommendations.\nK) Who pays for the services? While employers and health plans have been eager to cover virtual urgent-care visits, insurers have been far less willing to pay for telemedicine when doctors use phone, email or video to consult with existing patients about continuing issues. “It's very hard to get paid unless you physically see the patient,” says Peter Rasmussen, medical director of distance health at the Cleveland Clinic. Some 32 states have passed “parity”(等同的) laws requiring private insurers to reimburse doctors for services delivered remotely if the same service would be covered in person, though not necessarily at the same rate or frequency. Medicare lags further behind. The federal health plan for the elderly covers a small number of telemedicine services—only for beneficiaries in rural areas and only when the services are received in a hospital, doctor's office or clinic.\nL) Bills to expand Medicare coverage of telemedicine have bipartisan(两党的) support in Congress. Opponents worry that such expansion would be costly for taxpayers, but advocates say it would save money in the long run.\nM) Experts say more hospitals are likely to invest in telemedicine systems as they move away from fee-for-service payments and into managed-care-type contracts that give them a set fee to provide care for patients and allow them to keep any savings they achieve.\nN) Is the state-by-state regulatory system outdated? Historically, regulation of medicine has been left to individual states. But some industry members contend that having 50 different sets of rules, licensing fees and even definitions of “medical practice\" makes less sense in the era of telemedicine and is hampering its growth. Currently, doctors must have a valid license in the state where the patient is located to provide medical care, which means virtual-visit companies can match users only with locally licensed clinicians. It also causes administrative hassles(麻烦) for world-class medical centers that attract patients from across the country. At the Mayo Clinic, doctors who treat out-of-state patients can follow up with them via phone, email or web chats when they return home, but they can only discuss the conditions they treated in person. “If the patient wants to talk about a new problem, the doctor has to be licensed in that state to discuss it. If not, the patient should talk to his primary-care physician about it,” says Steve Ommen, who runs Mayo's Connected Care program.\nO) To date, 17 states have joined a compact that will allow a doctor licensed in one member state to quickly obtain a license in another. While welcoming the move, some telemedicine advocates would prefer states to automatically honor one another's licenses, as they do with drivers' licenses. But states aren’t likely to surrender control of medical practice, and most are considering new regulations. This year, more than 200 telemedicine-related bills have been introduced in 42 states, many regarding what services Medicaid will cover and whether payers should reimburse for remote patient monitoring. “A lot of states are still trying to define telemedicine,” says Lisa Robbin, chief advocacy officer for the Federation of State Medical Boards.",
+      "questions": [
+        {
+          "qtype": "match",
+          "stem": "36. An overwhelming majority of family physicians are willing to use telemedicine if they are duly paid.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "37. Many employers are eager to provide telemedicine service as a benefit to their employees because of its convenience.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "38. Different states have markedly different regulations for telemedicine.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "39. With telemedicine, patients in regions short of professional medical service are able to receive better medical care.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40. Unlike employers and health plans, insurers have been rather reluctant to pay for some telemedicine services.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41. Some supporters of telemedicine hope states will accept each other's medical practice licenses as valid.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "42. The fastest growing area for telemedicine services is for lesser health problems.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "43. As telemedicine spreads quickly, some of its opponents doubt whether its service quality can be guaranteed.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "44. The results obtained by researchers who pretended to be patients seeking help from telemedicine providers are disturbing.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "45. Some people argue that the fact that different states have different regulations concerning medical services hinders the development of telemedicine.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "Danielle Steel, the 71-year-old romance novelist is notoriously productive, having published 179 books at a rate of up to seven a year. But a passing reference in a recent profile by Glamour magazine to her 20-hour workdays prompted an outpouring of admiration.\nSteel has given that 20-hour figure when describing her “exhausting” process in the past: “I start the book and don't leave my desk until the first draft is finished.” She goes from bed, to desk, to bath, to bed, avoiding all contact aside from phone calls with her nine children. “I don't comb my hair for weeks,” she says. Meals are brought to her desk, where she types until her fingers swell and her nails bleed.\nThe business news website Quartz held Steel up as an inspiration, writing that if only we all followed her “actually extremely liberating” example of industrious sleeplessness, we would be quick to see results.\nWell, indeed. With research results showing the cumulative effects of sleep loss and its impact on productivity, doubt has been voiced about the accuracy of Steel’s self-assessment. Her output maybe undeniable, but sceptics have suggested that she is guilty of erasing the role of ghost writers(代笔人) at worst, gross exaggeration at best.\nSteel says working 20 hours a day is “pretty brutal physically.” But is it even possible? “No,” says Maryanne Taylor of the Sleep Works. While you could work that long, the impact on productivity would make it hardly worthwhile. If Steel was routinely sleeping for four hours a night, she would be drastically underestimating the negative impact, says Alison Gardiner, founder of the sleep improvement programme Sleep station. “It’s akin to being drunk.”\nIt’s possible that Steel is exaggerating the demands of her schedule. Self-imposed sleeplessness has “become a bit of a status symbol”, says Taylor, a misguided measure to prove how powerful and productive you are. Margaret Thatcher was also said to get by on four hours a night, while the 130-hour workweeks endured by tech heads has been held up as key to their success.\nThat is starting to change with increased awareness of the importance of sleep for mental health. “People are starting to realise that sleep should not be something that you fit in between everything else,” says Taylor.\nBut it is possible—if statistically extremely unlikely—that Steel could be born a “short sleeper” with an unusual body clock, says sleep expert Dr. Sophie Bostock. “It’s probably present in fewer than 1% of the population.”\nEven if Steel does happen to be among that tiny minority, says Bostock, it's “pretty irresponsible” to suggest that 20-hour days are simply a question of discipline for the rest of us.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46. What do we learn from the passage about Glamour magazine readers?",
+          "options": [
+            "A) They are intrigued by the exotic romance in Danielle Steel's novels.",
+            "B) They are amazed by the number of books written by Danielle Steel.",
+            "C) They are deeply impressed by Danielle Steel's daily work schedule.",
+            "D) They are highly motivated by Danielle Steel’s unusual productivity."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47. What did the business news website Quartz say about Danielle Steel?",
+          "options": [
+            "A) She could serve as an example of industriousness.",
+            "B) She proved we could liberate ourselves from sleep.",
+            "C) She could be an inspiration to novelists all over the world.",
+            "D) She showed we could get all our work done without sleep."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48. What do sceptics think of Danielle Steel's work schedule claims?",
+          "options": [
+            "A) They are questionable.",
+            "B) They are alterable.",
+            "C) They are irresistible.",
+            "D) They are verifiable."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49. What does Maryanne Taylor think of self-imposed sleeplessness?",
+          "options": [
+            "A) It may turn out to be key to a successful career.",
+            "B) It may be practiced only by certain tech heads.",
+            "C) It may symbolise one's importance and success.",
+            "D) It may well serve as a measure of self-discipline."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50. How does Dr. Sophie Bostock look at the 20-hour daily work schedule?",
+          "options": [
+            "A) One should not adopt it without consulting a sleep expert.",
+            "B) The general public should not be encouraged to follow it.",
+            "C) One must be duly self-disciplined to adhere to it.",
+            "D) The majority must adjust their body clock for it."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Organic agriculture is a relatively untapped resource for feeding the Earth's population, especially in the face of climate change and other global challenges. That's the conclusion I reached in reviewing 40 years of science comparing the long-term prospects of organic and conventional farming.\nThe review study, “Organic Agriculture in the 21st Century,” is featured as the cover story for the February issue of the journal Nature Plants. It is the first to compare organic and conventional agriculture across the main goals of sustainability identified by the National Academy of Sciences: productivity, economics, and environment.\nCritics have long argued that organic agriculture is inefficient, requiring more land to yield the same amount of food. It's true that organic farming produces lower yields, averaging 10 to 20 percent less than conventional. Advocates contend that the environmental advantages of organic agriculture far outweigh the lower yields, and that increasing research and breeding resources for organic systems would reduce the yield gap. Sometimes excluded from these arguments is the fact that we already produce enough food to more than feed the world's 7.4 billion people but do not provide adequate access to all individuals.\nIn some cases, organic yields can be higher than conventional. For example, in severe drought conditions, which are expected to increase with climate change in many areas, organic farms can produce as good, if not better, yields because of the higher water-holding capacity of organically farmed soils.\nWhat science does tell us is that mainstream conventional farming systems have provided growing supplies of food and other products but often at the expense of other sustainability goals.\nConventional agriculture may produce more food, but it often comes at a cost to the environment. Biodiversity loss, environmental degradation, and severe impacts on ecosystem services have not only accompanied conventional farming systems but have often extended well beyond their field boundaries. With organic agriculture, environmental costs tend to be lower and the benefits greater.\nOverall, organic farms tend to store more soil carbon, have better soil quality, and reduce soil erosion compared to their conventional counterparts. Organic agriculture also creates less soil and water pollution and lower greenhouse gas emissions. And it’s more energy-efficient because it doesn't rely on synthetic fertilizers or pesticides.\nOrganic agriculture is also associated with greater biodiversity of plants, animals, insects and microorganisms as well as genetic diversity. Biodiversity increases the services that nature provides and improves the ability of farming systems to adapt to changing conditions.\nDespite lower yields, organic agriculture is more profitable for farmers because consumers are willing to pay more. Higher prices, called price premiums, can be justified as a way to compensate farmers for providing ecosystem services and avoiding environmental damage or external costs.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51. What do we learn from the conclusion of the author's review study?",
+          "options": [
+            "A) More resources should be tapped for feeding the world's population.",
+            "B) Organic farming may be exploited to solve the global food problem.",
+            "C) The long-term prospects of organic farming are yet to be explored.",
+            "D) Organic farming is at least as promising as conventional farming."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52. What is the critics' argument against organic farming?",
+          "options": [
+            "A) It cannot meet the need for food.",
+            "B) It cannot increase farm yields.",
+            "C) It is not really practical.",
+            "D) It is not that productive."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53. What does the author think should be taken into account in arguing about organic farming?",
+          "options": [
+            "A) Growth in world population.",
+            "B) Deterioration in soil fertility.",
+            "C) Inequality in food distribution.",
+            "D) Advance in farming technology."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54. What does science tell us about conventional farming?",
+          "options": [
+            "A) It will not be able to meet global food demand.",
+            "B) It is not conducive to sustainable development.",
+            "C) It will eventually give away to organic farming.",
+            "D) It is going mainstream throughout the world."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55. Why does the author think higher prices of organic farm produce are justifiable?",
+          "options": [
+            "A) They give farmers going organic a big competitive edge.",
+            "B) They motivate farmers to upgrade farming technology.",
+            "C) Organic farming costs more than conventional farming.",
+            "D) Organic farming does long-term good to the ecosystem."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "《红楼梦》(Dream of the Red Chamber )是18世纪曹雪芹创作的一部小说。曹雪芹基于自己痛苦的个人经历,讲述了贾宝玉和林黛玉之间的悲剧性爱情故事。书中有大约30个主要人物和400多个次要人物,每个人物都刻画得栩栩如生,具有鲜明的个性。小说详尽地描述了四个贵族世家兴衰的历程,反映了封建社会隐藏的种种危机和错综复杂的社会冲突。\n《红楼梦》融合了现实主义和浪漫主义,具有很强的艺术感染力。它被普遍认为是中国最伟大的小说,也是世界上最伟大的文学创作之一。",
+      "questions": []
+    }
+  ]
+}

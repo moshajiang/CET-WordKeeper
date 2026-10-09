@@ -1,0 +1,39 @@
+{
+  "appId": "com.workbuddy.cetwordkeeper",
+  "productName": "CET WordKeeper",
+  "copyright": "仅供个人学习使用",
+  "directories": {
+    "output": "release",
+    "buildResources": "build"
+  },
+  "files": [
+    "electron/**/*",
+    "dist/**/*",
+    "data/keeper.db",
+    "package.json"
+  ],
+  "asar": true,
+  "asarUnpack": [
+    "node_modules/sql.js/dist/sql-wasm.wasm"
+  ],
+  "compression": "normal",
+  "win": {
+    "target": [
+      { "target": "portable", "arch": ["x64"] },
+      { "target": "nsis", "arch": ["x64"] }
+    ],
+    "artifactName": "${productName}-${version}-${arch}.${ext}"
+  },
+  "portable": {
+    "artifactName": "CET-WordKeeper-${version}-便携版.${ext}",
+    "unpackDirName": "CETWordKeeper"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "CET WordKeeper",
+    "artifactName": "CET-WordKeeper-${version}-安装包.${ext}"
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "level": "CET6",
+  "year": 2020,
+  "month": 7,
+  "set_no": 1,
+  "title": "CET6 2020 年 7 月第 1 套",
+  "source": "cet6-2020.07-set1.docx",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "title": "写作",
+      "content": "Directions: For this part, you are allowed 30 minutes to write an essay on the saying \" The best preparation for tomorrow is doing your best today. \" You should write at least 150 words but no more than 200 words.",
+      "questions": []
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "title": "选词填空",
+      "content": "Questions 26 to 35 are based on the following passage.\nThe United Nations issued a report last week warning that humans are destroying nature at such a rate that life on Earth is at risk. When the report came out, it naturally 26 headlines. But obviously it didn’t hijack the news agenda in the manner of a major terrorist attack or 27 of war.\nThe report from the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES) is clear on what’s at 28 and what needs to change. IPBES chair Robert Watson says the “ 29 evidence” presents an “ominous (凶兆的) picture”. “The health of ecosystems on which we and all other species depend is 30 more rapidly than ever,” Robert Watson said. “We are 31 the very foundations of our economies, livelihoods, food security, health and quality of life worldwide.” The report says it’s not too late if we make “transformative change” —fundamental, system-wide reorganization—at every level from local to global , and we need to focus on how to make that happen.\nFirst, don’t indulge in despair, because despair leads to inertia and doing nothing means certain 32. Every action to save nature will improve our collective and personal futures and the only way to respond to a threat of this scale is with 33 action rooted in headstrong optimism. Second, we need relentless focus, just like when paramedics (救护人员) arrive on a scene and use the concept of “triage (伤员鉴别分类)” to ensure the most 34 cases get treated first. Saving the natural world needs that kind of thinking. We don’t have the 35 to do everything at once. We need to make hard choices.\nJunction\nMonotonous",
+      "questions": [
+        {
+          "qtype": "bank",
+          "stem": "26",
+          "options": [
+            "overwhelming"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "27",
+          "options": [
+            "stagnation"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "28",
+          "options": [
+            "stake"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "29",
+          "options": [
+            "stifled"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "30",
+          "options": [
+            "urgent"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "31",
+          "options": [
+            "capacity"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "32",
+          "options": [
+            "declaration"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "33",
+          "options": [
+            "deteriorating"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "34",
+          "options": [
+            "determined"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "35",
+          "options": [
+            "disaster"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "36",
+          "options": [
+            "eroding"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "37",
+          "options": [
+            "grabbed"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "38",
+          "options": [
+            "inventory"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "39",
+          "options": [
+            "overwhelming"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "40",
+          "options": [
+            "stagnation"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "41",
+          "options": [
+            "stake"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "42",
+          "options": [
+            "stifled"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "43",
+          "options": [
+            "urgent"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "44",
+          "options": [
+            "capacity"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "45",
+          "options": [
+            "declaration"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "46",
+          "options": [
+            "deteriorating"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "47",
+          "options": [
+            "determined"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "48",
+          "options": [
+            "disaster"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "49",
+          "options": [
+            "eroding"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "50",
+          "options": [
+            "grabbed"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "bank",
+          "stem": "51",
+          "options": [
+            "inventory"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "title": "长篇阅读",
+      "content": "Children Understand Far More About Other Minds Than Long Believed\nUntil a few decades ago, scholars believed that young children know very little, if anything, about what others are thinking. Swiss psychologist Jean Piaget, who is credited with founding the scientific study of children’s thinking, was convinced that preschool children cannot consider what goes on in the minds of others. The interviews and experiments he conducted with kids in the middle of the 20th century suggested that they were trapped in their subjective viewpoints, incapable of imagining what others think, feel or believe.\nMuch of the subsequent research on early childhood thinking was highly influenced by Piaget’s ideas. Scholars sought to refine his theory and empirically confirm his views. But it became increasingly clear that Piaget seemed to have gravely underestimated the intellectual powers of very young kids before they can make themselves understood by speech. Researchers began to devise ever more ingenious ways of figuring out what goes on in the minds of babies, and the resulting picture of their abilities shows subtle variations. Consequently, the old view of children’s egocentric (自我中心的) nature and intellectual weaknesses has increasingly fallen out of favor and become replaced by a more generous position that sees a budding sense not only of the physical world but also of other minds, even in the “youngest young.”\nHistorically, children didn’t receive much respect for their mental powers. Piaget not only believed that children were “egocentric” in the sense that they were unable to differentiate between their own viewpoint and that of others; he was also convinced that their thinking was characterized by systematic errors and confusions. When playing with others, they don’t cooperate because they do not realize there are different roles and perspectives. He was convinced that children literally cannot “get their act together” : instead of playing cooperatively and truly together, they play side by side, with little regard for others. And when speaking with others, a young child supposedly cannot consider the listener’s viewpoint but “talks to himself without listening to others.”\nPiaget and his followers maintained that children go through something like a dark age of intellectual development before slowly and gradually becoming enlightened by reason and rationality as they reach school age. Alongside this enlightenment develops an ever growing understanding of other persons, including their attitudes and views of the world.\nToday, a very different picture of children’s mental development emerges. Psychologists continually reveal new insights into the depth of young children’s knowledge of the world, including their understanding of other minds. Recent studies suggest that even infants are sensitive to others’ perspectives and beliefs.\nPart of the motivation to revise some of Piaget’s conclusions stemmed from an ideological shift about the origin of human knowledge that occurred in the second half of the 20th century. It became increasingly unpopular to assume that a basic understanding of the world can be built entirely from experience. This was in part prompted by theorist Noam Chomsky, who argued that something as complex as the rules of grammar cannot be picked up from exposure to speech, but is supplied by an inborn “language faculty.” Others followed suit and defined further “core areas” in which knowledge allegedly cannot be pieced together from experience but must be possessed at birth. One such area is our knowledge of others’ minds. Some even argue that a basic knowledge of others’ minds is not only possessed by human infants, but must be evolutionarily old and hence shared by our nearest living relatives, the great apes.\nTo prove that infants know more in this realm than had been acknowledged, researchers needed to come up with innovative ways of showing it. A big part of why we now recognize so much more of kids’ intellectual capacities is the development of much more sensitive research tools than Piaget had at his disposal.\nInstead of engaging babies in dialog or having them execute complex motor tasks, the newer methods capitalize on behaviors that have a firm place in infants’ natural behavior repertoire: looking, listening, sucking, making facial expressions, gestures and simple manual actions. The idea of focusing on these “small behaviors” is that they give kids the chance to demonstrate their knowledge implicitly and spontaneously without having to respond to questions or instructions. For example, children might look longer at an event that they did not expect to happen, or they might show facial expressions indicating that they have sympathetic concern for others. When researchers measure these less demanding, and often involuntary, behaviors, they can detect a sensitivity to others’ mental states at a much younger age than with the more taxing methods that Piaget and his followers deployed.\nIn the 1980s, these kinds of implicit measures became customary in developmental psychology. But it took a while longer before these tools were employed to measure children’s grasp of the mental lives of others.\nIn a set of experiments, my colleagues at the University of Southern California and I found evidence that babies can even anticipate how others will feel when their expectations are disappointed. We acted out several puppet (木偶) shows in front of two-year-old children. In these puppet shows, a protagonist (Cookie Monster) left his precious belongings (cookies) on stage and later returned to fetch them. What the protagonist did not know was that an antagonist had come and messed with his possessions. The children had witnessed these acts and attentively watched the protagonist return. We recorded children’s facial and bodily expressions. Children bit their lips, wrinkled their nose or wiggled (扭动) in their chair when the protagonist came back, as if they anticipated the bewilderment and disappointment he was about to experience. Importantly, children showed no such reactions and remained calm when the protagonist had seen the events himself and thus knew what to expect. Our study reveals that by the tender age of two, kids not only track what others believe or expect; they can even foresee how others will feel when they discover reality.\nStudies like this reveal that there is much more going on in small kids’ and even infants’ minds than was previously believed. With the explicit measures used by Piaget and successors, these deeper layers of kids’ understanding cannot be accessed. The new investigative tools demonstrate that kids know more than they can say: when we scratch beneath the surface, we find an emerging understanding of relations and perspectives that Piaget probably did not dream of.\nDespite these obvious advances in the study of young children’s thinking, it would be a grave mistake to dismiss the careful and systematic analyses compiled by Piaget and others before the new tests dominated the scene because the original methods revealed essential facts about how children think that the new methods cannot uncover.\nThere’s no consensus in today’s science community about how much we can infer from a look, a facial expression or a hand gesture. These behaviors clearly indicate a curiosity about what goes on in the mind of others, and probably a set of early intuitions coupled with a willingness to learn more. They pave the way to richer and more explicit forms of understanding of the minds of others. But they can in no way replace the child’s growing ability to articulate and refine her understanding of how people behave and why.\nPiaget believed that small children could not collaborate with others while playing.\nThe author and his colleagues’ study shows two-year-olds may be able to predict other people’s feelings.\nIn the latter half of the last century, fewer and fewer people believed the basis for our understanding of the world is wholly empirical.\nResearch conducted by Jean Piaget in the last century suggested babies were insensitive to others’ thinking.\nOur improved understanding of babies’ intellectual power is attributable to better research tools.\nIt has been found in recent research that even small babies are sensitive to other people’s points of view.\nScientists are still debating what inference can be drawn from certain physical expressions of a child.\nThe newer research methods focus on infants’ simple behaviors instead of requiring them to answer questions.\nWith the progress in psychology, the traditional view of children’s self-centered nature and limited thinking abilities has become less and less influential.\nEven though marked advances have been made, it is wrong to dismiss Piaget’s fundamental contributions to the study of kids’ cognitive abilities.",
+      "questions": []
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "title": "仔细阅读 · Passage One",
+      "content": "People often discuss the dangers of too much stress, but lately a very different view of stress is gaining popularity: this view of stress, held by members of the positive stress movement, argues that stress might actually be beneficial. The positive stress movement is made up of people such as Zachary Rapp who are looking for an edge in a competitive world, and Rapp’s routine is a good example of followers of the movement. He wakes up most mornings at dawn, goes for a run, sips black coffee while ripping through emails, and then steps into a freezing cold shower. This is a routine designed to reduce the stress of running simultaneously three different health and biotechnology companies for 18 hours a day.\nAlthough Rapp’s practices may sound extreme, he is part of a growing movement, consisting largely of tech industry workers who claim that such radical tactics will help them live better and longer. Inspired by influential figures in different fields, including entertainers, athletes, entrepreneurs and scientists, positive stress practitioners seek out some combination of extreme temperatures, restrictive diets, punishing exercise routines and general discomfort.\nRapp argues that positive stress keeps him balanced. In addition to running and freezing showers, Rapp uses ice baths, hot yoga, and unconventional eating practices such as eliminating dairy, sugar, alcohol and various other foods high in carbohydrates. He believes that these practices, which put stress on his body, actually make him feel less stress from work. However, Rapp does not credit anyone in particular for his choices: he said he started using these methods in college, where he got into the habit of taking ice baths to recover from sports. He got back into it while trying to get his three companies off the ground.\nRapp works long hours and sleeps only five to seven hours a night but he said he only gets sick once a year. For him, the difference between day-to-day stress, like the kind we feel when moving apartments, and positive stress is that the latter involves pushing the body to extremes and forcing it to build up a tolerance.\nOne thought leader in the positive stress world is Dutch extreme athlete Wim Hof, who earned the name “ice man” for his ability to withstand severe cold using deep breathing exercises. Hofs ideas have become popular among tech industry elites and, thanks to Hof, cold showers are now a trend; indeed, some even call it a form of therapy.\nBut it is important to note that not everyone agrees with these practitioners; indeed, some medical professionals argue that positive stress is not for everyone, and that it might even be dangerous for people who are unhealthy or older.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "46. What do we learn about followers of the positive stress movement?",
+          "options": [
+            "A) They are usually quite sensitive to different types of stress.",
+            "B) They hold a different view on stress from the popular one.",
+            "C) They derive much pleasure from living a very hectic life.",
+            "D) They gain a competitive edge by enjoying good health."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "47. What do followers of the positive stress movement usually do to put their ideas into practice?",
+          "options": [
+            "A) They keep changing their living habits.",
+            "B) They network with influential figures.",
+            "C) They seek jobs in tech industries.",
+            "D) They apply extreme tactics."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "48. What does Zachary Rapp say about his unconventional practices?",
+          "options": [
+            "A) They help him combat stress from work.",
+            "B) They enable him to cut down living expenses.",
+            "C) They enable him to recover from injuries and illnesses.",
+            "D) They help him get three companies enlisted all at once."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "49. What can be inferred from the passage about day-to-day stress?",
+          "options": [
+            "A) It is harmful to one’s physical and mental health.",
+            "B) It does not differ in essence from positive stress.",
+            "C) It is something everybody has to live with.",
+            "D) It does not help build up one’s tolerance."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "50. What do some medical professionals think of positive stress?",
+          "options": [
+            "A) Its true effect remains to be verified.",
+            "B) Its side effect should not be ignored.",
+            "C) Its effect varies considerably from person to person.",
+            "D) Its practitioners should not take it as a form of therapy."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "title": "仔细阅读 · Passage Two",
+      "content": "Is hunting good or bad for the environment? Like so many hot button issues, the answer to this question depends upon who you ask. On the one hand, some say, nothing could be more natural than hunting, and indeed just about every animal species—including humans—has been either predator or prey at some point in its evolution. And, ironic as it sounds, since humans have wiped out many animal predators, some see hunting as a natural way to reduce the herds of prey animals that now reproduce beyond the environment’s carrying capacity.\nOn the other hand, many environmental and animal advocates see hunting as savage, arguing that it is morally wrong to kill animals, regardless of practical considerations. According to Glenn Kirk of the California-based The Animals’ Voice, hunting “causes immense suffering to individual wild animals ...” and is “ irrationally cruel because unlike natural predation (捕食) , hunters kill for pleasure ...” He adds that, despite hunters’ claims that hunting keeps wildlife populations in balance, hunters’ license fees are used to “manipulate a few game species into overpopulation at the expense of a much larger number of non-game species, resulting in the loss of biological diversity, genetic integrity and ecological balance.”\nBeyond moral issues, others contend that hunting is not practical. According to the Humane Society of the United States, the vast majority of hunted species—such as waterfowl, rabbits, upland birds and mourning doves—“provide minimal nutrition and do not require population control.” Author Gary E. Varner suggests in his book, In Nature’s Interests, that some types of hunting may be morally justifiable while others may not be. Hunting “designed to secure the aggregate welfare of the target species, the integrity of its ecosystem, or both”—what Varner terms “therapeutic hunting”—is defensible, while subsistence and sport hunting—both of which only benefit human beings—is not.\nRegardless of one’s individual stance, fewer Americans hunt today than in recent history. Data gathered by the U. S. Fish & Wildlife Service in 2006 show that only five percent of Americans—some 12.5 million individuals—consider themselves hunters today, down from nine percent in 2001 and 15 percent in 1996.\nPublic support for hunting, however, is on the rise. A 2007 survey by Responsive Management Inc. found that eighty percent of respondents agreed that “hunting has a legitimate place in modern society,” and the percentage of Americans indicating disapproval of hunting declined from 22 percent in 1995 to 16 percent in 2007.\nPerhaps matching the trend among the public, green leaders are increasingly advocating cooperation between hunters and environmental groups: After all, both deplore urban sprawl and habitat destruction.",
+      "questions": [
+        {
+          "qtype": "choice",
+          "stem": "51. What does the author say sounds ironic?",
+          "options": [
+            "A) Some predators may often turn out to be prey of other predators.",
+            "B) Hunting may also be a solution to the problem caused by hunting.",
+            "C) The species of prey animals continue to vary despite humans’ hunting.",
+            "D) The number of prey animals keeps rising despite environmental change."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "52. What does Glenn Kirk think of charging hunters license fees?",
+          "options": [
+            "A) It keeps game population under control.",
+            "B) It turns hunting into a sport of the rich.",
+            "C) It leads to ecological imbalance.",
+            "D) It helps stop killing for pleasure."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "53. What is the argument of the Humane Society of the United States against hunting?",
+          "options": [
+            "A) Overpopulation is not an issue for most hunted animals.",
+            "B) Hunting deprives animal populations of their food sources.",
+            "C) Many birds and small animals are being irrationally killed.",
+            "D) Hunting is universally acknowledged as a savage behavior."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54. When is hunting morally justifiable according to Gary E. Varner?",
+          "options": [
+            "A) When it benefits animals and their ecosystem.",
+            "B) When it serves both human and animal interests.",
+            "C) When it is indispensable to humans’ subsistence.",
+            "D) When it stabilizes the population of animal species."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55. What concept are green leaders trying to promote?",
+          "options": [
+            "A) Effective protection of animal habitats.",
+            "B) Strict control over urban development.",
+            "C) Coordinated efforts of hunters and environmentalists.",
+            "D) A compromise between development and animal protection."
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "《三国演义》(The Romance of the Three Kingdoms)是中国一部著名的历史小说，写于十四世纪。这部文学作品以三国时期的历史为背景，描写了从公元二世纪下半叶到公元三世纪下半叶的魏、蜀、吴三国之间的战争。小说中刻画了近千个人物和无数的历史事件。这些人物和事件虽然大都基于真实的历史，但都不同程度地被浪漫化和戏剧化了。《三国演义》是一部公认的文学杰作。自面世以来，这部小说不断吸引着一代又一代的读者，并且对中国文化产生了广泛而持久的影响 。",
+      "questions": []
+    }
+  ]
+}

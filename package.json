@@ -1,0 +1,29 @@
+{
+  "name": "cet-wordkeeper",
+  "version": "0.1.0",
+  "description": "CET WordKeeper - 真题驱动的四六级学习软件",
+  "main": "electron/main.cjs",
+  "author": "WorkBuddy",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "electron .",
+    "parse": "node scripts/parse-docx.mjs",
+    "db": "node scripts/build-db.mjs",
+    "pack:win": "npm run build && electron-builder --win --config electron-builder.json"
+  },
+  "dependencies": {
+    "sql.js": "^1.10.3",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "csv-parse": "^5.5.6",
+    "electron": "^33.0.0",
+    "electron-builder": "^26.15.3",
+    "fflate": "^0.8.3",
+    "vite": "^5.4.2"
+  }
+}
