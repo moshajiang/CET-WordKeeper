@@ -60,6 +60,14 @@ CREATE TABLE IF NOT EXISTS user_answer(
 CREATE TABLE IF NOT EXISTS attempt(
   id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, submitted_at TEXT,
   total INTEGER, correct INTEGER, score REAL, detail TEXT);
+CREATE TABLE IF NOT EXISTS essay(
+  id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, section TEXT, content TEXT,
+  result TEXT, updated_at TEXT, UNIQUE(exam_id, section));
+CREATE TABLE IF NOT EXISTS chat_message(
+  id INTEGER PRIMARY KEY AUTOINCREMENT, role TEXT, content TEXT, created_at TEXT);
+CREATE TABLE IF NOT EXISTS kb_entry(
+  id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, content TEXT,
+  source TEXT DEFAULT 'user', created_at TEXT);
 `;
 
 // 给已存在的用户库补列（CREATE TABLE IF NOT EXISTS 不会修改既有表结构）
@@ -525,6 +533,106 @@ function registerIpc() {
     persist();
     return { ok: true };
   });
+
+  // ---- 右侧 AI 问答（带知识库与当前文章上下文）----
+  ipcMain.handle('chat:send', async (_e, examId, passageId, text) => {
+    const msg = String(text || '').trim();
+    if (!msg) return { ok: false, error: 'empty' };
+    const context = buildChatContext(examId, passageId, msg);
+    const system = '你是 CET WordKeeper 内置的英语学习助手，面向备考大学英语四六级（CET-4/CET-6）的中国学生。'
+      + '用中文回答，引用英文原文时保留英文。回答要具体、可操作：讲语法给例句，讲题目给思路和步骤。'
+      + '下面提供的【知识库】【我的资料】【当前文章】是可信上下文，优先依据它们回答；资料未覆盖的部分如实说明，不要编造。'
+      + (context ? '\n\n' + context : '');
+    const history = q('SELECT role, content FROM chat_message ORDER BY id DESC LIMIT 10')
+      .reverse()
+      .map((m) => ({ role: m.role, content: m.content }));
+    const r = await aiChat([{ role: 'system', content: system }, ...history, { role: 'user', content: msg }]);
+    if (!r.ok) return r;
+    run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['user', msg, now()]);
+    run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['assistant', r.response.content, now()]);
+    persist();
+    return { ok: true, reply: r.response.content };
+  });
+
+  ipcMain.handle('chat:history', () =>
+    q('SELECT role, content, created_at FROM chat_message ORDER BY id DESC LIMIT 200').reverse());
+  ipcMain.handle('chat:clear', () => {
+    run('DELETE FROM chat_message');
+    persist();
+    return { ok: true };
+  });
+
+  // ---- 知识库管理（内置只读，用户可增删自己的条目）----
+  ipcMain.handle('kb:list', () => ({
+    builtin: loadBuiltinKb().map((e) => e.title),
+    user: q("SELECT id, title, substr(content, 1, 60) AS preview FROM kb_entry WHERE source = 'user' ORDER BY id DESC"),
+  }));
+  ipcMain.handle('kb:add', (_e, title, content) => {
+    if (!String(title || '').trim() || !String(content || '').trim()) return { ok: false, error: 'empty' };
+    run("INSERT INTO kb_entry(title, content, source, created_at) VALUES (?,?,'user',?)",
+      [String(title).trim(), String(content), now()]);
+    persist();
+    return { ok: true };
+  });
+  ipcMain.handle('kb:remove', (_e, id) => {
+    run("DELETE FROM kb_entry WHERE id = ? AND source = 'user'", [id]);
+    persist();
+    return { ok: true };
+  });
+
+  // ---- 作文与翻译的作答、保存与 AI 批改 ----
+  ipcMain.handle('essay:get', (_e, examId, section) =>
+    q('SELECT content, result FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0]
+    || { content: '', result: null });
+
+  ipcMain.handle('essay:save', (_e, examId, section, content) => {
+    run(`INSERT INTO essay(exam_id, section, content, updated_at) VALUES (?,?,?,?)
+         ON CONFLICT(exam_id, section) DO UPDATE SET content = excluded.content, updated_at = excluded.updated_at`,
+      [examId, section, String(content || ''), now()]);
+    persist();
+    return { ok: true };
+  });
+
+  ipcMain.handle('essay:grade', async (_e, examId, section) => {
+    const row = q('SELECT content FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0];
+    const text = row ? String(row.content || '') : '';
+    if (text.trim().length < 30) return { ok: false, error: 'too_short' };
+    const s = {};
+    for (const r of q('SELECT key, value FROM settings')) s[r.key] = r.value;
+    if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key' };
+
+    const exam = q('SELECT level FROM exam WHERE id = ?', [examId])[0] || {};
+    const isWriting = section === 'writing';
+    const src = q('SELECT content FROM passage WHERE exam_id = ? AND section = ? LIMIT 1', [examId, section])[0];
+    const rubric = isWriting
+      ? 'CET 写作 15 分制：14-15 切题、表达思想清楚、文字通顺连贯；11-13 切题、表达清楚、有少量语言错误；8-10 基本切题、部分表达不清；5-7 勉强切题、条理不清；2-4 严重跑题。'
+      : 'CET 翻译 15 分制：13-15 准确传达原文意思、语言通顺无重大错误；10-12 基本准确；7-9 大意传达但有较多错误；4-6 只传达部分意思；1-3 基本未传达。';
+    const shape = isWriting
+      ? '{"score":<0-15 可一位小数>,"band":"<所处档次说明>","strengths":"<亮点 1-2 句>","issues":[{"quote":"<原文问题片段>","problem":"<错在哪>","fix":"<怎么改>"}],"improved":"<保持学生原意的改进版全文>"}'
+      : '{"score":<0-15 可一位小数>,"band":"<所处档次说明>","issues":[{"quote":"<译文问题片段>","problem":"<错在哪>","fix":"<怎么改>"}],"reference":"<高质量参考译文>"}';
+    const prompt = [
+      `你是 CET ${exam.level || ''} 资深阅卷老师，按官方评分标准批改下面这篇${isWriting ? '作文' : '汉译英翻译'}，并像老师当面讲评一样指出问题。`,
+      `评分标准：${rubric}`,
+      `只返回一个 JSON 对象（不要 markdown 代码块），结构：${shape}`,
+      isWriting ? '注意：先判断是否切题，跑题按 2-4 分档。' : '注意：逐句对照中文原文检查漏译、误译与语法错误。',
+      '',
+      isWriting ? `【题目要求】\n${src ? src.content : ''}` : `【中文原文】\n${src ? src.content : ''}`,
+      '',
+      `【学生${isWriting ? '作文' : '译文'}】\n${text}`,
+    ].join('\n');
+
+    const r = await aiCall(isWriting ? 'writingGrade' : 'translationGrade', prompt);
+    if (!r.ok) return r;
+    let data;
+    try {
+      data = parseAiJson(r.response.content);
+    } catch {
+      return { ok: false, error: 'bad_json' };
+    }
+    run('UPDATE essay SET result = ? WHERE exam_id = ? AND section = ?', [JSON.stringify(data), examId, section]);
+    persist();
+    return { ok: true, result: data, cached: !!r.cached };
+  });
 }
 
 function runInsertExam(data) {
@@ -596,8 +704,10 @@ async function aiCall(kind, text) {
   const prompts = {
     translate: `You are a professional CET exam translator. Translate the following English into natural Chinese. Output ONLY the translation.\n\n${text}`,
     grammar: `You are an English grammar teacher for Chinese CET students. Analyze the sentence below. Output in this exact format (plain text, no markdown):\n主干: <subject-verb-object core>\n从句/结构: <clause types and layers, one per line; write "无" if none>\n语法要点: <2-4 key grammar points with brief explanation in Chinese>\n\nSentence: ${text}`,
-    // 真题解析：调用方已组装完整提示词（需要文章、词库与题号上下文）
+    // 真题解析 / 作文批改：调用方已组装完整提示词（需要文章、词库与题号等上下文）
     examAnalysis: text,
+    writingGrade: text,
+    translationGrade: text,
   };
   try {
     const resp = await fetch(s.api_base.replace(/\/+$/, '') + '/chat/completions', {
@@ -729,6 +839,95 @@ function gradeExam(examId, userAnswers) {
     [examId, now(), total, correct, score, JSON.stringify(detail)]);
   persist();
   return { ok: true, total, correct, score, detail };
+}
+
+// ---- 内置英语知识库（题型套路 + 语法结构），AI 问答时按关键词命中注入 ----
+let builtinKb = null;
+function loadBuiltinKb() {
+  if (builtinKb) return builtinKb;
+  builtinKb = [];
+  const dir = path.join(__dirname, '..', 'data', 'knowledge');
+  if (!fs.existsSync(dir)) return builtinKb;
+  for (const f of fs.readdirSync(dir).filter((x) => /\.md$/i.test(x))) {
+    const text = fs.readFileSync(path.join(dir, f), 'utf8');
+    // 条目按「## 标题」切分；文件级「# 标题」只是说明，跳过
+    for (const part of text.split(/^##\s+/m).slice(1)) {
+      const nl = part.indexOf('\n');
+      const title = (nl < 0 ? part : part.slice(0, nl)).trim();
+      const content = (nl < 0 ? '' : part.slice(nl + 1)).trim();
+      if (title) builtinKb.push({ title, content });
+    }
+  }
+  return builtinKb;
+}
+
+// 关键词检索：英文取 2 字符以上的词，中文切 2-gram，标题命中权重更高
+function termsOf(query) {
+  const s = String(query || '').toLowerCase();
+  const out = new Set();
+  for (const w of s.match(/[a-z]{2,}/g) || []) out.add(w);
+  for (const seg of s.match(/[\u4e00-\u9fa5]+/g) || []) {
+    for (let i = 0; i + 2 <= seg.length; i++) out.add(seg.slice(i, i + 2));
+  }
+  return [...out];
+}
+function pickKb(query, entries, limit) {
+  const terms = termsOf(query);
+  if (!terms.length || !entries.length) return [];
+  return entries
+    .map((e) => {
+      const t = String(e.title || '').toLowerCase();
+      const c = String(e.content || '').toLowerCase();
+      let score = 0;
+      for (const w of terms) {
+        if (t.includes(w)) score += 3;
+        else if (c.includes(w)) score += 1;
+      }
+      return { e, score };
+    })
+    .filter((x) => x.score >= 2)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.e);
+}
+
+// 多轮对话（不缓存：同样的问题在不同上下文/历史下应有不同回答）
+async function aiChat(messages) {
+  const s = {};
+  for (const r of q('SELECT key, value FROM settings')) s[r.key] = r.value;
+  if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key' };
+  try {
+    const resp = await fetch(s.api_base.replace(/\/+$/, '') + '/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + s.api_key },
+      body: JSON.stringify({ model: s.api_model || 'deepseek-chat', messages, temperature: 0.5 }),
+    });
+    if (!resp.ok) return { ok: false, error: 'api_' + resp.status };
+    const data = await resp.json();
+    const content = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
+    return { ok: true, response: { content } };
+  } catch (err) {
+    return { ok: false, error: 'network: ' + err.message };
+  }
+}
+
+function buildChatContext(examId, passageId, question) {
+  const parts = [];
+  for (const e of pickKb(question, loadBuiltinKb(), 2)) {
+    parts.push(`【知识库 · ${e.title}】\n${e.content}`);
+  }
+  const userKb = q("SELECT title, content FROM kb_entry WHERE source = 'user' ORDER BY id DESC");
+  for (const e of pickKb(question, userKb, 2)) {
+    parts.push(`【我的资料 · ${e.title}】\n${String(e.content).slice(0, 2000)}`);
+  }
+  if (passageId) {
+    const p = q('SELECT section, title, content FROM passage WHERE id = ?', [passageId])[0];
+    if (p) parts.push(`【当前正在读的文章（${p.title || p.section}，节选）】\n${String(p.content).slice(0, 1800)}`);
+  } else if (examId) {
+    const ex = q('SELECT level, year, month, set_no FROM exam WHERE id = ?', [examId])[0];
+    if (ex) parts.push(`【当前套题】${ex.level} ${ex.year} 年 ${ex.month} 月第 ${ex.set_no} 套`);
+  }
+  return parts.join('\n\n');
 }
 
 function createWindow() {

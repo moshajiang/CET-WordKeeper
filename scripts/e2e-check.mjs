@@ -265,6 +265,74 @@ check('阅读器渲染选词填空词库与选项', clozeTabFound && bankChips >
 const submitBtn = await js(`(() => [...document.querySelectorAll('button')].some(b => /交卷/.test(b.textContent)))()`);
 check('交卷按钮已渲染', submitBtn === true);
 
+console.log('\n===== 知识库 / AI 聊天 / 作文批改 =====');
+// 内置知识库必须真实加载（打包产物里 data/knowledge 漏配会在这里暴露）
+const kb = await js('window.keeper.kbList()');
+check('内置知识库条目加载', Array.isArray(kb.builtin) && kb.builtin.length >= 10,
+  (kb.builtin || []).length + ' 条: ' + (kb.builtin || []).slice(0, 3).join('、'));
+
+// 用户知识条目：增 → 列表读回 → 删
+const kbAdd = await js('window.keeper.kbAdd("测试条目", "虚拟语气表示与事实相反的假设，从句用过去式。")');
+check('知识条目可添加', kbAdd.ok === true, JSON.stringify(kbAdd));
+const kb2 = await js('window.keeper.kbList()');
+const mine = (kb2.user || []).find((e) => e.title === '测试条目');
+check('知识条目列表读回', !!mine, JSON.stringify(kb2.user || []));
+const kbDel = await js(`window.keeper.kbRemove(${mine ? mine.id : 0})`);
+check('知识条目可删除', kbDel.ok === true, JSON.stringify(kbDel));
+
+// 未配置 Key 时聊天必须明确 no_key（且不写入历史）
+const chatNoKey = await js(`window.keeper.chatSend(${anchor.id}, null, '虚拟语气怎么用？')`);
+check('未配置 AI 时聊天优雅降级', chatNoKey.ok === false && chatNoKey.error === 'no_key', 'error=' + chatNoKey.error);
+await js('window.keeper.chatClear()');
+const histEmpty = await js('window.keeper.chatHistory()');
+check('聊天历史可清空', Array.isArray(histEmpty) && histEmpty.length === 0, histEmpty.length + ' 条');
+
+// 作文草稿：保存 → 读回 → 批改降级
+const wr = detail.passages.find((p) => p.section === 'writing');
+check('真题含写作篇章', !!wr, wr ? '有' : '无');
+if (wr) {
+  const sv = await js(`window.keeper.essaySave(${anchor.id}, 'writing', 'With the rapid development of technology, our life has changed greatly in recent years.')`);
+  check('作文草稿保存', sv.ok === true, JSON.stringify(sv));
+  const gt = await js(`window.keeper.essayGet(${anchor.id}, 'writing')`);
+  check('作文草稿读回', (gt.content || '').includes('rapid development'), String(gt.content || '').slice(0, 30));
+  const gr = await js(`window.keeper.essayGrade(${anchor.id}, 'writing')`);
+  check('未配置 AI 时批改优雅降级', gr.ok === false && gr.error === 'no_key', 'error=' + gr.error);
+}
+
+console.log('\n===== 知识库与聊天界面级回归 =====');
+// 知识库页面真实渲染内置条目
+await js(`location.hash = '#/knowledge'`);
+await sleep(2000);
+const kbChips = await js('document.querySelectorAll(".kb-grid .tagchip").length');
+check('知识库页面渲染内置条目', kbChips >= 10, kbChips + ' 条');
+
+// 阅读器：头部「问 AI」按钮展开聊天面板
+await js(`location.hash = '#/reader/${anchor.id}'`);
+await sleep(2600);
+const chatOpened = await js(`(() => {
+  const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('问 AI'));
+  if (b) b.click();
+  return !!b;
+})()`);
+await sleep(700);
+const chatCard = await js('!!document.querySelector(".chat-card")');
+const chatTa = await js('!!document.querySelector(".chat-card textarea")');
+check('阅读器聊天面板可展开', chatOpened && chatCard && chatTa, '按钮=' + chatOpened + ' 面板=' + chatCard + ' 输入框=' + chatTa);
+
+// 切到写作页签：作答区 textarea 与「AI 批改」按钮真实渲染
+const writeTab = await js(`(() => {
+  const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('写作'));
+  if (b) b.click();
+  return !!b;
+})()`);
+await sleep(900);
+const essayTa = await js('!!document.querySelector(".essay-input")');
+const gradeBtn = await js(`(() => [...document.querySelectorAll('button')].some(b => b.textContent.includes('AI 批改')))()`);
+check('写作作答区渲染', !!writeTab && essayTa && gradeBtn, 'tab=' + writeTab + ' 输入框=' + essayTa + ' 按钮=' + gradeBtn);
+// 草稿读回后 textarea 应恢复已保存内容
+const essayVal = await js(`(() => { const t = document.querySelector('.essay-input'); return t ? t.value.slice(0, 30) : ''; })()`);
+check('写作草稿在界面恢复', essayVal.includes('rapid development'), essayVal);
+
 const fail = results.filter((r) => !r.ok);
 console.log(`\n===== 结果：${results.length - fail.length}/${results.length} 通过 =====`);
 if (fail.length) { console.log('失败项:', fail.map((f) => f.name).join('、')); process.exit(1); }

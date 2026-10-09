@@ -10,6 +10,7 @@
     "electron/**/*",
     "dist/**/*",
     "data/keeper.db",
+    "data/knowledge/**/*",
     "package.json"
   ],
   "asar": true,

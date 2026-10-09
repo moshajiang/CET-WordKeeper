@@ -5,6 +5,7 @@ import ReaderView from './views/ReaderView.vue';
 import WordBook from './views/WordBook.vue';
 import ReviewView from './views/ReviewView.vue';
 import SettingsView from './views/SettingsView.vue';
+import KnowledgeView from './views/KnowledgeView.vue';
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -14,6 +15,7 @@ export default createRouter({
     { path: '/reader/:examId', name: 'reader', component: ReaderView, props: true },
     { path: '/words', name: 'words', component: WordBook },
     { path: '/review', name: 'review', component: ReviewView },
+    { path: '/knowledge', name: 'knowledge', component: KnowledgeView },
     { path: '/settings', name: 'settings', component: SettingsView },
   ],
 });

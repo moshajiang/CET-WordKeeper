@@ -32,6 +32,7 @@ const navs = [
   { path: '/library', label: '真题库', ico: '📚' },
   { path: '/words', label: '生词本', ico: '📖' },
   { path: '/review', label: '复习', ico: '🔁', key: 'review' },
+  { path: '/knowledge', label: '知识库', ico: '🧠' },
 ];
 
 const isNarrow = computed(() => !route.path.startsWith('/reader'));

@@ -34,4 +34,13 @@ contextBridge.exposeInMainWorld('keeper', {
   attemptGet: (examId) => ipcRenderer.invoke('attempt:get', examId),
   attemptSubmit: (examId, answers) => ipcRenderer.invoke('attempt:submit', examId, plain(answers)),
   attemptClear: (examId) => ipcRenderer.invoke('attempt:clear', examId),
+  chatSend: (examId, passageId, text) => ipcRenderer.invoke('chat:send', examId, passageId, text),
+  chatHistory: () => ipcRenderer.invoke('chat:history'),
+  chatClear: () => ipcRenderer.invoke('chat:clear'),
+  kbList: () => ipcRenderer.invoke('kb:list'),
+  kbAdd: (title, content) => ipcRenderer.invoke('kb:add', title, content),
+  kbRemove: (id) => ipcRenderer.invoke('kb:remove', id),
+  essayGet: (examId, section) => ipcRenderer.invoke('essay:get', examId, section),
+  essaySave: (examId, section, content) => ipcRenderer.invoke('essay:save', examId, section, content),
+  essayGrade: (examId, section) => ipcRenderer.invoke('essay:grade', examId, section),
 });

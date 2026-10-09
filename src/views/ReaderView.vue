@@ -11,6 +11,7 @@
         <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 5px; cursor: pointer;">
           <input type="checkbox" v-model="scanOn" /> 难词预扫
         </label>
+        <button @click="chatOpen = !chatOpen">💬 问 AI</button>
         <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
         <button @click="loadAnalysis" :disabled="busy">{{ busy ? '处理中…' : '查看解析与翻译' }}</button>
         <button @click="showTranslation = !showTranslation" :disabled="!activePassage || !activePassage.translation">
@@ -63,6 +64,47 @@
           <div style="font-size: 14px; line-height: 1.9; white-space: pre-wrap;">{{ activePassage.translation }}</div>
         </div>
 
+        <div v-if="activePassage && isEssaySection" class="card essay-card" style="margin-top: 16px;">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <h3 style="font-size: 15px; margin: 0;">
+              {{ activePassage.section === 'writing' ? '✍️ 在此作答作文' : '🌐 在此作答翻译' }}
+              <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">草稿自动保存{{ essaySavedAt ? ' · ' + essaySavedAt : '' }}</span>
+            </h3>
+            <span style="font-size: 12.5px; color: var(--muted);">{{ essayText.length }} 词</span>
+          </div>
+          <textarea v-model="essayText" class="essay-input" rows="10"
+            :placeholder="activePassage.section === 'writing' ? '在此写作，草稿会自动保存到本地…' : '在此输入你的英文译文，草稿会自动保存到本地…'"></textarea>
+          <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
+            <button class="primary" @click="gradeEssay" :disabled="essayBusy">{{ essayBusy ? '批改中…' : 'AI 批改' }}</button>
+            <span v-if="essayNotice" style="font-size: 12.5px;" :style="{ color: essayNoticeOk ? '#2e7d4f' : 'var(--red)' }">{{ essayNotice }}</span>
+          </div>
+
+          <div v-if="essayResult" class="essay-result">
+            <div class="er-score">
+              <span class="er-num">{{ essayResult.score }}</span>
+              <span class="er-denom">/ 15</span>
+              <span class="er-conv">≈ 折算 {{ (essayResult.score / 15 * 106.5).toFixed(1) }} 分</span>
+            </div>
+            <div class="er-band">{{ essayResult.band }}</div>
+            <div v-if="essayResult.strengths" class="er-strengths">亮点：{{ essayResult.strengths }}</div>
+            <div v-if="essayResult.issues && essayResult.issues.length" class="er-issues">
+              <div v-for="(it, i) in essayResult.issues" :key="i" class="er-issue">
+                <div class="er-quote">“{{ it.quote }}”</div>
+                <div>{{ it.problem }}</div>
+                <div class="er-fix">→ {{ it.fix }}</div>
+              </div>
+            </div>
+            <div v-if="essayResult.improved" class="er-ref">
+              <b>改进版全文</b>
+              <div style="white-space: pre-wrap;">{{ essayResult.improved }}</div>
+            </div>
+            <div v-if="essayResult.reference" class="er-ref">
+              <b>参考译文</b>
+              <div style="white-space: pre-wrap;">{{ essayResult.reference }}</div>
+            </div>
+          </div>
+        </div>
+
         <div v-if="activePassage && activePassage.questions && activePassage.questions.length" class="card" style="margin-top: 16px;">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
             <h3 style="font-size: 15px; margin: 0;">题目</h3>
@@ -111,6 +153,33 @@
       </div>
 
       <div class="side-pane">
+        <div v-if="chatOpen" class="card chat-card">
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+            <h3 style="font-size: 14px; margin: 0;">💬 AI 助手
+              <span style="font-size: 11px; color: var(--muted); font-weight: 400;">知识库 + 当前文章作上下文</span>
+            </h3>
+            <button class="mini-btn" @click="clearChat" title="清空历史">清空</button>
+          </div>
+          <div class="chat-msgs" ref="chatMsgsEl">
+            <div v-if="!chatMsgs.length" class="chat-empty">
+              问点什么吧，例如：<br>
+              · 虚拟语气怎么用？<br>
+              · 选词填空有什么套路？<br>
+              · 这篇文章的主旨是什么？
+            </div>
+            <div v-for="(m, i) in chatMsgs" :key="i" class="chat-msg" :class="m.role">
+              <div class="bubble">{{ m.content }}</div>
+            </div>
+            <div v-if="chatBusy" class="chat-msg assistant"><div class="bubble typing">思考中…</div></div>
+          </div>
+          <div class="chat-input-row">
+            <textarea v-model="chatInput" rows="2" placeholder="输入问题，Enter 发送，Shift+Enter 换行"
+              @keydown.enter.exact.prevent="sendChat"></textarea>
+            <button class="primary" @click="sendChat" :disabled="chatBusy || !chatInput.trim()">发送</button>
+          </div>
+          <div v-if="chatNotice" style="font-size: 12px; color: var(--red); margin-top: 6px;">{{ chatNotice }}</div>
+        </div>
+
         <div v-if="aiResult" class="card">
           <h3 style="font-size: 14px; margin-bottom: 8px;">
             {{ aiResult.kind === 'translate' ? '整句翻译' : '语法结构分析' }}
@@ -170,6 +239,7 @@
     <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle">
       <button @click="doTranslate">🌐 整句翻译</button>
       <button @click="doGrammar">🧩 语法分析</button>
+      <button @click="askAboutSel">💬 问 AI</button>
     </div>
 
     <div v-if="toast" class="toast">{{ toast }}</div>
@@ -283,6 +353,119 @@ async function clearAttempt() {
   await reloadDetail();
 }
 
+// ---- 右侧 AI 聊天（知识库 + 当前文章上下文，历史持久化）----
+const chatOpen = ref(false);
+const chatMsgs = ref([]);
+const chatInput = ref('');
+const chatBusy = ref(false);
+const chatNotice = ref('');
+const chatMsgsEl = ref(null);
+
+async function loadChat() {
+  try { chatMsgs.value = (await window.keeper.chatHistory()) || []; } catch (e) { /* 忽略 */ }
+}
+
+function scrollChat() {
+  setTimeout(() => {
+    const el = chatMsgsEl.value;
+    if (el) el.scrollTop = el.scrollHeight;
+  }, 50);
+}
+
+async function sendChat() {
+  const text = chatInput.value.trim();
+  if (!text || chatBusy.value) return;
+  chatInput.value = '';
+  chatNotice.value = '';
+  chatMsgs.value.push({ role: 'user', content: text });
+  chatBusy.value = true;
+  const pid = activePassage.value ? activePassage.value.id : null;
+  const r = await window.keeper.chatSend(Number(props.examId), pid, text);
+  chatBusy.value = false;
+  if (r.ok) {
+    chatMsgs.value.push({ role: 'assistant', content: r.reply });
+  } else if (r.error === 'no_key') {
+    chatNotice.value = '尚未配置 AI 服务：请到「设置」页填写 API 地址与 Key 后重试。';
+  } else {
+    chatNotice.value = '发送失败：' + r.error;
+  }
+  scrollChat();
+}
+
+async function clearChat() {
+  await window.keeper.chatClear();
+  chatMsgs.value = [];
+}
+
+// 划选句子 → 打开聊天并带入原文
+function askAboutSel() {
+  const text = selMenu.value.text;
+  selMenu.value.show = false;
+  chatOpen.value = true;
+  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + text;
+}
+
+// ---- 作文 / 翻译：作答草稿自动保存 + AI 批改 ----
+const isEssaySection = computed(() => {
+  const s = activePassage.value && activePassage.value.section;
+  return s === 'writing' || s === 'translation';
+});
+const essayText = ref('');
+const essayResult = ref(null);
+const essayBusy = ref(false);
+const essayNotice = ref('');
+const essayNoticeOk = ref(false);
+const essaySavedAt = ref('');
+let essayTimer = null;
+let essayLoadedKey = '';
+
+async function loadEssay() {
+  if (!activePassage.value || !isEssaySection.value) return;
+  const key = props.examId + ':' + activePassage.value.section;
+  if (key === essayLoadedKey) return;
+  essayLoadedKey = key;
+  const r = await window.keeper.essayGet(Number(props.examId), activePassage.value.section);
+  essayText.value = r.content || '';
+  try { essayResult.value = r.result ? JSON.parse(r.result) : null; } catch (e) { essayResult.value = null; }
+  essaySavedAt.value = '';
+}
+
+function scheduleSave() {
+  clearTimeout(essayTimer);
+  essayTimer = setTimeout(async () => {
+    if (!activePassage.value || !isEssaySection.value) return;
+    await window.keeper.essaySave(Number(props.examId), activePassage.value.section, essayText.value);
+    const d = new Date();
+    essaySavedAt.value = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+  }, 800);
+}
+
+watch(essayText, () => { if (isEssaySection.value) scheduleSave(); });
+
+async function gradeEssay() {
+  if (!activePassage.value || essayBusy.value) return;
+  essayBusy.value = true;
+  essayNotice.value = '';
+  clearTimeout(essayTimer);
+  await window.keeper.essaySave(Number(props.examId), activePassage.value.section, essayText.value);
+  const r = await window.keeper.essayGrade(Number(props.examId), activePassage.value.section);
+  essayBusy.value = false;
+  if (r.ok) {
+    essayResult.value = r.result;
+    essayNoticeOk.value = true;
+    essayNotice.value = r.cached ? '已显示缓存的批改结果（修改后再批改会重新请求）。' : '批改完成，结果已保存到本地。';
+  } else if (r.error === 'no_key') {
+    essayNoticeOk.value = false;
+    essayNotice.value = 'AI 批改需要在「设置」页填写 API 地址与 Key。';
+  } else if (r.error === 'too_short') {
+    essayNoticeOk.value = false;
+    essayNotice.value = '内容太短，先写一点再来批改吧。';
+  } else {
+    essayNoticeOk.value = false;
+    essayNotice.value = '批改失败：' + r.error;
+  }
+}
+
 const popover = ref({ show: false, loading: false, data: null, x: 0, y: 0, ctx: '' });
 const selMenu = ref({ show: false, x: 0, y: 0, text: '' });
 
@@ -359,6 +542,7 @@ async function loadAll() {
   notice.value = '';
   answers.value = {};
   try { await restoreAttempt(); } catch { /* 忽略 */ }
+  await loadEssay();
 }
 
 async function onWordClick(ev, tk, para) {
@@ -456,11 +640,13 @@ async function scanHard() {
   hardWords.value = r || [];
 }
 
-watch(activeIdx, () => { aiResult.value = null; scanHard(); });
+watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); });
 watch(scanOn, () => scanHard());
 
 onMounted(() => {
   loadAll();
+  loadChat();
+  loadEssay();
   document.addEventListener('click', onDocClick);
   document.addEventListener('mouseup', onMouseUp);
 });
@@ -469,3 +655,51 @@ onBeforeUnmount(() => {
   document.removeEventListener('mouseup', onMouseUp);
 });
 </script>
+
+<style scoped>
+.chat-card { display: flex; flex-direction: column; }
+.mini-btn {
+  font-size: 11.5px; padding: 3px 10px; border: 1px solid var(--border, #ddd);
+  border-radius: 6px; background: transparent; cursor: pointer; color: var(--muted, #888);
+}
+.chat-msgs {
+  height: 300px; overflow-y: auto; padding: 8px;
+  background: var(--bg, #f7f6f3); border-radius: 8px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.chat-empty { font-size: 12.5px; color: var(--muted, #999); line-height: 2; padding: 10px; }
+.chat-msg { display: flex; }
+.chat-msg.user { justify-content: flex-end; }
+.chat-msg .bubble {
+  max-width: 86%; padding: 7px 10px; border-radius: 10px; font-size: 13px;
+  line-height: 1.65; white-space: pre-wrap; word-break: break-word;
+}
+.chat-msg.user .bubble { background: #5b7cfa; color: #fff; border-bottom-right-radius: 3px; }
+.chat-msg.assistant .bubble { background: #fff; border: 1px solid var(--border, #e5e2da); border-bottom-left-radius: 3px; }
+.chat-msg .bubble.typing { color: var(--muted, #999); }
+.chat-input-row { display: flex; gap: 8px; margin-top: 8px; align-items: flex-end; }
+.chat-input-row textarea {
+  flex: 1; resize: vertical; min-height: 44px; font-size: 13px; font-family: inherit;
+  padding: 7px 10px; border-radius: 8px; border: 1px solid var(--border, #ddd);
+}
+.essay-input {
+  width: 100%; font-size: 14.5px; font-family: Georgia, serif; line-height: 1.9;
+  padding: 12px 14px; border-radius: 8px; border: 1px solid var(--border, #ddd); resize: vertical;
+}
+.essay-result { margin-top: 14px; border-top: 1px dashed var(--border, #e5e2da); padding-top: 12px; }
+.er-score { display: flex; align-items: baseline; gap: 6px; }
+.er-num { font-size: 30px; font-weight: 700; color: #c0392b; }
+.er-denom { font-size: 15px; color: var(--muted, #999); }
+.er-conv { font-size: 12.5px; color: var(--muted, #999); margin-left: 8px; }
+.er-band { font-size: 13.5px; margin-top: 4px; color: #2e7d4f; }
+.er-strengths { font-size: 13px; margin-top: 8px; color: #2e7d4f; }
+.er-issues { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
+.er-issue {
+  font-size: 13px; line-height: 1.7; background: var(--bg, #faf8f4);
+  border-radius: 8px; padding: 8px 12px;
+}
+.er-quote { font-family: Georgia, serif; color: #c0392b; }
+.er-fix { color: #2e7d4f; }
+.er-ref { margin-top: 12px; font-size: 13.5px; line-height: 1.9; white-space: normal; }
+.er-ref b { display: block; margin-bottom: 4px; font-size: 13px; }
+</style>
