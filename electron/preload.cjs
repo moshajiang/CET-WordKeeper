@@ -43,4 +43,14 @@ contextBridge.exposeInMainWorld('keeper', {
   essayGet: (examId, section) => ipcRenderer.invoke('essay:get', examId, section),
   essaySave: (examId, section, content) => ipcRenderer.invoke('essay:save', examId, section, content),
   essayGrade: (examId, section) => ipcRenderer.invoke('essay:grade', examId, section),
+  // 版本更新
+  updateCheck: () => ipcRenderer.invoke('update:check'),
+  updateState: () => ipcRenderer.invoke('update:state'),
+  updateInstall: () => ipcRenderer.invoke('update:install'),
+  updateOpenReleases: () => ipcRenderer.invoke('update:openReleases'),
+  onUpdateEvent: (cb) => {
+    const l = (_e, d) => cb(plain(d));
+    ipcRenderer.on('update:event', l);
+    return () => ipcRenderer.removeListener('update:event', l);
+  },
 });

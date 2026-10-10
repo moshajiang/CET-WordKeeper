@@ -16,6 +16,7 @@
     "pack:win": "npm run build && electron-builder --win --config electron-builder.json"
   },
   "dependencies": {
+    "electron-updater": "^6.8.9",
     "sql.js": "^1.10.3",
     "vue": "^3.4.38",
     "vue-router": "^4.4.3"

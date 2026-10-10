@@ -18,6 +18,11 @@
     "node_modules/sql.js/dist/sql-wasm.wasm"
   ],
   "compression": "normal",
+  "publish": {
+    "provider": "github",
+    "owner": "moshajiang",
+    "repo": "CET-WordKeeper"
+  },
   "win": {
     "target": [
       { "target": "portable", "arch": ["x64"] },
@@ -26,7 +31,7 @@
     "artifactName": "${productName}-${version}-${arch}.${ext}"
   },
   "portable": {
-    "artifactName": "CET-WordKeeper-${version}-便携版.${ext}",
+    "artifactName": "CET-WordKeeper-${version}-portable.${ext}",
     "unpackDirName": "CETWordKeeper"
   },
   "nsis": {
@@ -35,6 +40,6 @@
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
     "shortcutName": "CET WordKeeper",
-    "artifactName": "CET-WordKeeper-${version}-安装包.${ext}"
+    "artifactName": "CET-WordKeeper-${version}-setup.${ext}"
   }
 }

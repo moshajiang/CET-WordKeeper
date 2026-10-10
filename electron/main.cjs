@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const initSqlJs = require('sql.js');
@@ -21,6 +21,71 @@ let db = null;
 let dbPath = null;
 let formIndex = null;
 let sqlModule = null; // initDb 里拿到，供 syncSeedExams 复用（打开种子库用）
+
+// ---- 版本更新：electron-updater + GitHub Releases ----
+// 安装版（NSIS）可检测 → 下载 → 一键安装；便携版没有安装器，只能检测新版本并跳转下载页。
+const { autoUpdater } = require('electron-updater');
+const RELEASES_URL = 'https://github.com/moshajiang/CET-WordKeeper/releases/latest';
+const isPortable = !!process.env.PORTABLE_EXECUTABLE_DIR;
+let updateState = { phase: 'idle' };   // idle / checking / not-available / available / downloading / downloaded / error
+
+function pushUpdateEvent(patch) {
+  updateState = { ...updateState, ...patch };
+  try {
+    if (win && !win.isDestroyed()) win.webContents.send('update:event', JSON.parse(JSON.stringify(updateState)));
+  } catch (e) { /* 窗口未就绪时静默 */ }
+}
+
+function setupAutoUpdater() {
+  autoUpdater.autoInstallOnAppQuit = true;
+  autoUpdater.logger = null;
+  if (!app.isPackaged) autoUpdater.forceDevUpdateConfig = true;   // 开发态读取项目根的 dev-app-update.yml
+  autoUpdater.on('checking-for-update', () => pushUpdateEvent({ phase: 'checking', error: null }));
+  autoUpdater.on('update-available', (i) => pushUpdateEvent({ phase: isPortable ? 'available' : 'downloading', latest: i.version, error: null }));
+  autoUpdater.on('update-not-available', (i) => pushUpdateEvent({ phase: 'not-available', latest: i.version, error: null }));
+  autoUpdater.on('download-progress', (p) => pushUpdateEvent({
+    phase: 'downloading',
+    percent: Math.round(p.percent || 0),
+    mbPerSecond: Math.round(((p.bytesPerSecond || 0) / 1048576) * 10) / 10,
+  }));
+  autoUpdater.on('update-downloaded', (i) => pushUpdateEvent({ phase: 'downloaded', latest: i.version, percent: 100 }));
+  autoUpdater.on('error', (e) => pushUpdateEvent({ phase: 'error', error: String((e && e.message) || e).slice(0, 200) }));
+}
+setupAutoUpdater();
+
+ipcMain.handle('update:check', async () => {
+  try {
+    autoUpdater.autoDownload = !isPortable;   // 便携版只检测不下载（没有安装器，装不了）
+    const r = await autoUpdater.checkForUpdates();
+    return {
+      ok: true,
+      current: app.getVersion(),
+      latest: (r && r.updateInfo && r.updateInfo.version) || null,
+      portable: isPortable,
+      ...updateState,
+    };
+  } catch (e) {
+    const msg = String((e && e.message) || e);
+    return { ok: false, phase: 'error', current: app.getVersion(), portable: isPortable, error: msg.slice(0, 200) };
+  }
+});
+
+ipcMain.handle('update:state', () => ({ ...updateState, current: app.getVersion(), portable: isPortable }));
+
+ipcMain.handle('update:install', () => {
+  try {
+    if (updateState.phase !== 'downloaded') return { ok: false, error: '更新尚未下载完成' };
+    autoUpdater.quitAndInstall(false, true);
+    return { ok: true };
+  } catch (e) {
+    return { ok: false, error: String((e && e.message) || e).slice(0, 200) };
+  }
+});
+
+ipcMain.handle('update:openReleases', async () => {
+  await shell.openExternal(RELEASES_URL);
+  return { ok: true };
+});
 
 const SCHEMA = `
 CREATE TABLE IF NOT EXISTS exam(

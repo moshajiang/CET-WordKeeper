@@ -42,11 +42,38 @@
       <button @click="backup">备份到…</button>
       <div v-if="backupMsg" style="font-size: 13px; color: #2e7d4f; margin-top: 8px;">{{ backupMsg }}</div>
     </div>
+
+    <div class="card settings-form">
+      <h3 style="font-size: 15px; margin-bottom: 4px;">版本更新</h3>
+      <div class="hint" style="margin-bottom: 10px;">
+        当前版本 v{{ upd.current || '…' }}<span v-if="upd.portable">（便携版）</span> · 新版本发布在 GitHub Releases
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <button class="primary" @click="checkUpdate" :disabled="upd.phase === 'checking' || upd.phase === 'downloading'">
+          {{ upd.phase === 'checking' ? '正在检查…' : '检查更新' }}
+        </button>
+        <button v-if="upd.phase === 'downloaded'" class="primary" @click="installUpdate">立即安装并重启</button>
+        <button v-if="upd.phase === 'available'" @click="openReleases">前往下载 v{{ upd.latest }}</button>
+        <button v-if="upd.phase === 'not-available' || upd.phase === 'error'" @click="openReleases">打开发布页</button>
+      </div>
+      <div v-if="upd.phase === 'downloading'" style="margin-top: 12px;">
+        <div class="review-progress"><div class="fill" :style="{ width: (upd.percent || 0) + '%' }"></div></div>
+        <div class="hint">正在下载 v{{ upd.latest }}… {{ upd.percent || 0 }}%（{{ upd.mbPerSecond || 0 }} MB/s）</div>
+      </div>
+      <div v-if="upd.phase === 'downloaded'" class="hint" style="color: #2e7d4f; margin-top: 8px;">
+        新版本 v{{ upd.latest }} 已就绪，点「立即安装并重启」完成更新（词库与学习数据都会保留）。
+      </div>
+      <div v-if="upd.phase === 'not-available'" class="hint" style="margin-top: 8px;">已是最新版本 ✓</div>
+      <div v-if="upd.phase === 'available'" class="hint" style="margin-top: 8px;">
+        发现新版本 v{{ upd.latest }}：便携版无法应用内自更新，点「前往下载」获取新文件替换即可（keeper.db 数据不受影响）。
+      </div>
+      <div v-if="upd.phase === 'error'" class="hint" style="color: var(--red); margin-top: 8px;">检查失败：{{ upd.error }}（请检查网络后重试）</div>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const form = ref({ api_base: '', api_key: '', api_model: '' });
 const testing = ref(false);
@@ -64,7 +91,32 @@ onMounted(async () => {
     api_key: s.api_key || '',
     api_model: s.api_model || 'deepseek-chat',
   };
+  // 版本更新：恢复当前状态并订阅主进程的更新事件推送
+  try {
+    const st = await window.keeper.updateState();
+    upd.value = { ...upd.value, ...st };
+    if (window.keeper.onUpdateEvent) offUpd = window.keeper.onUpdateEvent((d) => { upd.value = { ...upd.value, ...d }; });
+  } catch (e) { /* 更新模块不可用时静默 */ }
 });
+
+onBeforeUnmount(() => { if (offUpd) offUpd(); });
+
+// ---- 版本更新 ----
+const upd = ref({ phase: 'idle', current: '', latest: null, percent: 0, portable: false });
+let offUpd = null;
+
+async function checkUpdate() {
+  upd.value = { ...upd.value, phase: 'checking', error: null };
+  const r = await window.keeper.updateCheck();
+  upd.value = { ...upd.value, ...r };
+}
+
+async function installUpdate() {
+  const r = await window.keeper.updateInstall();
+  if (!r.ok) upd.value = { ...upd.value, phase: 'error', error: r.error || '安装失败' };
+}
+
+function openReleases() { window.keeper.updateOpenReleases(); }
 
 async function save() {
   // 必须传普通对象：Vue 的响应式代理无法通过 IPC 的结构化克隆

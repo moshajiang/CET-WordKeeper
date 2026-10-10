@@ -659,6 +659,23 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   await sleep(600);
 }
 
+// ===== 版本更新（回归闸门：更新检查必须能真实连通 GitHub 并返回结构化结果）=====
+// 当前应用版本 0.1.0 == 线上最新 0.1.0 → 期望 phase=not-available；
+// 若日后先发了新版本再跑本断言，会得到 available/downloading，同样算通过（功能在干活的证明）。
+{
+  const st0 = await js(`window.keeper.updateState()`);
+  check('更新状态可查询（含当前版本）', st0 && st0.current && typeof st0.phase === 'string', `phase=${st0 && st0.phase} current=${st0 && st0.current}`);
+
+  const up = await js(`window.keeper.updateCheck()`);
+  const phasesOk = ['not-available', 'available', 'downloading', 'downloaded'];
+  const shapeOk = !!(up && up.ok === true && typeof up.phase === 'string' && !!up.latest);
+  const stateOk = shapeOk
+    ? (up.current === up.latest ? up.phase === 'not-available' : phasesOk.includes(up.phase))
+    : false;
+  check('检查更新连通 GitHub 并返回结果', stateOk,
+    `phase=${up && up.phase} current=${up && up.current} latest=${up && up.latest} error=${up && up.error}`);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。
