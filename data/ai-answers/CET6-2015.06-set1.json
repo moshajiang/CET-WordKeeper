@@ -200,7 +200,65 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "As the saying goes, \"Knowledge is a treasure, but practice is the key to it.\" This proverb vividly conveys that while knowledge is valuable, its true worth can only be realized through practice. Knowledge alone is not enough; it is practice that makes knowledge truly valuable. I fully agree with this view.\n\nA good case in point is learning a foreign language. Many learners spend hours memorizing vocabulary and grammar rules, but if they never open their mouths to speak or write a sentence, their knowledge remains dormant. Only by practicing speaking and writing consistently can they turn book knowledge into communicative competence. Similarly, a medical student could recite all the theories in textbooks, but without clinical practice, he can never become a qualified doctor.\n\nIn conclusion, knowledge without practice is like a treasure locked in a chest. It is practice that unlocks the treasure and transforms knowledge into real ability. Therefore, we should not only acquire knowledge but also apply it in daily life.",
+   "note": "范文紧扣谚语，首段引出观点并强调实践对知识的关键作用；第二段用学外语和医学生两例论证，对比鲜明；末段总结实践转化知识。可复用句型：As the saying goes...; A good case in point is...; Only by... can...; In conclusion...。语言准确，符合四六级要求。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The year 2011 was a historic moment in China's urbanization process, when China's urban population surpassed its rural population for the first time. Over the next 20 years, about 350 million rural residents are expected to move to cities. Urban development on such a scale is both a challenge and an opportunity for urban transportation. The Chinese government has long advocated a \"people-oriented\" development philosophy, emphasizing that people should travel by public transportation rather than private cars. It also calls for building a \"resource-conserving and environment-friendly\" society. With this clear goal, Chinese cities can better plan their development and shift substantial investment toward developing safe, clean, and economical transportation systems.",
+   "note": "难点：历史性时刻需处理为时间与事件关系，用when从句衔接；“以人为本”“资源节约和环境友好型”为固定理念，宜保留引号直译；3.5亿转换为350 million；末句“把投资转向……发展上”可译作shift investment toward developing...，避免直译“turn...onto”。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "空气污染在世界许多地方日益恶化。城市里的公共公园每当阳光明媚就变得拥挤，这一事实证明人们渴望在绿色、开阔的空间呼吸。他们并不都清楚自己在寻求什么，但仍然蜂拥而至。在这些环境中，他们通常既平和又友善。很少看到人们在花园里打架。也许斗争首先不是在经济或社会层面展开，而是为了占有空气——这对生命本身至关重要。如果人类能够呼吸并分享空气，就不需要相互争斗。不幸的是，在我们的西方传统中，唯物主义和唯心主义理论家都没有对这一生命的基本条件给予足够考虑。至于政客们，尽管提议控制环境污染，但他们尚未呼吁将其定为犯罪。富裕国家甚至只要付费就被允许污染。但是，我们的生命除了金钱之外还有价值吗？植物世界默默地向我们展示忠于生命意味着什么。它也帮助我们开启新的起点，促使我们关爱呼吸，不仅在生命层面，也在精神层面。我们必须最密切关注的相互依存关系，是我们与植物世界之间的关系。覆盖地球的森林常被称为“地球之肺”，它们通过释放氧气为我们提供可呼吸的空气。但它们更新被工业污染的空气的能力早已达到极限。如果我们缺乏健康生活所必需的空气，那是因为我们让空气中充满化学物质，并削弱了植物再生空气的能力。正如我们所知，快速砍伐森林加上大规模燃烧化石燃料，是导致不可逆转灾难的爆炸性配方。除非人类学会彼此以及和植物分享生命，否则争夺资源占有权的斗争将把整个地球引向地狱。这项任务既是道德的也是政治的，因为只有当每个人自己承担起来、并与他人共同完成时，它才能得以完成。植物教给我们的道理是：分享生命会扩大并提升生命领域，而把生命划分为所谓的自然资源或人力资源则会缩小它。我们必须逐渐把空气、植物和我们自己视为维护生命和生长的贡献者，而不是任由我们支配的可量化对象或生产潜力构成的网络。也许那时我们才会最终开始真正生活，而不是仅仅关心勉强生存。",
+   "questions": [
+    {
+     "stem": "61. What does the author assume might be the primary reason that people would struggle with each other?",
+     "answer": "A",
+     "analysis": "作者认为斗争首先不是在经济或社会层面展开，而是为了占有空气，即获取清洁空气的份额。A符合；B、C、D分别对应舒适生活、社会地位、经济利益，均属于被否定的经济或社会层面。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "62. What does the author accuse western politicians of?",
+     "answer": "D",
+     "analysis": "作者指责西方政客虽然提议控制污染，却没有呼吁将污染定为犯罪，即未通过法律遏制环境污染。D与此对应；C只是现象，A、B未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "63. What does the author try to draw our closest attention to?",
+     "answer": "B",
+     "analysis": "作者明确指出“我们必须最密切关注的相互依存关系，是我们与植物世界之间的关系”。B同义；A、C、D都是具体环境问题，不是作者要求最密切关注的焦点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "64. How can human beings accomplish the goal of protecting the plant according to the author?",
+     "answer": "D",
+     "analysis": "作者说这项任务“只有当每个人自己承担起来、并与他人共同完成时”才能完成，即需要合力。D符合；A未提及，B过泛，C与文意相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "65. What does the author suggest we do in order not just to survive?",
+     "answer": "C",
+     "analysis": "文章结尾建议把空气、植物和我们自己视为生命与生长的贡献者，与自然分享生命，这样才能真正生活而不只是生存。C符合；A是结果，B、D与文章主张相悖。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-09T17:31:35.782Z"
+ "generatedAt": "2026-10-10T02:16:53.501Z"
 }

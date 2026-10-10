@@ -1,0 +1,188 @@
+{
+ "level": "CET6",
+ "year": 2021,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The chart illustrates the remarkable decline in China's rural population in poverty. The number of rural poor fell from nearly 100 million to less than 6 million, while the poverty headcount ratio dropped from about 12% to below 1%. This dramatic change demonstrates China's great achievements in poverty alleviation.\n\nSeveral factors contribute to this success. First, the government has implemented a series of targeted policies, such as infrastructure construction and industrial development in poor areas. Second, financial support and social security systems have been improved to ensure basic living standards. Moreover, education and vocational training have helped rural residents enhance their ability to earn income.\n\nIn conclusion, China's poverty alleviation efforts have not only improved the lives of millions but also set a valuable example for the world. The continuous decline in poverty reflects the effectiveness of China's policies and the dedication of the whole society. We have every reason to believe that absolute poverty will be completely eliminated.",
+   "note": "本文先简述图表数据，点明农村贫困人口大幅下降，然后从政策、保障、教育三方面分析成就原因，最后总结意义。结构清晰，运用了“illustrates, remarkable decline, contribute to, have every reason to believe”等高分表达，切合题意。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Yunnan Province, located in southwest China, has an average elevation of 1,500 meters. With a long history, beautiful scenery, and a pleasant climate, it boasts a superior ecological environment and rich biodiversity, earning it the reputation of a paradise for animals and plants. Yunnan also has various mineral deposits and water resources, providing favorable conditions for the sustainable development of the province's economy. The province is home to 25 ethnic minorities, most of whom have their own languages, customs, and religions. Its unique natural landscapes and rich ethnic culture make it one of the most popular tourist destinations in China, attracting a large number of domestic and foreign tourists every year.",
+   "note": "难点：原文多处语气松散，需整合为英文复合句；关键表达：“动植物天堂”译为“paradise for animals and plants”；“可持续性发展”用“sustainable development”；“少数民族”为“ethnic minorities”；“旅游目的地”为“tourist destination”。注意首句“位于中国西南的一个省份”宜转化为定语结构。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "创造力：看不见、闻不到、听不见，人们对它的精确定义或确切来源意见不一。它不是学校科目或学科，但可以学习。它是艺术家必备的品质，但也存在于科学家和企业家的生活中。我们所有人都从中受益，当我们能够运用它时，我们在心智和精神上都会茁壮成长。它很脆弱，容易被扼杀；事实上，当人们充满童趣、像孩子一样时，它最繁盛。同时，它与深厚的知识和专业技能结合时效果最好。\n\n这一神秘但可教的品质就是创造力，是杜伦大学创造力与教育委员会最近发布的一份报告的主题。报告得出结论：创造力不应只存在于学校课程中与戏剧、音乐、美术等明显具有创造性的科目相关的内容里，而应贯穿学校生活的所有方面，融入人文学科和自然科学的学习方式中。\n\n报告作者关注英格兰的教育，提出了若干合理建议，其中一些试图缓解近年来政策中逐渐渗入的枯燥、以事实记忆为主的教育方式。当孩子被当作填充事实的容器时，创造力不会蓬勃发展；当教师唯一目标是训练孩子应付考试时，创造力也不会繁荣。委员会的一项建议是建立由教师主导的“创造力协作网络”，类似于现有的数学中心，目的是通过学校课程支持创造力教学。\n\n然而，艺术科目是最能明显培养创造力的。独立教育部门对艺术科目的重视显而易见。只需看看英国顶尖私立学校出色的艺术设施就能明白这一点。但在公立教育部门，对英语、数学和科学的过度关注有可能压垮艺术科目；同时，学校预算减少意味着课外活动减少。自2014年以来，高中选修创意科目的学生人数下降了28.1%，不过可喜的是，艺术与设计最近有所增长。\n\n公立与私立教育之间的这种差距是社会公正问题。大多数孩子接触合唱团、管弦乐队、艺术工作室和戏剧的机会只是其更有特权同龄人的一小部分，这完全是错误和不公平的。由于生活正受到诸多迫近挑战的影响——气候危机、工作场所自动化——人类将比以往任何时候都更需要创造性思维。为了我们所有人的利益，教育中的创造力，以及面向所有人的创造力，必须成为优先事项。",
+   "questions": [
+    {
+     "stem": "46. What do we learn from the passage about creativity?",
+     "answer": "D",
+     "analysis": "第一段说创造力让人在心智和精神上茁壮成长，且易被扼杀，与D一致。A将“精神准备”偷换为“童趣玩耍”；B“最常被科学家企业家运用”无中生有；C“基于科学知识和分析技能”与原文“与深厚知识专长结合最佳”不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What is the conclusion of a recently-published report?",
+     "answer": "B",
+     "analysis": "报告结论是创造力不应仅存在于戏剧、音乐、美术等明显创意科目，而应贯穿整个学校生活，故选B。A把“人文和自然科学的学习方式都应融入创造性思维”曲解为自然科学照搬人文；C“艺术必修”未提及；D与原文“不应只局限”相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the report say is detrimental to the fostering of creativity?",
+     "answer": "C",
+     "analysis": "报告指出把孩子当填事实的容器、教师唯一目标是应试时创造力不会繁荣，说明应试教学有害，故选C。A“缓解压力”不是有害因素；B“教师主导活动”是报告建议之一；D“独立学习”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn about the private schools in the UK?",
+     "answer": "B",
+     "analysis": "原文说私立教育部门对艺术科目的重视显而易见，从顶尖私校艺术设施可见，所以B正确。A“鼓励课外活动”未明确；C“艺术优先于数学科学”无依据；D“不同家庭背景”与原文“特权同龄人”相悖。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What should be done to meet the future challenges?",
+     "answer": "C",
+     "analysis": "末段指出多数孩子接触艺术资源远少于特权同龄人，是不公平的；面对未来挑战需要创造力，所以创造力教育必须面向所有人，即提供平等艺术教育机会，选C。A政府投资未提；B贫富差距太宽泛；D只侧重贫困生，而原文强调所有孩子。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "模仿对话对象的动作是一种常见的人类行为，被称为“镜像”，心理学家对此已研究和了解多年。我们都倾向于下意识地模仿喜欢的人的姿态。但是为什么我们会这样做呢？\n\n通常，镜像意味着交谈者享受他们的交流，彼此之间存在某种程度的契合。讨论的话题对双方同样有趣，并且他们知道彼此兴趣相投。\n\n重复他人的行为是有天赋的沟通者的典型特征，这并不总是因为对方令人有好感，而是因为有要达到的目标。新偶像就是这样被推上舞台的：政客、名人和其他大人物。流行文化让人们想要看起来受欢迎，并像受欢迎的人那样行事和说话。\n\n如今，名人互相抄袭歌词，要么陷入侵犯版权的指控，要么直接声称自己是作者，尽管所有工作都是由他人完成的。这种被称为“代笔”的做法可以有多种形式：书籍、文章、自传，甚至社交媒体帖子。\n\n谁是真正的抄袭者，谁又被抄袭了？有时，没有专家的帮助，这很难判断。但基于识别个人写作模式的新型署名保护方法已经出现。其目的是保护知识产权。利用科学方法，其中一些方法能以85%的准确率判定作者身份。\n\n写作不是一门容易掌握的手艺。如果你想在不抄袭的情况下像专业人士一样写作，有一些经验需要学习，第一条是：“抄一个人，是剽窃；抄两个人，是研究。”这句话的正确解读不是关于抄袭，而是关于创造自己的风格。当你研究一位作者的写作风格时，不要只停留在一种风格上，而要探索多种风格。研究他们使用的句子类型，注意他们的隐喻，并关注那些你觉得可以写出很酷续篇的故事。\n\n模仿是相当矛盾的。作为学习不可或缺的一部分，它带来积极的变化，使人成长和发展。然而，它也可能造成很多伤害。抄袭他人的思想、观点或发明是完全不可接受的，它侵犯了他人的知识产权。\n\n尽管如此，我们所做的许多事情在某种程度上都是在模仿他人。因此，如果你想称赞某人完成的工作并模仿它，只要确保用正确的方式去做，以避免犯下剽窃。",
+   "questions": [
+    {
+     "stem": "51. What do people tend to do while engaging in a conversation?",
+     "answer": "C",
+     "analysis": "文章首段指出人们在交谈中会不自觉地模仿喜欢的人的姿态，“subconsciously copy gestures”对应C项“在对方不知情下模仿其姿态”。A项“重复对方的话”文中未提；B项和D项分别以“共同话题”和“仔细观察”为焦点，均非文中描述的无意识模仿行为。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52 . When does mirroring usually take place in a conversation?",
+     "answer": "B",
+     "analysis": "第二段说明镜像发生条件是双方享受交流、有一定共识、话题同样有趣且“知道彼此兴趣相投”，即双方有很多共同点。A项“彼此同情/有好感”过于狭窄且未强调共同兴趣；C项“做出有趣贡献”未提及；D项“努力寻求共同点”强调主动寻求，而文中是已知兴趣相投。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What do we learn about popular culture?",
+     "answer": "A",
+     "analysis": "第三段明确说流行文化使人们想看起来受欢迎，并像受欢迎的人那样言行，即鼓励模仿。B项“主要吸引名人”与原文相反；C项“让年轻人认识偶像”文中未提；D项“改变认知模式”无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. Why is the saying \"copy from two, it's research\" a lesson to learn?",
+     "answer": "A",
+     "analysis": "第五段指出该说法的正确解读不是抄袭，而是创造自己的风格，并建议探索多种风格，因此有助于形成个人写作风格。B项错在它并非直接保护知识产权；C项“专业写作的正确解读”表述笼统不准确；D项“写续篇”只是例子，不是该说法的目的。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Why does the author say imitation is rather paradoxical?",
+     "answer": "D",
+     "analysis": "最后一段先说模仿作为学习的一部分带来积极变化，接着说它也可能造成很多伤害，所以矛盾在于既好又坏。A项“不同解读”未扣住文中具体利弊；B项“基本是必要之恶”过于消极；C项“引发无休止争论”无中生有。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "43岁时，我已经到了女性被警告要当心中年悄然袭来的悲伤的阶段。我们被不断灌输各种关于“如何活过40多岁”的建议，仿佛处于一场缓慢蹒跚走向脆弱的耐力赛阶段。这个年龄女性开始变得“隐形”——我们的价值、吸引力和力量据信随着青春的消逝而减弱。但我并不觉得自己正淡出人们的视线、陷入默默无闻。我感觉自己比以往任何时候都更被看见，而且我生平第一次对自己有了清晰、真实、富有同情心且接纳的看法。当我照镜子时，我为自己感到骄傲——即使是那些曾经似乎无法去爱的“破碎”部分。所以，当广告商试图向我推销“让时光倒流”的方法时，我不得不忍住笑。即使付钱给我，我也不会回到年轻时那种令人崩溃的难为情。这种来之不易的自我接纳感是年长女性的快乐之一。但这种叙述常常被营销人员赖以向我们兜售减肥药、神奇面霜和透气瑜伽裤的羞耻感所淹没——仿佛自爱是一种可以购买的商品。就我认识的一些女性而言，这种晚年的信任和自我信念给了她们离开不健康关系或开启新职业道路的勇气。另一些人则谈到享受独处、在逆境中成长、加深友谊纽带、变得更有同情心、更少评判、更愿意倾听并欣赏生活中的小乐趣。40岁以后的生活远非一帆风顺，但它远不止我们在女性杂志和好莱坞大银幕上看到的那些简单化的描绘。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "H",
+     "analysis": "toward为介词，后需名词；语义上中年被描述为走向脆弱，fragility（脆弱）符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "E",
+     "analysis": "空格前为名词短语作主语，后有by引出原因，需过去分词构成被动；句意为价值、吸引力等因青春消逝而减弱，diminished（被削弱）恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "J",
+     "analysis": "fade into obscurity为固定搭配，表示“淡出，变得默默无闻”，符合“我并未感到自己逐渐不被看见”的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "B",
+     "analysis": "空格与compassionate、accepting并列作表语，需形容词；authentic（真实的）表示对自己的认识真实清晰，符合积极并列语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "O",
+     "analysis": "have to后接动词原形；suppress a laugh为固定搭配，意为“忍住笑”，表示对广告说辞感到可笑。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "空格为过去分词表被动，drown out为固定短语，意为“淹没、压过”，说明这种积极叙述被羞耻营销所掩盖。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "空格在名词commodity前，需形容词；句意为“仿佛自爱是一种可以买到的商品”，purchasable（可购买的）契合营销话术。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "空格与leave并列，由or连接，同为不定式to后的动词原形；embark on为固定搭配，表示“开始从事”，与career paths搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "空格在介词through后，需名词；growth through adversity表示“在逆境中成长”，与后文成长内容相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "D",
+     "analysis": "空格被reductive修饰，且作表语，需名词复数；句意为杂志和好莱坞电影中简化的“描绘”，depictions（描绘、刻画）符合。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:49:21.400Z",
+ "prunedAt": "2026-10-10T03:33:14.386Z"
+}

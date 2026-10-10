@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The famous saying \"Seek to understand others, and you will be understood\" conveys a profound truth about interpersonal communication. It implies that only when we make genuine efforts to comprehend others can we earn their understanding in return. Mutual understanding is the cornerstone of harmonious relationships. For instance, in a group project, if we patiently listen to teammates' ideas and acknowledge their difficulties, they are more likely to respect our viewpoints and cooperate smoothly. On the contrary, those who insist on their own opinions without considering others often find themselves isolated. Similarly, in friendships, showing empathy when a friend is upset can strengthen the bond, and in return, they will be there for us when we need support. In conclusion, understanding is a two-way street. By taking the initiative to understand others, we not only resolve conflicts but also create a positive cycle of communication. Therefore, I am convinced that this saying serves as a practical guideline for building lasting and meaningful relationships.",
+   "note": "本文紧扣名言内涵，开篇引出观点，中间通过小组合作与友谊两个例子论证相互理解的重要性，结尾总结升华。结构清晰，逻辑连贯。可复用句型：The famous saying... conveys a profound truth; Mutual understanding is the cornerstone of...; On the contrary...; ... is a two-way street; I am convinced that... 用词难度适中，符合四六级高分要求。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "太平洋岛国帕劳已成为世界第六大海洋保护区所在地。这个新海洋保护区，目前是太平洋最大的，将不允许捕鱼或采矿。帕劳还在2009年建立了世界首个鲨鱼保护区。这个小小的岛国已经划出50万平方公里——占其海洋领土的80%——进行全面保护。这是世界上任何国家将专属经济区用于海洋保护的最高比例。帕劳海域剩余的20%将保留给个人和小型商业捕鱼企业进行本地捕鱼，且出口有限。\n\n“岛屿社区受海洋面临的威胁打击最为严重，”总统汤米·雷门格绍在声明中说。“建立这个保护区是一项大胆举措，帕劳人民认识到它对我们的生存至关重要。我们希望引领为后代恢复海洋健康的道路。”\n\n帕劳独立仅二十年，有着强大的环境保护历史。它是世界上最优良的海洋生态系统之一的家园，拥有1300多种鱼类和700种珊瑚。\n\n参议员霍肯斯·鲍莱斯是《帕劳国家海洋保护区法案》的主要提案人，他说保护区将“通过尊重我们过去的保护传统，帮助为帕劳人民建设一个有保障的未来”。这些传统包括数百年的“bul”习俗，即领导人会暂时停止捕捞关键物种，以便给鱼类种群补充的机会。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "I",
+     "analysis": "空格前为will，后接动词原形，且后文no fishing or mining表示否定，permit no...为“不允许……”的固定用法，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "O",
+     "analysis": "maritime territory为固定搭配，意为“海洋领土/领海”，指国家管辖的海域范围，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "exclusive economic zone为固定术语“专属经济区”，是海洋法中的标准表达，此处指该国拥有专属经济权的海域。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "空格修饰fishing businesses，需要形容词，commercial fishing意为“商业捕鱼”，与前面的“个人和小规模”形成对照，且后文提到limited exports。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "D",
+     "analysis": "空格作主语，且谓语为have been，需复数名词，island communities意为“岛屿社区”，指生活在岛屿上的人群，符合语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "空格在as后作宾语补足语，需形容词，essential to our survival意为“对我们的生存至关重要”，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "G",
+     "analysis": "空格修饰nation，需形容词，an independent nation意为“独立国家”，与后文“二十年”及帕劳的历史背景相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "M",
+     "analysis": "lead sponsor为固定短语，指法案的“主要提案人/发起人”，空格前有lead，后接of the Act，符合立法语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "J",
+     "analysis": "空格修饰future，需形容词，a secure future意为“一个有保障的未来”，与保护传统带来的正面影响匹配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "fish stocks为固定搭配，意为“鱼类种群/鱼群资源”，此处指给鱼群补充的机会，符合生物学语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Qinghai Lake is located about 100 kilometers west of Xining, the capital of Qinghai Province, at an altitude of 3,205 meters. It is the largest saltwater lake in China, covering an area of 4,317 square kilometers and with a maximum depth of 25.5 meters. Twenty-three rivers flow into the lake, most of which are seasonal. Eighty percent of the lake's water comes from five major rivers. Qinghai Lake lies at the intersection of several migratory bird routes across Asia. Many birds use Qinghai Lake as a stopover during their migration. On the west side of the lake is the famous Bird Island, which attracts birdwatchers from all over the world. Every summer, tourists also come here to watch international cycling races.",
+   "note": "难点在于多组数据与地理信息的有序整合，需理清主次、恰当使用非谓语和定语从句。‘咸水湖’译作 saltwater lake；‘季节性河流’用 most of which are seasonal 从句；‘候鸟迁徙路线交叉处’译为 intersection of several migratory bird routes；‘暂息地’译 stopover 更地道；数字与单位须准确。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "当今世界变化如此之快，我们很少停下来看看短短几年间我们已经取得了多大的进步。例如，最新的 iPhone 6s 拥有双核处理器，可以轻松放入口袋。相比之下，这样的技术规格原本只会在世界各地办公室里的标准笔记本电脑上见到。当我们购买的几乎每一台新设备都有一个插头或无线网络连接时，物联网的新应用飞速发展也就不足为奇了。很快，我们当前的智能手机生活方式也将扩展，创造出我们自己的智能家居生活方式。所有研究都认为，到 2020 年，将有近 250 亿台设备、物品和传感器实现互联。巧合的是，届时千禧一代预计将占我们全部劳动力的 75%，而完全互联的家庭也将在全球大量人群中成为现实。然而，这还只是冰山一角，因为随着领导者和企业主开始意识到，通过互联传感器、新型自动化以及智能能源和设施管理，技术能够带来巨大的节约，智能建筑乃至智能城市正日益成为常态。在线监控摄像头、智能照明以及大量控制温度和空气质量的传感器，正在为企业运营或大型建筑管理提供前所未有的控制水平、效率以及对曾经被视为必要成本的项目加以改进。我们可以预期，不断增长的设备、系统和环境将保持互联、始终在线并相互通信。其巨大益处不仅在于存储这些海量且快速增长的数据，还在于能够进行实时数据分析，从而提取可操作且持续更新的知识。这项技术最大、最令人兴奋的挑战在于如何创造性地利用这些不断增长的数据，为这些智能城市的企业和市民带来成本节约、改进和实实在在的好处。好消息是，这些技术大多已经发明出来。说实话，就在不久前，随时随地工作的想法还是一种遥远的乌托邦式梦想，然而现在我们只要能够上网，就几乎可以在世界任何地方完成任何办公室任务。是时候清醒地认识到，建设智能建筑、智能城市和智能家居将在未来几年极大地改善我们的生活质量。",
+   "questions": [
+    {
+     "stem": "51. What does the example of iPhone 6s serve to show?",
+     "answer": "D",
+     "analysis": "首段以 iPhone 6s 为例，说明其双核处理器等配置已相当于几年前的笔记本电脑，强调在短短几年内技术进步之快。A、B仅侧重手机本身容量或普及，C过于笼统，均未准确对应“短时间内技术进步”这一要点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What can we expect to see by the year 2020?",
+     "answer": "B",
+     "analysis": "第三段明确提到到 2020 年 fully connected home will become a reality for large numbers of people worldwide，即智能家居将在大量人群中普及。A的物联网应用已出现；C千禧一代并非“出现”而是成为劳动力主体；D全球化未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What will business owners do when they become aware of the benefits of the Internet of Things?",
+     "answer": "C",
+     "analysis": "第四段指出，当企业主意识到物联网带来的巨大节约时，smart buildings and even cities increasingly become the norm，即会更多地投资或采用智能建筑和城市。A裁员、B自动控制企业、D拥抱一切新技术均未在文中体现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is the most exciting challenge when we possess more and more data?",
+     "answer": "A",
+     "analysis": "第七段明确说最大挑战是如何创造性地利用不断增长的数据以带来成本节约、改进和实际利益，即将数据转化为实际收益或利润用途。B实时数据分析是已有能力而非挑战；C、D与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author think about working from anywhere and at anytime?",
+     "answer": "A",
+     "analysis": "倒数第二段指出，过去随时随地工作是乌托邦梦想，而现在只要接入互联网，几乎可以在世界任何地方完成办公室任务，说明在有网络连接的条件下是可行的。B未提智能建筑使远程工作繁荣；C与现在事实相反；D未提及对老板和员工的具体好处。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "在电影《我，机器人》开头，两辆车冲入水中后，一个机器人必须决定救谁——戴尔·斯普纳还是一个孩子。尽管斯普纳大喊“救她！救她！”，机器人还是救了他，因为它计算出他有45%的生存几率，而莎拉只有11%。机器人的决定及其计算式方法引出了一个重要问题：人类会做出同样的选择吗？我们又希望我们的机器人做出哪个选择？\n\n艾萨克·阿西莫夫在设计他的机器人三定律时回避了整个道德概念，这些定律规定：1. 机器人不得伤害人类，也不得因不作为而使人类受到伤害；2. 机器人必须服从人类的命令，除非该命令与第一定律冲突；3. 机器人必须保护自身的存在，除非这与第一或第二定律冲突。这些定律被编入阿西莫夫的机器人程序中——它们不必思考、判断或做价值取舍。它们不必喜欢人类，也不必相信伤害人类是错误或邪恶的。它们只是不做伤害人类的事。\n\n在《我，机器人》中救下斯普纳生命的机器人遵循的是阿西莫夫的第零定律：机器人不得伤害人类整体（与个体人类相对），也不得因不作为而使人类整体受到伤害——这是第一定律的扩展，允许机器人判断什么符合更大的利益。按照第一定律，机器人不能伤害危险的持枪歹徒，但按照第零定律，机器人可以杀死歹徒以拯救他人。\n\n是否可能为机器人编程植入像阿西莫夫定律这样的安全措施，这是有争议的。“伤害”这样的词是模糊的（情感伤害呢？替换一名人类雇员算不算伤害？），抽象概念会带来编码问题。阿西莫夫小说中的机器人暴露了三定律中的复杂情况和漏洞，即使定律起作用，机器人仍然必须评估情况。\n\n评估情况可能很复杂。机器人必须识别各种情景中的参与者、条件和可能的结果。计算机程序能否做到这一点值得怀疑——至少，不产生某种不良后果是值得怀疑的。布里斯托尔机器人实验室的一位机器人专家编写程序让机器人拯救被称为“H-bots”的人类替身免于危险。当一个H-bot走向危险时，机器人成功地把它推开了。但当两个H-bots都陷入危险时，机器人在42%的情况下会卡住，无法决定救哪一个，任由它们双双“死亡”。该实验凸显了道德的重要性：没有道德，机器人如何决定救谁或什么对人类最有利，尤其是当它无法计算生存概率时？",
+   "questions": [
+    {
+     "stem": "46. What question does the example in the movie raise?",
+     "answer": "D",
+     "analysis": "文章第一段最后一句明确指出电影例子提出的问题是“人类会做出同样的选择吗？我们又希望我们的机器人做出哪个选择？”这实质是在探讨机器人应如何被编程或设计来做决定。干扰项：A原文未比较决策优劣；B第零定律在后文才提及；C并未涉及机器人做出错误判断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author think of Asimov's three laws of robotics?",
+     "answer": "D",
+     "analysis": "作者在第二段首句指出阿西莫夫在设计三定律时“回避了整个道德概念”，并说明机器人不必思考、判断或做价值取舍，因此认为三定律没有考虑道德问题。干扰项：A“脱离现实”无依据；B文中未涉及机器人编程系统；C“奠定坚实基础”与作者的批判态度不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the author say about Asimov's robots?",
+     "answer": "B",
+     "analysis": "原文第三段说“这些定律被编入阿西莫夫机器人的程序……它们只是不做伤害人类的事”，对应“它们被编程为不伤害人类”。干扰项：A文中说机器人不必判断好坏；C“所有者利益”未提及；D“停止工作”不符合原文，它们只是不主动伤害。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does the author want to say by mentioning the word \"harm\" in Asimov's laws?",
+     "answer": "A",
+     "analysis": "作者以“harm”一词为例，说明它模糊且抽象概念会带来编码问题，即抽象概念难以编程。干扰项：B是实验结论，不是举例目的；C文中只说词模糊，未说机器人实际伤害；D“太多模糊术语”过于绝对，原文只举了一个词。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What has the roboticist at the Bristol Robotics Laboratory found in his experiment?",
+     "answer": "C",
+     "analysis": "实验发现当一个H-bot遇险时机器人能处理，但两个H-bot同时遇险时机器人42%的时间会卡住无法决定救谁，表明机器人在复杂场景下决策有困难。干扰项：A“与人类一样聪明”无中生有；B实验并非编码道德；D感知危险只是实验前半部分，不是主要发现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "这是一场势头渐强的运动：呼吁将研究数据、软件代码和实验方法公开透明。开放精神在科学界日益获得认可，倡导者称这是解决科学界“危机”的唯一途径，因为目前成功重复的研究发现太少。此外，他们说，这是研究人员收集必要的大量观察结果以加速发现或识别大规模趋势的最佳方式。\n\n开放数据的转变给初级研究人员带来了困惑。一方面，推动共享的势头正获得官方支持。自2013年以来，全球科学机构开始支持增加公众获取研究机会的政策。另一方面，科学家们对于应该分享多少数据以及何时分享意见不一，他们争论分享数据是更可能加速科学进步、使科学更稳健，还是会带来脆弱性和问题。随着越来越多的期刊和资助者采纳数据共享要求，以及越来越多的热心人士呼吁更加开放，初级研究人员必须在采纳者和继续抵制者之间找到自己的位置，同时努力开启自己的职业生涯。\n\n年轻科学家面临的一个关键挑战是如何做到开放而不在科学上变得脆弱。他们必须评估是否会危及那些对开放科学警惕或不熟悉的人提供的工作机会或合作提议。他们还必须学会利用这场运动的益处，例如获得更多引用的机会，以及无需传统指标（如在高影响力期刊上发表论文）即可建立声誉的途径。\n\n某些领域比其他领域更接纳开放数据。心理学领域在过去几年因不可重复性发现而备受震动，其研究人员尤其积极支持更开放的科学。一些心理学期刊已设立激励措施以增加对可重复科学的兴趣——例如，在清楚说明数据获取方式的文章上贴“开放数据”徽章。据开放科学中心执行主任、社会心理学家 Brian Nosek 介绍，使用这些徽章的期刊《心理科学》的平均数据共享率从2013年到2015年提高了十倍，达到38%。\n\n资助者也在日益采纳开放数据政策。一些机构强烈鼓励、有些则要求制定使数据可用的数据管理计划。美国国家科学基金会就是其中之一。一些慈善资助者，包括华盛顿州西雅图的比尔及梅琳达·盖茨基金会和伦敦的惠康信托基金，也要求受资助者开放数据。\n\n但许多年轻研究人员，尤其是那些未接受过开放科学指导的人，不确定是分享还是保持私有。研究生和博士后通常从事实验室负责人的课题，如果导师或其他资深同事反对分享，他们可能别无选择。\n\n一些人担心分享的潜在影响太大，尤其是在职业生涯早期。“每个人都有被人抢先的可怕故事，”纽约大学天文学家 David Hogg 说。这些担忧可能是即使在强制要求数据共享的期刊上发表论文时仍有人犹豫分享数据的一个因素。\n\n小型实验室或教学型机构的研究人员分享来之不易的数据可能损失最大。加州州立大学多明格斯山分校的热带生物学家 Terry McGlynn 说：“以我的机构和教学负担，我没有博士后和研究生。分享数据的风险更高，因为这是我实验室工作中更大的一部分。”\n\n研究人员还指出，为了让别人查看而准备数据会耗费大量时间。一旦数据和相关材料存入存储库，回答问题和处理投诉可能要花很多小时。\n\n时间投入还会带来其他问题。数据科学家 Karthik Ram 说，当资深同事——其中许多人担任选拔和晋升委员会负责人——可能嘲笑他们眼中错位的精力时，初级研究人员很难拥抱开放。“我最近听到过这种说法——拥护开放数据和代码的想法让传统学术人员感到不舒服，” Ram 说，“担忧似乎是开放倡导者没有把时间花在尽可能高产出上。”\n\n开放科学的立场也会增加合作的复杂性。佛罗里达大学盖恩斯维尔分校研究社会态度的 Kate Ratliff 说，在一个领域里似乎有两个阵营——关心开放科学的人和不关心的人。“在与他人讨论有趣的研究想法时，有一个新的方面需要沟通——‘你对我想要将数据开放这件事是否接受？’”她说。\n\n尽管存在复杂性和担忧，分享的好处可能很显著。例如，当信息上传到存储库时，会分配一个数字对象标识符（DOI）。科学家可以用 DOI 发布研究生命周期的每一步，而不仅仅是最终论文。这样，他们可能获得三次引用——数据和软件各一次，论文本身一次。尽管有人说软件或数据的引用在学术界价值不大，但它们可能有其他好处。\n\n许多倡导者认为，带有日期和时间戳的透明数据程序将保护科学家免于被抢先。丹麦夏洛滕隆国家水生资源研究秘书处项目协调员 Ivo Grigorov 说：“这是分享与获得积分之间的最佳平衡点，同时阻止剽窃。” Hogg 说，被抢先的问题比许多人想象的要小。“我熟悉的两个案例都不涉及开放数据或代码，”他说。\n\n开放科学还为初级研究人员提供了通过更好获取关键数据来公平竞争的机会。英国剑桥大学研究进化生物学的博士后 Ross Mounce 是开放科学的坚定拥护者，部分原因是他的化石研究依赖于获取他人的数据。他说，科学中更开放有助于阻止一些人认为的排挤早期职业科学家数据请求的常见做法。\n\n他说，沟通也有助于那些担心危及合作的人。关于开放科学的担忧应在研究开始时就讨论。“每当你与某人启动一个项目，你都必须就谁拥有数据、数据何时公开以及谁可以如何处理这些数据建立清晰的预期，”他说。\n\n最终，与同事分享数据、软件和材料可以帮助早期职业研究人员获得认可——这是成功的关键要素。“你寻找的是声誉，”加州大学戴维斯分校基因组学研究员 Titus Brown 说。“要获得资助和工作，你必须具有相关性并达到一定程度的公众认可。你做的任何提升自己存在感的事情——尤其是在你认识的社区之外的更大范围内——都是净收益。”",
+   "questions": [
+    {
+     "stem": "36. Astronomer David Hogg doesn't think scooping is as serious a problem as generally thought.",
+     "answer": "M",
+     "analysis": "M段中Hogg说被抢先的问题比许多人想象的要小，与题目观点一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Some researchers are hesitant to make their data public for fear that others might publish something similar before them.",
+     "answer": "G",
+     "analysis": "G段提到一些人担心被抢先，因此在强制分享数据的期刊上也犹豫分享。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Some psychology journals have offered incentives to encourage authors to share their data.",
+     "answer": "D",
+     "analysis": "D段提到一些心理学期刊设立激励措施，如贴开放数据徽章，以鼓励分享数据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. There is a growing demand in the science community that research data be open to the public.",
+     "answer": "A",
+     "analysis": "A段提到开放数据运动势头增强，科学界呼吁研究数据公开透明。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Sharing data offers early-career researchers the chance to build a certain level of reputation.",
+     "answer": "P",
+     "analysis": "P段指出与同事分享数据等可以帮助早期职业研究人员获得认可和声誉。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Data sharing enables scientists to publish each step of their research work, thus leading to more citations.",
+     "answer": "L",
+     "analysis": "L段提到科学家可用DOI发布研究生命周期每一步，从而可能获得更多引用。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Scientists hold different opinions about the extent and timing of data sharing.",
+     "answer": "B",
+     "analysis": "B段提到科学家对于分享多少数据以及何时分享意见不一。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Potential problems related to data sharing should be made known to and discussed by all participants at the beginning of a joint research project.",
+     "answer": "O",
+     "analysis": "O段提到开放科学的担忧应在研究开始时就讨论，并建立清晰预期。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Sharing data and handling data-related issues can be time-consuming.",
+     "answer": "I",
+     "analysis": "I段指出准备数据供他人查看以及处理后续问题和投诉会耗费大量时间。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Junior researchers may have no say when it comes to sharing data.",
+     "answer": "F",
+     "analysis": "F段提到研究生和博士后如果导师或资深同事反对分享，可能别无选择。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:28:58.948Z"
+}

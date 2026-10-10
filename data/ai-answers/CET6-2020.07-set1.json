@@ -1,0 +1,187 @@
+{
+ "level": "CET6",
+ "year": 2020,
+ "month": 7,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "There is a famous saying that the best preparation for tomorrow is doing your best today. I fully agree with this view. In my opinion, only by making the most of the present can we embrace a promising future.\n\nFirstly, our future achievements largely depend on the efforts we make today. Knowledge and skills are accumulated step by step; without solid groundwork today, we can hardly succeed tomorrow. For instance, a student who studies hard every day is more likely to perform well in future exams and career. Secondly, doing our best today helps us develop good habits and confidence. When we handle current tasks efficiently, we become better prepared to deal with upcoming challenges. On the contrary, those who constantly delay today's work often end up with anxiety and missed opportunities.\n\nIn conclusion, today is the foundation of tomorrow. We should cherish every moment and devote ourselves to doing our best today, so that we can create a brighter tomorrow.",
+   "note": "范文开篇直接点明对谚语的态度，随后从“今日努力积累知识与技能”和“今日尽力培养好习惯与信心”两方面论证，最后重申观点并发出号召。结构清晰，运用了倒装、定语从句、衔接词等，符合四六级高分要求。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "联合国上周发布了一份报告，警告人类正在以如此之快的速度破坏自然，以至于地球上的生命面临风险。报告发布时，自然占据了新闻头条。但显然，它并没有像重大恐怖袭击或宣战那样劫持新闻议程。\n\n生物多样性和生态系统服务政府间科学政策平台（IPBES）的报告明确指出什么处于危险之中以及需要改变什么。IPBES主席罗伯特·沃森说，“压倒性的证据”呈现出“不祥的画面”。罗伯特·沃森说：“我们以及所有其他物种赖以生存的生态系统的健康状况正在比以往任何时候都更加迅速地恶化。”“我们正在侵蚀全球经济、生计、粮食安全、健康和生活质量的根基。”报告说，如果我们进行“变革性改变”——从地方到全球各个层面的根本性、系统性重组——现在还为时不晚，我们需要聚焦于如何实现这一改变。\n\n首先，不要沉溺于绝望，因为绝望会导致无所作为，而什么都不做意味着必然的灾难。每一项拯救自然的行动都将改善我们集体和个人的未来，应对这种规模威胁的唯一方法是以坚定的乐观精神为根基的坚决行动。其次，我们需要坚持不懈的关注，就像救护人员到达现场并使用“伤员鉴别分类”概念以确保最紧急的病例得到优先救治一样。拯救自然世界需要这种思维方式。我们没有能力一次做所有事情。我们需要做出艰难的选择。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "空格前为 it naturally，后为 headlines，需要谓语动词过去式；grab headlines 是固定搭配，意为“抢占头条”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "空格前有 or，空格后有 of war，需要名词构成固定搭配 declaration of war，意为“宣战”，与前面的恐怖袭击并列。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "K",
+     "analysis": "at stake 是固定短语，意为“处于危险中、利害攸关”，符合 what’s at stake and what needs to change 的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "I",
+     "analysis": "空格后是名词 evidence，需要形容词修饰；overwhelming evidence 是常见搭配，表示“压倒性的证据”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "主语是 health，空格前有 is，需要现在分词构成进行时；deteriorating 表示“恶化”，与 more rapidly 搭配，句意通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "空格前是 are，后为 the very foundations，需要现在分词构成进行时；eroding 表示“侵蚀、削弱”，erode the foundations 搭配恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "doing nothing means certain ___ 中 certain 后需名词；disaster 表示“灾难”，“必然的灾难”符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "D",
+     "analysis": "空格后是名词 action，需要形容词；determined 表示“坚决的、坚定的”，determined action 搭配合理，与 rooted in headstrong optimism 呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "M",
+     "analysis": "空格前是 most，后为 cases，需要形容词；urgent 表示“紧急的”，most urgent cases 指“最紧急的病例”，符合 triage 语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "A",
+     "analysis": "空格前是 have the，后为 to do，需要名词；have the capacity to do sth 表示“有能力做某事”，此处说不具备一次做完所有事的能力。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Romance of the Three Kingdoms is a famous Chinese historical novel written in the fourteenth century. Set against the history of the Three Kingdoms period, this literary work depicts the wars among the three kingdoms of Wei, Shu, and Wu from the second half of the second century AD to the second half of the third century AD. The novel portrays nearly one thousand characters and countless historical events. Although these characters and events are mostly based on real history, they have all been romanticized and dramatized to varying degrees. The Romance of the Three Kingdoms is a widely acknowledged literary masterpiece. Since its publication, the novel has continued to attract one generation of readers after another and has exerted a broad and lasting influence on Chinese culture.",
+   "note": "难点在于书名和三国专名的固定译法、公元纪年表达，以及“浪漫化和戏剧化”“一代又一代”等汉语动态表述。处理时采用定语从句和现在完成时突出影响延续，用“to varying degrees”“one generation after another”等短语实现地道表达。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "人们经常讨论压力过大的危险，但最近一种截然不同的压力观正在流行：这种由积极压力运动的成员所持有的观点认为，压力实际上可能是有益的。积极压力运动由像扎卡里·拉普这样在竞争激烈的世界中寻找优势的人组成，拉普的日常习惯就是该运动追随者的一个很好的例子。他大多数日子黎明即起，去跑步，一边喝着黑咖啡一边快速处理电子邮件，然后走进冰冷刺骨的淋浴。这套日常安排旨在减轻他每天工作18小时、同时经营三家健康和生物技术公司所带来的压力。\n虽然拉普的做法听起来可能很极端，但他属于一个日益壮大的运动，其成员主要是科技行业从业者，他们声称这种激进策略将帮助他们生活得更好、更长久。受到不同领域有影响力人物的启发，包括艺人、运动员、企业家和科学家，积极压力实践者会寻求某种组合的极端温度、限制性饮食、严苛的锻炼计划和普遍的不适感。\n拉普认为，积极压力使他保持平衡。除了跑步和冷水淋浴，拉普还使用冰浴、高温瑜伽，以及非常规的饮食方式，例如不吃乳制品、糖、酒精和其他各种高碳水化合物食物。他相信，这些给身体施加压力的做法实际上让他感觉工作带来的压力更小。不过，拉普并没有把自己的选择归功于任何特定的人；他说他从大学开始使用这些方法，当时他养成了运动后洗冰浴来恢复的习惯。在尝试让他的三家公司起步时，他又恢复了这一习惯。\n拉普工作时间很长，每晚只睡五到七个小时，但他说他一年只生病一次。对他来说，日常压力（比如搬家时感受到的那种压力）和积极压力之间的区别在于，后者涉及将身体推向极限并迫使它建立起耐受力。\n积极压力领域的一位思想领袖是荷兰极限运动员维姆·霍夫，他因能够利用深呼吸练习抵御严寒而被称为“冰人”。霍夫的理念在科技行业精英中流行起来，而且由于霍夫，冷水淋浴现在成了一种潮流；事实上，有些人甚至称其为一种疗法。\n但必须指出的是，并非所有人都认同这些实践者；事实上，一些医学专业人士认为，积极压力并不适合所有人，对于身体不健康或年纪较大的人来说甚至可能危险。",
+   "questions": [
+    {
+     "stem": "46. What do we learn about followers of the positive stress movement?",
+     "answer": "B",
+     "analysis": "文章开头指出积极压力运动成员持有“a very different view of stress”，认为压力可能有益，与流行的“压力危险”观点不同，故选B。A、C、D选项分别提到的敏感、快乐和健康竞争优势均未在文中提及或被曲解。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do followers of the positive stress movement usually do to put their ideas into practice?",
+     "answer": "D",
+     "analysis": "文中明确说积极压力实践者“seek out some combination of extreme temperatures, restrictive diets, punishing exercise routines and general discomfort”，即采用极端策略，故选D。A“不断改变习惯”不准确，B“建立关系网”曲解了“inspired by”，C“在科技行业找工作”是对成员背景的过度推断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does Zachary Rapp say about his unconventional practices?",
+     "answer": "A",
+     "analysis": "拉普相信这些非常规做法“actually make him feel less stress from work”，即有助于缓解工作压力，故选A。B“降低开支”、C“从伤病中恢复”（文中只提大学时用于运动恢复）、D“让三家公司同时上市”均无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What can be inferred from the passage about day-to-day stress?",
+     "answer": "D",
+     "analysis": "文章指出日常压力与积极压力的区别在于后者能迫使身体“build up a tolerance”，由此可推断日常压力不会帮助建立耐受力，故选D。A“有害”未直接说明，B“本质上无异”与原文相反，C“每个人都得忍受”未被提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do some medical professionals think of positive stress?",
+     "answer": "C",
+     "analysis": "医学专业人士认为积极压力“is not for everyone”，且对不健康或年长者可能危险，说明其效果因人而异，故选C。A“有待验证”、B“副作用不应忽视”、D“不应视为疗法”均未能准确对应文中表述。",
+     "verified": false,
+     "dissent": "B"
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "狩猎对环境是好是坏？如同许多热点问题，这个问题的答案取决于你问谁。一方面，有人说，没有什么比狩猎更自然，事实上几乎每一种动物物种——包括人类——在其进化过程中都曾充当过捕食者或猎物。而且，听起来很讽刺的是，既然人类已经消灭了许多动物捕食者，一些人认为狩猎是一种自然方式来减少现在繁殖数量超出环境承载力的猎物群体。另一方面，许多环保和动物保护人士认为狩猎是野蛮的，他们主张，不管实际考虑如何，杀死动物在道德上都是错误的。据加利福尼亚“动物之声”的格伦·柯克所说，狩猎“给个别野生动物造成巨大痛苦……”并且“毫无理性地残忍，因为与自然捕食不同，猎人为了取乐而杀戮……”他还说，尽管猎人声称狩猎保持野生动物数量平衡，但猎人的执照费被用来“以牺牲大量非猎物物种为代价，操纵少数猎物物种过度繁殖，导致生物多样性、遗传完整性和生态平衡的丧失。”除了道德问题，还有人认为狩猎不切实际。据美国人道协会称，绝大多数被猎杀的物种——如水禽、兔子、高地鸟类和哀鸽——“提供的营养极少，也不需要种群控制。”作家加里·E·瓦尔纳在其著作《自然的利益》中提出，某些类型的狩猎在道德上可能是正当的，而其他类型则可能不是。旨在“确保目标物种的整体福利、生态系统的完整性，或两者兼顾”的狩猎——瓦尔纳称之为“治疗性狩猎”——是站得住脚的，而维持生计和运动狩猎——两者都只使人类受益——则不是。无论个人立场如何，今天狩猎的美国人比近代历史上更少。美国鱼类与野生动物管理局2006年收集的数据显示，如今只有5%的美国人——约1250万人——认为自己是猎人，低于2001年的9%和1996年的15%。然而，公众对狩猎的支持却在上升。响应管理公司2007年的一项调查发现，80%的受访者同意“狩猎在现代社会中有其合法地位”，表示不赞成狩猎的美国人的比例从1995年的22%下降到2007年的16%。也许与公众的趋势相符，绿色领袖们越来越多地倡导猎人和环保团体之间的合作：毕竟，双方都谴责城市扩张和栖息地破坏。",
+   "questions": [
+    {
+     "stem": "51. What does the author say sounds ironic?",
+     "answer": "B",
+     "analysis": "文章第一段末尾指出，人类已经消灭了许多动物捕食者，而狩猎又被视为减少猎物数量的自然方式，即狩猎本身可能成为由狩猎引起的问题的解决办法，因此显得讽刺。A项是对捕食者与猎物关系的曲解，C、D项在文中均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does Glenn Kirk think of charging hunters license fees?",
+     "answer": "C",
+     "analysis": "Glenn Kirk认为猎人的执照费被用来操纵少数猎物物种过度繁殖，牺牲大量非猎物物种，最终导致生态平衡丧失。A项与他的观点相反，B项“富人的运动”和D项“阻止为取乐而杀戮”均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is the argument of the Humane Society of the United States against hunting?",
+     "answer": "A",
+     "analysis": "美国人道协会指出，绝大多数被猎杀的物种提供的营养极少，也不需要种群控制，即过度繁殖对大多数被猎杀的动物而言并非问题。B项“剥夺食物来源”和D项“普遍认为是野蛮行为”在文中没有依据，C项张冠李戴，把Kirk的观点安到了人道协会头上。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. When is hunting morally justifiable according to Gary E. Varner?",
+     "answer": "A",
+     "analysis": "Varner认为，只有旨在确保目标物种整体福利、生态系统完整性或两者兼顾的“治疗性狩猎”才可辩护，即当狩猎有益于动物及其生态系统时才道德正当。B项“同时服务于人类和动物利益”不准确，因为仅使人类受益的狩猎被他否定；C、D项均偏离其标准。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What concept are green leaders trying to promote?",
+     "answer": "C",
+     "analysis": "最后一段明确提到绿色领袖们日益倡导猎人和环保团体之间的合作，因为他们都谴责城市扩张和栖息地破坏。A项仅涉及保护栖息地这一共同点，B项“严格控制城市发展”和D项“发展与保护的妥协”均未在文中体现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:38:00.197Z"
+}

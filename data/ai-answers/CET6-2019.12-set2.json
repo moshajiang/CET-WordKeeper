@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Having a sense of family responsibility is of great significance in modern society. It refers to the awareness that we should care for and contribute to our family members, rather than focus only on personal interests.\n\nFirst, a strong sense of family responsibility strengthens emotional bonds among family members. When everyone fulfills his or her own duties, the family becomes a warm harbor where people can gain support and comfort. Second, this sense helps cultivate positive qualities such as empathy, commitment, and self-discipline. These qualities not only make us more mature individuals but also benefit our future career and interpersonal relationships. Finally, since the family is the basic unit of society, responsible family members contribute to social stability and harmony.\n\nIn conclusion, developing a sense of family responsibility is both a personal virtue and a social need. We should start by caring for our parents, helping with housework, and participating actively in family decisions.",
+   "note": "开篇点题并定义家庭责任感；主体从增进亲情、培养品质、促进社会和谐三方面论证，层层递进；结尾总结呼吁。可复用句型：Having a sense of ... is of great significance; ... not only ... but also ...; In conclusion, ... is both ... and ...。结构清晰，用词准确。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The plum blossom ranks first among China's ten most famous flowers. Originating in southern China, it has been cultivated for over 3,000 years. In the depths of winter, plum blossoms of various colors, defying the bitter cold, bloom proudly in wind and snow. In traditional Chinese culture, the plum blossom symbolizes fortitude, purity, and elegance, inspiring people to face difficulties bravely and forge ahead. Since ancient times, many poets and painters have drawn inspiration from it, creating countless immortal works. The general public also loves plum blossoms, often using them for home decoration during the Spring Festival. Nanjing has designated the plum blossom as its city flower and holds an annual Plum Blossom Festival, when tens of thousands of people brave the severe cold to enjoy plum blossoms in the snow on Plum Blossom Mountain.",
+   "note": "难点：位居十大名花之首译作ranks first among；栽培历史和种植历史合并为has been cultivated避免重复；不畏严寒、傲然绽放用defying the bitter cold, bloom proudly；踏雪赏梅意译为enjoy plum blossoms in the snow。注意逻辑主语和定状结构符合英文习惯。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "许多城市上空持续的雾霾提醒着我们呼吸的空气已受到污染。全球超过80%的城市人口呼吸着未能达到世界卫生组织标准的空气；据估计，2015年有450万人因室外空气污染过早死亡。\n\n从全球来看，城市人口预计将在未来40年翻一番，新增的20亿人将需要新的居住地，以及相应的服务和城市出行方式。更重要的是，我们现在就城市设计所做的决定将决定未来几代人的日常生活和健康。那么，一个无霾或至少是低污染的城市会是什么样子？\n\n交通已经成为空气污染的同义词，许多国家打算在未来二十年内禁止销售汽油车和柴油车。但仅仅转向电动汽车并不意味着城市将实现零污染。电动汽车产生的排放水平取决于驱动它们的电力是如何产生的，而刹车、轮胎和道路在磨损时都会产生微小的空气传播颗粒物。\n\n在发达国家，随着更多人迁往市中心，汽车使用量正在下降，尤其是年轻人更倾向于选择其他出行方式。研究人员已经在探讨机动车使用是否已经达到峰值并将下降，但交通规划者尚未跟上这一趋势，反而在修建新路来应对交通拥堵。伦敦环线M25高速公路的使用者都知道，新路很快就会被更多车辆填满。在美国，研究表明，将道路规模扩大一倍只会使交通量翻倍，让我们回到原点。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "K",
+     "analysis": "空格在 died 后，需副词修饰动词；备选副词中 prematurely 意为“过早地”，与 died from outdoor air pollution 构成合理语义，表示因室外空气污染过早死亡。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "C",
+     "analysis": "will 后需动词原形；determine 意为“决定”，主语 decisions 与宾语 lives and health 搭配，表示现在的决定将决定未来世代的生活与健康。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "N",
+     "analysis": "become 后接形容词作表语，且空后 with 提示固定搭配 synonymous with，意为“与……同义/密不可分”，表示交通与空气污染紧密相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "M",
+     "analysis": "simply 后跟动名词短语作主语；switch to electric cars 为固定搭配，表示“转而使用电动汽车”，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "D",
+     "analysis": "how the electricity is ___ 为被动语态，需过去分词；generated 意为“产生、发（电）”，表示电力是如何产生的。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "I",
+     "analysis": "tiny airborne 后需复数名词；particles 意为“颗粒物”，指刹车、轮胎、道路磨损产生的微小空气颗粒物。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "H",
+     "analysis": "are 后接现在分词构成进行时，且空后 for 提示固定搭配 opt for，表示“选择”；句意为年轻人选择其他出行方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "J",
+     "analysis": "its 后需名词；reach its peak 为固定搭配，表示“达到峰值”，指机动车使用量达到最高点后下降。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "O",
+     "analysis": "this 后需可数名词单数；trend 意为“趋势”，与 catch up with 搭配，表示交通规划者尚未跟上这一趋势。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "L",
+     "analysis": "空在情态动词 can 与动词 double 之间，需副词；simply 意为“仅仅、只不过”，强调新增道路只会使交通量翻倍，回到原点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "去年，英国一家医院出生了一个心脏在体外的女婴。很少有婴儿能在这种罕见病症中存活下来，存活下来的婴儿也必须经历多次手术，并且很可能有复杂的需求。三周后，当她的母亲接受采访时，被问及是否做好准备承担照顾女儿这一可能令人生畏的任务时，她毫不犹豫地回答说，对她而言，这将是一种“特权”。\n\n这几乎是态度力量的最佳例证，态度是我们最强大的心理工具之一。我们的态度使我们能把错误变成机遇，把损失变成新开始的机会。态度是对特定对象、人物、事件或意识形态的一种固定的思维、感受和/或行为方式。我们用自己的态度来过滤、解释和应对周围的世界。态度不是天生的；相反，它们都是后天习得的，而且通过多种方式习得。\n\n最强大的影响发生在幼儿期，既包括直接发生在你身上的事，也包括你周围人在你面前做的事和说的话。随着你获得独特的身份，你的态度会进一步受到你认同的人的行为的细化——你的家人、与你同性别和同文化的人，以及你崇拜的人，即使你并不认识他们。友谊和其他重要关系变得越来越重要，尤其是在青春期。大约在同一时期以及整个成年期，你接收的信息，尤其是当观点与你觉得有吸引力的目标和成就联系在一起反复出现时，也会细化你的态度。\n\n许多人认为我们的态度是内部一致的，也就是说，你对某人或某事的想法和感受可以预测你对他们的行为。然而，许多研究发现，感受和想法并不一定能预测行为。一般来说，只有当行为容易做到，并且你周围的人持有相似信念时，你的态度才会内部一致。这就是为什么，例如，许多人说他们相信回收或锻炼的好处，但行为却与他们的观点不一致，因为要超越仅仅声称自己相信某事是个好主意，需要意识、努力和勇气。\n\n改变态度最有效的方法之一就是开始表现得好像你已经有了你想要的感受和想法。花些时间反思你的态度，想想你相信什么以及为什么。有没有什么事你认为是一种负担而不是特权？如果有，那就现在开始表现得好像后者才是事实。",
+   "questions": [
+    {
+     "stem": "46. What do we learn from the passage about attitude?",
+     "answer": "C",
+     "analysis": "文章第二段指出我们用态度来过滤、解释和应对周围的世界，即态度决定我们如何回应直接环境，故C正确。A项“塑造信念和意识形态”是对原文“态度针对意识形态”的曲解；B项“改善心理健康”文章未直接提及；D项“改变我们思考、感受和互动的方式”与原文中态度本身是一种方式不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What can contribute to the refinement of one’s attitude, according to the passage?",
+     "answer": "A",
+     "analysis": "第三段明确提到你崇拜的人（即使不认识）的行为会细化你的态度，A项“偶像的行为”与此对应。B项教育水平、C项与异性接触、D项与不同文化互动均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do many studies find about people’s feelings and thoughts?",
+     "answer": "A",
+     "analysis": "第四段直接指出许多研究发现感受和想法并不一定能预测行为，A项“它们可能不表明一个人将如何行为”是同义转述。B、D项与原文相反；C项“在人际关系中得不到表达”文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. How come many people don’t do what they believe is good?",
+     "answer": "D",
+     "analysis": "第四段末尾解释许多人言行不一的原因是这需要意识、努力和勇气，D项“缺乏意志力”概括了这些因素。A项时间不足、B项不知如何做、C项虚伪均非文章所述原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is proposed as a strategy to change attitude?",
+     "answer": "B",
+     "analysis": "最后一段提出改变态度的有效策略是开始表现得好像你已拥有想要的感受和想法，B项“开始以体现个人愿望的方式行动”与此相符。A项改变需要立即注意的事、C项逐渐调整行为、D项考虑减少心理负担均与原文策略不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "一份新报告显示，在南极洲周围未受破坏的海域，磷虾的工业化捕捞正威胁着世界上最后几片原始荒野之一的未来。\n\n绿色和平组织的这项研究分析了该地区磷虾捕捞船的动向，发现它们越来越多地在“企鹅栖息地和鲸鱼觅食地附近”作业。研究还强调了渔船搁浅、漏油和事故等事件，这些事件对南极生态系统构成了严重威胁。\n\n这份报告于周二发布，正值人们日益担忧捕捞和气候变化对南极的影响之际。一项全球性运动已经发起，旨在建立海洋保护区网络以保护该地区海域，绿色和平组织呼吁立即停止在拟议保护区内的捕捞活动。\n\n绿色和平组织“保护南极”运动的弗里达·本特松说：“如果磷虾行业想表明自己是一个负责任的参与者，那么它就应该自愿撤出任何被提议作为海洋保护区的区域，转而支持保护南极洲的大片区域。”\n\n一项全球运动已经发起，旨在将南极海域的大片区域变成海洋保护区，以保护野生动物，不仅禁止磷虾捕捞，还禁止所有捕捞。2016年在罗斯海建立了一个保护区，另一个保护区拟设在威德尔海的大片区域，第三个保护区正在考虑设在南极半岛以西——一个重要的磷虾捕捞区。\n\n南极海洋生物资源保护委员会（CCAMLR）负责管理南极周围海域。它将在10月于澳大利亚举行的会议上决定威德尔海保护区提案，不过半岛保护区的决定预计要晚些时候才会做出。\n\nCCAMLR的科学经理基思·里德说，该组织寻求“在南大洋的保护、养护和可持续捕捞之间取得平衡”。他说，虽然更多捕捞活动发生在企鹅栖息地附近，但往往发生在季节后期，此时这些栖息地已经空了。\n\n“建立海洋保护区体系是CCAMLR正在进行的科学和政策讨论的关键部分，”他补充说。“我们在该地区的长期运作依赖于健康繁荣的南极海洋生态系统，这就是为什么我们一直与环境非政府组织保持公开对话。我们强烈打算继续这种对话，包括与绿色和平组织的会谈，以根据最新科学数据讨论改进。我们不是决定建立海洋保护区的人，但我们希望用我们的知识和经验作出积极贡献。”",
+   "questions": [
+    {
+     "stem": "51. What does Greenpeace’s study find about krill fishing?",
+     "answer": "C",
+     "analysis": "研究直接发现磷虾捕捞船在企鹅栖息地和鲸鱼觅食地附近作业，因此选C。A项“迁徙”无中生有；B项“剥夺栖息地”程度过重且未提及；D项“前所未有的威胁”表述宽泛且原文未强调“unprecedented”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. For what purpose has a global campaign been launched?",
+     "answer": "B",
+     "analysis": "文中明确说发起全球运动是为了建立海洋保护区网络（sanctuaries），即建立保护区。A项气候变化只是背景之一；C项监管捕捞并非运动目的；D项宣传担忧不符原文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is Greenpeace’s recommendation to the krill industry?",
+     "answer": "A",
+     "analysis": "绿色和平组织建议磷虾行业自愿撤出任何被提议作为海洋保护区的区域，也就是远离拟议保护区作业，故选A。B项保护濒危物种过于笼统；C项繁殖期禁捕未提及；D项领导全球运动错误。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What did CCAMLR aim to do according to its science manager?",
+     "answer": "D",
+     "analysis": "CCAMLR科学经理说该组织寻求保护、养护与可持续捕捞之间的平衡，即在不破坏南极生态系统的前提下维持捕捞，故选D。A项未提及提高公众意识；B项禁止所有商业捕捞与原文相反；C项禁止一切捕捞干扰过于绝对。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. How does CCAMLR define its role in the conservation of the Antarctic environment?",
+     "answer": "C",
+     "analysis": "CCAMLR表示自己不是决定建立保护区的人，但希望用知识和经验作出积极贡献，这说明它将自己定位为提供专业知识的角色，故选C。A项协调者未被明确表述；B项大数据分析无依据；D项保护区发起者与原文相反。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A）营销很诱人：只需在早间的奶昔或果汁饮料中添加蛋白粉，就能以最小的努力获得更强壮的肌肉和更健康的身体。或者在午餐时或作为快餐吃一根蛋白棒。如今，蛋白质补充剂随处可见——网上、药店杂货店或健康食品店。它们有粉剂、片剂和棒状。据市场研究公司 Grand View Research 称，该行业今年销售额超过120亿美元，正蓬勃发展，并有望在2025年前再卖出数十亿美元。但我们真的需要所有这些补充蛋白质吗？这要视情况而定。有好处、坏处和一些平淡之处需要考虑。\n\nB）首先，蛋白质对我们身体的每一个细胞都至关重要。它有助于构建指甲、头发、骨骼和肌肉。与不含蛋白质的食物相比，它还能让你更长时间有饱腹感。而且，与只存在于少数食物中的营养素不同，蛋白质几乎无处不在。约翰·霍普金斯大学麦库西克-纳森斯遗传医学研究所的注册营养师安吉拉·皮皮托内说：“典型的美国饮食中的蛋白质含量比我们很多人想象的要高得多。”她说，它存在于我们许多人预料到的食物中，如牛肉、鸡肉和其他肉类及奶制品。但它也存在于我们可能不会立刻想到的食物中，如蔬菜、水果、豆类和谷物。\n\nC）美国政府对普通成年人的每日推荐摄入量（RDA）是每天50至60克蛋白质。这听起来可能很多，但皮皮托内说：“我们这里一点那里一点地摄入蛋白质，一天下来真的会累积起来。”以早餐为例。如果你吃两个鸡蛋，上面加一点奶酪，旁边再吃一个橙子，你已经有22克蛋白质了。每个鸡蛋给你7克；奶酪给你大约6克，橙子大约2克。再加上一顿鸡肉、米饭和西兰花的午餐，你就已经超过了推荐的50克。皮皮托内说：“你甚至还没到晚餐就能获得足够的蛋白质并达到推荐摄入量。”\n\nD）那么，如果从食物中获取蛋白质如此容易，为什么还要以蛋白粉、零食棒或在当地果汁吧加一份的方式额外补充呢？皮皮托内说没有必要，因为事实上，我们大多数人已经从饮食中获得了足够的蛋白质。“天然食物总是比添加补充剂更好的选择，”她说，并指出美国食品药品监督管理局对补充剂的监管不像对食品或药物那样严格，因此可能蛋白质含量更低，糖更多，还有一些你意想不到的添加剂，如咖啡因甚至类固醇。\n\nE）她说，如果你正在考虑服用补充剂，请阅读成分表，尽管这并不总是万无一失。“我见过非常昂贵的蛋白质补充剂，声称是高质量的，但对普通健康成年人来说可能并没有真正的好处，”她说，“这可能只是浪费钱。”\n\nF）但在某些情况下确实需要额外蛋白质。皮皮托内说：“每当你处于合成代谢状态或在增肌时”，例如如果你是一名极限耐力运动员、为马拉松训练，或者是一名健美运动员。如果你按照美国疾病控制与预防中心的建议每周适度锻炼150分钟或更少，你很可能不是极限运动员。极限运动员消耗大量能量来分解、修复和构建肌肉。蛋白质可以给他们提供所需的优势，加快这一过程。\n\nG）纯素食者可以从蛋白质补充剂中受益，因为他们不吃动物性蛋白质来源，如肉类、奶制品或鸡蛋。而且，对于那些总是忙碌、可能没有时间吃饭的人来说，蛋白质零食棒可以作为偶尔代餐的不错选择。此外，从手术或受伤中恢复的人也可以从额外蛋白质中受益。老年人也是如此。杜克大学医学院衰老研究员凯瑟琳·斯塔尔说，大约在60岁时，“肌肉真的开始分解”，“正因为如此，再加上随着年龄增长我们身体分解蛋白质的能力下降，老年人对蛋白质的需求实际上增加了。”\n\nH）事实上，斯塔尔最近与她的同事康妮·贝尔斯一起进行了一项小型研究，发现给试图减肥的肥胖老年人的饮食中添加额外的蛋白质食物可以增强他们的肌肉。研究参与者被分成两组——一组被要求以天然食物的形式每餐摄入30克蛋白质。这意味着他们每天摄入90克蛋白质。另一组——对照组——被安排采用典型的低热量饮食，每天约摄入50至60克蛋白质。\n\nI）六个月后，研究人员发现高蛋白组的肌肉功能显著改善——几乎是对照组的两倍。斯塔尔说：“他们能够走得更快，平衡能力得到改善，从椅子上站起来的速度也比对照组快。”所有67名参与者都超过60岁，两组的体重减轻量大致相同。斯塔尔目前正在研究高蛋白饮食是否也能改善老年人肌肉本身的质量。她正在使用CT扫描来测量肌肉大小和脂肪，并将高蛋白饮食的老年人与普通饮食的老年人进行比较。她说她的研究结果应会在几个月内公布。\n\nJ）与此同时，斯塔尔最新研究中高蛋白组的70岁科利斯·基思说，她感觉大不一样。“我感觉棒极了，”她说，“我觉得自己好像换了一副身体，精力更充沛，更强壮了。”她说她现在每周能上三次尊巴健身课，在跑步机上锻炼，还能进行长距离快走。基思还减掉了15磅多。“我是个时尚的人，所以现在我又穿回了三英寸的高跟鞋，”她说。\n\nK）斯塔尔研究员说，随着人们年龄增长，肌肉力量是帮助他们保持强壮并继续独立在自己家中生活的关键。基思说：“我现在感觉自己非常有活力，我觉得我可以独自生活到100岁。”\n\nL）但人们会蛋白质摄入过量吗？皮皮托内说你确实需要小心。蛋白质过多会导致恶心、痉挛、头痛、疲劳和腹胀。摄入过多蛋白质时也有脱水风险。皮皮托内说，如果你增加蛋白质摄入，也必须增加液体摄入量。“我总是告诉人们要确保喝足够的液体，”对于普通人来说，每天是60到70盎司，也就是每天8杯8盎司的水或其他液体。\n\nM）她说，有一些迹象表明，额外蛋白质会使肾脏更费力地工作，这对有肾脏病史的人来说可能会带来问题，对他们而言，补充剂可能会增加肾结石的风险。\n\nN）底线：如果你认为自己饮食中需要更多蛋白质，请考虑以下问题：你是极限运动员吗；你正在从受伤或手术中恢复吗；或者你已经60岁或以上了吗？如果是，那么在饮食中添加鸡蛋和肉类等高蛋白食物可能有益。而且，如果你不确定，最好咨询你的初级保健提供者。",
+   "questions": [
+    {
+     "stem": "36. It is quite easy for one to take in the recommended amount of protein.",
+     "answer": "C",
+     "analysis": "依据C段中“We get bits of protein here and there and that really adds up throughout the day.”及“You can get enough protein and meet the RDA before you even get to dinner.”，说明很容易达到推荐摄入量。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Pipitone claims that healthy adults need not spend money on protein supplements.",
+     "answer": "E",
+     "analysis": "依据E段中“they might not really be beneficial for the average healthy adult”及“It could just be a waste of money.”，说明健康成年人不必在蛋白质补充剂上花钱。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The protein supplement business is found to be thriving.",
+     "answer": "A",
+     "analysis": "依据A段中“With more than $12 billion in sales this year, the industry is booming”，说明蛋白质补充剂行业兴旺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Protein can speed the repairing of damaged muscles.",
+     "answer": "F",
+     "analysis": "依据F段中“Extreme athletes expend lots of energy breaking down and repairing and building muscles. Protein can give them the edge they need to speed along that process.”，说明蛋白质能加速肌肉修复。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Protein supplements may overburden some internal organ, thus leading to its malfunctioning.",
+     "answer": "M",
+     "analysis": "依据M段中“extra protein makes the kidneys work harder which could be problematic for individuals with a history of kidney disease”，说明蛋白质补充剂可能加重肾脏负担并引发功能障碍。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Older adults need to take in more protein to keep their muscles strong.",
+     "answer": "G",
+     "analysis": "依据G段中“the protein needs of an older adult actually increases”，因为肌肉开始分解且身体分解蛋白质能力下降，说明老年人需要更多蛋白质维持肌肉。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Protein is found in more foods than people might realize.",
+     "answer": "B",
+     "analysis": "依据B段中“protein is pretty much ubiquitous”及“it's also in foods that may not come immediately to mind like vegetables, fruit, beans and grains.”，说明蛋白质存在于比人们意识到的更多食物中。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Additional protein was found to help strengthen the muscles of overweight seniors seeking weight loss.",
+     "answer": "H",
+     "analysis": "依据H段中“adding extra protein foods to the diet of obese older individuals who were trying to lose weight strengthened their muscles.”，说明额外蛋白质有助于超重老年人减重时增强肌肉。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Pipitone believes that whole foods provide the best source of protein.",
+     "answer": "D",
+     "analysis": "依据D段中“Whole foods are always the best option rather than adding supplements”，说明皮皮托内认为天然食物是蛋白质的最佳来源。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. People are advised to drink more liquid when they take in more protein.",
+     "answer": "L",
+     "analysis": "依据L段中“if you increase protein, you also have to increase your fluid intake.”，说明摄入更多蛋白质时建议增加液体摄入。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:35:43.193Z"
+}

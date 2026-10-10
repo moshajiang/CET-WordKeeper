@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Mutual understanding and respect are the cornerstones of healthy interpersonal relationships. In daily interactions, whether with family, friends or colleagues, these two qualities help bridge differences and build trust.\n\nWithout mutual understanding, people tend to misinterpret each other's intentions, leading to unnecessary conflicts. For instance, a simple disagreement may escalate into a serious quarrel if neither side is willing to see things from the other's perspective. Likewise, a lack of respect often makes others feel undervalued, which gradually erodes the foundation of any relationship. On the contrary, when we genuinely try to understand others and show respect for their opinions and backgrounds, communication becomes smoother and problems can be resolved more easily. Moreover, such an attitude encourages openness and empathy, creating a positive cycle in which both parties feel appreciated.\n\nIn conclusion, mutual understanding and respect are indispensable for maintaining harmonious relationships. We should consciously cultivate these qualities in our daily lives, as they not only strengthen personal bonds but also contribute to a more tolerant society.",
+   "note": "本文切题准确，首段点明互相理解和尊重是健康人际关系的基石；第二段从正反两方面论证，先论述缺乏二者会导致冲突和关系恶化，再说明拥有它们能促进沟通与和谐，对比鲜明；末段总结并升华至社会层面。可复用句型包括“Mutual understanding and respect are the cornerstones of...”、“Without..., people tend to...”、“On the contrary, when...”以及“In conclusion, ... are indispensable for...”。全文结构清晰，逻辑连贯，用词符合四六级水平。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "自周五起，美国演员工会及广播电视艺人联合工会（SAG-AFTRA）宣布对11家电子游戏发行商发起罢工，涉及2015年2月17日之后投入制作的游戏。这些公司包括业内一些重量级企业，如艺电制作公司、失眠症游戏公司、动视和迪士尼。此次罢工源于既有的劳动合同《互动媒体协议》于2014年底到期后，长达19个月的谈判未能取得成功。总体而言，这次罢工旨在争取更多的追加酬金，并涉及其他诉求，例如在聘用演员时保持透明以及制作中的安全保障措施。近年来，电子游戏产业急剧膨胀。《洛杉矶时报》报道称，该行业正处于现金流激增之中。2015年，游戏产业在美国国内创造了235亿美元的收入。但SAG-AFTRA表示，配音演员没有因游戏作品获得追加酬金。相反，他们拿的是固定报酬，通常一场标准的四小时配音工作约为825美元。因此，配音演员们正在推动追加酬金的想法——每当一款游戏的销量或下载量达到200万份，或订阅用户达到200万时，就发放一笔绩效奖金，上限为800万。“能够触发这种追加酬金的游戏数量非常少。”配音演员、工会谈判委员会成员克里斯平·弗里曼说，“这是作为一名自由职业表演者的重要方面，自由职业者并不是每天都有固定的项目工作。”演员们的另一大不满是这个行业的保密性。“我无法想象世界上还有哪种表演工作，在你被雇用的时候却不知道自己在演什么节目。”担任SAG-AFTRA谈判委员会主席的配音演员基思·法利说。“然而在电子游戏行业，这种情况每天都在发生。”法利在周五的新闻发布会上对记者说，“我曾是《辐射4》中的一个主要角色，名叫凯洛格，但在那一年半的时间里，我从来不知道自己在为这款游戏做配音录制。”代表游戏公司的律师斯科特·维特林表示，配音演员“在制作一款电子游戏的全部工作中所占的比例不到千分之一。”因此，“尽管他们是业内顶尖的工匠，”维特林说，“如果我们用一套与承担99.9%工作的人截然不同的薪酬体系来支付他们，那将给游戏公司带来更多问题。”",
+   "questions": [
+    {
+     "stem": "46. Why did SAG-AFTRA declare a strike against some video game publishers?",
+     "answer": "D",
+     "analysis": "文章明确说，在原有合同2014年底到期后，双方进行了19个月未成功的谈判，由此引发罢工，说明谈判破裂。A项“合同被违反”、B项“重新谈判请求被拒绝”、C项“谈判中被反复欺骗”均未在原文提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn from the passage about the video gaming industry?",
+     "answer": "A",
+     "analysis": "文章提到电子游戏行业近年急剧扩张，现金流激增，2015年国内收入达235亿美元，可推知行业获利丰厚。B项与原文所说的行业保密相反；C、D项原文未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What are the voice actors demanding?",
+     "answer": "C",
+     "analysis": "配音演员要求的是“追加酬金”，即每当游戏销量或下载量达到200万（或订阅用户达200万）时获得绩效奖金，这是基于销售业绩的额外报酬。A、B、D均不符合该要求。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does Keythe Farley say about voice actors?",
+     "answer": "A",
+     "analysis": "法利指出配音演员被雇用时往往不知道自己在为哪部作品配音，他本人录制《辐射4》一年多却不知情，说明演员对工作细节被蒙在鼓里。B、C、D项未在法利的话中体现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is the argument of lawyer Scott Witlin?",
+     "answer": "B",
+     "analysis": "律师维特林认为，如果给只占工作总量不到千分之一的配音演员采用截然不同的薪酬体系，会给游戏公司带来更多问题，即改变薪酬体系会带来麻烦。A项误解了他的意思；C项说配音演员只是工匠而非专业表演者，与原文“顶尖工匠”但并非贬低演员身份不符；D项原文未涉及合法性。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "个性化飞行的梦想在许多发明家心中依然鲜活，一些人研发人力飞行器，另一些人则向喷气飞行背包投入大量资金。然而，飞行汽车一直是个人交通自由的终极象征。世界上几家公司已经生产出既能在地面行驶又能飞行的原型机。空客公司有一个未来主义的模块化概念，包括一个可以从道路底盘上拆卸下来、由直升机式机器吊起的乘客舱。但所有这些概念都非常昂贵，需要同时满足道路和空中的安全认证标准，需要双重操控系统，涉及复杂的折叠机翼和螺旋桨，并且必须在跑道上起降。因此，它们很可能仍然是富人的玩具，而不是面向大众的实用交通解决方案。“一辆从伦敦某条街道起飞、降落在另一条随机街道上的汽车不太可能出现，”著名航空工程师格雷教授说。“空中出租车更有可能实现。”但这并不能阻止发明家们想出新的飞行方式，并试图说服投资者支持他们那些有时异想天开的计划。民用航空正在被颠覆，不是出于对速度、浪漫和魅力的古老渴望，而是出于应对气候变化的迫切需要。新型电动发动机与人工智能和自主系统相结合，将有助于建立一个更高效、更集成、污染更少、噪音更低的交通系统。这听起来可能很简单，但正如格雷教授所说：“当我旅行时，我喜欢这样一种想法：当我结束旅程时，我感觉比出发时更好。这与我今天的感受完全相悖。”那才是真正的进步。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "I",
+     "analysis": "动词现在分词，与前面 developing 并列；固定搭配 pour money into 表示“向……投入大量资金”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "O",
+     "analysis": "形容词作定语修饰 symbol，表示“终极象征”，强调飞行汽车在个人交通自由中的最高地位。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "J",
+     "analysis": "复数名词作 produced 的宾语，后接 that 定语从句；prototypes 指“原型机”，能驾驶和飞行。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "B",
+     "analysis": "过去分词用于被动语态；固定搭配 be detached from 表示“从……拆卸下来”，符合乘客舱与底盘分离的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "形容词修饰 controls；dual controls 指“双重操控系统”，飞行汽车需同时满足道路和空中操控。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "K",
+     "analysis": "形容词修饰 street；random street 意为“随机街道”，与前面的 some street 呼应，强调任意性。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "H",
+     "analysis": "形容词修饰 schemes；outrageous schemes 表示“离谱/大胆的计划”，符合难以获得投资支持的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "D",
+     "analysis": "名词与 speed、romanticism 并列，作 desires for 的宾语；glamour 表示“魅力”，符合古老渴望的列举。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "形容词修饰 systems；autonomous systems 意为“自主系统”，与人工智能搭配，符合技术发展趋势。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "固定短语 at odds with 表示“与……相悖/不一致”，符合语境：期待与现实不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "China is a vast country with a large population, and people in many places speak their own dialects. Dialects differ greatly in pronunciation but less so in vocabulary and grammar. Some dialects, especially those spoken in the north and the south, differ so much that speakers of different dialects often find it difficult to understand each other. Dialects are regarded as an integral part of local culture, but in recent years the number of people who can speak dialects has been decreasing. To encourage people to speak local dialects more often, some local governments have taken measures, such as offering dialect courses in schools and broadcasting programs in local dialects on radio and television, in the hope of preserving local cultural heritage.",
+   "note": "难点在于处理“差别很大/较小”的对比和“以致于”引导的结果状语；可分别用 differ greatly/less so 和 so...that...。关键表达如“幅员辽阔、人口众多”译为 vast country with a large population，“能说方言的人数”转换为定语从句 the number of people who can speak dialects，“以期”用 in the hope of preserving。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 作为消费者，我们非常浪费。全球每年产生13亿吨固体废物。预计到2025年这一数字将上升到22亿吨。发达国家产生了44%的废物；仅在美国，平均每人每月丢弃的垃圾量相当于自身体重。\nB) 传统观念似乎认为，企业没有动力延长产品生命周期，因为这会减少销售新商品带来的收入。然而，越来越多的企业正在思考如何减少消费者浪费。部分原因是原材料和金属价格上涨；同时也因为消费者和企业都越来越意识到保护环境的必要性。\nC) 在选择购买什么产品和哪个品牌时，越来越多的消费者会考虑可持续性，而不像过去只关注价格和性能。一项针对全球54个领先品牌的调查显示，几乎所有品牌都报告说，消费者越来越关心可持续生活方式。同时，针对美国和英国消费者的调查显示，他们也关心尽量减少能源消耗和减少废物。\nD) 在很大程度上，消费者决定一件产品最终的命运。但一些企业正意识到，把回收的责任完全推给消费者并不是有效策略，尤其是当把东西扔掉似乎是最简单、最方便的选择时。\nE) 服装、鞋类和电子行业的一些零售商和制造商已经启动了环保项目。他们希望让顾客有兴趣保存产品，防止仍有价值的东西被送进垃圾堆。通过提供服务延长产品寿命，他们向消费者承诺质量和耐用性，并因环保而获得声誉收益。\nF) 例如，瑞典牛仔裤公司Nudie Jeans在20家门店提供免费修补服务。顾客不是把破旧牛仔裤扔掉，而是拿来翻新。该公司甚至提供邮寄修补工具包和在线视频，让顾客在家学习修补牛仔裤。他们的理念是，延长一条牛仔裤的寿命不仅对环境有益，还能让消费者从产品中获得更多价值。当顾客确实想扔掉时，可以把牛仔裤送回门店，门店会对其再利用并转售。另一家服装公司、高端户外服装店Patagonia也遵循同样的原则。它与DIY网站iFixit合作，教消费者在家修补衣物，例如防水外套。该公司还以适度收费为顾客提供修补服务。目前，Patagonia每年在内华达州里诺的服务中心修补约4万件服装。该公司首席执行官Rose Marcario表示，这关乎打造一家关心环境的公司。同时，提供修补服务也有助于提升其产品的感知质量。\nG) 在巴西，跨国公司阿迪达斯自2012年起开展名为“可持续足迹”的鞋类回收项目。顾客可以把任何品牌的鞋子带到阿迪达斯门店，鞋子会被粉碎并转化为替代燃料用于产生能源，而不是作为垃圾焚烧。这些材料被用来为水泥窑提供燃料。为了激励访客带来更多旧鞋，阿迪达斯巴西公司通过在门店播放视频教育顾客，并在顾客每次带来旧鞋时提供折扣。这让人们更了解公司的价值观，从而提升阿迪达斯的声誉和形象。\nH) 电子废弃物也蕴藏着巨大机会。据估计，2014年全球产生了约4200万吨电子垃圾（废弃的电气电子设备及其零部件），其中北美占800万吨，欧洲占1200万吨。电子垃圾中的材料包括铁、铜、金、银和铝，这些材料可以再利用、转售、回收或再生。这些金属的总价值估计约为520亿美元。百思买和三星等电子巨头在过去几年推出了电子垃圾回收计划，旨在将旧电子元件和零部件翻新成新产品。\nI) 对于其他有意减少浪费、保护环境并提供消费者所追求的可持续生活方式的企业，以下是建立以回收和恢复产品价值为重点的客户关系的一些初步步骤。\nJ) 寻找合作伙伴。如果你是依赖外部经销商的制造商，那么零售商就是回收旧产品的理想合作伙伴。电动工具制造商DeWalt与劳氏和纳帕汽车配件等公司合作，在门店收集旧工具进行回收。这种合作通过让非常规合作伙伴（例如来自两个不同行业的两家公司）在价值链的特定环节合作，使双方受益，比如在这个例子中，一家发动机公司与一家配件公司合作。\nK) 建立激励机制。环保意识并不总是足以让顾客回收旧物品。例如，DeWalt发现许多承包商保留着旧工具，即使已经不能用了，因为这些工具当初很贵，很难说服自己拿来回收。通过提供最高100美元的即时折扣，DeWalt推出了以旧换新计划，鼓励人们把工具带回来。结果，DeWalt现在重新利用这些材料制造新产品。\nL) 从试点项目开始，并准备在过程中调整细节。任何回收计划都可能随着时间推移而变化，取决于对顾客和公司目标而言什么有效。也许一开始顾客参与度很低，或者相反，效果好到回收成本变得过高。例如，百思买一直在承担电子垃圾的大部分处理量，因为它最大的两个竞争对手亚马逊和沃尔玛没有自己的回收计划。自计划启动以来，百思买调整了政策，对回收旧电视收取25美元费用，以维持项目运转。\nM) 与顾客建立共同价值观的文化。零售商/生产商与消费者之间更牢固的关系不仅仅是金钱激励。通过让消费者更了解你在减少浪费方面的努力，并培养一种责任、修补和再利用的文化，你可以建立基于共同价值观和责任的客户忠诚度。\nN) 这些例子只是冰山一角，但它们展示了帮助顾客更好地利用材料如何能够改变价值链和运营。通过将旧材料纳入生产来减少浪费，可以降低成本并降低采购价格：从外部采购更少，从内部再利用更多。\nO) 企业在创建循环经济中发挥着重要作用——在循环经济中，价值越来越少地来自开采新资源，而更多地来自更好地利用我们已有的资源——但它们也必须让顾客参与到这一过程中来。",
+   "questions": [
+    {
+     "stem": "36. Some companies believe that products’ prolonged lifespan benefits both the environment and customers.",
+     "answer": "F",
+     "analysis": "该段提到Nudie Jeans的理念：延长牛仔裤寿命不仅对环境有益，还能让消费者从产品中获得更多价值。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. A survey shows shoppers today are getting more concerned about energy conservation and environmental protection when deciding what to buy.",
+     "answer": "C",
+     "analysis": "该段指出，针对美英消费者的调查显示，他们在选择购买什么产品时也关心尽量减少能源消耗和减少废物。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Companies can build customer loyalty by creating a positive culture of environmental awareness.",
+     "answer": "M",
+     "analysis": "该段明确指出，通过提高减少浪费的意识并培养责任、维修和再利用文化，可以建立基于共同价值观的客户忠诚度。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. When companies launch environmental programs, they will have their brand reputation enhanced.",
+     "answer": "E",
+     "analysis": "该段提到，一些零售商和制造商通过环保项目延长产品寿命，并因环保而获得声誉收益。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. One multinational company offers discounts to customers who bring in old footwear to be used as fuel.",
+     "answer": "G",
+     "analysis": "该段提到跨国公司阿迪达斯巴西公司对带来旧鞋用作燃料的顾客提供折扣，从而提升声誉和形象。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Recycling used products can help manufacturers reduce production costs.",
+     "answer": "N",
+     "analysis": "该段指出，将旧材料纳入生产可减少浪费，从而降低成本并降低采购价格。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Electronic products contain valuable metals that could be recovered.",
+     "answer": "H",
+     "analysis": "该段提到电子垃圾中含有铁、铜、金、银和铝等有价金属，可被再利用、转售、回收或再生。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. It seems commonly believed that companies are not motivated to prolong their products’ lifespan.",
+     "answer": "B",
+     "analysis": "该段开头指出，传统观念似乎认为企业没有动力延长产品生命周期。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. It is advisable for companies to partner with each other in product recycling.",
+     "answer": "J",
+     "analysis": "该段建议寻找合作伙伴，并以DeWalt与零售商合作回收旧工具为例说明合作回收的好处。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some businesses have begun to realize it may not be effective to let consumers take full responsibility for recycling.",
+     "answer": "D",
+     "analysis": "该段指出，一些公司正在意识到，将回收负担完全推给消费者并不是有效策略。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "白宫官员宣布了一项新的太空政策，重点是管理公司和政府向太空发射的越来越多的卫星。《太空政策指令-3》为美国缓解太空碎片影响以及跟踪和管理太空交通制定了总体指导方针。\n\n该政策为商务部接管太空交通管理奠定了基础。商务部将确保新发射的卫星不会使用会干扰现有卫星的无线电频率，并安排此类新卫星的发射时间。这仅适用于美国的太空活动，但希望这将有助于在全球刚刚起步的商业航天产业中推广一套规范。\n\n随着更多政府和公司发射卫星，太空，尤其是地球周围的太空，正变得越来越拥挤。制定该政策的一个动力是，一些公司已经开始建造由数百甚至数千颗卫星组成的巨型星座，其中有许多可移动部件。太空中有这么多物体，而地球周围的空间有限，政府希望降低碰撞的几率。两颗或更多卫星相撞可能会产生更多失控碎片，对太空中日益增多的卫星构成更大危险。\n\n而且此类事件以前并非没有发生过。2009年，一个旧的俄罗斯航天器撞上了一颗通信卫星，产生了由数百块碎片组成的云团，危及其他硬件。记者莎拉·斯科尔斯报道，美国宇航局目前追踪约2.4万个太空物体；2016年，美国空军不得不向卫星所有者发出3995874次警告，提醒他们注意来自另一颗卫星或碎片的潜在附近威胁。\n\n正因如此，这项新政策还包含对现行《美国政府轨道碎片减缓标准做法》的更新指示。该标准做法已经要求任何发射卫星或航天器的实体严格分析其任何行动（无论是意外故障还是正常运行）产生更多太空碎片的可能性。其中包括说明他们计划释放的任何超过5毫米、可能在轨道上停留25年或更长时间的碎片。想到一个物体在太空中停留那么久可能令人惊讶，但仍在轨道上的最老卫星——先锋1号——在2018年已满60岁。\n\n世界各地的机构和公司正在努力开发能够在太空碎片造成严重损害之前将其处理或捕获的技术。但目前，美国政府更专注于防止新碎片形成，而不是把垃圾清出轨道。",
+   "questions": [
+    {
+     "stem": "51. What is the purpose of the new U.S. space policy?",
+     "answer": "D",
+     "analysis": "文章第一段指出新政策重点在于管理卫星并 track and manage traffic in space，即改善太空交通状况，故选D。A项把general guidelines限定在太空探索，与原文缓解碎片和交通管理不符；B、C未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the Department of Commerce expected to do under the new policy?",
+     "answer": "C",
+     "analysis": "第二段说商务部将确保新发射卫星不使用干扰频率，并安排发射时间，这属于对卫星发射的监管，故选C。A项减少碎片不是商务部职责；B项监视卫星运行过于笼统；D项更新通信技术未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the U.S. government hope to do with the new space policy?",
+     "answer": "A",
+     "analysis": "第二段末明确表示希望 help standardize a set of norms in the dawning commercial spaceflight industry throughout the world，即建立国际标准，故选A。B项垄断与原文相悖；C项便利商业航天并非政策的核心意图；D项太空探索国际合作未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is a space vehicle launching entity required to do according to the current U.S. Government Orbital Debris Mitigation Standard Practices?",
+     "answer": "D",
+     "analysis": "第五段要求发射实体 vigorously analyze the likelihood that any of their actions ... will create more space debris，即全面分析任何可能增加太空碎片的因素，故选D。A项只是分析要求中的具体一项；B项 at any time 有误；C项详细计划原文未要求。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What are space agencies and companies aiming to do at present?",
+     "answer": "B",
+     "analysis": "最后一段指出各机构和公司正致力于开发处理或捕获太空碎片的技术，即解决太空碎片问题，故选B。A项回收运载工具、C项限制碎片进入太空、D项合作回收碎片均与原文不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:32:04.073Z"
+}

@@ -21,7 +21,7 @@
       "questions": [
         {
           "qtype": "cloze",
-          "stem": "26",
+          "stem": "36",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -44,7 +44,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "27",
+          "stem": "37",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -67,7 +67,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "28",
+          "stem": "38",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -90,7 +90,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "29",
+          "stem": "39",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -113,7 +113,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "30",
+          "stem": "40",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -136,7 +136,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "31",
+          "stem": "41",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -159,7 +159,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "32",
+          "stem": "42",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -182,7 +182,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "33",
+          "stem": "43",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -205,7 +205,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "34",
+          "stem": "44",
           "options": [
             "A) accustomed",
             "B) acquired",
@@ -228,7 +228,7 @@
         },
         {
           "qtype": "cloze",
-          "stem": "35",
+          "stem": "45",
           "options": [
             "A) accustomed",
             "B) acquired",

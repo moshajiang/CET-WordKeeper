@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "When it comes to whether to attend college at home or abroad, opinions vary. In my view, studying abroad is a rewarding choice if financial conditions permit.\n\nFirst, studying abroad exposes students to diverse cultures and cutting-edge knowledge, which broadens their horizons and fosters independent thinking. Second, living in a foreign country enhances language proficiency and cross-cultural communication skills, both highly valued in today's globalized job market. However, it is worth noting that the high cost and potential culture shock should not be ignored.\n\nIn conclusion, while attending college at home is more economical and secure, studying abroad offers unique opportunities for personal growth. Therefore, I would advise students to weigh their own circumstances and pursue overseas education if possible.",
+   "note": "这篇范文开头直接引出话题并表明立场，结构清晰。主体段从拓宽视野和提升语言能力两个角度论证留学优势，并补充潜在挑战，体现辩证思维。结尾总结并给出建议。可复用句型：When it comes to..., opinions vary; In my view...; First/Second; It is worth noting that...; In conclusion...; I would advise... 用词难度适中，符合四六级高分要求。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Tang Dynasty, which began in 618 and ended in 907, is the most splendid period in Chinese history. After nearly three hundred years of development, Tang China became the most prosperous and powerful country in the world, with its capital Chang'an being the largest metropolis in the world at that time. During this period, the economy was highly developed, commerce flourished, social order remained stable, and even the borders were open to the outside world. With urbanization and increasing wealth, art and literature also thrived. Li Bai and Du Fu were poets known for the simplicity and naturalness of their works. Their poems touched the hearts of scholars and ordinary people alike. Even today, many of their poems are still widely read and recited by children and adults.",
+   "note": "难点在于四字格与历史表述：'最灿烂的时期'译作the most splendid period；'经济发达、商业繁荣'需用并列结构并注意时态；'对外开放'用open to the outside world；'简洁自然'处理为simplicity and naturalness；末句用被动语态体现地道。适当使用同位语和介词短语提升译文流畅度。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "田纳西州的职业技术院校和社区学院不会将设施管理外包给私营公司，一位领导人表示，这一决定得到了对各校区支出分析的支持。\n在周一致田纳西州校董会系统各大学校长的电子邮件中，即将离任的校长约翰·摩根表示，内部分析显示，各校区在设施管理上的支出远低于该州确定的行业标准。摩根表示，这些发现——包括该系统13所社区学院、27所技术学院和6所大学的数据——是不推进州长比尔·哈斯拉姆提出的将州建筑管理私有化以节省资金提议的部分原因。\n“虽然这些数字仍在由州政府验证，但我们认为它们可能建议的任何调整都无关紧要，”摩根在给校长们的邮件中写道。“基于这一分析，系统内院校运行非常高效，这就提出了推行大规模外包举措的价值问题。”\n工人权益倡导者批评了哈斯拉姆的计划，称这将意味着一些校园工人将失去工作或福利。哈斯拉姆曾表示，各学院可以自由选择加入或退出该外包计划，该计划尚未最终确定。\n摩根在上周发出的一封信中通知了哈斯拉姆政府他决定选择退出。这封信由孟菲斯的《商业呼声报》最先获得，其中包含摩根对该计划的若干担忧。\n在州“以客户为中心的政府办公室”的电子邮件声明中——该办公室正在研究外包的可能性——发言人米歇尔·R·马丁表示，官员们仍在分析校董会系统的数据。该学院系统以及其他州政府部门的管理支出数据，将成为州政府用来讨论外包计划细节的“业务论证”的一部分。\n“州设施管理项目团队仍在制定其业务论证，预计将在2月底完成并向公众公布，”马丁说。“目前没有什么可采取行动的，因为分析尚未完成。”\n摩根关于外包的言论是本月第二次他公开反对哈斯拉姆的田纳西州高等教育计划之一。摩根上周表示，由于州长提议将校董会系统中的六所大学分离出来并为每所大学设立独立的管理委员会，他将于1月底退休。在辞职信中，摩根称这一重组“不可行”。",
+   "questions": [
+    {
+     "stem": "46. What do we learn about the decision of technical and community colleges in Tennessee?",
+     "answer": "A",
+     "analysis": "文章首段明确指出，不外包的决定得到各校区支出分析的支持（bolstered by an analysis of spending at each campus）。其他选项：州长并未断然拒绝，未提及教职员工诉求或改善财务状况。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the campus spending analysis reveal?",
+     "answer": "B",
+     "analysis": "内部分析显示各校区设施管理支出远低于行业标准，表明高校自主管理更具成本效益。A、C、D均与原文分析内容无关或无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. Workers' supporters argue that Bill Haslam's proposal would _________.",
+     "answer": "C",
+     "analysis": "工人权益倡导者批评哈斯拉姆计划，称一些校园工人会失去工作或福利，对应“使一些校园工人失业”。其他选项没有出现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn from the state spokeswoman's response to John Morgan's decision?",
+     "answer": "A",
+     "analysis": "州发言人表示项目团队仍在制定业务论证，分析尚未完成，目前无可采取行动的事项，说明外包计划尚未最终确定。B、C、D与发言人审慎表述不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. Why did John Morgan decide to resign?",
+     "answer": "D",
+     "analysis": "摩根表示因州长提议拆分六所大学并为每所设立独立管理委员会而决定退休，并称该重组不可行。C错在“不可行”指重组方案而非外包计划，A、B过于宽泛或不准确。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "从16世纪晚期开始，年轻贵族访问巴黎、威尼斯、佛罗伦萨，尤其是罗马，作为他们古典教育的终极，成为一种时尚。于是“大旅行”的理念诞生了，这一做法在接下来的300年里让英国人、德国人、斯堪的纳维亚人以及美国人接触到法国和意大利的艺术与文化。在整个时期，旅行是艰辛且昂贵的，只有特权阶层才能进行——正是这个阶层产生了绅士科学家、作家、古董专家和艺术赞助人。大旅行者通常是年轻人，对希腊和拉丁文学有扎实的基础，同时有一些闲暇时间、一些钱财，以及对艺术的一些兴趣。德国旅行者约翰·温克尔曼以对希腊和罗马雕塑的全面研究开创了艺术史领域；他的朋友安东·拉斐尔·门斯在他长期居住罗马之初为他画了肖像。然而，大多数大旅行者停留时间较短，出发时学术意图较弱，由老师或监护人陪同，期望带着旅行纪念品回家，并通过接触伟大杰作形成对艺术和建筑的理解。伦敦是大旅行者常见的出发点，巴黎是必到的目的地；许多人前往荷兰，一些人去瑞士和德国，极少数冒险家去西班牙、希腊或土耳其。然而，必须参观的地方是意大利。英国旅行者查尔斯·汤普森在1744年描述自己时代表了许多大旅行者的心声，他说“迫不及待地渴望看到一个在历史上如此著名的国家，一个曾经给世界带来法律的国家，一个目前是音乐和绘画最伟大的学校，拥有最高贵的雕塑和建筑作品，充满了奇珍异宝柜和各种历史遗迹收藏”。在意大利境内，重点是罗马，其古代遗迹和较新的成就被展示给每一位大旅行者。帕尼尼的《古罗马》和《现代罗马》代表了最受珍视的景点，包括著名的希腊罗马雕像以及著名遗迹、喷泉和教堂的景观。由于18世纪末之前欧洲几乎没有任何博物馆，大旅行者通常通过获准进入私人收藏来观看绘画和雕塑，许多人渴望获得希腊罗马和意大利艺术的样品用于自己的收藏。在英格兰，建筑越来越被视为贵族的追求，贵族们常常把从威尼托的帕拉第奥别墅和罗马令人回味的废墟中学到的东西应用到自己乡村住宅和花园中。",
+   "questions": [
+    {
+     "stem": "51. What is said about the Grand Tour?",
+     "answer": "B",
+     "analysis": "第一段指出大旅行只可能属于特权阶层，因为旅行艰苦且费用高昂，即普通民众负担不起，故选B。A将范围扩大为所有年轻人，原文仅指年轻贵族；C曲解原文，文中未说出产著名欧洲艺术家；D将“古典教育的顶点”偷换为大学教育必修课。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What did Grand Tourists have in common?",
+     "answer": "C",
+     "analysis": "第二段明确大旅行者通常精通希腊和拉丁文学，且有艺术兴趣，故选C。A、D原文未提及地理知识或丰富旅行经验；B中勇敢冒险仅适用于极少数去西班牙等地的冒险者，并非共同点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. How did Grand Tourists benefit from their travel?",
+     "answer": "D",
+     "analysis": "第二段末指出大旅行者通过接触伟大杰作形成对艺术和建筑的理解，即获得古典艺术与建筑知识，故选D。A“找到灵感”过于主观且未明确提及；B“早期人类文明”范围过宽；C“现代艺术形式的起源”原文未涉及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. Why did many Grand Tourists visit the private collections?",
+     "answer": "B",
+     "analysis": "第四段指出18世纪末之前欧洲几乎没有博物馆，因此大旅行者常获准进入私人收藏观看绘画和雕塑，故选B。A“购买独特纪念品”是把之后收购艺术品的愿望当原因；C、D的比较原文均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. How did the Grand Tour influence the architecture in England?",
+     "answer": "A",
+     "analysis": "末段说英国贵族常将意大利帕拉第奥别墅和罗马废墟中学到的建筑理念应用于自己的乡村住宅和花园，这会促使更多罗马风格建筑出现，故选A。B“搬进别墅”、D“雇佣意大利建筑师”原文未提；C“所有乡村房屋”过于绝对。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "我们都不要再评判那些自言自语的人了。新研究表明，那些似乎无法把内心独白藏在心里的人，实际上更有可能专注于任务、更好地保持专注，并表现出更强的感知能力。对于多一些嘟囔来说，这真的不错。根据加里·卢皮扬和丹尼尔·斯威格尼教授发表在《实验心理学季刊》上的一系列实验，利用语言线索来触发心理图像有助于人们更快地做出反应。在一项实验中，他们向二十名志愿者展示了各种物体的图片，并要求他们只找出其中一种——香蕉。一半人被指示大声重复他们要找的东西，另一半人则保持嘴唇紧闭。研究人员称，那些自言自语的人比不这么做的人找到香蕉的速度稍快。在其他实验中，卢皮扬和斯威格尼发现，在寻找常见产品时说出其名称有助于加快节奏，但谈论不常见的物品则没有优势，反而会让你慢下来。普遍研究长期以来认为，通过自言自语来完成任务有助于儿童学习，尽管当你已经明显成熟时这样做并不是才华的显著标志。这两位教授希望反驳这一观点，他们声称，就像孩子们在过程中自我引导一样，成年人也能从使用语言中受益，不仅是为了交流，而且是为了帮助“增强思维”。当然，仍然鼓励你以图书馆里那样的音量说话，而且无论你做什么，分享的信息都要简单，就像购物清单一样。无论音量大小，信息过多仍然是存在的。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "F",
+     "analysis": "remain 后接形容词作表语，focused 表示“专注的”，且与前面的 stay on task 并列，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "to 后接动词原形，trigger mental pictures 表示“触发心理图像”，是固定搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "O",
+     "analysis": "twenty 后接复数名词，实验的对象应是“志愿者”volunteers。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "H",
+     "analysis": "were 后接过去分词构成被动语态，be instructed to do 表示“被指示做某事”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "J",
+     "analysis": "keep one's lips sealed 是固定搭配，表示“闭口不言、保持沉默”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "这里需要动名词作 found that 从句的主语，uttering the name 表示“说出名称”，与上下文自言自语一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "A",
+     "analysis": "完成时 have matured 中间插入副词 apparently，表示“显然已经成熟”，语义恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "C",
+     "analysis": "a sign of 后接名词，brilliance 表示“才华、聪明”，符合“不是聪明迹象”的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "D",
+     "analysis": "现在分词作伴随状语，claiming that... 表示“声称……”，逻辑主语是两位教授。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "at any volume 是固定搭配，表示“无论音量大小”，符合上下文。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "富孩子和穷孩子的成长方式差异巨大\nA) 美国富裕家庭和贫困家庭孩子的生活比以往任何时候都更加不同。\nB) 皮尤研究中心一项新调查显示，富裕家庭的生活由日程表主导，孩子们报名参加芭蕾、足球和课外项目。通常父母双全，他们花大量时间给孩子读书，并担心孩子的焦虑程度和繁忙的日程安排。\nC) 与此同时，贫困家庭的孩子往往待在家里或与亲戚在一起。他们更可能成长在父母认为不太适合养育孩子的社区，父母担心他们遭到枪击、挨打或惹上官司。\nD) 育儿方面的阶层差异正在扩大——这是贫富差距扩大的一个症状，并带来深远后果。不同的成长方式让孩子走上不同的道路，并可能加深社会经济分化，尤其是因为教育与收入密切相关。孩子们在成长过程中学到的是在其社会经济阶层中取得成功的技能，但不一定学到其他阶层所需的技能。\nE) 斯坦福大学教育贫困与不平等教授肖恩·里尔登说：“早期童年经历对儿童长期的社会、情感和认知发展可能非常重要。由于这些经历会影响学业成功和日后的收入，早期童年经历会投下一生的阴影。”这个循环还在继续：较贫穷的父母投入孩子身上的时间和资源更少，这可能使孩子对上学和就业准备不足，进而导致收入较低。\nF) 皮尤报告和过去的研究发现，美国父母对孩子有相似的期望：希望他们健康快乐、诚实正直、关心他人、富有同情心。研究人员说，没有最好的育儿方式或理念，而且在各收入群体中，92%的父母表示自己在养育孩子方面做得很好。然而，他们的做法却大不相同。安妮特·拉罗的突破性研究发表在她的《不平等的童年：阶级、种族与家庭生活》一书中。她说，中产阶级和高收入父母把孩子视为需要精心栽培的项目。他们试图通过密切监督和有组织的活动来培养孩子的技能，并教孩子质疑权威人物、在精英机构中游刃有余。\nG) 与此同时，工薪阶层父母相信孩子会自然成长，因此给予他们更大的独立性和自由玩耍的时间。孩子们被教导要顺从并尊重成年人。两种方式都有好处。拉罗发现，工薪阶层的孩子更快乐、更独立、抱怨更少、与家人更亲近。高收入家庭的孩子更容易感到无聊，并期望父母解决他们的问题。但到了后来，较富裕家庭的孩子上了大学，走上通往中产阶层之路，而工薪阶层孩子往往举步维艰。拉罗说，来自高收入家庭的孩子可能具备应对官僚机构以及在学校和职场中取得成功的技能。\nH) 她说：“所有父母都希望孩子获得最大的成功吗？当然。有些策略是否让孩子在机构中比别人更有优势？很可能有。如果孩子少参加一项有组织的活动，父母就会伤害孩子吗？不，我真的很怀疑。”\nI) 社会科学家说，差异的产生部分是因为低收入父母没有那么多钱花在音乐课或学前班上，也没有那么灵活的时间带孩子去博物馆或参加学校活动。皮尤调查对全国代表性的1807名父母进行了抽样，课外活动反映了育儿方式的差异。在年收入超过7.5万美元的家庭中，84%的人说孩子在过去一年参加过有组织的体育活动，64%做过志愿工作，62%上过音乐、舞蹈或美术课。在年收入低于3万美元的家庭中，59%的孩子参加过体育活动，37%做过志愿工作，41%上过艺术课。\nJ) 尤其在富裕家庭，孩子起步很早。近一半高收入、大学毕业的父母在孩子5岁前就让他们上艺术课，而低收入、受教育程度较低的父母中这一比例为五分之一。尽管如此，20%的富裕父母说孩子的日程太忙，而较贫穷父母中这一比例为8%。\nK) 另一个例子是大声朗读。研究表明，大声朗读能让孩子在学校拥有更大的词汇量和更好的阅读理解能力。71%有大学学历的父母说他们每天给孩子朗读，而高中学历及以下的父母中这一比例为33%。白人父母比其他族裔更可能每天给孩子读书，已婚父母也是如此。大多数富裕父母让孩子上学前班或日托，而低收入父母更可能依靠家人。管教方式因教育水平而异：8%拥有研究生学历的人说他们经常打孩子，而高中学历或以下的人中这一比例为22%。\nL) 调查还探讨了态度和焦虑。有趣的是，父母对教育的态度似乎并不反映他们自己的教育背景，而是反映他们对教育促进向上流动的重要性的信念。大多数美国父母说，只要孩子努力，他们不担心孩子的成绩。但50%的贫困父母说，孩子获得大学学位对他们极其重要，而较富裕父母中这一比例为39%。\nM) 受教育程度较低、较贫穷以及黑人和拉丁裔父母更可能认为，对孩子的教育再怎么参与也不为过。白人、富裕或受过大学教育的父母则说，过多参与可能有害。父母的焦虑反映了他们的处境。高收入父母更可能说自己住在适合养育孩子的好社区。虽然霸凌是所有父母最担心的问题，但近一半低收入父母担心孩子遭到枪击，而高收入父母中这一比例为五分之一。他们更担心孩子抑郁或焦虑。\nN) 在皮尤调查中，年收入在3万至7.5万美元之间的中产家庭在社区养育质量、参与课外活动和参与子女教育等问题上，正好介于工薪阶层和高收入父母之间。\nO) 孩子们并不总是被养育得如此不同。根据里尔登的研究，2001年出生的孩子中，高收入和低收入家庭孩子之间的成绩差距比25年前出生的孩子大30%到40%。过去人们住在不同收入水平的人附近；现在社区按收入更加隔离。根据皮尤的数据，超过四分之一的孩子生活在单亲家庭——创历史新高——这些孩子生活在贫困中的可能性是与已婚父母同住的孩子的三倍。与此同时，收入不平等的加剧与大学学位对获得中产收入越来越重要同时发生。\nP) 但最近有迹象表明，这一差距可能开始缩小。在过去十年里，尽管收入不平等加剧，育儿方面的一些社会经济差异，如给孩子读书和去图书馆，已经缩小。\nQ) 针对幼儿的公共政策有所帮助，包括公立学前教育项目和阅读计划。看来，解决最早几年的差异，可以减少下一代的不平等。",
+   "questions": [
+    {
+     "stem": "36. Working-class parents teach their children to be obedient and show respect to adults.",
+     "answer": "G",
+     "analysis": "该段指出工薪阶层孩子被教导要顺从并尊重成年人：They are taught to be compliant and respectful to adults.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. American parents, whether rich or poor, have similar expectations of their children despite different ways of parenting.",
+     "answer": "F",
+     "analysis": "该段指出美国父母对孩子有相似的期望，但育儿方式却大不相同：American parents want similar things for their children... Yet they are doing it quite differently.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. While rich parents are more concerned with their children's psychological well-being, poor parents are more worried about their children's safety.",
+     "answer": "M",
+     "analysis": "该段对比低收入父母更担心孩子遭枪击，而高收入父母更担心孩子抑郁或焦虑，符合题目所述安全与心理健康的差异。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. The increasing differences in child rearing between rich and poor families reflect growing social inequality.",
+     "answer": "D",
+     "analysis": "该段直接指出育儿方面的阶层差异正在扩大，是贫富差距扩大的一个症状：The class differences in child rearing are growing—a symptom of widening inequality.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Parenting approaches of working-class and affluent families both have advantages.",
+     "answer": "G",
+     "analysis": "该段明确说两种育儿方式都有好处：There are benefits to both approaches.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Higher-income families and working-class families now tend to live in different neighborhoods.",
+     "answer": "O",
+     "analysis": "该段指出现在社区按收入更加隔离：neighborhoods are now more segregated by income.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Physical punishment is used much less by well-educated parents.",
+     "answer": "K",
+     "analysis": "该段数据显示研究生学历父母打孩子的比例远低于高中学历及以下父母：8% of those with a postgraduate degree say they often beat their children, compared with 22% of those with a high school degree or less.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Ms. Lareau doesn't believe participating in fewer after-class activities will negatively affect children's development.",
+     "answer": "H",
+     "analysis": "拉罗表示少参加一项有组织的活动并不会伤害孩子：Will parents be damaging children if they have one fewer organized activity? No, I really doubt it.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Wealthy parents are concerned about their children's mental health and busy schedules.",
+     "answer": "B",
+     "analysis": "该段提到富裕家庭父母担心孩子的焦虑程度和繁忙日程：worry about their anxiety levels and hectic schedules.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some socioeconomic differences in child rearing have shrunk in the past ten years.",
+     "answer": "P",
+     "analysis": "该段指出过去十年育儿方面的一些社会经济差异已经缩小：In the past decade... some of the socioeconomic differences in parenting... have narrowed.",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:26:28.405Z"
+}

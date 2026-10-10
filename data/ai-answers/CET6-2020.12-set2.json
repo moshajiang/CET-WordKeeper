@@ -1,0 +1,187 @@
+{
+ "level": "CET6",
+ "year": 2020,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Effective communication skills are indispensable for students in both academic and professional settings. Therefore, students should be encouraged to develop such skills.\n\nFirst of all, strong communication abilities can greatly enhance learning efficiency. When students can express their ideas clearly, they are more likely to participate actively in class discussions, ask meaningful questions, and collaborate effectively with peers and teachers. Besides, effective communication is a key requirement in the modern workplace. Employers consistently rank communication skills among the most valued qualities, as they enable employees to work in teams, present ideas, and build positive relationships with clients. Moreover, good communication helps reduce misunderstandings and conflicts in daily life, fostering a harmonious campus atmosphere.\n\nIn conclusion, since effective communication benefits students academically, professionally, and socially, universities should offer more courses and activities to cultivate this skill, and students themselves should seize every opportunity to practice it.",
+   "note": "本文紧扣“为何鼓励学生培养有效沟通技能”这一主题，首段亮明观点，主体部分从学习效率、职场竞争力和人际和谐三个层面展开论证，末段总结并呼吁行动。结构完整，逻辑清晰。使用 indispensable, enhance, foster, seize opportunity 等四六级高频亮点表达，但不生僻。衔接词 First of all, Besides, Moreover, In conclusion 使行文流畅。可复用句型：... are indispensable for...; When students can..., they are more likely to...; ... should seize every opportunity to...",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "素食者宁愿不被强迫吃肉。然而，一种相反的强迫却隐藏在新推出的植物性“星球健康饮食”建议中。这一点在印度表现得最为明显。今年早些时候，EAT-柳叶刀委员会发布了全球营养报告，呼吁全球转向更加植物性的饮食，并“大幅减少动物源性食品的消费”。在印度等国家，这一呼吁可能成为加剧本已紧张的政治局势、给本已营养不良的人群增添压力的工具。EAT报告假定，印度等国家的“传统饮食”红肉含量很少，人们可能只在特殊场合食用，或将其作为混合菜肴中的次要成分。然而在印度，由于阶级、宗教、文化、成本、地理等无数障碍，人们想吃什么和不得不吃什么之间存在巨大差异。印度政策制定者传统上一直强推以谷物为主的“素食”给食肉人群，以此作为提供最廉价食物来源的方式。当前，在一个激进的印度教民族主义政府统治下，穆斯林、基督徒、弱势阶层和土著社群正被迫放弃他们的传统食物。EAT-柳叶刀委员会的代表布伦特·洛肯似乎并未意识到这些担忧，他说印度在从植物中获取蛋白质方面“树立了一个很好的榜样”。但印度的素食主义在多大程度上能成为世界的榜样？在2019年全球饥饿指数中，该国在117个国家中排名第102位。全国家庭健康调查的数据显示，6至23个月大的婴儿中只有10%得到了充分喂养。这就是为什么以印度为范本呼吁植物性饮食，可能会成为又一根用来抽打发展中国家本已脆弱群体的鞭子。针对富裕西方的饮食方案未能认识到，在低收入国家，营养不良的儿童已知会从牛奶和其他动物源性食品的摄入中获益，这能改善认知功能，同时降低营养缺乏症的发生率和死亡率。EAT-柳叶刀声称其意图是在所有印度利益相关者中“引发对话”。然而，对食品加工业和食品强化策略直言不讳的批评者却被排除在辩论之外。但最明显的遗漏很可能是印度农民的缺席。然而，政府似乎对这份报告竖起了大拇指。政府没有通过改善获得健康且营养丰富的食物的机会来解决长期饥饿和营养不良问题，反而为依赖企业的解决方案打开了大门，忽视了环境和经济成本，这将摧毁地方食物系统。这是一个对未来几代人充满危险的模式。",
+   "questions": [
+    {
+     "stem": "46.What is more visible in India than anywhere else according to the passage?",
+     "answer": "B",
+     "analysis": "文章开头指出素食者不愿被迫吃肉，但“相反的强迫”即强迫吃植物性食物，隐藏在植物性饮食提议中，且在印度最为明显。这说明印度人更不愿被迫吃植物性食品。A、C、D均未体现这一对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47.What would the EAT-Lancet Commission’s report do to many people in countries like India?",
+     "answer": "C",
+     "analysis": "文章提到该呼吁在印度等国家可能成为加剧政治紧张、给本已营养不良人群施压的工具，即让他们更加营养不良。D项缩减食物选择、A项彻底改变饮食习惯、B项远离政治均与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48.What do we learn from the passage about food consumption in India?",
+     "answer": "B",
+     "analysis": "文中明确说印度人想吃的和不得不吃的存在巨大差异，由于阶级、宗教、文化、成本、地理等障碍，很多人无法获得自己偏好的食物，对应B项。C项“日益流行”、D项“帮助消除障碍”与原文相反，A项无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49.What does the passage say about a plant-based diet modeled on India?",
+     "answer": "D",
+     "analysis": "文章指出以印度为范本的植物性饮食呼吁可能成为打击发展中国家脆弱群体的鞭子，并强调低收入国家儿童需要牛奶等动物源食品，否则会加剧营养不良。因此D项“可能恶化低收入国家的营养问题”正确。A、B、C均与文意相悖或无据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50.How does the Indian government respond to the EAT-Lancet Commission’s proposals?",
+     "answer": "A",
+     "analysis": "末段说印度政府对报告表示赞许，却忽视长期环境和经济代价，引入依赖企业的解决方案，损害后代利益，对应A项。B项是EAT-Lancet的意图而非政府，D项与“并非用来解决饥饿”相悖，C项“营养专家反对”未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Hong Kong-Zhuhai-Macau Bridge, with a total length of 55 kilometers, is a remarkable engineering feat in China. Connecting the three cities, it is the world's longest sea-crossing bridge and tunnel system. It has reduced the travel time among the three cities from three hours to 30 minutes. With its enormous span, this reinforced concrete bridge fully demonstrates China's ability to build record-breaking mega-structures. It will boost regional integration and promote economic growth. The bridge is key to China's overall plan for developing the Greater Bay Area, which China hopes to build into a region comparable to the bay areas of San Francisco, New York and Tokyo in terms of technological innovation and economic prosperity.",
+   "note": "难点在于处理长句和专有名词，如“港珠澳大桥”“大湾区”等；还有“跨海桥梁和隧道系统”“创纪录的巨型建筑”等短语的准确表达。关键是把“将旅行时间从3小时缩短到30分钟”用现在完成时表达，“与……相媲美”译作 comparable to... in terms of。整体注意信息重组，避免逐字硬译。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "《缓慢希望》\nA) 我们的世界充满了——大多未被讲述的——缓慢希望的故事，其动力源于“改变是可能的”这一信念。它们的“缓慢”体现在展开过程，之所以缓慢，是因为它们伴随着挫折。\nB) 神话中说，太初之时，人类在寒冷黑暗中瑟瑟发抖，受尽苦难，直到巨人普罗米修斯从诸神那里盗来火种。正如神话所述，技术——先是火和石器，后来是农业、蒸汽机与工业、化石燃料、化学品和核能——让我们得以改变和控制自然世界。这个神话也提醒我们，这些进步是有代价的：作为对普罗米修斯罪过的惩罚，诸神创造了潘多拉，并给了她一个装满灾祸与诅咒的盒子。潘多拉的盒子被打开时，向人类释放了成群的疾病与灾难。\nC) 今天，我们再也不能忽视我们在追求温暖与舒适的过程中所释放的生态诅咒。在改造、开发和改变我们的栖息地时，我们打开了成千上万个潘多拉之盒。近几十年来，环境威胁已超越区域边界，扩展到全球范围，而且最令人不安的是，正以令人目眩的速度成倍增长。我们时常被提醒：时间不多了。年复一年，越来越快，消费超过了地球的生物承载能力。加速灾难的报道成倍增加。我们害怕电网崩溃、不可再生资源耗尽、沙漠扩张、岛屿消失、空气和水被污染。\nD) 加速是我们这个时代的标志。在人类历史的大部分时间里，人口和经济活动增长缓慢。数千年来直到近代早期，世界经济几乎没有增长，但从19世纪中叶前后，尤其是20世纪中叶以来，实际GDP以极快速度增长，人类消费也是如此。中世纪时，中欧家庭平均拥有的物品可能不到30件；1900年这一数字增至400件，2020年达到15000件。人类生产、消费和出行的加速改变了生物与非生物领域，也波及人类赖以生存的自然过程。物种灭绝、森林砍伐、河流筑坝、洪水发生、臭氧损耗、海洋系统退化以及许多其他领域都在加速。如果用图形表示，所有这些变化的曲线看起来很像众所周知的那根“曲棍球杆”：数千年间几乎没有什么变化，而在过去几十年急剧上升。\nE) 今天一些关于未来的叙事似乎在暗示，我们也像普罗米修斯一样，会被一位新的赫拉克勒斯——一位神一般的工程师——拯救，他将精心策划、操控和摆布我们的星球。这些叙事暗示，地球工程、冷聚变或超光速飞船或许能一劳永逸地超越种种地球限制：气温上升、能源匮乏、粮食短缺、空间不足、垃圾成山、水污染——凡是你能想到的。\nF) 然而，如果我们把获救想象成来自“解围之神”，来自某位神一般的工程师或技术解决主义者，他会奇迹般地变出新能源或另一种具有革命性功效的万灵药，那么我们可能找错了方向。我们现在把地球视作一个整体，并不意味着对地球的“拯救”会依靠某一次全球性的天才与技术大突破。拯救更可能来自许多微小的行动。全球变暖与环境退化不是技术问题，而是深受强大利益影响的高度政治问题。此外，若以历史为鉴，我们可以假定任何重大变革都会再次带来大量意外后果。那么我们该怎么办？\nG) 有一点很清楚：我们需要找到办法，来拉平那些反映我们生态破坏和社会加速日益加快的“曲棍球杆”曲线。如果我们承认人类对地球的操控是一种破坏性力量，我们也能想象，在未来的几个世纪里，人类的努力可以帮助我们建设一个破坏性较小的世界。我们可能还会不断犯错，但我们也会不断从错误中学习。\nH) 为了对抗灾难恐惧，我们需要找出那些悄然朝向更有希望未来的故事、愿景和行动。我们需要的不是单一的大叙事，不是一个关于非凡英雄意外拯救的故事，而是多种故事：既需要普林斯顿大学罗布·尼克松所说的环境退化“缓慢暴力”的故事（即起初往往看不见、缓慢渐进的破坏），也需要我所说的“缓慢希望”的故事。\nI) 我们需要承认当前的生态困境，但同时也需要一种积极变化的语言和更美好未来的愿景。在《希望原理》（1954—1959）中，最重要的未来哲学家之一恩斯特·布洛赫写道：“最可悲的丧失……是丧失想象事情可以不同的能力。”我们需要找出能帮助我们想象一个不同、更公正、更生态的世界的愿景与路径。对布洛赫而言，希望始于恐惧、不确定和危机：它是一种与乌托邦式“愿望形象”相伴而行的创造力。它可以在过去的文化产品中找到——在童话、小说、建筑、音乐、电影中——在那些包含“更美好世界轮廓”的人类心智产物中。让我们成为“真正”人类的是对自身“潜能”的愿景。换句话说：活在希望中使我们成为人。\nJ) 草根小规模运动能够带来超越其起源地的变化，这一点可以从20世纪80年代始于意大利的“慢食运动”看出。二战后快餐店的兴起造就了一个充满廉价工业化食品的社会。在卡洛·彼得里尼的领导下，慢食运动始于意大利皮埃蒙特——一个有着长期贫困、暴力与反抗压迫历史的地区。该运动把这一地区变成了对传统饮食文化友好的地方——以本地植物和动物品种为基础。如今，慢食在160多个国家开展活动，既有穷国也有富国。它在全球催生了数千个项目，代表民主政治、粮食主权、生物多样性和可持续农业。\nK) 对食品无所顾忌的商品化以及对食物的破坏将继续摧残土壤、生计和生态。慢食无法逆转全球食品经济不可阻挡的发展，但它可以打乱其理论家的阵脚，可以“以不同的方式说话”，可以让人们及其地方饮食传统和环境蓬勃发展。即使在美国这个快餐之国，小型农场和城市菜园也在增多。美国农业部提供了“城市农业工具包”，而且根据最近一份报告，美国千禧一代正在改变饮食。2017年，6%的美国消费者声称严格素食，高于2014年的1%。正如美国诗人、环保活动家温德尔·贝里在1989年所说，“吃是一种农业行为”，随着越来越多人意识到这一点，缓慢希望也在前进。",
+   "questions": [
+    {
+     "stem": "36.It seems some people today dream that a cutting-edge new technology might save them from the present ecological disaster.",
+     "answer": "E",
+     "analysis": "依据：E段提到一些关于未来的叙事暗示将有新的赫拉克勒斯或神一般的工程师，通过地球工程、冷聚变或超光速飞船等尖端技术拯救人类，对应“梦想某种尖端新技术拯救生态灾难”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37.According to one great thinker, it is most unfortunate if we lose the ability to think differently.",
+     "answer": "I",
+     "analysis": "依据：I段引用恩斯特·布洛赫的话：“最可悲的丧失……是丧失想象事情可以不同的能力”，对应失去以不同方式思考的能力最不幸。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38.Urgent attention should be paid to the ecological problems we have created in our pursuit of a comfortable life.",
+     "answer": "C",
+     "analysis": "依据：C段开头指出“我们再也不能忽视我们在追求温暖与舒适的过程中所释放的生态诅咒”，即应对追求舒适生活造成的生态问题给予紧迫关注。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39.Even in the fast-food nation America, the number of vegetarians is on the rise.",
+     "answer": "K",
+     "analysis": "依据：K段提到即使在美国这个快餐之国，小型农场和城市菜园也在增多，并给出数据：2017年6%的美国消费者严格素食，高于2014年的1%，说明素食者人数上升。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40.The deterioration of the ecological system is accelerating because of the dramatic increase of human production and consumption.",
+     "answer": "D",
+     "analysis": "依据：D段指出人类生产、消费和出行的加速改变了自然过程，物种灭绝、森林砍伐等都在加速，对应生态系统恶化因人类生产消费剧增而加速。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41.It is obvious that solutions must be found to curb the fast worsening environment and social acceleration.",
+     "answer": "G",
+     "analysis": "依据：G段开头说“有一点很清楚：我们需要找到办法，来拉平那些反映我们生态破坏和社会加速日益加快的曲线”，即必须寻找办法遏制环境恶化和社会加速。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42.Many people believe changing the world is possible, though it may take time and involve setbacks.",
+     "answer": "A",
+     "analysis": "依据：A段指出世界充满缓慢希望的故事，其动力源于“改变是可能的”这一信念；它们是缓慢的，且伴随挫折，对应许多人相信改变可能但需要时间并经历挫折。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43.It might be wrong to expect that our world would be saved at one stroke with some miraculous technology.",
+     "answer": "F",
+     "analysis": "依据：F段指出如果指望解围之神或神一般的工程师用奇迹技术拯救，可能找错了方向；拯救不会靠某一次全球性天才与技术大突破，而更可能来自许多微小行动。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44.It is human nature to cherish hopes for a better world.",
+     "answer": "I",
+     "analysis": "依据：I段指出让我们成为“真正”人类的是对自身“潜能”的愿景，并说“活在希望中使我们成为人”，对应怀抱对更美好世界的希望是人之本性。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45.Technology has given us humans the power to change the natural world, but we have paid a price for the change.",
+     "answer": "B",
+     "analysis": "依据：B段提到技术让我们得以改变和控制自然世界，同时提醒这些进步有代价，潘多拉之盒释放了疾病与灾难，对应技术赋予人类改变自然的力量但代价已付。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "早在1964年，精神病学家埃里克·伯恩在其《人们玩的游戏》一书中描述了一种他称之为“你为什么不——是的，但是”的对话模式，这种模式至今仍是日常社交生活中最令人恼火的方面之一。采取这种策略的人通常是一个习惯性抱怨者。他们的关系、工作或其他处境中总有什么糟糕透顶，他们对此无休止地抱怨，却总能找到借口否定任何提出的解决方案。当然，原因是在某种程度上他们并不想要解决方案；他们想要的是自己的立场得到确认，即世界在跟他们作对。如果他们能“赢得”这场游戏——否定每一个建议，直到对话者恼火地放弃——他们就能在自己的怨恨中感到一种愉快的正当感，并免于承担任何改变的责任。\n这里的部分问题在于所谓的“责任/过错谬误”。当你感到受了委屈——比如被伴侣视为理所当然，或者被迫为一个愚蠢的老板工作时——很容易执着于这样一种立场：处理这件事不是你的职责，而且这样做就等于承认过错。但这里存在混淆。例如，如果我在自家门口发现一个新生儿，这不是我的过错，但这无疑是我的责任。我必须做出选择，而且无法逃避，因为试图忽视这件事本身就是一种选择。关键在于，门口婴儿的情况适用于所有情形：即使对方百分之百错了，长期来看，以此为借口逃避责任也毫无益处。\n如果你发现自己成为这种抱怨的接收方，有一个巧妙的方法可以制止它——那就是热情地同意它。心理治疗师洛里·戈特利布称之为“过度认同”。一方面，你将免于进一步的抱怨，因为对方的动机是确认自己的信念，而你现在正在确认这些信念。但另一方面，正如戈特利布指出的，面对过度认同的人往往会重新审视自己的抱怨，并开始反驳。他们认为自己完全无能为力的想法突然显得不切实际——更不用说相当烦人——于是他们反而被激发去思考如何改变现状。\n“然后，有时，一些神奇的事情可能会发生，”戈特利布写道。对方“可能会意识到她并不像你所说的那样被困住，也不像她自己感觉的那样被困住。”这说明了责任/过错谬误的讽刺之处：逃避责任感觉舒适，但结果却是一座牢笼；而承担责任感觉不愉快，但最终却带来自由。",
+   "questions": [
+    {
+     "stem": "51.What is characteristic of a chronic complainer, according to psychiatrist Eric Berne?",
+     "answer": "C",
+     "analysis": "根据第一段，慢性抱怨者无休止地抱怨，却找借口否定任何提出的解决方案，并且不想承担责任去改变。C项准确概括了这一特征。A项“憎恨帮助者”和D项“缺乏交谈技巧”文中未提；B项“挑剔周围人”偏离了抱怨自身处境的原意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52.What does the author try to illustrate with the example of the newborn on one’s doorstep?",
+     "answer": "D",
+     "analysis": "作者举门口婴儿的例子说明：不是你的过错，但仍是你的责任，意在区分责任与过错。D项符合该段主旨。A项与作者观点相反；B、C项只是曲解表面细节。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53.What does the author advise people to do to chronic complainers?",
+     "answer": "A",
+     "analysis": "作者建议“热情地同意”，以制止抱怨，即通过同意让他们不再继续。A项符合文意。B项错误地把“同意”换成“倾听”；C、D项文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54.What happens when chronic complainers receive over-validation?",
+     "answer": "B",
+     "analysis": "文章说面对过度认同，抱怨者会重新听到自己的抱怨并开始反驳，继而觉得自己并非完全无能为力，从而被激发去想如何改变。B项直接对应“被激发去思考如何改变现状”。D项“开始反驳”只是中间反应，且“被鼓励”表述不准确；A、C项与原文相反或无关。",
+     "verified": false,
+     "dissent": "D"
+    },
+    {
+     "stem": "55.How can one stop being a chronic complainer according to the author?",
+     "answer": "C",
+     "analysis": "作者在结尾指出，逃避责任看似舒适实则牢笼，承担责任虽不愉快但最终带来自由。C项符合。A项只是分析谬误，不是停止抱怨的方法；B、D项偏离文意。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:44:28.913Z"
+}

@@ -266,21 +266,28 @@
         },
         {
           "qtype": "match",
-          "stem": "37.By conventional standards, Leah was a typical successful woman before she changed her career.",
+          "stem": "37. By conventional standards, Leah was a typical successful woman before she changed her career.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "38.Leah gained confidence by laying out her fears and confronting them directly.",
+          "stem": "38. Leah gained confidence by laying out her fears and confronting them directly.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "39.In search of a meaningful life, Leah gave up what she had and set up her own yoga studios. 40 Leah's interest in yoga prompted her to make a firm decision to reshape her life.",
+          "stem": "39. In search of a meaningful life, Leah gave up what she had and set up her own yoga studios.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "40. Leah's interest in yoga prompted her to make a firm decision to reshape her life.",
           "options": [],
           "answer": "",
           "analysis": ""
@@ -301,21 +308,21 @@
         },
         {
           "qtype": "match",
-          "stem": "43.Some people regard professional change as an unpleasant experience that disturbs their stable careers.",
+          "stem": "43. Some people regard professional change as an unpleasant experience that disturbs their stable careers.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "44.The worst fear Leah ever had was the prospect of losing her yoga business.",
+          "stem": "44. The worst fear Leah ever had was the prospect of losing her yoga business.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "45.As she explored new interests and developed new potentials，Leah felt powerful internally.",
+          "stem": "45. As she explored new interests and developed new potentials，Leah felt powerful internally.",
           "options": [],
           "answer": "",
           "analysis": ""
@@ -330,9 +337,9 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46.According to the new report, real estate development in 2015 will witness_______ .",
+          "stem": "46. According to the new report, real estate development in 2015 will witness_______ .",
           "options": [
-            "A)an accelerating speed",
+            "A) an accelerating speed",
             "B) a shift to city centers",
             "C) a new focus on small cities",
             "D) an ever-increasing demand"
@@ -342,12 +349,12 @@
         },
         {
           "qtype": "choice",
-          "stem": "47.What characterizes “24-hour cities” like New York?",
+          "stem": "47. What characterizes “24-hour cities” like New York?",
           "options": [
-            "A)People can live without private cars.",
-            "B)People are generally more competitive.",
-            "C)People can enjoy services around the clock.",
-            "D)People are in harmony with the environment."
+            "A) People can live without private cars.",
+            "B) People are generally more competitive.",
+            "C) People can enjoy services around the clock.",
+            "D) People are in harmony with the environment."
           ],
           "answer": "",
           "analysis": ""
@@ -356,8 +363,8 @@
           "qtype": "choice",
           "stem": "48. Why are Millennials reluctant to buy a house?",
           "options": [
-            "A)They can only afford small apartments.",
-            "B)The house prices are currently too high.",
+            "A) They can only afford small apartments.",
+            "B) The house prices are currently too high.",
             "C) Their parents' bad experience still haunts them.",
             "D) They feel attached to the suburban environment."
           ],
@@ -366,23 +373,23 @@
         },
         {
           "qtype": "choice",
-          "stem": "49.What might hinder real estate development in the U.S.?",
+          "stem": "49. What might hinder real estate development in the U.S.?",
           "options": [
-            "A)The continuing economic recession in the country.",
-            "B)The lack of confidence on the part of investors.",
-            "C)The fierce global competition.",
-            "D)The worsening infrastructure."
+            "A) The continuing economic recession in the country.",
+            "B) The lack of confidence on the part of investors.",
+            "C) The fierce global competition.",
+            "D) The worsening infrastructure."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50.How do most of the respondents in the survey feel about the U.S. real-estate market in 2015?",
+          "stem": "50. How do most of the respondents in the survey feel about the U.S. real-estate market in 2015?",
           "options": [
             "A) Pessimistic.",
             "B) Hopeful.",
-            "C)Cautious.",
+            "C) Cautious.",
             "D) Uncertain."
           ],
           "answer": "",
@@ -398,48 +405,48 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51.What have past behavioural studies found about our brain?",
+          "stem": "51. What have past behavioural studies found about our brain?",
           "options": [
-            "A)Its capacity actually knows no limits.",
-            "B)It grows sophisticated with practice.",
-            "C)It keeps our most precious memories until life’s end.",
-            "D)New information learned pushes old information out."
+            "A) Its capacity actually knows no limits.",
+            "B) It grows sophisticated with practice.",
+            "C) It keeps our most precious memories until life’s end.",
+            "D) New information learned pushes old information out."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52.What is the benefit of forgetting?",
+          "stem": "52. What is the benefit of forgetting?",
           "options": [
-            "A)It frees us from painful memories.",
-            "B)It helps slow down our aging process.",
-            "C)It facilitates our access to relevant information.",
-            "D)It prevents old information from forming associations."
+            "A) It frees us from painful memories.",
+            "B) It helps slow down our aging process.",
+            "C) It facilitates our access to relevant information.",
+            "D) It prevents old information from forming associations."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53.What is the emphasis of current studies of memory?",
+          "stem": "53. What is the emphasis of current studies of memory?",
           "options": [
-            "A)When people tend to forget.",
-            "B)What contributes to forgetting.",
-            "C)How new technology hinders memory capacity.",
-            "D)Why learning and forgetting arc complementary."
+            "A) When people tend to forget.",
+            "B) What contributes to forgetting.",
+            "C) How new technology hinders memory capacity.",
+            "D) Why learning and forgetting arc complementary."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54.What do people find about their rare ability to remember every detail of their life?",
+          "stem": "54. What do people find about their rare ability to remember every detail of their life?",
           "options": [
-            "A)It adds to the burden of their memory.",
-            "B)It makes their life more complicated.",
-            "C)It contributes to their success in life.",
-            "D)It constitutes a rare object of envy."
+            "A) It adds to the burden of their memory.",
+            "B) It makes their life more complicated.",
+            "C) It contributes to their success in life.",
+            "D) It constitutes a rare object of envy."
           ],
           "answer": "",
           "analysis": ""
@@ -448,10 +455,10 @@
           "qtype": "choice",
           "stem": "55. What does the passage say about forgetting?",
           "options": [
-            "A)It can enlarge our brain capacity.",
-            "B)It helps get rid of negative memories.",
-            "C)It is a way of organising our memories.",
-            "D)It should not cause any alarm in any way."
+            "A) It can enlarge our brain capacity.",
+            "B) It helps get rid of negative memories.",
+            "C) It is a way of organising our memories.",
+            "D) It should not cause any alarm in any way."
           ],
           "answer": "",
           "analysis": ""

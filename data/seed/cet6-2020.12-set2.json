@@ -17,8 +17,239 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "Virtually every activity that entails or facilitates in-person human interaction seems to be in the midst of a total meltdown as the coronavirus (冠状病毒)outbreak erases Americans’ desire to travel. Amtrak says bookings are down 50 percent and cancelations are up 300 percent. Hotels in San Francisco are experiencing 26 rates between 70 and 80 percent. Broadway goes dark on Thursday night. Universities, now emptying their campuses, have never tried online learning on this 27 _. White-collar companies like Amazon, Apple, and the New York Times are asking employees to work from home for the 28 future.\nBut what happens after the coronavirus?\nIn some ways, the answer is: All the old normal stuff. The pandemic(大流行病)will take lives, 29 economies and destroy routines, but it will pass. Americans will never stop going to basketball games. They won’t stop going on vacation. They’ll meet to do business. No decentralizing technology so far — not telephones, not television, and not the internet — has dented that human desire to shake hands, despite technologists’ 30 to the contrary.\nYet there are real reasons to think that things will not return to the way they were last week. Small 31 create small societal shifts; big ones change things for good. The New York transit strike of 1980 is 32 with prompting several long-term changes in the city, including bus and bike lanes, and women wearing sports shoes to work. The Spanish flu pandemic of 1918 prompted the development of national health care in Europe.\nHere and now, this might not even be a question of 33 . It’s not clear that the cruise industry will 34 . Or that public transit won’t go broke without 35 assistance. The infrastructure might not even be in place to do what we were doing in 2019.\nA)credentialsI)scale\nB)creditedJ)strangle\nC)cumulativeK)subtle\nD)disruptionsL)summoned\nE)federalM)survive\nF)foreseeableN)vacancy\nG)predictionsO)wedge",
-      "questions": []
+      "content": "Virtually every activity that entails or facilitates in-person human interaction seems to be in the midst of a total meltdown as the coronavirus (冠状病毒)outbreak erases Americans’ desire to travel. Amtrak says bookings are down 50 percent and cancelations are up 300 percent. Hotels in San Francisco are experiencing 26 rates between 70 and 80 percent. Broadway goes dark on Thursday night. Universities, now emptying their campuses, have never tried online learning on this 27 _. White-collar companies like Amazon, Apple, and the New York Times are asking employees to work from home for the 28 future.\nBut what happens after the coronavirus?\nIn some ways, the answer is: All the old normal stuff. The pandemic(大流行病)will take lives, 29 economies and destroy routines, but it will pass. Americans will never stop going to basketball games. They won’t stop going on vacation. They’ll meet to do business. No decentralizing technology so far — not telephones, not television, and not the internet — has dented that human desire to shake hands, despite technologists’ 30 to the contrary.\nYet there are real reasons to think that things will not return to the way they were last week. Small 31 create small societal shifts; big ones change things for good. The New York transit strike of 1980 is 32 with prompting several long-term changes in the city, including bus and bike lanes, and women wearing sports shoes to work. The Spanish flu pandemic of 1918 prompted the development of national health care in Europe.\nHere and now, this might not even be a question of 33 . It’s not clear that the cruise industry will 34 . Or that public transit won’t go broke without 35 assistance. The infrastructure might not even be in place to do what we were doing in 2019.",
+      "questions": [
+        {
+          "qtype": "cloze",
+          "stem": "26",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "27",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "28",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "29",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "30",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "31",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "32",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "33",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "34",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "35",
+          "options": [
+            "A) credentials",
+            "B) credited",
+            "C) cumulative",
+            "D) disruptions",
+            "E) federal",
+            "F) foreseeable",
+            "G) predictions",
+            "H) preference",
+            "I) scale",
+            "J) strangle",
+            "K) subtle",
+            "L) summoned",
+            "M) survive",
+            "N) vacancy",
+            "O) wedge"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
     },
     {
       "section": "match",
@@ -28,70 +259,70 @@
       "questions": [
         {
           "qtype": "match",
-          "stem": "36.It seems some people today dream that a cutting-edge new technology might save them from the present ecological disaster.",
+          "stem": "36. It seems some people today dream that a cutting-edge new technology might save them from the present ecological disaster.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "37.According to one great thinker, it is most unfortunate if we lose the ability to think differently.",
+          "stem": "37. According to one great thinker, it is most unfortunate if we lose the ability to think differently.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "38.Urgent attention should be paid to the ecological problems we have created in our pursuit of a comfortable life.",
+          "stem": "38. Urgent attention should be paid to the ecological problems we have created in our pursuit of a comfortable life.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "39.Even in the fast-food nation America, the number of vegetarians is on the rise.",
+          "stem": "39. Even in the fast-food nation America, the number of vegetarians is on the rise.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "40.The deterioration of the ecological system is accelerating because of the dramatic increase of human production and consumption.",
+          "stem": "40. The deterioration of the ecological system is accelerating because of the dramatic increase of human production and consumption.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "41.It is obvious that solutions must be found to curb the fast worsening environment and social acceleration.",
+          "stem": "41. It is obvious that solutions must be found to curb the fast worsening environment and social acceleration.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "42.Many people believe changing the world is possible, though it may take time and involve setbacks.",
+          "stem": "42. Many people believe changing the world is possible, though it may take time and involve setbacks.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "43.It might be wrong to expect that our world would be saved at one stroke with some miraculous technology.",
+          "stem": "43. It might be wrong to expect that our world would be saved at one stroke with some miraculous technology.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "44.It is human nature to cherish hopes for a better world.",
+          "stem": "44. It is human nature to cherish hopes for a better world.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "45.Technology has given us humans the power to change the natural world, but we have paid a price for the change.",
+          "stem": "45. Technology has given us humans the power to change the natural world, but we have paid a price for the change.",
           "options": [],
           "answer": "",
           "analysis": ""
@@ -106,60 +337,60 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46.What is more visible in India than anywhere else according to the passage?",
+          "stem": "46. What is more visible in India than anywhere else according to the passage?",
           "options": [
-            "A)People’s positive views on the proposals for a “planetary diet”.",
-            "B)People’s reluctance to be compelled to eat plant-based food.",
-            "C)People’s preferences for the kind of food they consume.",
-            "D)People’s unwillingness to give up their eating habits."
+            "A) People’s positive views on the proposals for a “planetary diet”.",
+            "B) People’s reluctance to be compelled to eat plant-based food.",
+            "C) People’s preferences for the kind of food they consume.",
+            "D) People’s unwillingness to give up their eating habits."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "47.What would the EAT-Lancet Commission’s report do to many people in countries like India?",
+          "stem": "47. What would the EAT-Lancet Commission’s report do to many people in countries like India?",
           "options": [
-            "A)Radically change their dietary habits.",
-            "B)Keep them further away from politics.",
-            "C)Make them even more undernourished.",
-            "D)Substantially reduce their food choices."
+            "A) Radically change their dietary habits.",
+            "B) Keep them further away from politics.",
+            "C) Make them even more undernourished.",
+            "D) Substantially reduce their food choices."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "48.What do we learn from the passage about food consumption in India?",
+          "stem": "48. What do we learn from the passage about food consumption in India?",
           "options": [
-            "A)People’s diet will not change due to the EAT-Lancet report.",
-            "B)Many people simply do not have access to foods they prefer.",
-            "C)There is a growing popularity of a cereal-heavy vegetarian diet.",
-            "D)Policymakers help remove the barriers to people’s choice of food."
+            "A) People’s diet will not change due to the EAT-Lancet report.",
+            "B) Many people simply do not have access to foods they prefer.",
+            "C) There is a growing popularity of a cereal-heavy vegetarian diet.",
+            "D) Policymakers help remove the barriers to people’s choice of food."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "49.What does the passage say about a plant-based diet modeled on India?",
+          "stem": "49. What does the passage say about a plant-based diet modeled on India?",
           "options": [
-            "A)It may benefit populations whose traditional diet is meat-based.",
-            "B)It may be another blow to the economy in developing countries.",
-            "C)It may help narrow the gap between the rich and poor countries.",
-            "D)It may worsen the nourishment problem in low-income countries."
+            "A) It may benefit populations whose traditional diet is meat-based.",
+            "B) It may be another blow to the economy in developing countries.",
+            "C) It may help narrow the gap between the rich and poor countries.",
+            "D) It may worsen the nourishment problem in low-income countries."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50.How does the Indian government respond to the EAT-Lancet Commission’s proposals?",
+          "stem": "50. How does the Indian government respond to the EAT-Lancet Commission’s proposals?",
           "options": [
-            "A)It accepts them at the expense of the long-term interests of its people.",
-            "B)It intends them to spark conversations among all Indian stakeholders.",
-            "C)It gives them approval regardless of opposition from nutrition experts.",
-            "D)It welcomes them as a tool to address chronic hunger and malnutrition."
+            "A) It accepts them at the expense of the long-term interests of its people.",
+            "B) It intends them to spark conversations among all Indian stakeholders.",
+            "C) It gives them approval regardless of opposition from nutrition experts.",
+            "D) It welcomes them as a tool to address chronic hunger and malnutrition."
           ],
           "answer": "",
           "analysis": ""
@@ -174,60 +405,60 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51.What is characteristic of a chronic complainer, according to psychiatrist Eric Berne?",
+          "stem": "51. What is characteristic of a chronic complainer, according to psychiatrist Eric Berne?",
           "options": [
-            "A)They only feel angry about their ill treatment and resent whoever tries to help.",
-            "B)They are chronically unhappy and ceaselessly find fault with people around them.",
-            "C)They constantly dismiss others，proposals while taking no responsibility for tackling the problem.",
-            "D)They lack the knowledge and basic skills required for successful conversations with their interlocutors."
+            "A) They only feel angry about their ill treatment and resent whoever tries to help.",
+            "B) They are chronically unhappy and ceaselessly find fault with people around them.",
+            "C) They constantly dismiss others，proposals while taking no responsibility for tackling the problem.",
+            "D) They lack the knowledge and basic skills required for successful conversations with their interlocutors."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52.What does the author try to illustrate with the example of the newborn on one’s doorstep?",
+          "stem": "52. What does the author try to illustrate with the example of the newborn on one’s doorstep?",
           "options": [
-            "A)People tend to think that one should not be held responsible for others’ mistakes.",
-            "B)It is easy to become attached to the position of overlooking one’s own fault.",
-            "C)People are often at a loss when confronted with a number of choices.",
-            "D)A distinction should be drawn between responsibility and fault."
+            "A) People tend to think that one should not be held responsible for others’ mistakes.",
+            "B) It is easy to become attached to the position of overlooking one’s own fault.",
+            "C) People are often at a loss when confronted with a number of choices.",
+            "D) A distinction should be drawn between responsibility and fault."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53.What does the author advise people to do to chronic complainers?",
+          "stem": "53. What does the author advise people to do to chronic complainers?",
           "options": [
-            "A)Stop them from going further by agreeing with them.",
-            "B)Listen to their complaints ardently and sympathetically.",
-            "C)Ask them to validate their beliefs with further evidence.",
-            "D)Persuade them to clarify the confusion they have caused."
+            "A) Stop them from going further by agreeing with them.",
+            "B) Listen to their complaints ardently and sympathetically.",
+            "C) Ask them to validate their beliefs with further evidence.",
+            "D) Persuade them to clarify the confusion they have caused."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54.What happens when chronic complainers receive over-validation?",
+          "stem": "54. What happens when chronic complainers receive over-validation?",
           "options": [
-            "A)They are motivated to find ingenious ways to persuade their interlocutor.",
-            "B)They are prompted to come up with ideas for making possible changes.",
-            "C)They are stimulated to make more complaints.",
-            "D)They are encouraged to start arguing back."
+            "A) They are motivated to find ingenious ways to persuade their interlocutor.",
+            "B) They are prompted to come up with ideas for making possible changes.",
+            "C) They are stimulated to make more complaints.",
+            "D) They are encouraged to start arguing back."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55.How can one stop being a chronic complainer according to the author?",
+          "stem": "55. How can one stop being a chronic complainer according to the author?",
           "options": [
-            "A)Analysing the so-called responsibility/fault fallacy.",
-            "B)Avoiding hazardous traps in everyday social life.",
-            "C)Assuming responsibility to free oneself.",
-            "D)Awaiting something magical to happen."
+            "A) Analysing the so-called responsibility/fault fallacy.",
+            "B) Avoiding hazardous traps in everyday social life.",
+            "C) Assuming responsibility to free oneself.",
+            "D) Awaiting something magical to happen."
           ],
           "answer": "",
           "analysis": ""

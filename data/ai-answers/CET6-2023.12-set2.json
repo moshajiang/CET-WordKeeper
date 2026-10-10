@@ -1,0 +1,104 @@
+{
+ "level": "CET6",
+ "year": 2023,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Nowadays parents are increasingly aware that allowing kids more freedom to explore and learn on their own helps foster their independence and boost their confidence. Despite this recognition, many parents still find it difficult to put it into practice. A common concern is that too much freedom may lead to laziness or even danger. However, giving children room to make their own choices does not mean abandoning supervision. For example, when I was in high school, my mother allowed me to plan my own weekend schedule. At first I wasted time, but gradually I learned to manage my tasks and felt proud of my progress. As a result, I became more confident in handling my studies and daily life. Similarly, children who are encouraged to solve problems by themselves tend to become more resourceful and self-reliant. Of course, parents should offer guidance when necessary, but they should avoid overprotecting their kids. In conclusion, granting children appropriate freedom is an effective way to cultivate independence and confidence. Parents need to trust their children and give them space to grow, while still providing support and care.",
+   "note": "范文以给定句开头，紧扣主题。结构：先指出家长认识与实践差距，再用个人经历和普遍现象论证适度放手，最后总结。可复用句型如 Despite this recognition、For example、In conclusion 等。语言平实，逻辑连贯。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "With the development of the economy and society, China's population structure has undergone significant changes and the country is gradually stepping into an aging society. China's elderly population will continue to grow, and the trend of population aging will become more evident. To address various challenges brought by population aging, the state is actively taking measures to increase support for elderly care. By reforming the social security system, the government has been continuously increasing social security funding and gradually expanding social security coverage so that more elderly people benefit. The government also encourages various social organizations to provide services for the elderly. With the joint efforts of the government and social organizations, the elderly will live a happier life.",
+   "note": "难点：人口结构、老龄化、社会保障、养老支持等术语的准确表达。高分译文注重用词地道，如“aging society”“social security”“elderly care”；句式上合理拆分或合并，避免逐字硬译，同时确保时态一致、逻辑衔接自然。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "纽约大学的科学家最近发现，我们的大脑对表述事实的语言与对传达可能性的词语的反应不同。他们的研究为我们认识词语选择如何影响我们区分真实陈述和纯粹可能的陈述提供了新见解。研究人员认为，他们的发现很重要，因为我们总是接收到虚假信息。其中一些是故意为之，比如欺骗性广告；但问题会因那些自认为分享的是正确信息的人而加剧。因此，在我们交流中，把事实性的内容与可能性的或纯属推测的内容区分开来比以往任何时候都更为重要。研究尤其表明，以事实形式呈现的信息会引起大脑的特殊反应，这种反应不同于我们处理带有明显不确定性标记的相同内容时的反应。\n\n在他们的新研究中，科学家们旨在弄清大脑如何理解“可能”“或许”和“如果”等词所表达的可能性。研究人员比较了大脑对表达事实性情景的陈述和表达可能性的陈述的反应。“我床下有个怪物”是一个事实陈述的例子。“我会待在家里”也是事实性的。与此相对的是表达可能性的陈述，比如“我床下可能有个怪物”或“如果下雨，我就待在家里”。研究结果显示，事实性语言引发了大脑活动的快速增加，与传达可能性的短语相比，大脑对事实性短语的反应更强、投入更多。因此，在大脑这里，事实占据主导。负责处理话语的脑区迅速区分事实与可能性。此外，这些脑区对事实性陈述的反应要强烈得多。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "E",
+     "analysis": "空格位于 how we 之后，需接动词原形；differentiate between 为固定搭配，表示“区分……”，符合区分真实与可能陈述的句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "D",
+     "analysis": "空格在 is 后作表语，应为形容词；欺骗性广告属于故意为之的虚假信息，deliberate 意为“故意的”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "B",
+     "analysis": "空格前有 is，后有 by 构成被动语态，需填过去分词；句意为问题被那些自认为分享正确信息的人加剧，aggravated 表示“加重，加剧”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "M",
+     "analysis": "空格在 merely 后作形容词，与 factual 和 possible 形成对比，指“纯属推测的”，speculative 符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "空格为谓语动词，主语 information 为单数，需用第三人称单数；evoke special responses 表示“引起特殊反应”，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "空格在 of 后作名词，indicators of uncertainty 表示“不确定性的标记”，与前面的 fact 形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "C",
+     "analysis": "不定式 to 后接动词原形；科学家意在“弄清”大脑如何计算可能性，ascertain 意为“查明，弄清”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "空格在形容词 factual 后作名词；此处与 possibility 相对，表示“事实性情景”，scenarios 符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "空格为谓语动词，主句 showed 为过去时，宾语从句用过去式；activate a rapid increase 表示“引发/激活快速增加”，符合实验结果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "空格作 processing 的宾语，processing discourse 表示“处理话语”，与脑区功能相符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:58:59.023Z",
+ "prunedAt": "2026-10-10T03:33:14.388Z"
+}

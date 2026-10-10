@@ -81,7 +81,184 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Living in an era of information explosion, we are constantly exposed to a huge amount of online content, which is not always reliable. A great deal of such information is misleading, and its harm to individuals and society cannot be ignored. To begin with, misleading information can misguide people's decisions and behaviors. For instance, false medical advice found online may lead patients to adopt wrong treatments, endangering their health. In addition, the spread of fake news gradually erodes public trust in media and institutions. When people are repeatedly deceived, they tend to doubt even accurate reports, which undermines social communication. What is worse, some misleading information may trigger unnecessary panic or conflicts, especially in emergencies like disease outbreaks or natural disasters. In conclusion, the harm caused by misleading information online is profound. It is high time that we enhanced our media literacy, learned to verify information before sharing it, and worked together to create a healthier and more trustworthy online environment.",
+   "note": "本文紧扣“网络误导信息的危害”主题，开篇引出观点，指出误导信息危害不容忽视；主体从误导决策、损害信任、引发恐慌三个层面展开论证，层次分明；结尾呼吁提高媒介素养。可复用句型包括“pose a serious threat to”“be exposed to”“misguide people's decisions”“erode public trust”“trigger unnecessary panic”“enhance media literacy”等，适合四六级写作使用。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "In China, parents always try their best to help their children, even making important decisions for them, regardless of what their children want, because they believe it is in their children's best interests. As a result, children's growth and education often yield to their parents' will. If parents decide to sign their child up for an extracurricular class to increase his or her chances of being admitted to a key school, they will stick to their decision even if the child is not interested at all. However, in the United States, parents are likely to respect their children's opinions and attach more importance to those opinions when making decisions. Chinese parents' great emphasis on education may be commendable. However, they should learn from American parents how to balance the parent-child relationship when it comes to education.",
+   "note": "难点在于“为……好”“屈从于”“课外班”“重点学校”“平衡关系”等表达。可用 in one's best interests、yield to、sign up for extracurricular class、key school、parent-child relationship。注意避免逐字硬译，保持句子衔接自然。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "总体而言，美国高校在为学生步入职场或毕业后的生活做准备方面做得并不好。两位社会学家理查德·阿鲁姆和乔西帕·罗克萨的研究清楚地揭示了这一点。2011年，他们发布了一项具有里程碑意义的研究《学业漂泊》，记录了众多在校大学生智力成长不足的问题。阿鲁姆和罗克萨特别发现，大学生未能培养出批判性思维、分析推理以及其他更高层次的技能，而这些技能对于在当今知识经济中脱颖而出、以及在充满复杂挑战和动态变化的时代引领国家前行是必不可少的。\n阿鲁姆和罗克萨将学生学习不足归咎于大学课程缩水以及本科学习标准降低。虽然上大学本应是一份全职工作，但学生平均每周只学习12到14小时，许多人没有进行大量阅读和写作就混过了一个个学期。选修更具挑战性课程、花更多时间学习的学生确实学得更多。但许多本科生的重心放在了课外活动、体育运动、聚会和社交上。\n劳拉·汉密尔顿是一项关于父母支付大学费用研究的作者，她在即将出版的一本书中提出，大学管理层过度关注学生的社交和体育活动。在《为派对买单》一书中，汉密尔顿描述了她所称的“派对路径”，这条路径让许多学生轻松度过大学，各种社团将学生带入派对圈，加上大量容易的专业也助长了这一趋势。大学默许这种缩水版的大学教育，是在“迎合富裕学生的社交和教育需求，而牺牲了其他学生”，后者毕业后无法享受富裕学生的经济支持和社交关系。\n这些学生如果在大学期间不积累技能和知识，就无法将学位作为迈向中产阶级流动的垫脚石。但条件更优越的学生同样不能浪费这一机会。正如近年的毕业生可以证明的那样，就业市场对那些无法展现真正能力、以及没有培养出吃苦耐劳精神的求职者并不友好。全球经济也不会容忍美国劳动力在读写、数学和科学能力上日益薄弱。当然，大学毕业生仍会比只有高中学历的人境况更好。但一个没有伴随知识或技能增长的大学学位，实际上是一种空洞的成就。对于那些一直在大学里混日子的学生，以及那些不断降低学业要求、提供更多娱乐设施并收取更高学费的美国大学来说，这场派对可能很快就要结束了。",
+   "questions": [
+    {
+     "stem": "61. What is Arum and Roksa’s finding about higher education in America?",
+     "answer": "B",
+     "analysis": "第一段二、三句指出阿鲁姆和罗克萨发现大学生未能培养批判性思维、分析推理等高阶技能，无法应对当今知识经济和复杂挑战，与B项“未能让学生为应对现代挑战做好准备”一致。A项“激发求知欲”、C项“经历剧变”、D项“努力满足各种需求”均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "62. What is responsible for the students’ lack of higher-level skills?",
+     "answer": "A",
+     "analysis": "第二段首句明确将学生学习不足归咎于“watered-down college curriculum”（缩水的课程），与A项“diluted college curriculum”同义替换。B项“课堂活动无聊”、C项“缺乏严格纪律”过于笼统且非原文直接原因，D项“教育方法过时”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "63. What does Laura Hamilton say about college administrations?",
+     "answer": "D",
+     "analysis": "第三段首句指出大学管理层“overly concerned with the social and athletic activities”，即过度关注非学术活动，对应D项。A项“未能帮助贫困学生”虽涉及“牺牲他人”，但不是汉密尔顿对管理层的核心批评；B项“提供太多容易课程”是“派对路径”的一部分，但未直接表述为管理层的首要问题；C项“脱离社会”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "64. What can be learned about the socially and financially privileged students?",
+     "answer": "B",
+     "analysis": "第三段末句提到大学迎合富裕学生的社交和教育需求，使他们在“派对路径”中通过容易的专业轻松毕业，对应B项“能选择容易的专业来享受生活”。A项“优越感”、C项“与商界建立联系”断章取义，原文只提毕业后的社会关系，D项“没有学位也能上升”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "65. What does the author suggest in the last paragraph?",
+     "answer": "C",
+     "analysis": "末段最后一句“the party may soon be over”暗示当前大学中混日子、低要求、高收费的现象不会持续太久，对应C项。A项“失去全球竞争力”夸大，B项“不应期望过高”曲解，D项“需很长时间改变”与“soon”含义相反。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "一百年前，“有色人种”是称呼非洲裔美国人的常用方式。二十年后，这个词被有意弃用，让位于“黑人”（Negro）。到20世纪60年代末，这个称呼又被“Black”取代。之后，1988年在芝加哥的一次新闻发布会上，杰西·杰克逊宣称“非洲裔美国人”是应当采用的称谓。选择这个称谓是因为它呼应了诸如“意大利裔美国人”和“爱尔兰裔美国人”等群体的标签，这些群体早已摆脱了普遍的歧视。一个世纪以来经过深思熟虑的名称变更表明，给任何群体命名都是一项充满政治意味的事。2001年的一项研究罗列了“Black”一词比“African American”更具负面涵义的所有方面。然而，尽管人们知道“黑人”和“非洲裔美国人”会被区别看待，但研究人员此前一直未能确定这种认知差异的根源。埃默里大学的埃里卡·霍尔最近进行的一项研究发现，“黑人”之所以被认为比“非洲裔美国人”更负面，是因为人们认为二者在社会经济地位上存在差异。因此，“黑人”被认为能力更差、性格更冷淡。这项研究最引人注目的发现揭示了渗透在职场中的种族偏见。即使是简历上看似无关紧要的细节，似乎也会触发招聘人员的偏见。求职申请中可能会提及所属的组织，如“威斯康星州非洲裔美国人律师协会”或“全国黑人员工协会”，这些名称显然会产生影响，而且其成员无法控制。在该研究的一项实验中，受试者拿到了一段关于芝加哥一位姓威廉姆斯的男子的简短描述。一组受试者被告知他是“非洲裔美国人”，另一组则被告知他是“黑人”。在几乎没有其他信息的情况下，他们被要求估计威廉姆斯先生的薪水、职业地位和教育背景。“非洲裔美国人”组估计他年收入约3.7万美元，拥有两年制大学学位。而“黑人”组估计他的年薪约为2.9万美元，并猜测他只上过“一些”大学课程。第一组中近四分之三的人猜测威廉姆斯先生担任管理职务，而第二组中只有38.5%的人这样认为。霍尔的发现表明，有理由选择使用“非洲裔美国人”这一称谓，不过人们不禁会觉得，这个决定掩盖了持续进步的紧迫性。也许需要一个新说法，让人们朝着实现杜波依斯最初理想主义的希望迈出一大步：“重要的不是名称，而是实质。”",
+   "questions": [
+    {
+     "stem": "46. Why did Jesse Jackson embrace the term “African American” for people of African descent?",
+     "answer": "B",
+     "analysis": "原文提到选择“African American”是因为它呼应了已经摆脱广泛歧视的群体标签，代表社会进步。A项过于绝对，文中并未说该术语完全无种族偏见；C、D两项无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author say about the naming of an ethnic group?",
+     "answer": "D",
+     "analysis": "作者指出命名任何群体都是politically freighted exercise，即政治敏感。A项虽涉及名称变化，但非作者核心观点；B、C未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do Erika Hall’s findings indicate?",
+     "answer": "A",
+     "analysis": "霍尔研究发现种族偏见渗透职场，与A项widespread同义。B项曲解文意；C项为过度推断；D项原文未说招聘者无法控制偏见。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does Erika Hall find in her experiment about a man with the last name Williams?",
+     "answer": "C",
+     "analysis": "实验表明同一人被标注不同身份时，受试者估计差异显著，说明标签影响认知。A项无族群比较；B项混淆认知与实际状况；D项因果倒置。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is Dr. Du Bois’s ideal?",
+     "answer": "B",
+     "analysis": "杜波依斯认为“重要的不是名称，而是实质”，强调以人的价值而非称谓来评判。A项过于宽泛；C项与理想相悖；D项曲解原文。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "[A] 政客们喜欢承诺快速的能源转型。无论是从进口石油转向国产石油，还是从燃煤发电转向天然气发电厂，政客们都喜欢夸夸其谈。对他们（往往还有纳税人）来说不幸的是，我们的能源系统有点像航空母舰：它们昂贵得令人难以置信，它们建好就是为了使用很长时间，它们具有巨大的惯性（也就是说，需要大量能量才能让它们动起来），而一旦启动，它们又有很大的动量。无论你多努力，你都无法让那么大的东西在极短距离内（10 美分硬币大小）转弯，哪怕是几千个 10 美分硬币也不行。\n[B] 在物理学中，运动物体有两个与理解能源系统动态相关的特性：惯性和动量。惯性是物体抵抗改变其运动状态的特性。如果你试图推动一块大圆石，它会反推你。一旦你让大圆石滚起来，它就产生了动量，动量由物体的质量和速度决定。据说动量是“守恒的”，也就是说，一旦你建立起了动量，它就必须转移到某处。因此，一个重物，比如高速移动的橄榄球运动员，具有很大的动量——也就是说，一旦他在移动，就很难改变他的运动状态。如果你想改变他的路线，你只有几个选择：你可以拦住他，把他的一部分动能（可能是痛苦地）转移到你自己的身体上，或者你可以从旁边靠近并慢慢施加压力，逐渐改变他的路线。\n[C] 但也有其他类型的动量。毕竟，我们不只说物体或人有动量；我们也说整个系统具有动量。无论是运动队还是总统竞选，每个人都喜欢拥有大的动量，因为这使得他们更难被阻止或改变方向。\n[D] 其中一种动量是技术动量。当一项技术被部署时，其影响远远超出技术本身。以白炽灯为例，它目前受到许多环保主义者和能效倡导者的憎恶。由托马斯·爱迪生发明的白炽灯，后来成为灵感的象征，已经发展出数百种甚至数千种形式。如今，去一家灯具店就能看到令人惊叹的各种选择。有标准形状的灯泡、火焰形状的灯泡、彩色球形灯泡等等。有了这么多选择，换一个灯泡是很容易的。\n[E] 但白炽灯照明的动量并不止于此。所有这些专门的灯泡促成了专门的灯具的制造，从你学习用的台灯，到你从祖母那里继承来的丑陋但心爱的手绘中国台灯，到你壁橱里的天花板灯具，到你烤箱或冰箱里的灯，再到牙医对准你的灯。当然，换一个灯泡很容易，但换灯泡及其灯具就更难了。\n[F] 而且还不止这些，因为不仅是安装白炽灯的装置按其基本特性来设计，房间和整栋建筑也是根据白炽灯照明在墙壁和窗户上的反射方式来设计的。\n[G] 正如照明专家霍华德·布兰德斯顿所指出的：“一般来说，没有不好的光源，只有不好的应用。”紧凑型荧光灯（CFL）有一些非常值得称赞的特性，然而任何光源的选择都离不开容纳它的照明装置，以及两者安装的空间，还有需要满足的照明要求。灯、灯具和房间，这三者必须协同工作，才能真正有利于最终用户。如果要用 CFL 来照亮某个特定空间或该空间中的某个物体，灯具就必须设计成能与该灯配合，而该灯具又要与房间配合。这是一种共生关系。不能简单地把 CFL 装进白炽灯灯具里，然后期望它能产生不失真、不模糊或昏暗的视觉效果。整个灯具都必须更换——光源和照明装置——而这从来不是一项便宜的事。\n[H] 而且布兰德斯顿对照明颇有了解，因为正是他照亮了自由女神像。\n[I] 在规划能源系统变化时，我们必须考虑的另一种动量是劳动力储备动量。说我们将在 20 年内把 30% 的电力供应从煤炭转向核能是一回事，但要拥有能够让你兑现这一承诺的受过培训的人才则是另一回事。这是因为新能源行业所需的工程师、设计师、监管者、操作人员以及所有其他技术人员都是专家，必须首先接受培训（或者，如果他们是从某个相关行业被裁掉的人，则需要再培训），而教育就像任何其他复杂的事情一样，需要时间。而且，我们未来的新能源工人不仅要接受培训，还必须按照正确的顺序接受培训。需要先有设计师，也许还有监管者，然后才有建造者和操作者，而且每一批接受培训的工人都必须知道毕业后有工作等着他们。在某些情况下，学院和大学可能不得不改变他们的培训项目，这又增加了一层难度。\n[J] 在改变能源系统时，迄今发挥作用的最大类型的动量是经济动量。我们能源系统的主要组成部分，如燃料生产、炼油、发电和配电，都是昂贵的设施，使用寿命很长。它们必须运行很长时间才能收回开发成本。当投资者投入资金建设，比如说，一座核电站时，他们期望在核电站的计划运行期内赚回这笔钱，这个运行期通常为 40 到 60 年。美国的一些燃煤电厂已经运行了 70 多年！美国最古老的持续运行的商业水力发电厂位于纽约哈德逊河上，于 1898 年投入商业运营。\n[K] 正如瓦茨拉夫·斯米尔所指出的：“上面引用的所有预测、计划和预期都失败得如此悲惨，因为它们的作者和推动者认为，他们希望实施的转型将会不同于以往所有的能源转型，而且他们的进展能够以史无前例的方式加速。”\n[L] 当你听到人们说要快速向任何类型的能源转型，无论是从煤炭转向核能，还是从汽油动力汽车转向电动汽车，甚至是从白炽灯转向荧光灯，理解能源系统的惯性和动量可以帮助你判断他们的计划是否可行。",
+   "questions": [
+    {
+     "stem": "36. Not only moving objects and people but all systems have momentum.",
+     "answer": "C",
+     "analysis": "After all, we don’t speak only of objects or people as having momentum; we speak of entire systems having momentum.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Changing the current energy system requires the systematic training of professionals and skilled labor.",
+     "answer": "I",
+     "analysis": "That is because the engineers, designers, regulators, operators, and all of the other skilled people needed for the new energy industry are specialists who have to be trained first... and education, like any other complicated endeavor, takes time.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Changing a light bulb is easier than changing the fixture housing it.",
+     "answer": "E",
+     "analysis": "It is easy to change a light bulb, sure, but it is harder to change the bulb and its fixture.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Efforts to accelerate the current energy transitions didn’t succeed as expected.",
+     "answer": "K",
+     "analysis": "All the forecasts, plans, and anticipations cited above have failed so miserably because... their progress could be accelerated in an unprecedented manner.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. To change the light source is costly because you have to change the whole fixture.",
+     "answer": "G",
+     "analysis": "The whole fixture must be replaced—light source and luminaire—and this is never an inexpensive proposition.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Energy systems, like an aircraft carrier set in motion, have huge momentum.",
+     "answer": "A",
+     "analysis": "our energy systems are a bit like an aircraft carrier... they have a lot of momentum once they are set in motion.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. The problem with lighting, if it arises, often doesn’t lie in light sources but in their applications.",
+     "answer": "G",
+     "analysis": "Generally, there are no bad light sources, only bad applications.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The biggest obstacle to energy transition is that the present energy system is too expensive to replace.",
+     "answer": "J",
+     "analysis": "By far the biggest type of momentum... is economic momentum. The major components... are costly installations that have lengthy life spans.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. The application of a technology can impact areas beyond itself.",
+     "answer": "D",
+     "analysis": "When a technology is deployed, its impacts reach far beyond itself.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Physical characteristics of moving objects help explain the dynamics of energy systems.",
+     "answer": "B",
+     "analysis": "In physics, moving objects have two characteristics relevant to understanding the dynamics of energy systems: inertia and momentum.",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-09T17:32:54.612Z"
+ "generatedAt": "2026-10-10T02:18:37.831Z"
 }

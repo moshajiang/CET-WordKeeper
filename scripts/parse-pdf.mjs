@@ -16,12 +16,16 @@ if (!txtPath || !level) {
 
 const raw = fs.readFileSync(txtPath, 'utf8');
 
-// 归一化：合并空白；修掉「词 - 词」里的伪空格
+// 页脚（"第3页,共6页" / "第 3 页 共 6 页"）不是正文，混进题区会污染匹配题的切分
+const PAGE_FOOT = /^第\s*\d+\s*页\s*[,，、]?\s*共\s*\d+\s*页$/;
+
+// 归一化：合并空白；修掉「词 - 词」里的伪空格；剔除页脚
 const lines = raw
   .split(/\r?\n/)
   .map((s) => s.replace(/\s+/g, ' ').trim())
   .map((s) => s.replace(/(\w)\s+-\s*(\w)/g, '$1-$2'))
-  .filter(Boolean);
+  .filter(Boolean)
+  .filter((s) => !PAGE_FOOT.test(s));
 
 // ---- 结构识别 ----
 // 两个都必须容忍：
@@ -49,24 +53,56 @@ function stripDirections(arr) {
   return arr.slice(j);
 }
 
-// 题号切分：必须带小数点且落在指定区间。
-// 否则正文续行 "47 hours in the United States…" 会被当成第 47 题，把篇章拦腰截断。
-const splitNumbered = (text, lo, hi) =>
-  text
-    .split(/(?=^\s*\d{2}\s*[.．]\s)/m)
-    .map((s) => s.trim())
-    .filter((s) => {
-      const m = s.match(/^(\d{2})\s*[.．]\s/);
-      return m && Number(m[1]) >= lo && Number(m[1]) <= hi;
-    });
+// 题号正则：允许小数点后无空格（"36.The"），但排除小数（"45.5"）
+const QNUM_RE = /^(\d{1,2})\s*[.．]\s*(?!\d)/;
+
+// 题号区间从原文的 "Questions 36 to 45 are based on the following passage." 推导，
+// 不再写死 —— 老卷的编排与现在不同（如 2014 六级：选词 36–45、匹配 46–55、仔细阅读 56–65）。
+const Q_RANGE = /Questions?\s+(\d{1,2})\s*(?:to|~|[-–—])\s*(\d{1,2})\b/i;
+function qRange(arr, dLo, dHi) {
+  for (const s of arr) {
+    const m = String(s).match(Q_RANGE);
+    if (m) return { lo: Number(m[1]), hi: Number(m[2]) };
+  }
+  return { lo: dLo, hi: dHi };
+}
+
+// 按「行首两位题号 + 点 + 非数字」切分，不做区间过滤
+const splitAnyNumbered = (text) =>
+  String(text).split(/(?=^\s*\d{1,2}\s*[.．]\s*(?!\d))/m).map((s) => s.trim()).filter(Boolean);
+
+// 从题区切出 count 道题：只用区间内的题号定位起点，之后按任意题号切、取前 count 段。
+// 不能对每段硬做区间过滤 —— 源文题号常错标（如 44/45 写成 54/55），硬过滤会丢题。
+function takeQuestions(text, lo, hi, count) {
+  const chunks = splitAnyNumbered(text);
+  const si = chunks.findIndex((c) => {
+    const m = String(c).match(QNUM_RE);
+    return !!m && Number(m[1]) >= lo && Number(m[1]) <= hi;
+  });
+  return si < 0 ? [] : chunks.slice(si, si + count);
+}
+
+// 题干补题号：原文已带编号就保留
+function withQNum(stem, n) {
+  const s = String(stem).trim();
+  return QNUM_RE.test(s) ? s : `${n}.${s}`;
+}
+
+// 有些卷把 10 条陈述排成有序列表："1. 36. <陈述>  2. 37. …"。
+// 列表序号会把真正的题号（36–45）挡住，导致按题号定位失败、退化成「取末尾 10 行」的错乱结果。
+// 判据严格：只有「序号 + 点」紧跟「另一位题号 + 点 + 大写」时才剥掉外层序号，不碰正文。
+const stripListMarker = (s) => String(s).replace(/^\s*\d{1,2}\s*[.．]\s*(?=\d{1,2}\s*[.．]\s*[A-Z])/, '');
 
 // 选词填空的词库行：一份词库常被折成多行、每行多个词，甚至按栏排成三段；序号有 "A)" 也有 "A."。
 // 判据 —— 把词条全摘掉后该行不该再有实质内容，这样才不会把正文里的 A) 误认成词库。
-const BANK_ENTRY = /([A-O])\s*[)）.．、]\s*([A-Za-z][A-Za-z'’-]*)/g;
+// 容忍与 parse-docx 一致的三种源瑕疵：装饰符号（"K)' secondary"）、OCR 把 O 认成 0、散落噪声 "·"。
+const BANK_ENTRY = /([A-O0])\s*[)）.．、]\s*['’`·．.\-]*\s*([A-Za-z][A-Za-z'’-]*)/g;
+const BANK_NOISE = /[\s,，、;；.．·'"’`\-]/g;
 function bankEntries(text) {
-  const rest = String(text).replace(BANK_ENTRY, '').replace(/[\s,，、;；.．]/g, '');
+  const norm = String(text).replace(/([a-z])([A-O0]\s*[)）.．、])/g, '$1 $2');
+  const rest = norm.replace(BANK_ENTRY, '').replace(BANK_NOISE, '');
   if (rest) return null;
-  const out = [...String(text).matchAll(BANK_ENTRY)].map((m) => ({ letter: m[1], word: m[2] }));
+  const out = [...norm.matchAll(BANK_ENTRY)].map((m) => ({ letter: m[1] === '0' ? 'O' : m[1], word: m[2] }));
   return out.length ? out : null;
 }
 
@@ -130,32 +166,51 @@ for (let k = 0; k < sectionIdx.length - 1; k++) {
   const name = lines[a].match(/^Section\s+([ABC])/i)[1].toUpperCase();
   const bodyIdx = [];
   for (let i = a + 1; i < b; i++) if (!bankLines.has(i)) bodyIdx.push(i);
-  const body = stripDirections(bodyIdx.map((i) => lines[i]));
+  const body = stripDirections(bodyIdx.map((i) => lines[i])).map(stripListMarker);
 
   if (name === 'A') {
     // 选词填空：正文 + 词库（词库可能被排版到别处，已全局收集）
-    // 每个空（26–35）的 options 都是同一份完整词库 —— 不是「一词一题」
+    // 每个空的 options 都是同一份完整词库 —— 不是「一词一题」。
+    // 空号从 "Questions 36 to 45 are based on the following passage." 推导（默认 26–35）
+    const r = qRange(body, 26, 35);
     const text = body.filter((s) => !/^Questions?\s+\d/i.test(s));
     const bankOptions = bankWords.map((w) => `${w.letter}) ${w.word}`);
+    const n = Math.max(1, r.hi - r.lo + 1);
     passages.push({
       section: 'cloze', seq: 1, title: '选词填空', content: text.join('\n'),
       questions: bankOptions.length
-        ? Array.from({ length: 10 }, (_, i) => ({ qtype: 'cloze', stem: String(26 + i), options: bankOptions.slice(), answer: '', analysis: '' }))
+        ? Array.from({ length: n }, (_, i) => ({ qtype: 'cloze', stem: String(r.lo + i), options: bankOptions.slice(), answer: '', analysis: '' }))
         : [],
     });
   } else if (name === 'B') {
-    // 长篇阅读：段落（A-O）+ 匹配题（36-45）
-    const firstQ = body.findIndex((s) => /^3[6-9]\s*[.．]\s|^4[0-5]\s*[.．]\s/.test(s));
-    const head = firstQ < 0 ? body.length : firstQ;
-    const paragraphs = body.slice(0, head);
-    const title = paragraphs.find((s) => !/^[A-O]\)/.test(s)) || '长篇阅读';
+    // 长篇阅读：文章段落 + 匹配题。区间从 "Questions 36 to 45" 推导，缺该行时默认 36–45
+    const r = qRange(body, 36, 45);
+    const count = r.hi - r.lo + 1;
+    const inRange = (s) => { const m = String(s).match(QNUM_RE); return !!m && Number(m[1]) >= r.lo && Number(m[1]) <= r.hi; };
+    const firstQ = body.findIndex(inRange);
+    let paragraphs, stems;
+    if (firstQ >= 0) {
+      paragraphs = body.slice(0, firstQ);
+      // 保留 "36." 前缀（前端直接显示 stem，全库一致）
+      stems = takeQuestions(body.slice(firstQ).join('\n'), r.lo, r.hi, count);
+    } else {
+      // 源文里 10 条陈述**没有编号**（老卷常见）：
+      // 优先取「注意：…答题卡…」之后的内容，否则退化为取末尾 count 段；补上题号
+      const MARK = /答题卡|Answer\s*Sheet/i;
+      const mIdx = body.reduce((a, s, i) => (MARK.test(s) ? i : a), -1);
+      const after = mIdx >= 0 ? body.slice(mIdx + 1) : [];
+      const tail = after.length >= count ? after : body.slice(Math.max(0, body.length - count));
+      stems = tail.map((s) => s.trim()).filter(Boolean)
+        .map((s, i) => withQNum(s, r.lo + i));
+      paragraphs = after.length >= count ? body.slice(0, mIdx + 1) : body.slice(0, Math.max(0, body.length - count));
+    }
+    const title = paragraphs.find((s) => !/^[A-O][)）.．]/.test(s) && !/答题卡|Answer\s*Sheet/i.test(s) && s.length < 120) || '长篇阅读';
     passages.push({
       section: 'match', seq: 1, title: '长篇阅读 · ' + title, content: paragraphs.join('\n'),
-      questions: splitNumbered(body.slice(head).join('\n'), 36, 45)
-        .map((c) => ({ qtype: 'match', stem: c.replace(/^\d{2}\s*[.．]\s*/, '').trim(), options: [], answer: '', analysis: '' })),
+      questions: stems.map((c) => ({ qtype: 'match', stem: c, options: [], answer: '', analysis: '', })),
     });
   } else if (name === 'C') {
-    // 仔细阅读：Passage One / Two + 题目（46-55）
+    // 仔细阅读：Passage One / Two；题号区间逐 Passage 从 "Questions X to Y" 推导
     const groups = [];
     let g = null;
     for (const s of body) {
@@ -165,14 +220,18 @@ for (let k = 0; k < sectionIdx.length - 1; k++) {
     if (!groups.length) groups.push({ title: 'Section C', lines: body });
     groups.forEach((grp, gi) => {
       const arr = grp.lines.filter((s) => !/^Questions?\s+\d+\s+to\s+\d+/i.test(s));
-      const firstQ = arr.findIndex((s) => /^4[6-9]\s*[.．]\s|^5[0-5]\s*[.．]\s/.test(s));
+      const r = qRange(grp.lines, gi === 0 ? 46 : gi === 1 ? 51 : 56, gi === 0 ? 50 : gi === 1 ? 55 : 60);
+      const count = r.hi - r.lo + 1;
+      const inRange = (s) => { const m = String(s).match(QNUM_RE); return !!m && Number(m[1]) >= r.lo && Number(m[1]) <= r.hi; };
+      const firstQ = arr.findIndex(inRange);
       const head = firstQ < 0 ? arr.length : firstQ;
-      const qText = arr.slice(head).join('\n');
+      // 起点之后按任意题号切、取前 count 段（源文题号可能错标）
+      const chunks = firstQ < 0 ? [] : takeQuestions(arr.slice(head).join('\n'), r.lo, r.hi, count);
       passages.push({
         section: 'reading', seq: gi + 1,
         title: '仔细阅读 · ' + grp.title.trim(),
         content: arr.slice(0, head).join('\n'),
-        questions: splitNumbered(qText, 46, 55).map((c) => { const { stem, options } = parseOptions(c); return { qtype: 'choice', stem, options, answer: '', analysis: '' }; }),
+        questions: chunks.map((c) => { const { stem, options } = parseOptions(c); return { qtype: 'choice', stem, options, answer: '', analysis: '' }; }),
       });
     });
   }

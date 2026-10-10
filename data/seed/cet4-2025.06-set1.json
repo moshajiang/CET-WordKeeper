@@ -259,70 +259,70 @@
       "questions": [
         {
           "qtype": "match",
-          "stem": "During the course of preparing for Design Ventura, teachers receive training and support while students get tutoring from\ndesigners.",
+          "stem": "36. During the course of preparing for Design Ventura, teachers receive training and support while students get tutoring from\ndesigners.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "A visit to the Design Museum shop in London can reduce the designers’ fears about the future supply of talents educated\nin Britain.",
+          "stem": "37. A visit to the Design Museum shop in London can reduce the designers’ fears about the future supply of talents educated\nin Britain.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "One of Design Ventura’s judges says the competition adds vigour to the standard curriculum in schools.",
+          "stem": "38. One of Design Ventura’s judges says the competition adds vigour to the standard curriculum in schools.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "Enrollment in Design and Technology decreased by nearly ten percent last year in the UK.",
+          "stem": "39. Enrollment in Design and Technology decreased by nearly ten percent last year in the UK.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "Participation of ninth graders in Design Ventura can motivate them to choose design technology as their subject.",
+          "stem": "40. Participation of ninth graders in Design Ventura can motivate them to choose design technology as their subject.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "Design Ventura is welcomed by teachers because it helps to prove the worth of design as a school subject.",
+          "stem": "41. Design Ventura is welcomed by teachers because it helps to prove the worth of design as a school subject.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "The schools don’t have to pay anything to take part in the Design Ventura competition.",
+          "stem": "42. The schools don’t have to pay anything to take part in the Design Ventura competition.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "Participants in Design Ventura are challenged to create sustainable and marketable products.",
+          "stem": "43. Participants in Design Ventura are challenged to create sustainable and marketable products.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "Students benefit from Design Ventura because they can learn about budgeting and marketing in addition to game design.",
+          "stem": "44. Students benefit from Design Ventura because they can learn about budgeting and marketing in addition to game design.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "According to an officer of the Creative Industries Federation, there is difficulty now in recruiting engineers in the UK.",
+          "stem": "45. According to an officer of the Creative Industries Federation, there is difficulty now in recruiting engineers in the UK.",
           "options": [],
           "answer": "",
           "analysis": ""
@@ -366,7 +366,15 @@
             "A) It is urgent to provide an ideal habitat for them to thrive.",
             "B) It is very important to preserve their genetic diversity.",
             "C) Their chances of finding new mates have a lot to do with their habitat.",
-            "D) Their environment for survival has been continuously worsening. 49.What can we infer from the passage about the Goldilocks principle?",
+            "D) Their environment for survival has been continuously worsening."
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "What can we infer from the passage about the Goldilocks principle?",
+          "options": [
             "A) It needs to be confirmed by more studies on pandas.",
             "B) It applies to the preservation of pandas too.",
             "C) It has implications for future panda research.",

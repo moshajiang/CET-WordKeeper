@@ -17,8 +17,239 @@
       "section": "cloze",
       "seq": 1,
       "title": "选词填空",
-      "content": "A new study has drawn a bleak picture of cultural inclusiveness reflected in the children's literature available in Australia. Dr . Helen Adam from Edith Cowan University's School of Education 26 the cultural diversity of children's books. She examined the books 27 in the kindergarten rooms of four day-'care centers in Western Australia. Just 18 percent of 2,413 books in the total collection contained any 28 of nonwhite people. Minority cultures were often featured in stereotypical or tokenistic ways, for example, by 29 Asian culture with chopsticks and traditional dress. Characters that did represent a\nminority culture usually had 30 roles in the books. The main characters were mostly Caucasian. This causes concern as it can lead to an impression that whiteness is of greater value.\nDr . Adam said children formed impressions about 'difference' and identity from a very young age. Evidence has shown they develop own-race . 31 from as young as three months of age. The books we\nshare with young children can be a valuable opportunity to develop children's understanding of themselves and others. Books can also allow children to see diversity. They discover both similarities and differences between themselves and others. This can help develop understanding, acceptance and of diversity. Census data has shown Australians come from more than 200 countries. They speak over 300 languages at home. Additionally, Australians belong to more than 100 different religious groups. They also work in more than 1, OOO different occupations. \"Australia is a multicultural society. The current\n33 promotion of white middle-class ideas and lifestyles risks 34 children from minority groups. This can give white middle-class children a sense of 35 or privilege,\" Dr. Adam said.\nA) alienating F) investigated K)' secondary\nE) housed · J) safeguarded 0) threshold",
-      "questions": []
+      "content": "A new study has drawn a bleak picture of cultural inclusiveness reflected in the children's literature available in Australia. Dr . Helen Adam from Edith Cowan University's School of Education 26 the cultural diversity of children's books. She examined the books 27 in the kindergarten rooms of four day-'care centers in Western Australia. Just 18 percent of 2,413 books in the total collection contained any 28 of nonwhite people. Minority cultures were often featured in stereotypical or tokenistic ways, for example, by 29 Asian culture with chopsticks and traditional dress. Characters that did represent a\nminority culture usually had 30 roles in the books. The main characters were mostly Caucasian. This causes concern as it can lead to an impression that whiteness is of greater value.\nDr . Adam said children formed impressions about 'difference' and identity from a very young age. Evidence has shown they develop own-race . 31 from as young as three months of age. The books we\nshare with young children can be a valuable opportunity to develop children's understanding of themselves and others. Books can also allow children to see diversity. They discover both similarities and differences between themselves and others. This can help develop understanding, acceptance and of diversity. Census data has shown Australians come from more than 200 countries. They speak over 300 languages at home. Additionally, Australians belong to more than 100 different religious groups. They also work in more than 1, OOO different occupations. \"Australia is a multicultural society. The current\n33 promotion of white middle-class ideas and lifestyles risks 34 children from minority groups. This can give white middle-class children a sense of 35 or privilege,\" Dr. Adam said.",
+      "questions": [
+        {
+          "qtype": "cloze",
+          "stem": "26",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "27",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "28",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "29",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "30",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "31",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "32",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "33",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "34",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "cloze",
+          "stem": "35",
+          "options": [
+            "A) alienating",
+            "B) appreciation",
+            "C) bias",
+            "D) fraud",
+            "E) housed",
+            "F) investigated",
+            "G) overwhelming",
+            "H) portraying",
+            "I) representation",
+            "J) safeguarded",
+            "K) secondary",
+            "L) superiority",
+            "M) temperament",
+            "N) tentative",
+            "O) threshold"
+          ],
+          "answer": "",
+          "analysis": ""
+        }
+      ]
     },
     {
       "section": "match",
@@ -203,7 +434,15 @@
             "A) elevate its tourism to international standards",
             "B) improve the welfare of its maintenance workers",
             "C) promote its cultural exchange with other nations",
-            "D) ease its financial burden of providing local services 54, What does the author sa-y about Western tourists?",
+            "D) ease its financial burden of providing local services"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "54, What does the author sa-y about Western tourists?",
+          "options": [
             "A) They don't seem to care about the social cost of tourism .",
             "B) They don't seem to mind paying for additional services .",
             "C) They deem travel an important part of their life .",

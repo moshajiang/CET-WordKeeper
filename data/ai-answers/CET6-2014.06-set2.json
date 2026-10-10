@@ -6,18 +6,6 @@
  "model": "deepseek-v4-pro",
  "passages": [
   {
-   "section": "reading",
-   "seq": 1,
-   "translation": "技术可以让我们变得更聪明或更愚蠢，我们需要制定一套原则来指导我们的日常行为，确保技术是在改善而不是阻碍我们的思维过程。当今争论的一个大问题是：我们需要将什么样的信息储存在大脑里，什么样的信息可以留在“云端”，在需要时再获取？\n教育界一个日益强大的群体正在倡导“数字素养”。在他们看来，技能胜过知识，培养“数字素养”比学习单纯的内容更重要，而且所有事实现在都可以谷歌搜索到，因此不值得记住。但是，如果学生和劳动者对世界实际运作方式缺乏广泛的知识基础，即使最先进的数字素养技能也无法帮助他们在这个世界中游刃有余。如果你只关注传递机制而不关注内容，那你就是在损害孩子们的利益。\n事实上，认知科学的证据挑战了技能可以独立于事实知识而存在的观念。过去三十年的数据得出一个在科学上无可辩驳的结论：善于思考需要了解事实，之所以如此，不仅是因为你需要有东西可思考。教师们最关心的过程——批判性思维过程——与储存在长期记忆中的事实知识紧密交织在一起。\n换句话说，仅仅因为你可以在谷歌上搜索到黑色星期二的日期，并不意味着你理解大萧条为何发生，也不意味着你理解它与我们最近的经济衰退相比如何。毫无疑问，今天的学生和明天的劳动者需要创新、协作和评估。但这些技能不能与产生它们所需的知识相分离。要创新，你必须知道之前发生了什么。要协作，你必须为共同事业贡献知识。要评估，你必须将新信息与你已经掌握的知识进行比较。\n因此，在数字世界中思考的原则分为两部分。第一，在你想要表现出色的任何领域，获取事实知识的基础。这个基础为培养技能提供了必要的根基，不能外包给搜索引擎。\n第二，利用计算机的不变记忆，同时也要利用大脑的精细加工记忆。当你想存储不应改变的信息时，计算机非常棒。但当你希望信息以有趣和有用的方式发生变化时——与其他事实和想法建立联系，获得层层递进的意义，在你积累的知识和经验中浸泡一段时间，从而产生更丰富的精神佳酿——大脑是更优的选择。",
-   "questions": []
-  },
-  {
-   "section": "reading",
-   "seq": 2,
-   "translation": "美国近年历史一直持续向西部倾斜——人口、思想、商业甚至政治权力都如此。加利福尼亚和德克萨斯是西部的两个极点，但两者截然不同。在20世纪的大部分时间里，硅谷和好莱坞的所在地一直是两者中更聪明、更时髦的一个。德克萨斯则落后于后：其刻板印象是一个穿着牛仔靴的保守基督徒。但双胞胎也可能互换位置。现在正在发生这种情况吗？\n\n很容易找到加利福尼亚陷入恐慌的证据。本月初，这个曾经的黄金之州开始用欠条向债权人付款。本财政年度预计支出与收入之间的缺口已猛增至可怕的260亿美元。由于没有新预算来填补这一缺口的迹象，一家信用评级机构已经下调了加利福尼亚的债务评级。随着预算被削减，大学将减少招生，囚犯将被提前释放，保护弱势群体的计划将被缩减。\n\n相比之下，德克萨斯很好地应对了经济衰退，其失业率比全国平均水平低两个百分点，并且是房屋止赎率最低的州之一。部分原因是德克萨斯的银行在上一次房地产泡沫破灭中遭受重创，这次没有过度扩张。德克萨斯还明确提供了一种基于小政府的不同模式。它没有州资本利得税或所得税，并采取对商业友好和包容移民的态度。它拥有的《财富》500强公司数量超过任何其他州。\n\n尽管如此，把美国的未来交给德克萨斯似乎还为时过早。首先，那种精简的德克萨斯模式有其自身问题。它在教育方面投资不足，许多专家有理由担心会出现一个主要由西班牙裔德克萨斯人构成的“迷失的一代”，他们缺乏满足知识经济需求所需的足够技能。\n\n其次，与一个拥有像加利福尼亚那么多富有创造力的人才的州打赌从来都不是明智之举。即使好莱坞已陷入萧条，它仍然拥有无与伦比的一系列朝阳产业以及全球最活跃的风险投资行业。该州还具有令人惊叹的自我革新能力——正如冷战结束时其国防工业崩溃后所做的那样。\n\n事实是，两个州可以互相学习。德克萨斯仍然缺少加利福尼亚的优秀大学，并且在文化方面落后。加利福尼亚不仅可以采纳德克萨斯更精简的政府模式，还可以采纳其更加两党合作的政治方式。没有完美的政府模式：美国的天才之处在于拥有50个公共政策实验室，它们相互竞争以找出什么最有效。",
-   "questions": []
-  },
-  {
    "section": "cloze",
    "seq": 1,
    "translation": "恐惧可以成为改变行为的有效方式。一项研究比较了高恐惧和低恐惧诉求对牙科卫生相关态度和行为变化的影响。一组受试者观看可怕的蛀牙和患病牙龈图片；另一组则观看不太吓人的材料，如塑料牙齿、图表和图形。观看恐怖材料的受试者报告了更多焦虑，并且比低恐惧组有更强烈的愿望去改变他们护理牙齿的方式。但这些反应是否真正转化为更好的牙科卫生习惯？为了回答这个重要问题，受试者在实验后两次（五天和六周后）被召回实验室。他们咀嚼牙疾诊断片，这种药片会给牙齿上任何未清洁的区域染上红色，从而直接显示他们实际护理牙齿的程度。结果显示，高恐惧诉求确实带来了更显著、更持久的牙科卫生变化。也就是说，接触高恐惧警告的受试者比接触低恐惧警告的受试者刷牙更仔细。然而，要成为一种有效的说服手段，信息不能太吓人，并且必须给予人们具体的指导，以帮助他们减少恐惧的根源。如果不这样做，他们可能会通过否认信息或传播者的可信度来减少焦虑。如果发生这种情况，态度或行为改变就不太可能发生。",
@@ -93,7 +81,24 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "It is often said that one should not put all eggs in one basket, and this advice holds true in many aspects of life. Concentrating all resources, time, or hopes on a single option may seem efficient, but it exposes us to enormous risks if that option fails. For instance, in financial investment, a person who invests all savings in one stock may lose everything when the market turns volatile. Similarly, a student who devotes all energy to only one job application or one scholarship may end up with nothing if rejected. By contrast, diversifying our choices, such as applying to several universities or keeping a backup plan, can effectively reduce potential losses and increase chances of success. In conclusion, putting all eggs in one basket is unwise because no one can predict the future perfectly. Unexpected changes, such as economic downturns or personal setbacks, can destroy a single plan. A wise person always prepares alternatives and spreads risks. Therefore, we should avoid over-reliance on a single path and learn to diversify our efforts.",
+   "note": "范文紧扣“不要把所有鸡蛋放在一个篮子里”的寓意，先指出集中资源的风险，再用投资和求职/奖学金两个例子说明单一选择脆弱，最后对比分散选择的优势，论证充分。结构为“引出观点—举例论证—总结建议”，清晰完整。可复用句型包括It is often said that...; Concentrating...may seem..., but it exposes...; For instance... Similarly... By contrast...; In conclusion... Therefore...。语言平实，逻辑连接自然。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Chinese buzzwords usually reflect social changes and culture, and some are becoming increasingly popular in foreign media. For example, tuhao and dama are both old words, but they have taken on new meanings. Tuhao used to refer to rural landlords who oppressed their tenants and servants, but now it is used to refer to people who spend money like water or like to show off their wealth. That is to say, a tuhao has money but no taste. Dama is a term for middle-aged women, but now it specifically refers to Chinese women who bought large quantities of gold when the gold price dropped not long ago. Tuhao and dama may be included in the new edition of the Oxford English Dictionary. So far, about 120 Chinese words have been added to the Oxford English Dictionary and have become part of the English language.",
+   "note": "难点在于“热词”“花钱如流水”“没有品位”等口语化表达的转换，以及“被收入”“被加进”的被动语态。译文保留“tuhao”“dama”拼音，用 buzzwords、spend money like water、taste 等单词，并对“大妈”作同位语解释，使语义清晰自然。",
+   "questions": []
   }
  ],
- "generatedAt": "2026-10-09T17:30:42.932Z"
+ "generatedAt": "2026-10-10T02:15:56.689Z",
+ "prunedAt": "2026-10-10T03:33:14.371Z"
 }

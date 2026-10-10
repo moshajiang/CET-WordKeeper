@@ -1,0 +1,18 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "To increase the likelihood of success, one should set realistic goals and work persistently towards them, as this approach provides clear direction and sustained motivation. Realistic goals, unlike vague ambitions, are specific and attainable, which makes it easier to measure progress and adjust strategies. For instance, a student aiming to pass CET-6 may break the task into weekly vocabulary and practice targets rather than simply wishing to \"improve English.\" Persistent effort then turns these small steps into visible achievements, reinforcing confidence and momentum. In contrast, overly ideal goals often lead to frustration and early giving-up, while lack of persistence leaves even excellent plans unrealized. Therefore, combining practical goal-setting with steady hard work is the most reliable path to success. Only in this way can we turn our dreams into reality.",
+   "note": "范文复现给定句并解释，结构为“观点—正反例证—总结”。以备考四级为例，对比务实目标与空想，强调坚持。可复用对比结构“unlike...”，倒装“Only in this way...”。",
+   "questions": []
+  }
+ ],
+ "generatedAt": "2026-10-10T03:04:31.356Z"
+}

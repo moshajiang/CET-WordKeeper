@@ -1,0 +1,137 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "彩虹是一种多色的、弧状的现象，可以出现在天空中。彩虹的颜色是由大气中的水滴对光的反射和色散产生的。观察者可能会认为彩虹的位置或近或远，但实际上这一现象并不位于任何特定地点。相反，彩虹的外观完全取决于观察者相对于光线方向的位置。本质上，彩虹是一种光学幻象。彩虹呈现由七种颜色按特定顺序组成的光谱。事实上，许多英语国家的学校儿童被教导记住“Roy G. Biv”这个名字，以帮助记忆彩虹的颜色及其顺序。“Roy G. Biv”代表：红、橙、黄、绿、蓝、靛、紫。彩虹弧的外缘是红色，而内缘是紫色。当光（通常是阳光）穿过大气中悬浮的水滴时，彩虹便形成。光波穿过水滴时改变方向，产生两个过程：反射和折射。当光从水滴反射时，它只是向与它传来方向相反的方向弹回。当光折射时，它会沿不同方向传播。有些人把折射光称为“弯曲光波”。彩虹形成是因为白光进入水滴后向几个不同方向弯曲。当这些弯曲光波到达水滴的另一侧时，它们会从水滴反射出去，而不是完全穿过水。由于白光在水滴内部被分离，折射光在人眼中呈现为不同的颜色。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "空格与前面的 reflection 并列作 by 的宾语，需用名词；dispersion 表示“色散”，指白光被分解成不同颜色，符合彩虹形成原理。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "H",
+     "analysis": "情态动词 may 后接动词原形，perceive 意为“认为，感知”，常用 perceive sth. to be... 结构，句意通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "M",
+     "analysis": "固定搭配 in relation to 表示“相对于、与……有关”，填入后意为“观察者相对于光线方向的位置”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "an 后需以元音音素开头的形容词修饰 illusion；optical illusion 是固定搭配，意为“光学幻象”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "N",
+     "analysis": "空格前是 a，后面 made up of seven colors 作后置定语说明“由七种颜色组成”，spectrum 意为“光谱”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "固定短语 stands for 表示“代表”，主语 “Roy G. Biv” 是第三人称单数，stands 在数和搭配上均正确。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "空格处需现在分词作后置定语修饰 water droplets，hanging 表示“悬浮、悬挂”，符合大气中小水滴的状态。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "A",
+     "analysis": "空格处需谓语动词，与 back 搭配构成 bounce back 表示“反弹回来”，对应光反射的现象。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "G",
+     "analysis": "where 引导的从句缺谓语动词，originates 表示“发源、产生”，句意为“从它传来的方向相反的方向弹回”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "B",
+     "analysis": "空格处需副词修饰动名词 passing，completely 意为“完全地”，表示光没有完全穿过水滴。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Fans have been cherished by Chinese people since ancient times. Today, however, they are no longer just tools for keeping cool, but are more often appreciated as works of art. Many fans are elegantly shaped and finely crafted, and are painted with exquisite patterns of landscapes, flowers and birds, and human figures, giving them high artistic value. Many renowned Chinese painters and calligraphers like to compose poems and paint on fans to display their artistic taste. Fans are often presented as gifts to express good wishes and sincere feelings. Although their practical function has greatly declined, fans, as a cultural symbol and art form, still play an important role in traditional Chinese culture.",
+   "note": "难点：四字格与典雅表达，如“消暑纳凉”“造型优美、做工精良”需用地道短语；文化负载词“山水、花鸟、人物”需准确对应。关键表达：be cherished by, no longer just...but more often..., elegantly shaped and finely crafted, display artistic taste, practical function has declined, cultural symbol.",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "讽刺和爵士乐有一个惊人的共同点：你一听到就能认出来。讽刺主要通过语调来理解，语调用来表达与字面意思相反的含义。例如，当有人说“好吧，这正是我现在需要的”时，他们的语调能告诉你这根本不是他们需要的。\n\n大多数情况下，讽刺是在强调某种恼怒，或者干脆说，就是刻薄。\n\n如果你想更快乐并改善人际关系，就戒掉讽刺。为什么？因为讽刺实际上是伪装成幽默的敌意。\n\n尽管表面上在微笑，许多听到讽刺评论的人会感到被贬低，并且常常认为讽刺的人粗鲁或可鄙。的确，讽刺一词源自希腊语“sarkazein”，字面意思是“撕掉或剥去肉”，这并不令人意外。因此，难怪“讽刺”常常以“尖刻的”作为修饰语，并且会伤人。\n\n此外，由于行为在很大程度上决定思想和情感，当一个人持续表现讽刺时，只会加剧其潜在的敌意和不安全感。毕竟，说到底，讽刺可以被用作一种隐性的霸凌——而大多数霸凌者都愤怒、缺乏安全感或怯懦。\n\n相反，当一个人停止说负面评论，尤其是讽刺性评论时，他们可能很快会感到更快乐、更自信。同时，他们生活中的其他人受益更大，因为他们不再需要听到讽刺这种伤人的语言。\n\n我并不是说所有讽刺都不好。它也许最好少用——就像烹饪中的浓烈香料。香料太多，菜肴就会被它压过。同样，偶尔来一点讽刺机智可以给聊天增添趣味和幽默。但大量或持续的讽刺会压过任何对话的情感味道，并让接收者感到非常苦涩。\n\n所以，少用讽刺，转而修炼巧妙的机智——这通常不带任何敌意，因此更受交流对象的欣赏。本质上，讽刺很容易，而真正无害的机智需要才华。\n\n因此，机智和讽刺的主要区别在于，如前所述，讽刺往往是伪装成幽默的敌意。它可能意在伤害，而且常常苦涩刻薄。机智的话语通常是针对某人无益的言论或行为而发，意图是通过强调其荒谬之处来理清并澄清问题。讽刺的话语以尖刻的方式表达；机智的言辞则带着坦率而无害的幽默。",
+   "questions": [
+    {
+     "stem": "46.Why does the author say sarcasm and jazz have something surprisingly in common?",
+     "answer": "A",
+     "analysis": "文章首句明确指出讽刺和爵士乐的惊人共同点是“你一听到就能认出来”，故选A。B项“完全相同的语调”和C项“都表达相反含义”均为对讽刺特点的片面或错误套用，D项“都暗含明显恼怒”原文未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.How do many people feel when they hear sarcastic comments?",
+     "answer": "B",
+     "analysis": "文中提到收到讽刺评论的人会感到被贬低（feel put down），并认为讽刺者粗鲁或可鄙，因此B项“感到被轻视和不被尊重”最准确。A项“对讽刺者产生敌意”是讽刺者本身的敌意，不是接收者的感受；C项“想报复”、D项“无法掩饰恼怒”均无依据。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.What happens when a person consistently acts sarcastically?",
+     "answer": "B",
+     "analysis": "根据文中“when a person consistently acts sarcastically it may only serve to heighten their underlying hostility and insecurity”可知，持续讽刺会加剧其潜在敌意和不安全感，故选B。A项“尊严提高”与原文相反，C项“在幽默伪装下忍受敌意”曲解文意，D项“在愉快互动中尝到苦味”无中生有。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49.What does the author say about people quitting sarcastic comments?",
+     "answer": "C",
+     "analysis": "文中指出停止讽刺性评论后，他们自己会感到更快乐、更自信，同时生活中的其他人受益更大，因此C项“不仅有益于自己，也有益于周围的人”正确。A项“使他人更快乐、更自信”过度推断，原文只说他人受益更大；B、D项无中生有。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50.What is the chief difference between a speaker's wit and sarcasm?",
+     "answer": "D",
+     "analysis": "文章末段指出主要区别在于讽刺“意在伤害”，而机智的意图是“理清并澄清问题”，因此核心差异是意图，选D。A项“清晰度”、B项“被欣赏程度”、C项“强调点”均未作为主要区别提及。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T03:04:10.951Z"
+}

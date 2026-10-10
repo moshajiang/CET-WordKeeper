@@ -164,7 +164,10 @@ for (const f of files) {
       // 覆盖层按「篇章内题目顺序」对齐（与 apply-answers.mjs 一致）；题干变了只记数，不丢答案
       const ovQ = ovP && (ovP.questions || [])[qi];
       const useOv = !!(ovQ && ovQ.answer);
-      if (useOv && ovQ.stem && ovQ.stem.trim() !== String(qs.stem).trim()) aiStemMismatch++;
+      // 只统计「实质不同」：题号前缀 / 空白差异不影响按位置对齐的答案，且空白差异多半来自
+      // 本文件的 healGlued（覆盖层存修补后的文本、seed 存原始文本），不能算题干变了。
+      const normStem = (s) => String(s || '').trim().replace(/^\d{1,2}\s*[.．]?\s*/, '').replace(/\s+/g, '');
+      if (useOv && ovQ.stem && normStem(ovQ.stem) !== normStem(healGlued(qs.stem))) aiStemMismatch++;
       if (useOv) aiAnswers++;
       db.run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
         [pid, qs.qtype, healGlued(qs.stem), JSON.stringify(opts),

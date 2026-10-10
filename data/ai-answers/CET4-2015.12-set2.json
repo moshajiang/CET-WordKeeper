@@ -1,0 +1,129 @@
+{
+ "level": "CET4",
+ "year": 2015,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "钱包正走向灭绝。作为一种日常必需品，它将随着阅读纸质报纸的那一代人一同消亡。那种递上钞票、数出找零的购物方式，如今只发生在最微不足道的零售场景中，比如在街角小店买一块巧克力或一品脱牛奶。在那些你真正花钱的商店里，金钱越来越抽象化。而且越往高端走，这种情况就越明显。在最前沿的零售店——比如多佛街的维多利亚·贝克汉姆店——你决定付款时，根本不用站到任何收银台前。店员配备着iPad，在你坐在沙发上休息时就能收款。如果你有钱，这无疑算得上是优质服务。但放眼整个社会，现金概念的抽象化让我感到不安。也许我只是老派。但对大多数人来说，挣钱并不快也不容易。花钱却发生在眨眼之间，这不是有点奇怪吗？钱包——那种由来已久的、周五晚上令人愉悦而充满希望的鼓鼓囊囊的感觉——难道不代表某种重要的东西吗？不过，经济问题就留给专家吧。钱包的消亡让我困扰的是它所代表的我们物理环境的变化。钱包的外观和触感的一切——扣件和材质随着时间磨损、变松，塑料、纸张、金银，还有手写的电话号码和打印的电影票——恰恰与我们世界正在变成的样子相反。钱包的对立面是智能手机或iPad。圆润的边缘、冰凉的玻璃，光滑而难以捉摸，像鹅卵石一样。我们不再翻找纸片、细看角落，而是用手指左右滑动。不再数硬币。如果你还有钱包，就拿出来看看吧。它可能不会在这里待太久了。",
+   "questions": [
+    {
+     "stem": "56. What is happening to the wallet?",
+     "answer": "A",
+     "analysis": "文章首句The wallet is heading for extinction直接表明钱包正在消失或灭绝，故选A。B项把周五晚上钱包鼓鼓的感觉曲解为钱包被塞满；C项变得昂贵和D项款式变化文中均未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "57. How are business transactions done in big modern stores?",
+     "answer": "B",
+     "analysis": "文中以高端商店为例，说明店员配备iPad收款，交易通过电子方式完成，故选B。C项抽象地只是对金钱概念变化的描述，并非具体交易方式；A项单独地和D项通过收银台均与原文不符。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "58. What makes the author feel uncomfortable nowadays?",
+     "answer": "D",
+     "analysis": "作者明确说现金概念的抽象化令其不安，并质疑挣钱不易而花钱却在眨眼之间，因此D项花钱如此快速容易符合。A项存钱成为过去和B项周五晚上的愉悦感消退都不是直接原因；C项挣钱越来越难文中并未体现比较。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "59. Why does the author choose to write about what's happening to the wallet?",
+     "answer": "A",
+     "analysis": "作者说钱包的消亡让他困扰的是它所代表的物理环境变化，说明钱包消失代表现代世界的一种变化，所以选A。B项过于笼统，C项只侧重传统终结，D项错在作者明确把经济问题留给专家。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "60. What can we infer from the passage about the author?",
+     "answer": "C",
+     "analysis": "从作者对钱包外观触感的怀念以及结尾如果你还有钱包就拿出来看看吧、它可能不会在这里待太久了，可以推断他对传统钱包恋恋不舍，故选C。A项抵制社会变化和B项反对技术进步过于极端，D项感到不安全文中未直接体现。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "对许多美国人来说，2013年以一场异常严寒的寒潮结束。该国大部分地区在11月末和12月经历了早雪和刺骨低温；在这一年里，创纪录的寒冷天数很可能自二十年来首次超过创纪录的温暖天数。但美国是个例外；11月是全球有史以来最热的11月，目前数据表明2013年可能是有记录以来第四热的年份。\n现在就享受雪吧，因为2014年很有可能更热，甚至可能是有记录以来最热的一年。科学家预测，这是因为2014年将是厄尔尼诺年。\n厄尔尼诺，西班牙语意为“圣婴”，发生在南太平洋表层海水异常变暖之时。太平洋非常广大，覆盖地球表面的30%，其变暖所产生的额外能量足以引发全球一系列天气变化。厄尔尼诺现象与东南亚和澳大利亚异常干旱的状况有关。它们可能导致北美和南美部分地区出现极端降雨，而南部非洲则会经历干旱天气。海洋生物也可能受到影响：厄尔尼诺现象会减少寒冷且富含营养的海水上升，而这些海水支撑着大量的鱼类种群；异常温暖的海洋温度还会破坏珊瑚。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "N",
+     "analysis": "句子描述过去的天气事件，主语为时间名词短语，需要谓语动词过去式；saw 表示“经历、出现”，常用于时间/地点 + see + 天气现象的结构。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "F",
+     "analysis": "空格前有数词 two，后需名词复数；for the first time in two decades 意为“二十年来第一次”，是固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "主系表结构已完整，空格需副词修饰全句或形容词最高级；globally 表示“全球范围内”，说明11月是全球有史以来最热的月份。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "空格后为 are good that...，需复数名词作主语；chances are good that... 是固定句型，意为“很可能……”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "J",
+     "analysis": "主语 El Nino 为单数，后接 when 从句，需一般现在时第三人称单数动词；occurs 表示“发生”，符合厄尔尼诺现象的定义。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "A",
+     "analysis": "空格位于定冠词和名词 energy 之间，需形容词；additional energy 表示“额外的能量”，与前文太平洋变暖产生能量、后文引发天气变化的语义一致。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "B",
+     "analysis": "空格前为 are，后接 with，构成 be associated with 固定短语，意为“与……有关”，符合厄尔尼诺与干旱条件的关联。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "主语 southern Africa 为单数，主句用一般现在时，空格处需第三人称单数动词；experiences 表示“经历”，意为南部非洲经历干旱天气。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "M",
+     "analysis": "空格前有情态动词 can，需动词原形；reduce the rising of... 表示“减少/抑制……上升”，与厄尔尼诺影响海洋上升流的语义相符。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "K",
+     "analysis": "空格前 large fish 作定语，需名词复数；populations 表示“种群”，large fish populations 即“大型鱼类种群”，为常见搭配。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T03:07:21.777Z"
+}

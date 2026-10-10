@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "When it comes to choosing a college major, students often feel torn between science and humanities. From my perspective, although both have merits, I would advise majoring in science for its practical career prospects and rigorous logical training.\n\nTo begin with, science majors generally enjoy better job opportunities. In a technology-driven world, graduates in engineering, computer science, or medicine are in high demand. Moreover, studying science cultivates analytical thinking and problem-solving skills, which are valued in almost every profession. For instance, designing experiments and interpreting data train one to reason logically and make evidence-based decisions. Of course, humanities also foster critical thinking and empathy, but these abilities can be developed through electives or extracurricular activities. Therefore, a science major does not mean neglecting the humanities; students can still broaden their horizons by taking literature or philosophy courses.\n\nIn conclusion, while the choice depends on individual interests and strengths, I strongly recommend science for its solid job security and transferable thinking skills. Students should also take advantage of college resources to cultivate a well-rounded education.",
+   "note": "本文紧扣题目，明确建议选择理科，并从就业前景和思维训练两方面论证，同时兼顾人文学科的价值，体现了辩证思考。结构为“引出观点—分点论证—总结建议”，清晰完整。可复用句型：“When it comes to...”、“From my perspective...”、“To begin with... Moreover...”、“In conclusion, while... I strongly recommend...”。用词地道，难度适中。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Ming Dynasty ruled China for 276 years and has been described as one of the greatest eras in human history, marked by orderly governance and social stability. During this period, the development of the handicraft industry promoted the market economy and urbanization. Large quantities of goods, including wine and silk, were sold in the market. Meanwhile, many foreign goods were imported, such as clocks and tobacco. Great commercial centers such as Beijing, Nanjing, Yangzhou and Suzhou came into being one after another. It was also during the Ming Dynasty that the fleet commanded by Zheng He made seven large-scale exploratory voyages to the Indian Ocean. It is also worth mentioning that three of the four great classical novels of Chinese literature were written in the Ming Dynasty.",
+   "note": "难点：历史朝代与评价需用被动和定语衔接；“治理有序、社会稳定”译作 orderly governance and social stability；“手工业”用 handicraft industry；“四大经典名著”用 the four great classical novels；“郑和船队七次大规模探险航行”保持过去时，译为 seven large-scale exploratory voyages；整体注意并列与衔接。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "2013年成为普渡大学校长后，米奇·丹尼尔斯要求教师证明他们的学生确实实现了高等教育最重要的目标之一：批判性思维能力。两年前，一项全国性大学毕业生研究表明，超过三分之一的学生在校期间在思维能力方面没有取得显著进步。丹尼尔斯需要向学生及其家庭证明就读普渡大学的高昂费用是合理的。毕竟，过去五六年里，认为大学学位“非常重要”的美国人比例已大幅下降。\n普渡大学现在有一项评估学生批判性思维能力的试点测试。然而，与美国许多大学教师一样，普渡大学的教师们仍然怀疑，他们作为教育者的工作能否用“学习成果”来衡量，例如毕业生调查和推理的能力。不过，教授们不必太过担心。最近一项实验的结果表明，教授们可以使用标准化指标来衡量学生在三个关键领域（批判性思维、书面沟通和定量素养）的表现。\n尽管实验取得了成功，但实际结果令人担忧，且大多证实了早期研究。实验组织者得出结论，在批判性思维方面达到高水平的学生人数远少于在书面沟通或定量素养方面达到高水平的人数。而且这一结论仅基于即将毕业的学生。\n美国大学虽然在教学卓越方面享有全球声誉，但它们才刚刚开始证明自己在现实世界学习中能产生什么。知识型学位仍然重要，但雇主对大学毕业生的高级思维能力有要求。如果大学学位的智力价值能够得到准确衡量，那么更多人会寻求高等教育，并且成为更优秀的思考者。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "L",
+     "analysis": "空格前为no，后为名词gains，需形容词修饰；no significant gains意为“没有显著进步”，符合研究显示三分之一学生思维能力无显著提升的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "F",
+     "analysis": "空格需要动词构成justify the high cost to sb.结构，意为“向某人证明高费用合理”；其他动词如confirm/signify不符合搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "E",
+     "analysis": "空格修饰动词fallen，需副词；drastically表示“大幅地”，与percentage has fallen及五六年变化相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "remain后接形容词，doubtful that...表示“怀疑……”，符合教师对用学习成果衡量教育工作的怀疑态度。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "H",
+     "analysis": "learning outcome为固定搭配，意为“学习成果”，后文举例说明毕业生的调查和推理能力，语义吻合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "空格修饰metrics，需形容词；standardized metrics意为“标准化指标”，与实验中使用统一测量标准相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "B",
+     "analysis": "空格需要动词，且主语为results；confirm earlier studies表示“证实早期研究”，语义和主谓搭配正确。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "空格前global、后for excellence in teaching，需名词；global reputation for excellence意为“在教学卓越方面的全球声誉”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "C",
+     "analysis": "空格前are，后advanced thinking skills，需现在分词构成进行时；demanding skills from graduates表示“要求毕业生具备高级思维能力”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "A",
+     "analysis": "空格修饰measured，需副词；accurately measured意为“准确衡量”，符合通过准确衡量大学学位智力价值带来更多求学者的逻辑。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "在许多领域，开放数据共享者仍属少数。尽管许多研究者普遍认同，公众获取原始数据将加速科学进展，但大多数人仍不愿将自己劳动的成果发布到网上。一些群体已同意在线共享——例如，遗传学家在GenBank库中发布DNA序列，天文学家习惯于访问如斯隆数字巡天望远镜拍摄的星系和恒星图像，该望远镜已观测约5亿个天体——但这些仍是例外，而非惯例。历史上，科学家反对共享的理由有很多：工作量大；直到最近还不存在好的数据库；资助方没有推动共享；难以就数据格式标准达成一致；也没有公认的数据署名方式。但这些障碍正在消失，部分原因是世界各地的期刊和资助机构都在鼓励科学家公开数据。去年，伦敦皇家学会在其报告中表示，科学家需要“摆脱将数据视为私人领地的研究文化”。资助机构指出，用公共资金支付的数据理应成为公共信息，科学界也认识到，数据现在可以以过去不可能的方式数字化共享。为满足日益增长的需求，各种服务应运而生，使研究成果在线发布更加容易，也让其他研究者能够发现并引用这些成果。尽管共享数据的呼声往往集中于共享的道德优势，但这一做法并非纯粹利他。共享数据的研究者会获得许多个人好处，包括与同事更多的联系、更高的知名度和更多的引用。最成功的共享者——那些数据被下载和引用最多的人——会得到关注，他们的工作也会被使用。例如，多学科仓储库Dryad中最受欢迎的数据集之一是关于全球木材密度的；它已被下载5700次。共同作者Amy Zanne认为，用户可能包括想估算生物量中碳储存的气候变化研究者，以及寻找不同等级木材信息的林务人员。她说：“我更愿意让我的数据被尽可能多的人用来提出他们自己的问题。让读者和审稿人准确看到你是如何得出结果的，这很重要。发布数据和代码能让你的科学可重复。”即使数据不太受欢迎的人也能受益。通过努力整理和标注文件以便他人理解，科学家自己也会变得更有条理、更自律，从而避免日后产生混乱。",
+   "questions": [
+    {
+     "stem": "46. What do many researchers generally accept?",
+     "answer": "D",
+     "analysis": "第一段第二句明确说许多研究者广泛认同公众获取原始数据会加速科学进展，即开放数据共享有利于科学进步，故D为正确答案。A“保护科学家专利”、B“知识库对科研必不可少”、C“开放数据共享对医学科学最重要”均未在文中提及或与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What is the attitude of most researchers towards making their own data public?",
+     "answer": "A",
+     "analysis": "第一段末句指出大多数研究者不愿把自己的成果发布到网上，第二段也提到科学家们历来反对共享，因此态度是反对的，选A。B“模糊”、C“开明”、D“中立”均与原文的“不愿”和“反对”矛盾。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. According to the passage, what might hinder open data sharing?",
+     "answer": "C",
+     "analysis": "第三段引述皇家学会报告，指出需要摆脱“将数据视为私人领地的研究文化”，说明阻碍共享的一个观念是把研究数据当作私有财产，C项的“认为研究数据是私有知识产权”符合该意。A“害怕被大量复制”、B“缺乏研究文化”、D“担心某些机构从中获利”原文均未提及或曲解原意（原文并非缺乏文化，而是现有文化不当）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What helps lift some of the barriers to open data sharing?",
+     "answer": "C",
+     "analysis": "第三段明确说障碍正在消失，部分原因是世界各地的期刊和资助机构鼓励科学家公开数据，C项“期刊和资助者态度的转变”直接对应。A“大数据需求增长”是共享需求的表现而非消除障碍的原因；B“数字技术进步”虽在文中出现但不是题干所问的主要推动因素；D“社会经济发展趋势”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. Dryad serves as an example to show how open data sharing ________.",
+     "answer": "B",
+     "analysis": "Dryad的例子出现在第四段，该段主旨是共享数据能让分享者获得知名度、引用等个人好处，同时也能让其他研究者使用数据、提出自己的问题，因此说明开放数据共享对分享者和使用者都有益，选B。A“日益流行”只是例子表象，不是例证目的；C“让研究者成功”过于片面；D“节省金钱和劳动”未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "梅西百货公布，其开业一年以上门店在11月和12月的销售额暴跌5.2%，这一令人失望的假日季表现为这家面临广泛挑战的百货连锁企业艰难的一年画上了句号。其在美国主要城市的旗舰店高度依赖国际游客消费，而由于美元走强，许多零售商的国际游客消费出现萎缩。与此同时，梅西百货在吸引那些对旅游或外出就餐比对购买新衣服或配饰更感兴趣的消费者方面一直很吃力。\n\n公司将11月和12月的糟糕表现大部分归咎于反常的温暖天气。首席执行官特里·伦德格伦在新闻稿中表示：“我们公司可比销售额同比下降中约有80%可归因于寒冷天气商品的短缺。”这促使公司下调了第四季度整体预测。\n\n然而，很明显梅西百货认为自己的麻烦比暂时偏离气温常态更深。这家零售巨头表示，今年的糟糕财务表现已促使其开始实施4亿美元的成本削减措施。公司承诺裁减600个后台岗位，不过其中约150名员工将被重新分配到其他岗位。它还计划向165名高管提供“自愿离职”方案。公司将削减旗下770家门店的人员编制，此举将影响约3000名员工。\n\n这家零售商还公布了将在2016年初关闭的36家门店的位置。公司此前已宣布关闭计划，但未说明哪些门店会受影响。该连锁在华盛顿都会区的门店均不会关闭。\n\n梅西百货一直在积极行动，努力重塑自我以适应新的购物时代。它计划开设更多梅西百货Backstage折扣店，这一新开发的折扣概念可能有助于其更好地与雄心勃勃的T. J. Maxx竞争。它还将在2016年推进去年收购的美妆连锁Bluemercury的扩张。在年轻美妆消费者往往转向丝芙兰或Ulta而非百货商场美妆柜台之际，梅西百货希望Bluemercury能帮助巩固其在这一品类中的地位。\n\n假日季梅西百货一个相对亮点是线上渠道，其线上销售额实现“两位数”增长，完成订单数量增加25%。这一相对强势与假日季初期整个零售行业的情况一致。尽管感恩节、黑色星期五和网络星期一的线上消费均创下纪录，但假日周末实体店销售额大幅下滑。",
+   "questions": [
+    {
+     "stem": "51. What does the author say about the shrinking spending of international tourists in the U.S.?",
+     "answer": "A",
+     "analysis": "依据：文章第一段明确提到国际游客支出因美元走强而萎缩（due to a strong dollar），对应A“美元升值”。B“全球经济衰退”文中未提及；C“兴趣转向消费品”是消费者总体兴趣转向旅游餐饮，而非游客兴趣转移；D“对美国零售业构成潜在威胁”并非作者直接陈述，且范围过大。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does Macy's believe about its problems?",
+     "answer": "B",
+     "analysis": "依据：第三段首句“然而，很明显梅西百货认为自己的麻烦比暂时偏离气温常态更深”说明不只归咎天气，选B。A“更好管理”未提及；C“线上店不严重”是事实但并非梅西对其问题的完整看法；D“需要增加投资”与成本削减相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. In order to cut costs, Macy's decided to ________.",
+     "answer": "D",
+     "analysis": "依据：第三段列举后台裁员、高管自愿离职、门店减员等措施，都是缩减员工规模，选D。A“削减高管薪水”错误，是提供自愿离职方案；B“搬迁门店”错误，是关闭部分门店；C“调整促销策略”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. Why does Macy's plan to expand Bluemercury in 2016?",
+     "answer": "D",
+     "analysis": "依据：第四段说年轻美妆消费者转向丝芙兰等，梅西希望Bluemercury帮助巩固其美妆品类地位，即提升美妆销售竞争力，选D。A“试验新业务概念”是Backstage，不是Bluemercury；B“重心从服装转向美妆”过度推断；C“降价促销”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What can we learn about Macy's during the holiday season?",
+     "answer": "A",
+     "analysis": "依据：最后一段说线上增长是亮点，但假日周末实体店销售大幅下滑，且文章开篇即说开业一年以上门店销售跌5.2%，选A。B“零售销售超过T. J. Maxx”未提及，且T. J. Maxx只是竞争对手；C“帮助Bluemercury确立全球地位”未提及；D“门店备货充足”与文中短缺相反。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 化石燃料价格很可能“长期低迷”。尽管近期在开发可再生燃料方面取得了重要进展，但化石燃料价格低迷可能阻碍清洁能源技术的进一步创新和采用。结果将是二氧化碳和其他温室气体排放增加。\n\nB) 政策制定者不应让低能源价格破坏清洁能源转型。迫切需要采取行动恢复适当的价格激励，特别是通过纠正性碳定价，以降低气候变化造成不可逆转且可能具有毁灭性影响的风险。这一做法还能带来财政收益。\n\nC) 自2014年6月以来，油价已下跌超过60%。石油行业普遍认为“低油价的最好解药就是低油价”。这种说法的逻辑是：低油价会抑制对新产能的投资，最终使石油供给曲线向后移动，随着现有油田（能以相对较低的边际成本开采）逐渐枯竭，价格会回升。事实上，与以往经验一致，包括美国在内的许多产油国石油行业资本支出大幅下降。不过，这次对低油价的动态调整可能有所不同。\n\nD) 预计油价将在更长时间内保持低位。新技术的出现使原油市场每日供应增加约420万桶，加剧了全球供应过剩。此外，其他因素也在压低油价：石油输出国组织战略行为的变化、伊朗出口预计增加、全球需求（尤其是新兴市场）缩减、美国石油消费长期下降，以及替代能源对石油的一定替代。这些可能持续存在的力量，如页岩油产量的增长，指向“长期低迷”的情形。期货市场仅显示价格到2019年温和回升至每桶60美元左右，也支持这一观点。\n\nE) 天然气和煤炭——也是化石燃料——同样出现了看似长期的价格下跌。煤炭和天然气主要用于发电，而石油主要用于交通运输，但这些能源的价格相互关联。北美页岩气繁荣使当地价格创下历史新低。最近在埃及沿海发现的巨型Zohr气田最终将影响地中海地区和欧洲的定价，其他许多地方如阿根廷也有巨大开发潜力。煤炭价格也处于低位，原因是供应过剩和需求缩减，尤其是燃烧了全球一半煤炭的中国需求下降。\n\nF) 技术创新释放了风能、水能、太阳能和地热能等可再生能源的潜力。即使是经济高度依赖化石燃料出口的非洲和中东，也有发展可再生能源的巨大潜力。例如，阿拉伯联合酋长国已批准一个雄心勃勃的目标：到2021年使可再生能源占其一次能源消费的24%。\n\nG) 不过，如果化石燃料价格长期低迷，可再生能源的发展进展可能很脆弱。可再生能源在全球一次能源消费中只占很小份额，目前仍以化石燃料为主——煤炭和石油各占30%，天然气占25%。但未来可再生能源必须在更大程度上取代化石燃料，以避免不可接受的气候风险。\n\nH) 遗憾的是，当前石油、天然气和煤炭的低价格可能几乎无法激励人们研究更便宜的替代燃料。有充分证据表明，较高的化石燃料价格会强有力地鼓励清洁技术的创新和采用。对于减轻化石燃料排放的新技术也是如此。\n\nI) 因此，当前低化石燃料价格环境必将推迟从化石燃料向清洁能源的能源转型。除非可再生能源变得足够便宜，使大量碳矿藏（如果不是永远）长期留在地下，否则地球很可能面临潜在灾难性气候风险。\n\nJ) 一些气候影响可能已经显现。例如，联合国儿童基金会估计，由于几十年来最强的厄尔尼诺天气现象，非洲约有1100万儿童面临饥饿、疾病和水资源短缺。许多科学家认为，由太平洋变暖引起的厄尔尼诺事件正因气候变化而变得更加剧烈。\n\nK) 世界各国齐聚巴黎参加联合国气候变化大会COP21，目标是达成一项普遍且可能具有法律约束力的温室气体减排协议。我们需要非常广泛的参与，以充分应对各国未能考虑其碳排放对世界其他地区负面影响而造成的全球悲剧。此外，如果足够多的国家不参与，可能会削弱参与国采取行动的政治意愿。\n\nL) COP21参会国正聚焦于量化减排承诺。经济推理表明，对各国而言，成本最低的方法是对碳排放定价。原因是当碳被定价时，那些实施成本最低的减排将首先发生。国际货币基金组织计算，各国通过取消化石燃料补贴和征收反映排放对国内造成损害的碳费，可以获得大量财政收入。对上游碳源征税是对碳排放定价的一种简便方法，不过一些国家可能希望使用其他方法，如排放交易计划。为使全球福利最大化，每个国家的碳定价不仅应反映排放对国内的纯粹损害，还应反映对外国的损害。\n\nM) 因此，设定正确的碳价格将有效使碳使用者支付的成本与使用碳的真实社会机会成本一致。通过提高对清洁能源的相对需求，碳价格还将有助于使清洁能源创新的市场回报与其社会回报一致，促进现有技术的完善和新技术的开发。它还将提高对碳捕获与封存等技术的需求，促进其进一步发展。如果不通过适当的碳价格加以纠正，低化石燃料价格就无法向市场准确传递清洁能源的真实社会盈利能力信号。虽然对碳排放损害的不同估计存在差异，而且尤其难以估算可能发生的灾难性气候事件的代价，但大多数估计都表明存在重大负面影响。\n\nN) 一些政府已采取对研发的直接补贴，但它们是碳价格的糟糕替代品：它们只完成部分工作，仍保留市场激励过度使用化石燃料，从而增加大气温室气体存量，而不顾及附带成本。\n\nO) 希望COP21的成功能为未来在碳价格上达成国际协议打开大门。就国际碳价格下限达成一致将是这一进程的良好起点。然而，如果不能全面解决温室气体排放问题，将使今世后代都面临不可估量的风险。",
+   "questions": [
+    {
+     "stem": "36. A number of factors are driving down the global oil prices not just for now but in the foreseeable future.",
+     "answer": "D",
+     "analysis": "根据D段“Oil prices are expected to remain lower for longer. ... other factors are putting downward pressure on oil prices...”可知多种因素使油价长期下行，不仅现在如此，可预见的未来也是如此。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Pricing carbon proves the most economical way to reduce greenhouse gas emissions.",
+     "answer": "L",
+     "analysis": "根据L段“the least expensive way for each country is to put a price on carbon emissions”可知对碳定价是减少温室气体排放最经济的方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. It is estimated that extreme weather conditions have endangered the lives of millions of African children.",
+     "answer": "J",
+     "analysis": "根据J段联合国儿童基金会估计非洲约有1100万儿童因最强厄尔尼诺等极端天气面临饥饿、疾病和水资源短缺，可知极端天气危及数百万非洲儿童生命。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. The prices of coal are low as a result of over-supply and decreasing demand.",
+     "answer": "E",
+     "analysis": "根据E段“Coal prices also are low, owing to over-supply and the scaling-down of demand”可知煤炭价格低是供应过剩和需求下降所致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Higher fossil fuel prices prove to be conducive to innovation and application of cleaner technology.",
+     "answer": "H",
+     "analysis": "根据H段“both innovation and adoption of cleaner technology are strongly encouraged by higher fossil fuel prices”可知较高的化石燃料价格有利于清洁技术的创新和应用。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. If fossil fuel prices remain low for a long time, it may lead to higher emissions of greenhouse gases.",
+     "answer": "A",
+     "analysis": "根据A段“low fossil fuel prices could discourage ... result would be higher emissions of carbon dioxide and other greenhouse gases”可知化石燃料价格长期低迷可能导致温室气体排放增加。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Fossil fuels remain the major source of primary energy consumption in today's world.",
+     "answer": "G",
+     "analysis": "根据G段“global primary energy consumption, which is still dominated by fossil fuels”可知当今世界化石燃料仍是一次能源消费的主要来源。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Even major fossil exporting countries have great potential to develop renewable energies.",
+     "answer": "F",
+     "analysis": "根据F段“Even Africa and the Middle East, home to economies that are heavily dependent on fossil fuel exports, have enormous potential to develop renewables”可知主要化石燃料出口国也有发展可再生能源的巨大潜力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Greenhouse gas emissions, if not properly dealt with, will pose endless risks for mankind.",
+     "answer": "O",
+     "analysis": "根据O段“Failure to address comprehensively the problem of greenhouse gas emissions, however, exposes all generations, present and future, to incalculable risks”可知温室气体排放若处理不当将给人类带来无尽风险。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. It is urgent for governments to increase the cost of using fossil fuels to an appropriate level to lessen the catastrophic effects of climate change.",
+     "answer": "B",
+     "analysis": "根据B段“Action to restore appropriate price incentives, notably through corrective carbon pricing, is urgently needed to lower the risk of irreversible and potentially devastating effects of climate change”可知政府迫切需要提高化石燃料使用成本至适当水平，以减轻气候变化的灾难性影响。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:23:51.484Z"
+}

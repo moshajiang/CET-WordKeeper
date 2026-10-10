@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2016,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Innovation is the engine of social progress and personal growth. In an increasingly competitive world, the ability to create new ideas and solutions determines whether individuals and nations can stay ahead. For example, technological breakthroughs such as the Internet and mobile payment have transformed our daily life and boosted economic development. Without innovation, a society may fall behind and lose its vitality.\n\nTo encourage innovation, several measures should be taken. First, schools should cultivate students' curiosity and critical thinking instead of focusing only on test scores. Teachers can organize project-based learning and encourage students to challenge existing ideas. Second, companies and governments should provide more funding and rewards for creative research, so that innovators are willing to take risks. Third, the public should be more tolerant of failure, because many successful innovations come after repeated trials.\n\nIn conclusion, innovation is of great importance, and only through joint efforts in education, policy and social atmosphere can we build a more innovative society.",
+   "note": "范文切题：首段点明创新重要性并举例，第二段从教育、资金、社会氛围三方面提措施，末段总结。结构为总—分—总。可复用句型如 Innovation is the engine of...; To encourage innovation, several measures should be taken; In conclusion...。表达自然常见，符合四六级要求。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "With the vigorous development of China's economy, the number of people learning Chinese has increased rapidly, making Chinese one of the most popular languages to learn in the world. In recent years, Chinese universities have also seen a marked improvement in their international rankings. Thanks to the great progress in China's education, it is no surprise that China has become one of the most popular destinations for overseas students. In 2015, nearly 400,000 international students flocked to China to study. The subjects they study are no longer limited to Chinese language and culture, but include science and engineering. In the global education market, the United States and the United Kingdom still dominate, but China is rapidly catching up.",
+   "note": "难点：蜂拥译为flock to；不再限于而包括用no longer limited to... but include；占主导地位用dominate；注意四十万学生与主谓一致。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "MIT的唐纳德·萨多威博士创办了自己的电池公司，希望改变世界的能源未来。这是对一项大多数人在手机黑屏时才想起的技术的戏剧性背书。但萨多威并非唯一将能源存储鼓吹为通往更清洁、更高效、更公平能源未来之缺失环节的人。\n科学家和工程师长期以来一直相信电池改变世界的潜力。先进的电池正走出专门市场，逐渐进入主流，标志着电动汽车和屋顶太阳能等前瞻性技术的转折点。\n当然，无处不在的电池已经走过了漫长的道路。无论好坏，电池使我们的移动优先生活方式、屏幕文化以及日益全球化的世界成为可能。然而，尽管这一切令人印象深刻，但与接下来发生的事情相比可能微不足道。在已经促成一场通信革命之后，电池如今准备改变几乎其他一切。\n无线时代正在扩展，不仅包括我们的手机、平板电脑和笔记本电脑，还包括我们的汽车、家庭乃至整个社区。在新兴经济体中，农村社区正绕过输送电力的电线和木杆。相反，非洲和亚洲的一些地区正看到他们的第一盏灯泡由存储在电池中的太阳能点亮。\n如今，能源存储是一个330亿美元的全球产业，每年产生近100吉瓦时的电力。到本十年末，预计其价值将超过500亿美元，发电量达到160吉瓦时，足以吸引那些可能原本对一项显然平凡的技术不感兴趣的大公司的注意。甚至长期以来将电池和替代能源形式视为威胁的公用事业公司，也在学着拥抱这些技术，将其视为赋能而非破坏。\n当今电池的突破正值世界寻求将现代能源接入扩大到大约十亿无电人口，同时减少使地球变暖的燃料。随着对“如何使电力便携”这一数百年老问题的答案日益改善，这些同时出现的挑战似乎不那么令人望而生畏。\n诚然，在夜间充电完全取代每周去加油站之前，电池还有很长的路要走。电池驱动的世界也伴随着自身的风险。随着越来越多的人成为“产消者”（即自己生产并消费能源的人），花费数十年和数十亿美元建设的集中电网将会怎样？\n没有人知道哪种电池技术（如果有的话）最终会占据主导地位，但有一件事依然清晰：能源的未来在于我们如何存储它。",
+   "questions": [
+    {
+     "stem": "46. What does Dr. Sadoway think of energy storage? A. It involves the application of sophisticated technology. B. It is the direction energy development should follow. C. It will prove to be a profitable business. D. It is a technology benefiting everyone.",
+     "answer": "B",
+     "analysis": "文章开头提到Sadoway将能源存储视为通往更清洁、更高效、更公平能源未来的“缺失环节”，即未来能源发展应遵循的方向，故B正确。A“复杂技术”和C“有利可图”未提及；D“惠及每个人”表述过于宽泛且文中未明确说“每个人”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What is most likely to happen when advanced batteries become widely used? A. Mobile-first lifestyles will become popular. B. The globalization process will be accelerated. C. Communications will take more diverse forms. D. The world will undergo revolutionary changes.",
+     "answer": "D",
+     "analysis": "文章第三段指出电池已经促成通信革命后，现在“准备改变几乎其他一切”，暗示世界将经历革命性变化，故D正确。A、B、C均为已经发生的现象或非主要影响，不是先进电池广泛使用后的结果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. In some rural communities of emerging economies, people have begun to ___________. A. find digital devices simply indispensable B. communicate primarily by mobile phone C. light their homes with stored solar energy D. distribute power with wires and wooden poles",
+     "answer": "C",
+     "analysis": "第四段明确指出新兴经济体农村社区用存储在电池中的太阳能点亮首盏灯泡，故C正确。A和B在文中无依据；D是传统方式，这些社区正在绕过。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. Utility companies have begun to realize that battery technologies ___________. A. benefit their business B. transmit power faster C. promote innovation D. encourage competition",
+     "answer": "A",
+     "analysis": "文章第五段说公用事业公司过去把电池看作威胁，现在学会将其视为“赋能而非破坏”，即意识到电池技术对其业务有益，故A正确。B、C、D均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author imply about the centralized electric grid? A. It might become a thing of the past. B. It might turn out to be a \"prosumer\". C. It will be easier to operate and maintain. D. It will have to be completely transformed.",
+     "answer": "A",
+     "analysis": "作者最后提出问题：越来越多的人成为产消者后，集中电网会怎样？这暗示集中电网可能变得过时，故A正确。B混淆概念；C、D过度推断。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "《指环王》中的树人族——恩特人——能靠行走四处活动。但对真正的树来说，拔根而起要难得多。由于它们确实扎根于大地，所以无法离开、去往别处。\n\n当一棵树最初在某个地区开始生长时，当地的气候包络——温度、湿度、降雨模式等等——很可能适合它。否则它就无法从幼苗长成。但随着树龄增长，这些条件可能发生变化，周围地区可能不再适合它的后代。\n\n当这种情况发生时，许多树，如核桃树、橡树和松树，完全依赖所谓的“分散储食者”，比如鸟类，把它们的种子带到新的地方。许多鸟类喜欢为过冬储存食物，之后再去取回。当鸟儿忘记取回食物时——它们有时确实会忘记——种子就有了发芽生长的机会。例如，克氏星鸦每年藏匿多达10万颗种子，距离种子来源可达30公里，并且与几种松树有着非常密切的共生关系，最著名的是白皮松。\n\n随着树木在气候变化面前逐渐超出其理想栖息地，这些会飞的生态系统工程师可以在重新植树方面提供巨大帮助。这对我们来说是个解决方案——让鸟类来做这件事既廉价又高效——而且它可以给脆弱的橡树和松树一个真正“像树一样离开”的选择。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "D",
+     "analysis": "空格前 go 为不及物动词，需要副词作状语；elsewhere 意为“去别处”，与上文 rooted into the ground 形成对照，表示树无法离开原地。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "C",
+     "analysis": "空格后 envelope 为名词，破折号解释 temperature, humidity, rainfall patterns，说明是气候条件；“climatic envelope”是固定搭配，指气候包络或适宜气候范围。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "空格在 as it ___ 时间状语从句中，缺谓语动词；主语 it 指树，ages 作动词意为“变老、生长”，符合“随着树龄增长”的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "K",
+     "analysis": "空格前 its 为形容词性物主代词，需要名词；根据上下文，环境不再适合树的后代（种子或幼苗）生长，offspring 最符合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "E",
+     "analysis": "rely ___ on 中需要一个副词修饰 rely；exclusively 表示“完全地、仅仅”，说明许多树完全依赖 scatter hoarders 来传播种子。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "空格在定语从句 which they ___ retrieve 中，主句为鸟类储存食物，retrieve 是之后发生的动作；subsequently 意为“随后”，符合时间逻辑。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "J",
+     "analysis": "空格在 most ___ the whitebark pine 中，需要副词修饰整个短语；most notably 为固定搭配，意为“最著名的是、尤其是”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "H",
+     "analysis": "空格前 ideal 为形容词，需要名词；trees outgrow their ideal habitats 表示树木超出其理想栖息地，habitats 符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "空格前 in 为介词，需要动名词；replanting trees 意为“重新植树或恢复树林”，与鸟类传播种子帮助树木再生的语义一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "空格在 give ___ oaks and pines 中，需要形容词修饰 oaks and pines；vulnerable 意为“脆弱的”，说明受气候变化威胁的橡树和松树。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "100多年前，美国社会学家W. E. B. Du Bois担心，种族正被用作一种生物学解释，来解释他所理解的不同人群之间的社会和文化差异。他公开反对将“白人”和“黑人”视为截然不同的群体，声称这种区分忽视了人类多样性的广泛范围。科学会站在Du Bois一边。如今，科学家的主流观点是，种族是一种没有生物学意义的社会建构。在《科学》杂志上发表的一篇文章中，四位学者表示，种族分类需要被逐步淘汰。德国马克斯·普朗克进化人类学研究所所长、生物学家Svante Pääbo说：“本质上，我完全赞同这几位作者的观点。”有一个例子证明了基因差异并不固定于种族界限：将两位著名的欧洲裔美国科学家詹姆斯·沃森和克雷格·文特尔的完整基因组与韩国科学家金成镇的基因组进行比较。结果发现，沃森和文特尔彼此共享的基因序列变异比他们各自与金共享的还要少。费城德雷塞尔大学公共卫生教授Michael Yudell表示，现代遗传学研究正运行在一个悖论之中：一方面，种族被认为是阐明人类遗传多样性的有用工具；但另一方面，种族也被认为是这种多样性的一个定义不清的标记。基于不同种族人群之间基因差异的假设在医疗环境中可能尤其危险。“如果你根据某人的种族做出临床预测，那么很大一部分时候你会出错，”Yudell告诉《生活科学》。在论文中，他和同事引用了囊性纤维化的例子，这种疾病在非洲裔人群中诊断不足，因为它被视为一种“白人”疾病。那么，如果抛弃种族概念，还能使用哪些其他变量呢？Yudell表示，科学家需要在语言上更加具体，或许可以使用“血统”或“种群”等术语，从而在个体和种群层面更准确地反映人类与基因之间的关系。研究人员也承认，在少数领域，种族作为一种建构在科学研究中可能仍然有用：作为政治和社会变量，而非生物变量。“虽然我们主张在生物科学中逐步淘汰种族术语，但我们也承认，将种族作为政治或社会类别来研究种族主义，尽管充满挑战，仍然是必要的，因为我们需要理解结构性不平等和歧视如何导致群体间的健康差异。”Yudell说。",
+   "questions": [
+    {
+     "stem": "51. Du Bois was opposed to the use of race as ________. A. a basis for explaining human genetic diversity B. an aid to understanding different populations C. an explanation for social and cultural differences D. a term to describe individual human characteristics",
+     "answer": "C",
+     "analysis": "文章首句指出杜波依斯反对把种族当作对不同人群社会文化差异的生物学解释，对应C项。A项“人类遗传多样性基础”、B项“理解不同人群的辅助”、D项“个体特征”均不是他反对的核心。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. The study by Svante Pääbo served as an example to show ________. A. modern genetics research is likely to fuel racial conflicts B. race is a poorly defined marker of human genetic diversity C. race as a biological term can explain human genetic diversity D. genetics research should consider social and cultural variables",
+     "answer": "B",
+     "analysis": "该例子显示两名欧洲裔科学家彼此共享的基因变异少于他们各自与韩国科学家共享的变异，说明种族不能可靠地反映遗传差异，作为多样性标记是定义不清的，故选B。A、D文中未提及，C与例子结论相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. The example of the disease cystic fibrosis underdiagnosed in people of African ancestry demonstrates that ________. A. it is absolutely necessary to put race aside in making diagnosis B. it is important to include social variables in genetics research C. racial categories for genetic diversity could lead to wrong clinical predictions D. discrimination against black people may cause negligence in clinical treatment",
+     "answer": "C",
+     "analysis": "囊性纤维化在非洲裔中诊断不足是因为被误认为“白人病”，说明依据种族做出的临床预测会出错，对应C项。A项“绝对必要”过于绝对，B项“社会变量”并非该例重点，D项将原因归于歧视而非错误的种族假设。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is Yudell's suggestion to scientists? A. They be more precise with the language they use. B. They refrain from using politically sensitive terms. C. They throw out irrelevant concepts in their research. D. They examine all possible variables in their research.",
+     "answer": "A",
+     "analysis": "Yudell明确建议科学家需要在语言上更加具体，使用“血统”“种群”等术语，对应A项。B、C、D在建议部分均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What can be inferred from Yudell's remark in the last paragraph? A. Clinging to racism prolongs inequity and discrimination. B. Physiological disparities are quite striking among races. C. Doing away with racial discrimination is challenging. D. Racial terms are still useful in certain fields of study.",
+     "answer": "D",
+     "analysis": "最后一段Yudell承认种族作为政治或社会类别研究种族主义仍是必要的，可推断种族术语在某些研究领域仍有价值，故选D。A、B无关，C偷换概念，原文说的是使用种族类别研究种族主义充满挑战，而非消除种族歧视。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 美国人工作的时间和强度比以往任何时候都要长、都要大。83%的员工表示工作压力大，近50%的人说工作相关压力影响睡眠，60%的人用智能手机在正常工作时间之外查看工作。难怪全球只有13%的员工对工作有投入感。\nB) 然而，在这种艰难环境中开始出现一线希望：美国人正意识到工作给他们带来的损害，雇主也在探索减轻压力和过度工作有害影响的方法。但仍有大量工作要做。把压力称为流行病并不夸张。83%的美国员工对工作感到压力——这一比例一年前还是73%——他们说薪酬过低和工作量不合理是压力的首要来源。如果你怀疑如今的职场比几十年前压力更大，你想得没错。从1983年到2009年，女性的压力水平增加了18%，男性的压力水平增加了24%。压力也开始得更早，一些数据表明，如今的青少年甚至比成年人压力更大。\nC) 压力正对我们的健康造成重大损害，总体公共卫生成本可能非常巨大。职业压力会增加心脏病和糖尿病的风险，加速衰老过程，缩短寿命，并导致抑郁和焦虑，以及许多其他负面健康后果。总的来说，与压力相关的健康问题占医院就诊的90%，其中许多是可以预防的。正如《华盛顿邮报》所言，你的工作“正在慢慢杀死你”。压力也在损害我们的人际关系。在职父母表示，他们感到压力大、疲惫、匆忙，缺少与孩子、朋友和伴侣共度的高质量时间。\nD) 七成员工表示难以维持工作与生活的平衡。随着技术（以及随之而来的工作邮件）渗入我们生活的方方面面，工作与生活的平衡几乎成了一个毫无意义的说法。根据菲利斯·莫恩的说法，在这种全天候连接之外再加上快速变化的经济和不确定的未来，就构成了过度工作的根源。莫恩说：“工作需求不断上升，同时还伴随兼并、收购、裁员等因素带来的不安全感。工作与生活问题的一部分必须讨论未来的不确定性。”\nE) 这些因素汇聚在一起，造成了一种日益不可能的处境，许多员工过度工作到精疲力竭。这不仅对员工不可持续，对雇用他们的公司也同样不可持续。科学已经表明，员工的高压力水平与旷工、生产率下降、工作投入度低和高离职率之间存在明显的相关性。太多职场政策实际上禁止员工养成健康的工作与生活平衡，阻止他们休假，即使在他们最需要的时候也是如此。\nF) 根据2007年的一项研究，美国远远落后于许多富裕国家和一些发展中国家，这些国家有家庭友好的工作政策，包括带薪育儿假、带薪病假和母乳喂养支持。美国也是唯一一个不保证员工带薪休假时间的发达经济体，并且是世界上仅有的两个不提供保证带薪产假的国家之一。但即使员工获得带薪休假，迫使他们过度工作的职场规范和期望也常常阻止他们休假。平均而言，拥有带薪休假天数的全职员工只使用了一半。\nG) 我们现代职场还建立在过时的时间限制之上。八小时工作制的做法是工业革命时代的遗留物，当时流行的说法是“八小时劳动，八小时娱乐，八小时休息。”\nH) 我们一直保留着这种工作日结构——但由于数字设备，许多员工实际上从未真正下班。如今，美国人平均每天在工作场所度过8.8小时，大多数职场专业人士还会在晚上、周末甚至假期额外花时间查看工作。问题不在于技术本身，而在于技术被用来为雇主而不是员工创造更多灵活性。在竞争激烈的工作环境中，雇主能够利用技术向员工索取更多，而不是用有利于员工的灵活性来激励他们。\nI) 在去年发表的一项研究中，心理学家创造了“职场远程压力”一词，用来描述员工立即回复电子邮件的冲动，以及对回复老板、同事或客户邮件这件事反复思虑。研究人员发现，远程压力是工作压力的一个主要原因，久而久之会导致身心倦怠。参与这项研究的300名员工中，那些经历高水平远程压力的人更可能同意评估倦怠的陈述，比如“我早上没有精力去上班”，并且更可能报告感到疲劳和注意力不集中。远程压力还与睡眠不好和缺勤相关。\nJ) 哈佛商学院教授莱斯利·珀洛解释说，当人们感到必须始终“在线”的压力时，他们会想方设法适应这种压力，包括改变日程安排、工作习惯以及与家人和朋友的互动。珀洛把这种恶性循环称为“响应循环”：一旦老板和同事体验到某位员工响应更快，他们就会增加对这位员工时间的需求。而由于不接受这些增加的需求会被视为对工作缺乏投入，员工只能顺从。\nK) 为了解决员工急剧上升的压力水平，许多公司实施了职场健康计划，与医疗保健提供者合作，这些提供者创建了促进员工健康和福祉的项目。确实有一些研究表明这些项目很有希望。一项对健康保险公司Aetna员工的研究显示，参加办公室瑜伽和正念课程的员工中约四分之一报告压力水平降低了28%，睡眠质量改善了20%。这些压力较小的员工平均每周增加62分钟的生产效率。虽然瑜伽和冥想被科学证明可以降低压力水平，但这些项目几乎没有针对倦怠和投入度低的根本原因。造成压力的条件是长时间工作、不切实际的要求和截止日期，以及工作与生活冲突。\nL) 莫恩和她的同事可能找到了解决办法。在2011年的一项研究中，她调查了在百思买公司总部实施“只看结果的工作环境”（ROWE）对员工生产力和福祉的影响。\nM) 在这项研究中，325名员工参加了ROWE，为期六个月，而对照组334名员工继续按正常流程工作。ROWE参与者可以自由决定何时、何地以及如何工作——唯一重要的是完成工作。结果令人震惊。六个月后，参加ROWE的员工报告工作与家庭冲突减少，对时间的控制感更好，并且他们每晚多睡了整整一个小时。这些员工离职的可能性更低，从而降低了离职率。值得注意的是，增加的灵活性并没有鼓励他们全天候工作。莫恩说：“他们并非在任何地方、所有时间都工作——相反，他们能更好地管理自己的工作。”她接着说：“灵活性和控制才是关键。”",
+   "questions": [
+    {
+     "stem": "36. Workplace norms pressure employees to overwork, deterring them from taking paid time off.",
+     "answer": "F",
+     "analysis": "对应F段：即使员工有带薪休假，职场规范和期望迫使他们过度工作，往往阻止他们休假。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. The overwhelming majority of employees attribute their stress mainly to low pay and an excessive workload.",
+     "answer": "B",
+     "analysis": "对应B段：83%的美国员工表示薪酬过低和工作量不合理是压力的首要来源。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. According to Moen, flexibility gives employees better control over their work and time.",
+     "answer": "M",
+     "analysis": "对应M段：莫恩说灵活性和控制才是关键，且员工对时间的控制感更好。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Flexibility resulting from the use of digital devices benefits employers instead of employees.",
+     "answer": "H",
+     "analysis": "对应H段：技术被用来为雇主而不是员工创造更多灵活性。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Research finds that if employees suffer from high stress, they will be less motivated, less productive and more likely to quit.",
+     "answer": "E",
+     "analysis": "对应E段：科学表明员工高压力水平与旷工、生产率下降、工作投入度低和高离职率相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. In-office wellness programs may help reduce stress levels, but they are hardly an ultimate solution to the problem.",
+     "answer": "K",
+     "analysis": "对应K段：瑜伽和冥想虽能降低压力，但这些项目几乎没有针对倦怠和投入度低的根本原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Health problems caused by stress in the workplace result in huge public health expenses.",
+     "answer": "C",
+     "analysis": "对应C段：压力正对健康造成重大损害，总体公共卫生成本可能非常巨大。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. If employees respond quickly to their job assignments, the employer is likely to demand more from them.",
+     "answer": "J",
+     "analysis": "对应J段：一旦老板和同事体验到员工响应更快，他们就会增加对员工时间的需求。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. With technology everywhere in our life, it has become virtually impossible for most workers to keep a balance between work and life.",
+     "answer": "D",
+     "analysis": "对应D段：七成员工难以维持工作与生活平衡，技术渗入生活各方面使其几乎毫无意义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. In America today, even teenagers suffer from stress, and their problem is even more serious than grown-ups'.",
+     "answer": "B",
+     "analysis": "对应B段：一些数据表明，如今的青少年甚至比成年人压力更大。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:22:12.501Z"
+}

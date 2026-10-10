@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2022,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Nowadays more and more people keep learning new skills to adapt to a fast-changing world. This trend reflects both necessity and opportunity. In a rapidly evolving job market, mastering new skills such as digital literacy, data analysis, or a foreign language helps individuals stay competitive. For example, many of my peers have learned programming or video editing online to meet workplace demands. Moreover, lifelong learning not only boosts career prospects but also enriches personal growth. By acquiring new knowledge, people become more adaptable and open-minded, which is essential in an era of constant change. However, learning new skills requires persistent effort and effective time management. We should set clear goals and make use of abundant online resources. In conclusion, continuous learning is no longer a choice but a necessity. Only by embracing new skills can we keep pace with the times and seize future opportunities.",
+   "note": "范文以题目给定句开头，围绕终身学习新技能展开。结构：分析必要性—举例说明—提出建议—总结升华。可复用句型有 This trend reflects..., For example..., Moreover..., Only by... can we... 等。语言地道，符合四六级高分标准。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Nanjing Yangtze River Bridge is the first road-rail dual-purpose bridge across the Yangtze River that was designed by China and built with domestically produced materials. Its upper deck is a four-lane highway bridge 4,589 meters long, while its lower deck is a double-track railway bridge 6,772 meters long. The railway bridge connects the original Tianjin-Pukou and Shanghai-Nanjing railway lines, reducing the time for trains to cross the river from one and a half hours to just two minutes. The bridge is an important hub for north-south traffic and one of Nanjing's well-known scenic spots. The completion of the Nanjing Yangtze River Bridge marked a leap forward in China's bridge construction, greatly facilitated the exchange of goods and movement of people between the two banks of the Yangtze River, and played a huge role in promoting economic development and improving people's lives.",
+   "note": "难点：专业术语如“铁路、公路两用桥”“双轨道”，旧铁路线名称，数字单位表达，以及长句拆分。关键表达：dual-purpose rail-road bridge, double-track railway bridge, marked a leap forward, facilitated exchange of goods and movement of people.",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 从长远来看，人类与森林的关系一直是野蛮破坏，但即便如此也带有缓慢希望的元素。在中世纪，世界大部分地区木材并不短缺，很少有人把砍伐森林视为问题。然而，1548年威尼斯人估计，按当时的使用速度，一项重要木材供应只能持续30年——但不同的森林管理方式将有可能满足未来许多世纪的需求。保护资源的想法源于对未来的担忧：害怕资源消耗速度快于补充速度。\n\nB) 经济利益是这种对树木和森林理解的核心。科学家们花了三个多世纪才开始认识到，木材生产并不是森林的唯一功能，也可能不是最重要的功能。19世纪末和20世纪初，人们日益认识到森林是无数相互依存的动植物物种的栖息地。它们承担起防止土壤侵蚀和滑坡的保护功能；它们通过防止地表径流对水平衡做出重要贡献；它们过滤空气中的灰尘颗粒、温室气体和放射性物质；它们产生氧气；它们提供休闲空间，并保存历史和史前遗迹。因此，世界各地的森林被划为公园或荒野地区。\n\nC) 近年来，我们对森林的看法发生了巨大变化。彼得·沃莱本2015年的国际畅销书《树的秘密生命》提出，树木可以通过由根和真菌构成的“木联网”相互警示危险。它们通过分享养分和信息相互支持，甚至通过输送糖溶液使古老树桩存活。这些见解使我们意识到人类与超人类世界之间的深层生态关系。\n\nD) 生态意识是近期才出现的现象。直到20世纪40年代，涵盖所有生物和非生物的“环境”概念才得以形成。20世纪70年代，“环境”一词开始流行，在英语和罗曼语族语言中广泛采用，在德语中则为“Umwelt”（周围世界）。这一观念的出现催生了环境机构、法规和环境研究，以及作为新兴综合学科的环境科学。1956年，纽约州立大学环境科学与林业学院（锡拉丘兹）授予了第一个环境研究理学学士学位。自20世纪70年代起，随着“环保主义”的兴起，数百所大学纷纷开设环境研究项目。过去几十年，许多不同学科的学者采纳了“环境”一词，这一事实中存在（缓慢的）希望。他们正在探索复杂生态内部及之间的复杂联系，以及人类通过技术工业、经济和其他操纵性发展所进行的环境创造对生物圈产生的影响。\n\nE) 环境观念的兴起以及学界对生态过程的理解影响了新技术和政治。我们开始追问脆弱性与风险、世界生态以及自然与权力之间的关系。寻找应对气候变化的适当对策已成为国际外交的中心议题。\n\nF) 社会和环境活动家、科学家及土著群体认为，2015年12月联合国气候变化大会达成的《巴黎协定》不够充分、软弱或有所妥协。在某种程度上，他们是对的：气候变化已经摧毁了数万人的生计，而且不久的将来，数百万以贫困人口为主的民众境况将会恶化，他们将加入已被气候变化和极端天气事件迫使背井离乡者的行列。但巴黎会议仍然标志着历史性的一步，即承认有必要就气候变化、削减碳排放和世界合作采取行动。195个国家在巴黎坐到谈判桌前，同意限制排放。历史上此前从未发生过类似事件。20世纪之前，只有少数科学家对温室气体与气候变化之间的理论关系感兴趣，但直到20世纪后期积累的经验证据才明确建立起燃烧化石燃料与全球气温急剧加速上升之间的联系。\n\nG) 当前的危机并不是人类遇到的第一次危机，回顾近代历史上与污染的斗争，可以看到曾经似乎不可想象的转变。在英国小说和惊悚作品中成为伦敦标志的“伦敦雾”，实际上是烟雾或烟尘，是工业化的遗留物。经过一个世纪的忽视，伦敦在1952年12月遭遇了大烟雾——英国历史上最严重的空气污染事件，导致约1.2万人死亡。此后不久，公众倡议和政治运动促成了严格的法规和新法律，包括1956年的《清洁空气法》。如今，伦敦通过在2003年引入交通拥堵收费区以及2019年设立超低排放区，有效减少了交通排放。\n\nH) 科学证据充分表明，我们生活在一个气候变化、资源枯竭和潜在生态灾难的时代。当挑战显得如此巨大且无法解决时，我们如何激励已被无休止的末日和灾难情景搞得疲惫不堪的公众？关于灭绝的统计数据和衰退的阴霾本身并不能使我们摆脱往往由自身造成的生态陷阱；相反，它们更可能导致瘫痪和不作为。\n\nI) 我们需要关于改变和转型的故事与历史：这类生态故事让我们正视一个事实，即人类力量具有潜在破坏性，而我们这个物种在地球上的生存取决于保护土壤和水、栖息地及生态系统。\n\nJ) 是时候展示生态意识、行动和恢复方面的成功与加速进展了：这些故事包括过去的成功和未来愿景，涉及都市园艺的兴起、重新自然化的河流景观、针对空气和水污染的成功抗议、区域市场和慢食运动的兴起、全球植树活动，以及致力于生态恢复的倡议和企业。生态诅咒的现实似乎远比潘多拉魔盒底部留下的希望力量强大。但如果我们相信什么都无法改变，那么我们就是在放弃行动的机会。\n\nK) 当今的拯救力量不会来自解围之神。在一个日益复杂和合成的世界里，我们的拯救力量不会来自单一源头，当然也不会来自“大到不能倒”的做法，或那些被卷入速度时代漩涡的人。希望可以成为一种警醒。它承认挫折。缓慢希望的概念表明，我们不能指望事情一夜之间改变。如果自然资源的加速枯竭（在生态意义上）和“当下的收缩”（在社会意义上）是人类的紧迫问题，那么减少消耗性做法并努力“拉长当下”将是前进的方向。",
+   "questions": [
+    {
+     "stem": "Climate change has wrought havoc on the lives of tens of thousands of people.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "It took scientists a long time to realise that the function of forests goes far beyond\nproviding humans with timber.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "There is abundant evidence that we are now facing a possible ecological disaster.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Environmental science became academic disciplines only some sixty years ago.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Things cannot change overnight, but reducing the consumption of natural resources will\nhelp solve the ecological crisis.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Human perception of forests has undergone a tremendous change in the past years.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Recent history shows reduction of pollution, once seemingly impossible, can actually\nbe accomplished.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "People began to consider preserving natural resources when they feared they would\nhave nothing to use in the future.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "If we doubt our ability to reverse ecological deterioration, we are throwing away the\nchance to take action.",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "How to respond effectively to climate change has become the focus of international\ndiplomacy.\n2022年 6 月英语六级真题第2 套 第 4 页 共 8",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "自从美国偶像明星Taryn Southern在2017年开始使用人工智能作曲以来，世界各地的音乐人开始思考人工智能和现代技术对音乐制作的影响。一些人将人工智能用于音乐创作视为有用的工具，另一些人则几乎将其视为“终结的开始”。在Taryn的案例中，AI软件使她能够传达她自己不知道如何组合的旋律与和弦。因此，最终作品是一种协作成果，而不是完全由技术生成的作品。Taryn的故事具有明显的积极意义，凸显了在音乐制作中使用AI的优势。它可以作为灵感来源，也是音乐人遭遇创作瓶颈时的理想起点。\n\n与将AI视为工具的观点相反，一些音乐人认为它对音乐界极为有害。目前，由于这种技术尚不成熟，它所产生的音乐未必是我们想听的。简言之，质量不高。那些自己创作过音乐的人，甚至喜爱真实、艺术性音乐的乐迷也会认为，计算机永远无法模仿真正音乐人的作品（和人情味）。音乐自古以来就是人类故事的重要组成部分；事实上，已知最早的音乐距今约3400年。歌曲长期以来被用作传递信息和民间故事的手段，涵盖从社会伦理到世界历史的方方面面。由于许多人将音乐视为人类固有的表达方式，它常常被认为太珍贵而不能交给技术。一想到计算机生成一首并非由艺术家呕心沥血创作的“随机”乐曲，几乎被视为亵渎神圣。\n\n无论你站在争论的哪一边，AI在音乐制作中的使用似乎只会越来越频繁。我们的现代世界热衷于技术进步。与其回避这种黯淡未来的想法，最好的态度是乐观和好奇。虽然总会有固执的老派音乐人拒绝使用技术，但音乐制作人应该把AI视为值得拥抱的事物。AI音乐软件仍处于起步阶段，但随着更多投资者对这类技术的发展和成果感兴趣，并考虑到近年来其他技术进步的快速增长，AI制作的音乐被视为新常态只是时间问题。",
+   "questions": [
+    {
+     "stem": "How do some musicians perceive using AI in creating music?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does Taryn Southern's story illustrate?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Why are some musicians opposed to the use of AI in creating music?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "Why do many people think music is too precious to impart to AI technology?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author think of the future of AI music?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "几周前，一位好意的教授试图在一条推文中解释病毒和人体背后的生理过程，结果立即因信息有误而受到批评。随后他道了歉，并删除了这条错误推文。\n在学术圈之外传播科学，对于增进公众对健康和环境问题的理解、帮助个人做出明智的个人决定是必要的。\n然而，从事科学传播的科学家必须承认，即使在他们自己的领域，他们的专业知识也只是精深而狭窄。他们需要认识到自身知识的局限。这并不是说他们只能就自己的研究进行写作或展示，而是说，如果话题超出其学科范围，他们应咨询专家。与从事该专业的科学家进行事实核查，可以防止无意中传播错误信息，而且这一过程还可能产生一些可以融入其中的有趣新信息。\n有些人认为公众受教育程度不足，无法理解科学信息，尤其是复杂现象，但这是荒谬的。各级公共教育中都有科学教学，大多数中学都开设生物、物理和化学课程。社交媒体表明，公众渴望基于坚实科学基础的知识。大多数科学文章之后的公共讨论也表明，在线读者甚至能理解最令人费解的科学原理。\n同样必须强调的是，在某个话题上是专家，并不自动使一位学者有能力向非科学受众传达这一主题。最近，一些科学家一直提供面向公众的科学现象解释。尽管他们具备相应的资历，但在解释方面往往做得很少。一位生物学家分享了一个复杂的类比，涉及图书馆、书籍、纸张、食谱、配料和蛋糕，来解释疫苗背后的过程。任何需要书面说明才能记住每个物品代表什么的解释，都不适合公众理解。\n科学传播本身就是一门科学。它需要严格的训练和指导。科学家应参加传播课程，学习如何识别和消除行话，以及如何开发有效的类比来解释复杂概念。不能想当然地认为自己具备传播专长——想象一下，如果有人仅凭自己认定自己是物理学家，就在没有必要背景的情况下试图为该领域做贡献，会怎样。向公众传播科学做得不好，只会制造混乱，扩大科学与社会的鸿沟，而科学家们正在努力缩小的正是这道鸿沟。",
+   "questions": [
+    {
+     "stem": "What does the author say about communicating science to the general public?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author advise scientists do to deal with topics outside of their specialty?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author say we can learn from social media?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does the example of the biologist who shared an intricate analogy show?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author suggest scientists do to close the gap between science and society?",
+     "answer": "",
+     "analysis": "",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "实证证据表明，对自己和所爱之人怀有善意的想法可能有益于整体健康。研究人员开展了一项调查，探讨善意想法与人的心理状态之间的相关性。研究中，五组参与者分别聆听不同的音频指令，其中一些鼓励参与者友善地看待自己，另一些则引导他们以自我批评的方式思考。听完音频后，参与者回答了一系列问题，包括是否感到焦虑不安、对自己表现出善意的可能性有多大，以及感觉与他人有多紧密的联系。被引导善意看待自己的参与者更可能表现出与放松和安全感相关的身体反应；他们的心率也下降，这是心脏能灵活应对情境的健康迹象。然而，相反地，那些听到批评性音频的人之后心率和出汗反应更高，这两者都预示着威胁和苦恼感。能够关闭身体自然威胁反应可以增强人的免疫系统，这反过来让他们更有可能在生病后迅速康复。这些发现有助于进一步理解我们的一些临床试验研究发现：在那些研究中，我们表明复发性抑郁症患者尤其受益于基于自我觉察的认知疗法。他们实质上学会对自己更具同情心。其意义在于，对于易患抑郁症的人来说，以同情心面对自己的负面想法和感受是一种截然不同的方式——认识到这些想法并非事实。它引入了另一种存在与认知方式，对许多人而言极具转变性。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "空格位于 the 与 between 之间，需要名词；correlation 意为“相关性”，常与 between 搭配，表示善意想法与心理状态之间的关系。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "修饰 think about themselves，需要副词；与后面的 self-critical 形成对比，amiably 意为“友善地、亲切地”，表示友善地看待自己。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "空格在 felt 后作表语，how connected they felt to other individuals 表示“感觉与他人有多紧密”，connected 符合 feel connected to 的搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "A",
+     "analysis": "句首 Yet 后需要副词引出对比；adversely 在此意为“相反地”，引出下文批评组的不同生理反应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "N",
+     "analysis": "主语 both of which 指心率和出汗反应，谓语需复数动词；signify 意为“意味着，预示”，说明这些身体反应表示威胁和苦恼感。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "C",
+     "analysis": "can 后需动词原形；boost the immune system 为常见搭配，意为“增强免疫系统”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "修饰 depression 需要形容词；recurrent depression 为固定表达“复发性抑郁症”，符合临床试验研究对象。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "D",
+     "analysis": "修饰 therapy 需要形容词；cognitive therapy 为“认知疗法”，self-awareness-based cognitive therapy 语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "固定搭配 prone to depression，意为“易患抑郁症的”，说明这类人群尤其受益。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "E",
+     "analysis": "with 后需要名词；meeting negative thoughts and feelings with compassion 表示“以同情心面对负面想法和感受”，符合语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:54:31.370Z"
+}

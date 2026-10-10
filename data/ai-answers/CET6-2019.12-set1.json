@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Undoubtedly, social responsibility is an indispensable quality for citizens in modern society. It refers to our awareness of the impact of our actions on others and the willingness to contribute to the common good.\n\nFor individuals, a strong sense of social responsibility promotes personal growth. When we care about community issues, we become more empathetic and mature. For society as a whole, such awareness is the cornerstone of harmony. For instance, if everyone volunteers to help the disadvantaged or obeys public rules, trust will be strengthened and social conflicts will be reduced. Without this sense, even small selfish acts may accumulate into serious problems, damaging both collective interests and our own long-term welfare.\n\nIn conclusion, cultivating social responsibility is not an option but a necessity. As college students, we should start with small deeds, such as participating in charity activities and speaking up against wrongdoing, thus contributing to a better world.",
+   "note": "本文开篇点明社会责任感的重要性并给出定义，主体从个人成长与社会和谐两方面论证，用举例和反面假设强化说服力，结尾呼吁大学生从小事做起。可复用句型：It refers to...；For society as a whole, such awareness is the cornerstone of...；As college students, we should start with small deeds.",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "在考虑与严重慢性疾病相关的危险因素时，我们通常会想到胆固醇、血压和体重等健康指标。但不良饮食和缺乏运动也各自会增加患心脏病的风险，并在某些癌症的发生中起作用。也许更糟的是，不健康饮食和运动不足的有害影响并不局限于身体。最近的研究还表明，沉溺于高脂高糖饮食可能对大脑产生负面影响，导致学习和记忆缺陷。\n\n研究发现，肥胖与认知功能受损有关，这一点通过一系列学习和记忆测试（例如记住几分钟或几小时前呈现的一组单词的能力）进行评估。还有越来越多的证据表明，饮食引起的认知障碍可以迅速出现——在数周甚至数天内。例如，一项研究发现，被安排连续五天高脂饮食的健康成年人与低脂饮食对照组相比，注意力、记忆力和情绪均受损。另一项研究还发现，每天吃高脂高糖早餐仅四天，就会导致学习和记忆问题，与在超重和肥胖个体中观察到的问题相似。\n\n健康饮食组与高脂高糖饮食组之间的体重没有很大差异。因此，这表明即使体重没有明显变化，不良饮食摄入也会产生负面后果。因此，体重并不总是健康的最佳指标，瘦人仍需健康饮食并经常锻炼。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "空格后为名词effects，需形容词修饰；结合上下文表示“有害的”影响，词库中detrimental意为“有害的”，符合语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "J",
+     "analysis": "空格在that从句中作主语，需动名词；indulging in表示“沉溺于”，与a high-fat and high-sugar diet搭配，意为沉溺于高脂高糖饮食。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "E",
+     "analysis": "空格与learning and memory搭配作causing宾语，需名词复数；deficits表示“缺陷”，learning and memory deficits为固定搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "A",
+     "analysis": "空格在as后作状语，需过去分词构成as assessed by；表示“经……评估”，符合测试评估认知功能语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "L",
+     "analysis": "空格修饰动词emerge，需副词；破折号后within weeks or even days说明迅速，rapidly意为“迅速地”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "B",
+     "analysis": "空格在healthy adults后作后置定语，需过去分词；assigned to a high-fat diet表示“被分配/指定采用高脂饮食”，符合实验设计。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "空格后为to，需形容词；similar to表示“与……相似”，指与超重肥胖个体中观察到的问题相似。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "C",
+     "analysis": "空格前为negative，后接of，需名词复数；consequences表示“后果”，negative consequences of poor dietary intake意为不良饮食摄入的负面后果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "D",
+     "analysis": "空格修饰动词changed，需副词；结合句意“体重没有明显变化”，conspicuously意为“明显地”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "N",
+     "analysis": "空格修饰动词exercise，需副词；regularly表示“规律地、经常地”，与eat well并列，建议健康生活方式。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The peony, with its brilliant colors and elegant appearance, symbolizes peace and prosperity, hence it is known as the \"king of flowers\" in China. Peonies are cultivated and grown in many parts of China. Over the centuries, numerous poems and paintings have been created in praise of the peony. During the Tang Dynasty, peonies were widely planted in imperial gardens and honored as the national flower, thus becoming especially popular. In the tenth century, the ancient city of Luoyang became the center of peony cultivation, a status it has maintained to this day. Nowadays, thousands of domestic tourists flock to Luoyang to attend the annual Peony Festival, admiring the unique beauty of Luoyang peonies while exploring the history of the ancient capital of nine dynasties.",
+   "note": "难点在于四字结构与历史文化词。“花中之王”译为“king of flowers”；“皇家园林”“国花”“九朝古都”等需用规范表达；“蜂拥”用 flock 体现人流密集；“一年一度的牡丹节”译为 annual Peony Festival。中文多逗号，英文适当断句或使用分词结构，使逻辑清晰。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 年轻人从未过得这么好吗？还是他们面临的挑战比以往任何一代人都多？在西方，我们当前处于一个高财富时代。这意味着未成年人享有过去人们羡慕的物质利益和法律保护。但人们越来越怀疑，我们的年轻人并非一切都好。在一些专家和大众媒体中，最流行的解释之一就是过度的“屏幕时间”难辞其咎。（这指的是年轻人花在手机、平板和笔记本电脑上的所有注意力。）然而，这是一个有争议的理论，一些学者根据他们对相关数据的解读，对此类说法持怀疑态度。\n\nB) 现在一项新研究为这场争论又提供了一份贡献，它揭示了强有力的证据，表明美国青少年的幸福感确实在下降，并认为最可能的原因是我们给他们的电子产品。其背景是，从20世纪60年代到21世纪初，美国的平均幸福感指标是上升的。对年轻人来说尤其如此。这反映了这几十年总体生活水平提高，并且避免了大规模社会创伤，如全面战争或经济匮乏。然而，由琼·特温格等研究者提出的“屏幕时间”假说认为，电子设备和过多的上网时间可能在最近几年逆转了这些趋势，给年轻人的心理健康带来了问题。\n\nC) 为了调查，特温格和她的同事深入研究了“监测未来”数据集，该数据集基于1991年开始对美国8、10、12年级学生的年度调查。总共有110万年轻人回答了与幸福感有关的各种问题。特温格团队对答案的分析证实了早期已有的幸福感上升趋势，分数在20世纪90年代以及21世纪头十年后期都在上升。这在自尊、生活满意度、幸福感以及对工作、邻里或朋友等具体领域的满意度等指标上都有体现。但大约在2012年，这些指标开始下降。这一趋势一直持续到2016年，这是可获得数据的最近年份。\n\nD) 特温格和她的同事想了解为什么平均幸福感会发生这种变化。然而，用这样的非实验数据很难证明因果关系。事实上，当特温格之前用这些数据提出屏幕时间效应时，一些评论者很快就提出了这个问题。他们认为她的因果性说法建立在相关数据之上，而且她没有充分考虑其他潜在的因果因素。这一次，特温格和她的团队特别指出，他们并不是要确定原因本身，而是在评估潜在原因的可能性。\n\nE) 首先，他们解释说，如果某个变量在影响幸福感方面起作用，那么我们应该预期该变量的任何变化都与观察到的幸福感变化相关。如果不相关，那么这个变量就不可能是因果因素。因此，研究人员考察了花在几项可能驱动幸福感下降活动上的时间。运动更少、与同伴见面更少与幸福感更低相关，阅读纸质媒体（报纸）时间更少、以及令人惊讶的是做家庭作业时间更少，也与幸福感更低相关。（最后这一发现似乎与另一个流行假设相矛盾，即给学生布置作业负担是造成所有问题的原因。）此外，看电视更多和电子交流更多都与幸福感更低相关。所有这些效应在幸福感、生活满意度和自尊的测量中都成立，且对8年级和10年级学生的影响更强。\n\nF) 接下来，特温格的团队对屏幕时间数据进行了更深入的研究。他们发现，在数字设备上花费极少时间——每周几小时——的青少年幸福感最高。他们的幸福感甚至高于从不使用这类设备的人。然而，更高剂量的屏幕时间显然与更低的幸福感相关。每周在设备上花10-19小时的人比低频使用者不快乐的可能性高41%。每周使用这类设备40小时或以上的人（十分之一的青少年）不快乐的可能性是两倍。数据有一点复杂，因为在现实世界中社交的孩子也倾向于更多使用在线交流，但通过剔除不同案例，可以清楚地看出，现实世界的社交成分与更高的幸福感相关，而在屏幕或网络上花更多时间只与更差的幸福感相关。\n\nG) 到目前为止，这些都很合理。但下一个问题是，平均幸福感的下降是否与电子设备使用增多的趋势同时发生？看起来是这样——毕竟，2012年是一个转折点，当时超过一半的美国人开始拥有智能手机。特温格和她的同事还发现，在2013-16年的关键年份里，当青少年花更多时间上网、使用社交媒体和阅读网络新闻，以及当美国更多年轻人拥有智能手机时，幸福感确实最低。在第二项分析中，他们发现科技到哪里，幸福感下降就跟到哪里。例如，网络使用增长更大的年份之后是幸福感更低的年份，而不是反过来。这并不能证明因果关系，但与之相符。与此同时，电视使用并没有显示出这种追踪。电视可能会让你不那么快乐，但这似乎不是导致近年来年轻人平均幸福感下降的原因。\n\nH) 对于与更高幸福感相关的活动，发现了类似但相反的模式。例如，人们花更多时间与朋友在一起的年份是幸福感更好的年份（并且之后也是更好的年份）。遗憾的是，数据还显示，在调查涵盖的时期内，面对面社交和体育活动已经减少。\n\nI) 特温格和她的同事还想解决另一个解释：2007-2009年大衰退的影响，这场衰退打击了大量美国家庭，可能正在影响青少年。他们使用的数据集没有包括经济数据，因此研究人员转而考察2013-16年幸福感下降是否在追踪经济指标。他们发现一些证据表明，一些粗略指标，如收入不平等，与幸福感变化相关，但对家庭影响更直接的经济指标，如家庭收入和失业率（这使家庭陷入困境），与幸福感没有关系。研究人员还指出，衰退发生在幸福感下降开始前几年，也发生在幸福感下降最急剧的2013年之前。\n\nJ) 研究人员得出结论，电子交流是唯一一项在心理健康幸福感下降的同时增加的青少年活动。我猜想该领域的一些专家会热衷于解决其他解释，比如未评估的变量在幸福感下降中起作用。但这项新工作确实比之前的研究更进了一步，表明屏幕时间仍应被视为年轻人茁壮成长的潜在障碍。",
+   "questions": [
+    {
+     "stem": "36. The year when most Americans began using smartphones was identified as a turning point in young Americans' level of happiness.",
+     "answer": "G",
+     "analysis": "G段指出“2012 was the tipping point when more than half of Americans began owning smartphones”，且该段讨论智能手机普及与幸福感下降同时发生。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Scores in various wellbeing measures began to go downward among young Americans in recent years.",
+     "answer": "C",
+     "analysis": "C段明确说“But around 2012 these measures started to decline”，对应各项幸福感指标开始下降。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Unfortunately, activities involving direct contact with people, which contributed to better wellbeing, were found to be on the decline.",
+     "answer": "H",
+     "analysis": "H段提到“face-to-face socializing and sports activity had declined”，且前文说明与朋友相处时间多与更好幸福感相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. In response to past critics, Twenge and her co-researchers stress they are not trying to prove that the use of digital devices reduces young people’s wellbeing.",
+     "answer": "D",
+     "analysis": "D段提到此前批评后，Twenge团队“make a point of saying that they are not trying to establish causes as such”，即强调并非试图证明电子设备降低幸福感。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. In the last few decades of the 20th century, living standards went up and economic depressions were largely averted in the US.",
+     "answer": "B",
+     "analysis": "B段说明从20世纪60年代到21世纪初生活水平提高并避免了经济匮乏等大规模创伤，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Contrary to popular belief, doing homework might add to students’ wellbeing.",
+     "answer": "E",
+     "analysis": "E段发现做家庭作业时间少与幸福感低相关，并指出这与“给学生布置作业造成问题”的流行假设相矛盾，即做作业可能有益。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. The author believes the researchers’ new study has gone a step further regarding the impact of screen time on wellbeing.",
+     "answer": "J",
+     "analysis": "J段作者认为“the new work does go further than previous research”，指出新研究更进了一步。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The researchers found that extended screen time makes young people less happy.",
+     "answer": "F",
+     "analysis": "F段明确“higher doses of screen time were clearly associated with lower happiness”，对应长时间屏幕时间使人更不快乐。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Data reveals that economic inequality rather than family income might affect people’s wellbeing.",
+     "answer": "I",
+     "analysis": "I段发现收入不平等与幸福感变化相关，而家庭收入等直接影响指标与幸福感无关，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Too much screen time is widely believed to be the cause of unhappiness among today’s young people.",
+     "answer": "A",
+     "analysis": "A段提到“one of the most popular explanations... is that excessive ‘screen time’ is to blame”，即过多屏幕时间被广泛认为是原因。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "下面来看看太平洋西北地区如何为“大地震”做准备。这是为可能成为美国历史上最严重灾难而进行的最大规模灾难演习。加利福尼亚州多年来一直在为“大地震”做准备——那场不可避免的地震将毫无疑问地沿着著名的圣安德烈亚斯断层造成各种破坏。但如果沿着太平洋西北地区延伸的断层自身发生一场巨大地震呢？如果卡斯卡迪亚地区的人们能有所作为，他们就不会措手不及。该地区正在进行一场为期多日、约2万人参与的地震和海啸演习。“卡斯卡迪亚崛起”演习让当地居民和应急响应人员有机会练习，在沿着美国最危险且被低估的断层之一发生9.0级地震和海啸时该怎么做。卡斯卡迪亚地震带大到足以与圣安德烈亚斯断层相提并论（它被称为美国最危险的断层），但知名度远低于它在加利福尼亚的“表亲”。该地震带长约700英里，位于北美板块边缘，濒临太平洋的不列颠哥伦比亚省、华盛顿州、俄勒冈州和北加利福尼亚州海岸。卡斯卡迪亚是所谓的“大型逆冲”断层。大型逆冲断层形成于地震带——两个板块汇聚的陆地板块边界。在一个板块位于另一个板块下方的区域，应力随时间积累。在大型逆冲事件中，所有这些应力释放，从而引发世界上一些最强烈的地震。还记得2004年印度洋苏门答腊附近的9.1级地震和海啸吗？它是由印度板块俯冲到缅甸微板块下方的大型逆冲事件引起的。卡斯卡迪亚断层上一次发生大地震是在1700年，因此官员们担心另一场地震随时可能发生。为了防止那场地震演变成灾难，应急响应人员将与公众一起参加包括通讯、疏散、搜救和其他场景在内的演练。如果发生9.0级地震，预计会有数千人伤亡。首先，地震会震动包括西雅图和波特兰在内的大都市地区。这可能引发海啸，在沿海地区造成浩劫。并非所有伤亡都能必然避免——但通过跨地方、州甚至国家边界的协调，官员们希望能够避免最坏情况的发生。在演习网站上，官员们解释说，他们在这次演练中编写的报告将为未来多年的灾难管理提供参考。对于数十万卡斯卡迪亚居民来说，“大地震”不是会不会发生的问题，而是何时发生的问题。为不可避免的灾难做好准备，永远都不嫌早。",
+   "questions": [
+    {
+     "stem": "51. What does “The Big One” refer to?",
+     "answer": "C",
+     "analysis": "文章第一段将“The Big One”定义为不可避免的、会沿圣安德烈亚斯断层造成破坏的地震，后文也指卡斯卡迪亚可能发生的特大灾难，因此是“大规模自然灾难”。A错误，它不是指断层本身；B是演习名称；D错误，文中是Cascadia而非Caledonia，且不限于海啸。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the purpose of the Cascadia Rising drill?",
+     "answer": "A",
+     "analysis": "第二段明确说Cascadia Rising演习让居民和应急人员练习在9.0级地震和海啸发生时该怎么做，目的就是为大地震和海啸做准备。B的“提高意识”未体现实践目的，C、D偏离文章，文未涉及灾后生活或善后。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What happens in case of a megathrust earthquake according to the passage?",
+     "answer": "D",
+     "analysis": "第四段指出在megathrust事件中“all of that stress releases”，即巨大应力释放，引发强震。A、C错误，文中只说板块汇聚，不是合并或边界模糊；B干扰来自“converge”，但那是板块运动，不是多种力汇聚。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What do the officials hope to achieve through the drills?",
+     "answer": "B",
+     "analysis": "文章说虽然无法完全避免伤亡，但官员希望通过跨地区协调“避免最坏情况”，即在灾难中减少伤亡。A“协调救灾”是实现目标的手段，不是希望达到的结果；C财产损失文中未提及；D建立灾害管理过于宽泛。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author say about “The Big One” ?",
+     "answer": "C",
+     "analysis": "末段说“The Big One”对卡斯卡迪亚居民而言“不是会不会发生的问题，只是何时发生的问题”，并称其为“不可避免”，所以发生只是时间问题。A与“不可避免”矛盾，B错误，文中问的是是否发生而非如何发生；D“一直萦绕”未明确。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "“撒谎的危险之处在于，人们不明白这种行为如何改变我们。”杜克大学行为心理学家丹·艾瑞里说。心理学家已记录到儿童早在两岁时就会撒谎。一些专家甚至认为撒谎是一个发育里程碑，如同爬行和走路，因为它需要复杂的计划、注意力以及从他人视角看待情境并加以操纵的能力。但对大多数人来说，随着道德感和自我调节能力的发展，撒谎会受到限制。\n\n哈佛大学认知神经科学家乔舒亚·格林说，对我们大多数人而言，撒谎是需要耗费精力的。在研究中，他给受试者提供通过欺骗获取金钱的机会，同时用功能性核磁共振成像仪检查他们的大脑，该仪器能显示血液流向大脑活跃区域。有些人立刻本能地说了真话。但另一些人选择撒谎，他们的额顶控制网络活动增加，该网络参与困难或复杂的思维。这表明他们当时正在真相与欺骗之间做决定——最终选择了后者。在后续分析中，他发现赢得金钱时神经奖赏中枢更活跃的人也更可能属于撒谎者群体——这表明撒谎可能与无法抵制诱惑有关。\n\n外部条件也同样影响我们撒谎的时间和频率。当我们能够为自己的撒谎找到理由、感到压力和疲惫或看到他人不诚实时，我们更可能撒谎。而当我们有道德提醒或认为别人在看着时，我们则不太可能撒谎。艾瑞里说：“作为一个社会，我们需要明白，当我们不惩罚说谎时，就会增加它再次发生的概率。”\n\n在2016年发表于《自然·神经科学》杂志的一项研究中，艾瑞里及其同事展示了不诚实如何改变人的大脑，使人在未来更容易说谎。当人们说假话时，科学家注意到他们的杏仁核出现一阵活动。杏仁核是大脑中产生恐惧、焦虑和情绪反应的关键部分——包括你撒谎时那种沉重的内疚感。但当科学家让受试者玩一个通过欺骗同伴来赢钱的游戏时，他们注意到来自杏仁核的负面信号开始减弱。不仅如此，当人们的不诚实行为没有面临任何后果时，他们的谎话往往会变得更加夸张。这意味着，如果你给人们多次为一己之利撒谎的机会，他们会从小谎开始，并随着时间的推移越撒越大。",
+   "questions": [
+    {
+     "stem": "46. Why do some experts consider lying a milestone in a child’s development?",
+     "answer": "A",
+     "analysis": "文章指出，专家把撒谎视为发育里程碑，因为它需要复杂的规划、注意力以及从他人视角看问题的能力；A项“从不同角度看复杂情况”是对此的合理改写。B项“比爬行和走路更非凡”与原文将其比作爬行、走路的说法不符，C、D未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. Why does the Harvard neuroscientist say that lying takes work?",
+     "answer": "D",
+     "analysis": "哈佛神经科学家称撒谎需要耗费精力，因为选择撒谎的人额顶控制网络活动增强，该网络参与困难或复杂思维；D项“涉及大量复杂的心理活动”与此相符。A项“从几个选项中选择”不准确，原文只是真相与欺骗二选一；B项未提及；C项混淆了血流成像与思维复杂程度。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. Under what circumstances do people tend to lie?",
+     "answer": "C",
+     "analysis": "研究发现，那些赢钱时奖赏中枢更活跃的人更可能撒谎，说明撒谎可能与无法抵制诱惑有关；C项“诱惑太强时”是对这一结论的概括。A项“太情绪化”不等于文中的“紧张疲惫”；B项“同伴压力”曲解了“看到他人不诚实”；D项“后果不紧迫”与撒谎频率无直接对应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49.When are people less likely to lie?",
+     "answer": "B",
+     "analysis": "文章明确提到，当人们认为别人在看时，撒谎的可能性更小；B项“在众目睽睽之下”与之对应。A项“疲惫紧张”反而更容易撒谎；C项“理性思考”对应的是更容易为自己的撒谎找理由；D项“问心无愧”不是文中概念。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author say will happen when a liar does not get punished?",
+     "answer": "B",
+     "analysis": "文章指出，当人们不因不诚实而承担后果时，谎话会变得更夸张，并且小谎会随时间变大；B项“他们会撒更大的谎”正确。A项“感到有理”、C项“变得自满”、D项“真假混合”均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:35:28.843Z"
+}

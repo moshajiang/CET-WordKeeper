@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "In today's highly competitive business world, team spirit and effective communication are vital for a productive workplace. To begin with, team spirit creates a sense of belonging and mutual support. When employees trust each other and work towards common goals, they can combine their strengths to accomplish tasks that are impossible for individuals. For example, a project team with strong team spirit is more likely to share resources, offer timely help, and overcome difficulties together. Moreover, communication acts as the bridge that links different roles and departments. Clear and open communication minimizes misunderstandings, enhances efficiency, and promotes innovation. In contrast, a lack of communication may lead to conflicts, redundant work, or even project failure. Additionally, team spirit and communication reinforce each other: good communication builds trust, while a positive team atmosphere encourages people to speak up. In conclusion, both team spirit and communication are essential pillars of workplace success. Only by nurturing these qualities can an organization achieve sustainable development.",
+   "note": "这篇范文紧扣题目要求，首段直接点明团队精神与沟通在职场中的重要性。主体段分别从团队精神和沟通两个角度展开论证，运用举例、对比等方法，并补充二者相辅相成的关系，论证充分。末段总结升华，重申观点。结构清晰，符合“引出观点—论证—总结”的框架。可复用句型有：To begin with...; Moreover...; Additionally...; In conclusion...; Only by... can... 等，均为四六级高频表达，难度适中，易于模仿。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Chinese idioms are a unique means of expression in Chinese, mostly consisting of four Chinese characters. They are highly concise and fixed in form, yet often capable of vividly conveying profound meanings. Most idioms originate from ancient Chinese literary works and are usually associated with certain myths, legends or historical events. Without knowing the origin of a particular idiom, it is difficult to understand its exact meaning. Therefore, learning idioms helps people better understand traditional Chinese culture. Idioms are widely used in daily conversation and literary writing. Using idioms appropriately can make one's language more expressive and communication more effective.",
+   "note": "难点：成语固定四字结构，译作Chinese idioms；“高度简练且形式固定”按英文习惯处理为concise and fixed in form；“出处”译为origin；“因为”应为“因此”，译为Therefore；恰当使用用appropriately，使表达地道。注意整体忠实、句式灵活，避免逐字硬译。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "斯蒂芬·霍金教授警告说，强大人工智能的创造将是“人类历史上最好的或最坏的事情”，并称赞成立一个致力于研究智能未来的学术机构“对我们文明和物种的未来至关重要”。霍金在剑桥大学利弗休姆未来智能中心（LCFI）的开幕式上发言，这是一个多学科机构，试图应对人工智能研究快速发展所带来的一些悬而未决的问题。霍金说：“我们花了大量时间研究历史，坦白说，历史大多是愚蠢的历史。因此，人们转而研究智能的未来，这是一个可喜的变化。”虽然这位世界著名物理学家经常对人工智能持谨慎态度，担心如果人类创造出具有自身意志的超级智能，人类可能会成为自身毁灭的缔造者，但他也迅速指出了人工智能研究可能带来的积极面。他说：“创造智能的潜在好处是巨大的。我们无法预测当我们的思维被人工智能放大时，我们可能会取得什么成就。也许借助这场新技术革命的工具，我们将能够消除上一次革命——工业化——对自然世界造成的一些损害。当然，我们也会致力于最终根除疾病和贫困。我们生活的方方面面都将被改变。简言之，成功创造人工智能可能成为我们文明史上最大的事件。”该中心的学术主任、剑桥大学伯特兰·罗素哲学教授休·普莱斯（霍金也是该校学者）说，该中心的成立部分源于该校的存在风险中心。该机构研究了更广泛的人类潜在问题，而利弗休姆未来智能中心则关注较窄。人工智能先驱、萨塞克斯大学认知科学教授玛格丽特·博登赞扬了这类讨论的进展。她说，就在2009年，这个话题还没有被认真对待，甚至在人工智能研究人员中也是如此。“人工智能非常令人兴奋，”她说，“但它有局限性，如果不加批判地使用，会带来严重危险。”学术界并不是唯一对人工智能潜在危险和潜在益处发出警告的群体。科技行业的一些先驱，最著名的是企业家埃隆·马斯克，也表达了他们对超级智能人工智能可能对人类造成的损害的担忧。",
+   "questions": [
+    {
+     "stem": "46. What did Stephen Hawking think of artificial intelligence?",
+     "answer": "B",
+     "analysis": "霍金认为人工智能可能是“人类历史上最好的或最坏的事情”，即可能成为福音，也可能成为灾难，对应选项 B。选项 A 只强调积极作用，选项 C 虽接近但“挑战与机遇”不如“幸事或灾难”准确，选项 D 未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What did Hawking say about the creation of the LCFI?",
+     "answer": "C",
+     "analysis": "霍金称赞该中心的创建“对我们文明和物种的未来至关重要”，即对人类命运极为重要，对应选项 C。选项 A、B 关于加速研究或行业进步文中未提到，选项 D 仅涉及中心性质，并非霍金的评价核心。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What did Hawking say was a welcome change in AI research?",
+     "answer": "A",
+     "analysis": "霍金说人们过去研究历史，而历史大多是愚蠢的历史，现在转而研究智能的未来，这是一个可喜的变化，即研究重点从过去转向未来，对应选项 A。选项 B、C 无中生有，选项 D 只是背景信息，不是“可喜变化”本身。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What concerns did Hawking raise about AI?",
+     "answer": "D",
+     "analysis": "霍金担心如果人类创造出有自主意志的超级智能，人类可能成为自身毁灭的缔造者，即超级智能最终可能毁灭人类，对应选项 D。选项 A、B 文中未明确作为担忧提出，选项 C 错在“超级智能自身毁灭”，文中是人类毁灭。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do we learn about some entrepreneurs from the technology industry?",
+     "answer": "C",
+     "analysis": "文章末句指出科技行业的一些先驱如马斯克也表达了与学术界相同的对超级智能可能伤害人类的担忧，对应选项 C。选项 A、B、D 均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "专为老年人设计的产品市场到明年可能达到300亿美元，初创公司也想参与其中。它们有时缺乏的是来自它们希望使用其产品的人群的反馈。因此，布鲁克代尔——美国最大的养老社区运营商——一直在邀请少数精选创业者搬进来住几天，展示他们的产品，并听听住户们的意见。这正是28岁的戴尔·罗德里格斯从英国远道来到加利福尼亚州托伦斯布鲁克代尔南湾社区餐厅的原因。罗德里格斯是一家名为Sentab的公司的社区与营销经理。这家初创公司的产品SentabTV让那些可能不熟悉电脑的老年人仅用电视和遥控器就能收发电子邮件、进行视频聊天和使用社交媒体。罗德里格斯说：“这没什么新鲜，也不太复杂，而且很自然，因为很多人都有电视遥控器。”但布鲁克代尔餐厅里的谈话主题都不是这些。相反，罗德里格斯征求住户们对他该在芝士汉堡里加什么以及下午该怎么度过的建议。打牌在日程上，还有学打麻将。罗德里格斯说，重要的是这里的住户不会觉得他在向他们推销东西。他说：“我用被动的方式获得了更多反馈。打台球、打牌、吃晚饭、吃午饭，都比做一堆问卷调查效果更好。当他们了解我、信任我，确定我不是在向他们推销东西时，他们就会给出更诚实的反馈。”罗德里格斯只是第七位搬进布鲁克代尔1100个养老社区之一的创业者。该计划中的其他新产品包括一种全身吹干机和专门设计的服装，让残疾人可以自己穿脱衣服。93岁的玛丽·卢·布希同意试用Sentab系统。她告诉罗德里格斯，这对别人可能有好处，但对她不是。她解释说：“我有电脑和FaceTime，我用它们和家人通话。”她还有iPad和智能手机。“所以我想做的事基本都能做到。”公平地说，如果罗德里格斯想从一些更害怕技术的老年人那里获得反馈，他可能来错了布鲁克代尔社区。这个社区位于南加州航空航天产业带的核心地带。许多住户都有工程、商业和学术背景。但罗德里格斯说，搬进这个布鲁克代尔社区仍然让他学到了一些重要的东西：“人们比我们想象的要精通技术。”再说了，他还能在哪儿学打麻将呢？",
+   "questions": [
+    {
+     "stem": "51. What does the passage say about the startups?",
+     "answer": "B",
+     "analysis": "文章首句指出老年人产品市场可能达到300亿美元，初创公司想参与其中，即想分得市场份额。A项“从不浪费时间”文中未提；C项把邀请对象弄反了，是养老社区邀请创业者，而非创业者邀请老年人；D项只提数字产品，与文章涵盖的多种老年人产品不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. Some entrepreneurs have been invited to Brookdale to",
+     "answer": "C",
+     "analysis": "布鲁克代尔邀请创业者搬进社区几天，展示产品并听取住户意见，目的是收集产品反馈。A项“面试”过于正式，不符原文的日常相处；B项“问卷调查”与罗德里格斯所说被动方式优于问卷不符；D项“教老年人使用IT产品”不是主要目的。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What do we know about SentabTV?",
+     "answer": "D",
+     "analysis": "SentabTV让不熟悉电脑的老年人通过电视和遥控器使用电子邮件、视频聊天和社交媒体，因此是替代电脑的电视通信系统。A项电视节目、B项数字电视受欢迎、C项专为老年人看节目均不符合文中功能描述。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does Rodriguez say is important in promoting products?",
+     "answer": "A",
+     "analysis": "罗德里格斯强调要让住户不觉得被推销，当他们了解并信任他时才会给出诚实反馈，所以赢得潜在客户信任很重要。B项了解客户喜恶并非核心；C项现场展示优越性和D项及时回应反馈均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What do we learn about the seniors in the Brookdale community?",
+     "answer": "B",
+     "analysis": "该社区位于航空航天产业带，许多住户有工程、商业和学术背景，罗德里格斯也感叹人们比想象中更精通技术，说明他们对高科技产品很自如。A项多数人对Sentab感兴趣不成立，93岁的布希就表示不适合自己；C项与其他地方老人有共同点无依据；D项寿命更长未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "意面不再被禁食，因为一项新的研究综述表明，这种碳水化合物可以成为健康饮食的一部分，甚至有助于减肥。多年来，营养学家一直建议将意面的摄入量控制在最低限度，以减少卡路里、防止脂肪堆积并阻止血糖飙升。低碳水化合物饮食运动催生了阿特金斯饮食法、原始饮食法和生酮饮食法等，这些饮食法建议用蔬菜、鱼和肉来代替面包、意面和土豆等食物。最近，用蔬菜代替意大利面的趋势得到了清洁饮食专家的提倡。但现在，加拿大研究人员对30项研究进行的系统综述和分析发现，意面不仅不会导致体重增加，而且每周吃三次还能帮助人们在四个月内减掉半公斤以上。综述作者发现，意面被不公平地妖魔化了，因为它被与其他更容易促进脂肪生成的碳水化合物归为一类。‘研究发现，意面不会导致体重增加或体脂增加，’首席作者约翰·西文皮珀博士说。‘在权衡证据后，我们现在可以有把握地说，当意面作为健康饮食模式的一部分食用时，它对体重结果没有不良影响。’事实上，分析显示有轻微的体重下降，这与担忧相反。也许意面可以成为健康饮食的一部分。参与临床试验的人平均每周吃3.3份意面来代替其他碳水化合物，一份约等于半杯。在平均12周的随访中，他们体重减轻了约半公斤。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "I",
+     "analysis": "语法：冠词 a 后接名词；搭配 keep sth to a minimum 为固定表达，意为“把……控制在最低限度”；语义：营养学家建议限制意面摄入以减卡路里，故用 minimum。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "固定搭配 stop sth (from) doing，此处用现在分词 shooting 作宾补，shoot up 意为“飙升”，表示血糖快速上升。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "B",
+     "analysis": "语法：被动语态 has been + 过去分词；语义：championed 意为“提倡、支持”，符合清洁饮食专家支持这一趋势的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "N",
+     "analysis": "形容词修饰 review and analysis；固定搭配 systematic review（系统综述），符合研究的方法学描述。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "固定搭配 lump in with 意为“把……与……归为一类”；此处被动语态 had been lumped in with，说明意面被错误地和致胖碳水化合物归为一类。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "固定搭配 contribute to，意为“导致、促成”；didn’t contribute to weight gain 表示不会导致体重增加。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "固定搭配 weigh the evidence 意为“权衡证据”；此处用动名词 weighing 作介词 In 的宾语。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "A",
+     "analysis": "形容词修饰 effect；固定搭配 adverse effect，意为“不良影响、不利影响”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "D",
+     "analysis": "短语 contrary to 意为“与……相反”；语义表示减肥结果与担忧相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "C",
+     "analysis": "固定搭配 clinical trials（临床试验）；形容词修饰 trials，符合研究语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "最佳零售商将实体与网络相结合\n\nA）零售利润正在急剧下滑。商店关门，购物中心空空荡荡，令人沮丧的消息一个接一个。阅读梅西、诺德斯特龙和塔吉特等大型零售店的收益公告，其令人振奋的程度大概和参观重症监护室差不多。互联网显然又击垮了一个行业。实体店似乎正走向黄页的老路。果不其然，美国人口普查局刚刚公布的数据显示，2015年第一季度至2016年第一季度，网上零售额激增了15.2%。\n\nB）但在你抛售所有零售股票之前，还应该考虑更多事实。只盯着那15.2%的“激增”会误导人。这一增长是建立在6.9%的较小基数之上的。即使一个微小的数字以很大的百分比增长，结果往往仍然很小。\n\nC）互联网对商业开放20多年后，人口普查局告诉我们，2016年第一季度实体店销售占零售总额的92.3%。其数据显示，2015年初至2016年间，只有0.8%的零售额从线下转移到了线上。\n\nD）所以，尽管人们大谈无人机送货上门，零售业高管们对消费者转向线上忧心忡忡，甚至一位总统候选人惊呼亚马逊存在“严重的反垄断问题”，人口普查数据却表明实体零售正蓬勃发展。当然，关闭的门店、沮丧的高管和下跌的股价则表明情况并非如此。真实情况究竟如何？\n\nE）许多经营实体店的公司正陷入困境。正如我们在新书《红娘》中所描述的那样，零售业正在被彻底重塑。它正处在熊彼特所说的“创造性破坏大风”的路径上。这场风暴已经酝酿了一段时间，当它达到大风级别时，大多数大型零售商都在寻求应对之策。正如梅西百货的首席财务官最近所说：“坦率地讲，我们正抓耳挠腮。”\n\nF）但事情并没有像专家预测的那样发展。在互联网泡沫的顶峰期，实体零售业曾被列为互联网将迅速消灭的行业之一。互联网泡沫破灭使大多数这类预测失去可信度，随后几年，随着人口普查局不断报告疲弱的网上销售数据，传统零售商对未来的信心增强了。然后大风来袭。\n\nG）越来越清楚的是，零售业重塑并不是实体店与网店之间一场你死我活的简单战斗。它关乎设计出适合消费者的零售模式，这些消费者正越来越多地使用各种联网工具来改变他们搜索、购物和购买的方式。富有创造力的零售商正在利用新技术对商店的几乎所有环节进行创新，从库存管理、营销到收款。\n\nH）比起无人机把新一批内衣送到你家门口，苹果公司极其成功的实体玻璃零售店以及亚马逊朝同一方向迈出的小步，才更应该让老派零售商夜不能寐。更不用说大量富有创意的新零售商，比如Bonobos，它们正以创造性的方式融合线上线下体验。\n\nI）零售业重塑不是一个简单的过程，也不是在以前所谓的“互联网速度”下发生的。当然，一些由互联网推动的变化发生得很快。Craigslist迅速取代了报纸分类广告，并彻底颠覆了报纸经济学。但许多被广泛预期的变化并不快，有些甚至还没有真正开始。事后看来，互联网改变经济的速度大概会像电力等其他伟大发明一样。例如，B2B电子商务并没有像许多人在2000年预测的那样到2005年主要转到线上，甚至到2016年也没有，但这并不意味着未来几十年不会实现。\n\nJ）但大风仍在呼啸。近年来实体店客流量的突然下降，虽然没有伴随实体销售额的大幅下降，却是一个重要警示。人们可以在网上更高效地购物，因此不需要去那么多家商店寻找想要的东西。相对于客流而言，实体购物空间已经过剩，这也是商店在缩小规模并关门的原因之一。\n\nK）移动电话的兴起最近给零售业重塑过程增添了新的复杂性。即使在五年前，大多数人还面临一个选择：坐在电脑前（可能在家或在办公室）搜索、浏览并购买；或者前往购物中心或商业街，边看边买。如今，几乎人人都有一部智能手机，几乎随时随地都能连上互联网。即使零售商让顾客走进了店里，她也能轻易查看网上或附近其他商店是否有更划算的交易。\n\nL）到目前为止，许多大型零售商为应对这一切所做的主要事情就是开设网店，这样人们就会直接到它们那里购物，而不是去亚马逊及其较小的线上竞争对手那里。许多零售商正面临和报纸相同的问题。即使它们获得了线上流量，也很难在网上赚到足够的钱来弥补线下的损失。\n\nM）似乎有少数零售商取得了成效。在大型传统零售商中，沃尔玛最近公布了最好的业绩，股价随之飙升，而梅西、塔吉特和诺德斯特龙的股价则下跌了。然而，沃尔玛网上销售额同比仅增长7%，其首席执行官哀叹道：“这里的增长太慢了。”部分问题在于，在亚马逊申请一键下单专利近二十年后，网上零售的购物和购买体验仍然充满摩擦。最近一项研究对600多家网络零售商在消费者购物、购买和支付的便捷程度上进行了评分。几乎一半的网站没有及格，只有18%的网站获得了A或B。\n\nN）实体零售业的实地动荡很难与人口普查数据相符。遗憾的是，部分解释在于人口普查零售数据不可靠。我们对这些数据及其编制过程的深入研究揭示了严重问题。人口普查局似乎很可能把大量网上销售错误归类。可以肯定的是，人口普查程序把沃尔玛等主要传统零售商的网上销售与食品卡车等“无店铺零售商”混在一起，可能掩盖了各个零售类别的重大变化。该局本可以以更有用的方式呈现数据，但他们选择不这样做。\n\nO）尽管动荡不安，实体店短期内不会消失。关键问题是：如果大型传统零售商中还有一些能在未来一二十年仍留在市场上，它们会是因为成功重塑了自己吗？哪些新入局者会在商业街甚至购物中心里经营繁忙的店铺？每个零售类别的购物和购买体验又将发生怎样的变化？投资者不应彻底否定实体零售。但他们是否应该押注于目前经营这些店铺的传统企业，则是另一回事。",
+   "questions": [
+    {
+     "stem": "36. Although online retailing has existed for some twenty years, nearly half of the internet retailers still fail to receive satisfactory feedback from consumers, according to a recent survey.",
+     "answer": "M",
+     "analysis": "依据M段：在亚马逊申请一键下单专利近二十年后，网上零售体验仍充满摩擦；近期研究对600多家网络零售商评分，近一半网站未及格，对应题干“网上零售已存在约二十年，仍有近一半网络零售商未获满意反馈”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Innovative retailers integrate internet technologies with conventional retailing to create new retail models.",
+     "answer": "G",
+     "analysis": "依据G段：零售业重塑关乎设计适合消费者的零售模式，富有创造力的零售商正在利用新技术对库存管理、营销到收款等环节进行创新，对应题干“创新零售商融合互联网技术与传统零售创造新模式”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Despite what the Census data suggest, the value of physical retail’s stocks has been dropping.",
+     "answer": "D",
+     "analysis": "依据D段：人口普查数据表明实体零售正蓬勃发展，但关闭的门店、沮丧的高管和下跌的股价则表明情况并非如此，对应题干“尽管人口普查数据如此，实体零售股票价值一直在下跌”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Innovative—driven changes in the retail industry didn’t take place as quickly as widely anticipated.",
+     "answer": "I",
+     "analysis": "依据I段：零售业重塑并未以所谓的“互联网速度”发生；许多被广泛预期的变化并不快，对应题干“创新驱动的零售业变化未如广泛预期般迅速”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Statistics indicate that brick and mortar sales still made up the lion’s share of the retail business.",
+     "answer": "C",
+     "analysis": "依据C段：2016年第一季度实体店销售占零售总额的92.3%，对应题干“统计显示实体店销售仍占零售业最大份额”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Companies that successfully combine online and offline business models may prove to be a big concern for traditional retailers.",
+     "answer": "H",
+     "analysis": "依据H段：苹果极其成功的实体玻璃零售店及亚马逊同方向的小步，才更应让老派零售商夜不能寐；还有大量新零售商正融合线上线下体验，对应题干“成功结合线上线下模式的公司可能成为传统零售商的一大忧虑”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Brick and mortar retailers’ faith in their business was strengthened when the dot com bubble burst.",
+     "answer": "F",
+     "analysis": "依据F段：互联网泡沫破灭使大多数此类预测失去可信度，随后几年传统零售商对未来的信心增强，对应题干“互联网泡沫破灭后实体零售商对其业务的信心得到增强”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Despite the tremendous challenges from online retailing, traditional retailing will be here to stay for quite some time.",
+     "answer": "O",
+     "analysis": "依据O段：尽管动荡不安，实体店短期内不会消失，对应题干“尽管面临网上零售的巨大挑战，传统零售业仍将长期存在”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. With the rise of online commerce, physical retail stores are likely to suffer the same fate as the yellow pages.",
+     "answer": "A",
+     "analysis": "依据A段：实体店似乎正走向黄页的老路，对应题干“随着网上商务兴起，实体零售店可能遭遇与黄页相同的命运”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. The wide use of smartphones has made it more complex for traditional retailers to reinvent their business.",
+     "answer": "K",
+     "analysis": "依据K段：移动电话的兴起最近给零售业重塑过程增添了新的复杂性，对应题干“智能手机广泛使用使传统零售商重塑业务更复杂”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:32:06.432Z"
+}

@@ -1,0 +1,146 @@
+{
+ "level": "CET6",
+ "year": 2021,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The graph illustrates the degree of urbanization in China from 1980 to 2019. It is evident that the urbanization rate has risen steadily from approximately 20% in 1980 to over 60% in 2019, indicating a remarkable transformation.\n\nThis achievement can be attributed to several factors. First, rapid economic growth has created numerous job opportunities in cities, attracting millions of rural residents to urban areas. Second, the government has invested heavily in infrastructure, such as housing, transportation and public services, which has greatly improved urban living conditions. Moreover, urbanization has not only boosted domestic consumption but also promoted industrial upgrading and technological innovation.\n\nIn conclusion, China's urbanization has made impressive progress over the past four decades. It has brought about economic prosperity and improved people's livelihood. However, challenges such as environmental pressure and urban-rural gap still remain, so sustainable urban development should be further emphasized.",
+   "note": "范文先描述图表数据（1980年约20%升至2019年超60%），直接切题并点明成就；主体从经济增长、就业机会、基础设施投入三方面论证，结构清晰；结尾总结成就并提及挑战，体现辩证。可复用句型包括 The graph illustrates..., It is evident that..., This achievement can be attributed to..., Moreover..., In conclusion...",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Hainan is China's second largest island after Taiwan and the southernmost province of China. Hainan Island boasts beautiful scenery, a pleasant climate, abundant sunshine, varied climate, numerous hot springs and crystal-clear seawater. Most of its beaches are ideal for swimming and sunbathing almost all year round, hence it is known as China's all-season garden and holiday resort, attracting large numbers of tourists from home and abroad every year. Since it became a province in 1988, Hainan has seen rapid development in tourism, the service industry and high-tech industries. As China's only provincial-level special economic zone, with strong support from the central government and the people across the country, Hainan will be built into China's largest pilot free trade zone.",
+   "note": "难点在于并列四字格的转换，需避免英文堆砌；‘仅次于’用 second largest...after；‘省级经济特区’‘自由贸易试验区’等术语需准确。原文‘气候多样’与‘气候宜人’重复，译文保留字面 varied climate，也可根据上下文理解为生态多样。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 在比尔·盖茨和史蒂夫·乔布斯等标志性人物进入我们生活的一百年前，一位爱尔兰-意大利裔发明家为21世纪的通信爆炸奠定了基础。古列尔莫·马可尼可以说是现代通信领域第一个真正的全球性人物。他不仅是第一个实现全球通信的人，也是第一个从全球角度思考通信的人。马可尼或许不是他那个时代最伟大的发明家，但他比任何人都更从根本上改变了我们的通信方式。\n\nB) 今天全球联网的媒体和通信系统起源于19世纪，当时信息第一次通过电子手段远距离传送。电报、电话和无线电显然是互联网、iPod和移动电话的前身。连接当时与现在的是无线通信的发展。马可尼是第一个开发和完善这一系统的人，他利用了新近发现的构成电磁波谱的“空中电波”。\n\nC) 从1896年22岁的他在英国申请第一项专利，到1937年在意大利去世，马可尼处于电子通信每一项重大创新的中心。他还是一位熟练而老练的组织者、具有创业精神的创新者，精通公司战略、媒体关系、政府游说、国际外交、专利和诉讼的运用。马可尼真正只对一件事感兴趣：将移动、个人、远距离通信扩展到地球的尽头（如果某些报道可信，甚至更远）。有些人喜欢称他为天才，但如果马可尼有什么天才之处，那就是这一远见。\n\nD) 1901年，他成功实现了跨大西洋信号传送，从英格兰西海岸到美国纽芬兰，尽管科学界声称这是不可能的。1924年，他说服英国政府用他设计的最新技术——短波无线电——建立环绕世界的无线电台链。有人说，当商业广播出现时，马可尼失去了优势；他看不出无线电可以或应该被用于轻浮的目的。在他最后一次公开演讲之一，即1937年3月对美国的广播中，他痛惜广播已成为单向通信手段，并预见它将朝另一个方向发展，即通信成为交流的手段。那是富有远见的天才。\n\nE) 马可尼的职业生涯致力于让无线通信变得廉价、高效、顺畅，并且具有一种对用户来说直观而简单的优雅——可以说用户友好。从马可尼到今天社交媒体、搜索引擎和流媒体节目，有一种直接的联系，可以用一句公认具有挑衅性的话来概括：20世纪并不存在。从某种意义上说，马可尼的远见从他的时代直接跳到了我们的时代。\n\nF) 马可尼发明了全球通信的理念——或者更直白地说，全球联网、移动、无线通信。起初，这是无线莫尔斯电码电报，是他那个时代主要的通信技术。马可尼是第一个开发出利用无线电波进行无线电报实用方法的人。他借鉴了许多来源的技术细节，但使他与众不同的是，一方面对通信技术的力量有自信的远见，另一方面又清楚需要采取哪些步骤来巩固自己在该领域中的地位。追溯马可尼的人生轨迹，我们进入了现代通信本身的故事。还有其他重要人物，但马可尼在影响范围、权力和影响力方面，以及在他当时对大众想象力的掌控上，都远超他们。马可尼简直就是现代通信理解形成过程中的核心人物。\n\nG) 马可尼在世时就预见了电视和传真机、GPS、雷达以及便携式手持电话的发展。在他去世前两个月，报纸报道他正在研制一种“死亡射线”，并且他“用一台复杂装置在三英尺外杀死了一只老鼠”。到那时，马可尼说的或做的任何事都有新闻价值。股价随他的声明而涨跌。如果马可尼说他认为可能会下雨，人们很可能就会争相购买雨伞。\n\nH) 马可尼的传记也是一个关于选择及其背后动机的故事。一方面，马可尼可以极度自主，不受自己社会阶层的约束。另一方面，他又永远是一个局外人。无论走到哪里，他从来都不属于那个群体；他始终是“他者”，在英国被视为外国人，在意大利被视为英国人，在美国则“不是美国人”。与此同时，他也极度渴望被接纳，这种渴望驱动着他的每一段关系，有时也给这些关系蒙上污点。\n\nI) 马可尼给我们的生活方式留下了永久的印记。他是第一个设想无线频谱实际应用的人，并成功地将其发展为全球通信系统——这个词有两层含义：全世界范围且包罗万象。他之所以能做到这一点，是因为多种因素的结合——最重要的是时机和机遇——但他执行自己赋予使命时所表现出的专一和决心，从根本上说是性格使然；马可尼同时代数以百万计的人拥有与他相同的阶级、性别、种族和殖民特权，但只有极少数人利用这些做了什么。马可尼需要实现他青少年时期就在心中设定的目标；成年后，他直觉地明白，要产生影响，他必须既建立独立的经济基础，又与政治权力结盟。对政治权力有纪律的、不加批判的忠诚成为他做出人生选择的指南针。\n\nJ) 与此同时，马可尼在思想上又毫不妥协地独立。马可尼去世后不久，核物理学家恩里科·费米——不久后成为曼哈顿计划的主持者——写道，马可尼证明了理论和实验是进步中互补的两个特征。“经验除非有理论概念的指引，否则很少能得出具有重大意义的结果……另一方面，对理论信念的过度信任会阻止马可尼坚持那些注定要给无线电通信技术带来革命的实验。”换句话说，马可尼的优势在于不被先入之见所束缚。\n\nK) 马可尼一生中最具争议的方面——也是直到现在都没有令人满意的马可尼传记的原因——是他对贝尼托·墨索里尼不加批判的拥护。起初这对他来说不是问题。但随着墨索里尼政权的倒退性质变得明显，他开始遭受良心危机。然而，在一生都在权力圈中活动之后，他无法与权威决裂，忠实地为墨索里尼服务（担任意大利国家研究委员会和皇家科学院院长，以及法西斯大议会成员），直到1937年去世——碰巧，就在他不得不对他参与创造的世界所卷入的冲突表明立场之前不久。",
+   "questions": [
+    {
+     "stem": "36. Marconi was central to our present-day understanding of communication .",
+     "answer": "F",
+     "analysis": "该段最后一句“Marconi was quite simply the central figure in the emergence of a modern understanding of communication.”明确对应题目。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. As an adult, Marconi had an intuition that he had to be loyal to politicians in order to be influential .",
+     "answer": "I",
+     "analysis": "该段中“by the time he reached adulthood, he understood, intuitively, that in order to have an impact he had to both develop an independent economic base and align himself with political power.”对应成年后直觉忠诚于政治权力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Marconi disapproved of the use of wireless communication for commercial broadcasting .",
+     "answer": "D",
+     "analysis": "该段中“he didn't see that radio could or should be used to frivolous ends”以及“deplored that broadcasting had become a one-way means of communication”体现他不赞成商业广播。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Marconi's example demonstrates that theoretical concepts and experiments complement each other in making progress in science and technology .",
+     "answer": "J",
+     "analysis": "该段费米写道“theory and experimentation were complementary features of progress”，说明理论概念与实验互补。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Marconi's real interest lay in the development of worldwide wireless communication:",
+     "answer": "C",
+     "analysis": "该段“Marconi was really interested in only one thing: the extension of mobile, personal, long-distance communication to the ends of the earth”对应其真正兴趣在全球无线通信。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Marconi spent his whole life making wireless communication simple to use .",
+     "answer": "E",
+     "analysis": "该段“Marconi's career was devoted to making wireless communication happen cheaply, efficiently, smoothly... user-friendly”对应毕生致力于让无线通信简单易用。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Because of his long-time connection with people in power, Marconi was unable to cut himself off from the fascist regime in Italy.",
+     "answer": "K",
+     "analysis": "该段“after a lifetime of moving within the circles of power, he was unable to break with authority, and served Mussolini faithfully”对应因与权力阶层长期联系无法摆脱法西斯政权。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. In his later years, Marconi exerted a tremendous influence on all aspects of people's life .",
+     "answer": "G",
+     "analysis": "该段“By then, anything Marconi said or did was newsworthy. Stock prices rose or sank according to his pronouncements.”说明晚年对人们生活各方面产生巨大影响。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. What connected the 19th century and our present time was the development of wireless communication .",
+     "answer": "B",
+     "analysis": "该段“What made the link from then to now was the development of wireless communication.”直接对应连接19世纪与现在的是无线通信发展。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Despite his autonomy, Marconi felt alienated and suffered from a lack of acceptance .",
+     "answer": "H",
+     "analysis": "该段“he was a perpetual outsider... suffered tremendously from a need for acceptance”对应自主但感到疏离、缺乏接纳。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "人类对自身缺点和美德的根源一直着迷。这种关注不可避免地引发一个老争论：先天与后天哪一个对我们塑造更多。遗传学革命将这一问题重新定位为关于社会特征的现代政治问题：性格深植于我们的基因，政府能做什么来帮助我们呢？这让人感觉在道德上有问题，但关于智力基因选择的说法却频频登上新闻头条。\n\n这要归因于“遗传论”科学，最近有一篇论文声称：“在选拔性学校和非选拔性学校就读的学生之间考试成绩的差异，反映了他们之间的基因差异。”有了这样的断言，该研究不出所料地招来了许多诸如“基因决定学业成功”的荒唐说法。研究揭示的结果却远没有那么惊人：一旦把学生先天的能力和社会经济背景考虑在内，选拔性学校的教育优势基本消失了。这只是瞥见了显而易见的事实——并没有任何有力的东西能支持遗传论或环境论。\n\n不过，该论文确实说，孩子们被学校系统“无意中进行了基因筛选”。遗传论科学的核心是一个大主张：可识别的基因序列变异可以预测个人学习、推理和解决问题的能力。这在很多层面都存在问题。老师不可能认真地对家长说，在明显存在外部因素的情况下，他们的孩子学习基因倾向低。持不同意见的学者认为，人类性状的可遗传性在科学上站不住脚。充其量，DNA与智力之间只有微弱的统计关联，而不是因果关系。然而，复杂的统计方法被用来制造一种科学确定性的吓人氛围。\n\n虽然个体差异无疑有基因基础，但认为社会定义的群体可以被基因解释是错误的。把基因当作命运来执迷也肯定是错误的。医学上的可预测性很少能仅靠DNA；环境也很重要。像智力这样复杂的东西很可能受基因之外的许多因素影响。如果遗传论者想推进他们的事业，就需要更平衡的解读，而不只是鼓吹。\n\n基因选择是一种对他人施加影响的方式，正如作家H.G.威尔斯所说，是“对人类命运的终极集体控制”。知识就是力量，而力量需要责任感。在理解认知能力时，我们绝不能把歧视提升为一门科学；让人们只能爬到他们的细胞所暗示的高度。这需要对科学抱有更多怀疑的目光。随着技术进步，我们都有责任确保塑造一个我们自己愿意身处其中的未来。",
+   "questions": [
+    {
+     "stem": "46. What did a recent research paper claim?",
+     "answer": "D",
+     "analysis": "原文中该论文声称，选拔性学校和非选拔性学校学生之间的考试成绩差异反映了他们之间的基因差异，意为学业表现与基因相关、由基因决定，D项是对此的同义转述。A项“学校类型影响未来”文章未提；B项“基因差异比想象中大”无中生有；C项“选拔性学校优势太明显”与后文研究结果相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author think of the recent research?",
+     "answer": "C",
+     "analysis": "作者认为该研究揭示的结果“只是显而易见的事实”，且“没有任何有力的东西能支持遗传论或环境论”，说明其对先天后天之争的实际影响微乎其微，故C项正确。A项“结果可疑”不符合作者“显而易见”的态度；B项“意义积极”和D项“结论有启发性”均与原文相反。",
+     "verified": false,
+     "dissent": "A"
+    },
+    {
+     "stem": "48. What does the author say about the relationship between DNA and intelligence?",
+     "answer": "B",
+     "analysis": "作者明确指出DNA与智力之间“至多只有微弱的统计关联，而不是因果关系”，因此B项“不是因果关系”正确。A项“科学确定性”与原文相反；C项“取决于对统计数据的解读”曲解原文；D项“未被基因科学家充分研究”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do hereditarians need to do to make their claims convincing?",
+     "answer": "A",
+     "analysis": "作者说遗传论者若想推进其主张，需要“更平衡的解读，而不只是鼓吹”，即解释数据时要综合考虑基因、环境等所有相关因素，A项符合。B、C、D中的“更先进技术”“收集各阶层基因数据”“与社会科学家合作”均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author warn against in the passage?",
+     "answer": "D",
+     "analysis": "作者警告“绝不能把歧视提升为一门科学”，不能让人们只凭基因暗示的高度来攀登人生阶梯，即反对以科学之名推行歧视，D项正确。A项“夸大技术作用”并非重点；B项“研究伦理”和C项“误解认知研究发现”均不是作者的主要警告。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:47:44.748Z",
+ "prunedAt": "2026-10-10T03:33:14.385Z"
+}

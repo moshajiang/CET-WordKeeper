@@ -242,7 +242,23 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "There is a growing awareness of the importance of digital literacy and skills in today's world. With the rapid development of information technology, being able to use digital tools effectively has become a basic requirement in both study and work. For instance, during the pandemic, students who were familiar with online learning platforms could continue their studies smoothly, while those lacking such skills often struggled. Similarly, in the workplace, employees who can handle data analysis software or online collaboration tools are more likely to be promoted. Moreover, digital literacy also includes the ability to evaluate online information critically, which helps us avoid misinformation. In my own experience, learning to use various educational apps not only improved my learning efficiency but also broadened my access to global resources. Therefore, we should take active measures to enhance digital literacy, such as attending training courses and practicing regularly. Only in this way can we keep pace with the times and seize more opportunities in the digital age.",
+   "note": "范文首句复现题目，紧扣数字素养重要性。先从原因入手，再用学生和职场例子说明缺乏技能的后果，并补充批判性思维。最后个人经历加呼吁，结构为引出观点—举例论证—总结建议。可复用句型有“With the rapid development of...”“For instance”“Only in this way can...”等。全文164词。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Chinese traditional wedding customs have a long history. Since the Zhou Dynasty, a complete set of wedding ceremonies gradually took shape, some of which are still followed today. Nowadays Chinese wedding customs have changed greatly, but the wedding celebration remains very grand. The wedding venue is carefully decorated, dominated by red, a color symbolizing jubilance, and adorned with many objects bearing good wishes for the couple's happiness. At the wedding, the couple bow to Heaven and Earth, to their parents, and to each other; then they hold a banquet to entertain the guests and offer toasts to express their gratitude. Today, many young people still favor traditional Chinese weddings, experiencing unique and beautiful Chinese-style romance.",
+   "note": "难点在于文化负载词：“拜天地”译为 bow to Heaven and Earth，“对拜”译为 bow to each other；“喜庆”可处理为 symbolizing jubilance；“设宴敬酒”用 hold a banquet and offer toasts。句式上多用定语从句和分词结构，保持一般现在时描述习俗，使译文流畅地道。",
+   "questions": []
   }
  ],
- "generatedAt": "2026-10-09T17:28:12.337Z"
+ "generatedAt": "2026-10-10T03:00:07.432Z"
 }

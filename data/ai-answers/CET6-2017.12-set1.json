@@ -1,0 +1,188 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Respect is a two-way street. The saying \"Respect others, and you will be respected\" simply means that politeness and consideration towards others tend to be returned in kind. In my view, this principle lies at the heart of harmonious human relationships.\n\nA good example can be found in our daily communication. When we listen attentively to a classmate's ideas, even if we disagree, we show respect for his or her right to speak. In return, that classmate is more likely to listen to our opinions with an open mind. Similarly, a teacher who treats students with patience and fairness usually wins their admiration and cooperation. By contrast, those who mock or ignore others often find themselves isolated and disrespected.\n\nTherefore, respect is not a sign of weakness but a bridge to mutual understanding. If we expect to be respected, we should first learn to respect others in every word and action.",
+   "note": "这篇范文开篇点明谚语含义并亮出观点，第二段用校园沟通和师生关系两个例子论证尊重是相互的，结尾总结呼吁，结构清晰。可复用句型：Respect is a two-way street; A good example can be found in...; By contrast,...; Therefore,... is not a sign of weakness but a bridge to...",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Taihu Lake is a freshwater lake in eastern China, covering an area of 2,250 square kilometers. It is the third largest freshwater lake in China, second only to Poyang Lake and Dongting Lake. Taihu Lake has about 90 islands, ranging in size from a few square meters to several square kilometers. Taihu Lake is famous for its unique \"Taihu stones,\" which are often used to decorate traditional Chinese gardens. Taihu Lake is also known for its productive fishing industry. Since the late 1970s, catching fish and crabs has been extremely important to residents living along the lake and has made significant contributions to the economy of the surrounding areas. The Taihu Lake region is one of China's ceramics industry bases, and the ceramics manufacturers in Yixing produce the world-renowned Yixing clay teapots.",
+   "note": "难点：湖泊排名与面积表达；‘仅次于’译作second only to；岛屿面积范围用ranging from...to；‘太湖石’保留引号；长句需拆分为并列结构并用现在完成时；宜兴紫砂壶译为Yixing clay teapots。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "过去12个月，尼日利亚遭受了经济萎缩、货币贬值和长期燃料短缺的困扰。现在，这个非洲最大经济体正面临一场粮食危机，因为大片番茄田被一种昆虫摧毁，导致全国范围内番茄短缺、价格飞涨。\n这种名为Tuta absoluta的昆虫已摧毁了尼日利亚最大番茄产地卡杜纳州80%的农田，导致当地政府宣布进入紧急状态。这种昆虫也被称为番茄潜叶蛾，通过取食果实并钻入、穿行茎秆来毁坏作物。它繁殖速度惊人，条件适宜时每年最多可繁殖12代。据信它于20世纪初起源于南美洲，后来传播到欧洲，再进入撒哈拉以南非洲。\n在尼日利亚，番茄是当地饮食的主食，这种昆虫的影响是毁灭性的。当地市场上一把番茄的零售价已从0.5美元涨到2.5美元。农户报告了严重损失，一家新建的价值2000万美元的番茄酱工厂也因短缺而停产。\n鉴于这种飞蛾还能危害辣椒、马铃薯等作物，尼日利亚农业部长Audu Ogbeh警告说，该害虫可能“给该国的粮食安全造成严重问题”。Ogbeh表示，专家正在研究如何控制该害虫的危害并阻止其蔓延，而此前其蔓延在很大程度上未得到遏制。\n尽管尼日利亚是非洲大陆第二大番茄生产国，但每年却依赖价值10亿美元的番茄酱进口，因为由于缺乏适当的储存设施，当地约75%的收成被浪费。本地供应进一步减少，对该行业来说无疑是又一次不受欢迎的挫折。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "空格前为 a state of，固定搭配 a state of emergency 表示“紧急状态”，符合政府因虫害宣布紧急状态的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "D",
+     "analysis": "空格前 by 后接动名词，且与 on 搭配，feeding on 意为“以...为食”，说明昆虫通过取食果实毁坏作物。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "K",
+     "analysis": "句子缺少谓语动词，主语 It 为单数，reproduces 是第三人称单数，符合“繁殖迅速”的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "I",
+     "analysis": "have 后接过去分词构成完成时，originated 意为“起源”，表示该害虫被认为起源于南美洲。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "a handful of 为固定短语，意为“一把/少量”，适合描述市场零售番茄的量。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "has 后接过去分词，halted production 表示“停产”，符合因原料短缺工厂停产的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "L",
+     "analysis": "food security 是固定搭配，意为“粮食安全”，符合农业部长警告的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "N",
+     "analysis": "go unchecked 是固定搭配，意为“未受遏制”，表示害虫蔓延此前未得到有效控制。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "be dependent on 为固定搭配，意为“依赖”，说明尼日利亚每年依赖大量番茄酱进口。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "J",
+     "analysis": "A further reduction in 表示“进一步减少”，名词 reduction 符合空格前后搭配和语义。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "二十年前，城市土地研究所界定了主导美国城市格局的两类城市：一类是围绕标准朝九晚五工作时段运转的较小城市，另一类是全天24小时运转的大都市。透过这一基本划分的视角来分析和比较城市，为理解投资资本流动和房价变化提供了有趣的背景。近年来，许多中等规模城市开始采取一种折中方式，将大城市的活力与机遇同小城市午夜后的宁静结合起来。这些“18小时城市”开始在房地产排行榜上崭露头角，并吸引更多房地产投资。这一房地产新动向的背后原因是什么？这些城市为何有如此大的吸引力？18小时城市融合了24小时城市和9-5城市的优点，有助于市中心复兴。几十年来，许多中小城市的市中心在工作时间后被居住郊区的工人遗弃，市中心租户主要由贫困劳动者构成。这导致晚间市中心商业活动很少，使经营和产生市政维护税收变得困难。然而，随着一种旨在让生活更轻松、更便利的城市规划新理念的兴起，大城市如旧金山或纽约对城市区域的日益青睐带动了房地产热潮，也激发了较小城市中一种前瞻性的城市化理念。将市中心改造为包含现代住房、提升到当地餐馆、零售和娱乐场所的步行可达性——尤其是与改善自行车和公共交通基础设施相结合——使它们对更富裕的人群产生吸引力。这些调整鼓励知识和人才产业的雇主将办公室留在市中心。拥有步行人流和靠近公共交通，使酒吧、餐馆等以娱乐为导向的企业能够营业到更晚，这既吸引了年轻创意工作者，也吸引了临近退休的婴儿潮一代。由于规模较小，大多数18小时城市保持的营业时间让人们可以享受生活，然后在午夜后拥有一些宁静，这与纽约等大型城市持续不断的活动喧嚣形成对比。这些18小时城市正在迅速崛起，为购房投资提供了巨大机会。在丹佛等许多此类城市，聚集在城市核心的多元且充满活力的经济为居民提供了稳定的就业。恰当的城市组合支撑了住房入住率，提升了房产价值，并吸引了大量投资资本。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about American cities twenty years ago?",
+     "answer": "C",
+     "analysis": "根据第一段，20年前城市土地研究所将美国城市分为两类：小城市按朝九晚五运行，大都市24小时运行，说明大小城市之间存在明显划分，故选C。A的住宅与商业分区、B的房价与繁荣关联、D的大型投资资本流入均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What can be inferred from the passage about 18-hour cities?",
+     "answer": "B",
+     "analysis": "最后一段指出18小时城市房产价值上升、吸引投资资本，如丹佛等城市房产价格提高，可推断房价上涨，故选B。A小企业特别受吸引、C宁静被兴奋取代、D已改变美国格局均过度推断或与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. Years ago, many downtown cores in small to mid-sized cities .",
+     "answer": "D",
+     "analysis": "原文说几十年来中小城市市中心在工作时间后被居住郊区的工人遗弃，晚间几乎没有商业活动，显得冷清，故选D。A“几乎没有商业活动”过于绝对，B“营业时间拥挤”没有依据，C“没有繁荣迹象”扩大了范围。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What characterizes the new downtown areas in 18-hour cities?",
+     "answer": "C",
+     "analysis": "原文明确提到改造市中心使其包含现代住房和改善的基础设施（尤其自行车和公共交通），这是18小时城市新市中心的特点，故选C。A“知识产业突然出现”与原文“鼓励知识产业留下”不符，B“大量农民工涌入”无据，D“更舒适生活和向上流动”不是直接特征。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What have 18-hour cities brought to the local residents?",
+     "answer": "D",
+     "analysis": "最后一段以丹佛为例，说明18小时城市多元有活力的经济为居民提供稳定就业，即更好的工作机会，故选D。A晋升机会、B更健康生活环境、C文化多样性均未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "你可能听说过可口可乐曾经含有一种能让消费者特别着迷的成分：可卡因。名称中的“Coca”指的是饮料发明者、化学家约翰·彭伯顿在他的甜糖浆中混合的古柯叶提取物。当时，古柯叶提取物与葡萄酒混合是一种常见的滋补品，而彭伯顿的甜饮料是为了规避当时禁止销售酒精的地方法律。但名称的另一半则呈现了另一种成分，也许不那么臭名昭著，但同样具有奇特的效力：可乐果。在西非，人们长期以来咀嚼可乐果作为兴奋剂，因为它们含有咖啡因，茶、咖啡和巧克力中也天然含有咖啡因。它们还含有心脏兴奋剂。历史学家保罗·洛夫乔伊叙述说，西非的可乐果种植已有数百年历史。这些枝叶繁茂的树被种植在坟墓上，并作为传统仪式的一部分。尽管可乐果需要保持湿润，运输起来有些不易，但商人们仍将它们运送到数百英里外的森林和草原。欧洲人直到16世纪葡萄牙船只抵达现在的塞拉利昂海岸时才知道它们。尽管葡萄牙人参与了贸易，将可乐果与其他货物一起沿海岸运输，但到1620年，当英国探险家理查德·乔布森沿冈比亚河而上时，这种坚果在他看来仍然很奇特。到19世纪后期，可乐果被成吨地运往欧洲和美国。许多被用于药物，旨在提供一种能量提升。其中一种流行的药酒是Vin Mariani，这是一种法国产品，由古柯提取物与红葡萄酒混合而成。它由法国化学家安杰洛·马里亚尼于1863年创造。因此，当彭伯顿创造他的饮料时，它代表了一种持续的趋势。当可卡因最终失宠不再作为饮料成分时，含可乐果提取物的可乐变得流行起来。可口可乐上市的第一年，在亚特兰大所有售卖它的冷饮柜平均每天售出9杯。随着它越来越受欢迎，公司出售了瓶装可乐的权利，以便它可以方便地运输。如今，每天约有19亿份可口可乐被购买。它已经变得如此具有标志性，以至于1985年试图改变其口味——加甜以期促进销售——被证明是灾难性的，引起了消费者的广泛愤怒。经典可口可乐在新可乐发布仅三个月后就重新上架。如今，可口可乐的配方是严格保密的。但据说它不再含有可乐果提取物，而是依靠人工仿制品来获得这种风味。",
+   "questions": [
+    {
+     "stem": "46. What do we learn about chemist John Pemberton?",
+     "answer": "A",
+     "analysis": "文章提到彭伯顿在甜糖浆中混合了古柯叶提取物，而可口可乐名称的另一半来自可乐果，可乐果被描述为具有奇特效力的成分；这种饮料在当时相当于不含酒精的滋补品，因此A正确。B错误：他的甜饮料是为了规避禁酒法，并非含酒精；C错误：文中未说他因可口可乐而臭名昭著；D错误：他没有冒险违法，而是设法绕开法律。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the passage say about kola nuts?",
+     "answer": "C",
+     "analysis": "文章明确说到了19世纪后期，可乐果被成吨运往欧美，许多用于药物以提供能量，所以C正确。A中葡萄牙定居者首先发现商业价值与原文不符，原文只说葡萄牙人参与贸易；B中能量提升成分其他食物没有错误，因咖啡因也存在于茶、咖啡、巧克力中；D虽提到欧洲人最初觉得奇特，但并非首次从西非进口时，且C更直接对应原文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. How come kola-extract colas became popular?",
+     "answer": "A",
+     "analysis": "文章提到当可卡因最终失宠，不再作为饮料成分时，含可乐果提取物的可乐便流行起来，说明可卡因变得声名狼藉是可乐果可乐流行的原因。B禁酒是彭伯顿发明饮料的背景，不是可乐果可乐后来流行的原因；C、D都是可口可乐后来发展的表现，不是原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What is known about the taste of Coca-Cola?",
+     "answer": "D",
+     "analysis": "文章提到1985年改变口味以增加销量的尝试引发了广泛愤怒，经典可口可乐三个月后重新上架，说明其口味基本保持不变；目前配方虽不再含可乐果提取物，但用人工仿制品来获得原有风味，也支持口味未变。A设计成使人上瘾未提及；B与末段不再含可乐果提取物矛盾；C更受老年人欢迎无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is the passage mainly about?",
+     "answer": "A",
+     "analysis": "全文从可口可乐的两种命名成分古柯和可乐果讲起，回顾了可乐果的历史、可口可乐的诞生、流行、口味风波及现代配方变化，主线是可口可乐的演变过程，所以A正确。B成功故事只涵盖部分内容，C药用价值只是早期背景，D商业策略未作为主旨。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:28:53.178Z",
+ "prunedAt": "2026-10-10T03:33:14.379Z"
+}

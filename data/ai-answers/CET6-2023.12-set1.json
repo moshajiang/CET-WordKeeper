@@ -1,0 +1,27 @@
+{
+ "level": "CET6",
+ "year": 2023,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "As is known to all, gaining a sound knowledge of the basics is of vital importance for students to master an academic subject. Without a solid foundation, any attempt to reach a higher level will be like building a castle in the air.\n\nTake mathematics as an example. Many students rush to tackle complex problems before fully understanding basic formulas and theorems. As a result, they often get stuck and lose confidence. In contrast, those who spend time consolidating the fundamentals can solve difficult problems with ease, because they can identify the underlying principles quickly. The same is true in language learning. If one ignores basic grammar and vocabulary, fluent and accurate expression will remain a distant dream. This clearly illustrates that basics are the key to mastery.\n\nFrom my personal experience, I used to neglect the basics in physics, thinking they were too simple. However, when I encountered advanced topics, I found myself confused and had to go back to review the basic concepts. Only when I rebuilt my foundation did I make steady progress.\n\nIn conclusion, a solid grounding in the basics is the cornerstone of academic success. Students should never underestimate the power of fundamentals.",
+   "note": "该范文以题干要求句子开头，直接阐明观点。第二段用数学和语言学习两个例子正面论证基础的重要性，并通过对比强化说服力；第三段结合个人经历进一步佐证，结尾总结升华。结构清晰，符合四六级“引出观点—论证—总结”模式。可复用句型包括：Without..., any attempt... will be like...; The same is true in...; Only when... did...; ...is the cornerstone of...",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "In China, with the advent of an aging society, elderly care has drawn widespread attention. What people talk about most is what kind of elderly care model should be adopted. Most people believe that elderly care models need to be diversified. Through government guidance and public participation, more and better elderly care service institutions can be established, community service centers improved, and home-based self-care for the elderly encouraged. A model combining family care and social care for the elderly can also be promoted. With the continuous increase in government and social investment in elderly care services, elderly care facilities will be constantly upgraded, service quality gradually improved, and the lives of the elderly will become more convenient, comfortable, healthy and happy.",
+   "note": "难点在于养老相关术语及长句结构，如“老龄化社会”“居家自助养老”“家庭养老与社会养老相结合”。关键处理：用 elderly care 统一养老表述，用 home-based self-care 译居家自助养老，用 with 引导伴随状语连接结果，层次清晰，符合书面语规范。",
+   "questions": []
+  }
+ ],
+ "generatedAt": "2026-10-10T02:55:50.874Z",
+ "prunedAt": "2026-10-10T03:33:14.387Z"
+}

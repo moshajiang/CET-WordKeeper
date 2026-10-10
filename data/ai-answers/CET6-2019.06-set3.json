@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Learning is a lifelong journey, and two factors determine its effectiveness: motivation and methods. Motivation serves as the engine that drives us forward, while methods act as the map that guides us along the way. Without motivation, even the best methods remain unused; without proper methods, strong motivation may lead to wasted effort.\n\nOn the one hand, motivation provides the initial spark and sustained energy. A learner with clear goals and genuine interest is more likely to overcome difficulties and persist. On the other hand, scientific methods make learning efficient. For instance, spaced repetition and active recall can help consolidate knowledge, while a disorganized approach often results in low productivity despite hard work.\n\nIn my view, motivation and methods are complementary. We should cultivate intrinsic motivation by connecting learning to personal growth, and at the same time adopt proven strategies to maximize our progress. Only when both are emphasized can learning become both enjoyable and effective.",
+   "note": "本文从动力与方法两个维度切入，开头即亮明二者关系，主体分述动力提供持续能量、方法提升效率，用实例支撑，结尾总结互补并提出建议。结构清晰，符合四六级总分总模式。可复用句型如 “Motivation serves as... while methods act as...” 和 “Only when both are emphasized can...”。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Chinese is now the language with the largest number of native speakers in the world. An important difference between Chinese and Western languages is that it is composed of characters rather than letters. Among the writing systems still in use, Chinese is the oldest. In China, people from different regions may not understand each other's dialects, but because Chinese characters have a unified written form, they have almost no difficulty communicating. Historically, Chinese has played an important role in uniting the Chinese nation. Today, with the rapid growth of China's economy and the enhancement of its global influence, an increasing number of people in other countries are also beginning to learn Chinese.",
+   "note": "难点：区分“汉语”和“汉字”，以及“用作本族语人数最多”“方块字而非字母”“统一的书写形式”等表达。避免直译“方块字”为 square characters，用 characters 即可；可用定语或介词短语使译文地道，如 with the largest number of native speakers。时态上注意现在完成或进行时表达趋势。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "钢铁因其可靠性而受到重视，但在低温下却并非如此。大多数钢材在约零下25℃以下时会突然变脆，除非与其他金属混合。不过，现在开发出一种新型钢材，能在更低温度下抵抗断裂，同时保持强度和韧性——而且不需要昂贵的添加剂。低温下钢铁的脆性在二战期间首次成为重大问题。德国U型潜艇用鱼雷击沉大量英国船只后，一支由2700艘廉价“自由轮”组成的船队被用来替换损失的船只，为被围困的英国提供了生命线。但数百艘船的钢壳在冰冷的北大西洋中开裂，其中12艘断成两半沉没。在寒冷条件下建造钢结构（如北极的石油钻井平台）时，脆性仍然是一个问题。因此科学家们一直努力寻找解决方案，将其与镍等昂贵金属混合。日本的木村雄二及其同事尝试了一种更物理的方法。他们没有添加其他金属，而是开发了一种复杂的机械工艺，包括反复加热和非常剧烈的机械变形，即所谓的“温成形”。所得到的钢材似乎实现了强度与韧性的结合，可与合金含量很高、因而非常昂贵的现代钢材相媲美。木村团队打算用这种温成形钢制造超高强度零件，如螺栓。他们希望通过例如用空心管代替实心支撑件，减少建筑工程中所需部件的数量及其重量。这可以减少从汽车到建筑和桥梁等一切所需的钢材量。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "A",
+     "analysis": "空格前是主语“steel”，后接系动词 become，需要一个副词修饰动词短语 become brittle；abruptly 表示“突然地”，语义上符合钢材在低温下突然变脆的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "J",
+     "analysis": "空格在及物动词 resists 后作宾语，需要名词；fractures 表示“断裂”，与前文 brittle 及后文 lower temperatures 呼应，指在更低温度下抵抗断裂。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "B",
+     "analysis": "空格在形容词 expensive 后作名词，且与“without the need for”搭配；additives 表示“添加剂”，指无需添加昂贵的合金元素。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "E",
+     "analysis": "空格在定冠词 the 和 British 之间，需要形容词性修饰语；besieged 表示“被围困的”，与二战期间英国遭受攻击的语境吻合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "I",
+     "analysis": "该空格在句中作谓语，描述过去发生的情况，需要一般过去时动词；cracked 表示“开裂”，与后文 12 艘船断成两半形成递进，符合钢壳在冰冷海域开裂的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "N",
+     "analysis": "空格前有 have，构成现在完成时，需要过去分词形式；strived/striven 表示“努力”，与 to find a solution 搭配，表示科学家一直努力寻找解决方案。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "C",
+     "analysis": "空格在形容词 physical 后作宾语，需要单数名词；approach 表示“方法”，与前文 adding other metals 的化学方法相对，指一种物理方法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "空格在 that is 后作表语，且后接介词 to；comparable 表示“可比较的，比得上的”，固定搭配 comparable to，语义上表示新型钢的性能可与昂贵现代钢相比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "H",
+     "analysis": "空格在 the number of 后，需要可数名词复数；components 表示“部件”，与后文 construction job 和 replacing solid supports 呼应，指建筑工程中所需部件的数量。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "K",
+     "analysis": "空格在 tubes 前作定语，需要形容词；hollow 表示“空心的”，与 replacing solid supports 形成对比，符合用空心管代替实心支撑件的语义。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "几十年内，人工智能将超越许多我们认为是人类特有的能力。这是我们时代面临的重大挑战，可能需要一种“非理性”的回应。2017年初美国最重要的新闻之一是谷歌努力让自动驾驶成为现实。据报道，谷歌自动驾驶汽车行驶了1023330公里，仅需人工干预124次，即每自动驾驶约8047公里才干预一次。但更令人印象深刻的是仅一年间的进步：人工干预从每千英里0.8次降至0.2次，改善了400%。照此进步，谷歌汽车今年晚些时候就能轻松超过我的驾驶能力。驾驶曾被认为是非常人类化的技能。但国际象棋也是如此，后来计算机多次击败人类世界冠军。2016年，围棋取代国际象棋成为人类思维的新测试，当时计算机击败了世界顶尖职业围棋手之一。随着计算机征服过去被视为人类专属的领域，未来身为人类意味着什么？我担心我六岁的儿子。在一个机器在一个又一个领域击败我们的世界里，他的位置会在哪里？他永远不会算得更快，永远不会开得更好，甚至不会飞得更安全。其实，这一切归结为一个很简单的问题：我们有什么特别之处？不可能像算术这样的技能，机器已经擅长。到目前为止，机器很难模仿创造力，因为创造力足够任意，无法被计算机预测，但又不仅仅是简单的随机性。也许，如果我们继续改进信息处理机器，我们很快就会拥有有用的理性助手。因此，我们必须致力于补充机器的理性，而不是与之竞争。如果我说得对，我们应该培养创造性精神，因为一点不合逻辑的创造力将补充机器的理性。然而不幸的是，我们的教育系统还没有跟上即将到来的现实。事实上，我们的学校和大学被塑造成把学生培养成理性的顺从仆人，并发展与过时机器互动的过时技能。我们需要帮助孩子们学会如何最好地与智能计算机合作，以改进人类决策。但最重要的是，我们要牢记长远眼光：即使计算机会比我们聪明，我们仍然可以是最有创造力的。因为如果我们不是，我们将来在生态系统中就不会提供多少价值，这可能会质疑我们存在的基础。",
+   "questions": [
+    {
+     "stem": "51. What is the author’s greatest concern about the use of AI?",
+     "answer": "B",
+     "analysis": "作者反复担忧机器在一个又一个领域击败人类，追问“我们有什么特别之处”，说明他最担心的是许多能力不再为人类独有。选项A与原文“机器很难模仿创造力”相悖；选项C并非作者的主要忧虑；选项D只是教育体系未跟上带来的结果，不是核心担忧。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What impresses the author most in the field of AI?",
+     "answer": "C",
+     "analysis": "作者明确指出“更令人印象深刻的是仅一年间的进步”，干预次数大幅下降，强调谷歌在短时间内取得巨大进步。选项A只提到需要很少人工干预，没有突出“进步”这一最令作者印象深刻之处；选项B中“已超过”尚未发生；选项D“世界领导者”并未在文中体现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What do we learn from the passage about creativity?",
+     "answer": "D",
+     "analysis": "原文说“机器很难模仿创造力”，并解释创造力“足够任意，无法被计算机预测”，因此创造力尚未被AI效仿。选项A与原文“不合逻辑的创造力”相悖；选项B与“无法被预测”相悖；选项C“人类特有”表述过于绝对，原文未明确说明只有人类拥有创造力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What should schools help children do in the era of AI?",
+     "answer": "A",
+     "analysis": "作者批评当前教育把学生塑造成“理性的顺从仆人”，主张培养创造性精神，并强调帮助孩子学会与智能计算机合作，所以学校应培养原创思维。选项B“独立工作”与文中强调“合作”不符；选项C“与智能机器竞争”与“补充机器理性而非竞争”相反；选项D“理解AI如何工作”未被提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. How can we humans justify our future existence?",
+     "answer": "D",
+     "analysis": "文章结尾指出，如果人类不能提供很多价值，就会质疑自身存在的基础，而创造力是提供价值的关键，因此要凭借创造力提供价值来证明未来存在。选项A“不断超越计算机”不现实且并非作者主张；选项B“采取长远眼光”是手段而非最终依据；选项C“与AI理性妥协”不是文中观点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "几年前，在经历了十年的独自自由职业之后，我重新进入全职职场，最期待的一件事就是：能再次拥有职场朋友。直到进入企业界，我才意识到，至少对我来说，与同事成为朋友根本不是优先考虑的事。考虑到学者、培训师和管理者普遍强调在工作中培养密切人际关系的重要性，这一点令人惊讶。大量研究探讨了同事关系如何有助于克服一系列影响生产力和工作产出质量的问题，如团队冲突、嫉妒、暗中使坏、愤怒等等。\n也许我对午餐、茶水间八卦以及关心、深入而有意义的交谈的期待，是上次身处那种办公室环境时留下的旧印象。而如今，当我年近四十时，我意识到工作可以完全正常运转、完全令人满足，而不需要和坐在你旁边的人成为最好的朋友。\n在备受尊重的《管理学报》刚刚发表的一项学术分析中，研究人员考察了“疏离关系”这一概念。这个简单的术语概括了一个事实：工作中的关系可以合理地是不亲密的、无关紧要的、不重要的，甚至可以说是可抛弃的或可替代的。\n疏离关系既不是积极的，也不是消极的。迄今为止进行的有限研究表明，这种关系在那些重视独立甚于合作、重视和谐甚于对抗的人群中尤其占主导地位。疏离也是那些社交懒惰者的首选。长期维持关系需要付出努力。对我们中的一些人来说，这太费力了。\n如上所述，疏离关系在解决工作中出现的一些问题方面可能并不总是最有帮助的方法。但尽管如此，它有几个经过实证证明的好处。其中之一就是效率。更少的聊天和社交时间意味着更多的工作和产出时间。\n另一个好处是自尊。作为人类，我们天生就会互相比较，这是一种引发焦虑的现象。显然，我们看不起熟人甚于看不起朋友。由于前者在倾向于疏离关系的人中最为常见，所以熟人的普遍存在可以增强个人的自我价值感。\n撇开自尊不谈，第三个好处是，研究发现疏离关系的情感中立性能够增强批判性评价、加强人们对任务解决的专注，并能获得更多有价值的信息。这些可能都不如下班后社交那么有趣，但嘿，我还是愿意接受。",
+   "questions": [
+    {
+     "stem": "46. What did the author realize when he re-entered the corporate world?",
+     "answer": "D",
+     "analysis": "作者明确说进入企业界后才意识到，至少对他来说，和同事成为朋友根本不是优先考虑的事，即没有预想中那么重要。A把“不是优先”曲解为“交朋友难”；B与原文相反，未提及排解孤独；C未涉及人际技能比较。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn from many studies about collegial relationships?",
+     "answer": "A",
+     "analysis": "多项研究探讨同事关系能帮助克服团队冲突、嫉妒等影响生产力和产出质量的问题，说明不和谐关系对生产力有不利影响。B“公司旨在培养和谐关系”未提及；C与原文相悖，密切同事关系有助于产出质量；D“几乎无处不在”过度推断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What can be inferred about relationships at work from an academic analysis?",
+     "answer": "B",
+     "analysis": "学术分析提出“疏离关系”，概括了工作关系可以是不亲密、不重要、可替代的，即它们可能几乎无关紧要。A、D与“不亲密、不重要”相反；C“对企业文化至关重要”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does the author say about people who are socially lazy?",
+     "answer": "C",
+     "analysis": "作者指出社交懒惰者偏好疏离关系，因为长期维持关系需要努力，对他们来说太费力，即不愿努力维持职场关系。A“感到不舒服”未提及；B与原文重视和谐避免对抗相悖；D缺乏沟通技巧未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is one of the benefits of indifferent relationships?",
+     "answer": "D",
+     "analysis": "文中明确列出好处之一是效率——少聊天社交意味着更多时间工作和产出。A相反，作者说这不像下班后社交有趣；B“控制情绪”不等于情感中立；C与原文“不一定有助于解决分歧”相悖。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "个人卫星技术的未来已经到来——我们准备好了吗？\n\nA) 卫星曾经是富裕政府和大型企业的专属玩物。但随着太空日益民主化，它们正逐渐进入普通人的触及范围。就像之前的无人机一样，微型卫星正开始从根本上改变我们对“谁能在我们头顶上做什么”的观念。\n\nB) 正如美国国家科学院最近一份报告所强调的，这些卫星在使卫星科学比以往任何时候都更容易获得方面具有巨大潜力。然而，随着将你自己的卫星送入轨道的成本急剧下降，不负责任使用的风险也在增加。问题不再是“我们能不能？”而是“我们应不应该？”由并非传统意义上的“专业人士”制造的设备密集地占据一片太空，其潜在弊端是什么？这项技术负责任且有益的发展和利用实际上会是什么样子？一些答案可能来自一个近50年来一直在制造和发射业余卫星的非营利组织。\n\nC) 将自己的个人卫星送入轨道可能听起来像是科幻小说中的想法。但在过去几十年里，一种独特的卫星类别应运而生，正好符合这一需求：立方体卫星（CubeSats）。这里的“立方体”仅仅指卫星的形状。最常见的立方体卫星是一个10厘米的立方体，小到单个立方体卫星很容易被误认为你桌上的镇纸。这些微型卫星可以装入运载火箭以前“浪费的空间”中。多个立方体卫星可以组合部署，以执行比单个立方体卫星更复杂的任务。\n\nD) 在它们紧凑的外壳内，这些微型卫星能够容纳传感器和通信接收器/发射器，使操作者能够从太空研究地球以及地球周围的空间。它们主要设计用于低地球轨道（LEO）——这是一个易于到达的太空区域，距地球约200至800英里，哈勃太空望远镜和国际空间站（ISS）等载人任务就在那里运行。但它们也能到达更远的轨道；美国宇航局计划在其未来大部分飞离地球的有效载荷（尤其是前往月球和火星的）上搭载立方体卫星。\n\nE) 由于它们体积小、重量轻，将立方体卫星送入地球轨道的成本远低于传统通信或GPS卫星。例如，亚利桑那州立大学的一个研究小组最近声称，他们开发的小型立方体卫星送入轨道的成本可低至3000美元。成本的降低使得研究人员、业余爱好者甚至小学团体能够将简单的仪器送入低地球轨道，甚至从国际空间站部署。\n\nF) 第一颗立方体卫星诞生于21世纪初，目的是让斯坦福大学的研究生能够设计、建造、测试和操作一颗能力类似于苏联人造卫星的航天器。自那时起，美国宇航局、国家侦察局甚至波音公司都发射并运行了立方体卫星。目前有130多颗在运行。美国宇航局的“纳米卫星教育发射”计划为教育团体和科学任务提供免费发射，现在也向美国非营利公司开放。显然，卫星不再只是火箭科学家的专属。\n\nG) 美国国家科学院的报告强调了立方体卫星在科学发现和培养未来太空科学家与工程师方面的重要性。但它也承认，广泛部署低地球轨道立方体卫星并非没有风险。报告作者提出的最大担忧是太空碎片——环绕地球运行的“垃圾”碎片，如果与包括国际空间站在内的运行单元相撞，可能造成严重损害。\n\nH) 目前，立方体卫星数量不多，而且受到密切跟踪。然而，随着低地球轨道对更多业余卫星开放，它们可能构成越来越大的威胁。正如报告作者所指出的，即使是险些相撞也可能导致“繁琐监管框架的建立，并影响未来科学立方体卫星的部署”。\n\nI) 立方体卫星研究人员认为，现在是时候思考比以往更多的人能够拥有自己一小片太空所带来的意想不到和非预期的后果了。在一个你可以直接从货架上买到立方体卫星套件的时代，我们如何能相信头顶上的卫星是由知道自己在做什么的人出于善意开发的呢？卫星领域的一些“专家级业余爱好者”可以为我们如何负责任地推进提供一些启发。\n\nJ) 1969年，业余无线电卫星公司（AMSAT）成立，旨在促进业余无线电爱好者参与太空研究和通信。它延续了1961年由Project OSCAR（一个美国团体，在人造卫星发射仅四年后建造并发射了第一颗非政府卫星）启动的努力。作为一个志愿者组织，AMSAT在当前立方体卫星热潮出现几十年前就已经将“业余”卫星送入轨道。随着时间的推移，其成员在责任方面积累了不少经验。在这里，开源开发一直是一项核心原则。在组织内部，AMSAT的理念是对所有东西开源，使其卫星各个方面的技术数据对组织内所有人完全开放，并在可能的情况下向公众开放。据负责AMSAT第一颗立方体卫星FOX 1-A的团队成员说，这意味着当每个人都能接触设计和实现时，就没有办法将爆炸物或能量发射器之类的东西偷偷带入业余卫星。\n\nK) 然而，他们在与非成员分享信息时更加谨慎，因为该组织要防止其他人发展出劫持并控制其卫星的能力。这种“自我治理”形式在长期存在的业余组织中是可以实现的，这些组织随着时间的推移能够建立起对社区成员乃至整个社会的责任感。但当没有深厚现有文化根基的新参与者出现时，会发生什么呢？\n\nL) 爱好者和学生正在获得这些技术，但他们并非长期业余组织的一员。他们仍然受到资助方、发射提供商和一系列法规的约束——所有这些都限制了立方体卫星开发者能做什么和不能做什么。但存在一种危险，即他们没有足够的能力去思考潜在的意外后果。诚然，这些意外后果可能是什么还远未清楚。但我们知道创新者在将技术引向意想不到的方向方面可以非常有创造力。想想看似无害的手机——在光谱的一端我们有小额信贷和基于短信的社交网络，而在另一端则有临时制作的爆炸装置。\n\nM) 这就是围绕立方体卫星的社会责任文化变得重要的地方——不仅仅是为了确保物理风险最小化，而且要参与到一个更大的社区中，预测和管理这项技术不那么明显的后果。这不是一项容易的任务。然而，来自AMSAT和其他技术开发领域的证据表明，负责任的技术爱好者社区确实可以围绕新技术出现。当然，这里的挑战在于确保业余社区所认为的负责任实际上确实是负责任的。这就需要开展更广泛的公共对话，超越政府机构和科学界，将学生、业余爱好者以及任何可能受到立方体卫星技术使用影响的人包括进来。",
+   "questions": [
+    {
+     "stem": "36. Given the easier accessibility to space, it is time to think about how to prevent misuse of satellites.",
+     "answer": "I",
+     "analysis": "CubeSat researchers suggest that now’s the time to ponder unexpected and unintended possible consequences of more people than ever having access to their own small slice of space.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. A group of mini-satellites can work together to accomplish more complex tasks.",
+     "answer": "C",
+     "analysis": "Multiples can be deployed in combination for more complex missions than could be achieved by one CubeSat alone.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The greater accessibility of mini-satellites increases the risks of their irresponsible use.",
+     "answer": "B",
+     "analysis": "However, as the cost of getting your own satellite in orbit drops sharply, the risks of irresponsible use grow.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Even school pupils can have their CubeSats put in orbit owing to the lowered launching cost.",
+     "answer": "E",
+     "analysis": "This decrease in cost allows researchers, hobbyists and even elementary school groups to put simple instruments into LEO...",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. AMSAT is careful about sharing information with outsiders to prevent hijacking of their satellites.",
+     "answer": "K",
+     "analysis": "However, they’re more cautious about sharing information with nonmembers, as the organization guards against others developing the ability to hijack and take control of their satellites.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. NASA offers to launch CubeSats free of charge for educational and research purposes.",
+     "answer": "F",
+     "analysis": "The NASA Educational Launch of Nano Satellite program, which offers free launches for educational groups and science missions, is now open to U.S. nonprofit corporations as well.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Even with constraints, it is possible for some creative developers to take the CubeSat technology in directions that result in harmful outcomes.",
+     "answer": "L",
+     "analysis": "They’re still constrained by funders, launch providers and a series of regulations... Yet we know innovators can be remarkably creative with taking technologies in unexpected directions... improvised explosive devices at the other.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. While making significant contributions to space science, CubeSats may pose hazards to other space vehicles.",
+     "answer": "G",
+     "analysis": "The National Academy of Sciences report emphasizes CubeSats’ importance in scientific discovery and training future space scientists and engineers. Yet it also acknowledges that widespread deployment of LEO CubeSats isn’t risk-free. The greatest concern is space debris... potential to cause serious damage if they collide with operational units, including the ISS.",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Mini-satellites enable operators to study Earth from LEO and space around it.",
+     "answer": "D",
+     "analysis": "Within their compact bodies these minute satellites are able to house sensors and communications receivers/transmitters that enable operators to study Earth from space, as well as space around Earth. They're primarily designed for Low Earth Orbit (LEO)...",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. AMSAT operates on the principle of having all its technical data accessible to its members, preventing the abuse of amateur satellites.",
+     "answer": "J",
+     "analysis": "Within the organization, AMSAT has a philosophy of open sourcing everything making technical data on all aspects of their satellites fully available to everyone in the organization... this means that there’s no way to sneak something like explosives or an energy emitter into an amateur satellite when everyone has access to the designs and implementation.",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:34:25.895Z"
+}

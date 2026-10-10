@@ -1,0 +1,256 @@
+{
+ "level": "CET6",
+ "year": 2020,
+ "month": 9,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Journey to the West is perhaps the most influential of the four great classical novels of Chinese literature, and certainly the one best known abroad. The novel depicts the arduous journey of the famous monk Xuanzang, accompanied by three disciples, across western China to India to obtain Buddhist scriptures. Although the story is based on Buddhist themes, the novel draws heavily on Chinese folk tales and mythology, creating a variety of vivid human and animal characters. The most famous of these is Sun Wukong, whose stories of fighting various demons and monsters are known to almost every Chinese child.",
+   "note": "难点在专有名词与文化负载词（如四大经典小说、取经）的准确翻译。关键表达：the four great classical novels、obtain Buddhist scriptures、folk tales and mythology、vivid characters、fight demons and monsters。同时保持句式流畅，避免逐字死译。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "不健康的饮食导致健康不良，这一点没有争议。健康饮食的基本要素也没有争议。肥胖会增加患癌症的风险，而英国是全球第六肥胖的国家。这是一场公共卫生紧急事件。但指出问题只是容易的部分。没有人质疑肥胖人群在生活质量方面付出的代价以及医疗预算的消耗，但寻求解决方案的努力却被围绕责任和选择的意识形态争论所转移。而且，那些从致胖产品的消费中获利的企业所进行的游说也把水搅浑了。历史先例表明，科学和政治能够克服那些造成污染和有毒害的企业的抵制，但这需要时间，而且成功往往从小处开始。因此，令人振奋的是，利兹的一项计划实现了儿童肥胖率的下降，成为英国第一个扭转肥胖趋势的城市。最佳效果出现在年龄较小的儿童和较贫困地区。当英国 2 至 15 岁儿童中有 28% 肥胖时，如果全国都能实现利兹那样的转变，将延长数十万人的生命。利兹经验中的一个重要因素似乎是一个名为 HENRY 的计划，该计划帮助父母奖励那些预防儿童肥胖的行为。许多议员甚至对本国政府的反肥胖战略感到不安，因为该战略包括‘糖税’和禁止向 16 岁以下青少年出售能量饮料。禁令和税收可能是生硬的工具，但对它们最严厉的批评者却很少能提出更好的办法。这些批评者只是反对监管本身。健康不佳与不平等之间的关系过于明显，政府不能对大规模干预袖手旁观。生活在最贫困地区的人死于可避免原因的可能性是较富裕地区居民的四倍。随着公共卫生问题的结构性特征越来越难以忽视，关于政府过度保护的抱怨也就失去了说服力。事实上，围绕公共卫生干预的两极分化辩论早就应该被抛弃。当个人有动力作出回应时，政府行动才会奏效。个人需要政府来扩大获得良好选择的机会。HENRY 计划部分是通过儿童中心实施的。关闭这些中心、削减地方政府预算，并不会神奇地增加个人的自立能力。设计良好的国家干预的功能不是剥夺人们的自由，而是建设社会能力和基础设施，帮助人们为自己的福祉负责。肥胖危机不会靠左翼或右翼的意识形态来解决——但经验表明，私营部门需要监管的激励，才会开始认真对待公共卫生紧急情况。",
+   "questions": [
+    {
+     "stem": "46. Why is the obesity problem in Britain so difficult to solve?",
+     "answer": "B",
+     "analysis": "第一段指出解决方案被围绕责任和选择的意识形态争论分散注意力，即人们在“谁该做什么”上存在分歧；同时行业游说使问题复杂化。A只提到预算消耗，不是解决难的原因；C是个体责任争议中的一种立场，过于片面；D曲解了“行业游说搅浑水”的原意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What can we learn from the past experience in tackling public health emergencies?",
+     "answer": "A",
+     "analysis": "第二段历史先例表明科学和政治可以克服企业阻力，说明政府能发挥作用。B只涉及科学，忽略政治；C贫困地区是利兹项目的结果，并非过去经验的核心启示；D原文强调克服企业抵制，而非强调企业自身责任。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the author imply about some critics of bans and taxes concerning unhealthy drinks?",
+     "answer": "B",
+     "analysis": "第三段指出禁令和税收的严厉批评者很少能提出更好的方法，只是反对监管本身，暗示他们缺乏建设性意见。A未提及后果认知；C张冠李戴，是议员不安，不是批评者；D“自己的动机”原文无据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. Why does the author stress the relationship between poor health and inequality?",
+     "answer": "D",
+     "analysis": "第四段说明健康不佳与不平等的关系太明显，政府不能对大规模干预被动，接着用数据支撑，目的是证明政府干预的合理性。A、C只涉及不平等现象或地区关注，并非作者目的；B“根本原因”推断过度，原文未作此判断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. When will government action be effective?",
+     "answer": "C",
+     "analysis": "第五段明确指出政府行动在个人有动力回应时才有效，对应C。A是作者呼吁放弃辩论，但并非有效条件；B意识形态分歧解决未提及；D私营部门意识到严重性需监管激励，不是政府行动有效的直接条件。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "珊瑚海拥有原始珊瑚礁、珍稀鲨鱼和大量奇异鱼类，是澳大利亚东北海岸外独特的生物多样性庇护所。如果澳大利亚政府的一项提案得以实施，该区域还将成为世界上最大的海洋保护区，对捕鱼、采矿和海水养殖加以限制或禁止。\n\n珊瑚海保护区将覆盖近99万平方公里，距海岸最远延伸1100公里。环境部长托尼·伯克最近公布的这项提案，将是澳大利亚沿海一系列拟议海洋保护区中的最后一个。\n\n但该计划正招致科学家和环保组织的批评，他们认为政府在保护珊瑚海以及沿海保护区网络中的其他海洋保护区方面做得还不够。\n\n昆士兰大学环境决策卓越中心主任休·波辛厄姆指出，珊瑚海保护区只有略多于一半的区域被提议划为“禁止采捕”区，在这些区域内一切捕鱼活动都将被禁止。英国政府去年在印度洋建立的世界上现有最大的海洋保护区，面积达55.4万平方公里，且全部为禁止采捕区。一个由积极活动的环保组织组成的联盟主张，珊瑚海更多区域应获得这种程度的保护。\n\n昆士兰詹姆斯·库克大学珊瑚礁研究卓越中心主任特里·休斯说：“我本希望看到珊瑚礁得到更多保护。其中20多个珊瑚礁将位于禁止采捕区之外，容易受到钓后放流式捕鱼的影响。”\n\n截至《自然》杂志付印时，澳大利亚政府尚未对该计划的具体批评作出回应。但詹姆斯·库克大学海洋地质学家罗宾·比曼说，该保护区确实“广泛保护了这片海域的各种栖息地”。他说：“我可以证明，政府机构和其他组织为了解这片广阔区域的生态价值付出了巨大努力。”\n\n今年早些时候为澳大利亚西南部和西北部沿海地区提出的保护区也因未能给栖息地提供充分保护而受到批评。8月，173名海洋科学家签署了一封致政府的公开信，称他们对西南部地区的提案未以保护区的“核心科学原则”为基础“深表关切”，他们说，例如受保护区域并不能代表该地区的所有栖息地。\n\n批评者说，西南部保护区对近海区域给予的保护最多，而这些区域商业开发机会最少、环境受威胁也最小，这一指责也针对珊瑚海计划。",
+   "questions": [
+    {
+     "stem": "51. What do we learn from the passage about the Coral Sea?",
+     "answer": "A",
+     "analysis": "首段指出珊瑚海拥有原始珊瑚礁、珍稀鲨鱼和大量奇异鱼类，是独特的生物多样性庇护所，说明海洋生物极其丰富，故选A。B错在它只是拟成为最大保护区而非已是；D错在原文是biodiversity而非endangered species；C“未受人类干扰”过于绝对。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does the Australian government plan to do according to Tony Burke?",
+     "answer": "D",
+     "analysis": "根据托尼·伯克公布的内容，该提案是澳大利亚沿海一系列拟议海洋保护区中的最后一个，意味着政府计划完成沿海海洋保护区网络，故选D。A是已公布提案而非新提案；B、C均无原文依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is scientists' argument about the Coral Sea proposal?",
+     "answer": "A",
+     "analysis": "第三段明确说科学家和环保组织认为政府在保护珊瑚海及其他海洋保护区方面做得还不够，故选A。B过于绝对；C未提及；D不是科学家的主要批评。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does marine geologist Robin Beaman say about the Coral Sea plan?",
+     "answer": "D",
+     "analysis": "罗宾·比曼说保护区“广泛保护了各种栖息地”，并证明政府机构和其他组织付出了巨大努力，对应D。A未与印度洋比较；B是计划目标但不是比曼观点核心；C未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What do critics think of the Coral Sea plan?",
+     "answer": "C",
+     "analysis": "最后一段批评者认为西南保护区对商业机会最少、环境威胁最小的近海区域保护最多，这一指责也针对珊瑚海计划，说明批评者认为计划保护的地区实际上不太需要保护，故选C。A“弊大于利”过度推断；B、D与原文不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "总体而言，男性比女性更爱找借口。几项研究表明，男性觉得需要在所有领域都显得能干，而女性只担心自己投入大量精力的技能。如果让一个男人和一个女人第一次去潜水，女人可能会直接跳入水中，而男人则可能说身体不太舒服。具有讽刺意味的是，往往正是成功让人去冒险、招致失败。因掌握某项技能而赢得的赞扬，会让人一下子处于可能失去一切的位置。许多成功人士不再拿自己的名声冒险，而是形成某种障碍——酗酒、疲劳、抑郁——从而无论未来发生什么都能保住自己的地位。一位得奖后不久就因抑郁住院的广告主管这样说道：“没有抑郁，我现在会是失败者；有了它，我就是‘暂时搁置的成功者’。”事实上，最容易变成长期找借口的人正是那些痴迷于成功的人。他们如此害怕在任何事情上被贴上失败者的标签，以至于不断制造这样或那样的障碍来解释失败。尽管自我设障有时能有效应对表现焦虑，但研究人员表示，最终它会走向毁灭。从长远来看，爱找借口的人无法发挥真正的潜能，也会失去他们极为在意的地位。而且，无论他们怎么辩称并非如此，他们只能怪自己。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "L",
+     "analysis": "空格前为 all，后为逗号，需名词；all realms 表示“所有领域”，说明男性希望在各个领域都显得能干，语义搭配恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "C",
+     "analysis": "空格前为 invested，需副词修饰动词；invested heavily 是常见搭配，意为“大量投入”，表明女性只担心自己投入很多精力的技能。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "空格前为 for，后为 a skill，需动名词；praise won for mastering a skill 表示“因掌握某项技能而获得的赞扬”，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "B",
+     "analysis": "与 drinking、depression 并列作 handicap 的例子，需名词；fatigue 意为“疲劳”，与酗酒、抑郁同属自我设障的表现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "E",
+     "analysis": "空格后为 for depression，需过去分词作后置定语；hospitalized for depression 表示“因抑郁症住院”，符合获奖后出现障碍的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "J",
+     "analysis": "空格前为 those，后为 with success，需形容词或分词；those obsessed with success 是常见搭配，意为“痴迷于成功的人”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "F",
+     "analysis": "空格前为 being，后为 a failure，需过去分词构成被动；being labeled a failure 表示“被贴上失败者的标签”，符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "N",
+     "analysis": "空格在 lead to 后作宾语，需名词；lead to ruin 表示“走向毁灭/导致毁灭”，说明自我设障的最终后果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "K",
+     "analysis": "空格前为 true，需名词；true potential 是常见搭配，意为“真正的潜力”，表示未能发挥应有的潜能。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "A",
+     "analysis": "空格前为 to the，后为逗号，需名词；protests to the contrary 是固定短语，意为“相反的抗议/声称并非如此”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 大脑，大脑，大脑。人们对大脑研究十分着迷。然而，很难指出我们的教育系统在哪里真正用上了最新的神经科学发现。但有一个令人欣慰的联结，让研究与实践相会：双语教育。加州大学河滨分校教授朱迪思·克罗尔说：“过去二十年左右，关于双语的研究出现了爆炸式增长。”\n\nB) 研究人员一次又一次发现，“双语是一种塑造我们大脑一生的经历”，哈佛大学教育研究生院副教授吉吉·卢克如此说道。与此同时，公立学校中最热门的趋势之一就是通常所说的双向沉浸式双语项目。\n\nC) 针对英语学习者的传统项目专注于让学生尽快融入英语环境。相比之下，双语课堂则用英语和目标语言为英语母语者和英语学习者提供各学科教学。目标是在中学前让所有学生实现功能性双语和双文能力。纽约市、北卡罗来纳、特拉华、犹他、俄勒冈和华盛顿州等地正在扩大双语课堂。\n\nD) 这一趋势与二十年前文化战争中的一些主张背道而驰，当时倡导者坚持“英语优先”教育。最著名的是，加利福尼亚州在1998年通过了227号提案，旨在大幅减少英语学习者在双语环境中的学习时间。11月8日加州选民通过的58号提案在很大程度上推翻了那一决定，为双语教育在该州——这个英语学习者最多的州——的大规模扩展铺平了道路。\n\nE) 对“英语优先”的一些坚持建立在几十年前的研究之上，那些研究显示双语学生表现不如单语英语使用者，智商分数也较低。如今，多伦多约克大学的埃伦·比亚韦斯托克等学者表示，那些研究“存在严重缺陷”。英国爱丁堡大学的安东内拉·索拉切同意说：“早期研究考察的是社会弱势群体。这与近期研究完全矛盾”，因为近期研究比较的群体更为相似。\n\nF) 那么近期研究对双语教育的潜在益处有何说法？事实证明，在很多方面，说两种语言的真正诀窍在于在特定时刻忍住不说其中一种语言——这本质上是一种注意力掌控。和妈妈说“再见”，然后对老师说“Guten tag”，或者设法要一支crayola roja而不是红色蜡笔，都需要“抑制”和“任务切换”能力。这些能力是所谓执行功能的一部分。\n\nG) 会说两种语言的人在执行功能的一般测试中往往优于单语者。索拉切说：“双语者能集中注意力而不分心，也能提高从一项任务切换到另一项任务的能力。”\n\nH) 这些同样的优势是否也惠及那些从上幼儿园才开始学第二语言而不是从婴儿期开始的孩子？我们还不知道。语言学习和语言使用的模式很复杂。但哈佛的吉吉·卢克至少引用了一项针对青少年的大脑成像研究，该研究显示，即便这些青少年直到童年晚期才正式开始练习第二语言，他们的大脑结构变化也与从出生起就双语的人相似。\n\nI) 在双语环境中长大的幼儿必须根据社交线索来判断对谁、在什么场合使用哪种语言。索拉切说，因此，年仅3岁的双语儿童在换位思考和心理理论测试上已经表现出领先优势——这两者都是基本的社交和情感技能。\n\nJ) 在俄勒冈州波特兰的公立学校，大约10%的学生通过抽签被分到双语课堂，这些课堂除英语外还提供西班牙语、日语或普通话教学。美国大学的珍妮弗·斯蒂尔进行了一项为期四年的随机试验，发现这些双语学生在英语阅读能力上比同龄人高出整整一学年的学习量，到中学结束时依然如此。由于效果出现在阅读而非数学或科学（这两科几乎没有差异），斯蒂尔认为学习两种语言使学生更普遍地意识到语言是如何运作的。\n\nK) 哈佛大学吉吉·卢克的研究给出了稍有不同的解释。她最近做了一项小型研究，考察了马萨诸塞州100名四年级学生，他们在标准测试中阅读成绩相似，但语言经历差异很大。有些学生外语占主导，另一些是英语母语者。有趣的是，外语占主导的学生还没有达到舒适的双语程度；他们才刚刚开始学英语。因此，从定义上说，他们的英语词汇量比母语者弱得多。然而，他们在理解文本方面却同样出色。“这非常令人惊讶，”卢克说，“你原本会预期阅读理解表现与词汇量一致——词汇量是理解的基础。”\n\nL) 外语占主导的学生是如何做到这一点的？卢克发现，他们在执行功能测试上得分也更高。所以，尽管他们没有庞大的心理词典可以调用，他们可能是出色的解谜者，会考虑更高层次的概念，比如某个句子在整体故事情节中是否合理。他们通过不同路径，达到了与单语者相同的结果。\n\nM) 美国公立学校课堂上，种族和阶层隔离总体上越来越严重。双语项目可以是例外。因为它们由有意安排与近期移民同班的英语母语者组成，所以往往在种族和经济上更加均衡。而且有一些证据表明，这有助于各种背景的孩子适应多元化和不同文化。\n\nN) 几位研究人员还指出，在双语教育中，非英语主导的学生及其家庭往往觉得自己的家庭语言被倾听和重视，而在那些为了英语而把家庭语言挡在门外的课堂里则不是这样。这可以提升学生的归属感，增加家长对孩子教育的参与，包括给孩子读书等行为。爱丁堡大学的安东内拉·索拉切说：“许多家长害怕自己的语言是一种障碍、一个问题，认为如果放弃它，孩子会更好地融入。我们告诉他们，放弃自己的语言并不是在帮孩子。”\n\nO) 在与这些研究人员交谈时，一个突出的主题是他们对双语课堂的强烈倡导。托马斯和科利尔为许多学校系统提供如何扩展双语项目的建议，索拉切则运营着“双语很重要”这一由研究人员组成的国际网络，推广双语教育项目。科学家这种倡导并不常见；更不寻常的是，因为“双语优势假说”正再次受到质疑。\n\nP) 去年发表的一项研究综述发现，在已发表的研究中，83%没有出现认知优势，不过在另一项单独分析中，效应总和仍显著为正。研究人员提出的一个潜在解释是，在非常年幼和非常年长者身上可测得的优势，在测试处于认知能力巅峰的年轻成年人时往往会消退。他们还反驳说，尚未发现双语教育有负面影响。因此，即使优势很小，仍然值得。更不用说一个显而易见的事实：“双语儿童能说两种语言！”",
+   "questions": [
+    {
+     "stem": "36. A study found that there are similar changes in brain structure between those who are bilingual from birth and those who start learning a second language later.",
+     "answer": "H",
+     "analysis": "对应段落H中的句子：“但哈佛的吉吉·卢克至少引用了一项针对青少年的大脑成像研究，该研究显示，即便这些青少年直到童年晚期才正式开始练习第二语言，他们的大脑结构变化也与从出生起就双语的人相似。”",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Unlike traditional monolingual programs, bilingual classrooms aim at developing students' ability to use two languages by middle school.",
+     "answer": "C",
+     "analysis": "段落C指出传统英语学习者项目专注于让学生尽快融入英语，而双语课堂用英语和目标语言提供各学科教学，目标是到中学时所有学生具备功能性双语和双文能力（The goal is functional bilingualism and biliteracy for all students by middle school）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. A study showed that dual-language students did significantly better than their peers in reading English texts.",
+     "answer": "J",
+     "analysis": "段落J提到珍妮弗·斯蒂尔的随机试验发现，双语学生在英语阅读能力上比同龄人高出整整一学年的学习量（outperformed their peers in English-reading skills by a full school-year’s worth of learning）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. About twenty years ago, bilingual practice was strongly discouraged, especially in California.",
+     "answer": "D",
+     "analysis": "段落D提到二十年前的文化战争中倡导者坚持“英语优先”，加州1998年通过227号提案，旨在大幅减少英语学习者在双语环境中的学习时间（most famously, California passed Proposition 227 in 1998... sharply reduce... bilingual settings）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Ethnically and economically balanced bilingual classrooms are found to be helpful for kids to get used to social and cultural diversity.",
+     "answer": "M",
+     "analysis": "段落M指出双语项目往往在种族和经济上更加均衡，并且有证据表明这有助于各种背景的孩子适应多元化和不同文化（tend to be more ethnically and economically balanced... helps kids... gain comfort with diversity and different cultures）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Researchers now claim that earlier research on bilingual education was seriously flawed.",
+     "answer": "E",
+     "analysis": "段落E中今天的学者表示几十年前的早期研究“存在严重缺陷”（deeply flawed），而且早期研究考察的是社会弱势群体。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. According to a researcher, dual-language experiences exert a lifelong influence on one's brain.",
+     "answer": "B",
+     "analysis": "段落B引用吉吉·卢克的话：“双语是一种塑造我们大脑一生的经历”（bilingualism is an experience that shapes our brain for life），说明双语经历对大脑有终身影响。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Advocates of bilingual education argued that it produces positive effects though they may be limited.",
+     "answer": "P",
+     "analysis": "段落P指出虽然认知优势在83%的已发表研究中未出现，但效应总和仍显著为正，且未发现负面影响；即使优势很小，仍然值得（even if the advantages are small, they are still worth it）。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Bilingual speakers often do better than monolinguals in completing certain tasks because they can concentrate better on what they are doing.",
+     "answer": "G",
+     "analysis": "段落G指出会说两种语言的人在执行功能的一般测试中往往优于单语者，并且双语者能集中注意力而不分心（Bilinguals can pay focused attention without being distracted），因此能更好地集中注意力完成任务。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. When their native language is used, parents can become more involved in their children's education.",
+     "answer": "N",
+     "analysis": "段落N提到在双语教育中，家庭语言被倾听和重视，这可以提升学生的归属感，增加家长对孩子教育的参与，包括给孩子读书；即使用母语会让家长更参与孩子的教育。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:39:28.260Z"
+}

@@ -1,0 +1,223 @@
+{
+ "level": "CET6",
+ "year": 2016,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Invention has always been a driving force behind human progress. It not only improves our daily life but also promotes social and economic development. Without invention, we would still be living in an age of ignorance and poverty.\n\nThe importance of invention can never be overstated. On a personal level, inventions such as the Internet and smartphones have made communication and access to information faster and easier. On a national level, innovative technologies enhance productivity and strengthen a country's competitiveness in the world.\n\nTo encourage invention, several measures should be taken. First, the government should increase funding for scientific research and offer tax incentives to innovative enterprises. Second, schools should cultivate students' creativity by encouraging independent thinking rather than rote learning. Finally, society as a whole should create an atmosphere that respects knowledge and tolerates failure, because failure is often the mother of invention.\n\nIn conclusion, invention is vital to both individuals and the nation. Only by taking effective measures can we foster a culture of innovation and ensure sustainable development.",
+   "note": "本文切题，首段引出观点，第二段从个人和国家层面论证发明重要性，第三段提出政府、学校、社会三方面鼓励措施，末段总结。可复用句型：The importance of...can never be overstated；On a personal/national level；Several measures should be taken；Only by...can we...等。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "With the improvement of living standards, vacations are playing an increasingly important role in Chinese people's lives. In the past, Chinese people spent most of their time making a living and rarely had the chance to travel. However, China's tourism industry has developed rapidly in recent years. Economic prosperity and the rise of an affluent middle class have sparked an unprecedented tourism boom. Chinese people not only travel within China; traveling abroad is also becoming increasingly common. During the National Day holiday in 2016, tourism consumption totaled over 400 billion yuan. According to estimates by the World Tourism Organization, by 2020 China will become the world's largest tourist destination and, in the coming years, the country with the fastest growth in outbound tourism spending.",
+   "note": "难点：长句衔接与专业表达。原文“世界贸易组织”结合语境应理解为“世界旅游组织”，译作 World Tourism Organization；“旅游热潮”“出境旅游支出”分别用 tourism boom、outbound tourism spending；注意时态和主谓一致。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "科学家被视为正常人，在提出和回答重要问题，这很重要。好的、可靠的科学依赖于假设、实验和理性的方法。它需要愿意提出新问题并尝试新方法。它需要一个人敢于冒险并经历失败。但好的科学也需要情境理解、清晰的解释和简洁的表述。我们国家需要更多愿意进入公共领域并就重要事务发表意见的科学家。我们需要更多能够用令公众信服且易于理解的语言解释他们所做工作的科学家。我们中那些不是科学家的人也应该准备好支持科学家参与公共事务，并把科学知识纳入我们的公共传播中。这个国家有太多人，包括我们当选领导层中的一些人，仍然不明白科学是如何运作的，也不明白为什么对研究的长期、大力投资至关重要。20世纪60年代，美国将可自由支配开支的近17%投入到研发中，收获了几十年的经济增长。到2008年，这个数字已经下降到个位数。而与此同时，其他国家在自身研发能力上取得了显著进步。在加州大学（UC），我们不仅以研究质量自豪，也以研究对改善世界的贡献自豪。为了加速科学从实验室工作台走向市场的发展，加州大学正在将自己的资金投入自己的好想法中。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "名词并列。句子列举科学依赖的三要素：假设、实验与合理方法，语义匹配且为复数名词。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "修饰 understanding，需形容词；contextual understanding 表示结合语境/背景的理解，与后面的 clear explanation、concise presentation 并列，契合科学传播语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "固定搭配 public arena（公共领域/舞台），表示科学家进入公共领域发表观点，名词 arena 恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "修饰 language，需形容词；convincing（令人信服的）与 understandable（可理解的）并列，说明语言既要有说服力又易懂。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "I",
+     "analysis": "固定搭配 incorporate...into...（把…纳入…），不定式 to 后接动词原形，表示将科学知识纳入公共传播。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "D",
+     "analysis": "固定搭配 devote...to...（把…投入/奉献于…），主语 the United States 是单数，1960s 过去时间，用动词过去式 devoted。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "N",
+     "analysis": "逗号后现在分词短语作结果状语，逻辑主语是 the United States；reaping（收获）与 decades of economic growth 搭配，表示带来了持续经济增长。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "E",
+     "analysis": "固定搭配 single digits（个位数），表示数字降至个位数，名词 digits 为复数符合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "M",
+     "analysis": "固定搭配 pride oneself on（以…为豪），句子是一般现在时，主语 we，用动词原形 pride。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "不定式 to 后用动词原形，语义需要“加速”；hasten the development 表示加速发展，符合句子意思。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "有抑郁、焦虑和自杀风险的青少年常常把自己的麻烦像霓虹灯一样暴露在外。他们的危险行为——酗酒、非法吸毒、吸烟和逃学——可以提醒父母和老师严重问题正在酝酿。\n\n但一项新研究发现，还有另一群青少年几乎面临同样的精神症状风险：大量使用媒体、睡眠不足、生活方式久坐不动的青少年。\n\n当然，这听起来可能像是对地球上每个青少年的描述。但研究警告说，真正处于危险中的是那些极端地同时具备这三种行为的青少年。由于他们的行为通常不被视为危险信号，这些年轻人被研究作者称为“隐形风险”群体。\n\n研究人员弗拉基米尔·卡利说：“在某些方面，他们更容易被忽视。大多数父母、老师和临床医生会对吸毒或醉酒的青少年作出反应，但很容易忽略那些行为不显眼的青少年。”\n\n该研究的作者调查了12,395名学生，分析了九种危险行为，包括过量饮酒、非法吸毒、重度吸烟、高媒体使用和逃学。他们的目的是确定这些危险行为与青少年心理健康问题之间的关系。\n\n约58%的学生没有或很少有这些危险行为。约13%的学生在九种危险行为上得分都很高。另有29%的“隐形风险”群体在三种特定行为上得分很高：每天使用电子设备五小时或以上，每晚睡六小时或更少，并且忽视“其他健康活动”。\n\n九项危险行为均得分高的群体最有可能出现抑郁症状；总体而言，该群体近15%的人报告抑郁，而低风险群体只有4%。但隐形群体与高风险群体相差不远，超过13%的人表现出抑郁。\n\n这一发现让卡利颇感意外。“我们非常惊讶，”他说。“高风险组和低风险组都很明显。但这第三组不仅出乎意料，而且非常独特、规模很大——几乎占我们样本的三分之一——这成为该研究的一个关键发现。”\n\n卡利说，他研究最重要的一点是，它为父母、老师和心理健康服务提供者提供了新的早期预警信号。他说，对心理健康问题的早期识别、支持和治疗是防止其发展成全面障碍的最好方法。",
+   "questions": [
+    {
+     "stem": "51. What does the author mean by saying \"Teenagers at risk of depression, anxiety and suicide often wear their troubles like a neon sign\" (Lines 1 - 2, Para.1 ) ? A. Mental problems can now be found in large numbers of teenagers. B. Teenagers' mental problems are getting more and more attention. C. Teenagers' mental problems are often too conspicuous not to be observed. D. Depression and anxiety are the most common symptoms of mental problems.",
+     "answer": "C",
+     "analysis": "第一段把青少年的危险行为比作霓虹灯，说明这些行为非常显眼，可让家长和老师察觉心理问题，故C正确。A只说明人数多，B强调受到更多关注，D说抑郁焦虑最常见，均未解释“霓虹灯”的比喻义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the finding of the new study? A. Teenagers' lifestyles have changed greatly in recent years. B. Many teenagers resort to drugs or alcohol for mental relief. C. Teenagers experiencing psychological problems tend to use a lot of media. D. Many hitherto unobserved youngsters may have psychological problems.",
+     "answer": "D",
+     "analysis": "新研究发现了除有明显危险行为的群体外，还存在大量使用媒体、睡眠不足且久坐的“隐形风险”群体，他们也有精神症状风险，D正确。A和B文中未提及；C把媒体使用当作心理问题青少年的普遍倾向，过于片面且不是研究核心发现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. Why do the researchers refer to teens who use tons of media, don't get enough sleep and have a sedentary lifestyle as the \"invisible risk\" group? A. Their behaviors can be an invisible threat to society. B. Their behaviors do not constitute a warning signal. C. Their behaviors do not tend towards mental problems. D. Their behaviors can be found in almost all teenagers on earth.",
+     "answer": "B",
+     "analysis": "文章说这些行为“通常不被视为危险信号”，所以该群体被称为“隐形风险”群体，B正确。A和C与原文相反或无关；D说几乎所有青少年都有这些行为，原文只是说听起来像，真正极端者才有风险。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the new study find about the invisible group? A. They are almost as liable to depression as the high-risk group. B. They suffer from depression without showing any symptoms. C. They do not often demonstrate risky behaviors as their peers. D. They do not attract the media attention the high-risk group does.",
+     "answer": "A",
+     "analysis": "研究发现隐形群体抑郁比例超过13%，与高风险组近15%相差不远，说明他们几乎同样容易抑郁，A正确。B说抑郁但不显症状，C说他们不像同龄人那样常表现出危险行为，均与原文不符；D提及媒体关注，文中未涉及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What is the significance of Vladimir Carli's study? A. It offers a new treatment for psychological problems among teenagers. B. It provides new early-warning signals for identifying teens in trouble. C. It may have found an ideal way to handle teenagers with behavioral problems. D. It sheds new light on how unhealthy behaviors trigger mental health problems.",
+     "answer": "B",
+     "analysis": "卡利指出研究最重要的意义在于为家长、老师和心理健康提供者提供新的早期预警信号，以便早期识别和干预，B正确。A说提供新治疗方法，原文只提早期支持与治疗而非新疗法；C说理想方法处理行为问题，过度引申；D说揭示不健康行为如何引发心理问题，并非该研究强调的意义。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "我们是否正处在创新间歇期？\n[A] 浏览今年国际消费电子展（CES）的亮点，你可能会隐约觉得似曾相识。今年许多最酷的小玩意和去年——甚至前年——的如出一辙。展位依然令人兴奋，演示也依然疯狂。无人机、3D打印机、虚拟现实眼镜以及多得数不过来的“智能”设备，依然很容易让人眼花缭乱。然而，仔细一想，你同样会觉得自己好像以前都见过。很难不去想：我们是否正处在一个创新间歇期？\n[B] 从某些方面来说，答案是肯定的。多年来，智能手机、电视、平板电脑、笔记本电脑和台式机占据了市场的很大一部分，并推动了创新。但现在这些领域正面临增长曲线放缓——在某些情况下甚至市场萎缩——因为消费者不再那么急切地花钱购买新设备。与此同时，新兴技术——无人机、3D打印机和智能家居设备——如今似乎有点太老了，称不上“下一个大事件”。\n[C] 基本上，科技行业现在似乎正处于一个尴尬时期。美国消费技术协会（CTA）总裁兼首席执行官加里·夏皮罗说：“现在没有任何一鸣惊人的产品，未来几年也不会出现。”不过在他看来，这并不一定意味着创新已经停止。它只是稍微成熟了一点。夏皮罗说：“许多行业正在走出婴儿期，进入青春期。”\n[D] 例如，建立在现有技术基础上的新技术还没有找到足够稳固的立足点来吸引大众，因为在很多情况下，它们需要与其他设备有效协作才能充分发挥吸引力。以智能家居的发展为例。企业正在大力推广，但普通消费者哪怕只是浅尝一下也觉得几乎无所适从，因为需要考虑太多的兼容性问题。没有哪个普通人愿意去弄清楚自己喜欢的日历软件是否与冰箱兼容，或者洗衣机和平板电脑能否和谐共处。家里的每件智能电器都要安装不同的应用程序，这很烦人；如果能在一个地方统一管理就更好了。你也许会原谅智能手机偶尔出故障，但门锁弹出错误信息时，你的耐心可能就没那么多了。\n[E] 企业都在推广自己的标准，而由于这项技术还很新，市场还没有时间选出赢家。长期专注于硬件的公司现在不得不考虑生态系统，从而为消费者提供解决日常问题的实用方案。经济学家肖恩·杜布拉瓦茨说：“讨论的重心正从技术上可能实现什么，转向技术上有什么意义。”杜布拉瓦茨在CTA工作——该协会每年举办这一展会——他表示，在他研究2016年预测时，这种向寻求解决方案的转变就已经很明显。\n[F] 埃森哲研究部董事总经理约翰·柯伦说：“CES过去很大程度上是关于酷炫，关于花哨和小玩意。”“但在过去几年，尤其是今年，我们开始看到企业从追求最大屏幕尺寸、最小外形或最闪亮的物件，转向更多地关注这些设备在消费者生活中有什么实际用途。”即便是过去备受瞩目、声势浩大到足以登上拉斯维加斯舞台的科技新闻发布会，也有了不同的取向。它们不再只是用超高的酷炫指数让人目眩，而是聚焦于实用性。例如，Fitbit周一发布了首款智能手表，销售定位十分明确——改善你的健康——并将其宣传为“工具，而非玩具”。不仅如此，它还支持多个平台：苹果iOS、谷歌Android和微软Windows Phone。\n[G] 这似乎正是消费者所要求的，毕竟消费者对企业提供的产品越来越感到厌倦：埃森哲发布的一项针对28个国家28000名消费者的调查发现，消费者对科技的热情不如从前。例如，当被问及今年是否会购买新智能手机时，只有48%的人回答“是”——比2015年下降了6个百分点。\n[H] 而谈到科技公司为我们描绘的超互联超级智能世界时，消费者似乎对于交出大量消费者数据越来越不安，而这些数据正是企业改进服务、提供个性化定制方案所必需的。这可能是为什么企业似乎更加大谈设备实用性的另一个原因。\n[I] 企业已经赢得了一部分战斗，它们把科技带入了我们生活的方方面面，追踪我们的步数甚至心跳。然而，“我为什么需要那个？”——或者也许更能说明问题的是“你为什么需要知道那个？”——这个挥之不去的问题困扰着许多新创产品。例如，只有13%的受访者表示有兴趣在2016年购买智能手表——尽管这一年有高调的发布，这一比例只比上一年增加了1%。对于任何希望智能手表能弥补智能手机和平板电脑市场成熟化损失的公司来说，这都是个坏消息。调查还发现，健身监测器、智能恒温器和联网家庭摄像头的需求也很平淡。\n[J] 根据调查，这种缺乏热情可能源于对隐私和安全的担忧。即使在购买过某种联网设备的人中，也有37%的人表示，今后在使用这些设备和服务时会更加谨慎。整整18%的人甚至退还了设备，直到他们觉得自己能获得更有力的保证，确保敏感信息不被黑客攻击。\n[K] 这同样解释了今年展会上华盛顿方面的众多身影，因为这些新技术正侵入受到严格监管的领域。除了联邦贸易委员会和联邦通信委员会的许多高级官员外，今年的政策制定者名单还包括交通部长安东尼·福克斯，他将谈论智慧城市，以及联邦航空管理局局长迈克尔·韦尔塔，他将谈论无人机。\n[L] 埃森哲分析师柯伦表示，随着科技在我们生活中占据越来越大的比重，政府对展会的兴趣增加是合理的。他说：“这些技术前进的速度与我们消化它们的方式之间存在不匹配。”“科技正变得更大、更令人向往，并渗透到我们生活的几乎每个方面。我们必须理解并思考其中的影响，在这些伟大创新与其天然伴随的潜在弊端之间取得平衡。”",
+   "questions": [
+    {
+     "stem": "36. Consumers are often hesitant to try smart-home devices because they are worried about compatibility problems.",
+     "answer": "D",
+     "analysis": "段落D提到智能家居面临太多兼容性问题，普通消费者望而却步。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. This year's electronics show featured the presence of many officials from the federal government.",
+     "answer": "K",
+     "analysis": "段落K提到今年展会华盛顿方面众多身影，包括联邦贸易委员会和联邦通信委员会高级官员。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The market demand for electronic devices is now either declining or not growing as fast as before.",
+     "answer": "B",
+     "analysis": "段落B提到这些细分市场增长曲线放缓或市场萎缩，消费者不急于花钱购买新设备。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. One analyst suggests it is necessary to accept both tlie positive and negative aspects of innovative products.",
+     "answer": "L",
+     "analysis": "段落L引述分析师柯伦的话，必须在伟大创新与潜在弊端之间取得平衡。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. The Consumer Electronics Show in recent years has begun to focus more on the practical value than the showiness of electronic devices.",
+     "answer": "F",
+     "analysis": "段落F提到过去几年尤其今年企业从关注酷炫转向产品在消费者生活中的实际用途。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Fewer innovative products were found at this year's electronic products show.",
+     "answer": "A",
+     "analysis": "段落A提到今年许多最酷的小玩意与去年甚至前年相同，感觉似曾相识。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Consumers are becoming more worried about giving personal information to tech companies to get customized products and services.",
+     "answer": "H",
+     "analysis": "段落H提到消费者对交出大量个人数据以获取个性化定制服务日益不安。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The Consumer Technology Association is the sponsor of the annual Consumer Electronics Show.",
+     "answer": "E",
+     "analysis": "段落E提到CTA每年举办这一展会。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Many consumers wonder about the necessity of having their fitness monitored.",
+     "answer": "I",
+     "analysis": "段落I提到“我为什么需要那个？”等疑问困扰新创产品，且健身监测器需求平淡。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. The electronic industry is maturing even though no wonder products hit the market.",
+     "answer": "C",
+     "analysis": "段落C提到没有一鸣惊人的产品，但行业正在走出婴儿期进入青春期。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:20:21.692Z",
+ "prunedAt": "2026-10-10T03:33:14.376Z"
+}

@@ -287,7 +287,14 @@
         },
         {
           "qtype": "match",
-          "stem": "40. Most of us find it hard to focus on our immediate tasks because of internet distractions. 41. when one person starts checking their phone, the others will follow suit.",
+          "stem": "40. Most of us find it hard to focus on our immediate tasks because of internet distractions.",
+          "options": [],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "match",
+          "stem": "41. when one person starts checking their phone, the others will follow suit.",
           "options": [],
           "answer": "",
           "analysis": ""

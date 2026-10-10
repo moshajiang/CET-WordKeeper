@@ -1,0 +1,104 @@
+{
+ "level": "CET6",
+ "year": 2023,
+ "month": 12,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "With their valuable skills and experience, elderly people can continue to make significant contributions to society. Indeed, age should never be a barrier to active participation; instead, it often brings wisdom, patience and reliability that benefit various fields. Take retired teachers as an example. Many of them volunteer to tutor underprivileged students, passing on not only academic knowledge but also lifelong learning habits. Likewise, retired doctors frequently offer free consultations in communities, easing the pressure on public health services. Their years of practice enable them to handle complex cases with calmness and accuracy. Besides, elderly craftsmen play an irreplaceable role in preserving traditional skills, such as paper-cutting and pottery, which might otherwise be lost. Moreover, their strong work ethic and sense of responsibility set a good example for younger generations. These examples clearly show that the elderly are a valuable asset rather than a burden. In conclusion, society should create more opportunities for the elderly to share their expertise. Therefore, it is advisable that government and communities establish platforms for the elderly to contribute, such as part-time positions or volunteer programs. By doing so, we not only tap into a rich source of human capital but also help them lead fulfilling lives.",
+   "note": "本文以给定句开头，直接点题。结构上先承接观点，再通过退休教师、医生、工匠三个例子论证老年人价值，最后总结并建议社会提供平台。可复用句型有“Take...as an example”“Likewise”“Moreover”“These examples clearly show that...”“Therefore, it is advisable that...”“By doing so, we not only...but also...”。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "In recent years, China's elderly population has continued to grow. The Chinese government is taking various measures to advance the elderly care service system, helping elderly people live healthy and happy lives in their later years. Various elderly care institutions have been built across the country. To improve their service quality, the government has issued a series of standards and tightened oversight of these institutions. Many cities have set up community canteens to make dining easier for the elderly, providing them with affordable meals. Seniors with limited mobility can also enjoy home meal delivery services. Meanwhile, China is actively exploring other elderly care models, such as home-based and community-based care, to ensure that all elderly people are properly cared for.",
+   "note": "难点：老龄人口、养老服务体系、社区食堂、上门送餐、老有所养等术语。关键表达：elderly care service system, community canteens, home meal delivery, properly cared for；注意用被动语态和目的状语，使译文地道流畅。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "现代美国城市的设计初衷是让锻炼变得不必要。汽车和电梯曾象征着城市作为更高效生活的机器。现在很明显，这些改进带来了巨大的好处，但也带来了健康成本。最近的研究表明，城市无序扩张鼓励更多的驾驶，并与体重增加有关。这种危害表明，城市的布局和设计可以阻碍或促进更健康的生活方式选择，城市规划者必须牢记这一点。\n不幸的是，城市规划在很大程度上仍然集中在解决过去的问题上。当然，城市仍需要推行标准的公共卫生实践，例如将有毒设施与住宅分开，限制重型卡车通过破败的住宅区。但创造更健康的城市也很重要——而且讨论已经展开。越来越多的城市规划者越来越重视通过使人们更容易、更安全地娱乐、步行、骑自行车和乘坐公共交通来鼓励体育活动。许多关于长寿的研究表明，在日常活动中包含体育活动的环境中，人们寿命最长。\n提供更多可步行空间、更好的自行车道和更多娱乐空间是重要步骤。但即使较小的改变也可能有效。\n城市可以在周末关闭街道，鼓励社区出去走走。他们还可以在公共场所提供更多座位，让身体较弱的居民在途中休息。利用城市公共空间作为人们锻炼的场所，可以促进居民就近活动，而不是让体育活动局限于私人健身房，这些健身房往往收取高昂的月费，使较不富裕的人难以加入。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "but also 后接动词原形，impose health costs 意为带来健康成本，固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "urban sprawl 城市扩张，作主语，与 encourage 搭配，语义通顺。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "this harm 作主语指代上文健康危害，单数名词，suggest 后接 that 从句。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "it is imperative that... 固定句型，意为“...是必要的”，符合语法。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "E",
+     "analysis": "need to 后接动词原形，foster standard public health practices 意为推行标准公共卫生实践。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "L",
+     "analysis": "形容词修饰 residential areas，rotten 表示破败的，结合语境限制卡车通过破败居民区。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "I",
+     "analysis": "studies of longevity 长寿研究，与后面 live the longest 照应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "形容词修饰 spaces，recreational spaces 娱乐空间，与 walkable spaces, bike lanes 并列。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "O",
+     "analysis": "promote 后接名词，vicinity 意为附近，表示促进居民就近活动，与私人健身房形成对比。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "J",
+     "analysis": "that 引导定语从句修饰 fees，navigate 作动词意为引导/操控，此处引申为使…难以加入。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T03:03:35.353Z",
+ "prunedAt": "2026-10-10T03:33:14.389Z"
+}

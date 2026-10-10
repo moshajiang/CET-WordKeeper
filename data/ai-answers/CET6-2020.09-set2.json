@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2020,
+ "month": 9,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "What is worth doing is worth doing well. This simple yet profound saying reminds us that we should devote our full effort to any meaningful task. To begin with, doing things well brings a sense of accomplishment and builds our competence. When we treat a task with seriousness and strive for excellence, we not only improve our skills but also gain confidence. On the contrary, half-hearted efforts often lead to poor results and wasted time. Moreover, this attitude contributes to social progress. If everyone pursues high standards in their work, the overall quality of products and services will be greatly enhanced, benefiting society as a whole. In conclusion, the saying serves as a valuable guide in both study and work. We should bear in mind that only by doing our best in what is worth doing can we achieve personal growth and make a positive impact on the world.",
+   "note": "这篇范文紧扣谚语主题，首段直接引出观点，中间从个人和社会两个层面论证“做好值得做的事”的重要性，尾段总结呼吁，结构清晰。可复用句型包括“What is worth doing is worth doing well.”、“To begin with... Moreover...”、“Only by... can we...”等，用词地道且符合四六级水平。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Dream of the Red Chamber is a novel written by Cao Xueqin in the 18th century. Based on his own painful personal experiences, Cao Xueqin tells the tragic love story between Jia Baoyu and Lin Daiyu. There are about 30 major characters and more than 400 minor characters in the book, each of whom is portrayed vividly with a distinctive personality. The novel describes in detail the rise and fall of four noble families, reflecting the hidden crises and intricate social conflicts of feudal society. Dream of the Red Chamber combines realism and romanticism and has strong artistic appeal. It is widely regarded as the greatest Chinese novel and one of the greatest literary works in the world.",
+   "note": "难点在于人名书名等专有名词的规范译法，以及长句的信息重组。“基于自己痛苦的个人经历”译为过去分词短语作状语；“刻画得栩栩如生”用被动结构 each of whom is portrayed vividly；“兴衰的历程”处理为 the rise and fall；“错综复杂的社会冲突”用 intricate social conflicts；“文学创作”译为 literary works 更自然。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "有机农业是一种相对尚未得到开发的资源，可用来养活地球人口，尤其是在面对气候变化和其他全球挑战的情况下。这是我在回顾40年来对有机农业和传统农业长期前景进行比较的科学研究后得出的结论。这项题为《21世纪的有机农业》的综述研究，作为《自然·植物》杂志二月刊的封面故事发表。它是首个按照美国国家科学院确定的主要可持续性目标——生产力、经济效益和环境——对有机农业和传统农业进行比较的研究。长期以来，批评者认为有机农业效率低下，需要更多土地才能产出同等数量的粮食。确实，有机农业的产量较低，平均比传统农业低10%到20%。支持者则认为，有机农业的环境优势远远超过其较低的产量，而且增加对有机系统的研究和育种投入将缩小产量差距。这些争论中有时被忽略的一个事实是：我们生产的粮食已经足够养活全球74亿人还绰绰有余，但并没有让所有人都能充分获得粮食。在某些情况下，有机农业的产量可能高于传统农业。例如，在严重干旱条件下（预计许多地区的干旱将随气候变化而加剧），有机农场可以产出同样好甚至更好的收成，因为有机耕作土壤的持水能力更强。科学确实告诉我们，主流传统农业系统提供了不断增长的粮食和其他产品供应，但往往以牺牲其他可持续性目标为代价。传统农业可能生产更多粮食，但往往以环境为代价。生物多样性丧失、环境退化以及对生态系统服务的严重破坏，不仅伴随着传统农业系统，而且往往远远超出其田块边界。而有机农业的环境代价往往更低，收益更大。总体而言，与传统农场相比，有机农场往往储存更多的土壤碳，土壤质量更好，并能减少土壤侵蚀。有机农业还产生更少的土壤和水污染，温室气体排放也更低。而且它更节能，因为它不依赖合成化肥或农药。有机农业还与植物、动物、昆虫和微生物以及遗传多样性的更大生物多样性相关。生物多样性增加了大自然提供的服务，并提高了农业系统适应变化条件的能力。尽管产量较低，有机农业对农民来说利润更高，因为消费者愿意支付更高的价格。较高的价格，即价格溢价，可以被证明是合理的，因为这是对农民提供生态系统服务、避免环境损害或外部成本的一种补偿。",
+   "questions": [
+    {
+     "stem": "51. What do we learn from the conclusion of the author's review study?",
+     "answer": "B",
+     "analysis": "首段结论明确指出有机农业是相对尚未开发的资源，可用于养活地球人口，尤其在气候变化等挑战下，说明其可被利用来解决全球粮食问题。A项偷换概念，C项与原文已回顾40年比较研究不符，D项过度推断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the critics' argument against organic farming?",
+     "answer": "D",
+     "analysis": "批评者认为有机农业效率低下，需要更多土地才能产出同样粮食，且产量平均低10%到20%，焦点是其生产力不如传统农业。A项过于绝对，B项与原文意思不符，C项未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the author think should be taken into account in arguing about organic farming?",
+     "answer": "C",
+     "analysis": "作者指出争论中常被忽略的事实是全球粮食已足够养活74亿人，但分配不均，无法让所有人充分获得食物，即应考虑粮食分配不平等。其他选项均非作者强调的应纳入考量的事实。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does science tell us about conventional farming?",
+     "answer": "B",
+     "analysis": "科学告诉我们，主流传统农业虽提供增长的食物供应，但常以牺牲其他可持续性目标为代价，因此不利于可持续发展。A、C、D项原文均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Why does the author think higher prices of organic farm produce are justifiable?",
+     "answer": "D",
+     "analysis": "作者认为价格溢价合理，是因为这补偿了农民提供生态系统服务、避免环境损害或外部成本，即有机农业对生态系统有长期好处。A、B项原文未提，C项成本更高并非作者给出的理由。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "也许是在我的父母——他们恰好也是我的室友——最近离家去旅行几个月的时候，我突然明白了自己为什么还没有离开这个家。\n我并不是因为生活起居方面的原因而依赖他们，也不是为了让他们帮我维持生活秩序或缓和家里的混乱。如今，我依赖的是他们的陪伴。\n我怀念下班回家和他们聊聊一天的工作，怀念能读懂他们脸上的神情、感受到他们这一天过得怎么样。我怀念能对构成生活的细微之处拥有独特的洞察。\n虽然关于年轻人更久地住在父母家的讨论充斥着懒惰、依赖、年轻人无法振作起来之类的话语，但我们却很少谈到：至少就我而言，我和父母的关系随着共同生活时间的增长，无疑已变得更加牢固。\n多年来，权力关系已经发生变化，不再被定义为一方是给予者、另一方是索取者。那么，这对我们家庭内部的关系意味着什么呢？\n心理学家萨比娜·里德表示，“当成年子女与父母同住时，可能会有一些非常积极的结果”，并指出在这一过程中“亲子关系确实可能得到强化和成熟”。\n但她指出，牢固的纽带并不会仅仅随着时间推移而自然形成。“关系中许多变化的因素需要被承认，而不是希望仅仅靠时间的流逝就能神奇地把父母与成年子女连接起来。重要的是要承认关系中的各种因素已经改变，以避免重新陷入青少年时期的模式。”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "固定搭配 it dawned on sb that... 表示“某人突然明白”，符合句意：我忽然明白为什么还没离开家。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "H",
+     "analysis": "形容词修饰 reasons，表示“生活起居/实际操作方面的原因”，与后文“keep my life in order”形成对应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "E",
+     "analysis": "固定搭配 insight into 表示“对……的洞察”，unique 修饰可数名词单数，符合“对细微生活细节的独特洞察”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "M",
+     "analysis": "be saturated by 表示“充满、充斥着”，与 talk of laziness 等搭配，说明讨论中满是这类说法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "L",
+     "analysis": "否定副词 rarely 位于句首引起部分倒装 do we talk，语义为“我们很少谈论”，与上文形成转折。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "副词修饰 strengthened，表示“无疑地加强”，强调作者对关系增强的肯定语气。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "J",
+     "analysis": "some very positive possible outcomes 作 there are 的主语，表示“一些非常积极的结果”，搭配和语义均合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "A",
+     "analysis": "a strong bond 表示“牢固的纽带/关系”，与心理学家谈论亲子关系成熟的内容相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "I",
+     "analysis": "副词修饰 connect，表示“神奇地连接”，符合“不要希望仅靠时间流逝就神奇地拉近关系”的否定意义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "K",
+     "analysis": "fall back into patterns from the teen years 表示“重新陷入青少年时期的行为模式”，比 stereotypes 更符合语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "Danielle Steel，这位71岁的言情小说家以高产著称，已出版179本书，每年最多七本。但最近《魅力》杂志一篇人物特写中顺带提到她每天工作20小时，引发了大量钦佩之情。Steel过去描述自己“令人精疲力竭”的创作过程时曾给出这个20小时数字：“我开始写一本书，初稿不完成就不离开书桌。”她从床到书桌，到浴室，再到床，除了与九个孩子通电话外，避免一切接触。“我连续几周不梳头，”她说。饭菜送到书桌旁，她在那里打字直到手指肿胀、指甲流血。商业新闻网站Quartz将Steel奉为励志榜样，写道如果我们都效仿她这种“实际上极其解脱”的不眠勤奋，很快就会见效。确实如此。研究结果显示睡眠不足的累积效应及其对生产力的影响，有人对Steel自我评估的准确性表示怀疑。她的产出或许无可否认，但怀疑者认为，往最坏处说她抹去了代笔人的作用，往最好处说也是严重夸大。Steel说每天工作20小时“对身体相当残酷”。但这可能吗？“不可能，”睡眠工场的Maryanne Taylor说。虽然你可以工作那么久，但对生产力的影响会让它几乎不值得。睡眠改善项目Sleep station创始人Alison Gardiner说，如果Steel经常每晚只睡四小时，她就严重低估了负面影响。“这相当于醉酒。”Steel可能夸大了自己日程的要求。Taylor说，自我强加的不眠“某种程度上成了一种身份象征”，这种误导性的衡量标准用来证明自己有多强大、多高效。据说撒切尔夫人每晚也只睡四小时，而科技界大佬们忍受每周130小时工作被奉为他们成功的关键。随着人们日益认识到睡眠对心理健康的重要性，这种情况开始改变。Taylor说：“人们开始意识到，睡眠不应该是你在其他所有事情之间挤时间去做的事。”但睡眠专家Sophie Bostock博士说，Steel有可能——尽管统计上极不可能——天生是个“短睡眠者”，拥有不同寻常的生物钟。“这类人在人口中可能不到1%。”Bostock说，即使Steel恰好属于这极少数人，对我们其他人来说，暗示每天20小时只是自律问题也是“相当不负责任的”。",
+   "questions": [
+    {
+     "stem": "46. What do we learn from the passage about Glamour magazine readers?",
+     "answer": "C",
+     "analysis": "文章指出《魅力》杂志人物特写中顺带提到Steel每天工作20小时，引发了大量钦佩，说明人们对她日常工作安排印象深刻。A项浪漫情节、B项出版数量、D项受到激励均与原文中因工作时间表而钦佩不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What did the business news website Quartz say about Danielle Steel?",
+     "answer": "A",
+     "analysis": "Quartz将Steel奉为励志榜样，称其为不眠勤奋的典范，即勤奋的榜样。B项曲解了“解脱”的含义，C项范围错误，D项过于绝对且歪曲原意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do sceptics think of Danielle Steel's work schedule claims?",
+     "answer": "A",
+     "analysis": "怀疑者认为她的说法往坏处是抹去代笔人、往好处是严重夸大，因此其可信度存疑，与“questionable”对应。B、C、D项含义均与原文质疑态度不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does Maryanne Taylor think of self-imposed sleeplessness?",
+     "answer": "C",
+     "analysis": "Taylor表示自我强加的不眠成了身份象征，是证明自己强大、高效的误导性衡量标准，对应“象征重要性和成功”。A、B、D均非Taylor观点，且D项与原文“误导”相悖。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. How does Dr. Sophie Bostock look at the 20-hour daily work schedule?",
+     "answer": "B",
+     "analysis": "Bostock认为即便Steel是极少数短睡眠者，对公众暗示每天20小时只是纪律问题也是相当不负责任的，因此不应鼓励大众效仿。A、C、D项均未体现这一核心态度。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 经过多年的大承诺，远程医疗终于发挥出其潜力。受更快的互联网连接、无处不在的智能手机以及不断变化的保险标准推动，越来越多的医疗服务提供方转向电子通信来完成工作——这正在极大地改变医疗服务的提供方式。\nB) 医生通过电话、电子邮件和网络摄像头与患者联系。他们还相互进行电子会诊——有时是为了对心脏病发作和中风做出瞬间决策。与此同时，患者使用新设备将血压、心率和其他生命体征传送给医生，以便在家管理慢性病。远程医疗还使医疗专业知识匮乏的地方能够获得更好的护理。无国界医生组织每天五到十次将其在尼日尔、南苏丹等地的医生遇到的疑难病例问题，通过互联网转发给其遍布全球的280名专家网络，并将答复传回。\nC) 作为远程医疗传播速度的一个衡量标准，请看：据行业组织美国远程医疗协会统计，去年有超过1500万美国人接受了某种形式的远程医疗服务，该协会预计今年这一数字将增长30%。\nD) 这并不意味着远程医疗已经进入医学的所有角落。最近一项针对500名精通技术的消费者的调查发现，39%的人没有听说过远程医疗，而在那些没有使用过的人中，42%的人表示他们更喜欢面对面就诊。在一项对1500名家庭医生的调查中，只有15%的人在实践中使用过远程医疗——但90%的人表示，如果能得到适当的报销，他们会使用。\nE) 此外，尽管增长迅速，重大的问题和挑战依然存在。定义和监管远程医疗的规则在各州之间差异很大。医生团体正在发布不同的指南，说明他们认为适合提供哪些医疗服务以及以何种形式提供。\nF) 一些批评者还质疑医疗质量是否跟上了远程医疗的快速扩张。还有一个问题是医生应就哪些服务获得报酬：保险覆盖范围因健康计划而异，而一项大型联邦计划只覆盖很窄范围的服务。远程医疗的未来将取决于监管者、提供方、支付方和患者能否以及如何应对这些挑战。下面更详细地看看其中一些问题：\nG) 患者是否会为了便利而牺牲质量？远程医疗中增长最快的服务将消费者与从未见过的临床医生连接起来，进行电话、视频或电子邮件就诊——按需提供，全天候服务。通常，这些服务针对感冒、流感、耳痛和皮疹等非紧急问题，费用约为45美元，而医生诊室约为100美元，紧急护理诊所约为160美元，急诊室则为750美元及以上。\nH) 许多健康计划和雇主纷纷提供这些服务，并将其宣传为计划成员无需离开家或工作就能获得医疗服务的便捷方式。近四分之三的大型雇主今年将把虚拟医生就诊作为员工福利，高于去年的48%。据美国远程医疗协会统计，Teladoc和American Well等网络公司今年预计将提供约120万次此类虚拟医生就诊，比去年增长20%。\nI) 但批评者担心，此类服务可能为了便利而牺牲质量。他们说，咨询患者永远不会见面的随机医生，会进一步割裂医疗系统，而且甚至像上呼吸道感染这样的轻微问题，也无法由无法听诊心脏或触摸肿大淋巴结的医生进行全面评估。在最近一项研究中，研究人员假扮患有皮肤问题的患者向16个远程医疗网站求助——结果令人不安。在62次接触中，不到三分之一的网站披露了临床医生的资质或让患者选择；只有32%的网站讨论了处方药的潜在副作用。研究人员说，有几个网站误诊了严重疾病，主要是因为它们没有询问基本的后续问题。该研究的主要作者杰克·雷斯内克说：“远程医疗前景广阔，但这些网站还没有准备好迎接黄金时段。”\nJ) 美国远程医疗协会和其他组织已经启动了认证项目，以识别高质量的远程医疗网站。美国医学会本月批准了新的远程医疗伦理指南，呼吁参与远程医疗的医生认识到此类服务的局限性，并确保他们有足够的信息来提出临床建议。\nK) 谁来为服务付费？虽然雇主和健康计划一直热衷于覆盖虚拟紧急护理就诊，但保险公司远不愿意为医生使用电话、电子邮件或视频与现有患者就持续问题进行咨询的远程医疗服务付费。克利夫兰诊所远程健康医疗主任彼得·拉斯穆森说：“除非你亲自见到病人，否则很难获得付款。”约32个州已经通过了“等同”法律，要求私人保险公司报销远程提供的服务，前提是同样的服务当面提供时可以报销，尽管不一定是相同的费率或频率。联邦医疗保险（Medicare）则更加落后。这项针对老年人的联邦健康计划只覆盖少数远程医疗服务——仅限农村地区的受益人，并且仅当服务是在医院、医生诊室或诊所接收时。\nL) 扩大联邦医疗保险对远程医疗服务覆盖范围的法案在国会得到两党支持。反对者担心这种扩大会给纳税人带来高昂成本，但支持者表示从长远来看会节省资金。\nM) 专家表示，随着医院从按服务收费转向管理式医疗合同，它们更有可能投资远程医疗系统；这些合同为医院提供固定费用来照顾患者，并允许它们保留节省下来的任何费用。\nN) 州与州的监管体系是否已经过时？从历史上看，医疗监管一直由各州负责。但一些业内人士认为，在远程医疗时代，拥有50套不同的规则、许可费用甚至“医疗实践”的定义不太合理，并且正在阻碍其发展。目前，医生必须持有患者所在州的有效执照才能提供医疗服务，这意味着虚拟就诊公司只能将用户与当地持照临床医生匹配。这也给吸引全国各地患者的顶级医疗中心带来了行政麻烦。在梅奥诊所，治疗外州患者的医生可以在患者回家后通过电话、电子邮件或网络聊天进行随访，但他们只能讨论当面治疗过的病情。梅奥诊所互联医疗项目负责人史蒂夫·奥门说：“如果患者想谈论新问题，医生必须在该州有执照才能讨论。如果没有，患者应该与他的初级保健医生讨论。”\nO) 迄今为止，已有17个州加入了一项契约，该契约允许在一个成员州获得执照的医生快速在另一个州获得执照。一些远程医疗倡导者对此举表示欢迎，但他们更希望各州自动认可彼此的执照，就像驾照一样。但各州不太可能放弃对医疗实践的控制，而且大多数州正在考虑新的法规。今年，42个州已经提出了200多项与远程医疗相关的法案，其中许多涉及医疗补助计划将覆盖哪些服务以及支付方是否应报销远程患者监测。州医学委员会联合会首席倡导官丽莎·罗宾说：“很多州仍在试图定义远程医疗。”",
+   "questions": [
+    {
+     "stem": "36. An overwhelming majority of family physicians are willing to use telemedicine if they are duly paid.",
+     "answer": "D",
+     "analysis": "该段提到对1500名家庭医生的调查中，90%表示如果得到适当补偿会使用远程医疗，对应题干“if they are duly paid”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Many employers are eager to provide telemedicine service as a benefit to their employees because of its convenience.",
+     "answer": "H",
+     "analysis": "该段提到许多雇主急于提供远程医疗服务作为员工福利，并宣传其便利性，近四分之三的大型雇主今年将提供虚拟医生就诊福利。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Different states have markedly different regulations for telemedicine.",
+     "answer": "E",
+     "analysis": "该段明确指出定义和监管远程医疗的规则在各州之间差异很大。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. With telemedicine, patients in regions short of professional medical service are able to receive better medical care.",
+     "answer": "B",
+     "analysis": "该段提到远程医疗使医疗专业知识匮乏的地方能够获得更好的护理。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Unlike employers and health plans, insurers have been rather reluctant to pay for some telemedicine services.",
+     "answer": "K",
+     "analysis": "该段对比雇主和健康计划的积极与保险公司的不情愿，指出保险公司远不愿意为某些远程医疗服务付费。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Some supporters of telemedicine hope states will accept each other's medical practice licenses as valid.",
+     "answer": "O",
+     "analysis": "该段提到一些远程医疗倡导者希望各州自动认可彼此的医疗执照，就像驾照一样。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. The fastest growing area for telemedicine services is for lesser health problems.",
+     "answer": "G",
+     "analysis": "该段指出远程医疗增长最快的服务针对感冒、流感等非紧急小病。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. As telemedicine spreads quickly, some of its opponents doubt whether its service quality can be guaranteed.",
+     "answer": "F",
+     "analysis": "该段提到批评者质疑医疗质量是否跟得上远程医疗的快速扩张。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. The results obtained by researchers who pretended to be patients seeking help from telemedicine providers are disturbing.",
+     "answer": "I",
+     "analysis": "该段描述研究人员假扮患者向远程医疗网站求助，结果令人不安。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some people argue that the fact that different states have different regulations concerning medical services hinders the development of telemedicine.",
+     "answer": "N",
+     "analysis": "该段提到业内人士认为各州不同的规则、许可费用等阻碍了远程医疗的发展。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:40:38.408Z"
+}

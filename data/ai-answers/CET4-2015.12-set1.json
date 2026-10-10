@@ -1,0 +1,171 @@
+{
+ "level": "CET4",
+ "year": 2015,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "56. What does the author think of time displayed everywhere?",
+     "answer": "C",
+     "analysis": "文章指出时间无处不在可能对工作产生不良影响，基于时钟的工作安排会阻碍士气和创造力，因此可能对创造性工作有负面影响。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "57. How do people usually go about their work according to the author?",
+     "answer": "A",
+     "analysis": "作者提到人们通常混合使用时钟时间和任务时间两种计划方式，即结合基于时钟和基于任务的规划。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "58. What did Tamar Avnet and Anne-Laure Sellier find in their experiments about clock-timers?",
+     "answer": "D",
+     "analysis": "实验发现时钟计时者更高效、更有生产力，但感觉对生活控制较少、更不快乐。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "59. What do the researchers say about today's business culture?",
+     "answer": "B",
+     "analysis": "研究者认为任务型组织在商业文化中被低估和支持不足，即未得到足够重视。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "60. What do the researchers suggest?",
+     "answer": "A",
+     "analysis": "研究者建议在执行需要更多创造力的工作时应当使用基于任务的时间安排。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "61. What does the well-known columnist's remark about Martha Stewart suggest?",
+     "answer": "A",
+     "analysis": "专栏作家称她已付出代价、有权重新开始，这暗示其犯罪记录可能成为新生活的障碍。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "62. What do we learn from the second paragraph about many criminals in America?",
+     "answer": "B",
+     "analysis": "第二段指出许多法律对大量美国人施加定罪后限制，使其无法彻底偿还社会债务，即被剥夺改过自新的机会。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "63. What are the consequences for many Americans with a criminal record?",
+     "answer": "C",
+     "analysis": "文章指出这些限制使大量人口处于社会边缘，因此有犯罪记录的许多美国人被边缘化。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "64. What does the author think of the post-conviction laws and rules?",
+     "answer": "D",
+     "analysis": "作者认为许多附随后果与公共安全无关且适得其反，不少定罪后法律对社会有负面影响。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "65. What is the author's main purpose in writing the passage?",
+     "answer": "B",
+     "analysis": "作者主要呼吁改革美国刑事司法系统，给予有犯罪记录者第二次机会。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "",
+   "questions": [
+    {
+     "stem": "46. It will not be difficult to make learning a source of joy if educators change their way of thinking.",
+     "answer": "G",
+     "analysis": "该段指出，建立在孩子感受快乐的能力上并不难，只需教育界转变思维方式。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What distinguishes children from adults is their strong ability to derive joy from what they are doing.",
+     "answer": "D",
+     "analysis": "该段指出，孩子区别于成人的不是无知或技能缺乏，而是他们巨大的快乐能力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. Children in America are being treated with shocking cruelty.",
+     "answer": "A",
+     "analysis": "该段提到，斯威夫特讽刺性的提议在美国看来令人震惊，但实际上美国比你想的更接近该提议。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. It is human nature to seek joy in life.",
+     "answer": "F",
+     "analysis": "该段指出，人类生活由体验快乐的欲望所支配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. Grown-ups are likely to think that learning to children is what medicine is to patients.",
+     "answer": "K",
+     "analysis": "该段指出，成年人往往把学习说成是药：令人不快但必要且对你有益。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "51. Bad school conditions make it all the more important to turn learning into a joyful experience.",
+     "answer": "H",
+     "analysis": "该段指出，学校环境越糟糕，快乐对实现任何教育成功就越重要。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. Adults do not consider children's feelings when it comes to education.",
+     "answer": "C",
+     "analysis": "该段指出，人们考虑教育时，没有考虑作为孩子的感受。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. Administrators seem to believe that only hard work will lead children to their educational goals.",
+     "answer": "I",
+     "analysis": "该段指出，管理者们似乎认为孩子应延迟快乐以追求抽象目标，如考大学。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. In the so-called \"effective\" schools, children are taught self-control under a set of strict rules.",
+     "answer": "B",
+     "analysis": "该段描述了所谓'有效'的学校里，孩子们喊口号学自控或站桌后。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. To make learning effective, educators have to ensure that children want to leam.",
+     "answer": "J",
+     "analysis": "该段指出，为了在学校获得技能和知识，孩子需要想学。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T03:07:22.134Z"
+}

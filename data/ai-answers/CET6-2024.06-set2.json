@@ -1,0 +1,222 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Nowadays more and more college students have come to realize social practice and academic learning are equally important. Academic learning equips us with systematic knowledge and analytical skills, while social practice enables us to apply what we have learned to real-life situations. For example, a business major may understand marketing theories from textbooks, but only through an internship can he learn how to deal with actual clients and adapt to market changes. Similarly, participating in volunteer activities can enhance our communication and teamwork abilities, which are seldom fully developed in the classroom. Therefore, we should strike a balance between the two. We may devote enough time to our studies and, at the same time, seize every opportunity to engage in social practice, such as part-time jobs, club activities, or community service. In conclusion, academic learning and social practice complement each other. Only by combining them can we become well-rounded and competitive college graduates.",
+   "note": "本文严格以给定句子开头，紧扣社会实践与学术学习同等重要这一主题。结构上先总述两者关系，再用商科学生实习和志愿者活动两个例子论证，最后提出平衡建议并总结。可复用句型：while 连接对比；only through... can... 倒装强调；Similarly 引出并列例证；Only by combining them can we... 结尾升华。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "根据最近的研究，行为改变涉及大脑的物理变化。过去十年中，研究人员表明，就使一个新行为成为根深蒂固的习惯所需的时间而言，并没有简单的答案。即使对我们中最有成效、最自律的人来说，改掉已经成为我们自身自动一部分的东西也不只是一夜之间就能完成的努力。一旦我们成功做出了改变，我们还必须对生活做出其他调整，以确保继续维持这种改变，而这本身往往是另一项挑战。从核心来看，成功地改变并维持一种行为，几乎离不开引入某种系统。如果没有正确的框架，我们就更有可能偏离来之不易的进展。为了确保成功改变和维持行为，我们应该远离一些有害的习惯。第一个要避免的是依赖意志力。想想你上一次发誓要抵制诱惑是什么时候。也许你不想每15分钟查看一次手机，或者你决心不在下午3点伸手拿巧克力棒。想想当手机触手可及时不去看它，或者当下午的困倦袭来时不走向自动售货机，那该有多难。关于我们的意志力是有限还是无限的研究尚无定论，但专家们普遍同意，如果仅靠意志力，你无法改变并维持一个习惯。那句古老的军事格言“你永远不会超常发挥，只会下降到训练的水平”也适用于行为改变。道理很简单——你把某件事重复足够多次，它就会变得自动。想想你还能改变周围环境中哪些因素，使你更容易每天执行这一改变。这被称为你的“线索”。基本上，它是执行那个特定习惯的触发因素。如果你不想在下午3点吃甜食，就在办公桌上准备好一盒花草茶。到了下午3点，那是你给自己倒一杯热水、喝茶而不是走向自动售货机的线索。第二个要避免的是专注于消极目标。有时候，让你失望的不是你的过程，而是你最初想要改变的那个习惯本身。首先，不吃巧克力来对抗下午的困倦是比在指定时间用花草茶代替巧克力更难的目标。你的大脑想找到过去成功的例行程序，并让你今后无需明确思考就能重复那些行动。然而，这个习惯学习系统在涉及学习不去做某事时效果并不好。这就是为什么与其放弃某件事，不如考虑引入某件事来替代它。专注于你将要采取的行动，这些行动最终会与你想要停止的行为相冲突。当你的注意力放在做新的事情上时，你就给了你的习惯系统一个运作的机会。第三个要避免的是在不同情况下使用相同的策略。因为我们是习惯的产物，我们很自然地会认为，当我们设法采纳并维持了一个理想行为时，同样的策略在我们想要做出另一个行为改变时也会奏效。但情况并非总是如此。有时，让你改变一个行为的系统可能对另一个行为不起作用。有时我们习惯于在决策时依赖直觉。这在某些情况下对我们很有帮助，但在其他情况下会妨碍我们，尤其是当我们需要考虑指标和数据，而不是让本能凌驾于一切之上时。例如，如果你想停止早上第一件事就查看电子邮件，你可能会决定用另一项活动来替代它。但如果你想停止沉迷于电子游戏，仅仅决定去跑步可能就没那么有效。你可能需要引入另一种强化，比如和朋友见面并一起预订健身课。第四个要避免的是在犯错时不原谅自己。当然，即使是最好的计划有时也会失败。你可能坚持了五天不把屏幕带进卧室的夜间程序，然后一个大项目落到你桌上，你发现自己睡前又抱着笔记本电脑躺在床上。或者你在周日准备了饭菜，坚持在家吃健康晚餐，但到了周五你发现自己筋疲力尽，选择点了油腻的外卖。生活就是这样，即使你的行为改变很小，每一天也可能相当不灵活，在某个时候你的运气可能会耗尽，哪怕只是一天。你内心的完美主义者可能会尖叫着让你彻底放弃目标，但试着从更大的格局来看。仅仅因为你可能暂时偏离了轨道，并不意味着你第二天不能重新开始。最后一个要避免的是轻视小的进步。许多完美主义者在试图建立行为改变时往往会陷入一种习惯。他们过于关注大目标，而不花时间庆祝他们在过程中取得的小进步。你的大脑会对奖励做出反应。基底神经节——与我们的习惯表现相关的大脑区域——在行为开始时（习惯被触发时）和行为结束时（获得奖励时）最为活跃。假设你的目标是每周跑三次五英里，而这一周你周一、周三和周五各跑了一英里。与其专注于你离目标还有多远，不如想想如何奖励自己已经取得的进步。奖励不必很大或很贵；可以简单到跑完后给自己做一杯最喜欢的果汁。无论你的奖励是什么，它必须不只是活动本身，才能让你有动力。开始一个新行为通常似乎是改变过程中最难的部分。然而，人们往往没有为维持它做好充分准备。其中一个原因是，我们错误地认为我们用来启动改变的策略在帮助我们继续改变时同样有效。但事实并非如此。要改变一个根深蒂固的习惯，需要改变我们对那个深入生活的习惯的看法，而持续展现这种智慧需要我们保持积极的心态。如果我们情绪低落，以不同方式行事的智慧似乎就消失了，我们又会回到吃得更多、锻炼更少的状态。那么，维持新行为的关键就是快乐！这就是为什么维持新行为如此困难。记住，克服阻止我们实施新改变（比如健康饮食或锻炼）的行为惯性，从长远来看对我们有益，并能改善我们的身心健康。没有人天生就有习惯。它们都是后天习得的，因此也都可以被摒弃。问题是：你到底有多想改变？",
+   "questions": [
+    {
+     "stem": "36.There is general consensus among experts that willpower alone cannot guarantee one's success in changing and maintaining a habit.",
+     "answer": "D",
+     "analysis": "该段指出：专家们普遍同意，如果仅靠意志力，你无法改变并维持一个习惯（experts do generally agree that you can't change and sustain a habit if you rely on your willpower alone）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.One need not abandon their goals completely just because they missed their target temporarily; they can start anew.",
+     "answer": "I",
+     "analysis": "该段指出：仅仅因为你可能暂时偏离了轨道，并不意味着你第二天不能重新开始（Just because you might have temporarily strayed off course doesn't mean you can't start afresh the next day）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.Research shows it is quite another challenge to maintain a behavioral change after you have initiated it.",
+     "answer": "A",
+     "analysis": "该段指出：一旦成功做出改变，还必须做出其他调整以继续维持，这本身往往是另一项挑战（which is often a whole other challenge in itself）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.It is wrong to assume the strategies we use to start a change of behavior will work equally well in helping maintain it.",
+     "answer": "K",
+     "analysis": "该段指出：我们错误地认为用来启动改变的策略在帮助我们继续改变时同样有效，但事实并非如此（we mistakenly believe the strategies we used to initiate the change will be equally effective in helping us continue the change. But they won't）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Sometimes, it may not be successful to simply substitute one activity with anotherto effect a change of habit; you may need extra reinforcement",
+     "answer": "H",
+     "analysis": "该段以戒掉早晨查邮件和戒掉电子游戏为例，说明仅仅用一项活动替代另一项可能不够，还需要引入额外强化（You might need to introduce another reinforcement）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.One should introduce something new to replace an old habit instead of simply kicking it",
+     "answer": "F",
+     "analysis": "该段建议：与其放弃某件事，不如考虑引入某件事来替代它（rather than giving up something, think about introducing something in its place）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Perfectionists focus too much on their big target and neglect celebrating the small gains they make in the process. 编者注：“长阅读”题型Directions规定：You may choose a paragraph more than once,即同一个段落可能不止针对一 道题，故会出现本套题第39题和第45题同选K段的情况，请读者知悉。",
+     "answer": "J",
+     "analysis": "该段指出：完美主义者过于关注大目标，不花时间庆祝过程中的小进步（They focus too much on the big goal and don't take the time to celebrate the small progress）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.It is of great benefit to us in the long term to conquer the inertia that stops usfrom making behavioral changes.",
+     "answer": "L",
+     "analysis": "该段指出：克服阻止我们实施新改变的行为惯性，从长远来看对我们有益（overcoming the behavioral inertia... can benefit us in the long run）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.The strategy that successfully changed one of your behaviors may not work for some other behavior of yours.",
+     "answer": "G",
+     "analysis": "该段指出：让你改变一个行为的系统可能对另一个行为不起作用（the system that got you to change one behavior might not work for another）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Without a happy mood, it seems that our wisdom to adopt a different behavior vanishes",
+     "answer": "K",
+     "analysis": "该段指出：如果我们情绪低落，以不同方式行事的智慧似乎就消失了（If our mood is low, the wisdom to behave differently seems to disappear）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "China is rich in bamboo and is the first country to develop and utilize bamboo resources. Bamboo is widely distributed in China with rich varieties. Bamboo is highly practical and is used in many aspects of production and daily life, such as making chopsticks, tables and chairs, and building bridges and houses. Chinese people love bamboo, and since ancient times countless literati have taken bamboo as their theme, creating splendid literary and painting works. The straight stem of bamboo symbolizes uprightness. Bamboo has strong vitality and adaptability; no matter how harsh the environment is, it can survive tenaciously, thus implying the spirit of perseverance. For thousands of years, bamboo has been regarded as a symbol of the character of the Chinese nation.",
+   "note": "难点在于文化负载词如“文人”“正直品格”“坚韧不拔”的处理，以及中文短句连缀成英文时的逻辑衔接。关键表达采用be rich in、develop and utilize、literati、uprightness、perseverance等，并适当使用分词结构使译文流畅，符合英语表达习惯。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "“美国梦”承诺，在这片充满机遇的土地上，任何人仅凭努力工作和雄心壮志就能攀上经济阶梯、获得成功。然而，如今的美国年轻人却很难挣得比父母在同龄时更多，而且美国的向上流动性实际上与其他工业化国家相比处于不利地位。\n那么，美国梦的观念为何持续存在？《美国政治学杂志》上的一项新研究指出了一个被忽视的因素：真人秀电视节目的影响。\n范德堡大学的金恩智指出，过去20年来，真人秀节目已主导美国电视。其中绝大多数都有“白手起家”的故事情节：它们展现普通美国人通过努力工作取得巨大经济成功。虽然这些节目经常位居收视率最高的节目之列，但新闻广播——它们描绘了数百万美国人面临的经济困境的更现实图景——所占的收视份额却小得多。\n白手起家的故事在电视上无处不在——但观看这些节目是否真的让人们相信经济流动很容易实现？为了找到答案，金的研究团队让参与者观看了一段5分钟的白手起家类真人秀片段。对照组参与者则观看了一段没有白手起家情节的真人秀片段。观看之后，参与者对四个与美国梦相关的陈述进行了同意程度评分。\n结果显示，观看白手起家片段的人确实对美国梦的信念显著更强。有趣的是，当按党派划分参与者时，这种效应在共和党人中显著，而在民主党人中不显著，这表明这些电视节目中隐含的信息可能迎合了人们已有的社会经济信念。\n金还进行了一项针对3000名美国居民的调查。这些居民还评价了他们认为人生成功与各种内部因素（如抱负）和外部因素（如家庭财富）的相关程度。最后，他们阅读了一份电视节目清单，并标出自己经常观看的节目。\n大量观看或经常观看白手起家类节目的参与者，比从不看此类节目的人对美国梦的信念更强。\n金总结道：“白手起家类娱乐媒体是促进并延续向上流动信念的重要文化力量。”问题在于：如果人们误以为只要努力工作就足以让个人为自己创造更好的生活，他们可能就不太支持那些真正能对抗不平等的政策。\n金写道：“在这个充满选择的时代，娱乐媒体抓住了人们的心灵和思想。其政治后果绝非微不足道。”",
+   "questions": [
+    {
+     "stem": "46.What do we learn from the passage about young Americans of today?",
+     "answer": "B",
+     "analysis": "根据首段，如今的美国年轻人很难挣得比父母同龄时更多，且美国向上流动性不如其他工业化国家，说明他们实现向上流动困难。A项“有更大抱负”和C项“收入超过父母”均与原文相反或未提及；D项“嫉妒其他工业化国家的机会”曲解了原文“与……相比处于不利地位”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47.What does Kim's team find about reality TV shows inAmerica?",
+     "answer": "C",
+     "analysis": "实验结果显示，观看白手起家真人秀片段的参与者对美国梦的信念显著更强，说明这类节目增强了人们对美国梦的信念。A项“重新诠释白手起家文化精髓”和B项“敦促人们通过努力工作获得经济成功”并非研究发现；D项“追求社会认可”错误，原文是经济成功。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48.What does the author say about news broadcasts in America?",
+     "answer": "A",
+     "analysis": "原文提到新闻广播“所占收视份额却小得多”，表明其观众远少于真人秀节目。B项“热衷于报道生活阴暗面”错误，原文是“更现实地描绘经济困境”；C项“形成鲜明对比”过于笼统；D项“关注经济困境”不是作者强调的重点，且原文未说“专注”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49.What can we infer from the passage about Republicans in general?",
+     "answer": "A",
+     "analysis": "研究发现观看白手起家片段对美国梦信念的增强效应在共和党人中显著，暗示这类信息契合他们已有的社会经济信念，可推断共和党人总体可能更相信美国梦。B项“努力爬社会经济阶梯”和D项“看更多白手起家节目”文中未提；C项“党派归属感强”也不是推断。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50.What is stated about people who believe in upward mobility?",
+     "answer": "D",
+     "analysis": "文末指出，如果人们误认为努力工作就足以改善生活，他们可能不太支持对抗不平等的政策，故选D。A项“责怪政府”未提及；B项是Kim对娱乐媒体的评论，不是对相信向上流动者的描述；C项“尊重努力爬社会阶梯的人”文中未提。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "《太阳也是一颗星星》是一个关于爱情、浪漫、命运与宿命的真正可爱故事。娜塔莎是牙买加出生的移民，并非完全出于自愿地非法居住在美国。她的父母把她带过来，造成了她努力想摆脱的处境。丹尼尔是韩裔移民家庭的美国人。他相信真爱、命运以及所有娜塔莎通过科学推理摒弃的其他胡话。丹尼尔和娜塔莎在她即将被驱逐出境的那一天，在纽约街头偶然相遇。她没有告诉他这件事，但允许他陪着她，在这一天里他试图让她爱上他。娜塔莎就是我。我发现她和我非常相似。她有科学头脑、务实、有点愤世嫉俗，而且总是持怀疑态度。她通过科学视角对宇宙的痴迷极具感染力，我也很喜欢丹尼尔看到了这一点。丹尼尔迷人又热情，他说的话甚至能打破娜塔莎坚硬的外壳。到这本书结尾，我爱上了他们俩。我以前总觉得爱情小说很廉价或可笑。现在我认为我能看到逃进一个纯粹乐观的故事中的价值。我沉浸在《太阳也是一颗星星》中，在一个周末从头到尾读完了它。我迫不及待地想要看到我希望会是圆满的结局。偶尔向魔法屈服是件美好的事。它不一定是真正有咒语的硬核奇幻小说，它可以是两个人之间那种特别的感觉所带来的魔力。就是那种让他们靠近彼此时产生反应和火花的化学吸引力。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "空格前为动词 living，后为地点状语 in America，需副词修饰；结合后文“to be deported”暗示其非法移民身份，故选 illegally。",
+     "verified": false,
+     "dissent": "I"
+    },
+    {
+     "stem": "27",
+     "answer": "N",
+     "analysis": "从句缺少谓语，主语 she 为第三人称单数，且后接不定式 to be out of；备选动词中 strives 意为“努力”，符合“努力摆脱困境”的语义与语法要求。",
+     "verified": false,
+     "dissent": "O"
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "主句谓语为一般现在时，主语 Natasha 是第三人称单数，空格需三单动词；dismisses 表示“摒弃、不予考虑”，与 nonsense 构成动宾搭配，表示通过科学推理否定这些观念。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "E",
+     "analysis": "空格前为介词 by，后为名词短语，需填名词构成介词短语；by coincidence 为固定搭配，表示“碰巧、偶然”，符合两人街头相遇的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "空格前为 be 动词，需填过去分词构成被动语态；deported 意为“被驱逐出境”，与前文非法移民身份及 day 搭配，语义正确。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "空格在系动词后作表语，需填形容词；skeptical 意为“怀疑的”，与前面 practical、cynical 并列，均描述女主理性多疑的性格。",
+     "verified": false,
+     "dissent": "N"
+    },
+    {
+     "stem": "32",
+     "answer": "A",
+     "analysis": "空格所在句主语 I，后跟宾语 Daniel seeing that too，需填谓语动词原形；adore 表示“非常喜欢、喜爱”，可接动名词复合结构，表达作者喜欢丹尼尔也看到了她的迷人之处。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "F",
+     "analysis": "空格在 that 引导的定语从句中作谓语，先行词 way 为单数，需三单动词；cracks 意为“使破裂、打破”，与 tough outer shell 搭配，形象表示言辞打动了她。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "I",
+     "analysis": "空格前为 got，后为 in the book，需填形容词/过去分词构成固定短语；got lost in 意为“沉浸于、沉迷于”，符合“一口气读完”的语境。",
+     "verified": false,
+     "dissent": "J"
+    },
+    {
+     "stem": "35",
+     "answer": "D",
+     "analysis": "空格在 That 后作主语，且后跟定语从句 causes them to...，需填名词；chemistry 意为“化学反应/吸引力”，与 react and spark 呼应，表示两人之间的奇妙吸引力。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T03:03:48.453Z"
+}

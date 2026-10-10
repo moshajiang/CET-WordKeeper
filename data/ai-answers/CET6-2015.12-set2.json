@@ -46,7 +46,219 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The picture vividly illustrates a thought-provoking phenomenon: a man claims that Facebook is his favorite book. This simple joke reveals a serious issue—social networking websites are exerting a profound impact on our reading habits.\n\nFirst and foremost, social media consumes a great deal of time that could otherwise be spent on reading. Scrolling through endless updates and short videos leaves people little patience for books. Moreover, the fragmented information on these platforms encourages shallow reading. Instead of deep thinking, users are accustomed to skimming headlines and brief posts, which gradually weakens their ability to concentrate on long articles or classic works. Finally, algorithm-driven recommendations tend to narrow our horizons, making us less exposed to diverse ideas and serious literature.\n\nIn conclusion, while social networking websites provide convenience and entertainment, they have largely eroded traditional reading. It is high time that we struck a balance between online socializing and reading books, for a life without deep reading is spiritually impoverished.",
+   "note": "这篇范文准确切题，从“最喜欢的书是Facebook”切入，论证社交媒体对阅读的冲击。结构清晰：首段描述图画并点明观点，主体从时间挤占、碎片化阅读、算法窄化视野三方面展开，末段总结并呼吁平衡。高分表达如 exert a profound impact on、be accustomed to、It is high time that... 等自然贴切，可迁移用于同类议论文。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "China is playing an increasingly important role in helping the international community eliminate extreme poverty by 2030. Since the implementation of reform and opening-up in the late 1970s, China has lifted as many as 400 million people out of poverty. In the next five years, China will provide assistance to other developing countries in such areas as poverty reduction, education development, agricultural modernization, environmental protection and healthcare. China has made remarkable progress in poverty reduction and has made unremitting efforts to promote economic growth, which will encourage other poor countries to cope with the challenges in their own development. When seeking development paths with their own characteristics, these countries can draw on China's experience.",
+   "note": "难点在于汉语长句拆分与衔接：首句用in helping...by 2030作状语；第二句since引导时间状语；第三句列举援助领域用such as；第四句用非限制性定语从句which连接前后分句。关键表达：极端贫困eliminate extreme poverty、改革开放reform and opening-up、使摆脱贫困lift...out of poverty、借鉴draw on等，需简洁准确。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "技术行业似乎有一条定律：领先公司最终会失去其地位，而且往往是迅速且残酷地。手机行业冠军诺基亚——欧洲最成功的科技故事之一——也不例外，仅在几年内就失去了市场份额。2007年，诺基亚在全球手机销量中占比超过40%。但消费者的偏好已经开始转向触摸屏智能手机。随着当年年中苹果iPhone的推出，诺基亚的市场份额迅速萎缩，收入暴跌。到2013年底，诺基亚已将其手机业务出售给微软。决定诺基亚命运的是斯蒂芬·埃洛普在担任CEO期间做出的一系列决定，他于2010年10月就任CEO。埃洛普掌管诺基亚的每一天，公司市值就缩水2300万美元，这让他从数据上看成为历史上最差CEO之一。但埃洛普并不是唯一有过错的人。诺基亚董事会抵制变革，使公司无法适应行业的快速变化。最值得注意的是，约玛·奥利拉曾领导诺基亚从一家工业企业转型为科技巨头，但他太沉迷于公司以往的成功，没有意识到为保持竞争力所需的变革。公司还实施了一项激进的成本削减计划，包括裁减数千个工作岗位。这导致了公司一度充满活力的文化恶化，这种文化曾激励员工冒险并创造奇迹。优秀领导者离开了公司，带走了诺基亚的愿景和方向感。毫不奇怪，诺基亚许多最有价值的设计和编程人才也离开了。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "H",
+     "analysis": "固定搭配 no exception，意为“也不例外”，语法上需要名词单数；语义上诺基亚也难逃科技行业领先企业衰落的规律。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "T",
+     "analysis": "worldwide 作副词修饰 mobile phone sales，表示“全球手机销量”，语义通顺，其他选项无法表示范围。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "P",
+     "analysis": "shift toward 是固定搭配，表示“转向”；空前已有 were，需现在分词构成过去进行时，shifting 符合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "Q",
+     "analysis": "句子缺少谓语动词，根据时间背景和 revenue plunged 可知需过去式，shrank 是 shrink 的过去式，表示“市场份额萎缩”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "A",
+     "analysis": "assume a position 是固定搭配，表示“担任/就任某职位”；which 指代前面的 position as CEO，assumed 作谓语，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "J",
+     "analysis": "at fault 是固定搭配，表示“有过错、有责任”；语义上 Elop 不是唯一该负责的人。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "Most notably 是固定短语作状语，意为“最值得注意的是”；用于引出突出例子，语法和语义均符合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "N",
+     "analysis": "空格后是名词 success，需要形容词；previous 表示“以往的、先前的”，语义上奥利拉沉迷于公司过去的成功，符合逻辑。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "空格后是 cost-cutting program，需要形容词；desperate 表示“拼命的、极端的”，修饰成本削减计划，与“裁员数千人”相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "空格前是 the，后是 of，需要名词；deterioration 表示“恶化、衰退”，构成 the deterioration of the culture，语义准确。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "经济不平等是“我们这个时代的决定性挑战”，奥巴马总统上个月在美国进步中心的一次演讲中宣称。他认为，不平等是危险的，不仅仅是因为贫富差距悬殊不好看，而是因为不平等本身会破坏向上流动，使穷人更难摆脱贫困。他说：“不平等的加剧和流动性的下降对美国梦构成了根本威胁。”\n\n奥巴马只是宣布不平等为头号公敌和美国减贫最大威胁的最知名公众人物。许多著名经济学家也认为，如今穷人更难攀登经济阶梯，因为阶梯上的横档之间的距离变得更大了。\n\n尽管人们新近对最富有的1%给予关注，但哈佛大学和加州大学伯克利分校“机会平等项目”的一组新数据表明，如果我们关心整体向上流动性，我们就大大夸大了贫富差距的危险。正如社会学家斯科特·温希普在基于这些数据的分析中所写的一篇近期文章指出的那样，不平等本身并不是经济流动性的特别强的预测因素。\n\n那么，在社区层面，哪些因素确实能预测贫困儿童成年后能否在经济阶梯上向上流动？例如，为什么盐湖城大都市区是100个最大都市区中最有可能提升穷人命运的都市区之一，而亚特兰大大都市区则是最不可能的都市区之一？\n\n哈佛大学经济学家拉杰·切蒂指出了经济与种族隔离、社区密度、社区中产阶级规模、学校质量、社区宗教虔诚度以及家庭结构，他称家庭结构是“向上流动性唯一最强的相关因素”。切蒂发现，像盐湖城这样双亲家庭比例高、宗教虔诚度高的社区，比像亚特兰大这样种族和经济隔离程度高的社区，更有可能让贫困儿童取得进步。\n\n切蒂尚未就这些因素各自的相对预测力发布全面分析。根据我对数据的分析，在切蒂强调的因素中，以下三个似乎最能预测特定社区的向上流动性：\n1. 人均收入增长\n2. 单身母亲的普遍程度（相关性很强，但是负相关）\n3. 人均地方政府支出\n换句话说，人均收入增长水平高、双亲家庭比例高、地方政府支出高——这可能代表着良好的学校——的社区，最有可能帮助贫困儿童重温霍雷肖·阿尔杰的从赤贫到致富的故事。",
+   "questions": [
+    {
+     "stem": "51. How does Obama view economic inequality?",
+     "answer": "A",
+     "analysis": "奥巴马认为经济不平等本身会破坏向上流动，使穷人更难摆脱贫困，并称不平等加剧和流动性下降对美国梦构成根本威胁，因此A项“它是社会流动的最大障碍”正确。B项“社会稳定”和C项“收入增长”在文中未提及，D项“最恶毒的社会弊病”夸大了原文的“决定性挑战”和“头号公敌”的含义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do we learn about the inequality gap from Scott Winship’s data analysis?",
+     "answer": "B",
+     "analysis": "根据斯科特·温希普的数据分析，不平等本身并不是经济流动性的特别强的预测因素，因此B项“它不是经济流动性的可靠指标”正确。A项“正在迅速扩大”文中未提，C项“没有被正确解读”表述模糊且未直接体现，D项“被普遍忽视”与原文“新近关注”不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. Compared with Atlanta, metropolitan Salt Lake City is said to _______.",
+     "answer": "C",
+     "analysis": "文章指出盐湖城大都市区最有可能提升穷人的命运，而亚特兰大最不可能，且切蒂发现盐湖城更可能让贫困儿童取得进步，因此C项“为贫困儿童提供更多攀登社会阶梯的机会”正确。D项与原文相反，A项“将宗教信仰置于党派政治之上”和B项“弥合了贫富差距”均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is strongly correlated with social mobility according to economist Raj Chetty?",
+     "answer": "A",
+     "analysis": "拉杰·切蒂指出家庭结构是“向上流动性唯一最强的相关因素”，因此A项“家庭结构”正确。B项“种族平等”文中未作为相关因素，C项“学校教育”和D项“社区密度”虽被提及，但并非最强相关因素。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author seem to suggest?",
+     "answer": "D",
+     "analysis": "作者通过分析社区层面的因素（如人均收入增长、双亲家庭比例、地方政府支出）指出，这些社区特征最能帮助贫困儿童向上流动，因此D项“最好从社区入手帮助贫困儿童攀登社会阶梯”符合作者意图。A项和B项未在作者结论中强调，C项“消除收入不平等”与文章主旨相悖，因为文章认为不平等本身并非流动性的强预测因素。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "第一代大学生：准备不足、落后于人\n家中第一个勇敢踏入高等教育世界的孩子，带着很少的学业知识来到校园，并且比同龄人更有可能在毕业前辍学。\n\nA）去年秋天，作为第一代大学生和牙买加移民，尼杰·威廉姆斯进入大学时，在学业上并未为高等教育的严格要求做好准备。和许多第一代大学生一样，他进入了一所中等规模的州立大学，他的许多高中同学也在这所学校就读；他获得了佩尔助学金，并借了一些小额联邦贷款来支付其他费用。由于食宿费用高昂，且学校离家很近，他选择住在家里，并在修满全部课程的同时每周工作30到40个小时。\n\nB）尼杰没有意识到，他所就读的田纳西州立大学，其第一代学生的毕业率低得惊人，仅为29%。第一学年结束时，尼杰因差一点未达到2.0的平均绩点门槛而失去了超过5000美元的佩尔助学金，这使他无法继续支付学费。\n\nC）尼杰代表着一个庞大且不断增长的美国群体：入学时准备不足或基础落后的第一代大学生。更糟糕的是，这些学校并没有足够的能力让这些学生毕业——这些年轻人面临着特殊的挑战和障碍。他们通常背负着比同龄人更沉重的经济负担，更有可能边上学边打工，而且往往需要大量的学业补习。\n\nD）马特·鲁比诺夫是“我是第一代”（I’m First）的负责人，这是一个去年十月发起、专门面向这一特定学生群体的非营利组织。他希望传播这些信息，帮助未来的大学生找到最适合自己的高等教育去处。尽管鲁比诺夫相信有相当数量的四年制大学真正关心这些学生，并为他们预留了大量资源和项目，但他说这个数量还不够多。\n\nE）“并不是只有那些选拔严格的名校才为这一群体中的一小部分人提供这些机会，”鲁比诺夫说，并补充说，大多数第一代本科生倾向于选择在线课程、两年制学院和可走读的州立大学等。“不幸的是，往往缺乏信息和帮助，使学生无法有更大、更开阔的想法。”\n\nF）尽管存在这个问题，许多学生仍然被这些学校——尤其是两年制学校——所吸引。作为一名前高中教师，我看到学生们年复一年地选择熟悉、更便宜的选项。他们不是完全放弃高等教育，而是选择入学门槛较低的社区学院或州立大学。\n\nG）“在选择大学时，他们低估了自己，”Inside Track的市场主管戴夫·贾拉特说。Inside Track是一家营利性组织，专门为低收入学生提供指导并支持高校以帮助学生成长。“现实情况是，很多低收入家庭的孩子本可以拿着全额奖学金去上精英大学，但他们自己甚至没有意识到这一点。”\n\nH）“许多学生所处的环境中，周围没有人有成功完成高等教育的经验，所以他们入学时会质疑自己和自己的大学资格，”贾拉特继续说道。这有助于解释为什么，正如“我是第一代”的鲁比诺夫所指出的，这些学生最终投奔的学校有时可能恰恰是最不适合他们的。田纳西大学诺克斯维尔分校就是这种困境的一个例子。作为南方的一所旗舰大学，该校第一代学生的毕业率仅为16%，尽管其总体毕业率为71%。田纳西大学和田纳西州立大学相距仅几小时车程，值得比较。田纳西州立大学的总体毕业率只有很低的39%，但至少它第一代学生与其同龄人之间的结果差距更小。\n\nI）不过，田纳西大学在透明度方面值得称赞。许多大型院校对这种数据保密——或者至少让人极难找到。例如，北卡罗来纳大学教堂山分校只承认，其第一代学生的毕业率“远低于”四年内毕业的全体学生比例（81%）。\n\nJ）实际上，在许多学校，很难找到关于这一问题的可靠统计数据。根据联邦法律，高等教育机构必须报告毕业率，但这些报告通常只包含佩尔助学金获得者的数据——不一定包含专门针对第一代学生的毕业率。其他一些举措也未能细分数据。想象一下，对于不熟悉高等教育复杂性的未来学生来说，浏览这类信息并确定哪些学校最适合自己，会有多令人望而却步。\n\nK）正是这种信息缺乏促使“我是第一代”于2013年启动，最初是其伞式组织“学生机会中心”的一个分支。“如果我们能帮助引导学生去更多这类校园，帮助学生明白这些学校是现实且可及的地方，让他们更频繁地申请这些学校，并最终被录取入学，我们就能提高成功率，”鲁比诺夫说，并列举了从大型州立院校到较小私立学校的各类大学。\n\nL）切尔西·琼斯现在是“我是第一代”的学生项目负责人，她曾是霍华德大学的第一代大学生。和其他初入令人望而生畏的高等教育世界的学生一样，她在通往大学的路上经常挣扎。“我的高中并没有真正形成上大学的文化，”她说。“我想上大学，但我真的不了解流程。”琼斯在高中时参加了普林斯顿大学的一个大学入学项目。现在，她把自己对大学的很多了解归功于那段经历：“但一到大学校园，情况就完全不同了，没有人真正让我为此做好准备。”\n\nM）不过她是幸运的。霍华德大学是一所备受推崇的传统黑人大学，为第一代学生提供了一系列资源，包括为学生配备辅导员、让第一代学生彼此建立联系，以及TRIO——一个在霍华德校园里支持了200名学生的全国性项目。尽管如此，琼斯只代表了能够进入更精英大学的一小部分第一代学生，而这些精英大学往往以丰厚的经济资助计划和第一代学生极高的毕业率而闻名。（例如，哈佛大学宣称，其代表性不足的少数族裔群体六年毕业率为98%。）\n\nN）克里斯蒂安·瓦斯奎兹是耶鲁大学的第一代毕业生，他是另一个例外，他的成功故事使他与尼杰这样的学生截然不同。“在耶鲁，有大量的支持，在某种程度上，过了一段时间后，支持甚至太多了，”他半开玩笑地说到学校提供的无数资源。学生们被分成小组，配有辅导员（校园里受过培训的高年级学生）；他们可以加入文化和族裔联系小组、辅导中心，还有专门为第一代学生举办的暑期迎新活动（后者是最常见的学生项目之一）。\n\nO）“我们的支持结构更像是：‘你一定能读完耶鲁；你一定会表现出色，’”他说，暗指导师、工作人员和教授都为那些在这样一所顶尖学府中缺乏“归属感”自信的学生提供了重要支持。",
+   "questions": [
+    {
+     "stem": "36. Many first-generation college-goers have doubts about their abilities to get a college degree.",
+     "answer": "H",
+     "analysis": "该段引用Jarrat的话：许多学生因周围无人成功完成高等教育而质疑自己和大学资格，与题干中怀疑自己获得学位的能力相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. First-generation college students tend to have much heavier financial burdens than their peers.",
+     "answer": "C",
+     "analysis": "该段明确指出第一代大学生通常背负比同龄人更沉重的经济负担。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The graduation rate of first-generation students at Nijay’s university was incredibly low.",
+     "answer": "B",
+     "analysis": "该段提到Nijay所在的田纳西州立大学第一代学生毕业率低得惊人，仅为29%。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Some top institutions like Yale seem to provide first-generation students with more support than they actually need.",
+     "answer": "N",
+     "analysis": "该段引用Christian Vazquez的话：在耶鲁支持很多，过了一段时间甚至太多。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. On entering college, Nijay Williams had no idea how challenging college education was.",
+     "answer": "A",
+     "analysis": "该段开头说Nijay入学时对高等教育的严格要求在学业上毫无准备。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Many universities simply refuse to release their exact graduation rates for first-generation students.",
+     "answer": "I",
+     "analysis": "该段说许多大型院校对这类数据保密，或至少让人极难找到。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. According to a marketing executive, many students from low-income families don’t know they could have a chance of going to an elite university.",
+     "answer": "G",
+     "analysis": "该段引用营销主管Dave Jarrat的话：很多低收入孩子本可以拿全额奖学金上精英大学却不自知。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Some elite universities attach great importance to building up the first-generation students, self-confidence.",
+     "answer": "O",
+     "analysis": "该段提到耶鲁的导师、工作人员和教授为缺乏归属感自信的学生提供重要支持。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. I’m First distributes information to help first-generation college-goers find schools that are most suitable for them.",
+     "answer": "D",
+     "analysis": "该段提到I'm First希望传播信息，帮助未来的大学生找到最适合的高等教育去处。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Elite universities tend to graduate first-generation students at a higher rate.",
+     "answer": "M",
+     "analysis": "该段指出精英大学往往以第一代学生极高的毕业率而闻名。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-09T17:34:07.346Z"
+ "generatedAt": "2026-10-10T02:19:29.688Z"
 }

@@ -259,70 +259,70 @@
       "questions": [
         {
           "qtype": "match",
-          "stem": "36.Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields.",
+          "stem": "36. Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "37.Agriculture differs from the medical science of the human body in that its environment is not a contained one.",
+          "stem": "37. Agriculture differs from the medical science of the human body in that its environment is not a contained one.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "38.The agronomist is sure that he will obtain a near accurate count of plant population with his software.",
+          "stem": "38. The agronomist is sure that he will obtain a near accurate count of plant population with his software.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "39.The application of artificial intelligence to agriculture is much more challenging than to most other industries.",
+          "stem": "39. The application of artificial intelligence to agriculture is much more challenging than to most other industries.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "40.Even the farmers know the data provided by the UAV is not correct.",
+          "stem": "40. Even the farmers know the data provided by the UAV is not correct.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "41.The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture.",
+          "stem": "41. The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "42.Remote sensors are aimed to help farmers improve decision-making to increase yields.",
+          "stem": "42. Remote sensors are aimed to help farmers improve decision-making to increase yields.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "43.The farmer expects the software to tell him whether he will have to replant any parts of his farm fields.",
+          "stem": "43. The farmer expects the software to tell him whether he will have to replant any parts of his farm fields.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "44.Agriculture proves very difficult to quantify because of the constantly changing conditions involved.",
+          "stem": "44. Agriculture proves very difficult to quantify because of the constantly changing conditions involved.",
           "options": [],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "match",
-          "stem": "45.The same seed and fertilizer program may yield completely different outcomes in different places.",
+          "stem": "45. The same seed and fertilizer program may yield completely different outcomes in different places.",
           "options": [],
           "answer": "",
           "analysis": ""
@@ -337,60 +337,60 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46.What does the scene at the Louvre demonstrate according to the author?",
+          "stem": "46. What does the scene at the Louvre demonstrate according to the author?",
           "options": [
-            "A)The enormous appeal of a great piece of artistic work to tourists.",
-            "B)The near impossibility of appreciating art in an age of mass tourism.",
-            "C)The ever-growing commercial value of long-cherished artistic works.",
-            "D)The real difficulty in getting a glimpse at a masterpiece amid a crowd."
+            "A) The enormous appeal of a great piece of artistic work to tourists.",
+            "B) The near impossibility of appreciating art in an age of mass tourism.",
+            "C) The ever-growing commercial value of long-cherished artistic works.",
+            "D) The real difficulty in getting a glimpse at a masterpiece amid a crowd."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "47.Why did the late philosopher Richard Wollheim spend four hours before a picture?",
+          "stem": "47. Why did the late philosopher Richard Wollheim spend four hours before a picture?",
           "options": [
-            "A)It takes time to appreciate a piece of art fully.",
-            "B)It is quite common to misinterpret artistic works.",
-            "C)The longer people contemplate a picture, the more likely they will enjoy it.",
-            "D)The more time one spends before a painting, the more valuable one finds it."
+            "A) It takes time to appreciate a piece of art fully.",
+            "B) It is quite common to misinterpret artistic works.",
+            "C) The longer people contemplate a picture, the more likely they will enjoy it.",
+            "D) The more time one spends before a painting, the more valuable one finds it."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "48.What does the case of the Uffizi in Florence show?",
+          "stem": "48. What does the case of the Uffizi in Florence show?",
           "options": [
-            "A)Art works in museums should be better taken care of.",
-            "B)Sites of cultural pilgrimage are always flooded with visitors.",
-            "C)Good management is key to handling large crowds of visitors.",
-            "D)Large crowds of visitors cause management problems for museums."
+            "A) Art works in museums should be better taken care of.",
+            "B) Sites of cultural pilgrimage are always flooded with visitors.",
+            "C) Good management is key to handling large crowds of visitors.",
+            "D) Large crowds of visitors cause management problems for museums."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "49.What do we learn from Olafur Eliasson’s current Tate Modern show?",
+          "stem": "49. What do we learn from Olafur Eliasson’s current Tate Modern show?",
           "options": [
-            "A)Children learn to appreciate art works most effectively while they are playing.",
-            "B)It is possible to combine entertainment with appreciation of serious art.",
-            "C)Art works about the environment appeal most to young children.",
-            "D)Some forms of art can accommodate huge crowds of visitors."
+            "A) Children learn to appreciate art works most effectively while they are playing.",
+            "B) It is possible to combine entertainment with appreciation of serious art.",
+            "C) Art works about the environment appeal most to young children.",
+            "D) Some forms of art can accommodate huge crowds of visitors."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50.What can art do according to Marcel Proust?",
+          "stem": "50. What can art do according to Marcel Proust?",
           "options": [
-            "A)Enable us to live a much fuller life.",
-            "B)Allow us to escape the harsh reality.",
-            "C)Help us to see the world from a different perspective.",
-            "D)Urge us to explore the unknown domain of the universe."
+            "A) Enable us to live a much fuller life.",
+            "B) Allow us to escape the harsh reality.",
+            "C) Help us to see the world from a different perspective.",
+            "D) Urge us to explore the unknown domain of the universe."
           ],
           "answer": "",
           "analysis": ""
@@ -405,48 +405,55 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "52.Why does the author say the USDA could have contributed a lot to lowering the climate cost through its dietary guidelines?",
+          "stem": "52. Why does the author say the USDA could have contributed a lot to lowering the climate cost through its dietary guidelines?",
           "options": [
-            "A)It has the capacity and the financial resources to do so.",
-            "B)Its researchers have already submitted relevant proposals.",
-            "C)Its agencies in charge of drafting the guidelines have the expertise.",
-            "D)It can raise students’ environmental awareness through its programs."
+            "A) It has the capacity and the financial resources to do so.",
+            "B) Its researchers have already submitted relevant proposals.",
+            "C) Its agencies in charge of drafting the guidelines have the expertise."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53.What do we learn from the Dietary Guidelines Advisory Committee’s scientific report?",
+          "stem": "52.D) It can raise students’ environmental awareness through its programs.",
           "options": [
-            "A)Food is easily contaminated from farm to belly.",
-            "B)Greenhouse effect is an issue still under debate.",
-            "C)Modern agriculture has increased food diversity.",
-            "D)Farming consumes most of our natural resources."
+            "53. What do we learn from the Dietary Guidelines Advisory Committee’s scientific report?",
+            "A) Food is easily contaminated from farm to belly.",
+            "B) Greenhouse effect is an issue still under debate."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54.What may account for the neglect of sustainability in the USDA’s Dietary Guidelines according to the author?",
+          "stem": "53.C) Modern agriculture has increased food diversity.",
           "options": [
-            "A)Its exclusive concern with Americans’ food safety.",
-            "B)Its sole responsibility for providing dietary advice.",
-            "C)Its close ties with the agriculture companies.",
-            "D)Its alleged failure to regulate the industries."
+            "D) Farming consumes most of our natural resources.",
+            "54. What may account for the neglect of sustainability in the USDA’s Dietary Guidelines according to the author?",
+            "A) Its exclusive concern with Americans’ food safety."
           ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55.What should the USDA do to achieve food security according to David Wallinga?",
+          "stem": "54.B) Its sole responsibility for providing dietary advice.",
           "options": [
-            "A)Give top priority to things like nutrition and food security.",
-            "B)Endeavor to ensure the sustainable development of agriculture.",
-            "C)Fulfill its mission by closely cooperating with the industries.",
-            "D)Study the long-term impact of climate change on food production."
+            "C) Its close ties with the agriculture companies.",
+            "D) Its alleged failure to regulate the industries.",
+            "55. What should the USDA do to achieve food security according to David Wallinga?"
+          ],
+          "answer": "",
+          "analysis": ""
+        },
+        {
+          "qtype": "choice",
+          "stem": "55.A) Give top priority to things like nutrition and food security.",
+          "options": [
+            "B) Endeavor to ensure the sustainable development of agriculture.",
+            "C) Fulfill its mission by closely cooperating with the industries.",
+            "D) Study the long-term impact of climate change on food production."
           ],
           "answer": "",
           "analysis": ""

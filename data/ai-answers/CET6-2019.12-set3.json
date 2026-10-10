@@ -1,0 +1,111 @@
+{
+ "level": "CET6",
+ "year": 2019,
+ "month": 12,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "In contemporary society, a growing number of people tend to focus on personal gains while overlooking the common good. However, having a sense of community responsibility is of vital importance for both individuals and society.\n\nFirstly, such a sense encourages people to participate in public affairs, such as cleaning shared spaces or helping neighbors in need. These small acts, when combined, can significantly improve the quality of community life. Secondly, a strong community spirit helps build trust and mutual support among residents, which is especially valuable in times of difficulty, such as during a natural disaster or a public health crisis. Moreover, individuals who actively contribute to their community often gain a deeper sense of belonging and fulfillment, which benefits their mental well-being.\n\nIn conclusion, a sense of community responsibility is not merely a moral duty but a practical necessity. We should all take active steps to serve our communities, because by doing so, we are ultimately building a better world for ourselves and future generations.",
+   "note": "范文紧扣“社区责任感的重要性”，首段亮明观点，主体从促进公共参与、增强邻里信任、提升个人归属感三方面论证，末段总结并呼吁行动。结构清晰，使用“of vital importance”“in times of difficulty”“not merely... but...”等高分表达。可复用句型如“Firstly... Secondly... Moreover...”及“In conclusion...”等。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The lotus flower is one of China's famous flowers and is deeply loved by people. Lakes and ponds in many parts of China are suitable for lotus growth. The lotus has bright colors; it blooms in the early morning in summer and closes at night. Its flowering period lasts as long as two or three months, attracting tourists from all over to come and admire it. The lotus serves many functions: it can green the water surface, beautify gardens, purify water, reduce pollution and improve the environment. The lotus faces the scorching sun without fear and emerges from the mud unstained, symbolizing purity and elegance. It is often used as a metaphor for people's noble character and has long been an important subject for poets and painters. Places where lotus flowers bloom are also frequented by many photography enthusiasts.",
+   "note": "难点：四字格“迎骄阳而不惧，出污泥而不染”需意译，用faces...without fear和emerges...unstained保留对仗；“绿化水面”可用green the water surface，“美化庭园”beautify gardens。关键表达：bloom, flowering period, purify water, noble character, photography enthusiasts。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "一项新研究显示，在南极周围未受污染的水域中，气温上升和过度捕捞可能会在本世纪末将王企鹅推向灭绝的边缘。该研究报告指出，随着全球变暖改变这片世界上最后的大荒野的环境，70%的王企鹅可能会消失，或者被迫寻找新的繁殖地。\n\n来自法国斯特拉斯堡大学的合著者 Celine Le Bohec 警告说：“如果不采取旨在阻止或控制全球变暖的行动，而目前由人类引发的变化（如气候变化和过度捕捞）的速度保持不变，该物种可能很快就会消失。”这一研究结果发布之际，人们越来越担心南极的未来。本月早些时候，另一项研究发现，气候变化和工业捕捞共同威胁着南极水域的磷虾种群，可能对鲸、海豹和企鹅造成灾难性影响。但今天的报告是对气候变化和人类开发对南极脆弱生态系统可能造成的毁灭性影响迄今最严厉的警告。\n\nLe Bohec 说：“除非目前的温室气体排放量下降，否则70%的王企鹅——即110万对繁殖配偶——将被迫迁移繁殖地，或者在2100年前面临灭绝。”王企鹅是第二大的企鹅种类，只在南大洋特定孤立的岛屿上繁殖，那里没有冰层覆盖且便于下海觅食。随着海洋变暖，一股被称为南极极锋的水体——富含营养物的上升海水，支撑着大量海洋生物——正被推向更南。这意味着以该水域的鱼类和磷虾为食的王企鹅不得不跋涉更远去觅食，让饥饿的雏鸟等待更长时间。随着繁殖地与食物源之间的距离拉大，整个种群都可能被消灭。\n\nLe Bohec 说：“王企鹅的困境应该被视为对未来南极整个海洋环境的一个警告。企鹅和其他海鸟及海洋哺乳动物一样，在食物链中占据较高位置，它们是我们所说的生态系统的生物指示物。”企鹅是海洋生态系统变化的敏感指标。因此，它们是理解和预测全球变化对南极和亚南极海洋生态系统影响的关键物种。报告发现，尽管一些王企鹅可能能够迁移到离其退缩食物源更近的新繁殖地，但合适的新栖息地将十分稀缺。南大洋中只有少数几个岛屿适合维持大型繁殖群体。",
+   "questions": [
+    {
+     "stem": "51. What will happen by 2100, according to a new study?",
+     "answer": "A",
+     "analysis": "研究明确指出，到2100年，70%的王企鹅可能消失或被迫寻找新繁殖地，即面临灭绝危险，因此A项“濒临灭绝”正确。B、C、D提到的海平面上升、冰盖融化摧毁荒野、原始水域永远消失均未在文中提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do we learn from the findings of a separate study?",
+     "answer": "C",
+     "analysis": "另一项研究发现，气候变化与工业捕捞共同威胁磷虾种群，并可能对鲸、海豹、企鹅造成灾难性影响，即对某些南极物种可能是致命的，故选C。A项“迫使鲸迁徙”是对“影响”的过度推断；B项“加速气候变化”文中未提；D项“污染未受污染水域”无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the passage say about king penguins?",
+     "answer": "D",
+     "analysis": "文章明确表示，除非温室气体排放下降，否则70%的王企鹅将被迫迁移繁殖地或到2100年灭绝，即大多数王企鹅未来可能不得不寻找新繁殖地，D正确。A项将“第二大王企鹅种类”曲解为“第二大鸟类灭绝物种”；B项说迁移到南大洋孤岛，但它们本就生活在孤岛上，并非新信息；C项“只吃少数几种磷虾”与文中“以鱼类和磷虾为食”不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What happens when sea levels rise in the Antarctic?",
+     "answer": "A",
+     "analysis": "题干虽提及海平面上升，但文中对应后果是海洋变暖使南极极锋南移，王企鹅觅食距离变远，雏鸟长时间挨饿，即许多企鹅宝宝不能及时获得食物，故A正确。B项“无法以磷虾为食”未被提及；C、D涉及鲸的行为，文中未在此语境讨论。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What do we learn about the Southern Ocean?",
+     "answer": "D",
+     "analysis": "文章最后一句指出，南大洋中只有少数几个岛屿适合维持大型繁殖群体，故D项正确。A项“不愿离开”无中生有；B项“保护是可持续繁衍的关键”过度推断；C项“最终避难所”未得到支撑。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "学校不仅是社会的缩影，它们也在调节社会。最好的学校力求减轻学生承受的外部压力，同时让他们更好地理解和应对外部世界——既庇护他们，又开阔他们的视野。在任何情况下这都是雄心勃勃的目标，而在一个分裂且不平等的社会中，这两种理想可能直接发生冲突。\n\n许多成年人会视为一生难得的旅行——比如婆罗洲的徒步旅行、巴巴多斯的体育之旅——在某些公立学校似乎已变得几乎习以为常。家长被要求支付数千英镑。尽管学校不能从这些旅行中获利，但安排这些旅行的公司却可以。与此同时，有些学生饿着肚子来到学校，因为他们的家庭买不起早餐。儿童贫困行动小组表示，每个教室的30名学生中有9人生活在贫困线以下。这种差距显而易见。对学生提出筹款要求并无帮助，因为家境较好的孩子可以向更富有的亲戚和邻居求助。\n\n探查当地海滩的岩石水潭，或在语言交流中练习法语，都能激发孩子们的热情，提升他们的技能，开阔他们对人生可能性的眼界。教育性郊游帮助聪明但家境贫寒的学生在A-level考试中取得更好的成绩。在这个全球化的时代，国际旅行有充分的理由，一些家长表示，他们承担学校出国旅行的费用比家庭度假更容易。即使面对巨大且日益增长的财务压力，一些学校仍展现出非凡的决心和创造力，确保所有学生都能获得可能真正改变人生的机会。它们应该受到赞扬。全校筹款并将所得汇集起来等方法，有助于扩大机会并增进社区精神。\n\n但是，当有孩子家庭的平均收入仅略高于3万英镑时，3000英镑的旅行就说不通了。这类活动对许多学生关上了大门。一些家长因为昂贵的实地考察而让孩子退学。即使那些看得出某次旅行不过是聚会或庆祝活动的家长，也很可能因为自己的孩子被落下而感到内疚。\n\n教育部的指导意见指出，如果旅行是教学大纲的一部分，学校只能收取食宿费，并且接受政府资助的学生可免交这些费用。然而，许多学校似乎无视这一建议；而且该指导意见并未涵盖那种越来越常见的奢华异国旅行。我们不能指望学校单枪匹马地团结社区。但我们至少应期望它们不要助长分裂，不要排斥那些已经处于弱势的人。",
+   "questions": [
+    {
+     "stem": "46. What does the author say best schools should do?",
+     "answer": "B",
+     "analysis": "定位第一段，作者指出最好的学校寻求减轻外部压力，同时使学生能理解和应对外部世界，即“既庇护又开阔视野”，对应B项。A项“挑战并改变社会”文中未提；C项“发展身体和智力能力”及D项“鼓励雄心并助其实现”均属无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author think about school field trips?",
+     "answer": "B",
+     "analysis": "第二段将昂贵旅行与饥饿学生并置，显示差距；第四段指出这类旅行对许多学生关上了大门；末段强调学校不应助长分裂，可见作者认为昂贵实地考察扩大了特权学生与弱势学生之间的差距，故选B。A项“促进不同背景学生融合”未提及；C项忽略了排斥弱势的一面；D项“只对富亲戚邻居的学生有利”过于绝对。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the author suggest can help build community spirit?",
+     "answer": "D",
+     "analysis": "第三段末句明确“全校筹款并将所得汇集起来等方法，有助于扩大机会并增进社区精神”，这对应D项“涉及校园所有学生的活动”。A项“改善社区服务”、B项“激发学生创造力”、C项“需要相互理解”均非文中所述增进社区精神的方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn about low-income parents regarding school field trips?",
+     "answer": "A",
+     "analysis": "第四段提到一些家长因昂贵旅行让孩子退学，但即使知道旅行不过是聚会庆祝，也会因孩子被落下而内疚，说明低收入家长虽看不到多少好处，仍希望孩子参与以免被落下，故A正确。B项“不想让孩子参加但难阻止”与原文主动退学不符；C项“开阔眼界”与“旅行只是聚会”矛盾；D项“冒险”内容无关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is the author's expectation of schools?",
+     "answer": "C",
+     "analysis": "末段明确指出“我们不能指望学校单枪匹马地团结社区，但至少应期望它们不要助长分裂、排斥弱势”，即避免在学生中制造新的差距，对应C项。A项“用创造力团结社区”不是作者对学校的期望；B项“解决社会现有差距”超出学校能力；D项“给贫困生优惠待遇”未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:38:41.979Z",
+ "prunedAt": "2026-10-10T03:33:14.381Z"
+}

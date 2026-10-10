@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "When it comes to deciding between a vocational college and a university, I strongly recommend that most students choose a university education. Although vocational colleges offer practical skills and quicker entry into the job market, universities provide broader intellectual development and more long-term career advantages. First of all, a university education fosters critical thinking and the ability to learn independently, which are essential in today's rapidly changing world. Unlike narrowly focused vocational training, university courses expose students to diverse disciplines, helping them adapt to future career shifts. Moreover, a university degree often serves as a threshold for many high-level positions and further academic pursuits. Statistics show that university graduates enjoy higher average starting salaries and lower unemployment rates. Of course, for those with a clear passion for a specific trade, vocational college can be an excellent choice. But for the majority who are still exploring their potential, a university is the safer and more rewarding option. In conclusion, I advise students to weigh their own interests, yet lean toward a university if they seek comprehensive growth and better career prospects.",
+   "note": "本文严格切题，开篇明确立场：建议大多数人选择大学。论证部分从培养批判性思维、拓宽学科视野、就业前景三个角度展开，有让步论证使观点更全面。结构为“引出观点—分点论证—总结建议”。可复用句型：When it comes to..., I strongly recommend that...; First of all,...; Moreover,...; In conclusion,...。适合四六级议论文。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "一项研究揭示，当你睡在一个新地方时，大脑有一半会保持警觉并准备应对危险。这种现象通常被称为“首夜效应”。布朗大学的研究人员发现，大脑左半球的一个网络比右半球的网络“保持更活跃”。向志愿者的右耳播放声音（刺激左半球）比向左耳播放噪音更容易把他们唤醒。\n研究人员特别观察到，在深度睡眠期间，大脑左侧更为活跃。当研究人员在第二晚和第三晚重复这项实验室实验时，他们发现左半球在深度睡眠期间无法以同样的方式被刺激。研究人员解释说，这项研究表明，当我们处于新环境中时，大脑会部分保持警觉，以便人类能够抵御任何潜在的危险。\n研究人员认为，这是首次在人类身上识别出不同大脑状态的“首夜效应”。然而，这并不是该现象第一次被发现。一些动物物种也表现出这种现象。例如，海豚以及其他海洋动物在睡觉时会关闭大脑的一个半球。先前的一项研究指出，海豚总是有意识地控制呼吸。如果它们在睡觉时不让大脑保持活跃，就可能会溺水。但是，正如这项人类研究所表明的，海豚在睡觉时睁着眼睛的另一个原因是它们可以在睡眠中留意捕食者。这也能让它们的生理过程持续运转。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "K",
+     "analysis": "固定搭配 be referred to as 意为“被称为”，且空格前有 is often，需用过去分词构成被动语态。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "O",
+     "analysis": "of 后需接名词，且句意为向“志愿者”的右耳播放声音；volunteers 指参加实验的人，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "M",
+     "analysis": "空格在 be 动词和 observed 之间，需副词；specifically 表示“特别地、专门地”，强调研究人员特别观察到左脑更活跃。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "H",
+     "analysis": "修饰 environment 需形容词，novel 意为“新的、陌生的”，与首夜效应在新环境中发生一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "I",
+     "analysis": "修饰 danger 需形容词，potential 表示“潜在的”，any potential danger 指任何潜在危险，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "空格前有 has been，需过去分词构成现在完成时被动；identified 表示“被识别、被发现”，符合首次在人类中被发现的意思。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "L",
+     "analysis": "animal species 为固定说法，指“动物物种”；species 单复数同形，符合 some 后接复数概念。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "修饰 animals 需形容词，marine 意为“海洋的”，与海豚等海洋动物相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "B",
+     "analysis": "修饰 control 需副词；consciously 表示“有意识地”，说明海豚主动地控制呼吸。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "J",
+     "analysis": "look out for 后需名词，predators 意为“捕食者”，与海豚睡觉时睁眼防范危险天敌的意义一致。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 近年来，人们对精英高中数学竞赛的兴趣有所增长；鉴于去年夏天美国队在国际数学奥林匹克竞赛（IMO）中获胜——这是美国队二十多年来首次夺冠——这一趋势很可能会持续下去。\nB) 但是，这类竞赛目前由来自中产和富裕家庭的亚裔和白人学生主导，未来会变得更加多元吗？许多社会和文化因素决定了哪些有潜力的学生能走上通往国际数学荣誉的道路。不过，人们正在努力让更多黑人、西语裔和低收入家庭的学生接触高阶数学，希望高水平参赛者的人群构成最终开始改变，变得不再那么排外。\nC) “挑战在于，如果某些类型的人一直在做某件事，其他人就很难打入其中，”去年获胜的美国数学奥林匹克代表队主教练罗博深（Po-Shen Loh）说。他说，参与通过朋友和人际网络扩大，如果“你意识到他们就是这样发展的，你就可以开始采取行动”，把其他学生也带进来。\nD) 高阶数学竞赛的大部分训练发生在正常上课日之外。学生们参加课后俱乐部、夏令营、在线论坛和课程，以及大学主办的“数学圈”，为竞赛做准备。\nE) 高中数学竞赛——包括最终通向国际数学奥林匹克（IMO）的竞赛——最大的生源之一是一个名为 Math Counts 的初中项目。全美约有 10 万名学生参加该项目的系列竞赛，最终是每年 5 月举行的一场全国性的、类似电视游戏节目的比赛。最近一届于上周在华盛顿特区举行。学生通过所在学校加入团队，学校提供志愿教练，并支付象征性费用让学生参加地区级和州级竞赛。进入全国竞赛的 224 名学生可免费参加，费用全包。\nF) 去年获胜的美国 IMO 代表队几乎所有成员在初中时都参加过 Math Counts，教练罗博深也是。“初中是一个重要的年龄段，因为学生已经有足够的数学能力去解决高阶问题，但他们还没有真正决定这一生想做什么，”罗博深说，“他们往往在那个时候就入了迷。”\nG) 另一个有影响力的高阶数学学生培养渠道是一所名为 Art of Problem Solving 的在线学校，该校大约 13 年前创办，现在拥有 1.5 万名用户。学生可以在论坛上免费聊天、玩游戏、一起解题，也可以支付几百美元参加由训练有素的教师教授的课程。据公司创始人理查德·鲁斯奇克（Richard Rusczyk）说，去年参加 IMO 的 6 名美国队员在该网站上累计上了 40 多门课程。高阶数学学生的家长和 Math Counts 教练都说，孩子们一直泡在这个网站上。\nH) 还有几十个夏令营——许多附属于大学——旨在培养精英数学学生。有些价格不菲——为期三周的强化项目费用可高达 4500 美元或更多——但大多数提供奖学金。数学奥林匹克暑期培训项目是由美国数学协会举办的一个为期三周的数学营，直通国际锦标赛，入选者免费。根据笔试成绩和美国数学奥林匹克的表现，只有大约 50 名学生受邀参加。\nI) 大学城的学生可能还有另一种参与高阶数学的途径：数学圈。在这些团体中——它们源自东欧培养年轻人才的传统——教授们在放学后或周末为有潜力的 K-12 学生讲授几个小时的高等数学。洛杉矶数学圈设在加州大学洛杉矶分校，2007 年起步时只有 20 名学生，现在已超过 250 人。“这些数学圈不收费，或者对学生来说非常便宜，但你必须知道它们的存在，”鲁斯奇克说，“大多数人都希望招收更多来自服务不足人群的学生，但他们就是无法让这些学生进门。一部分是沟通问题，一部分是交通问题。”\nJ) 在高阶数学圈内，多元化是个问题，这已不是秘密。据美国数学协会竞赛主任马克·索尔（Mark Saul）说，在该赛事 50 年的历史中，从未有一名非裔或西语裔学生——而且只有极少数女生——进入过数学奥林匹克代表队。许多学校根本不重视学术竞赛。“你知道我们必须打败谁吗？”索尔问道，“橄榄球队、篮球队——那是我们在资源、学生时间、注意力、学校经费、家长投入和学校热情方面的竞争对手。”\nK) 在没有数学竞赛参与传统的低收入城市和农村地区，教师可能不知道像 Math Counts 这样的高阶数学机会——而知道的人也可能得不到支持，或觉得自己没有接受过相应培训来带队。\nL) 但已经有一些举措试图让更多代表性不足的学生参与高阶数学。一家总部设在纽约市的非营利组织“桥接数学之路”（Bridge to Enter Mathematics）运营一个寄宿制暑期项目，旨在帮助服务不足的学生（主要是黑人和西语裔学生）走向数学和科学职业。7 年级结束后的那个暑假，学生们在大学校园里待三周，每天学习高阶数学 7 小时。在接下来五年里，该组织帮助这些学生进入其他精英暑期数学项目、表现优异的高中，并最终进入大学。到目前为止，大约 250 名学生参加过该项目，该项目获得杰克·肯特·库克基金会的资助。\nM) “如果你看看美国的许多低收入社区，那里有一些项目在为它们服务，但这些项目主要围绕着‘让我们提高这些孩子的成绩’，而不是‘让我们让这些孩子获得与更富裕家庭孩子同样的机会’，”该项目创始人兼执行主任丹尼尔·扎哈罗波尔（Daniel Zaharopol）说，“我们正在努力创造这样一条路径。”学生直接通过所在学校申请该项目。“我们希望接触到没有融入这个体系的家长，”扎哈罗波尔说。\nN) 过去几年，Math Counts 新增了两个中学项目，试图使其参与群体更加多元——全国数学俱乐部和数学视频挑战赛。报名参加全国数学俱乐部的学校或教师会收到一整套活动和资源工具包，但没有专门的教师培训，也没有竞赛环节。\nO) 数学视频挑战赛是一项竞赛，但它是合作性质的。四名学生组成一个团队，制作一个视频，说明一个数学问题及其在现实世界中的应用。在今年 Math Counts 全国竞赛高压的倒计时轮次之后——前 12 名学生面对面快速解答复杂问题——数学视频挑战赛的决赛选手登台展示他们的视频。这个群体的人口构成与竞赛轮明显不同——16 名视频决赛选手中，13 名是女生，8 名是非裔学生。视频挑战赛不会让学生个人处于聚光灯下——因此从设计上就减少了令人生畏的感觉。它还加入了艺术创意元素，以吸引一批可能不认为自己是“数学人”的新学生。",
+   "questions": [
+    {
+     "stem": "36. Middle school is a crucial period when students may become keenly interested in advanced mathematics.",
+     "answer": "F",
+     "analysis": "本段指出“初中是一个重要的年龄段……他们往往在那个时候就入了迷”，对应题干“初中是学生可能对高阶数学产生浓厚兴趣的关键时期”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Elite high school math competitions are attracting more interest throughout the United States.",
+     "answer": "A",
+     "analysis": "该段首句“Interest in elite high school math competitions has grown in recent years”表明精英高中数学竞赛在美国正吸引更多兴趣。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Math circles provide students with access to advanced-math training by university professors.",
+     "answer": "I",
+     "analysis": "该段提到“教授们在放学后或周末为有潜力的 K-12 学生讲授几个小时的高等数学”，说明数学圈让学生获得大学教授的高阶数学训练。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Students may take advantage of online resources to learn to solve math problems.",
+     "answer": "G",
+     "analysis": "该段介绍在线学校 Art of Problem Solving，学生可在论坛免费一起解题或付费上课，对应利用在线资源学习解决数学问题。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. The summer program run by a nonprofit organization has helped many underserved students learn advanced math.",
+     "answer": "L",
+     "analysis": "该段介绍非营利组织 Bridge to Enter Mathematics 的寄宿制暑期项目，已帮助约 250 名服务不足的学生学习高阶数学。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Winners of local contests will participate in the national math competition for free.",
+     "answer": "E",
+     "analysis": "该段说进入全国竞赛的 224 名学生获得费用全免的旅行，对应地方竞赛优胜者可免费参加全国数学竞赛。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Many schools don't place academic competitions at the top of their priority list.",
+     "answer": "J",
+     "analysis": "该段明确指出“许多学校根本不重视学术竞赛”（Many schools simply don't prioritize academic competitions），对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Contestants of elite high school math competitions are mostly Asian and white students from well-off families.",
+     "answer": "B",
+     "analysis": "该段说竞赛“由来自中产和富裕家庭的亚裔和白人学生主导”，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Some math training programs primarily focus on raising students' math scores.",
+     "answer": "M",
+     "analysis": "该段引用扎哈罗波尔的话说低收入社区的项目“主要围绕‘让我们提高这些孩子的成绩’”，对应一些数学培训项目主要关注提高分数。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some intensive summer programs are very expensive but most of them provide scholarships.",
+     "answer": "H",
+     "analysis": "该段提到“有些价格不菲……但大多数提供奖学金”，对应题干。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Song Dynasty began in 960 and lasted until 1279. During this period, China's economy grew substantially, making the country the most advanced economy in the world, and science, technology, philosophy, and mathematics flourished. Song China was the first country in world history to issue paper money. The Song Dynasty also pioneered the use of gunpowder and invented movable-type printing. The population grew rapidly, and more and more people moved into cities, where there were bustling entertainment venues. Social life was diverse. People gathered together to view and trade valuable works of art. The Song Dynasty's government system was also advanced for its time. All government officials were selected and appointed through competitive examinations.",
+   "note": "难点在历史术语和长句衔接：始于/延续用 began/lasted；大幅增长，成为……用 making the country 连接；首先发行纸币译 the first country in world history to issue paper money；最早使用火药用 pioneered the use of gunpowder；活字印刷固定为 movable-type printing；热闹的娱乐场所为 bustling entertainment venues；竞争性考试选拔任用译 selected and appointed through competitive examinations。注意句式地道，避免逐字对应。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "我们今天受益于麦卡德尔、卡欣、霍斯、威尔金斯、马克斯韦尔以及其他女性，她们将美国时尚从巴黎设计的束缚中解放出来。这种独立体现在对衣橱进行系带、包裹、收纳、协调和合理化安排。这些设计师确立了现代着装规范，让连体短裤和其他运动装足以充当便装，允许裤装进入衣橱，并推崇着装的理性与百搭，这与为特定场合或一天中的某个时段而穿着的做法背道而驰。美国的时尚是合乎逻辑的，并且听从穿着它的女性的意愿。无论含蓄还是直白，美国时尚面向大众民主，而传统以巴黎为基础的时尚则是规定性的，不管女性愿不愿意都强加于她们。更早时期，美国时尚也曾听从巴黎的号令，甚至抄袭和盗用具体的法国设计。设计师运动服并不像后来的“现代艺术”那样以欧洲为蓝本；它是在美国真正发明和发展起来的。其设计师并非拥有副线产品的高端设计师。设计目标和商业投入都集中在运动装上，其鲜明特点是解决问题的巧思和现实生活的实用性。易于打理最为重要：尤其是夏季连衣裙和套装，主要为棉质，便于在家洗涤和熨烫。闭合方式简单、实用、方便，因为现代女性不依赖贴身女仆为其穿衣。美国设计师珍视足智多谋和穿着这些服装的女性的自由。许多人认为，这一时期的女性设计师能够将她们自己的服装价值观投射到一种新风格中。当然，这一论点在20世纪三四十年代被提出，很大程度上是因为当时几乎没有从实用性角度来论证服装的经验。如果抛弃了巴黎，美的传统也在一定程度上被轻视了。设计师运动装必须用纯粹美之外的标准来验证；在设计师运动装中对设计师生活的模仿就是这种关系的一种粗糙版本。消费者最终也被提及，尤其是多萝西·谢弗这样的人，她可以拿出Lord & Taylor的销售数据。仅凭实用性就能证明美国设计师新理念的合理性吗？时尚常被视为对美的追求，有些人则珍视时尚与美术之间微不足道的联系。美国运动装设计师所证明的是，时尚是一门真正的设计艺术，它回应着服务的严苛需求。当然，这些务实而富有洞察力的设计师决定了二十世纪后期时尚的走向。她们是性别平等的先驱，因为她们设计的有用、适应性强的服装既面向大众，又能实现自我表达。",
+   "questions": [
+    {
+     "stem": "46. What contribution did the women designers make to American fashion?",
+     "answer": "B",
+     "analysis": "第一段明确提到这些设计师“确立了现代着装规范”，允许运动装、裤装进入日常衣橱，强调理性与百搭，具有鲜明的美国特色。A项错误，因为她们是摆脱而非改进巴黎设计；C项“全新设计程序”文中未提；D项“原创性”不是首要追求，文中强调的是理性与实用性。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn about American designer sportswear?",
+     "answer": "D",
+     "analysis": "第二段直接指出设计师运动服“并非模仿欧洲”，而是在美国“真正发明和发展起来的”，因此是全新的发明。A项与文意相反；B项强调女性美与后文批评的纯美标准不符；C项“真正的美国艺术”过度推断，文中强调的是设计艺术而非一般艺术。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What characterized American designer sportswear?",
+     "answer": "C",
+     "analysis": "第二段说“易于打理最为重要”，并具体描述棉质夏装可在家洗熨，体现了实用性。A项追求美在抛弃巴黎时被轻视；B项装饰性闭合与文中“简单实用”相反；D项面料质量并非主要特征。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What occurred in the design of women's apparel in America during the 1930s-40s?",
+     "answer": "A",
+     "analysis": "第三段指出三四十年代抛弃巴黎后，美的传统被轻视，服装需要以实用性来论证，体现了从美到实用的重心转移。B项模仿巴黎与文意相反；C项传统与创新平衡未提及；D项更多女性参与不是该时期设计变化的重点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do we learn about designers of American sportswear?",
+     "answer": "C",
+     "analysis": "末句明确说她们是“性别平等的先驱”，通过实用、适应性强的服装实现这一点。A项年轻一代品味未提及；B项改变美的观念不准确，她们是用实用性取代纯美标准；D项成为巴黎对手文中未提。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "巨大的垃圾堆和不断扩张的垃圾填埋场是人类对野生动物造成的最令人不安的影响之一。这些垃圾场已经导致一些鸟类放弃了迁徙。它们不再飞行数千英里寻找食物，而是把垃圾场当作冬季觅食地。\n\n德国研究人员使用微型GPS标签追踪了来自欧洲和亚洲不同地点的70只白鹳在它们生命最初五个月中的迁徙情况。许多鸟沿着已知路线飞往更温暖的气候，而另一些则中途停留，在垃圾填埋场上过冬，以食物垃圾和大量在垃圾堆上繁殖的昆虫为食。\n\n短期来看，鸟类似乎从在垃圾堆上过冬中受益。马克斯·普朗克研究所的安德烈娅·弗拉克发现，遵循传统迁徙路线的鸟比只飞到摩洛哥北部并在那里垃圾堆上过冬的德国鹳更容易死亡。“对鸟类来说，这是获取食物的非常方便的方式。它们可以取食大量聚集的有机垃圾，”弗拉克说。这些食物并不特别可口，甚至不安全。大部分垃圾是被丢弃的腐烂肉类，与塑料袋和旧玩具等其他人类垃圾混在一起。\n\n“这非常危险。鸟类很容易吃进塑料片或橡皮筋，可能会死亡，”弗拉克说。“而且我们不知道长期后果。它们可能吃到有毒物质并损害健康。我们目前还无法估计。”\n\n科学家们追踪了来自欧洲和非洲不同群体的白鹳。俄罗斯、希腊和波兰的鹳飞到了南非，而来自西班牙、突尼斯和德国的鹳只飞到萨赫勒地区。\n\n伊比利亚半岛上的垃圾填埋场长期以来一直吸引着当地的白鹳，但研究中标记的所有西班牙鸟都飞越撒哈拉沙漠到达萨赫勒西部。科学家在期刊中写道，来自德国的鹳明显受到垃圾场存在的影响，六只存活至少五个月的鸟中有四只在摩洛哥北部的垃圾堆上过冬，而不是迁徙到萨赫勒地区。\n\n弗拉克表示，现在判断丰富的食物带来的好处是否超过在垃圾填埋场觅食的风险还为时过早。但这并不是唯一的不确定性。迁徙鸟类会影响其栖息地和越冬目的地的生态系统，破坏传统迁徙路线可能产生意想不到的副作用。白鹳以蝗虫和其他昆虫为食，如果这些昆虫数量失控，就可能成为害虫。“它们提供了一种有用的服务，”弗拉克说。",
+   "questions": [
+    {
+     "stem": "51. What is the impact of rubbish dumps on wildlife?",
+     "answer": "D",
+     "analysis": "文章首段明确指出垃圾堆导致一些鸟类放弃迁徙，将垃圾场作为冬季觅食地，因此改变了它们原有的迁徙习惯。A项“被迫寻找更安全的冬季栖息地”与原文不符；B项“严重污染鸟类过冬地”并非主要影响；C项“加速有害昆虫繁殖”文中未提及，只说昆虫在垃圾堆上大量繁殖，但并非垃圾堆对野生动物的影响。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do we learn about birds following the traditional migration routes?",
+     "answer": "D",
+     "analysis": "文中Andrea Flack发现遵循传统迁徙路线的鸟比在垃圾堆过冬的德国鹳更容易死亡，因此“更有可能面临死亡风险”。A项“加速繁殖”和B项“更能熬过冬天”均无依据；C项“帮助人类消灭害虫”是白鹳的一般作用，并非针对遵循传统迁徙路线的鸟。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does Andrea Flack say about the birds overwintering on rubbish dumps?",
+     "answer": "B",
+     "analysis": "Flack指出鸟类很容易吃进塑料片或橡皮筋而死亡，并提到可能吃到有毒物质损害健康，对应“可能吃到有害东西”。A项“永久停留”未提及；C项“进化出新的觅食习惯”未提及；D项“难以获得足够食物”与原文所说食物方便相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What can be inferred about the Spanish birds tagged in the study?",
+     "answer": "C",
+     "analysis": "文中提到伊比利亚半岛的垃圾填埋场虽吸引当地白鹳，但研究中标记的西班牙鸟全部飞越撒哈拉到达萨赫勒西部，说明它们对迁徙路线上的垃圾堆并不感兴趣。A项“逐渐失去迁徙习惯”与它们正常迁徙矛盾；B项“更喜欢远处的垃圾堆”无依据；D项“与德国鹳一起在摩洛哥垃圾堆”与事实不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What is scientists' other concern about white storks feeding on landfills?",
+     "answer": "A",
+     "analysis": "文中Flack提到另一个不确定性是迁徙鸟类影响生态系统，破坏传统迁徙路线可能产生意想不到的副作用，因此科学家担心对生态系统的潜在危害。B项“基因改变”、C项“流行病传播”和D项“破坏生物多样性”均未提及。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:25:00.422Z"
+}

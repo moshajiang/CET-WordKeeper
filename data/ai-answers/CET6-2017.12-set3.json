@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2017,
+ "month": 12,
+ "set_no": 3,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The saying \"Help others, and you will be helped when you are in need\" conveys a profound truth about mutual assistance. I fully agree with this view, as kindness often returns in unexpected ways.\n\nA compelling example is the story of a college student who regularly tutored his classmates for free. When he himself faced a serious illness and missed many classes, his classmates took turns to help him with notes and lessons. His earlier generosity created a network of support that carried him through his difficult time. Similarly, in our daily life, people who are always ready to lend a hand tend to receive help quickly when they encounter problems, because they have built strong bonds of trust and gratitude.\n\nIn conclusion, helping others is not only a virtue but also a wise investment in our own future. The more we give, the more likely we are to receive help when we need it. Therefore, we should cultivate the habit of offering assistance without hesitation.",
+   "note": "范文紧扣谚语，首段引出观点并表态，主体段以大学生互助事例及日常现象论证，末段总结升华。结构清晰，逻辑连贯。高分表达如\"conveys a profound truth\"、\"a compelling example\"、\"not only...but also\"、\"The more...the more\"等自然融入。可复用句型：\"The saying...conveys...\"、\"I fully agree with...\"、\"When...\"、\"Therefore, we should...\"。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "在坦桑尼亚格雷戈里裂谷的一座山脚下，纳特龙湖燃烧着明亮的红色，周围是不幸落入咸水中的动物遗骸。蝙蝠、燕子等动物以死亡时的姿势被化学保存，封存在水中的碳酸钠沉积物里。这片湖泊的景观奇异而致命——更奇特的是，这里竟是全世界近75%的火烈鸟的出生地。\n湖水腐蚀性极强，能灼伤不适应动物的皮肤和眼睛。然而，火烈鸟是唯一真正在这片死亡之地中繁衍生息的物种。每隔三四年，当条件合适时，湖面上会铺满粉红色的鸟群，它们停止飞行来繁殖。全世界四分之三的火烈鸟从裂谷的其他盐湖飞来这里，在盐结晶岛上筑巢；这些岛屿只有在湖水处于特定水位时才会出现——水位太高，鸟无法筑巢；水位太低，捕食者又能轻快地穿过湖床发起攻击。当水位恰到好处时，幼鸟会被一道腐蚀性的沟渠保护，远离捕食者。\n莱斯特大学教授戴维·哈珀说：“火烈鸟的腿上进化出了非常坚韧的皮肤，所以能耐受盐水。人类不行，如果腿长时间暴露在湖水中就会死亡。”今年迄今为止，水位对火烈鸟来说太高，它们无法筑巢。\n一些鱼类在湖中也取得了有限的“度假”成功，因为从流入纳特龙湖的温泉在湖的外缘形成了盐度较低的泻湖。三种罗非鱼在那里部分时间繁盛。哈珀说：“鱼类在溪流中有避难所，当湖水水位低、泻湖彼此分离时，它们可以扩展到泻湖中。当湖水水位高时，所有泻湖连成一片，鱼类必须退回溪流避难所，否则就会死亡。”除此之外，没有鱼能在这个天然有毒的湖中生存。\n这个独特的生态系统可能很快面临压力。坦桑尼亚政府再次开始在湖中开采纯碱，用于制造化学品、玻璃和洗涤剂。尽管计划中的作业地点在40多英里之外，通过管道抽取纯碱，但环保人士担心这仍可能扰乱自然水循环和繁殖地。不过，目前生命仍占上风——即便是在一个几乎杀死它所触及的一切的湖里。",
+   "questions": [
+    {
+     "stem": "46. What can we learn about Lake Natron?",
+     "answer": "A",
+     "analysis": "文章指出纳特龙湖湖水腐蚀性极强，能灼伤不适应动物的皮肤和眼睛，湖周围有大量动物遗骸，说明对大多数动物而言不适宜居住。B项“鲜为外界所知”文中未提；C项“多种鸟类的繁殖地”不准确，主要只有火烈鸟；D项“捕食者的理想栖息地”与文意相反，捕食者只有在水位低时才能进入湖床。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. Flamingos nest only when the lake water is at a specific level so that their babies can .",
+     "answer": "C",
+     "analysis": "文中明确说，当湖水处于特定水位时，幼鸟会被腐蚀性沟渠保护，远离捕食者；水位太高无法筑巢，太低则捕食者能穿过湖床攻击。因此目的是让幼鸟避开捕食者。A项过于笼统，B、D两项文中均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. Flamingos in the Rift Valley are unique in that .",
+     "answer": "B",
+     "analysis": "文章指出火烈鸟是唯一在纳特龙湖死亡环境中繁衍生息的物种，它们腿上进化出坚韧皮肤，能耐受高盐度腐蚀性湖水，而人类等动物无法做到。C项错在它们是在盐结晶岛上筑巢，而非在腐蚀性沟渠中繁殖；A、D两项没有依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. Why can certain species of tilapia sometimes survive around Lake Natron?",
+     "answer": "A",
+     "analysis": "文中提到湖的外缘因温泉形成盐度较低的泻湖，鱼类在溪流中有避难所，低水位时可扩展到泻湖，高水位时则退回溪流，否则会死亡。这说明罗非鱼能生存是因为可以躲进盐度较低的水域。B、C、D三项与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What may be the consequence of Tanzanian government's planned operation?",
+     "answer": "D",
+     "analysis": "环保人士担心坦桑尼亚政府开采纯碱可能扰乱纳特龙湖的自然水循环和火烈鸟繁殖地，即破坏该生态系统。A项“加速火烈鸟灭绝”表述过于绝对；B项迁徙路线改变文中未提；C项“过度开采”并非该计划带来的后果。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Dongting Lake is located in the northeast of Hunan Province. It covers a very large area, but its water is quite shallow. Dongting Lake serves as a flood storage basin for the Yangtze River, and its size largely varies with the seasons. The two provinces of Hubei and Hunan are named after their relative positions to the lake: Hubei means \"north of the lake,\" while Hunan means \"south of the lake.\" As the birthplace of dragon boat racing, Dongting Lake enjoys great fame in Chinese culture. It is said that dragon boat racing originated on the eastern shore of Dongting Lake in order to search for the body of Qu Yuan, the patriotic poet of the State of Chu. The dragon boat races, along with the beautiful scenery of Dongting Lake and its surrounding areas, attract tens of thousands of tourists from all over the country and the world every year.",
+   "note": "难点：地理方位表达、湖泊蓄洪功能、湖北/湖南命名文化背景，以及龙舟赛与屈原的历史联系。关键表达：\"蓄洪池\"译为 flood storage basin；\"大小取决于季节变化\"译为 size largely varies with the seasons；省名采用拼音加释义保留文化含义。译文注重忠实与流畅，适当调整语序以符合英语习惯。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "许多欧洲国家一直在向电动汽车转型，德国刚刚表示计划到2030年禁止销售以汽油和柴油为燃料的汽车。该国还计划到2050年将碳足迹减少80%至95%，这推动了该国向绿色能源的转变。实际上，这项禁令将包括在该国注册新汽车，因为2030年后他们将不允许任何汽油驱动的汽车注册。\n这项禁令之所以被讨论并实施，部分原因是能源官员认为，如果他们不消除很大一部分汽车排放，到2050年就无法实现排放目标。该国仍然希望能实现其排放目标，例如到2020年将排放量减少40%，但该国电动汽车的接受度并未像预期的那样迅速提高。\n其他促进电动汽车使用的努力包括计划在全国建设超过100万个混合动力和电动汽车换电站。到2030年，德国计划安装超过600万个充电站。据《国际商业时报》报道，随着大众汽车仍在从排放丑闻中恢复，电动汽车销量预计将增长。\n目前德国道路上约有155,000辆已注册的混合动力和电动汽车，与目前行驶的4500万辆汽油和柴油汽车相比相形见绌。随着各国继续设定减排目标，需要采取更大措施才能对周围环境产生显著影响。虽然这些努力当然不是徒劳的，但这些禁令的结果可能只有后代才能开始看到，从而为未来改善世界。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "空格后是名词短语a shift，需要现在分词作状语；spark a shift表示“引发/推动转变”，语义说明减排计划带动绿色能源转型。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "空格前后构成复合形容词gasoline-powered vehicle，表示“汽油驱动的汽车”，为固定搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "空格与discussed并列，位于being之后，需过去分词构成被动语态；implemented表示“被实施”，与ban搭配合理。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "空格前do not，后接宾语a large portion of vehicle emissions，需动词原形；eliminate emissions表示“消除排放”，语义符合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "空格在is still后，后接that从句，需形容词作表语；hopeful that...表示“对……抱有希望”，与后文转折意义一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "A",
+     "analysis": "空格前the，后of electric cars，需名词；acceptance of electric cars表示“电动汽车的接受度”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "J",
+     "analysis": "空格处需过去分词作charging stations的补足语或后置定语；installed表示“安装”，与充电站搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "B",
+     "analysis": "空格在There are后，修饰数量，需副词；currently表示“目前”，说明当前注册数量。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "K",
+     "analysis": "空格在不定冠词a和名词effect之间，需形容词；noticeable effect表示“明显的影响”，符合语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "空格在not后，需形容词作表语；not futile表示“并非徒劳”，肯定努力的积极意义。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "眼下正是年终疯狂算账的季节——全国各行各业的员工都在倒着计算，想知道自己还剩多少带薪假期。不过，更多的人会完全跳过这些计算，一直埋头工作到2017年：每年有超过一半的美国员工没有用完分配给他们的全部假期。\n\n就在不久以前，人们还会对这种工作上的拼命精神嗤之以鼻。正如市场营销学教授西尔维亚·贝莱扎、尼鲁·帕哈里亚和阿纳特·凯南最近在《哈佛商业评论》中所解释的那样，闲暇时间曾被视为社会地位高的标志，只有顶层人士才能享有。但自20世纪中叶以来，情况发生了逆转——如今，在办公桌前拼命工作，而不是休假，被视为重要人物的标志。\n\n通过一系列实验，研究人员展示了我们是多么推崇忙碌，至少是忙碌的表象。志愿者阅读两段文字，一段关于一个生活悠闲的男人，另一段关于一个工作过度、日程过满的男人；当被要求判断两人中谁的社会地位更高时，大多数参与者选择了后者。对于那些使用暗示自己时间紧张的产品的人来说，情况也是如此：例如，在一个实验中，使用食品杂货配送服务Peapod的顾客被认为比在同样昂贵的杂货店购物的人地位更高；在另一个实验中，戴无线耳机的人被认为比戴普通耳机的人社会地位更高，即使两者都只是用来听音乐。\n\n作者在《哈佛商业评论》中写道，这种模式在一定程度上可能与过去几十年来工作本身的变化有关。我们认为，从“闲暇代表地位”到“忙碌代表地位”的转变可能与知识密集型经济的发展有关。在这样的经济中，拥有雇主或客户看重的人力资本特质（如能力和抱负）的个人，在就业市场上预计会供不应求。因此，通过告诉别人我们很忙、一直在工作，我们在暗示自己很抢手，从而提升了别人对我们的地位认知。\n\n不过，即使你想为了假装忙碌而牺牲自己的假期，至少也要考虑把周末留出来，不要安排事情。这是为你好。",
+   "questions": [
+    {
+     "stem": "51. What do most employees plan to do towards the end of the year?",
+     "answer": "B",
+     "analysis": "第一段指出，超过一半的美国员工每年没有用完所有假期，且更多人会跳过计算、一直工作到2017年，说明多数人年底选择继续工作而不是休假。A项“去度假”与原文相反，C项和D项文中均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. How would people view dedication to work in the past?",
+     "answer": "C",
+     "analysis": "第二段明确说“people would have turned up their noses at that kind of dedication to the job”，“turned up their noses at”意为鄙视、不屑，说明过去人们看不起这种只知工作的投入。A项“视为理所当然”、B项“认为是成功必备”与原文情感相反，D项“认为是商人的诡计”无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What did the researchers find through a series of experiments?",
+     "answer": "A",
+     "analysis": "实验发现，被描述为过度忙碌、日程过满的人被认为社会地位更高，使用暗示时间紧张的产品也被视为地位更高，说明越显得忙碌越受人尊重。B项“感觉被剥削”、C项“知识多能力就强”、D项“地位高假期多”均与实验结果不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What may account for the change of people's attitude towards being busy?",
+     "answer": "D",
+     "analysis": "作者明确写道，从闲暇代表地位到忙碌代表地位的转变可能与知识密集型经济的发展有关，即知识在现代经济中的作用导致人们推崇忙碌。A项生活节奏快、B项就业竞争激烈、C项计算机技术普及都不是文中给出的原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author advise us to do at the end of the passage?",
+     "answer": "C",
+     "analysis": "文章最后建议至少把周末留出来、不要安排事情，即无论多忙也要找时间休息放松。A项强调效率、B项强调有意义地规划周末、D项强调避免假装忙碌，均与作者“留出周末”的建议不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "[A] 苹果与执法官员之间关于解锁一部恐怖分子智能手机的争斗，是科技行业与美国政府之间力量对比缓慢逆转的顶点。\n[B] 2013年，前国家安全局承包商爱德华·斯诺登揭露政府一方面讨好某些科技公司，另一方面又入侵其他公司以大规模获取私人数据。此后，科技巨头开始把美国政府视为敌对行为者。不过，如果说这场对抗在最新的争端中已经明朗化，它可能也已走向一个可以预见的结局：从长远看，科技公司注定会获胜。\n[C] 目前的情况看起来似乎并非如此。一方是美国政府强大的法律与安全机构，它们所争取的是最能引起同情的那类数据：一个已死的大屠杀凶手手机里埋藏的秘密。这一行动源于周二发布的一项联邦法院命令，要求苹果帮助联邦调查局解锁一部由12月在加利福尼亚州圣贝纳迪诺杀害14人的两名袭击者之一使用过的iPhone。\n[D] 另一方则是全球市值最高的公司，其首席执行官蒂莫西·库克表示将对法院命令提起上诉。苹果辩称，它是在捍卫一条我们这些智能手机上瘾者大多能够捍卫的原则：为了能让美国政府查看内容而削弱一部iPhone，你就有可能为任何地方的任何政府入侵者削弱所有iPhone。\n[E] 很可能会经历数月的法律对抗，而且目前完全不清楚哪一方会在法庭上、在争取公众舆论和立法支持上获胜。然而，这一切背后有一个简单的动态：苹果、谷歌、Facebook等公司掌握着这场对抗中的多数王牌。它们拥有我们的数据，而它们的业务依赖于全球公众的一种集体信念，即它们会尽其所能保护这些数据。\n[F] 这条防线上出现任何裂缝，对必须在全球运营的科技公司来说都可能是致命的。如果苹果被迫为美国执法调查打开一部iPhone，那有什么能阻止它以后也应俄罗斯或伊朗的要求这样做？如果苹果被迫编写代码让FBI进入赛义德·里兹万·法鲁克（圣贝纳迪诺袭击中的男性袭击者）使用的iPhone 5c，一旦某个黑客拿到那段代码并闯入其他设备，谁该负责？\n[G] 苹果在这些问题上的立场是在斯诺登事件之后形成的，当时公司开始落实一系列技术，这些技术默认使用加密来限制对人们数据的访问。不仅如此，苹果——以及谷歌、Facebook、推特和微软等其他科技公司——还把反对政府的主张作为企业自豪感的一个要点。\n[H] 苹果正在形成的全球品牌是隐私；它已将其公司声誉，更不用说大量技术与财务资源，押在限制斯诺登所揭露的那种大规模监控上。因此，如今在许多涉及政府侵入数据的案件中，曾经孤独的隐私倡导者发现自己正在与世界上最强大的公司并肩作战。\n[I] 电子前沿基金会（一个隐私监督组织）的总法律顾问库尔特·奥普萨尔说：“一个可对比的点是20世纪90年代围绕加密问题的斗争。当时有几家公司参与，但没有一家世界最大公司像我们昨天从蒂莫西·库克那里看到的那样，发表一篇冗长而激昂的公开信。苹果的形象确实得到了很大的提升。”\n[J] 苹果和其他科技公司还掌握着另一张王牌：不断让设备越来越难以访问的技术手段。请注意，苹果对政府要求的公开反对本身就构成了对政府大规模入侵的一种阻碍。要获取一部iPhone的内容，政府表示需要法院命令以及苹果的帮助来编写新代码；而在早期版本的iPhone中——也就是那些在苹果热衷于隐私保护之前制造的设备——FBI或许本来可以自行破解。\n[K] 可以预期这个套索会继续收紧。专家表示，无论苹果是否输掉这个具体案件，它未来可能采取的措施几乎肯定能够进一步限制政府的触及范围。\n[L] 这并不是说圣贝纳迪诺案的结果无关紧要。正如苹果和多位安全专家所主张的，强制苹果编写软件让FBI访问涉案iPhone的命令会确立一个令人不安的先例。该命令本质上是要求苹果侵入自己的设备，而一旦这个先例确立，就可能被用来证明执法部门在远离国家安全威胁的其他调查中绕过加密技术是正当的。\n[M] 一旦政府掌握了一种进入iPhone的方法，它可能会要求在疑似恐怖袭击发生之前先发制人地使用该方法——这让苹果陷入两难：要么服从，要么冒着发生袭击并遭受公关噩梦的风险。奥普萨尔说：“这是反加密战争中的一个全新举动。我们在国会和媒体上已经就政府是否应拥有后门进行过大量辩论，而这是对那场辩论的迂回绕过——他们直接带着一道命令来创建那个后门。”\n[N] 然而值得注意的是，即使苹果最终输掉此案，它也有足够多的技术手段可以随着时间推移关闭后门。研究iPhone及其漏洞的数字专家乔纳森·兹齐亚尔斯基说：“如果他们的工程师还算称职，我敢打赌他们此刻正在重新思考威胁模型。”\n[O] 兹齐亚尔斯基说，一个相对简单的解决办法是，苹果修改未来版本的iPhone，要求用户输入密码，手机才会接受联邦调查局希望苹果创建的那种修改版操作系统。这样一来，苹果就不能单方面引入削弱iPhone的代码——必须得到用户同意。\n[P] 兹齐亚尔斯基说：“没有任何东西是百分之百防黑客的。”但他指出，法官在本案中的命令要求苹果提供“合理的安全协助”来解锁法鲁克的手机。如果苹果改变未来iPhone的安全模式，以至于在政府强迫下，即使是其工程师的“合理协助”也无法破解某一台设备，那么本案确立的先例就可能失去持久效力。换句话说，即使联邦调查局赢得这个案子，从长远看它也是输家。",
+   "questions": [
+    {
+     "stem": "36. It is a popular belief that tech companies are committed to protecting their customers' private data.",
+     "answer": "E",
+     "analysis": "该段提到科技公司的业务依赖全球公众的集体信念，即它们会尽一切努力保护数据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. The US government believes that its access to people's iPhones could be used to prevent terrorist attacks.",
+     "answer": "M",
+     "analysis": "该段提到政府可能会要求在疑似恐怖袭击发生之前先发制人地使用进入iPhone的方法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. A federal court asked Apple to help the FBI access data in a terrorist's iPhone.",
+     "answer": "C",
+     "analysis": "该段提到联邦法院命令要求苹果帮助FBI解锁袭击者使用的iPhone。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Privacy advocates now have Apple fighting alongside them against government access to personal data.",
+     "answer": "H",
+     "analysis": "该段提到隐私倡导者发现自己与世界上最强大的公司并肩作战，对抗政府数据侵入。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Snowden revealed that the American government had tried hard to access private data on a massive scale.",
+     "answer": "B",
+     "analysis": "该段提到斯诺登揭露政府入侵其他公司以大规模获取私人数据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. The FBI might have been able to access private data in earlier iPhones without Apple's help.",
+     "answer": "J",
+     "analysis": "该段提到在早期版本的iPhone中，FBI或许本可以自行破解，无需苹果帮助。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. After the Snowden incident, Apple made clear its position to counter government intrusion into personal data by means of encryption.",
+     "answer": "G",
+     "analysis": "该段提到苹果在斯诺登事件后开始实施默认使用加密的技术，并公开反对政府主张。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. According to one digital expert, no iPhone can be entirely free from hacking.",
+     "answer": "P",
+     "analysis": "该段引用数字专家兹齐亚尔斯基的话：没有任何东西是百分之百防黑客的。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Timothy Cook's long web post has helped enhance Apple's image.",
+     "answer": "I",
+     "analysis": "该段提到库克发表冗长而激昂的公开信，使苹果形象得到很大提升。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Apple's CEO has decided to appeal the federal court's order to unlock a user's iPhone.",
+     "answer": "D",
+     "analysis": "该段提到苹果首席执行官蒂莫西·库克表示将对法院命令提起上诉。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:30:05.271Z"
+}

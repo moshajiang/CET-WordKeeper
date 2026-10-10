@@ -459,10 +459,8 @@
           "qtype": "choice",
           "stem": "62. What is responsible for the students’ lack of higher-level skills?",
           "options": [
-            "A) The diluted college curriculum.",
-            "C) The absence of rigorous discipline.",
-            "B) The boring classroom activities.",
-            "D) The outdated educational approach."
+            "A) The diluted college curriculum. C) The absence of rigorous discipline.",
+            "B) The boring classroom activities. D) The outdated educational approach."
           ],
           "answer": "",
           "analysis": ""

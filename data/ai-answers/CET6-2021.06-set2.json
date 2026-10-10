@@ -1,0 +1,188 @@
+{
+ "level": "CET6",
+ "year": 2021,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-v4-pro",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "The line chart illustrates the dramatic growth of the gross enrolment ratio in higher education in China from 1990 to 2019. It rose steadily from merely 3.4% in 1990 to 51.6% in 2019, a more than fifteen-fold increase. This striking upward trend highlights China's remarkable achievements in higher education.\n\nA number of factors can account for this progress. First, the Chinese government has given top priority to education and invested heavily in universities, which has greatly expanded educational resources. Second, the enrollment expansion policy since 1999 has enabled millions of young people to receive higher education. Third, the improvement of people's living standards has also increased the demand for higher learning.\n\nIn conclusion, China has successfully transformed its higher education from elite education to mass education, and is now moving towards universal access. This achievement not only cultivates a large number of high-quality talents but also provides strong support for the country's sustainable development.",
+   "note": "范文首段简要描述图表数据并点明成就，紧扣Directions。第二段用三点论证原因，结构清晰。尾段总结意义，升华主题。可复用句型有“The chart illustrates...”“A number of factors account for...”“This achievement not only... but also...”，均属四六级常见加分表达，用词不偏不怪。",
+   "questions": []
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Qinghai Province, located in northwestern China, has an average elevation of more than 3,000 meters, and most of its area is covered by high mountains and plateaus. It is named after Qinghai Lake, the largest saltwater lake in China. Qinghai Lake is hailed as \"the most beautiful lake in China,\" one of the most popular tourist attractions, and a paradise for photographers and artists. Qinghai has magnificent mountains and rivers, a vast territory and abundant resources, and is rich in oil and natural gas reserves. Driven by oil and natural gas, many cities in the province have seen substantial economic development. Qinghai is particularly famous for its abundant water resources. It is the source of China's three major rivers—the Yangtze River, the Yellow River and the Lancang River—and plays an important role in China's water ecology.",
+   "note": "难点：地大物博、长足发展、发源地、水生态等中国特色表达。处理时用地道英文对应，如vast territory and abundant resources、substantial development、source、water ecology；青海湖及三大河流名称需准确。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "我们常常认为绘画需要天赋，但这种想法源于我们把绘画错误地主要归类为一种艺术形式，而不是一种学习工具。研究人员、教师和艺术家开始认识到绘画能对广泛的技能和学科产生积极影响。我们大多数人以前都画过画，但在某个时候，大多数人都停止了画画。显然，有些人没有停止，谢天谢地：一个没有设计师和艺术家的世界将会非常寒酸。一些人认为，许多成年人放弃绘画是因为我们错误地将其分类，并给了它一个非常狭隘的定义。D.B. 道德教授在其著作《火柴人：作为人类实践的绘画》中指出，我们错误地归置了绘画的意义，因为我们把它看作一种专业技能，而不是一种个人能力。我们错误地认为“好的”绘画是那些再现现实世界、逼真如幻觉的作品。相反，绘画应该被重新归类为一种象征性工具。人类绘画已有 73,000 年历史。这是人之为人的一部分。我们没有黑猩猩的力量，因为我们放弃了动物的力量去操控精巧的工具，比如锤子、长矛，以及后来的钢笔和铅笔。人类的手是极其密集的神经末梢网络。在许多方面，人类天生就适合绘画。一些研究人员认为，涂鸦激活了大脑所谓的默认回路——本质上，是在没有其他刺激时负责维持大脑基线活动水平的区域。因此，一些人认为在无聊的讲座中涂鸦可以帮助学生集中注意力。在一项研究中，参与者被要求在涂鸦或静坐的同时听一列名字。涂鸦的人记住的名字比不涂鸦的人多 29%。还有证据表明，绘画天赋取决于一个人感知世界的准确程度。人类视觉系统往往会误判大小、形状、颜色和角度，但艺术家比非艺术家更准确地感知这些特质。培养绘画才能可以成为在视觉重要领域提高人们观察能力的重要工具。我们不应把绘画看作一些有创造力的人天生拥有的才能，而应把它视为一种更好地观察和理解世界的工具——它恰好也兼有艺术形式的功能。心不在焉的涂鸦和写生都已被证明对记忆和视觉感知有积极影响，所以下次学校董事会削减艺术部门预算时，大声抱怨吧。",
+   "questions": [
+    {
+     "stem": "46. What do people generally think about drawing?",
+     "answer": "A",
+     "analysis": "根据文章首句，人们通常认为绘画需要天赋（inborn talent），即“有创造力的人被赋予的礼物”，所以选 A。B 项强调练习获得，与天赋观相反；C 项“所有人都欣赏”文中未提；D 项是作者的建议而非人们通常的看法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn about designers and artists?",
+     "answer": "C",
+     "analysis": "文中说没有设计师和艺术家的世界会非常寒酸（shabby），说明他们让世界更美丽、更有魅力，故选 C。A 项人数减少、B 项热衷于改变破旧环境、D 项大部分人生都在画画均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does Professor D . B. Dowd argue in his book?",
+     "answer": "A",
+     "analysis": "道得教授认为绘画应被看作个人能力而非专业技能，并结合后文“人类天生就适合绘画”可知，他主张每个人都天生具有绘画能力，所以选 A。B 项与“非专业技能”相悖；C 项“价值被高估”未提及；D 项是他批评的错误观点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What have some researchers found from one study about doodling?",
+     "answer": "D",
+     "analysis": "研究表明涂鸦者比不涂鸦者多记住 29% 的名字，且前文提到涂鸦能帮助学生在无聊讲座中集中注意力，因此 D 项“有助于提高注意力和记忆力”正确。A 项“必须”过于绝对；B 项“把无聊变有趣”未直接说明；C 项“最可靠”无比较依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What is characteristic of people with drawing talent?",
+     "answer": "D",
+     "analysis": "文中明确提到绘画天赋取决于准确感知世界的程度，艺术家比非艺术家更能准确感知大小、形状、颜色和角度，即视觉感知精确，所以选 D。A、B、C 三项均与文中“准确感知”不符。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "汽车已经重塑了我们的城市。它似乎为每个人提供了自主性。广告中把量产汽车宣传为个性与自由的象征，但大多数时候这些车将在拥堵的道路上进行短途行驶，这种与现实脱节的做法几乎令人觉得可笑。\n尽管人们对最高速度、过弯能力和加速性能大加吹嘘，现代汽车上最有用的装置却是那些在缓慢行驶时才用得上的：泊车传感器、音响系统，以及能显示绕过前方拥堵路线的导航应用。这似乎是分享个人信息能直接回馈分享者的少数领域之一：因为这些应用几乎随时知道所有用户的位置和移动速度，它们能很快发现交通拥堵并提出绕行路线。\n问题是，当每个人都在使用导航应用，而应用又告诉每个人避开同样在使用该应用的其他人时，问题就来了。交通拥堵往往出现在没有人有足够信息去避开它们的地方。当少数幸运者掌握这些信息时，他们会大受裨益。但当每个人都拥有完美信息时，交通拥堵只会蔓延到那些看似能绕开它们的支路上。\n这种新的拥堵教会我们两件事。第一，技术的承诺永远不会像我们希望的那样完全实现；它们会受到无法预见和意外的后果的限制。坐在更舒适的车里堵在不同的车流中固然惬意，但很难说是曾经似乎被许诺的那种解放。第二，自发组织无法把我们带到想去的地方。数百万司机努力争先，并不会奇迹般地创造一个人人都比以前更好的局面，反而是一个几乎人人都更糟的局面。中央控制和集体组织能够产生更顺畅、更公平的结果，尽管即使这一点也永远无法保证。\n类似限制也可预见于自动驾驶汽车所承诺的更大进步。上周，一辆由出租车公司优步运营的自动驾驶汽车在亚利桑那州撞死了一名推着自行车横穿宽阔道路的女子。这是首起涉及本应完全自动驾驶汽车的有记录的死亡事件。专家表示，这暗示着技术上的“灾难性失败”。\n即便是硅谷，也日益不得不承认其文化中那种令人陶醉的急迫感所带来的代价。交通教会我们的是，鲁莽且不受控制的变化既可能伤害我们，也可能使我们受益，而深思熟虑的监管对于更美好的未来是必要的。",
+   "questions": [
+    {
+     "stem": "51. What does the author say about car advertisements?",
+     "answer": "B",
+     "analysis": "首段指出广告将量产车宣传为个性与自由的象征，却与现实脱节，可见其对汽车所提供自主性的呈现是虚假的。A项强调速度、C项强调设计理念、D项涉及自动驾驶市场，均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does the author imply about the various gadgets on cars?",
+     "answer": "C",
+     "analysis": "第二段说最有用的是缓慢行驶时用到的装置，暗示在当前拥堵的交通状况下只有部分车载装置能发挥作用。A项只是导航应用的部分效果且后文否定其简单有效性，B项与“吹嘘”相对，D项无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the author say about the use of navigation apps?",
+     "answer": "A",
+     "analysis": "第三段明确指出当人人使用导航应用时，拥堵只会蔓延到支路上，即可能在别处制造新的拥堵。B项忽视了这一负面结果，C、D两项文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author say about technology?",
+     "answer": "B",
+     "analysis": "第四段直接说技术的承诺永远不会像我们希望的那样完全实现，即技术很少能兑现全部承诺的好处。A项不是重点，C项未提，D项与“集体组织只能产生更公平结果但不保证”不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What key message does the author try to convey in the passage?",
+     "answer": "C",
+     "analysis": "末段总结交通教训，强调鲁莽不受控制的变化既可能有害，深思熟虑的监管对更美好未来是必要的，即技术创新应受到适当监管。A项与主旨相反，B项过于空泛，D项只涉及硅谷文化这一局部例证。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 法国当局透露，周一晚间，巴黎市中心的巴黎圣母院在消防员奋力阻止火势蔓延至钟楼时，距离完全被毁只有“15到30分钟”。巴黎消防队的成员冒着生命危险留在这座燃烧的建筑内，在熊熊大火与西侧两座塔楼之间形成一道水幕，从而避免了一场更大的灾难。\nB) 就在警方调查人员询问参与该古迹修复工作的工人、试图查明这场毁灭性大火的原因之际，法国险些失去其最著名大教堂的内情被披露出来。巴黎检察官雷米·海茨说，周一晚上6点20分首次响起火警警报，但没有发现火情。第二次警报于6点43分响起，随后在屋顶发现了大火。\nC) 周二，随着法国商界领袖和全球企业宣布将向总统埃马纽埃尔·马克龙发起的修复活动捐款，几小时内就筹集了超过6.5亿欧元。但随着紧急救援人员在烧焦的废墟中搜寻，一场争论再次浮出水面：有人指责这座因维克多·雨果的小说而不朽、深受喜爱的大教堂在火灾前就已经破败不堪。\nD) 大教堂归法国国家所有，多年来一直处于争论的中心：谁应该为坍塌的楼梯、破碎的雕像和开裂的墙壁的修复工作提供资金。国家遗产研究所科学委员会主席让-米歇尔·莱尼奥说：“发生的事情是必然的。对这样一座宏伟建筑缺乏足够的维护和日常关注，是这场灾难的原因。”大火在燃烧15小时后被宣布完全扑灭，内政部副部长洛朗·努涅斯表示，主体结构虽已保住但仍然脆弱。他赞扬了消防员的行动，但承认大教堂的命运一度不确定。努涅斯说：“他们保住了主体结构，但一切都取决于15到30分钟。”\nE) 周二晚间，马克龙在一次出人意料的电视讲话中表示，他希望五年内重建大教堂。“巴黎圣母院的火灾提醒我们，我们总会有挑战需要克服，”马克龙说，“巴黎圣母院是我们的历史、我们的文学、我们生活的中心。它是我们衡量距离的标尺。它是如此多的书籍、如此多的绘画。它是每个法国人的大教堂，即使是那些从未去过的人。这段历史是我们的，所以我们将重建巴黎圣母院。这是法国人民所期盼的，也是我们的历史应得的。这是我们深刻的命运。我们将重建巴黎圣母院，使它比以往更加美丽。我希望在今后五年内完成。我们能够做到。考验之后是反思，然后是行动。”\nF) 大火于周一晚上6点40分左右从93米高的尖塔底部燃起，蔓延至大教堂屋顶，屋顶由数百根橡木梁构成，其中一些可追溯到13世纪。这些梁因为密度大而被称为“森林”，构成了贯穿大教堂中央部分的十字形屋顶。当成百上千的游客和巴黎人站在那里看着火焰从屋顶蹿出时，随着大教堂尖塔着火、燃烧并最终向内坍塌，人们震惊落泪。\nG) 一系列触目惊心的视频和照片迅速在社交媒体上传播，展示了可怕的破坏，并引起了全世界人民的情感反应。事实上，几分钟内，这场火灾就占据了全球各大报纸和电视网络的头条。这并不奇怪，因为巴黎圣母院意为“我们的女士”，是巴黎最知名的象征之一，每年吸引数百万游客。\nH) 在全世界注视下，现场的500名消防员奋力阻止火焰蔓延至悬挂大教堂钟的两座主塔。如果塔楼的木结构着火，钟——其中最大的埃曼努埃尔钟重13吨——可能会坠落，可能导致两座塔楼倒塌。警方和消防部门将在未来48小时内评估这座850年历史建筑的“安保与安全”。努涅斯说：“我们已经确认整个结构存在多处脆弱点，这些都需要加固。”他补充说，因此，大教堂北侧五栋建筑的居民被临时疏散。建筑师已经确定该结构有三处主要空洞，分别位于尖塔、主厅以及中殿北侧的上部房间。大部分木质屋顶梁已被烧毁，支撑屋顶的部分混凝土也已坍塌。\nI) 周二下午，内政部长克里斯托夫·卡斯塔内视察了大教堂，以了解受损程度。灰烬覆盖着菱形图案的大理石地板，漂浮在消防水管留下的大片灰水中。在一堆发黑的橡木梁后面，这些梁落在原处堆积着，大教堂屋顶巨大空洞透进来的日光照亮了尼古拉·库斯图雕像上方的金色十字架，这座雕像似乎未受损。官员称，初步检查还表明，三扇装饰华丽的彩色玻璃“玫瑰”窗似乎在大火中幸免于难。然而，消防官员表示，在大教堂结构被认为安全之前，不可能对损失进行完整清点。\nJ) 文化部长弗兰克·里斯特表示，从大教堂抢救出来的宗教遗物被安全存放在市政厅，受到烟雾损坏的艺术品被送往世界最大的艺术博物馆卢浮宫，在那里进行干燥、修复和储存。装饰尖塔的十六尊铜像在火灾前几天已被移走进行修复。尖塔顶部的遗物据信因尖塔被毁而遗失。除了消防员所说超过800°C的高温造成的损坏外，专家们还需要评估消防员向大教堂注入的大量水造成的损害。其中的一个受害者是18世纪30年代建造的大管风琴，据说它逃过了火焰，但被水严重损坏。\nK) 法国政治评论员指出，这场毁灭性的大火做到了马克龙未能做到的事——团结了整个国家。但接下来的日子里，对大教堂原状的批评可能会加剧。莱尼奥对《十字架报》说：“这不是要找人指责。责任是集体的，因为这是这个国家最受喜爱的古迹。”艺术史学家亚历山大·加迪表示赞同。“我们多年来一直说，维护历史古迹的预算太低了，”加迪说。巴黎检察官办公室已对“火灾造成的非自愿破坏”展开调查，表明他们认为火灾原因是意外而非犯罪。",
+   "questions": [
+    {
+     "stem": "36. The total amount of 1amage to Notre Dame Cathedral can be assessed only when its structure is considered safe .",
+     "answer": "I",
+     "analysis": "依据：该段最后一句 'fire officers have said a complete inventory of the damage will not be possible until the cathedral structure has been deemed safe.' 与此陈述对应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Once again people began to argue whether Notre Dame Cathedral was going to collapse even without the fire .",
+     "answer": "C",
+     "analysis": "依据：该段 'a row was resurfacing over accusations that the beloved cathedral... was already crumbling before the fire.' 表明人们再次争论大教堂在火灾前是否已经坍塌。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The Notre Dame Cathedral catastrophe was said to have helped unite the French nation .",
+     "answer": "K",
+     "analysis": "依据：该段 'French political commentators noted the devastating fire had succeeded where Macron had failed in uniting the country.' 说明这场灾难被认为帮助团结了法国。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. The roof of Notre Dame Cathedral was built with large numbers of densely laid-out wood beams .",
+     "answer": "F",
+     "analysis": "依据：该段 'the cathedral's roof, made up of hundreds of oak beams... known as la foret (the forest) because of their density' 说明屋顶由大量密集排列的木梁建成。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Renovation workers of Notre Dame Cathedral were questioned to find out the cause of the accident .",
+     "answer": "B",
+     "analysis": "依据：该段 'police investigators questioned workers involved in the restoration of the monument to try to establish the cause of the devastating blaze.' 与此陈述对应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Had the bell towers' wooden frames burned down, the heavy bells would have crashed down.",
+     "answer": "H",
+     "analysis": "依据：该段 'If the wooden frame of the towers had caught fire, it could have sent the bells... crashing down' 说明若钟楼木结构烧毁，重钟会坠落。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. The timely action of the firefighters prevented the fire from reaching the Cathedral's bell towers .",
+     "answer": "A",
+     "analysis": "依据：该段 'A greater disaster was averted by members of the Paris fire brigade... create a wall of water between the raging fire and the two towers' 说明消防员的及时行动阻止火势蔓延至钟楼。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Apart from the fire, the water used to extinguish it also caused a lot of damage to Notre Dame Cathedral.",
+     "answer": "J",
+     "analysis": "依据：该段 'experts also need to assess damage from the vast quantities of water firefighters poured into the cathedral... The Great Organ... significantly damaged by water' 说明灭火用水也造成损坏。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. There has been argument over the years as to who should pay for the restoration of Notre Dame Cathedral .",
+     "answer": "D",
+     "analysis": "依据：该段 'has been at the centre of a years-long dispute over who should finance restoration work' 说明多年来一直争论谁应支付修复费用。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. News of the Notre Dame Cathedral catastrophe instantly caught media attention throughout the world .",
+     "answer": "G",
+     "analysis": "依据：该段 'within minutes the fire occupied headlines of every major global newspaper and television network' 说明火灾新闻迅速引起全球媒体关注。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T02:47:35.315Z",
+ "prunedAt": "2026-10-10T03:33:14.385Z"
+}
