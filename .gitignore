@@ -35,3 +35,4 @@ Thumbs.db
 *.pem
 secrets.json
 # 注意：scripts/check-secrets.mjs 会在每次 verify-all 时兜底扫描被跟踪文件
+
