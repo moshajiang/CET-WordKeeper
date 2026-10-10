@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2023,
+ "month": 6,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Nowadays, an increasing number of college students are taking an active part in community service, and I firmly believe it brings benefits to both society and ourselves.\n\nTo begin with, doing community service helps us put what we have learned into practice while fostering a sense of social responsibility. By reaching out to those in need, we learn to care for others and become more considerate members of society. Moreover, such activities strengthen the bond between the university and the local community, creating a warmer and more harmonious neighborhood.\n\nAs for the service I can offer, I plan to volunteer at a nearby community center twice a month, tutoring primary school children with their English and helping the elderly use smart phones. I can also organize online reading-sharing sessions to enrich residents' leisure time.\n\nIn conclusion, community service is a rewarding experience, and I encourage every student to get involved.",
+   "note": "结构：引出话题→分两点谈益处（实践/责任感、校社联结）→具体可提供的服务→总结呼吁。可复用句型：'an increasing number of... are taking an active part in...'；'To begin with... Moreover...'；'As for the service I can offer, I plan to...'；'In conclusion... I encourage every student to get involved.' 注意紧扣 Directions 要求的两点：benefits 与 the service you can provide。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "无论你只是心情低落还是处于一段消沉期，散散步都能立刻改善你的情绪，尤其是当你走到户外时。散步不仅能让你没那么抑郁，而且一项新研究表明，每天散步的抑郁症患者在症状上的改善程度与服药者不相上下。事实上，研究中60%到70%的参与者甚至不再被归类为抑郁症患者。\n\n骨密度或许不是散步最令人兴奋的健康益处之一，但它很重要。骨骼更强健的人能避免骨质疏松症以及随之而来的种种问题，比如骨折和其他功能障碍。一项大型研究显示，获得强健骨骼的最佳方式是通过跑步、跳舞和散步等承重运动。但就骨骼而言，绝对是“用进废退”：要保持骨骼强壮，你必须坚持锻炼。研究人员发现，经常散步的成年人在一生中的骨密度都优于那些不爱运动的朋友。\n\n散步很适合用来清醒头脑或发泄情绪。它也提供了一个与亲友增进感情的好机会，远离电子产品和家中其他干扰。更妙的是，你树立了一个强有力的榜样：因为当他们看到你收获散步的益处时，也会受到鼓舞而更多地去散步。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "26题：'depression sufferers who took a 26walk'，需副词修饰walk，daily（每日的）符合“每天散步”的语义，且与后文规律性锻炼呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "N",
+     "analysis": "27题：'improvement in their 27'指抑郁症患者的症状改善，symptoms（症状）与上文depressed语义一致。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "28题：'could no longer even be 28as depressed'为被动结构，be classified as（被归类为）为固定搭配，意为不再被归为抑郁症患者。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "29题：'all the problems that 29with it'为定语从句，come with（伴随…而来）符合“骨质疏松症带来的问题”之意。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "H",
+     "analysis": "30题：'it's 30 use it or lose it'需副词强调语气，definitely（绝对地）修饰全句，表达“用进废退”的肯定态度。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "K",
+     "analysis": "31题：'than their 31 friends'与上文walked regularly（经常散步）相对，inactive（不活跃的）指不爱运动的朋友。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "32题：'great for 32your head'中clearing your head意为“清醒头脑”，为常见搭配，与blowing off some steam并列。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "C",
+     "analysis": "33题：'to 33with friends and family'中bond with意为“与…增进感情/建立亲密关系”，契合语境。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "I",
+     "analysis": "34题：'far away from electronics and other 34at home'中distractions（干扰物）与electronics并列，指家中令人分心的事物。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "M",
+     "analysis": "35题：'when they see you 35 the benefits of walking'中reap the benefits为固定搭配，意为“收获/获得益处”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 在纽约曼哈顿运河街，通往四楼工作室的楼梯上，你首先注意到的是从一扇金属门后传来的有节奏的嘭嘭声。就在入口处，巨大的狮头面具随着鼓点扭动、旋转。在最近一个周五的傍晚，青少年们穿过工作室地板，练习中国舞狮。\n\nB) “你们要围成一个圈，”24岁的Victor Fong在纽约华人共济会体育俱乐部对学生们说，“慢一点，再来一遍。”这支由60名成员组成的舞蹈队全年都表演，但当时正在为其最大的活动——农历新年庆祝——做准备，活动将于周六开始、2月15日结束。青少年约占团队一半，其中许多人14岁就开始学舞狮。该舞团自1956年起就开始表演，约100名现任及前成员将参加2月5日在曼哈顿唐人街举行的第18届农历新年游行。\n\nC) Fong先生自15岁起就参与这个组织，三年前开始教舞狮。但这个俱乐部也充当青少年的娱乐中心和庇护所，随时提供电子游戏。多达20名学生放学后来这里。“在这里闲逛的基本要求是你得学会舞狮，”Fong先生说。虽然这不是成为成员的正式要求，但每个人都会以某种方式参与农历新年游行，无论是跳舞、举旗还是击鼓。\n\nD) 26岁的Alvin Chau白天是环境顾问，周末是舞狮者。他入会十年，因对舞狮的兴趣而加入。“我们就像一个大家庭，”他说着与其他成员握手进门，“你认识每一个人。”\n\nE) 人们认为舞狮始于公元3世纪。关于舞狮如何产生，说法不一，但大多数都包含一只名叫“年”的怪兽恐吓村庄的故事。村民们最终团结起来，用鞭炮和鼓声把怪兽吓跑。虽然狮子并非中国本土动物，但有些版本的故事里，村民创造了一个狮子形状的神兽来驱赶怪兽。\n\nF) 如今，舞狮者走遍唐人街，一家接一家商铺，为来年带来好运。根据农历，新年将于周六开始，是鸡年，被视为积极乐观的象征。“就像长夜将尽、旭日东升，”美国华人博物馆数字馆藏协调员Ya Yung Teng说，“我们希望迎来新的一天。”鸡并不算强壮的动物，Teng女士说，但它们数量众多。“在某种意义上，”她说，鸡“代表着‘我们人民’。”\n\nG) 狮头和狮尾由两人操控。一人控制头部，另一人跟在代表狮身的长布下。舞者协调移动，模仿野兽在野外的自然动作，包括攻击时的凶猛。狮头重量不到10磅，稳稳架在舞者肩上。里面，舞者拉动绳索开合狮眼、抖动耳朵、张开嘴巴露出火橙色的舌头。\n\nH) “优秀的舞狮者会模仿活生生的动物，”59岁、负责俱乐部社区公关的Karlin Chan说。“我小时候就开始舞狮，”他说，“那时唐人街小得多，庆祝活动有烟花和鞭炮，增添了意味。”\n\nI) Chan先生每年去中国时都会买一个新狮头。一个头约1500美元。“想要好东西、好质量，就得亲自看，”他说，“装柜发货前我会验货。”参与俱乐部近50年的Chan先生说，把舞狮一代代传下去至关重要。“你需要把传统和文化传承下去，这是我们文化的一部分，”他说，“这是促进文化理解与交流的好方式，我们欢迎那样。”\n\nJ) 对17岁的另一名成员Sara Pore来说，舞狮不只是传统，它提供了发挥创造力的出口。“舞狮始于2000年前——太不可思议了，”她说，“但让你成为合格舞狮者的，是其中蕴含的想象力。正因如此，舞狮能培养领导能力。你不断被逼着突破自己的极限。”\n\nK) 回到排练现场，18岁的Justin Le在腰间系了一条红绸带练习跳跃。舞者用绸带把自己拉过搭档头顶。房间天花板太低，无法戴狮头练跳，所以一站到搭档头上，Le先生就伸出双臂，仿佛顶着狮头。\n\nL) Le先生将舞狮视为一种传承。“我生来就在这个圈子里，”Le先生说，并指出他的叔父和父亲都是俱乐部成员。“从小到大，我总看着家人舞狮，渐渐产生了兴趣。”到14岁，他正式加入体育俱乐部的舞狮队。“我珍视自己的文化和传统，作为华人或亚裔美国人，我为此深感自豪，”他说，“我想回馈社区。”",
+   "questions": [
+    {
+     "stem": "36.The lion dancers perform from door to door to bring New Year wishes to business people.",
+     "answer": "F",
+     "analysis": "36题：对应F段'travel across Chinatown going from business to business to bring good luck for the coming year'——舞狮者挨家商铺拜年送祝福。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.The New York dance club also serves as a place for entertainment where youngsters can enjoy\nthemselves safely.",
+     "answer": "C",
+     "analysis": "37题：对应C段'the club also acts as a recreation center and safe haven for teenagers, with video games readily available'——俱乐部也是青少年安全娱乐的场所。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.Lion dancers need to have a little imagination to perform well.",
+     "answer": "J",
+     "analysis": "38题：对应J段Sara Pore所说'what makes you a competent lion dancer is that there's a sense of imagination involved'——舞狮需要一点想象力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.There are a number of different versions about the origin of the lion dance.",
+     "answer": "E",
+     "analysis": "39题：对应E段'Stories vary about how lion dancing came to be'——关于舞狮起源有不同版本说法。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Some 50of the members of a New York lion dance club are teenagers.",
+     "answer": "B",
+     "analysis": "40题：对应B段'Teenagers comprise about half of the group'——约一半（50%）成员是青少年。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.One club member says he feels proud of his cultural tradition.",
+     "answer": "L",
+     "analysis": "41题：对应L段Justin Le所说'I have a lot of pride in that'——他为自己的文化传统感到自豪。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Two dancers coordinate their movements, one manipulating the lion's head and the other its body.",
+     "answer": "G",
+     "analysis": "42题：对应G段'The lion head and tail are operated by two people. As one person controls the head, a second follows... representing the body'——两人配合操控狮头与狮身。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.One lion dancer compares their New York dance club to a family.",
+     "answer": "D",
+     "analysis": "43题：对应D段Alvin Chau所说'We're a big family'——他把俱乐部比作大家庭。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.Lion dance should be handed down to future generations as part of Chinese culture.",
+     "answer": "I",
+     "analysis": "44题：对应I段Mr. Chan所说'passing the dance from one generation to the next was vital... pass on the traditions and the culture'——舞狮应作为中国文化传承给后代。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.One lion dancer learned how to perform from his elders.",
+     "answer": "L",
+     "analysis": "45题：对应L段Justin Le所说'I was born into it... my uncle and father were club members'——他从长辈（叔父、父亲）那里学会舞狮。注：L段在41与45重复使用，官方答案允许一段选多次。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "团队建设活动在试图提升组织与团队和谐及效率的管理者中已十分流行。不幸的是，许多员工反感这种强制性的感情联络，并常将其视为一件烦心事。\n\n本周悉尼大学研究人员在《社交网络》上发表的一篇论文，报告了参与者对团队建设干预措施的感受，揭示了强迫员工参与的伦理问题。\n\n“许多人认为团队建设活动是浪费时间，因此我们决定更深入地探究背后的原因，”该论文首席研究员Peter Matous博士说。\n\n“团队被组建、合并和重组。员工被重新安置，办公空间被重新设计。这一切都是为了提升职场效率、协作与凝聚力。但这有用吗？”Matous说。\n\n研究发现，那些聚焦于分享和干预团队成员间个人态度与关系的团建活动，被认为过于生硬且具侵犯性，尽管研究人员表示，一定程度的开放与脆弱往往是与同事建立深入、有效联系所必需的。\n\n“一些参与者反对团建，因为它们是隐性强制的。他们不欢迎管理层对他们本职工作表现之外的生活感兴趣，”Matous说，“许多人不愿被强迫去玩乐或交朋友，尤其在本已繁忙的工作之上。他们觉得管理层太爱管闲事，或试图过度控制他们的生活。”\n\n在这项研究中，研究人员推荐了一种自我表露的方法，引导参与者回答一系列问题，使其逐步披露个人信息与价值观。该方法经过充分验证，已被证明能增进人际亲近感。然而，要成功，它必须是自愿的。\n\n研究人员表示，有许多思想流派提出不同的心理方法来加强关系。“审慎地，许多用于改善团队和组织的关係方法可以从其他领域借鉴。问题在于如何有效地运用它们来加强整个集体，而不只是个体关系之和，”Matous博士说。",
+   "questions": [
+    {
+     "stem": "Why are many employees opposed to team-building exercises?",
+     "answer": "A",
+     "analysis": "46题：定位首段'many employees resent compulsory bonding and often regard these exercises as a nuisance'，nuisance=annoying，员工认为团建讨厌。干扰项B/C/D文中均未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did Dr Matous and his team do to find out whether team-building activities would improve\nproductivity?",
+     "answer": "B",
+     "analysis": "47题：定位第四段'Teams are formed, combined and restructured. Staff are relocated and office spaces redesigned'，Matous团队重组员工并重新设计办公空间。A/C/D均未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did the study by Matous' team find about some team-building exercises?",
+     "answer": "D",
+     "analysis": "48题：定位第五段'team-building exercises which focused on... personal attitudes... were considered too heavy-handed and intrusive'及第六段'management's interest in their lives beyond their direct work performance'，被视为对个人生活的侵犯。A是团建内容非研究发现；B/C与文意相反。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "How can the self-disclosure approach succeed in increasing interpersonal closeness?",
+     "answer": "A",
+     "analysis": "49题：定位第七段'self-disclosure approach... guided through a series of questions... However, to be successful it must be voluntary'，方法成功关键在于自愿，即允许参与者自由表达自我。其余选项违背voluntary要义。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What does Matous think of the various psychological methods borrowed from other fields for\nstrengthening relationships?",
+     "answer": "D",
+     "analysis": "50题：定位末段'With caution, many relational methods... can be borrowed... The question is how to apply them effectively'，需谨慎应用才有效。A/B/C均曲解文意。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "洛杉矶县有近58,000名无家可归者。对于一个坐拥世上一些最富有人群的地区来说，这是一个令人震惊且悲惨的数字。终于，问题变得如此尖锐——且如此显眼——以至于洛杉矶采取了非同寻常的行动。该县的市民在2016年11月和2017年3月两次投票表决提高自己的税收。此举的目的，是为一项耗资数十亿美元、为期10年的无家可归者住房与社会服务计划提供资金。\n\n因此，洛杉矶现在拥有了数十年来最佳的机会来对抗无家可归问题。这无疑是所有人都能认同、绝不可错失的机遇。对本县而言，容忍那些更常见于里约热内卢贫民窟的匮乏景象，既不可取，在道德上不可接受，也不切实际。\n\n我们如何走到今天这一步？只要有无家可归者存在，人们就倾向于责怪受害者自身——将其难以立足视为性格、道德软弱或懒惰的问题。但与普遍看法相反，洛杉矶的无家可归者大多并非精神病患、吸毒成瘾或令人恐惧，尽管有相当一部分符合其中某些描述。如今，流落街头的人中，越来越大的比例是因为厄运或一连串错误，或因为经济抛下了他们——他们丢了工作、被驱逐，或在住房市场日益严苛时逃离了一段虐待性的婚姻。\n\n挑战是巨大的，即便所有人朝着同一方向努力。本月一份新的洛杉矶无家可归者服务管理局报告印证了这一点：该县无家可归人口的增长速度快于新住房的供给。\n\n在这个全球最富裕的国家，如此规模的无家可归现象本应令人羞愧和震惊。但大多数洛杉矶居民不再感到震惊或羞愧。我们越来越多地感到不适、恼怒、厌恶、恐惧或无意识。同情心正被无奈所取代。",
+   "questions": [
+    {
+     "stem": "Why did the citizens of Los Angeles vote to raise their own taxes?",
+     "answer": "A",
+     "analysis": "51题：定位第一段'voted... to raise their own taxes. The purpose... is to fund... program... for the homeless'及第二段'best chance... to combat homelessness'，民众投票加税是为应对无家可归问题。B/C/D非文中目的。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What do people tend to believe about the homeless?",
+     "answer": "C",
+     "analysis": "52题：定位第三段'tendency to blame the victims themselves... see their failure to thrive as an issue of character... laziness'，人们倾向认为无家可归者自己要为处境负责。A/B/D与文意相反或被否定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What is one of the causes for more and more people in Los Angeles to become homeless?",
+     "answer": "A",
+     "analysis": "53题：定位第三段末'because the economy forgot them—they lost a job or were evicted or fled... as the housing market was growing increasingly unforgiving'，住房市场日益严苛使他们越来越难以负担居所。B/C/D文中未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What do we learn from the new Los Angeles Homeless Services Authority report?",
+     "answer": "C",
+     "analysis": "54题：定位第四段'report showing that the county's homeless population is growing faster than the supply of new housing'，新增住房供给赶不上无家可归者增长的需求。A/B/D与报告内容不符。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "How do most Los Angeles residents now feel about homelessness?",
+     "answer": "D",
+     "analysis": "55题：定位末段'most Los Angeles residents are no longer either shocked or shamed'，多数居民不再感到震惊。A/B/C与文意相反。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Chinese government has long been making vigorous efforts to promote compulsory education so that every child can have access to schooling. Since the Compulsory Education Law took effect in 1986, through unremitting efforts, the goal of making compulsory education available across the country has been achieved. Today in China, children start primary school at the age of six and receive nine years of compulsory education from primary school to junior high school. Starting from the autumn semester of 2008, students in the compulsory education stage are exempt from tuition fees. With the implementation of a series of educational reform measures, the quality of China's compulsory education has also improved significantly.",
+   "note": "难点点评：①“大力推行”译为make vigorous efforts to promote；②“享有受教育的机会”用have access to schooling更地道；③“生效”用take effect；④“九年义务教育”nine years of compulsory education；⑤“无须缴纳学费”用are exempt from tuition fees（或free of charge）；⑥“一系列教育改革举措”a series of educational reform measures。注意时态：自1986年至今用现在完成时，1986年具体事件用一般过去时。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:46:55.205Z"
+}

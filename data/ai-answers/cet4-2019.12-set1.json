@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2019,
+ "month": 12,
+ "set_no": 1,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Dear John,\n\nI was thrilled to learn that you plan to teach English in China. Regarding your request for a city recommendation, I would strongly suggest Chengdu.\n\nAs a vibrant metropolis in southwest China, Chengdu offers a perfect balance of career opportunity and lifestyle. It is home to numerous international schools and training centers constantly seeking native English speakers, so finding a teaching position will be easy. Beyond work, the city boasts a relaxed pace of life, affordable living costs, and renowned hospitality, which will help you settle in comfortably. You can also savor authentic Sichuan cuisine and even cuddle giant pandas on weekends.\n\nChengdu's expanding expat community means you will never feel isolated, while its efficient subway and nearby airports connect you to the rest of Asia. I am confident you will find both professional fulfillment and personal joy there.\n\nYours,\nLi Ming",
+   "note": "结构：书信体三段式——问候并点题推荐成都→从工作机会、生活成本、美食熊猫、交通与社群四方面展开→总结期许。可复用句型：I was thrilled to learn that... 表欣喜；Regarding your request for..., I would strongly suggest... 直接荐城；boasts a relaxed pace of life, affordable living costs, and renowned hospitality 并列列举城市优势；I am confident you will find both... and... 收尾强化语气。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "出国旅行时，你是买塑料瓶装水，还是冒险喝自来水？想象一下，你正在泰国某座小岛上闲逛，或者正在欣赏吴哥窟的遗迹。天气很热，于是你从当地小贩那里抓了一瓶水。这样做是安全的，对吧？瓶子是密封的，标签上写着“纯净水”。但也许里面的东西并不那么天然。如果你知道全世界售出的瓶装水中超过90%都含有微塑料，你还会喝吗？\n\n这是一项最近发布的研究得出的结论。该研究分析了在9个国家出售的11个品牌的259瓶水，揭示出每升水平均含有325个塑料微粒。这些微塑料中包含一种通常被称为PET的物质，被广泛用于制造服装以及食品和液体容器。这项研究是由纽约州立大学代表新闻机构Orb Media进行的。每分钟约有100万瓶水被买走，买主不仅有口渴的游客，还有全球21亿饮用不安全饮用水的人中的许多。\n\n面对这一证据，包括雀巢和可口可乐在内的几家瓶装水制造商使用相同的方法进行了自己的研究。这些研究表明，它们的水中确实含有微塑料，但远远少于Orb研究所得出的结果。尽管如此，世界卫生组织已启动一项评估，调查饮用塑料瓶中的水带来的潜在健康风险。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "B",
+     "analysis": "“wandering about on a Thai island or __26__ the ruins of Angkor”中 or 连接并列分词，与 wandering 平行，admiring（欣赏）符合“在小岛闲逛或欣赏吴哥窟遗迹”的语义与语法结构。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "“The bottle is __27__”描述瓶身状态，后接“标签写着纯净水”，sealed（密封的）符合瓶装水出厂封口的常识，且与上文“safe”呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "I",
+     "analysis": "“what is inside is not so __28__”与上文“标签写 pure water”形成转折，natural（天然的）与 pure 近义，质疑内部是否真“天然”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "“more than 90 percent of all bottled water ... __29__ microplastics”缺谓语动词，主语 water 为单数，contains（含有）作谓语，语义为“瓶装水含有微塑料”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "K",
+     "analysis": "“a recently __30__ study”修饰 study，released（发布的）构成“最近发布的研究”，下句“analysed 259 bottles”说明研究已完成发布。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "L",
+     "analysis": "“__31__ an average of 325 plastic particles per litre”现在分词作伴随状语，revealing（揭示/显示）引出研究发现的数据。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "“a __32__ commonly known as PET”a 后接单数名词，substance（物质）指 PET 这种材料，被“广泛用于制造服装和容器”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "“food and __33__ containers”与 food 并列修饰 containers，liquid（液体的）构成“食品和液体容器”，符合 PET 用途。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "“Confronted with this __34__”指代上文微塑料研究结论，evidence（证据）作宾语，意为“面对这一证据，厂商自行研究”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "J",
+     "analysis": "“the __35__ health risks”修饰 risks，potential（潜在的）指“饮用塑料瓶水的潜在健康风险”，符合 WHO 启动评估的语境。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "邮件投递中无声的英雄主义\n周三，一股极地寒风给中西部地区带来了刺骨的寒冷。一夜之间，芝加哥的气温降至零下21华氏度，比南极洲、阿拉斯加和北极还要稍冷一些。据国家气象局称，明尼苏达州帕克拉皮兹的风寒温度为零下64华氏度，北达科他州布法罗为零下45华氏度。学校、餐馆和企业关闭，超过1000个航班被取消。\n\n甚至连美国邮政总局（USPS）也暂停了邮件投递。“由于此次北极寒潮以及对USPS员工安全的担忧，”USPS周三上午宣布，“邮政局将在1月30日暂停部分三位邮编地区的投递。”周三有12个地区被列为不安全地区，到周四仍有8个。\n\n随着全球地表温度的升高，极端天气出现的可能性也在增加。仅在2018年，野火、火山喷发、飓风、泥石流和其他自然灾害就在美国造成了至少490亿美元的损失。正如我的同事Vann Newkirk所报道的，波多黎各仍在应对2017年玛丽亚飓风造成的经济、结构破坏和资源短缺。自然灾害会摧毁一个社区的基础设施，使各项系统瘫痪数月甚至数年。然而，某些服务让我们想起，生活终将以某种形式恢复正常。\n\n在加利福尼亚州圣罗莎2017年致命野火过后的几天里，一架无人机拍到了USPS员工Trevor Smith驾驶着那辆熟悉的白色厢式货车，穿过被烧毁的房屋，在被波及的地区收集邮件的画面。这段视频令人震撼：投递作业是熟悉的，但场景却仿佛世界末日。据USPS国家应急准备办公室的项目经理Rae Ann Haight说，Smith是在满足一些房主提出的请求，去取走任何未被动过的邮件。对Smith来说，这只是他在岗位上的又一天。“我像平时一样沿着我的路线走，”Smith告诉记者，“当我遇到一个邮筒立着但房子没了的地方，我检查了一下，里面有邮件——待寄出的邮件。于是我们就把它们收走，继续前进。”\n\nUSPS针对自然灾害制定了周密的应急计划。全国各地有285个应急管理团队专门负责危机控制。这些团队每年都使用被称为“3P”的框架进行培训：人员、财产、产品。在因天气停止邮件服务后，该机构的首要任务是确保员工安全。然后它评估基础设施（如邮递员驾驶的道路）的状况。最后，它决定何时以及如何恢复运营。如果破坏极为严重，寄往该地区的邮件将被转送至其他地方。为应对2005年的卡特里娜飓风，USPS将新奥尔良的来件改道至休斯敦现有的邮件设施。已在新奥尔良设施处理过的邮件被移至较高楼层，以免受水灾损坏。\n\n一旦户外安全到可以出门，邮递员就开始在仍可通行的路线上分发积压的邮件。USPS敦促那些没有固定地址的人向新地点提交地址变更表。2005年卡特里娜飓风过后，在USPS无法提供街道投递的两周内，全国各地的数十个地点设立了邮件设施。\n\n每天，USPS平均处理4.934亿件邮件——从明信片到社会保障支票再到药品，无所不包。USPS和UPS的发言人都告诉我，所有邮件都很重要。但有些邮件可能极其敏感且时效性强。根据2017年1月发布的数据，56%的账单是在线支付的，这意味着仍有略低于一半的付款依赖投递服务来完成。\n\n很难辨别哪些包裹装有社会保障支票等关键物品，但USPS和UPS会尽力优先处理敏感材料。他们会与社会保障管理局协调，确保社会保障支票及时送达正确的人手中。去年秋天佛罗伦斯和迈克尔飓风过后，USPS与州和地方选举委员会合作，确保缺席选票能够及时获取和接收。\n\n邮件公司是物流公司，这使它们在灾难来袭时处于提供帮助的特殊位置。在USPS 2011年的一份案例研究中，该机构强调其庞大的基础设施是灾难或恐怖袭击中可以调用的“独特的联邦资产”。“我认为我们作为联邦机构是独特的，”USPS官员Mike Swigart告诉我，“因为我们实际上在这个国家的每一个社区都有业务……我们每天都有义务将邮件投递到那个点。”\n\n私营快递公司拥有更多可花费的资金，利用其在物流方面的专业知识，在灾后帮助重建受损地区。十多年来，联邦快递一直支持美国红十字会，向国内外受灾地区运送应急物资。2012年，该公司在加利福尼亚向医疗预备队团体分发了1200多个医疗包。他们还捐赠了在全球运送310万磅慈善物资的空间。去年10月，该公司承诺为佛罗伦斯和迈克尔飓风提供100万美元现金和交通运输支持。UPS的慈善部门UPS基金会利用公司的物流帮助受灾地区重建。“我们意识到，作为一家拥有人员、卡车和仓库的公司，我们需要发挥更大的作用，”UPS基金会主席Eduardo Martinez说。该公司动用其卡车和飞机运送食品、药品和水。在我11月与Martinez交谈的前一天，他刚和红十字会一起巡视了佛罗里达州迈克尔飓风造成的损失。“我们有义务确保我们的社区蓬勃发展，”他说。\n\n重建可能需要很长时间，即便如此，灾难的印象可能依然存在。恢复正常生活可能很困难，但一些小小的日常惯例——邮件投递就是其中之一——可以帮助居民记住，他们的社区依然是他们的社区。“当他们看到那个邮递员重新回到街上，”Swigart说，“那就是给他们的第一个信号：生活正在开始恢复正常。”",
+   "questions": [
+    {
+     "stem": "36.The United States Postal Service has a system to ensure its employees’ safety.",
+     "answer": "E",
+     "analysis": "对应 E 段（USPS has sophisticated emergency plans...），“top priority is ensuring that employees are safe”说明 USPS 有应急计划确保员工安全。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.One official says USPS is unique in that it has more direct reach to communities compared with other federal agencies.",
+     "answer": "I",
+     "analysis": "对应 I 段，USPS 官员 Swigart 称“we are unique as a federal agency... in literally every community”，即 USPS 因深入每个社区而独特，比其他联邦机构直达社区。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.Natural disasters can have a long-lasting impact on community life.",
+     "answer": "C",
+     "analysis": "对应 C 段首句“Natural disasters can wreck a community's infrastructure, disrupting systems for months or years”，说明灾害对社区生活有长期影响。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.Mail delivery service is still responsible for the completion of almost half of payments.",
+     "answer": "G",
+     "analysis": "对应 G 段“56 percent of bills are paid online, which means that just under half of payments still rely on delivery services to be completed”，即近一半付款仍靠投递完成。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.The sight of a mailman on the street is a reassuring sign of life becoming normal again.",
+     "answer": "K",
+     "analysis": "对应 K 段末“when they see that carrier back out on the street... life is starting to return to normal”，邮递员回到街上是生活恢复正常的信号。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.After Hurricane Katrina interrupted routine delivery, temporary mail service points were set up.",
+     "answer": "F",
+     "analysis": "对应 F 段“After Hurricane Katrina hit in 2005, mail facilities were set up in dozens of locations... USPS was unable to provide street delivery”，卡特里娜飓风后设立临时邮件设施。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Postal service in some regions in the U.S. was suspended due to extreme cold weather.",
+     "answer": "B",
+     "analysis": "对应 B 段“Even the United States Postal Service suspended mail delivery... suspending delivery Jan. 30 in some 3-digit ZIP Code locations”，因极寒暂停部分地区投递。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.Private postal companies also support disaster relief efforts by distributing urgent supplies.",
+     "answer": "J",
+     "analysis": "对应 J 段“Private courier companies... FedEx has supported the American Red Cross... distributed more than 1,200 MedPacks”，私营快递公司分发应急物资支援救灾。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.A dedicated USPS employee was on the job carrying out duties in spite of extreme conditions.",
+     "answer": "D",
+     "analysis": "对应 D 段，USPS 员工 Trevor Smith 在 2017 野火后“driving through burned homes... just another day on the job”，极端条件下仍履职。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Postal services work hard to identify items that require priority treatment.",
+     "answer": "H",
+     "analysis": "对应 H 段“identify which parcels are carrying crucial items... try their best to prioritize sensitive material”，邮政尽力识别并优先处理关键物品。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "佐治亚理工学院的Ashok Goel教授开发了一款人工智能助教，以帮助处理在线课程“基于知识的人工智能”中数量庞大的学生提问。这门在线课程是佐治亚理工学院在线计算机科学硕士项目的核心必修课程。Goel教授原本已有8名助教，但这仍不足以应对学生每天提出的海量问题。\n\n许多学生因为缺乏教学支持而辍学。当学生感到孤立或困惑，并提出无人解答的问题时，他们继续学习的动力就开始消退。Goel教授决定做些什么来改善这种状况，他的解决方案是创建一个名为Jill Watson的虚拟助手，该助手基于IBM Watson平台。\n\nGoel和他的团队在将Jill Watson投放到在线论坛之前开发了她的多个版本。起初，这个虚拟助手表现并不太好。但Goel和他的团队从在线讨论论坛中搜集了自该课程开设以来被问过的全部4万个问题。然后他们开始用这些问题和答案“喂养”Jill。经过一些调整和足够的时间，Jill能够正确地回答学生97%的问题。这个虚拟助手变得如此先进和逼真，以至于学生们不知道她是一台计算机。这些学习人工智能的学生与虚拟助手互动，却无法将她与真人区分开来。Goel直到4月26日才告诉他们Jill的真实身份。学生们对这段经历其实非常积极。\n\nGoel教授明年对虚拟助手的目标是，接管在线论坛上学生提出的所有问题中40%的回答。当然，Jill Watson这个名字下学期会改成别的。与埃隆·马斯克、斯蒂芬·霍金、比尔·盖茨或史蒂夫·沃兹尼亚克等人相比，Goel教授对人工智能的未来前景要乐观得多。",
+   "questions": [
+    {
+     "stem": "46. What do we learn about Knowledge-Based Artificial Intelligence?",
+     "answer": "B",
+     "analysis": "首段“This online course is a core requirement of Georgia Tech's online Master of Science in Computer Science program”说明 Knowledge-Based AI 是一门在线课程，B 正确。A 错在它是课程而非机器人；C 的 high-tech device、D 的 computer program aids 均不符。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What problem did Professor Goel meet with?",
+     "answer": "C",
+     "analysis": "首段“that wasn't enough to deal with the overwhelming number of daily questions from students”说明问题是学生提问太多难以应付，对应 C。A/B/D 文中未提。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do we learn about Jill Watson?",
+     "answer": "A",
+     "analysis": "三段“Jill was able to answer... correctly 97% of the time... students didn't know she was a computer... very positive”，说明 Jill 大获成功，A 正确。B/C/D 均与文意相反或未被支持。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. How did the students feel about Jill Watson?",
+     "answer": "D",
+     "analysis": "三段“the students... couldn't tell it apart from a real human being”直接对应 D“无法将她与真人区分”。A/B/C 均与“very positive”“couldn't tell”矛盾。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does Professor Goel plan to do next with Jill Watson?",
+     "answer": "C",
+     "analysis": "末段“next year is to take over answering 40% of all the questions”即让 Jill 承担更多学生提问，对应 C“指派她回答更多学生问题”。A/B/D 文中未提。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "想得小、有吸引力和有幽默感并没有坏处。这些是一项近期研究（该研究考察了近400个众筹活动）发现的成功科学众筹活动的若干特征。但拥有庞大的社交网络和一些宣传技巧可能更为关键。\n\n众筹，即通过在线呼吁为项目筹钱，近年来蓬勃发展，从制作电影到生产节水小装置，无所不包。科学家也尝试吸引网络捐助者，但成败参半。有些人筹到的钱超过目标的两倍，而其他人甚至连 modest 的目标都未能达到。\n\n为了确定是什么将科学众筹的成功与失败区分开来，由苏黎世大学科学传播学者Mike Schafer领导的一个团队考察了371个近期众筹活动的网页内容。\n\n研究人员在《公众理解科学》杂志上报告说，那些达成目标的项目有四项特征脱颖而出。首先，它们使用一个专门为科学项目筹钱的众筹平台——而不仅仅是任何一类项目。尽管像Kickstarter这样的网站来者不拒，但像Experiment.com和Petridish.org这样的平台只展示科学项目。其次，它们用一段有趣的视频来展示项目，因为良好的视觉效果和幽默感提高了成功率。它们大多数与潜在捐助者互动，因为那些回答了感兴趣捐助者问题的项目表现更好。而且它们设定的筹资金额较小。研究中纳入的项目平均筹得4000美元，其中30%收到的不到1000美元。研究人员发现，一个项目寻求的资金越多，它达成目标的机会就越低。\n\n其他因素也可能显著影响一个项目的成功，最值得注意的是科学家个人和职业社交网络的规模，以及研究者自身对项目宣传的多少。这两个因素远比网页上的内容更为关键。众筹可以成为研究者接触公众的努力的一部分，而人们捐款是因为“他们感到与做筹款的那个人有联系”——而不一定是因为科学。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about the scientists trying to raise money online for their projects?",
+     "answer": "C",
+     "analysis": "二段“Scientists have tried to tap Internet donors... with mixed success. Some raised... but others have fallen short of reaching even modest targets”说明并非所有科学家都达成目标，C 正确。A 因果错；B 的 mixed strategies、D 的多数放电影均错。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the purpose of Mike Schafer’s research of recent crowdfunding campaigns?",
+     "answer": "B",
+     "analysis": "三段“To determine what separates science crowdfunding triumphs from failures, a team... Mike Schafer... examined...”即研究目的是找出成败差异的原因，对应 B。A/C/D 均非该研究目的。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What trait contributes to the success of a crowdfunding campaign?",
+     "answer": "B",
+     "analysis": "四段“Most of them engage with potential donors, since projects that answered questions from interested donors fared better”说明与潜在捐助者互动有助成功，对应 B。A/C/D 未在成功特征中提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What did the researchers think of the financial targets of crowdfunding projects?",
+     "answer": "A",
+     "analysis": "四段“they target a small amount of money... The more money a project sought, the lower the chance it reached its goal”说明目标金额应小才易成功，对应 A。B/C/D 未被研究者主张。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What motivates people to donate in a crowdfunding campaign?",
+     "answer": "D",
+     "analysis": "末段“people give because they feel a connection to the person who is doing the fundraising—not necessarily to the science”说明捐款动机是与募款人之间的联结感，对应 D。A/B/C 均非文中所述动机。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Chinese families attach great importance to the education of their children. Many parents believe that they should work hard to ensure that their children receive a good education. Not only are they willing to invest in their children's education, but they also spend a great deal of time urging them to study. Most parents hope that their children can attend a prestigious university. Thanks to reform and opening-up, a growing number of parents can send their children to study abroad or participate in international exchange programs to broaden their horizons. Through these efforts, they expect their children to grow up healthy and contribute to the development and prosperity of the country.",
+   "note": "难点：1) “十分重视”译为 attach great importance to；2) “名牌大学”用 prestigious university 更地道；3) “由于改革开放”用 Thanks to reform and opening-up 作状语；4) “拓宽视野”为固定搭配 broaden one's horizons；5) “发展和繁荣”译为 development and prosperity 并列名词。注意 not only... but also 倒装：Not only are they willing to... but they also... 体现语法亮点。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:24:36.804Z"
+}

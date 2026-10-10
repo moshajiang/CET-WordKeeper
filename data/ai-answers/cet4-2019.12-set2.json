@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2019,
+ "month": 12,
+ "set_no": 2,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Dear friend,\nI was delighted to learn that you want to learn Chinese, and I would like to recommend a wonderful place to help you get started: Beijing, the cultural heart of China.\nAs the capital, Beijing brings the language to life. You can enroll in a short-term course at a university such as Beijing Language and Culture University, where most students are international learners just like you. Beyond the classroom, the city is a living textbook: wandering through hutongs, bargaining in markets, and ordering food in local restaurants will push you to practise real, everyday Chinese. Historic sites like the Forbidden City and the Summer Palace also expose you to classical phrases and the cultural stories behind the words.\nIf a smaller, slower city suits you better, Chengdu is a warm alternative with famous language programs and friendly locals. Whichever you choose, immersion is the key. I hope this helps, and I look forward to hearing about your progress!\nYours,\nLi Hua",
+   "note": "结构：问候点题（推荐北京）→ 课堂内+课外沉浸的具体理由 → 备选城市（成都）→ 鼓励收尾，紧扣 Directions「recommend a place」。可复用句型：I would like to recommend... / Beyond the classroom, the city is a living textbook... / Whichever you choose, immersion is the key. 注意书信格式与署名 Li Hua，词数约 165，符合 120-180 要求。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "终于有一些关于飞机旅行的好消息了。如果你和一位生病的乘客同乘一架飞机，你不太可能生病。这是一项新研究的结论，该研究考察了呼吸道病毒是如何在飞机上传播的。研究人员发现，只有与患流感等疾病的乘客坐在同一排的人——或者坐在该乘客前排或后排一格的人——才有较高的患病风险。根据研究结果，其他所有乘客患病的几率都非常小。过去，媒体报道未必提供了关于在飞机上感染风险的准确信息。因此，这些新发现应有助于飞机乘客在乘机旅行时感觉不那么容易感染呼吸道疾病。\n研究人员表示，在这项新研究之前，人们对在飞机上直接接触感染常见呼吸道病毒（如流感或普通感冒）的风险知之甚少。因此，为了评估感染风险，研究小组在流感季乘坐了10趟不同的美国航班。研究人员发现，坐在流感患者任意一侧两个座位之内、以及坐在该人前后一排的乘客，患病的几率约为80%。但其他乘客基本上不会被感染。他们患流感的几率不到3%。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "B",
+     "analysis": "「the ___ of a new study」缺名词，that 指代前句好消息；conclusion（结论）契合「这是一项新研究的结论」，故选 B。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "宾语从句缺谓语，主语 viruses 为复数；how viruses ___ on airplanes，spread（传播）符合「呼吸道病毒如何在飞机上传播」，选 L。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "K",
+     "analysis": "「a very ___ chance」需形容词修饰 chance；slim chance 为固定搭配，意为「极小的机会」，与前文高风险形成对比，选 K。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "A",
+     "analysis": "形容词修饰 information；媒体过去未提供「准确」信息，与后文新研究更精确相呼应，accurate（准确的）契合，选 A。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "O",
+     "analysis": "「feel less ___ to」需形容词且能与 to 搭配；vulnerable to 为固定搭配「易受…侵害」，新发现让乘客没那么容易感染，选 O。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "C",
+     "analysis": "「getting ___ infected」缺副词修饰形容词；directly（直接地）修饰感染方式，意为「直接接触感染」，选 C。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "「to ___ the risks」不定式表目的，需动词原形；evaluate（评估）与 risks 搭配，意为「评估感染风险」，选 E。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "「10 different ___」需名词复数；flew on 10 different flights，flights（航班）符合「乘坐 10 趟不同航班」，选 G。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "D",
+     "analysis": "「on ___ side」需限定词修饰单数 side；either side 意为「任意一侧」，对应「流感患者两边」，选 D。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "H",
+     "analysis": "「were ___ safe」主系表完整，需副词；largely（基本上）修饰 safe，意为「基本上安全」，与不到 3% 风险呼应，选 H。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "除了「胡萝卜能让你在夜间看见东西」和「圣诞老人不会给调皮的孩子送玩具」这些老话之外，各地疲惫父母最爱念叨的一句话就是：早餐是一天中最重要的一餐。我们许多人在成长过程中都相信不吃早餐是个严重的错误，尽管根据英国饮食协会的数据，英国只有三分之二的成年人经常吃早餐，美国人约为四分之三。\n「身体在夜间利用大量能量储备进行生长和修复，」饮食专家莎拉·埃尔德解释说，「吃一顿均衡的早餐有助于提升我们的精力，并弥补夜间消耗的蛋白质和钙。」但对于早餐是否应该在膳食等级中保持头把交椅，存在广泛分歧。人们担心谷物中的糖分含量，以及食品行业对「支持早餐」研究的介入——甚至有学者声称早餐「有害」。\n真相是什么？早餐是一天必要的开端，还是麦片公司的营销手段？关于早餐（及不吃早餐）研究最多的是它与肥胖的关系。科学家对二者为何相关有不同理论。在一项美国研究中，研究人员分析了 5 万人七年间的健康数据，发现把早餐作为一天中最大一餐的人，其身体质量指数（BMI）往往低于那些吃丰盛午餐或晚餐的人。研究人员认为，早餐有助于减少每日热量摄入并改善饮食质量——因为早餐食物通常含有更高的纤维和营养。\n但和任何此类研究一样，不清楚这是否为因果——还是不吃早餐的人本来就更容易超重。为弄清这一点，研究人员设计了一项研究，52 名肥胖女性参加了一个为期 12 周的减重项目。所有人每天摄入的热量相同，但一半人吃早餐，另一半不吃。他们发现，导致参与者减重的原因并非早餐本身，而是改变了日常规律。\n如果单靠早餐并不能保证减重，那为什么肥胖与不吃早餐之间存在关联？阿伯丁大学食欲研究教授亚历山德拉·约翰斯通认为，这或许仅仅是因为研究发现不吃早餐的人对营养和健康所知较少。「关于吃早餐与可能的健康结果之间关系的研究很多，但这可能是因为吃早餐的人习惯性地选择有益健康的行为，如定期锻炼和不吸烟，」她说。\n2016 年一项针对 10 项有关早餐与体重管理关系研究的综述得出结论：支持或反驳「早餐影响体重或食物摄入」这一说法的证据「有限」，在早餐建议可用于预防肥胖之前，还需要更多证据。\n萨里大学和阿伯丁大学的研究人员正在进行一项关于进食时间如何影响体重的机制研究，目前进展过半。早期发现表明，丰盛的早餐有利于体重控制。研究发现早餐影响的不仅仅是体重。不吃早餐与心脏病风险增加 27%、男性 2 型糖尿病风险增加 21%、女性 2 型糖尿病风险增加 20% 相关。一个原因可能是早餐的营养价值——部分因为谷物添加了维生素。在一项针对英国 1600 名年轻人早餐习惯的研究中，研究人员发现经常吃早餐的人纤维和微量营养素摄入更好。澳大利亚、巴西、加拿大和美国也有类似发现。\n早餐还与改善大脑功能有关，包括注意力和语言运用。一项对 54 项研究的综述发现，吃早餐能改善记忆力，尽管对其他大脑功能的影响尚无定论。不过，该综述的研究者之一玛丽·贝丝·施皮茨纳格尔表示，有「合理」证据表明早餐确实能提高注意力——只是还需要更多研究。「看看那些测试注意力的研究，显示有益的研究数量与发现无益的数量完全一样，」她说，「而且没有研究发现吃早餐对注意力有害。」\n一些人认为，最重要的是我们早餐吃什么。澳大利亚联邦科学与工业研究组织的研究表明，高蛋白早餐能特别有效地减少当天晚些时候对食物的渴望和摄入量。尽管麦片仍是英国和美国早餐消费者的心头好，但最近一项针对「成人」早餐麦片糖分含量的调查发现，一些麦片每份含的自由糖超过每日推荐量的四分之三，而且糖是麦片配料中第二或第三高的成分。\n但一些研究表明，如果我们要吃含糖食物，最好早点吃。一项研究招募了 200 名肥胖成年人参加为期 16 周的饮食，其中一半人在早餐中加甜点，另一半不加。加甜点的人平均多减了 40 磅——然而，该研究无法显示长期效果。一项对 54 项研究的综述发现，对于哪种类型的早餐更健康尚无共识，并得出结论：早餐的类型不如简单地吃点东西重要。\n虽然关于我们究竟该吃什么、何时吃还没有确凿证据，但共识是我们应该倾听自己的身体，饿了就吃。约翰斯通说：「早餐对醒来就饿的人最重要。」施皮茨纳格尔说：「每个人的身体开始一天的方式不同——这些个体差异需要更仔细地研究。」埃尔德说：「均衡的早餐确实很有帮助，但一天中规律进食更重要，能让血糖在全天保持稳定，有助于控制体重和饥饿感。早餐不是我们唯一该做对的餐。」",
+   "questions": [
+    {
+     "stem": "36.According to one professor, obesity is related to a lack of basic awareness of nutrition and health.",
+     "answer": "E",
+     "analysis": "定位 E 段：阿伯丁大学 Alexandra Johnstone 教授指出不吃早餐者「less knowledgeable about nutrition and health」，与题干「obesity related to lack of basic awareness of nutrition and health」对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.Some scientists claim that people should consume the right kind of food at breakfast.",
+     "answer": "I",
+     "analysis": "定位 I 段首句「what we eat for breakfast」及高蛋白早餐研究，说明应吃「正确的食物」，对应题干 consume the right kind of food。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.Opinions differ as to whether breakfast is the most important meal of the day.",
+     "answer": "B",
+     "analysis": "定位 B 段「there's widespread disagreement over whether breakfast should keep its top spot」，与题干 opinions differ whether breakfast is most important 同义转述。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.It has been found that not eating breakfast is related to the incidence of certain diseases in some countries.",
+     "answer": "G",
+     "analysis": "定位 G 段「Skipping breakfast has been associated with... heart disease... diabetes」，不吃早餐与某些疾病发生率相关，对应题干 incidence of certain diseases。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Researchers found it was a change in eating habits rather than breakfast itself that induced weight loss.",
+     "answer": "D",
+     "analysis": "定位 D 段末「it wasn't breakfast itself that caused... weight loss: it was changing their normal routine」，对应改变饮食习惯（而非早餐本身）致减重。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.To keep oneself healthy, eating breakfast is more important than choosing what to eat.",
+     "answer": "J",
+     "analysis": "定位 J 段末「the type of breakfast doesn't matter as much as simply eating something」，吃早餐比选什么吃更重要，对应题干。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.It is widely considered wrong not to eat breakfast.",
+     "answer": "A",
+     "analysis": "定位 A 段「skipping breakfast is a serious mistake」，广泛认为不吃早餐是错误，对应题干 widely considered wrong。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.More research is needed to prove that breakfast is related to weight loss or food intake.",
+     "answer": "F",
+     "analysis": "定位 F 段「more evidence is required before breakfast recommendations can be used」，需更多研究证明早餐与减重/摄入的关系，对应题干。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.",
+     "answer": "C",
+     "analysis": "定位 C 段「lower body mass index... reduce daily calorie intake and improve... diet—higher in fibre and nutrients」，优先吃早餐者热量更低、营养更高，对应题干。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Many studies reveal that eating breakfast helps people memorise and concentrate.",
+     "answer": "H",
+     "analysis": "定位 H 段「eating breakfast can improve memory... improve concentration」，多项研究揭示早餐助记忆与专注，对应题干。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "教科书是一个 110 亿美元的产业，高于 2014 年的 80 亿美元。教材出版商培生集团是世界上最大的出版商——无论哪类。\n制作一本新教科书约需 100 万美元。一本大一教科书会有数十名贡献者，从学科专家到平面与排版美术师，再到专家审校者和课堂测试者。教材出版商以开放电子教科书和开放教育资源等替代方案根本无法做到的方式，连接起教授、教师和学生。这种连接不仅通过协作开发、审校和测试实现，也通过教师们每年定期决定教材和课程的会议实现。\n的确，教材出版商最近报告了亏损，主要由于学生租用或购买二手纸质教科书。但这可以归结为他们书价过高——自 1977 年以来已上涨超过 1000%。教科书行业的结构重组或许在所难免。但这并不意味着教科书本身的终结。\n尽管它们可能不如 iPad 那样动态，教科书并非被动或无生命。例如，几个世纪以来，它们以多种方式模拟对话。从 1800 年到现在，教科书通过向学生提出归纳性问题来做到这一点。这意味着要求学生利用个人经验来回答概括性问题。例如，今天的心理学教材问：「你认为你的性格有多少是遗传的？」而物理教材则问：「你如何预测你抛出的球会落在哪里？」\n专家观察到「教科书像洋葱一样分层」。对于主动学习者，与教科书互动可以是一种交互体验：读者按自己的节奏推进。他们通过接触不同层次和关联来「定制」自己的书。划线、便利贴、折角和其他技巧允许进一步的定制，学生在纸质书中看重这些胜过数字形式。",
+   "questions": [
+    {
+     "stem": "46. What does the passage say about open educational resources?",
+     "answer": "C",
+     "analysis": "定位第 2 段「Textbook publishers connect... in ways that alternatives... simply do not」，开放教育资源无法像教科书那样连接教授与学生；A/B 无依据，D 未提及激烈竞争。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What is the main cause of the publishers’ losses?",
+     "answer": "D",
+     "analysis": "定位第 3 段「losses, largely due to students renting or buying used print textbooks」，销量下滑（二手/租赁）致亏损；A、B、C 文中均未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the textbook industry need to do?",
+     "answer": "A",
+     "analysis": "定位第 3 段「A restructuring of the textbook industry may well be in order」，行业需改革结构；B 削减零售价、C 替代印刷本、D 定期改战略文中未提。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What are students expected to do in the learning process?",
+     "answer": "C",
+     "analysis": "定位第 4 段「students are asked to use their individual experience to come up with answers」，用个人经验答题；A/B/D 均非文中要求学生做的。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do experts say about students using textbooks?",
+     "answer": "B",
+     "analysis": "定位第 5 段「engaging with a textbook can be an interactive experience」，专家指学生可交互式学习；A 数字化、C 定制版、D 自行改编文中均未说。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "当我们想到动物和植物时，我们有一个相当好的方法把它们分成两个不同的群体：一个将阳光转化为能量，另一个必须吃食物来制造能量。然而，随着一种真正半动物半植物的海蛞蝓的发现，这些分界线崩塌了。它劫持所食藻类的基因，这一做法令人难以置信。\n这些蛞蝓能制造叶绿素——植物中从阳光捕获能量的绿色色素——并将这些基因保存在体内。术语「盗叶绿体」用来描述利用劫持的基因从阳光制造营养的做法。迄今为止，这种绿色海蛞蝓是唯一已知可真正被视为太阳能驱动的动物，尽管一些动物确实表现出某些类似植物的行为。许多科学家研究绿色海蛞蝓，以确认它们确实能从阳光产生能量。\n事实上，这些蛞蝓如此善于利用遗传物质，以至于将其传给后代。它们的幼体保留了制造自身叶绿素的能力，尽管它们直到吃掉足够藻类、偷得必要基因（它们自己还无法产生）之前，无法从阳光产生能量。\n「地球上的藻类基因绝无可能在动物细胞内运作，」南佛罗里达大学的西德尼·皮尔斯说，「然而在这里，它们确实运作。它们让动物能依靠阳光获取营养。所以，如果它们的食物来源出了问题，它们有办法不至于饿死，直到找到更多藻类来吃。」\n这些海蛞蝓非常善于从太阳收集能量，以至于它们可以长达九个月不吃任何食物而生存。它们所有营养需求都由从藻类劫持的基因满足。",
+   "questions": [
+    {
+     "stem": "51.What is the distinctive feature of a sea slug?",
+     "answer": "D",
+     "analysis": "定位第 1 段「truly half animal and half plant」及第 2 段「only known animal that can be truly considered solar-powered」，它从食物和阳光两获能量；A/B 表述不准，C 偷换概念。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What enables the sea slug to live like a plant?",
+     "answer": "A",
+     "analysis": "定位第 2 段「slugs can manufacture chlorophyll... hold these genes」及 kleptoplasty「using hijacked genes」，使其像植物的是劫持的藻类基因；B 机制、C 营养、D 色素均非关键。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the author say about baby sea slugs?",
+     "answer": "D",
+     "analysis": "定位第 3 段「Their babies retain the ability to produce their own chlorophyll」，幼体可自行产叶绿素；A/B/C 与文意相反（需先吃藻偷基因才能产能）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does Sidney Pierce say about genes from an alga?",
+     "answer": "C",
+     "analysis": "定位第 4 段西德尼·皮尔斯语「genes from an alga should work inside an animal cell... And yet here, they do」，通常不在动物细胞运作；A/B/D 均错。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What do we learn about sea slugs from the passage?",
+     "answer": "B",
+     "analysis": "定位第 5 段「can live up to nine months without having to eat any food」，数月不进食仍可存活；A/C/D 均与文末「不饿死/靠阳光」矛盾。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Chinese family concept is related to its cultural traditions. A harmonious extended family used to be highly envied. In the past, it was not uncommon for four generations to live under the same roof. Owing to this tradition, many young people continued to live with their parents after marriage. Today, this tradition is changing. With the improvement of housing conditions, a growing number of young couples choose to live separately from their parents. Yet their ties remain close. Many elderly people still help take care of their grandchildren. Young couples also set aside time to visit their parents, especially on important festivals such as the Spring Festival and the Mid-Autumn Festival.",
+   "note": "难点：「四代同堂」译 four generations live under the same roof；「和睦的大家庭」译 harmonious extended family；「帮清照看」原文笔误，应为「帮着照看」，译 help take care of；「抽时间」用 set aside time 较自然；节日名用专有名词 Spring Festival / Mid-Autumn Festival。整体为说明性文字，宜用一般现在/过去时混用呈现今昔对比。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:30:00.089Z"
+}

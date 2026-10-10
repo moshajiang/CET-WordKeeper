@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2023,
+ "month": 12,
+ "set_no": 1,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Last Saturday, our university held its annual Campus Charity Run, and it was the campus event that impressed me most. Despite the chilly morning, over a thousand students and teachers gathered at the track, wearing colorful headbands and holding banners with encouraging slogans. The atmosphere was electric.\n\nWhat moved me most was not the race itself, but the spirit behind it. Every participant, regardless of speed, ran for a cause: raising funds for children in rural areas. Volunteers handed out water, took photos, and cheered everyone on. When an elderly professor crossed the finish line, the whole crowd burst into applause.\n\nThis event taught me that a university is more than a place for books; it is a community where compassion and teamwork thrive. The Campus Charity Run will stay in my memory as a reminder that small individual efforts, united, can make a real difference.",
+   "note": "结构：首段点明\"最难忘的校园活动\"并交代时间(last Saturday)；第二段用具体细节(千人参与、志愿者、老教授冲线)展开，点出打动自己的原因；末段升华主题。可复用句型：It was the campus event that impressed me most. / What moved me most was not... but... / This event taught me that... 注意严格切题——题目要求写\"最打动你的校园活动\"，本文紧扣 charity run 并落脚于团队精神与个人努力的意义。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "根据发表在《英国运动医学杂志》上的一项新研究，每周仅锻炼10分钟就与更长的寿命有关。最近的几项研究发现，即使是低强度、短时间的锻炼，也能对健康产生有意义的影响。不过，每周仅锻炼10分钟就足以延长寿命的想法还很新鲜。这也有些争议，因为联邦体力活动指南建议每周至少进行75分钟高强度锻炼或150分钟中等强度锻炼。\n\n该研究基于1997年至2008年间参加全国健康访谈调查的8.8万多名美国成年人的数据。与一些发现健康锻炼量存在上限的研究相反，研究人员发现锻炼的长寿益处似乎没有上限。即使是达到联邦政府推荐运动量10倍的那一小群人，其死亡风险也比最少运动的人群低46%。\n\n尽管如此，像这样的观察性研究无法证明因果关系，它们只能发现规律。研究人员也未能控制某些可能影响寿命的生活方式因素，包括饮食习惯和随时间变化的体力活动。尽管存在这些局限，该研究的结果再次表明，即使少量运动，身体活动也极具威力。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "F",
+     "analysis": "固定搭配 have a meaningful impact on health（对健康产生有意义的影响），呼应前文 linked to a longer life。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "D",
+     "analysis": "空格形容\"每周仅10分钟运动就足够\"这一观点，与后文联邦指南推荐150分钟形成对比，应取 controversial（有争议的）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "moderate exercise 中等强度运动，与上文 vigorous exercise（高强度）并列对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "I",
+     "analysis": "who participated in the survey 参加调查，过去式与 surveyed 时间一致。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "O",
+     "analysis": "an upper limit 上限，与后文联邦指南给出的下限建议形成对照。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "there was seemingly no limit 看似/似乎没有上限，副词 seemingly 修饰全句。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "L",
+     "analysis": "lower risk of death 更低的死亡风险，为健康类文本常见搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "J",
+     "analysis": "观察性研究只能发现 patterns（规律/模式），无法证明因果，与后文 cannot prove cause and effect 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "adjust for certain factors 控制/调整某些因素，是统计与科研常用搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "G",
+     "analysis": "Despite these limitations 尽管有这些局限性，总结前文未能控制变量的缺陷。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 今年早些时候，科学家警告称，由于气候变化，六分之一的动物物种可能灭绝。同样的事情会发生在我们的农作物和其他食物上吗？\n\nB) 显然，世界上许多地方的农民在未来几十年会发现事情变得更加艰难。上周，BBC Future探究了一位科学家为帮助农作物应对日益增加的干旱概率所做的努力。开普敦大学的 Jill Farrant 利用复活植物的基因，正在探索能否设计出能在无水状态下存活更久的农作物。\n\nC) 但是，如果我们找不到保护其他食物的方法，它们能在气候变化中存活下来吗？幸运的是，在这方面有一些好消息。尽管有\"正在灭绝的食物\"这样耸人听闻的标题，但没有证据表明豆类、巧克力、葡萄酒、玉米或小麦等主要食物类型会消失。\n\nD) 但这并不意味着未来的食物前景一片大好。随着一些地区变得过热，我们可能不得不改变某些作物的种植地。显然，劣势在于当地农民将因此受苦。而且一些人可能难以获得同样的某些食物。\"即使总体粮食产量可能不受影响，粮食安全仍可能受到影响，\"美国农业部气候变化项目办公室的科学家 Margaret Walsh 说。换句话说，即使某种食物仍能在地球某个角落种植，也不意味着每个人都能继续像今天这样拥有同等程度的获取机会。\n\nE) 总体而言，从主食到咖啡和可可等提升生活品质的附加品，许多食物的产量都可能受到气候变化的影响。这些减产将如何被感受到，取决于变暖的程度和相关作物，但一般来说，\"任何超过约30℃的温度对作物都非常不利，\"哥伦比亚大学国际与公共事务副教授 Wolfram Schlenker 说。例如，他和一位同事建立的关于美国玉米和大豆产量的统计研究显示，在越过30℃温度阈值后产量急剧下降。\n\nF) Schlenker 说，在美国——世界最大的玉米和大豆生产国——农场可以在一定程度上向北迁移。但最终产量可能会下降，因为爱荷华州以北的土壤质量下降，这是冰川扩张的遗留。其他研究，包括印度小麦和非洲玉米的研究，也发现存在一个阈值，超过该阈值产量急剧下降：作物可以适应和迁移，但只能到一定程度。\"所有研究的共同发现是极端高温对作物生长有害，尽管确切的临界值因作物而异，\"Schlenker 说。\"不过，如果本世纪末的预测成真，我认为美国许多农业区将受到显著打击。\"\n\nG) 在目前的条件下，世界上约4%的耕地在任何一年都会遭遇干旱，但到本世纪末，这些情况预计将跃升至每年约18%。一些研究表明，园艺作物——除主食外的一切——可能受到最严重的影响，主要是因为它们往往局限于较小的地理区域。例如，研究人员 Andrew Jarvis 及其同事发现，到2050年，中美洲和巴西80%的咖啡种植区可能变得不适宜；而气候变化可能对西非可可生产产生\"重大影响\"。\"未来高质量巧克力将更难获得，如果你想吃，就得花更多钱，\"Jarvis 说。\n\nH) 这意味着，对那些负担得起的人来说，未来某些食物只会让他们花更多钱。但对穷人来说，同样的价格上涨可能会导致某些食物从他们的饮食中消失。\"你减少得越多，供应越短，价格跳得越高，\"Schlenker 说。\n\nI) 另一个潜在的由气候变化引发的问题是我们对大宗商品作物的依赖——小麦、大豆、玉米和大米——它们目前直接或间接通过我们饲养的动物，为人类提供75%的热量。Jarvis 及其同事还发现，在过去的五十年里，世界看到了饮食日益标准化；我们今天全球吃的食物比1961年相似了36%。虽然这对世界上最贫穷的人是好消息（他们现在比过去摄入更多热量、蛋白质和脂肪），但同质化和对少数主食的过度依赖使我们容易受到干旱、疾病和害虫等威胁——所有这些都被预测将因气候变化而在世界许多地方加剧。\n\nJ) 然而，我们有办法缓解即将到来的全球粮食供应冲击。就像 Farrant 对复活作物的研究一样，许多公司、组织和研究人员正致力于通过基因工程和传统育种创造抗旱、耐温作物。目前，这些努力能否成功尚无定论。\"我交谈过的孟山都的人更乐观，认为他们能培育出耐热作物，\"Schlenker 说。\"另一方面，我与 USDA 的科学家交谈过，他们则谨慎得多。\"\n\nK) 在基因工程实现之前，其他策略在某些地方也可能有帮助，包括施用更多肥料、实施更好的灌溉、使用能更快将作物运出田间的机械，或安装储存设施以延缓变质。\"许多地方仅仅通过使用已经存在的技术就能受益匪浅，\"Walsh 说。\"通用的农场管理可以大大缓解这些变化。\"\n\nL) 最后，使我们饮食多样化，远离对热敏感的 wheat、玉米、大米和其他作物也会有帮助。\"过去几十年我们吃什么发生了深刻变化，很大程度上是国际贸易的结果，我认为这种更加多样化的趋势将继续，\"Jarvis 说。\"依赖更多植物种类能创造一个更有活力、风险更小的食物系统——一个能提供更广泛营养需求的系统。\"",
+   "questions": [
+    {
+     "stem": "36. One consequence of climate change is that some people may not have adequate access to certain foods.",
+     "answer": "D",
+     "analysis": "对应 D 段：'some people may struggle to get the same access to certain foods'，题干 not have adequate access 与 struggle to get the same access 对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. People around the world are eating foods more similar than what they used to eat.",
+     "answer": "I",
+     "analysis": "对应 I 段：'the foods we eat globally today are 36% more similar than they were in 1961'，题干 more similar than what they used to 对应 more similar than... in 1961。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. A recent news report talked about scientific efforts to help crops survive droughts through genetic\nengineering.",
+     "answer": "B",
+     "analysis": "对应 B 段：'BBC Future explored one scientist's efforts to help crops cope with... droughts. By using the genes from resurrection plants'，题干 scientific efforts... survive droughts... genetic engineering 对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. It is predicted that climate change will affect the availability and price of quality chocolate.",
+     "answer": "G",
+     "analysis": "对应 G 段：'High quality chocolate will be less available... you'll have to pay a lot more'，题干 availability and price 对应 less available 与 pay a lot more。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. People wonder if certain crops and foodstuffs could disappear like some animal species due to climate\nchange.",
+     "answer": "A",
+     "analysis": "对应 A 段首句：'one in six animal species could go extinct... Could the same happen to our crops'，题干 disappear like some animal species 对应 go extinct。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Although farms in the US can move a bit northward, crop yields may decrease.",
+     "answer": "F",
+     "analysis": "对应 F 段：'farms can move north... yields will likely suffer'，题干 move a bit northward, crop yields may decrease 直接对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. One possible solution to the food security problem is diversification of diet.",
+     "answer": "L",
+     "analysis": "对应 L 段：'diversifying our diet... could also help'，题干 diversification of diet 直接对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. It remains unsettled whether the global food supply problem can be solved by creating heat-tolerant crops\nthrough genetic engineering.",
+     "answer": "J",
+     "analysis": "对应 J 段：'create... crops through genetic engineering... the jury is still out as to how successful'，题干 remains unsettled... solved by genetic engineering 对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. Poor people may have to give up eating certain foods because of their high prices.",
+     "answer": "H",
+     "analysis": "对应 H 段：'for poorer people... price jumps will likely cause certain foods to go extinct from their diets'，题干 give up eating... because of high prices 对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. A number of existing farming technologies could be used to reduce the negative effect of climate change on\nfood production.",
+     "answer": "K",
+     "analysis": "对应 K 段：'technologies that already exist... General farm management can go a long way'，题干 existing farming technologies... reduce the negative effect 对应。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "我有一个坏习惯，就是别人问我近况时爱说\"忙\"。有时是因为我确实忙，但有时是因为我觉得自己应该这么说。重要人物都这么说。得到提拔的人都这么说。但长时间工作并不会带来更好的结果。从不休假也不会让你升职。那么我们为什么总是这么自豪地谈论自己有多忙呢？\n\n2016年，来自哥伦比亚、哈佛和乔治城的研究人员开展了一项研究来弄清原因。他们发现，忙碌的人被认为地位高；有趣的是，这些地位归因深受我们自己对社会流动性的信念影响。换句话说，我们越相信一个人能基于努力工作获得成功的机遇，就越倾向于认为那些放弃休闲、一直工作的人地位更高。\n\n这就是为什么我们觉得必须显得忙碌，而且有一种真实的感受：如果一个人深陷会议、邮件和压力之中，那他可能是个大人物。这种忙碌文化正让员工难以找到工作与生活的平衡。根据最近的一项研究，五分之一高度投入的员工面临精疲力竭的风险。\n\n就我个人而言，当别人问我近况时，我将不再说\"忙\"。这听起来自以为是，而且定错了基调。像\"我收不到邮件\"和\"我一回来就回复\"这样的短语，听起来像是你被外力强迫不能工作，而不是在充分利用你的休假时间。\n\n这就是为什么我们最近推出了\"不在办公室邮件生成器\"，这是一个在你下次长周末或旅行前可以使用的免费工具。你可以大声而自豪地分享：在你回来之前你都不会查看邮件。管理者需要三思而后行，不要在周末给团队发邮件、谈论自己有多忙。领导者应该自己抽出时间休息，并鼓励员工也这样做。",
+   "questions": [
+    {
+     "stem": "What is a reason for the author to be in the habit of saying \"busy” when asked how he is doing?",
+     "answer": "A",
+     "analysis": "原文：'That's what important people say. That's what people who get promoted say.' 作者模仿成功/受提拔者说\"忙\"，即 follows successful people's example（seed 选项A文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "Why do we tend to think that busy people are of high status?",
+     "answer": "B",
+     "analysis": "原文：'the more we believe that one has the opportunity for success based on hard work, the more we tend to think that people who skip leisure... are of higher standing.' 对应 hard work leads to success 的信念（seed 选项B文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What do we learn about the culture of busyness from a recent study?",
+     "answer": "D",
+     "analysis": "原文：'one in five highly engaged employees is at risk of burnout'，忙碌文化使许多员工面临精疲力竭(burnout)风险，即 does much harm to... well-being（seed 选项D文本）。干扰项A/C是他人观点或被歪曲。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What do such utterances as “I have limited access to email“ sound like according to the author?",
+     "answer": "B",
+     "analysis": "原文这些短语'sound like you're being held against your will from working'，即被迫停止工作，对应 seed 选项B文本（原卷标C）'One is forced by circumstances to stop working'。注意：官方答案字母C指该文本，在本 seed 中位于字母B。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "Why did the author and his colleagues launch the Out of Office Email Generator?",
+     "answer": "B",
+     "analysis": "原文推出该工具是为了'share loud and proud that you won't be checking email until you're back'，让雇主和员工都真正有时间休息，对应 ensure employees as well as employers truly have time off（seed 选项B文本）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "女性员工乘坐相同航班支付的平均机票价格始终低于男性，因为她们往往更早预订。\n\n我们比较了同一公司内相同职位的员工为同一舱位等级旅行所支付的机票价格，并使用一种常见的统计技术来解释可能影响机票价格差异的其他因素。我们发现，女性平均每张票比男性同事少付18美元。进一步的调查使我们得出结论：这一差距很大程度上可以用女性往往比男性更早预订（平均早1.8天）来解释。\n\n我们想确定是什么导致了这些预订商务差旅的性别差异，因此我们测试了多种可能的解释，例如女性选择提前计划，或男性常旅客倾向于晚订票。这些都没能解释掉性别差距，所以我们应用了从调查中收集的数据，这些数据表达了在经济决策中起核心作用的消费者偏好，如耐心和风险规避。\n\n我们发现，只有\"消极互惠\"这一概念——即感到被不公平对待的员工会做出消极行为，比如不太谨慎地花公司的钱——能解释这些差异。调查显示，男性往往比女性表现出更多此类消极行为。这并不是说所有男性都有这些行为，也不是说相对较晚订票是异常行为的标志。它只意味着，当我们加入消极互惠变量时，性别差距就消失了。\n\n先前关于员工之间消极互惠的研究发现，它可能导致员工积极性下降、业务绩效降低以及工作场所士气和文化低落。\n\n我们的结果显示了这些消极行为的另一种表现方式，比如机票预订，并补充了证据表明女性较少从事这些行为。\n\n公司在商务旅行上花费巨额资金。虽然每张票18美元的差额看似很小，但积少成多。我们的分析表明，在一家拥有2万名经常出差员工的大型跨国公司，女性提前预订每年可转化为100万美元的节省。",
+   "questions": [
+    {
+     "stem": "What did the author's team conclude about the gender difference in airfares from their further investigation?",
+     "answer": "A",
+     "analysis": "原文：'this gap is largely explained by the fact that women tended to book earlier than men'，即 attributed to women booking earlier than men（seed 选项A文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did the researchers want to determine by testing a variety of possible explanations?",
+     "answer": "D",
+     "analysis": "原文：'We wanted to determine what was causing these gender differences... so we tested a variety of possible explanations'，即探究 what accounted for the gender gap in airfares（seed 选项D文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What happened when the negative reciprocity variable was taken into account?",
+     "answer": "C",
+     "analysis": "原文：'the gender gap disappears when we plug in the negative reciprocity variable'，即差异 no longer existed（seed 选项C文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did prior research on negative reciprocity among workers find?",
+     "answer": "C",
+     "analysis": "原文：'Prior research... found that it can result in lower employee motivation, business performance and workplace morale'，即 proves to be counterproductive in a number of ways（seed 选项C文本）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author emphasize about their analysis in the last paragraph?",
+     "answer": "A",
+     "analysis": "原文末段：'early booking by women can translate into savings of $1 million a year'，即 help companies increase their savings significantly（seed 选项A文本）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Chinese government attaches great importance to the people's healthy diet. By vigorously advocating a healthy diet, people have gained a deeper understanding of the importance of reasonable nutrition in promoting health. \"Eating safely, nutritiously, and healthily\" is a basic need of the people for a better life, an inevitable requirement for enhancing their sense of happiness, and also provides new opportunities for the development of the food industry. At present, governments at all levels are taking various measures to ensure the people's dietary health and advance the building of a Healthy China.",
+   "note": "难点：1) \"十分重视\"译为 attaches great importance to；2) \"通过大力提倡健康饮食\"处理为介词短语 By vigorously advocating a healthy diet，作方式状语；3) \"合理营养增进健康\"译为名词短语 reasonable nutrition in promoting health，作 of 的宾语；4) \"吃得安全、吃得营养、吃得健康\"作主语，用动名词短语 Eating safely, nutritiously, and healthily；5) \"必然要求\"译为 inevitable requirement；6) \"推进健康中国的建设\"译为 advance the building of a Healthy China。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:53:05.993Z"
+}

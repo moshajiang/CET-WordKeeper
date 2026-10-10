@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2019,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Dear James,\n\nI was delighted to learn that you are planning to study in China. Knowing your strong interest in Chinese culture and technology, I would like to recommend Peking University.\n\nAs one of China's most prestigious universities, it offers a wide range of English-taught programs and a vibrant international community, which will help you adapt quickly. Located in Beijing, it combines academic excellence with a rich historical atmosphere. Moreover, its abundant resources—from top-tier libraries to renowned professors—give you every opportunity to thrive. Beyond the classroom, you can join various student clubs and explore the city's cultural heritage.\n\nI am confident you will find both challenge and reward there. If you need any help with the application, please feel free to ask.\n\nYours,\nLi Ming",
+   "note": "结构：标准书信体（称呼+三段正文+落款）。首段点明写信目的并直接推荐北京大学；第二段从英语授课项目、国际化氛围、地理位置、学术资源、课外活动五个维度论证，紧扣题目“recommend a university”；末段鼓励并主动提出协助申请。可复用句型：\"I would like to recommend...\"; \"Located in..., it combines... with...\"; \"If you need any help with..., please feel free to ask.\" 词数约 160，符合 120-180 要求。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "每天都有数百万人乘坐飞机出行。如果你正打算不久后也成为其中一员，你或许并不期待飞机旅行常给你留下的那种不适感。\n除了机场的人群与压力，在高海拔飞行对身体确有真实影响。尽管机舱气压经过调节以预防高原反应，你仍可能感到困倦或头痛。飞机机舱内较低的氧压相当于海拔 6000 至 8000 英尺处的氧压。氧压下降会在某些人身上引发头痛。为帮助预防头痛，请大量饮水，并避免酒精和咖啡。\n飞机餐或许并不像你原本以为的那样寡淡无味。在飞机上呼吸的空气会使你的口腔和鼻腔干燥，从而影响味觉。在飞行模拟中，对甜咸食物的感知下降了近 30%。不过，你可以通过喝水让味蕾重新活跃起来。口干可能会降低味觉敏感度，但饮水后即可恢复味觉。\n尽管在像飞机这样的干燥环境中机舱内感染会滋生，但由于使用了空气过滤器，你在飞机上染病的实际风险其实很低。除非你坐在咳嗽或打喷嚏的人旁边，否则不必过于担心染病。然而，研究表明细菌会附着在机舱表面，因此要勤洗手。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "语义线索。空格修饰 feeling，句意为乘机常留下的“不愉快”感受，unpleasant 符合语境；其余形容词无法与 feeling 搭配出此含义。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "A",
+     "analysis": "搭配线索。be adjusted to do/for 表示“被调节以……”，机舱气压被调节以防高原反应，adjusted 作表语修饰 pressure。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "动词线索。experience 作及物动词意为“感受到”，宾语为 sleepiness or a headache，符合“仍可能感到困倦或头痛”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "固定搭配。equivalent to 意为“相当于”，说明机舱内氧压相当于 6000-8000 英尺高度的气压。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "名词线索。certain individuals 指“某些人”，说明氧压下降只会在特定个体身上引发头痛。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "H",
+     "analysis": "副词线索。originally thought 意为“原本以为”，与“飞机餐并非那么无味”形成对比，修饰动词 thought。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "K",
+     "analysis": "动词线索。reduce taste sensitivity 意为“降低味觉敏感度”，与后文“饮水恢复味觉”构成因果呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "N",
+     "analysis": "动词线索。thrive 意为“滋生/繁荣”，主语 infections，说明干燥环境中感染易滋生；thrive 为不及物用法，语法正确。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "名词线索。air filters 意为“空气过滤器”，解释为何机舱内染病风险低，与 because of 搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "副词线索。wash your hands frequently 意为“勤洗手”，修饰动词，与“细菌附着机舱表面”形成照应。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "在一座城市内出行是一回事，而城市与城市之间的通行则是另一回事。关于未来理想城市的一种设想，是提供一个便于搭乘飞机出行的地点。2011 年，北卡罗来纳大学一位名叫约翰·卡萨达的商学院教授出版了一本名为《航空城：我们未来的生活方式》的书。卡萨达说，未来的城市应有意围绕机场或在机场附近建设。正如他所表述的，其理念是为企业提供“大规模、快速、远距离的连接”。\n“18 世纪的确是水运的世纪，19 世纪是铁路的世纪，20 世纪是公路、汽车与卡车的世纪——而随着全球通过航空联系日益紧密，21 世纪将越来越成为航空的世纪，”卡萨达说。松岛是韩国一座从零开始建设的城市，是卡萨达的主要范例之一。它仅存在了几年时间。“从一开始，它就是基于连通性与竞争力设计的，”卡萨达说，“政府修建了从机场直抵松岛国际商务区的桥梁，地面基础设施与新机场同步建成。”\n松岛距韩国主要国际枢纽仁川机场仅一步之遥。但要成为未来之城，仅靠邻近机场还远远不够。仅仅把一个地方建成“国际商务区”并不意味着它就会成为那样的区域。朴渊秀早在 1986 年就构想出了这座未来之城。他把松岛视为自己的孩子。朴自视为一个有远见的人。在他构想这座城市三十年后，他的“孩子”已建成近 70%，商务区居住着 3.6 万人，大松岛区有 9 万居民。它位于首尔约一小时车程外，建在黄海沿岸昔日的滩涂上。那里有海岸警卫队大楼和一座高耸的贸易塔，还有公园、高尔夫球场和一所大学。\n你很可能其实见过这个地方。松岛出现在韩国有史以来最著名的音乐视频中。《江南 Style》指的是首尔时尚的江南区。但视频的某些场景是在松岛拍摄的。“我不知道你是否记得，地铁站里有一幕。那不是江南，那其实是松岛，”伦敦大学学院巴特莱特规划学院的城市发展教授郑元善说，“在那里拍摄的部分原因是它崭新又漂亮。”\n这座城市本应成为全球公司的枢纽，员工来自世界各地。但结果并非如此。松岛的名声是一座未来主义的鬼城。但现实要复杂得多。一座带有巨大浅蓝色环形结构的桥梁通向商务区。主干道中央，是一长排世界各国的旗帜。街角有一家星巴克和一家 7-11——都是如今在世界各地随处可见的国际品牌。\n这座城市并不空旷。有推着婴儿车的母亲、拄着助行器的老妇——即便在白天气温高达 90 华氏度时也是如此。卞英镇担任松岛房地产协会主席，并在该城市 2005 年第一期开放时就开始在此卖房。他说过去几年需求激增。他的大多数客户是韩国人。事实上，开发商表示，这里 99% 的房屋卖给了韩国人。年轻家庭搬来是因为学校很好。而这正是问题所在：松岛已成为一座受欢迎的韩国城市，作为住宅区比作为商务区更受欢迎。它还不是规划者所设想的未来国际商务枢纽。“这是个宜居之地。而且它正成为一个宜业之地，”该城市开发商盖尔国际的副总裁斯科特·萨默斯说。他公司办公室的落地窗俯瞰松岛中央公园，运河里满是小船和垂钓的人。闪烁的玻璃塔沿着运河边缘排列。\n“所发生的是，我们先专注于创造那种生活质量，才让居民能够在此居住，”萨默斯说。但这里仍需要有强有力的经济激励，企业才会落户。这座城市尚未完工，感觉有点像主题公园。它并不那么具有未来感。这里有一套高科技地下垃圾处理系统。建筑是环保的。每个人的电视机都连接到一个系统，可播放个性化的语言或健身课程。\n但这并非《星际迷航》。对一些居民来说，松岛让人感到空洞。“我嘛，工作日就像坐牢。我们在职场就是这么叫它的，”一位二十多岁的女性说。她不愿透露姓名，生怕被解雇。她每个周末都回首尔。“我说我周五晚上是在‘越狱’。”但她得开着自己的车去“越狱”。连接松岛与仅 20 多英里外的首尔之间没有高铁。\n最早构想松岛的朴渊秀也感到沮丧。他说他为韩国打造了一辆豪华座驾，“就像奔驰或宝马。现在它是辆好车。但我们在等一位好司机来加速。”但市面上也有许多其他好车。世界上遍布着试图吸引最大国际公司的高科技未来城市。\n松岛的支持者辩称现在还为时尚早，商务空间正在填满——已完工办公室约 70% 现已入驻。在麻省理工学院教授城市设计的布伦特·瑞安说，松岛印证了一个普遍原则。“历史上有过许多乌托邦式的城市。我们对其中许多一无所知，原因是它们已彻底消失。”换言之，无论对于城市还是其他任何事物，未来都难以预测。",
+   "questions": [
+    {
+     "stem": "36.Songdo’s popularity lies more in its quality of life than its business attraction.",
+     "answer": "F",
+     "analysis": "对应 F 段定位句“Songdo has become a popular Korean city – more popular as a residential area than a business one”，题干 popularity / quality of life / business attraction 与之同义对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.The man who conceived Songdo feels disappointed because it has fallen short of his expectations.",
+     "answer": "I",
+     "analysis": "对应 I 段首句“Park Yeon Soo, the man who first imagined Songdo, feels frustrated, too”，frustrated 对应题干 disappointed，imagined 对应 conceived。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.A scene in a popular South Korean music video was shot in Songdo.",
+     "answer": "D",
+     "analysis": "对应 D 段“Songdo appears in the most famous music video... some of the video was filmed in Songdo”，即韩国流行音乐视频（江南 Style）部分场景摄于松岛。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.Songdo still lacks the financial stimulus for businesses to set up shop there.",
+     "answer": "G",
+     "analysis": "对应 G 段“there needs to be strong economic incentives for companies to locate here”，题干 lacks financial stimulus 与 needs...incentives 同义。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Airplanes will increasingly become the chief means of transportation, according to a professor.",
+     "answer": "B",
+     "analysis": "对应 B 段 Kasarda 所言“the 21st century will increasingly be an aviation century”，aviation 对应 airplanes，chief means of transportation 为同义改写。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.Songdo has ended up different from the city it was supposed to be.",
+     "answer": "E",
+     "analysis": "对应 E 段“The city was supposed to be a hub for global companies... But that's not how it has turned out”，对应题干 ended up different from what it was supposed to be。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Some of the people who work in Songdo complain about boredom in the workplace.",
+     "answer": "H",
+     "analysis": "对应 H 段“I'm, like, in prison for weekdays. That's what we call it in the workplace”，对应题干 work in Songdo / boredom in the workplace。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.A business professor says that a future city should have easy access to international transportation.",
+     "answer": "A",
+     "analysis": "对应 A 段 Kasarda（business professor）所言“future cities should be built... around or near airports”，对应 easy access to international transportation。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.According to an urban design professor, it is difficult for city designers to foresee what will happen in the future.",
+     "answer": "J",
+     "analysis": "对应 J 段 Brent Ryan（urban design 教授）末句“it is hard to predict the future”，对应 difficult... foresee what will happen。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Park Y eon Soo, who envisioned Songdo, feels a parental connection with the city.",
+     "answer": "C",
+     "analysis": "对应 C 段“He considers Songdo his baby”，baby 对应题干 parental connection（亲子般联系）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "美国第五大城市通过了一项意义重大的汽水税提案，将对分销商按每液量盎司征收 1.5 美分。\n费城的新措施以 13 比 4 的市议会投票获得通过。它为全国类似的倡议树立了新标杆。这证明，对含糖饮料征税能够在极度自由派地区之外赢得大量支持。迄今为止，唯一成功通过并实施汽水税的城市是 2014 年的加州伯克利。\n该税将适用于普通汽水、无糖汽水，以及其他添加糖的饮料，如佳得乐和冰茶。预计未来五年将筹集 4.1 亿美元，其中大部分将用于资助该市的普及学前班项目。\n尽管市议会投票在会议室内赢得掌声，该措施的反对者——包括汽水行业游说者——提出了尖锐批评，并承诺将在法庭上挑战该税。\n“今天通过的税不公平地单独挑出饮料——包括低卡和无卡选择，”美国饮料协会发言人劳伦·凯恩说，“但最重要的是，它违法。因此我们将站在费城大多数反对此税的民众一边，采取法律行动阻止它。”\n一项由行业支持的反税活动已在广告上花费至少 400 万美元。这些广告批评该措施，将其描述为一项“食品杂货税”。\n公共卫生组织称赞这项已获通过的税是朝着解决困扰美国人的某些长期健康问题迈出的一步。“从一家在贫困社区推销导致糖尿病、肥胖和心脏病产品的行业收回一小部分利润，再投资于这些社区，这一举措无疑会激励许多其他地方，”健康食品美国的执行主任吉姆·克里格说，“事实上，我们已经收到其中一些地方的反馈。不再‘只是伯克利’了。”\n加州奥尔巴尼、奥克兰、旧金山以及科罗拉多州博尔德的类似措施正成为热点议题。健康倡导组织暗示，可能还会有更多措施出台。",
+   "questions": [
+    {
+     "stem": "46.What does the passage say about the newly-approved soda tax in Philadelphia?",
+     "answer": "B",
+     "analysis": "定位第二段“It sets a new bar for similar initiatives... proof that taxes... can win substantial support outside super-liberal areas”，说明此举可能鼓励其他城市效仿。干扰项 A（改变消费者生活方式）无原文依据；C（减少低收入群体消费）未提及；D（影响营销策略）偷换概念。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What will the opponents probably do to respond to the soda tax proposal?",
+     "answer": "C",
+     "analysis": "定位第五段 Lauren Kane 所言“take legal action to stop it”，反对者将诉诸法律。干扰项 A（与市议会谈判）、B（拒缴税）、D（争取公众支持）均非原文承诺的应对。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What did the industry-backed anti-tax campaign do about the soda tax proposal?",
+     "answer": "D",
+     "analysis": "定位第六段“An industry-backed anti-tax campaign has spent... on advertisements. The ads criticized the measure”，反税活动通过广告批评该措施。干扰项 A（煽动消费者敌意）、B（争取杂货商支持）、C（持续致信媒体）原文未提。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What did public health groups think the soda tax would do?",
+     "answer": "B",
+     "analysis": "定位第七段公共卫生组织称该税是“a step toward fixing certain lasting health issues”，即有助于解决长期健康问题。干扰项 A（警示风险）非重点；C（增加研究经费）、D（惠及全国低收入者）范围扩大。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do we learn about similar measures concerning the soda tax in some other cities?",
+     "answer": "A",
+     "analysis": "定位末段“Similar measures... are becoming hot-button issues”，说明类似措施正成为敏感议题。干扰项 B（在汽水行业引发恐慌）、C（降低糖致病发生率）、D（夺走大量利润）均属过度推断。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "把食物放进微波炉加热几分钟看似完全无害，但一项新研究发现，欧洲这些快熟烤箱的存量所排放的碳几乎相当于 700 万辆汽车。而且问题还在加剧。随着成本下降、厨房电器成为“身份”象征，拥有者平均在使用八年后就丢弃微波炉。这正推动新微波炉的销量上升，预计到本十年末在欧盟每年达到 1.35 亿台。\n曼彻斯特大学的一项研究计算了微波炉从制造到废弃物处理各个阶段的二氧化碳排放量——二氧化碳是导致气候变化的主要温室气体。“正是微波炉的耗电量对环境的影响最大，”作者们说。作者还计算出，一年使用 19 台微波炉的排放量等同于使用一辆汽车一年的排放量。根据同一项研究，减少消费的努力应侧重于提高消费者的意识与行为。例如，消费者可以通过根据食物种类调整烹饪时间，更高效地使用电器。\n然而，碳管理教授大卫·雷伊认为，尽管微波炉消耗大量能源，但其排放与汽车相比微不足道。仅英国就有约 3000 万辆汽车。这些汽车的排放量超过欧盟所有微波炉的总和。佐证这一点的是，近期数据显示，2015 年英国乘用车排放了 6900 万吨二氧化碳。这是这项新微波炉研究对欧盟所有微波炉年排放量估计值的 10 倍。此外，微波炉的能耗低于任何其他烹饪方式。在用于烹饪的常见厨房电器中，微波炉最节能，其次是炉灶，最后为标准烤箱。因此，微波炉销量的上升可被视为一件积极的事。",
+   "questions": [
+    {
+     "stem": "51. What is the finding of the new study?",
+     "answer": "D",
+     "analysis": "定位首段“Europe's stock of these quick-cooking ovens emit as much carbon as nearly 7 million cars... And the problem is growing”，说明微波炉碳排放超出人们想象。干扰项 A（更流行）是现象非发现；B（有害健康）未提及；C（CO2 是主要威胁）偏离。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. Why are the sales of microwaves expected to rise?",
+     "answer": "A",
+     "analysis": "定位首段“With costs falling and kitchen appliances becoming 'status' items”，成本下降使微波炉更买得起，推动销量上升。干扰项 B（生命周期更短）是结果非原因；C（更易操作）、D（烹饪更快）未提及。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What recommendation does the study by the University of Manchester make?",
+     "answer": "B",
+     "analysis": "定位第二段曼彻斯特大学研究“efforts to reduce consumption should focus on improving consumer awareness and behaviour”，即改善用户习惯。干扰项 A（烹饪不同种类）、C（少吃）、D（更少使用）均非研究建议。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does Professor David Reay try to argue?",
+     "answer": "A",
+     "analysis": "定位第三段 David Reay 观点“their emissions are minor compared to those from cars... These cars emit more than all the microwaves in the EU”，即汽车排放远多于微波炉。干扰项 B（应少用车）非其论点；C（英国排放更少）、D（需更多数据）无依据。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does Professor David Reay think of the use of microwaves?",
+     "answer": "C",
+     "analysis": "定位末句“rising microwave sales could be seen as a positive thing”，且前文指出微波炉最节能，故 Reay 认为其使用对环保有积极作用。干扰项 A（将不再流行）相反；B（更便利）、D（更耗电）非其环保论点。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The full name of a Han Chinese person consists of a surname and a given name. A distinctive feature of Chinese names is that the surname always comes first, followed by the given name. For thousands of years, the father's surname has been passed down from generation to generation. However, nowadays it is not uncommon for a child to take the mother's surname. Generally, a given name has one or two Chinese characters and usually carries the parents' wishes for their child. From a child's name, one can infer what kind of person the parents hope their child will become, or what kind of life they expect him or her to lead. Parents attach great importance to naming their child, because a name tends to stay with the child for life.",
+   "note": "难点在于：①“姓总是在前，名跟在其后”的语序，宜用“the surname always comes first, followed by the given name”体现对比；②“世代相传”译为 passed down from generation to generation；③“并不罕见”用 it is not uncommon 这一双重否定更地道；④“承载愿望”用 carries the parents' wishes；⑤末句“伴随孩子一生”译为 stay with the child for life。注意 Han Chinese、surname、given name 的准确用词。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:41:10.607Z"
+}
