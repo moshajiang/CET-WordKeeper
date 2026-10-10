@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2018,
+ "month": 12,
+ "set_no": 1,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Challenges of Living in a Big City\nLife in big cities offers convenience, culture and career opportunities, but it also comes with challenges that newcomers must be prepared for.\nThe first challenge is housing. Rents in city centers take up a large share of a young worker's income, and many people have to trade long commutes for cheaper flats far from work. The second is competition. Big cities attract talent from all over the country, so the pressure to perform at work is constant, and the fast pace of life leaves little time to rest. The third is the sense of isolation. Surrounded by millions of people, many city dwellers, especially migrants, feel lonely and rootless, because building genuine friendships takes time they do not have.\nThese challenges, however, are not reasons to avoid big cities but reasons to plan wisely: budget carefully, keep learning, and make time for friends and health. Only in this way can we enjoy what a big city offers instead of being crushed by it.",
+   "note": "结构：总起—三大挑战（住房/竞争/孤独）—转折与建议—总结。可复用：take up a large share of / the pressure to perform / rootless / Only in this way can we...（倒装收尾）。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "每年有数百万人因空气污染而过早死亡。空气污染每年给全球经济造成超过 5 万亿美元的福利损失，其中最严重的损害发生在发展中国家。\n这些数字包括与空气污染相关的一系列成本。仅收入损失一项每年就达 2250 亿美元。\n报告同时涵盖了室内与室外空气污染。室内污染包括家庭取暖和做饭等来源，尽管该领域不断进步，但几十年来一直保持不变。随着工业和交通运输的快速增长，室外污染水平迅速上升。\n健康指标与评估研究所所长克里斯·默里称这是一份“紧急行动倡议”。他说：“过早死亡的风险因素之一是我们呼吸的空气，而个人对此几乎没有控制力。”\n空气污染的影响在发展中国家最为严重，在一些地方，劳动收入损失相当于 GDP 的近 1%。中低收入国家约十分之九的人，生活在他们会经常经历危险水平室外空气污染的地方。\n但这个问题并非只限于发展中国家。在美国，每年有数千人因相关疾病过早死亡。在柴油车近年变得更加普遍的许多欧洲国家，这一数字达到数万。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "F",
+     "analysis": "名词：福利损失中“最严重的损害”发生在发展中国家（the most serious damage），与 die early 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "过去分词作后置定语：与空气污染“相关”的一系列成本（costs associated with air pollution），固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "M",
+     "analysis": "名词复数：室内污染包括家庭取暖和做饭等“来源”（includes sources like home heating and cooking）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "形容词作表语：尽管有进步，室内污染几十年来一直“保持不变”（remained constant）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "谓语动词过去式：默里把它“描述”为一份紧急行动倡议（described it as an urgent call to action），describe...as 固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "名词：个人对我们呼吸的空气几乎没有“控制力”（have little control over），介词 over 提示。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "H",
+     "analysis": "主语三单谓语动词：劳动收入损失“相当于”GDP 的近 1%（equals nearly 1% of GDP）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "副词修饰动词：生活在“经常”经历危险污染水平的地方（regularly experience dangerous levels）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "I",
+     "analysis": "副词：这个问题并非“只”限于发展中国家（not limited exclusively to），与下文欧美数据呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "O",
+     "analysis": "名词复数：在柴油“车辆”变得更普遍的欧洲国家（where diesel vehicles have become more common）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "“以食为药”运动正取得进展\n[A] 每个月总有几次，你会在加州亨廷顿海滩 Ralph's 超市的货架间看到一位穿白大褂的医生，帮助人们了解食物。最近的一天，这位医生是丹尼尔·纳多，他与艾莉森·斯科特一起在麦片区货架间穿行，给她出主意：该喂孩子吃点什么，才能对付那个坚决不碰任何健康食物的孩子。“想过早上试试鲜榨果汁吗？”他问她。“冷冻橙子和苹果便宜一点，水果对大脑真的很好。果汁制作又快又容易——前一晚把冷冻水果拿出来，第二天早上就能喝。”\n[B] 斯科特很高兴能从一位医生那里获得饮食建议——他是附近玛丽与迪克·艾伦糖尿病中心的项目主任，隶属于 St. Joseph Hoag 医疗联盟。该中心的“与医生一起购物”项目把医生派到食品杂货店，与任何报名该服务的患者见面，也顺带接待碰巧在场、有问题的其他购物者。\n[C] 纳多注意到斯科特购物车里的通心粉奶酪预制盒，建议她换成全麦通心粉和真奶酪。“那我得自己做？”她问，一想到那可能要花多长时间——而孩子们最后还不买账——她的热情就消退了。“我不确定他们肯吃。他们就是不肯吃。”\n[D] 纳多说，糖和加工食品是儿童糖尿病发病率上升的重要原因。“在美国，我们超过 50% 的食物是加工食品，”纳多告诉她。“而只有 5% 是植物性食物。我认为我们应该试着把这两者倒过来。”斯科特同意让孩子多喝果汁、自己做真材实料的通心粉奶酪。医生得一分，糖尿病零分。\n[E] 纳多是席卷加州的一场小规模革命的一份子。“以食为药”运动已存在几十年，但随着医生和医疗机构把食物正式纳入治疗手段、而不再单纯依赖药物，它正在取得进展。通过开具营养处方或启动“与医生一起购物”这类项目，他们试图通过改变患者的饮食来预防、限制甚至逆转疾病。“毫无疑问，人们可以靠选择食物走得很远——逆转糖尿病、逆转高血压，甚至通过饮食选择预防癌症，”纳多说。\n[F] 从大处着眼，St. Joseph Hoag Health 的总裁兼首席执行官理查德·阿法布尔博士说，全州的医疗机构正开始一场哲学转向：成为健康组织，而不仅仅是医疗保健组织。旧金山总院的“治疗性食品柜”项目印证了这一理念——该项目已完成试点，即将在全城五个诊所长期铺开。项目将向患者发放按其病情处方的数袋食物，并就如何烹制进行强化培训。“我们真心想把食物和药物联系起来，而不只是发放食物，”该院健康食品倡议的医疗主任丽塔·阮博士说。“我们要让人们理解自己吃的是什么、怎么烹制，以及食物在他们生活中扮演的角色。”\n[G] 在南加州，洛马林达大学医学院正在为住院医师提供“生活方式医学”的专业培训——那是一个以食物治疗疾病的正式专科。研究结果越来越多地表明，食物具有治疗乃至逆转疾病的力量；但这并不意味着单靠饮食总能解决问题，也不是每种疾病都能从饮食改变中显著获益。尽管如此，医生们说，综观各项数据，一幅清晰的图景浮现出来：美国饮食中的盐、糖、脂肪和加工食品，造成了这个国家肥胖、糖尿病和心脏病的高发病率。据世界卫生组织统计，心脏病与中风致死的病例中，80% 由高血压、吸烟、高胆固醇以及果蔬摄入过少引起。\n[H] “这是一种治疗疾病的全新范式，”洛马林达大学医学院家庭与预防医学住院医师项目的负责人布伦达·雷亚博士说。生活方式医学专科的设计目标，是训练医生——部分通过改变患者的营养习惯——来预防和治疗疾病。洛马林达的医疗中心与学院还设有一个食品储藏室和厨房供患者使用。这样，患者不仅学会该买哪些食物，还学会如何在家烹制。\n[I] 雷亚说，很多人不会做饭，只会把东西加热。这意味着依赖高盐高糖的包装食品。因此，教人们认识哪些食物健康、如何烹制，她说，真的能改变一个患者的生活。更进一步，它还可能改变患者一家人的健康与生活。“人吃的东西可以是药，也可以是毒，”雷亚说。“作为医生，营养是你可以用来逆转长期疾病影响的最有力的手段之一。”\n[J] 已有研究探讨了饮食变化可以减缓炎症、或让体内环境不适合癌细胞生存的证据。总体而言，许多生活方式医学医生推荐以植物为主的饮食——对糖尿病患者或其他炎症性疾病患者尤其如此。\n[K] “就像烟草的先例一样，这需要一场文化转变，但它是可以发生的，”阮说。“正如医生们曾经吸烟、后来戒烟、并能够现身说法劝说患者一样，我认为医生们可以在这件事上发出更大的声音。”",
+   "questions": [
+    {
+     "stem": "36. More than half of the food Americans eat is factory-produced.",
+     "answer": "D",
+     "analysis": "该段：纳多明确说“在美国，我们超过 50% 的食物是加工食品”（over 50 percent of our food is processed food）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. There is a special program that assigns doctors to give advice to shoppers in food stores.",
+     "answer": "B",
+     "analysis": "该段：“与医生一起购物”项目“把医生派到食品杂货店”，与报名的患者及在场购物者见面。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. There is growing evidence from research that food helps patients recover from various illnesses.",
+     "answer": "G",
+     "analysis": "该段：“研究结果越来越多地表明，食物具有治疗乃至逆转疾病的力量”（Research findings increasingly show the power of food to treat or reverse diseases）——即科研证据不断增多。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. A healthy breakfast can be prepared quickly and easily.",
+     "answer": "A",
+     "analysis": "该段：“果汁制作又快又容易——前一晚拿出冷冻水果，第二天早上就能喝”（quick and easy to prepare）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. Training a patient to prepare healthy food can change their life.",
+     "answer": "I",
+     "analysis": "该段：“教人们认识哪些食物健康、如何烹制……真的能改变一个患者的生活”（can actually transform a patient's life）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. One food-as-medicine program not only prescribes food for treatment but teaches patients how to cook it.",
+     "answer": "F",
+     "analysis": "该段：项目“发放按病情处方的数袋食物，并就如何烹制进行强化培训”（offer bags of food prescribed... along with training in how to cook it）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Scott is not keen on cooking food herself, thinking it would simply be a waste of time.",
+     "answer": "C",
+     "analysis": "该段：斯科特说“那我得自己做？”，想到耗时且孩子不买账，“她的热情就消退了”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Diabetes patients are advised to eat more plant-based food.",
+     "answer": "J",
+     "analysis": "该段：“许多生活方式医学医生推荐以植物为主的饮食——对糖尿病患者尤其如此”（a plant-based diet — particularly for people with diabetes）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. Using food as medicine is no novel idea, but the movement is making headway these days.",
+     "answer": "E",
+     "analysis": "该段：这场运动“已存在几十年”，但随着医生与医疗机构把食物正式纳入治疗而“正在取得进展”（been around for decades, but it's making progress）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Americans’ high rates of various illnesses result from the way they eat.",
+     "answer": "G",
+     "analysis": "该段：美国饮食中的“盐、糖、脂肪和加工食品造成肥胖、糖尿病和心脏病的高发病率”（contribute to the nation's high rates）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "加利福尼亚州多年以来一直面临干旱，某些地区甚至要把淡水抽到数百英里外的供水系统。随着该州人口持续扩张，问题还在加剧。新研究发现，该州地下深处存在可以帮助解决干旱危机的储水层。此前的钻井只能到达 1000 英尺的深度，但由于新的抽水做法，比这更深的水如今也能抽取。斯坦福的研究团队调查了这一深度之下的地下蓄水层，发现储量可能是原先估计的三倍。\n钻探到 1000 英尺以下为油气开采是有利可图的，但在加州，从这一深度抽水直到最近才有利可图。这些蓄水层位于地下 1000 到 3000 英尺，这意味着抽水成本高昂，而且还有其他顾虑。从这么深的地方抽水，最大的隐患是地表会逐渐沉降：水被抽走后，留下的空隙被上方土层的重量压实。\n尽管从这样的深度抽水成本高昂，但在这个大部分为沿海的州，它仍比海水脱盐便宜。一些可行之处已有脱盐工厂，但它们运行成本高，还可能需要经常维修。水井是可靠得多的淡水来源，加州希望这些深井能成为解决其严重水荒的答案。\n这些来源的一个问题是：深层水的含盐量高于较浅的蓄水层。这意味着有些井在抽取后甚至需要脱盐，从而增加成本。一项基于 950 多份钻井记录对地下水进行的详尽研究刚刚发表。淡水储量的新估计值如今达到 2.7 万亿立方米。",
+   "questions": [
+    {
+     "stem": "46.How could California’s drought crisis be solved according to some researchers?",
+     "answer": "B",
+     "analysis": "第二段：深层之下存在储水层，“此前钻井只能到 1000 英尺，但由于新的抽水做法，更深的水如今也能抽取”——即从地下深处取水。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.What can be inferred about extracting water from deep aquifers?",
+     "answer": "B",
+     "analysis": "第三段：深层抽水“直到最近才有利可图”（only recently has it become profitable），可推知此前被认为不值得花这笔钱。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is mentioned as a consequence of extracting water from deep underground?",
+     "answer": "A",
+     "analysis": "第三段：最大隐患是“地表逐渐沉降”——水被抽走后，空隙被上方土层重量压实。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does the author say about deep wells?",
+     "answer": "D",
+     "analysis": "第四段：“水井是可靠得多的淡水来源”，加州希望深井成为解决严重水荒的答案。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What may happen when deep aquifers are used as water sources?",
+     "answer": "C",
+     "analysis": "第五段：深层水含盐量更高，“有些井在抽取后甚至需要脱盐，从而增加成本”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "AlphaGo 程序的胜利是一个例子，说明计算机已经变得多么聪明。\n但人工智能（AI）机器能讲伦理吗——也就是说，它们能诚实而公正吗？\nAI 的一个例子是无人驾驶汽车。它们已经行驶在加州的路上，所以我们问“我们能否给机器编程让它讲伦理”并不算早。随着无人驾驶汽车的改进，它们将挽救生命，犯错也会比人类司机少。但有时，它们会面临生命之间的抉择：汽车是否应该被编程序避开一个突然跑过马路的孩子，哪怕那会把乘客置于危险之中？为了避免撞到一条狗而急转弯又如何？如果唯一的后果只是车辆本身的损失呢？\n无人驾驶汽车或许能提供一些教训，但它们并不是超级智能的存在。给一台比我们聪明得多的机器教伦理，才是更大的挑战。\n大约在 AlphaGo 获胜的同时，微软的“聊天机器人”走歪了。这款名为 Tay 的软件本被设计来回答 18 至 24 岁人群的消息，并能从收到的消息中学习，逐步提高处理对话的能力。但有些人在教 Tay 种族主义的观点。当它开始说希特勒的好话时，微软把它关停并删除了它最恶劣的消息。\nAlphaGo 的胜利与 Tay 的溃败大约同时发生。这应当是对我们的一个警告：在规则清晰、目标明确的游戏中使用 AI 是一回事，在现实世界中使用 AI 则完全是另一回事。现实世界的不可预测性，可能会暴露一个令人不安的软件问题。\n埃里克·施密特是拥有 AlphaGo 的谷歌的老板之一。他认为 AI 对人类是积极的。他说，无论结果如何，人们都将是赢家。AI 的进步将让人类更聪明、更能干，“成为更好的人类”。",
+   "questions": [
+    {
+     "stem": "51.What does the author want to show with the example of AlphaGo’s victory?",
+     "answer": "D",
+     "analysis": "首段：AlphaGo 的胜利展示了“计算机已经变得多么聪明”（how smart computers have become）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52.What does the author mean by AI machines acting ethically?",
+     "answer": "C",
+     "analysis": "第二、三段：机器讲伦理即“诚实而公正”，无人驾驶汽车在“避让孩子还是危及乘客”的两难中抉择——即面对道德困境做出明智决定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53.What is said to be the bigger challenge facing humans in the AI age?",
+     "answer": "B",
+     "analysis": "第四段：“给一台比我们聪明得多的机器教伦理，将是更大的挑战”（Teaching ethics to a machine even more intelligent than we are）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54.What do we learn about Microsoft’s “chatbot” Taylor?",
+     "answer": "A",
+     "analysis": "第五段：Tay 被人教坏，“开始说希特勒的好话”后被微软关停——分不清好坏。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does Eric Schmidt think of artificial intelligence?",
+     "answer": "C",
+     "analysis": "末段：施密特认为“无论结果如何，人们都将是赢家”，AI 将让人类“更聪明、更能干、更好”——即 AI 将成为人类的资产。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "With the rapid development of communication networks, the number of smartphone users in China has grown at an astonishing rate in recent years. This has greatly changed the way many people read. They now often read news and articles on their smartphones instead of buying traditional newspapers and magazines. The development of a large number of mobile apps enables people to read novels and other forms of literature on their phones. As a result, the sales of paper books have been affected. However, surveys show that although the mobile-phone reading market has been growing steadily, more than half of adults still prefer printed books.",
+   "note": "难点：通信网络（communication networks）、以惊人的速度（at an astonishing rate）、阅读方式（the way many people read）、移动应用程序（mobile apps）、纸质书籍（printed books）、稳步增长（growing steadily）、超半数（more than half of adults）。“因此”用 As a result 衔接。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:50:23.657Z"
+}
