@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2017,
+ "month": 6,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Second-hand Course Books for Sale\nGraduating this summer and doing a big clear-out? I am selling the course books I used over the past four years — all in good condition at friendly prices.\nAvailable titles: College English (Books 1-4) with CDs, A History of Western Civilization, Microeconomics (9th edition), Linear Algebra, and An Introduction to Marketing. Most of them cost 40-60 yuan new; I am selling them at 10-20 yuan each. A few have pencil notes in the margins, which honestly makes key points easier to find; the rest are almost like new.\nAll books come from a smoke-free home and have been stored upright on a shelf. The full list with photos can be viewed by email. Individual titles or the whole set — both are welcome.\nContact: Li Ming, phone/WeChat 138-XXXX-XXXX, or email books4sale@campus.edu. Pickup in front of Library No. 2, any afternoon this week. Come and grab a bargain before they are gone!",
+   "note": "广告文体（同卖自行车）：标题—开场—书目与价格—成色说明—联系方式与取货—促销收尾。可复用：in good condition / grab a bargain / Individual titles or the whole set — both are welcome。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "美国的互联网比以往任何时候都快，但人们仍在抱怨网速太慢。\n纽约州总检察长办公室今年秋天发起了一项调查，核实 Verizon、Cablevision 和时代华纳交付的宽带是否像服务商声称的那样快。本月早些时候，该办公室请求公众帮助测量自家的网速结果，并表示消费者理应得到承诺的速度。总检察长说：“我们太多人也许付费买的是一回事，得到的却是另一回事。”\n如果调查查出任何问题，这也不是电信服务商第一次因承诺的宽带速度与实际交付不符而陷入麻烦。早在六月，联邦通信委员会就对 AT&T 处以 1 亿美元的罚款，理由是有指控称该运营商在用户消耗了一定量的数据后暗中降低了无线网速。\n即使守在法律允许的一侧，互联网服务商在带宽速度和资费上也照样激起用户的愤怒。就在本周，一项调查发现，媒体和电信巨头康卡斯特是最招人恨的服务商。十个月内，康卡斯特收到近 1.2 万起客户投诉，许多与其每月流量上限和超量收费有关。\n一些美国人对互联网服务商已经失望透顶，干脆放弃了。最近的一项研究发现，如今家中拥有高速互联网的美国人数量，在过去两年里实际上有所下降，而且 15% 的人现在自认为是“掐线族”。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "J",
+     "analysis": "谓语动词过去式：总检察长办公室“发起”了一项调查（launched an investigation）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "C",
+     "analysis": "动词：核实宽带是否像服务商“声称”的那样快（as fast as the providers claim it is）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "G",
+     "analysis": "动词：消费者“理应”得到承诺的速度（deserved to get the speeds they were promised）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "M",
+     "analysis": "固定搭配 get into trouble：“陷入麻烦”，指服务商因速度承诺与交付不符惹上麻烦。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "A",
+     "analysis": "名词复数：罚款的理由是“指控”称其暗中降速（over accusations that...）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "名词：用户消耗一定量的“数据”之后（a certain amount of data）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "I",
+     "analysis": "形容词最高级：康卡斯特是“最招人恨”的服务商（the most hated provider），由 1.2 万起投诉呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "现在分词：许多投诉“与”流量上限和超量收费“有关”（many relating to its monthly data cap）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "H",
+     "analysis": "固定搭配 be frustrated with：“对……失望透顶”，由“干脆放弃”呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "B",
+     "analysis": "副词修饰动词：美国高速网络家庭数量过去两年“实际上”有所下降（actually fell）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "从会计师到瑜伽教练：一场彻底的职业转变\n[A] 在某个时刻，几乎我们所有人都会经历一段彻底的职业转变期。有些人主动求变；对另一些人来说，它像是不速之客，闯入原本安稳的职业生涯。无论哪种，当它到来时，我们都可以选择如何应对。\n[B] 我们最近回访了瑜伽创业者莉亚·扎卡里亚，她让自己经受转变的烈火，彻底重塑了自己。在追寻有意义人生的路上，莉亚辞去了高薪会计工作，离开了丈夫和家。在此过程中，她建立起一种全新的人生与事业。此后她创办了两家瑜伽馆，遇到了新的人生伴侣，并形成了一个新的社群。即使你的自我重塑没那么剧烈，我们也认为她的经历有可借鉴之处。\n[C] 改变的种子从何而来？北美印第安人有句谚语：“留意低语，你就不必听见尖叫。”重大变革的好点子往往来自意想不到的地方——问题只在于是否留意。伟大的领导者能识别指向巨变的微弱信号或细微迹象。莉亚回忆过一次她倾听低语的经历：“大约在我女儿五岁时，我开始有一种感觉：‘这样不对。’”随后她意识到，自己的生活已经与她的设想不符。\n[D] 在那之前，莉亚遵循的是传统的成功标准。拿到商业与会计学位毕业后，她进入一家会计师事务所，结婚、买房、往屋里添置了许多东西，还生了孩子。“我做了在别人眼里看似成功的一切，”她说。莉亚本可以轻易掉进满足的陷阱；相反，她的能量点燃了一段尝试与更新的时期。\n[E] 感到需要改变，莉亚开始通过探索兴趣、培养新能力来把玩未来的可能性。先是从体育锻炼和节食入手，她瘦了一些，并发现了一种内在的力量。“我感觉自己很强大，因为我突破了自己的极限，”她回忆道。\n[F] 然而，真正让莉亚彻底重塑自己的是另一份兴趣。“我记得和我姑妈坐在一家瑜伽馆的长椅上，”她说，就在那时那地，她豁然开朗：瑜伽在拯救我的生活。瑜伽把我唤醒。我不快乐，我要改变，我受够了这一套。在那个顿悟时刻，莉亚完成了一次重要的跨越：克服了自己对改变的内在抗拒，坚定地承诺迈出更大的步伐。\n[G] 如果你准备好利用来到面前的机会，创造你想要的未来会容易得多。当莉亚承诺改变时，她让自己对那些原本可能被忽视的新机会保持警觉。她回忆道：\n[H] 一天，与我办公室相邻的同事瑞安说：“莉亚，我们去看看皇后安妮区那块场地吧。”他知道我热爱瑜伽，也看到过一处离他住处不远、他觉得适合做瑜伽馆的地方。一看到那个位置，我就知道就是它了。当然我害怕，但我心里有个强烈的声音：“我必须做这件事。”仅仅几个月后，莉亚开设了她的第一家瑜伽馆，但成功并非一蹴而就。\n[I] 创造未来需要时间。正因如此，领导者在迈向未来的大变革时，仍要打理好当下。到了该跨越的时刻，他们果断行动，立即舍弃不再服务于目标的东西。最初，莉亚一边创办瑜伽馆，一边保留着会计工作以维持生计。\n[J] 不久她明白，要全身心投入新的未来，就必须大胆一搏。两年之内，莉亚甩掉了会计工作的安全垫，完成了彻底转型。如此剧烈的改变并不容易。\n[K] 穿越变革、直面障碍，会让我们与恐惧正面相遇。莉亚回忆过一件引发恐惧的事：投资人威胁要让她关门。“那大概是我经历过的最深的恐惧，”她说。“我花了两年培育这个社群，它很快走向成功，可短短六个月内我就面临失去一切的可能。”\n[L] 她与自己的使命感连接，深挖内心，培养出巨大的力量感。“我当时是那么坚定和强大，不会让恐惧轻易接管。我心想：‘好吧，各位，你们想让我关门，那就关吧。’而且我知道那是一种谈判伎俩，所以我能对自己说：‘这不是真的。’”通过说出自己的恐惧并直面它们，莉亚收获了信心。对我们多数人而言，放下过去的安稳与安全会带来巨大的恐惧。像莉亚那样把恐惧明确喊出来，能帮助我们果断行动。\n[M] 更新的循环永不止息。莉亚的成长促使她开了第二家瑜伽馆——而且不是为了钱。\n[N] 我没有挣几百万的欲望。不是为那个；对我而言这是成长。说实话，我没有必要开第二家馆。我的收入和做会计时一样多。但我知道，人不成长就会原地踏步，那对我不成立。\n[O] 想想你自己的生活、你的团队或组织的当下：你在更新循环的哪个位置——是在积极守护现在，还是在有选择地遗忘过去，还是在大胆创造未来？莉亚会给你什么建议，推动你在旅途上前行？一旦走上成长之路，我们就能不断穿越蜕变与更新的四季。",
+   "questions": [
+    {
+     "stem": "36. Readiness to take advantage of new opportunities will make it easier to create one’s desired future.",
+     "answer": "G",
+     "analysis": "该段：“如果你准备好利用来到面前的机会，创造你想要的未来会容易得多”（Creating the future you want is a lot easier if you are ready to exploit the opportunities）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. By conventional standards, Leah was a typical successful woman before she changed her career.",
+     "answer": "D",
+     "analysis": "该段：毕业、进会计师事务所、结婚、买房、生孩子——“我做了在别人眼里看似成功的一切”（conventional standards 下的典型成功女性）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. Leah gained confidence by laying out her fears and confronting them directly.",
+     "answer": "L",
+     "analysis": "该段：“通过说出自己的恐惧并直面它们，莉亚收获了信心”（By naming her fears and facing them head-on）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. In search of a meaningful life, Leah gave up what she had and set up her own yoga studios.",
+     "answer": "B",
+     "analysis": "该段：她“辞去高薪会计工作，离开丈夫和家”，此后“创办了两家瑜伽馆”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. Leah's interest in yoga prompted her to make a firm decision to reshape her life.",
+     "answer": "F",
+     "analysis": "该段：瑜伽馆长椅上的顿悟——“我要改变”，并“坚定地承诺迈出更大的步伐”（making a firm commitment）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Small signs may indicate great changes to come and therefore merit attention.",
+     "answer": "C",
+     "analysis": "该段：印第安谚语“留意低语，你就不必听见尖叫”，伟大的领导者能“识别指向巨变的微弱信号”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Leah’s first yoga studio was by no means an immediate success.",
+     "answer": "H",
+     "analysis": "该段：“仅仅几个月后莉亚开了第一家瑜伽馆，但成功并非一蹴而就”（success was not instant）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Some people regard professional change as an unpleasant experience that disturbs their stable careers.",
+     "answer": "A",
+     "analysis": "该段：对另一些人来说，职业转变“像是不速之客，闯入原本安稳的职业生涯”（an unwelcome intrusion into otherwise stable careers）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. The worst fear Leah ever had was the prospect of losing her yoga business.",
+     "answer": "K",
+     "analysis": "该段：“那大概是我经历过的最深的恐惧”——投资人威胁关门，“面临失去一切的可能”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. As she explored new interests and developed new potentials，Leah felt powerful internally.",
+     "answer": "E",
+     "analysis": "该段：探索兴趣、培养新能力后，“我感觉自己很强大，因为我突破了自己的极限”（I felt powerful）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "一份新报告称，城市化——人口从郊区向市中心迁移——将是 2015 年房地产行业最大的趋势。\n报告说，美国的城市化仍将是影响这个行业最重要的问题，因为全国各地的城市都在模仿纽约、旧金山这些城市的步行友好与公交导向开发——正是这些让它们如此成功。\n随着较小的城市复制这些“24 小时城市”的模式，一些更平价的版本将会出现。报告称之为“18 小时城市”的来临，并用这个词指代休斯敦、奥斯汀、夏洛特和纳什维尔——这些城市“正把自己打造得极具竞争力：宜居、就业机会以及休闲文化设施”。\n2015 年另一个看起来重要的趋势是：美国最大的人口群体“千禧一代”将继续推迟购房。公寓对其父母的遭遇心有余悸的千禧一代来说，还会保持一段时间的吸引力。\n报告预计，这一趋势将持续到 2020 年代。在那之后，受访者在“这一代会像父辈那样搬到郊区养家，还是选择留在市中心”的问题上意见分歧。\n影响来年房地产的另一个问题，是美国失修的基础设施。大部分道路、桥梁、公交、供水系统、电网和通信网络都建于 50 到 100 年前，它们在很大程度上被视为理所当然，直到失灵。\n报告撰写者指出，美国在基础设施上投资不足，不仅影响房地产市场的健康，也影响我们保持全球竞争力的能力。\n除了上述让一些投资者担忧的具体趋势，报告整体描绘出一种乐观情绪，它来自近期健康的房地产“上行周期”和正在改善的经济。74% 的受访者对 2015 年房地产盈利能力抱有“良好到极好”的预期。虽然过度乐观可能助长糟糕的投资模式、酿成房地产“泡沫”，但报告撰写者淡化这种潜在结果——因为它尚未发生。",
+   "questions": [
+    {
+     "stem": "46. According to the new report, real estate development in 2015 will witness_______ .",
+     "answer": "B",
+     "analysis": "首段：城市化——人口从郊区向市中心迁移——将是 2015 年房地产最大的趋势，即“向市中心转移”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What characterizes “24-hour cities” like New York?",
+     "answer": "C",
+     "analysis": "第三段：纽约等“24 小时城市”的特征由其名字可见——服务昼夜不歇；18 小时城市正努力复制这种模式。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. Why are Millennials reluctant to buy a house?",
+     "answer": "C",
+     "analysis": "第四段：千禧一代推迟购房，是“被有房父母的遭遇弄得心有余悸”（haunted by what happened to home-owning parents）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What might hinder real estate development in the U.S.?",
+     "answer": "D",
+     "analysis": "第六、七段：美国“失修的基础设施”不仅影响房地产市场的健康，也影响全球竞争力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. How do most of the respondents in the survey feel about the U.S. real-estate market in 2015?",
+     "answer": "B",
+     "analysis": "末段：74% 的受访者对 2015 年房地产盈利能力抱“良好到极好”的预期——整体乐观。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "大脑像一座看似永无穷尽的图书馆，书架上既存放着我们最珍贵的记忆，也存放着我们一生的知识。但它是否会有容量见底的一天？\n答案是不会，因为大脑比那更精巧。新信息并不是单纯地挤进来，旧信息有时会被推出大脑，为新记忆腾出空间。\n此前的行为学研究表明：学习新信息会导致遗忘。而在一项新研究中，研究人员首次展示了这种效应在大脑中如何发生。\n在日常生活中，遗忘其实有明确的好处。比如，你的银行卡丢了，新卡会带一个新的个人识别码（PIN）。你每记一次新密码，就会逐渐忘掉旧的。这一过程提高了获取相关信息的能力，而旧记忆不会来捣乱。\n我们多数人有时都体会过旧记忆干扰新的、相关记忆时的那种挫败感。想想在一周前刚去过的同一个停车场，要回忆这次把车停在了哪里。这类记忆（你试图记住新的、但相似的信息）特别容易受干扰。\n当我们获取新信息时，大脑会自动尝试通过建立关联把它并入已有信息。而当我们检索信息时，被调出的既有目标信息，也有相关但不相干的信息。\n以往的研究大多关注我们如何学习和记住新信息。而当前的研究开始更加重视“我们在何种条件下遗忘”，因为遗忘的重要性正得到越来越多的认可。\n极少数人几乎能记住自己生活中的每一个细节。虽然这在很多人听来是件好事，但拥有这种罕见能力的人常觉得这种不寻常的本领是一种负担。\n从某种意义上说，遗忘是大脑整理记忆的方式，让最相关的记忆随时可以取用。正常的遗忘甚至可能是一种安全机制，确保我们的大脑不会被塞得太满。",
+   "questions": [
+    {
+     "stem": "51. What have past behavioural studies found about our brain?",
+     "answer": "D",
+     "analysis": "第二、三段：新信息“挤入”时旧信息有时被推出大脑；“此前的行为学研究表明：学习新信息会导致遗忘”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is the benefit of forgetting?",
+     "answer": "C",
+     "analysis": "第四段换银行卡的例子：每记一次新 PIN 就忘掉旧的，“这一过程提高了获取相关信息的能力”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is the emphasis of current studies of memory?",
+     "answer": "B",
+     "analysis": "第七段：以往研究关注“如何学习记忆”，而当前研究“更加重视我们在何种条件下遗忘”（the conditions under which we forget）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What do people find about their rare ability to remember every detail of their life?",
+     "answer": "A",
+     "analysis": "第八段：拥有“过目不忘”这种罕见能力的人“常觉得这种不寻常的本领是一种负担”（find their unusual ability burdensome）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the passage say about forgetting?",
+     "answer": "C",
+     "analysis": "末段：“遗忘是大脑整理记忆的方式，让最相关的记忆随时可以取用”（the brain's way of sorting memories）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Pearl River, a major river system in South China flowing through Guangzhou, is the third longest river in China, after the Yangtze River and the Yellow River. The Pearl River Delta is one of the most developed regions in China, covering an area of about 11,000 square kilometers. It is also the largest urban area in the world in terms of size and population. The nine largest cities in the Pearl River Delta have a combined population of over 57 million. Since China's reform and opening-up in the late 1970s, the Delta has become one of the major economic regions and manufacturing centers of China and the world.",
+   "note": "难点：河系（river system）、仅次于长江和黄河（after the Yangtze and the Yellow River）、三角洲（delta）、城市聚集区（urban area）、共有……人口（have a combined population of）、改革开放（reform and opening-up）、制造中心（manufacturing centers）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:27:09.197Z"
+}
