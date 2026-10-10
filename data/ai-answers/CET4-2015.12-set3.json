@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2015,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Never Go Out There to See What Happens\n\"Never go out there to see what happens; go out there to make things happen.\" This saying reminds us that life rewards participants far more than onlookers.\nWe make things happen only when we take action. A student who merely watches others win speech contests improves nothing, while the one who signs up, drafts a speech and practises repeatedly gains both skill and confidence. Likewise, a young graduate waiting for a perfect job offer may wait forever, but one who starts from a small position and keeps learning soon creates opportunities of his own.\nAdmittedly, onlookers avoid the risk of failure. However, they also miss the excitement of growth, the lessons hidden in mistakes and the joy of achievement. Watching life pass by is the surest way to regret.\nTherefore, instead of waiting to see what happens, we should step out, get involved and make things happen. Only as participants can we truly shape our own future.",
+   "note": "紧扣“参与者优于旁观者”。结构：引语释义—正面例证（学生/毕业生）—让步反驳（Admittedly... However...）—总结（Only as... can we... 倒装）。可复用：make things happen / the surest way to regret / shape our own future。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "孩子的思维方式与成人不同。在生命最初的头一年里，看不见的东西就意味着不存在。如果你用一块布把婴儿心爱的玩具盖上，婴儿就会以为玩具消失了，不再去找它。一个四岁的孩子可能会抗议说姐姐的果汁更多，而其实只是杯子的形状不同，果汁的量并没有差别。\n然而，孩子有自己独特的聪明。像小小的科学家一样，孩子们总是在检验他们那套关于事物如何运作的“童版理论”。当你喂饭时孩子第六次把勺子扔到地上，你说：“够了！我再也不会帮你捡勺子了！”孩子就会立刻检验你的话是不是当真：你是认真的吗？你生气了吗？她再扔一次会怎样？她这样做并不是要把你逼疯；相反，她是在学习：她的愿望和你的可以不同，而且有时候这些分歧很重要，有时候并不重要。\n儿童的思维是如何、又为什么发生变化的？20 世纪 20 年代，瑞士心理学家让·皮亚杰提出：儿童的认知能力像花开一样自然展开，几乎不受他们生活中其他事情的左右。虽然他的许多具体结论在多年后被推翻或修正，但他的思想激励了世界各地的研究者开展了数以千计的研究。",
+   "questions": [
+    {
+     "stem": "36",
+     "answer": "G",
+     "analysis": "形容词作定语：婴儿“心爱的”玩具（favorite toy）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37",
+     "answer": "M",
+     "analysis": "情态动词 may 后接动词原形：孩子“抗议/争辩”说姐姐果汁更多（protest that a sister has more fruit juice）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38",
+     "answer": "B",
+     "analysis": "名词：不是杯子的形状不同，而是果汁的“量”（the amount of juice）不同。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39",
+     "answer": "O",
+     "analysis": "复数名词：孩子总在检验他们关于事物如何运作的“理论”（child-sized theories），与 how things work 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40",
+     "answer": "I",
+     "analysis": "副词修饰动词：孩子会“立刻”检验你的话（will immediately test your claim），与第六次扔勺子的情境呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41",
+     "answer": "D",
+     "analysis": "固定搭配 drive you crazy：“把你逼疯”；由下文“她不是故意作对”可定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42",
+     "answer": "F",
+     "analysis": "复数名词：her desires and yours can differ → “这些分歧”（those differences）有时重要有时不重要。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43",
+     "answer": "J",
+     "analysis": "副词修饰动词 unfold：认知能力像花开一样“自然地”展开（unfold naturally）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44",
+     "answer": "H",
+     "analysis": "现在分词：几乎独立于生活中“正在发生”的其他事（what else is happening in their lives）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45",
+     "answer": "N",
+     "analysis": "过去分词与 modified 并列：他的具体结论多年后被“推翻”或修正（have been rejected or modified）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "完美的作文\n[A] 回顾多年求学生涯，我能认出一位真正“不可能存在”的老师。她关心我，关心我的智识生活，哪怕我自己都不关心。她对我的期望高得离谱。她是一位英语老师。她也是我的母亲。\n[B] 好学生交上作文时，都梦想老师把它原样退回，只在最后一页的页边加一个词：“完美无瑕。”九年级的一个下午，这个梦想在我身上成真了。当然，我早听说天才会在幼年显露，所以对于自己在 14 岁的稚龄就达到完美，我只是略微吃了一惊。显然，我做了任何职业作家都会做的事：跑去散布这个好消息。我没走多远。我告诉的第一个人是我母亲。\n[C] 我母亲身高不到五英尺，平时说话极其温和，可一旦动怒，就非常可怕。我说不清她更恼火的是我的得意忘形，还是我的英语老师竟让我的自我膨胀到如此地步。总之，母亲和她那支红笔让我看到，一篇“完美无瑕”的作文可以有多少缺陷。当时她大概以为自己教给我的是写作技巧、过渡、结构、风格与声音；但我真正学到的、并在后来于哈佛教写作的岁月里一直伴随我的，是关于“创造性批评”之本质的更深一课。\n[D] 首先，批评让人受伤。真正的批评——那种作为作家在你身上留下长久印记的批评——同样会作为一个人在你身上留下存在的印记。我听人说过，作家永远不该把批评往心里去。我的看法是：我们永远不要听这些人的话。\n[E] 批评最好的样子是深切入身的，它直指我们为何如此写作的内心。这种切身的批评意味着：能给出它的人，必须足够了解你，能看出你的心理状态如何妨碍好的写作。而恰好，这些人也正是足够在乎你、愿意陪你走过这痛苦领悟的人。对我来说，它化作了我第一次——我希望也是唯一一次——写作障碍：整整三年我什么都写不出来。\n[F] 弗兰兹·卡夫卡曾说：“写作是彻底的独处，是向自身冰冷深渊的下沉。”母亲的批评让我明白，卡夫卡关于冰冷深渊的说法是对的：当你做写作所要求的内省下沉时，你未必喜欢看到的东西。但在之后的岁月里，她持续的辅导表明，卡夫卡关于“独处”的说法或许错了。我幸运地找到一位批评家兼老师，愿意陪我一同走这段写作之旅。普鲁塔克说：“挑别人讲话的毛病不是什么难事，易如反掌；但要在原处拿出一篇更好的，才是极其麻烦的工作。”我确信高中后期我也写过没有母亲指导的作文，但我一篇都不记得了。我记得的，是她如何承担起那种“极其麻烦”的持续批评的工作。\n[G] 普鲁塔克说批评者应当能“在原处拿出更好的”，对此有两种理解。直白地讲，他可能是指批评者必须比她所评论的艺术家更有才华。就这一点而言，母亲绰绰有余。但也许普鲁塔克的暗示略有不同，更接近马库斯·西塞罗的主张：“用创造来批评，而不是靠挑刺。”真正的批评会为作者开创一个宝贵的契机，让他以自己的方式变得更好——这个过程往往极其痛苦，却也几乎总是有意义的。\n[H] 母亲说她会帮我提高写作，但首先我得自己帮自己。每次作业，我都要先写出自己能写出的最好的作文。真正的批评不是为了挑明显的错，所以一旦她发现这类我自己本该发现的错误，我就得从头重写。从头来过。等到作文“无懈可击”了，她才会花一个晚上带我逐条检视错误。那时，真正改变我这个人的批评才刚刚开始。\n[I] 当我用了冷僻的引文和行话时，她会批评我。她对华丽却不相干的修辞毫无耐心。“作家不能靠虚张声势蒙混过自己的无知。”这对我是个新闻——我需要另找一种方式来安排自己的日常写作。\n[J] 她删削我华丽的辞藻，划掉我的感叹号，主张克制的表达。“约翰，”她几乎耳语道。我凑近去听：“你冲我嚷嚷的时候，我听不见。”于是我不再嚷嚷、不再虚张声势，我的写作也慢慢进步了。\n[K] 不知从什么时候起，我放弃了写出一篇完美作文的念头。但也许在母亲关于创造力与完美的教导里，我错过了重要的一点：写完美作文的意义，也许不在于放弃，而在于永远不要甘心收笔。1855 到 1891 年间，惠特曼反复修改《自己之歌》。反复地改。我们为一篇作品竭尽全力，尽可能接近理想，并暂时安顿于此。然而在批评中，我们被迫启程，放弃自以为已达成的完美，去换取哪怕再好一点点的机会。这是我从母亲那里学到的：如果完美唾手可得，它就不会有激励人心的力量。",
+   "questions": [
+    {
+     "stem": "46.The author was advised against the improper use of figures of speech.",
+     "answer": "I",
+     "analysis": "该段：作者用了冷僻引文和行话遭批评，母亲“对华丽却不相干的修辞毫无耐心”（no patience for brilliant but irrelevant figures of speech）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.The author’s mother taught him a valuable lesson by pointing out lots of flaws in his seemingly perfect essay.",
+     "answer": "C",
+     "analysis": "该段：母亲的红笔让作者看到“完美无瑕”的作文有多少缺陷，并由此领悟“创造性批评”的更深一课。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.A writer should polish his writing repeatedly so as to get closer to perfection.",
+     "answer": "K",
+     "analysis": "该段：惠特曼 1855–1891 年间“反复”修改《自己之歌》；写完美作文的意义在于“永远不要甘心收笔”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49.Writers may experience periods of time in their life when they just can’t produce anything.",
+     "answer": "E",
+     "analysis": "该段：作者经历了第一次写作障碍，“整整三年什么都写不出来”（not able to produce anything for three years）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50.The author was not much surprised when his school teacher marked his essay as “flawless”.",
+     "answer": "B",
+     "analysis": "该段：作者早听说天才幼年显露，故对 14 岁写出完美作文“只是略微吃了一惊”（only slightly taken aback）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "51.Criticizing someone’s speech is said to be easier than coming up with a better one.",
+     "answer": "F",
+     "analysis": "该段引普鲁塔克：挑毛病“易如反掌”，在原处拿出更好的“才是极其麻烦的工作”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52.The author looks upon his mother as his most demanding and caring instructor.",
+     "answer": "A",
+     "analysis": "该段：母亲是“真正不可能存在的老师”——期望高得离谱（demanding）却“关心我和我的智识生活”（caring）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53.The criticism the author received from his mother changed him as a person.",
+     "answer": "D",
+     "analysis": "该段：真正的批评不但留下写作的印记，还会“作为一个人留下存在的印记”（an existential imprint on you as a person）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54.The author gradually improved his writing by avoiding fancy language.",
+     "answer": "J",
+     "analysis": "该段：母亲删削华丽辞藻、划掉感叹号，作者不再嚷嚷虚张声势，“写作也慢慢进步了”（slowly my writing improved）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55.Constructive criticism gives an author a good start to improve his writing.",
+     "answer": "G",
+     "analysis": "该段：真正的批评为作者“开创一个宝贵的契机”，让他以自己的方式变得更好（creates a precious opening for an author to become better）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "你能在别处复制一个硅谷吗，还是它有什么独一无二的东西？\n如果它在其他国家难以复制，并不奇怪，因为在美国的大部分地方你也复制不了它。造出一个硅谷需要什么？\n需要合适的人。如果你能让合适的一万人从硅谷搬到布法罗，布法罗就会成为硅谷。\n创建一个科技中心只需要两种人：有钱人和痴迷科研的人。\n观察印证了这一点。在美国国内，一个城镇成为明星科技中心，当且仅当它同时拥有这两种人。比如迈阿密几乎没有初创企业，因为尽管那里富人云集，痴迷科研的人却很少——那不是这种人喜欢的地方。\n匹兹堡则相反：书呆子很多，有钱人却少。据说美国顶尖的计算机系是 MIT、斯坦福、伯克利和卡内基-梅隆。MIT 造就了 128 公路区，斯坦福和伯克利造就了硅谷。那卡内基-梅隆在匹兹堡造就了什么？康奈尔大学所在地伊萨卡又发生了什么？\n我在匹兹堡长大，在康奈尔上大学，所以这两处我都能作答。那里天气糟糕透顶，尤其是冬天，又没有像波士顿那样有趣的老城来弥补。富人不愿住在匹兹堡或伊萨卡。所以尽管有大量能创业的电脑迷，却没有人来投资他们。\n你真的需要富人吗？让政府来投资书呆子不行吗？\n不行。创业投资人是一类特殊的富人。他们往往自己在科技行业阅历丰富，这帮助他们挑对初创公司，也意味着他们除了钱还能提供建议和人脉。而且他们与结果有切身的利害关系，这让他们真正上心。",
+   "questions": [
+    {
+     "stem": "56.What do we learn about Silicon Valley from the passage? A. Its success is hard to copy anywhere else. B. It is the biggest technology hub in the US. C. Its fame in high technology is incomparable. D. It leads the world in information technology.",
+     "answer": "A",
+     "analysis": "对应首段：硅谷难以在其他国家复制，“因为在美国的大部分地方你也复制不了它”，即其成功难以复制。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "57.What makes Miami unfit to produce a Silicon Valley? A. Lack of incentive for investment. B. Lack of the right kind of talents. C. Lack of government support. D. Lack of famous universities.",
+     "answer": "B",
+     "analysis": "对应第五段：迈阿密“富人云集，痴迷科研的人却很少”（full of rich people, it has few nerds），缺的是合适的人才。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "58.In what way is Carnegie-Mellon different from Stanford, Berkeley and MIT? A. Its location is not as attractive to rich people. B. Its science departments are not nearly as good. C. It does not produce computer hackers and nerds. D. It does not pay much attention to business startups.",
+     "answer": "A",
+     "analysis": "对应第六、七段：匹兹堡“书呆子多、有钱人少”，天气糟糕、富人不愿住在那里——即卡内基-梅隆所处的位置对富人缺乏吸引力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "59.What does the author imply about Boston? A. It has pleasant weather all year round. B. It produces wealth as well as high-tech. C. It is not likely to attract lots of investors and nerds. D. It is an old city with many sites of historical interest.",
+     "answer": "B",
+     "analysis": "对应第七段：作者暗示波士顿有有趣的老城弥补坏天气，富人愿意住（财富）且 MIT 在此造就 128 公路高科技区，即“财富与高科技兼产”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "60.What does the author say about startup investors? A. They are especially wise in making investments. B. They have good connections in the government. C. They can do more than providing money. D. They are rich enough to invest in nerds.",
+     "answer": "C",
+     "analysis": "对应末段：创业投资人“除了钱还能提供建议和人脉”（supply advice and connections as well as money），即能做的远不止出钱。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "身边有想法相同的人固然舒服。投契的人给你信心，让你放松、自在。遗憾的是，这种舒适恰恰会妨碍那种能扩张你的公司和事业的学习。\n有人赞同固然好，但你需要互相冲突的视角来挖掘真相。如果周围人的观点都与你相似，你的工作就会受“确认偏颇”之害。\n看看你自己的人脉圈。你的联系人在多数话题上都和你观点一致吗？如果是，那该搅动一下了。作为领导者，营造一个人们可以自由异议和争辩的环境并不容易，但正如俗话所说：对抗出卓越。\n对多数人来说，主动寻求冲突并不容易。许多人一辈子都在避免争吵。你不必去找你讨厌的人，但你确实需要自我审视，弄清自己的思维在哪些地方变得陈腐。你可以先从鼓励现有人脉帮你指出盲点做起。\n热烈的、有活力的辩论不需要愤怒和敌意也能有效，但它确实需要道德力量。一旦你有了值得交手的对手，就定些基本规则，让每个人都明白责任与边界。这场辩论游戏的目的不是取胜，而是抵达真相——它让你更快、更远、更好地前行。\n激烈的辩论会伤感情，尤其当个性强势的人参与其中时。务必与你的对手沟通，别让他们把战场上的情绪带出战场。用微笑和幽默化解紧张，强化这样一个观念：这是友好的论辩，大家都在为共同的目标努力。\n目标达成后，充分奖励所有参与辩论的人。让你的陪练知道你多么感激他们的贡献。他们越觉得被感激，就越愿意下次再上场。",
+   "questions": [
+    {
+     "stem": "61.What happens when you have like-minded people around you all the while? A. It will help your company expand more rapidly. B. It will create a harmonious working atmosphere. C. It may prevent your business and career from advancing. D. It may make you feel uncertain about your own decisions.",
+     "answer": "C",
+     "analysis": "对应首段：志同道合者带来的舒适“恰恰会妨碍那种能扩张你的公司和事业的学习”，即可能阻碍公司与事业进步。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "62.What does the author suggest leaders do? A. Avoid arguments with business partners. B. Encourage people to disagree and argue. C. Build a wide and strong business network. D. Seek advice from their worthy competitors.",
+     "answer": "B",
+     "analysis": "对应第三段：作为领导者，要努力营造“人们可以自由异议和争辩”的环境（an environment in which people will freely disagree and argue）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "63.What is the purpose of holding a debate? A. To find out the truth about an issue. B. To build up people's moral strength. C. To remove misunderstandings. D. To look for worthy opponents.",
+     "answer": "A",
+     "analysis": "对应第五段：辩论的目的“不是取胜，而是抵达真相”（not to win but to get to the truth）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "64.What advice does the author give to people engaged in a fierce debate? A. They listen carefully to their opponents' views. B. They show due respect for each other's beliefs. C. They present their views clearly and explicitly. D. They take care not to hurt each other's feelings.",
+     "answer": "D",
+     "analysis": "对应第六段：激烈辩论会伤感情，要与对手沟通、用微笑幽默化解紧张，即注意不伤害彼此感情。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "65.How should we treat our rivals after a successful debate? A. Try to make peace with them. B. Try to make up the differences. C. Invite them to the ring next time. D. Acknowledge their contribution.",
+     "answer": "D",
+     "analysis": "对应末段：目标达成后要“充分奖励所有参与者，让陪练知道你多么感激他们的贡献”，即认可对手的贡献。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The annual Chinese Speech Contest for Foreigners was held in Changsha this year. The contest proved to be a good way of promoting cultural communication between China and other parts of the world. It provided a good opportunity for young people around the world to better understand China. A total of 126 contestants from 87 countries gathered in the capital of Hunan Province to take part in the semifinals and the final held from July 6 to August 5. The contest was not the only activity, as the contestants also had the chance to visit famous scenic spots and historical sites in other parts of China.",
+   "note": "难点：一年一度的（annual）、证明是（prove to be）、促进文化交流（promote cultural communication）、共计（a total of）、半决赛和决赛（the semifinals and the final）、著名景点和历史名胜（famous scenic spots and historical sites）。长句宜拆分，“比赛并不是唯一的活动”用 as 衔接因果。"
+  }
+ ],
+ "generatedAt": "2026-10-10T10:11:39.386Z"
+}
