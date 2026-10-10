@@ -15,9 +15,6 @@
 !ifndef CET_CUSTOM_INSTALLER_INCLUDED
   !define CET_CUSTOM_INSTALLER_INCLUDED
 
-  ; BST_CHECKED —— 自定义常量名，避免依赖头文件的包含顺序（值同 WinMessages.nsh 的 0x0001）
-  !define CET_BST_CHECKED 0x0001
-
   !macro _cetEnsureNsDialogs
     !ifndef CET_NSDIALOGS_INCLUDED
       !define CET_NSDIALOGS_INCLUDED
@@ -40,14 +37,17 @@
       Pop $0
       ${NSD_CreateCheckbox} 0u 6u 100% 13u "创建桌面快捷方式（取消勾选则不创建）"
       Pop $hCetShortcutCheckbox
-      ${NSD_SetState} $hCetShortcutCheckbox ${CET_BST_CHECKED}
+      ${NSD_SetState} $hCetShortcutCheckbox ${BST_CHECKED}
       StrCpy $cetDesktopShortcutWanted "1"
       nsDialogs::Show
     FunctionEnd
 
     Function LeaveDesktopShortcutPage
+      ; ⚠️ LogicLib 的 == 是字符串比较：${NSD_GetState} 返回的是 "1"/"0"，
+      ; 千万不能与十六进制字面量（如 0x0001）比较——"1" != "0x0001" 恒为假，
+      ; 会把「勾选」误判成「未勾选」，导致装完就删掉快捷方式（已踩坑，勿回退）
       ${NSD_GetState} $hCetShortcutCheckbox $0
-      ${If} $0 == ${CET_BST_CHECKED}
+      ${If} $0 == ${BST_CHECKED}
         StrCpy $cetDesktopShortcutWanted "1"
       ${Else}
         StrCpy $cetDesktopShortcutWanted "0"
