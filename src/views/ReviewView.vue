@@ -29,7 +29,7 @@
     <template v-else>
       <div class="review-progress"><div class="fill" :style="{ width: progress + '%' }"></div></div>
 
-      <div v-if="current" class="review-card">
+      <div v-if="current" class="review-card" :class="{ clickable: !revealed }" @click="flip">
         <template v-if="!revealed">
           <template v-if="clozeMode && current.sentence">
             <div class="rctx" v-html="clozeHtml"></div>
@@ -43,7 +43,7 @@
         </template>
         <template v-else>
           <div class="rw">{{ current.word }}
-            <span class="speak" style="font-size: 18px; cursor: pointer; margin-left: 8px;" @click="speak(current.word)">🔊</span>
+            <span class="speak" style="font-size: 18px; cursor: pointer; margin-left: 8px;" @click.stop="speak(current.word)">🔊</span>
           </div>
           <div class="rph">{{ current.phonetic ? '/' + current.phonetic + '/' : '' }}</div>
           <div class="rtrans">{{ current.translation || '（词典未收录）' }}</div>
@@ -115,6 +115,11 @@ async function answer(rating) {
   doneCount.value += 1;
   idx.value += 1;
   revealed.value = false;
+}
+
+// 点击卡面翻面核对（历史 bug：卡面本体没有绑定点击，只有下方一行小字可点）
+function flip() {
+  if (current.value && !revealed.value) revealed.value = true;
 }
 
 async function restart() {

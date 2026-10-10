@@ -621,6 +621,44 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   }
 }
 
+// ===== 复习卡片交互（回归闸门：卡面本体必须可点击翻面）=====
+// 历史 bug：文案写着「点击卡片翻面」，但 @click 只绑在卡片下方一行小字上，点卡面无反应
+{
+  const clickBtn = async (label, wait = 700) => {
+    const ok = await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.trim().includes(${JSON.stringify(label)})); if (b && !b.disabled) { b.click(); return true; } return false; })()`);
+    await sleep(wait);
+    return ok;
+  };
+
+  // 造一张待复习卡（新词进入 fresh 队列），进复习页并开始
+  await js(`window.keeper.addWord('serendipity')`); await sleep(400);
+  await js(`location.hash = '#/review'`); await sleep(1600);
+  const startOk = await clickBtn('开始');
+  await sleep(900);
+
+  // 翻面前：无评分键、卡面是手型光标；点卡面本体 → 翻面出释义与三个评分键
+  const before = await js(`document.querySelectorAll('.rate-row button').length`);
+  const cardCursor = await js(`(() => { const c = document.querySelector('.review-card'); return c ? getComputedStyle(c).cursor : ''; })()`);
+  await js(`(() => { const c = document.querySelector('.review-card'); if (c) c.click(); return !!c; })()`);
+  await sleep(600);
+  const after = await js(`document.querySelectorAll('.rate-row button').length`);
+  const trans = String(await js(`(document.querySelector('.rtrans') || {}).textContent || ''`));
+  check('复习卡点击卡面可翻面', startOk && before === 0 && after === 3 && trans.length > 0 && cardCursor === 'pointer',
+    `评分键 ${before} → ${after} / 释义="${trans.slice(0, 18)}" / 光标=${cardCursor}`);
+
+  // 翻面后再点卡面：不误触评分、不跳卡
+  const wordA = String(await js(`((document.querySelector('.review-card .rw') || {}).textContent || '').trim()`));
+  await js(`(() => { const c = document.querySelector('.review-card'); if (c) c.click(); return 1; })()`);
+  await sleep(400);
+  const after2 = await js(`document.querySelectorAll('.rate-row button').length`);
+  const wordB = String(await js(`((document.querySelector('.review-card .rw') || {}).textContent || '').trim()`));
+  check('翻面后再点卡面不误触评分', after2 === 3 && wordA === wordB, `评分键=${after2} 单词未变=${wordA === wordB}`);
+
+  // 评分推进（记得），让本局正常走完/进入下一张
+  await clickBtn('记得');
+  await sleep(600);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

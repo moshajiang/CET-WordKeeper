@@ -289,6 +289,9 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   margin-bottom: 18px;
   user-select: text;
 }
+/* 未翻面时整张卡可点击翻面（历史 bug：只有下方一行小字绑了点击） */
+.review-card.clickable { cursor: pointer; }
+.review-card.clickable:hover { border-color: var(--accent); }
 .review-card .rw { font-size: 40px; font-weight: 700; font-family: Georgia, serif; }
 .review-card .rph { color: var(--muted); font-size: 15px; margin-top: 8px; }
 .review-card .rctx {
