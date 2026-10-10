@@ -387,9 +387,9 @@
           "qtype": "choice",
           "stem": "What does the author suggest near the end of the passage?",
           "options": [
-            "A)",
+            "A) They can modify the effects of medicines in different ways",
             "B) Making treatments less complex by taking drug timing into account.",
-            "C)",
+            "C) Their reaction to medicines changes during the day-night cycle",
             "D) Finding out the most effective drugs for treating diseases through further research."
           ],
           "answer": "",
@@ -444,8 +444,8 @@
           "stem": "What is the chief reason for college-educated workers delaying retirement according to an economist?",
           "options": [
             "A) Enjoying financial security.",
-            "C)",
             "B) Staying connected socially.",
+            "C) Contributing more professionally",
             "D) Increasing social security payments."
           ],
           "answer": "",

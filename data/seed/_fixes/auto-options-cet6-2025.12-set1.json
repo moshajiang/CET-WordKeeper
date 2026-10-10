@@ -1,0 +1,41 @@
+{
+ "key": "cet6-2025.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 47,
+   "pos": 1,
+   "options": [
+    "A) Reexamine its detrimental effects.",
+    "B) Shrug off the loss of their loved ones.",
+    "C) Avoid the chaos and turmoil involved",
+    "D) Remove aggressive obstacles in the way."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) Attaching importance to academic gains on the road to success",
+    "B) Investing one's time in work instead of connecting with friends.",
+    "C) Trying to strengthen friendships in one's pursuit of personal success.",
+    "D) Excelling in academic performance to get into a prestigious college."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) No one can succeed without pushing limits.",
+    "B) No one can afford to neglect close friends.",
+    "C) Collectivism is superior to individualism",
+    "D) Success experts often lead people to ruin."
+   ]
+  }
+ ]
+}

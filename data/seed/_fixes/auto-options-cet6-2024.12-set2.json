@@ -1,0 +1,17 @@
+{
+ "key": "cet6-2024.12-set2",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "pos": 1,
+   "options": [
+    "A) Aesthetic tastes tend to differ from person to person",
+    "B) Natural beauty is rarely surpassed by artificial beauty.",
+    "C) There is less consensus on objects shaped by human craft.",
+    "D) There is general agreement on what is pleasing to the eye."
+   ]
+  }
+ ]
+}

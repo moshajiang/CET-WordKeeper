@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2023.12-set3",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) The long tradition of collecting insects.",
+    "B) Fast reproduction of their competitors.",
+    "C) Chemicals used for killing insects",
+    "D) The extinction of a lot of wildlife."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) A variety of spiders are threatened due to pollution of marshes and wasteland",
+    "B) Certain species of spiders are endangered due to loss of their natural homes",
+    "C) An increasing number of spiders are being killed by deadly pesticides",
+    "D) More and more spider species are found losing their ability to migrate."
+   ]
+  }
+ ]
+}

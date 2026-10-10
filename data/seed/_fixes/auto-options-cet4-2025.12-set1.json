@@ -1,0 +1,29 @@
+{
+ "key": "cet4-2025.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) They can modify the effects of medicines in different ways",
+    "B) Making treatments less complex by taking drug timing into account.",
+    "C) Their reaction to medicines changes during the day-night cycle",
+    "D) Finding out the most effective drugs for treating diseases through further research."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) Enjoying financial security.",
+    "B) Staying connected socially.",
+    "C) Contributing more professionally",
+    "D) Increasing social security payments."
+   ]
+  }
+ ]
+}

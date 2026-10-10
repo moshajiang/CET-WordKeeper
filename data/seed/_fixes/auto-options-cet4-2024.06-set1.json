@@ -1,0 +1,53 @@
+{
+ "key": "cet4-2024.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) Embrace life for ourselves and for others.",
+    "B) Base our worth on others’ opinions",
+    "C) See our experiences as assets.",
+    "D) Love ourselves as we are."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) Doing daily routines by conventional means",
+    "B) Avoiding worrying about our mental durability",
+    "C) Imitating old dogs’ way of learning new tricks.",
+    "D) Approaching everyday tasks in novel ways"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) Being curious and desiring knowledge",
+    "B) Being eager to pass brain tests at an old age",
+    "C) Rising to life’s challenges and avoiding risks.",
+    "D) Boosting immunity to serious mental diseases"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Wishing to solve puzzles enhances one’s reasoning power.",
+    "B) Playing number games unexpectedly stimulates one’s memory.",
+    "C) Desiring new experiences can help to renovate the brain",
+    "D) Learning new tricks should not be confined to old dogs only."
+   ]
+  }
+ ]
+}

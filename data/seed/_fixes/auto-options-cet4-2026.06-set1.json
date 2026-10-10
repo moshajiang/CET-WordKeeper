@@ -1,0 +1,29 @@
+{
+ "key": "cet4-2026.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) A gene-related selfish behavior in preschool children",
+    "B) Key factors that determine one’s altruistic behavior.",
+    "C) A specific gene associated with altruistic behavior",
+    "D) Roles played by genes in shaping one’s character."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Cooperative behavior is evident among identical twins",
+    "B) One is born either cooperative or non-cooperative.",
+    "C) Genes determine one’s tendency to cooperate.",
+    "D) Cooperative behavior may be cultivated"
+   ]
+  }
+ ]
+}

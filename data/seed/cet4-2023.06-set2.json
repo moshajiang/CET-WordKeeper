@@ -375,9 +375,9 @@
           "qtype": "choice",
           "stem": "What is the typical supermarket layout intended to do?",
           "options": [
-            "A)",
-            "B)Provide customers easy access to items they want to buy.",
-            "C)Induce customers to make more unplanned purchases.",
+            "A) Arouse customers' appetite to buy flowers, fruit and vegetables",
+            "B) Provide customers easy access to items they want to buy.",
+            "C) Induce customers to make more unplanned purchases.",
             "D) Enable customers to have a more enjoyable shopping experience."
           ],
           "answer": "",
@@ -407,10 +407,10 @@
           "qtype": "choice",
           "stem": "Why did America's traditional school year have a three-month summer vacation?",
           "options": [
-            "A)Students needed to help with farm work.",
-            "B)Students needed time to learn necessary farming skills.",
-            "C)The agricultural society then attached less importance to academics.",
-            "D)"
+            "A) Students needed to help with farm work.",
+            "B) Students needed time to learn necessary farming skills.",
+            "C) The agricultural society then attached less importance to academics.",
+            "D) America lagged behind other countries in making a scientific school calendar"
           ],
           "answer": "",
           "analysis": ""

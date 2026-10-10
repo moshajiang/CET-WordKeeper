@@ -1,0 +1,29 @@
+{
+ "key": "cet4-2023.06-set2",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) Arouse customers' appetite to buy flowers, fruit and vegetables",
+    "B) Provide customers easy access to items they want to buy.",
+    "C) Induce customers to make more unplanned purchases.",
+    "D) Enable customers to have a more enjoyable shopping experience."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) Students needed to help with farm work.",
+    "B) Students needed time to learn necessary farming skills.",
+    "C) The agricultural society then attached less importance to academics.",
+    "D) America lagged behind other countries in making a scientific school calendar"
+   ]
+  }
+ ]
+}

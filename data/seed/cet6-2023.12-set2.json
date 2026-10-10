@@ -443,9 +443,9 @@
           "qtype": "choice",
           "stem": "What can we conclude from Darwin's assertion in The Origin of Species?",
           "options": [
-            "A)",
+            "A) All species inherently depend on others for survival",
             "B) Struggles for survival do not exclude mutual support.",
-            "C)",
+            "C) Competition weighs as much as cooperation as a survival strategy",
             "D) The strongest species proves to be the fittest in natural selection."
           ],
           "answer": "",
@@ -456,8 +456,8 @@
           "stem": "What conclusion did Margaret Mead reach after studying dozens of different cultures?",
           "options": [
             "A) It is characteristic of humans to be competitive.",
-            "B)",
-            "C)",
+            "B) Americans are uniquely opposed to cooperation",
+            "C) Competition is relatively more prevalent in Western societies",
             "D) People's attitude towards competition is actually culture-bound."
           ],
           "answer": "",

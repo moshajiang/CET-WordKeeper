@@ -351,9 +351,9 @@
           "qtype": "choice",
           "stem": "What does the author think is a more effective measure for driving economic growth in the U.S.?",
           "options": [
-            "A)",
-            "C) Increasing the compensation for labor.",
+            "A) Aiding people left behind by economic growth",
             "B) Prioritizing the growth of the nation's G",
+            "C) Increasing the compensation for labor.",
             "D) Introducing even more extensive tax cuts."
           ],
           "answer": "",
@@ -365,7 +365,7 @@
           "options": [
             "A) The growth of workers' paychecks ultimately boosts the nation's economy.",
             "B) Paying a premium to maintain a reliable workforce attracts more customers.",
-            "C)",
+            "C) Consumption stimulates the desire for higher wages",
             "D) Familiar arguments for higher wages are outdated."
           ],
           "answer": "",

@@ -427,9 +427,9 @@
           "stem": "What partly accounts for the reduction in spiders'food supply?",
           "options": [
             "A) The long tradition of collecting insects.",
-            "C)",
-            "D) The extinction of a lot of wildlife.",
-            "B) Fast reproduction of their competitors."
+            "B) Fast reproduction of their competitors.",
+            "C) Chemicals used for killing insects",
+            "D) The extinction of a lot of wildlife."
           ],
           "answer": "",
           "analysis": ""
@@ -438,9 +438,9 @@
           "qtype": "choice",
           "stem": "What does the passage say is conservationists' biggest worry?",
           "options": [
-            "A)",
-            "B)",
-            "C)",
+            "A) A variety of spiders are threatened due to pollution of marshes and wasteland",
+            "B) Certain species of spiders are endangered due to loss of their natural homes",
+            "C) An increasing number of spiders are being killed by deadly pesticides",
             "D) More and more spider species are found losing their ability to migrate."
           ],
           "answer": "",

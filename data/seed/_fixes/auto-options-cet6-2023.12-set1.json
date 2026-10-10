@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2023.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 47,
+   "pos": 1,
+   "options": [
+    "A) Aiding people left behind by economic growth",
+    "B) Prioritizing the growth of the nation's G",
+    "C) Increasing the compensation for labor.",
+    "D) Introducing even more extensive tax cuts."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 48,
+   "pos": 2,
+   "options": [
+    "A) The growth of workers' paychecks ultimately boosts the nation's economy.",
+    "B) Paying a premium to maintain a reliable workforce attracts more customers.",
+    "C) Consumption stimulates the desire for higher wages",
+    "D) Familiar arguments for higher wages are outdated."
+   ]
+  }
+ ]
+}

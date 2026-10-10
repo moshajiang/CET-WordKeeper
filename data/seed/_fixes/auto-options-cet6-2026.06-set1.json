@@ -1,0 +1,41 @@
+{
+ "key": "cet6-2026.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) To stop children using it is unrealistic and inadvisable.",
+    "B) It helps both adults and children to organise their lives.",
+    "C) It poses problems to both parents and children.",
+    "D) A world without it is really hard to imagine"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) Poorly financed schools and health services.",
+    "B) Politicians' eagerness to divert public attention.",
+    "C) Bad statutory regulation of digital media giants",
+    "D) Their parents' educational background and life."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) Reducing corporate taxes step by step.",
+    "B) Scrapping consumption taxes gradually.",
+    "C) Making joint efforts to levy corporate taxes.",
+    "D) Adjusting global effective corporate tax rates"
+   ]
+  }
+ ]
+}

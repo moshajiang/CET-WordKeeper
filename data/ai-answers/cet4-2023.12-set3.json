@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2023,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Campus Event That Impressed Me Most\nIf I were asked to write about the campus event that has impressed me most, I would choose the charity sale our student union held last November for children in rural primary schools.\nWhat impressed me first was how the whole university joined in. Classmates donated books, clothes and stationery; art students painted posters; and teachers quietly bought far more than they needed. Second, the event was well organized. Each college had its own stall, and a small stage hosted music and short speeches from volunteers who had taught in the countryside. Third, the money went where it was promised: within a month, photos of new desks and books in a village school arrived on the university's official account.\nI was deeply moved because the event turned sympathy into action. For one afternoon, we were not merely students worrying about exams; we were part of something larger than ourselves.\nThat is also why it matters: such events teach us responsibility and teamwork, and they remind us that kindness is a habit to be practised, not just a feeling.",
+   "note": "扣题“印象最深的校园活动”。结构：点明活动—三点印象（参与面/组织/透明）—感受升华—意义。可复用：what impressed me first was... / turn sympathy into action / part of something larger than ourselves / a habit to be practised。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "人们想要改善健康时，通常走一条熟悉的路：开始健康饮食、睡得更好、规律锻炼。当然，这些行为每一项都重要，但它们都聚焦于身体健康——而越来越多的研究表明，社交健康对整体福祉同样重要，甚至更重要。\n例如，《公共科学图书馆·综合》杂志发表的一项近期研究发现，一个人社交圈的强度，比健身追踪器上的身体活动、心率和睡眠数据更能预示其自评压力、幸福与健康水平。这一发现表明，由无穷健康数据所代表的“量化自我”并不能说明全部故事。\n还存在一个“合格自我”：我是谁、我有哪些活动、我的社交网络——这些方面在上述任何测量中都没有被反映出来。\n这一观点得到大量既有研究的支持。研究表明，社会支持——无论来自朋友、家人还是配偶——都与更好的身心健康密切相关。这些研究提示，丰富的社交生活可以降低压力水平、改善情绪、鼓励积极的健康行为并抑制有害行为、增进心脏健康，还能提高疾病康复率。\n与此同时，社交孤立与更高的身体疾病和精神健康问题发生率相关。这是一个严重的问题，尤其是因为孤独在许多国家正成为普遍存在的公共卫生问题。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "D",
+     "analysis": "固定搭配 focus on：这些行为都“聚焦于”身体健康（they all focus on physical health）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "F",
+     "analysis": "形容词作定语：社交健康对“整体”福祉同等重要（overall well-being）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "E",
+     "analysis": "名词：社交圈的强度是自评压力的更好“指标”（a better indicator of self-reported stress）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "K",
+     "analysis": "过去分词作定语：被无穷健康数据代表的“量化”自我（the quantified self）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "N",
+     "analysis": "名词：量化自我并不能说明全部“故事”（doesn't tell the whole story），固定表达。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "过去分词作表语：这些方面在测量中都没有被“反映”（are not reflected in any of these measurements）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "H",
+     "analysis": "形容词作定语：这一观点得到大量“先前的”研究支持（plenty of prior research）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "O",
+     "analysis": "副词修饰分词：社会支持与更好的身心健康“密切相关”（strongly associated with）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "名词作定语：提高疾病“康复”率（improve illness recovery rates），与 illness 搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "C",
+     "analysis": "副词：孤独“尤其”在许多国家成为公共卫生问题（especially since loneliness is emerging...），表强调。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "青少年与社交网络\n[A] 作为两个上小学的男孩的家长，我担心与青少年和社交媒体相关的问题。报纸上充斥着吸毒和攻击行为的可怕报道，据说这些是暴力电子游戏造成的。但即便这些报道触及真实的担忧，也并没有真正反映青少年日常社交行为的主体：在线聊天、发短信、上网冲浪，以及一个在数字空间中进行的新青少年世界的出现。\n[B] 新技术总会引发代际恐慌，而这通常更多关涉成年人的恐惧，而非青少年的生活。20 世纪 30 年代，家长担心广播“不可抗拒地抓住了孩子”。80 年代，最大的危险是索尼随身听。当你审视今天的数字活动时，事实比你可能预想的要积极得多。\n[C] 事实上，研究年轻人的社会科学家发现，他们的数字使用可以是有创造性的，甚至是有益的——这不仅体现在社交生活上，也体现在学业上。那么，如果你大量使用社交媒体，你是否就变得无法或不愿进行面对面的接触？证据表明并非如此。美国智库皮尤研究中心的阿曼达·伦哈特发现，最热衷发短信的孩子，也是最可能和朋友线下相处的孩子。一种社交方式并不取代另一种，而是扩展了它。\n[D] “孩子们仍然会面对面相处，”伦哈特说。事实上，随着年龄增长、获得更多自由，他们常常会减少社交网络的使用。早期，网络是他们的“第三空间”，但到了青春期后期，随着独立性增强，它就被取代了。牛津互联网研究所研究员丽贝卡·艾农在三年间访谈了约 200 名英国青少年，她说：他们不得不用 Facebook，以便知道朋友和家人的动态，但对此怀有矛盾心理。随着在线生活经验的积累，他们开始调整自己的行为，在新的沟通技能上挣扎——就像在现实世界中一样。\n[E] 家长担心孩子不在乎隐私，这是错的。事实上，他们会花上几小时修改 Facebook 设置，或使用 Snapchat 这类快速删除的分享工具，把自己的痕迹降到最少。或者，他们在 Instagram 上发一张照片，与朋友愉快交谈，然后删掉它，不留痕迹。\n[F] 这并不是说孩子们总能做出好的判断。和其他人一样，他们会犯错——有时是严重的错误。但弄清如何上网行事是一项新的社交技能。虽然网上不乏戏剧性和混乱，但对多数青少年来说，这并不是一个无休止的受欺凌循环：皮尤的一项研究发现，只有 15% 的青少年说过去 12 个月里有人在网上欺负过自己。\n[G] 但这一切短小的写作肯定在影响读写能力吧？老师们当然担心。他们说，孩子写作时使用过于随意的语言和短信式表达，对长篇阅读和复杂论证缺乏耐心。然而，对大学一年级作文的研究表明，这些焦虑可能部分基于误置的怀旧。斯坦福大学学者安德烈娅·伦斯福德搜集了可追溯到 1917 年的“大一作文”错误率数据，发现与今天几乎完全相同。\n[H] 但即便错误率保持稳定，学生作文在篇幅和复杂度上已大大增长：如今的文章长了六倍，而且不同于过去那种“我暑假做了什么”的作文，它们能提供有证据支撑的论点。为什么？因为计算机极大地提高了学生收集信息、取样不同观点以及更流畅写作的能力。\n[I] 语言学家娜奥米·巴伦研究学生的即时通讯时，即便在那样的场合，她也发现缩写形式（如用 u 表示 you）的使用少得惊人；而且随着学生长大，他们开始写出更符合语法的句子。这是因为他们想显得更成熟，也知道成年人被期待如何写作。显然，教青少年正式写作仍至关重要，但发短信大概并没有毁掉他们学习正式写作的能力。\n[J] 与两代人以前相比，如今热衷读书的孩子可能确实更少——那时廉价平装书提升了阅读率。但即便在当时，也只有少数人（可能 20%）是一生的重度读者，而 80 年代冲击这种文化的是有线电视，不是互联网。尽管如此，仍有 15% 以上的孩子被发现非常爱读书。事实上，网络世界为孩子成为有读写能力和创造力的人提供了非凡机会，因为年轻人如今不仅能向朋友、还能向全世界发表自己的想法。结果是：当他们为陌生读者写作时，“真实读者”的意识让他们更努力、逼自己走得更远，并创造出强大的新交流形式。\n[K] 很少有人否认上网时间过长可能有害。其中一些危险是情感上的：远远地伤害一个人，与面对面伤害并不一样。如果运气好，法律环境将会改变，使青少年的网络生活不那么容易在日后困扰他们。就在上周，加利福尼亚通过了一项法律，允许未成年人要求互联网公司删除他们的数字过往，欧盟也考虑过类似立法。\n[L] 分心也是严重问题。当孩子从聊天切换到音乐再切换到作业时，他们确实很可能哪件事都做不好。研究还显示，学生不会核实网上信息——“聪明地搜索”是学校亟需教授的技能。社交网络和游戏占用过多时间也确实会挤占功课和睡眠。正因如此，家长仍然需要像对待其他干扰一样，为此划定明确的界限。\n[M] 那么最好的应对之道是什么？还是那条无聊的老建议，适用于育儿中的一切：适度。丽贝卡·艾农认为，以身作则至关重要。整天盯着手机、不读书的家长，很可能养出同样如此的孩子。一如既往，我们应当留意自己的行为。",
+   "questions": [
+    {
+     "stem": "36. Research has found the use of digital technology benefits not only teenagers* social lives but also their\nstudies.",
+     "answer": "C",
+     "analysis": "该段：社会科学家发现数字使用“有创造性甚至有益”，“不仅体现在社交生活上，也体现在学业上”（not just in their social lives, but their education too）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. It is urgent that schools teach kids how to verify online information.",
+     "answer": "L",
+     "analysis": "该段：研究显示学生不会核实网上信息，“聪明地搜索”是学校亟需教授的技能（a skill schools need to teach urgently）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. Students now write longer and more complex essays than their counterparts in previous decades while the\nerror rates remain unchanged.",
+     "answer": "H",
+     "analysis": "该段：即便错误率保持稳定，学生作文“在篇幅和复杂度上已大大增长”（blossomed in size and complexity）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. Newspaper reports of teenagers give a false picture of their behaviour.",
+     "answer": "A",
+     "analysis": "该段：报纸上充斥可怕报道，但“并没有真正反映青少年日常社交行为的主体”——即媒体报道给出了失真的图景。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. Parents are advised to mind their own digital behaviour and set a good example for their kids.",
+     "answer": "M",
+     "analysis": "该段：应对之道是适度和“以身作则”（model good behaviour）——整天看手机的家长会养出同样的孩子。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Contrary to parents' belief, kids try hard to leave as few traces as possible on the web.",
+     "answer": "E",
+     "analysis": "该段：家长担心孩子不在乎隐私是错的——“他们会花几小时修改设置……把自己的痕迹降到最少”（minimise their traces）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Students , ability to learn formal writing is unlikely to be affected by texting.",
+     "answer": "I",
+     "analysis": "该段：发短信“大概并没有毁掉他们学习正式写作的能力”（probably isn't destroying their ability to learn it）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Historically, new technologies have always caused great fears among parents.",
+     "answer": "B",
+     "analysis": "该段：“新技术总会引发代际恐慌”，广播、随身听的例子——历史上新技术总是令家长恐惧。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. The reading culture was seriously affected by cable television some four decades ago.",
+     "answer": "J",
+     "analysis": "该段：“80 年代冲击这种文化的是有线电视，不是互联网”（it was cable TV not the internet）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Teachers say that kids, writing is too casual, using language characteristic of text messages.",
+     "answer": "G",
+     "analysis": "该段：教师抱怨孩子的写作“使用过于随意的语言和短信式表达”（overly casual language and text-speak）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "在赛马史上，很少有马能像“红朗姆”这样赢得英国公众的喜爱。今天，在他退役三十年后，他仍是有史以来最知名、最受爱戴的赛马之一。\n“红朗姆”几经易主，后被诺埃尔·勒马尔买下。促成这笔交易的经纪人，就是如今已成传奇的马匹训练师唐纳德·“金杰”·麦凯恩。\n当时并不明显，但“红朗姆”的蹄部患有严重的骨病。对许多马（以及许多训练师）而言，这意味着一场赛马生涯在开始之前就已终结。但对金杰和“红朗姆”来说，这只是通往伟大之路上必须跨越的一道障碍。\n“红朗姆”真正的天赋在障碍赛马中显现出来。他的力量、速度与跳跃能力带他在 1973 年首夺英国国家大赛冠军。次年，“红朗姆”再次夺冠。他是自 1935-1936 年的雷诺兹敦以来第一匹连续两年夺冠的马。“红朗姆”的精神与优雅，已开始征服大批国家大赛的粉丝。\n此后两年，“红朗姆”两度失冠，均获亚军。1977 年他再度出战试图夺冠时，人们普遍认为他已过巅峰：他 12 岁了，被认为难以取得好名次。他却以领先最近对手足足 25 匹马身的惊人成绩，第三次赢得国家大赛冠军，震惊了全世界的体育迷。至今，“红朗姆”的第三次夺冠仍被称为赛马史上最伟大的时刻之一。\n1978 年，“红朗姆”再次备战国家大赛，却在赛前不久一只后蹄受伤。他随后退役，但他的公共生活与名气丝毫没有随职业生涯终结而减少。“红朗姆”为各种活动跑遍全国，常在有名的安特里赛马场引领赛前巡游，也是慈善义演和公共活动上受欢迎的嘉宾。",
+   "questions": [
+    {
+     "stem": "What do we learn from the passage about Red Rum the racehorse?",
+     "answer": "B",
+     "analysis": "首段：很少有马能像“红朗姆”这样“赢得英国公众的喜爱”，退役三十年后仍是最受爱戴的赛马之一。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did the serious bone disease in Red Rum's foot mean to himself and his trainer?",
+     "answer": "A",
+     "analysis": "第三段：骨病“对许多马意味着赛马生涯就此终结”，但对金杰和红朗姆而言“只是必须跨越的一道障碍”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What does the author say Red Rum did with his power, speed and jumping ability?",
+     "answer": "D",
+     "analysis": "第四段：力量、速度与跳跃能力带他 1973 年首夺冠，次年再夺——即 70 年代三次赢得国家大赛。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did people generally think of Red Rum when he returned to the racecourse in 1977?",
+     "answer": "A",
+     "analysis": "第五段：1977 年他归来时“人们普遍认为他已过巅峰”（largely regarded as past his prime）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What became of Red Rum after his career ended?",
+     "answer": "D",
+     "analysis": "末段：退役后“他的公共生活与名气丝毫没有减少”，仍常引领赛前巡游、出席慈善活动——依然著名而受欢迎。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "商界人士常凭个人感觉或直觉做决定。看着人们被某种未知力量牵引，实在令人心惊。但让直觉驱动决定，究竟有多明智？\n在决策过程中，只有当你有大量经验支撑时，依靠直觉才说得通。单纯“觉得”某事正确或该做，主观性极强，可能让你陷入困境。\n另一方面，还有更理性的决策方式。数据与分析长期以来与明智决策相连，它们能降低出错概率、提高成功机会。庞大而系统的数据，大多是我们个人与商业决策的基础。但极度的可用性也带来一个难题：如果你强烈觉得不该做某件事，而数据却坚称应该做，你该怎么办？\n这个看似简单的问题，正是人们需要理解决策中直觉与数据关系的动因。不必把事情弄复杂：这一困境的解法，就是把数据与直觉结合使用，以得出尽可能最好的决策。\n本能决定总有以往的经验或信息作支撑，这承认了本能决定在过去有效。决策并不是要你因为想盲目相信直觉就做出选择、硬扛后果，而是要把内在智慧与对系统数据的了解结合起来，做出最好的决定。\n有时，在某些情形下运用理性分析与数据并不现实。缺乏明确标准、时间与资源受限、以及全新的情境，都会限制数据的实用性。此时唯一可行的选项，就是依靠直觉告诉你的事。在这些情况下，直觉能帮你做出有效而迅速的决定。\n把本能判断与理性分析结合起来，能产生周全的决定。它降低了犯错的可能，也日益成为当今领导者青睐的决策方式。",
+   "questions": [
+    {
+     "stem": "What does the author say businesspeople often do?",
+     "answer": "D",
+     "analysis": "首段：商界人士常“凭个人感觉或直觉”做决定（based on their own personal feelings or instincts）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What should we take into account in order to make informed decisions?",
+     "answer": "B",
+     "analysis": "第三段：“数据与分析长期以来与明智决策相连”（Data and analysis have long been associated with informed decisions）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What should people do in a decision-making process if instincts disagree with data?",
+     "answer": "C",
+     "analysis": "第四段：解法是“把数据与直觉结合使用”（using data and instincts in conjunction）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What should we do when facing various factors that limit the practicality of data?",
+     "answer": "C",
+     "analysis": "第六段：当数据不实用时，“唯一可行的选项就是依靠直觉”（rely on what your instincts tell you）——即诉诸内在智慧。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What does it take for decisions to become the best according to the author?",
+     "answer": "A",
+     "analysis": "末段：把本能判断与理性分析“结合”起来，才能产生周全的决定——即把直觉与数据结合运用（Combining instinctive and rational analysis）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Since the reform and opening up, the living standard of the Chinese people has been continuously improved, which is fully reflected in the change of people's diet. Today, people are no longer satisfied with eating enough, but are seeking to eat more safely, more nutritiously and more healthily. Foods are more diverse as well, without being limited to local produce. The development of the logistics industry has made it easy for people to taste specialties from all over the country. There is no doubt that the improvement of food quality and diet structure provides a strong guarantee for the promotion of people's health.",
+   "note": "官方参考译文。难点：生活水平不断提高（the living standard has been continuously improved）、充分体现（be fully reflected in）、不再满足于吃得饱（be no longer satisfied with eating enough）、更加营养（more nutritiously）、限于本地的农产品（be limited to local produce）、品尝各地特产（taste specialties from all over the country）、为……提供有力保障（provide a strong guarantee for）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T13:54:17.457Z"
+}

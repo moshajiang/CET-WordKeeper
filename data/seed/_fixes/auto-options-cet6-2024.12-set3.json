@@ -1,0 +1,53 @@
+{
+ "key": "cet6-2024.12-set3",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) Distinguish between the two hemispheres of one's brain",
+    "B) Determine whether one is left-brained or right-brained",
+    "C) Tell if one is more of a linguist or of a mathematician.",
+    "D) Ascertain how one's brain performs different tasks"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) There are left-dominant people and right-dominant people with different personalities.",
+    "B) There are noticeable differences between the left and right hemispheres of the brain.",
+    "C) One's personality is hardly related to the different halves of the brain.",
+    "D) Different areas of the brain are responsible for different activities"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) Challenge its authority",
+    "B) Scrutinize its originality.",
+    "C) Evaluate its popularity.",
+    "D) Question its reliability."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) English teachers and science teachers are complementary in performing their tasks.",
+    "B) A teacher of arts and letters is completely puzzled by what a science teacher teaches",
+    "C) The new teaching model helps inform the teacher how their instruction is received.",
+    "D) Science teachers will hardly know the confusion they create without a performance appraisal."
+   ]
+  }
+ ]
+}

@@ -431,9 +431,9 @@
           "qtype": "choice",
           "stem": "What did the author and colleagues identify in their recent research?",
           "options": [
-            "A)",
+            "A) A gene-related selfish behavior in preschool children",
             "B) Key factors that determine one’s altruistic behavior.",
-            "C)",
+            "C) A specific gene associated with altruistic behavior",
             "D) Roles played by genes in shaping one’s character."
           ],
           "answer": "",
@@ -455,10 +455,10 @@
           "qtype": "choice",
           "stem": "What can we infer from the last paragraph?",
           "options": [
-            "A)",
+            "A) Cooperative behavior is evident among identical twins",
             "B) One is born either cooperative or non-cooperative.",
             "C) Genes determine one’s tendency to cooperate.",
-            "D)"
+            "D) Cooperative behavior may be cultivated"
           ],
           "answer": "",
           "analysis": ""

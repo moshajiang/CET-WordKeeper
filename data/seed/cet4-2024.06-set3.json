@@ -431,10 +431,10 @@
           "qtype": "choice",
           "stem": "What should people do to learn the art of persuasion at the workplace?",
           "options": [
-            "A)",
-            "B)",
+            "A) Acquire effective communication skills",
+            "B) Avoid getting involved in conflicts with others",
             "C) Understand the reason for pursuing their goals.",
-            "D)"
+            "D) Commit themselves fully to their ideas and plans"
           ],
           "answer": "",
           "analysis": ""

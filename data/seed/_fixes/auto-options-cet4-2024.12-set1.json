@@ -1,0 +1,41 @@
+{
+ "key": "cet4-2024.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 48,
+   "pos": 2,
+   "options": [
+    "A) Take measures to ensure sustainable food development",
+    "B) Reconnect with nature through the right to grow.",
+    "C) Stand by the parliament in fighting social diseases.",
+    "D) Cover public spaces with fruit trees and vegetable plants"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) Raise people’s environmental awareness.",
+    "B) Add to the great variety of plant species",
+    "C) Act as the first defense against natural disasters",
+    "D) Enhance people’s community spirit."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) Disqualified on many levels",
+    "B) Excluded from the group.",
+    "C) Overworked by their organizations.",
+    "D) Looked down upon by male colleagues."
+   ]
+  }
+ ]
+}

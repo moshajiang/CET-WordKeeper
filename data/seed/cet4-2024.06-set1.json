@@ -388,8 +388,8 @@
           "stem": "What does the author advise us to do in the last paragraph?",
           "options": [
             "A) Embrace life for ourselves and for others.",
+            "B) Base our worth on others’ opinions",
             "C) See our experiences as assets.",
-            "B)",
             "D) Love ourselves as we are."
           ],
           "answer": "",
@@ -431,10 +431,10 @@
           "qtype": "choice",
           "stem": "What is one thing that helps maintain the health of our brain even as it shrinks?",
           "options": [
-            "A)",
-            "B)",
+            "A) Doing daily routines by conventional means",
+            "B) Avoiding worrying about our mental durability",
             "C) Imitating old dogs’ way of learning new tricks.",
-            "D)"
+            "D) Approaching everyday tasks in novel ways"
           ],
           "answer": "",
           "analysis": ""
@@ -443,10 +443,10 @@
           "qtype": "choice",
           "stem": "What does the author say can contribute to the improvement of brain function?",
           "options": [
-            "A)",
-            "B)",
+            "A) Being curious and desiring knowledge",
+            "B) Being eager to pass brain tests at an old age",
             "C) Rising to life’s challenges and avoiding risks.",
-            "D)"
+            "D) Boosting immunity to serious mental diseases"
           ],
           "answer": "",
           "analysis": ""
@@ -457,7 +457,7 @@
           "options": [
             "A) Wishing to solve puzzles enhances one’s reasoning power.",
             "B) Playing number games unexpectedly stimulates one’s memory.",
-            "C)",
+            "C) Desiring new experiences can help to renovate the brain",
             "D) Learning new tricks should not be confined to old dogs only."
           ],
           "answer": "",

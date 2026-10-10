@@ -1,0 +1,53 @@
+{
+ "key": "cet4-2023.12-set3",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) Strive to make sense of some unknown forces.",
+    "B) He took two firsts successively in 1935-1936",
+    "C) He surprised sporting fans worldwide in 1973",
+    "D) Rely on instincts in decision-making."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) Resolve the dilemma with previous experience.",
+    "B) Figure out which of the two is more reliable.",
+    "C) Combine the two together",
+    "D) Prioritize instincts over data."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) Make a rational and systematic analysis.",
+    "B) Explore the most feasible options.",
+    "C) Resort to our inner wisdom.",
+    "D) Apply definitive criteria"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Applying instincts and data in conjunction",
+    "B) Assessing all factors when making a choice",
+    "C) Recalling what has actually worked in the past.",
+    "D) Refraining from trusting instincts arbitrarily."
+   ]
+  }
+ ]
+}

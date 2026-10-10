@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2023.12-set2",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) All species inherently depend on others for survival",
+    "B) Struggles for survival do not exclude mutual support.",
+    "C) Competition weighs as much as cooperation as a survival strategy",
+    "D) The strongest species proves to be the fittest in natural selection."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) It is characteristic of humans to be competitive.",
+    "B) Americans are uniquely opposed to cooperation",
+    "C) Competition is relatively more prevalent in Western societies",
+    "D) People's attitude towards competition is actually culture-bound."
+   ]
+  }
+ ]
+}

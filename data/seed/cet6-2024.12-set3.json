@@ -339,10 +339,10 @@
           "qtype": "choice",
           "stem": "What do numerous personality quizzes online claim they are able to do?",
           "options": [
-            "A)",
-            "B)",
+            "A) Distinguish between the two hemispheres of one's brain",
+            "B) Determine whether one is left-brained or right-brained",
             "C) Tell if one is more of a linguist or of a mathematician.",
-            "D)"
+            "D) Ascertain how one's brain performs different tasks"
           ],
           "answer": "",
           "analysis": ""
@@ -378,7 +378,7 @@
             "A) There are left-dominant people and right-dominant people with different personalities.",
             "B) There are noticeable differences between the left and right hemispheres of the brain.",
             "C) One's personality is hardly related to the different halves of the brain.",
-            "D)"
+            "D) Different areas of the brain are responsible for different activities"
           ],
           "answer": "",
           "analysis": ""
@@ -387,9 +387,9 @@
           "qtype": "choice",
           "stem": "What are we advised to do with an online quiz that tells us something about ourselves?",
           "options": [
-            "A)",
-            "C) Evaluate its popularity.",
+            "A) Challenge its authority",
             "B) Scrutinize its originality.",
+            "C) Evaluate its popularity.",
             "D) Question its reliability."
           ],
           "answer": "",
@@ -444,7 +444,7 @@
           "stem": "What does the author want to show by citing English teacher Jeff Hall's experience?",
           "options": [
             "A) English teachers and science teachers are complementary in performing their tasks.",
-            "B)",
+            "B) A teacher of arts and letters is completely puzzled by what a science teacher teaches",
             "C) The new teaching model helps inform the teacher how their instruction is received.",
             "D) Science teachers will hardly know the confusion they create without a performance appraisal."
           ],

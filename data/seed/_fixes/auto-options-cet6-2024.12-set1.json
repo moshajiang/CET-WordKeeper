@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2024.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "pos": 1,
+   "options": [
+    "A) Women are under constant pressure to keep up with beauty models.",
+    "B) Women are encouraged to pursue a beauty ideal that has never existed.",
+    "C) A fight is going on to remove pressure on women to conform to an absurd beauty ideal",
+    "D) Media outlets have begun to present as beauty models trendy women without any makeup."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Cosmetic surgery should be made more accessible to the masses",
+    "B) Psychological intervention should be introduced to alleviate it.",
+    "C) Their time spent on social media should be strictly controlled.",
+    "D) Its root cause should be meticulously examined and analyzed."
+   ]
+  }
+ ]
+}
