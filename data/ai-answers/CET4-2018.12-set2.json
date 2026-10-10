@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2018,
+ "month": 12,
+ "set_no": 2,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Challenges of Studying Abroad\nStudying abroad is a dream for many students, but the excitement usually comes with challenges that are easy to underestimate.\nThe first challenge is language. Even students with good grades may struggle in lectures delivered at native speed, and writing academic essays in a foreign language takes far longer than expected. The second is loneliness and culture shock: far away from family and old friends, students must adapt to unfamiliar food, weather and social rules, often while fighting homesickness. The third is money. Tuition and living costs abroad are high, and many students have to work part-time, which adds to the pressure of study.\nThese difficulties, however, are exactly what makes overseas education valuable: overcoming them builds independence, resilience and a genuinely international outlook. Anyone planning to study abroad should prepare for the challenges as seriously as for the exams.",
+   "note": "结构：总起—三大挑战（语言/孤独与文化冲击/金钱）—转折升华（正是这些困难造就了留学的价值）—建议。可复用：easy to underestimate / culture shock / homesickness / build independence, resilience and a genuinely international outlook。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "你有没有用电子邮件向同事道过歉？用语音邮件给下属传达过警告？坐飞机横穿全国，只为当面告知一件重要的事？如今我们指尖上有各种各样的沟通方式，它们对便利和工作效率有好处——但同时也可能非常麻烦。沟通方式如此之多，管理者该怎么选择最好的一种——尤其是当要传达的消息对收信人来说是坏消息、不受欢迎的消息时？我们调研了多位商务沟通顾问和礼仪专家，总结出以下指南，教你如何有效地使用这些传递难开口消息的不同方式。\n首先，选择你想表现得多么切身。面对面的交流是最切身的。其他选择，按切身程度从高到低排列，依次是：实时电话、语音邮件、手写便条、打印信函，而最不友好的是电子邮件。其中一些的先后顺序可能因具体情况或你自己的偏好而改变；比如，手写便条可能比语音邮件显得更有个人色彩。你要如何为必须传达的棘手消息选定最佳方式？“我首要的关心是：我怎样才能让这条消息柔和些、体面些？”礼仪专家达娜·卡斯帕森说。“所以当我道歉时，我通常首选当面，其次是电话交谈，接下来也许是手写便条。用电子邮件道歉，是我现在完全避免的做法。”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "N",
+     "analysis": "名词：用语音邮件给下属“传达警告”（delivered a warning to a subordinate），与道歉场景呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "名词：指尖上的各种沟通方式对“便利”和效率有好处（good for convenience and productivity）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "副词：“尤其是”当要传达的消息是坏消息时（particularly when the message is bad）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "L",
+     "analysis": "谓语动词完成时：我们“调研”了多位商务沟通顾问（We've surveyed business communication consultants）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "副词：就“如何有效地”使用这些传递难开口消息的方式给出指南（effectively using）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "形容词最高级：面对面交流是最“切身”的（the most intimate），与后文排序呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "J",
+     "analysis": "形容词最高级：“最不友好”的是电子邮件（the most unfriendly is email），与 personalization 排序对照。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "形容词：根据“特定的”情境或你自己的偏好（the specific situation or your own preferences）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "G",
+     "analysis": "形容词最高级：“我首要的关心是：如何让这条消息柔和些”（My primary concern is），后接 how 从句。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "A",
+     "analysis": "动词：用电子邮件道歉是我现在完全“避免”的做法（something I now totally avoid）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "一个巴黎穷苦弃儿如何成为顶级大厨\n[A] 巴黎繁忙的街道凹凸不平、结着厚厚的泥，但 Rue de la Paix 街糕饼店的橱窗里总有令人惊叹的景致。到 1814 年，人们聚集在面包房外，争睹里面那位年轻厨师最新创作的甜点。\n[B] 他的名字叫玛丽-安托万·卡雷姆，某一天他几乎是横空出世的。而在他短短的一生里——到今天恰好逝去 184 年——他永远地变革了法国美食，写出了畅销的烹饪书，并为王室和其他显贵想出了一系列有魔力的菜肴。\n[C] 卡雷姆的童年一半是悲剧，一半是谜。1783 或 1784 年，他作为贫穷父母的第 16 个孩子出生在巴黎，却在法国大革命的高潮中突然被遗弃。8 岁时，他在巴黎一家餐馆做厨房帮工以换取食宿。到 15 岁，他成了西尔万·贝伊的学徒——后者是巴黎最时髦街区之一一位有名望、生意兴隆的甜点师。\n[D] 卡雷姆在厨房里学得很快。贝伊鼓励小徒弟学习读写。卡雷姆常在空闲的下午到附近的国家图书馆阅读艺术与建筑书籍。在小面包房的后屋里，他对设计的兴趣与烘焙天赋结合，创造了奇迹——他用面粉、黄油和糖塑造出美味的杰作。\n[E] 少年时代，卡雷姆把 18 世纪末最著名的建筑做成可以吃的复制品——古希腊遗址形状的饼干、中国古代宫殿和庙宇形状的馅饼。师父贝伊把这些常常高达 4 英尺的华丽作品陈列在面包房橱窗里。\n[F] 卡雷姆的作品很快捕获了一位法国外交官挑剔的眼光——夏尔·莫里斯·德·塔列朗-佩里戈尔。大约 1804 年，塔列朗要卡雷姆为他的私人城堡设计一整份菜单，要求这位年轻的面包师使用当地的时令果蔬，并且一整年不重复主菜。这场试验大获成功，而塔列朗与法国贵族的交情，后来证明是卡雷姆的一条生财之路。\n[G] 法兰西皇帝拿破仑·波拿巴以对 18 世纪早期烹饪口味的堕落不以为然著称，但在款待巴黎上流社会的压力之下，他也把卡雷姆召进了杜伊勒里宫的厨房。1810 年，卡雷姆为拿破仑与第二任妻子奥地利的玛丽-路易丝的婚礼设计了那块非凡的蛋糕。他成为最早专注于餐桌外观而不仅是菜肴味道的现代厨师之一。“我要秩序与味道。在我眼里，摆盘精美的宴席能让档次提升百分之一百，”他后来在烹饪书中写道。\n[H] 1816 年，卡雷姆开始了一段烹饪之旅，它将永远确立他作为历史上第一位顶级大厨的地位。他远赴英国，在摄政王乔治四世现代化的大厨房里掌勺；又跨越大洲，为俄国沙皇亚历山大一世的宴会掌灶。从不怯于夸耀自己成就的卡雷姆，被怀有社会野心的富裕家庭争相请入厨房，赚得盆满钵满。后来在烹饪书里，他常附上一张自己的素描，让街上的人能够认出——并仰慕——他。\n[I] 卡雷姆的烹饪展示成为精致法餐的象征：丰盛、华美、气势逼人。当仆人们把卡雷姆的精巧创作抬进宴会厅时，宾客们会惊叹得鸦雀无声。1817 年 1 月 18 日，为庆祝俄国大公尼古拉斯到访乔治四世的布莱顿行宫，宴席菜单上有多达 120 道不同的菜，其中突出 8 种不同的汤、40 道主菜和 32 道甜点。\n[J] 在 19 世纪早期贵族宅邸间游历的过程中，卡雷姆开创了法国美食的新艺术。在闷热的厨房里，卡雷姆创造了他称之为“母酱”的四种酱汁。这些酱汁——贝夏梅尔奶油酱、天鹅绒酱、西班牙酱和德式酱——构成了许多法式主菜的核心基础。他还把舒芙蕾做到完美，并引入了标准厨师制服——就是今天许多厨师仍然穿着的双排扣白外套和高高的白帽。卡雷姆说，白色传达出整洁的形象——而在他的领域，形象就是一切。\n[K] 餐余时间，卡雷姆撰写烹饪书，这些书在此后一个世纪里被欧洲的厨房使用。他的手册包括《皇家巴黎面包师》和卷帙浩繁的五卷本《法国烹饪系列》（1833-1847，在他去世后完成），首次把许多基本的烹饪原理系统化，配有插图和分步说明。远在电视烹饪节目出现之前，卡雷姆就引导读者完成常见的厨房任务，指点他们“自己在家试试”——多年后名厨朱莉娅·柴尔德也是这么做的。\n[L] 然而，最终击垮卡雷姆的还是厨房。几十年间，他在狭小密闭、空气不流通的空间里守着煤火劳作（为了保证菜肴上桌时不凉），肺部受到了致命损伤。1833 年 1 月 12 日，卡雷姆去世，还差几天满 50 岁。\n[M] 但在他的一生中，自信满满的卡雷姆能看到自己在厨房的短暂统治之外的东西。他想“为古典与现代烹饪树立美的标准，并向遥远的未来证明：19 世纪的法国厨师是世界上最负盛名的厨师”，他在自己的文稿中这样写道。\n[N] 几十年后，厨师奥古斯特·埃斯科菲耶在卡雷姆的法国烹饪理念之上继续构建。但最初，只有卡雷姆——这位把用餐升华为艺术的顶级大厨。",
+   "questions": [
+    {
+     "stem": "36. Carême was among the first chefs who stressed both the appearance and flavor of dishes.",
+     "answer": "G",
+     "analysis": "该段：拿破仑“把卡雷姆召进杜伊勒里宫的厨房”，并为他与第二任妻子的婚礼设计非凡蛋糕。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. Carême wanted to show to later generations that French chefs of his time were most outstanding in the world.",
+     "answer": "M",
+     "analysis": "该段：“在他的一生中，自信满满的卡雷姆能看到自己在厨房的短暂统治之外”，要“为后世树立标准”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. Carême benefited greatly from serving a French diplomat and his connections.",
+     "answer": "F",
+     "analysis": "该段：“卡雷姆的作品很快捕获了一位法国外交官挑剔的眼光”，塔列朗的贵族交情成为他的生财之路。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. Carême learned his trade from a famous dessert chef in Paris.",
+     "answer": "C",
+     "analysis": "该段：“卡雷姆的童年一半是悲剧，一半是谜”——生于贫家、大革命高潮中被遗弃、8 岁做厨房帮工。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. Carême's creative works were exhibited in the shop windows by his master.",
+     "answer": "E",
+     "analysis": "该段：少年时代他“把 18 世纪末最著名的建筑做成可食用的复制品”——雅典遗址饼干、中式宫殿馅饼。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Carême's knowledge of art and architecture helped him create extraordinary desserts out of ordinary ingredients.",
+     "answer": "D",
+     "analysis": "该段：“卡雷姆在厨房里学得很快”（quick at learning in the kitchen），设计与烘焙天赋结合创造杰作。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Many people in Paris were eager to have a look at the latest sweet food made by Carême.",
+     "answer": "A",
+     "analysis": "该段：“巴黎繁忙的街道凹凸不平、结着厚泥”——本文开场的历史场景描写。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Carême became extremely wealthy by cooking for rich and socially ambitious families.",
+     "answer": "H",
+     "analysis": "该段：1816 年开始的烹饪之旅“将永远确立他作为历史上第一位顶级大厨的地位”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. Carême's writings dealt with fundamental cooking principles in a systematic way.",
+     "answer": "K",
+     "analysis": "该段：“餐余时间，卡雷姆撰写烹饪书”，首次把基本烹饪原理系统化，影响欧洲厨房一个世纪。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Carême's contribution to French cooking was revolutionary.",
+     "answer": "B",
+     "analysis": "该段：“他的名字叫玛丽-安托万·卡雷姆”（His name was Marie-Antoine Carême）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "一个大约易拉罐大小的东西摆在书架上，这个相对无害的小装置，可能正在把朋友们从你家赶走。你客厅里那头“房间里的大象”，就是你的联网安防摄像头——人们越来越多地用它来换取家中的安心。但很少有人停下来想想：这些设备会给来访的客人带来什么影响。比如，当你们一起看球赛时，你是否应该告诉朋友们他们正在被拍摄？\n“这确实是一个全新的领域，尤其是在家用安防摄像头越来越容易安装的当下，”莉齐·波斯特说。她是美国最权威的礼仪顾问机构艾米莉·波斯特研究院的院长。“我认为非常有意思的一点是：围绕‘是否告知客人你有摄像头’、以及‘如果不存在安全问题，客人是否有权要求关掉它’，将会形成怎样的礼仪。”\n波斯特想说明的是，她谈论的并不是法律权利，而是个人偏好。她还解释说，在这方面礼仪上尚无对错之分，因为这项技术如今才成为主流。况且，艾米莉·波斯特研究院也不制定礼仪。\n谈到安防摄像头，波斯特说：确保客人在自己家里感到自在，是主人的责任。“我一向欣赏开诚布公。”比如，如果主人借讲一个故事随口提到房间里有个摄像头，那也许就足够给客人一个开口的机会，说出他们是否觉得不自在。\n不过，如果在你家干活的是施工人员，你无需告诉他们有摄像头在拍。话又说回来，摄像头带来的那种“有人负责”的氛围，其实对施工人员也有利。“如果他们在你家里干活时真的出了岔子，他们可不想背黑锅，”她说。“事实上，摄像头说不定恰恰能证明：他们没偷那 20 美元，也没把桌上的花瓶碰倒。”",
+   "questions": [
+    {
+     "stem": "46.For what reason may your friends feel reluctant to visit your home?",
+     "answer": "A",
+     "analysis": "首段：这个“相对无害”的小装置“可能正把朋友们从你家赶走”——摄像头可能侵犯隐私、让客人不适。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.What does Lizzie Post say is new territory?",
+     "answer": "D",
+     "analysis": "第三段：围绕“是否告知客人你有摄像头、客人能否要求关掉”，“将会形成怎样的礼仪”——即家用摄像头的礼仪是新领域。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is Lizzie Post mainly discussing with regard to the use of home security cameras?",
+     "answer": "C",
+     "analysis": "第四段：她强调谈的不是法律权利“而是个人偏好”，且“尚无对错之分”——因个人好恶而异。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What is a host’s responsibility regarding security cameras, according to Lizzie Post?",
+     "answer": "A",
+     "analysis": "第五段：“确保客人在家里感到自在，是主人的责任”，坦承摄像头是给客人开口表达不适的机会。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. In what way can the home security camera benefit visitors to your home?",
+     "answer": "B",
+     "analysis": "第六段：“摄像头说不定恰恰能证明他们没偷那 20 美元、没碰倒花瓶”——即能证明施工人员的清白。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "百事公司拟斥资数十亿美元开发新的饮料和零食，并改良现有产品，降低其中的糖、盐和脂肪含量——因为消费者要求更健康的选择，而在肥胖流行病之下，监管压力也在加大。\n这家 Mountain Dew（激浪）和佳得乐的制造商，是行业内较早采取行动、提供不健康成分含量更低的产品的公司之一——百事宣称，如今一包它的薯片所含的盐比一片白面包还少。然而，它新出台的十年计划表明，公司认为自己仍有很长的路要走。\n饮食习惯的转变——包括碳酸饮料消费的锐减——迫使整个行业进行彻底变革。但这些转变尚未反映在屡创新高的肥胖率上：美国的整体肥胖率已达 36.5%。\n百事公司董事长英德拉·努伊说，让产品更健康的计划对公司的增长十分重要。但在肥胖问题上，她指出消费者的生活方式已发生显著变化，许多人更加久坐不动——很大程度是因为花在电脑前的时间更多了。她说，百事的贡献在于生产依然美味的更健康零食。\n“社会必须改变它的习惯，”她补充说。“对于久坐的生活方式，我们能做的不多，但我们可以为消费者提供低盐、低糖、低脂的美味产品。过去我们不得不在口味上做取舍。但我们正在打破这种取舍。”\n百事的食品饮料计划以世界卫生组织的指导方针为基础；世卫组织上周对用税收手段减少碳酸饮料中的糖摄入表示支持。这些举措还包括：到 2025 年，降低公司的环境影响、水消耗量和包装材料用量。\n百事没有透露实现这些目标计划投入的具体金额。不过，首席科学官马赫穆德·汗博士说，公司过去五年的研发支出已经翻倍，并且“致力于持续投资”；他补充说，公司无法靠削减成本来增加销售。百事 2015 年的研发预算为 7.54 亿美元。",
+   "questions": [
+    {
+     "stem": "51.Why is PepsiCo making a policy change?",
+     "answer": "C",
+     "analysis": "首段：百事改良产品，“因为消费者要求更健康的选择，而肥胖流行病下的监管压力也在加大”——即满足日益增长的健康食品需求。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does PepsiCo think it will have to do in the future?",
+     "answer": "D",
+     "analysis": "第二段：百事已是先行者，“但新的十年计划表明它认为自己仍有很长的路要走”——即还需不断改进产品。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. Why does PepsiCo plan to alter its products, according to Indra Nooyi?",
+     "answer": "A",
+     "analysis": "第四段：Nooyi 说让产品更健康的计划“对公司的增长十分重要”（important for the company's growth）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does Indra Nooyi say about the obesity epidemic?",
+     "answer": "C",
+     "analysis": "第四段：她指出“消费者的生活方式已发生显著变化，许多人更加久坐不动”——肥胖与生活方式改变有关。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What has PepsiCo been doing to achieve its objective?",
+     "answer": "B",
+     "analysis": "第七段：首席科学官说公司“过去五年研发支出已经翻倍”，并“致力于持续投资”——即增加研发经费。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Nowadays many Chinese people really cannot live without their mobile phones. Many of them, including the elderly, use mobile apps to keep in touch and expand their circle of friends. They also shop and look up information on their phones, because mobile phones are easy to carry around. In addition, communicating through mobile apps is cheaper than traditional phone calls. However, this new trend has led people to rely too much on mobile phones when socializing. In fact, some young people have become so addicted that they neglect face-to-face communication with their family and friends.",
+   "note": "难点：离不开（cannot live without）、手机应用程序（mobile apps）、保持联系并拓宽朋友圈（keep in touch and expand their circle of friends）、便于携带（easy to carry around）、过度依赖（rely too much on）、上瘾（be addicted）、面对面的交流（face-to-face communication）。“如此……以至于”用 so...that 结构。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:54:53.242Z"
+}
