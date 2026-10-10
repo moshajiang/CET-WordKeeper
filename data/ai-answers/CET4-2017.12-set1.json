@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2017,
+ "month": 12,
+ "set_no": 1,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "How to Best Handle the Relationship Between Parents and Children\nA good parent-child relationship is built on communication, respect and a reasonable degree of independence, and handling it well takes effort from both sides.\nFor children, the key is honest and regular communication. Instead of shutting parents out, we should share our plans and difficulties with them; most conflicts at home arise simply because parents are the last to know. Meanwhile, children should respect their parents' experience even when they choose a different path — disagreeing politely is very different from dismissing them altogether.\nFor parents, the secret is to guide rather than control. They need to treat children as independent individuals, listen before judging, and accept that mistakes are part of growing up. Excessive interference, however well-intentioned, usually pushes children further away.\nIn short, when both sides communicate with sincerity and respect each other's roles, the relationship between parents and children can grow closer with age instead of becoming strained.",
+   "note": "结构：总起（沟通/尊重/独立）—孩子该怎么做—父母该怎么做—总结。可复用：shut out / arise simply because / guide rather than control / however well-intentioned / become strained。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "老鼠或鸽子也许不是照料病人的显而易见之选，但这些生物拥有一些出色的技能，能够帮助治疗人类疾病。\n鸽子常被视为肮脏的鸟和城市里的祸害，但它们只是长期以来被发现拥有助人能力的动物中的最新成员。尽管鸽子的大脑不过你食指指尖大小，它们却拥有令人印象深刻的视觉记忆。最近有研究表明，鸽子可以训练到与人类一样准确地识别图像中的乳腺癌。\n老鼠常被认为传播疾病而不是阻止疾病，但这种长尾动物极为敏感。老鼠鼻子里有多达 1000 种嗅觉感受器，而人类只有 100 到 200 种。这使老鼠能够察觉极微弱的气味。因此，一些老鼠被派去检测肺结核。当老鼠嗅到气味时，它们会停下来摩擦双腿，以表示某个样本已被感染。\n按传统做法，实验室技术员检测一百个样本需要两天多，而对一只老鼠来说不到 20 分钟。这种老鼠检测法不依赖专门设备，而且更准确——老鼠能发现更多的肺结核感染，从而挽救更多生命。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "K",
+     "analysis": "形容词作定语：这些生物拥有一些“出色的”技能（some superior skills），能帮助治疗人类疾病。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "D",
+     "analysis": "名词：鸽子常被视为肮脏的鸟和城市“祸害”（an urban nuisance）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "M",
+     "analysis": "名词：鸽子的大脑不过你食指“指尖”大小（the tip of your index finger）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "O",
+     "analysis": "形容词作定语：鸽子拥有令人印象深刻的“视觉”记忆（visual memory），与识别图像呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "A",
+     "analysis": "固定搭配 be associated with：“与……相关联”——老鼠常被认为与传播疾病有关。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "动名词与 spreading 并列：是传播疾病“而不是阻止”疾病（rather than preventing it）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "H",
+     "analysis": "形容词：这种长尾动物极为“敏感”（highly sensitive），由 1000 种嗅觉感受器呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "I",
+     "analysis": "形容词作定语：这使老鼠能察觉“极微弱的”气味（detect slight smells）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "C",
+     "analysis": "动词：摩擦双腿以“表明”某个样本已被感染（to indicate a sample is infected）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "B",
+     "analysis": "动词不定式：技术员检测一百个样本需两天多（take two days to examine），与老鼠的 20 分钟对比。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "课内考试会让学生更用功吗？\n研究表明，为应对意外，学生也许会学得更广，而不是到处搜答案。\n[A] 我一直是考试发挥很差的人。所以，当我回到大学去完成四十年前未竟的学位时，这看起来就相当奇怪了。我正在哥伦比亚大学求学，周围的学生在我还在消化题目时就能脱口报出答案。\n[B] 既然考试躲不开，我目前在琢磨哪种考试最累人、又最终最有益。我已经在许多课堂期中期末考试里煎熬过来，现在遇到一位教授布置带回家完成的考试。得知此事时我很兴奋，心想自己将有一整周去做研究、读文献、写完一切。事实上，交卷那天早上我还在改期中卷。说我完全乱了章法还算客气的。\n[C] 在忍受那一周的焦虑、对材料想得过多、又怀疑自己掌握程度的同时，我自己在学生和教授中做了一些调查。在哥伦比亚大学讲授广受欢迎的“美国总统”课的大卫·艾森巴赫更喜欢课内考试。他认为学生最终学到的东西更多，并鼓励他们组成学习小组。“这样他们就会在课后围绕历史社交——没有课内考试的压力，这不会发生，”他解释说，“此外，课内考试迫使学生学会在压力下发挥，这是一项重要的工作技能。”\n[D] 他还说，课内考试作弊的机会更少。2012 年，哈佛 125 名学生卷入一桩丑闻——他们在一门名为“国会导论”的课程的回家作业式考试中作弊。一些高校有所谓的“荣誉守则”，不过，如果你聪明到能进这些学校，你要么聪明到能绕开任何守则，要么（但愿如此）足够正直而不屑于此。当我枯坐两天毫无头绪时，我一度闪过念头：何不打电话给这一课题的专家，或修过这门课的人，请对方帮我开个头。\n[E] 哈佛丑闻之后，耶鲁前学生事务院长玛丽·米勒向本校教授发出恳切呼吁：不要布置带回家的考试。“当教师布置带回家考试而不设明确、限时完成的要求时，学生面临健康与身心受损的风险，期末其他功课的表现也会受影响，”她对我说。“研究表明，学期中定期的测验、短文和其他作业，更能提升学习效果与记忆保持。”\n[F] 大多数大学教授都同意，选择哪种考试主要取决于学科。例如，量化类课程不太可能带回家做——在家里可以找哥哥姐姐帮忙。而计算机科学、新闻这类职业导向课程往往更偏研究，适合带回家的考试。在马里兰州罗克维尔市蒙哥马利社区学院讲授“广播新闻史”的克里斯·科克指出，新闻报道讲的是调查，而不是记住细枝末节。“在我这一行，重要的不是你知道什么，而是你知道怎么去查明，”科克说。“信息太多，而且源源不断，谁也记不完。我希望学生动用一切可用的资源去找出问题的答案。”\n[G] 学生对考试形式的偏好也各不相同，往往取决于学科与课程难度。“我更喜欢带回家的论文式考试，因为那样才真正是在考写作，你有时间修改、做更多研究，”巴纳德学院三年级学生伊丽莎白·德雷瑟说。还有压力因素。米德尔伯里学院四年级学生弗朗切斯卡·哈斯说：“我觉得课内考试短期压力更大，但如饥似渴地吞下信息之后立刻解脱，然后就可以全忘掉。带回家的考试需要投入思考，可能带来长期压力，因为永远没有‘交卷’的那一刻。”与此同时，埃默里大学二年级学生奥利维娅·鲁宾说她几乎不把带回家的作业当作真正的考试。“只要理解了材料、能说出自己的想法，这些考试轻而易举。”\n[H] 学生最终如何应对压力，可能取决于个人的应试能力。有些人总是拖到最后一刻，把事情弄得比实际更难。另一些人不知道会考什么题、又没有资料可查，会当场僵住。而我们这些罕见的人，两种毛病都占。\n[I] 是的，我年纪不小这一条必然是因素之一，部分因为我获取信息的速度跟不上。哥伦比亚大学的另一位返校学生凯特·马伯告诉我：“我们不仅在学习所有这些信息，本质上还是在重新学习如何学习。我们的同学刚出高中。自从我们上次上学以来，很多东西都变了。”\n[J] 如果说这段经历还有别的收获，那就是它给了我和读大学的儿子一个共同话题。当我问他对这件事的看法时，他答道：“我喜欢课内考试，因为时间已经被划出来了，不用占用我在家里的自由时间来做一场考试。”在我看来，折中之道是提前一两天拿到考题，然后在课堂上计时完成考试。\n[K] 更好的是，亨特学院一位教授最近的期末考据说这样做：她鼓励全班别紧张、甚至别复习，并许诺“考试会易如反掌”。学生们削好铅笔走进考场，却不见蓝色答题册，而是看到一大块巧克力蛋糕——每人分到一块。",
+   "questions": [
+    {
+     "stem": "36. Elderly students find it hard to keep up with the rapid changes in education.",
+     "answer": "I",
+     "analysis": "该段：返校学生感叹“很多东西都变了”“本质上是在重新学习如何学习”——年长学生跟不上教育环境的快速变化。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. Some believe take-home exams may affect students' performance in other courses.",
+     "answer": "E",
+     "analysis": "该段：耶鲁前院长警告，带回家考试不设限时“会危及学生健康，也会影响期末其他功课的表现”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. Certain professors believe in-class exams are ultimately more helpful to students.",
+     "answer": "C",
+     "analysis": "该段：艾森巴赫“更喜欢课内考试”，认为“学生最终学到的东西更多”，还能学会在压力下发挥。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. In-class exams are believed to discourage cheating in exams.",
+     "answer": "D",
+     "analysis": "该段：“课内考试作弊的机会更少”（less chance of cheating with the in-class variety），并举哈佛带回家考试作弊丑闻为例。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. The author was happy to learn she could do some exams at home.",
+     "answer": "B",
+     "analysis": "该段：得知教授布置带回家考试时“我很兴奋”，以为有一整周时间做研究。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Students who put off their work until the last moment often find the exams more difficult than they actually are.",
+     "answer": "H",
+     "analysis": "该段：“总是拖到最后一刻的人，会把事情弄得比实际更难”（make it much harder than it needs to be）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Different students may prefer different types of exams.",
+     "answer": "G",
+     "analysis": "该段：“学生对考试形式的偏好也各不相同”，举了三位学生各自的偏好为例。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Most professors agree whether to give an in-class or a take-home exam depends on type of course being taught.",
+     "answer": "F",
+     "analysis": "该段：“大多数大学教授都同意，选哪种考试主要取决于学科”，量化类适合课内、职业导向类适合带回家。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. The author dropped out of college some forty years ago.",
+     "answer": "A",
+     "analysis": "该段：作者回到大学“去完成四十年前未竟的学位”（the degree I left undone some four decades ago）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some students think take-home exams will eat up their free time.",
+     "answer": "J",
+     "analysis": "该段：作者的儿子“喜欢课内考试，因为时间已被划出，不用占用家里的自由时间来做考试”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "人在陌生的环境里睡在别的床上常常睡不好，这一现象被称为“首夜效应”。如果第二天晚上还睡在同一个房间，人们往往就睡得香了。布朗大学的佐佐木由香和同事们着手研究这一效应的起源。\n佐木博士知道，首夜效应可能与人类的进化有关。令人困惑的是：如果它会影响第二天的表现，那它能带来什么好处呢？她还从先前对鸟类和海豚的研究中了解到，这些动物一次让半个大脑入睡，从而在休息的同时保持足够的警觉以躲避捕食者。这让她想到：人类是否也在做同样的事？为了进一步观察，她的团队研究了 35 名健康人在大学心理科学系这一陌生环境中的睡眠。参加者在该系睡了两个晚上，用观测大脑活动技术接受仔细监测。正如预期，佐木博士发现参加者第一夜睡得不如第二夜好：入睡时间多了一倍多，总睡眠时间也更短。在深睡阶段，参加者的大脑表现出与鸟类和海豚类似的活动方式。仅在第一夜，他们大脑左半球的睡眠深度远不及右半球。\n左半球是否确实保持清醒以处理周围环境探测到的信息？带着这个疑问，佐木博士重做了实验：夜里向睡眠中的参加者播放两种声音——音调相同的规律蜂鸣声与音调不同的不规则蜂鸣声。她推断：如果左半球保持警觉以便在陌生环境中守夜，它就会对不规则蜂鸣作出反应、把人从睡眠中搅醒，而对规律蜂鸣置之不理。这正是她发现的结果。",
+   "questions": [
+    {
+     "stem": "46. What did researchers find puzzling about the first-night effect?",
+     "answer": "D",
+     "analysis": "第二段：“令人困惑的是：如果它会影响第二天的表现，那它能带来什么好处呢？”——即这种效应在何种方面有益。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn about Dr. Yuka Sasaki doing her research?",
+     "answer": "C",
+     "analysis": "第二段：她“从先前对鸟类和海豚的研究中了解到”半脑睡眠现象，“这让她想到人类是否也如此”——即从前人研究中获得启发。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What did Dr. Sasaki do when she first did her experiment?",
+     "answer": "A",
+     "analysis": "第二段：团队研究 35 名健康人“在陌生环境中的睡眠”，并用观测大脑活动的技术仔细监测。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What did Dr. Sasaki do when re-running her experiment?",
+     "answer": "C",
+     "analysis": "第三段：重做实验时向睡眠中的参加者播放规律蜂鸣与不规则蜂鸣两种声音——即施加两种不同刺激。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What did Dr. Sasaki find about the participants in her experiment?",
+     "answer": "B",
+     "analysis": "第三段：左半球会对不规则蜂鸣作出反应把人搅醒、对规律蜂鸣置之不理，“这正是她发现的”——参加者把不规则蜂鸣当作威胁。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "是时候重新审视女性处理职场冲突的方式了。在家和在职场都超负荷、过度投入，并不能让你到达生活中想去的地方，只会拖慢你的脚步、妨碍你的职业目标。\n你知道吗？女性比男性更容易感到疲惫。最近一项研究显示，18 至 44 岁女性中感到“很累”或“精疲力竭”的人数，几乎是同龄男性的两倍。\n考虑到这是女性生育孩子的年龄段，这也许不足为奇。这也是许多女性努力平衡事业与家庭的年龄段。女性感到疲惫的一个原因，是她们很难说“不”。女性想做到面面俱到——为学校活动做志愿者，或烹制美味饭菜——所以对任何请求的回答往往是“行，我可以。”\n女性在职场上难以说“不”也是出于类似原因，包括希望被同事喜欢。遗憾的是，这种不会说“不”的状态，既在伤害女性的健康，也在伤害她们的事业。\n在职场，男性把冲突当作给自己定位的手段，而女性常常回避冲突或尽力当和事佬，因为她们不想在工作中被视为咄咄逼人或搅事的人。比如，有个问题需要立即处理，由此产生“该由谁来修”的争执。男性更可能从“什么对我最有利”的角度直面这种争执，而女性可能从“什么是最省事、最快捷的解决办法”的角度处理同一争执——哪怕这意味着无聊的活儿由自己来干。\n这种处理冲突的差异，可能就是谁被提拔到领导岗位、谁不被提拔的决定性因素。领导者必须善于分派任务并明智地管理资源——包括员工的专业能力。承担更多的工作量未必为你赢得晋升；相反，它可能凸显你不善分派任务。",
+   "questions": [
+    {
+     "stem": "51. What does the author say is the problem with women?",
+     "answer": "D",
+     "analysis": "首、三段：在家与职场都超负荷、对任何请求都答“行，我可以”——女性往往把自己逼到能力极限之外。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. Why do working women of child-bearing age tend to feel drained of energy?",
+     "answer": "A",
+     "analysis": "第二、三段：疲惫集中于生育年龄段，因为这正是“努力平衡事业与家庭”的时期——既要满足工作又要满足家庭。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What may hinder the future prospects of career women?",
+     "answer": "A",
+     "analysis": "第四段：“这种不会说‘不’的状态，既在伤害女性的健康，也在伤害她们的事业”——不会拒绝会妨碍职业前景。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. Men and woman differ in their approach to resolving workplace conflicts in that______.",
+     "answer": "D",
+     "analysis": "第五段：男性从“什么对我最有利”直面争执，女性从“最省事 quickest”的角度处理——“哪怕无聊的活儿自己干”，即女性更愿意妥协。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What is important to a good leader?",
+     "answer": "B",
+     "analysis": "末段：“领导者必须善于分派任务并明智地管理资源”；承担过多工作量反而“凸显你不善分派任务”——即分派能力很重要。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Mount Tai, located in the west of Shandong Province, stands over 1,500 meters above sea level and covers an area of about 400 square kilometers. It is a mountain of great historical and cultural significance as well as a magnificent scenic spot, and for more than 3,000 years it has been a place of worship. Records show that a total of 72 emperors visited it. Many writers came to Mount Tai for inspiration, composing poems and essays, and artists came here to paint. As a result, a great many cultural relics and historic sites have been left on the mountain. Mount Tai has now become a major tourist attraction in China.",
+   "note": "难点：海拔（above sea level）、方圆约……平方公里（covers an area of about... square kilometers）、雄伟壮观（magnificent）、历史文化名山（a mountain of historical and cultural significance）、朝拜（a place of worship）、据记载（records show）、帝王（emperors）、获取灵感（for inspiration）、文物古迹（cultural relics and historic sites）、旅游景点（tourist attraction）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:37:29.417Z"
+}
