@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2024,
+ "month": 6,
+ "set_no": 3,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Recently, whether university canteens should be open to the public has sparked heated discussion on campus. In my view, they should be conditionally open to the public, with students' interests given priority.\n\nOn the one hand, opening canteens to the public can bring clear benefits. It increases the canteens' income, which may be used to improve food quality and dining environment. It also allows nearby residents and visitors to enjoy affordable and safe meals, thus strengthening the university's connection with the community.\n\nOn the other hand, we cannot ignore possible problems. Outsiders may occupy seats during peak hours, making it hard for students to find a place. Therefore, the university should take measures such as limiting public access to certain hours and reserving enough seats for students.\n\nIn conclusion, opening canteens to the public is a double-edged sword. As long as the university manages it properly and protects students' priority, it can benefit both the campus and the community.",
+   "note": "范文采用“有条件开放”立场，首段引出争议并亮明观点；主体两段从增加收入、服务社区与挤占学生座位展开正反论证；末段总结并提出管理条件。可复用句型：Recently, whether... has sparked heated discussion...；In my view...；On the one hand... On the other hand...；As long as..., it can...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "在未来几十年里，数百万工作岗位将受到机器人技术和人工智能的威胁。尽管围绕这些发展已有激烈的学术辩论，但关于劳动者如何应对被技术取代的研究却很少。为了找出答案，慕尼黑工业大学（TUM）和鹿特丹伊拉斯姆斯大学的商业研究人员开展了11项研究和调查，涉及来自若干国家的2000多人。研究结果显示：原则上，当劳动者被其他人取代时，大多数人对此的看法比被机器人或智能软件取代时更为积极。然而，当这涉及人们自己的工作时，这种偏好会发生逆转。在这种情况下，大多数劳动者认为，自己的工作岗位被机器人夺走比被其他员工取代更不令人不安。然而从长远来看，这些人又认为机器对其未来在劳动力中的角色更具威胁。这些效应在最近失业的人群中也能观察到。研究人员也能够找出这些看似矛盾的结果背后的原因：人们与机器比较自己的程度低于与他人比较。因此，被机器人或软件取代对其自我价值感的威胁较小。即使参与者假设他们是被其他在工作中依赖人工智能等技术能力的员工取代时，这种自我威胁的降低也能被观察到。“即使失业是由新技术的引入造成的，人们仍然会在社会语境中评判它，”该研究的作者之一克里斯托夫·富克斯说。“在试图管理工作世界的巨大变化、以尽量减少社会中的扰乱时，理解这些心理效应非常重要。”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "D",
+     "analysis": "academic debate on 为固定搭配，表示“围绕……的学术辩论”；intensive 修饰 debate，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "react to 为固定搭配，表示“对……作出反应”；how workers react to being replaced 语法和语义均通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "G",
+     "analysis": "view it more favorably 表示“更正面地看待它”；副词 favorably 修饰 view，并与 more...than 比较结构搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "N",
+     "analysis": "主语 preference 后接不及物动词 reverses，表示“这种偏好发生逆转”；however 提示与上文情况相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "O",
+     "analysis": "seemingly paradoxical 表示“看似矛盾的”；形容词 paradoxical 前需要副词修饰，符合语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "A",
+     "analysis": "compare oneself with 表示“把自己与……比较”；tend to 后接动词原形 compare，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "K",
+     "analysis": "pose a threat to 为固定搭配，表示“对……构成威胁”；主语为动名词短语，谓语用第三人称单数 poses。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "I",
+     "analysis": "the introduction of new technologies 表示“新技术的引入”；与 unemployment results from 构成因果关系。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "psychological effects 表示“心理效应”，与前文 self-worth、self-threat 等心理因素呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "E",
+     "analysis": "minimize disruptions in society 表示“尽量减少对社会造成的扰乱”；disruptions 复数形式符合语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "无法逃避：当“雪天假”变成“电子学习日”\n\nA) 某些机构，比如学校，在恶劣天气（如降雪、洪水或极端高温或严寒）导致出行困难、断电（断供）或危及公共安全时，很可能会停课。当美国迎来降雪天气时，这意味着学龄儿童有可能享受到由来已久的“雪天假”传统——学校被迫关闭，学生们意外地获得一天假期。\n\nB) 是否放“雪天假”的标准主要是校车无法在路线上安全行驶，以及步行上学的孩子面临危险。通常，即使校车停运、课程取消，学校在名义上仍照常开放。导致停课或延迟的恶劣天气，在应对能力较差的地区更可能出现。在美国更靠北、习惯了大雪的地区，雪天假并不那么常见，因为当地市政部门清除道路积雪的装备十分齐全。而在不常下雪的地区，哪怕只是一两英寸的小雪也可能让道路变得不安全。\n\nC) 雪天假是美国影视作品中常见的主题：孩子们听到好消息，然后跑出去堆雪人、打雪仗，背景里放着欢快的流行音乐。但对南卡罗来纳、内华达、佐治亚和印第安纳等几个美国州的学生来说，这一传统如今已经结束了。本学年，许多学区董事会出台了政策，要求学校因大雪或极端天气而关闭时，学生必须在家学习。这些被称为“电子学习日”，听起来当然没有雪天假那么有趣。\n\nD) 教师们也在失去他们的雪天假，取而代之的是要随时在线进行虚拟点名并回答学生的问题。南卡罗来纳州安德森县一个学区的试点项目已经为学生配发了电子平板电脑，里面预装了学校停课期间需要完成的作业。如果试点成功，可能会在全州推广。\n\nE) 但从安德森县学区Facebook页面上的激烈辩论来看，一些家长反对这项新政策。一位评论者说：“下雪的时候就让孩子好好享受吧。”另一个人说这个决定会“更加毁掉学校”，还有人把雪天假称为“童年有趣的一部分”。不过该政策的支持者表示，这意味着孩子们缺课的天数会更少。它还将终结一项不太受欢迎的美国高中传统：“补课日”，即许多州要求学生利用学校假期补回因天气而耽误的时间。\n\nF) 由于九月飓风“弗洛伦斯”袭击期间学校停课，北卡罗来纳州的学生已经安排了好几个补课日。安德森县学区主管汤姆·威尔逊表示，取消雪天假改为电子学习日既务实又符合财务考量。他说技术已经改变了每一种职业，因此用它来“消除”补课日也是合理的。印第安纳州教育部的亚当·贝克表示，电子学习日已被证明是“巨大的成功”。他说印第安纳州大多数学校在课堂上已经使用电子设备，因此把这种做法延伸到学校停课的日子是一个“容易的决定”。他否认这一决定剥夺了孩子们享受雪天的机会。他说：“学生仍然可以享受雪天和户外时间。许多体育和科学作业都会让他们走到户外去感受天气。”但俄亥俄州的地方学区主管们正在抵制采用电子学习日的提议。他们担心家里没有网络的学生会因此处于不利地位，主管汤姆·罗斯则担心电子学习日的教育质量会更低。\n\nG) 还有所谓的“暴风雪书包”，即让孩子在预期因雪停课之前把作业带回家。但罗斯先生说，这不足以替代课堂教学。“我认为我们仍然需要课堂时间来给孩子他们应得的教育，”他说。“靠一个暴风雪书包或那样在家做作业是得不到的。效果不会那么好。”\n\nH) 缺课是否影响学业成绩，长期以来一直存在争论。在英国，人们一直关注解决学生旷课（旷课）问题。英国教育部（DFE）在2016年发布的研究认为，缺课任何天数都可能对成绩产生负面影响。DFE的研究得出结论：即使一年中只缺几天课，也可能足以导致拿不到好的考试成绩。这与美国哈佛大学一项研究的发现不同，后者认为因天气偶尔缺几天课并不会损害学习。\n\nI) 哈佛的这项研究分析了七年的学业成绩数据，未能发现因下雪停课带来的任何影响。造成更大干扰的，反而是学校在恶劣天气下仍试图照常开放，尽管许多教职员工和学生都缺席。但根据哈佛去年夏天发布的另一项研究，天气确实会对学业成绩产生影响。产生负面影响的是炎热的天气。研究人员在13年间考察了1000万名学生的成绩，发现极端炎热天气较多的年份与较低的成绩之间存在“显著”关联。\n\nJ) 显然，学生应该每天去上学，以从教育中获得最大收益。在极端天气的情况下，学生并不总能做到这一点。然而，研究表明，获准的缺课（例如极端天气期间）对学生而言，问题要小于未经批准的缺课。这是因为未经批准的缺课往往反映出学生消极懈怠的行为模式，或者家长对教育的消极态度被学生接受并贯穿整个求学过程。对学生学业表现影响的程度，完全取决于学生缺课时间的长短以及这种情况发生的频率。",
+   "questions": [
+    {
+     "stem": "36. There is opposition to the practice of giving children assignments to take home before\nextreme weather forces a school closure.",
+     "answer": "G",
+     "analysis": "G段提到“blizzard bags”，即让孩子在预期因雪停课之前把作业带回家，随后Mr Roth说这不足以替代课堂教学（“it is not sufficient as a replacement”），对应“给学生在极端天气停课前带作业回家这一做法遭到反对”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. New policies adopted by many US schools require students to do online learni ng at home\nin case of a school closure.",
+     "answer": "C",
+     "analysis": "C段说“This academic year, many school boards have introduced policies which require students to work from home if the school is shut by snow or extreme weather.”与题干“许多美国学校采取的新政策要求学生在停课时在家进行在线学习”对应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. According to some research, extreme hot weather negatively affects students’ performance.",
+     "answer": "I",
+     "analysis": "I段末尾指出“It's hot weather that has the negative impact.”并提到研究者发现极端炎热天气与较低成绩间的显著关联，对应题干“某些研究表明极端炎热天气对学生的表现有负面影响”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. There is a time-honoured tradition in the US for school kids to stay at home on “snow days”.",
+     "answer": "A",
+     "analysis": "A段称美国降雪意味着学童有机会享受“the long-standing tradition of the 'snow day'”，即学校关闭、学生意外放假，对应题干“美国有让学童在‘雪天假’待在家里的悠久传统”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Debates on social media show some parents are opposed to ending the “snow day” tradition.",
+     "answer": "E",
+     "analysis": "E段提到Anderson County学区Facebook页面上的激烈辩论，有家长评论“When it snows, let the kids enjoy it.”等反对取消雪天假的言论，对应题干“社交媒体上的辩论显示一些家长反对终结‘雪天假’传统”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. In more northern regions of the US, school is less likely to be affected by snowy weather.",
+     "answer": "B",
+     "analysis": "B段说“Snow days are less common in more northern areas of the United States that are used to heavy winter snowfall, because municipalities are well equipped to clear roads and remove snow.”对应题干“在美国更靠北的地区，学校受降雪天气影响的可能性较小”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Research indicates absences from school with permission do not cause as many problems\nas those without permission.",
+     "answer": "J",
+     "analysis": "J段指出“research shows that authorised absences from school such as during extreme weather are less problematic for students than absences that are not authorised”，对应题干“研究表明，获准的缺课比未经批准的缺课造成的问题更少”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. There is objection to e-learning days owing to fear that students with no acces s to the\nInternet at home will suffer.",
+     "answer": "F",
+     "analysis": "F段末尾说俄亥俄州的地方学区主管抵制电子学习日提议，“They fear that students without internet access at home will be disadvantaged by the policy”，对应题干“有人因担心家里无法上网的学生会受影响而反对电子学习日”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. In a pilot programme, students are given electronic devices to do assignments when schools\nare closed.",
+     "answer": "D",
+     "analysis": "D段提到南卡罗来纳Anderson County学区的试点项目“has supplied students with electronic tablets loaded with assignments to complete in the event of a school closure”，对应题干“在一个试点项目中，学生获得电子设备以便在学校关闭时完成作业”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. A long-standing debate is going on over the impact of school absences on students’\nacademic performance.",
+     "answer": "H",
+     "analysis": "H段开头说“There is a long-running debate on whether missing days of school affects attainment.”并提出英国教育部与哈佛研究的不同结论，对应题干“关于缺课对学生学业表现的影响，长期以来一直存在争论”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The character fu in Chinese means happiness and good luck, and it is one of the most commonly used auspicious symbols in traditional Chinese culture. People usually write a large fu on red paper, symbolizing the hope for family happiness, social stability and national prosperity. Posting the character fu during the Spring Festival is a long-standing folk custom. To celebrate the Spring Festival, every household posts fu on doors or walls to express their yearning for a happy life and their expectation for a bright future. Sometimes people also paste the character fu upside down, meaning that happiness and good luck have arrived.",
+   "note": "难点：文化负载词“福”保留拼音 fu；四字并列“家庭幸福、社会安定、国家昌盛”译成并列名词短语；倒贴福字用 upside down 和 have arrived 传达“已到”。关键表达：auspicious symbols、long-standing folk custom、every household、yearning for、expectation for。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "可能听起来令人惊讶，但你无需对时尚、甚至无需对历史感兴趣，也能享受《着装规范：时尚法则如何塑造历史》这本书。我恰好对两者都感兴趣，结果却因完全不同的理由喜欢上了这本书。\n\n理查德·汤普森·福特是法学教授，你大概读一页都不会忘记这一点。他论证严谨、例子丰富，读起来几乎像在读法庭意见书，只是也许更啰嗦。你大概再也不会把时尚视为小事。\n\n福特的论点是，理解某个特定时代特定时尚含义的最佳方式，是审视当时对它们施加的限制。透过这一视角，他向我们表明，13 世纪最早通过的那些确保只有贵族才能穿着某些面料、颜色和饰物的法律，反映了中产阶级的兴起——他们如今能够模仿其中一些时尚。上层阶级的地位受到威胁；时尚成了维护地位的工具。\n\n福特带领读者梳理时尚的演变，同时考察地位、性别、权力和个性等潜在动机；他认为，这些动机影响了过去所有时尚创新，如今也仍在影响我们。他的文风相当密集——研究、从句以及精准的形容词和名词密集交织。但其中也有幽默和足够多有趣的事例，使文字颇具吸引力。没有人能躲过他犀利的分析：无论是 19 世纪摧残女性身体的时尚这种容易攻击的目标，还是硅谷 T 恤这种现代制服，都未能幸免。\n\n但这本（关于时尚的）书最大的力量在于其思想深度。福特要求我们质疑无意识信念，意识到我们几乎从不这样做，理解最简单的选择也充满意义，然而这种意义能够且确实一直在变化。想想 1918 年一份商品目录坚持男孩和女孩应按适当颜色来着装。我们相信自己今天的思想已经进化；福特向我们表明并非如此。",
+   "questions": [
+    {
+     "stem": "46. What does the author think of the book Dress Codes: How the Laws of Fashion Made\nHistory?",
+     "answer": "C",
+     "analysis": "首段说无需对时尚或历史感兴趣也能享受此书，后文又强调其研究扎实、内容充实，说明它既可愉悦阅读又有教益。A把“作者因不同理由喜欢”偷换为“人们因完全不同理由阅读”；B与首句“不必感兴趣”矛盾；D并非作者对书的核心评价。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. How can people best understand a particular fashion in an era, according to Ford?",
+     "answer": "A",
+     "analysis": "原文明确指出福特的论点是：理解某时代特定时尚的最佳方式是看施加在它身上的限制。B只提到贵族穿着，C只是表面元素，D进行阶层调查均非福特的主张。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What was the aim of the first laws passed regarding fashion in the 1200s?",
+     "answer": "D",
+     "analysis": "1200 年代最早的法律确保只有贵族能穿某些面料、颜色和饰物，其背景是中产阶级兴起、上层地位受威胁，因此目的是维护贵族地位。A是背景而非目的，B与原文相反，C未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does the author think of Ford’s writing?",
+     "answer": "B",
+     "analysis": "原文说福特文风“dense”，充满研究、从句和精准用词，但又有幽默和有趣事例使其有吸引力，因此B最准确。A未提比较对比，C过度简化且遗漏“dense”，D只强调学术论证而忽略幽默和吸引力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author say is the greatest strength of Ford’s book?",
+     "answer": "D",
+     "analysis": "原文直接说这本书最大的优点是“its intellectual profoundness”，即思想深度，对应D。A信息丰富、B有意义的选择、C进化的思维都是书中提及的内容或主题，并非作者所说的最大优点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "说服的艺术意味着使他人同意你的观点，或遵循你的行动方案。对我们中的一些人来说，说服是一种本能品质，影响力自然而然地产生。对我们其余人来说，说服技巧可以随着时间学习和发展。\n雇主高度重视具备说服技能的员工，因为他们能影响工作表现的多个方面。此外，团队合作和领导力在很大程度上依赖说服力来把事情办成。没有说服技能，员工可能不会那么投入，也不会那么确信组织愿景和长期使命的重要性。有效运用说服技能不仅能让同事对你的想法感到兴奋，还能帮助你激励他们实现共同目标。\n为了在工作中学习说服的艺术，你需要懂得如何处理冲突并达成一致。良好的沟通是有效说服的第一步，但逻辑和推理同样重要。在你让别人支持你的目标之前，你应该帮助他们理解为什么他们应该追求这一目标。使用视觉辅助材料来支持你的想法，可以更好地传达你的想法并形成有说服力的论点，这样听众就会作出合乎逻辑的选择，并完全投入到你的想法和计划中。\n成功的说服技巧建立在你有能力与人积极互动并保持有意义的关系之上。为了维持这些关系，你还必须能够为他们的最佳利益行事。当同事与你一起成功时，他们更可能同意你。他们取得的成就越多、进步越大，就越信任你的判断力和实力。\n我们每天要么在说服别人，要么被别人说服——不是正在说服，就是正在被说服。绝大多数人更喜欢协作和团队合作，而不是传统的组织结构；没有人喜欢被指使或被人摆布。因此，组织和领导者应该采用强大的说服技巧来促成必要的变革。",
+   "questions": [
+    {
+     "stem": "51. What does the author say about the ability to be persuasive in the first paragraph?",
+     "answer": "A",
+     "analysis": "第一段说有些人天生具有说服力，而其余人可以通过时间学习和发展说服技巧，A准确概括了这一对比。B的“至关重要”不是首段重点；C只对应部分人且未提同事；D首段未提“沟通的艺术”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. Why are persuasion skills greatly valued in the workplace?",
+     "answer": "C",
+     "analysis": "第二段明确指出有效运用说服技能能激励同事实现共同目标，C正确。A的“长期收益”、B的“无条件信任”、D的“拓宽组织愿景”均无原文依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What should people do to learn the art of persuasion at the workplace?",
+     "answer": "A",
+     "analysis": "第三段说良好沟通是有效说服的第一步，因此学习说服艺术应掌握有效沟通技能，A正确。B与“处理冲突”相反；C是帮助对方理解追求目标的原因；D是听众完全投入，并非学习者应做之事。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. When are you more likely to succeed in persuading your coworkers?",
+     "answer": "D",
+     "analysis": "第四段说当同事与你一起成功时，他们更可能同意你，D符合原文。A的“牺牲自身利益”无依据；B和C虽涉及信任与关系，但不是原文所述最直接的触发条件。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Why are organizations and leaders advised to adopt powerful persuasion skills to bring\nabout necessary changes?",
+     "answer": "B",
+     "analysis": "第五段说绝大多数人更喜欢合作与团队而非传统结构，没人喜欢被指使，因此要用说服促成变革，B符合“顺应多数人的偏好”。A并非目的；C、D均无原文依据。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:59:30.976Z"
+}

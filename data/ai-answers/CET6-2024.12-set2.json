@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 12,
+ "set_no": 2,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "\"Nowadays, more and more students have realized the importance of self-discipline in their personal growth.\" This quality enables us to manage time, resist distractions, and persist in worthwhile goals. Without it, even talented students may waste their potential.\n\nTake my roommate as an example. He used to stay up late scrolling through short videos, which left him exhausted in class. Determined to change, he made a simple plan: reviewing lessons for an hour each evening and going to bed before eleven. Although it was hard at first, he kept going. A semester later, his grades improved markedly, and he became more confident. His experience shows that self-discipline is not cruel restriction but a powerful tool for self-improvement.\n\nTherefore, we should cultivate self-discipline step by step. Set realistic goals, remove temptations, and reward small progress. Once it becomes a habit, it will benefit us throughout our lives.",
+   "note": "范文以题目句开篇，紧扣自律与个人成长。先总述自律作用，再以室友戒熬夜为例，最后提出设目标、除诱惑、奖励进步等做法，结构为引出—论证—总结。可复用句型：This quality enables us to...；Take...as an example；His experience shows that...；Once it becomes a habit, it will...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "你有没有过这样的经历：和你关心的人谈论重要的事情时，却发现讨论令人沮丧而非富有成效？这时，负面情绪会给你建立共同理解的努力蒙上阴影。事实上，协作解决问题的对话需要技巧。强大的倾听能力至关重要。通过欣赏、亲切的微笑和温暖的话语来注入积极情绪会有所帮助。保持情绪语气平静的基本能力也同样重要。如果对话语气升温、愤怒爆发，对话就会从协作翻转为对抗，进展很可能立即停止。此外，有效对话通常还有另一个重要特征：对称性。对话中的对称性指的是双方说话量的平衡。你们是否都获得了同等的发言时间？当一个人主导大部分谈话时，这种不对称或失衡往往会让一方或双方感到恼火。沉默的一方通常厌倦只是倾听，而说话者可能会感到受宠若惊。通常，双方都希望更平等地给予和获取。不同的说话速度和音量水平也会侵蚀对称性。语速更快或声音更大的一方很容易开始占据更多发言时间。说话较慢或声音较柔和的一方可能难以获得发言机会。当一方的观点比另一方更重要时，对话也会失去平衡。一个人的意见可能更有影响力，因为其表达风格更有力。一种观点可能容易丢失，因为它表达得更试探、犹豫。如果任何一方相当持续地占主导地位或消失，改变这种模式将会有所帮助。对话会让人感觉更有效，同时整体关系也可能感觉更积极。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "L",
+     "analysis": "cast a shadow over 是固定搭配，意为“给……蒙上阴影”；负能量会给建立共同理解的努力蒙上阴影，shadow 符合语义和搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "A",
+     "analysis": "此处需要形容词修饰 smiles，与 appreciation、warm comments 并列；affectionate smiles 表示“亲切的微笑”，符合积极语气。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "主语 dialogue 为单数，需一般现在时第三人称单数动词；flip from ... to ... 表示“从……转变为……”，符合从协作转为对抗的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "G",
+     "analysis": "come to a halt 是固定搭配，表示“停下来、中止”；与 immediate 搭配自然，说明进展立即停止。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "N",
+     "analysis": "此处修饰动词 tires，需要副词；typically 表示“通常”，说明沉默一方通常会厌倦只倾听。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "feel flattered 表示“感到受宠若惊、自得”；与前半句沉默者厌倦倾听形成对比，说明说话者可能因被倾听而感觉良好。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "D",
+     "analysis": "can 后接动词原形；erode 与 symmetry 搭配，表示“侵蚀、削弱对称性”，符合语速和音量造成失衡的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "O",
+     "analysis": "more 后接形容词原级；vigorous 表示“强有力的”，说明表达风格更有气势，因而发言更有影响力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "M",
+     "analysis": "此处修饰 expressed，需要副词；tentatively 表示“试探性地、犹豫地”，对应观点因表达不够坚定而容易被忽视。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "I",
+     "analysis": "与 evaporates 并列，需第三人称单数动词；predominates 表示“占主导地位”，与“或消失”形成一方主导或一方消失的失衡模式。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "什么是超级血狼月？\n\nA) 蓝月、玫瑰月、超级月亮。不知为何，所有网站似乎都认为你真的很想知道关于这些月亮的一切。一个标题会宣称：“别错过本周末的惊艳超级月亮！”另一个则会抱怨：“超级月亮其实没什么大不了，你们都在毁掉天文学。”\n\nB) 最新的例子是“超级血狼月”月食，这听起来像是我九年级时会为之表演现代舞的某首情绪化歌曲的名字，但实际上它是一个定于1月20日发生的天文事件。正如我们下面将解释的，这个月亮并没有什么真正神秘或特别之处，它也不会在天空中看起来像一颗血淋淋的狼头或任何那样疯狂的东西。我们把历史上用来记录一年中满月的所有限定词拼凑在一起，就得到了这些超级月亮事件；而在互联网时代，我们可能会有点过于热情。\n\nC) 就把这篇文章当作你了解所有赏月新闻的首选资源吧。以下是关于最新月球事件你需要知道的内容。\n\nD) 听着，不知道也没关系。大概有很多人到处装作自己完全明白天空中那个东西为什么似乎会定期变大变小，但其实他们根本不懂。\n\nE) 月球绕地球运行，并且被潮汐锁定——这意味着它总是向我们展示同一面，而不像我们的星球那样自转。这就是为什么即使它绕着我们转，你也总能看到月亮上的人（或月兔，取决于你的文化偏好）。不过，满月时月亮在天空中又大又亮，只是因为它反射了太阳的光。但月球一直在运动，因此它会从不同角度受到阳光照射。新月时我们看不见它，因为我们的卫星正好停在地球和太阳之间；所谓的月球暗面亮得像拉斯维加斯，但我们能看到的那一面处于阴影中。当地球正好位于太阳和月球之间时，就会发生满月，阳光照到我们能看见的那一面。而所有其他月相都只是从这两种极端状态之一向另一种的过渡。\n\nF) 月球与地球的距离并不总是完全相同，因为它的轨道不是完美的圆形。我们把最近点称为近地点，最远点称为远地点。2018年最近的近地点和最远的远地点都发生在1月，两者相差约3万英里。\n\nG) 你之所以会在意这种普通的距离变化，是因为它让月亮变成“超级”。当满月发生在接近近地点时，它看起来会稍微大一点。老实说，差别并没有那么显著，但如果你能拍到超级月亮与某个能显示这种轻微尺寸增加的东西同框，那看起来会相当酷。1月的超级血狼月月食之所以“超级”，是因为日期恰好与1月月球离我们最近的时间吻合，但月球今年真正离我们最近，要等到2月的超级月亮；你可以预料到，届时会有大量过度的兴奋。\n\nH) 血月只发生在月全食期间（在任一地点，一年可能发生几次）。当月球滑入我们的阴影中时，我们会看到它带上红色。月亮在升起或落下时，或者整夜低悬在地平线上时，也可能看起来是橙色的——从它上面反射回来的光必须穿过那里更厚的大气层，而大气层会把更多蓝光散射掉。但你可能只在月食期间才会看到那种深沉、不祥的红色。\n\nI) 很多关于月亮的头条新闻纯属荒唐（你不需要对蓝月特别兴奋，它看起来就像普通的满月），但如果血月将在你所在地区可见，你绝对应该从床上爬起来去看，尽管它们只是月食，并不是天空诸神之间血战的证据。\n\nJ) 2018年3月，我们迎来了当年第二个“蓝月”，广受赞誉。虽然它未必特别到让人惊叹“天哪，快出去看看”的程度，但它确实很特别：蓝月是指同一个日历月里出现两次满月的俗称，而我们自1999年以来还没有在一年中遇到过两次。下一次要到2037年才会再次发生。天文学家大卫·查普曼解释说，这仅仅是我们日历的一种奇特之处；一旦我们不再根据月亮行事，而是开始试图遵循太阳和季节，我们就不再每月都有一个可靠的满月了。月球周期平均为29.53天，所以在大多数月份里，我们仍然只会有一个新月和一个满月。但每隔一段时间，某个月会从另一个月那里“偷走”一个满月。在2018年（以及1999年和2037年），1月和3月都在每月的第一夜和最后一夜叠加了满月，让2月陷入黑暗。\n\nK) 一年出现两次蓝月很罕见，但我们每隔几年就会有单独的蓝月。另外，有趣的是：蓝月其实并不是蓝色的。月亮确实可能呈现出一种忧郁的蓝色，但这只有在大小恰到好处的粒子散布在天空中时才会发生——而且这与月亮被称为“蓝月”毫无关系。火山喷发或大火产生的大片灰云可以造成这种效果，但这种情况并不常发生，而且要两种如此罕见的情况同时出现，肯定得群星都排成一线才行。\n\nL) 你可能听说过，2018年那个超级特别的第二个蓝月也是“逾越节月”。这是真的！这只是说它是春季的第一个满月，常被用来确定复活节星期日的日期。所有这些都只是日历上的繁琐规矩，我们拒绝进一步深入讨论。\n\nM) 有时你会看到某个标题，承诺的月亮带有一大堆限定词，让你头晕目眩。也许是一个超级蓝血虫月？或者一个超级血狼月？很多网站会告诉你，“狼月”是“美洲原住民”文化中一年中第一个满月的传统名称。考虑到仅今天美国就有573个注册的部落民族，更不用说历史上，这种说法有点奇怪。认为饥饿嚎叫的狼在1月是如此普遍恒定，以至于所有拥有不同文化、地理和语言的北美地区都自发地想出同一个昵称，这不合逻辑。\n\nN) 许多文化对某个月份或季节的满月都有传统名称，所以如果你想为一篇关于月亮看起来比平时稍大的报道增添噱头，可以从中挑选的名称相当多。但这些都基于人类的日历、活动和民间传说；你走到外面并不会在4月看到粉红色的月亮，尽管我希望真是那样。",
+   "questions": [
+    {
+     "stem": "36. We cannot see the moon at times when it is positioned right between the earth and the sun.",
+     "answer": "E",
+     "analysis": "依据：E段提到新月时“It's invisible to us... because our satellite is parked right between us and the sun”，即月亮位于地球和太阳之间时我们看不见它。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Volcanic eruptions may cause the moon to assume a moody blue color.",
+     "answer": "K",
+     "analysis": "依据：K段说“A moon can indeed take on a moody blue color... Big clouds of ash from volcanic eruptions or fires can do the trick”，火山喷发产生的灰云可造成蓝色月亮。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The moon will be closest to the earth when the supermoon occurs in February.",
+     "answer": "G",
+     "analysis": "依据：G段说“the moon won't actually be at its closest for the year until February's supermoon”，即2月超级月亮时月球今年最接近地球。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. There is nothing unusual about the super blood wolf moon, which will bear no resemblance to a bloody\nwolf head.",
+     "answer": "B",
+     "analysis": "依据：B段说“there is nothing truly mysterious or otherwise special about this moon, and it will not look like a bloody wolf head”，对应超级血狼月并无异常且不像血狼头。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. The moon will appear orange when the light reflecting from it travels through an atmosphere thicker than\nusual.",
+     "answer": "H",
+     "analysis": "依据：H段说月亮低悬时“the light bouncing off of it has to travel through a thicker atmosphere there”，因此月亮可能呈橙色。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. It is contrary to logic to claim the name of wolf moon originates from the cultures of American Indians.",
+     "answer": "M",
+     "analysis": "依据：M段指出“wolf moon”源自“Native American”文化的说法，并说这种认为北美各地自发想出同一昵称的想法“is illogical”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. As the moon's orbit is not a hundred-percent circle, its distance from the earth changes.",
+     "answer": "F",
+     "analysis": "依据：F段说“The moon isn't always exactly the same distance from Earth, because its orbit isn't perfectly circular”，即轨道非正圆导致距离变化。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. A full moon in a given month or season gets a specific name in different cultures.",
+     "answer": "N",
+     "analysis": "依据：N段首句“Many cultures have traditional names for the full moon in a given month or season”，对应不同文化给某月或某季满月特定名称。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. There are likely lots of people who know absolutely nothing about why the moon appears to change its size\nregularly but act like they know.",
+     "answer": "D",
+     "analysis": "依据：D段说有很多人“pretending they totally know why that thing in the sky seems to get bigger and smaller... but who totally do not”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. When a full moon appears twice in the same month, it is nicknamed a blue moon.",
+     "answer": "J",
+     "analysis": "依据：J段说“a blue moon is a nickname for when two full moons fall in the same calendar month”，对应同月出现两次满月时俗称蓝月。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Yangshan Port is an important component of Shanghai's shipping center. It is China's first deep-water port and one of the largest deep-water ports in the world. After nearly 20 years of development, Yangshan Port has become highly automated. The use of digital technology and artificial intelligence has greatly reduced labor costs and carbon emissions. Its self-developed terminal management system can remotely control large equipment from a hundred kilometers away. Yangshan Port appears bustling, but no manual operations can be seen on site, and it can operate around the clock. Yangshan Port will continue to develop and make greater contributions to building Shanghai into a global shipping center.",
+   "note": "难点在专有名词、术语和中文无主句。关键处理：deep-water port、highly automated、labor costs、carbon emissions、self-developed terminal management system、remotely control、around the clock、global shipping center。转折“看上去……却……”用appears...but，24小时不间断译为operate around the clock。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "随着人口增长和全球城市化不断加速，人们的大量关注都集中在城市的可持续性上，而对乡村的关注却少得可怜。\n乡村生活常与紧密互助的社区、归属感以及简单宁静的生活联系在一起。然而，尽管这些元素中的一些或全部确实存在于乡村，保守主义和就业机会匮乏也同样存在。而乡村社区之所以陷入困境，主要正是由于后者。受城市地区经济状况改善的吸引，世界各地的乡村居民纷纷迁出，这既加剧了人口稠密城市的过度拥挤，也使乡村陷入荒凉。\n那么，在这些变化中，乡村该如何确保自身存续？或者说，它是否应该存续？由于住所与设施之间距离遥远，且公共交通常常时断时续，乡村居民使用汽车的频率更高。乡村居民还要消耗更多能源来维护他们大多独立式的房屋。我们在城市里也许像盒子一样被堆叠起来，但这带来了乡村无法比拟的能源效率。乡村的能源需求导致人均碳排放高于城市，因此，认可这种生活方式选择实际上是不负责任的。\n保护乡村是一个热门话题。那些在城市里发了财的人常常在乡村购置第二套住房，间歇性地前来体验一种据说是简单的生活。这样做的副作用是，需求增加推高了房价，使当地居民无力承担。这一挑战尚未找到解决办法，因为市场力量正进一步把居民挤出乡村。对于那些相信应保护乡村的人来说，这是令人痛惜的。\n尽管对乡村的理想化看法很普遍，但现实是乡村生活一直在不断演变。工业化带来了劳动分工的增加，改变了乡村人之间的社会联系。互联网把曾经陌生的文化引入乡村。交通联系的改善和可负担性的提高使世界更易抵达，创造出一个“地球村”。考虑到这些变化，乡村的演变无疑是不可避免的。\n也许乡村还应为未来大规模的人口增长做好准备。随着世界各地城市迅速扩张，当前的城市一代将如何应对大规模城市化带来的不可避免的社会变化？对更简单生活的渴望会变得更强烈，从而推动一场乡村复兴吗？随着世界持续城市化，呼吁保护乡村的声音很可能会更加响亮。但变化不可避免。我们知道，世界将看到新城市从尘土中崛起，现有城市成长为超大城市，但乡村的未来却不太明朗。",
+   "questions": [
+    {
+     "stem": "46. What has become of the rural areas nowadays?",
+     "answer": "A",
+     "analysis": "第二段末句说乡村居民迁出，leaving the countryside in desolation，说明乡村正变得荒凉、人烟稀少。B项讲乡村本身被城市化，与原文“人口迁往城市”不同；C项是传统联想而非现状；D项保守主义只是乡村存在的问题之一，并非整体现状。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author think of the rural lifestyle?",
+     "answer": "B",
+     "analysis": "第三段指出乡村能源效率不如城市，且乡村人均碳排放更高，作者认为认可这种生活方式不负责任。A项虽涉及变化，但并非作者对乡村生活方式的总体评价；C项只是说乡村居民更多使用汽车，不能概括生活方式；D项是富人买第二住宅的现象，不是作者观点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the author think of rich urban residents buying a second home in the countryside?",
+     "answer": "D",
+     "analysis": "第四段说富人买第二住宅推高房价，使当地人无力承担，并进一步把居民挤出乡村，作者称这对相信乡村保护者而言令人痛惜。A项过于绝对，原文重点是房价和居民流失；B项社会稳定、C项经济振兴均非原文焦点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn about the countryside with industrialisation and technological advances?",
+     "answer": "A",
+     "analysis": "第五段总结工业化、互联网和交通改善使乡村持续演变，并明确说an evolving countryside is inevitable。B项理想化生活只是常见看法，不是作者结论；C项互联网引入外来文化只是细节；D项“多元化”虽沾边，但未概括主旨。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author think of the future of the countryside compared with cities?",
+     "answer": "D",
+     "analysis": "末段说城市未来是新城市涌现、现有城市变成超大城市，但the future of the countryside is less clear，即乡村未来更难预见。A项当地人处境不是与城市比较的重点；B项文中未说乡村会像城市；C项虽符合变化主题，但末段比较的重点是乡村未来不明朗。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "像“美在观看者眼中”这样的说法，很少受到质疑。它们已深深植根于我们的意识中，以至于人们认为不这样想是荒谬的。然而，至少对这种假设稍作反驳可能是有益的，因为人们会以审美的方式评价环境、情境和人。我们可能会发现我们仍然相信它是对的，但也可能会发现实际情况远比我们设想的复杂。\n最近一项探讨审美趣味的研究发表在《认知》上。研究结果表明，人们对自然对象的审美评价高度一致，但对人工制品，即人造物品，则分歧更大。\n研究发现，共享趣味在面孔和自然景观中最常见，而在建筑和艺术作品中则最不常见。其假设是，比例或对称等人们普遍喜爱的特征在起作用。\n对自然场景的偏好可能是通过生活经验学到的。随着人们成长，宜居性、安全性和开阔性等因素可能更受偏爱。景观的某些细节会变化，但基本要素更普遍，例如水、开阔空间和有人照料的迹象。\n与自然空间不同，艺术和建筑没有同等程度的接触机会。因此，人们不会有同等程度的共享趣味。\n人工制品共享趣味一致度较低，可能更多与风格要素有关，而不是与“行为后果”有关。\n所有后果似乎都合理（或至少可能），但我认为他们未得出一个有趣的哲学结论。我们的审美偏好或评价似乎有客观基础。我并不是说这意味着美完全是客观的，只是说可能存在普遍客观原则在起作用，即美并不只是在观看者眼中。\n自然界以共同的方式在全世界展现出一些普遍审美特征，如光辉。它并非处处完全相同，但很普遍。例如，不同地方的日落足够相似，因而几乎具有普遍吸引力。\n可能的美的普遍原则——如比例、适宜、光辉等——是普遍范畴，允许广泛的体现方式。当人们参与建筑或艺术等人工制品的制作时，他们以独特方式应用这些非常普遍的概念。但他们应用原则的方式可能并不具有普遍吸引力。\n这就是为什么体验不同文化及其人工制品很重要，因为它让我们接触接近或构建美的不同方式。质疑我们的假设总是有好处的。",
+   "questions": [
+    {
+     "stem": "51. What does the passage say about the statement \"beauty is in the eye of the beholder\"?",
+     "answer": "A",
+     "analysis": "文章开篇说这类说法“rarely questioned”，并说人们认为不这样想才是荒谬的，说明它几乎从未受到质疑。B项把人们以审美方式评价环境误作对该说法本身的解释；C项荒谬的是“不这样想”，不是该说法；D项文中未提人们长期被误导。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does a recent study exploring aesthetic taste show?",
+     "answer": "C",
+     "analysis": "研究显示人们对自然对象的审美评价高度一致，而对人工制品即人造物品分歧更大，因此C项“对人造物品共识较少”正确。A项与自然对象评价一致相悖；B项和D项都过度概括，未体现自然物与人造物的区别。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. Why do people differ in their aesthetic appraisal of artifacts?",
+     "answer": "D",
+     "analysis": "原文指出艺术和建筑不像自然空间那样有同等程度的接触机会，所以人们没有同等程度的共享趣味，D项“它们不如自然空间那样常进入人们视野”符合。A项设计多样未作为原因；B项原文说更多与风格而非行为后果有关；C项空间占用多少也不是原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the example of sunset tell about nature?",
+     "answer": "B",
+     "analysis": "日落例子紧接在“自然界以共同方式在世界各地展现普遍审美特征”之后，说明自然在世界各地以相似方式呈现审美特征。A项只抓住radiance且偏离“普遍相似”这一重点；C项和D项与原文所说普遍原则允许广泛体现并不吻合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. Why do artifacts not always hold universal appeal?",
+     "answer": "C",
+     "analysis": "原文说人们制作人工制品时会以独特方式应用比例、适宜、光辉等普遍概念，但应用方式未必具有普遍吸引力，因此C项正确。A项与文中“存在客观基础/普遍原则”相反；B项说普遍原则阻止广泛体现，与原文相反；D项虽接近，但不如C项准确对应“应用方式未必人人喜欢”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:56:28.000Z"
+}

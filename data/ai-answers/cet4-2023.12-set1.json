@@ -173,35 +173,35 @@
    "translation": "我有一个坏习惯，就是别人问我近况时爱说\"忙\"。有时是因为我确实忙，但有时是因为我觉得自己应该这么说。重要人物都这么说。得到提拔的人都这么说。但长时间工作并不会带来更好的结果。从不休假也不会让你升职。那么我们为什么总是这么自豪地谈论自己有多忙呢？\n\n2016年，来自哥伦比亚、哈佛和乔治城的研究人员开展了一项研究来弄清原因。他们发现，忙碌的人被认为地位高；有趣的是，这些地位归因深受我们自己对社会流动性的信念影响。换句话说，我们越相信一个人能基于努力工作获得成功的机遇，就越倾向于认为那些放弃休闲、一直工作的人地位更高。\n\n这就是为什么我们觉得必须显得忙碌，而且有一种真实的感受：如果一个人深陷会议、邮件和压力之中，那他可能是个大人物。这种忙碌文化正让员工难以找到工作与生活的平衡。根据最近的一项研究，五分之一高度投入的员工面临精疲力竭的风险。\n\n就我个人而言，当别人问我近况时，我将不再说\"忙\"。这听起来自以为是，而且定错了基调。像\"我收不到邮件\"和\"我一回来就回复\"这样的短语，听起来像是你被外力强迫不能工作，而不是在充分利用你的休假时间。\n\n这就是为什么我们最近推出了\"不在办公室邮件生成器\"，这是一个在你下次长周末或旅行前可以使用的免费工具。你可以大声而自豪地分享：在你回来之前你都不会查看邮件。管理者需要三思而后行，不要在周末给团队发邮件、谈论自己有多忙。领导者应该自己抽出时间休息，并鼓励员工也这样做。",
    "questions": [
     {
-     "stem": "What is a reason for the author to be in the habit of saying \"busy” when asked how he is doing?",
+     "stem": "46. What is a reason for the author to be in the habit of saying \"busy” when asked how he is doing?",
      "answer": "A",
      "analysis": "原文：'That's what important people say. That's what people who get promoted say.' 作者模仿成功/受提拔者说\"忙\"，即 follows successful people's example（seed 选项A文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "Why do we tend to think that busy people are of high status?",
+     "stem": "47. Why do we tend to think that busy people are of high status?",
      "answer": "B",
      "analysis": "原文：'the more we believe that one has the opportunity for success based on hard work, the more we tend to think that people who skip leisure... are of higher standing.' 对应 hard work leads to success 的信念（seed 选项B文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What do we learn about the culture of busyness from a recent study?",
+     "stem": "48. What do we learn about the culture of busyness from a recent study?",
      "answer": "D",
      "analysis": "原文：'one in five highly engaged employees is at risk of burnout'，忙碌文化使许多员工面临精疲力竭(burnout)风险，即 does much harm to... well-being（seed 选项D文本）。干扰项A/C是他人观点或被歪曲。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What do such utterances as “I have limited access to email“ sound like according to the author?",
+     "stem": "49. What do such utterances as “I have limited access to email“ sound like according to the author?",
      "answer": "B",
      "analysis": "原文这些短语'sound like you're being held against your will from working'，即被迫停止工作，对应 seed 选项B文本（原卷标C）'One is forced by circumstances to stop working'。注意：官方答案字母C指该文本，在本 seed 中位于字母B。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "Why did the author and his colleagues launch the Out of Office Email Generator?",
+     "stem": "50. Why did the author and his colleagues launch the Out of Office Email Generator?",
      "answer": "B",
      "analysis": "原文推出该工具是为了'share loud and proud that you won't be checking email until you're back'，让雇主和员工都真正有时间休息，对应 ensure employees as well as employers truly have time off（seed 选项B文本）。",
      "verified": false,
@@ -215,35 +215,35 @@
    "translation": "女性员工乘坐相同航班支付的平均机票价格始终低于男性，因为她们往往更早预订。\n\n我们比较了同一公司内相同职位的员工为同一舱位等级旅行所支付的机票价格，并使用一种常见的统计技术来解释可能影响机票价格差异的其他因素。我们发现，女性平均每张票比男性同事少付18美元。进一步的调查使我们得出结论：这一差距很大程度上可以用女性往往比男性更早预订（平均早1.8天）来解释。\n\n我们想确定是什么导致了这些预订商务差旅的性别差异，因此我们测试了多种可能的解释，例如女性选择提前计划，或男性常旅客倾向于晚订票。这些都没能解释掉性别差距，所以我们应用了从调查中收集的数据，这些数据表达了在经济决策中起核心作用的消费者偏好，如耐心和风险规避。\n\n我们发现，只有\"消极互惠\"这一概念——即感到被不公平对待的员工会做出消极行为，比如不太谨慎地花公司的钱——能解释这些差异。调查显示，男性往往比女性表现出更多此类消极行为。这并不是说所有男性都有这些行为，也不是说相对较晚订票是异常行为的标志。它只意味着，当我们加入消极互惠变量时，性别差距就消失了。\n\n先前关于员工之间消极互惠的研究发现，它可能导致员工积极性下降、业务绩效降低以及工作场所士气和文化低落。\n\n我们的结果显示了这些消极行为的另一种表现方式，比如机票预订，并补充了证据表明女性较少从事这些行为。\n\n公司在商务旅行上花费巨额资金。虽然每张票18美元的差额看似很小，但积少成多。我们的分析表明，在一家拥有2万名经常出差员工的大型跨国公司，女性提前预订每年可转化为100万美元的节省。",
    "questions": [
     {
-     "stem": "What did the author's team conclude about the gender difference in airfares from their further investigation?",
+     "stem": "51. What did the author's team conclude about the gender difference in airfares from their further investigation?",
      "answer": "A",
      "analysis": "原文：'this gap is largely explained by the fact that women tended to book earlier than men'，即 attributed to women booking earlier than men（seed 选项A文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What did the researchers want to determine by testing a variety of possible explanations?",
+     "stem": "52. What did the researchers want to determine by testing a variety of possible explanations?",
      "answer": "D",
      "analysis": "原文：'We wanted to determine what was causing these gender differences... so we tested a variety of possible explanations'，即探究 what accounted for the gender gap in airfares（seed 选项D文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What happened when the negative reciprocity variable was taken into account?",
+     "stem": "53. What happened when the negative reciprocity variable was taken into account?",
      "answer": "C",
      "analysis": "原文：'the gender gap disappears when we plug in the negative reciprocity variable'，即差异 no longer existed（seed 选项C文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What did prior research on negative reciprocity among workers find?",
+     "stem": "54. What did prior research on negative reciprocity among workers find?",
      "answer": "C",
      "analysis": "原文：'Prior research... found that it can result in lower employee motivation, business performance and workplace morale'，即 proves to be counterproductive in a number of ways（seed 选项C文本）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What does the author emphasize about their analysis in the last paragraph?",
+     "stem": "55. What does the author emphasize about their analysis in the last paragraph?",
      "answer": "A",
      "analysis": "原文末段：'early booking by women can translate into savings of $1 million a year'，即 help companies increase their savings significantly（seed 选项A文本）。",
      "verified": false,

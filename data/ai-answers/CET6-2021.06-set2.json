@@ -181,8 +181,85 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "我走进药店，看到货架上摆满各种维生素、提取物和其他补充剂，全都承诺加速或促进减肥，总感到困惑。这些充满营销天才的货架掩盖了一个事实：归根结底，减肥是由算术法则决定的。经济学家 Jessica Irvine 写了一本书，讲述她如何用数学帮助自己减掉超过18公斤。如果摄入的卡路里少于消耗的卡路里，体重就会下降，金钱也是如此。尽管有大量旨在积累财富的金融产品、服务和解决方案，但一切始于同一个等式：要想在财务上取得进展，就需要减少支出，使收入大于支出。最近，我听了一篇对 Nicole Haddow 的采访，这又让我想起这一点。Nicole Haddow 是《Smashed Avocado》的作者，她解释了自己如何在31岁时打入房地产市场。考虑到她两年前的处境，这真是相当了不起的壮举。Nicole 没有像她曾设想的那样庆祝自己30岁生日。她坐在餐桌旁，与父母一起抽泣，而她刚搬回父母家住。她没有稳定收入，信用卡欠款12,000美元，也没有计划，但令她惊讶的是，做会计的父亲告诉她，她的财务困境并没有她想的那么糟。他说，以她的收入，只要做出一些改变，她能在两年内买下一套投资公寓，她确实做到了。Nicole 承认自己很幸运，因为能够和父母同住，并全面整顿自己的支出和生活方式，让自己财务重回正轨。在收入和支出之间创造差距需要范式转变，也需要牺牲和承诺，但通过严格管控财务，Nicole 获得了财务独立。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "副词 ultimately 表示“归根结底、最终”，在此作插入语，说明减肥本质上由算术法则决定，符合上下文语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "F",
+     "analysis": "expended 是过去分词作后置定语，calories expended 表示“消耗的卡路里”，与 calories taken in“摄入的卡路里”形成对照。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "Despite 后接名词，abundance of 表示“大量的、丰富的”，指金融产品和服务繁多，符合让步状语语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "E",
+     "analysis": "same equation 表示“同一个等式”，与 laws of arithmetic 以及收入、支出的算术关系呼应，equation 作介词 with 的宾语。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "quite a feat 是固定搭配，意为“相当了不起的成就”，指她31岁买房这件事，feat 为可数名词。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "D",
+     "analysis": "as she had envisaged 是过去完成时，envisage 表示“设想、预计”，指她原本设想的30岁生日庆祝方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "B",
+     "analysis": "to one's astonishment 是固定搭配，表示“令某人惊讶的是”，父亲的话让她意外，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "financial plight 表示“财务困境”，与前面无稳定收入、信用卡债务等内容一致，plight 为名词，作主语。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "J",
+     "analysis": "overhaul 作动词，意为“全面整顿、彻底改变”，与 her spending and life 搭配，指彻底调整支出和生活方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "C",
+     "analysis": "entailed 与 required 并列，构成 required a paradigm shift and entailed sacrifice and commitment，表示“需要范式转变，也需要牺牲和承诺”，语法和语义都吻合。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:47:35.315Z",
+ "generatedAt": "2026-10-10T14:08:27.427Z",
  "prunedAt": "2026-10-10T03:33:14.385Z"
 }

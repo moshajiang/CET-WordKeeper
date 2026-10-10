@@ -139,8 +139,127 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "尼古拉·斯特金上周二的演讲阐述了苏格兰政府未来一年的立法计划，证实了此前已相当明确的一点。苏格兰各地方议会将成为英国首批有权向游客收费的机构，爱丁堡很可能率先行动。\n\n游客税并不新鲜。喜马拉雅王国不丹长期实行向游客收取每日费用的政策。法国对过夜住宿征税，最初是为了帮助温泉城镇发展，如今约有一半法国地方政府采用这一税种。\n\n但此类收费正在增加。巴塞罗那和威尼斯为应对“过度旅游”现象而采取收费措施，最近备受关注。日本和希腊等国也最近引入了游客税。\n\n英国之所以落后，是因为按国际标准衡量，我国地方政府权力薄弱，同时我们极度亲市场的执政党反对税收和监管。一些英国城市曾游说争取向游客收费的权力，但未能成功。此类收费并非万能良药，因为筹集的金额与自2010年以来中央政府削减的拨款相比微不足道。尽管如此，人们仍希望苏格兰政府的大胆举措能促使其他地区采取行动。没有理由让来英国的游客，或在康沃尔等热门地区度假的国内游客免税——尤其是当废物收集、公园维护以及艺术和文化支出等关键地方服务正面临前所未有的压力时。\n\n相反，迫使游客在个人消费之外，为他们所到之处做出财政贡献，应成为更广泛文化转变的一部分。有可支配收入的西方人常常表现得好像他们有权去任何自己选择的地方，而很少考虑后果。正如航空和其他交通造成的环境危害必须受到更严格的审视，旅游的社会成本也必须得到正视。这包括短期出租对住房成本和居民生活质量的影响。包括巴黎和柏林在内的几个欧洲首都正在带头推动欧盟实施更严格的监管。它还包括过度拥挤、乱扔垃圾以及与喧闹聚会相关行为的影响。\n\n这个问题没有“一刀切”的解决办法。一些地方议会而非所有地方议会拥有新收入来源，这种情况很复杂，而企业往往反对，担心更高成本会使它们失去竞争力。但那些想要征收游客税的地方必须有机会让游客税发挥作用。",
+   "questions": [
+    {
+     "stem": "51. What do we learn from Nicola Sturgeon's speech?",
+     "answer": "B",
+     "analysis": "文中说斯特金演讲确认苏格兰各地方议会将成为英国首批有权向游客收费的机构，爱丁堡可能带头，这意味着游客在苏格兰将需缴纳游客税。A把它扩大到全英国税收政策调整，C与征税目的不符，D在文中无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. How come the UK has been slow in imposing the tourist tax?",
+     "answer": "C",
+     "analysis": "文中明确指出英国落后是因为地方政府按国际标准较弱，以及执政党反对税收和监管。A、B、D均不是文中给出的原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. Both international and domestic visitors in the UK should pay tourist tax so as to ____",
+     "answer": "D",
+     "analysis": "文中说游客和国内游客不应免税，尤其当垃圾收集、公园维护、艺术文化等关键地方服务面临空前压力时，因此征税是为了缓解地方服务财政负担。A、B、C均未在文中作为理由出现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. 54, What does the author sa-y about Western tourists?",
+     "answer": "A",
+     "analysis": "作者说西方人常表现得有权去任何自己选择的地方，很少考虑后果，并强调旅游的社会成本必须得到正视，说明他们似乎不关心旅游的社会成本。B、C、D均与原文意思不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What are UK people's opinions about the levy of tourist tax?",
+     "answer": "C",
+     "analysis": "文中提到一些城市争取征税权、企业常因担心成本而反对、执政党也反对税收和监管，说明英国各方对游客税态度不一。A支持、B怀疑、D不清楚都不能准确概括这种分歧。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "一项新研究描绘了澳大利亚现有儿童文学所体现的文化包容性的黯淡图景。伊迪斯·科文大学教育学院的Helen Adam博士调查了儿童书籍的文化多样性。她检查了西澳大利亚四个日托中心幼儿园教室里收藏的书籍。在总共2413本书中，只有18%包含任何非白人的呈现。少数族裔文化常以刻板或象征性的方式出现，例如，用筷子和传统服饰来描绘亚洲文化。那些确实代表了少数族裔文化的角色通常在书中扮演次要角色。主角大多为白人。这引发了担忧，因为这会给人留下一种印象：白肤色价值更高。\nAdam博士说，儿童从很小的时候就对“差异”和身份形成印象。有证据表明，他们早在三个月大时就形成了本族种族偏见。我们与幼儿分享的书籍可以成为培养儿童对自己和他人理解的重要机会。书籍还可以让儿童看到多样性。他们发现自己与他人之间的相似之处和不同之处。这有助于培养理解、接纳和对多样性的欣赏。人口普查数据显示，澳大利亚人来自200多个国家。他们在家里说300多种语言。此外，澳大利亚人属于100多个不同的宗教团体。他们还从事1000多种不同的职业。“澳大利亚是一个多元文化社会。当前对白人中产阶级观念和生活方式的压倒性宣传有可能使少数族裔儿童疏远。这会让白人中产阶级儿童产生优越感或特权感，”Adam博士说。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "F",
+     "analysis": "主语Dr. Adam后需过去式谓语，宾语为the cultural diversity of children's books；investigate表示“调查/研究”，与下文examined语境一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "E",
+     "analysis": "这里用过去分词短语作后置定语修饰books；be housed in表示“被收藏/安置在……”，符合“幼儿园教室里的书籍”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "I",
+     "analysis": "any后需名词，representation of nonwhite people表示“非白人的呈现/出现”，与cultural inclusiveness主题相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "H",
+     "analysis": "by后接动名词表示方式；portray Asian culture with chopsticks and traditional dress意为“用筷子和传统服饰来描绘亚洲文化”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "K",
+     "analysis": "修饰roles，与后文main characters形成对比；少数族裔文化角色通常担任“次要角色”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "C",
+     "analysis": "own-race bias是固定搭配，意为“本族/同种族偏见”，此处作develop的宾语，符合儿童早期形成偏见的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "B",
+     "analysis": "与understanding、acceptance并列，构成acceptance and appreciation of diversity，意为“接纳并欣赏多样性”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "此处需形容词修饰promotion；overwhelming表示“压倒性的/铺天盖地的”，符合“当前对白人中产阶级观念和生活方式的宣传”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "risk后接动名词，alienate...from...表示“使……疏远”；risks alienating children from minority groups意为“有可能使少数族裔儿童被疏远”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "L",
+     "analysis": "sense of superiority or privilege是固定搭配，意为“优越感或特权感”，与privilege并列，符合白人中产阶级儿童可能产生的心理。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:47:44.748Z",
+ "generatedAt": "2026-10-10T14:07:38.166Z",
  "prunedAt": "2026-10-10T03:33:14.385Z"
 }

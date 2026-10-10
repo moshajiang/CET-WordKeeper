@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2025,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Recently, whether College Chinese should be a compulsory course has sparked heated discussion on campus. As far as I am concerned, it is not only necessary but also urgent to make it compulsory for all undergraduates.\n\nTo begin with, College Chinese helps students improve their language competence, which is essential for academic writing and future careers. Many students, especially science majors, rarely read classic works after entering university, and their ability to express ideas clearly may decline. A compulsory course can fill this gap. Moreover, such a course cultivates cultural confidence. By reading masterpieces and discussing traditional thought, students can better understand Chinese civilization and communicate it to the world.\n\nAdmittedly, making it compulsory may increase students' workload. However, compared with its long-term benefits, the cost is acceptable. Therefore, I strongly support making College Chinese a compulsory course, provided that teaching methods are engaging rather than rigid.",
+   "note": "范文支持将大学语文设为必修：首段引出争议并表态；主体从语言能力、文化自信两方面论证，继而让步承认课业压力；结尾条件式支持。可复用句型：As far as I am concerned...；not only...but also...；Compared with..., the cost is acceptable；provided that...。全文约147词。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "心理学家长期以来一直关注我们如何建构自己的身份，以及在社会中用于展示自我的各种策略。新发现表明，我们在成年人身上看到的那些复杂而具有策略性的自我呈现行为，出现的时间比之前所知的要早得多。\n\n研究表明，儿童对社会地位的意识来自成年人。和成年人一样，孩子希望被自己钦佩的人接受。互动体验可能为儿童提供机会，让他们了解什么构成理想的声誉，以及在他们的社会环境中，哪些策略有助于建立良好声誉。\n\n五岁孩子不仅意识到自己的声誉，还会采取策略性行为来改变自己的外在形象。他们会改变自己的行为，以便在关键观察者眼中显得有道德或社会评价良好。虽然我们知道成年人会利用各种各样的特质来管理和创造印象，但我们尚不清楚儿童是否理解并利用这样一个事实：不同的特质在不同时间对不同受众具有价值。我们有必要进一步思考，在这一过程中，儿童在哪些方面成功控制了自己的声誉，又在哪些方面遇到困难。\n\n一个值得思考的问题是：“比五岁更早的时候会发生什么？”儿童并不是到了幼儿园第一天，就突然萌生了声誉这个概念。合乎逻辑的问题应该是：“更早的时候会发生什么？”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "D",
+     "analysis": "空格与 strategic 并列修饰 self-presentation behaviour，需要形容词；complex 表示“复杂的”，符合“复杂而具有策略性的自我呈现行为”这一语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "G",
+     "analysis": "than previously known 是固定表达，意为“比之前所知的”；previously 作副词修饰 known，表示时间上的“先前”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "want to be accepted by... 为被动语态，表示“希望被……接受”；accept 的过去分词 accepted 与 by those they admire 搭配自然。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "E",
+     "analysis": "what 引导宾语从句，从句缺少谓语；what constitutes a desirable reputation 意为“什么构成理想声誉”，主语 what 视为单数，故用 constitutes。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "be effective for doing sth 中介词 for 后应接动名词；building a good reputation 表示“建立良好声誉”，符合搭配和语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "vary 作及物动词可表示“改变、使不同”；vary their behaviour 意为“改变自己的行为”，与后文 appear moral or socially good 呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "N",
+     "analysis": "whether 引导的宾语从句中，understand 与 use 并列，需用动词原形；understand and use the fact 表示“理解并利用这一事实”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "B",
+     "analysis": "different attributes are valuable to different audiences 表示“不同特质对不同受众有价值”；audiences 与 to different 搭配，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "where they struggle 与前面的 where children succeed 形成对比，表示“在哪些方面遇到困难/挣扎”，语义和语法均合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "M",
+     "analysis": "pop suddenly into existence 意为“突然出现”；suddenly 作副词修饰 pop into existence，强调声誉概念并非突然产生。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "让年轻人走进设计\nA) 最近，英国一家领先的设计联合会警告说，英国可能面临创意技能短缺，因为最新数据显示，学习设计与技术的学生人数下降了近10%。这些数据表明，去年参加设计与技术考试的学生人数从204,788人下降到185,279人，降幅为10%。\nB) 创意产业联合会首席执行官约翰·坎普夫纳认为，这一数字下降对英国极为成功的艺术与创意产业的技能输送管道令人担忧。他说：“我们已经在动画制作和特效等许多工作中面临技能短缺。”他补充说：“工程领域同样需要创意与技术相结合的能力，也存在招聘问题。”\nC) 许多其他设计师和建筑师也对英国企业未来本土人才的供应表示担忧，行业机构指出，基础层面的支持一直不足。然而，如果这些设计师今年早些时候去过伦敦设计博物馆商店，他们的担忧或许会减轻。花10英镑，他们本可以买到一个名为“Dazzle Racer”的迷人儿童玩具。它是一个汽车圆柱体，包含一个上发条、弹性带驱动的装置，零件极少，全部由100%回收材料制成，还有很多贴纸。它很有趣、简单、醒目，而且非常有创意。\nD) 你可能会认为，设计博物馆委托制作一些有趣的物品是理所当然的，但这一件不同。它由芬奇利天主教高中的六名九年级和十年级男生设计，是博物馆2015年Design Ventura竞赛的获胜作品。该竞赛通过挑战13至16岁的学生为设计博物馆商店开发一款新颖、可持续且商业可行的产品，把设计商业带入生活，并在全国吸引数百件参赛作品。\nE) “我在之前的学校参加过Design Ventura，”芬奇利天主教高中的设计与技术课程负责人利亚姆·霍里肯说。“四年前我换学校后，把它引入这里，因为它有助于培养很多技能。”\nF) 去年竞赛的主题是“移动”，霍里肯先让三个小组在午休和放学后开展工作，然后选出想法最具创新性的小组。每所参赛学校只能提交一份方案。“重要的是参与和付出努力，”他说。“我做梦也没想到我们会赢。”\nG) 设计博物馆学习主管凯瑟琳·里特曼·史密斯预计，今年将有约1万名13至16岁的参与者参加。她说，该项目由德意志银行资助，是其青年参与计划“生来如此”的一部分，是博物馆日程中最大的活动。“2010年我们启动Design Ventura时只有大约800名年轻人，此后它稳步发展，”她说。“老师们喜欢它，因为其中的技能都是可迁移的，而且它有助于证明设计作为一门学科的价值，”她解释道，并告诉我迄今为止已有近600所学校参加。\nH) 那么竞赛是如何运作的呢？夏季会公布一个单词主题。今年的主题是“改变”。学校与小组合作，用简单材料为一件能在设计博物馆商店以10英镑出售的产品构思富有想象力的设计想法。参赛学校随后在11月前注册，并最终提交设计想法。在此过程中，教师会获得培训和支持，学生则会得到设计师的辅导。另一个额外的好处是，获胜者能在次年春季看到自己的设计上市销售。\nI) 霍里肯和他的学生们对在博物馆度过一整天有着美好回忆。他们被选为10所入围学校之一，向包括设计师贾斯珀·康兰在内的评审团展示自己的想法。随后，他们与肖迪奇的Kin设计工作室合作，在学校会见了设计师，并参加了与德意志银行员工的午餐会。学生们帮助做决定，也有很多讨论——例如，他们改变了产品的名称。\nJ) “这项竞赛真正有用的地方之一，”霍里肯说，“是它有商业元素，因为产品会真正上市销售，男孩们除了设计他们的游戏外，还必须学习预算和营销。”利润捐给慈善机构。“获胜团队选择利润去向，”里特曼·史密斯说。“芬奇利天主教高中的产品为大奥蒙德街医院筹集了约1000英镑。”往年的获胜作品包括一套名为Dove Bunting的自制布料套装，以及一个名为Badoiiing的三折、钱包大小、两端有球门的旅行游戏。\nK) 学校参加Design Ventura无需支付任何费用；专业设计师免费提供服务。其中包括建筑师阿西夫·汗，他是设计博物馆理事，曾在博物馆担任驻馆设计师，帮助新兴建筑师。他最近受委托设计位于史密斯菲尔德的伦敦博物馆新馆。\nL) 另一位是电视主持人兼室内设计师娜奥米·克利弗，她是该竞赛的评委之一。“我非常热衷于鼓励年轻人，”她说，并指出设计把文学、艺术、历史、地理和科学等其他学科结合在一起。“如今设计教育在课程中受到限制，我完全支持像Design Ventura这样的竞赛，它有助于让标准课程焕发生机，”克利弗说。“而且评审日非常有趣。有些学生非常有想象力。有一个小组用木偶剧的形式展示了他们的想法，我们还看到了一些奇妙的演示模型。学生们展现出的自信以及他们从老师那里得到的支持总是让我印象深刻。”\nM) 里特曼·史密斯补充说：“设计与技术已经成为一门难以证明其重要性的学科，我们听说一些学校的相关院系正在关闭。我们发现，如果学生在九年级参加Design Ventura，这可能成为触发因素，促使他们在普通中等教育证书阶段选择这门课，因此我们正在帮助维持对工业和创业精神至关重要的东西。”",
+   "questions": [
+    {
+     "stem": "36. During the course of preparing for Design Ventura, teachers receive training and support while students get tutoring from\ndesigners.",
+     "answer": "H",
+     "analysis": "依据：H段说 Along the way there is training and support for teachers and tutoring for students from designers，对应教师获得培训和支持、学生获得设计师辅导。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. A visit to the Design Museum shop in London can reduce the designers’ fears about the future supply of talents educated\nin Britain.",
+     "answer": "C",
+     "analysis": "依据：C段说 if these designers had visited the Design Museum shop in London earlier this year their fears may have been eased，对应参观设计博物馆商店可减轻设计师对本土人才供应的担忧。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. One of Design Ventura’s judges says the competition adds vigour to the standard curriculum in schools.",
+     "answer": "L",
+     "analysis": "依据：L段评委娜奥米·克利弗说 it helps to bring the standard curriculum to life，对应竞赛给学校标准课程增添活力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Enrollment in Design and Technology decreased by nearly ten percent last year in the UK.",
+     "answer": "A",
+     "analysis": "依据：A段说 a drop of almost 10 percent in students studying Design and Technology，且去年参加考试人数下降10%。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Participation of ninth graders in Design Ventura can motivate them to choose design technology as their subject.",
+     "answer": "M",
+     "analysis": "依据：M段说 if pupils take part in Design Ventura in Year Nine it can be the trigger which leads them to opt for it at General Certificate of Secondary Education，对应九年级参与可促使他们选择设计与技术。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Design Ventura is welcomed by teachers because it helps to prove the worth of design as a school subject.",
+     "answer": "G",
+     "analysis": "依据：G段说 Teachers like it because the skills are all transferable and it helps to validate the value of design as a subject，对应教师欢迎它因其有助于证明设计作为学校学科的价值。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. The schools don’t have to pay anything to take part in the Design Ventura competition.",
+     "answer": "K",
+     "analysis": "依据：K段说 It costs the schools nothing to participate in Design Ventura，对应学校参加该竞赛无需付费。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Participants in Design Ventura are challenged to create sustainable and marketable products.",
+     "answer": "D",
+     "analysis": "依据：D段说 challenging them to develop a new creative, sustainable and commercially feasible product，对应参赛者被要求创造可持续且可商业销售的产品。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Students benefit from Design Ventura because they can learn about budgeting and marketing in addition to game design.",
+     "answer": "J",
+     "analysis": "依据：J段说 the boys had to learn about budgeting and marketing, as well as designing their game，对应学生除设计游戏外还学习预算和营销。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. According to an officer of the Creative Industries Federation, there is difficulty now in recruiting engineers in the UK.",
+     "answer": "B",
+     "analysis": "依据：B段中创意产业联合会首席执行官约翰·坎普夫纳说 Engineering, which requires a similar mix of creative and technical skills, also has recruitment problems，对应英国现在招聘工程师有困难。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Yuan Longping, known as 'the father of hybrid rice', and his research team overcame numerous difficulties and developed a super hybrid rice. This technology achieved tremendous success recognized worldwide. Through its application, rice has stronger drought and disease resistance, can adapt to different climates and soil conditions, and its yield can be increased by 20-30%. Super hybrid rice is nutritious and tastes better. At present, this technology has been widely applied in many countries, making significant contributions to global food security.",
+   "note": "难点在于称号、科技术语与并列谓语的处理。“被誉为”可用be known as；“抗旱抗病”译为drought and disease resistance或drought-resistant and disease-resistant；“产量提高20-30%”用yield increase by 20-30%。注意“目前”与贡献宜用完成时，保持时态一致。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "新研究显示，熊猫可能因为生活过于舒适而面临灭绝风险。专家表示，过多的幸福感会让这种熊不再去寻找新的配偶。\n《泰晤士报》报道，环保人士长期以来一直认为，在熊猫附近修路或建房可能会通过“减少或分割其自然栖息地”而威胁它们的生存。但这项新研究显示，“适度程度的不适和栖息地分割”实际上可能有助于保护熊猫种群。\n这项研究由密歇根州立大学的科学家进行。研究结论是，如果熊猫觉得自己的栖息地过于舒适，它们就不会四处游荡去寻找新的配偶，从而导致关键遗传多样性的缺乏。\n在这项发表于《保护生物学》期刊的研究中，团队调查了中国一个熊猫种群的遗传多样性和分布。研究发现，完全宜居栖息地的理想比例只占一个区域的80%，其余部分要么过于严酷，要么受人类活动影响过大。\n专家得出结论，熊猫的理想状态应当是“快乐到足以茁壮成长，但又不会满足到不想四处走动、寻找新配偶”。\n他们关于《卫报》所称的这一“最佳平衡点”的结论，与所谓的“金发姑娘原则”一致：某样东西可以有恰到好处的量。这一概念已被应用于从发展心理学到经济学和工程学等广泛领域。\n牛津大学保护生物学教授克劳迪奥·西莱罗告诉该报，新发现可能对熊猫保护以外的领域也有意义。\n未参与这项研究的西莱罗说：“大多数吃肉的体型较大的动物都生活在日益分裂的景观中。它们与人类活动的关系的混乱性质，很可能促使更多动物分散或走得更远，并可能带来更大的遗传连通性和更强的种群存续能力。”\n最近一次熊猫数量统计发现，野外还剩1800多只熊猫，这使它们被列入易危物种名单，而非濒危物种。",
+   "questions": [
+    {
+     "stem": "46. What do we learn from new research about pandas?",
+     "answer": "D",
+     "analysis": "首段指出新研究认为熊猫可能因生活过于舒适而灭绝，D 是其同义概括。B 只涉及不寻找新配偶这一机制且表述绝对；A 是环保人士旧观点；C 与原文相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What can we conclude from the new research by scientists at Michigan State University?",
+     "answer": "A",
+     "analysis": "新研究认为适度不适与栖息地分割反而可能有助于保护熊猫，这挑战了环保人士长期以来认为修路建房必然威胁熊猫的看法。B 是旧观点；C、D 在文中无依据或与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is the experts’ conclusion regarding pandas?",
+     "answer": "C",
+     "analysis": "专家结论是熊猫应快乐到足以繁衍，但不能满足到不愿移动寻找新配偶，说明栖息地舒适度直接影响其寻找配偶和基因交流。A 与理想宜居地仅占80%不符；B、D 不是该结论重点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What can we infer from the passage about the Goldilocks principle?",
+     "answer": "B",
+     "analysis": "文中将熊猫保护的“最佳平衡点”与金发姑娘原则相联系，说明该原则同样适用于熊猫保护。A 无中生有；C 是西莱罗对新发现意义的评论；D 将其误解为字面定位地点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can the new findings do according to Professor Sillero?",
+     "answer": "C",
+     "analysis": "西莱罗说新发现可能对熊猫保护之外也有意义，并推及大多数大型食肉动物在破碎景观中的遗传连通和种群存续。A 过于局限于熊猫；B、D 不是他所述重点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "对于那些天生就有天赋的人来说，似乎他们不必真正努力就能出类拔萃。但是，我们这些没有天赋的人又该怎么办呢？我们一生都被教导：只要努力，你也能成功。然而，随着安杰拉·达克沃思《坚毅》一书的出版，我们得到了通往成功的一把新钥匙。\n\n“才能固然重要，努力却重要两倍，”达克沃思在《坚毅》中说。她提出了一个新概念：才能可能被高估了；如果你想获得真正的成功，你需要的是坚毅——激情与坚持的完美结合。即使你有天赋，没有坚毅也毫无价值。\n\n达克沃思说，坚毅是成功与失败的分水岭。有坚毅的人比没有坚毅的人更可能成功。当我们考虑获得成功——无论是得到那份工作还是学习那项新技能——我们的思绪立刻被所有必须先学的东西压得不堪重负。如果你想得到那份新工作，你必须学习工作技能，然后是面试技巧，然后是着装部分——而且你必须在所有方面都做到完美。坚毅则不同，因为它告诉我们，完美并不是目标。\n\n坚毅卸下了我们肩上不合理的期望。坚毅告诉我们，那扇门比我们最初以为的打开得更宽。坚毅让我们重新定义自己的目标。想一想：有什么事是你一直想做，却因为“我没有这方面的技能”而放弃的？有什么事是你热爱却不擅长的？\n\n坚毅真正的作用在于拥有可持续的激情并不断尝试。努力比你的天赋更重要。即使你还没有掌握某项技能，坚毅也告诉你，只要你能把激情转化为行动，你仍然可以成功。在某种程度上，达克沃思给了那些已经关上梦想之门的人新的希望。她在说，你有可能实现任何事。如果一开始你失败了，那就带着坚毅再试一次。",
+   "questions": [
+    {
+     "stem": "51. What does the passage say about people born with natural talents?",
+     "answer": "A",
+     "analysis": "首句说天生有天赋的人“it feels as if they excel without really trying”，即似乎不用真正努力就能胜过他人，A 与之对应。D 的 bound to 和 effortlessly 过于绝对，原文只是“感觉好像”；B、C 在文中没有依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does Duckworth say about talent?",
+     "answer": "C",
+     "analysis": "达克沃思说 talent may be overrated，且 effort counts twice，说明才能在成功中作用相对较小。A 错在“新概念”指 grit，不是 talent；B、D 与原文意思相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does the passage say about people thinking of attaining success?",
+     "answer": "B",
+     "analysis": "文中说考虑成功时，人们会被必须先学的一切压得沉重，并且“must be perfect at all of them”，即被追求完美的期望所累。A 只涉及面试/雇主，片面；C、D 曲解了原文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. How does the author think grit can be helpful to us?",
+     "answer": "D",
+     "analysis": "原文明确说 Grit allows us to redefine our goals，即坚毅让我们重新定义/考虑自己的目标，D 最直接。B 虽与“door is open wider”有关，但不如 D 对应明确；A、C 无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What message does Duckworth try to convey in her book Grit?",
+     "answer": "B",
+     "analysis": "文章结尾说“If at first you fail, then try one more time with grit”，并强调坚毅是 passion 与 persistence 的结合，因此核心信息是面对失败仍要坚持。A 与“perfection isn’t the goal”相悖；C、D 过于绝对且不全面。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:59:57.636Z"
+}

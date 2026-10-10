@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2026,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "With the rapid advancement of artificial intelligence, robots are expected to play an increasingly important role on campus in the near future. From my perspective, their applications will bring greater convenience and efficiency to university life.\n\nTo begin with, service robots can handle repetitive tasks such as delivering books, guiding visitors, and cleaning classrooms. This will free students and staff from tedious work and allow them to focus on study and research. In addition, educational robots may serve as tutors in language labs or engineering workshops, offering personalized practice and immediate feedback. For instance, a robot can help students correct pronunciation or simulate experiments that are too dangerous to conduct in person. Moreover, robots can assist in campus security by patrolling at night and reporting emergencies promptly.\n\nHowever, we should also use them wisely and ensure that technology serves human needs rather than replaces meaningful interaction. In conclusion, future robots will make campuses smarter and more efficient. If properly managed, they will become helpful partners in our academic journey.",
+   "note": "范文紧扣机器人未来校园应用：首段亮观点，中间从服务、教学、安保三方面论证，末段提醒合理使用并总结。可复用句型：be expected to, free sb from, serve as, rather than, If properly managed。结构清晰，词数约169。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "不得重复使用词库中的任何一个词。关于工业革命最大的争议之一，是它如何影响了工人阶级。最早的争论围绕生活水平是上升了还是下降了。认为生活水平下降的人声称，资本家从工人阶级身上榨取了他们所能榨取的每一盎司剩余价值。认为生活水平上升的人则声称，当时的环境对消费者友好，每年都有越来越多的商品可供工人阶级使用。如今的历史学家一致认为，总体而言，生活水平提高了。然而，对于这种改善是何时发生的，他们并未达成一致。为了解决这一争议，历史学家们试图准确定义“生活水平”的含义。他们似乎都同意，它应当指幸福，但幸福无法衡量。于是，历史学家通常用“实际收入”作为衡量生活水平的标准。实际收入是赚到的钱，然后根据生活成本进行调整。然而，它没有考虑到失业、污染、健康、预期寿命或闲暇时间。在对平均收入进行了令人精疲力竭的辩论和分析之后，历史学家们同意在工业革命期间经济增长是快还是慢的问题上保持分歧。相反，他们决定解释工业革命如何受到其他事件的影响。他们认定，工业革命总体上产生了积极影响，但它很可能被战争、高税收和人口快速增长等负面事件所抵消。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "N",
+     "analysis": "句子需要过去式动词，且与 from 搭配，squeeze sth from sb 表示“从某人身上榨取某物”，符合资本家榨取剩余价值的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "A",
+     "analysis": "with 复合结构中 goods 后接形容词，available to sb 表示“可供某人获得/使用”，与每年越来越多商品供工人阶级使用的语义一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "I",
+     "analysis": "主语 standards of living 需要过去式谓语，increase 表示“提高、上升”，与后文 improvement 相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "K",
+     "analysis": "when 引导的从句中 improvement 作主语，occur 表示“发生”，此处需过去式 occurred。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "F",
+     "analysis": "修饰 define 的宾语从句，exactly what...means 表示“准确定义……的含义”，搭配和语义都合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "O",
+     "analysis": "修饰 use，表示“历史学家通常采用……”，符合一般做法或惯例的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "C",
+     "analysis": "money 后需过去分词作后置定语，earned 表示“挣来的钱”，并与后面的 adjusted 构成并列关系。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "修饰 debate，表示“令人筋疲力尽的/耗尽精力的辩论”，符合经过大量辩论与分析的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "J",
+     "analysis": "decide to 后接动词原形，interpret how... 表示“解释/理解……如何……”，符合历史学家试图解释工业革命受其他事件影响的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "D",
+     "analysis": "have a positive effect 是固定搭配，表示“产生积极影响”，effect 作名词，受 positive 修饰。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "There is an old Chinese saying: \"A teacher for one day is a father for life.\" In the Chinese mind, teachers not only impart knowledge but also teach students how to conduct themselves. In ancient times, students held a grand ceremony when they first met their teachers, which shows how highly teachers were regarded. In order to carry forward the fine tradition of respecting teachers, China has designated September 10 as Teachers' Day since 1985. On this day, students express their respect for their teachers in various ways. Respecting teachers is a traditional virtue of the Chinese nation and has been carried forward in today's society.",
+   "note": "难点：①\"一日为师，终身为父\"宜意译，保留\"teacher/father\"对仗；②\"做人\"不能直译作 do people，应为 how to conduct oneself / how to behave；③\"足见\"用 which shows 等定语从句自然衔接；④\"尊师\"译为 respecting teachers，作主语时用动名词；⑤\"1985年开始将……定为\"用 has designated...since 1985 或 began to designate in 1985。",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 我很庆幸自己时差这么严重。凌晨3点半，我和九岁的女儿毫无睡意地坐在小屋阳台上，我凝视了几个小时，那是我见过的最不可思议的夜空。后来黎明渐渐抹去地平线上的星星，多颗流星也渐渐消失。\nB) 我们原计划去新西兰奥克兰参加我妻子大家庭的聚会，但当我们发现离海岸不远的大屏障岛最近被授予暗夜保护区地位时——暗夜保护区通常指偏远、拥有“非凡或卓越的星空质量”的地区——我们觉得那会是忙碌日程前放松的完美之地。它是世界上第一个获此地位的岛屿，也是全球第四个获此地位的地点。\nC) 带着两个晕机的孩子飞了28小时后，看到要载我们飞越豪拉基湾、前往90公里外大屏障岛的那架小型双引擎10座飞机时，我们的心沉了下去。但我们的担心是多余的。不知是飞机爬升时的重力还是引擎的噪音，竟让我们三岁的女儿立刻睡着了，直到我们在克拉里斯机场的草地上颠簸降落才醒来。第一个晕机袋居然没派上用场……情况开始好转。\nD) 大屏障岛没有公共设施，住在岛上的950人（其中只有约一半是常住人口）依靠太阳能、风能和瓶装燃气做饭。这里没有路灯，没有取款机或银行。警察队伍由一对夫妻组成，还有一名邮递员。在这个独特而美丽的地方，令人愉悦的不仅是缺少灯光，还有缺少噪音。这里最早在大约700年前被东波利尼西亚人发现，毛利语中该岛名为奥蒂亚。库克船长给该岛起了欧洲名字，因为它像是太平洋和豪拉基湾之间的一道屏障。\nE) 这里的气候和奥克兰一样是亚热带的。岛上有美丽的荒野、茂密的森林、迷人而未受破坏的沙滩、许多海湾和几片山区；山区里有不错的步道，穿过湿地和山谷。你可以观鸟、潜水、冲浪和划船。最好的海滩在岛东侧，那里的海浪也更好。西侧受遮蔽，是潜水、划船的最佳去处。许多人来这座岛，是为了周边绝佳的钓鱼地点。和在新西兰许多地方一样，这里也有观鲸之旅，你还可能看到鲨鱼。\nF) 很难找到一座真正让人觉得未被发现的小岛——但这里就是。我妻子的一位常来这里的亲戚得知我们去过那里后，半开玩笑地低声对我们说：“嘘——别告诉任何人！”当地人是一群放松而友好的人——很多人告诉我们，这里就像20世纪70年代的怀希基岛（如今实际上已是奥克兰的一个郊区），那时它是一个艺术家和想逃离城市的人聚居的公社。\nG) 我们部分行程的导游是了不起的希尔德·霍文，她是一位暗夜大使，与黛博拉·基尔加伦和奥拉·库米斯基一起经营“Good Heavens”。她们会带着道布森望远镜和豆袋椅（不靠颈托，睁大眼睛惊叹地仰望星空可是件累人的事），而且令我们大女儿高兴的是，无论你在岛上哪里，她们还会带上热巧克力。希尔德在解释该岛如何获得这一特殊地位时说：“奇怪的是，做完光照读数后，他们发现北侧来自约3000公里外斐济的光污染，比南侧来自奥克兰的还多。这里真的很暗！”\nH) 希尔德和奥拉用绿色激光笔开始做天文幻灯片演示，向我们展示了梅西耶4球状星团和白矮星、土星及其光环、南十字座，以及横跨天空的银河。我们的女儿尤其喜欢希尔德用毛伊神钩的毛利神话来解释天蝎座的形状。在这个寓言里，毛伊用他的鱼钩把新西兰北岛从海底钓了上来。\nI) 我们住在圣保罗山庄园，这是一家豪华旅馆，由友好的克里斯和蒂亚拉经营，他们都来自加拿大。蒂亚拉曾是奥克兰朗廷酒店的厨师，所以晚餐——围着一张巨大的圆桌吃（圆桌由世界上最古老的树种之一制成）——完全如你所料的那样令人垂涎。在阳台上一边俯瞰未受破坏的白色沙滩，一边吃煎饼，是开启一天的好方式。\nJ) 另一个亮点是步行一小时前往岛中心的凯托克温泉。我们穿过湿地和森林，在层层精致如伞的植物遮荫下，在温泉池里惬意地泡了足足一个小时。\nK) 我们还很喜欢拜访陶艺家莎拉·哈里森，她带我们参观了她在肖尔湾港口的工作室，以及她制作的许多壶、罐、盘、碗和色彩斑斓的马赛克。她的作品还大量使用海滩上找到的材料。我们的大女儿很喜欢梅德兰兹海滩那个美丽的隐秘水池，那里的水被岩石池与海隔开，像是私人空间。其他亮点还包括古老的波胡图卡瓦树，以及从风峡谷顶部看到的奥基维盆地和旺加普阿海滩的绝美景色；从岛东侧出发，穿过狭窄山谷，爬上一段陡峭的木台阶，只需步行10分钟即可到达。\nL) 据说，岛议会拒绝了著名音乐家保罗·麦卡特尼在大屏障岛购买房产的申请，因为他会带来不受欢迎的关注。你能明白他为什么想来这里；同样，这座岛也清楚自己更喜欢哪一种观星者。",
+   "questions": [
+    {
+     "stem": "36. The author’s daughter slept throughout the last leg of their flight to Great Barrier Island.",
+     "answer": "C",
+     "analysis": "C段提到“it put our three-year-old daughter instantly to sleep until we bumped down on the grass at Claris Airport”，即飞往大屏障岛的最后一段航程中女儿一直睡着。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. The lodge where the author stayed provided very delicious food.",
+     "answer": "I",
+     "analysis": "I段说晚餐“every bit as mouth-watering as you'd expect”，表明作者所住旅馆提供的食物非常美味。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Many people are attracted to Great Barrier Island because of the incredible fishing sites around it.",
+     "answer": "E",
+     "analysis": "E段提到“Lots of people come here for the fantastic fishing spots around the island”，说明许多人因周边绝佳钓鱼地点被吸引而来。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. A well-known artist failed to purchase a house on Great Barrier Island.",
+     "answer": "L",
+     "analysis": "L段提到岛议会拒绝了著名音乐家保罗·麦卡特尼购买房产的申请，对应知名艺人未能在大屏障岛买房。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Unable to fall asleep after a long flight, the author was pleased to enjoy the most gorgeous view of the\nnight sky in his life.",
+     "answer": "A",
+     "analysis": "A段说作者因时差凌晨3:30醒着，并看到“the most incredible night sky I've ever seen”，对应无法入睡却欣赏到一生中最美夜空。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Great Barrier Island is compared to another island which attracted a lot of artists and people who\nwished to stay away from city life half a century ago.",
+     "answer": "F",
+     "analysis": "F段将大屏障岛与20世纪70年代的怀希基岛相比，那时它是艺术家和想逃离城市的人聚居的公社。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. One most memorable part of the author’s visit to Great Barrier Island was a one-hour walk to its\ncentre’s hot springs.",
+     "answer": "J",
+     "analysis": "J段说“Another highlight was an hour-long walk to Kaitoke hot pools in the centre of the island”，对应步行一小时前往岛中心温泉的难忘经历。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Great Barrier Island has officially been recognized for its extraordinary starry nights.",
+     "answer": "B",
+     "analysis": "B段说该岛“had been recently awarded Dark Sky Sanctuary status”，并提到其星空具有“exceptional or distinguished quality”，对应官方认可其非凡星空。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Great Barrier Island is not connected to any public power supply lines.",
+     "answer": "D",
+     "analysis": "D段说居民依靠太阳能、风能和瓶装燃气，且岛上没有公共设施和路灯，表明其未接入公共电力供应线。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. It is strange that light pollution on Great Barrier Island mainly comes from a faraway island to the north.",
+     "answer": "G",
+     "analysis": "G段说“It's odd... more light pollution on the northern side coming from Fiji, which is about 3,000 km away”，对应奇怪的是光污染主要来自北方遥远岛屿。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "有机食品值更高的价格吗？这是超市里经典的两难选择。一方面，你家餐桌只配得上最好的食物。另一方面，你的钱包能承受的有限。是否购买有机食品是个人决定，食品农业学教授迈克·冯·马索说。\n\n科学不会对有机食品是否“更好”这一问题给出明确答案。这里往往存在权衡，而且答案会因所考虑的产品而变得不那么确定。有一件事是确定的：有机食品和常规种植食品同样有营养。从营养角度看，有机产品和传统种植产品之间没有差别。\n\n有机产品不一定杀虫剂更少——事实上，它们可能更多。从食品安全角度看，有机和非有机产品之间也没有很大差别。甚至有机种植者也使用杀虫剂。检测显示，常规种植产品上残留的杀虫剂即使有也极少。事实上，有机农户往往使用更多杀虫剂，因为他们只能使用天然种类的杀虫剂。化学杀虫剂通常比任何单一天然杀虫剂能杀死范围广得多的害虫。\n\n有机农业中使用动物粪便也可能成为大肠杆菌和沙门氏菌等细菌传播的一个因素。过去10年里，按比例算，加拿大有机产品召回的食品安全事件比常规产品更多。\n\n总体而言，有机农业的环境足迹可能更小。这主要是因为有机农业造成地下水污染的风险更低。有机农户从未使用新烟碱类农药，这种有争议的农药被认为与全球蜜蜂数量减少有关。传统农业一直在做出“巨大改进”以减少对环境的影响。不过，这并非非黑即白。\n\n在土地使用方面，有机农业效率低得多，尽管产量因作物不同而差异很大。\n\n另一方面，有机农业的倡导者认为，如果食品行业对有机农业投入的研究和资金与对常规农业一样多，产量和效率可以显著提高。",
+   "questions": [
+    {
+     "stem": "46. What is the classic grocery store dilemma?",
+     "answer": "D",
+     "analysis": "原文说经典困境是一方面餐桌值得最好的，另一方面钱包能力有限，即想要最好食品但预算受限，故选D。A过于笼统，只问是否吃有机；B只提钱包；C的“味道更好”文中未提。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn about organic food from science?",
+     "answer": "A",
+     "analysis": "原文说科学无法明确回答有机食品是否“更好”，且答案会因产品而异，故选A。C与“有机和常规食品同样有营养”相矛盾，B和D文中未提。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the passage say about organic and non-organic products as far as food safety is concerned?",
+     "answer": "D",
+     "analysis": "原文明确说从食品安全角度看，有机和非有机产品没有很大差别，故选D。A、B、C均与原文不符，且文中指出有机种植也使用杀虫剂。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What does the author say about organic farming?",
+     "answer": "C",
+     "analysis": "原文说总体而言有机农业可能环境足迹更小，地下水污染风险更低，故选C。A张冠李戴，与蜜蜂减少相关的是新烟碱类农药，而有机农户从未使用；D与原文相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What do advocates of organic farming argue about its yields and efficiency?",
+     "answer": "B",
+     "analysis": "原文说倡导者认为如果食品业对有机农业投入同样多的研究和资金，产量和效率可显著提高，故选B。A的“新技术”、C的“健康益处”和D的“降低环境成本”都不是该处主张。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "我们从根本上究竟是慷慨还是自私，以及这些倾向是由基因还是环境塑造的，仍然存在争议。\n一些证据表明，人类天生具有合作性。在人生较晚阶段，我们经常共同合作以达成目标，并在需要时提供帮助。\n然而，自私行为的例子也比比皆是。最近一项研究测试了人们为了更大的善而搁置自私利益的意愿。结果发现，自私比合作更有利。然而，这种好处可能是短暂的。另一项研究表明，合作的玩家从长远来看表现更好。\n看来人性同时支持亲社会特征和自私特征。基因研究在识别这些特征的生物学根源方面已取得一些进展。通过比较基因几乎100%相同的同卵双胞胎和基因约有一半相同的异卵双胞胎，研究人员发现了基因影响行为的压倒性证据。在这些双胞胎研究中，例如，同卵和异卵双胞胎会被要求与同伴分一笔钱。此类研究通常还依赖细致的心理评估和DNA分析。\n其他研究则强调特定基因是关键因素。我和同事最近识别出一种与利他行为相关的基因，并发现该基因的一个特定变体与学龄前儿童中更多的自私行为有关。\n根据进化科学家的观点，合作行为可能首先在亲属中进化，以促进其基因谱系的延续。随着社群多样化，相互支持可能扩展到包括没有血缘关系的个体。另一种可能性是，人类合作是为了获得某种优势，比如提升声誉。最后，进化过程发生在群体层面。高度合作的个体组成的群体有更高的生存机会，因为它们能够共同合作，实现合作程度较低的群体无法实现的目标。\n然而，几乎没有一种行为完全由基因决定，即使在同卵双胞胎中也是如此。文化、学校教育和养育方式是合作的重要决定因素。因此，我们合作或自私行为的程度对每个人来说都是独特的，并且取决于多种基因和环境的影响。",
+   "questions": [
+    {
+     "stem": "51. What is the finding of one recent study about being selfish?",
+     "answer": "A",
+     "analysis": "原文说最近一项研究发现自私比合作更有利，但紧接着指出这种好处可能是短暂的，因此A“可能带来短期好处”符合文意。B与原文相反；C不是该研究结论；D说的是另一项关于合作长期表现更好的研究，不能选。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What have researchers found by studying identical and non-identical twins?",
+     "answer": "B",
+     "analysis": "通过比较同卵和异卵双胞胎，研究者发现了基因影响行为的压倒性证据，说明行为在很大程度上受基因特质影响。A与原文所述基因比例相反；C曲解了“在识别生物学根源方面取得进展”；D不是该研究的核心发现。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What did the author and colleagues identify in their recent research?",
+     "answer": "C",
+     "analysis": "原文明确说作者和同事近来识别出一种与利他行为相关的基因，对应C“与利他行为相关的特定基因”。A虽提到学前儿童自私行为，但原文是发现该基因变体与更多自私行为有关，并非识别出“自私行为”；B和D过于宽泛。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What do we learn from evolutionary scientists about cooperative behavior?",
+     "answer": "A",
+     "analysis": "进化科学家认为合作行为可能首先在亲属中进化，以延续基因谱系，因此A“最初可能起源于有血缘关系的个体”正确。B因果颠倒；C不是“建立关系”；D中guarantees过于绝对，原文只说更可能实现目标。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What can we infer from the last paragraph?",
+     "answer": "D",
+     "analysis": "最后一段指出文化、学校教育和养育方式对合作有重要影响，说明合作行为可以通过后天培养，故选D。A无依据；B“天生要么合作要么不合作”与多种因素共同作用的观点相悖；C说基因决定合作倾向，忽略了环境因素。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T15:00:35.303Z"
+}

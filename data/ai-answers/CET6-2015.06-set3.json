@@ -125,48 +125,6 @@
    ]
   },
   {
-   "section": "reading",
-   "seq": 2,
-   "translation": "",
-   "questions": [
-    {
-     "stem": "51. What does the author think of UK universities in terms of commercialisation?",
-     "answer": "A",
-     "analysis": "作者反对“大学商业化不力”的抱怨，指出英国目前在商业化多项指标上领先。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "52. What does the author say about the national data on UK universities’ performance in commercialisation?",
-     "answer": "B",
-     "analysis": "第四段指出全国数据掩盖了各大学表现的巨大差异。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "53. We can infer from Paragraph 5 that “policy interventions”(Line 1, Para. 4) refers to .",
-     "answer": "A",
-     "analysis": "第五段说明政策造成研究资源长期集中，即资源集中在少数大学。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "54. What does the author suggest research-led universities do?",
-     "answer": "A",
-     "analysis": "第六段建议研究主导型大学应最大化研究影响，产生广泛社会、经济和环境效益。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "55.How can the university sector play a key role in the UK’s economic growth?",
-     "answer": "C",
-     "analysis": "末段指出加强区域技术转移协调和研究生院投资可助大学推动经济增长。",
-     "verified": false,
-     "dissent": null
-    }
-   ]
-  },
-  {
    "section": "match",
    "seq": 1,
    "translation": "信用卡“整形术”\n更安全的信用卡是应对日益严重黑客攻击的解决之道。\n\n[A] 一道薄薄的磁条是唯一挡在你的信用卡信息和不法分子之间的屏障，而他们一直在努力攻破它。正因如此，2014年正在成为一场重大对决：银行、执法部门和科技公司都在努力阻止一个黑客网络，这些黑客不断成功窃取账号、姓名、电子邮件地址以及其他用于身份盗窃的关键数据。从去年11月开始，在塔吉特、尼曼·马库斯和迈克尔斯商店发生的最近几次攻击中，有超过1亿个账户受到某种程度的影响。\n[B] “刷卡”是关键词：当你在商店购物时，信用卡越来越容易受到攻击。在最近几起事件中，黑客利用恶意软件偷偷插入零售商的销售终端系统——即结账收银机——获取了大量信用卡、借记卡或预付卡号码信息。随后，黑客将这些数据出售给在网络阴暗角落活动的第二拨犯罪分子。不久之后，被盗数据就出现在伪造卡上，并被用于网上购物。\n[C] 解决方案每张塑料卡只需多花2美元。这种补救措施是在美国以外广泛使用的一种安全技术。美国的信用卡使用已有40年历史的磁条技术处理交易，而世界其他大部分地区则使用更智能的卡，采用EMV（Europay、MasterCard、Visa的缩写）技术，该技术在卡中嵌入芯片，并要求客户输入PIN（个人识别码）以当场验证每笔交易。如果购买者在结账时未能输入正确的PIN，交易就会被拒绝。（网上购物可以通过设置单独的交易码来进行。）\n[D] 为什么大银行没有采用更安全的技术？行业通讯《尼尔森报告》的负责人戴维·罗伯逊说，说到邮寄新信用卡，一切都是相对成本的问题。“制卡、贴标签、编码账号和有效期、凸印、小信封——全部加在一起，成本在1美元左右。”罗伯逊说，目前一张芯片加PIN卡的成本接近3美元，因为芯片价格高。（一旦大型发卡机构一起转换，芯片成本应该会下降。）\n[E] 将3美元乘以美国流通中的50多亿张磁条信用卡和预付卡。然后考虑罗伯逊说的全球范围内估计有124亿美元的信用卡欺诈，其中44%发生在美国。美国信用卡欺诈每年约55亿美元。发卡机构迄今计算，即使是像塔吉特这样的大规模黑客攻击，承担其赔偿责任仍比更换所有塑料卡便宜。\n[F] 这使得美国零售商在世界上几乎是唯一依赖磁条技术来收取购物款的——也使得消费者容易受害。支付安全专家、电子支付公司Credit Call的首席技术官杰里米·冈布利解释说，每条磁条有三条信息轨道。第一条和第三条由银行或发卡机构使用。你的重要账户信息位于第二条轨道上，黑客试图捕获的就是它。“恶意软件实时扫描内存并寻找数据，”他说，“它创建一个文本文件，然后被盗走。”\n[G] 相比之下，芯片加PIN卡使伪造卡或侧录不可能，因为被扫描的信息是加密的。颇具讽刺意味的是，美国坚持使用磁条的历史原因，竟是曾经优越的技术。我们廉价、超可靠的有线网络使通过电话进行信用卡认证毫无障碍。在法国，卡公司创造EMV的部分原因是电话垄断企业效率极低且费用高昂。EMV解决方案允许交易在当地安全地验证。\n[H] 一些大银行，如富国银行，现在提供将你的磁条卡转换为芯片加PIN卡的服务。（实际上是一种混合体，仍然带有磁条，因为大多数美国商户没有EMV终端。）你应该接受吗？如果你出国旅行，答案是肯定的。\n[I] 还要记住，信用卡通常比借记卡有更好的责任保护。如果有人冒用你的信用卡，承担责任的是发卡机构或商户，而不是你。借记卡的责任限额因银行和欺诈相关情况而异。CreditCardInsider.com的联合创始人埃里克·阿达莫斯基说：“如果可行，合乎逻辑的做法是从银行获取一张芯片加PIN卡。”“由于责任问题，我会使用信用卡而不是借记卡。”现金也仍然很好用。\n[J] 零售商和银行都能从芯片加PIN卡较低欺诈率中受益，但多年来一直不愿投资于该技术所需的新基础设施，尤其是如果消费者还没有这种卡。这是一个先有鸡还是先有蛋的问题：如果购物者不携带芯片卡，没有人愿意花钱升级能读取芯片卡的销售终端系统——而如果商店不配备使用，消费者携带高级塑料卡也没什么意义。（塔吉特早先转向芯片加PIN的努力没有取得进展。）据冈布利说，存在一种“你先请”的心态。“僵局必须被打破。”\n[K] 摩根大通首席执行官杰米·戴蒙最近表示愿意这样做，并指出银行和商户在过去十年里一直在就交换费——他们从交易价格中保留的百分比——互相起诉，而不是应对日益严重的黑客问题。大通银行以自己的品牌提供芯片卡，并为英国航空和丽思卡尔顿等旅游相关公司提供其他几种芯片卡。\n[L] 塔吉特和尼曼的黑客事件也改变了成本计算：虽然零售商一直不愿花费凯捷咨询估计的67.5亿美元将所有收银机转换为兼容芯片加PIN，但他们现在面临的潜在责任要大得多。塔吉特已遭到被黑消费者的集体诉讼。一家知名连锁店的一位零售高管向《时代》承认：“这是终极噩梦。”\n[M] 卡支付公司万事达和维萨正在大力推动变革。这两家公司已警告交易链中的所有各方——商户、网络、银行——如果他们在2015年10月之前不符合EMV标准，合规性最差的一方将承担欺诈风险。\n[N] 与此同时，配备应用程序的智能手机和数字钱包——它们都可以使用EMV技术——开始侵蚀卡和现金的地盘。例如，PayPal正在测试一款应用程序，让你可以在当地商户通过手机即时支付，而无需向他们交出任何卡信息。更远的未来还有生物识别认证，比如可以用指纹加密。\n[O] 不过，在可预见的未来，信用卡和借记卡仍将与我们同在，如果我们坚持磁条技术，黑客也会。英国人冈布利说：“在我看来，一个尖端科技国家依赖一项已有40年历史的技术，这太疯狂了。”正因如此，推动芯片加PIN的进展可能要靠消费者。罗伯逊说：“当你让消费者陷入担忧和不便的境地时，事情就会真正见分晓。”",
@@ -258,7 +216,49 @@
    "reference": "Traditional Chinese hospitality requires that the food served be rich and varied, leaving guests unable to finish it all. A typical Chinese banquet menu consists of an opening set of cold dishes followed by hot dishes, such as meat, chicken, duck, and vegetables. At most banquets, a whole fish is considered indispensable unless a variety of seafood has already been served. Nowadays, Chinese people like to combine Western specialties with traditional Chinese dishes at the same banquet, so it is not uncommon for steak to be served. Salads have also gained popularity, even though traditionally Chinese people generally do not eat any uncooked dishes. A banquet usually includes at least one soup, which can be served either first or last. Desserts and fruit usually mark the end of the banquet.",
    "note": "难点：待客之道、开席凉菜、必不可少、融于一席、未经烹饪等表达；需使用indispensable、not uncommon等地道搭配，注意主谓一致和整体流畅。",
    "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "英国大学界经常受到的一个批评是，人们认为它在将新知识转化为新产品和服务方面存在不足。\n\n最近，英国国家干细胞网络警告说，除非能确保充足的资金和立法，否则英国可能失去在干细胞研究领域世界领先的地位。我们应当认真对待这一担忧，因为大学是国家创新体系中的关键。\n\n然而，我们必须质疑那种不加思考的抱怨，即认为该领域在将想法推向市场方面做得不够。关于澳大利亚、加拿大、美国和英国大学及研究机构表现的最新比较数据表明，英国虽然起步相对较弱，但如今在许多商业化活动指标上处于领先地位。\n\n从国家层面看，过去十年的政策干预帮助改变了英国大学的表现。有证据表明，英国的状况比不久前强得多，而且仍在改善。但全国性数据掩盖了各所大学之间表现上的巨大差异。证据显示，许多大学已经掉队，少数大学表现强劲，其余大学则在追赶领先者。\n\n这种不均衡分布并非英国独有，在其他经济体中也能看到类似情况。在英国，研究资源高度集中：不到25%的大学获得了75%的研究经费。这些大学同时也是培养最多博士毕业生、产生最多科学引用、专利和许可收入最多的机构。那些造成长期资源集中的政策，还催生了一批独特的大学，它们以研究为主导并在商业上十分活跃。显然，研究和商业化工作的集中造成了大学之间的差异。\n\n以研究为主导的大学，其核心目标必须是使其研究努力的影响最大化。这些大学应当创造尽可能广泛的社会、经济和环境效益。作为对其所获大规模投资的回报，它们应当分享自身专业知识，以增强整个领域的信心。\n\n英国经济复苏的一部分将由我们大学中涌现的下一代研究商业化成果推动。英国有36所大学积极参与高级研究培训和商业化工作。\n\n如果各地区内的技术转移办公室能更好地协调，同时对我们研究生院的规模和职能进行投入，那么大学就能够而且应当在为英国下一轮增长周期定位中发挥关键作用。",
+   "questions": [
+    {
+     "stem": "51. What does the author think of UK universities in terms of commercialisation?",
+     "answer": "A",
+     "analysis": "正确项A。第三段明确说，最新比较数据显示英国从相对较弱起点起步，如今在许多商业化活动指标上领先，说明作者肯定英国大学的商业化表现。B与“now leads”相矛盾；C文中未提大学不把商业化视为责任；D恰是作者要反驳的“不能将知识转化为金钱”的偏见。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does the author say about the national data on UK universities’ performance in commercialisation?",
+     "answer": "B",
+     "analysis": "正确项B。第四段说全国性数据掩盖了各所大学在表现上的巨大差异，因此它不能反映大学之间的差别。A“致命政策弱点”、C“排名不科学”、D“资源使用低效”均未在文中出现或无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. We can infer from Paragraph 5 that “policy interventions”(Line 1, Para. 4) refers to .",
+     "answer": "A",
+     "analysis": "正确项A。第五段承接前文“policy interventions”，指出英国研究经费高度集中，不到25%的大学获得75%的经费，并提到长期资源集中政策的影响。B强制校企合作、C援助非研究型大学、D公平分配经费均与原文相反或无据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author suggest research-led universities do?",
+     "answer": "A",
+     "analysis": "正确项A。第六段指出研究型大学的核心目标是最大化研究影响，产生最广泛的社会、经济和环境效益，即充分利用研究造福社会各部门。B原文是分享专业知识而非设施，C、D均未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55.How can the university sector play a key role in the UK’s economic growth?",
+     "answer": "C",
+     "analysis": "正确项C。末段提出，若加强区域内技术转移办公室的协调并同时投资研究生院的规模和职能，大学便能在下一增长周期发挥关键作用，对应“促进技术转移和研究生教育”。A错在原文是加强协调而非建立更多办公室；B错在投资对象是研究生院；D的“提高效率”未提。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:16:37.552Z"
+ "generatedAt": "2026-10-10T14:22:34.315Z"
 }

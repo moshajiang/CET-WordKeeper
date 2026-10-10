@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2024,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "With the rapid development of e-commerce, China's express delivery industry has witnessed remarkable growth in recent years. According to recent surveys, the number of parcels delivered annually has ranked first in the world, and services now reach not only big cities but also remote villages. This progress has brought significant changes to people's lives.\n\nOn the one hand, express delivery makes shopping more convenient and efficient. People can buy goods from all over the country and receive them within a few days, which saves time and broadens choices. On the other hand, it promotes employment and small businesses, especially in rural areas, where farmers can sell local products online. However, problems such as excessive packaging and delayed delivery still exist.\n\nIn my opinion, the express delivery industry has greatly improved our quality of life. With better regulations and green technology, it will continue to benefit society in a sustainable way.",
+   "note": "范文紧扣“快递业发展及影响”调查主题：开头用数据引出快速发展，主体从便利生活、促进就业与农村电商、现存问题三方面论证，结尾表明观点并展望。结构为总—分—总。可复用句型：With the rapid development of..., ... has witnessed...；On the one hand... On the other hand...；In my opinion, ... has greatly improved...；With better..., it will continue to...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "2019年托尼·莫里森去世时，世界失去了一位最具影响力的作家。但莫里森并不是早年就功成名就。她的第一部小说直到39岁才出版，最后一部小说在她84岁时问世。在这方面，莫里森并非个例。许多作家在70多岁甚至更年长时仍能创作出杰作。这类文学成就凸显了一个重要观点。我们说话、写作和学习新词汇的能力似乎不会随年龄而退化。我们的视力可能变差，记忆力可能减弱，但相比之下，我们产出和理解语言的能力在步入老年后仍保持良好。事实上，关于语言与衰老的最新研究表明，语言掌握是我们从婴儿期开始并持续一生的旅程。我们语言能力的某些方面，比如对词义的了解，实际上在中老年期还会提高。例如，一项研究发现，60岁以上的成年人平均词汇量超过21,000个词。研究人员还研究了一组大学生样本，发现他们的平均词汇量约为16,000个词。在另一项研究中，平均年龄75岁的老年人，在要求判断词义的任务上，比青年或中年参与者表现更好。因此，与许多人的设想相反，语言似乎是一种不会随年龄增长而减弱的技能。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "N",
+     "analysis": "be not unique in this regard 表示“在这方面并非独一无二/并非个例”；后文说 Numerous writers... 说明莫里森不是唯一大器晚成的人，故选 unique。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "修饰 accomplishments，指前文作家晚年创作杰作这类“文学上的”成就；literary accomplishments 搭配自然，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "deteriorate with age 表示“随年龄退化/恶化”；本句说语言能力似乎不会随年龄退化，与后文“保持良好”形成呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "E",
+     "analysis": "与 produce 并列，构成“产出和理解语言”的能力；comprehend language 表示“理解语言”，符合语言能力语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "H",
+     "analysis": "a journey that we begin as infants and continue on for the rest of our lives 中 begin、continue 与 journey 搭配自然，表示持续一生的过程。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "A",
+     "analysis": "此处表示“实际上”，强调词义知识在中老年期不但不衰退，反而会提高，带有转折和出乎意料的意味。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "L",
+     "analysis": "a sample of college students 是固定搭配，表示“一组大学生样本”，符合研究语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "B",
+     "analysis": "修饰数字 16,000 words，表示“大约”；与前文 over 21,000 words 形成对照，均说明词汇量估计值。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "J",
+     "analysis": "perform better on tasks 是固定搭配，表示“在任务中表现更好”；主语 older adults 与 performed better than 搭配恰当。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "C",
+     "analysis": "contrary to what many might assume 表示“与许多人可能以为的相反”；assume 在此意为“认为、假定”，符合句意。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "为什么把工作与生活的平衡视为一种成就是错误的\n\nA) 很少有话题像工作与生活的平衡这样被无休止地分析。多年来，追求这种神秘状态主导了关于职业的讨论——尤其对在职父母而言。这一概念常被呈现为某种要实现的东西，或一个要达到的目标。一旦你达到了，恭喜：你成功了；你是21世纪的成功人士。\n\nB) 但问题在于，我们常对自己说：“我要投入八小时的工作，然后投入八小时的‘我的时间’，包括家人、爱好、健身、我的一切，”纽约大学管理学临床副教授阿纳特·莱赫纳说。“我不认为这是如此简单的公式。”\n\nC) 而且，根据新的研究结果，它可能并非如此。一些研究者现在鼓励我们停止把工作与生活的平衡看作一种要么达到要么达不到的成就。相反，他们认为这更像是一个终身过程——一种持续的、永无止境的练习，需要自我意识和及时调整。研究者 Ioana Lupu 和 Mayra Ruiz-Castro 认为工作与生活的平衡“是一个循环，而不是一项成就”。在她们2020年的研究中，研究者采访了伦敦两家公司的近80名员工——男女人数相等，年龄在30至50岁之间，都至少有一个受抚养子女——担任中层或高层管理职位。\n\nD) 尽管听起来受访者有很多共同点，但以下这点将他们区分开来：约30%的男性和50%的女性报告说他们抵制长时间工作。与此同时，其他受访者都长时间工作，因为他们认为成功专业人士就该这样做。\n\nE) Lupu 和 Ruiz-Castro 观察了那些拒绝长时间工作的人，发现这些员工实际上有着惊人相似的维持工作与生活平衡的策略。他们倾向于以自我意识之名反思和质疑假设，并定期采取措施调整阻碍他们实现工作与生活平衡的因素。\n\nF) Lupu 和 Ruiz-Castro 确定了研究中工作与生活平衡更好的受访者在工作中使用的五个步骤。首先，他们暂停并重新思考诸如“我是专业人士，所以我应该工作、工作、工作”这样的信念，并问自己“目前是什么让我感到压力？”之类的问题。第二，在找出原因后，他们聚焦于由此产生的情绪。他们感到愤怒、悲伤、精力充沛吗？第三，他们重新排列优先顺序，例如问“长时间工作真的值得削减家庭时间吗？”第四，他们考虑替代方案：工作中是否有什么可以改变，以容纳这些新的优先事项？最后，他们实施改变，比如请求主管给予更大灵活性，或决定不承接每一个交给他们的项目。\n\nG) 这个五步过程任何人都可以采用。经历这些步骤，并不断自我检查，可以帮助你转变和调整职业生活，使其与个人生活更好地协调。“觉察自己的情绪状态对于确定你想在工作和生活中做出的改变至关重要，”Lupu 说。\n\nH) 纽约大学的 Lechner 也同意，找到这种平衡是一种持续的追求。它不仅仅是把一天的时间分配给工作、健身房、孩子和家务。如果压力的潜在情绪来源仍然存在，那么你实际待在家里的时间可能并不愉快。“我们回到家，即使身体在那里，精神上可能仍在处理工作中发生的事情。我们并未在场，”她说。我们所谓的“工作与生活的平衡”实际上只是获得满足感和幸福感的一种替代品。\n\nI) 当然，找到这种平衡可能不应该是一件你必须独自完成的事情。麻省理工学院工作与组织研究教授 Erin Kelly 的研究表明，公司和管理者可以在为员工创造更好环境方面发挥关键作用。为写她的书《超负荷：好工作如何变坏以及该怎么办》，她和合著者 Phyllis Moen 将一家《财富》500强公司的1000多名员工分成两组，一组在管理重新设计下工作，另一组继续在现有管理结构下工作。\n\nJ) 在管理重新设计下，采取了许多措施来确保更好的工作与生活平衡并防止精疲力竭。管理者被定期提醒要明确支持员工。员工被允许做出改变，比如取消上午9点的会议。所有这些都是为了提高工作满意度、给予员工更大灵活性，并向员工保证管理层对此有所承诺。不出所料，Kelly 和 Moen 发现，重新设计组的员工报告的压力和精疲力竭更少。他们更不可能辞职；事实上，在接下来的四年里，他们辞职的可能性比那些继续在旧政策下工作的人低40%。\n\nK) “工作与生活的平衡被理解为个人的反应，所以人们认为‘管理我工作生活的疯狂是我自己的责任’，”Kelly 说。但组织需要审视他们施加给员工的要求。“根本问题不是工作和生活这两部分如何结合在一起。而是我们对工作方面被要求做的事情抱有不切实际的期望。”如果你的工作场所从一开始就不是一个可能实现工作与生活平衡的环境，那么你在个人层面为此所做的任何努力都将是徒劳的。\n\nL) 这是一场似乎正在加速的对话。远程和灵活工作模式的新流行很可能都在我们如何平衡职业与个人生活方面发挥重要作用。如果找到完美平衡似乎仍然很难实现，专家们说，保持一些视角会有所帮助。对数百万人来说，工作关乎能否把食物摆上餐桌。谈论工作与生活的平衡“是一种非常特权化的对话”，Lechner 说。“如果我们正在反思，也许我们也应该反思这一点。”",
+   "questions": [
+    {
+     "stem": "36. According to a management expert, work-life balance is not as simple as giving equal amounts of time to work and\npersonal life.",
+     "answer": "B",
+     "analysis": "依据：B段中纽约大学管理学专家 Anat Lechner 指出，八小时工作加八小时个人时间并不是“如此简单的公式”，说明工作与生活平衡不等于简单平均分配时间。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Research found that those who are given greater flexibility at work are less stressed and more likely to stay in their jobs.",
+     "answer": "J",
+     "analysis": "依据：J段提到在管理重新设计下，员工获得更大灵活性；Kelly 和 Moen 发现这些员工压力更小、倦怠更少，且四年内离职可能性低40%，对应“压力更小、更可能留任”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Workers who rejected working long hours tended to make regular adjustments in order to achieve work-life balance.",
+     "answer": "E",
+     "analysis": "依据：E段说那些拒绝长时间工作的人有相似策略，会反思、质疑假设，并定期采取措施调整阻碍工作与生活平衡的因素。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Talking about work-life balance is said to be a privilege reserved for the better-off, not for those who barely make a living.",
+     "answer": "L",
+     "analysis": "依据：L段说对数百万人来说工作是为了养家糊口，谈论工作与生活平衡是“非常特权化的对话”，对应这是较富裕者的特权。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Knowing one’s emotional state is of utmost importance in deciding what changes to make for a better work-life balance.",
+     "answer": "G",
+     "analysis": "依据：G段中 Lupu 说“觉察自己的情绪状态对于确定你想在工作和生活中做出的改变至关重要”，对应了解情绪状态对做出改变最重要。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. More female professionals reported being reluctant to work overtime than their male counterparts.",
+     "answer": "D",
+     "analysis": "依据：D段指出约30%的男性和50%的女性报告抵制长时间工作，说明更多女性专业人士不愿加班。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Without organisational support, any personal effort to maintain work-life balance will be unsuccessful.",
+     "answer": "K",
+     "analysis": "依据：K段末句说如果工作场所从一开始就无法实现工作与生活平衡，那么个人层面的任何努力都将是徒劳的，对应没有组织支持则个人努力不会成功。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The question of how to achieve work-life balance has long been the main subject of discussion among workers.",
+     "answer": "A",
+     "analysis": "依据：A段开头说很少有话题像工作与生活的平衡这样被无休止分析，追求这种状态多年来主导了关于职业的讨论。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. You may not actually experience emotional wellbeing at home if you remain occupied with what happened at work.",
+     "answer": "H",
+     "analysis": "依据：H段说即使身体回到家，精神上可能仍在处理工作中发生的事情；如果压力的情绪来源仍在，待在家里的时间可能并不愉快，对应在家也未必有情绪上的安宁。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Some researchers suggest that work-life balance is not a goal to achieve, but a process for life to be adjusted promptly.",
+     "answer": "C",
+     "analysis": "依据：C段说研究者鼓励不要再把工作与生活平衡看作一种成就，而认为它更像终身过程，需要自我意识和及时调整。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The Chinese government attaches great importance to environmental protection. In recent years, China has achieved remarkable results in reducing air, water and soil pollution. In order to continuously improve people's living environment, China has taken a series of effective measures, including vigorously developing clean energy, improving public transportation, promoting shared bicycles, and implementing garbage sorting. Through these measures, China's cities and rural areas are becoming greener and more beautiful. China has also actively participated in international cooperation and made important contributions to global environmental protection.",
+   "note": "难点在时政表达与排比处理：“十分重视”译为 attach great importance to；“显著成效”用 remarkable results；“绿起来、美起来”处理为 becoming greener and more beautiful；四项措施用 including 后接动名词并列，保持结构一致。垃圾分类可译 garbage sorting 或 waste classification。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "人类与自然联系的减弱或许有利于经济增长，但对人不利。2020年出现了一个临界点：人造材料——如钢、混凝土和塑料——的总重量被发现已超过地球上所有生命的总重量。继续建造混凝土森林而非真正的森林是短视的。仅仅身处最近的树林中就有如此多的健康益处，以至于林地信托基金会成功游说，让医生可以将其作为处方开具。\n然而，自然界的奇妙与美丽正在从流行文化中悄然消失。研究人员发现，20世纪50年代的热门歌曲中每出现三个与自然相关的词，50年后就只剩下略多于一个。鉴于几十年来孩子们能叫出的电子游戏角色名字比野生动物物种还多，青少年即将能够参加自然历史考试，这一举措来得正是时候。\n治疗这种社会病症的部分办法，是议会通过一项“种植权”法律，允许任何人将未充分利用的公共空间变成蔬菜和水果园。其理念是让人们重新接触土壤——同时以可持续的方式生产食物。\n种植蔬菜有着可敬的传统。1649年4月，当地人为应对高物价和食物短缺，在英格兰南部的公地上种植蔬菜。向空地投掷种子炸弹以使其变绿的做法在20世纪70年代的纽约兴起，如今又被有园艺才能的社交媒体影响者复兴，他们在与美国地方法规抗争，向城市中的丑陋角落宣战。\n除了为越来越多买不起健康营养食物的人提供这类食物这一紧迫任务之外，公共可进入的果蔬园还将我们吃的东西与其来源——可以说是生产方式——联系起来。它们能让不美的空间变美，实现实用与美观的结合，并有助于促进社区意识。当然，植物也是我们抵御物种丧失和气候变化的第一道防线。这样的种植对人类而言是一小步——却是朝着正确方向的一步。",
+   "questions": [
+    {
+     "stem": "46. What does the author want to emphasize in the first paragraph?",
+     "answer": "C",
+     "analysis": "首段指出人类与自然联系减弱也许有利于经济增长，但对人不利，并说继续建造混凝土森林而非真正森林是短视的，因此作者强调削弱人与自然联系是不明智的。A只是2020年这一细节，B、D均未准确概括首段主旨。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What did researchers find about popular culture?",
+     "answer": "A",
+     "analysis": "研究人员发现，20世纪50年代热门歌曲中与自然相关的词较多，50年后大幅减少，说明流行文化日益脱离自然世界。B说的是儿童能记住电子游戏角色，C、D在文中均无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does the author propose people do?",
+     "answer": "B",
+     "analysis": "作者提议议会通过“种植权”法律，允许人们把闲置公共空间变成蔬果园，目的是让人们重新接触土壤、回归自然。A、C不是作者的核心提议，D没有体现“种植权”和重新与自然建立联系这一重点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn from the passage about vegetable planting?",
+     "answer": "C",
+     "analysis": "文中提到1649年人们为应对食物短缺在公地种菜，20世纪70年代纽约又用种子炸弹绿化空地，说明蔬菜种植长期被用来增加食物供应并改善城市景观。A“始于1649年”过于绝对，B与文中“违反美国法规”矛盾，D“全世界流行”未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can publicly accessible fruit and vegetable gardens do apart from their practical functions?",
+     "answer": "D",
+     "analysis": "末段指出，除了提供健康营养这一实际功能外，公共果蔬园还能连接食物与来源、美化空间，并有助于促进社区意识。D“增强社区精神”与此一致；A、B、C均不是文中所述“实际功能之外”的作用。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "美国的工程行业长期以来一直是男性主导的职业。五十年前，情况看起来似乎可能会有所改变。1970年，主修工程的女性比例不到1%。1979年，这一数字为9%。许多人曾希望女性会继续以同样的速度进入这一领域。但事实并非如此。如今，只有21%的工程专业学生是女性，这一数字自2000年以来基本没有变化。\n\n我是一名历史学家，我和同事调查了251位在20世纪70年代大学毕业的女性工程师。这些先驱者回顾了她们所面临的挑战——并为今天进入这一领域的女性提供了建议。\n\n一位受访者解释说：“对我来说最大的挑战是继续相信自己，而我当时接收到的所有信息都是：我永远不会被认真对待，不会像男性那样获得晋升或加薪，而那些男性显然资历不如我，也不如我聪明。”\n\n一位在制造业工作的化学工程师表示赞同：“就因为你是女性，你就必须证明自己。而且你必须付出双倍的努力！”\n\n一位土木工程师说：“我们是‘女工程师’。人们不会把男性称为‘男工程师’——他就是工程师。我们不断被提醒，我们并不真正属于这里。”另一位土木工程师说：“在很多层面上，你永远都不完全算是他们中的一员。”\n\n女性还谈到了家庭照护责任。一家大型化工公司的退休副总裁说：“年轻的女工程师在生孩子之前是处于平等地位的，之后她们就要努力平衡工作和家庭——还要与那些没有同样家庭责任的男性竞争。”\n\n但多年来，情况已经发生了很大变化。年轻的女工程师更容易被接受，主要是因为她们的人数更多了。许多女工程师对她们所选职业带来的好处表示赞赏。一位制造业的项目经理说，工程学是最好的学位。一位机械工程师说：“它会给你几乎可以做任何事情的灵活性。看到自己所做之事的成效也令人满足。”",
+   "questions": [
+    {
+     "stem": "51. What does the passage say about the engineering profession in the United States?",
+     "answer": "B",
+     "analysis": "文章开篇指出工程长期是男性主导的职业，并给出女性比例由1970年不足1%升至1979年9%、如今21%的数据，说明男性主导地位在逐渐削弱，故C正确。A与原文“自2000年以来基本没有变化”相矛盾；B只截取70年代的增长而忽略其后停滞，且文章主旨是变化有限；D把2000年的数据曲解为工程专业人数最多。",
+     "verified": false,
+     "dissent": "B"
+    },
+    {
+     "stem": "52. What does one survey taker say was her greatest challenge?",
+     "answer": "D",
+     "analysis": "受访者说最大挑战是“继续相信自己”，而周围传递的信息都是她不会被认真对待、不会像男性那样晋升加薪，即在不被鼓励和受不公平对待时仍要保持自信，故D正确。A与原文“那些男性明显不如我”意思相反；B、C均曲解了原句中“messages”与“taken seriously”的含义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. How do women engineers frequently feel according to the two civil engineers?",
+     "answer": "B",
+     "analysis": "两位土木工程师说“我们不断被提醒并不真正属于这里”“你永远不完全算是他们中的一员”，即感到被排斥在群体之外，故B正确。A“不合格”是对“don't truly belong”的曲解；C“被组织过度压榨”和D“被男同事看不起”文中均无依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What probably makes young women engineers more accepted nowadays?",
+     "answer": "D",
+     "analysis": "原文明确指出年轻女工程师更被接受“mostly because there are just more of them”，即人数增多，故D正确。A、B、C分别偷换了“平等地位”“平衡工作与家庭”“责任变化”等文中其他内容，均非更被接受的原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What can we conclude about many female engineers from the statement of a mechanical engineer?",
+     "answer": "A",
+     "analysis": "那位机械工程师说工程学位能带来做几乎任何事的灵活性，并说看到自己工作成果令人满足，可见她对所选职业充满自豪，故A正确。B把“灵活性”误解为她们已从中获益；C把“最好的学位”曲解为“把工程做到最好”；D把“做任何事的灵活性”误读为“已证明能做任何事”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:59:55.643Z"
+}

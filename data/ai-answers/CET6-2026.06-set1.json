@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2026,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Faced with growing globalization, students realize that a deep understanding of traditional Chinese culture helps cultivate cultural confidence. This confidence is not blind pride, but a firm belief in the value of our own heritage. When students learn classical poetry, calligraphy, or the wisdom of Confucius, they come to appreciate the unique spirit of Chinese civilization. Such knowledge also enables them to introduce China to the world in a confident and clear voice. For instance, a student who understands the Spring Festival can better explain its family reunion and hope for renewal to foreign friends. Moreover, cultural confidence encourages mutual respect rather than cultural superiority. It helps young people absorb advanced foreign ideas while preserving their own roots. Therefore, learning traditional culture should be an essential part of education. Only in this way can students stand firmly in a globalized world and ultimately contribute to a more harmonious and peaceful global community.",
+   "note": "范文首句照抄题目，直接扣住“传统文化—文化自信—全球化”逻辑。主体先释义文化自信，再以古诗、书法、春节为例论证，最后提出教育建议并总结。结构为观点—例证—结论。可复用句型：This confidence is not...but...；Such knowledge enables sb. to do...；For instance...；Only in this way can...。约150词，符合要求。",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "两项提案已提交州议会，旨在对持续上涨的房租价格加以限制。一些议员表示，房租上涨正在推高无家可归率。\n这些提案对房租上涨设定了上限，在多数情况下禁止该州房东将租金涨幅提高到超过通胀率的水平。对于房龄不足10年的建筑、公共住房、超出日常维护的改善以及经济困难豁免，则存在例外。\n在2020年的一项研究中，美国政府问责局的研究人员估计，房租每上涨100美元，就与无家可归率上升9%相关。房租上涨对某些人口群体，例如少数族裔，有更不利的影响。\n众议员亚历克斯·拉梅尔解释了他为何认为这类立法如此重要，并讲述了一位在社区中艰难生活的选民的故事。\n拉梅尔指出了两位数房租上涨的毁灭性影响，并说他在与贝灵厄姆一位年轻男子交谈时决定提出这项立法。“他刚从西华盛顿大学毕业，刚找到一份新工作，”拉梅尔说。“他正要离开我们社区，因为他的房东通知他，他的房租每月要上涨600美元。”\n华盛顿租房住房协会反对这项立法。该协会断言，这项政策实际上不会解决租金价格问题。相反，它会惩罚小房东，并让富裕的租房者轻易获得廉价住房。\n“租金管制政策在本县所有实施过的地方都失败了。它没有在任何地方解决一个住房问题。而且在决定谁从租金管制中受益时，它也不区分穷人和富人，”租房住房联盟的切斯特·鲍德温说。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "J",
+     "analysis": "主语 proposals 为复数，impose caps on... 是固定搭配，意为“对……设限”，符合提案限制租金上涨的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "hardship exemption 是固定搭配，意为“经济困难豁免”；此处与 exceptions 并列，需填名词。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "be correlated to 是固定搭配，表示“与……相关”；句中指房租每涨100美元与无家可归率上升9%相关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "constituent 可指议员选区的选民或居民；与 Representative 以及“在社区中艰难生活”的语境相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "F",
+     "analysis": "devastating effect 表示“毁灭性影响”，修饰双位数房租上涨带来的严重后果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "K",
+     "analysis": "notify sb. that... 表示“通知某人……”，此处为过去时，与房东告知涨租的语境一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "B",
+     "analysis": "主语 The association 为第三人称单数，asserts that... 表示“断言/声称”，符合协会反对立法的立场。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "has been enacted 为现在完成时被动语态，表示政策“已被颁布/实施”，符合“在各地实施过”的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "否定句 not fixed... anywhere 表示“没有在任何地方解决”，anywhere 用于否定句，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "E",
+     "analysis": "when 后接动名词 determining，表示“在决定……时”，与 distinguish between rich and poor 搭配合理。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "遇见那些环游世界寻找高速 Wi-Fi 的“数字游民”\nA) 对“世界公民”而言，由于远程工作日益普及，办公室可以是任何地方，从布里斯班的海滩小屋到西雅图的星巴克。但从一个咖啡馆到另一个咖啡馆地漫游全球，并非没有挑战。\nB) 当普通旅行者抵达曼谷、柏林或布宜诺斯艾利斯这样的城市时，他们的第一步可能是把行李丢在酒店，然后登录 TripAdvisor，查一个热门旅游景点的开放时间，或最适合去喝“快乐时光”的酒的最佳屋顶酒吧。\nC) 但像皮特·莱弗尔斯这样的人并非普通旅行者。作为一名荷兰网站开发者，莱弗尔斯已在新加坡、香港、东京和马尼拉等地以游牧方式生活和工作了两年。他只带一个随身背包，随心所欲地选择地点，依据的是多种因素——Wi-Fi 速度、平均气温、异国美食和生活成本——而这些与他实际所做的工作几乎无关。\nD) 在他游牧旅程的某个阶段，莱弗尔斯注意到，为自己这样的人创建在线基础设施的需求日益增长。于是他创建了 #nomads，一个基于会员制的聊天系统，运行在名为 Slack 的团队沟通平台上。该频道让用户可以向当前所在城市的人询问那些游客不太可能需要问的实用问题。\nE) 莱弗尔斯所属的这个地理上分散的亚文化群体，成员自称“数字游民”。他们无国界，大多是自雇的远程工作者；他们与城市互动的方式完全不同于游客，但又还达不到居民的身份。作为一种相对较新的现象，关于数字游民或地点独立工作者的普遍程度，并没有确切统计数据。但由于自由职业生活方式日益普遍、全球共享经济以及众多数字工具，能够过这种生活的人数正在迅速增长。在一个快速城市化的世界里，亚洲的一座大城市越来越能提供与欧洲城市相同的舒适条件，许多人开始意识到，自己不必待在一个地方。\nF) 那么，游民与游客或居民有何不同？莱弗尔斯说，在很多方面，你可以把数字游民看作“短期独立侨居者”。与定居国外的侨居者不同，他们不为大型跨国公司工作，不在有空调的办公楼里上班，通常持旅游签证入境，签证到期时就续签或离开。但与游客不同，他们抵达外国城市时并非没有任何责任。旅行不一定是他们完成工作的必要条件，但待在一个地方也不是。\nG) 珍妮特·布伦特是一名独立电子书设计师。她说，她认识的许多人以为她出差旅行，但实际上她的国际目的地很大程度上由她自己决定，并受成本驱动。布伦特说：“与某些人可能认为的相反，我旅行并不拿报酬——我只是选择这种生活方式。与其在某个城市租房，我选择旅行，在世界各地做短期、临时停留，我的旅行决定完全基于什么对我财务上最划算。这与度假完全不同——你会真正沉入城市生活，在社区中亲身参与。”\nH) 布莱斯·亚当斯是另一位这样的游民。他在南非公司 WooThemes 做开发者，该公司超过 80% 的员工远程工作。尽管亚当斯经常在 Instagram 上发布他从首尔到曼谷令人羡慕的烹饪冒险照片，但他说，在外国城市的游民生活也有不利之处，包括要为他赖以为生、耗带宽的工作找到足够的 Wi-Fi。与他在热带天堂芒果树下工作的印象相反，亚当斯说，这种生活的现实意味着他常常最终待在全球化城市中更西式的地方——那些肯定有空调和良好网络连接的地方——而不是异国风情的海滨咖啡馆。\nI) 亚当斯说：“几天前，一位游民同伴在 Twitter 上发了一条相当有趣但诚实的信息，让我印象深刻：‘有趣的是，数字游民花 16 个小时飞到世界另一端，结果坐在星巴克里。’这完全是真的。当你是数字游民时，你实际上并没有大多数人以为的那么多自由。我们有截止日期，我们都有依赖我们的人，还有一张（或两张）要吃饭的嘴。能在世界任何地方工作固然很好，但并非没有挑战。”\nJ) 但这些挑战往往能给游民一个机会，看到如果他们在一个豪华酒店度过长周末可能看不到的城市另一面。无论多么不便，去当地医生、移民局或洗衣店——或与当地 Airbnb 房东发生冲突（大多数游民首选的住宿方式）——都可能比参观国家博物馆更有文化启发意义。而且，由于游民常常不得不待在网络连接最强的地方，与普通游客相比，他们往往在发展中的城市待得更久；普通游客则常在抵达机场后不久就奔向更具旅游气息的目的地。\nK) 无论如何，游民生活是一种建立在特权之上的生活。你不仅需要一本相对强大的护照，使旅游签证容易获得，还需要一份知识经济型工作，以及能够实现远程工作的技术和设备。但像亚当斯这样的游民说，虽然他们意识到这种特权，但他们相信这种生活方式提升了他们所能提供的东西，因为它让他们对自己正在构建、写作或设计的事物有更广阔的视角，并扩展了他们的世界观。\nL) 他补充说：“能够旅行和四处走动，让人容易保持灵感。我真的相信这让我成为一个更明智的人，因为我倾向于看到并欣赏世界其他地方的人们想出的创造性解决方案，尽管许多人所面临的限制远比我们在国内要多。”\nM) 所以，当你不断在路上，不拥有任何财产，也没有固定地址时，你把哪座城市称为家？毫不奇怪，许多游民是双重公民或“第三文化小孩”，他们成长时所持有的身份观念并不与民族主义或待在一个地方绑定。莱弗尔斯说，游民生活不仅改变了他对公民身份的观念，也改变了他选择共度时光的人。“说自己是‘世界公民’是超级老套，对吧？但这正变得相当真实，”莱弗尔斯说。“这种全球意识是我创办 Nomad List 的原因，也影响了我的朋友是谁。现在吃晚饭时和一个韩国女孩、一个英国-新加坡裔男生、一个墨西哥女孩和一个尼日利亚男生坐在一起很正常。尽管这听起来像政治正确的电视广告，但我们如今所处的时代就是这样，这很棒。”",
+   "questions": [
+    {
+     "stem": "36. Pieter Levels created a chat system to satisfy the need of digital nomads for\ninformation tourists normally don't seek.",
+     "answer": "D",
+     "analysis": "依据：D 段说 Levels 创建了 #nomads 聊天系统，让用户询问“游客不太可能需要问的实用问题”，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. It is said that digital nomads do not enjoy as much freedom as most people\nsuppose.",
+     "answer": "I",
+     "analysis": "依据：I 段直接说数字游民“实际上并没有大多数人以为的那么多自由”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Different from tourists, digital nomads travel to foreign places with work to do.",
+     "answer": "F",
+     "analysis": "依据：F 段说与游客不同，数字游民抵达外国城市时并非没有任何责任，即带着工作/责任旅行。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Digital nomads believe their lifestyle enables them to broaden their vision and\ndo a better job.",
+     "answer": "K",
+     "analysis": "依据：K 段说这种生活方式让他们对自己正在构建、写作或设计的事物有更广阔视角并扩展世界观，从而提升能提供的东西。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. The first thing a typical traveller possibly does after arriving at a city is search\nfor information online about its popular tourist attractions.",
+     "answer": "B",
+     "analysis": "依据：B 段说普通旅行者抵达城市后第一步可能是登录 TripAdvisor 查热门景点开放时间等信息。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. One digital nomad thinks their life in foreign cities has its disadvantages.",
+     "answer": "H",
+     "analysis": "依据：H 段说 Bryce Adams 认为在外国城市的游民生活有其不利之处，如下降的 Wi-Fi 等问题。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Travelling around helps to keep digital nomads inspired.",
+     "answer": "L",
+     "analysis": "依据：L 段说“能够旅行和四处走动，让人容易保持灵感”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The number of self-employed remote workers living a digital nomad's life is fast\nincreasing.",
+     "answer": "E",
+     "analysis": "依据：E 段说自雇远程工作者过这种生活的人数正在迅速增长。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Pieter Levels says his life as a nomad has transformed not only his idea of\ncitizenship, but his choice of companions.",
+     "answer": "M",
+     "analysis": "依据：M 段说 Levels 认为游民生活不仅改变了他对公民身份的观念，也改变了他选择共度时光的人。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Interactions with local people and institutions provide nomads with far more\ncultural information than a visit to the national museum.",
+     "answer": "J",
+     "analysis": "依据：J 段说去当地医生、移民局或洗衣店等比参观国家博物馆更有文化启发意义。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Advances in science and technology have brought rapid development to China's medical care. In recent years, telemedicine has made high-quality medical resources accessible to more patients. Medical experts can provide consultations via video for patients in remote areas and guide local doctors in formulating and implementing treatment plans. AI-assisted diagnostic systems help doctors identify patients' early symptoms and improve diagnostic accuracy. The widespread use of electronic health records enables doctors to quickly learn about patients' medical history and avoid duplicate examinations. Online medical consultation platforms have greatly facilitated patients' access to medical treatment. The deep integration of technology and healthcare has better met people's health needs.",
+   "note": "术语密集：远程医疗 telemedicine、AI辅助诊断 AI-assisted diagnosis、电子健康档案 electronic health records、重复检查 duplicate examinations。注意“使优质医疗资源惠及更多患者”译为 make high-quality medical resources accessible to more patients；“制定并实施”用 formulate and implement；“满足需求”用 meet needs。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "大约十年前，二十国集团（G-20）——一个由世界最大经济体组成的论坛——同意打击跨国公司滥用避税天堂的行为。这促成了一项计划，旨在遏制那些使大量企业利润避开税务当局的做法。\n\n然而，避税天堂的使用非但没有受到约束——巴哈马和开曼群岛等有效税率极低或为零的国家——问题反而只会变得更糟。\n\n在一项新研究中，我们衡量了在避税天堂申报的、无法用该国雇员、工厂和研究等普通经济活动解释的过高利润。我们的发现显示出一种惊人的模式：企业将账面利润人为转移到避税天堂，且自20世纪80年代以来这一做法从未停歇。\n\n我们发现，2019年，全球最大的跨国企业将其在其他国家赚取的37%的利润——9690亿美元——转移到了避税天堂。而在20世纪70年代，这一比例不到2%。大幅增长的主要原因是20世纪80年代避税行业的发展，以及美国政策使利润更容易从高税国家转移到避税天堂。\n\n我们估计，由此损失的公司税在2019年达到企业总收入的10%，而20世纪70年代不到0.1%。2019年，全球政府税收损失总额为2500亿美元。仅美国跨国公司就占了约一半，其次是英国和德国。\n\n政策制定者如何解决这个问题？迄今为止，整个世界一直试图通过非常渐进地削减或取消公司税来解决这个问题。过去40年里，全球有效公司税率从23%降至17%。与此同时，政府更加依赖消费税。\n\n但利润转移的根源在于其中的激励因素，例如其他国家的慷慨或宽松的公司税率。如果各国能就比如20%的全球最低公司税率达成一致，利润转移问题将基本消失，因为避税天堂将不复存在。\n\n这类机制正是2021年130多个国家签署的内容，15%最低税率的实施即将在欧盟、英国、日本、印度尼西亚和许多其他国家开始。值得注意的是，美国一直未能通过这项立法。\n\n我们的研究表明，实施这类税制改革对于扭转越来越多企业利润向避税天堂转移——而不是在其经营和创造价值的政府那里纳税——的趋势是必要的。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about the G-20's agreement on curbing the use of tax havens?",
+     "answer": "C",
+     "analysis": "第二段明确说，G-20的计划并未限制避税天堂的使用，问题反而变得更糟，因此C“未能取得预期结果”正确。A把问题恶化限定在非G-20国家，文中未提；B称协议损害巴哈马、开曼等避税地，与原文不符；D说没有长期计划错误，因为第一段已说明促成了相关计划。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What mainly accounted for the large increase in the world's biggest multinational\ncorporations' shift of profits to tax havens?",
+     "answer": "B",
+     "analysis": "第四段指出，大幅增长的主因是20世纪80年代避税行业发展以及美国政策使利润更易转移到避税天堂，故B正确。A全球税率波动未提；C“被课以重税”与原文高税国家促使转移的逻辑不符；D企业业务快速增长不能解释人为转移账面利润。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What have policymakers been doing to prevent government tax loss?",
+     "answer": "A",
+     "analysis": "第六段说，迄今全球试图通过逐步削减或取消公司税来应对，故A正确。B说逐步取消消费税，与原文“更依赖消费税”相反；C联合征收公司税不是已采取的做法；D调整全球有效公司税率是既有结果或现象，不是文中所述政策制定者的应对措施。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author say would bring tax havens to an end?",
+     "answer": "D",
+     "analysis": "第七段明确，若各国同意实行全球最低公司税率，避税天堂将不复存在，故D正确。A将公司税与消费税对齐文中未提；B各国实行慷慨税率反而是问题根源；C仅同意问题根源并不会使避税天堂消失，关键是全球最低税率。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What could be expected of the global problem of profit-shifting in the near future?",
+     "answer": "D",
+     "analysis": "末段说130多国已签署最低税机制，但美国未能通过相关立法；据此，近期利润转移问题可能因美国不参与或缺位而继续，故D最佳。A更多国家降税率与解决方向相反；B仅意识到严重性不足以解决问题；C企业支持使问题消失文中无依据。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "儿童使用社交媒体是个问题。但这并不意味着应当禁止它。尽管年龄较小的孩子不应使用那些规定最低年龄为13岁的平台，但设想一个青少年被禁止访问身边成年人用来安排生活的平台和即时通讯系统的世界，既不切实际，也不可取。\n\n但是，各个年龄段的人在屏幕和智能手机上获得的愉悦与刺激，绝不能让我们忽视以这种方式消磨时间可能造成的伤害。英国少女中令人警觉的高抑郁率与花在社交媒体上的时间密切相关，这一发现极其令人担忧。研究发现，五分之二的女孩每天至少使用社交媒体三个小时——有同样使用时长的男孩人数只有女孩的一半。超过三分之一的抑郁女孩经历过网络骚扰。约一半受影响的女孩睡眠受到干扰，而抑郁男孩中这一比例为20%。尽管该研究并未证明社交媒体会导致抑郁，但两者存在关联这一发现的重要性不应被低估。学校在传播有关网络欺凌风险的关键信息方面做了重要工作。但在涉及“屏幕时间”的更广泛问题上，许多专业人士和家长都感到困惑和不确定。\n\n卫生大臣马特·汉考克希望就时间与年龄限制制定官方指南。这一想法具有简单易行的优点，尽管一些专家质疑其效果，并呼吁提高区分度，认为上网时间本身并不是坏事，一切取决于你在做什么。同样将在今年出台的还有信息专员伊丽莎白·德纳姆的《适龄设计规范》，涉及儿童个人数据的使用。这两项举措都值得欢迎。但政府是在追赶。对数字媒体巨头的法定监管早就该进行了。迄今未能保护儿童免受数据采集和定向广告的影响，这与其本身对儿童心理健康缺乏关心一样令人震惊。\n\n当然，社交媒体公司并非我们所有弊病的根源，它们很容易成为政客们攻击的目标，而政客们热衷于把注意力从资源不足的学校和医疗服务上转移开。年轻人抑郁症发病率上升还有其他原因，越来越大的在学业以及更广泛生活中取得成功的压力——要出名、要漂亮、要富有——常被认为是导致不快乐或焦虑的根源；如果这种压力被其他因素加剧且得不到管理，就可能恶化成疾病。保护儿童不仅仅意味着避免身体上的威胁。",
+   "questions": [
+    {
+     "stem": "46. What does the author believe regarding social media?",
+     "answer": "A",
+     "analysis": "首段指出，儿童使用社交媒体是问题，但不意味着应禁止；阻止青少年使用既不切实际也不可取，A 是其同义转述。B 只提到成年人用其安排生活；C 过于笼统；D 只对应“难以想象”，不如 A 准确。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What do we learn from the passage about British teenage girls?",
+     "answer": "B",
+     "analysis": "文中说英国少女抑郁率高与花在社交媒体上的时间密切相关，B 符合。A 将网络骚扰与抑郁混为一谈；C 中“五分之二”不等于“大多数”；D 与原文“男孩只有女孩一半”相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is the author's view on the research finding about British teenage girls?",
+     "answer": "C",
+     "analysis": "作者明确说，两者存在关联这一发现的重要性不应被低估，C 是同义转述。A 谈网络骚扰，非该研究重点；B 的 immediate attention 文中未提；D 与作者强调关联重要性的态度相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do experts think of health secretary Matt Hancock's idea?",
+     "answer": "D",
+     "analysis": "专家质疑汉考克想法的效果，并认为上网时间本身不坏、取决于做什么，说明仅限时间/年龄过于简单化，D 正确。A、B 不是专家观点；C 的“如何实施”并非专家所说的“取决于上网做什么”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. Besides social media companies, what factors contribute to young people's\npsychological health problems?",
+     "answer": "A",
+     "analysis": "末段提到政客把注意力从资金不足的学校和医疗服务上转移开，这些资源不足的服务是影响青少年心理健康的现实因素，A 符合。B 是政客转移注意力的行为；C 是监管问题；D 文中未提及父母教育背景。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:58:08.359Z"
+}

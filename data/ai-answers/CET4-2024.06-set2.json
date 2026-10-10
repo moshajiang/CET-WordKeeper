@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2024,
+ "month": 6,
+ "set_no": 2,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Recently, whether university sports facilities should be open to the public has sparked heated discussion. In my view, they should be made accessible to the public in a well-managed way, rather than completely closed or freely open.\n\nAdmittedly, opening facilities may bring some problems, such as overcrowding, wear and tear, and security concerns. However, these can be solved through reasonable management, for example, by setting specific opening hours for outsiders, charging modest fees, and requiring registration. The benefits are obvious. Local residents can enjoy better chances to exercise, which promotes public health. Meanwhile, universities can strengthen ties with the community and use the income to maintain equipment. Students may also benefit from a more lively sports atmosphere.\n\nTo sum up, university sports facilities should serve both students and society. With proper rules and priority given to students, openness can create a win-win situation for the university and the public.",
+   "note": "范文立场为“有限开放、规范管理”。首段用背景引出观点；主体先让步承认拥挤、损耗等问题，再用限时、收费、登记等管理措施化解，并说明公众健康、校社联系与学生氛围等好处；末段总结双赢。可复用：Recently, whether... has sparked discussion；In my view, ... rather than...；Admittedly, ... However...；To sum up...",
+   "questions": []
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 加州大学洛杉矶分校安德森管理学院的心理学家哈尔·赫什菲尔德想弄清为什么人们不为退休储蓄。总体而言，人们寿命越来越长。从逻辑上讲，他们在退休后的岁月里需要更多钱才能舒适生活。然而近几十年来，美国的储蓄率不升反降。\nB) 为帮助解释这种看似非理性的行为，赫什菲尔德及其团队在扫描研究参与者的大脑时，让他们判断各种特征——如“可敬的”或“有趣的”——在多大程度上适用于当前的自己、未来的自己、当前的他人或未来的他人。参与者回答时，赫什菲尔德的团队记录了他们大脑哪些区域被激活。不出所料，人们在思考当前的自己时大脑最活跃，在思考当前的他人时最不活跃。但团队发现，参与者考虑未来的自己时的大脑活动，更接近他们思考当前的他人时的大脑活动，而不是思考当前的自己时的大脑活动。\nC) 用实际的话说，当你想一个月、一年或十年后的自己时，你的大脑登记那个人的方式，类似于它登记泰勒·斯威夫特或邮差的方式。这样理解的话，为退休储蓄就完全等同于把钱送给别人。\nD) 鉴于赫什菲尔德的研究，一个简单的问题出现了：有没有可能让我们现在的自己关心未来的自己？答案绝不简单。\nE) 从现在的自我与未来的自我的角度看，我们那些自我挫败的行为——比如选择看电视而不是去健身房——突然就变得完全合理了。我们得以享受自己行为非常具体、即时的好处，而另一个人（也就是未来的自己）则承受假设的、遥远的后果。因此，我们为现在的自己所做的决定，常常与为未来的自己所做的决定大不相同。我们相信明天会不一样。我们相信自己明天会不一样；但这样做时，我们把当前的心情置于未来自我因不作为而承受的后果之上。\nF) 从现在的自我和未来的自我的角度理解我们的拖延，我们会得到三种可能的解决方案：第一，强迫未来的自我去做现在的自我不想做的任何事。第二，说服现在的自我相信未来的自我事实上仍然是自己。如果核心问题是我们把未来的自我视为其他人，那么更紧密地认同未来的自我，就会鼓励我们做出更好的长期决定。\nG) 在一项后续研究中，赫什菲尔德想探索如何弥合现在自我与未来自我之间的脱节，并鼓励人们为退休多储蓄。他和团队给研究参与者拍照，然后用图像处理技术让他们的脸看起来变老。随后，参与者被置于虚拟现实环境中，在那里他们可以照镜子，看到年老的自己回望他们。看到年老自我的参与者说，他们为退休储蓄的金额会比对照组多30%。\nH) 无论你的长期目标是什么——改善体型、创办自己的企业、写一本书——以天数而不是月数或年数来思考截止日期，可以帮助你理解未来其实有多近。\nI) 第三种解决方案是忘记未来的自我，并利用现在的自我对即时满足的热爱。虽然上述两种策略能有效帮助人们做出更好的长期选择，但最终你仍然是在与人性作斗争。我们的大脑天生渴求即时满足。与其对抗现在的自我对即时奖励的需求，为什么不利用它呢？我们大多数人在设定目标时，关注的是自己想看到的长期结果——例如减肥、升职、舒适退休等。虽然这些对未来自我的设想可能鼓舞人心，但在真正做日常工作时，把活动重新定义为它们的即时奖励，或至少是非常近期的奖励，可能更有效。\nJ) 以写这篇文章为例。我很容易想象，在工作日结束时完成这篇文章会有多棒。这不只是我的看法。研究伙伴、康奈尔大学的凯特琳·伍利和芝加哥大学的阿耶莱特·菲什巴赫，一直以研究人们实现的目标与半途而废的目标之间的差异为职业。\nK) 伍利说：“在一项研究中，我们在线询问人们年初设定的目标。大多数人设定的目标是为了实现延迟的长期利益，比如职业发展、偿还债务或改善健康。我们询问这些人，追求目标的过程有多愉快，以及他们的目标有多重要。我们还询问他们在设定目标两个月后是否仍在为这些目标努力。我们发现，与人们对自己目标重要性的评分相比，愉快程度更能预测人们在设定目标两个月后对目标的坚持。”\nL) 这一模式在从锻炼到学习再到吃更健康食物等各种目标中都成立。例如，当人们被引导关注健康食品的好味道而不是长期健康益处时，他们会多吃50%的这种健康食品。其他研究也显示，当人们被告知要思考现在锻炼的乐趣而不是未来的健康收益时，他们锻炼的参与度更高。\nM) 这些发现表明，在实现目标方面，享受过程本身比想要长期利益更重要。换句话说，现在的自我战胜未来的自我。谁说即时满足一定是坏事？当然，为未来的自我设定雄心勃勃的长期目标吧，但在真正日复一日地坚持执行时，要确保现在的自我也知道这对自己有什么好处。",
+   "questions": [
+    {
+     "stem": "36. Our brains are genetically determined to satisfy immediate desires.",
+     "answer": "I",
+     "analysis": "依据：I段指出“Our brains are hard-wired for instant gratification”，即大脑天生渴求即时满足。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Taken in a practical way, saving for post-work years is like giving money away to others.",
+     "answer": "C",
+     "analysis": "依据：C段指出“Put in practical terms... saving for retirement is the equivalent of giving money away to someone else entirely”，即为退休储蓄等同于把钱送给别人。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. Research found that, as regards achievement of one’s goals, it is important to focus more\non enjoying the process than the long-term benefits.",
+     "answer": "M",
+     "analysis": "依据：M段指出“These findings suggest that when it comes to achieving your goals, enjoying the process itself is more important than wanting the long-term benefits”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Regarding our future selves as still being ourselves will help us m ake better long-term\ndecisions.",
+     "answer": "F",
+     "analysis": "依据：F段指出“trying to identify more closely with our future selves will encourage us to make better long-term decisions”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Savings rates in America have dropped in recent decades even though people’s life\nexpectancy has increased.",
+     "answer": "A",
+     "analysis": "依据：A段指出人们寿命越来越长，同时“savings rates in the U.S. have gone down in recent decades, not up”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Researchers found that enjoyment rather than importance enabled people to persist in their\ngoals.",
+     "answer": "K",
+     "analysis": "依据：K段指出“We found that enjoyment predicted people’s goal persistence... far more than how important they rated their goal to be”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. When making decisions, we give priority to our current frame of mind without thinking\nmuch of the consequences.",
+     "answer": "E",
+     "analysis": "依据：E段指出“we prioritize our current mood over the consequences of our inaction for the future self”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. People ate more of a healthy food when they focused on its good taste ins tead of its long-\nterm benefits.",
+     "answer": "L",
+     "analysis": "依据：L段指出“people ate 50% more of a healthy food when directed to focus on the good taste rather than the long-term health benefits”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. As was expected, when people thought of their present selves, their brains were observed\nto become more active.",
+     "answer": "B",
+     "analysis": "依据：B段指出“Unsurprisingly, people’s brains were most active when thinking about their current selves”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Researchers found that participants who saw the images of their aged selves would save\nmore for their later years than those who didn’t.",
+     "answer": "G",
+     "analysis": "依据：G段指出“Participants who saw their aged selves said they would save 30% more of their salary for retirement than the control group”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "由普里扬卡·乔希领导的一组研究人员考察了男性和女性在通过言语表达自己的想法和情感时依赖“交际抽象”的程度。研究人员表示，交际抽象反映了人们倾向于使用“关注整体图景和行动最终目的、而非关注细节和行动实现手段的抽象言语”。有趣的是，他们发现男性远比女性更可能以抽象方式说话。 为得出这一结论，研究人员考察了男女在网站上发布的60多万篇博客文章中的语言模式。为此，他们为英语中约4万个常用词计算了抽象度评分。被认为是具体的词很容易在脑海中成像，例如“桌子”或“椅子”。较难成像的词，例如“正义”或“道德”，则被认为更抽象。他们发现，男性在博客文章中显著更多地使用抽象语言。 这种效应的根源是什么？研究人员提出，性别之间的权力差异——即男性在社会中拥有更多权力——可能是一个关键决定因素。例如，在一项以300名学生为样本的后续研究中，研究人员操纵了人际情境中的权力动态，以观察这是否会影响交际抽象。他们发现，处于高权力面试官角色的参与者比处于低权力面试者角色的参与者更可能对行为作出抽象描述。这表明，更抽象地交流并不反映男性或女性的固定倾向，而是在特定情境中显现出来。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "修饰 purpose，ultimate purpose 为固定搭配，表示“最终目的”；与 broader picture 呼应，并与 rather than 后的 details 形成抽象与具体的对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "介词 of 后接动名词，the means of attaining action 表示“实现行动的手段”；与 concrete speech 强调 details and means 的语境一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "C",
+     "analysis": "arrive at this conclusion 是固定搭配，表示“得出这一结论”，前文研究结果正需要引出结论。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "A",
+     "analysis": "修饰数字 40,000，表示“大约”，符合为约四万个常用词评分的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "D",
+     "analysis": "more difficult to visualize 表示“更难可视化/想象”，与前面 easily visualized 形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "M",
+     "analysis": "修饰 more abstract language，表示男性在博客中“显著地”更多使用抽象语言，符合研究发现的程度。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "N",
+     "analysis": "What is the source of this effect? 是固定表达，询问“这种效应的根源/来源是什么”，后文即在解释原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "I",
+     "analysis": "研究者“操纵”权力动态，manipulate power dynamics 搭配自然；后文观察其影响，符合实验语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "F",
+     "analysis": "fixed tendency 表示“固定不变的倾向”，与后文 but rather emerges within specific contexts 形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "E",
+     "analysis": "主语 communicating more abstractly 为单数，emerge within specific contexts 表示“在特定情境中显现”，与 does not reflect... but rather... 搭配。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The lunar calendar originated in China thousands of years ago and was established according to the laws of the movement of the sun and the moon. For a long time, the lunar calendar has played an important role in agricultural production and people's daily life. Ancient people used the lunar calendar to record dates and arrange farm work, so as to make the most effective use of natural resources and climatic conditions and to improve the yield and quality of crops. The dates of traditional Chinese festivals such as the Spring Festival and the Mid-Autumn Festival are all based on the lunar calendar. The lunar calendar is an important part of traditional Chinese culture and is still widely used today.",
+   "note": "难点在四字并列与逻辑衔接：“根据……运行规律制定”译为 was established according to the laws of the movement of the sun and the moon；“依据农历记录日期、安排农活”用 use...to do 并列；“以便”用 so as to 表目的；“产量和质量”译为 the yield and quality of crops；“都基于”用 be based on；末句“依然广为使用”用 is still widely used today，注意时态由过去转现在完成与一般现在。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "如今，大多数科学研究由政府的科研拨款、从事研发的公司以及非营利基金会资助。作为一个社会，我们享受这项科学带来的成果，但我们也共同为其付费。你通过缴纳的税款、购买的产品和服务以及所做的捐赠，间接支持着科学。\n\n科学资助方式随着时代而变。历史上，科学主要通过私人资助、教会赞助，或者干脆自掏腰包来支持。如今，研究人员很可能由来自各类政府机构、科研机构和基金会的多种拨款共同资助。其他研究则由私营公司资助。这种企业赞助在某些领域十分普遍。美国几乎75%的医学临床试验由私营公司支付费用。当然，如今仍有一些研究人员自掏腰包资助小规模研究。我们大多数人无法把核研究当作私人爱好来负担，但观鸟者、岩石收藏者等却能在有限预算下做真正的研究。\n\n在一个完美的世界里，钱无关紧要——所有科学研究都会完全客观。但在现实世界中，资助可能会引入偏见。由制药业资助的药物研究，比由政府拨款或慈善组织资助的研究，更可能最终偏向所研究的药物。同样，由食品业资助的营养研究，也比独立资助的研究更可能偏向所研究的食品。\n\n那么，我们该如何看待这一切？我们是否应该忽视任何由公司或特殊利益集团资助的研究？当然不应该。这些群体为科学研究提供了极其宝贵的资金。此外，科学有许多保障机制，用以发现影响研究结果的偏见。最终，误导性的结果会随着科学的发展而被纠正；然而，这一过程需要时间。与此同时，对由行业或特殊利益集团资助的研究进行格外仔细的审查是值得的。这些结果是否与其他独立资助的研究一致？其他科学家对这项研究怎么说？稍作审查，就能大大有助于识别与资助来源相关的偏见。",
+   "questions": [
+    {
+     "stem": "51. What does the passage mainly discuss regarding scientific research?",
+     "answer": "D",
+     "analysis": "文章从政府、公司、基金会等对科研的资助谈起，并讨论资助来源如何影响研究偏见，因此中心话题是科研的经费来源。A项“基础/基金会”、B项“回报”、C项“前景”都不是全文主线。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do we learn from the passage about researchers like birdwatchers and rock collectors?",
+     "answer": "B",
+     "analysis": "原文说观鸟者、岩石收藏者等人可以在有限预算下做真正的研究，说明他们能用有限资源开展研究。C项“业余工作”与“真正的研究”不符，A、D项也未被提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What would scientific studies look like in a perfect world according to the author?",
+     "answer": "A",
+     "analysis": "原文明确指出在完美世界里所有科学研究都会完全客观，即不带偏见。B项独立资助、C项负责任开展、D项严格监督都不是作者对完美世界的直接表述。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author say about companies and special interest groups?",
+     "answer": "C",
+     "analysis": "作者说这些公司和特殊利益集团为科学研究提供了极其宝贵的资金，因此持肯定其资源贡献的态度。A项破坏保障机制、B项额外研究自家产品、D项获得最多收益均非原文观点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author think of research funded by industry or special interest groups?",
+     "answer": "C",
+     "analysis": "作者建议对行业或特殊利益集团资助的研究要格外仔细审查，并与其他独立资助研究对照，以识别相关偏见，因此应额外谨慎核查其有效性。B项虽提到误导性结果会被纠正，但那是科学总体进程，并非针对此类研究的核心态度；D项“独立识别”也不如C项贴合原文。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "人们常常想知道，为什么有些企业家比其他人更成功。是习惯、人脉、运气、职业道德，还是其他行为？我认为成功的关键是意志力。意志力是控制自己的能力。它是一种让你能够做困难事情的坚定决心。它更多是我们与生俱来的一种行为，而不是后天学来的；然而，我们不仅可能学会它，还可以通过不断锻炼来强化它。\n意志力就像肌肉；要让它保持强壮，你需要不断锻炼它。拥有强大意志力的人有自律去养成积极、成功的习惯。即使天赋惊人，如果没有自律和动力去养成积极习惯，也很难取得成功。\n意志力和习惯相辅相成。养成良好习惯，并采取必要行动日复一日坚持这些习惯，对取得更大成功至关重要。我们日常行为中几乎一半是习惯，而不是决定，所以一旦正确的习惯形成，你就会日复一日自动执行那些任务。\n养成并坚持习惯的最佳方法是拥有强大的动力。如果你有健康问题，并且想为了孩子活得更久，那么为了减肥而改变习惯会更容易；或者如果你的生意是你热爱的事业，也会更容易。把一个有价值的结果与某个习惯联系起来，将帮助你永久坚持那个习惯。\n自我控制的艺术是大多数成功人士已经掌握的艺术。自我控制使你避免那些无助于成功的行为，并采取那些有助于成功的行为。由于自我控制伴随着延迟满足，很容易偏离正轨。然而，如果你努力一次一天地坚持那些小的积极习惯，保持坚强并实现那个延迟奖励就会变得更容易。一旦奖励实现，继续坚持你的习惯就会容易得多。",
+   "questions": [
+    {
+     "stem": "46. What does the author say we need to do to strengthen our willpower?",
+     "answer": "B",
+     "analysis": "第一段末尾说，意志力可以通过“constant exercise”来强化，即需要不断锻炼、持续运用，B项“不断运用它”与此一致。A项是意志力的含义而非强化方式；C项和D项在文中没有依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. How are almost half of our daily actions performed according to the passage?",
+     "answer": "A",
+     "analysis": "第三段明确指出，“Almost half of our daily actions are part of our habits and not decisions”，即近半日常行为是出于习惯而非决定。B、D两项与原文不符，C项是比喻，不是日常行为的执行方式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What will help people stick to doing something constructive automatically?",
+     "answer": "D",
+     "analysis": "第四段说，“Having a valuable outcome associated with a habit will help you stick to that habit permanently”，即预见到习惯会带来的有价值结果能帮助人坚持。A项是习惯形成后的日复一日表现；B项只是减肥的例子；C项与文意无关。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. How does the art of self-control help us succeed?",
+     "answer": "C",
+     "analysis": "第五段指出，自我控制使人避免无助于成功的行为，并采取有助于成功的行为，也就是采取积极行动，C项正确。A项“永久保持清醒”未提；B项“不断改变行为”曲解原文；D项“避免冒险”也不符合文意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. Why can it be difficult for us to maintain self-control?",
+     "answer": "B",
+     "analysis": "第五段说，自我控制伴随着“delayed satisfaction”，因此人容易偏离正轨，说明自控难以维持是因为不能立即获得回报，B项正确。A项、C项和D项在文中都没有依据。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:59:08.140Z"
+}

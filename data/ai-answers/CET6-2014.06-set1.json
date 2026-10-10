@@ -11,70 +11,70 @@
    "translation": "对于希望低风险且有保证收益的投资者来说，美国政府债券是一种安全的投资，因为这些债券有联邦政府的财政支持和完全信用担保。市政债券同样安全，由地方政府发行，通常具有免税利息等优势。有些市政债券甚至还有保险。公司债券风险稍高。两个问题经常困扰首次投资公司债券的投资者。第一个问题是：“如果我购买了公司债券，必须持有至到期日吗？”答案是否定的。债券每天都在主要证券交易所买卖。然而，如果你决定在到期日前出售债券，并不能保证按面值卖出。例如，如果你的债券缺乏吸引其他投资者的特性，你可能被迫折价出售债券，即低于面值的价格。但如果你的债券受到其他投资者高度评价，你可能能够溢价出售，即高于面值的价格。债券价格通常与当前市场利率反向波动。当利率上升时，债券价格下跌，反之亦然。因此，与所有投资一样，债券也存在一定程度的风险。第二个问题是：“我如何评估某一债券发行的投资风险？”标准普尔和穆迪投资者服务公司对许多公司和政府债券的风险水平进行评级。自然，债券市场风险越高，利率就越高。投资者只有在潜在回报足够高的情况下，才会投资被认为有风险的债券。",
    "questions": [
     {
-     "stem": "26",
+     "stem": "36",
      "answer": "A",
      "analysis": "空格前有 have，后接 such as tax-free interest，说明需要复数名词作宾语，表示市政债券具有“优势”，且 tax-free interest 是优势之一，故选 advantages。",
      "verified": false,
      "dissent": "H"
     },
     {
-     "stem": "27",
+     "stem": "37",
      "answer": "K",
      "analysis": "空格前为 be 动词，后面句子结束，需要形容词或过去分词作表语；结合语境“Some may even be ___”表示市政债券甚至可能被保险，故选 insured。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "28",
+     "stem": "38",
      "answer": "C",
      "analysis": "空格前是 Two questions often，后接 first-time corporate bond investors，需要动词作谓语；语义上“问题困扰投资者”恰当，故选 bother。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "29",
+     "stem": "39",
      "answer": "L",
      "analysis": "空格后为 securities exchanges，需要形容词修饰；固定搭配 major securities exchanges 表示“主要证券交易所”，故选 major。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "30",
+     "stem": "40",
      "answer": "H",
      "analysis": "空格前为 have，后接 that 引导的定语从句，需要复数名词；features 表示“特征”，符合“使债券对投资者有吸引力的特征”，故选 features。",
      "verified": false,
      "dissent": "A"
     },
     {
-     "stem": "31",
+     "stem": "41",
      "answer": "F",
      "analysis": "空格前有 at a，后文解释 a price less than the face value，可知是“折价”，固定搭配 at a discount，故选 discount。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "32",
+     "stem": "42",
      "answer": "I",
      "analysis": "空格前为 Bond prices generally，后接 inversely with...，需要不及物动词作谓语；fluctuate 表示“波动”，与“债券价格与利率反向波动”语义吻合，故选 fluctuate。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "33",
+     "stem": "43",
      "answer": "B",
      "analysis": "空格前为 How can I，后接 the investment risk，需要及物动词原形；assess 表示“评估”，固定搭配 assess risk，故选 assess。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "34",
+     "stem": "44",
      "answer": "M",
      "analysis": "空格位于句首，用逗号隔开，修饰整个句子，需要副词；naturally 表示“自然地，当然”，符合逻辑关系，故选 naturally。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "35",
+     "stem": "45",
      "answer": "N",
      "analysis": "空格后为 return，需要形容词修饰；potential return 表示“潜在回报”，符合“只有当潜在回报足够高时才投资高风险债券”的语义，故选 potential。",
      "verified": true,

@@ -173,35 +173,35 @@
    "translation": "长期以来，超市一直是世上利润最薄的行业之一，也是最不令人向往的工作或购物场所之一。十多年来，它们一直受到电商巨头的攻击，被指责让美国人变胖，又被指造成气候变化。\n从技术上讲，超市可定义为陈列 15000 到 60000 种不同商品的大型商店。让顾客在货架间自行寻找食物的自助杂货店这一革命性想法，最早出现在美国。关于哪家才是史上第一家尚有争论，但多年来人们已就纽约 1930 年创立的 King Kullen 超市形成共识。\n大约 300 年间，美国人都在小店铺和公共市场里解决吃饭问题。买食物意味着泥泞、吵闹的鸡群、成群的苍蝇、难闻的气味、讨价还价，以及被人少找零钱。超市模仿了强调效率与标准化的福特式工厂，把它重新想象成一个购买食物的场所。超市如今或许不显得前沿，但在当时它们是分销领域的一场革命。它们是如此新奇，以至于 1957 年伊丽莎白二世女王首次正式访问美国时，还坚持即兴参观了马里兰州郊区的一家 Giant Food 超市。\n过去 90 年里，典型的超市布局几乎没变。大多数商店把鲜花、水果和蔬菜放在最前面，以一股新鲜气息唤起食欲；同时把牛奶、鸡蛋等日用品放在最里面，让你尽可能走遍整家店，沿途受到诱惑。\n早期，随着超市数量增多，我们对它的怀疑也在增长。我们长期担心这场“分销革命”对我们的胃口使用企业黑魔法。1957 年出版的《隐藏的说客》一书警告说，超市把女性置于“催眠恍惚状态”，使她们在货架间游荡、撞上货箱，还“随手从货架上拿东西”。",
    "questions": [
     {
-     "stem": "What problem have supermarkets been facing?",
+     "stem": "46. What problem have supermarkets been facing?",
      "answer": "B",
      "analysis": "首段：超市是“利润最薄的行业之一”，十多年来遭电商巨头攻击——即一直在流失顾客与利润。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What does the passage say about the idea of a self-service grocery?",
+     "stem": "47. What does the passage say about the idea of a self-service grocery?",
      "answer": "B",
      "analysis": "第二段：自助杂货店的革命性想法“最早出现在美国”（first came about in America）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What did supermarkets do by adopting the Fordist factory approach?",
+     "stem": "48. What did supermarkets do by adopting the Fordist factory approach?",
      "answer": "D",
      "analysis": "第三段：超市模仿福特式工厂，“在当时是分销领域的一场革命”（a revolution in distribution）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What is the typical supermarket layout intended to do?",
+     "stem": "49. What is the typical supermarket layout intended to do?",
      "answer": "C",
      "analysis": "第四段：把日用品放在最里面，让你走遍全店、沿途被诱惑——即诱导顾客做更多计划外购买。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What have people long feared about supermarkets?",
+     "stem": "50. What have people long feared about supermarkets?",
      "answer": "A",
      "analysis": "末段：人们长期担心超市对胃口“使用企业黑魔法”、令顾客在恍惚中随手拿货——即认为商家用诡计促销。",
      "verified": false,
@@ -215,28 +215,28 @@
    "translation": "传统学年每年夏天放三个月假，最初实行时美国还是农业社会，夏天的几个月需要用来干农活。自那以后，我们作为一个国家已彻底改变。学生不再在夏天务农，但他们也不在学校。美国学生平均每个自然年有 13 周假期，其中约 11 周在夏季。其他国家的校历很少有超过七周假期的。\n在美国学业水平落后于其他国家的情况下，是时候考虑全年制学校了。这一变化的一个好处是，学生不会沦为“暑期滑坡”的受害者——即研究表明，离开学校太久，学生就会忘掉一部分已学知识。数十年的研究显示，每个学年开始后，学生需要 8 到 13 周才能回到暑假前的水平。\n但全年制学校不只是学业问题。与传统学校相比，全年制学校里的师生关系更亲密，而且因为没有长假，学生不会感到与学校环境疏离。这些更紧密的纽带与更强的归属感是有回报的：研究表明，全年制学校的学生更自信，对上学体验的感受也更积极。\n但孩子们不需要时间放松吗？一些儿童发展专家认为，离校时间对健康成长至关重要，因为孩子的天性不适合长时间待在教室里，暑假提供了到户外活动的绝佳机会。这一说法的问题在于：大多数孩子并不在户外玩耍，甚至不与别的孩子一起玩。虽然有些孩子去夏令营，但大多数待在家里看电视或用电子设备玩游戏，这几乎对他们没有好处。\n美国已从农业经济转变为以知识与创新为基础的经济，因此学年也随之改变是合理的。",
    "questions": [
     {
-     "stem": "Why did America's traditional school year have a three-month summer vacation?",
+     "stem": "51. Why did America's traditional school year have a three-month summer vacation?",
      "answer": "A",
      "analysis": "首段：三个月暑假“最初实行时美国还是农业社会，夏天需要用来干农活”（the summer months were needed for farm work）。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What benefit will year-round schooling bring students in addition to improving their learning?",
+     "stem": "52. What benefit will year-round schooling bring students in addition to improving their learning?",
      "answer": "D",
      "analysis": "第三段：全年制学校“师生关系更亲密”，学生不觉疏离——即除学业外还能促进师生关系。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What do some childhood development experts believe about the long summer vacation?",
+     "stem": "53. What do some childhood development experts believe about the long summer vacation?",
      "answer": "D",
      "analysis": "第三段：全年制学生“更自信、对上学体验更积极”，“这些纽带与归属感是有回报的”——即有助于学生健康成长。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "What is the argument against the experts' idea of a long summer vacation?",
+     "stem": "54. What is the argument against the experts' idea of a long summer vacation?",
      "answer": "A",
      "analysis": "第四段：专家称假期利于健康发育，但“大多数孩子待在家里看电视玩游戏，这几乎对他们没有好处”（hardly benefits them）。",
      "verified": false,

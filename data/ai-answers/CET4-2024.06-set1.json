@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2024,
+ "month": 6,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Recently, whether university libraries should be open to the public has sparked heated discussion. In my view, they should open their doors to the public in a well-managed way.\n\nAdmittedly, universities are primarily places for teaching and research, so students' needs must come first. However, completely closing libraries to the public wastes valuable resources. As public-funded institutions, universities have a responsibility to serve society. Opening libraries can promote lifelong learning and build closer ties between campus and community.\n\nTo avoid possible problems, universities can take practical measures. For example, visitors can be required to register in advance, and during exam periods, priority can be given to students. Quiet study areas can also be reserved for campus members.\n\nIn conclusion, university libraries should be open to the public, but with reasonable rules. In this way, they can benefit more people without disturbing students' academic life.",
+   "note": "范文以“有限开放”切题：首段引出争议并亮明观点；主体先让步承认学生需求优先，再从资源利用、服务社会两方面论证，并给出登记、考试期优先等管理措施；末段总结条件开放。可复用句型：... has sparked heated discussion；In my view...；Admittedly... However...；To avoid possible problems...；In conclusion...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "众所周知，体育锻炼不仅有益于身体健康，也有益于心理健康。然而，尽管大多数国家都有详细且以证据为基础的指南，规定了为获得各种身体健康益处所需的运动类型和强度，但在运动与情绪方面，这样的指南尚不存在。这部分是由于缺乏必要的证据。然而，一篇新的系统性综述让我们得以了解该领域当前研究结果的最新情况。在深入探讨一些关键要点之前，该综述所作的一个重要区分是有氧运动与无氧运动之间的区别。前者包括散步、慢跑和骑行等活动，指的是以这样一种方式锻炼：你的身体能够利用氧气燃烧脂肪来供能。相反，无氧运动——比如举重——强度如此之大，以至于你的身体没有时间利用氧气来产生能量，因此转而分解血液或肌肉中的葡萄糖。首先从运动强度对有氧运动情绪益处的影响说起，由深圳大学的 John Chan 领导的研究人员发现，19项相关研究的结果相互矛盾。有些研究支持较高强度，另一些支持低强度，而7项研究发现强度对情绪益处没有影响。然而，关于无氧运动强度，结果要清晰得多——改善情绪的最佳选择是中等强度，也许是因为低强度太乏味，而高强度又太不愉快。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "D",
+     "analysis": "此处修饰 guidelines，表示“详细且以证据为基础的指南”，detailed 与 evidence-backed 并列，搭配和语义最合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "required for various physical health benefits 作后置定语，表示“为获得各种身体健康益处所必需的锻炼类型和强度”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "L",
+     "analysis": "partly due to 是固定搭配，意为“部分由于”，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "dip into 可表示“浏览、探讨”，before dipping into some of the key take-aways 意为“在探讨一些关键要点之前”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "make a distinction between A and B 是固定搭配，意为“对A和B作出区分”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "I",
+     "analysis": "主语 The former 指有氧运动，involves 表示“包括、包含”，后接散步、慢跑和骑行等活动。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "修饰 intensity，表示“高强度”；与后文身体来不及利用氧气产生能量相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "B",
+     "analysis": "后文说有些研究支持高强度、有些支持低强度，说明19项研究结果相互矛盾。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "make no difference to 是固定搭配，意为“对……没有影响”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "J",
+     "analysis": "后文说低强度太乏味、高强度太不愉快，因此改善情绪的最佳选择应是中等强度。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 当我们每周只需工作15小时时，我们将如何保持忙碌？这是英国经济学家约翰·梅纳德·凯恩斯1930年撰写短文《我们孙辈的经济可能性》时担忧的问题。他预测，在下个世纪，经济将变得如此高效，以至于人们几乎无需工作。有一段时间，凯恩斯似乎是对的。1930年，美国平均每周工作时间为47小时。但到1970年，美国人平均工作时间已降至略低于39小时。\n\nB) 但随后情况变了。工作时间没有继续下降，而是保持稳定。近五十年来，它一直保持在略低于40小时的水平。那么发生了什么？为什么今天人们的工作时间与1970年一样多？\n\nC) 如果凯恩斯错在低估了技术提高经济生产率的能力——他认为这将使生活水平“比今天高四到八倍”——那么这件事就毫无神秘可言。但凯恩斯这一点说对了：技术已使经济生产率大幅提高。哈佛大学经济学家本杰明·M·弗里德曼指出，美国经济正按计划在2029年达到凯恩斯所说的八倍。那距离凯恩斯能获取最后数据的年份正好一个世纪。\n\nD) 在一篇新论文中，弗里德曼试图弄清为什么生产率的提高没有转化为休闲时间的增加。也许人们从未在物质上感到满足，总是想要更多钱去买下一个新东西。这一理论吸引了许多经济学家。他写道：“这个论点充其量远不充分。”如果是这样，那么工作时间当初为什么下降呢？\n\nE) 弗里德曼考虑的另一理论是，在一个提供有效个人联系和关系机会的环境越来越少的时代，人们可能更看重工作中发生的社交。这一理论有支持。今天许多人把同事视为朋友。但弗里德曼认为，支持该理论的证据远非确凿。许多工人报告说，他们宁愿花更多时间与家人在一起，而不是工作。此外，这一理论无法解释20世纪70年代美国工作时间趋势的变化。\n\nF) 第三种可能性对弗里德曼更具说服力。那就是：美国的不平等意味着生产率提高的收益并未被所有人广泛分享。换句话说，大多数美国人太穷，无法减少工作。与弗里德曼考虑的其他两种解释不同，这一解释在时间顺序上吻合。二战后的一段时期，美国不平等程度下降，工作时间也随之下降。但自20世纪70年代初以来，不平等急剧上升。\n\nG) 凯恩斯对更短工作周的预测，建立在所有人的生活水平将继续提高这一想法上。但弗里德曼说，事实并非如此。尽管凯恩斯的八倍数字对整个经济而言成立，但对美国中位数工人来说完全不是这样。对他们而言，到2029年的产出可能约为凯恩斯写作时的3.5倍。这略低于他预测的四到八倍范围。\n\nH) 这可以从这一时期中位数工人的收入中看出，其中1973年的一个转变恰好与工作时间停止缩短的时间吻合。根据弗里德曼的说法，1947年至1973年间，私营非农业行业中普通工人（非管理岗位）的平均时薪按购买力计算几乎翻了一番。但到2013年，普通工人的平均时薪按实际购买力计算已比1973年水平下降5%。因此，尽管美国人的收入自1973年以来可能有所增加，但美国工人用钱实际能买到的东西却减少了。对大多数美国人来说，生产率提高的魔力大约在1973年停止发挥作用。因此，为了维持生活水平，他们不得不继续同样多地工作。\n\nI) 凯恩斯预测的是经济学家所称技术性失业的一种非常乐观版本。这种观点认为，由于机器能做很多事，所需劳动力将减少。在凯恩斯的设想中，由此产生的失业将以增加休闲的形式或多或少均匀地分布在整个社会。但弗里德曼说，对美国而言，现实要黑暗得多。美国人现在有一个劳动力市场，其中数百万人——那些技能较少、教育程度较低的人——正在寻找他们能得到的任何低薪工作。最近一项民调证实了这一点：对一半的时薪工人来说，他们最担心的不是工作太多，而是工作太少。这很可能不是因为他们太喜欢自己的工作。相反，我们可以假定这是因为他们需要钱。\n\nJ) 这一解释留下一个重要问题。如果非常富有的人——那些自凯恩斯时代以来从生产率提高中获得高于平均收益的工人——能够负担更少的工作，为什么他们仍继续工作这么多？（事实上，研究表明美国收入最高者往往工作最多。）弗里德曼认为，对许多高收入者来说，工作是一种出于热爱而做的事。他们在做自己关心和感兴趣的工作，多做并不一定是负担。对他们来说，这甚至可能是一种乐趣。这些高收入者从工作中获得意义，工作是他们看待自己的重要组成部分。当然，他们得到的报酬也使其值得这样做。\n\nK) 弗里德曼总结说，凯恩斯预测的繁荣已经到来。毕竟，整体经济的增长甚至比他预期的还要辉煌。但对大多数美国人来说，这种繁荣却无处可寻。因此，更短的工作周也无处可寻。",
+   "questions": [
+    {
+     "stem": "36. Some people view socializing at the workplace as a chance to develop personal relationships.",
+     "answer": "E",
+     "analysis": "E段提到人们可能更看重工作中发生的社交，且今天许多人把同事视为朋友，对应“把职场社交视为发展个人关系的机会”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. As ordinary American workers’ average hourly pay had decreased despite increasing\nproductivity, they had to work just as many hours as before to keep their living standards.",
+     "answer": "H",
+     "analysis": "H段指出普通工人平均时薪按实际购买力下降，并总结为了维持生活水平，他们不得不继续同样多地工作。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. American workers’ average weekly working time has not changed for nearly half a century.",
+     "answer": "B",
+     "analysis": "B段说工作时间没有继续下降，近五十年来一直保持在略低于40小时的水平，即平均每周工作时间近半个世纪未变。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. Friedman believes inequality in the U.S. largely explains why increasing productivity has\nnot resulted in reduced working hours.",
+     "answer": "F",
+     "analysis": "F段说弗里德曼认为第三种可能性更有说服力，即美国不平等意味着生产率提高的收益未被广泛分享，导致大多数人无法减少工作。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Man y economists assume people’s thirst for material things has prevented them from\nenjoying more leisure time.",
+     "answer": "D",
+     "analysis": "D段提出也许人们从未在物质上感到满足，总是想要更多钱，这一理论吸引了许多经济学家。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. An economist’s prediction about a shorter average working week seemed to be correct for\na time in the 20th century.",
+     "answer": "A",
+     "analysis": "A段说有一段时间凯恩斯似乎是对的：1930年美国平均每周工作47小时，到1970年降至略低于39小时。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. In the U.S. labor market, the primary concern of people with less schooling and fewer skills\nis to secure any employment even if it is low-paid.",
+     "answer": "I",
+     "analysis": "I段说技能较少、教育程度较低的人正在寻找任何低薪工作，且民调显示时薪工人最担心的不是工作太多而是工作太少。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Keynes was right in predicting that technology would make th e economy much more\nproductive.",
+     "answer": "C",
+     "analysis": "C段明确说凯恩斯这一点说对了：技术已使经济生产率大幅提高。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Many of the highest earners have a keen interest in and love for what they are doing.",
+     "answer": "J",
+     "analysis": "J段说对许多高收入者而言，工作是一种出于热爱而做的事，他们在做自己关心和感兴趣的工作。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. According to Keynes, there would be a shorter working week with everyone’s standard of\nliving continuing to rise.",
+     "answer": "G",
+     "analysis": "G段说凯恩斯对更短工作周的预测，建立在所有人的生活水平将继续提高这一想法上。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Siheyuan is a traditional type of Chinese residential architecture, characterized by houses built around a courtyard, enclosing the courtyard in the middle. Siheyuan is usually warm in winter and cool in summer, with a comfortable environment, especially suitable for large families. There are various types of siheyuan across China, among which the siheyuan in Beijing is the most typical. Nowadays, with the development of modern cities, traditional siheyuan have gradually decreased in number. However, because of its unique architectural style, siheyuan is of great significance to the inheritance of Chinese culture and the study of Chinese history.",
+   "note": "难点在“合围”“冬暖夏凉”“大家庭”“传承”等。合围译 enclosing...in the middle；冬暖夏凉用 warm in winter and cool in summer；大家庭用 large/extended families；传承用 inheritance；意义重大用 be of great significance to。Siheyuan 可保留拼音。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "老子曾说：“在意别人的想法，你就会永远是他们的囚徒。”\n取悦他人，或通过他人的认可来寻求自我价值，是徒劳无益且令人精疲力竭的生活方式。为什么我们允许别人对我们的看法如此大程度地左右我们对自己的感受？如果你不可能一直取悦所有人，那么停止尝试难道不也合情合理吗？\n不幸的是，理智往往并不支配我们的行为。对于渴望爱与归属的社会性存在而言，想被人喜欢、在意自己对他人的影响，是健康的，也让我们能够建立联系。然而，当我们陷入麻烦时，是因为我们的自我价值取决于是否赢得某人的认可。\n这种想被喜欢的需要可以追溯到我们还是孩子、完全依赖他人照顾的时候：年幼的孩子不仅在学习走路和交流，也在试图了解世界如何运转。我们通过与他人的互动来认识自己是谁、别人对我们有何期待，所以，对一个四岁的孩子来说，如果妈妈或爸爸不喜欢他/她，就会有被抛弃的危险。我们需要明白，当我们拼命想得到别人的认可时，这种需要是由我们内心那个仍然极度害怕被抛弃的小孩部分所驱动的。\n当你越来越有能力为自己提供你所寻求的认可时，你对外部认可的需要就会开始消失，让你变得更坚强、更自信，是的，也更快乐。想象一下，每时每刻我们为了讨人喜欢而压抑真实的自己，会失去多少时间。\n如果我们把自己的价值建立在别人的看法上，我们就剥夺了自己塑造人生经历、不仅为他人也为自己的拥抱生活的力量，因为归根结底，二者并无区别。所以，接受这句老话吧，爱你自己，因为你极不可能为此后悔。",
+   "questions": [
+    {
+     "stem": "46. What can we conclude from Lao Zi’s quotation?",
+     "answer": "C",
+     "analysis": "老子的话意为：在意别人的看法，就会成为别人的囚徒；C项“把别人的看法放在心上就无法真正自由”正是其同义转述。A项把“囚徒”误解为别人企图囚禁我们；B项对应文中“不可能一直取悦所有人”，并非该格言的结论；D项与格言意思相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What will happen if we base our self-worth on other people’s approval?",
+     "answer": "B",
+     "analysis": "文章开头直接说，取悦他人或通过他人认可寻求自我价值，是unproductive and exhausting，B项“生活将徒劳且令人精疲力竭”与之对应。A项与文章相反，依赖认可并不能真正满足被爱的需求；C项并非直接后果；D项与文章相反，依赖他人认可会削弱而非增强自我。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What may account for our need to be liked or approved of?",
+     "answer": "D",
+     "analysis": "第三段把想被喜欢的需要追溯到童年时期完全依赖他人，并指出孩子害怕被父母抛弃，D项“幼年时害怕被遗弃”正是原因。A项社会交往渴望只是健康需求，不是根源；B项了解世界如何运转是童年学习内容，不是原因；C项是害怕被抛弃，不是“知道被抛弃的痛苦”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What can we do when we become better able to provide ourselves with the desired\napproval?",
+     "answer": "A",
+     "analysis": "第四段说，当我们更能为自己提供认可时，对外部认可的需要会消失，人会更强、更自信、更快乐，A项“享受更快乐的生活”符合。B项self-restraint是文中批评的压抑真实自我；C项external validation会vanish而非更多；D项文中未提强化想象力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author advise us to do in the last paragraph?",
+     "answer": "D",
+     "analysis": "末段最后一句So embrace the cliché and love yourself直接建议爱自己，D项“爱我们自己本来的样子”最符合。A项虽在末段出现，但它是说明不要把价值建立在他人看法上时失去的能力或生活态度，并非最后的核心劝告；B项是作者反对的；C项文中无依据。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "有些人说，衰老与其说是走向智慧，不如说是滑向健忘。然而，越来越多的研究表明，晚年学习是可能的。实际上，教育对衰老的大脑有益。\n\n人的一生中，大脑不断自我更新。20世纪60年代末，英国脑科学家杰弗里·雷斯曼通过电子显微镜观察到，大鼠受损脑区出现生长；它们的大脑正在形成新的连接。这意味着，每当人学到新东西时，大脑都可能发生变化。\n\n当然，这并不意味着大脑不受时间影响。正如身高通常会随年龄下降，脑容量也会缩小：人从40多岁起，每十年约减少4%。但这种缩减未必让人思维变慢；只要我们活着并正常运转，就能用新信息和经历改变大脑。\n\n事实上，科学家现在怀疑，积累新奇的经历、事实和技能能让思维更灵活。即使大脑在萎缩，新的神经通路也能强化我们不断变化的心智结构。\n\n词语谜题和大脑训练应用等常规方法有助于保持心智韧性。甚至像去杂货店时换一条路线，或度假时去个新地方这样简单的事，也能保持大脑健康。\n\n渴望新的生活挑战能进一步促进脑力。对承担新事业的老年人所作的研究显示，他们的功能和记忆有所改善，患精神疾病的风险也降低了。开放性——一种以好奇心和求知欲为特征的特质——也可能帮助人们通过大脑测试。有些人天生具有这种接纳世界的态度，但那些没有这种遗传天赋的人未必就没戏。虽然基因能激发尝试新事物的兴趣，但2012年发表在《心理学与衰老》杂志上的一项研究发现，完成谜题和数字游戏等推理任务能增强人们对新奇经历的渴望，而这反过来又能使大脑焕新。正因如此，脑科学家理查德·肯尼迪说：“并不是老狗学不了新把戏。而是老狗也许不明白自己为什么该学。”",
+   "questions": [
+    {
+     "stem": "51. What do some people think of aging adults?",
+     "answer": "B",
+     "analysis": "文章首句指出，有些人认为衰老更像是滑向健忘，而非走向智慧，因此B“记忆力逐渐衰退”符合这些人的看法。A与“滑向健忘”相反；C是研究支持的观点，不是“有些人”的看法；D文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What can we conclude from Geoffrey Raisman’s finding?",
+     "answer": "C",
+     "analysis": "雷斯曼发现受损脑区在形成新连接，说明大脑会随学习而改变，即大脑能通过学习得到刷新和改善。A、B在文中没有依据；D只是对现象的复述，没有概括出学习可改变大脑这一结论。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is one thing that helps maintain the health of our brain even as it shrinks?",
+     "answer": "D",
+     "analysis": "文中说即使大脑萎缩，新通路仍能强化心智结构，且换一条去杂货店的路线或去新地方度假都能保持大脑健康，这对应D“以新奇方式处理日常事务”。A说的是按常规方式，与文意相反；B、C均无依据或曲解原文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author say can contribute to the improvement of brain function?",
+     "answer": "A",
+     "analysis": "文中提到渴望新挑战能促进脑力，而开放性由好奇心和求知欲定义，也可能帮助通过大脑测试，因此A正确。B把“通过测试”当成原因；C中的“avoiding risks”与挑战新事物相反；D的“增强对精神疾病的免疫力”表述过度，原文只是降低风险。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What is the finding of the 2012 study in the journal Psychology and Aging?",
+     "answer": "C",
+     "analysis": "2012年的研究发现，完成谜题和数字游戏等推理任务能增强对新奇经历的渴望，而这反过来可刷新大脑，因此C正确。A、B分别把因果倒置或曲解为提升推理力、刺激记忆；D并非该研究的发现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:58:33.278Z"
+}

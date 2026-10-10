@@ -215,21 +215,21 @@
    "translation": "在过去一个世纪里，人们的身高有所增长，韩国女性平均增高了20多厘米，伊朗男性则增加了16.5厘米。一项全球研究考察了200个国家18岁人群在1914年至2014年间的平均身高。\n\n结果显示，虽然1914年瑞典人是全球最高的人群，但荷兰男性已从第12位跃升至榜首，平均身高达182.5厘米。与此同时，拉脱维亚女性从1914年的第28位上升，一个世纪后成为世界上最高的女性群体，平均身高169.8厘米。\n\n来自伦敦帝国理工学院的研究合著者詹姆斯·本瑟姆（James Bentham）表示，这一全球趋势很可能主要源于营养与医疗保健的改善。「个体的基因对其身高影响很大，但一旦以全体人口取平均值，基因所起的关键作用就变小了，」他补充道。\n\n帝国理工学院的埃利奥·里博利（Elio Riboli）说，稍高一点会带来若干优势。「身高较高与更长的预期寿命相关，」他说，「这在很大程度上是因为高个子死于心血管疾病的风险较低。」\n\n但里博利表示，尽管全球身高都在增长，北部和撒哈拉以南非洲许多国家的趋势却令人担忧。虽然在20世纪早期乌干达和尼日尔的身高曾有所增长，但近年来这一趋势已逆转，18岁人群的身高出现下降。\n\n苏塞克斯大学（University of Sussex）的亚历山大·莫拉迪（Alexander Moradi）说：「这些身高下降的一个原因是20世纪80年代的经济状况。」他表示，结构调整政策之后出现的营养与健康危机，导致许多儿童和青少年未能在身高方面充分发挥潜能。\n\n本瑟姆认为，全球身高增长的趋势具有重要意义。「我们现在的身高深受成长环境的影响，」他说，「如果现在就给孩子们人生最好开端，他们未来几十年将会更健康、更有效率。」",
    "questions": [
     {
-     "stem": "51. What does the global study tell us about people’s height in the last hundred years? A）There is a remarkable difference across continents. B）There has been a marked increase in most countries. C）The increase in people’s height has been quickening. D）The increase in women’s height is bigger than in men’s.",
+     "stem": "51. What does the global study tell us about people’s height in the last hundred years?",
      "answer": "B",
      "analysis": "题干问全球研究揭示近百年身高情况。定位首段「People have grown taller over the last century... A global study looked at... 200 countries」，全文围绕「多数国家身高增长」展开，B「多数国家显著增长」正确。A 跨洲差异、C 增速加快、D 女性增幅更大均未体现。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "52. What does James Bentham say about genetics in the increase of people’s height? A）It counts less than generally thought. B）It outweighs nutrition and healthcare. C）It impacts more on an individual than on population. D）It plays a more significant role in females than in males.",
+     "stem": "52. What does James Bentham say about genetics in the increase of people’s height?",
      "answer": "C",
      "analysis": "题干问 James Bentham 对基因在身高增长中作用的看法。定位第三段「An individual's genetics has a big influence... but once you average over whole populations, genetics plays a less key role」，即基因对个人影响大、对总体影响小，C「对个人影响大于对总体」正确。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "53. What does Elio Riboli say about taller people? A）They tend to live longer. B）They enjoy an easier life. C）They generally risk fewer fatal diseases. D）They have greater expectations in life.",
+     "stem": "53. What does Elio Riboli say about taller people?",
      "answer": "A",
      "analysis": "题干问 Elio Riboli 对高个子者的说法。定位第四段「Being taller is associated with longer life expectancy」，即高个子往往更长寿，A 正确。C 偷换为「更少致命疾病」，原文是心血管疾病死亡风险更低。",
      "verified": false,

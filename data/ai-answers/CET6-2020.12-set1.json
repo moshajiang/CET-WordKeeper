@@ -99,77 +99,119 @@
    "questions": []
   },
   {
-   "section": "match",
+   "section": "reading",
    "seq": 1,
-   "translation": "A) 一群玉米种植者聚集在南非中部一台灌溉机旁，围在一位农艺师和他的电脑周围。农艺师刚刚用一架混合式无人飞行器（UAV）飞过田地；该无人机使用螺旋桨起降，但利用固定翼保持航程和速度，以便扫描大片土地。\nB) 无人机搭载了一台四波段精密传感器，飞行结束后立即进行机载处理，使农民和田间工作人员几乎能立即处理传感器记录到的任何作物异常，使数据收集真正实现实时化。\nC) 在这一例子中，农民和农艺师正指望专业软件给出准确的植株密度计数。玉米出苗已经10天，种植者想确定田间是否有任何地块因出苗不足或风害而需要补种——在夏季雨季初期，风害可能很严重。\nD) 在植物发育的这一生长阶段，种植者还有10天时间可以补种，之后大部分肥料和化学品施用工作需要开始。一旦这些投入施用后，采取纠正措施在经济上就不可行了，此后收集到的任何数据都只具有历史意义，只能为下一季提供参考。\nE) 软件在不到15分钟内便完成处理，生成一幅植株密度计数图。如果不了解就在一年多以前，处理完全相同的数据集还需要三到五天，就很难体会这一进展有多么惊人；这显示了近年来精准农业和遥感技术取得的进步。由于该软件是在美国用同样的作物品种在看似相似的条件下开发的，农艺师对软件能够产生近乎准确的结果充满信心。\nF) 当图出现在屏幕上时，农艺师的脸色开始沉下来。由于在飞行前他曾走过种植行，实地了解地面情况，所以他一看到屏幕上的数据就知道植株计数不对；农民们也一样，即使他们对如何判读遥感图了解有限。\nG) 假设来说，机器有可能通过人工智能和机器学习，学会解决地球上任何与界定或封闭环境内所有事物的物理交互相关的问题。\nH) 遥感器使算法能够将田块环境解读为统计数据，这些数据对农民决策有用。算法处理数据，并根据接收到的数据进行适应性学习。收集的输入和统计信息越多，算法就越能预测各种结果。目标是农民可以利用这种人工智能，通过在田间做出更好的决策来实现更好的收成。\nI) 2011年，IBM通过其位于以色列海法的研发总部启动了一个农业云计算项目。该项目与多家专业IT和农业伙伴合作，目标只有一个——从农业环境中获取各种学术和物理数据源，并将其转化为面向农民的自动预测解决方案，帮助他们在田间做出实时决策。\nJ) 当时对IBM项目团队部分成员的采访显示，团队认为完全可以“算法化”农业，即算法可以解决世界上任何问题。那一年早些时候，IBM的认知学习系统Watson参加了问答节目《危险边缘》，与前任冠军Brad Rutter和Ken Jennings同场竞技，结果令人震惊。几年后，Watson又在医学领域取得了突破性成就。\nK) 那么，为什么该项目在医学领域如此成功，在农业领域却没有？因为农业是为了统计量化而最难加以封闭的领域之一。即使在同一块田地里，一个区域到另一个区域的条件也总是在变化。天气不可预测，土壤质量会变化，病虫害随时可能光顾。种植者可能觉得即将到来的收成前景不错，但直到那一天到来之前，结果总是充满不确定性。\nL) 相比之下，我们的身体是一个封闭环境。农业发生在自然之中，处于相互作用生物和活动的生态系统之中，作物生产正是在这种生态系统环境中进行的。但这些生态系统并不是封闭的。它们受到天气系统等气候事件的影响，这些事件影响整个半球，并跨越大洲。因此，理解如何管理农业环境意味着要实实在在地考虑成百上千个因素。\nM) 同样的种子和肥料方案在美国中西部可能产生的结果，几乎肯定与同样方案在澳大利亚或南非可能产生的结果无关。可能造成差异的若干因素通常包括每单位作物的降雨量、土壤类型、土壤退化模式、日照时长、温度等。\nN) 因此，在农业中部署机器学习和人工智能的问题，并不在于科学家缺乏开发程序和协议以着手解决种植者最大关切的能力；问题在于在大多数情况下，不会有两个环境完全相同，这使得此类技术的测试、验证和成功推广比大多数其他行业费力得多。\nO) 实际上，说人工智能和机器学习可以开发来解决与物理环境相关的所有问题，等于说我们对地球上所有物理或物质活动相互作用的方方面面都有完整理解。毕竟，只有通过我们对“事物本质”的理解，才能为认知系统的理性能力设计出程序和流程。而且，尽管人工智能和机器学习正在教给我们许多关于如何理解环境的知识，但我们距离仅凭机器认知能力就能预测农业等领域关键结果还差得很远。\nP) 在风投界的支持下——目前风投在该领域投资数十亿美元——大多数农业科技初创公司如今被催促尽快完成开发，然后被鼓励尽快将产品推向市场。\nQ) 这通常导致产品失败，进而引发市场怀疑，并打击机器学习技术的信誉。在大多数情况下，问题不在于技术不起作用，而在于行业没有花时间去尊重农业是最难管理的非封闭环境之一。要想让技术真正对农业产生影响，需要更多的努力、技能和资金，在农民的田地里测试这些技术。\nR) 人工智能和机器学习具有巨大潜力，能够通过将这些技术整合到全球关键市场中，彻底改变农业。只有到那时，它才能对种植者产生影响，而这才是真正重要的地方。",
+   "translation": "在一个注意力涣散的文化中，艺术的位置是什么？最近去卢浮宫的游客报告说，现在游客在《蒙娜丽莎》前只能停留一分钟，然后就被要求继续前行。对其中一些人来说，这段时间的大部分都用来拍照——甚至不是拍画，而是以画为背景自拍。一种观点认为，我们已将旅游和逛美术馆如此民主化，以至于实际上已经无法欣赏我们远道而来想看的东西。在这个过度拥挤的社会里，体验和其他任何东西一样成为商品。攀登珠穆朗玛峰和观赏名画都要排队。这样构想的休闲是苦差事，回归工作反而成了一种应得的解脱。在这种工业化的匆忙中失去的是观看的质量。想想一个极端的例子，已故哲学家理查德·沃尔海姆。他参观卢浮宫时，可以在一幅画前坐上四个小时。他声称，第一个小时是必要的，以消除误解。只有到那时，画作才开始展现自己。这在今天似乎不可想象，但仍然可以安排。即使在最繁忙的博物馆里，也有许多房间和许多值得花数小时凝视的画作，而这些大多数被人群忽视。有时，最庞大的人群部分是管理不善的产物；《蒙娜丽莎》如今体验如此匆忙，部分原因是博物馆正在重新布展。佛罗伦萨的乌菲齐美术馆，另一个文化朝圣地，通过巧妙管理将入馆排队缩短至七分钟。而且有些艺术形式，既被设计为奇观，又是沉思的对象，可以在大量人群面前完美运作。例如，奥拉维尔·埃利亚松目前在泰特现代美术馆的展览，可能看起来只不过是一种娱乐，里面挤满了在雾室和喷雾装置中喧闹玩耍的孩子。但不仅如此：在埃利亚松最具娱乐性的地方，他也最为严肃，他令人迷失方向的装置让人们深刻认识到我们正在对地球造成的破坏性影响——尤其是我们对埃利亚松心爱的冰岛的冰川所做的事情。另一位卢浮宫爱好者马塞尔·普鲁斯特写道：“只有通过艺术，我们才能走出自我，了解另一个人如何看待宇宙，否则那些风景会像月球上的任何风景一样不为人知。”如果还有任何艺术值得一看，它必须引导我们进行这样的逃离。但在匆忙的人群中在画前待一分钟无法做到这一点。",
    "questions": [
     {
-     "stem": "36.Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields.",
-     "answer": "D",
-     "analysis": "D段提到 'Once these have been applied, it becomes economically unviable to take corrective action'，即一旦肥料和化学品施用后，补种等纠正措施经济上不可行，与题干相符。",
+     "stem": "46. What does the scene at the Louvre demonstrate according to the author?",
+     "answer": "B",
+     "analysis": "文章指出大众旅游使人们实际上无法欣赏远道而来要看的东西，卢浮宫《蒙娜丽莎》前只能停留一分钟的场景正说明了大众旅游时代欣赏艺术的近乎不可能。A、C、D分别强调吸引力、商业价值或仅看到一眼的困难，均未抓住“无法欣赏”的核心。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "37.Agriculture differs from the medical science of the human body in that its environment is not a contained one.",
-     "answer": "L",
-     "analysis": "L段通过对比指出 'our bodies are a contained environment'，而农业生态系统 'are not contained'，说明农业不同于封闭的人体医学环境，与题干相符。",
+     "stem": "47. Why did the late philosopher Richard Wollheim spend four hours before a picture?",
+     "answer": "A",
+     "analysis": "沃尔海姆在画前坐四小时是因为他认为第一个小时用于消除误解，之后画作才开始展现自己，说明充分欣赏一件艺术品需要时间。B“误解很常见”不是他花四小时的原因，C、D中的“更享受”或“更有价值”文中未提及。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "38.The agronomist is sure that he will obtain a near accurate count of plant population with his software.",
-     "answer": "E",
-     "analysis": "E段提到 'the agronomist feels confident that the software will produce a near accurate result'，即农艺师确信软件会得出近乎准确的植株计数，与题干相符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "39.The application of artificial intelligence to agriculture is much more challenging than to most other industries.",
-     "answer": "N",
-     "analysis": "N段提到此类技术在农业中的测试、验证和推广 'much more laborious than in most other industries'，即比其他大多数行业更具挑战性，与题干相符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "40.Even the farmers know the data provided by the UAV is not correct.",
-     "answer": "F",
-     "analysis": "F段提到当农艺师看到错误数据时，'so do the farmers, even with their limited understanding of how to read remote sensing maps'，说明连农民都知道数据不对，与题干相符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "41.The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture.",
-     "answer": "Q",
-     "analysis": "Q段提到 'This usually results in a failure of a product, which leads to skepticism from the market and delivers a blow to the integrity of Machine Learning technology'，即产品失败引发市场怀疑，与题干相符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "42.Remote sensors are aimed to help farmers improve decision-making to increase yields.",
-     "answer": "H",
-     "analysis": "H段提到遥感器使算法能解读环境以帮助农民决策，并说目标是 'achieve their goal of a better harvest through making better decisions in the field'，即通过更好决策提高产量，与题干相符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "43.The farmer expects the software to tell him whether he will have to replant any parts of his farm fields.",
+     "stem": "48. What does the case of the Uffizi in Florence show?",
      "answer": "C",
-     "analysis": "C段提到农民使用软件获取植株计数，'the farmer wants to determine if there are any parts of the field that require replanting'，即想知道是否需要补种，与题干相符。",
+     "analysis": "乌菲齐美术馆通过巧妙管理将排队缩短到七分钟，说明良好的管理是应对大量游客的关键。A、B、D分别涉及文物保护、文化圣地总是拥挤或人群造成管理问题，均与原文不符。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "44.Agriculture proves very difficult to quantify because of the constantly changing conditions involved.",
+     "stem": "49. What do we learn from Olafur Eliasson’s current Tate Modern show?",
+     "answer": "D",
+     "analysis": "作者先提出有些艺术形式能在大量人群面前完美运作，随后以埃利亚松的展览为例，说明此类艺术可以容纳大量观众。B选项“娱乐与严肃艺术结合”是展览的一个特点，但并非该例证的主要结论；A、C无根据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can art do according to Marcel Proust?",
+     "answer": "C",
+     "analysis": "普鲁斯特说只有通过艺术才能走出自我，了解他人如何看宇宙，即帮助我们以不同的视角看世界。A“更充实的生活”、B“逃避严酷现实”、D“探索宇宙未知领域”均曲解了原文。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "石油的价格与碳的价格\n\nA) 一群玉米种植者围在南非中部一台灌溉机旁，围着一位农学家和他的电脑。这位农学家刚刚用一架混合型无人机（UAV）飞过田地。这种无人机用螺旋桨起降，却凭借固定翼保持距离和速度，以扫描大片土地。\n\nB) 这架无人机装有四光谱段精密传感器，飞行后立即进行机载处理，使农民和田间工作人员几乎可以立即处理传感器可能记录到的任何作物异常，从而使数据收集真正实时。\n\nC) 在这个例子中，农民和农学家正借助专业软件来获得准确的植株数量统计。玉米出苗已有10天，农民想确定田里是否有部分区域因出苗不足或风害需要补种；在夏季雨季初期，风害可能很严重。\n\nD) 在作物生长的这一阶段，农民还有10天时间进行补种，之后就要进行大部分肥料和化学药剂的施用。一旦这些已经施用，再采取纠正措施在经济上就不可行，此后收集的任何数据都成为历史数据，只能用于指导即将到来的下一季生产实践。\n\nE) 该软件在15分钟内完成处理，生成一张植株数量统计图。如果不了解就在一年多以前，处理完全相同的数据集需要三到五天，就很难体会这有多么令人惊叹；这也说明近年来精准农业和遥感技术取得了多大进步。由于该软件是在美国针对同一作物品种、在看似相似的条件下开发的，农学家自信软件会得出近乎准确的结果。\n\nF) 当地图出现在屏幕上时，农学家的脸色开始沉下来。飞行前，他曾走过一行行作物，以实地了解情况，因此一看到屏幕上的数据，他立刻就知道植株数量不对；农民们虽然对如何解读遥感地图了解有限，但也知道不对。\n\nG) 从假设上说，利用人工智能和机器学习，机器有可能学会解决地球上任何与特定或封闭环境内所有事物的物理相互作用有关的问题。\n\nH) 遥感传感器使算法能够将田地的环境解读为统计数据，这些数据农民能够理解并可用于决策。算法处理数据，并根据接收到的数据不断调整和学习。收集的输入和统计信息越多，算法就越能更好地预测一系列结果。其目标是让农民能够利用这种人工智能，通过在田间做出更好的决策来实现获得更好收成的目标。\n\nI) 2011年，IBM通过其位于以色列海法的研发总部启动了一个农业云计算项目。该项目与多家专业信息技术和农业合作伙伴合作，心中只有一个目标：从农业环境中获取各种学术和物理数据源，并将其转化为面向农民的自动预测解决方案，帮助他们在地里做出实时决策。\n\nJ) 当时对IBM项目部分团队成员的采访显示，团队相信完全可以对农业进行“算法化”，也就是说算法可以解决世界上任何问题。那年早些时候，IBM的认知学习系统Watson在《危险边缘》节目中与前冠军布拉德·拉特和肯·詹宁斯对决，结果令人震惊。几年后，Watson又在医学领域取得了突破性成就。\n\nK) 那么，为什么该项目在医学领域如此成功，在农业领域却没有？因为农业是最难为了统计量化而加以封闭的领域之一。即便在同一块田里，条件也总是从一块区域到另一块区域不断变化。天气难以预测，土壤质量会变化，而且病虫害随时可能来袭。种植者可能觉得下一季收成前景不错，但直到收获那天到来之前，结果始终不确定。\n\nL) 相比之下，我们的身体是一个封闭环境。农业发生在自然界中，处在由相互作用生物和活动构成的生态系统之中，作物生产也在这种生态系统环境内进行。但这些生态系统并不封闭。它们会受到气候现象的影响，例如天气系统，而天气系统会影响整个半球，并从一个大洲影响到另一个大洲。因此，理解如何管理农业环境意味着要真正考虑成百上千甚至数以千计的因素。\n\nM) 同样的种子和施肥方案在美国中西部地区可能产生的结果，与在澳大利亚或南非使用同样种子和施肥方案可能产生的结果，几乎肯定没有关系。可能影响差异的一些因素通常包括单位种植作物的降雨量、土壤类型、土壤退化模式、日照时数、温度等等。\n\nN) 因此，在农业中部署机器学习和人工智能的问题，并不在于科学家缺乏能力来开发项目和协议，以开始解决种植者最关心的问题；问题在于，大多数情况下，没有两个环境会完全相同，这使得此类技术的测试、验证和成功推广比在大多数其他行业要费力得多。\n\nO) 实际上，说可以开发出人工智能和机器学习来解决与我们物理环境相关的所有问题，基本上等于说我们完全理解地球上物理或物质活动相互作用的所有方面。毕竟，只有通过理解“事物的本质”，才能设计出协议和流程，让认知系统的理性能力得以发挥。而且，尽管人工智能和机器学习正在教给我们许多关于如何理解环境的东西，我们仍然远不能仅凭机器的认知能力来预测农业等领域的关键结果。\n\nP) 在如今向该领域投资数十亿美元的风险投资界的支持下，当今大多数农业科技初创公司都被催促尽快完成开发，然后又被鼓励尽快让自己的产品涌入市场。\n\nQ) 这通常会导致产品失败，进而引发市场怀疑，并打击机器学习技术的信誉。在大多数情况下，问题不是技术不起作用，而是行业没有花时间去尊重这样一个事实：农业是最不封闭、最难管理的环境之一。要让技术真正对农业产生影响，就需要投入更多努力、技能和资金，在农民的田地里测试这些技术。\n\nR) 人工智能和机器学习通过将这些技术整合到全球范围内的关键市场，具有彻底改变农业的巨大潜力。只有到那时，它才能对种植者产生影响，而这才是真正重要的地方。",
+   "questions": [
+    {
+     "stem": "36. Farmers will not profit from replanting once they have applied most of the fertilizer and other chemicals to their fields.",
+     "answer": "D",
+     "analysis": "依据：D段说“Once these have been applied, it becomes economically unviable to take corrective action”，即一旦施用大部分肥料和化学药剂，补种等纠正措施在经济上就不可行。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Agriculture differs from the medical science of the human body in that its environment is not a contained one.",
+     "answer": "L",
+     "analysis": "依据：L段说“our bodies are a contained environment... But these ecosystems are not contained”，将人体这一封闭环境与农业所处的非封闭生态系统作对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. The agronomist is sure that he will obtain a near accurate count of plant population with his software.",
+     "answer": "E",
+     "analysis": "依据：E段末尾说“the agronomist feels confident that the software will produce a near accurate result”，即农学家确信软件会给出近乎准确的结果。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. The application of artificial intelligence to agriculture is much more challenging than to most other industries.",
+     "answer": "N",
+     "analysis": "依据：N段说“no two environments will be exactly alike, which makes the testing, validation and successful rollout of such technologies much more laborious than in most other industries”，说明在农业中部署AI比大多数其他行业更费力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Even the farmers know the data provided by the UAV is not correct.",
+     "answer": "F",
+     "analysis": "依据：F段说农学家一看数据就知道植株数量不对，“and so do the farmers”，即农民也知道数据不正确。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. The pressure for quick results leads to product failure, which, in turn, arouses doubts about the applicability of AI technology to agriculture.",
+     "answer": "Q",
+     "analysis": "依据：Q段说“This usually results in a failure of a product, which leads to skepticism from the market and delivers a blow to the integrity of Machine Learning technology”，对应快速推出导致产品失败并引发质疑。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Remote sensors are aimed to help farmers improve decision-making to increase yields.",
+     "answer": "H",
+     "analysis": "依据：H段说“The aim is that farmers can use this artificial intelligence to achieve their goal of a better harvest through making better decisions in the field”，即利用遥感/AI改善决策以提高收成。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. The farmer expects the software to tell him whether he will have to replant any parts of his farm fields.",
+     "answer": "C",
+     "analysis": "依据：C段说“the farmer wants to determine if there are any parts of the field that require replanting”，即农民想知道田里是否有部分需要补种。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Agriculture proves very difficult to quantify because of the constantly changing conditions involved.",
      "answer": "K",
-     "analysis": "K段提到农业 'is one of the most difficult fields to contain for the purpose of statistical quantification'，且 'conditions are always changing'，说明农业因条件不断变化而难以量化，与题干相符。",
+     "analysis": "依据：K段说农业是最难进行统计量化的领域之一，“conditions are always changing from one section to the next”，说明条件不断变化难以量化。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "45.The same seed and fertilizer program may yield completely different outcomes in different places.",
+     "stem": "45. The same seed and fertilizer program may yield completely different outcomes in different places.",
      "answer": "M",
-     "analysis": "M段提到同样的种子和肥料方案在不同地区 'almost certainly unrelated'，即结果可能完全不同，与题干相符。",
+     "analysis": "依据：M段说“the same seed and fertilizer program in the United States’ Midwest region is almost certainly unrelated to what may occur ... in Australia or South Africa”，即同样种子和施肥方案在不同地方结果可能完全不同。",
      "verified": true,
      "dissent": null
     }
@@ -177,47 +219,47 @@
   },
   {
    "section": "reading",
-   "seq": 1,
-   "translation": "在一个注意力涣散的文化中，艺术的位置是什么？最近去卢浮宫的游客报告说，现在游客在《蒙娜丽莎》前只能停留一分钟，然后就被要求继续前行。对其中一些人来说，这段时间的大部分都用来拍照——甚至不是拍画，而是以画为背景自拍。一种观点认为，我们已将旅游和逛美术馆如此民主化，以至于实际上已经无法欣赏我们远道而来想看的东西。在这个过度拥挤的社会里，体验和其他任何东西一样成为商品。攀登珠穆朗玛峰和观赏名画都要排队。这样构想的休闲是苦差事，回归工作反而成了一种应得的解脱。在这种工业化的匆忙中失去的是观看的质量。想想一个极端的例子，已故哲学家理查德·沃尔海姆。他参观卢浮宫时，可以在一幅画前坐上四个小时。他声称，第一个小时是必要的，以消除误解。只有到那时，画作才开始展现自己。这在今天似乎不可想象，但仍然可以安排。即使在最繁忙的博物馆里，也有许多房间和许多值得花数小时凝视的画作，而这些大多数被人群忽视。有时，最庞大的人群部分是管理不善的产物；《蒙娜丽莎》如今体验如此匆忙，部分原因是博物馆正在重新布展。佛罗伦萨的乌菲齐美术馆，另一个文化朝圣地，通过巧妙管理将入馆排队缩短至七分钟。而且有些艺术形式，既被设计为奇观，又是沉思的对象，可以在大量人群面前完美运作。例如，奥拉维尔·埃利亚松目前在泰特现代美术馆的展览，可能看起来只不过是一种娱乐，里面挤满了在雾室和喷雾装置中喧闹玩耍的孩子。但不仅如此：在埃利亚松最具娱乐性的地方，他也最为严肃，他令人迷失方向的装置让人们深刻认识到我们正在对地球造成的破坏性影响——尤其是我们对埃利亚松心爱的冰岛的冰川所做的事情。另一位卢浮宫爱好者马塞尔·普鲁斯特写道：“只有通过艺术，我们才能走出自我，了解另一个人如何看待宇宙，否则那些风景会像月球上的任何风景一样不为人知。”如果还有任何艺术值得一看，它必须引导我们进行这样的逃离。但在匆忙的人群中在画前待一分钟无法做到这一点。",
+   "seq": 2,
+   "translation": "每隔五年，政府都会试图告诉美国人该往肚子里装什么。多吃蔬菜，少吃脂肪。这些建议都基于旨在让人过上健康生活的最佳现有科学。但最佳现有科学也充分说明了这些食物选择会对环境造成什么影响，而一些研究人员感到恼火的是，美国农业部昨天发布的新膳食建议似乎完全无视了这一事实。\n总体而言，2016—2020年的膳食建议力求平衡：多吃蔬菜、吃更瘦的肉，并大幅减少糖的摄入。\n但美国人均摄入的热量几乎超过世界上任何其他国家。因此，美国人吃的东西对气候变化有着巨大影响。土壤耕作会释放二氧化碳，运输车辆会排放废气。政府的膳食指南本可以在降低这一气候代价方面大有作为。这不仅是因为它们具有权威地位：这些指南通过学校午餐、为贫困者提供营养援助等联邦项目，带动了数十亿美元的食品生产。\n仅种植业和养殖业本身就贡献了全国温室气体排放量的9%。这还没有算上运输、加工、冷藏以及从农场到餐桌之间其他环节所燃烧的燃料。红肉是最大、最臭名昭著的排放源之一，但在一月份用卡车把沙拉从加利福尼亚运到明尼苏达也会带来相当大的负担。而且，温室气体排放还不是全部问题。食品生产是淡水的最大使用者、生物多样性丧失的最大促成者，也是消耗自然资源的主要推手。\n所有这些论点以及其他更多内容，都出现在膳食指南咨询委员会去年二月发布的科学报告中。米里亚姆·纳尔逊担任该报告中负责可持续性问题的小组委员会主席，她对于最终建议中没有“少吃肉”和“购买本地食品”感到失望。她说：“尤其是考虑到少吃肉，特别是红肉和加工肉，对健康有益。”\n那么发生了什么？官方的回应是，可持续性问题远远超出了指南的官方范围，而指南的范围是提供“营养和膳食信息”。\n可能负责起草这些决定的机构与它们本应监管的行业关系过于密切。一方面，美国农业部在汇编膳食建议；另一方面，他们的客户是美国农业公司。\n关于把指南范围限定在营养和膳食方面的说法，在研究人员听来不太对劲。例如，戴维·沃林加说：“在以往的指南中，他们一直关注粮食安全之类的问题——这想必也是美国农业部的使命。如果你们想要未来有安全的粮食，就绝对需要担忧气候影响和未来的可持续性。”",
    "questions": [
     {
-     "stem": "46.What does the scene at the Louvre demonstrate according to the author?",
-     "answer": "B",
-     "analysis": "文章指出大众旅游使人们实际上无法欣赏远道而来要看的东西，卢浮宫《蒙娜丽莎》前只能停留一分钟的场景正说明了大众旅游时代欣赏艺术的近乎不可能。A、C、D分别强调吸引力、商业价值或仅看到一眼的困难，均未抓住“无法欣赏”的核心。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "47.Why did the late philosopher Richard Wollheim spend four hours before a picture?",
+     "stem": "51. Why does the author say the USDA could have contributed a lot to lowering the climate cost through its dietary guidelines?",
      "answer": "A",
-     "analysis": "沃尔海姆在画前坐四小时是因为他认为第一个小时用于消除误解，之后画作才开始展现自己，说明充分欣赏一件艺术品需要时间。B“误解很常见”不是他花四小时的原因，C、D中的“更享受”或“更有价值”文中未提及。",
+     "analysis": "定位第三段：膳食指南通过学校午餐、营养援助等联邦项目带动数十亿美元食品生产，说明农业部有权威和财力影响食品生产，故A。B的已提交提案、C的专业能力、D的学生环保意识均非文中给出的原因。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "48.What does the case of the Uffizi in Florence show?",
-     "answer": "C",
-     "analysis": "乌菲齐美术馆通过巧妙管理将排队缩短到七分钟，说明良好的管理是应对大量游客的关键。A、B、D分别涉及文物保护、文化圣地总是拥挤或人群造成管理问题，均与原文不符。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "49.What do we learn from Olafur Eliasson’s current Tate Modern show?",
+     "stem": "52. What do we learn from the Dietary Guidelines Advisory Committee’s scientific report?",
      "answer": "D",
-     "analysis": "作者先提出有些艺术形式能在大量人群面前完美运作，随后以埃利亚松的展览为例，说明此类艺术可以容纳大量观众。B选项“娱乐与严肃艺术结合”是展览的一个特点，但并非该例证的主要结论；A、C无根据。",
+     "analysis": "定位第四、五段：咨询委员会科学报告提到食品生产是淡水最大使用者、生物多样性丧失最大促成者，也是消耗自然资源的主要推手，故D。A的食品污染、B的温室效应争议、C的食品多样性均未提及。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "50.What can art do according to Marcel Proust?",
+     "stem": "53. What may account for the neglect of sustainability in the USDA’s Dietary Guidelines according to the passage?",
      "answer": "C",
-     "analysis": "普鲁斯特说只有通过艺术才能走出自我，了解他人如何看宇宙，即帮助我们以不同的视角看世界。A“更充实的生活”、B“逃避严酷现实”、D“探索宇宙未知领域”均曲解了原文。",
+     "analysis": "定位第七段：可能原因是负责起草决定的机构与被监管行业关系过近，USDA与农业公司存在客户关系，故C。B是官方给出的范围理由，A、D不是文中对忽视可持续性的归因。",
      "verified": true,
      "dissent": null
+    },
+    {
+     "stem": "54. What should the USDA do to achieve food security according to David Wallinga?",
+     "answer": "B",
+     "analysis": "定位最后一段David Wallinga的话：若想未来粮食安全，就必须担忧气候影响和未来可持续性，故B。D只提研究影响，未抓住“可持续”这一核心；A、C与他的观点不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55.A) Give top priority to things like nutrition and food security.",
+     "answer": "B",
+     "analysis": "所给第55题选项与第54题完全重复，疑为题干或选项复制错误；若按所给选项及David Wallinga强调的未来可持续性判断，B仍是最符合文意的选项。若原题问作者态度，作者对指南忽视可持续性持批评态度，常见答案也多为B项。",
+     "verified": false,
+     "dissent": "D"
     }
    ]
   }
  ],
- "generatedAt": "2026-10-10T02:43:23.143Z",
+ "generatedAt": "2026-10-10T15:06:25.586Z",
  "prunedAt": "2026-10-10T03:33:14.383Z"
 }

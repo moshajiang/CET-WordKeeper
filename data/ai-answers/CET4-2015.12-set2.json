@@ -53,70 +53,70 @@
    "translation": "对许多美国人来说，2013年以一场异常严寒的寒潮结束。该国大部分地区在11月末和12月经历了早雪和刺骨低温；在这一年里，创纪录的寒冷天数很可能自二十年来首次超过创纪录的温暖天数。但美国是个例外；11月是全球有史以来最热的11月，目前数据表明2013年可能是有记录以来第四热的年份。\n现在就享受雪吧，因为2014年很有可能更热，甚至可能是有记录以来最热的一年。科学家预测，这是因为2014年将是厄尔尼诺年。\n厄尔尼诺，西班牙语意为“圣婴”，发生在南太平洋表层海水异常变暖之时。太平洋非常广大，覆盖地球表面的30%，其变暖所产生的额外能量足以引发全球一系列天气变化。厄尔尼诺现象与东南亚和澳大利亚异常干旱的状况有关。它们可能导致北美和南美部分地区出现极端降雨，而南部非洲则会经历干旱天气。海洋生物也可能受到影响：厄尔尼诺现象会减少寒冷且富含营养的海水上升，而这些海水支撑着大量的鱼类种群；异常温暖的海洋温度还会破坏珊瑚。",
    "questions": [
     {
-     "stem": "26",
+     "stem": "36",
      "answer": "N",
      "analysis": "句子描述过去的天气事件，主语为时间名词短语，需要谓语动词过去式；saw 表示“经历、出现”，常用于时间/地点 + see + 天气现象的结构。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "27",
+     "stem": "37",
      "answer": "F",
      "analysis": "空格前有数词 two，后需名词复数；for the first time in two decades 意为“二十年来第一次”，是固定搭配。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "28",
+     "stem": "38",
      "answer": "H",
      "analysis": "主系表结构已完整，空格需副词修饰全句或形容词最高级；globally 表示“全球范围内”，说明11月是全球有史以来最热的月份。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "29",
+     "stem": "39",
      "answer": "D",
      "analysis": "空格后为 are good that...，需复数名词作主语；chances are good that... 是固定句型，意为“很可能……”。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "30",
+     "stem": "40",
      "answer": "J",
      "analysis": "主语 El Nino 为单数，后接 when 从句，需一般现在时第三人称单数动词；occurs 表示“发生”，符合厄尔尼诺现象的定义。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "31",
+     "stem": "41",
      "answer": "A",
      "analysis": "空格位于定冠词和名词 energy 之间，需形容词；additional energy 表示“额外的能量”，与前文太平洋变暖产生能量、后文引发天气变化的语义一致。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "32",
+     "stem": "42",
      "answer": "B",
      "analysis": "空格前为 are，后接 with，构成 be associated with 固定短语，意为“与……有关”，符合厄尔尼诺与干旱条件的关联。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "33",
+     "stem": "43",
      "answer": "G",
      "analysis": "主语 southern Africa 为单数，主句用一般现在时，空格处需第三人称单数动词；experiences 表示“经历”，意为南部非洲经历干旱天气。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "34",
+     "stem": "44",
      "answer": "M",
      "analysis": "空格前有情态动词 can，需动词原形；reduce the rising of... 表示“减少/抑制……上升”，与厄尔尼诺影响海洋上升流的语义相符。",
      "verified": false,
      "dissent": null
     },
     {
-     "stem": "35",
+     "stem": "45",
      "answer": "K",
      "analysis": "空格前 large fish 作定语，需名词复数；populations 表示“种群”，large fish populations 即“大型鱼类种群”，为常见搭配。",
      "verified": false,

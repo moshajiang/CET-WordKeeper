@@ -12,7 +12,253 @@
    "reference": "To increase the likelihood of success, one should set realistic goals and work persistently towards them, as this approach provides clear direction and sustained motivation. Realistic goals, unlike vague ambitions, are specific and attainable, which makes it easier to measure progress and adjust strategies. For instance, a student aiming to pass CET-6 may break the task into weekly vocabulary and practice targets rather than simply wishing to \"improve English.\" Persistent effort then turns these small steps into visible achievements, reinforcing confidence and momentum. In contrast, overly ideal goals often lead to frustration and early giving-up, while lack of persistence leaves even excellent plans unrealized. Therefore, combining practical goal-setting with steady hard work is the most reliable path to success. Only in this way can we turn our dreams into reality.",
    "note": "范文复现给定句并解释，结构为“观点—正反例证—总结”。以备考四级为例，对比务实目标与空想，强调坚持。可复用对比结构“unlike...”，倒装“Only in this way...”。",
    "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "随着经济的飞速发展，人们的思想观念自然会发生变化。对一些人来说，节俭不再是一种美德，而且持这种观点的人并不在少数。每个人对于如何过自己的生活方式可能有不同看法：一些人偏爱简朴，一些人喜爱奢华，一些人花钱大手大脚，一些人则像乡下老鼠一样能攒多少就攒多少。由于我出身贫寒且长在乡下，简朴的乡村生活对我而言很少失去吸引力；但随着我身份地位的变化，我有机会与新富阶层交往，这段经历彻底改变了我对生活方式的看法。\n\n花钱少、攒钱多是有害或有罪的——这个观念直到最近才被我所认识。实际上，整个世界都陷入了借钱与花钱的狂热之中，美国引领着这一趋势。美国仍是世界上最富有、最强大的国家，但讽刺的是，他们却向我们借钱。虽然我是个经济学门外汉，但至少我知道，用借来的钱投资会使借款人变成掠夺者，而不是成为体面善良的放贷人。一个明显的例子是房地产。那些精明且从银行获得贷款的人，通过以高出购入价数倍的价格卖掉所购房屋而变得相对富有。甚至教育也不能免受这一理论影响。许多有远见送孩子上大学的贫穷父母已从这项投资中受益，尽管他们不得不勉强度日。可以合理得出结论：花钱是值得称赞的，只要不超出你的承受能力。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "Being 后需要形容词作表语，且与 virtue（美德）搭配；thrifty 意为“节俭的”，符合“节俭不再被视为美德”的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "B",
+     "analysis": "spend 后需要副词修饰；extravagantly 意为“挥霍地、大手大脚地”，与后文“尽力积攒”形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "A",
+     "analysis": "loses its ___ to me 需要名词，appeal 构成固定搭配 lose its appeal to sb.，表示“失去对某人的吸引力”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "J",
+     "analysis": "opportunity to ___ with 需要动词，mingle with 为固定搭配，意为“与……交往、混在一起”，符合与新富阶层接触的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "L",
+     "analysis": "in a ___ to do 需要名词，rage 在此表示“狂热、风潮”，in a rage to borrow and spend 符合全世界热衷借贷消费的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "D",
+     "analysis": "the ___ is that... 是固定表达，irony 表示“讽刺、具有讽刺意味的事”，此处强调美国反而向别国借钱的矛盾。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "a ___ of economics 需要名词，layman 意为“门外汉”，a layman of economics 表示“经济学门外汉”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "the ___ rather than the ... lender 中需要与 lender 形成对比的名词，predator 意为“掠夺者、掠食者”，符合借款人借入资金牟利的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "N",
+     "analysis": "Those who are ___ and have got loans 需要形容词作表语；shrewd 意为“精明的”，修饰善于利用银行贷款获利的人。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "M",
+     "analysis": "have to ___ a living 需要动词，scrape a living 为固定搭配，意为“勉强度日、勉强谋生”。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "被遗忘的作物是食物的未来吗？\nA) 在马六甲海峡附近的一个小果园里，林国安只剩下一棵结着kedondong的树，这是一种脆而酸的浆果，马来西亚人主要用来做腌菜和沙拉。这位45岁的果农说：“它不太出名。”他转而专注于龙眼和菠萝，因为这些市场更大。他说：“我们必须种有利可图的东西。”\nB) 但在不到一小时车程的马来西亚乡村，三个巨大的银色穹顶内，科学家们正试图改变未来的食物。他们通过种植和加工所谓的“替代”作物——比如kedondong——来拓展人类食物的边界。在全球研究中心“未来作物”（CFF）总部，这种尚未被充分利用的水果被制成了无糖果汁，富含维生素C，并在感官评估中获得高分。CFF位于马来西亚首都吉隆坡郊外，其花园里蔓生着丰富的植物；萨耶德·阿扎姆-阿里说：“你在这里看到的任何东西都是一种被遗忘的作物。”\nC) 阿扎姆-阿里教授解释说，仅小麦、玉米、水稻和大豆四种作物就提供了世界食物供应的三分之二。他说：“我们依赖这四种作物。但实际上，我们几千年来一直种植着7000种作物。我们把它们全都忽视了。”研究人员正试图释放这些被忽视作物的潜力——它们被描述为被遗忘、未被充分利用或“替代”作物，因为由主要作物加工原料推动的日益单一的饮食使它们被取代。\nD) 这是一项及时的探索。食品行业已经要为全球近三分之一的温室气体排放负责。据估计，到2050年，世界必须多生产50%的食物，才能养活预计达到100亿的全球人口。在不加剧气候变化的情况下满足这一需求，需要紧急解决方案。\nE) 被遗忘的作物掌握着关键答案。通过投资被忽视的本地植物，各国可以减少对进口作物及其高碳供应链的依赖。在气候变暖威胁现有作物之际，恢复人类曾经食用的作物多样性也能增强粮食安全。此外，阿扎姆-阿里认为，被遗忘的作物属于最具气候韧性和营养的作物之列。他的总结很明确：“饮食多样化对人类的未来至关重要。”\nF) 粮食安全专家表示同意。新加坡国立大学水政策研究所高级研究员塞西莉亚·托尔塔哈达说：“世界上不存在粮食不安全，存在的是食物无知。”她补充说：“每当拥有本土作物时，我们往往忽视它们，好像它们没有价值，但其实它们很有价值。”\nG) 阿扎姆-阿里亲身了解这种怀疑。20世纪80年代，他通过在西非尼日尔遇到的女性农民的工作，接触到了替代作物。当时还是博士生的他记得，自己惊叹于她们在院子里种植的作物——这些作物没有技术带来的好处，却能在主要作物歉收时养活家人。他看到了建立替代食物系统的巨大机会。但他回忆说：“阻力非常巨大。”\nH) 他没有被吓倒，而是继续努力。一个又一个项目帮助证明，这些作物作为主粮作物的替代品，在不同环境中是可行的。但这些作物是否有市场仍是个问题。他说：“这是关键。”在中心的一个穹顶里，食品技术专家陈欣琳用辣木叶粉替代部分小麦面粉，烤出谷胶更低、营养更高的蛋糕。陈的工作是用这些仍不为人熟悉的食材创造出既迎合本地也迎合国际口味的食谱。近年来，她用CFF种植的一些被遗忘作物，如辣木和班巴拉花生，制作了从速食汤到印度小吃的各种食品。兼受过厨师训练的陈说：“我尝试让被遗忘的作物现代化，而不是使用老食谱。”这是一种吸引世界日益壮大的中产阶级的策略，他们正越来越多地转向快餐和加工食品行业。陈补充说，这也是帮助消除人们认为本地作物是“老人或穷人的食物”或低劣的“女性作物”这种观念的一种方式。\nI) 这些关于本地食物的含义根源可能很深。班巴拉花生是撒哈拉以南非洲一种富含蛋白质的本土作物，在东南亚部分地区也有种植，它的边缘化可以追溯到殖民统治。阿扎姆-阿里说：“种植班巴拉花生的非洲妇女实际上因为种植它而受到惩罚。殖民列强说，你不能种它，因为它没有油。我们无法为它找到市场。”但如今，班巴拉穆鲁库是CFF评价最好的食品之一，他们正努力将其推向杂货店，并向潜在投资者指出藜麦等作物的成功。大约30年前，藜麦在其原产地玻利维亚和秘鲁的山区之外几乎无人知晓。如今，这种营养丰富的谷物出现在世界各地豪华餐厅的菜单上。\nJ) 以营养而非产量来衡量作物，是被遗忘食物事业的核心。自20世纪60年代的“绿色革命”以来，高产作物一直主导着现代农业。这在一定程度上是对毁灭性饥荒的关键应对，当时世界需要增加粮食供应。阿扎姆-阿里说，如今“营养正在变成一颗定时炸弹”，因为不断上升的二氧化碳水平使作物失去矿物质。他断言，我们不应只对主要作物进行生物强化，而应投资那些已经更有营养的被遗忘作物。\nK) 在CFF第三个穹顶深处，实验室经理戈马蒂·塞图拉曼打开一扇窗，展示了该中心的“皇冠上的宝石”，露出在明亮黄光下生长的翼豆藤蔓。这是多个实验舱之一，科学家们正在研究更高温度和二氧化碳水平对替代作物营养成分的影响。阿扎姆-阿里说，这项研究是“改变游戏规则的关键”，可确保“未来作物”在更温暖的气候中也是最健康的作物。\nL) 美国智库“食品 tank”（Food Tank）主席丹妮尔·尼伦伯格说，全球围绕被遗忘食物的势头正在增强。除了CFF——它自称是世界上第一个专门研究未充分利用作物的研究中心——还有其他主要团体在倡导农业多样性，包括Crop Trust、Slow Food、Icrisat和Bioversity International。她说，再加上更多中等收入消费者在寻找营养食品，以及其他人渴望尝试祖辈曾吃过的未加工食品。\nM) 但在一些地方，对被遗忘食物日益增长的兴趣，却被另一些地方西式饮食的全球扩散所盖过——这种饮食富含糖、脂肪和加工食品。\nN) 例如，在马来西亚推广日渐消失的本地作物的一个关键障碍是“对进口产品的痴迷”，吉隆坡富裕郊区一家倡导本地食材的餐厅联合创始人珍妮弗·夸说。她说，Sitka餐厅被视为该国小型“从农场到餐桌”餐饮场景的先驱，但顾客仍将外国食材视为“身份象征”。\nO) 支持被遗忘食物的论点感觉很直观。一些分析人士说，这实际上是不可避免的。伦敦城市大学食品政策教授蒂姆·朗说：“气候变化几乎肯定意味着口味将被迫改变。”他说，随着主粮作物产量下降，我们“必须习惯吃其他作物”。",
+   "questions": [
+    {
+     "stem": "36. According to a senior researcher, we will have secure food supply if we rid ourselves of ignorance about\nnative crops.",
+     "answer": "F",
+     "analysis": "F段：高级研究员Cecilia Tortajada说“世界上不存在粮食不安全，存在的是食物无知”，并指出人们往往忽视本土作物，对应摆脱对本土作物的无知即可保障粮食供应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Most of the world's food supply comes from a tiny number out of thousands of crops that have been grown\nfor centuries.",
+     "answer": "C",
+     "analysis": "C段：Azam-Ali说明仅小麦、玉米、水稻和大豆四种作物提供世界三分之二的食物供应，而人类几千年来种植了7000种作物。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. To provide their family with food when the staple crops failed, some African women farmers grew local\ncrops in their backyards.",
+     "answer": "G",
+     "analysis": "G段：Azam-Ali在尼日尔遇到的女农民在院子里种植作物，在主要作物歉收时养活家人。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. High-yielding crops have occupied a dominant position in modern agriculture since the green revolution in\nthe last century.",
+     "answer": "J",
+     "analysis": "J段：自20世纪60年代绿色革命以来，高产作物一直主导现代农业。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Growing alternative crops proved feasible in a variety of environments, but the critical question was\nwhether they would be marketable.",
+     "answer": "H",
+     "analysis": "H段：项目证明这些作物在不同环境中作为主粮替代品是可行的，但关键问题是它们是否有市场。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. According to a professor, when the yields of staple crops fall, we will have to adapt to eating foods from\nalternative crops.",
+     "answer": "O",
+     "analysis": "O段：Tim Lang教授说，随着主粮作物产量下降，我们“必须习惯吃其他作物”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Urgent measures have to be taken to provide food for the projected world population without aggravating\nthe climate.",
+     "answer": "D",
+     "analysis": "D段：到2050年需多生产50%食物以养活预计100亿人口，在不加剧气候变化的前提下满足需求需要紧急解决方案。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Colonial rule marginalised local crops by punishing Africans who grew them.",
+     "answer": "I",
+     "analysis": "I段：班巴拉花生的边缘化可追溯到殖民统治，种植它的非洲妇女因种植而受到惩罚。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. As existing crops are endangered by global warming, we can increase food security by bringing back the\nmany forgotten food crops.",
+     "answer": "E",
+     "analysis": "E段：在气候变暖威胁现有作物之际，恢复人类曾食用的作物多样性也能增强粮食安全。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. Researchers are trying to find out how higher temperatures and CO, levels affect the nutritional composition\nof alternative crops.\n2024年12月英语六级真题第1套 第7页，共9页",
+     "answer": "K",
+     "analysis": "K段：科学家们正在研究更高温度和二氧化碳水平对替代作物营养成分的影响。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "The successful development of the Beidou satellite navigation system is a major scientific and technological achievement China has made since the reform and opening up. Through unremitting efforts, researchers overcame a series of technical difficulties. The Beidou system eventually achieved global coverage and high-precision positioning, making China one of the few countries in the world that independently possess a global satellite navigation system. The Beidou system has been widely used in many fields, including transportation, disaster relief, weather forecasting, and public security. It has now gained wide international recognition and begun to provide high-quality services to more and more countries and regions.",
+   "note": "难点在长句拆分与逻辑衔接：“成功研制”译作名词短语；“攻克技术难题”“实现全球覆盖和高精度定位”用并列或分词结构；“使中国成为……之一”用making China one of...。关键表达：reform and opening up, high-precision positioning, disaster relief, widely recognized internationally, high-quality services。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "想象你是一名被派到地球的外星人，任务是记录居住在这颗星球上的哺乳动物的行为。\n你偶然走进一家正在放映最新好莱坞恐怖片的电影院。\n几十个人聚集在一个昏暗、没有装饰的房间里。他们都盯着一个矩形区域，上面光的图案快速变化。\n他们显然处于高度兴奋的状态。他们的心率加快，不时紧张地环顾四周，有时还会在座位上集体跳起来，发出尖厉的警告叫声。\n最终，灯亮了，矩形屏幕变黑。这些人站起来离开房间，一边聊天一边大笑，显出愉悦的迹象。\n为什么这些人会自愿让自己经历这种看起来极不愉快的体验？为什么他们会对屏幕上的那些光图案反应如此强烈？\n我对恐怖悖论很着迷——即许多人会主动寻求吓人娱乐这一奇怪事实。\n我认为这个谜题的答案存在于人性之中。\n我的研究表明，我们人类进化出了一种能力，即在安全的语境中体验负面情绪，并从中获得快乐。你可以在儿童游戏中看到恐怖的这些要素。以捉迷藏为例，它是对捕食者与猎物互动的一种模拟。孩子躲起来，成年人假装成捕食者，一边像危险野兽一样嚎叫，一边寻找孩子。\n这种模拟给了孩子关于如何避免成为猎物的重要信息，而孩子往往会对这类活动感到极深的满足，大概是因为它让他们安全地体验了一种可能带来灾难的情境。\n他们觉得这很快乐，而快乐是进化用来激励我们采取适应性行为的方式。\n恐怖对许多人来说是快乐的，因为它让我们与负面情绪玩耍，并发展出应对策略。我们了解到真正害怕是什么感觉，也学会如何处理负面情绪。\n那么，恐怖是如何起作用的？我的研究表明，恐怖的作用方式是利用一套古老的生物防御机制——一种进化而来的恐惧系统，我们与其他动物共有。但人类有着独特的想象力，我们运用进化而来的想象力进入充满危险的虚拟世界。\n即使你不是忠实的恐怖片粉丝，看恐怖片也有很好的理由。如果你毫发无伤地看完这部电影，你可能会体验到一种强烈的掌控感，一种你能够挺过一场可怕经历的感觉。无论如何，看恐怖片都会让你更善于处理自己的恐惧，而谁知道这种能力何时会变得至关重要呢？",
+   "questions": [
+    {
+     "stem": "46. The alien finds the audience in the movie theatre clearly in a state of ______.",
+     "answer": "B",
+     "analysis": "原文说观众 clearly in a state of high arousal，并描述心率加快、紧张环顾、集体跳起和尖叫，说明他们处于极度兴奋中，故选 B。A“完全专注”与紧张兴奋不符；C“精神升华”无依据；D“强烈好奇”不能概括高度唤醒状态。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. Why do many people seek out scary entertainment, according to the author's research?",
+     "answer": "B",
+     "analysis": "作者研究指出，人类进化到能在安全情境中体验负面情绪并从中获得快乐；恐怖娱乐正是模拟可怕体验，因此人们会主动寻求。A 错在说现实生活体验；C 捉迷藏只是例证；D 错在强调逃避真实致命情境，而非安全模拟。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do children learn from hide-and-seek?",
+     "answer": "A",
+     "analysis": "原文明确说这种模拟给孩子 crucial information about how to avoid becoming prey，即学会避免成为攻击者的猎物，故选 A。B 只是游戏形式；C、D 曲解了原文，孩子学到的是躲避捕食者，而不是避免灾难性错误或把危险变安全。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. Why is horror gratifying to many people?",
+     "answer": "C",
+     "analysis": "原文说恐怖令人快乐，是因为它让我们与负面情绪玩耍并发展应对策略，还让我们了解真正害怕的感觉并学会处理负面情绪，对应 C。A、B、D 说的是恐怖运作的机制或相关要素，并非它令人满足的直接原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What will one experience if they watch a horror film through without being hurt?",
+     "answer": "D",
+     "analysis": "原文说若毫发无伤地看完电影，会体验到 a strong sense of mastery，即一种能挺过可怕经历的强烈掌控感，对应 D“处于控制之中的强烈感觉”。A、B、C 在原文中均无依据。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "在现实世界中，一场针对多年来强加给我们的审美模式的觉醒一直在发生。但在数字领域，社交媒体决定了什么被视为美。\n两种对立的斗争正在并行发生。在现实世界中，这场斗争针对的是施加给女性的潜在压力，迫使她们去迎合一种不切实际的审美理想。作为这场斗争的一部分，各种媒体机构展示了那些身材不符合所谓理想标准的女性。所有那些此前被排除在杂志封面、电视剧和公共议程之外的女性，如今都变得“合法”了。与此同时，一群网红开始在社交媒体上传自己不化妆的照片，甚至上传突出所谓缺陷的照片。\n技术重塑了我们的审美理想，并且在向大众传达这一信息方面做得非常出色。过去十年奇怪的遗产之一是“赛博格造型”的流行，它展示了美国人在2050年会是什么样子。\n赛博格造型迅速传播。然而如今，Instagram脸已成为新的审美理想。\n当学习过程有主动参与时，对公认审美规范的内心化会有效得多。用户的主动参与体现在社交媒体平台提供的游戏化互动中——点赞、评论、比较、分享的能力。\n一旦理想的审美被内化，用户就会获得改变外貌以符合公认审美理想的工具或功能，例如编辑图像、选择理想滤镜、合适背景。\n美国进行的一项调查显示，超过50%的人在发布前会过滤图像。听到其中大多数是女性，你不会感到惊讶。强迫性过滤的重要后果之一，是出现一种倾向：把自己当作被观察和评价的对象，就像另一个人从旁观察和评判一样。\n滤镜的影响早已远不止友好的娱乐。滤镜以及网络上玩的整个游戏影响着用户的心理健康。根据一项研究，Instagram、Snapchat和FaceTune等应用允许用户达到一种以前只能在美容杂志上看到的完美程度。\n尽管人类一直珍视美，但在过去十年里，我们对容貌的痴迷达到了前所未有的顶峰。花在社交媒体上的时间产生了一种想要达到不可能之美理想的强烈冲动，以至于唯一能解决它的不是整容干预，而是心理健康护理。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about beauty in the digital arena?",
+     "answer": "D",
+     "analysis": "原文明确说“in the digital arena, social media determines what is considered beautiful”，即数字领域的美由社交媒体定义。A把关系说反了；B和C说的是现实世界中的觉醒或旧有审美模式，并非数字领域。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does the passage say about beauty in the physical world?",
+     "answer": "C",
+     "analysis": "原文说现实世界中的斗争“goes against the underlying pressure exerted on women to conform to an unrealistic beauty ideal”，即正在反抗迫使女性迎合不切实际审美理想的压力。A只陈述压力存在，未体现反抗；D把网红上传素颜照与媒体展示不同身材混为一谈。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What do we learn from the passage about the Instagram face?",
+     "answer": "A",
+     "analysis": "原文直接指出“Today, however, the Instagram face has become the new beauty ideal”。B中的2050年对应的是cyborg look；C、D在文中没有依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What has obsessive filtering resulted in?",
+     "answer": "C",
+     "analysis": "原文指出强迫性过滤的重要后果是“treat oneself as an object to be observed and valued”，即把自己视为被观察和评判的对象。A和D不是该后果的准确概括；B曲解了网络上的“游戏”互动。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author want to emphasize at the end of the passage regarding Americans' obsession with\nlooks?",
+     "answer": "B",
+     "analysis": "结尾强调唯一能解决对不可能之美强烈冲动的东西“is not cosmetic intervention, but mental health care”，即需要心理健康护理。A与原文相反；C和D并非作者在结尾强调的重点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T03:04:31.356Z"
+ "generatedAt": "2026-10-10T14:56:08.975Z"
 }

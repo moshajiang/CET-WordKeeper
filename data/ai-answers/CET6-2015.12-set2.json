@@ -6,48 +6,6 @@
  "model": "deepseek-v4-pro",
  "passages": [
   {
-   "section": "reading",
-   "seq": 1,
-   "translation": "",
-   "questions": [
-    {
-     "stem": "46. What do some most influential medical groups recommend doctors do?",
-     "answer": "C",
-     "analysis": "文章首句指出有影响力的医疗组织建议医生在决定治疗方案时权衡费用，而不仅看疗效，故选C。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "47. What were doctors mainly concerned about in the past?",
-     "answer": "B",
-     "analysis": "文章第二段提到医生过去只关注病人个人，即主要关心治疗效果，故选B。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "48. What may the new guidelines being developed lead to?",
-     "answer": "A",
-     "analysis": "新指南会使医生在行医时考虑费用，推动医生角色重新定义，故选A。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "49. What risk do doctors see in their dual role as patient care providers and financial overseers?",
-     "answer": "D",
-     "analysis": "医生担心同时作为病人护理者和财务监督者会产生冲突，并可能失去病人信任/尊重，故选D。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "50. What do some experts say about doctors’ involvement in medical cost analysis?",
-     "answer": "C",
-     "analysis": "最后一段引用分析家观点，认为医生参与成本分析反映了社会未能处理该问题，故选C。",
-     "verified": false,
-     "dissent": null
-    }
-   ]
-  },
-  {
    "section": "writing",
    "seq": 1,
    "translation": "",
@@ -258,7 +216,50 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "一些全国最有影响力的医疗团体表示，他们再也不能忽视不断上涨的医疗费用，因此建议医生在决定患者护理时，要权衡治疗成本，而不仅仅是治疗效果。\n这一转变在医疗行业之外鲜有人注意，但在行业内部却已引发争议。它表明，医生正开始重新定义自己的角色：从只关心个体患者，转向对医疗资金的使用方式施加影响。\n从实际层面看，正在制定的新指南可能会导致医生出于费用原因选择一种药物而非另一种，甚至判定某种治疗——例如临终治疗——过于昂贵。一些批评者极端地表示，根据费用做出治疗决定是一种配给医疗。\n传统上，指南曾深刻影响医疗实践，而最新指南预计会让医生更加意识到其决定的经济后果，尽管医生并无义务遵循这些指南。医学会指南也被保险公司用来帮助确定报销政策。\n一些医生认为，在试图既提供患者护理又充当财务监管者之间存在潜在冲突。“社会中应该有力量关注预算，但它们不应同时以医生的身份发挥作用，”波士顿一家医院的马丁·塞缪尔斯医生说。他说，如果医生告诉患者：“我不打算做我认为对你最好的事，因为我认为这对马萨诸塞州的医疗预算不利”，他们就有可能失去患者的信任。\n医生可能面临一些严峻的取舍。例如，研究表明，有两种药物治疗黄斑变性（一种眼病）的效果大致相同。但一种每剂花费50美元，另一种接近2000美元。如果所有人都使用较便宜的药物阿瓦斯汀，而不是较贵的雷珠单抗，联邦医疗保险每年可节省数亿美元。\n但美国食品药品监督管理局尚未批准阿瓦斯汀用于眼部，而且使用它而非替代药物雷珠单抗，可能带来额外——尽管轻微的——安全风险。医生在决定使用什么药物时，应该考虑联邦医疗保险的预算吗？\n“我认为，从道德层面讲，我们只担心眼前的患者，而不是试图为保险行业或整个社会省钱，”唐纳德·詹森医生说。\n不过，一些分析人士表示，医生在成本分析中可以发挥作用，因为没有多少其他人在做这件事。“从某些方面说，”丹尼尔·苏尔马西医生说，“这代表着更广泛的社会未能承担起这一问题。”",
+   "verifyError": "空响应",
+   "questions": [
+    {
+     "stem": "46. What do some most influential medical groups recommend doctors do?",
+     "answer": "C",
+     "analysis": "第一段明确指出，一些最有影响力的医疗团体建议医生在决定患者护理时把费用也纳入考量，而不仅看疗效。B项与原文not just effectiveness相反；A、D项均无原文依据。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What were doctors mainly concerned about in the past?",
+     "answer": "B",
+     "analysis": "文章开头说医生过去主要关注治疗效果，而现在新建议要求他们不仅看疗效还要看费用；传统上医生也较少考虑经济后果。A项指具体药物，C项职业发展，D项患者信任，均不是过去主要关注点。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What may the new guidelines being developed lead to?",
+     "answer": "A",
+     "analysis": "第二段指出这一转变表明医生正开始重新定义自己的角色。B、C、D项都不是文中所述新指南可能带来的结果；第三段提到的是因费用选药或认为某些治疗太贵，并不对应这些选项。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What risk do doctors see in their dual role as patient care providers and financial overseers?",
+     "answer": "D",
+     "analysis": "塞缪尔斯医生指出，医生若同时充当财务监管者，可能因告诉患者不采用最佳治疗而失去患者信任，D项lose the respect of patients与此对应。A项是潜在利益冲突本身，不是题干所问的具体风险；B、C项无依据。",
+     "verified": false,
+     "dissent": "A"
+    },
+    {
+     "stem": "50. What do some experts say about doctors’ involvement in medical cost analysis?",
+     "answer": "C",
+     "analysis": "最后一段中苏尔马西医生说，医生参与成本分析代表着更广泛的社会未能处理这一问题，C项society’s failure to tackle the problem与此一致。A、D项未提及；B项不是这些专家所强调的观点。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:19:29.688Z"
+ "generatedAt": "2026-10-10T14:22:55.260Z"
 }

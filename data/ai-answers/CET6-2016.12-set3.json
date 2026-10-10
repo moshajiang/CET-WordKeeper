@@ -27,35 +27,35 @@
    "translation": "真是浪费钱！在英国，学生们平均背负约4.4万英镑的债务，换来的却只是平均每周14小时的讲座和辅导课时间。过去十年，每年的学费从1000英镑涨到了9000英镑，但大学里的面授时间几乎没有增加。而且，毕业甚至不能保证找到一份体面的工作：如今每十个毕业生中就有六个人在从事不需要大学学历的工作。\n\n难怪如今许多大学被抨击为不过是精心设计的骗局，这已蔚然成风。学生们有很多可抱怨之处：偿还贷款的收入门槛将被冻结五年，这意味着收入较低的毕业生不得不开始还贷；生活补助金已被贷款取代，这意味着贫困家庭的学生比富裕家庭的学生面临更高的债务。\n\n然而，上大学仍然是值得的。如果上大学没有达到预期效果，学生们几乎不用偿还多少学费——甚至根本不用还：只有当年收入达到2.1万英镑时，你才开始还贷。\n\n几乎一半的毕业生——那些毕业后收入较低的人——将有一部分债务被免除。重要的不仅仅是讲座和辅导课。教育是学生们在讲座和研讨课之间相互教授的内容的总和。学生们不仅在上大学期间受益；研究表明，他们毕业后比非大学毕业生更健康、更幸福，而且参与投票的可能性也大得多。\n\n无论你多有才华，在大多数领域，如果没有上过大学，想得到一份领导职位是极其困难的。招聘人员像兀鹰一样围着精英大学打转。许多顶级公司甚至不会看那些没有精英大学二等一级学位（即上二等学位）的申请者的简历。大学里的学生还会结识那些未来可能担任领导职位的人，建立终身人脉。这或许并不合理，但如果中学毕业生认识不到这一点，就可能在是否上大学的问题上做出错误的决定。\n\n也许这么多大学给学生的东西如此之少，原因在于它们知道，即使你什么都没学到，在一所顶尖大学学习仍然是一项极好的投资。只有当雇主不再看重一个人上的是哪所大学时，上大学才会变得不那么有吸引力——而目前没有任何迹象表明这种情况会在短期内发生。中学毕业生可能会抱怨，但他们几乎没有选择，只能接受大学以及随之而来的学生债务。",
    "questions": [
     {
-     "stem": "51. What is the author's opinion of going to university? A. It is worthwhile after all. B. It is simply a waste of time. C. It is hard to say whether it is good or bad. D. It is too expensive for most young people.",
+     "stem": "51. What is the author's opinion of going to university?",
      "answer": "A",
      "analysis": "依据第三段首句“Yet it still pays to go to university”，作者明确认为上大学仍然值得。B与文章主旨相反；C未定错误；D虽提到成本高但作者认为值得，不是单纯太贵。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "52. What does the author say about the employment situation of British university graduates? A. Few of them are satisfied with the jobs they are offered. B. It usually takes a long time for them to find a decent job. C. Graduates from elite universities usually can get decent jobs. D. Most of them take jobs which don't require a college degree.",
+     "stem": "52. What does the author say about the employment situation of British university graduates?",
      "answer": "D",
      "analysis": "依据第一段“six in ten graduates today are in non-graduate jobs”，说明大多数毕业生从事不需要大学学历的工作。A、B文中未提及工作满意度或找工作时间；C原文只说精英大学毕业生更受顶级公司青睐，但未说他们通常能获得体面工作。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "53. What does the author say is important for university students besides classroom instruction? A. Making sure to obtain an upper-second class degree. B. Practical skills they will need in their future careers. C. Interactions among themselves outside the classroom. D. Developing independent and creative thinking abilities.",
+     "stem": "53. What does the author say is important for university students besides classroom instruction?",
      "answer": "C",
      "analysis": "依据第四段“Education is the sum of what students teach each other in between lectures and seminars”，指出课堂之外学生之间的互动很重要。A是第五段内容但并非课堂外的重要方面；B、D文中未提。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "54. What is said to be an advantage of going to university? A. Learning how to take risks in an ever-changing world. B. Meeting people who will be helpful to you in the future. C. Having opportunities of playing a leading role in society. D. Gaining up-to-date knowledge in science and technology.",
+     "stem": "54. What is said to be an advantage of going to university?",
      "answer": "B",
      "analysis": "依据第五段“Students at university also meet those likely to be in leading jobs in the future, forming contacts for life”，对应结识未来有帮助的人。A、D未提；C曲解为扮演领导角色，而原文是结识未来领导者。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "55. What can we infer from the last paragraph? A. It is natural for students to make complaints about university education. B. Few students are willing to bear the burden of debt incurred at university. C. University education is becoming attractive to students who can afford it. D. The prestige of the university influences employers' recruitment decisions.",
+     "stem": "55. What can we infer from the last paragraph?",
      "answer": "D",
      "analysis": "最后一段“Studying at university will only become less attractive if employers shift their focus away from where someone went to university”暗示大学声誉影响雇主招聘决策。A抱怨自然并非推断重点；B与“have little choice but to embrace...debt”相反；C原文说的是上大学仍是一项极好的投资，并非只对能负担的人有吸引力。",
      "verified": true,
@@ -141,124 +141,124 @@
    ]
   },
   {
-   "section": "match",
-   "seq": 1,
-   "translation": "各国争夺南极洲优势\n[A] 在遍布冰川的岛屿上，峡湾与象海豹栖息，俄罗斯在其科考基地俯瞰的山坡上建起了南极洲第一座东正教教堂。乘雪地摩托不到一小时，中国工人已翻新了长城站，这是中国在南极洲运营五个基地计划的重要组成部分，站内配有室内羽毛球场和可容纳150人的宿舍。印度也不甘落后，其未来主义风格的巴拉蒂新基地建在桩柱上，由134个相互连接的集装箱组成，外形像一艘宇宙飞船。土耳其和伊朗也已宣布计划建立基地。\n[B] 一个多世纪前，探险家们竞相在地球最南端插上国旗，此后几十年，这块大陆本应作为科学保护区受到保护，免受军事活动和采矿等侵扰。但众多国家正竞相在这里扩大影响力，不仅关注那些保护条约到期的那一天，也关注已经存在的战略和商业机遇。\n[C] 新入局者正踏入他们眼中的资源宝库。一些行动集中于南极洲已经可以获取的资源，比如丰富的海洋生物。韩国在这里运营着最先进的基地，正加大捕捞南大洋盛产的磷虾，而俄罗斯最近阻挠了在这里建立世界最大海洋保护区之一的努力。\n[D] 一些科学家正在研究从南极洲采集冰山的潜力，据估计南极洲拥有地球上最大的淡水储备。各国也在推进太空研究和卫星项目，以扩大其全球导航能力。\n[E] 在苏联时代立足点的基础上，俄罗斯正在扩大其“格洛纳斯”（Glonass，俄版全球定位系统）监测站。至少有三个俄罗斯监测站已在南极洲运行，这是其挑战美国GPS主导地位努力的一部分，并且还计划在像圣三一东正教教堂阴影下的俄罗斯基地等地新建监测站。\n[F] 在南极洲其他地区，俄罗斯研究人员夸耀他们最近钻透数英里厚冰层后发现了一个面积相当于安大略湖的淡水储备。别林斯高晋站站长、57岁的弗拉基米尔·切别尔达克一边喝着茶一边说：“你可以看到我们打算长期留在这里。”他头顶上方是一幅费边·戈特利布·冯·别林斯高晋的画像，这位俄罗斯帝国海军高级军官于1820年考察了南极海岸。\n[G] 南极洲的矿产、石油和天然气财富是更长期的目标。禁止在这里采矿、保护着令人垂涎的铁矿石、煤炭和铬储量的条约将在2048年接受审议。研究人员最近发现了金伯利岩矿床，暗示钻石的存在。尽管各种评估差异很大，地质学家估计南极洲至少拥有360亿桶石油和天然气。\n[H] 除了南极条约之外，开发这些资源仍然存在巨大障碍，比如可能危及海上平台的漂流冰山。此外还有南极洲的偏远，一些矿产矿床分布在这块面积比欧洲还大、冬季气温徘徊在零下55摄氏度左右的大陆上，地处狂风肆虐的地区。\n[I] 但技术进步可能会让南极洲在三十年后变得更加可达。学者们警告说，甚至在那之前，能源饥渴的世界对资源的需求就可能加大重新谈判南极条约的压力，可能在这些禁令到期之前就允许更多商业活动。乔治王岛上的科考站让人一窥这块冰雪覆盖大陆上的长期博弈，各国纷纷彰显自身地位，侵蚀着美国、英国、澳大利亚和新西兰等国长期拥有的影响力。\n[J] 驻扎南极洲意味着要适应地球上最干燥、风最大、最寒冷大陆的生活，但每个国家都设法让自己有家的感觉。蓄着胡须的俄罗斯神父在东正教教堂为约16名在南极过冬的俄语使用者定期举行礼拜，这些人大多为冰川学和气象学等领域的极地科学家。在较温暖的夏季，人数增至约40人。中国在南极洲的运作可以说是增长最快的。它去年开设了第四个科考站，并正推进建设第五个。它正在建造第二艘破冰船，并在一个海拔13422英尺、位于地球上最寒冷地点之一的冰穹上开展研究钻探作业。中国官员表示，在南极洲的扩张优先考虑科学研究，但他们也承认对“资源安全”的担忧影响了相关行动。\n[K] 中国在乔治王岛新翻修的长城站让这里的俄罗斯和智利基地显得陈旧。11月下旬一场猛烈暴风雪中，53岁的中国基地负责人宁旭一边喝茶一边说：“我们在这里做天气监测和其他研究。”他领导的大型基地看起来像一个假期中白雪覆盖的大学校园，能容纳的住宿人数是留在南极过冬的13人的10倍以上。中国微生物学家余勇展示了宽敞的建筑，空桌子旁是一幅图解时间线，详细展示了自20世纪80年代以来中国南极活动的快速增长。他说：“我们现在感觉有能力发展壮大了。”\n[L] 在一些国家扩大南极业务的同时，美国在南极洲维持着三个全年科考站，南半球夏季期间有1000多人，包括1956年建在南极点海拔9301英尺高原上的阿蒙森-斯科特站。但美国研究人员私下抱怨预算限制以及破冰船远少于俄罗斯，限制了美国在南极洲的影响力范围。\n[M] 学者们警告说，南极洲的政治漂移可能早在南极条约需要重新谈判之前就模糊军事活动与民用活动之间的界限，尤其是在南极洲那些最适合拦截卫星信号或重新设定卫星系统任务的地区，这可能增强全球电子情报行动。\n[N] 一些国家在这里经历了艰难时刻。巴西1984年开设了一个科考站，但2012年一场大火将其大部分烧毁，导致两名海军人员死亡；同年一艘满载柴油的巴西驳船在该基地附近沉没。这还不够，一架巴西C-130“大力神”军用运输机2014年迫降后，一直滞留在智利空军基地跑道附近。\n[O] 然而，巴西一连串的不幸为中国创造了机会，一家中国公司2015年赢得了一份价值1亿美元的合同，重建巴西科考站。\n[P] 在所有这些变化中，南极洲仍保持其吸引力。韩国2014年开放了第二个南极科考站，称这是测试韩国研究人员为极端条件开发的机器人的一种方式。在俄罗斯帮助下，白俄罗斯正准备建设其首个南极基地。哥伦比亚今年表示，计划加入其他南美国家在南极设基地的行列。\n[Q] “南极洲由来自欧洲、澳大拉西亚和北美国家的白人男性利益和意愿主导的旧时代已经结束，”伦敦大学专门研究南极洲的政治学者克劳斯·多兹说。“现实是南极洲已成为地缘政治争夺的对象。”",
-   "questions": [
-    {
-     "stem": "36. According to Chinese officials, their activities in Antarctica lay greater emphasis on scientific research.",
-     "answer": "J",
-     "analysis": "本段引用中国官员的话：在南极洲的扩张优先考虑科学研究。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "37. Efforts to create one of the world's largest ocean sanctuaries failed because of Russia's obstruction.",
-     "answer": "C",
-     "analysis": "本段提到俄罗斯阻挠了建立世界最大海洋保护区之一的努力。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "38. With several monitoring stations operating in Antarctica, Russia is trying hard to counter America's dominance in the field of worldwide navigational facilities.",
-     "answer": "E",
-     "analysis": "本段说明俄罗斯在南极运行格洛纳斯监测站，旨在挑战美国GPS的主导地位。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "39. According to geologists' estimates, Antarctica has enormous reserves of oil and natural gas.",
-     "answer": "G",
-     "analysis": "本段提到地质学家估计南极洲至少拥有360亿桶石油和天然气。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "40. It is estimated that Antarctica boasts of the richest reserves of fresh water on earth.",
-     "answer": "D",
-     "analysis": "本段指出南极洲据估计拥有地球上最大的淡水储备。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "41. The demand for energy resources may compel renegotiation of Antarctica's treaties before their expiration.",
-     "answer": "I",
-     "analysis": "本段提到能源饥渴的世界对资源的需求可能加大重新谈判南极条约的压力，甚至早于禁令到期。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "42. Many countries are racing against each other to increase their business and strategic influence on Antarctica.",
-     "answer": "B",
-     "analysis": "本段指出众多国家正竞相在南极洲扩大影响力，着眼战略和商业机遇。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "43. Antarctica's harsh natural conditions constitute huge obstacles to the exploitation of its resources.",
-     "answer": "H",
-     "analysis": "本段说明开发南极资源仍面临漂流冰山、偏远和极寒等巨大障碍。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "44. With competition from many countries, Antarctica is no longer dominated by the traditional white nations.",
-     "answer": "Q",
-     "analysis": "本段引用学者的话：南极洲由欧美澳新等白人男性利益和意愿主导的旧时代已经结束。",
-     "verified": true,
-     "dissent": null
-    },
-    {
-     "stem": "45. American scientists complain about lack of sufficient money and equipment for their expansion in Antarctica.",
-     "answer": "L",
-     "analysis": "本段提到美国研究人员私下抱怨预算限制以及破冰船远少于俄罗斯，限制了美国在南极洲的影响力。",
-     "verified": true,
-     "dissent": null
-    }
-   ]
-  },
-  {
    "section": "reading",
    "seq": 1,
    "translation": "任何老烟民都会证明，花哨的包装对他们继续吸烟的决定没有任何作用。因此，有人认为，去掉香烟包装上的品牌不会引发大规模的戒烟潮。\n但这并不是政府——在癌症慈善机构、医务工作者和工党的压力下——同意立法推行标准化包装的原因。其理论是，吸烟应该被剥离一切吸引力，以从一开始就阻止新一代人开始吸烟。平装将是把香烟从诱人的消费品重新归类为麻醉剂的又一步。\n烟草行业自然强烈反对。没有哪家企业愿意承认自己把令人上瘾的毒药当作一种生活方式的选择来销售。这就是政府历来进行干预、禁止广告、强制健康警示并征收惩罚性关税的原因。这种办法随着时间的推移已导致吸烟率下降，自20世纪70年代以来吸烟人数大约减少了一半。来自澳大利亚的证据表明，平装推动社会在这条道路上走得更远。由于烟草是英国过早死亡的最大原因之一，一项即使只能稍稍遏制这一习惯的措施也值得一试。\n那么为何拖了这么久？卫生部于2010年11月宣布有意考虑这一举措，并在2012年进行了咨询。但该计划于2013年7月被搁置。人们注意到，戴维·卡梅伦的竞选活动主管林顿·克罗斯比设立的一家游说公司此前曾为菲利普·莫里斯国际公司效力。（首相否认其新顾问的外部利益与立法计划的变化之间存在任何关联。）2013年11月，在又进行了一轮毫无必要的额外咨询后，卫生大臣简·埃里森表示，政府终究打算继续推进。现在我们得知，议员们将在3月议会解散前进行自由投票。\n事实上，议会已经授权政府整治烟草贸易。去年2月，议员们以压倒性多数投票支持工党对《儿童与家庭法案》的修正案，其中包括监管平装的权力。如果唐宁街有足够的意愿，这件事早就完成了。但就卡梅伦先生和公共卫生而言，所缺少的正是意志力。自从2006年他莫名其妙地哀叹超市收银台诱人摆放的巧克力橙助长了肥胖以来，他对国家干预的态度就一直显得混乱。\n政府不情愿地实行了一项明智的公共卫生政策，但如此明显的过度谨慎，以致任何应得的政治功劳都属于反对党。如果没有持续的外部压力，卡梅伦先生似乎肯定还会沉迷于大烟草公司的利益。",
    "questions": [
     {
-     "stem": "46. What do chain smokers think of cigarette packaging? A. Fancy packaging can help to engage new smokers. B. It has little to do with the quality or taste of cigarettes. C. Plain packaging discourages non-smokers from taking up smoking. D. It has little impact on their decision whether or not to quit smoking.",
+     "stem": "46. What do chain smokers think of cigarette packaging?",
      "answer": "D",
      "analysis": "首句指出老烟民会证明花哨包装对他们是否继续吸烟的决定没有影响，因此D正确。A、B、C均与老烟民观点不符，A和C是政府理论或新烟民角度，B提及质量味道未涉及。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "47. What has the UK government agreed to do concerning tobacco packaging? A. Pass a law to standardise cigarette packaging. B. Rid cigarette cartons of all advertisements. C. Subsidise companies to adopt plain packaging. D. Reclassify cigarettes according to packaging.",
+     "stem": "47. What has the UK government agreed to do concerning tobacco packaging?",
      "answer": "A",
      "analysis": "文章明确说政府已同意立法推行标准化包装，对应A。B“去除所有广告”与原文不符，C“补贴”无中生有，D“按包装重新分类”曲解。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "48. What has happened in Australia where plain packaging is implemented? A. Premature death rates resulting from smoking have declined. B. The number of smokers has dropped more sharply than in the UK. C. The sales of tobacco substitutes have increased considerably. D. Cigarette sales have been falling far more quickly than in the UK.",
+     "stem": "48. What has happened in Australia where plain packaging is implemented?",
      "answer": "B",
      "analysis": "原文提到英国吸烟人数自20世纪70年代以来约减半，而来自澳大利亚的证据表明平装推动社会在这条下降道路上走得更远，意即吸烟人数下降幅度更大/更快，对应B。A“早死率下降”未直接提及，C“替代品销售”无中生有，D“卷烟销售”与原文讨论的吸烟人数不符且未比较英国。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "49. Why has it taken so long for the UK government to consider plain packaging? A. Prime Minister Cameron has been reluctant to take action. B. There is strong opposition from veteran nicotine addicts. C. Many Members of Parliament are addicted to smoking. D. Pressure from tobacco manufacturers remains strong.",
+     "stem": "49. Why has it taken so long for the UK government to consider plain packaging?",
      "answer": "A",
      "analysis": "文章第三、四段指出计划被搁置、拖延，并强调卡梅伦和唐宁街缺乏意志，没有持续外部压力他会仍被大烟草公司利益吸引；这说明卡梅伦不愿采取行动是拖延主因。B、C无中生有，D虽提及烟草公司压力但非直接问题原因。",
      "verified": false,
      "dissent": "D"
     },
     {
-     "stem": "50. What did Cameron say about chocolate oranges at supermarket checkouts? A. They fueled a lot of controversy. B. They attracted a lot of smokers. C. They made more British people obese. D. They had certain ingredients missing.",
+     "stem": "50. What did Cameron say about chocolate oranges at supermarket checkouts?",
      "answer": "C",
      "analysis": "原文说卡梅伦2006年哀叹巧克力橙在超市收银台诱人摆放助长了肥胖，因此C正确。A“引发争议”、B“吸引烟民”、D“缺少成分”均与原文不符。",
      "verified": true,
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "《各国争相在南极抢占上风》\n[A] 在一座布满冰川、拥有峡湾和大象海豹的岛上，俄罗斯在一座小山上建造了南极第一座东正教教堂，俯瞰其科研基地。乘雪地摩托不到一小时，中国工人翻新了长城站——这是中国计划在南极运营五个基地的重要组成部分，站内设有室内羽毛球场和可供150人居住的宿舍。印度的未来主义新基地巴拉蒂也不甘落后，它用134个相互咬合的集装箱建在桩子上，看起来像一艘宇宙飞船。土耳其和伊朗也宣布了建站计划。\n[B] 自探险者争相在地球最南端插上旗帜以来，一个多世纪已经过去；未来几十年，南极大陆本应作为科学保护区受到保护，免受军事活动和采矿等侵扰。但一系列国家正争先恐后地在这里施加更大影响，它们不仅着眼于那些保护性条约到期之日，也着眼于已经存在的战略和商业机会。\n[C] 较新的参与者正踏入他们眼中的资源宝库。一些项目聚焦于南极已经可供争夺的资源，比如丰富的海洋生物。在南极运营最先进基地的韩国正在增加对南大洋中大量存在的磷虾的捕捞，而俄罗斯最近阻挠了在这里建立世界最大海洋保护区之一的努力。\n[D] 一些科学家正在研究从南极采集冰山的潜力；据估计，南极拥有地球上最大的淡水资源。各国还在推进太空研究和卫星项目，以扩展其全球导航能力。\n[E] 在苏联时代立足点的基础上，俄罗斯正在扩建其格洛纳斯（Glonass）监测站，这是俄罗斯版全球定位系统（GPS）。至少已有三个俄罗斯监测站在南极运行，这是其挑战美国GPS主导地位努力的一部分；俄方还计划在圣三一东正教堂附近的俄罗斯基地等地新建监测站。\n[F] 在南极其他地方，俄罗斯研究人员夸耀他们最近钻透数英里厚冰层后发现了一个面积相当于安大略湖的淡水储备。“你看得出，我们是要长期留在这里的，”别林斯高晋站站长、57岁的弗拉基米尔·切别尔达克一边在帝国海军高级军官法比安·戈特利布·冯·别林斯高晋的画像下喝茶，一边说道。此人在1820年探索了南极海岸。\n[G] 南极的矿产、石油和天然气财富是一项更长期的奖赏。这里禁止采矿的条约保护着令人垂涎的铁矿石、煤炭和铬储量，该条约将于2048年接受审议。研究人员最近发现了金伯利岩矿床，暗示可能存在钻石。尽管评估差异很大，地质学家估计南极至少拥有360亿桶石油和天然气。\n[H] 除了南极条约之外，开采这些资源仍存在巨大障碍，比如漂移的冰山可能危及海上平台。还有南极的偏远——一些矿床位于这片比欧洲还大的大陆上寒风肆虐的地区，冬季气温徘徊在零下55摄氏度左右。\n[I] 但技术进步可能使南极在三十年后变得容易得多。而且学者们警告，在此之前，一个渴求能源的世界对资源的需求可能加大重新谈判南极条约的压力，或许会在禁止商业开发的禁令到期之前很久就允许更多商业活动。随着各国彰显自身存在，乔治王岛上的研究站让人得以一窥这片冰雪覆盖大陆上的长期博弈，这种博弈正在侵蚀美国、英国、澳大利亚和新西兰等国长期拥有的影响力。\n[J] 驻扎南极意味着要适应这个地球上最干燥、风最大、最寒冷大陆上的生活，但每个国家都设法让自己有家的感觉。留胡子的俄罗斯神父在东正教教堂为大约16名在此越冬的俄语使用者定期举行礼拜，他们大多是冰川学和气象学等领域的极地科学家。在较温暖的夏季，人数会增至约40人。中国在南极的活动可以说是增长最快的。它去年启用了第四个考察站，并正在推进建设第五个考察站的计划。中国正在建造第二艘破冰船，并在海拔13,422英尺、地球上最寒冷的地方之一的一座冰穹上建立研究钻探作业。中国官员表示，南极扩张以科学研究为优先，但他们也承认，对“资源安全”的担忧影响了其行动。\n[K] 中国新翻修的乔治王岛长城站使这里的俄罗斯和智利基地显得过时。“我们在这里进行天气监测和其他研究，”53岁的中国基地站长宁旭（音）在11月下旬一场猛烈暴风雪中喝茶时说。他领导的这个大型基地像一所放假时被大雪封住的大学校园，其住宿容量是留在南极越冬的13人的十倍以上。中国微生物学家余勇（音）展示了这座宽敞的建筑，空桌子上方有一条配图时间线，详细介绍了自20世纪80年代以来中国南极活动的快速增长。“我们现在感觉有能力扩张了，”他说。\n[L] 随着一些国家扩大在南极的活动，美国在该大陆维持着三个全年运行的考察站，在南半球夏季有1000多人，包括位于南极点高原上、建于1956年、海拔9301英尺的阿蒙森-斯科特站的人员。但美国研究人员私下抱怨预算限制，以及破冰船数量远少于俄罗斯，这限制了美国在南极的活动范围。\n[M] 学者们警告，早在南极条约重新谈判之前，南极的政治漂移就可能模糊军事与民用活动之间的界限，尤其是在那些适合拦截卫星信号或重新分配卫星系统任务的南极地区，这可能增强全球电子情报行动。\n[N] 一些国家在这里过得并不顺利。巴西于1984年开设了一个研究站，但该站基本上在2012年一场导致两名海军成员死亡的大火中被毁；同年，一艘满载柴油的巴西驳船在基地附近沉没。仿佛这还不够，一架巴西C-130大力神军用运输机自2014年在此坠毁后，一直滞留在智利空军基地跑道附近。\n[O] 然而，巴西接二连三的不幸为中国创造了机会：2015年，一家中国公司赢得了耗资1亿美元重建巴西考察站的合同。\n[P] 在所有变化之中，南极依然保持着它的魅力。韩国于2014年开设了第二个南极研究基地，称这是测试韩国研究人员为极端条件开发的机器人的一种方式。在俄罗斯的帮助下，白俄罗斯正准备建设其第一个南极基地。哥伦比亚今年表示，它计划加入其他在南极设有基地的南美国家之列。\n[Q] “南极由来自欧洲、澳大拉西亚和北美国家的白人男性的利益和意愿主导的旧时代已经结束，”伦敦大学专门研究南极的政治学者克劳斯·多兹说。“现实是，南极在地缘政治上存在争议。”",
+   "questions": [
+    {
+     "stem": "36. According to Chinese officials, their activities in Antarctica lay greater emphasis on scientific research.",
+     "answer": "J",
+     "analysis": "J段末句：中国官员表示南极扩张以科学研究为优先。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. Efforts to create one of the world's largest ocean sanctuaries failed because of Russia's obstruction.",
+     "answer": "C",
+     "analysis": "C段提到俄罗斯最近阻挠了建立世界最大海洋保护区之一的努力。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. With several monitoring stations operating in Antarctica, Russia is trying hard to counter America's dominance in the field of worldwide navigational facilities.",
+     "answer": "E",
+     "analysis": "E段称俄罗斯扩建格洛纳斯监测站，至少三个已在南极运行，是挑战美国GPS主导地位努力的一部分。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. According to geologists' estimates, Antarctica has enormous reserves of oil and natural gas.",
+     "answer": "G",
+     "analysis": "G段称地质学家估计南极至少拥有360亿桶石油和天然气。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. It is estimated that Antarctica boasts of the richest reserves of fresh water on earth.",
+     "answer": "D",
+     "analysis": "D段称南极据估计拥有地球上最大的淡水储量。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. The demand for energy resources may compel renegotiation of Antarctica's treaties before their expiration.",
+     "answer": "I",
+     "analysis": "I段称能源需求可能施压重新谈判南极条约，并可能远在禁令到期前允许更多商业活动。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Many countries are racing against each other to increase their business and strategic influence on Antarctica.",
+     "answer": "B",
+     "analysis": "B段称一系列国家正争先恐后在此施加更大影响，着眼战略和商业机会。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Antarctica's harsh natural conditions constitute huge obstacles to the exploitation of its resources.",
+     "answer": "H",
+     "analysis": "H段称开采这些资源存在巨大障碍，如漂移冰山、偏远和严寒。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. With competition from many countries, Antarctica is no longer dominated by the traditional white nations.",
+     "answer": "Q",
+     "analysis": "Q段称欧洲、澳大拉西亚和北美白人男性主导南极的旧时代已结束，南极地缘政治存在争议。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. American scientists complain about lack of sufficient money and equipment for their expansion in Antarctica.",
+     "answer": "L",
+     "analysis": "L段称美国研究人员私下抱怨预算限制，且破冰船数量远少于俄罗斯。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:24:09.355Z"
+ "generatedAt": "2026-10-10T14:53:21.934Z"
 }

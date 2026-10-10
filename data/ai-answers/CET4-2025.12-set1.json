@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2025,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "To Better Enrich Student Life\n\nAs a student, I appreciate the Student Union's efforts, yet I believe more can be done to enrich campus life. First, the Union could organize more diverse activities, such as weekend concerts, sports leagues, and photography workshops. These events would not only relax students after intense study but also help them discover new interests. Second, it should create a digital feedback platform where students can vote for upcoming events and share suggestions. This would make activities more appealing and inclusive. Third, the Union can cooperate with clubs to offer skill-building programs, including public speaking, time management, and volunteer training, which are valuable for future careers. Finally, regular communication through social media and class representatives would keep everyone informed. In short, by listening to students and diversifying programs, the Student Union can truly enrich our campus life and build a stronger community.",
+   "note": "范文紧扣“为丰富学生生活提建议”，以学生身份先肯定学生会工作并引出观点，再分三点建议：多元活动、反馈平台、社团技能项目，最后总结。结构为总—分—总，层次清晰。可复用句型：As a student, I appreciate... yet...；not only... but also...；In short, by..., ... can...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "人们往往想要尽可能多的选择。他们认为这会最大化他们做出最佳决定的机会。但研究表明，当真正要从所有这些选择中做出选择时，人们可能会变得困惑，并干脆避免做决定。更糟的是，当人们最终真的做出决定时，他们通常对自己的决定不那么满意，并对自己所做的任何选择感到更后悔。\n\n为什么会这样？研究表明，当人们从许多选项中做选择时，他们会在决定上投入更多，但对自己能否做出好决定信心不足。换句话说，当我们面对更多选择时，做出“正确”或“对”的决定开始显得更加至关重要，同时也更难做到。这可能加剧我们做出错误决定的深层恐惧。\n\n我们如何解决这个问题？我认为，把决定放在全局中来看，这种恐惧可以得到缓解。记住以下两点可能会有帮助：你做的许多选择，比如午饭吃什么，将来并不会有多大影响；而即便更重要的选择，比如接受一份新工作，最终也是可以改变的。用清晰的准则以及你想从一系列选项中得到什么的想法来进入这些情境也可能有帮助，这可以缩小可能的选择范围，也让你对自己做出正确决定的能力更有信心。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "此处需要名词，与 maximize 和 of making 搭配；maximize one's chance of doing sth. 表示“最大化做某事的机会”，语义通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "N",
+     "analysis": "make a selection from... 是固定搭配，表示“从……中做出选择”；此处指从所有选择中做选择，故选 selection。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "become 后接形容词作表语；面对太多选择时人会变得困惑，confused 与前文 many choices 形成因果语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "H",
+     "analysis": "invest more in the decision 表示“在决定上投入更多”；invest in 是固定搭配，符合“选择多时投入更多”的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "J",
+     "analysis": "be presented with sth. 是固定搭配，表示“面对/被给予某物”；这里指面对更多选择，故选 presented。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "此处需要形容词作 feel 的表语，并与 more difficult 并列；crucial 表示“至关重要的”，符合做正确决定显得更重要的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "I",
+     "analysis": "will not matter much 表示“不会有多大影响”；matter 作动词，符合 lunch 等小事在未来不重要的语义。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "O",
+     "analysis": "此处需要副词修饰 be changed；ultimately 表示“最终”，说明即使重要选择最终也可以改变。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "G",
+     "analysis": "enter these situations with... 表示“带着……进入/面对这些情境”；enter 作及物动词，符合用清晰准则处理情境的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "K",
+     "analysis": "range of options 是固定搭配，表示“一系列选项/选项范围”；from the range of options 与后文 narrow the possible choices 相呼应。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 五年前，纽约市皇后区宣布将在斯基尔曼大道的一段路上设置自行车道——并取消116个停车位。骑行者很喜欢这个计划，但当地商家非常愤怒。正如他们在抗议和写给市议会的信中所说，取消这些停车位会毁掉斯基尔曼沿线的商店和餐馆。“这里停车本来就难如登天，”有人在抗议集会上喊道。\nB) 但自行车道已板上钉钉，很快便建成了。今年早些时候，Streetsblog New York 的调查记者杰西·科伯恩想知道，那些经济崩溃的预测是否成真。于是他要求市财政局提供斯基尔曼大道那段路几年的销售数据。那条街上的商家经营得如何？\nC) 结果相当不错。自行车道建成后的一年里，斯基尔曼的商家销售额增长了12%，而皇后区总体仅增长3%。此外，那段路还新开了商家，而皇后区整体则净减少。\nD) 问题是，斯基尔曼沿线的实际商户呢？他们并不相信。当科伯恩与他们交谈并描述自己的发现时，只有少数店主承认自行车道有帮助。许多人仍坚持认为自行车道正在毁掉他们所在的城区。情绪还很激烈：有人把大头钉撒在自行车道上。\nE) 这个小故事恰好让人一窥城市在努力更新基础设施时面临的挑战——通过让城镇更适宜骑行来净化空气、减少温室气体排放并加快通行速度。越来越多的数据表明，设置自行车道、让街道更宜步行，会提升一个地方的经济状况。移除汽车和停车位是有效的。但经营本地商家的人就是不相信，即便他们自己所在的街道表现良好。面对这种混乱，围绕自行车道的政治争斗能结束吗？\nF) 2013年，纽约市交通局的研究人员研究了七段设置了自行车道或打造了步行友好区域的道路。该市分析了这些路线沿线商家的数据，发现到第三年时，其中五条街的销售额增长快于整个地区，平均而言，事实上最高可达五倍。\nG) 在纽约之外，一项对23个城市研究的调查发现，自行车道和步行友好设计并未损害当地零售和食品店。（研究人员总结道：“对本地商家遭受灾难性后果的担忧是没有根据的。”）更近期的研究也大致显示了同样的结果。\nH) 事实是，在人口相当密集的地区，自行车在运送人流方面更高效。你可能会失去一位开车顾客的生意——但你会获得如今能更方便骑自行车到达的购物者。“骑行者和行人也是消费者，”苏珊·汉迪教授指出。此外，为骑行者和行人重新设计的街道往往会成为更宜人、适合闲逛的地方，所以“在很多情况下，这创造了更美好的环境，对商家确实有利。”\nI) 夫妻店通常很快就能识别出有助于自己盈利的情况。那么这里为何会有盲点？也许是因为注意力集中在恐怖故事上——而且当自行车道出现时，一些商家的确受到了冲击。\nJ) 我采访了马萨诸塞州剑桥市的理发师辛迪·休斯。她说，当该市取消附近停车位以设置自行车道时，她的生意至少下降了40%。她的大多数顾客开车来，许多来自附近城镇。只有极少数人转向骑行，即便这些人也几乎肯定不会在波士顿多雪的冬天骑车。因此，虽然休斯支持自行车道——“骑行者理应安全”——但她把停车位损失视为生死攸关的风险。“你看，我90%的顾客都开车来，”她告诉我，“对我们生意来说，自行车道比新冠还糟糕。”\nK) 对另一些人来说，抵制是文化层面的，Slate杂志撰稿人亨利·格拉巴尔说。他指出，小企业主常常是从城市其他地区开车通勤的司机。他们通常也是长期本地人。“他们往往是在这座城市根深蒂固的人，早在社区变成今天这样之前就已在这里生活，”他补充道。开车在城里转对他们来说太正常了，以至于骑行显得怪异而不寻常——尽管新冠疫情推动了骑行，当时自行车销量暴涨75%。\nL) 心理胜过一切！谁能想到呢？店主与自行车道倡导者之间的激烈分歧，似乎类似于我们在气候变化问题上更大的文化战争。如果说我们对文化战争有所了解，那就是数据并不太能改变人们的想法。\nM) 当珍妮特·萨迪克-汗在21世纪初担任纽约市交通局局长时，她负责推出了一系列自行车道——并遭到居民和企业主的愤怒反弹，他们声称骑车人太少，不足以证明设置车道的合理性。如今，她讽刺地指出，这些车道繁忙到反对者转而声称问题恰恰相反：骑自行车的人太多，挡住了汽车。\nN) 也许自行车道将永远充满情绪，直到足够多的公众终于关心气候变化——而不设置自行车道似乎显得鲁莽。\nO) 毕竟，危机有一种让人们看到各种可能性的方式。新冠疫情期间，餐馆和咖啡馆生意损失惨重，于是全国各地的城市开始允许它们建造路边座位区，让人们可以在露天安全就座。这大大减少了停车位——但因为，嗯，店主们看不到任何别的办法。顾客们非常喜欢户外座位，以至于城市正将其永久化：纽约市对新冠期间关闭的几条街道进行的一项研究发现，店主们比之前赚得更多，食客们也享受着户外生活方式。如果数据不能改变想法，顾客也许可以。",
+   "questions": [
+    {
+     "stem": "36. An increasing amount of data indicates that installing bike lanes raises local business revenues.",
+     "answer": "E",
+     "analysis": "依据：E段“There’s a rising amount of data showing that installing bike lanes and making streets more pedestrian-friendly boosts the economic fortunes of a place.”对应数据增多且提升经济收益。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. According to a magazine writer, some small business owners’ resistance to bike lanes arises from cultural factors.",
+     "answer": "K",
+     "analysis": "依据：K段“For others, the pushback is cultural, says Henry Grabar, a writer for Slate Magazine.”指出杂志撰稿人认为抵制源于文化因素。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. A stretch of Skillman Ave witnessed not only a big increase in sales but also the opening of new businesses.",
+     "answer": "C",
+     "analysis": "依据：C段“businesses on Skillman saw sales rise by 12 percent... that section of road saw new businesses open”对应销售额大增并新开商家。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. When people have no way out in crises, they are more likely to embrace changes.",
+     "answer": "O",
+     "analysis": "依据：O段“Crises, after all, have a way of opening people’s eyes to possibilities... shop owners didn’t see any way around it.”说明危机中别无他法时更可能接受变化。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. According to one survey, city design with bike lanes and pedestrian space did not negatively impact local businesses.",
+     "answer": "G",
+     "analysis": "依据：G段“a survey of research from 23 cities found that bike lanes and pedestrian-friendly design didn’t hurt local retail and food stores.”对应调查表明未负面影响本地商家。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Despite increased business activity on Skillman Ave, many store owners insisted the bike lanes were destroying their area.",
+     "answer": "D",
+     "analysis": "依据：D段“Many still insisted the lanes were killing their part of the city.”对应尽管斯基尔曼商业活动增加，许多店主仍认为自行车道在毁掉当地。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. In a war of culture, data does not help much in changing people’s minds.",
+     "answer": "L",
+     "analysis": "依据：L段“data isn’t much good at changing minds.”对应文化战争中数据不太能改变人们想法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. A businesswoman said her business dropped sharply when parking space gave way to a bike lane, because most of her\ncustomers came by car.",
+     "answer": "J",
+     "analysis": "依据：J段“business fell by at least 40 percent when the city removed nearby parking to put in a bike lane. The majority of her customers drive...”对应女商人因多数顾客开车、停车位让位自行车道而生意大降。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Local business owners on Skillman Ave argued that their businesses would be ruined when parking spots were replaced\nby bike lanes.",
+     "answer": "A",
+     "analysis": "依据：A段“Taking out those parking spots... would ruin stores and restaurants along Skillman.”对应当地商家认为停车位被自行车道取代会毁掉生意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. People may find it more pleasant to wander around streets redesigned for cycling and walking.",
+     "answer": "H",
+     "analysis": "依据：H段“streets redesigned for bikes and pedestrians tend to become more pleasant places to hang around”对应人们觉得在重新设计的街道闲逛更宜人。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "In recent years, the Chinese government has attached great importance to the development of the private economy and introduced a series of policies to support private enterprises. As of the end of March 2025, the number of private enterprises nationwide exceeded 57 million, accounting for 92.3% of all enterprises. Not only has the number of private enterprises grown steadily, but their quality and structure have also continued to improve. R&D investment by private enterprises has been increasing, and they have developed rapidly in fields such as next-generation information technology and artificial intelligence. The strengthening of the core competitiveness of private enterprises has provided strong support for the high-quality development of China's economy.",
+   "note": "难点在数字与固定表达：5700万家=57 million，截至=as of/by the end of，占比=account for；注意区分 private economy 与 private enterprises。“不仅……也……”用 not only...but also 倒装；“高质量发展”译为 high-quality development；时态以现在完成和现在完成进行为主，保持连贯。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "经济学教授凯瑟琳·亚伯拉罕曾与她的理发师聊退休计划。这位经济学家说，她计划继续工作，因为她想继续工作。理发师也同意继续工作，但原因不同：她需要钱。\n\n这两种情况都促成了美国70多岁仍在工作的人数大幅增加。过去20年里，美国人中70多岁仍在工作者的比例已从不足10%上升到近15%。\n\n除了人们更健康、寿命更长之外，经济学家表示，多种财务考量——例如实际工资多年缓慢增长，以及私营部门逐渐弃用传统养老金制度——是人们推迟退休的部分原因。亚伯拉罕说，制造业的衰落以及从事体力强度较低职业的人数增加，也助推了这一趋势。她专门研究美国老年人的工作与退休决定。\n\n亚伯拉罕说：“哪个因素更重要，取决于你在此之前所从事的工作类型以及你的经历。”\n\n这一总体趋势正影响到受教育程度各异的美国人，尽管不同类别的比例有所不同。2018年，拥有学士学位且工作到70多岁的美国人比例达到近20%。对于高中或以下学历者，70多岁仍在工作的比例上升到约10%，而接受过部分大学教育者居中，约为15%。\n\n马丁·尼尔·贝利是一位经济学家，正在领导一个关于退休保障的研究项目。他指出，退出职业生涯会导致孤立感和孤独感，对男性尤其如此。他认为，许多受过大学教育的劳动者选择留在劳动力队伍中，更多是为了社会交往方面的好处，而非经济原因。他们也更可能从事专业类职业，往往更享受自己的工作。\n\n贝利说，与此同时，从事更耗体力工作的劳动者可能更期盼退休，这表明那些继续工作的人更有可能是出于经济原因。",
+   "questions": [
+    {
+     "stem": "51. What do we learn from the passage about the economics professor and her hairdresser?",
+     "answer": "A",
+     "analysis": "第一段明确说教授继续工作是因为她想工作，而理发师虽然也同意继续工作，却是因为需要钱，二人继续工作的原因不同。B项未说二人都打算工作到70多岁；C、D项于文无据或把“原因不同”曲解为“对推迟退休持不同观点”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What is one of the reasons for people to delay retirement?",
+     "answer": "C",
+     "analysis": "文章指出推迟退休的原因之一是实际工资多年缓慢增长，实际工资即购买力，C项是其同义替换。A项把“体力强度较低”曲解为“智力挑战较低”；B项文中未说适合老年人的岗位增加；D项虽提到传统养老金，但原文是私营部门逐渐弃用传统养老金，并非“越来越多职场中人发现难以依赖传统养老金”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What is the general trend in people delaying retirement?",
+     "answer": "D",
+     "analysis": "文章按受教育程度比较工作到70多岁的比例：学士学位者近20%，高中及以下约10%，接受过部分大学教育者约15%，说明学历越高越可能推迟退休。A项谈收入、B项谈工作满意度、C项谈性别，均不是该段所讲的总体趋势。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is the chief reason for college-educated workers delaying retirement according to an economist?",
+     "answer": "B",
+     "analysis": "贝利指出退出职业会导致孤立和孤独，许多受过大学教育的劳动者留在劳动力队伍中更多是为了社会交往方面的好处，而非经济原因，即保持社会联系。A项与原文相反；C、D项文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the passage say about people doing manual work?",
+     "answer": "D",
+     "analysis": "文章最后说，从事更体力工作的劳动者可能更期盼退休，D项“anticipate retirement”对应原文“look forward to retiring”。A项“退休后享受生活”、B项“可能有财务困难”、C项“普遍不喜欢工作”均非原文直接表述。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "地球上所有生物都暴露于24小时的昼夜循环之中。这一循环是人们夜间休息、白天活动的原因。因此，人体的一切功能也都遵循这种日常节律，而像锻炼或进食这类行为的时间安排会显著影响你的健康。例如，夜间进食久而久之可能导致体重增加，因为夜间进食会增加脂肪储存。人体内的许多药物靶点也遵循24小时周期。这意味着，药物旨在改变的特定蛋白质在24小时周期内对药物的反应可能不同。由于人体对药物的反应会因服药时间不同而不同，因此合乎逻辑的是，在特定时间服药可能有助于提高疗效并减少不必要的副作用。医生给人们开药时，很少考虑最佳服药时间。造成这一疏忽主要有两个原因。第一，许多医生没有意识到有些药物在一天中的特定时间效果更好。第二，大多数药物尚未针对24小时周期内可能产生的不同效果进行研究。因此，患者被要求主要在早晨或晚上服用大多数药物，主要是为了确保依从性。50多年前，研究人员发现，降胆固醇药物辛伐他汀在晚上服用比白天服用更能有效降低胆固醇水平。这是因为这些药物所针对的肝酶在夜间更为活跃。在错误的时间服药甚至可能造成伤害。我和同事想知道，全世界外科手术中最常用的镇静剂咪达唑仑是否会干扰夜间保护心脏的生物钟。目前，还没有关于咪达唑仑应在何时给药的指南。需要更多研究来确定不同疾病治疗的最佳给药时间。我相信，将用药时间考虑在内，有助于使治疗更有效，并帮助全世界更多人。",
+   "questions": [
+    {
+     "stem": "46. What do we learn from the passage about the timing of our behaviors?",
+     "answer": "A",
+     "analysis": "第一段明确指出，锻炼或进食等行为的时间安排会显著影响健康，A项“对健康有相当大的影响”与此对应。B项因果倒置，24小时昼夜循环是背景而非行为时间限制我们；C、D都过度推断，文中未说必须遵循某一节律或这是所有人体功能的关键。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author say about the proteins in our body?",
+     "answer": "C",
+     "analysis": "第二段说，许多药物靶点遵循24小时周期，药物要改变的特定蛋白质在一天中对药物的反应可能不同，C项“它们对药物的反应在昼夜周期中变化”正确。A项把蛋白质说成能改变药物效果，B项说蛋白质能减少副作用，D项说其设计决定反应，均与原文不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What do doctors do when prescribing medicine for people?",
+     "answer": "A",
+     "analysis": "第三段首句指出，医生开药时很少考虑最佳服药时间，A项“很少考虑为达到最大效果而服药的时间”正确。B项谈哪种药对哪位患者更有效，C项谈告知24小时内的副作用，D项谈遵守制造商说明，文中均未支持。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. Why do doctors advise patients to take most drugs in the morning or in the evening?",
+     "answer": "B",
+     "analysis": "第三段末尾说明，患者被要求主要在早晨或晚上服药，主要是为了确保依从性，B项“确保他们按指示服药”正确。A项投诉、C项遵守新研究发现、D项保证最大药效都不是原文给出的主要原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does the author suggest near the end of the passage?",
+     "answer": "B",
+     "analysis": "文末作者建议把用药时间考虑在内，以帮助治疗更有效，B项核心“taking drug timing into account”与此对应；A、C是第47题关于蛋白质的干扰项，D项把“确定最佳给药时间”偷换为“通过进一步研究找出最有效药物”，偏离文意。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T15:01:09.127Z"
+}

@@ -27,35 +27,35 @@
    "translation": "MIT的唐纳德·萨多威博士创办了自己的电池公司，希望改变世界的能源未来。这是对一项大多数人在手机黑屏时才想起的技术的戏剧性背书。但萨多威并非唯一将能源存储鼓吹为通往更清洁、更高效、更公平能源未来之缺失环节的人。\n科学家和工程师长期以来一直相信电池改变世界的潜力。先进的电池正走出专门市场，逐渐进入主流，标志着电动汽车和屋顶太阳能等前瞻性技术的转折点。\n当然，无处不在的电池已经走过了漫长的道路。无论好坏，电池使我们的移动优先生活方式、屏幕文化以及日益全球化的世界成为可能。然而，尽管这一切令人印象深刻，但与接下来发生的事情相比可能微不足道。在已经促成一场通信革命之后，电池如今准备改变几乎其他一切。\n无线时代正在扩展，不仅包括我们的手机、平板电脑和笔记本电脑，还包括我们的汽车、家庭乃至整个社区。在新兴经济体中，农村社区正绕过输送电力的电线和木杆。相反，非洲和亚洲的一些地区正看到他们的第一盏灯泡由存储在电池中的太阳能点亮。\n如今，能源存储是一个330亿美元的全球产业，每年产生近100吉瓦时的电力。到本十年末，预计其价值将超过500亿美元，发电量达到160吉瓦时，足以吸引那些可能原本对一项显然平凡的技术不感兴趣的大公司的注意。甚至长期以来将电池和替代能源形式视为威胁的公用事业公司，也在学着拥抱这些技术，将其视为赋能而非破坏。\n当今电池的突破正值世界寻求将现代能源接入扩大到大约十亿无电人口，同时减少使地球变暖的燃料。随着对“如何使电力便携”这一数百年老问题的答案日益改善，这些同时出现的挑战似乎不那么令人望而生畏。\n诚然，在夜间充电完全取代每周去加油站之前，电池还有很长的路要走。电池驱动的世界也伴随着自身的风险。随着越来越多的人成为“产消者”（即自己生产并消费能源的人），花费数十年和数十亿美元建设的集中电网将会怎样？\n没有人知道哪种电池技术（如果有的话）最终会占据主导地位，但有一件事依然清晰：能源的未来在于我们如何存储它。",
    "questions": [
     {
-     "stem": "46. What does Dr. Sadoway think of energy storage? A. It involves the application of sophisticated technology. B. It is the direction energy development should follow. C. It will prove to be a profitable business. D. It is a technology benefiting everyone.",
+     "stem": "46. What does Dr. Sadoway think of energy storage?",
      "answer": "B",
      "analysis": "文章开头提到Sadoway将能源存储视为通往更清洁、更高效、更公平能源未来的“缺失环节”，即未来能源发展应遵循的方向，故B正确。A“复杂技术”和C“有利可图”未提及；D“惠及每个人”表述过于宽泛且文中未明确说“每个人”。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "47. What is most likely to happen when advanced batteries become widely used? A. Mobile-first lifestyles will become popular. B. The globalization process will be accelerated. C. Communications will take more diverse forms. D. The world will undergo revolutionary changes.",
+     "stem": "47. What is most likely to happen when advanced batteries become widely used?",
      "answer": "D",
      "analysis": "文章第三段指出电池已经促成通信革命后，现在“准备改变几乎其他一切”，暗示世界将经历革命性变化，故D正确。A、B、C均为已经发生的现象或非主要影响，不是先进电池广泛使用后的结果。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "48. In some rural communities of emerging economies, people have begun to ___________. A. find digital devices simply indispensable B. communicate primarily by mobile phone C. light their homes with stored solar energy D. distribute power with wires and wooden poles",
+     "stem": "48. In some rural communities of emerging economies, people have begun to ___________",
      "answer": "C",
      "analysis": "第四段明确指出新兴经济体农村社区用存储在电池中的太阳能点亮首盏灯泡，故C正确。A和B在文中无依据；D是传统方式，这些社区正在绕过。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "49. Utility companies have begun to realize that battery technologies ___________. A. benefit their business B. transmit power faster C. promote innovation D. encourage competition",
+     "stem": "49. Utility companies have begun to realize that battery technologies ___________",
      "answer": "A",
      "analysis": "文章第五段说公用事业公司过去把电池看作威胁，现在学会将其视为“赋能而非破坏”，即意识到电池技术对其业务有益，故A正确。B、C、D均未提及。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "50. What does the author imply about the centralized electric grid? A. It might become a thing of the past. B. It might turn out to be a \"prosumer\". C. It will be easier to operate and maintain. D. It will have to be completely transformed.",
+     "stem": "50. What does the author imply about the centralized electric grid?",
      "answer": "A",
      "analysis": "作者最后提出问题：越来越多的人成为产消者后，集中电网会怎样？这暗示集中电网可能变得过时，故A正确。B混淆概念；C、D过度推断。",
      "verified": true,
@@ -146,35 +146,35 @@
    "translation": "100多年前，美国社会学家W. E. B. Du Bois担心，种族正被用作一种生物学解释，来解释他所理解的不同人群之间的社会和文化差异。他公开反对将“白人”和“黑人”视为截然不同的群体，声称这种区分忽视了人类多样性的广泛范围。科学会站在Du Bois一边。如今，科学家的主流观点是，种族是一种没有生物学意义的社会建构。在《科学》杂志上发表的一篇文章中，四位学者表示，种族分类需要被逐步淘汰。德国马克斯·普朗克进化人类学研究所所长、生物学家Svante Pääbo说：“本质上，我完全赞同这几位作者的观点。”有一个例子证明了基因差异并不固定于种族界限：将两位著名的欧洲裔美国科学家詹姆斯·沃森和克雷格·文特尔的完整基因组与韩国科学家金成镇的基因组进行比较。结果发现，沃森和文特尔彼此共享的基因序列变异比他们各自与金共享的还要少。费城德雷塞尔大学公共卫生教授Michael Yudell表示，现代遗传学研究正运行在一个悖论之中：一方面，种族被认为是阐明人类遗传多样性的有用工具；但另一方面，种族也被认为是这种多样性的一个定义不清的标记。基于不同种族人群之间基因差异的假设在医疗环境中可能尤其危险。“如果你根据某人的种族做出临床预测，那么很大一部分时候你会出错，”Yudell告诉《生活科学》。在论文中，他和同事引用了囊性纤维化的例子，这种疾病在非洲裔人群中诊断不足，因为它被视为一种“白人”疾病。那么，如果抛弃种族概念，还能使用哪些其他变量呢？Yudell表示，科学家需要在语言上更加具体，或许可以使用“血统”或“种群”等术语，从而在个体和种群层面更准确地反映人类与基因之间的关系。研究人员也承认，在少数领域，种族作为一种建构在科学研究中可能仍然有用：作为政治和社会变量，而非生物变量。“虽然我们主张在生物科学中逐步淘汰种族术语，但我们也承认，将种族作为政治或社会类别来研究种族主义，尽管充满挑战，仍然是必要的，因为我们需要理解结构性不平等和歧视如何导致群体间的健康差异。”Yudell说。",
    "questions": [
     {
-     "stem": "51. Du Bois was opposed to the use of race as ________. A. a basis for explaining human genetic diversity B. an aid to understanding different populations C. an explanation for social and cultural differences D. a term to describe individual human characteristics",
+     "stem": "51. Du Bois was opposed to the use of race as ________",
      "answer": "C",
      "analysis": "文章首句指出杜波依斯反对把种族当作对不同人群社会文化差异的生物学解释，对应C项。A项“人类遗传多样性基础”、B项“理解不同人群的辅助”、D项“个体特征”均不是他反对的核心。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "52. The study by Svante Pääbo served as an example to show ________. A. modern genetics research is likely to fuel racial conflicts B. race is a poorly defined marker of human genetic diversity C. race as a biological term can explain human genetic diversity D. genetics research should consider social and cultural variables",
+     "stem": "52. The study by Svante Pääbo served as an example to show ________",
      "answer": "B",
      "analysis": "该例子显示两名欧洲裔科学家彼此共享的基因变异少于他们各自与韩国科学家共享的变异，说明种族不能可靠地反映遗传差异，作为多样性标记是定义不清的，故选B。A、D文中未提及，C与例子结论相反。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "53. The example of the disease cystic fibrosis underdiagnosed in people of African ancestry demonstrates that ________. A. it is absolutely necessary to put race aside in making diagnosis B. it is important to include social variables in genetics research C. racial categories for genetic diversity could lead to wrong clinical predictions D. discrimination against black people may cause negligence in clinical treatment",
+     "stem": "53. The example of the disease cystic fibrosis underdiagnosed in people of African ancestry demonstrates that ________",
      "answer": "C",
      "analysis": "囊性纤维化在非洲裔中诊断不足是因为被误认为“白人病”，说明依据种族做出的临床预测会出错，对应C项。A项“绝对必要”过于绝对，B项“社会变量”并非该例重点，D项将原因归于歧视而非错误的种族假设。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "54. What is Yudell's suggestion to scientists? A. They be more precise with the language they use. B. They refrain from using politically sensitive terms. C. They throw out irrelevant concepts in their research. D. They examine all possible variables in their research.",
+     "stem": "54. What is Yudell's suggestion to scientists?",
      "answer": "A",
      "analysis": "Yudell明确建议科学家需要在语言上更加具体，使用“血统”“种群”等术语，对应A项。B、C、D在建议部分均未提及。",
      "verified": true,
      "dissent": null
     },
     {
-     "stem": "55. What can be inferred from Yudell's remark in the last paragraph? A. Clinging to racism prolongs inequity and discrimination. B. Physiological disparities are quite striking among races. C. Doing away with racial discrimination is challenging. D. Racial terms are still useful in certain fields of study.",
+     "stem": "55. What can be inferred from Yudell's remark in the last paragraph?",
      "answer": "D",
      "analysis": "最后一段Yudell承认种族作为政治或社会类别研究种族主义仍是必要的，可推断种族术语在某些研究领域仍有价值，故选D。A、B无关，C偷换概念，原文说的是使用种族类别研究种族主义充满挑战，而非消除种族歧视。",
      "verified": true,

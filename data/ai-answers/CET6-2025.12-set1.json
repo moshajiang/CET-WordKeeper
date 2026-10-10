@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2025,
+ "month": 12,
+ "set_no": 1,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "Living in an increasingly competitive world, college students should better prepare themselves to confront various challenges. To begin with, mastering professional knowledge and practical skills is the foundation. In today's job market, employers value not only academic records but also the ability to solve real problems. Therefore, students should seize opportunities such as internships, research projects, and campus activities to turn book knowledge into competence. Moreover, psychological readiness matters just as much. Setbacks are inevitable, but those who view failure as feedback can grow stronger. Developing resilience, managing time wisely, and seeking support when necessary will help students stay positive under pressure. For example, a student who balances study, part-time work, and social life learns to prioritize tasks and cope with stress effectively. In conclusion, adequate preparation involves both ability and attitude. Only by improving skills and building a strong mind can college students confidently meet future challenges and turn them into opportunities for growth.",
+   "note": "范文紧扣“准备应对挑战”，以指定句开篇，采用总分总结构：先总述，再从专业技能与实践、心理韧性与时间管理两方面论证，最后总结。衔接词有 To begin with、Moreover、For example、In conclusion。可复用句型：matters just as much；view...as feedback；Only by...can...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "如今，人们普遍认为，规律运动会给那些长期保持这一习惯的人带来各种健康益处。但开始锻炼会不会为时已晚呢？\n一项新研究观察了那些在40多岁后提高运动量、超过其年轻时水平的人，这些人早逝风险有所下降，其下降幅度与终身坚持运动的人相似。与不运动的人相比，这一降幅为32%到35%。那些在中年开始运动的人，其慢性病（如心脏病和癌症）的发病率也有所降低，且与坚持运动者相似。\n那么，为什么还要费心终身坚持运动呢？该研究的作者承认，有些人可能会把研究结果解读为他们可以推迟开始锻炼计划，但这会是个错误。保持长期活跃还有其他身心方面的益处，我们不应忽视。这些实实在在的健康益处包括更好的认知功能和更低的增重风险。鉴于全球肥胖流行，后者尤为重要。此外，专家断言，越早开始越好，因为如果你年轻时养成了运动习惯，你更有可能在以后的人生中保持这些模式。\n因此，理想的情况是人们从儿童或青少年时期就开始锻炼，而无论年龄多大，始终保持积极的生活方式都是有益的。不过，这项研究确实表明，如果你一直不活跃，那么在40多岁和50多岁时开始积极锻炼，仍然可以获益。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "H",
+     "analysis": "固定表达“is it ever too late to start”表示“开始会不会太晚”，ever 用于疑问句加强语气，符合语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "J",
+     "analysis": "early mortality 意为“早逝”，与 risk of 搭配自然，并与运动降低健康风险的主题一致。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "G",
+     "analysis": "a drop of 32% to 35% 表示“下降32%到35%”，与上文 declines in risk 相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "chronic diseases 意为“慢性病”，心脏病和癌症正是典型例子，incidence of chronic diseases 搭配合理。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "E",
+     "analysis": "concede that 表示“承认”，用于引出作者承认某些人可能作出的误读，符合学术讨论语气。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "F",
+     "analysis": "should not disregard 意为“不应忽视”，宾语为 other benefits，语义和搭配均通顺。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "D",
+     "analysis": "cognitive functioning 意为“认知功能”，与 mental and physical benefits 中的 mental 相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "K",
+     "analysis": "particularly important 意为“尤其重要”，用于强调在全球肥胖流行背景下这一点更关键。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "keep up those patterns 指保持年轻时的运动模式或习惯，与 if you make a habit 相呼应。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "A",
+     "analysis": "children or adolescents 意为“儿童或青少年”，并列指理想的早期开始锻炼阶段，复数形式符合语境。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 和大多数厨师一样，Flippy 不怕辛苦工作。自去年夏天以来，这意味着它要在加利福尼亚州帕萨迪纳的 Caliburger 上 11 点到 7 点的班，还要在洛杉矶道奇体育场的 Chick-N-Tots 做短期任务。这些是长时间的重复劳动，老板要求绝对一致。但你不会听到 Flippy 抱怨，事实上它什么也不会说。因为 Flippy 是一个机器人——一条云端连接的机械臂，配有 3D 热扫描仪作为眼睛——它可以翻汉堡，每小时炸 80 篮食物，监控食物，甚至事后清理。\n\nB) Flippy 由 Miso Robotics 创造，隶属于 Cali Group。其 CEO 约翰·米勒将其描述为：“一家碰巧卖芝士汉堡的科技公司。”Cali 制造新机器，并在其全球 Caliburger 餐厅进行路测，Flippy 将于今年部署到这些餐厅。Flippy 并不孤单。同样在加州，Bear Robotics 开发了一款自动引导机器人 Penny，目前已为 4 万名食客提供服务。\n\nC) 十年前，机器人厨师和服务员还是纯科幻。今天，它们已成为现实，而且价格使其成为合理的投资。Bear Robotics 首席运营官胡安·伊格罗斯说，从 5 月起，Penny 将按订阅方式发货，提供“即时回报”。据报道，Flippy 将花费 6 万至 10 万美元。完全自动化的汉堡餐厅——顾客在屏幕上点餐、电子支付、吃由机器人烹饪并送来的食物——如今已成为可能，只需极少人工监督。\n\nD) 技术已经存在，只需要以具有成本效益、并让食客接受的方式整合起来。在一个急于削减劳动力成本、增加利润的行业，进一步自动化似乎不可避免。在加州 Kang Nam Tofu House 进行八个月测试后，Bear Robotics 将 Penny 归功于推动销售额增长 28%。与此同时，在美国试验中，麦当劳目前正在其 1300 家英国餐厅安装的自助点餐屏，据报使订单金额提高了 30%。\n\nE) 个性化被视为这项技术吸引力的关键，同时它还能可靠地向顾客推销所谓的“追加销售”（套餐、加料、更大杯饮料）。很快，当你登录餐厅应用时，它将能够利用你的数据和购买历史向你推荐菜品——综合考虑从天气到（如果你在能读取你面部的屏幕上点餐）你的情绪等一切因素。\n\nF) “现在人们在选择上妥协。我们面对的是千篇一律的菜单。最终，技术可以让我们做出个性化选择。你爱辣食和鸡肉？这是像你这样的人最常点的菜，”酒店科技公司 Flyt 的 CEO 汤姆·韦弗说。他热情地谈到赫尔辛基快闪餐厅 Take-In，这是一家全方位服务餐厅，食客从各种外卖服务点菜。“几百年来第一次，数字化让我们能够创造新版本的餐厅。”\n\nG) 如果商业街快餐已为自动化做好准备，那么它对高端餐厅的影响可能更微妙、更缓慢。“可能要过很长时间，我们才会看到五星级机器人厨师，”谢菲尔德大学人工智能与机器人学教授诺埃尔·夏基说。“除了人工智能的创造力差距，出色的烹饪还涉及对食材的微妙理解，以及精细的烹饪，这对机器人来说极具挑战。将易碎食物摆盘会慢得难以置信。”\n\nH) 目前，机器人的功能有限。需要人工把盘子装到 Penny 上，再由食客自己取走。在机器人驱动的美国披萨外卖公司 Zume，更困难的工作，比如给披萨加配料，仍然由人类完成。但即将推出的 Moley 展示了未来可能达到的复杂程度。它以《厨艺大师》比赛冠军蒂姆·安德森的动作建模，其机械臂固定在炉灶上方，被编程为用生食材准备菜肴。它专为家庭使用设计，但计划推出商业版本，这为餐厅厨房自动化甚至技术挑战极高的任务开辟了可能性。\n\nI) 目前，QSR Automations 供应给 Mitchells & Butlers 酒吧或肯德基的厨房技术没那么光鲜。QSR 系统不是让厨师喊出食客订单，而是自动将这些订单分发到各个屏幕上。厨房屏幕随后告诉厨师何时开始烹饪每道菜，以便你的一盘鱼、薯条和豌豆在合适的时间一起做好。\n\nJ) 餐饮业目前正遭受熟练厨师的严重短缺——根据技能机构 People 1st 的数据，缺口为 1.1 万人。“旨在让流程更傻瓜化的自动化系统正试图弥合这一缺口，”《餐厅》杂志编辑斯特凡·乔姆卡说。\n\nK) 在简化或提升顾客体验方面，在线餐厅预订一直是互联网时代轻而易举的成功。自动化餐桌点餐和支付被视为下一个里程碑。在那之前，早期采用者，比如曼彻斯特酒吧老板安迪·史密斯，他在自己的场所 33 Oldham Street 使用 Ordoo 应用，很可能会经历不断增长但“低于预期”的接受度。\n\nL) 餐厅科技中令人尴尬的失败经常登上头条。TGI Fridays 的无人机弄伤了一名《布鲁克林每日鹰报》摄影师；美国汉堡连锁 Shake Shack 不得不放弃完全无现金点餐门店的计划。但乔姆卡说，如果这类技术只提供“对并不真正存在的问题的解决方案”，就可能偏离目标。他补充说，“支付自动化”可能有用。但在昂贵餐厅里，“你需要晚餐多快？”\n\nM) 对人文待客艺术的那种依恋，将让那些把自动化视为工作威胁的员工感到振奋。“Unite 担心，如果没有保障措施，任何好处都会绕过低薪岗位的工人，比如服务员，”该工会伦敦地区官员戴夫·特恩布尔说。“我们敦促议员们确保自动化不会像以往工业革命那样只惠及少数富人。”\n\nN) 行业原则是，自动化将使其能够更有效地重新部署员工。工作会变化，即使数量不会立即减少。“自助点餐屏意味着前厅需要更多人。去年，我们招聘了 1000 名新经理，”麦当劳 COO 杰森·克拉克说。Caliburger 有一个项目，将员工再培训为机器人工程师或“厨师技术员”。\n\nO) 但最终，通过雇用更少人或以更低工资雇用人员来降低管理成本的机会，将是大品牌被技术吸引的原因。未来 10 年，传统实体餐厅的工作岗位必然会消失，尤其是因为自动化将助推其快速增长的竞争对手：外卖。Domino 和 Just Eat 等公司都试验过机器人和无人机配送，这在冰岛雷克雅未克已经合法。“机器人送餐是未来，”诺埃尔·夏基说。“小型、时速 4 英里的地面机器人很安全，将每天 24 小时工作。”\n\nP) 结合对预期订单量的机器学习，以及 QSR 等系统生成的每分钟烹饪数据，这支机器人车队几乎可以即时送餐。“餐厅会提前于订单到来准备食物，”Just Eat 工程总监丹尼尔·理查森预测。“我将能对家人说‘我们吃披萨吧’，我的智能助手会听到，10 分钟后食物就会送到我家门口。”还没有人给出确切日期。但在餐厅里，在你家门口，机器人正在到来。",
+   "questions": [
+    {
+     "stem": "36. It is now possible to fully automate a burger restaurant with little human\nsupervision.",
+     "answer": "C",
+     "analysis": "C段最后一句：Fully automated burger restaurants managed with minimal human oversight... are now a possibility，对应“现在有可能在极少人工监督下完全自动化汉堡餐厅”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. At a robot-powered US company, complicated tasks still have to be performed by\nhumans.",
+     "answer": "H",
+     "analysis": "H段：At the robot-powered US pizza-delivery company Zume, the more difficult jobs... are still done by humans，对应机器人驱动的美国公司中复杂任务仍由人类完成。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. More automation appears to be a certainty in industries eager to cut labour costs\nand raise profits.",
+     "answer": "D",
+     "analysis": "D段：In an industry keen to slash labour costs and increase profits, further automation seems inevitable，对应急于削减劳动力成本、提高利润的行业进一步自动化似乎不可避免。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. There are often front-page reports of failures in technological innovation of the\nrestaurant industry.",
+     "answer": "L",
+     "analysis": "L段：Embarrassing failures in restaurant tech frequently hit the headlines，对应餐厅科技失败经常登上头条。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. Robot-chef Flippy does not fear laborious work, nor does it make any complaints.",
+     "answer": "A",
+     "analysis": "A段：Flippy is not afraid of hard work... But you won't hear Flippy complain，对应Flippy不怕辛苦工作，也不抱怨。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. Digital technology makes it possible for businesses to innovate restaurant\nmodels.",
+     "answer": "F",
+     "analysis": "F段：digital is allowing us to create new versions of restaurants，对应数字技术使企业能够创新餐厅模式。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. Fondness for human warmth in catering to customers will give hope to\nemployees who are afraid of losing jobs to robots.",
+     "answer": "M",
+     "analysis": "M段：That attachment to the human art of hospitality will be heartening for staff who see automation as a threat to jobs，对应对人文待客艺术的依恋给担心被机器人取代工作的员工带来希望。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. There is an acute shortage of experienced chefs in the catering industry and\nautomated cooking is expected to fill the gap.",
+     "answer": "J",
+     "analysis": "J段：severe shortage of skilled chefs... Automation systems... trying to bridge that gap，对应餐饮业熟练厨师严重短缺，自动化烹饪有望填补缺口。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Over the coming decade, many jobs in traditional restaurants will disappear due\nto robot delivery.",
+     "answer": "O",
+     "analysis": "O段：over the next 10 years, jobs will go in conventional bricks-built restaurants... automation will boost... delivery，对应未来十年传统餐厅许多岗位将因机器人配送消失。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. According to an expert in AI and robotics, it may be quite some time before a\nmaster robot-chef appears.\n📖 长篇阅读匹配题：根据 A-P 段落信息，判断上述陈述出自哪一段。",
+     "answer": "G",
+     "analysis": "G段：Noel Sharkey, professor of AI and robotics... It'll probably be a very long time before we see a five-star robot-chef，对应人工智能与机器人专家称大师级机器人厨师可能很久以后才会出现。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Respecting the elderly is a traditional virtue of the Chinese nation. It is deeply rooted in the thoughts and behavior of the Chinese people and serves as a code of conduct and social norm generally observed by the people. In today's China, this virtue has been widely carried forward. All sectors of society are actively fostering a social atmosphere of respecting and helping the elderly. Providing convenient services for older people has become a social consensus. For example, communities have specially opened senior canteens, and public places have been equipped with priority seats. The government has also introduced a series of policies to provide strong safeguards for the rights and interests of the elderly. Respecting the elderly is an important cornerstone of social harmony and development. It helps foster a sound social atmosphere and promote the progress of civilization throughout society.",
+   "note": "难点在“尊老”“行为规范和社会准则”“传承”“敬老助老”“长者食堂”“优先座位”“有力保障”等。译文中用 respecting the elderly, code of conduct and social norms, carried forward, foster an atmosphere of respecting and helping the elderly, senior canteens, priority seats, strong safeguards 等处理，兼顾忠实与地道。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "在获得诺贝尔和平奖的演讲中，马丁·路德·金曾说：“我相信，不带武器的真理和无条件的爱将在现实中说了算。”\n五十多年后，我们的社会仍在努力区分真相与幻想、事实与虚构。从关于气候变化的争论到关于如何教授奴隶制的辩论，美国正处在十字路口。而争取公平的斗争是这些至关重要对话的核心。\n一项又一项研究表明，不平等造成了令人震惊的后果。花旗2020年的一份报告指出，如果过去二十年中与高等教育相关的公平问题得到充分解决，“黑人学生本可以将其终身收入增加900亿至1130亿美元”。\n这一统计数字代表了美国作为一个国家未能面对的大量问题。它也凸显了一个事实：我们正在错失弥合彼此分歧的宝贵机会。然而，通过传承金的精神遗产，我们可以让国家重新走上通往真正公平的道路。\n学生——成年人亦然——如果不懂得当今冲突的起因，就根本无法理解这些冲突。这意味着我们有责任帮助他们将美国历史与当前事件联系起来。这也意味着要给他们提供必要的工具，以应对他们自己生活中的不平等和偏见。坚持这些原则，并致力于真诚的对话，可以帮助每个学生更好地认识我们已经走了多远，也更清楚地看到我们尚未走的路。\n通过对“需要更多合格、多元化教育工作者”进行更真实的分析，我们可以改进全国学校的招聘、培训和留任策略。\n不幸的是，我们根深蒂固的分歧正在拖延这些进步。最近一项调查发现，77%的美国人认为国家“比以往任何时候都更加分裂”。但关于两极分化加剧的报道不应说服我们彼此回避。相反，它们应促使我们直面共同的问题。\n我们并非如一些人所暗示的那样，生活在一个“后种族社会”。在种族不平等问题上，我们绝不能把头埋在沙子里。除非我们坦诚面对不容忍、偏见，以及这些社会弊病如何影响我们彼此相待的方式，否则不公正将继续困扰我们。但我们的子孙后代理应得到更好的。\n在这个马丁·路德·金纪念日以及此后，让我们承诺共同努力，打破现状。让我们继续建设一个更好、更包容的国家；并用马丁·路德·金的话说，“一个与自身和平相处、能够问心无愧的社会。”",
+   "questions": [
+    {
+     "stem": "51. What does the author think about today's America?",
+     "answer": "C",
+     "analysis": "首段指出美国仍在区分真相与幻想，且争取公平的斗争仍处于核心；后文又说我们尚未走完通往真正公平的路，因此C最符合作者对今日美国的总体判断。A曲解了separate truth from fantasy；B、D均非作者核心观点，D“几乎每个问题都分歧”也过于绝对。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do we learn from the passage about black students in the past 20 years?",
+     "answer": "A",
+     "analysis": "花旗报告指出，如果过去二十年高等教育相关的公平问题得到解决，黑人学生本可增加巨额终身收入，这说明他们在高等教育中受到了不公平对待。C把“本可以增加”说成“已经增加”，与原文相反；B、D文中未提及。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. How can Americans bridge the differences that divide them?",
+     "answer": "C",
+     "analysis": "第三段在提到错失弥合分歧的机会后，紧接着说“通过传承金的精神遗产”可以让国家重回真正公平之路，因此C是直接依据。A来自后文“直面共同问题”的表述，并非该处“弥合分歧”的直接答案；B、D无据或曲解valuable opportunities。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. How do most Americans view America as a nation according to a recent survey?",
+     "answer": "D",
+     "analysis": "调查发现77%的美国人认为国家“比以往任何时候都更加分裂”，即多数人认为美国日益分裂，D正确。C与原文相反；A无据；B是作者对分歧后果的评论，不是调查中多数人的看法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author suggest Americans do?",
+     "answer": "B",
+     "analysis": "末段呼吁共同努力打破现状、建设更包容的国家，且前文强调应直面共同问题、推动公平，因此B最符合作者建议。A只是说子孙后代值得更好，不是建议；C、D不是作者的主要诉求。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "许多人把友谊视为一条安慰毯：一个可以靠着哭泣的肩膀，一个可以倾诉的可靠灵魂。然而，在我们急于追求个人成功的过程中，我们往往会在途中失去朋友，而这已成为过程的一部分。伴随日常生活而来的混乱和无休止的动荡，是追求稳定友谊的一大障碍。作为学生，我们用这个借口来对失去那些我们曾以为是挚爱的人不以为意。\n\n我们不应把生活看作一场比赛，每个人都在各自通往某种成功的路上奔跑；我们必须重新学会珍视在这条路上建立的联系。我们必须重新评估激进的、个人自由的危害。\n\n激进个人主义将个人自由置于集体之上。例如，它认为全民医保——集体主义的一个例子——威胁了许多美国人的梦想。\n\n我们中的许多人已成为个人主义文化的受害者。社会往往颂扬个人成就，并基于这样一种假设来称赞它：赢或成功是比下一个人更努力的结果。\n\n作为一个社会，我们崇拜“在通往成功的路上失去朋友”这一观念。我记得高中时听到：“别担心失去友谊，只要专注于学习、考上大学。从长远看，这才是重要的。”这种观点并非我的独特经历。许多成功故事都在宣扬它，它也已嵌入我们看待成长的方式。励志演讲者会推动听众接受失去朋友这一不可避免的结局，让他们对此心安理得。和朋友待得太久？你在浪费本可以更好用于成就的时间。把时间投入人际关系？不如把时间投入工作。\n\n这种不断追求成功的需要，使我们无法看清伴随日常生活的变化旋风。我们被期望取得实实在在的成功、获得奖项、升到更高职位、取得更好成绩。为了成功，我们失去朋友，而可悲的是，这已经变得正常化。\n\n我们不能对失去友谊心安理得，因为友谊是我们的锚。是的，追求成功。挑战自己。突破极限。但与那些自称成功专家的人所说的相反，独自做到这些并不会让你更成功，也不会让你比在他人帮助下取得成就的人更优秀。\n\n努力培养健康的人际关系，并在看似没有时间留给别人的繁忙日程中维系它们。尽管我们可能生活在一个珍视独立追求成就的社会，但在这条路上有人支持和爱你，远比任何最终结果都重要。",
+   "questions": [
+    {
+     "stem": "46. What often happens when people are eager to pursue individual success?",
+     "answer": "D",
+     "analysis": "第一段明确说，人们急于追求个人成功时“we lose friends along the way”，即忽视与朋友的联系。A、B只是首句比喻，不是该情境的结果；C“找不到可靠朋友”曲解原文。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author advise people to do in their pursuit of radical\nindividualism?",
+     "answer": "A",
+     "analysis": "第二段说“We must reevaluate the harm of radical, individual freedom”，A“重新审视其危害”与之对应。B是作者批评的借口；C、D是第一段提到的障碍，并非作者建议。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is American society's assumption of personal achievement?",
+     "answer": "D",
+     "analysis": "第四段指出，社会称赞个人成就基于“成功是比别人更努力的结果”这一假设，D“体现非凡努力”对应。A是社会的做法而非假设；B、C与问题不符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What is preached in many success stories?",
+     "answer": "B",
+     "analysis": "第五段说成功故事和励志演讲者宣扬把时间投入工作而不是人际关系，B对应。A、D只对应高中时“专注学习/考大学”的具体说法，范围过窄且D中“prestigious”无依据；C与原文相反。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can we infer from the passage regarding the pursuit of success?",
+     "answer": "B",
+     "analysis": "末段强调路上有人支持关爱比结果更重要，可推出不能忽视亲密朋友，B正确。A虽提到突破极限，但不是关于成功追求的推论；C过度推断；D过于绝对。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:57:26.437Z"
+}

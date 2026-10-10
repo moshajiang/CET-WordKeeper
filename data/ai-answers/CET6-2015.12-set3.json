@@ -6,160 +6,6 @@
  "model": "deepseek-v4-pro",
  "passages": [
   {
-   "section": "cloze",
-   "seq": 1,
-   "translation": "",
-   "questions": [
-    {
-     "stem": "26",
-     "answer": "B",
-     "analysis": "culture 作主语，谓语需用第三人称单数；cater to 表示迎合，符合语境。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "27",
-     "answer": "M",
-     "analysis": "as recommended by sleep experts 表示“正如睡眠专家所推荐”，过去分词作定语。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "28",
-     "answer": "D",
-     "analysis": "hotly debated topic 意为“热烈争论的话题”，符合句意。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "29",
-     "answer": "F",
-     "analysis": "while it isn't ideal 意为“虽然不理想”，与后文 it might help 构成让步关系。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "30",
-     "answer": "C",
-     "analysis": "chronically sleep-restricted people 指长期睡眠不足的人，副词修饰形容词。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "31",
-     "answer": "G",
-     "analysis": "show improvements in... 表示“在……方面表现出改善”，符合实验结果。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "32",
-     "answer": "E",
-     "analysis": "sleep deprivation 为固定搭配，意为“睡眠剥夺”，作定语从句主语。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "33",
-     "answer": "L",
-     "analysis": "be ready to endorse 意为“愿意支持”，符合刘的态度。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "34",
-     "answer": "H",
-     "analysis": "not necessarily an effective remedy 意为“不一定是一种有效疗法”，副词修饰整个判断。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "35",
-     "answer": "O",
-     "analysis": "target one area of the brain 表示“针对大脑的一个区域”，符合安眠药作用机制。",
-     "verified": false,
-     "dissent": null
-    }
-   ]
-  },
-  {
-   "section": "match",
-   "seq": 1,
-   "translation": "",
-   "questions": [
-    {
-     "stem": "36.When people find they are powerless to change a situation, they tend to live with it.",
-     "answer": "C",
-     "analysis": "当我们无法消除恐惧源时，会通过防御机制在心理上适应，即无力改变时倾向于忍受现状。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "37.To be effective, environmental messages should be carefully framed.",
-     "answer": "L",
-     "analysis": "信息需要被精心设计，将不良行为边缘化而非常态化，环境信息才有效。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "38.It is the government’s responsibility to persuade people into making environment-friendly decisions.",
-     "answer": "G",
-     "analysis": "政府应通过改变默认选项等策略说服人们做出更环保的决策。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "39.Politicians are beginning to realise the importance of enlisting psychologists, help in fighting climate change.",
-     "answer": "P",
-     "analysis": "美英政界开始重视心理学的力量，投入资金研究能源相关行为，借助心理学家推动环保。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "40.To find effective solutions to climate change, it is necessary to understand what motivates people to make change.",
-     "answer": "H",
-     "analysis": "需要理解是什么激励人们、什么让他们做出改变。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "41.In their evolution, humans have learned to pay attention to the most urgent issues instead of long-term concerns.",
-     "answer": "D",
-     "analysis": "进化使人类最关注眼前紧迫问题，而忽视长远问题。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "42.One study shows that our neighbours’ actions are influential in changing our behaviour.",
-     "answer": "J",
-     "analysis": "研究表明，提及邻居节电行为的信息最能降低用电量。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "43.Despite clear signs of global warming, it is not easy for most people to believe climate change will affect their own lives.",
-     "answer": "B",
-     "analysis": "尽管有悲观的北极熊图片和碳排放上升图表，大多数人仍难以相信全球变暖会影响自己。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "44.We should take our future into consideration in making decisions concerning climate change before it is too late.",
-     "answer": "F",
-     "analysis": "等到我们意识到气候变化威胁时可能为时已晚，所以需要为未来做出理性决策。",
-     "verified": false,
-     "dissent": null
-    },
-    {
-     "stem": "45.Existing social networks can be more effective in creating change in people’s behaviour.",
-     "answer": "O",
-     "analysis": "利用现有的公民社会结构或网络是更有效的改变行为方式。",
-     "verified": false,
-     "dissent": null
-    }
-   ]
-  },
-  {
    "section": "reading",
    "seq": 1,
    "translation": "十多年前，当时都在范德堡大学的认知科学家约翰·布兰斯福德和丹尼尔·施瓦茨发现，区分年轻人和儿童的不是记忆事实或将已有知识应用于新情况的能力，而是一种他们称之为“为未来学习做好准备”的素质。研究人员让五年级学生和大学生制定一项保护白头鹰免于灭绝的恢复计划。令人震惊的是，两组提出的计划质量相似（尽管大学生的拼写技能更好）。从传统教育者的角度来看，这一结果表明学校教育未能帮助学生思考生态系统和灭绝等重大科学思想。\n\n然而，研究人员决定深入研究。他们让两组人就制定恢复计划所需的重要问题提出问题。在这项任务上，他们发现了巨大差异。大学生关注鹰与其栖息地相互依存的关键问题（栖息地），五年级学生则倾向于关注个体鹰的特征（“它们有多大？”“它们吃什么？”）。大学生培养了提问的能力，这是批判性思维的基石。他们学会了如何学习。\n\n博物馆和其他非正式学习机构可能比中小学更适合教授这种技能。在旧金山的探索馆，我们最近研究了学习提出好问题如何影响人们科学探究的质量。我们发现，当我们教参与者提出“如果……会怎样？”和“如何能……？”这类在场没有人知道答案、但会激发探索的问题时，他们在下一个展品前进行了更好的探究——提出更多问题、进行更多实验并对结果做出更好的解释。具体来说，他们在新展品上的问题变得更加全面。他们不再仅仅询问想尝试的事情，而是倾向于在问题中包含因果关系。提出“有料的问题”似乎是一种可迁移的技能，可以深化对展品中科学内容的合作探究。\n\n这种学习并不局限于博物馆或机构环境。非正式学习环境比学校更能容忍失败。也许许多老师时间太少，无法让学生形成并追求自己的问题，而课程内容又太多，难以覆盖。但人们必须在某个地方获得这种技能。我们的社会依赖于他们能够就自己的医疗方案或全球能源需求等问题做出关键决定。为此，我们拥有一个强大的非正式系统，它不给分数、来者不拒，甚至在节假日和周末也开放。",
@@ -258,7 +104,161 @@
    "reference": "Recently, the Chinese government decided to upgrade its industry. China is now involved in building high-speed trains, ocean-going ships, robots, and even airplanes. Not long ago, China won a contract to build a high-speed railway in Indonesia; China also signed a contract with Malaysia to provide high-speed trains. This proves that people trust Chinese-made products. Chinese-made products are becoming increasingly popular. China has paid a price for this, but it has indeed helped eliminate poverty and provided employment opportunities for people around the world. This is a good thing and deserves praise. Next time you go to a store, you may want to check the country of origin of the item you buy. Chances are that it is made in China.",
    "note": "难点在于“工业升级”“涉足”“付出了代价”“出产国名”等表达。建议用 upgrade its industry、be involved in、pay a price、country of origin；注意句子衔接与信息重心，如将“这证明”处理为主句，避免中式英语。整体用词准确、句式多样，符合四六级高分标准。",
    "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "事实上，睡眠被如此低估，以至于靠更少睡眠硬撑成了一种荣誉勋章。此外，我们生活在一种迎合夜猫子的文化中：从24小时营业的杂货店到从不关门的在线购物网站。因此，超过半数美国成年人每晚睡不到睡眠专家建议的7至9小时，也就不足为奇了。我们能否补觉——比如在周末——是睡眠研究者激烈争论的话题。最新证据表明，虽然补觉并不理想，但它可能有所帮助。当加州大学洛杉矶分校睡眠研究者、医学教授刘把长期睡眠不足的人带到实验室，让他们进行一个周末的睡眠，期间他们每晚睡约10小时，他们的胰岛素处理血糖的能力有所改善。这表明补觉可能挽回睡眠不足造成的部分而非全部损害；考虑到许多成年人每晚都睡不够所需时长，这令人鼓舞。尽管如此，刘仍不愿支持少睡之后补觉的习惯。安眠药虽然对某些人有帮助，但也未必是有效疗法。埃默里大学睡眠中心主任南希·科洛普博士说：“安眠药会作用于大脑的某个区域，但永远不会有完美的安眠药，因为你无法真正复制不同化学物质进出大脑不同区域、以经历不同睡眠阶段的过程。”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "B",
+     "analysis": "caters to 是固定搭配，意为“迎合、满足……的需求”；主语 culture 后接 to the late-nighter，语义为文化迎合夜猫子。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "M",
+     "analysis": "as recommended by 是固定被动结构，意为“正如……所建议的”；此处指睡眠专家建议的7至9小时睡眠。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "D",
+     "analysis": "hotly debated topic 是常见搭配，表示“激烈争论的话题”；修饰 topic，符合睡眠研究者对此争论不休的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "F",
+     "analysis": "while it isn’t ideal, it might help 表示“虽然并不理想，但可能有用”；ideal 作表语，与后半句构成让步转折。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "chronically 作副词修饰 sleep-restricted，构成 chronically sleep-restricted people，意为“长期睡眠不足的人”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "G",
+     "analysis": "show improvements in 是固定搭配，表示“在……方面显示出改善”；此处指胰岛素处理血糖的能力有所改善。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "sleep deprivation 是固定名词搭配，意为“睡眠不足”；在定语从句中作主语，与 causes 搭配。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "be ready to do 表示“愿意/准备做某事”；isn’t ready to endorse 意为“不愿支持”少睡后补觉的习惯。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "H",
+     "analysis": "not necessarily 是固定搭配，意为“未必”；修饰 an effective remedy，表示安眠药也未必是有效疗法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "O",
+     "analysis": "target 作动词，意为“以……为目标、作用于”；target one area of the brain 表示作用于大脑的某个区域。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "气候变化也许是真的，但要想环保仍然不容易\n我们如何说服内心的穴居人变得更环保？我们请教了一些杰出的社会科学家。\n[A] 通往气候地狱的道路是由我们的善意铺成的。政治人物或许会应对污染者，科学家与碳排放作斗争。但最普遍的问题却不那么明显：我们自身的行为。我们还没来得及调低暖气就被别的事分了心。听说邻居去了印度，我们就违背了不再坐飞机的承诺。归根结底，我们懒得改变自己的态度。对地球来说幸运的是，社会科学和行为经济学也许能替我们做到这一点。\n[B] 尽管有悲伤的北极熊和显示碳排放飙升的图表，大多数人还是很难相信全球变暖会影响到他们个人。华盛顿特区皮尤研究中心最近的民意调查发现，75%至80%的受访者认为气候变化是一个重要问题。但在优先事项清单上，受访者把它排在最后。\n[C] 这种不一致很大程度上源于一种无力感。世界自然基金会环境组织的变革策略师汤姆·克朗普顿说：“当我们实际上无法消除恐惧的根源时，我们往往会通过采取一系列防御机制在心理上适应。”\n[D] 部分过错在于我们内心的穴居人。进化使人类主要关注会产生直接影响的问题。纽约哥伦比亚大学环境决策研究中心的埃尔克·韦伯教授说：“我们最担心当下，因为如果我们活不过下一分钟，十年后就不会还活着。”如果泰晤士河水拍打着大本钟，伦敦人很快就会正视排放问题。但在实践中，我们的大脑会低估与未来某个时候才出现的问题相关的风险和收益。\n[E] 牛津大学实验心理学系的马修·拉什沃思每天都在实验室里看到这一点。他说：“所有行为主体似乎做决定的方式之一，就是给未来更遥远的结果赋予更低的权重。对野生动物来说，这是非常明智的决策方式，而且数千年来对人类也非常有用。”\n[F] 但现在不再是这样了。等我们意识到气候变化构成的威胁时，很可能已经太晚了。如果我们不打算对未来做出理性决定，那么其他人也许必须帮我们这样做。\n[G] 很少政治类图书馆没有理查德·塞勒和卡斯·桑斯坦所著的《助推：改善关于健康、财富和幸福的决定》。他们认为，政府应该通过改变默认选项来劝导我们做出更好的决定——比如在养老金计划中多存一些钱。韦伯教授认为环境政策也可以利用类似策略。例如，如果建筑规范包含绿色建筑指南，大多数开发商都会懒得去质疑。\n[H] 默认选项当然是解决方案的一部分。但社会科学家最关心的是精心设计能够利用我们群体心理的信息。诺里奇廷德尔气候变化研究中心的尼尔·阿杰教授说：“我们需要理解是什么激励人们，是什么让他们能够做出改变。这实际上关乎他们的同伴如何看待他们，他们的社会规范是什么，社会中什么被认为是可取的。”换句话说，我们内心的穴居人会不断回头张望，看部落里的其他人都在做什么。\n[I] 我们作为个体对气候变化的消极态度，可以通过把我们纳入同伴群体并以此为参照来衡量而改变。《影响力：说服心理学》的作者罗伯特·西奥迪尼博士说：“社会规范是原始而基本的。鸟成群飞，鱼成群游，牛成群走……仅仅感知到规范就足以促使人们朝群体方向调整自己的行为。”\n[J] 这些规范可以让我们超越良好的意图。西奥迪尼在圣地亚哥进行了一项研究，把带有节能信息的衣架挂在人们的门上。有些信息提到环境，有些提到省钱，还有些提到社会责任。但正是那些提到邻居行为的信息降低了用电量。\n[K] 其他研究表明，仅仅为人们提供将自己的能源使用与当地平均水平进行比较的便利，就足以促使他们改变行为。保守党计划采用这一策略，让公用事业公司在人们的账单上印上当地平均电力和燃气用量。\n[L] 社会科学还可以教会政治人物如何避免我们集体做出自我毁灭行为的能力。那些告诉我们有多少人开SUV的环保宣传活动会不经意地暗示，这种行为很普遍，因此是允许的。西奥迪尼建议要对信息进行谨慎的框定。他说：“信息不应把不良行为正常化，而需要将其边缘化，例如说明即使只有一个人再买一辆SUV，也会削弱我们实现能源独立的能力。”\n[M] 利用我们已有的自我认知至关重要。最成功的环保策略会把绿色信息与我们的身份认同结合起来。以普通工会成员为例，他们很可能有政治动机，并习惯于集体行动——很像埃丽卡·格雷戈里。她是公共和商业服务工会的退休成员，正在“气候团结”的支持下建立一个行动小组，这是1100个行动小组之一。“气候团结”是一项为期两年、面向工会成员的环境运动。\n[N] 埃丽卡证明，如果心理学运用得当，一位曾祖母也可以帮助引领这场革命——在这个例子中，办法是把她对环境的热情与她对组织团体的喜爱结合起来。谈到这项运动时她说：“我认为这是个绝妙的主意。工会的支持让成员们觉得其中一定有道理。”她预计在她召集的第一次会议上，她所在的康沃尔郡波尔佩罗村当地酒吧会来多达20人。\n[O] “气候团结”的项目主任尼克·珀克斯认为，这类活动正是环境行动的未来所在。他说：“利用现有的公民社会结构或网络是创造改变更有效的方式……显然，工会是英国最大的公民社会网络之一。”去年，“热爱食物，憎恨浪费”运动与另一个此类网络——妇女协会——展开了合作。伦敦人蕾切尔·泰勒带着结交新朋友的目的加入了这项运动。一年后，这些聚会已经持久地改变了她厨房里丢弃的东西。她说：“如果和其他人一起做，总是更有动力。如果你知道自己必须向一个群体反馈，它会更多地激励你。”\n[P] 这种简单的心理学在应对气候变化中的力量，正在引起整个政治体制的关注。在美国，众议院科学委员会已经批准一项法案，每年拨款1000万美元用于研究与能源相关的行为。在英国，新的研究正在开展，社会科学家经常出现在英国政府办公室里。有了心理学家的帮助，我们终究可能走向绿色，这带来了新的希望。",
+   "questions": [
+    {
+     "stem": "36.When people find they are powerless to change a situation, they tend to live with it.",
+     "answer": "C",
+     "analysis": "C段指出这种不一致源于一种无力感，并说当无法消除恐惧根源时，人们会通过防御机制在心理上适应，对应“感到无力时便倾向于接受/忍受现状”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37.To be effective, environmental messages should be carefully framed.",
+     "answer": "L",
+     "analysis": "L段中Cialdini建议对信息进行谨慎框定，并说明不应把不良行为正常化而应将其边缘化，直接对应环保信息应精心设计措辞。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38.It is the government’s responsibility to persuade people into making environment-friendly decisions.",
+     "answer": "G",
+     "analysis": "G段提到政府应通过改变默认选项来劝导人们做出更好的决定，并认为环境政策可采用类似策略，对应政府有责任劝导人们做环保决定。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39.Politicians are beginning to realise the importance of enlisting psychologists, help in fighting climate change.",
+     "answer": "P",
+     "analysis": "P段说这种简单心理学的力量正在引起整个政治体制关注，并提到美国众议院科学委员会拨款研究能源相关行为、英国政府办公室常见社会科学家，对应政界开始重视借助心理学家应对气候变化。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40.To find effective solutions to climate change, it is necessary to understand what motivates people to make change.",
+     "answer": "H",
+     "analysis": "H段引用Neil Adger的话：“We need to understand what motivates people, what it is that allows them to make change”，直接对应必须理解什么能激励人们做出改变。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41.In their evolution, humans have learned to pay attention to the most urgent issues instead of long-term concerns.",
+     "answer": "D",
+     "analysis": "D段说进化使人类主要关注会产生直接影响的问题，并解释大脑会低估较远未来相关的风险与收益，对应人类在进化中学会关注紧迫问题而非长远担忧。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42.One study shows that our neighbours’ actions are influential in changing our behaviour.",
+     "answer": "J",
+     "analysis": "J段描述Cialdini在圣地亚哥的研究，发现正是提到邻居行为的信息降低了用电量，对应一项研究表明邻居行为能影响我们的行为。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43.Despite clear signs of global warming, it is not easy for most people to believe climate change will affect their own lives.",
+     "answer": "B",
+     "analysis": "B段开头说尽管有北极熊和碳排放图表等明显迹象，大多数人还是很难相信全球变暖会影响到他们个人，直接对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44.We should take our future into consideration in making decisions concerning climate change before it is too late.",
+     "answer": "F",
+     "analysis": "F段说等我们意识到气候变化威胁时可能已经太晚，并说如果不愿对未来做出理性决定，别人可能不得不帮我们，对应应在还不太晚时把未来纳入气候相关决策。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45.Existing social networks can be more effective in creating change in people’s behaviour.",
+     "answer": "O",
+     "analysis": "O段中Nick Perks说利用现有的公民社会结构或网络是创造改变更有效的方式，对应现有社会网络在改变人们行为方面更有效。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
   }
  ],
- "generatedAt": "2026-10-10T02:18:20.322Z"
+ "generatedAt": "2026-10-10T14:22:59.368Z"
 }

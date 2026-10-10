@@ -1,0 +1,264 @@
+{
+ "level": "CET6",
+ "year": 2024,
+ "month": 12,
+ "set_no": 3,
+ "model": "deepseek-flash",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "reference": "College provides a great opportunity for students to explore various possibilities and find the right path for themselves. This is because college offers a variety of courses, clubs and activities that allow students to discover their interests and strengths.\n\nTake my roommate Li Ming as an example. When he entered college, he had no idea what to do in the future. However, by joining the debate club and taking an elective in computer science, he gradually realized his passion for programming. Now he is determined to become a software engineer. His experience shows that exploration is the first step toward a clear goal.\n\nIn conclusion, college is not just a place for academic study; it is a platform for self-discovery. Therefore, we should seize every opportunity to try new things, so that we can find the right path and achieve our full potential.",
+   "note": "范文以题目句开篇点题，首段补因，中段举例论证探索助定位，末段总结呼吁。结构为“引观点—举例—总结”。可复用句型：This is because...；Take...as an example；His experience shows that...；not just...but...；Therefore, we should...",
+   "questions": []
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "全球约23%的人口生活在绝对贫困中。在发展中国家，预期寿命低，婴儿死亡率高，失业率和文盲率高，营养水平低于可接受标准，疾病广泛存在，而医疗援助很少或质量很差。另一些人则过着极其富裕奢华的生活，因此财富分配极不平等。这些是慈善问题的核心问题，尽管慈善还包括许多其他领域，例如帮助老年人。\n\n每当非常富有的人承诺捐出自己大部分数十亿财富时，我们都会鼓掌，但他们通常仍会留下数百万可传给后代，这仍远远超过大多数人一生预计能挣到的钱。即使西方相对中等的薪水，与全球相比也非常高。一个年收入2万英镑的人可以轻松每年捐出2000英镑，仍有足够的钱生活，还能享受一些奢侈品。\n\n大多数人同意，向慈善机构捐赠在道德上值得称赞，但慈善行为往往被视为超出职责要求。然而，有些人认为，慈善行为在道德上是必需的。这意味着不慈善行事就是错误的。这类论点大多涉及向较贫穷国家提供援助，但也可能涉及在自己的近邻社区中贡献时间。这些论点往往对不同收入阶层的人提出不同要求，并完全排除那些仅能勉强维持生计的人。有些人认为，所有人都应按其收入的一定比例捐款。我将把所有这些要求人们向慈善机构捐赠的道德论点归总在一起，尽管对于这一道德要求的程度存在广泛分歧。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "J",
+     "analysis": "固定搭配 infant mortality rate 意为“婴儿死亡率”；此处需要名词，且与 high infant ... rate 语义吻合。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "H",
+     "analysis": "此处修饰形容词 wealthy 和 luxurious，表示“极其富裕奢华地生活”；副词 incredibly 符合语义和语法。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "O",
+     "analysis": "修饰 manner，表示财富分配“不平等的方式”；unequal 与 distributed 搭配自然。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "A",
+     "analysis": "此处需要动词，表示“我们都会鼓掌/赞赏”；applaud 与 when 从句及富人承诺捐赠的语境相符。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "I",
+     "analysis": "修饰 salaries，表示“相对中等/不算高的薪水”；moderate 与后文“在全球范围内仍很高”形成对比。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "L",
+     "analysis": "morally praiseworthy 为常见搭配，意为“在道德上值得称赞的”，符合慈善捐赠的语境。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "G",
+     "analysis": "one's immediate community 意为“自己的近邻社区/身边社区”；immediate 在此表示“最接近的、直接的”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "C",
+     "analysis": "此处需要动词，与后面 people 构成“排除某些人”的意思；exclude entirely people... 语法和语义均合适。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "E",
+     "analysis": "group together 是固定搭配，意为“把……归总/归类在一起”；此处 I will group together all those arguments... 符合句意。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "D",
+     "analysis": "the extent of that moral requirement 意为“该道德要求的程度”；extent 常用于表示某种要求、影响或问题的程度。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "《自由贸易的悖论》\n\nA) 贸易是民粹主义者和古典自由主义者之间敌意最为显见的政策领域之一。自由贸易者指出，零关税贸易给全球消费者带来了不可否认的好处，也明显缓解了世界一些地区此前封闭市场开放后的贫困。保护主义者则指出，国内生产者以失去生计、社区被掏空的形式为这种全球化经济付出了代价。\n\nB) 保守派内部持续的内战往往退化为没有实质内容的部落式争斗，但贸易是一个罕见的例外。争论双方都有实质性的、经过深思熟虑的政策主张。\n\nC) 因此，贸易作为一个讨论议题，为自由主义者和民粹主义者提供了一个真正达成共识的机会。在这一领域，或许真能展开富有成果的辩论，而不是我们已经习以为常的那种谴责遭遇反谴责的仪式。\n\nD) 听起来也许奇怪，现代世界贸易的问题并不是金钱问题，而是虚假意识问题。这一观察肯定会让一些读者脑中响起马克思主义的警铃，但它最早是由亚历克西斯·德·托克维尔在1840年提出的。\n\nE) 托克维尔在追踪人类经济从原始社会到现代社会的发展时，观察到一个悖论在数百年间展开：经济现实与人们对这些现实的经验越来越彼此偏离。他指出，在原始社会，分工在很大程度上尚未发展，要求每个人、每个家庭或部落相对独立地满足自身基本物质需要。人们自己建造住所，耕种自己的土地，照料自己的牲畜。这并不是否认存在基本形式的贸易，但总体而言，我们的原始祖先过着相当自给自足、尽管极度贫困的生活。\n\nF) 然而，古代和史前世界中经济与政治组织完全地方性、面对面的性质，不断让这些原始民族感受到他人及其需要这一不可控的现实。正如托克维尔所指出的：“一旦一个人开始在公共场合处理共同事务，他就开始意识到自己并不像最初想象的那样独立于同胞，而且为了获得他们的支持，他必须常常向他们提供合作。”\n\nG) 在现代世界到来之际，分工越来越广泛地扩展到整个社会。每个人都越来越依赖他人来满足自己的基本需要。然而，由于被剥夺了祖先因环境所迫而不得不与邻居和当地社区进行的互动，我们却感到自己越来越彼此独立。当我们越来越依赖他人时，我们却越来越意识不到自己对他人的依赖。这就是现代世界贸易的悖论。\n\nH) 这一悖论所产生的虚假意识，严重扰乱了我们对自由贸易的辩论。任何美国家庭中几乎找不到一件商品，其制造和销售不通过这样或那样的供应链依赖于遍布全球的数十个不同的人。但正如托克维尔早在1840年就预见到的那样，我们并不觉得自己在生活方式上依赖这些陌生人。我们的民族意识中从未闪现过这样的感觉：我们自身的物质福祉依赖于他们的劳动。我们很少怀着感激之情去思考自由贸易的全球化路径。\n\nI) 这有两个原因。第一个，直截了当地说，就是金钱。金钱使我们能够购买他人的劳动，而不必把他们当作人来考虑。与原始乡镇中的祖先不同，我们很少需要面对面见到发明、制造、运输或供应我们商品的人。交换发生之前不必建立任何关系。只要就价格达成一致，你就能得到任何想要的商品，而无需再考虑交易另一方的活生生的人。这样，金钱使我们感到自己比实际上更独立。我们每个人都感觉到金钱对同胞的掌控。我们知道，只要出价足够高，就能把自己从建立关系中耗费时间的劳动中赎买出来。金钱在这方面有点像魔法。它给我们一套仪式去执行，并承诺如果我们照做，就能对他人施加权力。它制造了一种幻觉：有钱买东西就等于自己知道如何制造它。对那些构成供应链的无名男女的感激，很少进入我们的意识。\n\nJ) 事实上，匿名性是自由贸易悖论的第二个根源。现代性把每个人从地点和社区的限制中解放出来。总的来说，我们交易时是与陌生人交易；投票时是给陌生人投票；观看、阅读或聆听故事时，讲故事的人也是陌生人。与托克维尔用来比较我们的祖先相反，在经济或政治领域，我们都不认识与自己打交道的人。这不过是市场奇迹的阴影面：市场有史以来第一次让陌生人彼此照料。它们也让我们每个人越来越多地完全以陌生人的身份度过自己的一生。托克维尔——相当悲观地——这样描述我们：每个人兀自独立，像陌生人一样对待他人的命运；他的孩子和个人朋友构成了他的整个人类。至于其余同胞，他就在他们身边，却看不见他们。他触碰他们，却感觉不到他们。他只在自己之中、并为自己而存在。\n\nK) 倒数第二句话，几乎可以成为对我们在现代经济中各自如何运作的最佳概括：“他触碰他们，却感觉不到他们。”\n\nL) 这是自由贸易捍卫者面临的最大挑战。人类极难对陌生人怀有感激之情，而让我们如此富裕的全球市场，也让我们彼此成了陌生人。我们的大脑天生适合部落生活，而部落并不善待陌生人。因此，要让人们感到依赖并感激海外的陌生外国人，是一项艰巨的任务。\n\nM) 如果自由贸易者未来要在政策争论中获胜，他们必须找到一种在美国消费者与外国生产者之间建立情感纽带的方法。只有通过让那些从海外为我们提供所享商品和服务的人不再匿名，并创造出一种超越经济利益的跨境团结和关系感，自由贸易才能获胜。否则，保护主义者以民族主义团结的形式所拥有的天生生物学优势，注定会在投票箱前获胜。",
+   "questions": [
+    {
+     "stem": "36. People became more and more reliant on others for basic needs as they entered the modern world even\nthough they might feel less so.",
+     "answer": "G",
+     "analysis": "G段指出进入现代世界后，每个人都越来越依赖他人满足基本需要，但又感觉自己越来越独立，对应题干。“",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "37. On the topic of trade, productive debates might be possible, in contrast to the familiar mutual condemnation\nin discussing other issues.",
+     "answer": "C",
+     "analysis": "C段说贸易使自由派与民粹派可能真正展开富有成果的辩论，而不是熟悉的“谴责遭遇反谴责”的相互指责，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "38. We feel greater independence than we actually possess because money allows us to buy things without\nbuilding any relationships.",
+     "answer": "I",
+     "analysis": "I段说明金钱让我们可以购买东西而无需建立关系，从而使我们感觉自己比实际上更独立，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "39. The trouble with today's trade stems from misconceptions rather than money.",
+     "answer": "D",
+     "analysis": "D段说现代贸易的问题不是金钱（dollars and cents），而是虚假意识（false consciousness），对应“误解而非金钱”。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "40. For their arguments to prevail, advocates of free trade must try to forge bonds of affection between\nconsumers at home and producers overseas.",
+     "answer": "M",
+     "analysis": "M段指出自由贸易者若想赢得政策争论，必须在美国消费者与外国生产者之间建立情感纽带，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "41. According to Tocqueville, unlike our ancestors, we and the people we do trade with are strangers to each\nother.",
+     "answer": "J",
+     "analysis": "J段说我们交易时是与陌生人交易，并且与托克维尔所比较的祖先不同，我们并不认识与自己打交道的人，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "42. In primitive societies, people had to rely mostly on themselves to meet their personal needs.",
+     "answer": "E",
+     "analysis": "E段描述原始社会分工不发达，每个人、家庭或部落需相对独立地满足自身基本物质需要，人们自己建房、耕地、养牲畜，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "43. Few commodities in American homes are not reliant on people abroad in the process of manufacture",
+     "answer": "H",
+     "analysis": "H段说任何美国家庭中几乎没有一件商品不通过供应链依赖全球各地许多人来制造和销售，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "44. Protectionists argue against free trade by referring to the losses suffered by domestic producers and\ncommunities.",
+     "answer": "A",
+     "analysis": "A段指出保护主义者强调国内生产者以失去生计和社区被掏空的形式为全球化经济付出代价，对应题干。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "45. It is extremely hard to make people feel dependent on and grateful to strangers overseas.",
+     "answer": "L",
+     "analysis": "L段说人类极难对陌生人怀有感激之情，要让人们感到依赖并感激海外陌生人是艰巨任务，对应题干。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "reference": "Traveling in outer space has long been a dream of the Chinese nation. In 2003, the Shenzhou-5 spacecraft was launched successfully, and Yang Liwei became the first Chinese astronaut to fly into space. In 2008, Shenzhou-7 lifted off, and Zhai Zhigang became the first astronaut in Chinese history to perform a spacewalk. In recent years, China's space industry has entered a fast track of innovative development, the construction of space infrastructure has been steadily advanced, and China's space station was fully completed in 2022. The rapid development of China's space program has written a glorious page in the history of the Chinese nation and made great contributions to the progress of human civilization. In the future, China will take steadier and farther steps in its exploration of space.",
+   "note": "难点：专有名词神舟五号/七号、杨利伟、翟志刚；太空行走用 spacewalk；快车道译为 fast track；全面建成用 fully completed；写下了辉煌一页用 written a glorious page。译文时态需区分：2003/2008 用过去时，近年来用现在完成时，未来用将来时。",
+   "questions": []
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "网上有成百上千种性格测试声称，它们能确定你的大脑右半球还是左半球占主导。据说左脑型的人有逻辑，擅长语言和数学；而右脑型的人更富想象力、情商更高，也更擅长空间推理。只有一个问题：大脑并不是这样运作的。\n科普爱好者某种程度上接受了这种说法并大肆传播，如今它已经融入流行文化，而且不会消失。\n尽管这种观念经久不衰，但所谓“右脑型”或“左脑型”并不存在。你更偏向创造力还是逻辑，与你的某一侧大脑半球是否压过另一侧毫无关系。但关于我们大脑两半如何协同工作的实际科学，有时比小说还离奇。\n人脑分为左右两个半球。在所有脊椎动物中，右半球控制身体左侧，反之亦然。得益于脑损伤患者的行为表现，科学家早已知道大脑不同区域负责不同功能。\n但许多科学家难以接受这一观点，因为“左右两半大脑运作方式不同”这一说法本身，就破坏了自然界趋向完美对称的观念。\n神经科学家的工作揭示了大脑不同半球对不同活动的重要性。然而，他们的研究很快在公众中遭到一些误解：有些人想当然地认为有创造力的人必定是右脑型，有逻辑的人必定是左脑型。事实已证明，不仅性格与大脑左右半球无关，而且人本来就不是真正的右脑型或左脑型。所谓我们中间存在左脑主导者和右脑主导者，并且这与性格有关，这种想法完全错误。神经科学界从未支持过这一点。神经科学家不相信这种说法，也从未相信过。\n科学家们了解到的是，左半球和右半球之间确实存在非常重要的差异。只不过这些差异与性格无关，也与认知策略是更偏逻辑、更自由奔放还是更富创造力无关。尽管研究人员已经表明大脑半球对我们生活的影响有其局限，但也不难理解这类想法为何有吸引力。人们对自己和朋友永远充满兴趣，而人们思考世界方式的细微差异对他们来说确实意义重大。当有人推出一个能告诉我们自身某些情况的在线测试时，我们会被它吸引。它令人无法抗拒。但你必须对它极度存疑。",
+   "questions": [
+    {
+     "stem": "46. What do numerous personality quizzes online claim they are able to do?",
+     "answer": "B",
+     "analysis": "首句说明这些在线性格测试声称能判断人的右脑还是左脑占主导，即确定一个人是“左脑型”还是“右脑型”，所以选B。A“区分两个半球”不是测试的宣称；C只提到语言或数学倾向，过于狭窄；D“大脑如何执行不同任务”文中未作为这些测试的宣称。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "47. What does the author say is sometimes stranger than fiction?",
+     "answer": "C",
+     "analysis": "文中明确说“the actual science of how the two halves of our brains work together is sometimes stranger than fiction”，即大脑两半如何协同工作的科学有时比小说更离奇，所以选C。A、D涉及单侧半球影响或支配，文中未与“stranger than fiction”相连；B“交替工作”无中生有。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "48. Why did many scientists have difficulty endorsing the idea that different areas of the brain do different\nthings?",
+     "answer": "A",
+     "analysis": "文中说许多科学家难以接受不同脑区功能不同，是因为“左右两半大脑运作不同”这一说法破坏了自然界趋向完美对称的观念，即与大脑两半球对称的假设相矛盾，所以选A。B“宇宙一致演化”、C“左右半球协同工作”、D“右半球控制左侧身体”均非文中给出的原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "49. What belief have neuroscientists long rejected according to the passage?",
+     "answer": "A",
+     "analysis": "文中指出，认为存在左脑主导者和右脑主导者、且这与性格有关的想法“categorically false”，神经科学界从未支持，神经科学家也从不相信，所以选A。B和D是科学家认可的大脑半球或脑区差异；C“性格与左右半球几乎无关”正是文中证明的观点，不是被拒绝的信念。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "50. What are we advised to do with an online quiz that tells us something about ourselves?",
+     "answer": "D",
+     "analysis": "作者建议对这类在线测试“take it with an enormous grain of salt”，意为要极度怀疑、不要轻信，即质疑其可靠性，所以选D。A“挑战其权威”虽接近，但不如D贴合“grain of salt”的含义；B“审查其原创性”和C“评价其受欢迎程度”均非文中建议。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "135名学生、4名教师、一间巨大的教室：这就是亚利桑那州最大校区梅萨市西木高中九年级的景象。在那里，一种创新教学模式已经扎根，并正在传播到该学区其他学校乃至更远地区。\n五年前，面对教师流失率高和学生入学人数下降，西木高中的领导层决定尝试一种不同的做法。他们与亚利桑那州立大学教育学院的教授合作，试点了一种名为“团队教学”的课堂模式，该模式允许教师打破因物理空间或年级界限而分隔班级的壁垒。\n这些教师共同负责大规模学生群体——有时多达100人或更多——并在集体授课、一对一辅导、小组学习，或教师团队一致认为当天优先的事项之间轮换。有时看起来像混乱，实际上却是精心安排的计划：每天早上，西木高中的教师团队会开会，为团队当天将重点关注的每名学生制定个性化方案。\n通过给教师更多合作机会，梅萨的教育管理者希望填补人员缺口，提升教师士气和留任率。初步研究表明，这一冒险可能是值得的。\n“教师们正在做非常了不起的事，但很少有教师会走进另一个房间看看那里正在发生什么，”梅萨公立学校学区总监安迪·福里斯说。“我们的行业进步如此缓慢，是因为我们各自为战。”\n当然，彻底改革教学方法并不能解决教师的所有不满，比如低薪问题，但梅萨的早期结果表明，团队教学可能有助于扭转士气低落的状况。在对该学区数百名教师进行的一项调查中，研究人员发现，参与团队教学的教师报告了更高的工作满意度、更频繁的同事合作以及更积极的师生互动。\n教师表示，团队的另一个好处是，他们可以互相帮助改进教学。在一次备课会上，英语教师杰夫·霍尔与一位科学教师分享了一份教学评价：她最近关于她称之为“生物学中心法则”的讲座让他和其他队友都感到困惑。\n“如果这些科学内容对我来说都太令人困惑，你能想象你们作为孩子会有多沮丧吗？”霍尔说。但他表示，如果没有团队，这位科学教师自己不会知道这种困惑。\n这种模式并不适合所有人。一些被询问是否愿意志愿加入团队的教师表示，他们更喜欢独自工作。团队教学也可能成为排课噩梦，尤其是在像西木高中这样只有部分教职工参与团队教学的学校。还有一些棘手问题，例如如何根据135名学生的表现来评价四名教师。但就目前而言，这种模式似乎行之有效。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about team teaching from the passage?",
+     "answer": "D",
+     "analysis": "文中说团队教学有时看起来像混乱，但实际上是精心安排的计划，每天团队会开会为每个学生制定个性化方案，说明其协调性很强。A曲解了“打破墙壁”的意思；B、C在文中没有依据，团队教学并非让学生选老师，也不只是优先同伴合作。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does initial research suggest regarding Westwood's innovative teaching model?",
+     "answer": "B",
+     "analysis": "文章明确说“Initial research suggests the gamble could pay off”，即初步研究表明这一冒险可能成功。A提高工资、C降低成本均未提及；D只是重复“gamble”这一比喻，并非研究结论。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "53. What did superintendent Andi Fourlis say about the teaching profession?",
+     "answer": "C",
+     "analysis": "Fourlis指出教师很少走进别的教室，并明确说“our profession is so slow to advance because we are working in isolation”，即缺乏合作导致行业进步缓慢。A过度推断；D只涉及“教师做了不起的事”这一点，没有回答行业进步缓慢的原因。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "54. What does the author want to show by citing English teacher Jeff Hall's experience?",
+     "answer": "C",
+     "analysis": "Jeff Hall的例子说明，团队备课让科学教师了解到自己的讲授让人困惑，即新模式帮助教师获知教学反馈。B过于字面且不是主旨；D把“performance appraisal”误解为唯一途径，且科学教师不知情并非因为缺少考核本身。",
+     "verified": true,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author think is one of the difficult problems in implementing the new teaching model?",
+     "answer": "D",
+     "analysis": "文末提到棘手问题：如何根据135名学生的表现来评价四名教师，即教师绩效评估难题。A、C只是部分教师不愿参加，不是实施中最突出的难题；B曲解了排课 nightmare 的原意。",
+     "verified": true,
+     "dissent": null
+    }
+   ]
+  }
+ ],
+ "generatedAt": "2026-10-10T14:56:48.658Z"
+}
