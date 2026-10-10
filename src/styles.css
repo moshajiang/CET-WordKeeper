@@ -139,7 +139,8 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 .reader-layout { display: flex; gap: 18px; align-items: flex-start; }
 .passage-pane { flex: 1.4; min-width: 0; }
-.side-pane { flex: 1; min-width: 0; position: sticky; top: 0; max-height: calc(100vh - 90px); overflow-y: auto; }
+/* 侧栏吸顶位置避开常驻顶栏（顶栏约 100px 高） */
+.side-pane { flex: 1; min-width: 0; position: sticky; top: 100px; max-height: calc(100vh - 128px); overflow-y: auto; }
 
 .article {
   background: var(--card);
@@ -372,3 +373,55 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   animation: fadein 0.2s;
 }
 @keyframes fadein { from { opacity: 0; transform: translateX(-50%) translateY(8px); } }
+
+/* ===== 阅读器：常驻顶栏 / 逐句对照 / 左右分栏 / 题目面板 ===== */
+/* 顶栏常驻：向下翻阅题目时仍在上面，随时可点 */
+.reader-topbar {
+  position: sticky; top: 0; z-index: 30;
+  background: var(--bg); padding: 10px 0 8px; margin-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+/* 遮片：滚动容器（.main）有 28px 内边距，吸顶后上方会露出滚过的正文，用同色遮片挡住 */
+.reader-topbar::before {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 100%;
+  height: 40px; background: var(--bg);
+}
+.reader-topbar-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.reader-topbar .tb-title { min-width: 0; }
+.reader-topbar .tb-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.reader-topbar .tb-modes { margin-top: 8px; justify-content: flex-start; gap: 6px; }
+.reader-topbar .tb-modes button { font-size: 12px; padding: 4px 10px; }
+.reader-topbar .tb-modes button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.reader-topbar .tb-label { font-size: 12px; color: var(--muted); margin-right: 2px; }
+.reader-topbar .reveal-btn { border-color: var(--accent); color: var(--accent); }
+
+/* 逐句对照 / 对照背诵 */
+.bi-card { margin-top: 14px; }
+.bi-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.bi-actions { display: flex; align-items: center; gap: 8px; }
+.bi-progress { font-size: 12px; color: var(--muted); }
+.bi-list { display: flex; flex-direction: column; gap: 2px; }
+.bi-row { padding: 7px 10px; border-radius: 8px; cursor: pointer; border-left: 3px solid transparent; }
+.bi-row:hover { background: var(--accent-soft); border-left-color: var(--accent); }
+.bi-row.open { background: color-mix(in srgb, var(--accent-soft) 55%, transparent); }
+.bi-en { font-family: Georgia, serif; line-height: 1.85; color: var(--text); }
+.bi-zh { font-size: 13.5px; line-height: 1.85; color: #2e7d4f; margin-top: 3px; }
+.bi-tip { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+/* 左右分栏：题目与原文同时呈现 */
+/* 左右分栏：原文 | 题目 | 侧栏（窄屏自动折行，退化回上下） */
+.reader-layout.layout-split { align-items: flex-start; flex-wrap: wrap; }
+.reader-layout.layout-split .passage-pane { flex: 1.2 1 400px; }
+.reader-layout.layout-split .side-pane { flex: 0.72 1 240px; }
+.question-pane {
+  flex: 1 1 340px; min-width: 300px;
+  position: sticky; top: 100px;
+  max-height: calc(100vh - 128px); overflow-y: auto;
+}
+
+/* 题目面板（QuestionPanel 组件）*/
+.qpanel { margin: 0; }
+.qpanel-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.letter-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 4px; }
+.letter-hint { font-size: 12.5px; color: var(--muted); }
+.qblock .qopt.letter { min-width: 30px; text-align: center; font-weight: 600; }

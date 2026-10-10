@@ -1,24 +1,44 @@
 <template>
   <div v-if="detail">
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;">
-      <div>
-        <h1 class="page-title" style="margin-bottom: 2px;">
-          {{ detail.exam.level }} · {{ detail.exam.year }} 年 {{ detail.exam.month }} 月 · 第{{ detail.exam.set_no }}套
-        </h1>
-        <p class="page-sub" style="margin-bottom: 0;">单击查词 · 双击直接加入生词本 · 划选句子可翻译与语法分析</p>
+    <div class="reader-topbar">
+      <div class="reader-topbar-row">
+        <div class="tb-title">
+          <h1 class="page-title" style="margin-bottom: 2px;">
+            {{ detail.exam.level }} · {{ detail.exam.year }} 年 {{ detail.exam.month }} 月 · 第{{ detail.exam.set_no }}套
+          </h1>
+          <p class="page-sub" style="margin-bottom: 0;">单击查词 · 双击加入生词本 · 划选句子可翻译与语法分析</p>
+        </div>
+        <div class="tb-actions">
+          <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 5px; cursor: pointer;">
+            <input type="checkbox" v-model="scanOn" /> 难词预扫
+          </label>
+          <button @click="chatOpen = !chatOpen">💬 问 AI</button>
+          <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
+          <button class="reveal-btn" @click="toggleAnalysis" :disabled="busy">
+            {{ busy ? '处理中…' : (revealAnalysis && !graded ? '隐藏解析' : '查看解析与翻译') }}
+          </button>
+          <button @click="fontSize = Math.max(14, fontSize - 1)">A-</button>
+          <button @click="fontSize = Math.min(22, fontSize + 1)">A+</button>
+        </div>
       </div>
-      <div style="display: flex; gap: 8px; align-items: center;">
-        <label style="font-size: 12.5px; color: var(--muted); display: flex; align-items: center; gap: 5px; cursor: pointer;">
-          <input type="checkbox" v-model="scanOn" /> 难词预扫
-        </label>
-        <button @click="chatOpen = !chatOpen">💬 问 AI</button>
-        <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
-        <button @click="loadAnalysis" :disabled="busy">{{ busy ? '处理中…' : '查看解析与翻译' }}</button>
-        <button @click="showTranslation = !showTranslation" :disabled="!activePassage || !activePassage.translation">
-          {{ showTranslation ? '隐藏翻译' : '全文翻译' }}
-        </button>
-        <button @click="fontSize = Math.max(14, fontSize - 1)">A-</button>
-        <button @click="fontSize = Math.min(22, fontSize + 1)">A+</button>
+
+      <!-- 展示模式：翻译呈现方式 + 题目布局 -->
+      <div class="reader-topbar-row tb-modes">
+        <span class="tb-label">翻译</span>
+        <button :class="{ active: transMode === 'off' }" @click="setTransMode('off')">关闭</button>
+        <button
+          :class="{ active: transMode === 'inline' }"
+          :disabled="!hasTranslation"
+          @click="setTransMode('inline')"
+        >逐句对照</button>
+        <button
+          :class="{ active: transMode === 'recite' }"
+          :disabled="!hasTranslation"
+          @click="setTransMode('recite')"
+        >对照背诵</button>
+        <span class="tb-label" style="margin-left: 10px;">布局</span>
+        <button :class="{ active: layout === 'stack' }" @click="layout = 'stack'">上下</button>
+        <button :class="{ active: layout === 'split' }" @click="layout = 'split'">左右（题目并排）</button>
       </div>
     </div>
 
@@ -44,7 +64,7 @@
       </button>
     </div>
 
-    <div class="reader-layout">
+    <div class="reader-layout" :class="layout === 'split' ? 'layout-split' : 'layout-stack'">
       <div class="passage-pane">
         <div class="article" :style="{ fontSize: fontSize + 'px' }">
           <div v-for="(para, pi) in activeParas" :key="pi" class="para">
@@ -59,9 +79,48 @@
           </div>
         </div>
 
-        <div v-if="showTranslation && activePassage && activePassage.translation" class="card" style="margin-top: 14px;">
-          <h3 style="font-size: 14px; margin-bottom: 8px;">全文翻译 <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看）</span></h3>
-          <div style="font-size: 14px; line-height: 1.9; white-space: pre-wrap;">{{ activePassage.translation }}</div>
+        <!-- 逐句对照 / 对照背诵：译文插在每句原文下方 -->
+        <div v-if="transMode !== 'off' && hasTranslation" class="card bi-card">
+          <div class="bi-head">
+            <h3 style="font-size: 14px; margin: 0;">
+              {{ transMode === 'recite' ? '对照背诵' : '逐句对照' }}
+              <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看；点句子切换中/英文）</span>
+            </h3>
+            <div class="bi-actions">
+              <span v-if="transMode === 'recite'" class="bi-progress">已呈现 {{ revealedCount }} / {{ bilingual.length }}</span>
+              <template v-if="transMode === 'recite'">
+                <button class="mini-btn" @click="revealNext" :disabled="revealedCount >= bilingual.length">下一句 ▶</button>
+                <button class="mini-btn" @click="revealedCount = bilingual.length">全部显示</button>
+                <button class="mini-btn" @click="resetReveal">重置</button>
+              </template>
+            </div>
+          </div>
+          <div class="bi-list">
+            <div
+              v-for="(s, si) in visibleBilingual"
+              :key="s.para + '-' + s.i"
+              class="bi-row"
+              :class="{ open: zhOpen(s) }"
+              :data-bi-index="si"
+              @click="toggleRow(s)"
+            >
+              <div class="bi-en" :style="{ fontSize: Math.max(13, fontSize - 2) + 'px' }">
+                <span
+                  v-for="(tk, ti) in rowTokens(s)"
+                  :key="ti"
+                  class="w"
+                  :class="wordClass(tk)"
+                  @click.stop="onWordClick($event, tk, rowTokens(s), s.para)"
+                  @dblclick.stop="onWordDblClick(tk, rowTokens(s), s.para)"
+                >{{ tk.text }}</span>
+              </div>
+              <div v-show="zhOpen(s)" class="bi-zh">{{ s.zh || '（本句译文缺失）' }}</div>
+            </div>
+            <div v-if="!bilingual.length" class="bi-tip">本篇暂无可用译文。</div>
+          </div>
+          <div class="bi-tip">
+            {{ transMode === 'recite' ? '点「下一句」逐句呈现译文；点任意句子可来回切换中/英文' : '每句原文下方即对应译文；点句子可隐藏/显示译文（切换中/英文）' }}
+          </div>
         </div>
 
         <div v-if="activePassage && isEssaySection" class="card essay-card" style="margin-top: 16px;">
@@ -116,51 +175,27 @@
           </div>
         </div>
 
-        <div v-if="activePassage && activePassage.questions && activePassage.questions.length" class="card" style="margin-top: 16px;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-            <h3 style="font-size: 15px; margin: 0;">题目</h3>
-            <span style="font-size: 12.5px; color: var(--muted);">
-              已作答 {{ answeredCount }} / {{ activePassage.questions.length }}
-            </span>
-          </div>
+        <QuestionPanel
+          v-if="layout === 'stack'"
+          :passage="activePassage"
+          :answers="answers"
+          :graded="graded"
+          :reveal="revealAnalysis"
+          :letters="matchLetters"
+          @pick="setAnswer"
+          style="margin-top: 16px;"
+        />
+      </div>
 
-          <div v-if="isCloze" class="bank-box">
-            <div style="font-size: 12.5px; color: var(--muted); margin-bottom: 6px;">词库（每个词最多用一次）</div>
-            <div class="bank-list">
-              <span v-for="b in parseOptions(activePassage.questions[0].options)" :key="b" class="bank-chip">{{ b }}</span>
-            </div>
-          </div>
-
-          <div v-for="qs in activePassage.questions" :key="qs.id" class="qblock">
-            <div class="qstem">
-              <span>{{ qs.stem }}</span>
-              <span v-if="graded && qs.answer" class="qmark" :class="isRight(qs) ? 'ok' : 'no'">
-                {{ isRight(qs) ? '✓ 正确' : '✗ 正确答案 ' + qs.answer }}
-              </span>
-            </div>
-
-            <template v-if="isCloze">
-              <select :value="answers[qs.id] || ''" :disabled="graded" @change="setAnswer(qs.id, $event.target.value)">
-                <option value="">未选</option>
-                <option v-for="o in parseOptions(qs.options)" :key="o" :value="o[0]">{{ o }}</option>
-              </select>
-            </template>
-            <template v-else>
-              <div
-                v-for="(opt, oi) in parseOptions(qs.options)"
-                :key="oi"
-                class="qopt pick"
-                :class="optClass(qs, opt)"
-                @click="setAnswer(qs.id, opt[0])"
-              >{{ opt }}</div>
-            </template>
-
-            <div v-if="graded && qs.answer" class="qanalysis">
-              <b>正确答案：{{ qs.answer }}</b>
-              <div style="margin-top: 4px;">{{ qs.analysis || '（暂无解析）' }}</div>
-            </div>
-          </div>
-        </div>
+      <div v-if="layout === 'split'" class="question-pane">
+        <QuestionPanel
+          :passage="activePassage"
+          :answers="answers"
+          :graded="graded"
+          :reveal="revealAnalysis"
+          :letters="matchLetters"
+          @pick="setAnswer"
+        />
       </div>
 
       <div class="side-pane">
@@ -261,6 +296,8 @@
 <script setup>
 import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
 import { tokenize, simpleNorm, sentenceOf } from '../utils/tokens.js';
+import { alignBilingual, paragraphLetters } from '../utils/bilingual.js';
+import QuestionPanel from '../components/QuestionPanel.vue';
 
 const props = defineProps({ examId: String });
 
@@ -279,29 +316,66 @@ const graded = ref(false);      // 是否已交卷
 const result = ref(null);       // { total, correct, score }
 const notice = ref('');
 const noticeOk = ref(false);
-const showTranslation = ref(false);
 const busy = ref(false);
+const revealAnalysis = ref(false);   // 「查看解析与翻译」直接揭示答案与解析（不必先交卷）
 
-const isCloze = computed(() => !!activePassage.value && activePassage.value.section === 'cloze');
-const answeredCount = computed(() => {
+// 展示模式：翻译呈现方式（off / 逐句对照 / 对照背诵）与布局（上下 / 左右）
+const transMode = ref('off');
+const layout = ref('stack');
+const revealedCount = ref(0);        // 背诵模式：已呈现译文的句数
+const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点击句子切换）
+const tokenCache = new Map();
+
+const hasTranslation = computed(() => !!(activePassage.value && activePassage.value.translation));
+const bilingual = computed(() => {
   const p = activePassage.value;
-  if (!p || !p.questions) return 0;
-  return p.questions.filter((q) => answers.value[q.id]).length;
+  if (!p) return [];
+  return alignBilingual(p.content, p.translation || '');
+});
+// 背诵模式也始终显示全部原文句；译文按 revealedCount 逐句出现（点击句子可手动切换）
+const visibleBilingual = computed(() => bilingual.value);
+// 匹配题可用的段落字母：从正文段落标记提取；提取不到时回退 A-O，保证永远可作答
+const matchLetters = computed(() => {
+  const p = activePassage.value;
+  if (!p || p.section !== 'match') return [];
+  const found = paragraphLetters(p.content);
+  if (found.length >= 4) return found;
+  return 'ABCDEFGHIJKLMNO'.split('');
 });
 
+function rowTokens(s) {
+  const key = s.para + '|' + s.i;
+  if (!tokenCache.has(key)) tokenCache.set(key, tokenize(s.en));
+  return tokenCache.get(key);
+}
+function zhOpen(s) {
+  const key = s.para + '|' + s.i;
+  if (key in rowToggle.value) return !!rowToggle.value[key];
+  if (transMode.value === 'inline') return true;      // 对照模式：默认显示译文
+  return s.i < revealedCount.value;                   // 背诵模式：已呈现的句子显示译文
+}
+function toggleRow(s) {
+  const key = s.para + '|' + s.i;
+  rowToggle.value = { ...rowToggle.value, [key]: !zhOpen(s) };
+}
+function setTransMode(m) {
+  transMode.value = m;
+  revealedCount.value = 0;
+  rowToggle.value = {};
+}
+function revealNext() {
+  const total = bilingual.value.length;
+  if (revealedCount.value < total) revealedCount.value++;
+  const el = document.querySelector(`[data-bi-index="${Math.max(0, revealedCount.value - 1)}"]`);
+  if (el && el.scrollIntoView) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+}
+function resetReveal() {
+  revealedCount.value = 0;
+  rowToggle.value = {};
+}
 function setAnswer(qid, letter) {
-  if (graded.value) return;
+  if (graded.value) return;   // 已交卷锁定；「查看解析」只是临时揭示，不锁作答
   answers.value = { ...answers.value, [qid]: letter };
-}
-function isRight(qs) {
-  return String(answers.value[qs.id] || '') === String(qs.answer || '');
-}
-function optClass(qs, opt) {
-  const letter = opt[0];
-  const picked = String(answers.value[qs.id] || '');
-  if (!graded.value) return picked === letter ? 'picked' : '';
-  if (letter === String(qs.answer || '')) return 'right';
-  return picked === letter ? 'wrong' : '';
 }
 
 async function reloadDetail() {
@@ -332,8 +406,20 @@ async function loadAnalysis() {
     return;
   }
   await reloadDetail();
+  revealAnalysis.value = true;   // 关键：点了就直接展示答案与解析（此前只加载不改状态，点了没反应）
   noticeOk.value = true;
-  notice.value = r.cached ? '已显示本地缓存的解析与全文翻译。' : `已生成 ${r.generated} 个篇章的解析与翻译，并已保存到本地。`;
+  notice.value = r.cached ? '已显示本地缓存的解析与全文翻译（点「逐句对照」可左右/上下对照阅读）。' : `已生成 ${r.generated} 个篇章的解析与翻译，并已保存到本地。`;
+}
+
+// 「查看解析与翻译」按钮做成开关：揭示后可再点一次收起，回到纯作答态
+async function toggleAnalysis() {
+  if (revealAnalysis.value) {
+    if (graded.value) return;          // 已交卷时答案常显，没有隐藏的必要
+    revealAnalysis.value = false;
+    notice.value = '';
+    return;
+  }
+  await loadAnalysis();
 }
 
 async function submit() {
@@ -361,6 +447,7 @@ async function clearAttempt() {
   result.value = null;
   notice.value = '';
   answers.value = {};
+  revealAnalysis.value = false;   // 重做时收起答案解析，重新进入作答状态
   await reloadDetail();
 }
 
@@ -520,10 +607,6 @@ const levelTags = computed(() => {
 function sectionName(section, seq) {
   const map = { listening: '听力原文', reading: '仔细阅读', cloze: '选词填空', match: '长篇阅读', translation: '翻译', writing: '写作' };
   return (map[section] || section || '篇章') + (seq > 1 ? ' ' + seq : '');
-}
-
-function parseOptions(raw) {
-  try { return JSON.parse(raw || '[]'); } catch (e) { return String(raw || '').split('\n').filter(Boolean); }
 }
 
 function wordClass(tk) {

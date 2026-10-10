@@ -450,6 +450,115 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   check('复习页面渲染', revTitle.length > 0, '标题="' + revTitle + '"');
 }
 
+// ===== 阅读器交互：各题型作答 / 解析揭示 / 常驻顶栏 / 逐句对照与背诵 / 左右分栏 =====
+// 注意顺序：作答类断言必须在「查看解析与翻译」之前——一旦揭示答案，选项渲染的是
+// ✓正确/✗错误（right/wrong）而非 picked，就不是「作答态」了。
+{
+  const clickText = (label, sel = 'button') => js(`(() => { const b = [...document.querySelectorAll(${JSON.stringify(sel)})].find(x => x.textContent.includes(${JSON.stringify(label)})); if (b) { b.click(); return true; } return false; })()`);
+  const gotoTab = async (label) => {
+    const ok = await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes(${JSON.stringify(label)})); if (t) { t.click(); return true; } return false; })()`);
+    await sleep(1100);
+    return ok;
+  };
+  const visZh = () => js(`[...document.querySelectorAll('.bi-zh')].filter(e => e.offsetParent !== null).length`);
+
+  // 从「未交卷」态开始：清掉本套作答记录（否则答案锁死、解析强制显示）
+  await js(`window.keeper.attemptClear(${anchor.id})`); await sleep(300);
+  await js(`location.hash = '#/library'`); await sleep(600);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2800);
+
+  // 基底：切到「仔细阅读」（有客观题 + 全文翻译）
+  const baseOk = await gotoTab('仔细阅读');
+
+  // ① 仔细阅读：A/B/C/D 选项可点选作答
+  const opts = await js(`document.querySelectorAll('.qblock .qopt').length`);
+  await js(`(() => { const el = document.querySelector('.qblock .qopt'); if (el) el.click(); return !!el; })()`);
+  await sleep(500);
+  const pickedRd = await js(`document.querySelectorAll('.qopt.picked').length`);
+  const cntRd = await js(`(() => { const el = document.querySelector('.qpanel-head span'); return el ? el.textContent.trim() : ''; })()`);
+  check('仔细阅读可点选作答', baseOk && opts >= 4 && pickedRd >= 1, `选项 ${opts} 个 / 已选中 ${pickedRd} 个 / ${cntRd}`);
+
+  // ② 长篇阅读（段落匹配）：可点选段落字母作答（历史 bug：无可点选项 → 无法作答）
+  const tabOk = await gotoTab('长篇阅读');
+  const letters = await js(`document.querySelectorAll('.qopt.letter').length`);
+  await js(`(() => { const el = document.querySelector('.qopt.letter'); if (el) el.click(); return !!el; })()`);
+  await sleep(600);
+  const picked = await js(`document.querySelectorAll('.qopt.letter.picked').length`);
+  check('长篇阅读可点选作答', tabOk && letters >= 10 && picked >= 1, `字母按钮 ${letters} 个 / 已选中 ${picked} 个`);
+
+  // ③ 选词填空：词库 + 下拉框作答
+  await gotoTab('选词填空');
+  const bank = await js(`document.querySelectorAll('.bank-chip').length`);
+  const sel = await js(`document.querySelectorAll('.qblock select').length`);
+  const ans = await js(`(() => { const s = document.querySelector('.qblock select'); if (!s || !s.options[1]) return ''; const o = s.options[1]; s.value = o.value; s.dispatchEvent(new Event('change', { bubbles: true })); return o.value; })()`);
+  await sleep(500);
+  check('选词填空词库与下拉作答', bank >= 10 && sel >= 10 && ans.length === 1, `词库 ${bank} 词 / 下拉 ${sel} 个 / 选 ${ans}`);
+
+  // 回到「仔细阅读」做解析 / 翻译类断言
+  await gotoTab('仔细阅读');
+
+  // ④ 「查看解析与翻译」应当直接揭示答案与解析（历史 bug：只加载不显示 → 点了没反应）
+  const before = await js(`document.querySelectorAll('.qanalysis').length`);
+  const clicked = await clickText('查看解析与翻译');
+  await sleep(3500);
+  const after = await js(`document.querySelectorAll('.qanalysis').length`);
+  const marks = await js(`document.querySelectorAll('.qmark').length`);
+  check('查看解析与翻译可揭示答案解析', clicked && before === 0 && after > 0 && marks > 0, `点击前 ${before} 条 / 点击后 ${after} 条 / 判定标记 ${marks} 个`);
+
+  // ④b 再点一次应收起（开关），避免「只看答案后无法回到作答态」
+  const hideOk = await clickText('隐藏解析');
+  await sleep(800);
+  const afterHide = await js(`document.querySelectorAll('.qanalysis').length`);
+  check('解析可再次隐藏（开关）', hideOk && afterHide === 0, `隐藏后 ${afterHide} 条`);
+  await clickText('查看解析与翻译');   // 复原，供后续断言使用
+  await sleep(1200);
+
+  // ⑤ 顶栏常驻：滚动容器是 .main（overflow:auto），滚动后仍贴在内容区顶部
+  const pos = await js(`getComputedStyle(document.querySelector('.reader-topbar')).position`);
+  await js(`(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = 900; })()`); await sleep(600);
+  const scrolled = await js(`(document.querySelector('.main') || {}).scrollTop || 0`);
+  const topAfter = await js(`Math.round(document.querySelector('.reader-topbar').getBoundingClientRect().top)`);
+  check('顶栏常驻（下翻后仍可点）', pos === 'sticky' && scrolled > 500 && topAfter >= 0 && topAfter <= 60, `position=${pos} 已滚动 ${scrolled}px 顶栏 top=${topAfter}`);
+  await js(`(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = 0; })()`); await sleep(400);
+
+  // ⑥ 逐句对照：译文逐句插在原文下方；点句子切换中/英文
+  const trOk = await clickText('逐句对照', '.tb-modes button');
+  await sleep(900);
+  const rows = await js(`document.querySelectorAll('.bi-row').length`);
+  const zh0 = await visZh();
+  check('逐句对照：译文逐句插入', trOk && rows >= 5 && zh0 >= 5, `句子 ${rows} 行 / 可见译文 ${zh0} 条`);
+  await js(`(() => { const el = document.querySelector('.bi-row'); if (el) el.click(); return !!el; })()`);
+  await sleep(500);
+  const zh1 = await visZh();
+  check('点击句子可切换中/英文', zh1 === zh0 - 1, `切换后可见译文 ${zh1} 条`);
+
+  // ⑦ 对照背诵：点「下一句」逐句呈现译文
+  await clickText('对照背诵', '.tb-modes button');
+  await sleep(900);
+  const z0 = await visZh();
+  const nextStep = async () => { await clickText('下一句', '.bi-actions button'); await sleep(500); return visZh(); };
+  const z1 = await nextStep();
+  const z2 = await nextStep();
+  check('对照背诵：下一句逐句呈现译文', z0 === 0 && z1 === 1 && z2 === 2, `初始 ${z0} → ${z1} → ${z2}`);
+
+  // ⑧ 左右分栏：题目与原文同时在左右两侧
+  await clickText('左右', '.tb-modes button');
+  await sleep(900);
+  const splitOk = await js(`(() => { const q = document.querySelector('.question-pane .qpanel'); const inPassage = document.querySelector('.passage-pane .qpanel'); return !!q && !inPassage; })()`);
+  check('左右分栏：题目与原文并排', splitOk === true, '题目面板移入右侧栏');
+  await clickText('上下', '.tb-modes button');
+  await sleep(500);
+
+  // ⑨ 重做本套必须真正清空作答记录
+  // 历史 bug：attempt:clear 只删 user_answer、不删 attempt → 重做后 attempt 残留，
+  // 再进阅读器被判定「已交卷」→ 答案锁死、解析强制显示（即用户反馈的「作答不了」）
+  await js(`window.keeper.attemptSubmit(${anchor.id}, {})`); await sleep(400);
+  const g1 = await js(`(async () => { const r = await window.keeper.attemptGet(${anchor.id}); return !!r.attempt; })()`);
+  const cl = await js(`window.keeper.attemptClear(${anchor.id})`); await sleep(300);
+  const g2 = await js(`(async () => { const r = await window.keeper.attemptGet(${anchor.id}); return !!r.attempt; })()`);
+  check('重做本套真正清空作答记录', g1 === true && cl.ok === true && cl.cleared >= 1 && g2 === false, `交卷后 attempt=${g1} / 清理后 attempt=${g2} / cleared=${cl.cleared}`);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

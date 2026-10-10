@@ -584,9 +584,13 @@ function registerIpc() {
   });
 
   ipcMain.handle('attempt:clear', (_e, examId) => {
+    // 必须同时删掉 attempt 行：否则「重做本套」后 attempt 仍在，
+    // 重进阅读器会被 restoreAttempt 判定为「已交卷」，答案锁死、解析强制显示（无法再作答）
+    const hadAttempt = q('SELECT COUNT(*) AS n FROM attempt WHERE exam_id = ?', [examId])[0].n;
     run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
+    run('DELETE FROM attempt WHERE exam_id = ?', [examId]);
     persist();
-    return { ok: true };
+    return { ok: true, cleared: hadAttempt };
   });
 
   // ---- 右侧 AI 问答（带知识库与当前文章上下文）----
