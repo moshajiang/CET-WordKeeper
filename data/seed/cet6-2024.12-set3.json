@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do numerous personality quizzes online claim they are able to do?",
+          "stem": "46. What do numerous personality quizzes online claim they are able to do?",
           "options": [
             "A) Distinguish between the two hemispheres of one's brain",
             "B) Determine whether one is left-brained or right-brained",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say is sometimes stranger than fiction?",
+          "stem": "47. What does the author say is sometimes stranger than fiction?",
           "options": [
             "A) How one hemisphere of the brain impacts creativity.",
             "B) How the two halves of our brains work alternately.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why did many scientists have difficulty endorsing the idea that different areas of the brain do different\nthings?",
+          "stem": "48. Why did many scientists have difficulty endorsing the idea that different areas of the brain do different\nthings?",
           "options": [
             "A) It contradicts the assumption that the two hemispheres of the brain are symmetrical.",
             "B) It dismisses the view that the universe has been evolving in a consistent manner.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What belief have neuroscientists long rejected according to the passage?",
+          "stem": "49. What belief have neuroscientists long rejected according to the passage?",
           "options": [
             "A) There are left-dominant people and right-dominant people with different personalities.",
             "B) There are noticeable differences between the left and right hemispheres of the brain.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What are we advised to do with an online quiz that tells us something about ourselves?",
+          "stem": "50. What are we advised to do with an online quiz that tells us something about ourselves?",
           "options": [
             "A) Challenge its authority",
             "B) Scrutinize its originality.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn about team teaching from the passage?",
+          "stem": "51. What do we learn about team teaching from the passage?",
           "options": [
             "A) It is generally conducted in classrooms without walls.",
             "B) It allows students to choose teachers they favor most.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does initial research suggest regarding Westwood's innovative teaching model?",
+          "stem": "52. What does initial research suggest regarding Westwood's innovative teaching model?",
           "options": [
             "A) It could help raise teachers' pay.",
             "C) It could cut down overall costs.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What did superintendent Andi Fourlis say about the teaching profession?",
+          "stem": "53. What did superintendent Andi Fourlis say about the teaching profession?",
           "options": [
             "A) Morale cannot be boosted until teaching models are overhauled.",
             "B) Teachers are simply too busy to visit classes of their colleagues.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author want to show by citing English teacher Jeff Hall's experience?",
+          "stem": "54. What does the author want to show by citing English teacher Jeff Hall's experience?",
           "options": [
             "A) English teachers and science teachers are complementary in performing their tasks.",
             "B) A teacher of arts and letters is completely puzzled by what a science teacher teaches",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think is one of the difficult problems in implementing the new teaching model?",
+          "stem": "55. What does the author think is one of the difficult problems in implementing the new teaching model?",
           "options": [
             "A) What to do with teachers working alone.",
             "C) How to recruit volunteers for a team.",

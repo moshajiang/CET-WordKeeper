@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "How can research serve its full purpose according to the author?",
+          "stem": "46. How can research serve its full purpose according to the author?",
           "options": [
             "A)With researchers being aware of public interests.",
             "B) With its findings published in prominent journals.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why do ordinary readers find it difficult to access the results of researchers'studies?",
+          "stem": "47. Why do ordinary readers find it difficult to access the results of researchers'studies?",
           "options": [
             "A) They cannot understand the academic language used for reporting these results.",
             "B) They feel intimidated by the jargon researchers use to describe their findings.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is one of the reasons some researchers won't prioritise communicating their findings to the public?",
+          "stem": "48. What is one of the reasons some researchers won't prioritise communicating their findings to the public?",
           "options": [
             "A) They can thrive on the papers published.",
             "B) Their top consideration is to win tenure.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How can sharing findings benefit researchers themselves?",
+          "stem": "49. How can sharing findings benefit researchers themselves?",
           "options": [
             "A) By helping them to identify new research directions",
             "B) By enabling them to understand crises plaguing society",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why are researchers advised to engage the services of professional writers or communication officers?",
+          "stem": "50. Why are researchers advised to engage the services of professional writers or communication officers?",
           "options": [
             "A) To satisfy ethics committees' mandatory requirements of researchers.",
             "B) To translate their study into languages accessible to readers overseas.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn about spiders in the UK since the middle ages?",
+          "stem": "51. What do we learn about spiders in the UK since the middle ages?",
           "options": [
             "A) They have been generally misconceived.",
             "B) They have adversely impacted crop growth.",
@@ -424,7 +424,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What partly accounts for the reduction in spiders'food supply?",
+          "stem": "53. What partly accounts for the reduction in spiders'food supply?",
           "options": [
             "A) The long tradition of collecting insects.",
             "B) Fast reproduction of their competitors.",
@@ -436,7 +436,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the passage say is conservationists' biggest worry?",
+          "stem": "54. What does the passage say is conservationists' biggest worry?",
           "options": [
             "A) A variety of spiders are threatened due to pollution of marshes and wasteland",
             "B) Certain species of spiders are endangered due to loss of their natural homes",
@@ -448,7 +448,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What wish does the author express close to the end of the passage?",
+          "stem": "55. What wish does the author express close to the end of the passage?",
           "options": [
             "A)More people would recognise spiders'unique status in the ecosystem.",
             "B) People would show greater enthusiasm for spiders than for butterflies.",

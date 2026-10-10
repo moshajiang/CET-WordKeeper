@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author say we need to do to strengthen our willpower?",
+          "stem": "46. What does the author say we need to do to strengthen our willpower?",
           "options": [
             "A) Keep it under control.",
             "B) Apply it continuously",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How are almost half of our daily actions performed according to the passage?",
+          "stem": "47. How are almost half of our daily actions performed according to the passage?",
           "options": [
             "A) Out of habit.",
             "B) With determination.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What will help people stick to doing something constructive automatically?",
+          "stem": "48. What will help people stick to doing something constructive automatically?",
           "options": [
             "A) Practising it on a day-to-day basis.",
             "B) Associating it with improving health",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How does the art of self-control help us succeed?",
+          "stem": "49. How does the art of self-control help us succeed?",
           "options": [
             "A) By allowing us to remain clear-headed permanently",
             "B) By enabling us to alter our behaviors constantly",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why can it be difficult for us to maintain self-control?",
+          "stem": "50. Why can it be difficult for us to maintain self-control?",
           "options": [
             "A) Most of us are not in the habit of exercising self-control.",
             "B) We may not get immediate rewards from self-control.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the passage mainly discuss regarding scientific research?",
+          "stem": "51. What does the passage mainly discuss regarding scientific research?",
           "options": [
             "A) Its foundation.",
             "B) Its rewards.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about researchers like birdwatchers and rock collectors?",
+          "stem": "52. What do we learn from the passage about researchers like birdwatchers and rock collectors?",
           "options": [
             "A) They have little access to government funding.",
             "B) They can do research with limited resources.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What would scientific studies look like in a perfect world according to the author?",
+          "stem": "53. What would scientific studies look like in a perfect world according to the author?",
           "options": [
             "A) They would be totally unbiased.",
             "B) They would be independently funded.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say about companies and special interest groups?",
+          "stem": "54. What does the author say about companies and special interest groups?",
           "options": [
             "A) They try hard to pull down the safeguards for research.",
             "B) They make extra efforts to research their own products.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think of research funded by industry or special interest groups?",
+          "stem": "55. What does the author think of research funded by industry or special interest groups?",
           "options": [
             "A) Its recommendations should be examined for feasibility.",
             "B) Its misleading results should be corrected in time.",

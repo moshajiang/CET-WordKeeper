@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "Why does the formula of tax cuts remain popular though ineffective?",
+          "stem": "46. Why does the formula of tax cuts remain popular though ineffective?",
           "options": [
             "A) Its critics' voice has not been heard throughout the country.",
             "B) There seem to be no other options available to replace it.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think is a more effective measure for driving economic growth in the U.S.?",
+          "stem": "47. What does the author think is a more effective measure for driving economic growth in the U.S.?",
           "options": [
             "A) Aiding people left behind by economic growth",
             "B) Prioritizing the growth of the nation's G",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the logic underlying the author's viewpoint?",
+          "stem": "48. What is the logic underlying the author's viewpoint?",
           "options": [
             "A) The growth of workers' paychecks ultimately boosts the nation's economy.",
             "B) Paying a premium to maintain a reliable workforce attracts more customers.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the basis for higher wages according to the conventional wisdom?",
+          "stem": "49. What is the basis for higher wages according to the conventional wisdom?",
           "options": [
             "A) Fairness in distribution.",
             "C) The priority of economic policymakers.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn about things in the real world in America for the past 50 years or so?",
+          "stem": "50. What do we learn about things in the real world in America for the past 50 years or so?",
           "options": [
             "A) People have failed to see a corresponding increase in wages and in productivity.",
             "B) People have been disheartened by the widening gap between the haves and have-nots.",
@@ -412,7 +412,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from the findings of a new study in Nature Neuroscience?",
+          "stem": "52. What do we learn from the findings of a new study in Nature Neuroscience?",
           "options": [
             "A) The majority of top psychology and neuroscience journals reflect a variety of voices, experiences and identities.",
             "B) The editorial boards of most psychology and neuroscience journals do influence the direction their field takes.",
@@ -424,7 +424,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What fact does the author highlight concerning the gender differences in editors of psychology journals?",
+          "stem": "53. What fact does the author highlight concerning the gender differences in editors of psychology journals?",
           "options": [
             "A)There were quite a few female editors who also distinguished themselves as influential psychology researchers.",
             "B) The number of female editors was simply disproportionate to that of women engaged in psychology research.",
@@ -436,7 +436,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we infer from the conclusion drawn by the team of the new study on the basis of their findings?",
+          "stem": "54. What can we infer from the conclusion drawn by the team of the new study on the basis of their findings?",
           "options": [
             "A)Women's views are underrepresented in the editorial boards of top psychology and neuroscience journals.",
             "B) Male editors of top psychology and neuroscience journals tend to be biased against their female colleagues.",
@@ -448,7 +448,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author suggest we do instead of simply blaming the inequality of editorial boards on tradition?",
+          "stem": "55. What does the author suggest we do instead of simply blaming the inequality of editorial boards on tradition?",
           "options": [
             "A) Strike a balance between male and female editors.",
             "C) Enlarge the body of female academics.",

@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn from new research about pandas?",
+          "stem": "46. What do we learn from new research about pandas?",
           "options": [
             "A) They are losing habitat due to the building of roads and houses.",
             "B) They have stopped seeking new mates for reproduction.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we conclude from the new research by scientists at Michigan State University?",
+          "stem": "47. What can we conclude from the new research by scientists at Michigan State University?",
           "options": [
             "A) Environmentalists’ long-time belief regarding panda conservation may be misleading.",
             "B) Housing development near pandas’ homes may threaten their survival.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the experts’ conclusion regarding pandas?",
+          "stem": "48. What is the experts’ conclusion regarding pandas?",
           "options": [
             "A) It is urgent to provide an ideal habitat for them to thrive.",
             "B) It is very important to preserve their genetic diversity.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we infer from the passage about the Goldilocks principle?",
+          "stem": "49. What can we infer from the passage about the Goldilocks principle?",
           "options": [
             "A) It needs to be confirmed by more studies on pandas.",
             "B) It applies to the preservation of pandas too.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can the new findings do according to Professor Sillero?",
+          "stem": "50. What can the new findings do according to Professor Sillero?",
           "options": [
             "A) Help discover new ways for the conservation of pandas.",
             "B) Help remove pandas from the list of endangered species.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the passage say about people born with natural talents?",
+          "stem": "51. What does the passage say about people born with natural talents?",
           "options": [
             "A) They seem to outdo others without hard work.",
             "C) They feel it only too logical to succeed.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does Duckworth say about talent?",
+          "stem": "52. What does Duckworth say about talent?",
           "options": [
             "A) It is a new concept much too overrated.",
             "C) It plays a lesser role in one’s success.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the passage say about people thinking of attaining success?",
+          "stem": "53. What does the passage say about people thinking of attaining success?",
           "options": [
             "A) They are puzzled how to present their best to the employer.",
             "B) They are burdened by their expectation of perfection.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How does the author think grit can be helpful to us?",
+          "stem": "54. How does the author think grit can be helpful to us?",
           "options": [
             "A) It allows us to know what we are good at.",
             "C) It focuses our attention on what we do.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What message does Duckworth try to convey in her book Grit?",
+          "stem": "55. What message does Duckworth try to convey in her book Grit?",
           "options": [
             "A) We should perfect ourselves to ensure success.",
             "B) We should stay persistent even in face of failures.",

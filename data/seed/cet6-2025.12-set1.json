@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What often happens when people are eager to pursue individual success?",
+          "stem": "46. What often happens when people are eager to pursue individual success?",
           "options": [
             "A) They lack a shoulder to cry on.",
             "B) They have no soul to confide in.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author advise people to do in their pursuit of radical\nindividualism?",
+          "stem": "47. What does the author advise people to do in their pursuit of radical\nindividualism?",
           "options": [
             "A) Reexamine its detrimental effects.",
             "B) Shrug off the loss of their loved ones.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is American society's assumption of personal achievement?",
+          "stem": "48. What is American society's assumption of personal achievement?",
           "options": [
             "A) It is to be duly celebrated and highly commended.",
             "B) It is a sure way to fulfill a person's dream.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is preached in many success stories?",
+          "stem": "49. What is preached in many success stories?",
           "options": [
             "A) Attaching importance to academic gains on the road to success",
             "B) Investing one's time in work instead of connecting with friends.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we infer from the passage regarding the pursuit of success?",
+          "stem": "50. What can we infer from the passage regarding the pursuit of success?",
           "options": [
             "A) No one can succeed without pushing limits.",
             "B) No one can afford to neglect close friends.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author think about today's America?",
+          "stem": "51. What does the author think about today's America?",
           "options": [
             "A) It is struggling to transform fiction into reality.",
             "B) It has been the focus of many vital conversations.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about black students in the past 20 years?",
+          "stem": "52. What do we learn from the passage about black students in the past 20 years?",
           "options": [
             "A) They have been unfairly treated regarding higher education.",
             "B) They have been battling hard to address equity issues.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How can Americans bridge the differences that divide them?",
+          "stem": "53. How can Americans bridge the differences that divide them?",
           "options": [
             "A) By dealing with the thorny issues confronting them",
             "B) By seizing every chance to enhance racial harmony",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How do most Americans view America as a nation according to a recent survey?",
+          "stem": "54. How do most Americans view America as a nation according to a recent survey?",
           "options": [
             "A) It is compelled to address its historical social issues.",
             "B) It is delaying advancements toward racial equality.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author suggest Americans do?",
+          "stem": "55. What does the author suggest Americans do?",
           "options": [
             "A) Ensure the wellbeing of their children and grandchildren.",
             "B) Make joint efforts to tackle the nation's equity issues.",

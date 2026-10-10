@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What can we conclude from Lao Zi’s quotation?",
+          "stem": "46. What can we conclude from Lao Zi’s quotation?",
           "options": [
             "A) We should see through other people’s attempt to make a prisoner of us.",
             "B) We can never really please other people even if we try as hard as we can.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What will happen if we base our self-worth on other people’s approval?",
+          "stem": "47. What will happen if we base our self-worth on other people’s approval?",
           "options": [
             "A) Our desire to be loved will be fulfilled.",
             "B) Our life will be unfruitful and exhausting.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What may account for our need to be liked or approved of?",
+          "stem": "48. What may account for our need to be liked or approved of?",
           "options": [
             "A) Our desperate longing for interactions with others.",
             "B) Our understanding of the workings of the world.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we do when we become better able to provide ourselves with the desired\napproval?",
+          "stem": "49. What can we do when we become better able to provide ourselves with the desired\napproval?",
           "options": [
             "A) Enjoy a happier life",
             "B) Exercise self-restraint",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author advise us to do in the last paragraph?",
+          "stem": "50. What does the author advise us to do in the last paragraph?",
           "options": [
             "A) Embrace life for ourselves and for others.",
             "B) Base our worth on others’ opinions",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do some people think of aging adults?",
+          "stem": "51. What do some people think of aging adults?",
           "options": [
             "A) Their wisdom grows as time goes by.",
             "C) They can benefit from late-in-life learning.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we conclude from Geoffrey Raisman’s finding?",
+          "stem": "52. What can we conclude from Geoffrey Raisman’s finding?",
           "options": [
             "A) Brain damage seriously hinders one’s learning",
             "B) Brain power weakens slower than we imagine",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is one thing that helps maintain the health of our brain even as it shrinks?",
+          "stem": "53. What is one thing that helps maintain the health of our brain even as it shrinks?",
           "options": [
             "A) Doing daily routines by conventional means",
             "B) Avoiding worrying about our mental durability",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say can contribute to the improvement of brain function?",
+          "stem": "54. What does the author say can contribute to the improvement of brain function?",
           "options": [
             "A) Being curious and desiring knowledge",
             "B) Being eager to pass brain tests at an old age",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the finding of the 2012 study in the journal Psychology and Aging?",
+          "stem": "55. What is the finding of the 2012 study in the journal Psychology and Aging?",
           "options": [
             "A) Wishing to solve puzzles enhances one’s reasoning power.",
             "B) Playing number games unexpectedly stimulates one’s memory.",

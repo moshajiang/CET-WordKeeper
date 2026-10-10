@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author believe regarding social media?",
+          "stem": "46. What does the author believe regarding social media?",
           "options": [
             "A) To stop children using it is unrealistic and inadvisable.",
             "B) It helps both adults and children to organise their lives.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about British teenage girls?",
+          "stem": "47. What do we learn from the passage about British teenage girls?",
           "options": [
             "A) The more frequently they interact on social media, the more they experience harassment.",
             "B) The more time they spend on social media, the more likely they suffer from depression.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the author's view on the research finding about British teenage girls?",
+          "stem": "48. What is the author's view on the research finding about British teenage girls?",
           "options": [
             "A) Its implications about online abuse are obvious.",
             "B) Its key message calls for immediate attention.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do experts think of health secretary Matt Hancock's idea?",
+          "stem": "49. What do experts think of health secretary Matt Hancock's idea?",
           "options": [
             "A) Its implementation requires prompt action.",
             "B) It is a welcome initiative but is long overdue.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Besides social media companies, what factors contribute to young people's\npsychological health problems?",
+          "stem": "50. Besides social media companies, what factors contribute to young people's\npsychological health problems?",
           "options": [
             "A) Poorly financed schools and health services.",
             "B) Politicians' eagerness to divert public attention.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn about the G-20's agreement on curbing the use of tax havens?",
+          "stem": "51. What do we learn about the G-20's agreement on curbing the use of tax havens?",
           "options": [
             "A) It has aggravated the problem in non-G-20 countries.",
             "B) It has taken a toll on countries such as",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What mainly accounted for the large increase in the world's biggest multinational\ncorporations' shift of profits to tax havens?",
+          "stem": "52. What mainly accounted for the large increase in the world's biggest multinational\ncorporations' shift of profits to tax havens?",
           "options": [
             "A) Fluctuating tax rates globally.",
             "B) Lenient policies of the U. S.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What have policymakers been doing to prevent government tax loss?",
+          "stem": "53. What have policymakers been doing to prevent government tax loss?",
           "options": [
             "A) Reducing corporate taxes step by step.",
             "B) Scrapping consumption taxes gradually.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say would bring tax havens to an end?",
+          "stem": "54. What does the author say would bring tax havens to an end?",
           "options": [
             "A) The alignment of corporate taxes with consumption taxes.",
             "B) The implementation of generous tax rates in all countries.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What could be expected of the global problem of profit-shifting in the near future?",
+          "stem": "55. What could be expected of the global problem of profit-shifting in the near future?",
           "options": [
             "A) It would be solved with more countries cutting tax rates.",
             "B) It would end with governments' awareness of its severity.",

@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What problem have supermarkets been facing?",
+          "stem": "46. What problem have supermarkets been facing?",
           "options": [
             "A) They are actually on the way to bankruptcy.",
             "B) They have been losing customers and profits.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the passage say about the idea of a self-service grocery?",
+          "stem": "47. What does the passage say about the idea of a self-service grocery?",
           "options": [
             "A)It was put forward by King Kullen.",
             "C)It has been under constant debate.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What did supermarkets do by adopting the Fordist factory approach?",
+          "stem": "48. What did supermarkets do by adopting the Fordist factory approach?",
           "options": [
             "A) They modernized traditional groceries in many ways.",
             "B) They introduced cutting-edge layout of their stores.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the typical supermarket layout intended to do?",
+          "stem": "49. What is the typical supermarket layout intended to do?",
           "options": [
             "A) Arouse customers' appetite to buy flowers, fruit and vegetables",
             "B) Provide customers easy access to items they want to buy.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What have people long feared about supermarkets?",
+          "stem": "50. What have people long feared about supermarkets?",
           "options": [
             "A) They use tricky strategies to promote their business.",
             "B)They are going to replace the local groceries entirely.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "Why did America's traditional school year have a three-month summer vacation?",
+          "stem": "51. Why did America's traditional school year have a three-month summer vacation?",
           "options": [
             "A) Students needed to help with farm work.",
             "B) Students needed time to learn necessary farming skills.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What benefit will year-round schooling bring students in addition to improving their learning?",
+          "stem": "52. What benefit will year-round schooling bring students in addition to improving their learning?",
           "options": [
             "A) It will help them get back to where their lessons started.",
             "B)It will enable them to absorb what they have learned.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do some childhood development experts believe about the long summer vacation?",
+          "stem": "53. What do some childhood development experts believe about the long summer vacation?",
           "options": [
             "A)It meets students' need to study on their own.",
             "B)It enables students to learn about the outside world.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the argument against the experts' idea of a long summer vacation?",
+          "stem": "54. What is the argument against the experts' idea of a long summer vacation?",
           "options": [
             "A) It does little good to most students.",
             "B)It benefits few students playing outside.",

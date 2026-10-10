@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about Red Rum the racehorse?",
+          "stem": "46. What do we learn from the passage about Red Rum the racehorse?",
           "options": [
             "A) He captured public affection long before he won national titles.",
             "B) He won enormous fame and love from",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What did the serious bone disease in Red Rum's foot mean to himself and his trainer?",
+          "stem": "47. What did the serious bone disease in Red Rum's foot mean to himself and his trainer?",
           "options": [
             "A) It was simply a hindrance they had to get over to excel.",
             "B) It was surely a disadvantage though not considered fatal.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say Red Rum did with his power, speed and jumping ability?",
+          "stem": "48. What does the author say Red Rum did with his power, speed and jumping ability?",
           "options": [
             "A) He won his first Grand National title at 12.",
             "C) He surprised sporting fans worldwide in 1973.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What did people generally think of Red Rum when he returned to the racecourse in 1977?",
+          "stem": "49. What did people generally think of Red Rum when he returned to the racecourse in 1977?",
           "options": [
             "A) He had already passed the peak of his racing life.",
             "B) He would have no rival in Grand National steeplechases.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What became of Red Rum after his career ended?",
+          "stem": "50. What became of Red Rum after his career ended?",
           "options": [
             "A) He suffered from severe pain in a heel.",
             "C) He lived on various charity benefits.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author say businesspeople often do?",
+          "stem": "51. What does the author say businesspeople often do?",
           "options": [
             "A) Strive to make sense of some unknown forces.",
             "B) He took two firsts successively in 1935-1936",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What should we take into account in order to make informed decisions?",
+          "stem": "52. What should we take into account in order to make informed decisions?",
           "options": [
             "A) The likelihood of errors.",
             "C) The complexity of circumstances.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What should people do in a decision-making process if instincts disagree with data?",
+          "stem": "53. What should people do in a decision-making process if instincts disagree with data?",
           "options": [
             "A) Resolve the dilemma with previous experience.",
             "B) Figure out which of the two is more reliable.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What should we do when facing various factors that limit the practicality of data?",
+          "stem": "54. What should we do when facing various factors that limit the practicality of data?",
           "options": [
             "A) Make a rational and systematic analysis.",
             "B) Explore the most feasible options.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does it take for decisions to become the best according to the author?",
+          "stem": "55. What does it take for decisions to become the best according to the author?",
           "options": [
             "A) Applying instincts and data in conjunction",
             "B) Assessing all factors when making a choice",

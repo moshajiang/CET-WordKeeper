@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn about singer and actress Selena Gomez in the past four and a half years?",
+          "stem": "46. What do we learn about singer and actress Selena Gomez in the past four and a half years?",
           "options": [
             "A)She has had worsening mental problems.",
             "C) She has refrained from using social media.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why does actively opting out of using the internet become a matter of privilege?",
+          "stem": "47. Why does actively opting out of using the internet become a matter of privilege?",
           "options": [
             "A) Most people find it subtle and complicated to give up using the internet.",
             "B) Most people can hardly ditch the web while avoiding hate and comparisons.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why does the author say\"witnessing companies…feels particularly irritating\"(Lines 2-4, Para.6)?",
+          "stem": "48. Why does the author say\"witnessing companies…feels particularly irritating\"(Lines 2-4, Para.6)?",
           "options": [
             "A) The UK digital divide would further worsen due to the metaverse.",
             "B) The concept of the metaverse is believed to be still quite illusory. ·2023年12月六级真题(第二套)· 16",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is worth bearing in mind concerning social media platforms?",
+          "stem": "49. What is worth bearing in mind concerning social media platforms?",
           "options": [
             "A) They are conducive to promoting societal equality.",
             "B) They help many people feel connected with others.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think is really important for those living in digital exclusion?",
+          "stem": "50. What does the author think is really important for those living in digital exclusion?",
           "options": [
             "A) Having access to the internet.",
             "C) Getting more educational resources.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author think is easy to see in many areas of contemporary life?",
+          "stem": "51. What does the author think is easy to see in many areas of contemporary life?",
           "options": [
             "A) The disagreement on the inevitability of competition.",
             "B) The consequence of psychological investigation.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "According to psychology, what do people strive to do following the initial stage of their life?",
+          "stem": "52. According to psychology, what do people strive to do following the initial stage of their life?",
           "options": [
             "A) Fulfill individual needs without incurring adverse effects of human drives.",
             "B) Indulge in cultural pursuits while keeping their base impulses at bay.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn about the“natural world” characterized by Thomas Hobbes?",
+          "stem": "53. What do we learn about the“natural world” characterized by Thomas Hobbes?",
           "options": [
             "A) It gets misrepresented by philosophers and anthropologists.",
             "B) It gets distorted in",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we conclude from Darwin's assertion in The Origin of Species?",
+          "stem": "54. What can we conclude from Darwin's assertion in The Origin of Species?",
           "options": [
             "A) All species inherently depend on others for survival",
             "B) Struggles for survival do not exclude mutual support.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What conclusion did Margaret Mead reach after studying dozens of different cultures?",
+          "stem": "55. What conclusion did Margaret Mead reach after studying dozens of different cultures?",
           "options": [
             "A) It is characteristic of humans to be competitive.",
             "B) Americans are uniquely opposed to cooperation",

@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author say is the issue all major economic powers have to address?",
+          "stem": "46. What does the author say is the issue all major economic powers have to address?",
           "options": [
             "A) How to ensure the sustainable growth of their tech giants",
             "B) How to keep the competitiveness of their tech companies",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the suspension of Ant Group Co.'s stock offering suggest?",
+          "stem": "47. What does the suspension of Ant Group Co.'s stock offering suggest?",
           "options": [
             "A) All attempts to evade regulation are doomed to failure",
             "B) All attempts to monopolize sales must be cracked down",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How are smaller companies impacted by tech giants'business expansion?",
+          "stem": "48. How are smaller companies impacted by tech giants'business expansion?",
           "options": [
             "A) They can no longer do business independent of tech giants",
             "B) They are frequently denied access to tech giants'platforms",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What have EU countries done to confront the power of digital giants?",
+          "stem": "49. What have EU countries done to confront the power of digital giants?",
           "options": [
             "A) They have imposed strict regulation over digital giants'advertising",
             "B) They have considered regulatory action to promote fair competition",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do Americans generally think of social media companies according to the author?",
+          "stem": "50. What do Americans generally think of social media companies according to the author?",
           "options": [
             "A) They are invading people's privacy",
             "B) They are increasingly influential.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What is the popular assumption about international tourism?",
+          "stem": "51. What is the popular assumption about international tourism?",
           "options": [
             "A) Its benefits may compensate for the adverse environmental consequences.",
             "B) Its rapid development is attributed to people's improved living standard.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from some studies about uncontrolled tourism development?",
+          "stem": "52. What do we learn from some studies about uncontrolled tourism development?",
           "options": [
             "A) It gives rise to an increase in mass confrontations.",
             "B) It incurs local residents9 antagonism to tourists.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why does the author say local residents of popular destinations often feel frustrated?",
+          "stem": "53. Why does the author say local residents of popular destinations often feel frustrated?",
           "options": [
             "A) They fall victim to social conflicts and environmental disturbances.",
             "B) They have little opportunity to enjoy themselves on cruise ships.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How does the author say local residents in destination communities respond to tourism\nactivity?",
+          "stem": "54. How does the author say local residents in destination communities respond to tourism\nactivity?",
           "options": [
             "A) They endeavor to adapt to it.",
             "B) They readily adopt new lifestyles.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can tourists do to exert more positive impacts on the tourist destinations?",
+          "stem": "55. What can tourists do to exert more positive impacts on the tourist destinations?",
           "options": [
             "A) Show interest in local customs and lifestyles.",
             "B) Seek possibilities to invest in local companies.",

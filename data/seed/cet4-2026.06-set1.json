@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What is the classic grocery store dilemma?",
+          "stem": "46. What is the classic grocery store dilemma?",
           "options": [
             "A) Whether or not one should eat organic food.",
             "B) Whether or not one can stretch their wallet far.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn about organic food from science?",
+          "stem": "47. What do we learn about organic food from science?",
           "options": [
             "A) Whether it is any better remains uncertain.",
             "B) Whether it is healthier is under consideration.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the passage say about organic and non-organic products as far as food safety is concerned?",
+          "stem": "48. What does the passage say about organic and non-organic products as far as food safety is concerned?",
           "options": [
             "A) Their difference is the conventions used to test them.",
             "B) They differ in how much pesticide remains on them.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say about organic farming?",
+          "stem": "49. What does the author say about organic farming?",
           "options": [
             "A) It may be blamed for the shrinking bee populations in the world.",
             "B) It minimizes the use of controversial pesticides in its operations.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do advocates of organic farming argue about its yields and efficiency?",
+          "stem": "50. What do advocates of organic farming argue about its yields and efficiency?",
           "options": [
             "A) They would increase quickly with the emergence of new technologies.",
             "B) They would improve remarkably with more research and investment.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What is the finding of one recent study about being selfish?",
+          "stem": "51. What is the finding of one recent study about being selfish?",
           "options": [
             "A) It may bring certain benefits in the short term.",
             "B) It usually yields more disadvantages than advantages.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What have researchers found by studying identical and non-identical twins?",
+          "stem": "52. What have researchers found by studying identical and non-identical twins?",
           "options": [
             "A) They are overwhelmingly different in the amounts of genes.",
             "B) One’s behavior is largely determined by their genetic traits.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What did the author and colleagues identify in their recent research?",
+          "stem": "53. What did the author and colleagues identify in their recent research?",
           "options": [
             "A) A gene-related selfish behavior in preschool children",
             "B) Key factors that determine one’s altruistic behavior.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from evolutionary scientists about cooperative behavior?",
+          "stem": "54. What do we learn from evolutionary scientists about cooperative behavior?",
           "options": [
             "A) It may have initially originated in individuals linked by blood.",
             "B) It may have caused the diversification of communities.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we infer from the last paragraph?",
+          "stem": "55. What can we infer from the last paragraph?",
           "options": [
             "A) Cooperative behavior is evident among identical twins",
             "B) One is born either cooperative or non-cooperative.",

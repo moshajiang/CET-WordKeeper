@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What has become of the rural areas nowadays?",
+          "stem": "46. What has become of the rural areas nowadays?",
           "options": [
             "A) They are becoming somewhat deserted.",
             "C) They are closely-knit communities.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think of the rural lifestyle?",
+          "stem": "47. What does the author think of the rural lifestyle?",
           "options": [
             "A) It is unlikely to survive given the on-going changes.",
             "B) It is less energy-efficient compared to that in cities.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think of rich urban residents buying a second home in the countryside?",
+          "stem": "48. What does the author think of rich urban residents buying a second home in the countryside?",
           "options": [
             "A) It is bound to mar the traditional rural life.",
             "B) It adversely impacts rural social stability.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn about the countryside with industrialisation and technological advances?",
+          "stem": "49. What do we learn about the countryside with industrialisation and technological advances?",
           "options": [
             "A) It is destined to change gradually.",
             "C) It is likely to embrace foreign cultures.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think of the future of the countryside compared with cities?",
+          "stem": "50. What does the author think of the future of the countryside compared with cities?",
           "options": [
             "A) It is going to be harder for the locals.",
             "C) It is less likely to stay static.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the passage say about the statement \"beauty is in the eye of the beholder\"?",
+          "stem": "51. What does the passage say about the statement \"beauty is in the eye of the beholder\"?",
           "options": [
             "A) It has hardly ever been disputed.",
             "C) Many people have found it absurd.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does a recent study exploring aesthetic taste show?",
+          "stem": "52. What does a recent study exploring aesthetic taste show?",
           "options": [
             "A) Aesthetic tastes tend to differ from person to person",
             "B) Natural beauty is rarely surpassed by artificial beauty.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why do people differ in their aesthetic appraisal of artifacts?",
+          "stem": "53. Why do people differ in their aesthetic appraisal of artifacts?",
           "options": [
             "A) They come out in a great variety of designs.",
             "B) They lead to varying behavioral consequences.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the example of sunset tell about nature?",
+          "stem": "54. What does the example of sunset tell about nature?",
           "options": [
             "A) It creates a powerful appeal through its brilliant radiance.",
             "B) It displays aesthetic traits in a similar way the world over.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why do artifacts not always hold universal appeal?",
+          "stem": "55. Why do artifacts not always hold universal appeal?",
           "options": [
             "A) The appreciation of their beauty is not subject to objective standards.",
             "B) The universal principle of beauty prevents a wide array of embodiments.",

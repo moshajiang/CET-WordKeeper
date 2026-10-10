@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "How can competitive rivalry benefit entrepreneurs according to the passage?",
+          "stem": "46. How can competitive rivalry benefit entrepreneurs according to the passage?",
           "options": [
             "A) By enabling them to outcompete other entrepreneurs",
             "B) By enabling them to make their venture a success",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is one of the traps entrepreneurs may often fall into when competing with rivals?",
+          "stem": "47. What is one of the traps entrepreneurs may often fall into when competing with rivals?",
           "options": [
             "A) They may adopt strategies that are bound to ruin their venture.",
             "B) They may resort to unethical means to outperform their rivals.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What are entrepreneurs advised to do to avoid traps that often accompany rivalry?",
+          "stem": "48. What are entrepreneurs advised to do to avoid traps that often accompany rivalry?",
           "options": [
             "A) Deliberate on what really matters",
             "B) Prioritize reaping immediate benefits.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How can entrepreneurs avoid making impulsive and insensible decisions?",
+          "stem": "49. How can entrepreneurs avoid making impulsive and insensible decisions?",
           "options": [
             "A) By engaging themselves in critical reasoning",
             "B) By developing a habit of keeping their integrity",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How can entrepreneurs overcome the risk-inducing effects of rivalry?",
+          "stem": "50. How can entrepreneurs overcome the risk-inducing effects of rivalry?",
           "options": [
             "A) By paying close attention to their current performance",
             "B) By taking steps that stand to endanger their rivals5 success",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does a “multitasker“ originally refer to?",
+          "stem": "51. What does a “multitasker“ originally refer to?",
           "options": [
             "A) An operating system capable of doing several tasks at once",
             "B) A skilled worker executing more than one task at the same time",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why can't people really be multitaskers according to neuroscientists?",
+          "stem": "52. Why can't people really be multitaskers according to neuroscientists?",
           "options": [
             "A) They are not sufficiently exposed to multitasking situations.",
             "B) They are not comparable to mechanical operating systems.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn from the conclusion of a recent study on multitasking?",
+          "stem": "53. What do we learn from the conclusion of a recent study on multitasking?",
           "options": [
             "A) People make greater achievements by maintaining whatever they are doing is multitasking.",
             "B) People's performance benefits from the perception of what they are doing as multitasking.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How does the business world view multitasking?",
+          "stem": "54. How does the business world view multitasking?",
           "options": [
             "A) It is a rare skill often found in fluid organisations.",
             "B) It is an adaptable capability required of all workers.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author imply we should do if we have to focus on some task and do it well?",
+          "stem": "55. What does the author imply we should do if we have to focus on some task and do it well?",
           "options": [
             "A) Work in a flexible way.",
             "B) Learn from mistakes.",

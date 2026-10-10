@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about the timing of our behaviors?",
+          "stem": "46. What do we learn from the passage about the timing of our behaviors?",
           "options": [
             "A) It has a considerable impact on our health.",
             "C) It requires us to follow a particular rhythm.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say about the proteins in our body?",
+          "stem": "47. What does the author say about the proteins in our body?",
           "options": [
             "A) They can modify the effects of medicines in different ways.",
             "B) They can reduce unwanted side effects of certain medicines.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do doctors do when prescribing medicine for people?",
+          "stem": "48. What do doctors do when prescribing medicine for people?",
           "options": [
             "A) They give little thought to the time of taking it for maximum effect.",
             "B) They rarely consider which medicine works better for which patient.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why do doctors advise patients to take most drugs in the morning or in the evening?",
+          "stem": "49. Why do doctors advise patients to take most drugs in the morning or in the evening?",
           "options": [
             "A) To discourage them from making complaints.",
             "C) To comply with new research findings strictly.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author suggest near the end of the passage?",
+          "stem": "50. What does the author suggest near the end of the passage?",
           "options": [
             "A) They can modify the effects of medicines in different ways",
             "B) Making treatments less complex by taking drug timing into account.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What do we learn from the passage about the economics professor and her hairdresser?",
+          "stem": "51. What do we learn from the passage about the economics professor and her hairdresser?",
           "options": [
             "A) They differ in their reasons for continuing to work.",
             "B) They are both committed to working into their 70s.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is one of the reasons for people to delay retirement?",
+          "stem": "52. What is one of the reasons for people to delay retirement?",
           "options": [
             "A) More and more people have switched to less intellectually challenging jobs.",
             "B) The number of jobs suitable for older people has increased in the private sector.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the general trend in people delaying retirement?",
+          "stem": "53. What is the general trend in people delaying retirement?",
           "options": [
             "A) The higher their earnings, the more likely they are tempted to delay retirement.",
             "B) Those who have more job satisfaction tend to retire later than those who have less.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the chief reason for college-educated workers delaying retirement according to an economist?",
+          "stem": "54. What is the chief reason for college-educated workers delaying retirement according to an economist?",
           "options": [
             "A) Enjoying financial security.",
             "B) Staying connected socially.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the passage say about people doing manual work?",
+          "stem": "55. What does the passage say about people doing manual work?",
           "options": [
             "A) They are eager to enjoy life after retiring.",
             "C) They generally don't enjoy doing it.",

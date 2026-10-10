@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What fact does the author emphasize concerning selective colleges and universities?",
+          "stem": "46. What fact does the author emphasize concerning selective colleges and universities?",
           "options": [
             "A) They have been ignoring the training of graduates for the world of work.",
             "B) They have been doing well in ensuring their students a successful future.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say in arguing for the model of education in the U.S.?",
+          "stem": "47. What does the author say in arguing for the model of education in the U.S.?",
           "options": [
             "A) It has contributed substantially to the nation's overall development.",
             "B) It has succeeded in maintaining sustainable financial aid programs.",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do we learn about the initial proposals concerning the recent tax reform bill?",
+          "stem": "48. What do we learn about the initial proposals concerning the recent tax reform bill?",
           "options": [
             "A) They would have stripped many students of life's chances.",
             "B) They would have deducted graduate student loan interest.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What do the data show about elite colleges and universities?",
+          "stem": "49. What do the data show about elite colleges and universities?",
           "options": [
             "A) Their graduates lack the rigor required for doing statistical analysis.",
             "B) Their students prove to be inadequately prepared for their future careers.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is an advantage of providing financial aid for students?",
+          "stem": "50. What is an advantage of providing financial aid for students?",
           "options": [
             "A) Every student can choose the institution they wish to attend.",
             "B) All students can benefit from a diversified student population",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author intend to show by citing the findings from the report published\nlast year?",
+          "stem": "51. What does the author intend to show by citing the findings from the report published\nlast year?",
           "options": [
             "A) People seldom appeal to rationality in their thinking.",
             "B) It is often the case that truth lies in the hands of a few.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What is the appeal to common sense according to the author?",
+          "stem": "52. What is the appeal to common sense according to the author?",
           "options": [
             "A) It is the basis for the internalisation of individuals9 ideologies.",
             "B) It is a series of conceptions formulated from complex reasoning.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does Daniel Kahneman think is the problem of testing new ideas with existing beliefs?",
+          "stem": "53. What does Daniel Kahneman think is the problem of testing new ideas with existing beliefs?",
           "options": [
             "A) It may lead to incorrect judgment.",
             "B) It makes no use of common sense.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What can we do to be less susceptible to cognitive biases?",
+          "stem": "54. What can we do to be less susceptible to cognitive biases?",
           "options": [
             "A) Give equal weight to evidence of both sides in a conflict.",
             "B) Provide convincing examples in developing an argument.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What message does the author try to convey at the end of the passage?",
+          "stem": "55. What message does the author try to convey at the end of the passage?",
           "options": [
             "A) Multiple perspectives stimulate people's interest in exploring the unknown.",
             "B) Individuals can enhance their overall capabilities by interacting with others.",

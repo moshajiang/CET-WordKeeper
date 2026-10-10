@@ -337,7 +337,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author think of the book Dress Codes: How the Laws of Fashion Made\nHistory?",
+          "stem": "46. What does the author think of the book Dress Codes: How the Laws of Fashion Made\nHistory?",
           "options": [
             "A) It is read by people for entirely different reasons.",
             "B) It is meant for those interested in fashion history.",
@@ -349,7 +349,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "How can people best understand a particular fashion in an era, according to Ford?",
+          "stem": "47. How can people best understand a particular fashion in an era, according to Ford?",
           "options": [
             "A) By examining the restraints imposed on it",
             "B) By looking at what the nobility were wearing",
@@ -361,7 +361,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What was the aim of the first laws passed regarding fashion in the 1200s?",
+          "stem": "48. What was the aim of the first laws passed regarding fashion in the 1200s?",
           "options": [
             "A) To facilitate the rise of the middle class.",
             "B) To loosen restrictions on dress codes.",
@@ -373,7 +373,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author think of Ford’s writing?",
+          "stem": "49. What does the author think of Ford’s writing?",
           "options": [
             "A) It uses comparison and contrast in describing fashions of different eras.",
             "B) It makes heavy reading but is not lacking in humor or appeal.",
@@ -385,7 +385,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What does the author say is the greatest strength of Ford’s book?",
+          "stem": "50. What does the author say is the greatest strength of Ford’s book?",
           "options": [
             "A) Plentiful information.",
             "B) Meaningful choices.",
@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "What does the author say about the ability to be persuasive in the first paragraph?",
+          "stem": "51. What does the author say about the ability to be persuasive in the first paragraph?",
           "options": [
             "A) People may either be born with it or be able to cultivate it.",
             "B) It proves crucial in making others follow one’s course of action.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why are persuasion skills greatly valued in the workplace?",
+          "stem": "52. Why are persuasion skills greatly valued in the workplace?",
           "options": [
             "A) They enable employees to be convinced of their long-term gains.",
             "B) They enable employees to trust their leaders unconditionally.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "What should people do to learn the art of persuasion at the workplace?",
+          "stem": "53. What should people do to learn the art of persuasion at the workplace?",
           "options": [
             "A) Acquire effective communication skills",
             "B) Avoid getting involved in conflicts with others",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "When are you more likely to succeed in persuading your coworkers?",
+          "stem": "54. When are you more likely to succeed in persuading your coworkers?",
           "options": [
             "A) When they are convinced you work in their interests while sacrificing your own.",
             "B) When they become aware of the potential strength of the judgements you make.",
@@ -453,7 +453,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "Why are organizations and leaders advised to adopt powerful persuasion skills to bring\nabout necessary changes?",
+          "stem": "55. Why are organizations and leaders advised to adopt powerful persuasion skills to bring\nabout necessary changes?",
           "options": [
             "A) To convince employees of the value of collaboration.",
             "B) To allow for the preferences of most people of today.",
