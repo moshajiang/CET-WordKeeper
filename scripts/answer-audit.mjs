@@ -87,28 +87,44 @@ const shortAna = one(`SELECT COUNT(*) n FROM question q JOIN passage p ON p.id=q
 line(shortAna === 0, `不存在空/超短解析（异常 ${shortAna} 条）`);
 
 console.log('\n===== 复核结果（人工抽查清单）=====');
+// 两类「未复核」必须分开报：
+//   dissents  = 两次独立作答真的不一致 → 已由第三方仲裁定稿，属正常损耗，需人工抽查
+//   noverify  = 复核请求本身失败（返回空 / JSON 截断）→ 该题只有单次作答、缺交叉检查，应跑 --reverify
 const overlayDir = path.join(root, 'data', 'ai-answers');
-let verified = 0, unverified = 0, dissents = [];
+let verified = 0, dissents = [], noverify = [], verifyErrPassages = 0;
 if (fs.existsSync(overlayDir)) {
   for (const f of fs.readdirSync(overlayDir).filter((x) => x.endsWith('.json'))) {
     const o = JSON.parse(fs.readFileSync(path.join(overlayDir, f), 'utf8'));
     for (const p of o.passages || []) {
+      if (p.verifyError) verifyErrPassages++;
       for (const q of p.questions || []) {
         if (!q.answer) continue;
+        const key = f.replace('.json', '');
         if (q.verified) verified++;
-        else { unverified++; dissents.push({ key: f.replace('.json', ''), section: p.section, n: q.stem, answer: q.answer, dissent: q.dissent }); }
+        else if (q.dissent) dissents.push({ key, section: p.section, n: q.stem, answer: q.answer, dissent: q.dissent });
+        else noverify.push({ key, section: p.section, n: q.stem, answer: q.answer, why: q.verifyError || p.verifyError || '' });
       }
     }
   }
 }
+const unverified = dissents.length + noverify.length;
 const tot = verified + unverified;
-console.log(`复核通过 ${verified} 题 ｜ 未通过/未复核 ${unverified} 题 ｜ 一致率 ${tot ? (verified / tot * 100).toFixed(1) : '-'}%`);
+console.log(`复核通过 ${verified} 题 ｜ 两次作答不一致（已仲裁）${dissents.length} 题 ｜ 复核未跑成 ${noverify.length} 题`);
+console.log(`一致率 ${tot ? (verified / tot * 100).toFixed(1) : '-'}%（不一致率 ${tot ? (dissents.length / tot * 100).toFixed(1) : '0'}%）`);
+if (verifyErrPassages) console.log(`（${verifyErrPassages} 个篇章记录了复核失败原因 → 可跑 node scripts/gen-answers.mjs --reverify 补复核）`);
 if (dissents.length) {
-  console.log(`\n以下 ${Math.min(LIST, dissents.length)} 题两次作答不一致（已按第三方仲裁定稿，建议人工抽查）：`);
+  console.log(`\n──── 两次作答不一致 ${Math.min(LIST, dissents.length)}/${dissents.length} 题（已按第三方仲裁定稿，建议人工抽查）：`);
   for (const d of dissents.slice(0, LIST)) {
     console.log(`  [${d.key} ${d.section}] 定稿 ${d.answer}（另一候选 ${d.dissent || '-'}）  ${String(d.n).slice(0, 60)}`);
   }
 }
+if (noverify.length) {
+  console.log(`\n──── 复核未跑成 ${Math.min(LIST, noverify.length)}/${noverify.length} 题（仅单次作答，缺交叉检查）：`);
+  for (const d of noverify.slice(0, LIST)) {
+    console.log(`  [${d.key} ${d.section}] 答案 ${d.answer}  原因 ${d.why || '未记录'}  ${String(d.n).slice(0, 50)}`);
+  }
+}
+line(noverify.length === 0, `不存在「答案有效但复核没跑成」的题（当前 ${noverify.length} 题）`);
 line(dissents.length / Math.max(tot, 1) < 0.05, `复核不一致率 ${tot ? (dissents.length / tot * 100).toFixed(1) : '0'}% < 5%`);
 
 console.log(`\n===== 结论：${fail === 0 ? '全部通过' : fail + ' 项未达标'} =====`);

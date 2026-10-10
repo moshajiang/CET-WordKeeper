@@ -28,6 +28,8 @@ const DB_PATH = path.join(root, 'data', 'keeper.db');
 const DRY = has('dry');
 const FORCE = has('force');
 const VERIFY = !has('no-verify');
+// 只对「答案有效但复核没跑成」的题重跑复核（不重新生成答案）
+const REVERIFY = has('reverify');
 
 // ---------- 取 API 配置：环境变量优先，其次本机已配置的用户库 ----------
 function readApiConfig() {
@@ -303,6 +305,7 @@ async function runTask(task) {
   const problems = validate(section, questions, map);
   let translation = String(data.translation || '').trim();
   // 独立复核：只作答，比对答案；不一致则仲裁
+  let verifyError = null;
   let dissent = {};
   let verifyRan = false;
   const verifyPrompt = buildVerifyPrompt(section, passage, questions, map);
@@ -335,6 +338,7 @@ async function runTask(task) {
         }
       }
     } catch (e) {
+      verifyError = String(e.message).slice(0, 120);
       problems.push('复核失败: ' + String(e.message).slice(0, 60));
     }
   }
@@ -343,6 +347,7 @@ async function runTask(task) {
   const result = {
     section, seq: passage.seq, translation,
     ...(reference ? { reference, note: String(data.note || '').trim() } : {}),
+    ...(verifyError ? { verifyError } : {}),
     questions: questions.map((q, i) => {
       const a = map.get(i) || {};
       return {
@@ -395,6 +400,102 @@ function persistDb() {
     fs.writeFileSync(DB_PATH, Buffer.from(db.export()));
     dbSaveQueue = null;
   }, 3000);
+}
+
+// ---------- 只补复核（--reverify）----------
+// 场景：主生成时复核请求失败（返回空/JSON 截断），题目只有单次作答、没通过交叉检查。
+// 这里只重跑复核，不重新生成答案；若这次发现与已定稿答案不一致，才发起第三方仲裁。
+if (REVERIFY) {
+  const jobs = [];
+  for (const f of fs.readdirSync(OVERLAY_DIR).filter((x) => x.endsWith('.json')).sort()) {
+    const overlayPath = path.join(OVERLAY_DIR, f);
+    const ov = JSON.parse(fs.readFileSync(overlayPath, 'utf8'));
+    const ex = all('SELECT id FROM exam WHERE level=? AND year=? AND month=? AND set_no=?',
+      [ov.level, ov.year, ov.month, ov.set_no])[0];
+    if (!ex) continue;
+    for (const op of ov.passages || []) {
+      // 只处理「有答案、但既没通过复核、也没记录过分歧」的题（记录过分歧的已仲裁过，不重复打扰）
+      if (!(op.questions || []).some((q) => q.answer && !q.verified && !q.dissent)) continue;
+      const p = all('SELECT id, section, seq, content FROM passage WHERE exam_id=? AND section=? AND seq=?',
+        [ex.id, op.section, op.seq])[0];
+      if (!p) continue;
+      const qs = all('SELECT id, stem, options FROM question WHERE passage_id=? ORDER BY id', [p.id]);
+      if (!qs.length) continue;
+      jobs.push({ overlayPath, ov, op, passage: p, questions: qs });
+    }
+  }
+  console.log(`待补复核篇章 ${jobs.length} ｜ 模型 ${MODEL} ｜ 并发 ${CONC}`);
+
+  let okPassages = 0, newlyVerified = 0, stillUnverified = 0, newDissent = 0, failed = 0;
+  let cur2 = 0;
+  const workers2 = Array.from({ length: Math.min(CONC, jobs.length || 1) }, async () => {
+    while (cur2 < jobs.length) {
+      const j = jobs[cur2++];
+      const label = `${j.ov.level}-${j.ov.year}.${j.ov.month}-set${j.ov.set_no} ${j.op.section}#${j.op.seq}`;
+      try {
+        const vp = buildVerifyPrompt(j.op.section, j.passage, j.questions, null);
+        let vText = '';
+        for (let i = 0; i < 3 && !vText; i++) {
+          const v = await chat([{ role: 'user', content: vp + (i ? '\n\n严格只输出 JSON 对象本身。' : '') }], { maxTokens: 8000, temperature: 0 });
+          vText = v.content && v.content.trim() ? v.content : '';
+          if (!vText) await sleep(1200);
+        }
+        if (!vText) throw new Error('复核响应为空');
+        const vmap = normalizeAnswers(j.op.section, parseJson(vText).answers, j.questions);
+
+        const conflicts = [];
+        j.op.questions.forEach((oq, i) => {
+          if (!oq.answer || oq.verified || oq.dissent) return;
+          const b = vmap.get(i);
+          if (!b || !b.letter) return;                      // 这次没给出该题 → 保持未复核
+          if (b.letter === oq.answer) { oq.verified = true; newlyVerified++; }
+          else conflicts.push([i, b.letter]);
+        });
+
+        // 新发现的分歧：第三方仲裁后定稿
+        if (conflicts.length) {
+          const pairs = conflicts.map(([i, l]) => `题 ${String(j.op.questions[i].stem).trim().slice(0, 12)}：候选1 = ${j.op.questions[i].answer}，候选2 = ${l}`).join('\n');
+          const arb = await chat([{ role: 'user', content: `${SYS}\n\n你是 CET 阅卷组长，需要裁定分歧。\n\n${buildPrompt(j.op.section, j.passage, j.questions)}\n\n已有两种候选答案，请核对原文后给出你判定正确的答案。\n\n${pairs}\n\n只返回 JSON：{"answers":[{"n":26,"answer":"A","reason":"<一句话依据>"}]}` }], { maxTokens: 3000, temperature: 0 });
+          const amap = normalizeAnswers(j.op.section, parseJson(arb.content).answers, j.questions);
+          for (const [i, l] of conflicts) {
+            const a = amap.get(i);
+            if (a && /^[A-Z]$/.test(a.letter) && a.letter !== j.op.questions[i].answer) {
+              j.op.questions[i].answer = a.letter;
+              db.run('UPDATE question SET answer = ? WHERE id = ?', [a.letter, j.questions[i].id]);
+            }
+            j.op.questions[i].verified = false;
+            j.op.questions[i].dissent = l;
+            newDissent++;
+          }
+        }
+        j.op.questions.forEach((oq) => { if (oq.answer && !oq.verified && !oq.dissent) stillUnverified++; });
+
+        // 复核已重跑：清掉上次的失败原因（只清这次真的通过了的）
+        j.op.questions.forEach((oq) => { if (oq.verified && oq.verifyError) delete oq.verifyError; });
+        if (j.op.verifyError && !j.op.questions.some((oq) => oq.answer && !oq.verified && !oq.dissent)) delete j.op.verifyError;
+
+        j.ov.generatedAt = new Date().toISOString();
+        j.ov.reverifiedAt = new Date().toISOString();
+        fs.writeFileSync(j.overlayPath, JSON.stringify(j.ov, null, 1));
+        persistDb();
+        okPassages++;
+        console.log(`✓ ${label}${conflicts.length ? `  新分歧 ${conflicts.length} 题（已仲裁）` : '  复核通过'}`);
+      } catch (e) {
+        failed++;
+        // 记录失败原因并落盘，便于下次定位（否则原因只存在于控制台）
+        j.op.verifyError = String(e.message).slice(0, 120);
+        try { fs.writeFileSync(j.overlayPath, JSON.stringify(j.ov, null, 1)); } catch {}
+        console.log(`✗ ${label}  ${String(e.message).slice(0, 80)}`);
+      }
+      await sleep(200);
+    }
+  });
+  await Promise.all(workers2);
+  if (dbSaveQueue) { clearTimeout(dbSaveQueue); dbSaveQueue = null; }
+  fs.writeFileSync(DB_PATH, Buffer.from(db.export()));
+  console.log(`\n===== 补复核：成功 ${okPassages}/${jobs.length} ｜ 新通过 ${newlyVerified} 题 ｜ 新分歧 ${newDissent} 题 ｜ 仍未复核 ${stillUnverified} 题 ｜ 失败篇章 ${failed} =====`);
+  console.log(`请求 ${calls} 次 ｜ token 输入 ${inTok} 输出 ${outTok} ｜ 用时 ${((Date.now() - t0) / 60000).toFixed(1)} 分钟`);
+  process.exit(failed === 0 ? 0 : 1);
 }
 
 // ---------- 并发调度 ----------
