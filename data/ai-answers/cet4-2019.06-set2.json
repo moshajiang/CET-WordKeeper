@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2019,
+ "month": 6,
+ "set_no": 2,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Student Union Visits Hope Elementary School, Bringing Books and Smiles\n\nOn Saturday morning, members of our Student Union paid a meaningful visit to Hope Elementary School on the city's outskirts. The trip, organized by the Union's Volunteer Department, aimed to bring warmth and encouragement to the children there.\n\nUpon arrival, we were warmly welcomed by the students and teachers. Our members distributed stationery, storybooks and sports equipment donated by fellow students, and then joined the children in interactive classes, painting and a friendly basketball game. Laughter filled the playground as volunteers and pupils drew pictures of their dreams together.\n\nThe visit not only brightened the children's day but also deepened our understanding of the value of education and sharing. The Student Union plans to make such trips a regular activity, believing that small acts of kindness can plant seeds of hope in young hearts.",
+   "note": "结构：标题+导语（5W1H：谁/何时/何地/何事）→ 主体（活动细节：捐赠物资、互动课堂、绘画、篮球）→ 结尾（活动意义+后续计划）。可复用句型：① organized by... aimed to... 简介活动目的；② Upon arrival, we were warmly welcomed by... 描写现场；③ not only... but also... 升华意义；④ ...plans to make such trips a regular activity 收尾表态。字数约150词，符合120-180要求。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "动物不会唱歌剧或骑自行车，并不意味着它们没有文化。关于这一点，没有比虎鲸更好的例子了。作为最凶残的食肉动物之一，虎鲸或许并不符合「有文化的生物」这一形象。然而，这些海中猛兽确实展现出各种各样极为「有教养」的行为，而这些行为似乎正在推动它们自身的基因进化。\n\n「文化」一词源自拉丁语 colere，字面意思就是「培养」。换言之，它指的是任何后天习得或学来的东西，而非本能或天生的。在人类群体中，文化不仅影响着我们的生活方式，还被写入我们的基因，塑造着我们之所以为我们。例如，格陵兰岛的爱斯基摩人历经数代捕猎北极富含脂肪的海洋哺乳动物，已经进化出某些遗传适应性，帮助其消化并利用这种高脂饮食，从而得以在寒冷气候中繁盛生长。\n\n与人类一样，虎鲸已遍布全球各地不同的栖息地，占据着这个星球上每一片海洋盆地，建立起一个从一极延伸到另一极的「帝国」。正因如此，不同的虎鲸种群必须学习不同的捕猎技巧，以便在当地猎物的较量中占据上风。这反过来又对它们的饮食产生重大影响，使得科学家推测：学习种群特有捕猎方式的能力，可能正在推动这些动物的基因进化。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "C",
+     "analysis": "空格修饰 predators，需形容词。由 killer whales 及后文 beasts of the sea 可知应填「凶残的」；brutal 符合，且与后句 not fit the image of a cultured creature（与「凶残」形成反差）呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "the ___ of a cultured creature，需名词。前句说虎鲸是最凶残的食肉动物，本句用 may not fit the image of a cultured creature（不符合「有文化生物」的形象）作转折铺垫，image 正确。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "K",
+     "analysis": "highly ___ behaviors 需形容词。However 表转折：上句说虎鲸不像有文化的生物，本句说它们展现「有教养的」行为，refined（优雅/有教养的）与 cultured 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "J",
+     "analysis": "which ___ means 缺副词修饰 means。字面意思「培养」，literally（按字面意思）符合；备选副词仅 deliberately 与 literally，deliberately（故意地）语义不通。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "A",
+     "analysis": "is ___ or learnt 与 learnt 并列，用过去分词。culture 指「后天习得或学来的」东西，acquired（习得的）与 learnt 近义并列，对应 rather than instinctive or natural。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "B",
+     "analysis": "genetic ___ 填名词。爱斯基摩人进化出遗传「适应性」以帮助消化高脂饮食，adaptations（适应性）符合，且 help them digest 提示生物适应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "O",
+     "analysis": "allowing them to ___ in cold climate 填动词原形。前文说适应性帮助消化利用高脂饮食，从而得以在寒冷气候中「繁盛/茁壮成长」，thrive 符合。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "different ___ 填名词。虎鲸遍布全球不同的「栖息地」，habitats 与 occupying every ocean basin 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "F",
+     "analysis": "empire that ___ from pole to pole 缺动词。「从一极延伸到另一极的帝国」，extends（延伸）搭配 from...to... 正确。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "M",
+     "analysis": "leading scientists to ___ that 填动词原形。科学家据此「推测」学习能力推动基因进化，speculate（推测）符合 leading...to 的语境。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 婚姻状况、受教育程度和就业等广泛的人口结构变化，已经改变了美国年轻人的生活方式；皮尤研究中心（Pew Research Center）的一项最新分析凸显了这些变化对他们生活中最基础的要素——他们称之为家的地方——所带来的影响。2014年，130多年来首次出现：18至34岁的成年人住在父母家里的可能性，略微高于与配偶或伴侣在自己家中同住的可能性。\n\nB) 这一转折主要由选择35岁前谈恋爱安定下来的年轻美国人比例急剧下降所推动。追溯至1880年，年轻人与浪漫伴侣（无论是配偶还是重要他人）同住，一直是最常见的居住安排。这种安排在1960年左右达到顶峰，当时全国18至34岁人群中有62%与配偶或伴侣同住，只有五分之一与父母同住。\n\nC) 到2014年，31.6%的年轻人与配偶或伴侣在自己的家中同住，低于与父母同住的比例（32.1%）。约14%的年轻人独居、做单亲家长，或与一个或多个室友同住。其余22%住在其他家庭成员（如祖父母、姻亲或兄弟姐妹）、非亲属家中，或住在大学宿舍等集体宿舍里。\n\nD) 值得注意的是，2014年与父母同住的年轻人整体比例并非历史最高。这一安排在1940年左右达到顶峰，当时约35%的18至34岁人群与父亲和/或母亲同住（2014年为32%）。相反，真正改变的是早年成年期采取不同生活方式的相对比例——恋爱同居的减少，使得住家升至这份差异很大的居住安排列表的榜首。\n\nE) 在年轻人中，居住安排因性别差异显著。对于18至34岁的男性，自2009年以来，与母亲和/或父亲住在一起一直是最主要的居住安排。2014年，28%的年轻男性与配偶或伴侣住在自己家中，而35%住在父母家里。相比之下，年轻女性仍更可能与配偶或恋人同住（35%），而非与父母同住（29%）。\n\nF) 2014年，独自持家（无配偶或伴侣）的年轻女性（16%）多于年轻男性（13%）。这主要是因为女性比男性更可能成为带孩子的单亲家长。就年轻男性而言，他们（25%）比年轻女性（19%）更可能住在其他家庭成员、非亲属家中，或某种集体宿舍里。\n\nG) 多种因素导致了年轻人与父母同住比例的长期上升。首先是结婚的推迟，甚至是对婚姻的回避。初婚平均年龄几十年来稳步上升。此外，越来越多的年轻人可能完全回避婚姻。皮尤研究中心此前的一项分析预测，当今年轻人中多达四分之一可能永远不会结婚。尽管同居现象一直在上升，但年轻人中已婚或与未婚伴侣同居的总体比例自1990年以来已大幅下降。\n\nH) 此外，就业状况与工资的趋势也可能促使与父母同住的年轻人比例上升，对年轻男性而言尤其如此。有工作的年轻男性住在家里的可能性远低于无业年轻男性，而年轻男性的就业率近几十年来已显著下降。年轻男性的就业比例在1960年左右达到84%的峰值。2014年，只有71%的18至34岁男性有工作。同样在收入方面，年轻男性的工资（经通胀调整后）自1970年以来一直呈下降趋势，并从2000年到2010年显著下降。随着工资下降，与父母同住的年轻男性比例随之上升。\n\nI) 经济因素似乎不太能解释为何年轻女性越来越可能与父母同住。总体而言，自1960年以来年轻女性在有偿劳动力市场取得了越来越大的成功，因此人们可能越来越期望她们能够负担得起离开父母独立生活。对女性而言，推迟结婚——在某种程度上与男性劳动力市场结果有关——或许更能解释她们住在父母家增多的现象。\n\nJ) 经济大衰退（及微弱复苏）也与更多年轻人住家相关联。在衰退初期，大学入学人数扩大，壮大了住家年轻人的队伍。鉴于年轻人面临的就业机会薄弱，住家成为帮助年轻人对冲经济风暴的私人安全网的一部分。\n\nK) 除了性别，年轻人的居住安排也因受教育程度——这与经济条件相关——而有显著差异。对于没有学士学位的年轻人，截至2008年，与父母同住比与恋人同住更为普遍。到2014年，未获得学士学位的18至34岁人群中，36%与父母同住，27%与配偶或伴侣同住。而在大学毕业生中，2014年有46%已婚或与伴侣同住，只有19%与父母同住。拥有大学学位的年轻人在劳动力市场上的表现远优于受教育程度较低的同龄人，这也使她们更容易建立自己的家庭。",
+   "questions": [
+    {
+     "stem": "36.Unemployed young men are more likely to live with their parents than the employed.",
+     "answer": "H",
+     "analysis": "题干：无业年轻男性比有工作的更可能与父母同住。定位 H 段「Employed young men are much less likely to live at home than young men without a job」，同义改写（比较对象对调）即无业者更可能住家。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.In 2014, the percentage of men aged 18 to 34 living with their parents was greater than that of their female counterparts.",
+     "answer": "E",
+     "analysis": "题干：2014年18-34岁男性与父母同住比例高于女性。定位 E 段：男性35%与父母同住、女性29%，数字直接支持。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.The percentage of young people who are married or live with a partner has greatly decreased in the past three decades or so.",
+     "answer": "G",
+     "analysis": "题干：近三十年结婚/同居年轻人比例大幅下降。定位 G 段末「the overall share of young adults either married or living with an unmarried partner has substantially fallen since 1990」，since 1990≈past three decades。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.Around the mid-20th century, only 20 percent of 18- to 34-year-old lived in their parents’ home.",
+     "answer": "B",
+     "analysis": "题干：20世纪中期仅约20%的18-34岁者住父母家。定位 B 段「around 1960... only one-in-five were living with their parents」，one-in-five=20%，1960≈mid-20th century。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Young adults with a college degree found it easier to live independently of their parents.",
+     "answer": "K",
+     "analysis": "题干：有大学学位的年轻人更易脱离父母独立居住。定位 K 段末「made it easier to establish their own households」，establish their own households 同义于 live independently of their parents。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.Young men are less likely to end up as single parents than young women.",
+     "answer": "F",
+     "analysis": "题干：年轻男性成为单亲家长的可能性低于年轻女性。定位 F 段「more young women (16%) than young men (13%) were heading up a household without a spouse or partner」，反向改写即男性更少。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.More young adult women live with their parents than before due to delayed marriage.",
+     "answer": "I",
+     "analysis": "题干：因晚婚，更多年轻女性与父母同住。定位 I 段「delayed marriage... may explain more of the increase in their living in the family home」，due to delayed marriage 对应 explain more。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.The percentage of young men who live with their parents has grown due to their decreased pay in recent decades.",
+     "answer": "H",
+     "analysis": "题干：近几十年年轻男性与父母同住比例因收入下降而上升。定位 H 段末「young men's wages... have been on a downward trajectory... As wages have fallen, the share of young men living in the home of their parent(s) has risen」，因果对应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.The rise in the number of college students made more young adults live with their parents.",
+     "answer": "J",
+     "analysis": "题干：大学生数量增加使更多年轻人与父母同住。定位 J 段「college enrollments expanded, boosting the ranks of young adults living at home」，boosting the ranks 即人数壮大。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.One reason for young adults to live with their parents is that get married late or stay single all their lives.",
+     "answer": "G",
+     "analysis": "题干：年轻人与父母同住的一大原因是晚婚或终身不婚。定位 G 段「The first is the postponement of, if not retreat from, marriage... as many as one-in-four... may never marry」，postponement of marriage 对应 get married late。（G 段被选用两次，符合官方答案允许一段多用的规则）",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "大多数美国人认为，女性完全能和男性一样，成为优秀的政治领袖。她们掌控公司董事会的能力也同样如此。而根据皮尤研究中心（Pew Research Center）一项关于女性与领导力的最新调查，多数美国人发现，在智力和创新能力等关键领导特质上，女性与男性难分伯仲；不少人还表示，在作为富有激情且有条理的领导者方面，女性比男性更胜一筹。\n\n那么，为何美国政府与企业的顶层却鲜见女性身影？至少就公众的看法而言，并非因为她们缺乏韧性、管理才能或过硬的技能组合。\n\n这也并不完全关乎工作与生活的平衡。尽管经济学研究和既往调查发现表明，与生育相关的职业中断可能使女性在事业上更难晋升、更难竞争高管职位，但这项最新调查中只有极少数成年人将此视为女性谋求领导职位的关键障碍。只有约五分之一的人认为，女性的家庭责任是商界和政坛高层女性偏少的一个主要原因。\n\n相反，高居原因榜首的是：约四成美国人指出，谋求政坛或商界高位的女性面临双重标准——她们必须比男性同行做得更多才能证明自己。相近比例的人表示，选民和美国企业界根本还没准备好接纳更多女性进入顶层领导岗位。\n\n因此，即便女性在职场已取得重大进展，公众对于美国企业界这种失衡状况是否会在可预见的未来发生改变仍意见分歧。53%的人相信，未来商界高层管理职位仍将由男性占据更多；44%的人则认为，女性与男性在企业高管中平分秋色只是时间问题。在政治上，美国人的疑虑较少：73%的人预期有生之年会看到一位女总统。",
+   "questions": [
+    {
+     "stem": "46.What do most Americans think of women leaders according to a new Pew Research Center survey?",
+     "answer": "D",
+     "analysis": "题干问多数美国人对女性领导者的看法（Pew 调查）。定位首段「most Americans find women indistinguishable from men on key leadership traits such as intelligence and capacity for innovation」，与 D「与男性同样聪慧且具创新力」一致。A/B 利用第四段双重标准信息设障，C 将「更富激情有条理」窜改为「意志力更强」。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.What do we learn from previous survey findings about women seeking leadership roles?",
+     "answer": "C",
+     "analysis": "题干问从既往调查发现中得知什么。定位第三段「previous survey findings have shown that career interruptions related to motherhood may make it harder... women to advance」，即生育导致职业中断、与家庭责任相关，对应 C。D 偷换为「很少女性在职场受阻」且混淆 recent 与 previous survey。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.What is the primary factor keeping women from taking top leadership positions according to the recent survey?",
+     "answer": "C",
+     "analysis": "题干问近期调查中阻碍女性登上顶层职位的主因。定位第四段「topping the list of reasons, about four-in-ten Americans point to a double standard」（双重标准=性别偏见），故 C 正确。B 家庭责任在第三段被明确排除（仅约1/5视为障碍），属干扰项。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49.What does the passage say about corporate America in the near future?",
+     "answer": "D",
+     "analysis": "题干问文章关于近期美国企业界的说法。定位末段「the public is divided about whether the imbalance... will change... 53% believe... 44% say...」，公众意见对立，对应 D「人们对此是否会有更多女性领导看法相左」。A/B 与 divided 矛盾，C 为曲解。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50.What do most Americans expect to see soon on America’s political stage?",
+     "answer": "A",
+     "analysis": "题干问多数美国人期待在政治舞台很快看到什么。定位末段末句「73% expect to see a female president in their lifetime」，即女性担任政府最高职位（女总统），对应 A。D 是商界情形，非政治舞台。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "在过去一个世纪里，人们的身高有所增长，韩国女性平均增高了20多厘米，伊朗男性则增加了16.5厘米。一项全球研究考察了200个国家18岁人群在1914年至2014年间的平均身高。\n\n结果显示，虽然1914年瑞典人是全球最高的人群，但荷兰男性已从第12位跃升至榜首，平均身高达182.5厘米。与此同时，拉脱维亚女性从1914年的第28位上升，一个世纪后成为世界上最高的女性群体，平均身高169.8厘米。\n\n来自伦敦帝国理工学院的研究合著者詹姆斯·本瑟姆（James Bentham）表示，这一全球趋势很可能主要源于营养与医疗保健的改善。「个体的基因对其身高影响很大，但一旦以全体人口取平均值，基因所起的关键作用就变小了，」他补充道。\n\n帝国理工学院的埃利奥·里博利（Elio Riboli）说，稍高一点会带来若干优势。「身高较高与更长的预期寿命相关，」他说，「这在很大程度上是因为高个子死于心血管疾病的风险较低。」\n\n但里博利表示，尽管全球身高都在增长，北部和撒哈拉以南非洲许多国家的趋势却令人担忧。虽然在20世纪早期乌干达和尼日尔的身高曾有所增长，但近年来这一趋势已逆转，18岁人群的身高出现下降。\n\n苏塞克斯大学（University of Sussex）的亚历山大·莫拉迪（Alexander Moradi）说：「这些身高下降的一个原因是20世纪80年代的经济状况。」他表示，结构调整政策之后出现的营养与健康危机，导致许多儿童和青少年未能在身高方面充分发挥潜能。\n\n本瑟姆认为，全球身高增长的趋势具有重要意义。「我们现在的身高深受成长环境的影响，」他说，「如果现在就给孩子们人生最好开端，他们未来几十年将会更健康、更有效率。」",
+   "questions": [
+    {
+     "stem": "51. What does the global study tell us about people’s height in the last hundred years? A）There is a remarkable difference across continents. B）There has been a marked increase in most countries. C）The increase in people’s height has been quickening. D）The increase in women’s height is bigger than in men’s.",
+     "answer": "B",
+     "analysis": "题干问全球研究揭示近百年身高情况。定位首段「People have grown taller over the last century... A global study looked at... 200 countries」，全文围绕「多数国家身高增长」展开，B「多数国家显著增长」正确。A 跨洲差异、C 增速加快、D 女性增幅更大均未体现。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What does James Bentham say about genetics in the increase of people’s height? A）It counts less than generally thought. B）It outweighs nutrition and healthcare. C）It impacts more on an individual than on population. D）It plays a more significant role in females than in males.",
+     "answer": "C",
+     "analysis": "题干问 James Bentham 对基因在身高增长中作用的看法。定位第三段「An individual's genetics has a big influence... but once you average over whole populations, genetics plays a less key role」，即基因对个人影响大、对总体影响小，C「对个人影响大于对总体」正确。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What does Elio Riboli say about taller people? A）They tend to live longer. B）They enjoy an easier life. C）They generally risk fewer fatal diseases. D）They have greater expectations in life.",
+     "answer": "A",
+     "analysis": "题干问 Elio Riboli 对高个子者的说法。定位第四段「Being taller is associated with longer life expectancy」，即高个子往往更长寿，A 正确。C 偷换为「更少致命疾病」，原文是心血管疾病死亡风险更低。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What do we learn about 18-year-olds in Uganda and Niger?",
+     "answer": "B",
+     "analysis": "题干问乌干达和尼日尔的18岁人群。定位第五段「the trend has reversed in recent years, with height decreasing among 18-year-olds」，即身高下降、比前辈更矮，B「实际比早前世代更矮」正确。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does James Bentham suggest we do?",
+     "answer": "D",
+     "analysis": "题干问 James Bentham 建议我们做什么。定位末段「How tall we are now is strongly influenced by the environment... If we give children the best possible start in life now, they will be healthier...」，即给孩子理想成长环境，D「确保孩子在理想环境中成长」正确。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Lanterns originated in the Eastern Han Dynasty, and were initially mainly used for lighting. In the Tang Dynasty, people used red lanterns to celebrate their peaceful life. Since then, lanterns have become popular in many parts of China. They are usually made of brightly colored thin paper, and come in various shapes and sizes. In traditional Chinese culture, red lanterns symbolize a happy life and prosperous business, and are usually hung during festivals such as the Spring Festival, the Lantern Festival and National Day. Today, red lanterns can also be seen in many other parts of the world.",
+   "note": "难点：①「起源于」用 originate in；「东汉」为 the Eastern Han Dynasty。②「安定的生活」译为 peaceful life（不宜直译 settled）。③「色彩鲜艳的薄纸」→ brightly colored thin paper；「形状和尺寸各异」用 come in various shapes and sizes 更地道。④「象征生活美满和生意兴隆」→ symbolize a happy life and prosperous business（prosperous 比 booming 更贴「兴隆」）。⑤节日列举用 such as 引出，「春节/元宵节/国庆」标准译法 Spring Festival / the Lantern Festival / National Day。⑥末句「许多其他地方」用 many other parts of the world。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:12:50.541Z"
+}

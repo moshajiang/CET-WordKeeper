@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2018,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Challenges of Starting a Career After Graduation\n\nFor many graduates, stepping from the campus into the workplace is far from easy. The first challenge is the gap between theory and practice: what we learned in class often differs from what real jobs demand. Another difficulty lies in fierce competition, as numerous graduates flood into a limited number of positions each year. Besides, a lack of work experience makes it harder to prove our value to employers, while uncertainty about the future easily breeds anxiety.\n\nTo meet these challenges, we should start preparing early—internships, skill training, and a clearer career plan all help. More importantly, we need patience and a willingness to learn on the job. After all, every professional was once a beginner. With the right attitude and steady effort, the seemingly daunting first step can become a rewarding journey.",
+   "note": "结构：三段式（总起挑战—分点列举—对策与总结），紧扣\"challenges of starting a career\"主题，未偏离。\n可复用句型：\"The first challenge is...\"/\"Another difficulty lies in...\" 用于列举挑战；\"To meet these challenges, we should...\" 引出对策；\"With the right attitude and steady effort, ...can become...\" 收尾升华。\n词汇亮点：gap between theory and practice, fierce competition, breed anxiety, rewarding journey。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "几个月前，我得了严重的感冒，最后演变成持续不断的剧烈咳嗽。无论我试了多少种不同的疗法，都始终无法摆脱咳嗽。它不仅给我的教学工作带来不便，也整体上影响了我的生活。后来有一天课后，一名学生走到我跟前，向我推荐了中医。从她的描述来看，中医仿佛拥有能创造奇迹的神奇力量。我有些犹豫，因为我对中医了解甚少，而且以前从未尝试过。最终，我的咳嗽变得严重到夜里无法入睡，于是我决定试一试。中医医生给我把脉，还要看我的舌头，这两样对我来说都是全新的体验，因为它们在西医中都不存在。接着，医生给我做了一种被称为\"刮痧\"的刮治。一开始我有点害怕，因为他用一把边缘光滑的工具刮我颈部和肩膀的皮肤。几分钟后，带有按压感的刮拭开始产生舒缓的效果，我的身心也开始沉入更深层的放松。头几天我的状况没有任何改善，但在又规律地看了几次医生之后，我的咳嗽开始减轻。随后，仅仅几周时间，咳嗽就彻底消失了！",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "I",
+     "analysis": "空格在\"how many different 26 I tried\"中作 tried 的宾语，需名词复数；首句提到\"terrible cold…bad cough\"，下句\"get rid of the cough\"表明是在尝试治咳嗽的\"疗法/remedies\"，语义与全文呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "D",
+     "analysis": "\"Not only did it 27 my teaching\"为倒装句，it 指咳嗽，需动词原形作谓语；inconvenience 作动词意为\"给……带来不便\"，符合\"咳嗽影响教学乃至整个生活\"的语境。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "H",
+     "analysis": "\"a student came up to me and 28 traditional Chinese medicine\"中 and 连接并列谓语，需过去式动词；recommended（推荐）与后文\"中医仿佛有神奇力量\"自然衔接。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "C",
+     "analysis": "\"I was 29 because…\"中 was 后接形容词作表语；hesitant（犹豫的）因\"对中医知之甚少、从未尝试过\"而犹豫，语义契合。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "O",
+     "analysis": "\"my cough got so much 30 that…\"中 got 后接比较级形容词；worse（更严重的）与\"夜里无法入睡、决定试一试\"构成因果。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "B",
+     "analysis": "\"both of which were new 31 to me\"中 which 指把脉和看舌，需名词复数；experiences（体验）符合\"在西医中都不存在的全新体验\"。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "J",
+     "analysis": "\"I was a little 32 at first\"中 was 后接形容词；scared（害怕的）因\"用光滑工具刮皮肤\"而害怕，与后文\"几分钟后感到舒缓\"形成转折。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "G",
+     "analysis": "\"the 33 strokes\"中 strokes 前需形容词修饰；pressured（施加压力的/按压的）描述刮痧的按压动作，符合\"刮拭产生舒缓效果\"的语义。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "\"began to 34 deeper into relaxation\"中 to 后接动词原形；sink（沉入）与 deeper into relaxation 搭配，形象表达身体与精神放松下沉。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "E",
+     "analysis": "\"my cough started to 35\"中 to 后接动词原形；lessen（减轻）与后文\"几周之内彻底消失\"呼应，表示咳嗽逐渐好转。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "A) 当你把一块食物掉在地上，如果在五秒内捡起来，真的还可以吃吗？一个都市饮食传说认为，如果食物只在地板上待上几秒钟，灰尘和细菌就没有多少机会污染它。我实验室的研究一直聚焦于食物是如何被污染的，并且我们就这一特定的\"民间智慧\"做过一些工作。\n\nB) 虽然\"五秒规则\"看起来不像食品科学家最迫切需要弄清楚的议题，但研究这类饮食传说仍然值得，因为它们塑造了我们对食物何时可以安全食用的观念。\n\nC) 那么，在地板上待五秒是不是区分可食用食物与食物中毒个案的关键门槛呢？事情比这要复杂一些。这取决于在几秒钟内有多少细菌能从地板转移到食物上，以及地板到底有多脏。\n\nD) 想知道食物掉在地上后是否还能吃，是一种相当普遍的经历。而且这可能也不是什么新鲜事。一个关于 Julia Child 的著名但有误的故事，或许助长了这一饮食传说。她烹饪节目《法国大厨》的一些观众坚持说，他们看到 Child 把羊肉掉在地上又捡起来，并建议说如果厨房里只有自己一个人，客人永远不会知道。\n\nE) 事实上，那是一块土豆饼，它掉在了炉灶上，而不是地板上。Child 把它放回锅里，说：\"不过你总可以把它捡起来，如果厨房里只有你一个人，谁会看见呢？\"但这个被记错的故事持续流传。五秒规则这一常被引用的说法其起源更难确定，但 2003 年的一项研究报告称，70% 的女性和 56% 的男性受访者熟悉五秒规则，并且女性比男性更有可能吃掉掉在地上的食物。\n\nF) 那么，关于食物在地板上待上片刻对其安全意味着什么，科学告诉了我们什么？关于五秒规则最早的研究报告归功于 Jillian Clarke，她是伊利诺伊大学一个研究项目的中学生参与者。Clarke 和同事把细菌引入地砖，然后把饼干放在砖上不同时间。他们报告说，细菌在五秒内就从砖块转移到了饼干上，但没有报告从砖块转移到食物上的具体细菌数量。\n\nG) 但是，五秒钟内究竟有多少细菌会转移？2007 年，我在克莱姆森大学的实验室在《应用微生物学杂志》上发表了一项研究。我们想知道食物与受污染表面接触的时间长短是否会影响细菌向食物的转移率。为此，我们把细菌引入方块状的地砖、地毯或木头。五分钟后，我们把培根或面包放在表面 5、30 或 60 秒，然后测量转移到食物中的细菌数量。在细菌置于表面 2、4、8 和 24 小时后，我们重复了完全相同的程序。\n\nH) 我们发现，转移到任一种食物中的细菌数量，并不太取决于食物与受污染表面接触的时间长短——无论是几秒还是整整一分钟。表面上细菌的总量更为关键，而且在最初引入之后会随时间减少。看起来，关键问题与其说是你的食物在地板上待多久，不如说是那块地板碰巧被细菌污染到什么程度。\n\nI) 我们还发现，表面的种类也会产生影响。例如，地毯似乎比木头或地砖更适合掉落食物。当地毯被污染时，转移的细菌不到 1%。但当食物与地砖或木头接触时，45% 到 70% 的细菌会被转移。\n\nJ) 去年，英国阿斯顿大学的一项研究使用了与我们几乎相同的参数，得出了相似的结果。他们还报告称，87% 的受访者要么会吃、要么吃过掉在地上的食物。\n\nK) 那么，你该吃掉落的食物吗？从食品安全角度看，如果一个表面上有数百万或更多的细菌，0.1% 也足以让你生病。此外，某些类型的细菌极其有害，只需很少的数量就能让你生病。例如，特别致命的菌株，10 个或更少的细菌就能导致免疫系统受损的人严重生病甚至死亡。但这些细菌出现在大多数表面的几率非常低。\n\nL) 而且，导致细菌污染的不仅仅是把食物掉在地上。细菌由各种\"媒介\"携带，包括生食、留有细菌的潮湿表面、我们的手或皮肤，以及咳嗽或打喷嚏。手、食物和器皿可以携带生活在保护性薄膜所包含群落中的单个细菌。这些含有细菌的微观沉积层被称为生物膜，它们存在于大多数表面和物体上。生物膜群落能更长时间地藏匿细菌，并且非常难以清洁。与独立生存的细菌相比，这些群落中的细菌对清洁剂和抗生素的抵抗力也增强了。\n\nM) 所以，下次你考虑吃掉落的食物时，大概率你吃了也不会生病。但在极小的概率下，如果食物掉落的确切位置恰好有能让你生病的微生物，你可以相当确定那只虫子就在你即将送入口中的食物上。\n\nN) 研究或常识告诉我们，最好的做法是保持你的手、器皿和其他表面清洁。",
+   "questions": [
+    {
+     "stem": "36. A research project found bacteria made their way to the food on the floor in five seconds.",
+     "answer": "F",
+     "analysis": "对应 F 段：中学生 Jillian Clarke 在伊利诺伊大学研究项目中\"introduced bacteria to floor tiles… reported bacteria were transferred from the tiles to the cookies within five seconds\"，正是\"研究发现细菌在五秒内转移到食物上\"。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. Whether food is contaminated depends much on the number of bacteria that get onto it.",
+     "answer": "C",
+     "analysis": "对应 C 段：\"It depends on just how many bacteria can make it from floor to food… and just how dirty the floor is\"，说明食物是否被污染主要取决于转移到食物上的细菌数量及地板脏污程度。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. Food contamination may result from various factors other than food dropping on the floor.",
+     "answer": "L",
+     "analysis": "对应 L 段首句：\"it's not just dropping food on the floor that can lead to bacterial contamination\"，并指出细菌由生食、潮湿表面、手、咳嗽等多种\"媒介\"携带，即污染来自其他诸多因素。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. Males are less likely than females to eat food that may have been contaminated.",
+     "answer": "E",
+     "analysis": "对应 E 段：2003 年研究\"women were more likely than men to eat food that had dropped on the floor\"，即女性更可能吃，男性相对更不可能吃（题干\"Males are less likely\"）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. The author’s research centers around how food gets contaminated.",
+     "answer": "A",
+     "analysis": "对应 A 段：\"Research in my lab has focused on how food becomes contaminated\"，作者实验室的研究聚焦于食物如何被污染。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. Keeping everything clean is the best way to stay healthy.",
+     "answer": "N",
+     "analysis": "对应 N 段末句：\"the best thing to do is keep your hands, utensils and other surfaces clean\"，保持手、器皿和表面清洁是最佳做法。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. Chances are you will not fall sick because of eating food picked up from the floor.",
+     "answer": "M",
+     "analysis": "对应 M 段：\"the odds are in your favor that you can eat it without getting sick\"，即大概率吃了掉在地上的食物也不会生病。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. For a long time people have had the experience of deciding whether or not to eat food picked up from the floor.",
+     "answer": "D",
+     "analysis": "对应 D 段首句：\"Wondering if food is still OK to eat… is a pretty common experience. And it's probably not a new one either\"，说明人们长期都有\"要不要吃掉落食物\"的经历。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. Some strains of bacteria are so harmful that a tiny few can have deadly consequences.",
+     "answer": "K",
+     "analysis": "对应 K 段：\"certain types of bacteria are extremely harmful, and it takes only a small number to make you sick\"，并以\"10 bacteria or less of an especially deadly strain\"为例，说明极少量致命菌株即可致病。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Researchers found how many bacteria got onto the food did not have much to do with how long the food stayed on a contaminated floor.",
+     "answer": "H",
+     "analysis": "对应 H 段：\"the number of bacteria transferred… didn't depend much on how long the food was in contact with the contaminated surface\"，即转移细菌数量与食物接触时间长短关系不大。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "猫研究的最新成果表明，这种可爱的动物似乎对物理定律以及因果关系的来龙去脉都有基本的把握。\n\n根据一项新近发表的研究，猫似乎能够同时利用它们的耳朵以及对物理世界如何运转的天生理解，来预测藏匿猎物的位置。\n\n在最近的一次实验中，日本研究人员录制了 30 只家猫对一名队员摇晃的容器的反应。有些容器发出响声，有些则没有。当容器被倒过来时，有时有物体掉出来，有时没有。\n\n结果表明，猫对于容器被倾倒时会发生什么异常聪明。当一个发出响声的容器底部没有掉出物体时，它们盯着它看的时间，比容器表现如预期时更长。\n\n首席研究员 Saho Takagi 在新闻稿中说：\"猫利用对噪声或声音的因果逻辑理解，来预测不可见物体的出现。\"研究人员得出结论：猫的狩猎方式可能是基于它们利用听觉推断猎物位置的常识能力而发展出来的。\n\n科学家还用其他讨人喜欢的生物——婴儿——探究过这个想法。和猫一样，婴儿似乎也会进行所谓的\"偏好注视\"——对有趣或不寻常事物的注视时间长于他们认为正常的事物。\n\n当婴儿在类似与猫所做的实验中期望被违背时，他们的反应与它们的动物朋友非常相似。心理学家已经表明，婴儿显然早在两个月大时就期望他们的世界遵循物理定律和因果关系。\n\n这项研究是否意味着猫很快就能掌握因果关系的来龙去脉？也许吧。好吧，所以猫也许不会成为美国最重要研究型大学的下一任物理系教员。但通过展示它们的常识，它们表明，猫与人类之间的鸿沟也许终究没那么大。",
+   "questions": [
+    {
+     "stem": "46.What do we learn from a newly published study about cats?",
+     "answer": "C",
+     "analysis": "定位第 2–3 段：\"cats seem to be able to predict the location of hiding prey using both their ears and an inborn understanding of how the physical world works\"，新研究表明猫能靠听觉与对物理世界的天生理解预测猎物位置。干扰项常把\"实验中的容器反应\"误当作研究核心结论。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. What may account for the cats’ response to the noise from the containers?",
+     "answer": "D",
+     "analysis": "定位第 6 段引语：\"Cats use a causal-logical understanding of noise or sounds to predict the appearance of invisible objects\"，猫对容器声响的反应源于其对声音/噪声的因果逻辑理解。其余选项未能点明\"因果逻辑理解\"这一原因。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What is characteristic of the way cats hunt, according to the Japanese researchers?",
+     "answer": "B",
+     "analysis": "定位第 6 段结论：\"cats' hunting style may have developed based on their common-sense abilities to infer where prey is, using their hearing\"，猫的狩猎特点是基于听觉推断猎物位置的常识能力。干扰项多为实验现象而非\"狩猎方式\"的本质特征。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. In what way do babies behave like cats?",
+     "answer": "A",
+     "analysis": "定位第 7–8 段：婴儿与猫一样进行\"preferential looking\"（对有趣/异常事物注视更久），且当预期被违背时反应相似，即两者都表现出\"偏好注视\"行为。其余选项偏离该共同点。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can we conclude about cats from the passage?",
+     "answer": "B",
+     "analysis": "定位末段：\"by demonstrating their common sense, they've shown that the divide between cats and humans may not be that great after all\"，可推知猫与人类之间的差距或许没那么大。干扰项或夸大（猫将成物理学家）或低估其能力。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "想象你进入一辆汽车，没有方向盘，没有刹车或油门踏板。在语音指令下，你说出一个地址。\"最快路线将花费我们 15.3 分钟。要走吗？\"你说\"好的\"，然后就上路了。汽车做出响应，自己启动并行驶起来。你所要做的就是靠在椅背上放松。\n\n如果未来有一天，每个人都有这样一辆车，那会有多怪异？没有疯狂驾驶，没有辱骂，没有加塞；交通法规将得到遵守，驾驶也安全得多。另一方面，想象一下，如果没有那些超速和违停罚单，地方警察执法和城镇预算能节省多少成本。\n\n一项新技术有潜力以根本性的方式改变现代社会。毫无疑问，自动驾驶汽车可能带来巨大的益处。更安全的汽车意味着事故统计数字将下降：美国约 94% 的道路事故涉及人为失误。年长驾驶者以及视障或身体残障人士将获得新的自由。保持安全车速且采用电力驱动，自动驾驶汽车将大幅降低污染水平和对不可再生燃料的依赖。道路将更安静，人们更安全。\n\n但我们也必须考虑这项新技术对那些现在靠开车谋生的人的影响。根据美国劳工部的数据，2015 年 5 月注册校车司机有 505,560 人。美国卡车运输协会列出的美国职业卡车司机约为 350 万。\n\n开发自动驾驶汽车的公司应当与州和联邦当局合作，为这支庞大的劳动力提供再培训，他们中的许多人将被新技术取代。这与煤炭和石油行业正在发生的情况类似，这种状况助长了该国当前大量的政治不满情绪。\n\n新技术将，而且应当被开发。这是社会向前发展的方式。然而，进步不能是单方面的。相关公司和州级机构有必要考虑这些潜在变化的伦理后果，为所有人建设更美好的未来。",
+   "questions": [
+    {
+     "stem": "51.What would be the impact of the extensive use of driverless cars?",
+     "answer": "B",
+     "analysis": "定位第 2–3 段：自动驾驶广泛使用后\"traffic laws would be respected and driving much safer\"\"accident statistics would drop\"，并带来执法成本节省与环境益处，即交通更安全、事故减少。干扰项或只谈收益或只谈代价，以偏概全。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. How would the elderly and the disabled benefit from driverless cars?",
+     "answer": "A",
+     "analysis": "定位第 3 段：\"Older drivers and visually-or physically-impaired people would gain a new level of freedom\"，老年及视障/身体残障人士将获得新的自由。其余选项未对应\"elderly and disabled\"的受益点。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. What would be the negative impact of driverless cars?",
+     "answer": "D",
+     "analysis": "定位第 4–5 段：新技术影响\"those who now depend on driving for their livelihoods\"，如校车与卡车司机（合计约 400 万）将\"be displaced\"，即许多人失去赖以为生的工作。这是负面影响的落脚处。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. What is the result of the introduction of new technologies in energy industries?",
+     "answer": "A",
+     "analysis": "定位第 5 段：与煤炭、石油行业类似，\"a situation that fuels much of the current political discontent\"，即工人被取代引发了政治不满。其余选项偏离\"energy industries\"的类比结论。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does the author suggest businesses and the government do?",
+     "answer": "C",
+     "analysis": "定位末段：\"It is necessary for the companies and state agencies involved to consider the ethical consequences of these potential changes\"，作者建议相关企业与政府考虑伦理后果。干扰项多为描述现象而非\"建议\"。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Over the past few years, the mobile payment market has boomed in China. With the advent of the mobile Internet, shopping via mobile phones has gradually become a trend. Young people aged 18 to 30 constitute the largest group in the mobile payment market. Since it is now easy to pay by phone, many consumers prefer to pay with their mobile phones rather than cash or credit cards when shopping. To encourage people to spend more, many stores offer discounts to customers who use mobile payment. Experts predict that China's mobile payment market still has great potential for further development in the future.",
+   "note": "难点点评：\n- \"蓬勃发展\"译为 boomed；\"随着……的出现\"用 With the advent of… 介词结构，比用从句更简洁。\n- \"18 到 30 岁的年轻人构成了……最大群体\"主语为复数，用 constitute the largest group。\n- \"宁愿……而不愿……\"对应 prefer to… rather than…；\"用手机付款\"用 pay by phone。\n- \"给使用移动支付的顾客打折\"译为 offer discounts to customers who use mobile payment。\n- \"发展潜力\"译为 potential for further development，注意 potential 后接 for 而非 of。"
+  }
+ ],
+ "generatedAt": "2026-10-10T12:09:08.665Z"
+}

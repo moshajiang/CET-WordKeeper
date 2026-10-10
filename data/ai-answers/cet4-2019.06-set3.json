@@ -1,0 +1,265 @@
+{
+  "level": "CET4",
+  "year": 2019,
+  "month": 6,
+  "set_no": 3,
+  "model": "manual",
+  "passages": [
+    {
+      "section": "writing",
+      "seq": 1,
+      "translation": "",
+      "questions": [],
+      "reference": "On the morning of last Saturday, the Student Union of our university launched a volunteer activity to assist elderly people living in the neighboring community. More than 60 student volunteers took part in the event, which aimed to bring warmth and practical help to senior citizens who live alone.\n\nUpon arrival, volunteers were divided into small groups. Some helped clean the elders' apartments and windows, while others accompanied them to the nearby park for a walk or simply chatted with them to ease their loneliness. A few volunteers with medical training measured the seniors' blood pressure and shared daily health tips.\n\nThe activity received high praise from both the elderly and their families. \"The young people's visit brightened my day,\" said Grandma Li, an 82-year-old resident. Through this meaningful event, students not only offered care but also learned the value of respecting and accompanying the aged.",
+      "note": "结构：导语（时间+事件+参与人数）→ 主体（分组所做的具体助老行动）→ 反响与升华（老人评价+学生收获）。可复用句型：1) \"The Student Union launched a volunteer activity to...\" 交代事件；2) \"Some... while others...\" 并列描述分工；3) \"not only... but also...\" 总结意义。作为校园新闻报道，注意用一般过去时、第三人称客观语气。"
+    },
+    {
+      "section": "cloze",
+      "seq": 1,
+      "translation": "人们常常凿沉船只，以营造非常适合水肺潜泳、并能保护海洋栖息地的暗礁。土耳其当局刚刚凿沉了一件与船只略有不同、且通常不会接触水的东西——一架空中客车A300。这架被掏空的A300已被清除一切可能对环境有害的物品，并于今日沉入爱琴海岸边。这架沉没的飞机不仅将为人工礁石的生长创造完美的骨架，当局还希望这一新的水下景点能为该地区吸引游客。\n\n这架飞机总长54米，经验丰富的水肺潜水员最终将能够冒险穿行于机舱之中、环绕飞机外部。艾登市政当局以不到10万美元的价格从一家私人公司购得这架飞机，但他们希望通过旅游业收回这笔投资。由于土耳其今年已遭遇数起致命恐怖袭击，预计全国旅游业将出现下滑。就沉没的飞机而言，这架A300是有史以来被人为故意沉没的最大飞行器。\n\n进行一次水下之旅、探索沉没A300的内部，将是一段相当惊险的冒险，而这正是土耳其当局希望这一景点能让人产生的想法。吸引冒险爱好者和经验丰富的潜水员，这座新的人工\"空客\"礁石将成为水肺潜水者的天堂。",
+      "questions": [
+        {
+          "stem": "26",
+          "answer": "G",
+          "analysis": "preserving marine habitats 保护海洋栖息地，与 underwater reefs、scuba diving 语境一致，指保护海洋生物栖息地。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "27",
+          "answer": "M",
+          "analysis": "be stripped of 意为\"被清除/剥去\"，此处指飞机被移除一切对环境有害的物品。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "28",
+          "answer": "A",
+          "analysis": "create the perfect skeleton for... 为人工礁石生长\"创造\"完美骨架，与后文 bring tourists 并列。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "29",
+          "answer": "L",
+          "analysis": "stretches a total length of 54 meters 意为\"延伸达54米\"，描述飞机尺寸。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "30",
+          "answer": "C",
+          "analysis": "eventually be able to 表示潜水员\"最终将能够\"穿行，体现将来时态与渐进可能。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "31",
+          "answer": "F",
+          "analysis": "around the plane's exterior 指环绕飞机\"外部\"，与 cabin（机舱）相对应。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "32",
+          "answer": "J",
+          "analysis": "a return on that investment 即\"投资回报\"，that 指代前文购机花费。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "33",
+          "answer": "O",
+          "analysis": "the victim of terrorist attacks 意为恐袭的\"受害对象\"，符合语义。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "34",
+          "answer": "I",
+          "analysis": "the largest intentionally sunk aircraft 指\"人为故意\"沉没的最大飞行器，修饰 sunk。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "35",
+          "answer": "E",
+          "analysis": "exploring the inside of... 动名词作主语，指\"探索\"沉机内部。",
+          "verified": false,
+          "dissent": null
+        }
+      ]
+    },
+    {
+      "section": "match",
+      "seq": 1,
+      "translation": "A) 我们向来是一个亲自动手、自己动手做事的国家。本杰明·富兰克林，美国开国元勋之一，不仅发明了避雷针，他的创造还包括眼镜、创新火炉等更多东西。\nB) 富兰克林虽基本靠自学，或许是个天才，但在美国的制造与创造力方面，他并非真正的特例。\nC) 个人计算机革命与硅谷\"颠覆性创新\"的理念，部分源自家酿计算机俱乐部（Homebrew Computer Club）的成果；该俱乐部于20世纪70年代中期在加州门洛帕克的一间车库里成立。包括名叫乔布斯和沃兹尼亚克在内的成员，开始制造并发明他们买不到的东西。\nD) 因此，如今创客运动在美国社区和一些学校蓬勃发展也就不足为奇了。制造向不依附于大公司、大型国防实验室或研究型大学的普通人开放。创客理念呼应了约翰·杜威、蒙台梭利乃至古希腊哲学家所倡导的古老思想，正如我们最近指出的那样。\nE) 这些创客空间往往位于教室之外，正发挥着重要的教育功能。创客运动正在重新发现\"从做中学\"，这是杜威百年前的名言。我们正重新发现杜威、蒙台梭利以及他们开创的许多已被遗忘或至少被搁置的实践。创客空间可以是在学校里，但看上去不像教室；也可以在图书馆，或在社区里。它有工具与材料，是你根据兴趣和学习内容动手创造事物的地方。\nF) 关于\"从做中学\"的理念虽源自杜威、蒙台梭利、柏拉图和亚里士多德等古老概念，在美国语境下还有拉尔夫·爱默生关于经验与自立价值的论述，却一直难以成为教育主流。这未必是一种高效的学习方式。从某种意义上说，我们通过试错来学习。从经验中学习需要时间与耐心，且高度个性化。如果你的目标是标准化的学习方式——人人同时以同样方式学习同样内容，那么\"从做中学\"便不再契合那种模式。这不是教科书的世界，也不是考试的世界。\nG) \"从做中学\"或许效率不高，但确实有效。项目式学习在教师和管理者中日益流行。然而，项目式学习不等于制造。两者虽有联系，也有区别。差别在于项目在某种意义上是由学生定义、由学生自主开发，还是由教师布置。比如\"我们都让孩子造一艘小船，大家都来学X、Y、Z\"，那往往是一种项目式学习。\nH) 我真心相信，制造的核心理念是在你脑中萌生一个想法——或者你从别人那里借来一个——然后开始发展它、重复它、改进它，最终以某种方式实现它。你制造出来的东西对你有价值，你也可以与他人分享。我感兴趣的是，这些东西如何成为那个人、其思想及其与世界互动的表达。\nI) 在某种程度上，学校里许多形式的制造使\"制造\"变得无足轻重。你制造出来的东西对你毫无价值。一旦你演示完教科书里的某个概念，就把管道清洁棒、纸板筒扔掉了事。\nJ) 制造应当由学生主导、由学生引领，否则就会乏味，也调动不了学生的积极性。我并非说学生不应学习概念或技能，他们当然要学。但要真正激发他们的动力，就要建立在兴趣之上，让他们掌控方向、自己驾驶汽车。\nK) 教师应致力于为学生营造一个支持性的、富有创造力的环境来做这件事，一个高度社会化的环境，让他们相互学习。遇到问题时，未必是老师进来解决，而是他们自己负责攻克。也许他们得去和班上其他同学交流才能找到答案。\nL) 教师的角色更像教练或观察者。对一些人来说，这听起来像是削弱了教师的固定程式，我却认为这是一种提升（heightened）的角色。你营造这种环境，比如创客空间；你面对20个孩子做着不同的事，观察他们，真正关注的是人的表现：他们投入吗？在发展并重复自己的项目吗？在受挫吗？需要某些他们缺少的东西吗？你能帮他们意识到自己所处的阶段吗？\nM) 我的信念是，制造的目标不是让每个孩子都动手，而是让我们成为优秀的学习者。有价值的不是知识本身，而是学习新事物、理解事物运作方式的实践。这些是你正在培养的流程，使你能够随着时间推移去攻克更有趣、更具挑战性的问题——需要多人而非一人、多种技能而非一种技能的问题。\nN) 如果教师保持其形式自由、由学生主导，它仍可与课程和教学计划相结合。我认为创客空间更像图书馆，里面有多个学科、多种可学之物。学校所缺失的，似乎是如何让这些学科整合、以有意义的方式彼此契合。与其说\"这是科学，历史在那边\"，我更愿看到学校采纳这种项目理念，思考：它们如何支持孩子进行更高层次的学习？\nO) 我觉得这是从以学科为基础的课程，向更具体验性的课程或学习的转变。这仍处于早期阶段，但我认为转变的方向不是孩子学什么，而是他们如何学。",
+      "questions": [
+        {
+          "stem": "36.A maker space is where people make things according to their personal interests.",
+          "answer": "E",
+          "analysis": "对应E段：\"It's a place where you get to make things based on your interest\"，说明创客空间是依个人兴趣动手创造之地。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "37.The teachers’ role is enhanced in a maker space as they have to monitor and facilitate during the process.",
+          "answer": "L",
+          "analysis": "对应L段：教师角色\"more of a coach or observer... a heightened role... watching them\"，说明教师在过程中监督、促进，角色被提升。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "38.Coming up with an idea of one’s own or improving one from others is key to the concept of making.",
+          "answer": "H",
+          "analysis": "对应H段：\"have an idea within your head—or borrow it from someone—and begin to develop it, repeat it and improve it\"，点明制造核心是自有或借鉴改进的想法。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "39.Contrary to structured learning, learning by doing is highly individualized.",
+          "answer": "F",
+          "analysis": "对应F段：\"It's very individualized... learning by doing doesn't really fit that mold\" of standardized learning，说明与结构化学习相反，从做中学高度个性化。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "40.America is a nation known for the idea of making things by oneself.",
+          "answer": "A",
+          "analysis": "对应A段首句：\"We've always been a hands-on, do-it-yourself kind of nation\"，美国以自造闻名。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "41.Making will be boring unless students are able to take charge.",
+          "answer": "J",
+          "analysis": "对应J段：\"Making should be student-directed and student-led, otherwise it's boring... let them be in control\"，说明学生不掌控就会乏味。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "42.Making can be related to a project, but it is created and carried out by students themselves.",
+          "answer": "G",
+          "analysis": "对应G段：项目式学习区别在\"defined and developed by the student or assigned by a teacher\"，制造虽可与项目相关，但由学生自己创造践行。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "43.The author suggests incorporating the idea of a maker space into a school curriculum.",
+          "answer": "N",
+          "analysis": "对应N段：\"keep it form-free and student-led, it can still be tied to a curriculum and an educational plan\"，建议将创客理念纳入学校课程。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "44.The maker concept is a modern version of some ancient philosophical ideas.",
+          "answer": "D",
+          "analysis": "对应D段：\"The maker philosophy echoes old ideas advocated by John Dewey, Montessori, and even ancient Greek philosophers\"，是古老哲学思想的现代版。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "45.Making is not taken seriously in school when students are asked to make something meaningless to them based on textbooks.",
+          "answer": "I",
+          "analysis": "对应I段：\"forms of making in school trivialize making... no value to you... demonstrating whatever concept was in the textbook\"，基于教科书做无意义之物时制造不被重视。",
+          "verified": false,
+          "dissent": null
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 1,
+      "translation": "大多数孩子从小被教导不能在墙上画画。但或许是时候抛开这种训练了——今年夏天，一群文化迷、艺术家和社区组织者正邀请纽约人，在 governors 岛上一栋老房子的墙上尽情书写。\n\n该项目名为\"Writing On It All\"，是一个参与式写作项目与艺术实验，自2013年起每年夏天都在 governors 岛举办。\n\n\"大多数参与者只是路过的人，或因其他原因在岛上，或碰巧在那儿，\"该项目的艺术总监亚历山德拉·查辛对Smithsonian.com说。\n\n2016年的活动持续到6月26日，由从舞者到家政工等各类人主持。每场活动有一个主题，参与者获得各种材料和提示，被要求用其想法与艺术覆盖表面。今年，项目从把房子变成协作式文章，到探索流放意义，形式多样。\n\ngovernors 岛是国家历史地标区，长期用于军事目的。如今被称为\"纽约共享的艺术与游乐空间\"，该岛位于曼哈顿与布鲁克林之间的上纽约湾，禁行汽车，但对夏季游客开放——他们蜂拥而来参加节庆、野餐、探险，以及这些\"合法涂鸦\"活动。\n\n墙上涂写的笔记与艺术是一次自我表达的实验。迄今参与者年龄从2岁到85岁不等。尽管查辛说工作重点在于书写这一活动，而非最终写就的文本，但一些从活动中产生的作品令她难忘。\n\n\"最打动我的一场，是关于黑人妇女儿童所受国家暴力的，\"查辛说，并解释在某房间，人们写下因此丧生者的名字。\"人们创作出美好的作品，留下美好的留言。\"",
+      "questions": [
+        {
+          "stem": "46.What does the project Writing On It All invite people to do?",
+          "answer": "D",
+          "analysis": "第一段\"inviting New Yorkers to write all over the walls of an old house\"及第五段\"legal graffiti Sessions\"，说明项目邀请人们在老房子墙上展示创作，D\"在老房子展出艺术创作品\"最贴合；C\"用涂鸦覆盖\"过于狭隘（项目称writing/artistic experiment）。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "47.What do we learn about the participants in the project?",
+          "answer": "D",
+          "analysis": "第三段\"Most of the participants are people who are just walking by... happen to be there\"，说明参与者多为路人，选D；A/B/C以偏概全（并非只是文化迷/涂鸦迷/作家艺术家）。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "48.What did the project participants do during the 2016 season?",
+          "answer": "B",
+          "analysis": "第四段\"Each session has a theme... asked to cover surfaces with their thoughts and art\"，即按每场主题用涂鸦表达想法，选B；A\"随便写\"无依据，C/D文中未提。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "49.What kind of place is Governor’s Island?",
+          "answer": "A",
+          "analysis": "第五段\"national historic landmark district\"（历史地标）且对游客与艺术活动开放，选A；B错（禁行汽车而非仅对车辆开放），C错（曾用于军事非流放），D错（仅夏季开放）。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "50.What does Chasin say about the project?",
+          "answer": "D",
+          "analysis": "第七段\"People do beautiful work and leave beautiful messages\"，说明活动产生了有意义的艺术作品，选D；A\"只关注\"太窄（仅一场），B/C无依据。",
+          "verified": false,
+          "dissent": null
+        }
+      ]
+    },
+    {
+      "section": "reading",
+      "seq": 2,
+      "translation": "抗击抑郁症的在线项目已经商业化可用。虽然它们听起来高效又省钱，但最近一项研究报告称其并不有效，主要因为抑郁症患者不太可能使用它们或坚持用下去。\n\n该研究考察了计算机辅助的认知行为疗法（CBT），发现其在治疗抑郁症方面，并不比患者从初级保健医生处获得的常规护理更有效。\n\n传统CBT被认为是治疗抑郁症的一种有效谈话疗法，帮助人们挑战负面想法、改变思维方式，从而改变情绪与行为。然而，在线CBT项目日益流行，其吸引力在于只要有电脑，就能随时随地提供低成本帮助。\n\n约克大学的研究团队在英格兰83家医疗机构中，对691名抑郁症患者进行了随机对照试验。患者被分为三组：一组仅接受医生常规护理，另两组在常规护理基础上分别加用一个计算机化CBT程序。三组在年龄、性别、教育背景、抑郁严重程度与持续时间以及抗抑郁药使用上保持均衡。\n\n四个月后，使用计算机化CBT程序的患者，其抑郁水平相比仅接受医生常规护理的患者并无改善。\n\n\"这是个重要的警示：我们不该过度沉迷于'计算机系统可取代医生与治疗师'的想法，\"利物浦大学初级医疗教授克里斯托弗·道里克说，\"我们仍需要人情味或人际互动，尤其在人们抑郁时。\"\n\n道里克说，抑郁可能意味着感觉\"迷失在自己狭小、消极、黑暗的世界里\"。由一个人而非电脑向你伸出手，对抗那种孤立感尤为重要。\"当你情感脆弱时，你更需要一个关心你的人，\"他说。",
+      "questions": [
+        {
+          "stem": "51.What does the recent study say about online CBT programs?",
+          "answer": "A",
+          "analysis": "第一段\"not effective, primarily because depressed patients are not likely to engage with them or stick with them\"，说明患者难以坚持使用以见效，选A；B偷换（需电脑是使用条件非无法参与），C/D与文意相反。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "52.What has made online CBT programs increasingly popular?",
+          "answer": "C",
+          "analysis": "第三段\"with the attraction of providing low-cost help wherever someone has access to a computer\"，即低成本、易获取使其流行，选C；A错（并非因其有效，研究说无效），B/D无依据。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "53. What is the major finding by researchers at the University of York?",
+          "answer": "A",
+          "analysis": "第二段\"it was no more effective... than the usual care patients receive from a primary care doctor\"，选A；B/C/D均未在约克大学发现中提及。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "54. What is Professor Dowrick’s advice concerning online CBT programs?",
+          "answer": "B",
+          "analysis": "第六段\"we shouldn't get too carried away with the idea that a computer system can replace doctors\"即不应高估其效力，选B；A/C/D与\"仍需人际互动\"的告诫不符。",
+          "verified": false,
+          "dissent": null
+        },
+        {
+          "stem": "55. What is more important to an emotionally vulnerable person?",
+          "answer": "D",
+          "analysis": "第六、七段\"need the human touch or the human interaction\"\"Having a person... reach out to you is particularly important\"\"more in need of a caring human being\"，说明情感脆弱者更需要人际互动，选D；A/B/C文中未强调。",
+          "verified": false,
+          "dissent": null
+        }
+      ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "translation": "",
+      "questions": [],
+      "reference": "Paper cutting is a unique form of Chinese folk art with a history of over 2,000 years. It most likely originated in the Han Dynasty, after the invention of paper. Since then, it has become popular in many parts of China. The materials and tools used for paper cutting are very simple: paper and scissors. Paper-cut works are usually made of red paper, because red is associated with happiness in traditional Chinese culture. Therefore, on festive occasions such as weddings and the Spring Festival, red paper cuts are the first choice for decorating doors and windows.",
+      "note": "难点点评：1) \"已有2000多年历史\"译为\"with a history of over 2,000 years\"；2) \"源于汉代，继纸张发明之后\"用\"originated in the Han Dynasty, after the invention of paper\"，注意先后顺序；3) \"与幸福相联\"用\"associated with happiness\"；4) \"喜庆场合\"译\"festive occasions\"；5) \"首选\"用\"the first choice\"。时态：客观事实用一般现在时，历史起源用一般过去时。"
+    }
+  ],
+  "generatedAt": "2026-10-10T12:06:48.932Z",
+  "verified": false
+}
