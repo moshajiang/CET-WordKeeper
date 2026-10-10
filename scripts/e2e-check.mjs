@@ -532,14 +532,10 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   const zh1 = await visZh();
   check('点击句子可切换中/英文', zh1 === zh0 - 1, `切换后可见译文 ${zh1} 条`);
 
-  // ⑦ 对照背诵：点「下一句」逐句呈现译文
-  await clickText('对照背诵', '.tb-modes button');
-  await sleep(900);
-  const z0 = await visZh();
-  const nextStep = async () => { await clickText('下一句', '.bi-actions button'); await sleep(500); return visZh(); };
-  const z1 = await nextStep();
-  const z2 = await nextStep();
-  check('对照背诵：下一句逐句呈现译文', z0 === 0 && z1 === 1 && z2 === 2, `初始 ${z0} → ${z1} → ${z2}`);
+  // ⑦ 背诵已独立成页：阅读器翻译模式只留「关闭 / 逐句对照」，另给一个跳转入口
+  const modeLabels = await js(`[...document.querySelectorAll('.tb-modes button')].map(b => b.textContent.trim()).join('|')`);
+  const hasReciteBtn = await js(`[...document.querySelectorAll('.tb-actions button')].some(b => b.textContent.includes('对照背诵'))`);
+  check('阅读器提供「对照背诵」入口（模式已独立成页）', hasReciteBtn && !String(modeLabels).includes('对照背诵'), `模式=[${modeLabels}]`);
 
   // ⑧ 左右分栏：题目与原文同时在左右两侧
   await clickText('左右', '.tb-modes button');
@@ -557,6 +553,72 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   const cl = await js(`window.keeper.attemptClear(${anchor.id})`); await sleep(300);
   const g2 = await js(`(async () => { const r = await window.keeper.attemptGet(${anchor.id}); return !!r.attempt; })()`);
   check('重做本套真正清空作答记录', g1 === true && cl.ok === true && cl.cleared >= 1 && g2 === false, `交卷后 attempt=${g1} / 清理后 attempt=${g2} / cleared=${cl.cleared}`);
+}
+
+// ===== 对照背诵独立页：初始空白 / 下一句 / 全文显示 / 每句单语种可点击切换 =====
+{
+  const clickBtn = async (label, sel = 'button', wait = 600) => {
+    const ok = await js(`(() => { const b = [...document.querySelectorAll(${JSON.stringify(sel)})].find(x => x.textContent.trim().includes(${JSON.stringify(label)})); if (b) { b.click(); return true; } return false; })()`);
+    await sleep(wait);
+    return ok;
+  };
+  const lines = () => js(`document.querySelectorAll('.recite-line').length`);
+  const progress = async () => String((await js(`(document.querySelector('.recite-progress') || {}).textContent`)) || '').trim();
+  const firstLang = () => js(`(() => { const e = document.querySelector('.recite-txt'); return e ? (e.classList.contains('en') ? 'en' : e.classList.contains('zh') ? 'zh' : '?') : '?'; })()`);
+
+  // ① 无参进入：独立页面自带考次选择器，且侧栏有入口
+  await js(`location.hash = '#/recite'`); await sleep(1500);
+  const navHas = await js(`[...document.querySelectorAll('.nav-item')].some(e => e.textContent.includes('对照背诵'))`);
+  const optCount = await js(`(document.querySelector('select') || { options: [] }).options.length`);
+  check('对照背诵页可独立进入（侧栏入口 + 考次选择）', navHas && optCount >= 10, `侧栏入口=${navHas} 选项=${optCount}`);
+
+  // ② 阅读器顶部「对照背诵」可跳到本页（并带上当前篇）
+  await js(`location.hash = '#/library'`); await sleep(500);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => /仔细阅读/.test(x.textContent)); if (t) t.click(); return !!t; })()`);
+  await sleep(900);
+  const jumped = await clickBtn('对照背诵');
+  await sleep(1200);
+  const hash = String(await js(`location.hash`));
+  check('从阅读器可跳转到对照背诵页', jumped && /^#\/recite\/\d+/.test(hash), `route=${hash}`);
+
+  // ③ 初始应为空白
+  const n0 = await lines();
+  const p0 = await progress();
+  check('对照背诵页初始为空白', n0 === 0 && /^0 \//.test(p0), `行数=${n0} 进度=${p0}`);
+
+  // ④ 「下一句」逐句呈现，且每句只显示一种语言
+  await clickBtn('下一句');
+  const n1 = await lines();
+  const l1 = await firstLang();
+  await clickBtn('下一句');
+  const n2 = await lines();
+  check('「下一句」逐句呈现（每句仅单语种）', n1 === 1 && n2 === 2 && (l1 === 'en' || l1 === 'zh'), `行数 ${n1}→${n2} 语种=${l1}`);
+
+  // ⑤ 点击句子切换中/英
+  const bLang = String(await js(`document.querySelector('.recite-txt').className`));
+  const bTxt = String(await js(`document.querySelector('.recite-txt').textContent.slice(0, 18)`));
+  await js(`document.querySelector('.recite-line').click()`); await sleep(400);
+  const aLang = String(await js(`document.querySelector('.recite-txt').className`));
+  const aTxt = String(await js(`document.querySelector('.recite-txt').textContent.slice(0, 18)`));
+  check('点击句子切换中/英文', bLang !== aLang && bTxt !== aTxt, `${bLang} → ${aLang}`);
+
+  // ⑥ 「全文显示」
+  await clickBtn('全文显示');
+  const nAll = await lines();
+  const pAll = await progress();
+  check('「全文显示」一次呈现全部句子', nAll >= 5 && pAll === `${nAll} / ${nAll}`, `行数=${nAll} 进度=${pAll}`);
+
+  // ⑦ 「重来」回到空白
+  await clickBtn('重来');
+  check('「重来」回到空白', (await lines()) === 0, `行数=${await lines()}`);
+
+  // ⑧ 切换篇章应重置为空白
+  const tabCount = await js(`document.querySelectorAll('.recite-tabs button').length`);
+  if (tabCount > 1) {
+    await js(`document.querySelectorAll('.recite-tabs button')[1].click()`); await sleep(700);
+    check('切换篇章后重置为空白', (await lines()) === 0, `行数=${await lines()}`);
+  }
 }
 
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====

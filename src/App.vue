@@ -30,6 +30,7 @@ const dueCount = ref(0);
 const navs = [
   { path: '/', label: '今日', ico: '🏠' },
   { path: '/library', label: '真题库', ico: '📚' },
+  { path: '/recite', label: '对照背诵', ico: '🗣' },
   { path: '/words', label: '生词本', ico: '📖' },
   { path: '/review', label: '复习', ico: '🔁', key: 'review' },
   { path: '/knowledge', label: '知识库', ico: '🧠' },

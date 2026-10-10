@@ -13,6 +13,7 @@
             <input type="checkbox" v-model="scanOn" /> 难词预扫
           </label>
           <button @click="chatOpen = !chatOpen">💬 问 AI</button>
+          <button @click="openRecite" :disabled="!hasTranslation" title="打开独立页面，逐句背诵本篇">🗣 对照背诵</button>
           <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
           <button class="reveal-btn" @click="toggleAnalysis" :disabled="busy">
             {{ busy ? '处理中…' : (revealAnalysis && !graded ? '隐藏解析' : '查看解析与翻译') }}
@@ -31,11 +32,6 @@
           :disabled="!hasTranslation"
           @click="setTransMode('inline')"
         >逐句对照</button>
-        <button
-          :class="{ active: transMode === 'recite' }"
-          :disabled="!hasTranslation"
-          @click="setTransMode('recite')"
-        >对照背诵</button>
         <span class="tb-label" style="margin-left: 10px;">布局</span>
         <button :class="{ active: layout === 'stack' }" @click="layout = 'stack'">上下</button>
         <button :class="{ active: layout === 'split' }" @click="layout = 'split'">左右（题目并排）</button>
@@ -79,25 +75,20 @@
           </div>
         </div>
 
-        <!-- 逐句对照 / 对照背诵：译文插在每句原文下方 -->
-        <div v-if="transMode !== 'off' && hasTranslation" class="card bi-card">
+        <!-- 逐句对照：译文插在每句原文下方（背诵模式已独立成页，见顶栏「对照背诵」） -->
+        <div v-if="transMode === 'inline' && hasTranslation" class="card bi-card">
           <div class="bi-head">
             <h3 style="font-size: 14px; margin: 0;">
-              {{ transMode === 'recite' ? '对照背诵' : '逐句对照' }}
+              逐句对照
               <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看；点句子切换中/英文）</span>
             </h3>
             <div class="bi-actions">
-              <span v-if="transMode === 'recite'" class="bi-progress">已呈现 {{ revealedCount }} / {{ bilingual.length }}</span>
-              <template v-if="transMode === 'recite'">
-                <button class="mini-btn" @click="revealNext" :disabled="revealedCount >= bilingual.length">下一句 ▶</button>
-                <button class="mini-btn" @click="revealedCount = bilingual.length">全部显示</button>
-                <button class="mini-btn" @click="resetReveal">重置</button>
-              </template>
+              <button class="mini-btn" @click="openRecite">🗣 进入对照背诵</button>
             </div>
           </div>
           <div class="bi-list">
             <div
-              v-for="(s, si) in visibleBilingual"
+              v-for="(s, si) in bilingual"
               :key="s.para + '-' + s.i"
               class="bi-row"
               :class="{ open: zhOpen(s) }"
@@ -118,9 +109,7 @@
             </div>
             <div v-if="!bilingual.length" class="bi-tip">本篇暂无可用译文。</div>
           </div>
-          <div class="bi-tip">
-            {{ transMode === 'recite' ? '点「下一句」逐句呈现译文；点任意句子可来回切换中/英文' : '每句原文下方即对应译文；点句子可隐藏/显示译文（切换中/英文）' }}
-          </div>
+          <div class="bi-tip">每句原文下方即对应译文；点句子可隐藏/显示译文（切换中/英文）</div>
         </div>
 
         <div v-if="activePassage && isEssaySection" class="card essay-card" style="margin-top: 16px;">
@@ -295,11 +284,13 @@
 
 <script setup>
 import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
+import { useRouter } from 'vue-router';
 import { tokenize, simpleNorm, sentenceOf } from '../utils/tokens.js';
 import { alignBilingual, paragraphLetters } from '../utils/bilingual.js';
 import QuestionPanel from '../components/QuestionPanel.vue';
 
 const props = defineProps({ examId: String });
+const router = useRouter();
 
 const detail = ref(null);
 const activeIdx = ref(0);
@@ -319,10 +310,10 @@ const noticeOk = ref(false);
 const busy = ref(false);
 const revealAnalysis = ref(false);   // 「查看解析与翻译」直接揭示答案与解析（不必先交卷）
 
-// 展示模式：翻译呈现方式（off / 逐句对照 / 对照背诵）与布局（上下 / 左右）
+// 展示模式：翻译呈现方式（closing / 逐句对照）与布局（上下 / 左右）
+// 「对照背诵」已独立成页（见 ReciteView），此处只保留入口按钮
 const transMode = ref('off');
 const layout = ref('stack');
-const revealedCount = ref(0);        // 背诵模式：已呈现译文的句数
 const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点击句子切换）
 const tokenCache = new Map();
 
@@ -332,8 +323,6 @@ const bilingual = computed(() => {
   if (!p) return [];
   return alignBilingual(p.content, p.translation || '');
 });
-// 背诵模式也始终显示全部原文句；译文按 revealedCount 逐句出现（点击句子可手动切换）
-const visibleBilingual = computed(() => bilingual.value);
 // 匹配题可用的段落字母：从正文段落标记提取；提取不到时回退 A-O，保证永远可作答
 const matchLetters = computed(() => {
   const p = activePassage.value;
@@ -351,8 +340,7 @@ function rowTokens(s) {
 function zhOpen(s) {
   const key = s.para + '|' + s.i;
   if (key in rowToggle.value) return !!rowToggle.value[key];
-  if (transMode.value === 'inline') return true;      // 对照模式：默认显示译文
-  return s.i < revealedCount.value;                   // 背诵模式：已呈现的句子显示译文
+  return true;                                        // 逐句对照：默认显示译文
 }
 function toggleRow(s) {
   const key = s.para + '|' + s.i;
@@ -360,18 +348,11 @@ function toggleRow(s) {
 }
 function setTransMode(m) {
   transMode.value = m;
-  revealedCount.value = 0;
   rowToggle.value = {};
 }
-function revealNext() {
-  const total = bilingual.value.length;
-  if (revealedCount.value < total) revealedCount.value++;
-  const el = document.querySelector(`[data-bi-index="${Math.max(0, revealedCount.value - 1)}"]`);
-  if (el && el.scrollIntoView) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-}
-function resetReveal() {
-  revealedCount.value = 0;
-  rowToggle.value = {};
+// 打开独立的「对照背诵」页面，并带上当前篇章下标，进去就停在同篇
+function openRecite() {
+  router.push({ path: '/recite/' + Number(props.examId), query: { p: String(activeIdx.value) } });
 }
 function setAnswer(qid, letter) {
   if (graded.value) return;   // 已交卷锁定；「查看解析」只是临时揭示，不锁作答
