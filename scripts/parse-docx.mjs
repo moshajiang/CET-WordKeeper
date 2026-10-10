@@ -117,13 +117,15 @@ function collectBank(paras) {
   const map = new Map();
   const consumed = new Set();
   const put = (letter, word) => { const L = letter === '0' ? 'O' : letter; if (L && word && !map.has(L)) map.set(L, word); };
+  let firstLettered = -1;   // 第一个「带字母序号」词条的段落下标
 
   for (let i = 0; i < paras.length; i++) {
     const p = String(paras[i]).trim();
     const e = bankEntries(p);
-    if (e) { for (const x of e) put(x.letter, x.word); consumed.add(i); continue; }
+    if (e) { if (firstLettered < 0) firstLettered = i; for (const x of e) put(x.letter, x.word); consumed.add(i); continue; }
     const lo = p.match(LETTER_ONLY);
     if (lo) {
+      if (firstLettered < 0) firstLettered = i;
       // ② 字母序号单独一段 → 下一段就是它的单词
       const nxt = String(paras[i + 1] || '').trim();
       if (nxt && !LETTER_ONLY.test(nxt) && !bankEntries(nxt) && /^[a-z][A-Za-z'’\-;.,]*$/.test(nxt)) {
@@ -132,7 +134,20 @@ function collectBank(paras) {
       }
     }
     const lw = p.match(LETTER_WORD);   // ②' 连成一条且带噪声（"K) perm; mently"）
-    if (lw && p.length <= 40 && !/\.\s/.test(lw[2])) { put(lw[1], lw[2]); consumed.add(i); }
+    if (lw && p.length <= 40 && !/\.\s/.test(lw[2])) {
+      if (firstLettered < 0) firstLettered = i;
+      put(lw[1], lw[2]); consumed.add(i);
+    }
+  }
+
+  // ③ 孤儿 A 词：源文里词库首词的「A)」标记可能单独丢失（如 "cautiously" 独占一段，
+  //    其后才是 B) commit … O) vigorous）。若收集到的字母从 B 开始且缺 A，
+  //    就把首词条前一段的裸单词补为 A —— 否则整个词库会被错位重标，答案整体偏移一位。
+  if (map.size >= 10 && !map.has('A') && firstLettered > 0) {
+    const prev = String(paras[firstLettered - 1] || '').trim();
+    if (!consumed.has(firstLettered - 1) && /^[a-z][A-Za-z'’\-]*$/.test(prev) && !bankEntries(prev)) {
+      put('A', prev); consumed.add(firstLettered - 1);
+    }
   }
 
   if (map.size >= 10) return { words: [...map.keys()].sort().map((k) => map.get(k)), consumed };

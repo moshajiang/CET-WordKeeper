@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2017,
+ "month": 6,
+ "set_no": 2,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Bicycle for Sale\nDo you need a reliable and affordable way to get around campus? Here is your chance! I am a senior leaving the university in July, and I am selling the bicycle I have used over the past four years.\nIt is a Giant mountain bike, bought new three years ago for 1,200 yuan. Highlights: 21 speeds with front and rear brakes, a lightweight aluminium frame and a comfortable saddle; a front basket and an LED light are included for free. Condition: well maintained and fully functional—the brakes and gears were professionally serviced last month, and there are only a few minor scratches on the frame.\nPrice: 350 yuan (negotiable for a quick deal). If you are interested, please call me at 138-XXXX-XXXX or email bike4sale@campus.edu before July 10. You are welcome to come and try it in front of Dormitory Building 6 on any weekday evening.\nFirst come, first served!",
+   "note": "广告文体：醒目标题—卖点开场—品牌配置（Highlights）—成色（Condition）—价格与联系方式—促销收尾。可复用：First come, first served! / (negotiable for a quick deal) / fully functional。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "仿佛嫌你讨厌健身房的理由还不够多似的：现在发现，运动不仅让肌肉疲劳，还会让眼睛疲劳。不过别怕，咖啡能让它们重新兴奋起来。在剧烈运动中，我们的肌肉会因燃料耗尽、代谢废物堆积而疲劳。肌肉的表现还会受到一种叫“中枢疲劳”的现象的影响：体内化学信使的失衡，使中枢神经系统无法有效地指挥肌肉运动。然而，此前尚不清楚中枢疲劳是否也会影响并未直接参与运动本身的运动系统，比如支配眼睛的系统。为了弄清这一点，研究人员让 11 名志愿骑手在 3 小时的骑行中摄入一份碳水化合物溶液——其中加入适量咖啡因（已知它能刺激中枢神经系统），或是不含咖啡因的安慰剂。运动结束后，科学家用眼动追踪相机测试骑手的大脑对视觉系统的控制能力。研究团队发现，运动使快速眼动的速度降低了约 8%，延缓了他们捕捉新视觉信息的能力。而咖啡因——相当于两杯浓咖啡的剂量——足以逆转这一效应，有些骑手甚至表现出更高的眼动速度。所以，跑完马拉松之后，最好还是找人开车送你回家。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "O",
+     "analysis": "形容词作定语：在“剧烈”运动中（during vigorous exercise），与肌肉耗尽燃料的描述呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "I",
+     "analysis": "名词：受一种叫“中枢疲劳”的“现象”影响（a phenomenon called central fatigue），由 called 线索可定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "E",
+     "analysis": "副词修饰分词：化学信使失衡使中枢神经“无法有效地”指挥肌肉运动（effectively directing）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "G",
+     "analysis": "过去分词作后置定语：未直接“参与”运动本身的运动系统（motor systems involved in the exercise）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "M",
+     "analysis": "名词：让骑手摄入一份碳水化合“溶液”（a carbohydrate solution），与实验设计呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "D",
+     "analysis": "名词：在 3 小时的“骑行”中（3 hours of cycling），与志愿骑手（cyclists）呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "C",
+     "analysis": "动词：测试大脑还能多好地“控制”视觉系统（control their visual system）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "L",
+     "analysis": "现在分词表结果：眼动速度降低 8%，“延缓”了捕捉新视觉信息的能力（slowing their ability）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "N",
+     "analysis": "形容词：咖啡因的剂量“足以”逆转这一效应（sufficient to reverse this effect）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "F",
+     "analysis": "形容词作定语：有些骑手甚至表现出“更高的”眼动速度（increased eye movement speeds）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "团队精神\n[A] 团队已成为组织的基本构件。招聘广告动辄要求“具有团队精神的人”。商学院对学生的评分，部分依据他们在小组项目中的表现。办公室经理拆掉隔墙以鼓励团队建设。团队当然与文明一样古老：连耶稣也有 12 个共同做工的门徒。但德勤基于对 130 多个国家的 7000 多名高管调查的《全球人力资本趋势》新报告显示，团队协作之风达到了新的高度。近半数受访者说，他们的公司正处于重组之中或即将开始重组；而这些重组多半意味着更加重视团队。\n[B] 公司正在放弃传统的职能部门，把员工组织成聚焦特定产品、问题或客户的跨学科团队。这些团队获得越来越多的自主权。它们彼此协作的时间也越来越多，而不是向上汇报。德勤认为，一种新的组织形式正在兴起：团队网络正在取代传统的等级体制。\n[C] 团队之风盛行的驱动因素，是一种感觉：旧的组织方式对现代市场和员工的期望而言都太僵化。技术创新使灵活性更有价值。全球电子产品领导者思科系统公司董事长约翰·钱伯斯说：“我们与市场转型竞争，而不是与对手竞争。产品换代过去需要五到七年，现在只要一两年。”数字技术也让人们更容易协调彼此的活动而无需诉诸等级体制。在富裕国家即将占劳动力半壁江山的“千禧一代”，从幼儿园起就被培养成在小组中工作。\n[D] 团队之风也从通用电气、IBM 这类“惯常嫌疑人”企业蔓延到一些不同寻常的机构。医院运营商克利夫兰诊所把医务人员重组为聚焦特定治疗领域的团队；顾问、护士等不再按专业和级别分隔，而是紧密协作。美国陆军也走上了同一条路。斯坦利·麦克里斯特尔将军在《团队之队》一书中描述了等级结构如何在伊拉克战争初期妨碍部队行动。他的解决办法是向对手学习：把权力下放给自我组织的团队。\n[E] 一个经验法则是：一旦将军们和医院管理者跳上某种管理风尚的行列，就该提问了。伊利诺伊州凯洛格管理学院的利·汤普森警告说：“团队并不总是答案——团队能以个人独立工作无法企及的方式提供洞见、创造力和知识，但团队协作也可能带来混乱、延误和糟糕的决策。”已故的哈佛教授理查德·哈克曼曾说：“我毫不怀疑，有了团队，就有可能产生魔法，做出非凡之事……但别指望它。”\n[F] 哈克曼（2013 年去世）指出，团队受困于协作与动机问题，这些一点点蚕食协作的好处。被迫在团队里的尖子生可能被低估，搭便车者却如鱼得水。群体思维在所难免。在一项对 120 个高管团队的研究中，他发现：只有不到 10% 的“名义成员”能就“团队里究竟有谁”达成一致。连团队的成员构成尚且难以界定，就团队目标达成一致就更难了。\n[G] 劳动力结构的深刻变化让团队更难管理。如果成员拥有共同的文化，团队工作最有效。而如今许多大公司里，很大一部分员工是临时合同工，共同文化难以形成。团队协作随时间而改善：美国国家运输安全委员会发现，其民航数据库中 73% 的事故发生在机组首日共同执飞之时。然而，正如哈佛的艾米·埃德蒙森指出的，组织日益把“团队”当作动词而非名词使用：他们为特定目的组队，然后迅速解散。\n[H] 从这些研究中至少可以得出：公司需要更用心地思考如何管理团队。他们需要摒弃感情用事：最成功的团队的领导者能够设定总体方向并立即采取行动。他们需要保持团队小而专注：屈从于“更有包容性”的压力是功能失调的保证。亚马逊老板杰夫·贝佐斯说：“如果我午餐看到两张以上的比萨，这个团队就太大了。”他们需要让团队对群体思维免疫：哈克曼主张，最好的团队里有愿意做“可能得罪他人之事”的“离经叛道者”。\n[I] 家具制造商兼咨询公司 Steelcase 对 17 个国家 12000 名工人的新研究发现：确保员工“投入”的最好办法，是给他们更多控制自己工作地点与方式的权利——这可能意味着把他们从“凡事都要与他人协作”中解放出来。\n[J] 然而，组织需要学的比“如何把团队管理得更好”更重要：他们要养成习惯，自问团队是否真是完成这项工作的最佳工具。团队建设技能稀缺：德勤报告说，只有 12% 的受访高管觉得自己理解人们在网络中如何协作，只有 21% 对自己组建跨职能团队的能力有信心。管理松散的团队会沦为分心的温床——员工常常抱怨，被迫在会议上花太多时间、或被迫在嘈杂的办公室里工作，导致工作做不完。即使在做开放式办公和社交网络的时代，有些工作还是留给个人最好。",
+   "questions": [
+    {
+     "stem": "36.Successful team leaders know exactly where the team should go and are able to take prompt action.",
+     "answer": "H",
+     "analysis": "该段：最成功的团队的领导者能“设定总体方向并立即采取行动”（set an overall direction and take immediate action）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.Decentralisation of authority was also found to be more effective in military operations.",
+     "answer": "D",
+     "analysis": "该段：美军在伊拉克战争初期受等级结构拖累，麦克里斯特尔的解法是“把权力下放给自我组织的团队”（decentralise authority）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.In many companies, the conventional form of organisation is giving way to a network of teams.",
+     "answer": "B",
+     "analysis": "该段：“团队网络正在取代传统的等级体制”（a network of teams is replacing the conventional hierarchy）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.Members of poorly managed teams are easily distracted from their work.",
+     "answer": "J",
+     "analysis": "该段：“管理松散的团队会沦为分心的温床”，员工因会议太多、办公室嘈杂而做不完工作。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Teamwork is most effective when team members share the same culture.",
+     "answer": "G",
+     "analysis": "该段：“如果成员拥有共同的文化，团队工作最有效”（Teams work best if their members have a strong common culture）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.According to a report by Deloitte, teamwork is becoming increasingly popular among companies.",
+     "answer": "A",
+     "analysis": "该段：德勤报告显示“团队协作之风达到了新的高度”（the fashion for teamwork has reached a new high）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Some team members find it hard to agree on questions like membership and the team’s purpose.",
+     "answer": "F",
+     "analysis": "该段：120 个高管团队中不到 10% 能就“团队里有谁”达成一致，“就团队目标达成一致更难”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.Some scholars think teamwork may not always be reliable, despite its potential to work wonders.",
+     "answer": "E",
+     "analysis": "该段：汤普森警告“团队并不总是答案”；哈克曼说团队“可能产生魔法……但别指望它”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.To ensure employees’ commitment, it is advisable to give them more flexibility as to where and how they work.",
+     "answer": "I",
+     "analysis": "该段：确保员工“投入”的最好办法是“给他们更多控制自己工作地点与方式的权利”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Product transitions take much less time now than in the past.",
+     "answer": "C",
+     "analysis": "该段：产品换代“过去需要五到七年，现在只要一两年”（used to take five or seven years; now one or two）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "研究表明，英国消费者正在卫生纸上少花钱。\n精打细算的英国消费者选择 Aldi、Lidl 这类折扣店里的便宜货，而不是奢侈的替代品。\n这使得英国软组织纸市场的价值缩水了 6%：据市场研究公司 Mintel 的新报告，该市场已从 2011 年的 11.9 亿英镑缩至 2015 年的 11.2 亿英镑。此外，市场前景也远谈不上乐观——预计 2016 年销售额将进一步跌至 11.1 亿英镑。\n仅过去一年，尽管英国人口在增加、家庭户数随之上升，卫生纸销量还是下降了 2%，家庭平均卫生纸开支从 2014 年的 43 英镑降到 2015 年的 41 英镑。\n总体而言，近五分之三的人说他们试图少用纸制品——包括面巾纸和厨房用纸——以省钱。Mintel 分析师杰克·达克特说：“强度、柔软和厚度仍是卫生纸质量的首要指标，只有一小部分消费者偏爱更奢侈的品种，比如带印花或香味的。”这些额外功能被多数购物者视为不必要，这大概反映出此类产品通常比普通卫生纸更贵，即使打折时也是如此。\n虽然消费者在卫生纸上花得更少，但至少理论上，他们对纸质仍然讲究。英国人卫生纸愿望清单上居首的是柔软（57%），其次是强度（45%）和厚度（36%）。\n十分之一的买家把再生纸卷厕纸列入首要考虑因素，这凸显出：总体而言，对购物者来说，环境远不如产品质量重要。对制造商而言，一个挑战是：81% 的纸制品用户说，如果再生卫生纸的质量能与普通纸相当，他们会考虑购买。",
+   "questions": [
+    {
+     "stem": "46.The market sales of toilet paper have decreased because .",
+     "answer": "A",
+     "analysis": "第二段：精打细算的消费者为省钱选择折扣店的便宜货，第三段说市场价值因此缩水——即英国人削减了这方面的开支。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.What does the author think of the future of the tissue paper market in the UK?",
+     "answer": "B",
+     "analysis": "第三段：市场“前景远谈不上乐观”（far from rosy），销售额预计继续下跌——即前景暗淡。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.What does Jack Duckett say about toilet paper?",
+     "answer": "C",
+     "analysis": "第五段达克特：带印花香味的“奢侈”品种被多数人视为不必要，“因为通常比普通卫生纸贵，即使特价时也是”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn about Britons concerning toilet paper?",
+     "answer": "A",
+     "analysis": "第六段：英国人对纸质“讲究”（fussy），柔软居愿望清单首位——即对质量很挑剔。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What can we infer from the last paragraph?",
+     "answer": "D",
+     "analysis": "末段：再生纸仅十分之一买家考虑，“凸显对购物者而言环境远不如产品质量重要”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "“我觉得这个话题很有意思，原因之一是我小时候我妈妈就抽烟，”在牛津大学研究烟草与健康的林德森-霍利说。\n通过研究约 700 名成年吸烟者，她发现她妈妈戒烟的方式是对的——立即彻底地戒断。\n在研究中，参加者被随机分成两组。一组必须在指定的某一天突然戒断，从一天约一包直接降到零；另一组在两周内逐渐减量。两组人在戒烟前都使用尼古丁贴片，外加第二种尼古丁替代形式，如口香糖或喷雾，并且在戒烟日前后与护士进行谈话治疗。\n六个月后，突然戒断组坚持下来的人更多——超过五分之一，而另一组约为七分之一。这些数字看起来虽低，但已远高于无支持时的自行尝试。\n考虑到研究开始前多数人表示更愿意先逐渐减量再戒，这样的戒烟率尤其有说服力。“如果你在为马拉松训练，你不会指望到场就能跑下来。我想人们对戒烟也是这么看的。他们会想：‘那我逐渐减量，就像练习一样。’”林德森-霍利说。但事实并非如此。逐渐减量没有给他们练习，反而在戒烟日到来之前就带来了瘾头和戒断症状——这也许就是该组坚持到戒烟日的人更少的原因。“无论你的偏好如何，只要你准备好戒烟，突然戒断更有效，”加布里埃拉·费雷拉医生说。“当你能引用一个具体数字——五分之一的患者成功戒断——这很有说服力。我想这会给他们真正的勇气去下决心。”费雷拉说。\n人们很少在第一次尝试时就成功戒烟。但至少，她说，可以把成功的概率最大化。",
+   "questions": [
+    {
+     "stem": "51. What does Lindson-Hawley say about her mother?",
+     "answer": "B",
+     "analysis": "第二段：她妈妈“戒烟的方式是对的——立即彻底地戒断”（quit the right way—by stopping abruptly and completely）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52.What kind of support did smokers receive to quit smoking in Lindson-Hawley’s study?",
+     "answer": "D",
+     "analysis": "第三段：两组人都使用尼古丁贴片，“外加第二种尼古丁替代形式，如口香糖或喷雾”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. How does Dr. Gabriela Ferreira view the result of Lindson-Hawley’s experiment?",
+     "answer": "C",
+     "analysis": "第五段费雷拉：引用“五分之一成功戒断”这个具体数字“很有说服力，会给他们真正的勇气”——即结果令人鼓舞。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. The idea of “a marathon” （Line 2, Para. 5) illustrates the popular belief that quitting smoking",
+     "answer": "B",
+     "analysis": "第五段：马拉松的比喻对应流行观念——“逐渐减量就像练习一样”（it's like practice），即戒烟需要先练习。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What happens when people try to quit smoking gradually?",
+     "answer": "A",
+     "analysis": "第五段：逐渐减量在戒烟日之前就带来瘾头和戒断症状，“该组坚持到戒烟日的人更少”——即反而更难。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "The Yangtze River, the longest in Asia and the third longest in the world, flows through a variety of ecosystems and is the habitat of many endangered species, irrigating one-fifth of China's land. The Yangtze River basin is home to one-third of China's population. The river plays a significant role in China's history, culture and economy. The Yangtze River Delta produces as much as 20% of China's gross national product. For thousands of years, the Yangtze has been used for water supply, transportation and industrial production. The world's largest hydroelectric power station is also located on the river.",
+   "note": "难点：亚洲最长（the longest in Asia）、多种生态系统（a variety of ecosystems）、濒危物种的栖息地（the habitat of endangered species）、灌溉（irrigating）、流域（river basin）、国民生产总值（gross national product）、水电站（hydroelectric power station）。“坐落在”可译为 be located on。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:11:19.769Z"
+}
