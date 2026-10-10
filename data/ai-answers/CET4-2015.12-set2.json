@@ -40,8 +40,8 @@
     },
     {
      "stem": "60. What can we infer from the passage about the author?",
-     "answer": "C",
-     "analysis": "从作者对钱包外观触感的怀念以及结尾如果你还有钱包就拿出来看看吧、它可能不会在这里待太久了，可以推断他对传统钱包恋恋不舍，故选C。A项抵制社会变化和B项反对技术进步过于极端，D项感到不安全文中未直接体现。",
+     "answer": "D",
+     "analysis": "对应第二段：现金概念的抽象化“让我不安”（makes me uneasy），“也许我只是守旧”，并感慨花钱“只需一眨眼”之快——可推知作者在快速变化的现代世界里感到不安（修正：原答案 C“舍不得传统钱包”只是表象，官方答案为 D）。",
      "verified": false,
      "dissent": null
     }
@@ -123,7 +123,142 @@
      "dissent": null
     }
    ]
+  },
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Learning Should Be a Lifelong Process\nIt is often said that learning is a daily experience and a lifetime mission. The saying indicates the importance of lifelong learning, which we have been lectured over and over again.\nLifelong learning is crucial to our life and career in modern society. Living in the Information Age, we have to keep pace with the times through ceaseless learning; otherwise, we'll be too outdated to seize any opportunities. For example, a taxi driver who learns to use a Taxi App such as Didi can make much more money than those who don't; a housewife who opens a shop online can even out-earn a white-collar worker. All of their success can be attributed to their constant learning in addition to the progress of technology.\nAs an old saying goes, it is never too old to learn. Thus, learning is an attitude regardless of age. Only through learning ceaselessly can we achieve our potential and live a better life in this rapidly developing society.",
+   "note": "官方范文（源试卷附带）。结构“释题—论证（道理论证+贴近生活的双重例子）—引谚收尾”。可复用：keep pace with the times / be too outdated to... / be attributed to / it is never too old to learn / Only through...can we...（倒装）。"
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "如何吃得健康\n[A] 为什么这么多美国人吃大量加工食品——那种被恰当地称为垃圾、其实真该贴上警示标签的食品？\n[B] 这并不是因为新鲜食材难寻。超市供应的品种比以往任何时候都多，美国的农贸市场数量是 20 年前的四倍多。也不是因为缺乏可用的信息。任何有电脑、智能手机或电视的人都能找到大量食谱、教学视频和烹饪课程。要说有什么不同，反而是信息多得应接不暇。\n[C] 然而我们并不下厨。如果你一天吃三顿饭，行为又和大多数美国人一样，那你每天的热量很可能至少有三分之一来自家外。将近三分之二的美国人每周吃一次快餐，我们约 25% 的日热量来自零食。我们不是在外就餐就是叫外卖，要么根本不坐下来吃——即便坐下，也是匆匆忙忙。\n[D] 准备并享用食物，难道不该是安慰、自豪、健康、幸福、放松和社交的源泉吗？不该是让我们与他人联结起来的事情吗？我们为什么要把这项基本任务外包出去——尤其是当外包它的危害如此之大的时候？\n[E] 我说的下厨，不是指操办精致的晚宴或搞三天三夜的“科学实验”，而是简单的、容易的、家常的饭菜。我的使命是鼓励烹饪新手以及缺时间或缺钱的人自己养活自己。这意味着我们需要适度、现实的期望，需要教人们做出足以与家人朋友分享的饭菜。\n[F] 回归真正的烹饪，也许并不遥远。哈里斯最近的民调显示，79% 的美国人说自己喜欢下厨，30%“热爱”下厨；14% 承认不喜欢厨房里的活儿，只有 7% 完全不碰炉灶。但这并不必然转化为真正的烹饪。这项调查的结果不会让任何人意外：65 岁及以上的人中，52% 每周在家做饭五次以上；而年轻人里只有三分之一能做到。\n[G] 回到 20 世纪 50 年代，我们中的大多数人都在“妈妈几乎每晚都做饭”的家庭里长大。把一顿家常饭端上桌的意愿几乎是普遍的——大多数人不去这么做也负担不起。\n[H] 虽然冷冻快餐在 40 年代就已发明，但它的流行直到十年左右之后电视机普及才爆发。从那以后，包装好的、预先做好的餐食就成了晚餐。微波炉和快餐连锁是最大的催化剂，而那些什么都想卖、唯独不想卖烹饪用生鲜食材的大食品公司，则把家庭厨师变成了濒危物种。\n[I] 尽管如此，我仍觉得奇怪：只有三分之一的年轻人报告经常在家做饭。这不正是那群痛骂加工垃圾食品、追捧手工烹饪的人吗？这不正是声称关心自身健康和地球福祉的一代吗？如果这些真是许多年轻人的价值观，那他们的行为与信念并不相符。\n[J] 一些食品公司曾为降低加工食品的热量做过一些三心二意却大张旗鼓的努力，但“标准美国饮食”仍然与几乎所有专家都说我们应该采用的以植物为主的健康饮食截然相反。考虑到政府的标准也不够雄心勃勃，图景已经很清楚：不在家做饭，我们就没有吃对东西，而其后果怎么估计都不过分。\n[K] 为了帮助量化劣质饮食的代价，我最近试着用一种最著名的食物——汉堡——来估算这种影响。我的结论是：汉堡带来的利润，远远抵不上它在健康问题与环境危害上造成的损失。\n[L] 亲自烹饪真正的食物是最好的防御——更何况你在家里吃的一餐，热量大约比在餐馆吃的少 200 卡。\n[M] 对那些在意钱的美国人，我的建议很简单：买你买得起的，然后自己做。通常的建议是主要去超市采购，因为那里有新鲜的农产品、肉、海鲜和奶制品。想省钱又吃得健康，你不需要本地的、有机的食材；你需要的只是真正的食物。我不是说本地食材不好——它确实更好。但超市里有的是像样的食物。\n[N] 你还应该去认识的另外两个区域是冷冻食品和罐头食品。冷冻的农产品仍是农产品；罐装番茄仍是番茄。只要确保你买的是没有添加大量盐或糖的真正的食物。问问自己：奶奶会认为这是食物吗？它看起来像自然界里可能存在的东西吗？这基本是常识：你要买的是食物，而不是无法辨认的“类食物物”。\n[O] 你不必天天跑超市，也不需要多么高超的技艺。由于只有不到一半的美国人自称烹饪达到中等水平，只有 20% 称自己的厨艺为高级，这其实是一场信心危机，而唯一的良方就是练习。做晚饭没有什么神秘的。你只需要稍微提前动点脑筋，重新定义什么才算晚饭。像任何技能一样，做饭做得越多就越容易；每做一次，你的水平就前进一步。总有一天你连菜谱都不需要。我的建议是别太在意步骤和配料的数量，因为它们会骗人。\n[P] 我意识到，对大多数人来说，时间是下厨的最大障碍。你必须调整优先次序，挤出做饭的时间。比如，你可以把一台电视搬进厨房，站在水槽边看你喜欢的节目。没有人要你放弃喜欢的活动，但如果你本来在电视上看美食节目，那就试着下厨吧。",
+   "questions": [
+    {
+     "stem": "46. Cooking benefits people in many ways and enables them to connect with one another.",
+     "answer": "D",
+     "analysis": "该段说下厨应是“安慰、自豪、健康、幸福、放松和社交”的源泉，是“让我们与他人联结”的事（Something that connects us to other humans）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. Abundant information about cooking is available either online or on TV.",
+     "answer": "B",
+     "analysis": "该段：任何有电脑、手机或电视的人都能找到“大量食谱、教学视频和烹饪课程”，信息多得应接不暇。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. Young people do less cooking at home than the elderly these days.",
+     "answer": "F",
+     "analysis": "该段：65 岁以上的人 52% 每周在家做饭五次以上，“而年轻人里只有三分之一”（only a third of young people do）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. Cooking skills can be improved with practice.",
+     "answer": "O",
+     "analysis": "该段：烹饪是一场信心危机，“唯一的良方就是练习”，做得越多越容易（cooking gets easier as you do it more）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. In the mid-20th century, most families ate dinner at home instead of eating out.",
+     "answer": "G",
+     "analysis": "该段：20 世纪 50 年代“妈妈几乎每晚都做饭”，把家常饭端上桌的意愿几乎是普遍的。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "51. Even those short of time or money should be encouraged to cook for themselves and their family.",
+     "answer": "E",
+     "analysis": "该段：作者的使命是鼓励“烹饪新手以及缺时间或缺钱的人”自己养活自己（encourage green hands and those lacking time or money）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. Eating food not cooked by ourselves can cause serious consequences.",
+     "answer": "J",
+     "analysis": "该段：不在家做饭就没吃对东西，“其后果怎么估计都不过分”（the consequences are hard to overstate）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53. To eat well and still save money, people should buy fresh food and cook it themselves.",
+     "answer": "M",
+     "analysis": "该段：对在意钱的人，建议是“买你买得起的，然后自己做”，去超市买新鲜食材。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54. We get a fairly large portion of calories from fast food and snacks.",
+     "answer": "C",
+     "analysis": "该段：近三分之二的人每周吃一次快餐，“约 25% 的日热量来自零食”，至少三分之一的热量来自家外。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. The popularity of TV led to the popularity of frozen food.",
+     "answer": "H",
+     "analysis": "该段：冷冻餐 40 年代已发明，但“直到电视机普及其流行才爆发”（didn't boom until televisions became popular）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "人人都睡觉，但人们熬夜去追什么——或者早起为了不错过什么——因文化而异。\n从收集到的数据看，平均而言，让我们损失睡眠最多的是体育赛事、时间调整和节假日。\n世界各地的人都因夏令时的开始或结束而改变睡眠模式。例如，自普京总统 10 月 26 日起把俄罗斯永久调整为“冬令时”之后，俄国人每天开始晚起约半小时。\n俄罗斯其他的深夜与清晨则大多与公共假日对应。新年前夜，俄罗斯人拥有世界上最晚的就寝时间：凌晨三点半左右才上床。\n在国际妇女节——犒劳和庆祝女性亲属的日子——俄罗斯人也会晚起一小时。\n类似地，美国人的深夜、晚起和最长的睡眠，都落在三天连休的小长假里。\n加拿大在奥运冰球决赛战胜瑞典的那一夜，睡得最少。\n世界杯同样是剥夺睡眠的元凶。英国睡眠最糟的一晚是 6 月 14 日英格兰对意大利的比赛之夜：英国人为看球晚睡了半小时，次日又因“夏夜”（北方国家夏季太阳迟迟不落的现象）比平时醒得更早。不过与德国人、意大利人和法国人相比，这不算什么——整个夏天他们在不同的日子里为看世界杯平均晚睡约一个半小时。\n需要说明的是，并非人人都有记录睡眠模式的设备；在其中一些国家，可能只有最富有的人才用得起。而且选择追踪睡眠的人，也许会比普通人睡得更多。即便如此，上述发现仍然惊人。如果我们当中最注重健康的人，一年的睡眠水平都有如此剧烈的起伏，那其余的人又丢了多少睡眠呢？",
+   "questions": [
+    {
+     "stem": "61. What does the author say about people's sleeping habits?",
+     "answer": "A",
+     "analysis": "对应首段：人们熬夜追什么、早起为什么，“因文化而异”（varies by culture），下文以俄、美、加、英、德等为例。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "62. What do we learn about the Russians regarding sleep?",
+     "answer": "C",
+     "analysis": "对应第三、四段：改为“冬令时”后每天晚起约半小时；新年前夜凌晨三点半才睡，是“世界上最晚的就寝时间”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "63. What is the major cause for Europeans' loss of sleep?",
+     "answer": "C",
+     "analysis": "对应第二段：平均而言最耗睡眠的是体育赛事、“时间调整”（time changes，即夏令时/冬令时制）和节假日，欧洲人的睡眠损失主要与夏令时等时制变化相关。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "64. What is the most probable reason for some rich people to use a device to record their sleep patterns?",
+     "answer": "B",
+     "analysis": "对应倒数第二段：并非人人都有记录睡眠的设备，“可能只有最富有的人才用得起”（it's likely that only the richest people do），即设备昂贵。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "65. What does the author imply in the last paragraph?",
+     "answer": "B",
+     "analysis": "末段反问：“最注重健康的人睡眠都有如此剧烈的起伏，那其余的人又丢了多少睡眠？”——暗示普通人的睡眠损失可能更严重。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Lijiang, an ancient town in Yunnan Province, is one of the most famous tourist attractions in China. The life tempo there is slower than that of most Chinese cities. There is beautiful natural scenery everywhere in Lijiang, and many minorities provide tourists with various and colorful cultural experience. It has also been known as the \"City of Love\" in history. Numerous legends about people who were born for love and died for love circulate among the local folk. Nowadays, this ancient town is regarded as the paradise of love and romance in the eyes of both Chinese and foreign visitors.",
+   "note": "官方参考译文（源试卷附带，已订正原文拼写 Luang→Lijiang、bom→born）。难点：旅游目的地（tourist attraction）、生活节奏（life tempo）、少数民族（minorities）、以……而闻名（be known as）、流传（circulate among）、爱情和浪漫的天堂（the paradise of love and romance）。"
   }
  ],
- "generatedAt": "2026-10-10T03:07:21.777Z"
+ "generatedAt": "2026-10-10T08:32:30.962Z"
 }
