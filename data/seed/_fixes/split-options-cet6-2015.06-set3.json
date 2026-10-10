@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2015.06-set3",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) It reflects Americans' preference for imported goods.",
+    "B) It signifies a change in American economic structure.",
+    "C) It could lead to slower growth of the national economy.",
+    "D) It is the result of America's growing focus on domestic market."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) Decreasing productivity.",
+    "B) Competition from overseas.",
+    "C) People's reluctance to spend.",
+    "D) Slack trade activities."
+   ]
+  }
+ ]
+}

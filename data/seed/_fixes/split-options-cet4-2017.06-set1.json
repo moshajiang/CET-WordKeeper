@@ -1,0 +1,17 @@
+{
+ "key": "cet4-2017.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 48,
+   "pos": 2,
+   "options": [
+    "A) Special offers would promote its sales.",
+    "B) Consumers are loyal to certain brands.",
+    "C) Luxurious features add much to the price.",
+    "D) Consumers have a variety to choose from."
+   ]
+  }
+ ]
+}

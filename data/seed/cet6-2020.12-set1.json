@@ -409,7 +409,8 @@
           "options": [
             "A) It has the capacity and the financial resources to do so.",
             "B) Its researchers have already submitted relevant proposals.",
-            "C) Its agencies in charge of drafting the guidelines have the expertise."
+            "C) Its agencies in charge of drafting the guidelines have the expertise.",
+            "D) It can raise students' environmental awareness through its programs."
           ],
           "answer": "",
           "analysis": ""
@@ -418,9 +419,10 @@
           "qtype": "choice",
           "stem": "52.D) It can raise students’ environmental awareness through its programs.",
           "options": [
-            "53. What do we learn from the Dietary Guidelines Advisory Committee’s scientific report?",
             "A) Food is easily contaminated from farm to belly.",
-            "B) Greenhouse effect is an issue still under debate."
+            "B) Greenhouse effect is an issue still under debate.",
+            "C) Modern agriculture has increased food diversity.",
+            "D) Farming consumes most of our natural resources."
           ],
           "answer": "",
           "analysis": ""
@@ -429,9 +431,10 @@
           "qtype": "choice",
           "stem": "53.C) Modern agriculture has increased food diversity.",
           "options": [
-            "D) Farming consumes most of our natural resources.",
-            "54. What may account for the neglect of sustainability in the USDA’s Dietary Guidelines according to the author?",
-            "A) Its exclusive concern with Americans’ food safety."
+            "A) Its exclusive concern with Americans' food safety.",
+            "B) Its sole responsibility for providing dietary advice.",
+            "C) Its close ties with the agriculture companies.",
+            "D) Its alleged failure to regulate the industries."
           ],
           "answer": "",
           "analysis": ""
@@ -440,9 +443,10 @@
           "qtype": "choice",
           "stem": "54.B) Its sole responsibility for providing dietary advice.",
           "options": [
-            "C) Its close ties with the agriculture companies.",
-            "D) Its alleged failure to regulate the industries.",
-            "55. What should the USDA do to achieve food security according to David Wallinga?"
+            "A) Give top priority to things like nutrition and food security.",
+            "B) Endeavor to ensure the sustainable development of agriculture.",
+            "C) Fulfill its mission by closely cooperating with the industries.",
+            "D) Study the long-term impact of climate change on food production."
           ],
           "answer": "",
           "analysis": ""
@@ -451,6 +455,7 @@
           "qtype": "choice",
           "stem": "55.A) Give top priority to things like nutrition and food security.",
           "options": [
+            "A) Give top priority to things like nutrition and food security.",
             "B) Endeavor to ensure the sustainable development of agriculture.",
             "C) Fulfill its mission by closely cooperating with the industries.",
             "D) Study the long-term impact of climate change on food production."

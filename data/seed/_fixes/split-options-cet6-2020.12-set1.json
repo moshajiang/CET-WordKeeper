@@ -1,0 +1,65 @@
+{
+ "key": "cet6-2020.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) It has the capacity and the financial resources to do so.",
+    "B) Its researchers have already submitted relevant proposals.",
+    "C) Its agencies in charge of drafting the guidelines have the expertise.",
+    "D) It can raise students' environmental awareness through its programs."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "pos": 1,
+   "options": [
+    "A) Food is easily contaminated from farm to belly.",
+    "B) Greenhouse effect is an issue still under debate.",
+    "C) Modern agriculture has increased food diversity.",
+    "D) Farming consumes most of our natural resources."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) Its exclusive concern with Americans' food safety.",
+    "B) Its sole responsibility for providing dietary advice.",
+    "C) Its close ties with the agriculture companies.",
+    "D) Its alleged failure to regulate the industries."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) Give top priority to things like nutrition and food security.",
+    "B) Endeavor to ensure the sustainable development of agriculture.",
+    "C) Fulfill its mission by closely cooperating with the industries.",
+    "D) Study the long-term impact of climate change on food production."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Give top priority to things like nutrition and food security.",
+    "B) Endeavor to ensure the sustainable development of agriculture.",
+    "C) Fulfill its mission by closely cooperating with the industries.",
+    "D) Study the long-term impact of climate change on food production."
+   ]
+  }
+ ]
+}

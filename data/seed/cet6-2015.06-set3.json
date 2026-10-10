@@ -339,7 +339,8 @@
           "qtype": "choice",
           "stem": "46. How do pessimists interpret the U, S. trade deficit in June?",
           "options": [
-            "A) It reflects Americans' preference for imported goods. B ) It signifies a change in American economic structure.",
+            "A) It reflects Americans' preference for imported goods.",
+            "B) It signifies a change in American economic structure.",
             "C) It could lead to slower growth of the national economy.",
             "D) It is the result of America's growing focus on domestic market."
           ],
@@ -376,7 +377,8 @@
           "options": [
             "A) Decreasing productivity.",
             "B) Competition from overseas.",
-            "C) People's reluctance to spend. D ) Slack trade activities."
+            "C) People's reluctance to spend.",
+            "D) Slack trade activities."
           ],
           "answer": "",
           "analysis": ""
@@ -386,6 +388,7 @@
           "stem": "50. What is the author's advice to U.S. companies and individuals?",
           "options": [
             "A) To import more cheap goods from developing countries. B ) To increase their market share overseas.",
+            "B) To increase their market share overseas.",
             "C) To be alert to fluctuations in foreign markets.",
             "D) To move their companies to where labor is cheaper."
           ],

@@ -431,8 +431,10 @@
           "qtype": "choice",
           "stem": "63.In what way is Texas different from California?",
           "options": [
-            "A) It practices small government. C) It has a large Hispanic population.",
-            "B) It is home to traditional industries. D) It has an enviable welfare system."
+            "A) It practices small government.",
+            "B) It is home to traditional industries.",
+            "C) It has a large Hispanic population.",
+            "D) It has an enviable welfare system."
           ],
           "answer": "",
           "analysis": ""

@@ -77,21 +77,21 @@
     },
     {
      "stem": "27",
-     "answer": "T",
+     "answer": "O",
      "analysis": "worldwide 作副词修饰 mobile phone sales，表示“全球手机销量”，语义通顺，其他选项无法表示范围。",
      "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
-     "answer": "P",
+     "answer": "K",
      "analysis": "shift toward 是固定搭配，表示“转向”；空前已有 were，需现在分词构成过去进行时，shifting 符合。",
      "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
-     "answer": "Q",
+     "answer": "L",
      "analysis": "句子缺少谓语动词，根据时间背景和 revenue plunged 可知需过去式，shrank 是 shrink 的过去式，表示“市场份额萎缩”。",
      "verified": true,
      "dissent": null

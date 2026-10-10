@@ -41,7 +41,7 @@ for (const f of files) {
   for (const fx of fix.fixes || []) {
     const p = s.passages.find((x) => x.section === fx.section && x.seq === fx.seq);
     if (!p) { console.error(`✗ ${key}: 无篇章 ${fx.section}#${fx.seq}`); process.exit(1); }
-    const q = (() => { const byNum = p.questions.find((x) => String(x.stem).startsWith(fx.qnum + '.')); return byNum || (fx.pos != null ? p.questions[fx.pos] : null); })();
+    const q = (fx.pos != null ? p.questions[fx.pos] : null) || p.questions.find((x) => String(x.stem).startsWith(fx.qnum + '.'));
     if (!q) { console.error(`✗ ${key}: 无第 ${fx.qnum} 题`); process.exit(1); }
     if (JSON.stringify(q.options) !== JSON.stringify(fx.options)) { q.options = fx.options.slice(); changed = true; }
   }

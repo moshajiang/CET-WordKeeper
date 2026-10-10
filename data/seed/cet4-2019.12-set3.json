@@ -351,8 +351,10 @@
           "qtype": "choice",
           "stem": "47. What will the opponents probably do to respond to the soda tax proposal?",
           "options": [
-            "A) Bargain with the city council. B) Refuse to pay additional tax.",
-            "C) Take legal action against it. D) Try to win public support."
+            "A) Bargain with the city council.",
+            "B) Refuse to pay additional tax.",
+            "C) Take legal action against it.",
+            "D) Try to win public support."
           ],
           "answer": "",
           "analysis": ""

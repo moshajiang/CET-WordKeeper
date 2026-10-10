@@ -387,9 +387,10 @@
           "qtype": "choice",
           "stem": "50. What does Professor Leonard Hayflick believe?",
           "options": [
-            "A)The human lifespan cannot be prolonged.",
-            "B)Aging is hardly separable from disease.",
-            "C) Few people can live up to the age of"
+            "A) The human lifespan cannot be prolonged.",
+            "B) Aging is hardly separable from disease.",
+            "C) Few people can live up to the age of",
+            "D) Heart disease is the major cause of aging."
           ],
           "answer": "",
           "analysis": ""

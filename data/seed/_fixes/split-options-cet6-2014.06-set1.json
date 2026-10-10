@@ -1,0 +1,41 @@
+{
+ "key": "cet6-2014.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) It is mainly confined to youngsters",
+    "B) It competes with traditional writing",
+    "C) It will ruin the written language.",
+    "D) It is often hard to understand."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 47,
+   "pos": 1,
+   "options": [
+    "A) It is crafted with specific skills",
+    "B) It expresses ideas more accurately",
+    "C) It does not have as long a history.",
+    "D) It is not as easy to comprehend."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 48,
+   "pos": 2,
+   "options": [
+    "A) It brings texters' closer to each other",
+    "B) It shows the texter’s sophistication",
+    "C) It is a trendy way to communicate.",
+    "D) It adds to the humor of the text."
+   ]
+  }
+ ]
+}

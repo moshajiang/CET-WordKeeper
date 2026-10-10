@@ -12,7 +12,7 @@
    "questions": [
     {
      "stem": "26",
-     "answer": "S",
+     "answer": "O",
      "analysis": "空格前有系动词is，后接介词to，需要一个形容词作表语，构成固定搭配be vulnerable to，表示“易受……伤害的”。语义上，发育中的大脑容易受到化学物质毒性影响，符合上下文。",
      "verified": false,
      "dissent": null
@@ -33,7 +33,7 @@
     },
     {
      "stem": "29",
-     "answer": "Q",
+     "answer": "N",
      "analysis": "空格前有不定式to，需用动词原形。tighten the use of…表示“收紧……的使用”，与urge搭配，表示敦促政府机构加强限制某些化学物质的使用。",
      "verified": false,
      "dissent": null
@@ -61,7 +61,7 @@
     },
     {
      "stem": "33",
-     "answer": "P",
+     "answer": "M",
      "analysis": "空格修饰名词evidence，需用形容词。statistical evidence意为“统计证据”，与solid搭配，表示确凿的统计证据，符合上下文。",
      "verified": false,
      "dissent": null

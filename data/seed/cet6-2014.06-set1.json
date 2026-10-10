@@ -339,8 +339,10 @@
           "qtype": "choice",
           "stem": "56.What do critics say about texting?",
           "options": [
-            "It is mainly confined to youngsters. C) It will ruin the written language.",
-            "It competes with traditional writing. D) It is often hard to understand."
+            "A) It is mainly confined to youngsters",
+            "B) It competes with traditional writing",
+            "C) It will ruin the written language.",
+            "D) It is often hard to understand."
           ],
           "answer": "",
           "analysis": ""
@@ -349,8 +351,10 @@
           "qtype": "choice",
           "stem": "57.In what way does the author say writing is different from talking?",
           "options": [
-            "It is crafted with specific skills. C) It does not have as long a history.",
-            "It expresses ideas more accurately. D) It is not as easy to comprehend."
+            "A) It is crafted with specific skills",
+            "B) It expresses ideas more accurately",
+            "C) It does not have as long a history.",
+            "D) It is not as easy to comprehend."
           ],
           "answer": "",
           "analysis": ""
@@ -359,8 +363,10 @@
           "qtype": "choice",
           "stem": "58.Why is LOL much used in texting?",
           "options": [
-            "It brings texters' closer to each other. C) It is a trendy way to communicate.",
-            "It shows the texter’s sophistication. D) It adds to the humor of the text."
+            "A) It brings texters' closer to each other",
+            "B) It shows the texter’s sophistication",
+            "C) It is a trendy way to communicate.",
+            "D) It adds to the humor of the text."
           ],
           "answer": "",
           "analysis": ""
@@ -449,8 +455,10 @@
           "qtype": "choice",
           "stem": "65.What does the author think a prestigious university like Harvard should focus on?",
           "options": [
-            "A) Cultivation of student creativity. C) Liberation of the human mind.",
-            "B) Defense of the scientific method. D) Pursuit of knowledge and truth."
+            "A) Cultivation of student creativity.",
+            "B) Defense of the scientific method.",
+            "C) Liberation of the human mind.",
+            "D) Pursuit of knowledge and truth."
           ],
           "answer": "",
           "analysis": ""
