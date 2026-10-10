@@ -1,0 +1,29 @@
+{
+ "key": "cet4-2024.06-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "options": [
+    "A) Enjoy a happier life",
+    "B) Exercise self-restraint",
+    "C) Receive more external validation",
+    "D) Strengthen our power of imagination"
+   ],
+   "pos": 3
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "options": [
+    "A) Brain damage seriously hinders one’s learning",
+    "B) Brain power weakens slower than we imagine",
+    "C) Brains can refresh and improve with learning",
+    "D) Brains forge connections under new conditions"
+   ],
+   "pos": 1
+  }
+ ]
+}

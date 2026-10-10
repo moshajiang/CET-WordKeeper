@@ -1,0 +1,29 @@
+{
+ "key": "cet6-2024.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "options": [
+    "A) A strong sense of clear relevance",
+    "B) A profound sense of good fortune",
+    "C) A profound sense of intense relief",
+    "D) A strong sense of being in control"
+   ],
+   "pos": 4
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "options": [
+    "A) A good many women striving to reach an impossible level of perfection",
+    "B) An urge to turn the entire game played on the network to one's advantage",
+    "C) A tendency to regard one's body as an object of observation and judgment",
+    "D) An increasing number of women filtering their images before uploading them"
+   ],
+   "pos": 3
+  }
+ ]
+}

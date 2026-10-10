@@ -1,0 +1,26 @@
+{
+ "key": "cet6-2020.07-set1",
+ "bank": [
+  "capacity",
+  "declaration",
+  "deteriorating",
+  "determined",
+  "disaster",
+  "eroding",
+  "grabbed",
+  "inventory",
+  "junction",
+  "monotonous",
+  "overwhelming",
+  "stagnation",
+  "stake",
+  "stifled",
+  "urgent"
+ ],
+ "contentRemoveLines": [
+  "Junction",
+  "Monotonous",
+  "Junction",
+  "Monotonous"
+ ]
+}

@@ -351,10 +351,10 @@
           "qtype": "choice",
           "stem": "What does the suspension of Ant Group Co.'s stock offering suggest?",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) All attempts to evade regulation are doomed to failure",
+            "B) All attempts to monopolize sales must be cracked down",
+            "C) All companies must be regulated by the government",
+            "D) All companies? domestic or foreign are created equal"
           ],
           "answer": "",
           "analysis": ""

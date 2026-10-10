@@ -1,0 +1,23 @@
+{
+ "key": "cet6-2024.06-set2",
+ "bank": [
+  "adore",
+  "appraise",
+  "assaults",
+  "chemistry",
+  "coincidence",
+  "cracks",
+  "deported",
+  "dismisses",
+  "illegally",
+  "lost",
+  "perpetually",
+  "prescribed",
+  "shrewd",
+  "skeptical",
+  "strives"
+ ],
+ "contentRemoveLines": [
+  "ID)illegally"
+ ]
+}

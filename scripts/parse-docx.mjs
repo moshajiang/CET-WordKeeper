@@ -478,11 +478,13 @@ if (translation) {
   // 粘连场景下，翻译段可能整个挤在一段里（"Part Ⅳ Translation ( 30 minutes ) Directions: ... Answer Sheet 2 . 随着……"）。
   // 剥掉到 "Answer Sheet n ." 为止的说明头，只留中文原文；正常分段的段落不受影响。
   const stripTransHead = (s) => s.replace(/^Part\b[\s\S]*?Answer\s*Sheet\s*\d?\s*[.．]?\s*/, '');
+  // 个别源 docx 在翻译段之后附带整页官方答案（"……参考答案 / 【作文范文】 / Part II …"），
+  // 会把范文、客观题答案全部并进翻译正文。从「参考答案」处截断。
   passages.push({
     section: 'translation', seq: 1, title: '翻译（中文原文）',
     content: translation.paras.filter((p) => !isDirections(p)).map(stripTransHead)
       .filter((p) => !/^Part\b/.test(p) && !/^\(\s*\d+\s*minutes\s*\)/.test(p))
-      .filter(Boolean).join('\n'),
+      .filter(Boolean).join('\n').split(/参考答案/)[0],
     questions: [],
   });
 }

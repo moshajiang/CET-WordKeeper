@@ -1,0 +1,53 @@
+{
+ "key": "cet4-2023.12-set2",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "options": [
+    "A) By enabling them to outcompete other entrepreneurs",
+    "B) By enabling them to make their venture a success",
+    "C) By helping them to reach long-term goals",
+    "D) By helping them to stay goal-oriented"
+   ],
+   "pos": 0
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "options": [
+    "A) By engaging themselves in critical reasoning",
+    "B) By developing a habit of keeping their integrity",
+    "C) By criticizing themselves for previous poor performances",
+    "D) By refraining from being too excited about their successes"
+   ],
+   "pos": 3
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "options": [
+    "A) By paying close attention to their current performance",
+    "B) By taking steps that stand to endanger their rivals5 success",
+    "C) By monitoring how their decision-making impacts their mentality",
+    "D) By keeping their emotions in check to avoid making poor decisions"
+   ],
+   "pos": 4
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "options": [
+    "A) An operating system capable of doing several tasks at once",
+    "B) A skilled worker executing more than one task at the same time",
+    "C) A sophisticated technology doing several tasks effectively at once",
+    "D) An efficient person able to perform multiple tasks at the same time"
+   ],
+   "pos": 0
+  }
+ ]
+}

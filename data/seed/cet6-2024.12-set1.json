@@ -387,10 +387,10 @@
           "qtype": "choice",
           "stem": "What will one experience if they watch a horror film through without being hurt?",
           "options": [
-            "A)",
-            "C)",
-            "B)",
-            "D)"
+            "A) A strong sense of clear relevance",
+            "B) A profound sense of good fortune",
+            "C) A profound sense of intense relief",
+            "D) A strong sense of being in control"
           ],
           "answer": "",
           "analysis": ""
@@ -443,10 +443,10 @@
           "qtype": "choice",
           "stem": "What has obsessive filtering resulted in?",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) A good many women striving to reach an impossible level of perfection",
+            "B) An urge to turn the entire game played on the network to one's advantage",
+            "C) A tendency to regard one's body as an object of observation and judgment",
+            "D) An increasing number of women filtering their images before uploading them"
           ],
           "answer": "",
           "analysis": ""

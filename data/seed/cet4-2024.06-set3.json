@@ -351,10 +351,10 @@
           "qtype": "choice",
           "stem": "How can people best understand a particular fashion in an era, according to Ford?",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) By examining the restraints imposed on it",
+            "B) By looking at what the nobility were wearing",
+            "C) By glancing at its fabrics, colors and ornaments",
+            "D) By doing a survey of the upper and middle classes"
           ],
           "answer": "",
           "analysis": ""

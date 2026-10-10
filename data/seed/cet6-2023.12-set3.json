@@ -375,10 +375,10 @@
           "qtype": "choice",
           "stem": "How can sharing findings benefit researchers themselves?",
           "options": [
-            "A)",
-            "B)",
-            "C)",
-            "D)"
+            "A) By helping them to identify new research directions",
+            "B) By enabling them to understand crises plaguing society",
+            "C) By enabling them to effectively address social discrepancies",
+            "D) By helping them to forge ties with government agencies"
           ],
           "answer": "",
           "analysis": ""
