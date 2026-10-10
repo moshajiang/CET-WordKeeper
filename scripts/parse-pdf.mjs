@@ -55,6 +55,9 @@ function stripDirections(arr) {
 
 // 题号正则：允许小数点后无空格（"36.The"），但排除小数（"45.5"）
 const QNUM_RE = /^(\d{1,2})\s*[.．]\s*(?!\d)/;
+// 宽松题号：源文常漏点（"40 Leah's…"）、误用逗号（"54, What…"）。要求后随大写字母，
+// 以免把正文里的 "40 years later" 误认成题号（小写开头）。与 parse-docx.mjs 同一套。
+const QNUM_LOOSE = /^(\d{1,2})\s*[.．,]?\s*(?=[A-Z])/;
 
 // 题号区间从原文的 "Questions 36 to 45 are based on the following passage." 推导，
 // 不再写死 —— 老卷的编排与现在不同（如 2014 六级：选词 36–45、匹配 46–55、仔细阅读 56–65）。
@@ -71,15 +74,37 @@ function qRange(arr, dLo, dHi) {
 const splitAnyNumbered = (text) =>
   String(text).split(/(?=^\s*\d{1,2}\s*[.．]\s*(?!\d))/m).map((s) => s.trim()).filter(Boolean);
 
-// 从题区切出 count 道题：只用区间内的题号定位起点，之后按任意题号切、取前 count 段。
-// 不能对每段硬做区间过滤 —— 源文题号常错标（如 44/45 写成 54/55），硬过滤会丢题。
-function takeQuestions(text, lo, hi, count) {
-  const chunks = splitAnyNumbered(text);
-  const si = chunks.findIndex((c) => {
-    const m = String(c).match(QNUM_RE);
+// 源文常把题号后的「点」漏掉（"40 Leah's interest…"），上一条切不动，会把两条陈述并成一条。
+// 这时改用「落在预期区间内的题号」切分：前置数字边界（(?<!\d)）防止把 1936 切成 36。
+function splitByRange(text, lo, hi) {
+  const nums = [];
+  for (let n = lo; n <= hi; n++) nums.push(String(n));
+  const re = new RegExp('(?=(?<!\\d)(?:' + nums.join('|') + ')\\s*[.．,]?\\s*[A-Z])');
+  return String(text).split(re).map((s) => s.trim()).filter(Boolean);
+}
+
+function firstInRange(chunks, lo, hi) {
+  return chunks.findIndex((c) => {
+    const m = String(c).match(QNUM_LOOSE);
     return !!m && Number(m[1]) >= lo && Number(m[1]) <= hi;
   });
-  return si < 0 ? [] : chunks.slice(si, si + count);
+}
+
+// 从题区切出 count 道题：只用区间内的题号定位起点，之后按任意题号切、取前 count 段。
+// 不能对每段硬做区间过滤 —— 源文题号常错标（如 44/45 写成 54/55），硬过滤会丢题。
+// 若常规切分凑不齐 count（题号漏点等），退回「按区间题号切分」再试一次。
+function takeQuestions(text, lo, hi, count) {
+  const chunks = splitAnyNumbered(text);
+  const si = firstInRange(chunks, lo, hi);
+  if (si >= 0 && chunks.length - si >= count) return chunks.slice(si, si + count);
+
+  const rc = splitByRange(text, lo, hi);
+  const rsi = firstInRange(rc, lo, hi);
+  if (rsi >= 0 && rc.length - rsi >= count) {
+    // 漏点的题号统一补上分隔点，让全库题干格式一致（"40 Leah's…" → "40. Leah's…"）
+    return rc.slice(rsi, rsi + count).map((c) => c.replace(/^(\d{1,2})\s+/, '$1. '));
+  }
+  return si >= 0 ? chunks.slice(si, si + count) : [];
 }
 
 // 题干补题号：原文已带编号就保留
@@ -186,14 +211,20 @@ for (let k = 0; k < sectionIdx.length - 1; k++) {
     // 长篇阅读：文章段落 + 匹配题。区间从 "Questions 36 to 45" 推导，缺该行时默认 36–45
     const r = qRange(body, 36, 45);
     const count = r.hi - r.lo + 1;
-    const inRange = (s) => { const m = String(s).match(QNUM_RE); return !!m && Number(m[1]) >= r.lo && Number(m[1]) <= r.hi; };
-    const firstQ = body.findIndex(inRange);
-    let paragraphs, stems;
-    if (firstQ >= 0) {
-      paragraphs = body.slice(0, firstQ);
+    const hitAt = (s, re) => { const m = String(s).match(re); return !!m && Number(m[1]) >= r.lo && Number(m[1]) <= r.hi; };
+    // 严格（题号带点）优先；第一条陈述就漏点时退回宽松（"36 The CGi…"）
+    const candidates = [body.findIndex((s) => hitAt(s, QNUM_RE))];
+    const looseIdx = body.findIndex((s) => hitAt(s, QNUM_LOOSE));
+    if (looseIdx >= 0 && !candidates.includes(looseIdx)) candidates.push(looseIdx);
+
+    let paragraphs = null, stems = null;
+    for (const firstQ of candidates) {
+      if (firstQ < 0) continue;
       // 保留 "36." 前缀（前端直接显示 stem，全库一致）
-      stems = takeQuestions(body.slice(firstQ).join('\n'), r.lo, r.hi, count);
-    } else {
+      const got = takeQuestions(body.slice(firstQ).join('\n'), r.lo, r.hi, count);
+      if (got.length === count) { stems = got; paragraphs = body.slice(0, firstQ); break; }
+    }
+    if (!stems) {
       // 源文里 10 条陈述**没有编号**（老卷常见）：
       // 优先取「注意：…答题卡…」之后的内容，否则退化为取末尾 count 段；补上题号
       const MARK = /答题卡|Answer\s*Sheet/i;

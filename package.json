@@ -11,6 +11,8 @@
     "start": "electron .",
     "parse": "node scripts/parse-docx.mjs",
     "db": "node scripts/build-db.mjs",
+    "check": "node scripts/reparse-seed.mjs --check",
+    "ci": "node scripts/check-secrets.mjs && node scripts/build-db.mjs && node scripts/verify-all.mjs && node scripts/sync-check.mjs && node scripts/word-audit.mjs",
     "pack:win": "npm run build && electron-builder --win --config electron-builder.json"
   },
   "dependencies": {

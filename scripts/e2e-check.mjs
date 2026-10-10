@@ -1,5 +1,9 @@
 // 端到端验证：通过 CDP 连接运行中的应用，走通 查词→标注→生词本→复习 全链路
 // 前置：应用需以 --remote-debugging-port=9222 启动
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 const PORT = 9222;
 const targets = await (await fetch(`http://127.0.0.1:${PORT}/json`)).json();
 const page = targets.find((t) => t.type === 'page' && t.url.includes('index.html')) || targets.find((t) => t.type === 'page');
@@ -47,9 +51,22 @@ console.log('\n===== 真题库 =====');
 const exams = await js('window.keeper.listExams()');
 check('真题列表', exams.length >= 10, exams.length + ' 套，最早 ' + exams[exams.length - 1].year + '.' + exams[exams.length - 1].month);
 // 防止「用旧数据打包」：这个坑踩过两次（exe 里的 keeper.db 早于上一次数据扩充）。
-// 下限用 70 而不是精确值，既能抓住明显的旧包，又不会因为补考次而频繁改动测试。
-check('数据为最新版（非旧包）', exams.length >= 70 && exams.some((e) => e.year >= 2025),
-  exams.length + ' 套，最新 ' + exams[0].title);
+// 期望值在测试运行时从 data/seed 现算 —— 扩充考次后测试自动跟随，无需改测试；
+// 精确比对套数与题量，比旧版的「下限 70」更能抓住缺题/短题的旧包。
+const seedDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'data', 'seed');
+let expExams = 0, expQs = 0;
+for (const f of fs.readdirSync(seedDir).filter((x) => x.endsWith('.json'))) {
+  const s = JSON.parse(fs.readFileSync(path.join(seedDir, f), 'utf8'));
+  expExams++;
+  expQs += (s.passages || []).reduce((a, p) => a + (p.questions || []).length, 0);
+}
+check('数据为最新版（套数与 seed 一致）', exams.length === expExams, `库中 ${exams.length} 套 / seed ${expExams} 套`);
+let dbQs = 0;
+for (const e of exams) {
+  const d = await js(`window.keeper.examDetail(${e.id})`);
+  dbQs += (d.passages || []).reduce((a, p) => a + p.questions.length, 0);
+}
+check('数据为最新版（题量与 seed 一致）', dbQs === expQs, `库中 ${dbQs} 题 / seed ${expQs} 题`);
 // 用内容最完整的一套做后续验证（2024.06 六级第 1 套）
 const anchor = exams.find((e) => e.level === 'CET6' && e.year === 2024 && e.month === 6 && e.set_no === 1) || exams[0];
 const detail = await js(`window.keeper.examDetail(${anchor.id})`);
@@ -134,8 +151,7 @@ const s = await js('window.keeper.getSettings()');
 check('设置写入与读取', s.api_base === 'https://api.deepseek.com/v1' && s.api_model === 'deepseek-chat', JSON.stringify(s));
 
 console.log('\n===== Anki 导出 =====');
-const fs = await import('node:fs');
-const path = await import('node:path');
+// fs / path 已在文件顶部 import（「数据为最新版」断言用到），这里不再重复声明
 const tmp = process.env.TEMP || process.env.TMP || '.';
 const ankiPath = path.join(tmp, 'cet-anki-e2e.txt');
 const anki = await js(`window.keeper.exportAnki({ status: 'all', targetPath: ${JSON.stringify(ankiPath)} })`);
