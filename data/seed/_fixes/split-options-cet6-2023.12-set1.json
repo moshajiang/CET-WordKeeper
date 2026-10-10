@@ -1,0 +1,17 @@
+{
+ "key": "cet6-2023.12-set1",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) Insight.",
+    "B) Expertise.",
+    "C) Integrity.",
+    "D) Diversity."
+   ]
+  }
+ ]
+}

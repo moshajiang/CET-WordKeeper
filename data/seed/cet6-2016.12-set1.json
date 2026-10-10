@@ -405,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51. What does the author mean by saying \"Teenagers at risk of depression, anxiety and suicide often wear their troubles like a neon sign\" (Lines 1 - 2, Para.1 ) ? A. Mental problems can now be found in large numbers of teenagers. B. Teenagers' mental problems are getting more and more attention. C. Teenagers' mental problems are often too conspicuous not to be observed. D. Depression and anxiety are the most common symptoms of mental problems.",
-          "options": [],
+          "stem": "51. What does the author mean by saying \"Teenagers at risk of depression, anxiety and suicide often wear their troubles like a neon sign\" (Lines 1 - 2, Para.1 ) ?",
+          "options": [
+            "A) Mental problems can now be found in large numbers of teenagers",
+            "B) Teenagers' mental problems are getting more and more attention",
+            "C) Teenagers' mental problems are often too conspicuous not to be observed",
+            "D) Depression and anxiety are the most common symptoms of mental problems"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52. What is the finding of the new study? A. Teenagers' lifestyles have changed greatly in recent years. B. Many teenagers resort to drugs or alcohol for mental relief. C. Teenagers experiencing psychological problems tend to use a lot of media. D. Many hitherto unobserved youngsters may have psychological problems.",
-          "options": [],
+          "stem": "52. What is the finding of the new study?",
+          "options": [
+            "A) Teenagers' lifestyles have changed greatly in recent years",
+            "B) Many teenagers resort to drugs or alcohol for mental relief",
+            "C) Teenagers experiencing psychological problems tend to use a lot of media",
+            "D) Many hitherto unobserved youngsters may have psychological problems"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53. Why do the researchers refer to teens who use tons of media, don't get enough sleep and have a sedentary lifestyle as the \"invisible risk\" group? A. Their behaviors can be an invisible threat to society. B. Their behaviors do not constitute a warning signal. C. Their behaviors do not tend towards mental problems. D. Their behaviors can be found in almost all teenagers on earth.",
-          "options": [],
+          "stem": "53. Why do the researchers refer to teens who use tons of media, don't get enough sleep and have a sedentary lifestyle as the \"invisible risk\" group?",
+          "options": [
+            "A) Their behaviors can be an invisible threat to society",
+            "B) Their behaviors do not constitute a warning signal",
+            "C) Their behaviors do not tend towards mental problems",
+            "D) Their behaviors can be found in almost all teenagers on earth"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54. What does the new study find about the invisible group? A. They are almost as liable to depression as the high-risk group. B. They suffer from depression without showing any symptoms. C. They do not often demonstrate risky behaviors as their peers. D. They do not attract the media attention the high-risk group does.",
-          "options": [],
+          "stem": "54. What does the new study find about the invisible group?",
+          "options": [
+            "A) They are almost as liable to depression as the high-risk group",
+            "B) They suffer from depression without showing any symptoms",
+            "C) They do not often demonstrate risky behaviors as their peers",
+            "D) They do not attract the media attention the high-risk group does"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55. What is the significance of Vladimir Carli's study? A. It offers a new treatment for psychological problems among teenagers. B. It provides new early-warning signals for identifying teens in trouble. C. It may have found an ideal way to handle teenagers with behavioral problems. D. It sheds new light on how unhealthy behaviors trigger mental health problems.",
-          "options": [],
+          "stem": "55. What is the significance of Vladimir Carli's study?",
+          "options": [
+            "A) It offers a new treatment for psychological problems among teenagers",
+            "B) It provides new early-warning signals for identifying teens in trouble",
+            "C) It may have found an ideal way to handle teenagers with behavioral problems",
+            "D) It sheds new light on how unhealthy behaviors trigger mental health problems"
+          ],
           "answer": "",
           "analysis": ""
         }

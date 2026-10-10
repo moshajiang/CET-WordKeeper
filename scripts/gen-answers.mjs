@@ -81,7 +81,18 @@ for (const ex of exams) {
   const passages = all(`SELECT id, section, seq, title, content FROM passage WHERE exam_id = ? ORDER BY id`, [ex.id]);
   for (const p of passages) {
     if (!OBJ.has(p.section) && !REF.has(p.section)) continue;
-    if (done[p.section + ':' + p.seq]) continue;
+    // 已有条目也要看完整度：作答数 < 题数、缺翻译、缺范文的篇章要重做
+    // （历史教训：AI 偶发返回畸形输出，只写回部分答案；旧逻辑「有条目就跳过」会让这些篇章永远缺答案）
+    const d = done[p.section + ':' + p.seq];
+    if (d) {
+      const needAns = OBJ.has(p.section);
+      const qs0 = needAns ? all(`SELECT id, stem, options FROM question WHERE passage_id = ? ORDER BY id`, [p.id]) : [];
+      const ansOk = !needAns || qs0.every((q, i) => ((d.questions || [])[i] || {}).answer && String((d.questions || [])[i].answer).trim());
+      const trOk = !needAns || String(d.translation || '').length >= 30;
+      const refOk = !REF.has(p.section) || String(d.reference || '').length >= 50;
+      const ansValid = !needAns || qs0.every((q, i) => /^[A-D]$/.test(String(((d.questions || [])[i] || {}).answer || '').trim()));
+      if (ansOk && trOk && refOk && ansValid) continue;
+    }
     const qs = all(`SELECT id, stem, options FROM question WHERE passage_id = ? ORDER BY id`, [p.id]);
     tasks.push({ ex, key, overlayPath, passage: p, questions: qs, done, ref: REF.has(p.section) });
   }

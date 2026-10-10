@@ -418,7 +418,12 @@
         {
           "qtype": "choice",
           "stem": "52. What have spiders been associated with in the UK for centuries?",
-          "options": [],
+          "options": [
+            "A) Harm.",
+            "B) Evil",
+            "C) Suffering.",
+            "D) Aggression."
+          ],
           "answer": "",
           "analysis": ""
         },

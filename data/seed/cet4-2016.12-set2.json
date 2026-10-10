@@ -337,36 +337,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46. What did Adam Smith say about sugar, alcohol and .tobacco? A. They were profitable to manufacture. B. They were in ever-increasing demand. C. They were subject to taxation almost everywhere. D. They were no longer considered necessities of life.",
-          "options": [],
+          "stem": "46. What did Adam Smith say about sugar, alcohol and .tobacco?",
+          "options": [
+            "A) They were profitable to manufacture",
+            "B) They were in ever-increasing demand",
+            "C) They were subject to taxation almost everywhere",
+            "D) They were no longer considered necessities of life"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "47. Why have many countries started to consider taxing sugar? A. They are under growing pressure to balance their national budgets. B. They find it ever harder to cope with sugar-induced health problems. C. The practice of taxing alcohol and tobacco has proved both popular and profitable. D. The sugar industry is overtaking alcohol and tobacco business in generating profits.",
-          "options": [],
+          "stem": "47. Why have many countries started to consider taxing sugar?",
+          "options": [
+            "A) They are under growing pressure to balance their national budgets",
+            "B) They find it ever harder to cope with sugar-induced health problems",
+            "C) The practice of taxing alcohol and tobacco has proved both popular and profitable",
+            "D) The sugar industry is overtaking alcohol and tobacco business in generating profits"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "48. What do we learn about Danish taxation on fat-rich foods? A. It did not work out as well as was expected. B. It gave rise to a lot of problems on the border. C. It could not succeed without German cooperation. D. It met with firm opposition from the food industry.",
-          "options": [],
+          "stem": "48. What do we learn about Danish taxation on fat-rich foods?",
+          "options": [
+            "A) It did not work out as well as was expected",
+            "B) It gave rise to a lot of problems on the border",
+            "C) It could not succeed without German cooperation",
+            "D) It met with firm opposition from the food industry"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "49. What is the more recent effort by food companies to make foods and drinks both healthy and tasty? A. Replacing sugar or salt with alternative ingredients. B. Setting a limit on the amount of sugar or salt in their products. C. Investing in research to find ways to adapt to consumers' needs. D. Adjusting the physical composition of their products.",
-          "options": [],
+          "stem": "49. What is the more recent effort by food companies to make foods and drinks both healthy and tasty?",
+          "options": [
+            "A) Replacing sugar or salt with alternative ingredients",
+            "B) Setting a limit on the amount of sugar or salt in their products",
+            "C) Investing in research to find ways to adapt to consumers' needs",
+            "D) Adjusting the physical composition of their products"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50. What does the author mean by saying, at the end of the passage, \"There is no silver bullet\" ( Line 4, Para.7)? A. There is no single easy quick solution to the problem. B. There is no hope of success without public cooperation. C. There is no hurry in finding ways to solve the obesity problem. D. There is no effective way to reduce people's sugar consumption.",
-          "options": [],
+          "stem": "50. What does the author mean by saying, at the end of the passage, \"There is no silver bullet\" ( Line 4, Para.7)?",
+          "options": [
+            "A) There is no single easy quick solution to the problem",
+            "B) There is no hope of success without public cooperation",
+            "C) There is no hurry in finding ways to solve the obesity problem",
+            "D) There is no effective way to reduce people's sugar consumption"
+          ],
           "answer": "",
           "analysis": ""
         }
@@ -380,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51. What do Record and Austin say about fashion models' body mass? A. It has caused needless controversy. B. It is but a matter of personal taste. C. It is the focus of the modeling business. D. It affects models' health and safety.",
-          "options": [],
+          "stem": "51. What do Record and Austin say about fashion models' body mass?",
+          "options": [
+            "A) It has caused needless controversy",
+            "B) It is but a matter of personal taste",
+            "C) It is the focus of the modeling business",
+            "D) It affects models' health and safety"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52. What are Record and Austin advocating in the Monday editorial? A. A change in the public's view of female beauty. B. Government legislation about models' weight. C. Elimination of forced weight loss by models. D. Prohibition of models eating non-food stuff.",
-          "options": [],
+          "stem": "52. What are Record and Austin advocating in the Monday editorial?",
+          "options": [
+            "A) A change in the public's view of female beauty",
+            "B) Government legislation about models' weight",
+            "C) Elimination of forced weight loss by models",
+            "D) Prohibition of models eating non-food stuff"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53. Why are Record and Austin especially worried about the low body mass index of models? A. It contributes to many mental illnesses. B. It defines the future of the fashion industry. C. It has great influence on numerous girls and women. D. It keeps many otherwise qualified women off the runway.",
-          "options": [],
+          "stem": "53. Why are Record and Austin especially worried about the low body mass index of models?",
+          "options": [
+            "A) It contributes to many mental illnesses",
+            "B) It defines the future of the fashion industry",
+            "C) It has great influence on numerous girls and women",
+            "D) It keeps many otherwise qualified women off the runway"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54. What do we learn about France's fashion industry? A. It has difficulty hiring models. B. It has now a new law to follow. C. It allows girls under 18 on the runway. D. It has overtaken that of the United States.",
-          "options": [],
+          "stem": "54. What do we learn about France's fashion industry?",
+          "options": [
+            "A) It has difficulty hiring models",
+            "B) It has now a new law to follow",
+            "C) It allows girls under 18 on the runway",
+            "D) It has overtaken that of the United States"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55. What does Record expect of New York Fashion Week? A. It will create a completely new set of rules. B. It will do better than Paris Fashion Week. C. It will differ from Paris Fashion Week. D. It will have models with a higher BMI.",
-          "options": [],
+          "stem": "55. What does Record expect of New York Fashion Week?",
+          "options": [
+            "A) It will create a completely new set of rules",
+            "B) It will do better than Paris Fashion Week",
+            "C) It will differ from Paris Fashion Week",
+            "D) It will have models with a higher BMI"
+          ],
           "answer": "",
           "analysis": ""
         }

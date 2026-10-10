@@ -405,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "61. What does the author think of the leaders he knows? A. Many of them are used to taking charge. B. Few of them are equal to their positions. C. Many of them fail to fully develop their potential. D. Few of them are familiar with leadership literature.",
-          "options": [],
+          "stem": "61. What does the author think of the leaders he knows?",
+          "options": [
+            "A) Many of them are used to taking charge",
+            "B) Few of them are equal to their positions",
+            "C) Many of them fail to fully develop their potential",
+            "D) Few of them are familiar with leadership literature"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "62. Why are some people eager to grab leadership positions? A. They believe they have the natural gift to lead. B. They believe in what leadership literature says. C. They have proved competent in many situations. D. They derive great satisfaction from being leaders.",
-          "options": [],
+          "stem": "62. Why are some people eager to grab leadership positions?",
+          "options": [
+            "A) They believe they have the natural gift to lead",
+            "B) They believe in what leadership literature says",
+            "C) They have proved competent in many situations",
+            "D) They derive great satisfaction from being leaders"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "63. What characterizes a great leader according to the author? A. Being able to take prompt action when chances present themselves. B. Having a whole-hearted dedication to their divine responsibilities. C. Having a full understanding of their own merits and weaknesses. D. Being able to assess the situation carefully, before taking charge.",
-          "options": [],
+          "stem": "63. What characterizes a great leader according to the author?",
+          "options": [
+            "A) Being able to take prompt action when chances present themselves",
+            "B) Having a whole-hearted dedication to their divine responsibilities",
+            "C) Having a full understanding of their own merits and weaknesses",
+            "D) Being able to assess the situation carefully, before taking charge"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "64. How will many business executives respond when their command fails to generate action? A. They reassess the situation at hand. B. They become impatient and rude. C. They resort to any tool available. D. They blame their team members.",
-          "options": [],
+          "stem": "64. How will many business executives respond when their command fails to generate action?",
+          "options": [
+            "A) They reassess the situation at hand",
+            "B) They become impatient and rude",
+            "C) They resort to any tool available",
+            "D) They blame their team members"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "65. What is the author’s advice to leaders? A. Concentrate on one specific task at a time. B. Use different tools to achieve different goals. C. Build up a strong mare to achieve their goals. D. Show determination when faced with tough tasks.",
-          "options": [],
+          "stem": "65. What is the author’s advice to leaders?",
+          "options": [
+            "A) Concentrate on one specific task at a time",
+            "B) Use different tools to achieve different goals",
+            "C) Build up a strong mare to achieve their goals",
+            "D) Show determination when faced with tough tasks"
+          ],
           "answer": "",
           "analysis": ""
         }

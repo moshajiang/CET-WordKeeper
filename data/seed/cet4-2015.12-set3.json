@@ -337,36 +337,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "56.What do we learn about Silicon Valley from the passage? A. Its success is hard to copy anywhere else. B. It is the biggest technology hub in the US. C. Its fame in high technology is incomparable. D. It leads the world in information technology.",
-          "options": [],
+          "stem": "56.What do we learn about Silicon Valley from the passage?",
+          "options": [
+            "A) Its success is hard to copy anywhere else",
+            "B) It is the biggest technology hub in the US",
+            "C) Its fame in high technology is incomparable",
+            "D) It leads the world in information technology"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "57.What makes Miami unfit to produce a Silicon Valley? A. Lack of incentive for investment. B. Lack of the right kind of talents. C. Lack of government support. D. Lack of famous universities.",
-          "options": [],
+          "stem": "57.What makes Miami unfit to produce a Silicon Valley?",
+          "options": [
+            "A) Lack of incentive for investment",
+            "B) Lack of the right kind of talents",
+            "C) Lack of government support",
+            "D) Lack of famous universities"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "58.In what way is Carnegie-Mellon different from Stanford, Berkeley and MIT? A. Its location is not as attractive to rich people. B. Its science departments are not nearly as good. C. It does not produce computer hackers and nerds. D. It does not pay much attention to business startups.",
-          "options": [],
+          "stem": "58.In what way is Carnegie-Mellon different from Stanford, Berkeley and MIT?",
+          "options": [
+            "A) Its location is not as attractive to rich people",
+            "B) Its science departments are not nearly as good",
+            "C) It does not produce computer hackers and nerds",
+            "D) It does not pay much attention to business startups"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "59.What does the author imply about Boston? A. It has pleasant weather all year round. B. It produces wealth as well as high-tech. C. It is not likely to attract lots of investors and nerds. D. It is an old city with many sites of historical interest.",
-          "options": [],
+          "stem": "59.What does the author imply about Boston?",
+          "options": [
+            "A) It has pleasant weather all year round",
+            "B) It produces wealth as well as high-tech",
+            "C) It is not likely to attract lots of investors and nerds",
+            "D) It is an old city with many sites of historical interest"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "60.What does the author say about startup investors? A. They are especially wise in making investments. B. They have good connections in the government. C. They can do more than providing money. D. They are rich enough to invest in nerds.",
-          "options": [],
+          "stem": "60.What does the author say about startup investors?",
+          "options": [
+            "A) They are especially wise in making investments",
+            "B) They have good connections in the government",
+            "C) They can do more than providing money",
+            "D) They are rich enough to invest in nerds"
+          ],
           "answer": "",
           "analysis": ""
         }
@@ -380,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "61.What happens when you have like-minded people around you all the while? A. It will help your company expand more rapidly. B. It will create a harmonious working atmosphere. C. It may prevent your business and career from advancing. D. It may make you feel uncertain about your own decisions.",
-          "options": [],
+          "stem": "61.What happens when you have like-minded people around you all the while?",
+          "options": [
+            "A) It will help your company expand more rapidly",
+            "B) It will create a harmonious working atmosphere",
+            "C) It may prevent your business and career from advancing",
+            "D) It may make you feel uncertain about your own decisions"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "62.What does the author suggest leaders do? A. Avoid arguments with business partners. B. Encourage people to disagree and argue. C. Build a wide and strong business network. D. Seek advice from their worthy competitors.",
-          "options": [],
+          "stem": "62.What does the author suggest leaders do?",
+          "options": [
+            "A) Avoid arguments with business partners",
+            "B) Encourage people to disagree and argue",
+            "C) Build a wide and strong business network",
+            "D) Seek advice from their worthy competitors"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "63.What is the purpose of holding a debate? A. To find out the truth about an issue. B. To build up people's moral strength. C. To remove misunderstandings. D. To look for worthy opponents.",
-          "options": [],
+          "stem": "63.What is the purpose of holding a debate?",
+          "options": [
+            "A) To find out the truth about an issue",
+            "B) To build up people's moral strength",
+            "C) To remove misunderstandings",
+            "D) To look for worthy opponents"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "64.What advice does the author give to people engaged in a fierce debate? A. They listen carefully to their opponents' views. B. They show due respect for each other's beliefs. C. They present their views clearly and explicitly. D. They take care not to hurt each other's feelings.",
-          "options": [],
+          "stem": "64.What advice does the author give to people engaged in a fierce debate?",
+          "options": [
+            "A) They listen carefully to their opponents' views",
+            "B) They show due respect for each other's beliefs",
+            "C) They present their views clearly and explicitly",
+            "D) They take care not to hurt each other's feelings"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "65.How should we treat our rivals after a successful debate? A. Try to make peace with them. B. Try to make up the differences. C. Invite them to the ring next time. D. Acknowledge their contribution.",
-          "options": [],
+          "stem": "65.How should we treat our rivals after a successful debate?",
+          "options": [
+            "A) Try to make peace with them",
+            "B) Try to make up the differences",
+            "C) Invite them to the ring next time",
+            "D) Acknowledge their contribution"
+          ],
           "answer": "",
           "analysis": ""
         }

@@ -337,36 +337,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46. What does Dr. Sadoway think of energy storage? A. It involves the application of sophisticated technology. B. It is the direction energy development should follow. C. It will prove to be a profitable business. D. It is a technology benefiting everyone.",
-          "options": [],
+          "stem": "46. What does Dr. Sadoway think of energy storage?",
+          "options": [
+            "A) It involves the application of sophisticated technology",
+            "B) It is the direction energy development should follow",
+            "C) It will prove to be a profitable business",
+            "D) It is a technology benefiting everyone"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "47. What is most likely to happen when advanced batteries become widely used? A. Mobile-first lifestyles will become popular. B. The globalization process will be accelerated. C. Communications will take more diverse forms. D. The world will undergo revolutionary changes.",
-          "options": [],
+          "stem": "47. What is most likely to happen when advanced batteries become widely used?",
+          "options": [
+            "A) Mobile-first lifestyles will become popular",
+            "B) The globalization process will be accelerated",
+            "C) Communications will take more diverse forms",
+            "D) The world will undergo revolutionary changes"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "48. In some rural communities of emerging economies, people have begun to ___________. A. find digital devices simply indispensable B. communicate primarily by mobile phone C. light their homes with stored solar energy D. distribute power with wires and wooden poles",
-          "options": [],
+          "stem": "48. In some rural communities of emerging economies, people have begun to ___________",
+          "options": [
+            "A) find digital devices simply indispensable",
+            "B) communicate primarily by mobile phone",
+            "C) light their homes with stored solar energy",
+            "D) distribute power with wires and wooden poles"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "49. Utility companies have begun to realize that battery technologies ___________. A. benefit their business B. transmit power faster C. promote innovation D. encourage competition",
-          "options": [],
+          "stem": "49. Utility companies have begun to realize that battery technologies ___________",
+          "options": [
+            "A) benefit their business",
+            "B) transmit power faster",
+            "C) promote innovation",
+            "D) encourage competition"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50. What does the author imply about the centralized electric grid? A. It might become a thing of the past. B. It might turn out to be a \"prosumer\". C. It will be easier to operate and maintain. D. It will have to be completely transformed.",
-          "options": [],
+          "stem": "50. What does the author imply about the centralized electric grid?",
+          "options": [
+            "A) It might become a thing of the past",
+            "B) It might turn out to be a \"prosumer\"",
+            "C) It will be easier to operate and maintain",
+            "D) It will have to be completely transformed"
+          ],
           "answer": "",
           "analysis": ""
         }
@@ -380,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51. Du Bois was opposed to the use of race as ________. A. a basis for explaining human genetic diversity B. an aid to understanding different populations C. an explanation for social and cultural differences D. a term to describe individual human characteristics",
-          "options": [],
+          "stem": "51. Du Bois was opposed to the use of race as ________",
+          "options": [
+            "A) a basis for explaining human genetic diversity",
+            "B) an aid to understanding different populations",
+            "C) an explanation for social and cultural differences",
+            "D) a term to describe individual human characteristics"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52. The study by Svante Pääbo served as an example to show ________. A. modern genetics research is likely to fuel racial conflicts B. race is a poorly defined marker of human genetic diversity C. race as a biological term can explain human genetic diversity D. genetics research should consider social and cultural variables",
-          "options": [],
+          "stem": "52. The study by Svante Pääbo served as an example to show ________",
+          "options": [
+            "A) modern genetics research is likely to fuel racial conflicts",
+            "B) race is a poorly defined marker of human genetic diversity",
+            "C) race as a biological term can explain human genetic diversity",
+            "D) genetics research should consider social and cultural variables"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53. The example of the disease cystic fibrosis underdiagnosed in people of African ancestry demonstrates that ________. A. it is absolutely necessary to put race aside in making diagnosis B. it is important to include social variables in genetics research C. racial categories for genetic diversity could lead to wrong clinical predictions D. discrimination against black people may cause negligence in clinical treatment",
-          "options": [],
+          "stem": "53. The example of the disease cystic fibrosis underdiagnosed in people of African ancestry demonstrates that ________",
+          "options": [
+            "A) it is absolutely necessary to put race aside in making diagnosis",
+            "B) it is important to include social variables in genetics research",
+            "C) racial categories for genetic diversity could lead to wrong clinical predictions",
+            "D) discrimination against black people may cause negligence in clinical treatment"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54. What is Yudell's suggestion to scientists? A. They be more precise with the language they use. B. They refrain from using politically sensitive terms. C. They throw out irrelevant concepts in their research. D. They examine all possible variables in their research.",
-          "options": [],
+          "stem": "54. What is Yudell's suggestion to scientists?",
+          "options": [
+            "A) They be more precise with the language they use",
+            "B) They refrain from using politically sensitive terms",
+            "C) They throw out irrelevant concepts in their research",
+            "D) They examine all possible variables in their research"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55. What can be inferred from Yudell's remark in the last paragraph? A. Clinging to racism prolongs inequity and discrimination. B. Physiological disparities are quite striking among races. C. Doing away with racial discrimination is challenging. D. Racial terms are still useful in certain fields of study.",
-          "options": [],
+          "stem": "55. What can be inferred from Yudell's remark in the last paragraph?",
+          "options": [
+            "A) Clinging to racism prolongs inequity and discrimination",
+            "B) Physiological disparities are quite striking among races",
+            "C) Doing away with racial discrimination is challenging",
+            "D) Racial terms are still useful in certain fields of study"
+          ],
           "answer": "",
           "analysis": ""
         }

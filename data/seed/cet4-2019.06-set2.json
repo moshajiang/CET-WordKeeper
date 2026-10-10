@@ -405,22 +405,37 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51. What does the global study tell us about people’s height in the last hundred years? A）There is a remarkable difference across continents. B）There has been a marked increase in most countries. C）The increase in people’s height has been quickening. D）The increase in women’s height is bigger than in men’s.",
-          "options": [],
+          "stem": "51. What does the global study tell us about people’s height in the last hundred years?",
+          "options": [
+            "A) There is a remarkable difference across continents",
+            "B) There has been a marked increase in most countries",
+            "C) The increase in people’s height has been quickening",
+            "D) The increase in women’s height is bigger than in men’s"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52. What does James Bentham say about genetics in the increase of people’s height? A）It counts less than generally thought. B）It outweighs nutrition and healthcare. C）It impacts more on an individual than on population. D）It plays a more significant role in females than in males.",
-          "options": [],
+          "stem": "52. What does James Bentham say about genetics in the increase of people’s height?",
+          "options": [
+            "A) It counts less than generally thought",
+            "B) It outweighs nutrition and healthcare",
+            "C) It impacts more on an individual than on population",
+            "D) It plays a more significant role in females than in males"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53. What does Elio Riboli say about taller people? A）They tend to live longer. B）They enjoy an easier life. C）They generally risk fewer fatal diseases. D）They have greater expectations in life.",
-          "options": [],
+          "stem": "53. What does Elio Riboli say about taller people?",
+          "options": [
+            "A) They tend to live longer",
+            "B) They enjoy an easier life",
+            "C) They generally risk fewer fatal diseases",
+            "D) They have greater expectations in life"
+          ],
           "answer": "",
           "analysis": ""
         },

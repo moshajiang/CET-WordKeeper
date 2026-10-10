@@ -337,36 +337,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "46. What do chain smokers think of cigarette packaging? A. Fancy packaging can help to engage new smokers. B. It has little to do with the quality or taste of cigarettes. C. Plain packaging discourages non-smokers from taking up smoking. D. It has little impact on their decision whether or not to quit smoking.",
-          "options": [],
+          "stem": "46. What do chain smokers think of cigarette packaging?",
+          "options": [
+            "A) Fancy packaging can help to engage new smokers",
+            "B) It has little to do with the quality or taste of cigarettes",
+            "C) Plain packaging discourages non-smokers from taking up smoking",
+            "D) It has little impact on their decision whether or not to quit smoking"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "47. What has the UK government agreed to do concerning tobacco packaging? A. Pass a law to standardise cigarette packaging. B. Rid cigarette cartons of all advertisements. C. Subsidise companies to adopt plain packaging. D. Reclassify cigarettes according to packaging.",
-          "options": [],
+          "stem": "47. What has the UK government agreed to do concerning tobacco packaging?",
+          "options": [
+            "A) Pass a law to standardise cigarette packaging",
+            "B) Rid cigarette cartons of all advertisements",
+            "C) Subsidise companies to adopt plain packaging",
+            "D) Reclassify cigarettes according to packaging"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "48. What has happened in Australia where plain packaging is implemented? A. Premature death rates resulting from smoking have declined. B. The number of smokers has dropped more sharply than in the UK. C. The sales of tobacco substitutes have increased considerably. D. Cigarette sales have been falling far more quickly than in the UK.",
-          "options": [],
+          "stem": "48. What has happened in Australia where plain packaging is implemented?",
+          "options": [
+            "A) Premature death rates resulting from smoking have declined",
+            "B) The number of smokers has dropped more sharply than in the UK",
+            "C) The sales of tobacco substitutes have increased considerably",
+            "D) Cigarette sales have been falling far more quickly than in the UK"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "49. Why has it taken so long for the UK government to consider plain packaging? A. Prime Minister Cameron has been reluctant to take action. B. There is strong opposition from veteran nicotine addicts. C. Many Members of Parliament are addicted to smoking. D. Pressure from tobacco manufacturers remains strong.",
-          "options": [],
+          "stem": "49. Why has it taken so long for the UK government to consider plain packaging?",
+          "options": [
+            "A) Prime Minister Cameron has been reluctant to take action",
+            "B) There is strong opposition from veteran nicotine addicts",
+            "C) Many Members of Parliament are addicted to smoking",
+            "D) Pressure from tobacco manufacturers remains strong"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "50. What did Cameron say about chocolate oranges at supermarket checkouts? A. They fueled a lot of controversy. B. They attracted a lot of smokers. C. They made more British people obese. D. They had certain ingredients missing.",
-          "options": [],
+          "stem": "50. What did Cameron say about chocolate oranges at supermarket checkouts?",
+          "options": [
+            "A) They fueled a lot of controversy",
+            "B) They attracted a lot of smokers",
+            "C) They made more British people obese",
+            "D) They had certain ingredients missing"
+          ],
           "answer": "",
           "analysis": ""
         }
@@ -380,36 +405,61 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "51. What is the author's opinion of going to university? A. It is worthwhile after all. B. It is simply a waste of time. C. It is hard to say whether it is good or bad. D. It is too expensive for most young people.",
-          "options": [],
+          "stem": "51. What is the author's opinion of going to university?",
+          "options": [
+            "A) It is worthwhile after all",
+            "B) It is simply a waste of time",
+            "C) It is hard to say whether it is good or bad",
+            "D) It is too expensive for most young people"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "52. What does the author say about the employment situation of British university graduates? A. Few of them are satisfied with the jobs they are offered. B. It usually takes a long time for them to find a decent job. C. Graduates from elite universities usually can get decent jobs. D. Most of them take jobs which don't require a college degree.",
-          "options": [],
+          "stem": "52. What does the author say about the employment situation of British university graduates?",
+          "options": [
+            "A) Few of them are satisfied with the jobs they are offered",
+            "B) It usually takes a long time for them to find a decent job",
+            "C) Graduates from elite universities usually can get decent jobs",
+            "D) Most of them take jobs which don't require a college degree"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "53. What does the author say is important for university students besides classroom instruction? A. Making sure to obtain an upper-second class degree. B. Practical skills they will need in their future careers. C. Interactions among themselves outside the classroom. D. Developing independent and creative thinking abilities.",
-          "options": [],
+          "stem": "53. What does the author say is important for university students besides classroom instruction?",
+          "options": [
+            "A) Making sure to obtain an upper-second class degree",
+            "B) Practical skills they will need in their future careers",
+            "C) Interactions among themselves outside the classroom",
+            "D) Developing independent and creative thinking abilities"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "54. What is said to be an advantage of going to university? A. Learning how to take risks in an ever-changing world. B. Meeting people who will be helpful to you in the future. C. Having opportunities of playing a leading role in society. D. Gaining up-to-date knowledge in science and technology.",
-          "options": [],
+          "stem": "54. What is said to be an advantage of going to university?",
+          "options": [
+            "A) Learning how to take risks in an ever-changing world",
+            "B) Meeting people who will be helpful to you in the future",
+            "C) Having opportunities of playing a leading role in society",
+            "D) Gaining up-to-date knowledge in science and technology"
+          ],
           "answer": "",
           "analysis": ""
         },
         {
           "qtype": "choice",
-          "stem": "55. What can we infer from the last paragraph? A. It is natural for students to make complaints about university education. B. Few students are willing to bear the burden of debt incurred at university. C. University education is becoming attractive to students who can afford it. D. The prestige of the university influences employers' recruitment decisions.",
-          "options": [],
+          "stem": "55. What can we infer from the last paragraph?",
+          "options": [
+            "A) It is natural for students to make complaints about university education",
+            "B) Few students are willing to bear the burden of debt incurred at university",
+            "C) University education is becoming attractive to students who can afford it",
+            "D) The prestige of the university influences employers' recruitment decisions"
+          ],
           "answer": "",
           "analysis": ""
         }

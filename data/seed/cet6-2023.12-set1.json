@@ -406,7 +406,12 @@
         {
           "qtype": "choice",
           "stem": "51.What would we expect an editorial board of an academic journal to exhibit in view of its important\nresponsibilities?",
-          "options": [],
+          "options": [
+            "A) Insight.",
+            "B) Expertise.",
+            "C) Integrity.",
+            "D) Diversity."
+          ],
           "answer": "",
           "analysis": ""
         },

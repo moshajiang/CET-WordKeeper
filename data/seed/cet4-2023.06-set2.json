@@ -454,7 +454,12 @@
         {
           "qtype": "choice",
           "stem": "55.What does the author think of the traditional school year in the U.S. today?",
-          "options": [],
+          "options": [
+            "A) Well-grounded.",
+            "B) Culture-bound.",
+            "C) Outdated.",
+            "D) Welcomed."
+          ],
           "answer": "",
           "analysis": ""
         }
