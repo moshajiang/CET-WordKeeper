@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2016,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Find a Job or Start My Own Business?\nUpon graduation, some students choose to find a job while others prefer to start a business of their own. As for me, I would find a job first rather than start a business right away.\nMy reasons are as follows. To begin with, working for a company enables me to accumulate experience, skills and connections, all of which are essential for running a business in the future. In addition, starting a business involves considerable risks: most start-ups fail within a few years, and a fresh graduate seldom has the capital or the management expertise to survive the competition. Finally, a few years of employment will help me understand the market and test whether my ideas really work, so that if I start a business later, it will stand on solid ground.\nAdmittedly, running my own business offers independence and the thrill of creation. However, without experience and resources, such a dream can easily turn into a burden.\nIn conclusion, I will find a job first, prepare myself patiently, and start my own business when the time is ripe.",
+   "note": "结构同二选一题型：亮明选择—三点理由（积累经验/风险高/检验想法）—让步反驳—总结。可复用：accumulate experience, skills and connections / stand on solid ground / turn into a burden / when the time is ripe。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "当有人实施犯罪行为时，我们总是希望惩罚与罪行相称。但说到最残忍的罪行之一——动物斗殴——事情却很少那样收场。斗狗的受害者为了利润和“体育娱乐”而被折磨、杀害，而它们的施虐者造成的痛苦贯穿受害者一生，自己却常常只受到极轻的刑罚。在联邦法庭被定罪的动物斗殴者中，大约一半只得到缓刑。\n在起诉动物斗殴者方面已有一些进展。但联邦法官在确定刑罚时，往往严重依赖《美国量刑指南》，而就动物斗殴而言，这些指南已经过时，而且极不完备。\n制定这些量刑指南的美国量刑委员会正在重新审视它们，提议把最低刑期从 6-12 个月提高到 21-27 个月。这是朝着正确方向迈出的一步，但我们希望量刑委员会对指南作出进一步的修改。\n与此同时，我们正与动物保护者和州及联邦议员合作，在全国范围内加强反虐待动物的法律，并支持那些帮助不堪重负的动物收容所的法律与政策——正是这些收容所在照料动物斗殴的受害者。这种帮助至关重要，因为照料受害动物的高昂成本，正是许多人一开始就不愿介入虐待案件的主要原因。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "K",
+     "analysis": "副词修饰动词：说到动物斗殴，事情“很少”那样收场（rarely work out that way），与下文“一半只判缓刑”呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "O",
+     "analysis": "过去分词与 killed 并列：斗狗受害者被“折磨”、杀害（tortured and killed）以牟利。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "J",
+     "analysis": "形容词作定语：施虐者造成一生痛苦却只受“极轻的”刑罚（a minimal sentence），与下文“只判缓刑”一致。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "D",
+     "analysis": "动词：法官在“确定”刑罚时依赖量刑指南（when they determine penalties）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "G",
+     "analysis": "形容词与 outdated 并列：这些指南过时且“极不完备”（extremely inadequate），由下文提高最低刑期可定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "B",
+     "analysis": "主语三单谓语动词：量刑委员会“制定”这些指南（which creates these sentencing guidelines）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "E",
+     "analysis": "固定搭配 a step in the right direction：“朝正确方向迈出的一步”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "M",
+     "analysis": "动词不定式：与议员合作在全国“加强”反虐待动物法（strengthen anti-cruelty laws）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "L",
+     "analysis": "复数名词：帮助不堪重负的动物“收容所”（animal shelters），由 that care for animal fighting victims 可定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "C",
+     "analysis": "副词修饰形容词：这种帮助“至关重要”（critically important），由“照料成本高昂”呼应。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "当工作变成一场游戏\n[A] 是什么激励员工做好自己的工作？对有些人来说是与同事的竞争，对另一些人来说是对奖励的期待，而对少数幸运的人来说，是解决问题本身的纯粹乐趣。\n[B] 越来越多的公司正通过一种被称为“游戏化”的东西直接利用这些欲望：本质上是把工作变成游戏。在美国宾夕法尼亚大学沃顿商学院讲授游戏化的专家凯文·韦尔巴赫解释说：“游戏化就是理解是什么让游戏引人入胜、游戏设计师如何在游戏中创造出色的体验，并把这些经验应用到工作场所和教育等其他场景中。”\n[C] 它可能意味着在数字排行榜上监控员工的工作效率并给赢家发奖品，也可能意味着为完成特定任务的员工颁发数字徽章或星星，还可能意味着通过游戏平台训练员工如何工作。从谷歌、欧莱雅到 IBM 再到富国银行，众所周知这些公司都在工作场所使用了一定程度的游戏化，而且越来越多的公司正在加入。最近的一份报告显示，全球游戏化市场规模将从 2015 年的 16.5 亿美元增长到 2020 年的 111 亿美元。\n[D] 韦尔巴赫说，游戏化的概念并不全新。公司、营销人员和教师长久以来一直在寻找有趣的方式来调动人们寻求奖励或好胜的天性。他补充说，Cracker Jacks 一个多世纪以来一直在其零食中放入小奖品来“游戏化”；世纪之交的钢铁巨头查尔斯·施瓦布据说常走进工厂，把上一班生产的钢铁吨数写在车间地面上，以此激励下一班工人超越前一班。\n[E] 但韦尔巴赫说，“游戏化”这个词以及这一概念广泛而有意识的应用，大约五年前才真正开始。部分由于电子游戏的缘故，如今进入职场的一代人对工作游戏化的想法特别容易接受。他说：“在发达世界的许多地方，绝大多数年轻人是玩电子游戏长大的，玩这类游戏的成年人比例也越来越高。我们正处在这样一个时点。”\n[F] 近年来涌现出一批公司——如 GamEffective、Bunchball 和 Badgeville——为企业提供游戏化平台。最有效的平台把员工的日常任务变成一段丰富冒险叙事的一部分。“让游戏之所以成为游戏的，是玩家真的在乎结果，”韦尔巴赫说。“关键在于理解是什么激励了这批玩家，这需要对心理学有所理解。”\n[G] 韦尔巴赫说，有些人的动力来自竞争，销售人员常属此类。对他们来说，合适的游戏化可能是把销售比拼变成与团队成员的竞赛，配上一块实时显示谁在领先的数字排行榜。另一些人则更容易被协作与社交体验激励。韦尔巴赫研究过的一家公司用游戏化营造社区感、提振员工士气：员工登录电脑时，会看到一位同事的照片，并被要求猜出那个人是谁。\n[H] 游戏化并不一定非得数字化。莫妮卡·科梅蒂经营着一家把员工培训游戏化的公司。有时会用到技术，但常常用不到。她最近为一家销售培训公司设计了一套“追风暴”主题的游戏化方案：员工组成“追风队”，在风暴主题的教育演练中竞赛，赢取各种奖励。“奖励不一定非得是实物，”科梅蒂说。“奖励可以是弹性工作时间。”另一个关于工资法的培训用了《白雪公主与七个小矮人》的主题。“白雪公主”人人可用，但“小矮人”仍受版权保护，于是科梅蒂发明了发音相近的角色（Grumpy Gus、Dopey Dan）来讲解具体的工资法原则。\n[I] 科梅蒂说，有些人并不天然适应游戏化的工作环境。据她的经验，身居权力位置的人，以及金融或工程行业的人，往往不喜欢这个词。“如果我们在为工程师做设计，我根本不会说‘游戏’，”科梅蒂说。“我会说‘模拟’，会说‘能够解决这个问题’。”\n[J] 韦尔巴赫警告说，游戏化“不是灵丹妙药”。一个考虑不足或与玩家不匹配的游戏化策略，或许能让人兴奋一阵子，却无法长期激励人心。它还可能带有剥削性，尤其是用在弱势群体身上。对那些急需工作、又深知自己随时可被替换的低薪工人来说，游戏化可能感觉更像《饥饿游戏》。韦尔巴赫举了加利福尼亚州阿纳海姆几家迪士尼酒店的例子：它们用大型数字排行榜显示洗衣工之间谁干得更快。有些员工觉得排行榜激励人心，对另一些人来说恰恰相反：有人开始连厕所都不去了，生怕效率一降就被解雇；怀孕的员工则艰难地撑着。《洛杉矶时报》的一篇报道中，一名员工把那块排行榜称为“数字皮鞭”。“它实际上对士气和绩效产生了非常负面的影响，”韦尔巴赫说。\n[K] 尽管如此，他说，随着越来越多熟悉数字游戏的结构与表达的人进入职场，游戏化只会越来越流行。“我们远未到达顶峰，”科梅蒂也同意。“没有理由认为它会消失。”",
+   "questions": [
+    {
+     "stem": "36.Some famous companies are already using gamification and more are trying to do the same.",
+     "answer": "C",
+     "analysis": "该段：从谷歌、欧莱雅到 IBM、富国银行“都在使用游戏化”，且“越来越多的公司正在加入”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.Gamification is not a miracle cure for all workplaces as it may have negative results.",
+     "answer": "J",
+     "analysis": "该段：游戏化“不是灵丹妙药”（not a magic bullet），迪士尼酒店的排行榜被称作“数字皮鞭”，对士气和绩效产生负面影响。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.To enhance morale, one company asks its employees to identify their fellow workers when starting their computers.",
+     "answer": "G",
+     "analysis": "该段：一家公司用游戏化“提振员工士气”——员工登录电脑时看到同事照片，要“猜出那个人是谁”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.The idea of gamification was practiced by some businesses more than a century ago.",
+     "answer": "D",
+     "analysis": "该段：Cracker Jacks 一个多世纪前就往零食里放奖品“游戏化”，钢铁巨头施瓦布在地面上写吨数激励下一班。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.There is reason to believe that gamification will be here to stay.",
+     "answer": "K",
+     "analysis": "该段：游戏化“只会越来越流行”、“远未到达顶峰”、“没有理由认为它会消失”——即会长期存在。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.Video games contributed in some ways to the wide application of gamification.",
+     "answer": "E",
+     "analysis": "该段：“部分由于电子游戏的缘故”，进入职场的一代对工作游戏化特别容易接受。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.When turning work into a game, it is necessary to understand what makes games interesting.",
+     "answer": "B",
+     "analysis": "该段：游戏化就是“理解是什么让游戏引人入胜”，再把经验应用到工作场所——即先弄懂游戏的趣味何在。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43.Gamification in employee training does not always need technology.",
+     "answer": "H",
+     "analysis": "该段：“游戏化并不一定非得数字化”（does not have to be digital），培训常不用技术。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.The most successful gamification platforms transform daily work assignments into fun experiences.",
+     "answer": "F",
+     "analysis": "该段：“最有效的平台把员工的日常任务变成一段丰富冒险叙事的一部分”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.It is necessary to use terms other than “gamification” for some professions.",
+     "answer": "I",
+     "analysis": "该段：为工程师做设计时“根本不会说‘游戏’”，要说“模拟”——即某些职业需换用其他术语。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "最近我参加了几场会议，讨论如何留住学生、防止年轻教员跳槽。\n高等教育似乎已经成了一个“开会产业”，其任务是去“解决”问题——无论是真问题还是想象出来的问题。我在三所不同学院担任教授时的所见是：教育年轻人和成年学生的实际问题在加深，而雇来的人——不是去教书，而是去开会——却显著增加。每个新问题都会给一位行政“修补匠”创造一个新岗位。拿我们的“教学卓越中心”来说，与名称相反，它只是一个交流如何在课堂和在线课程中使用技术的信息中心。这是过去 30 年里成倍繁殖的那类行政骗局。\n对此我提出一个简单的主张：我们的许多问题——出勤率、学业成功、学生的幸福与健康——都可以通过削减官僚机制和会议、转而雇用一大批好教师来改善。如果我们用课堂教师替换掉一半的行政人员，我们或许真的能让多数班级恢复到每师 20 名学生以下的规模。那样的环境里，师生才真正彼此了解。\n教师必须能够按自己的方式教学——课程应当足够灵活，让他们能用自己的才华去达成课程目标。此外，应当允许他们教学，并因教得好而获得奖励。教师不是那些擅长研究、又被研究占据身心、碰巧出现在教室里的人。好的教学与研究并不互斥，但它们也不会自动相伴。教学是一门艺术和手艺，需要天赋与练习；不是随便什么人都能教好的。令人十分困惑的是，尽管几乎每个当过学生的人都能分辨自己最好和最差的老师，人们却认识不到这一点。",
+   "questions": [
+    {
+     "stem": "46.What does the author say about present-day universities?",
+     "answer": "D",
+     "analysis": "第二段：实际问题“在加深”，而雇来的人“不是去教书而是去开会”——即高校缺乏解决日益加深问题的（教学）人才。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47.According to the author, what kind of people do universities lack most?",
+     "answer": "A",
+     "analysis": "第三段：作者主张“雇用一大批好教师”（hiring an army of good teachers）来改善问题——最缺的是好老师。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48.What does the author imply about the classes at present?",
+     "answer": "D",
+     "analysis": "第三段：若以教师替换一半行政人员，“多数班级能恢复到每师 20 人以下”——反推现在班级远大于理想规模。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49.What does the author think of teaching ability?",
+     "answer": "A",
+     "analysis": "第四段：“教学是一门艺术和手艺，需要天赋与练习”（an art and a craft, talent and practice）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50.What is the author’s suggestion for improving university teaching?",
+     "answer": "B",
+     "analysis": "第三、四段：削减会议、雇用更多课堂教师，且“教师必须能按自己的方式教学”——即招更多老师并允许他们自主施教。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "吃得少还能乐在其中的秘诀，可能多年前就被麦当劳破解了。根据康奈尔大学食品与品牌实验室的一项新研究，小小的非食物奖励——比如麦当劳开心乐园餐里的玩具——能像食物一样刺激大脑中的奖励中枢。\n由马丁·雷曼领导的研究人员做了一系列实验，想看看当一份较小的餐食搭配一件非食物物品时，人们会不会选择小份。\n他们发现，搭配奖品时，孩子和成人中的多数都选择了一半份量的餐食。两种选择的价格相同。\n更有意思的是，仅仅是对未来奖励的许诺，就足以让成年人选择小份。所用的奖品之一是一张彩票——奖金为 10 美元、50 美元或 100 美元——它在劝人少吃方面与实物奖品的效力相当。\n“参与者愿意用一部分食物，去换取一个相对小额金钱奖的可能性，这很有意思，”雷曼说。\n他推测，正是这些无形奖励中的情感成分让它们有效。事实上，表述模糊的中奖可能性，比给出明确赔率的选择更有效。\n“对这一发现的一种解释是：可能性的奖励也许比确定性的奖励更能激发情绪，”雷曼说。“赢的不确定性通过情绪上的‘兴奋’增加了吸引力和诱惑力。获奖的可能性还会带来一种希望的状态——这种状态本身就是心理上的奖赏。”换句话说，人们爱赌博是有原因的。\n这些知识如何用来帮助人们吃得更健康？\n一种可能是一个附带温泉周末抽奖机会的健康套餐。或者，半份餐的奖励可以是一份只能在未来某天领取的半份甜点。这会把你带回餐厅——也让你少吃一点。",
+   "questions": [
+    {
+     "stem": "51.What do we learn about McDonald’s inclusion of toys in its Happy Meals?",
+     "answer": "A",
+     "analysis": "首段：开心乐园餐的玩具“能像食物一样刺激大脑奖励中枢”，让人少吃且开心——对儿童来说是一种愉快的减食方式。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52.What is the finding of the researchers led by Martin Reimann?",
+     "answer": "D",
+     "analysis": "第三段：“搭配奖品时，孩子和成人中的多数都选择了半份餐食”（the majority of both kids and adults opted for a half-sized portion），且两种选择同价。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53.What is most interesting in Martin Reimann’s finding?",
+     "answer": "B",
+     "analysis": "第四段：“更有意思的是，仅凭对未来奖励的许诺，就足以让成年人选择小份”（the promise of a future reward was enough）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54.How does Martin Reimann interpret his finding?",
+     "answer": "A",
+     "analysis": "第六段：他推测“正是这些无形奖励中的情感成分让它们有效”（the emotional component of these intangible prizes）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55.What can we infer from Martin Reimann’s finding?",
+     "answer": "C",
+     "analysis": "末段：半份甜点作为“未来某天领取”的奖励，“这会把你带回餐厅——也让你少吃一点”，即既让人少吃又有助餐厅生意。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "In Chinese culture, yellow is an important color because it has unique symbolic meaning. In feudal society, it symbolized the rulers' power and authority. At that time, yellow was exclusively used by the emperor: the royal palaces were all painted yellow and the imperial robes were always yellow, while ordinary people were forbidden to wear yellow clothes. In China, yellow is also a symbol of harvest. When the crops ripen in autumn, the fields turn golden yellow, and people celebrate the harvest with great joy.",
+   "note": "难点：独特的象征意义（unique symbolic meaning）、封建社会（feudal society）、权力和权威（power and authority）、专为皇帝使用（exclusively used by the emperor）、皇袍（imperial robes）、禁止（be forbidden to do）、收获的象征（a symbol of harvest）、一片金黄（turn golden yellow）、兴高采烈（with great joy）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T10:59:40.025Z"
+}
