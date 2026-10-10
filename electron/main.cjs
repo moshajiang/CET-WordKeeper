@@ -348,10 +348,12 @@ function registerIpc() {
   });
 
   ipcMain.handle('words:remove', (_e, word) => {
+    // 返回是否真的删到了行：传错参数（如传 id）时会静默无操作，这里让调用方看得出来
+    const had = q('SELECT id FROM user_word WHERE word = ?', [word]).length > 0;
     run('DELETE FROM user_word WHERE word = ?', [word]);
     run('DELETE FROM word_hit WHERE word = ?', [word]);
     persist();
-    return { ok: true };
+    return { ok: true, removed: had };
   });
 
   ipcMain.handle('words:setStatus', (_e, word, status) => {
@@ -363,9 +365,10 @@ function registerIpc() {
   });
 
   ipcMain.handle('words:saveNote', (_e, word, note) => {
+    const had = q('SELECT id FROM user_word WHERE word = ?', [word]).length > 0;
     run('UPDATE user_word SET note = ? WHERE word = ?', [note, word]);
     persist();
-    return { ok: true };
+    return { ok: true, updated: had };
   });
 
   ipcMain.handle('words:all', () => {

@@ -407,19 +407,63 @@ const refShown = await js(`(() => { const el = document.querySelector('.er-ref-t
 check('写作范文可离线展开查看', refBtn && refShown.includes('Digital literacy'), '按钮=' + refBtn + ' 内容="' + refShown + '"');
 
 {
+  // ① 生词笔记：写入 → 读回 → 覆盖更新（API 契约：saveNote/removeWord 收「单词字符串」而非 id）
+  const wl0 = await js('window.keeper.listWords()');
+  const target = (wl0 && wl0[0]) ? wl0[0] : null;
+  if (target) {
+    const note1 = await js(`window.keeper.saveNote(${JSON.stringify(target.word)}, 'e2e 笔记：注意与 intervene 拼写相近')`);
+    const wd1 = await js(`window.keeper.wordDetail(${JSON.stringify(target.word)})`);
+    check('生词笔记写入并读回', note1.ok === true && note1.updated === true && String((wd1.userWord || {}).note || '').includes('e2e 笔记'), 'note=' + String((wd1.userWord || {}).note || '').slice(0, 30));
+    const note2 = await js(`window.keeper.saveNote(${JSON.stringify(target.word)}, 'e2e 笔记（更新）')`);
+    const wd2 = await js(`window.keeper.wordDetail(${JSON.stringify(target.word)})`);
+    check('生词笔记可覆盖更新', note2.ok === true && note2.updated === true && String((wd2.userWord || {}).note || '').includes('更新'), 'note=' + String((wd2.userWord || {}).note || '').slice(0, 30));
+  } else {
+    check('生词笔记写入并读回', false, '生词本为空，前置用例未建立数据');
+  }
+
+  // ② 删除生词：删除 → 列表不再包含 → 重复删除不改动
+  if (target) {
+    const del = await js(`window.keeper.removeWord(${JSON.stringify(target.word)})`);
+    const wl1 = await js('window.keeper.listWords()');
+    check('生词可从生词本删除', del.ok === true && del.removed === true && !wl1.some((w) => w.word === target.word), '剩余 ' + wl1.length + ' 条');
+    const del2 = await js(`window.keeper.removeWord(${JSON.stringify(target.word)})`);
+    check('重复删除幂等（不报错且不改动）', del2.ok === true && del2.removed === false, 'removed=' + del2.removed);
+    // 恢复状态，避免影响后续断言
+    await js(`window.keeper.addWord(${JSON.stringify(target.word)})`);
+  }
+
+  // ③ AI 语法分析：未配置 Key 时必须优雅降级
+  const gr = await js(`window.keeper.grammar('The quick brown fox jumps over the lazy dog.')`);
+  check('未配置 AI 时语法分析优雅降级', gr.ok === false && gr.error === 'no_key', 'error=' + gr.error);
+
+  // ④ 三个页面渲染冒烟（此前只测了生词本/知识库/设置/阅读器）
+  await js(`location.hash = '#/library'`); await sleep(1200);
+  const libCards = await js(`document.querySelectorAll('.exam-grid .exam-card').length`);
+  check('真题库页面渲染出套题卡片', libCards >= 10, libCards + ' 张卡片');
+
+  await js(`location.hash = '#/'`); await sleep(1200);
+  const homeStat = await js(`document.querySelectorAll('.stat-row .stat-box').length`);
+  check('首页渲染统计区', homeStat >= 1, homeStat + ' 个统计块');
+
+  await js(`location.hash = '#/review'`); await sleep(1500);
+  const revTitle = await js(`(() => { const el = document.querySelector('.review-wrap .page-title, .page-title'); return el ? el.textContent.trim() : ''; })()`);
+  check('复习页面渲染', revTitle.length > 0, '标题="' + revTitle + '"');
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。
-const rootDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
-const seedDir = path.join(rootDir, 'data', 'seed');
-const ovDir = path.join(rootDir, 'data', 'ai-answers');
+{
+const dRootDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+const dSeedDir = path.join(dRootDir, 'data', 'seed');
+const dOvDir = path.join(dRootDir, 'data', 'ai-answers');
 const bankBad = [], optBad = [], refBad = [], pollBad = [], ansOutOfBank = [];
 let seedCount = 0, qCount = 0, ansCount = 0, ansMissing = 0;
-for (const f of fs.readdirSync(seedDir).filter((x) => x.endsWith('.json'))) {
+for (const f of fs.readdirSync(dSeedDir).filter((x) => x.endsWith('.json'))) {
   const key = f.replace('.json', '');
-  const s = JSON.parse(fs.readFileSync(path.join(seedDir, f), 'utf8'));
+  const s = JSON.parse(fs.readFileSync(path.join(dSeedDir, f), 'utf8'));
   seedCount++;
-  const ovPath = path.join(ovDir, key + '.json');
+  const ovPath = path.join(dOvDir, key + '.json');
   const ov = fs.existsSync(ovPath) ? JSON.parse(fs.readFileSync(ovPath, 'utf8')) : null;
   for (const p of s.passages || []) {
     for (const q of p.questions || []) {
