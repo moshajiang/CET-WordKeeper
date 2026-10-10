@@ -17,6 +17,7 @@ const one = (s, p = []) => { const st = db.prepare(s); st.bind(p || []); const o
 const all = (s, p = []) => { const st = db.prepare(s); st.bind(p || []); const o = []; while (st.step()) o.push(st.getAsObject()); st.free(); return o; };
 
 const OBJ = ['cloze', 'match', 'reading'];
+const cols = new Set(all('PRAGMA table_info(passage)').map((c) => c.name));
 let fail = 0;
 const line = (ok, msg) => { console.log(`${ok ? '✓' : '✗'} ${msg}`); if (!ok) fail++; };
 
@@ -35,6 +36,13 @@ const pct = (a, b) => b ? (a / b * 100).toFixed(1) : '0.0';
 line(Number(pct(qAns, qTotal)) >= MIN, `客观题答案覆盖 ${qAns}/${qTotal} = ${pct(qAns, qTotal)}%（门槛 ${MIN}%）`);
 line(Number(pct(qAna, qTotal)) >= MIN, `客观题解析覆盖 ${qAna}/${qTotal} = ${pct(qAna, qTotal)}%）`);
 line(Number(pct(pTr, pTotal)) >= MIN, `客观篇章翻译覆盖 ${pTr}/${pTotal} = ${pct(pTr, pTotal)}%）`);
+
+// 主观题：写作范文 / 翻译参考译文
+const hasRef = cols.has('reference');
+const rTotal = hasRef ? one(`SELECT COUNT(*) n FROM passage WHERE section IN ('writing','translation')`).n : 0;
+const rDone = hasRef ? one(`SELECT COUNT(*) n FROM passage WHERE section IN ('writing','translation')
+  AND reference IS NOT NULL AND LENGTH(TRIM(reference))>50`).n : 0;
+if (rTotal) line(Number(pct(rDone, rTotal)) >= MIN, `写作范文/翻译参考译文覆盖 ${rDone}/${rTotal} = ${pct(rDone, rTotal)}%）`);
 
 console.log('\n===== 结构校验 =====');
 const badLetter = all(`SELECT p.section, q.id, q.stem, q.answer FROM question q JOIN passage p ON p.id=q.passage_id

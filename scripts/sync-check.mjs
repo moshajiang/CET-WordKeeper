@@ -41,6 +41,32 @@ const marks = {
   hits: old.exec('SELECT COUNT(*) FROM word_hit')[0].values[0][0],
   note: old.exec("SELECT note FROM user_word WHERE word='intervene'")[0].values[0][0],
 };
+// ---- 1b) 再模拟「老用户库还没有预置内容」----
+// 老用户库里这批考次早就存在，所以「补缺考次」逻辑不会碰它们；
+// 内容回填（backfillContent）必须把答案/解析/翻译补进这些空字段，并把新补出的题目加回来。
+const tgt = old.exec(`SELECT p.exam_id AS id, COUNT(*) AS n FROM question q JOIN passage p ON p.id = q.passage_id
+  WHERE q.answer IS NOT NULL AND TRIM(q.answer) <> '' GROUP BY p.exam_id ORDER BY n DESC LIMIT 1`);
+let backfill = null;
+if (tgt.length && tgt[0].values.length) {
+  const tgtId = tgt[0].values[0][0];
+  const qRows = old.exec('SELECT q.id FROM question q JOIN passage p ON p.id=q.passage_id WHERE p.exam_id=? ORDER BY q.id', [tgtId]);
+  const qIds = qRows.length ? qRows[0].values.map((v) => v[0]) : [];
+  const pRows = old.exec('SELECT id FROM passage WHERE exam_id=? ORDER BY id', [tgtId]);
+  const pIds = pRows.length ? pRows[0].values.map((v) => v[0]) : [];
+  const blankQ = qIds.slice(0, Math.max(1, Math.floor(qIds.length / 2)));
+  for (const id of blankQ) old.run("UPDATE question SET answer='', analysis='' WHERE id=?", [id]);
+  for (const id of pIds) old.run('UPDATE passage SET translation=NULL WHERE id=?', [id]);
+  // 必须挑「确实有题目的篇章」来删，否则这条断言是空转的
+  const pWithQ = pIds.filter((id) => old.exec('SELECT COUNT(*) FROM question WHERE passage_id=?', [id])[0].values[0][0] > 0);
+  const delPid = pWithQ[pWithQ.length - 1];
+  const delCount = delPid ? old.exec('SELECT COUNT(*) FROM question WHERE passage_id=?', [delPid])[0].values[0][0] : 0;
+  if (delPid) old.run('DELETE FROM question WHERE passage_id=?', [delPid]);
+  backfill = { examId: tgtId, qTotal: qIds.length, blankQ: blankQ.length, pTotal: pIds.length, delCount };
+  console.log(`已模拟无预置内容: 考次#${tgtId} 清空 ${blankQ.length} 题答案/解析、${pIds.length} 篇翻译，并删掉 ${delCount} 题`);
+} else {
+  console.log('种子库暂无预置内容，跳过回填模拟');
+}
+
 fs.writeFileSync(userDb, Buffer.from(old.export()));
 old.close();
 console.log(`老用户库已构造: 真题 ${afterDelete} 套（种子 ${totalSeed}），学习记录 ${marks.words} 词 / ${marks.hits} 出处`);
@@ -78,6 +104,22 @@ check('被删的考次都回来了', removedTitles.every((t) => backTitles.inclu
 check('学习记录完整保留', words.length === marks.words && stats.learning + stats.mastered === marks.words, `${words.length} 词`);
 check('私人笔记未被覆盖', words[0] && words[0].note === marks.note, `note="${words[0] ? words[0].note : ''}"`);
 check('出处句未被破坏', detail.hits.length === marks.hits, `${detail.hits.length} 条`);
+
+// ---- 4) 预置内容回填断言 ----
+if (backfill) {
+  const td = await js(`window.keeper.examDetail(${backfill.examId})`);
+  const tqs = td.passages.flatMap((p) => p.questions || []);
+  const objP = td.passages.filter((p) => ['cloze', 'match', 'reading'].includes(p.section));
+  check('预置答案已回填进老用户库', tqs.length === backfill.qTotal && tqs.every((q) => (q.answer || '').trim()),
+    `${tqs.filter((q) => (q.answer || '').trim()).length}/${tqs.length} 题有答案（原本 ${backfill.qTotal - backfill.blankQ - backfill.delCount} 题有）`);
+  check('预置中文解析已回填', tqs.every((q) => (q.analysis || '').length > 8),
+    '最短解析 ' + Math.min(...tqs.map((q) => (q.analysis || '').length)) + ' 字');
+  check('预置全文翻译已回填', objP.length > 0 && objP.every((p) => (p.translation || '').length > 50),
+    `${objP.filter((p) => (p.translation || '').length > 50).length}/${objP.length} 篇`);
+  check('被删的题目已补回', tqs.length === backfill.qTotal, `补回后 ${tqs.length} 题（删过 ${backfill.delCount} 题）`);
+  const stillOk = await js(`window.keeper.listWords({})`);
+  check('回填未触碰学习记录', stillOk.length === marks.words, `${stillOk.length} 词`);
+}
 if (appErr.trim()) { console.log('\n--- 应用 stderr ---'); console.log(appErr.trim().slice(0, 800)); }
 
 ws.close();

@@ -74,6 +74,8 @@ CREATE TABLE IF NOT EXISTS kb_entry(
 function migrate() {
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
+  // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
+  if (!cols.includes('reference')) run('ALTER TABLE passage ADD COLUMN reference TEXT');
   const qcols = q('PRAGMA table_info(question)').map((c) => c.name);
   if (!qcols.includes('bank')) run('ALTER TABLE question ADD COLUMN bank TEXT');
 }
@@ -123,6 +125,52 @@ async function initDb() {
 // 把种子库里「用户库还没有的考次」补进来。
 // 判定键 = 级别 + 年 + 月 + 套号；只新增、不删除、不覆盖，
 // 绝不触碰 user_word / word_hit / review_log，用户的学习记录始终安全。
+// 把种子库里预置的内容补进用户库中「已存在但内容为空」的字段。
+// 匹配方式：套(level,年份,月,套号) → 篇章(section,seq) → 题目顺序（与 data/ai-answers 覆盖层的对齐语义一致）。
+// 只写内容字段（answer/analysis/translation/reference），绝不触碰任何学习记录。
+function backfillContent(seed) {
+  let filled = 0;
+  const keyOf = (r) => `${r.level}|${r.year}|${r.month}|${r.set_no}`;
+  const mine = new Map(q('SELECT id, level, year, month, set_no FROM exam').map((e) => [keyOf(e), e.id]));
+  const seedExams = [];
+  seed.each('SELECT * FROM exam', (r) => seedExams.push(r));
+  for (const e of seedExams) {
+    const myExamId = mine.get(keyOf(e));
+    if (!myExamId) continue;
+    const myPassages = q('SELECT * FROM passage WHERE exam_id = ?', [myExamId]);
+    const seedPassages = [];
+    seed.each('SELECT * FROM passage WHERE exam_id = ?', [e.id], (p) => seedPassages.push(p));
+    for (const sp of seedPassages) {
+      const mp = myPassages.find((p) => p.section === sp.section && p.seq === sp.seq);
+      if (!mp) continue;                                   // 篇章结构不同则保守跳过，不做结构性改动
+      if (sp.translation && !mp.translation) { run('UPDATE passage SET translation = ? WHERE id = ?', [sp.translation, mp.id]); filled++; }
+      if (sp.reference && !mp.reference) { run('UPDATE passage SET reference = ? WHERE id = ?', [sp.reference, mp.id]); filled++; }
+      const seedQs = [];
+      seed.each('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [sp.id], (x) => seedQs.push(x));
+      const myQs = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [mp.id]);
+      for (let i = 0; i < seedQs.length; i++) {
+        const sq = seedQs[i];
+        if (i < myQs.length) {
+          const mq = myQs[i];
+          if (!mq.answer && sq.answer) {
+            run('UPDATE question SET answer = ?, analysis = ? WHERE id = ?', [sq.answer, sq.analysis || mq.analysis || '', mq.id]);
+            filled++;
+          } else if (!mq.analysis && sq.analysis) {
+            run('UPDATE question SET analysis = ? WHERE id = ?', [sq.analysis, mq.id]);
+            filled++;
+          }
+        } else {
+          // 种子库里新增出来的题目（例如解析器修好题号后补出的题）也要能进老用户库
+          run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
+            [mp.id, sq.qtype, sq.stem, sq.options, sq.answer || '', sq.analysis || '']);
+          filled++;
+        }
+      }
+    }
+  }
+  return filled;
+}
+
 function syncSeedExams() {
   const seedPath = path.join(__dirname, '..', 'data', 'keeper.db');
   if (!fs.existsSync(seedPath) || !sqlModule) return 0;
@@ -144,8 +192,8 @@ function syncSeedExams() {
       const pList = [];
       seed.each('SELECT * FROM passage WHERE exam_id = ?', [e.id], (p) => pList.push(p));
       for (const p of pList) {
-        run('INSERT INTO passage(exam_id, section, seq, title, content) VALUES (?,?,?,?,?)',
-          [examId, p.section, p.seq, p.title, p.content]);
+        run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
+          [examId, p.section, p.seq, p.title, p.content, p.translation || null, p.reference || null]);
         const pid = q('SELECT last_insert_rowid() AS id')[0].id;
         const qList = [];
         seed.each('SELECT * FROM question WHERE passage_id = ?', [p.id], (x) => qList.push(x));
@@ -156,7 +204,11 @@ function syncSeedExams() {
       }
       added++;
     }
-    if (added) { rebuildWordFreq(); persist(); }
+    // 内容回填：老用户库里这些考次已经存在，上面的「新增」逻辑不会碰它们，
+    // 所以要把种子库里新预置的答案解析/全文翻译/范文参考**补进空字段**。
+    // 只填内容字段，绝不触碰 user_word / word_hit / review_log / user_answer / attempt 等学习记录。
+    const filled = backfillContent(seed);
+    if (added || filled) { rebuildWordFreq(); persist(); }
     return added;
   } catch (err) {
     // 同步失败不能影响应用启动，用户原有的数据仍然可用
@@ -647,8 +699,8 @@ function runInsertExam(data) {
     [level, year, m, s, title || `${level} ${year}.${m}`, now()]);
   const examId = q('SELECT last_insert_rowid() id')[0].id;
   for (const p of passages) {
-    run('INSERT INTO passage(exam_id, section, seq, title, content, translation) VALUES (?,?,?,?,?,?)',
-      [examId, p.section || 'reading', p.seq || 1, p.title || '', p.content || '', p.translation || null]);
+    run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
+      [examId, p.section || 'reading', p.seq || 1, p.title || '', p.content || '', p.translation || null, p.reference || null]);
     const pid = q('SELECT last_insert_rowid() id')[0].id;
     for (const qs of p.questions || []) {
       run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',

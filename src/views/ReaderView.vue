@@ -76,7 +76,18 @@
             :placeholder="activePassage.section === 'writing' ? '在此写作，草稿会自动保存到本地…' : '在此输入你的英文译文，草稿会自动保存到本地…'"></textarea>
           <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
             <button class="primary" @click="gradeEssay" :disabled="essayBusy">{{ essayBusy ? '批改中…' : 'AI 批改' }}</button>
+            <button v-if="activePassage.reference" @click="showReference = !showReference">
+              {{ (showReference ? '隐藏' : '查看') + (activePassage.section === 'writing' ? '范文' : '参考译文') }}
+              <span style="font-size: 11px; color: var(--muted);">（预置，离线可看）</span>
+            </button>
             <span v-if="essayNotice" style="font-size: 12.5px;" :style="{ color: essayNoticeOk ? '#2e7d4f' : 'var(--red)' }">{{ essayNotice }}</span>
+          </div>
+
+          <div v-if="activePassage.reference && showReference" class="er-ref-box">
+            <h4 style="font-size: 13.5px; margin: 0 0 6px;">{{ activePassage.section === 'writing' ? '✍️ 考场范文' : '🌐 英文参考译文' }}
+              <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">预置内容，未配置 AI 也能看</span>
+            </h4>
+            <div class="er-ref-text">{{ activePassage.reference }}</div>
           </div>
 
           <div v-if="essayResult" class="essay-result">
@@ -416,6 +427,7 @@ const essayBusy = ref(false);
 const essayNotice = ref('');
 const essayNoticeOk = ref(false);
 const essaySavedAt = ref('');
+const showReference = ref(false);   // 是否展开预置范文 / 参考译文（离线可看）
 let essayTimer = null;
 let essayLoadedKey = '';
 
@@ -428,6 +440,7 @@ async function loadEssay() {
   essayText.value = r.content || '';
   try { essayResult.value = r.result ? JSON.parse(r.result) : null; } catch (e) { essayResult.value = null; }
   essaySavedAt.value = '';
+  showReference.value = false;
 }
 
 function scheduleSave() {
@@ -642,6 +655,9 @@ async function scanHard() {
 
 watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); });
 watch(scanOn, () => scanHard());
+// 同一个组件实例切换考次（hash 路由参数变化时 Vue 会复用实例）必须重新加载，
+// 否则页面上仍是上一套的篇章与作答
+watch(() => props.examId, () => { loadAll(); });
 
 onMounted(() => {
   loadAll();
@@ -702,4 +718,12 @@ onBeforeUnmount(() => {
 .er-fix { color: #2e7d4f; }
 .er-ref { margin-top: 12px; font-size: 13.5px; line-height: 1.9; white-space: normal; }
 .er-ref b { display: block; margin-bottom: 4px; font-size: 13px; }
+.er-ref-box {
+  margin-top: 12px; border-left: 3px solid var(--accent, #5b7cfa);
+  background: var(--bg, #faf8f4); border-radius: 0 8px 8px 0; padding: 10px 14px;
+}
+.er-ref-text {
+  font-family: Georgia, serif; font-size: 14px; line-height: 1.9;
+  white-space: pre-wrap; word-break: break-word;
+}
 </style>

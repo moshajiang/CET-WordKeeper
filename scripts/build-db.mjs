@@ -37,7 +37,7 @@ db.run(`
 CREATE TABLE exam(id INTEGER PRIMARY KEY AUTOINCREMENT, level TEXT, year INTEGER, month INTEGER,
   set_no INTEGER, title TEXT, imported INTEGER DEFAULT 0, created_at TEXT);
 CREATE TABLE passage(id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, section TEXT,
-  seq INTEGER, title TEXT, content TEXT, translation TEXT);
+  seq INTEGER, title TEXT, content TEXT, translation TEXT, reference TEXT);
 CREATE TABLE question(id INTEGER PRIMARY KEY AUTOINCREMENT, passage_id INTEGER, qtype TEXT,
   stem TEXT, options TEXT, answer TEXT, analysis TEXT);
 CREATE TABLE dict(word TEXT PRIMARY KEY, phonetic TEXT, translation TEXT, definition TEXT,
@@ -144,7 +144,7 @@ if (fs.existsSync(aiDir)) {
 console.log('AI 覆盖层:', aiOverlay.size, '套');
 
 const files = fs.existsSync(seedDir) ? fs.readdirSync(seedDir).filter((f) => f.endsWith('.json')) : [];
-let examCount = 0, aiPassages = 0, aiAnswers = 0, aiStemMismatch = 0;
+let examCount = 0, aiPassages = 0, aiAnswers = 0, aiReferences = 0, aiStemMismatch = 0;
 for (const f of files) {
   const data = JSON.parse(fs.readFileSync(path.join(seedDir, f), 'utf8'));
   const ov = aiOverlay.get(`${data.level}-${data.year}.${String(data.month).padStart(2, '0')}-set${data.set_no}`);
@@ -153,9 +153,10 @@ for (const f of files) {
   const examId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
   for (const p of data.passages || []) {
     const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
-    db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation) VALUES (?,?,?,?,?,?)',
-      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) || null]);
+    db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
+      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) || null, (ovP && ovP.reference) || null]);
     if (ovP && ovP.translation) aiPassages++;
+    if (ovP && ovP.reference) aiReferences++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
     const qlist = p.questions || [];
     qlist.forEach((qs, qi) => {
@@ -172,7 +173,7 @@ for (const f of files) {
   }
   examCount++;
 }
-console.log('真题套数:', examCount, '｜ 预置翻译篇章:', aiPassages, '｜ 预置答案题数:', aiAnswers,
+console.log('真题套数:', examCount, '｜ 预置翻译篇章:', aiPassages, '｜ 预置范文/参考译文:', aiReferences, '｜ 预置答案题数:', aiAnswers,
   aiStemMismatch ? `（其中 ${aiStemMismatch} 题题干与生成时不同，已按顺序对齐）` : '');
 console.log('修补粘连词篇章数:', glueFixed);
 

@@ -60,6 +60,8 @@ const all = (sql, p = []) => { const s = db.prepare(sql); s.bind(p || []); const
 
 // ---------- 任务清单 ----------
 const OBJ = new Set(['cloze', 'match', 'reading']);
+// 主观题篇章：写作生成「范文」，翻译生成「英文参考译文」（无客观答案，存 passage.reference）
+const REF = new Set(['writing', 'translation']);
 const ONLY = typeof opt('only', null) === 'string' ? String(opt('only', null)) : null;
 const exams = all(`SELECT id, level, year, month, set_no FROM exam ORDER BY level DESC, year, month, set_no`)
   .filter((e) => e.imported !== 1)
@@ -76,10 +78,10 @@ for (const ex of exams) {
   }
   const passages = all(`SELECT id, section, seq, title, content FROM passage WHERE exam_id = ? ORDER BY id`, [ex.id]);
   for (const p of passages) {
-    if (!OBJ.has(p.section)) continue;
+    if (!OBJ.has(p.section) && !REF.has(p.section)) continue;
     if (done[p.section + ':' + p.seq]) continue;
     const qs = all(`SELECT id, stem, options FROM question WHERE passage_id = ? ORDER BY id`, [p.id]);
-    tasks.push({ ex, key, overlayPath, passage: p, questions: qs, done });
+    tasks.push({ ex, key, overlayPath, passage: p, questions: qs, done, ref: REF.has(p.section) });
   }
 }
 
@@ -143,6 +145,18 @@ function optionsText(raw) {
 }
 
 function buildPrompt(section, passage, questions) {
+  // 写作 / 翻译章节没有客观题：生成范文或参考译文，供离线自我对照
+  if (section === 'writing') {
+    return `${SYS}\n\n下面是一道 CET 写作题的题目要求（英文 Directions）。请写一篇符合要求的考场范文，并给出中文点评。\n\n【题目要求】\n${passage.content}\n\n` +
+      `要求：正文 120–180 词，结构清晰（引出观点—论证—总结），使用四六级常见高分表达但不要堆砌生僻词。\n` +
+      `只返回 JSON：{"reference":"<英文范文正文>","note":"<中文点评：这篇范文怎么切题、结构怎么安排、有哪些可复用句型，150 字以内>"}`;
+  }
+  if (section === 'translation') {
+    return `${SYS}\n\n下面是一道 CET 汉译英试题的原文。请给出高质量参考译文（英文）。\n` +
+      `注意：原文开头可能残留一句考场说明（例如 “should write your answer on Answer Sheet 2.”），忽略它，只翻译真正的题目内容。\n\n【中文原文】\n${passage.content}\n\n` +
+      `要求：忠实原文、语法正确、用词地道，符合四六级翻译评分的高分标准。\n` +
+      `只返回 JSON：{"reference":"<英文参考译文>","note":"<中文点评：难点在哪里、关键表达怎么处理，150 字以内>"}`;
+  }
   // 少数篇章源文档缺题（无题干可作答），只生成全文翻译
   if (!questions.length) {
     return `${SYS}\n\n请把下面这篇 CET 英语文章翻译成通顺自然的简体中文。\n\n【文章】\n${passage.content}\n\n` +
@@ -195,6 +209,12 @@ function buildTranslationPrompt(passage) {
 
 // 先生成「答案+解析+翻译」；若输出被截断（长文章常见）则拆成两次调用兜底
 async function generateData(section, passage, questions) {
+  // 写作 / 翻译：只产出范文或参考译文
+  if (section === 'writing' || section === 'translation') {
+    const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 12000, temperature: 0.4 });
+    const d = parseJson(r.content);
+    return { answers: [], translation: '', reference: String(d.reference || '').trim(), note: String(d.note || '').trim() };
+  }
   if (questions.length) {
     try {
       const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 16000 });
@@ -214,7 +234,9 @@ async function generateData(section, passage, questions) {
   return { answers: [], translation: String(parseJson(t.content).translation || '') };
 }
 
-function buildVerifyPrompt(section, passage, questions, first) {  if (!questions.length) return null;
+function buildVerifyPrompt(section, passage, questions, first) {
+  if (section === 'writing' || section === 'translation') return null;   // 主观题无客观答案可复核
+  if (!questions.length) return null;
   // 复核用：题干在前、文章在后，且只要答案不解释，降低与首次回答的相关性
   if (section === 'cloze') {
     const bank = optionsText(questions[0] && questions[0].options);
@@ -317,8 +339,10 @@ async function runTask(task) {
     }
   }
 
+  const reference = String(data.reference || '').trim();
   const result = {
     section, seq: passage.seq, translation,
+    ...(reference ? { reference, note: String(data.note || '').trim() } : {}),
     questions: questions.map((q, i) => {
       const a = map.get(i) || {};
       return {
@@ -338,10 +362,12 @@ async function runTask(task) {
   fs.writeFileSync(overlayPath, JSON.stringify(overlay, null, 1));
 
   // 回写数据库
-  if (translation) {
+  if (translation || reference) {
     const cols = all('PRAGMA table_info(passage)').map((c) => c.name);
     if (!cols.includes('translation')) db.run('ALTER TABLE passage ADD COLUMN translation TEXT');
-    db.run('UPDATE passage SET translation = ? WHERE id = ?', [translation, passage.id]);
+    if (!cols.includes('reference')) db.run('ALTER TABLE passage ADD COLUMN reference TEXT');
+    if (translation) db.run('UPDATE passage SET translation = ? WHERE id = ?', [translation, passage.id]);
+    if (reference) db.run('UPDATE passage SET reference = ? WHERE id = ?', [reference, passage.id]);
   }
   questions.forEach((q, i) => {
     const a = map.get(i);
@@ -356,7 +382,8 @@ async function runTask(task) {
   const nd = Object.keys(dissent).length;
   if (nd) flags.push(`复核分歧 ${nd} 题`);
   if (VERIFY && questions.length && !verifyRan) flags.push('未复核');
-  console.log(`✓ ${label}  ${questions.length} 题  翻译 ${translation.length} 字  ${flags.join('  ') || ''}`);
+  const what = reference ? `${section === 'writing' ? '范文' : '参考译文'} ${reference.length} 字` : `翻译 ${translation.length} 字`;
+  console.log(`✓ ${label}  ${questions.length} 题  ${what}  ${flags.join('  ') || ''}`);
   return { ok: true, problems, dissent: nd, questions: questions.length };
 }
 

@@ -358,6 +358,38 @@ check('写作作答区渲染', !!writeTab && essayTa && gradeBtn, 'tab=' + write
 const essayVal = await js(`(() => { const t = document.querySelector('.essay-input'); return t ? t.value.slice(0, 30) : ''; })()`);
 check('写作草稿在界面恢复', essayVal.includes('rapid development'), essayVal);
 
+console.log('\n===== 主观题预置（范文 / 参考译文）=====');
+// 通过导入路径验证：自带 reference 的材料能被完整存取并离线展示
+const refExam = {
+  level: 'CET6', year: 2032, month: 6, set_no: 9, title: '预置范文测试卷',
+  passages: [{
+    section: 'writing', seq: 1, title: '写作',
+    content: 'Directions: For this part, you are allowed 30 minutes to write an essay on digital literacy.',
+    reference: 'Digital literacy has become indispensable in modern life. People who can evaluate online information make better decisions.',
+    questions: [],
+  }],
+};
+const impRef = await js(`window.keeper.importExam(${JSON.stringify(JSON.stringify(refExam))})`);
+check('导入含预置范文的主观题', impRef.ok === true, 'examId=' + (impRef.examId || impRef.error));
+const refDetail = await js(`window.keeper.examDetail(${impRef.examId})`);
+check('范文可随篇章存取', ((refDetail.passages[0] || {}).reference || '').includes('indispensable'),
+  String((refDetail.passages[0] || {}).reference || '').slice(0, 40));
+
+// 界面级：切到该套的写作页签，「查看范文」按钮应存在且能展开
+// （先绕开 reader 再进入：hash 路由同组件复用，绕一下确保是干净挂载）
+await js(`location.hash = '#/knowledge'`);
+await sleep(600);
+await js(`location.hash = '#/reader/${impRef.examId}'`);
+await sleep(2600);
+const refBtn = await js(`(() => {
+  const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('查看范文'));
+  if (b) b.click();
+  return !!b;
+})()`);
+await sleep(500);
+const refShown = await js(`(() => { const el = document.querySelector('.er-ref-text'); return el ? el.textContent.slice(0, 30) : ''; })()`);
+check('写作范文可离线展开查看', refBtn && refShown.includes('Digital literacy'), '按钮=' + refBtn + ' 内容="' + refShown + '"');
+
 const fail = results.filter((r) => !r.ok);
 console.log(`\n===== 结果：${results.length - fail.length}/${results.length} 通过 =====`);
 if (fail.length) { console.log('失败项:', fail.map((f) => f.name).join('、')); process.exit(1); }

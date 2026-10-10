@@ -17,8 +17,9 @@ const all = (s, p = []) => { const st = db.prepare(s); st.bind(p || []); const o
 
 const cols = all('PRAGMA table_info(passage)').map((c) => c.name);
 if (!cols.includes('translation')) db.run('ALTER TABLE passage ADD COLUMN translation TEXT');
+if (!cols.includes('reference')) db.run('ALTER TABLE passage ADD COLUMN reference TEXT');
 
-let nExam = 0, nTrans = 0, nAns = 0, nMiss = 0;
+let nExam = 0, nTrans = 0, nRef = 0, nAns = 0, nMiss = 0;
 const files = fs.existsSync(AI_DIR) ? fs.readdirSync(AI_DIR).filter((f) => f.endsWith('.json')).sort() : [];
 for (const f of files) {
   const ov = JSON.parse(fs.readFileSync(path.join(AI_DIR, f), 'utf8'));
@@ -32,6 +33,11 @@ for (const f of files) {
       const cur = all('SELECT translation FROM passage WHERE id=?', [p.id])[0];
       if (!cur || !cur.translation) nTrans++;
       if (!DRY) db.run('UPDATE passage SET translation=? WHERE id=?', [op.translation, p.id]);
+    }
+    if (op.reference && op.reference.trim()) {
+      const cur = all('SELECT reference FROM passage WHERE id=?', [p.id])[0];
+      if (!cur || !cur.reference) nRef++;
+      if (!DRY) db.run('UPDATE passage SET reference=? WHERE id=?', [op.reference, p.id]);
     }
     const qs = all('SELECT id, stem FROM question WHERE passage_id=? ORDER BY id', [p.id]);
     (op.questions || []).forEach((oq, i) => {
@@ -48,4 +54,4 @@ for (const f of files) {
   nExam++;
 }
 if (!DRY) fs.writeFileSync(DB, Buffer.from(db.export()));
-console.log(`应用覆盖层：${nExam} 套 ｜ 新增翻译 ${nTrans} 篇 ｜ 写入答案 ${nAns} 题 ｜ 跳过 ${nMiss}${DRY ? '（dry-run，未写盘）' : ''}`);
+console.log(`应用覆盖层：${nExam} 套 ｜ 新增翻译 ${nTrans} 篇 ｜ 新增范文/参考译文 ${nRef} 篇 ｜ 写入答案 ${nAns} 题 ｜ 跳过 ${nMiss}${DRY ? '（dry-run，未写盘）' : ''}`);
