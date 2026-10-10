@@ -406,6 +406,55 @@ await sleep(500);
 const refShown = await js(`(() => { const el = document.querySelector('.er-ref-text'); return el ? el.textContent.slice(0, 30) : ''; })()`);
 check('写作范文可离线展开查看', refBtn && refShown.includes('Digital literacy'), '按钮=' + refBtn + ' 内容="' + refShown + '"');
 
+{
+// ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
+// 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
+// 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。
+const rootDir = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+const seedDir = path.join(rootDir, 'data', 'seed');
+const ovDir = path.join(rootDir, 'data', 'ai-answers');
+const bankBad = [], optBad = [], refBad = [], pollBad = [], ansOutOfBank = [];
+let seedCount = 0, qCount = 0, ansCount = 0, ansMissing = 0;
+for (const f of fs.readdirSync(seedDir).filter((x) => x.endsWith('.json'))) {
+  const key = f.replace('.json', '');
+  const s = JSON.parse(fs.readFileSync(path.join(seedDir, f), 'utf8'));
+  seedCount++;
+  const ovPath = path.join(ovDir, key + '.json');
+  const ov = fs.existsSync(ovPath) ? JSON.parse(fs.readFileSync(ovPath, 'utf8')) : null;
+  for (const p of s.passages || []) {
+    for (const q of p.questions || []) {
+      qCount++;
+      if ((q.options || []).some((o) => String(o).trim().length <= 3)) optBad.push(key + '/' + p.section + '#' + p.seq);
+    }
+    if (p.section === 'translation' && /参考答案|作文范文|Part\s*[ⅠⅡⅢⅣIVX]/.test(p.content || '')) pollBad.push(key);
+    if (p.section === 'cloze' && (p.questions || []).length) {
+      const opts = p.questions[0].options || [];
+      const letters = opts.map((o) => (String(o).match(/^([A-O])\)/) || [])[1]).join('');
+      if (opts.length !== 15 || letters !== 'ABCDEFGHIJKLMNO') bankBad.push(key + ':' + opts.length);
+    }
+    const e = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
+    if (!e) continue;
+    if ((p.questions || []).length) {
+      const bank = p.section === 'cloze' && p.questions[0].options
+        ? p.questions[0].options.map((o) => (String(o).match(/^([A-O])\)/) || [])[1]).filter(Boolean) : null;
+      e.questions.forEach((qq, i) => {
+        ansCount++;
+        if (!qq.answer || !(qq.analysis || '').length) ansMissing++;
+        if (bank && qq.answer && !bank.includes(qq.answer)) ansOutOfBank.push(key + '/' + (p.questions[i] ? p.questions[i].stem : i + 1));
+      });
+    }
+    if (e.translation && e.translation.length < 80) refBad.push(key + '/' + p.section + '#' + p.seq);
+    if (e.reference && e.reference.length < 80) refBad.push(key + '/' + p.section + '#' + p.seq);
+  }
+}
+check('数据完整性·词库为 15 词 A-O', bankBad.length === 0, bankBad.slice(0, 3).join('、') || `${seedCount} 套全部合规`);
+check('数据完整性·无空占位选项', optBad.length === 0, optBad.slice(0, 3).join('、') || `${qCount} 题全部有选项文本`);
+check('数据完整性·答案与解析齐全', ansMissing === 0, ansMissing ? `${ansMissing}/${ansCount} 题缺答案或解析` : `${ansCount} 题齐全`);
+check('数据完整性·cloze 答案在词库内', ansOutOfBank.length === 0, ansOutOfBank.slice(0, 3).join('、') || '全部命中');
+check('数据完整性·翻译/范文非空且达标', refBad.length === 0, refBad.slice(0, 3).join('、') || '全部达标');
+check('数据完整性·翻译正文无答案页污染', pollBad.length === 0, pollBad.slice(0, 3).join('、') || seedCount + ' 套干净');
+}
+
 const fail = results.filter((r) => !r.ok);
 console.log(`\n===== 结果：${results.length - fail.length}/${results.length} 通过 =====`);
 if (fail.length) { console.log('失败项:', fail.map((f) => f.name).join('、')); process.exit(1); }
