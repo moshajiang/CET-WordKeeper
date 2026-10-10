@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2023,
+ "month": 6,
+ "set_no": 2,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Ways to Build Warm Relationships with Classmates\nThe student union's online discussion reminds me how much a warm and friendly relationship with classmates contributes to campus life. To build such a relationship, I believe three things matter most.\nFirst, be genuinely interested in others. Remembering a classmate's birthday, asking about the exam he was worried about, or simply saying hello with a smile shows that you care, and people respond to sincere attention. Second, communicate honestly and openly. When disagreements arise over group work, state your view calmly and listen to theirs instead of staying silent and resentful. Third, be ready to help without expecting anything back — sharing notes with someone who missed a lecture costs little but means a lot.\nThe benefits are obvious. Warm relationships make study more efficient, because classmates who trust each other are glad to exchange ideas and solve problems together. They also make campus life happier, offering support when we feel stressed or lonely, especially for students far from home.\nIn short, friendship with classmates is not merely pleasant but essential to a rewarding college experience.",
+   "note": "紧扣两个要求：\"维系友好关系的方法\"+\"这样关系的好处\"。结构：总起—三点方法—好处—总结。可复用：matter most / respond to sincere attention / without expecting anything back / not merely pleasant but essential to..."
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "摩洛哥正通过建设世界上最大的太阳能电站之一，来应对不断增长的能源需求。\n努尔太阳能电站位于瓦尔扎扎特市，建成后将发电 5.8 亿瓦。世界银行估计它将服务 110 万人。该电站计划于不久后竣工。\n摩洛哥目前的能源主要来自进口。该国希望在 2030 年前让可再生能源占到能源总量的 50%。随着能源需求以每年 7% 的速度增长，这座新太阳能电站可能成为实现该目标的关键部分。\n“这使摩洛哥成为阿拉伯地区和非洲大陆太阳能领域的重要先锋。它也可能成为世界上许多依赖外国能源进口国家的样板，”太阳能专家兼工程学教授阿里·哈吉说。\n专家认为，中东和北非在太阳能项目上潜力巨大。部分原因是当地阳光充足，部分原因是技术在当地的成本已变得更加低廉。\n“过去几年，人们已经意识到太阳能技术能有多大的竞争力，”国际可再生能源机构的高级分析师迈克尔·泰勒说。",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "H",
+     "analysis": "过去分词：电站“位于”瓦尔扎扎特市（is located in the city of Ouarzazate），固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "O",
+     "analysis": "过去分词：该电站“计划”于不久后竣工（It's scheduled to be completed soon），由 to be + soon 可定。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "I",
+     "analysis": "副词修饰动词：摩洛哥当前的能源“主要”来自进口（comes mostly from imports）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "N",
+     "analysis": "现在分词：随着能源需求“以每年 7% 的速度增长”（with demand rising at an annual rate of 7%），with 复合结构。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "形容词作定语：新电站可能成为实现该目标的“关键”部分（a crucial part of that goal）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "L",
+     "analysis": "名词：这使摩洛哥成为太阳能领域的“重要先锋”（a big pioneer in the field），与 a forerunner 呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "D",
+     "analysis": "谓语动词：许多“依赖”外国能源进口的国家（countries that depend on foreign imports），depend on 固定搭配。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "M",
+     "analysis": "名词：中东和北非在太阳能项目上“潜力”巨大（have huge potential for），不可数名词。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "A",
+     "analysis": "形容词作表语：技术在当地的成本变得更“低廉、负担得起”（more affordable）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "G",
+     "analysis": "副词：人们已意识到太阳能技术“竟/究竟”多有竞争力（a realization of just how competitive...），just how 强调程度。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "F1 新掌门希望抓住美国人的眼球\n[A] 过去四十年，世界最大年度赛事之一、一级方程式赛车（F1）的掌门人是伯尼·埃克莱斯顿——一位前摩托车零件经销商，他几乎凭一己之力把这项运动做成了国际性品牌。\n[B] 埃克莱斯顿是一位精明的幕后操盘手，说话直来直去。他常说，在他看来，允许他像“独裁者”那样行事时，这项运动才处于巅峰。\n[C] 如今这位“独裁者”走了。美国公司自由媒体集团近日收购 F1 后，蔡斯·凯里——福克斯广播公司和 DirecTV 的前高管，据他自己承认并不是狂热的赛车迷——被任命接替埃克莱斯顿，试图改造该组织在管理、影响力和雄心方面的面貌。\n[D] 凯里周二接受采访时说，目标之一，是几乎所有全球性运动都想追逐的那件事：提升美国市场的兴趣。“有人说我们要把它‘美国化’，”凯里说。“我们不会完全那样做。但现实中，有些美国化的元素这项运动确实用得上。”\n[E] 尽管 F1 在全球许多地方拥有庞大的观众群，但许多美国体育迷只把它看作另一项赛车运动——不是纳斯卡的那一项。F1 车队驾驶技术先进得多的赛车，在马来西亚、摩纳哥、新加坡和阿联酋等地的盛大比赛中、在英国银石和意大利蒙扎这样历史悠久的赛道上角逐。\n[F] 该系列赛在得克萨斯州奥斯汀有一站。但凯里说，他计划在“几年内”再引入一站到美国的目的地城市，如纽约、洛杉矶、迈阿密或拉斯维加斯。凯里雄心勃勃的计划有两部分：一是改变 F1 的商业模式——他说在埃克莱斯顿治下这是场“一个人的秀”，在谈合作时视野狭窄；二是改变粉丝体验这项运动的方式，无论现场还是远程，让观众与赛事内部人员之间更容易建立联系。\n[G] 为粉丝增加数字渠道、为转播观众提供更多幕后体验、在虚拟现实等领域创新——坐在法拉利里绕赛道飞驰是什么感觉？——都在可能之列。“这项运动显然被亏待了，”凯里说。“它什么数字化都不做。没有营销。不讲任何故事。目标就是让粉丝尽可能多地与现场体验相连，而做这件事可用的工具，我们一点都没用。”\n[H] 不过，更大的问题是老生常谈：在美国日益拥挤的体育版图中，F1 还有空间吗？意见不一，尤其是因为消费者的观看习惯仍在演变。研究美国体育史的希彭斯堡大学教授约翰·布鲁姆说，任何想在美国扩大存在的运动，最大的挑战都是把自己包装成具有长久吸引力的样子。“体育之所以流行，通常是因为它们建立了某种叙事，”布鲁姆说。“想到美国的赛车运动，我们想到的都是纳斯卡，而纳斯卡的叙事是乡村的、白人的、工薪阶层的美国人——多在美国南方——与赛场氛围的联结。这就是它的叙事。而想到 F1 的叙事，那是一种完全不同的观众。”\n[I] 凯里说，这种差异很重要。虽然有人一谈 F1 在美国的增长就把它与纳斯卡相提并论，但凯里说 F1 的品牌调研显示两者受众几乎不重叠；F1 粉丝更常提到温布尔登、莱德杯这类所谓精英赛事。“除了都是车，纳斯卡的粉丝群是截然不同的粉丝群，”凯里说。“那是一个非常地域化的粉丝群。而 F1 是一个全球化、星光熠熠的品牌。这些机器让你震撼敬畏。”\n[J] 凯里的背景是做交易和创新。在福克斯广播公司，他多年担任高级顾问，以帮助公司进军体育以及创办福克斯新闻频道而闻名。转投 DirecTV 后，他把这家卫星电视运营商打造成了数百万家庭的主流选择。\n[K] 如今，在自由媒体集团花 44 亿美元收购 F1 之后，他肩负着让这笔投资得到回报的任务。“我认为他们能把 F1 在美国做起来，”InVivo 媒体集团高管帕特里克·克雷克斯说——他在福克斯广播公司工作 25 年，2016 年以福克斯体育高级经理身份离开。“人们不再自己修车了，也不再想要那种联系。现在讲的是技术和突破极限，是速度、危险和风险。而 F1 在这方面超过任何其他赛车系列。”\n[L] 这正是吸引凯里的地方，他说他认为自己的经历并不特殊。他回忆起去年观看 F1 摩纳哥站，被赛前的仪式深深震撼——比赛开始前几天，整座城市就被赛事迷住了。在他心里，那感觉像一场超级碗。\n[M] 随后在比赛日，他看着赛车冲出隧道，呼啸着冲向一个急弯，背景是城市港湾和地中海构成的画面。他着了迷。“你不由得不敬畏，”他说，“我想这种感觉是可以传达给观众的。”\n[N] 他补充说：“这项运动整体上有点太向内看了，我们需要更开放。某种程度上，我很庆幸自己是外来者。那些永远待在圈子里的人坐在那里说：‘我们不能那么做。不能那么做，因为从来没人那样做过。’”",
+   "questions": [
+    {
+     "stem": "36.Chase Carey believes greater use should be made of digital technology to make Formula One more\naccessible to its fans.",
+     "answer": "G",
+     "analysis": "该段：应“为粉丝增加数字渠道”（Increased digital access for fans）、在虚拟现实等领域创新——即更多利用数字技术让 F1 更贴近粉丝。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37.Chase Carey was deeply impressed by the ceremony preceding last year's Monaco race.",
+     "answer": "L",
+     "analysis": "该段：他回忆去年摩纳哥站，“被赛前的仪式深深震撼”（overwhelmed by the ceremony leading up to the event）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38.One of Chase Carey's goals is to make Formula One more appealing to Americans.",
+     "answer": "D",
+     "analysis": "该段：目标之一正是“提升美国市场的兴趣”（increasing interest in the United States）——让 F1 对美国更有吸引力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39.A former motorbike parts dealer led Formula One for the past forty years.",
+     "answer": "A",
+     "analysis": "该段：过去四十年 F1 的掌门人是“前摩托车零件经销商”伯尼·埃克莱斯顿（a former motorcycle parts dealer）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40.Chase Carey thought the audience of Formula One could be made to share his feeling about the race.",
+     "answer": "M",
+     "analysis": "该段：他看赛车呼啸过弯，“你不由得不敬畏”，“我想这种感觉是可以传达给观众的”（can be translated to the viewer）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41.Chase Carey used to serve as a top advisor for a major broadcasting company.",
+     "answer": "J",
+     "analysis": "该段：在福克斯广播公司他“多年担任高级顾问”（a top advisor for years）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42.Chase Carey intends to make connections easier between the audience and the Formula One racers.",
+     "answer": "F",
+     "analysis": "该段：计划的第二部分是改变粉丝体验，“让观众与赛事内部人员之间更容易建立联系”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. The new leader of Formula One admitted he was not super interested in car racing.",
+     "answer": "C",
+     "analysis": "该段：凯里“据他自己承认并不是狂热的赛车迷”（by his own admission is not a fierce racing fan）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44.People's opinions differ as to whether Formula One can be promoted in the U.S.",
+     "answer": "H",
+     "analysis": "该段：“更大的问题是……F1 还有空间吗？意见不一”（Opinions vary）——人们对 F1 能否在美国推广看法不同。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45.Compared with other racing series, Formula One focuses more on speed and involves more danger.",
+     "answer": "K",
+     "analysis": "该段：克雷克斯说“讲的是速度、危险和风险，而 F1 在这方面超过任何其他赛车系列”（more than any other racing series）。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "长期以来，超市一直是世上利润最薄的行业之一，也是最不令人向往的工作或购物场所之一。十多年来，它们一直受到电商巨头的攻击，被指责让美国人变胖，又被指造成气候变化。\n从技术上讲，超市可定义为陈列 15000 到 60000 种不同商品的大型商店。让顾客在货架间自行寻找食物的自助杂货店这一革命性想法，最早出现在美国。关于哪家才是史上第一家尚有争论，但多年来人们已就纽约 1930 年创立的 King Kullen 超市形成共识。\n大约 300 年间，美国人都在小店铺和公共市场里解决吃饭问题。买食物意味着泥泞、吵闹的鸡群、成群的苍蝇、难闻的气味、讨价还价，以及被人少找零钱。超市模仿了强调效率与标准化的福特式工厂，把它重新想象成一个购买食物的场所。超市如今或许不显得前沿，但在当时它们是分销领域的一场革命。它们是如此新奇，以至于 1957 年伊丽莎白二世女王首次正式访问美国时，还坚持即兴参观了马里兰州郊区的一家 Giant Food 超市。\n过去 90 年里，典型的超市布局几乎没变。大多数商店把鲜花、水果和蔬菜放在最前面，以一股新鲜气息唤起食欲；同时把牛奶、鸡蛋等日用品放在最里面，让你尽可能走遍整家店，沿途受到诱惑。\n早期，随着超市数量增多，我们对它的怀疑也在增长。我们长期担心这场“分销革命”对我们的胃口使用企业黑魔法。1957 年出版的《隐藏的说客》一书警告说，超市把女性置于“催眠恍惚状态”，使她们在货架间游荡、撞上货箱，还“随手从货架上拿东西”。",
+   "questions": [
+    {
+     "stem": "What problem have supermarkets been facing?",
+     "answer": "B",
+     "analysis": "首段：超市是“利润最薄的行业之一”，十多年来遭电商巨头攻击——即一直在流失顾客与利润。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What does the passage say about the idea of a self-service grocery?",
+     "answer": "B",
+     "analysis": "第二段：自助杂货店的革命性想法“最早出现在美国”（first came about in America）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What did supermarkets do by adopting the Fordist factory approach?",
+     "answer": "D",
+     "analysis": "第三段：超市模仿福特式工厂，“在当时是分销领域的一场革命”（a revolution in distribution）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What is the typical supermarket layout intended to do?",
+     "answer": "C",
+     "analysis": "第四段：把日用品放在最里面，让你走遍全店、沿途被诱惑——即诱导顾客做更多计划外购买。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What have people long feared about supermarkets?",
+     "answer": "A",
+     "analysis": "末段：人们长期担心超市对胃口“使用企业黑魔法”、令顾客在恍惚中随手拿货——即认为商家用诡计促销。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "传统学年每年夏天放三个月假，最初实行时美国还是农业社会，夏天的几个月需要用来干农活。自那以后，我们作为一个国家已彻底改变。学生不再在夏天务农，但他们也不在学校。美国学生平均每个自然年有 13 周假期，其中约 11 周在夏季。其他国家的校历很少有超过七周假期的。\n在美国学业水平落后于其他国家的情况下，是时候考虑全年制学校了。这一变化的一个好处是，学生不会沦为“暑期滑坡”的受害者——即研究表明，离开学校太久，学生就会忘掉一部分已学知识。数十年的研究显示，每个学年开始后，学生需要 8 到 13 周才能回到暑假前的水平。\n但全年制学校不只是学业问题。与传统学校相比，全年制学校里的师生关系更亲密，而且因为没有长假，学生不会感到与学校环境疏离。这些更紧密的纽带与更强的归属感是有回报的：研究表明，全年制学校的学生更自信，对上学体验的感受也更积极。\n但孩子们不需要时间放松吗？一些儿童发展专家认为，离校时间对健康成长至关重要，因为孩子的天性不适合长时间待在教室里，暑假提供了到户外活动的绝佳机会。这一说法的问题在于：大多数孩子并不在户外玩耍，甚至不与别的孩子一起玩。虽然有些孩子去夏令营，但大多数待在家里看电视或用电子设备玩游戏，这几乎对他们没有好处。\n美国已从农业经济转变为以知识与创新为基础的经济，因此学年也随之改变是合理的。",
+   "questions": [
+    {
+     "stem": "Why did America's traditional school year have a three-month summer vacation?",
+     "answer": "A",
+     "analysis": "首段：三个月暑假“最初实行时美国还是农业社会，夏天需要用来干农活”（the summer months were needed for farm work）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What benefit will year-round schooling bring students in addition to improving their learning?",
+     "answer": "D",
+     "analysis": "第三段：全年制学校“师生关系更亲密”，学生不觉疏离——即除学业外还能促进师生关系。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What do some childhood development experts believe about the long summer vacation?",
+     "answer": "D",
+     "analysis": "第三段：全年制学生“更自信、对上学体验更积极”，“这些纽带与归属感是有回报的”——即有助于学生健康成长。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "What is the argument against the experts' idea of a long summer vacation?",
+     "answer": "A",
+     "analysis": "第四段：专家称假期利于健康发育，但“大多数孩子待在家里看电视玩游戏，这几乎对他们没有好处”（hardly benefits them）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55.What does the author think of the traditional school year in the U.S. today?",
+     "answer": "C",
+     "analysis": "末段：美国已转为知识与创新型经济，“学年也随之改变是合理的”——即作者认为传统学年已过时。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Since the reform and opening-up more than 40 years ago, the Chinese government has attached increasing importance to higher education, which has entered a stage of steady development. The total number of college students has reached nearly 47 million, ranking first in the world. With the rapid development of China's economy and the continuous improvement of people's living standards, more and more people are eager to receive higher education. The number of colleges and universities and the variety of disciplines have kept increasing, student enrollments have risen year by year, and teaching quality has been improving, creating opportunities for more young people to receive higher education.",
+   "note": "难点：改革开放（reform and opening-up）、越来越重视（attach increasing importance to）、稳步发展阶段（a stage of steady development）、位居世界第一（rank first in the world）、渴望接受高等教育（be eager to receive higher education）、招生人数逐年上升（enrollments have risen year by year）、为……创造机会（create opportunities for）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T13:45:54.795Z"
+}
