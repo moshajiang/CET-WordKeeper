@@ -27,3 +27,11 @@ Thumbs.db
 # 编辑器
 .vscode/
 .idea/
+
+# 密钥：绝不进仓库（API Key 只应存在于本机用户库 %APPDATA%/cet-wordkeeper 或环境变量）
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+# 注意：scripts/check-secrets.mjs 会在每次 verify-all 时兜底扫描被跟踪文件

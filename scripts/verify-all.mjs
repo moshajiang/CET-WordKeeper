@@ -25,6 +25,15 @@ function cleanUserDb(tag) {
 }
 cleanUserDb('残留');
 
+// 密钥闸门：每次验证都先确认「没有任何 Key 进入被跟踪文件」。
+// Key 只应存在于本机用户库（%APPDATA%）或环境变量里，绝不进仓库。
+console.log('扫描密钥泄漏…');
+const secretScan = spawnSync(process.execPath, ['scripts/check-secrets.mjs'], { cwd: root, stdio: 'inherit' });
+if (secretScan.status !== 0) {
+  console.error('\n发现疑似密钥泄漏，已中止验证。请先从文件中移除并清理 git 历史，再重新运行。');
+  process.exit(1);
+}
+
 const env = { ...process.env };
 delete env.ELECTRON_RUN_AS_NODE;
 
