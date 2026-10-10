@@ -32,7 +32,13 @@ const PAGE_FOOT = /^第\s*\d+\s*页\s*[,，、]?\s*共\s*\d+\s*页$/;
 
 const zip = fs.readFileSync(docxPath);
 const xml = Buffer.from(unzipSync(zip)['word/document.xml']).toString('utf8');
-const paras = xml
+// 个别文档把 Part 标题与上一段粘连成一段（"...higher BMI. Part Ⅳ Translation ( 30 minutes )"），
+// ^ 锚定的 isPart 识别不到 → 翻译区被并进最后一道阅读题、seed 里缺 translation 篇章。
+// 这里按「内嵌的 Part + 题型词」把段落拆开（要求 Part 后紧跟题型词，不碰普通正文）。
+const splitEmbeddedPart = (s) =>
+  s.split(/(?=Part\b[\s\W]*(?:[IVXⅠⅡⅢⅣⅤivx]{1,4}|[A-Za-z]{1,3})?[\s\W]*(?:Writing|Listening|Reading|Translation)\b)/);
+
+const parasAll = xml
   .split(/<w:p[ >]/)
   .slice(1)
   .map((p) => {
@@ -48,7 +54,21 @@ const paras = xml
   })
   .map((s) => healSpacing(s.replace(/\s+/g, ' ').trim()))
   .filter(Boolean)
-  .filter((s) => !PAGE_FOOT.test(s));
+  .filter((s) => !PAGE_FOOT.test(s))
+  .flatMap(splitEmbeddedPart);
+
+// 个别文档把 Part 标题拆成两段（"Part Ⅳ" 一段 + "Translation" 一段）——
+// 两段单独都不满足 isPart（识别需要题型词），翻译区会被并进最后一道阅读题。
+// 这里把「光杆 Part + 罗马数字」与其后紧跟的题型段合并回一段。
+const paras = [];
+for (const s of parasAll) {
+  const prev = paras[paras.length - 1];
+  if (prev && /^Part\b[\s\W]*[IVXⅠⅡⅢⅣⅤivx]{1,4}[\s\W]*$/i.test(prev) && /^(Writing|Listening|Reading|Translation)\b/i.test(s)) {
+    paras[paras.length - 1] = prev + ' ' + s;
+  } else {
+    paras.push(s);
+  }
+}
 
 // 兼容各种转写瑕疵：".Part I Writing" / "Part ][ Reading Comprehension" / "Part Ⅲ"
 // 以及罗马数字被 OCR 串掉的 "Part FTranslation(30 minutes)"（F 是 Ⅵ 的残形）——
@@ -440,9 +460,14 @@ for (const sec of sections) {
 }
 
 if (translation) {
+  // 粘连场景下，翻译段可能整个挤在一段里（"Part Ⅳ Translation ( 30 minutes ) Directions: ... Answer Sheet 2 . 随着……"）。
+  // 剥掉到 "Answer Sheet n ." 为止的说明头，只留中文原文；正常分段的段落不受影响。
+  const stripTransHead = (s) => s.replace(/^Part\b[\s\S]*?Answer\s*Sheet\s*\d?\s*[.．]?\s*/, '');
   passages.push({
     section: 'translation', seq: 1, title: '翻译（中文原文）',
-    content: translation.paras.filter((p) => !isDirections(p)).join('\n'),
+    content: translation.paras.filter((p) => !isDirections(p)).map(stripTransHead)
+      .filter((p) => !/^Part\b/.test(p) && !/^\(\s*\d+\s*minutes\s*\)/.test(p))
+      .filter(Boolean).join('\n'),
     questions: [],
   });
 }

@@ -79,9 +79,10 @@ for (const f of fs.readdirSync(seedDir).filter((x) => x.endsWith('.json')).sort(
     continue;
   }
 
-  // --check 模式下还原原文件，不落盘
+  // --check 模式：先读解析结果再还原原文件（顺序反了 after 永远等于 before，检查会空转）
+  const afterText = fs.readFileSync(outPath, 'utf8');
   if (CHECK) fs.writeFileSync(outPath, beforeText, 'utf8');
-  const after = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+  const after = JSON.parse(afterText);
 
   const bq = countQs(before), aq = countQs(after);
   const diffs = [];

@@ -59,7 +59,8 @@ for (const pf of files) {
       if (created) {
         if (pp.questions.length !== want) { console.error(`✗ ${key} ${k}: 新建条目题数 ${pp.questions.length} ≠ seed ${want}`); process.exit(1); }
         e.questions = pp.questions.map((q, i) => ({
-          stem: q.stem || String(sp.questions[i].stem || ''),
+          // 题干一律取 seed 的（手打题干易有引号/空格字符差，会被 prune 误判「题干已变」而删条目）
+          stem: String((sp.questions[i] || {}).stem ?? '') || String(q.stem || ''),
           answer: String(q.answer || '').trim(),
           analysis: String(q.analysis || '').trim(),
           verified: false, dissent: null,

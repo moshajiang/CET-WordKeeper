@@ -408,12 +408,19 @@
         },
         {
           "qtype": "choice",
-          "stem": "55. What does Record expect of New York Fashion Week? A. It will create a completely new set of rules. B. It will do better than Paris Fashion Week. C. It will differ from Paris Fashion Week. D. It will have models with a higher BMI. Part Ⅳ Translation ( 30 minutes ) Directions: For this part, you are allowed 30 minutes to translate a passage from Chinese into English. You should write your answer on Answer Sheet 2. 随着中国的改革开放，如今很多年轻人都喜欢举行西式婚礼。新娘在婚礼上穿着白色婚纱，因为白色被认为是纯洁的象征。然而，在中国传统文化中，白色经常是葬礼上使用的颜色。因此务必记住，白花一定不要用作祝人康复的礼物，尤其不要送给老年人或危重病人。同样，礼金也不能装在白色的信封里，而要装在红色的信封里。",
+          "stem": "55. What does Record expect of New York Fashion Week? A. It will create a completely new set of rules. B. It will do better than Paris Fashion Week. C. It will differ from Paris Fashion Week. D. It will have models with a higher BMI.",
           "options": [],
           "answer": "",
           "analysis": ""
         }
       ]
+    },
+    {
+      "section": "translation",
+      "seq": 1,
+      "title": "翻译（中文原文）",
+      "content": "随着中国的改革开放，如今很多年轻人都喜欢举行西式婚礼。新娘在婚礼上穿着白色婚纱，因为白色被认为是纯洁的象征。然而，在中国传统文化中，白色经常是葬礼上使用的颜色。因此务必记住，白花一定不要用作祝人康复的礼物，尤其不要送给老年人或危重病人。同样，礼金也不能装在白色的信封里，而要装在红色的信封里。",
+      "questions": []
     }
   ]
 }
