@@ -405,7 +405,7 @@
       "questions": [
         {
           "qtype": "choice",
-          "stem": "52. Why does the author say the USDA could have contributed a lot to lowering the climate cost through its dietary guidelines?",
+          "stem": "51. Why does the author say the USDA could have contributed a lot to lowering the climate cost through its dietary guidelines?",
           "options": [
             "A) It has the capacity and the financial resources to do so.",
             "B) Its researchers have already submitted relevant proposals.",
@@ -417,7 +417,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "52.D) It can raise students’ environmental awareness through its programs.",
+          "stem": "52. What do we learn from the Dietary Guidelines Advisory Committee’s scientific report?",
           "options": [
             "A) Food is easily contaminated from farm to belly.",
             "B) Greenhouse effect is an issue still under debate.",
@@ -429,7 +429,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "53.C) Modern agriculture has increased food diversity.",
+          "stem": "53. What may account for the neglect of sustainability in the USDA’s Dietary Guidelines according to the passage?",
           "options": [
             "A) Its exclusive concern with Americans' food safety.",
             "B) Its sole responsibility for providing dietary advice.",
@@ -441,7 +441,7 @@
         },
         {
           "qtype": "choice",
-          "stem": "54.B) Its sole responsibility for providing dietary advice.",
+          "stem": "54. What should the USDA do to achieve food security according to David Wallinga?",
           "options": [
             "A) Give top priority to things like nutrition and food security.",
             "B) Endeavor to ensure the sustainable development of agriculture.",

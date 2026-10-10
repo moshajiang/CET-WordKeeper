@@ -23,6 +23,7 @@ const has = (name) => args.includes('--' + name);
 const MODEL = opt('model', 'deepseek-v4-pro');
 const CONC = Number(opt('concurrency', 4));
 const EXAM_LIMIT = Number(opt('exams', 0));
+const ONLY_KEYS = opt('keys', '').split(',').map((x) => x.trim()).filter(Boolean);
 const OVERLAY_DIR = path.join(root, 'data', 'ai-answers');
 const DB_PATH = path.join(root, 'data', 'keeper.db');
 const DRY = has('dry');
@@ -73,6 +74,7 @@ const exams = all(`SELECT id, level, year, month, set_no FROM exam ORDER BY leve
 const tasks = [];
 for (const ex of exams) {
   const key = `${ex.level}-${ex.year}.${String(ex.month).padStart(2, '0')}-set${ex.set_no}`;
+  if (ONLY_KEYS.length && !ONLY_KEYS.includes(key)) continue;
   const overlayPath = path.join(OVERLAY_DIR, key + '.json');
   let done = {};
   if (fs.existsSync(overlayPath) && !FORCE) {
@@ -90,7 +92,12 @@ for (const ex of exams) {
       const ansOk = !needAns || qs0.every((q, i) => ((d.questions || [])[i] || {}).answer && String((d.questions || [])[i].answer).trim());
       const trOk = !needAns || String(d.translation || '').length >= 30;
       const refOk = !REF.has(p.section) || String(d.reference || '').length >= 50;
-      const ansValid = !needAns || qs0.every((q, i) => /^[A-D]$/.test(String(((d.questions || [])[i] || {}).answer || '').trim()));
+      const ansValid = !needAns || qs0.every((q, i) => {
+        const a = String(((d.questions || [])[i] || {}).answer || '').trim();
+        // 字母范围按题型：选词填空 A-O、段落匹配 A-P、仔细阅读 A-D
+        const re = p.section === 'cloze' ? /^[A-O]$/ : p.section === 'match' ? /^[A-P]$/ : /^[A-D]$/;
+        return re.test(a);
+      });
       if (ansOk && trOk && refOk && ansValid) continue;
     }
     const qs = all(`SELECT id, stem, options FROM question WHERE passage_id = ? ORDER BY id`, [p.id]);
@@ -224,26 +231,37 @@ function buildTranslationPrompt(passage) {
 async function generateData(section, passage, questions) {
   // 写作 / 翻译：只产出范文或参考译文
   if (section === 'writing' || section === 'translation') {
-    const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 12000, temperature: 0.4 });
+    const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 24000, temperature: 0.4 });
     const d = parseJson(r.content);
     return { answers: [], translation: '', reference: String(d.reference || '').trim(), note: String(d.note || '').trim() };
   }
   if (questions.length) {
+    let diag = '';
     try {
-      const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 16000 });
+      const r = await chat([{ role: 'user', content: buildPrompt(section, passage, questions) }], { maxTokens: 40000 });
       const d = parseJson(r.content);
       if (d && Array.isArray(d.answers) && d.answers.length) return d;
-      throw new Error('answers 为空');
-    } catch (e) {
-      const a = parseJson((await chat([{ role: 'user', content: buildAnswersPrompt(section, passage, questions) }], { maxTokens: 10000, temperature: 0 })).content);
-      let translation = '';
+      diag = `first:no-answers len=${r.content.length} tail=${JSON.stringify(r.content.slice(-50))}`;
+    } catch (e) { diag = `first:throw ${String(e.message).slice(0, 70)}`; }
+    let raw2 = '';
+    try {
+      raw2 = (await chat([{ role: 'user', content: buildAnswersPrompt(section, passage, questions) }], { maxTokens: 30000, temperature: 0 })).content;
+    } catch (e) { diag += ` | second:throw ${String(e.message).slice(0, 70)}`; }
+    let a = null;
+    try { a = parseJson(raw2); } catch (e) { diag += ` | parse2:throw ${String(e.message).slice(0, 50)}`; }
+    let translation = '';
+    try {
+      translation = String(parseJson((await chat([{ role: 'user', content: buildTranslationPrompt(passage) }], { maxTokens: 16000, temperature: 0.3 })).content).translation || '');
+    } catch { /* 翻译失败不影响答案落库 */ }
+    if (!a || !Array.isArray(a.answers) || !a.answers.length) {
       try {
-        translation = String(parseJson((await chat([{ role: 'user', content: buildTranslationPrompt(passage) }], { maxTokens: 6000, temperature: 0.3 })).content).translation || '');
-      } catch { /* 翻译失败不影响答案落库 */ }
-      return { answers: a.answers, translation };
+        fs.appendFileSync(path.join(root, '..', '_tmp-trash', 'gen-debug.txt'),
+          `=== pid=${passage.id} ${section}#${passage.seq} | ${diag} | secondLen=${raw2.length} head=${JSON.stringify(raw2.slice(0, 160))} tail=${JSON.stringify(raw2.slice(-120))}\n`);
+      } catch { /* ignore */ }
     }
+    return { answers: (a && a.answers) || [], translation };
   }
-  const t = await chat([{ role: 'user', content: buildTranslationPrompt(passage) }], { maxTokens: 8000, temperature: 0.3 });
+  const t = await chat([{ role: 'user', content: buildTranslationPrompt(passage) }], { maxTokens: 16000, temperature: 0.3 });
   return { answers: [], translation: String(parseJson(t.content).translation || '') };
 }
 
@@ -325,7 +343,7 @@ async function runTask(task) {
       // 复核也要给足 token：推理模型的思维链会先吃掉一大截预算，给少了 content 会是空的
       let vText = '';
       for (let i = 0; i < 2 && !vText; i++) {
-        const v = await chat([{ role: 'user', content: verifyPrompt + (i ? '\n\n直接给出 JSON。' : '') }], { maxTokens: 8000, temperature: 0 });
+        const v = await chat([{ role: 'user', content: verifyPrompt + (i ? '\n\n直接给出 JSON。' : '') }], { maxTokens: 24000, temperature: 0 });
         vText = v.content && v.content.trim() ? v.content : '';
         if (!vText) await sleep(800);
       }
@@ -447,7 +465,7 @@ if (REVERIFY) {
         const vp = buildVerifyPrompt(j.op.section, j.passage, j.questions, null);
         let vText = '';
         for (let i = 0; i < 3 && !vText; i++) {
-          const v = await chat([{ role: 'user', content: vp + (i ? '\n\n严格只输出 JSON 对象本身。' : '') }], { maxTokens: 8000, temperature: 0 });
+          const v = await chat([{ role: 'user', content: vp + (i ? '\n\n严格只输出 JSON 对象本身。' : '') }], { maxTokens: 24000, temperature: 0 });
           vText = v.content && v.content.trim() ? v.content : '';
           if (!vText) await sleep(1200);
         }
