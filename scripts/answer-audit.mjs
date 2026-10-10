@@ -73,7 +73,7 @@ if (clozeBad.length) for (const x of clozeBad.slice(0, 8)) console.log(`    pass
 // 段落匹配：答案字母应在该篇出现的段落字母范围内
 const matchBad = [];
 for (const p of all(`SELECT id, content FROM passage WHERE section='match'`)) {
-  const letters = new Set([...String(p.content).matchAll(/(?:^|\n)([A-Z])[\)\.]/g)].map((m) => m[1]));
+  const letters = new Set(String(p.content).split(/\r?\n/).map((s) => (s.trim().match(/^([A-Z])[)）．.]/) || [])[1]).filter(Boolean));
   if (!letters.size) continue;
   const qs = all(`SELECT id, answer FROM question WHERE passage_id=? ORDER BY id`, [p.id]);
   const bad = qs.filter((q) => (q.answer || '').trim() && !letters.has(q.answer.trim()));
