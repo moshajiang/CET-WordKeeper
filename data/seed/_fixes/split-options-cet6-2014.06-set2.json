@@ -1,0 +1,113 @@
+{
+ "key": "cet6-2014.06-set2",
+ "fixes": [
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) It may leave knowledge “in the cloud”.",
+    "B) It may misguide our everyday behavior.",
+    "C) It may cause a divide in the circles of education.",
+    "D) It may hinder the development of thinking skills."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 47,
+   "pos": 1,
+   "options": [
+    "A) It helps kids to navigate the virtual world at will.",
+    "B) It helps kids to broaden their scope of knowledge.",
+    "C) It increases kids’ efficiency of acquiring knowledge.",
+    "D) It liberates kids from the burden of memorizing facts."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 48,
+   "pos": 2,
+   "options": [
+    "A) Knowledge is better kept in long-term memory.",
+    "B) Critical thinking is based on factual knowledge.",
+    "C) Study skills are essential to knowledge acquisition.",
+    "D) Critical thinking means challenging existing facts."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) Gathering enough evidence before drawing conclusions.",
+    "B) Mastering the basic rules and principles for evaluation.",
+    "C) Connecting new information with one’s accumulated knowledge.",
+    "D) Understanding both what has happened and why it has happened."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) To warn against learning through memorizing facts.",
+    "B) To promote educational reform in the information age.",
+    "C) To explain human brains5 function in storing information.",
+    "D) To challenge the prevailing overemphasis on digital literacy."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) They have been competing for the leading position.",
+    "B) California has been superior to Texas in many ways.",
+    "C) They are both models of development for other states.",
+    "D) Texas’s cowboy culture is less known than California’s."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "pos": 1,
+   "options": [
+    "A) Its debts are pushing it into bankruptcy.",
+    "B) Its budgets have been cut by $26 billion.",
+    "C) It is faced with a serious financial crisis.",
+    "D) It is trying hard to protect the vulnerable."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) Its Hispanic population is mostly illiterate.",
+    "B) Its sunrise industries are shrinking rapidly.",
+    "C) Its education cannot meet the needs of the knowledge economy.",
+    "D) Its immigrants have a hard time adapting to its cowboy culture."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 55,
+   "pos": 4,
+   "options": [
+    "A) Each state has its own way of governing.",
+    "B) Most states favor a bipartisan approach.",
+    "C) Parties collaborate in drawing public policies.",
+    "D) All states believe in government for the people."
+   ]
+  }
+ ]
+}

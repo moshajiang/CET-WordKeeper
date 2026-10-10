@@ -339,10 +339,10 @@
           "qtype": "choice",
           "stem": "46.The market sales of toilet paper have decreased because .",
           "options": [
-            "Britons have cut their spending on it",
-            "its prices have gone up over the years",
-            "its quality has seen marked improvement",
-            "Britons have developed the habit of saving"
+            "A) Britons have cut their spending on it",
+            "B) its prices have gone up over the years",
+            "C) its quality has seen marked improvement",
+            "D) Britons have developed the habit of saving"
           ],
           "answer": "",
           "analysis": ""
@@ -351,10 +351,10 @@
           "qtype": "choice",
           "stem": "47.What does the author think of the future of the tissue paper market in the UK?",
           "options": [
-            "It will expend in time.",
-            "It will remain gloomy.",
-            "It will experience ups and downs.",
-            "It will recover as population grows."
+            "A) It will expend in time.",
+            "B) It will remain gloomy.",
+            "C) It will experience ups and downs.",
+            "D) It will recover as population grows."
           ],
           "answer": "",
           "analysis": ""

@@ -339,10 +339,10 @@
           "qtype": "choice",
           "stem": "56.What is the author’s concern about the use of technology?",
           "options": [
-            "It may leave knowledge “in the cloud”.",
-            "It may misguide our everyday behavior.",
-            "It may cause a divide in the circles of education.",
-            "It may hinder the development of thinking skills."
+            "A) It may leave knowledge “in the cloud”.",
+            "B) It may misguide our everyday behavior.",
+            "C) It may cause a divide in the circles of education.",
+            "D) It may hinder the development of thinking skills."
           ],
           "answer": "",
           "analysis": ""
@@ -351,10 +351,10 @@
           "qtype": "choice",
           "stem": "57.What is the view of educators who advocate digital literacy?",
           "options": [
-            "It helps kids to navigate the virtual world at will.",
-            "It helps kids to broaden their scope of knowledge.",
-            "It increases kids’ efficiency of acquiring knowledge.",
-            "It liberates kids from the burden of memorizing facts."
+            "A) It helps kids to navigate the virtual world at will.",
+            "B) It helps kids to broaden their scope of knowledge.",
+            "C) It increases kids’ efficiency of acquiring knowledge.",
+            "D) It liberates kids from the burden of memorizing facts."
           ],
           "answer": "",
           "analysis": ""
@@ -363,10 +363,10 @@
           "qtype": "choice",
           "stem": "58.What does evidence from cognitive science show?",
           "options": [
-            "Knowledge is better kept in long-term memory.",
-            "Critical thinking is based on factual knowledge.",
-            "Study skills are essential to knowledge acquisition.",
-            "Critical thinking means challenging existing facts."
+            "A) Knowledge is better kept in long-term memory.",
+            "B) Critical thinking is based on factual knowledge.",
+            "C) Study skills are essential to knowledge acquisition.",
+            "D) Critical thinking means challenging existing facts."
           ],
           "answer": "",
           "analysis": ""
@@ -375,10 +375,10 @@
           "qtype": "choice",
           "stem": "59.What does the author think is key to making evaluations?",
           "options": [
-            "Gathering enough evidence before drawing conclusions.",
-            "Mastering the basic rules and principles for evaluation.",
-            "Connecting new information with one’s accumulated knowledge.",
-            "Understanding both what has happened and why it has happened."
+            "A) Gathering enough evidence before drawing conclusions.",
+            "B) Mastering the basic rules and principles for evaluation.",
+            "C) Connecting new information with one’s accumulated knowledge.",
+            "D) Understanding both what has happened and why it has happened."
           ],
           "answer": "",
           "analysis": ""
@@ -387,10 +387,10 @@
           "qtype": "choice",
           "stem": "60.What is the author’s purpose in writing the passage?",
           "options": [
-            "To warn against learning through memorizing facts.",
-            "To promote educational reform in the information age.",
-            "To explain human brains5 function in storing information.",
-            "To challenge the prevailing overemphasis on digital literacy."
+            "A) To warn against learning through memorizing facts.",
+            "B) To promote educational reform in the information age.",
+            "C) To explain human brains5 function in storing information.",
+            "D) To challenge the prevailing overemphasis on digital literacy."
           ],
           "answer": "",
           "analysis": ""
@@ -407,10 +407,10 @@
           "qtype": "choice",
           "stem": "61.What does the author say about California and Texas in Paragraph 1?",
           "options": [
-            "They have been competing for the leading position.",
-            "California has been superior to Texas in many ways.",
-            "They are both models of development for other states.",
-            "Texas’s cowboy culture is less known than California’s."
+            "A) They have been competing for the leading position.",
+            "B) California has been superior to Texas in many ways.",
+            "C) They are both models of development for other states.",
+            "D) Texas’s cowboy culture is less known than California’s."
           ],
           "answer": "",
           "analysis": ""
@@ -419,10 +419,10 @@
           "qtype": "choice",
           "stem": "62.What does the author say about today’s California?",
           "options": [
-            "Its debts are pushing it into bankruptcy.",
-            "Its budgets have been cut by $26 billion.",
-            "It is faced with a serious financial crisis.",
-            "It is trying hard to protect the vulnerable."
+            "A) Its debts are pushing it into bankruptcy.",
+            "B) Its budgets have been cut by $26 billion.",
+            "C) It is faced with a serious financial crisis.",
+            "D) It is trying hard to protect the vulnerable."
           ],
           "answer": "",
           "analysis": ""
@@ -443,10 +443,10 @@
           "qtype": "choice",
           "stem": "64.What problem is Texas confronted with?",
           "options": [
-            "Its Hispanic population is mostly illiterate.",
-            "Its sunrise industries are shrinking rapidly.",
-            "Its education cannot meet the needs of the knowledge economy.",
-            "Its immigrants have a hard time adapting to its cowboy culture."
+            "A) Its Hispanic population is mostly illiterate.",
+            "B) Its sunrise industries are shrinking rapidly.",
+            "C) Its education cannot meet the needs of the knowledge economy.",
+            "D) Its immigrants have a hard time adapting to its cowboy culture."
           ],
           "answer": "",
           "analysis": ""
@@ -455,10 +455,10 @@
           "qtype": "choice",
           "stem": "65.What do we learn about American politics from the passage?",
           "options": [
-            "Each state has its own way of governing.",
-            "Most states favor a bipartisan approach.",
-            "Parties collaborate in drawing public policies.",
-            "All states believe in government for the people."
+            "A) Each state has its own way of governing.",
+            "B) Most states favor a bipartisan approach.",
+            "C) Parties collaborate in drawing public policies.",
+            "D) All states believe in government for the people."
           ],
           "answer": "",
           "analysis": ""

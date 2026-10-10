@@ -12,6 +12,30 @@
     "C) Luxurious features add much to the price.",
     "D) Consumers have a variety to choose from."
    ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 46,
+   "pos": 0,
+   "options": [
+    "A) Britons have cut their spending on it",
+    "B) its prices have gone up over the years",
+    "C) its quality has seen marked improvement",
+    "D) Britons have developed the habit of saving"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 47,
+   "pos": 1,
+   "options": [
+    "A) It will expend in time.",
+    "B) It will remain gloomy.",
+    "C) It will experience ups and downs.",
+    "D) It will recover as population grows."
+   ]
   }
  ]
 }

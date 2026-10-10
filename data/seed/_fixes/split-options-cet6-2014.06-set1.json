@@ -36,6 +36,78 @@
     "C) It is a trendy way to communicate.",
     "D) It adds to the humor of the text."
    ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 49,
+   "pos": 3,
+   "options": [
+    "A) the difference between writing and talking",
+    "B) how differently words are used in texting",
+    "C) why people use the words the way they do",
+    "D) the gradual change of word meaning"
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "qnum": 50,
+   "pos": 4,
+   "options": [
+    "A) It facilitates exchange of ideas among people.",
+    "B) It is a new form of verbal communication.",
+    "C) It deteriorates people’s composition skills.",
+    "D) It hastens the decline of the written word."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 51,
+   "pos": 0,
+   "options": [
+    "A) She was a distinguished graduate of Harvard School of Law.",
+    "B) She worked her way to success in the entertainment industry.",
+    "C) She used to abuse her children when she was a young mother.",
+    "D) She achieved her fame through persistent advocacy of fake science."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 52,
+   "pos": 1,
+   "options": [
+    "A) She did not specialize in the study of law.",
+    "B) She was known as s supporter of fake science.",
+    "C) She was an icon of the entertainment industry.",
+    "D) She had not distinguished herself academically."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 53,
+   "pos": 2,
+   "options": [
+    "A) He was strongly against it.",
+    "B) He considered it unpopular.",
+    "C) He thought it would help enhance Harvard’s reputation.",
+    "D) He thought it represented the will of the Harvard community."
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "qnum": 54,
+   "pos": 3,
+   "options": [
+    "A) They show inadequate respect for evidence-based inquiry.",
+    "B) They fall short of expectations in teaching and research.",
+    "C) They attach too much importance to public relations.",
+    "D) They are tolerant of political and religious nonsense."
+   ]
   }
  ]
 }
