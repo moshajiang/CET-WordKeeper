@@ -1,0 +1,264 @@
+{
+ "level": "CET4",
+ "year": 2017,
+ "month": 12,
+ "set_no": 3,
+ "model": "manual",
+ "passages": [
+  {
+   "section": "writing",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "How to Best Handle the Relationship Between Doctors and Patients\nA harmonious doctor-patient relationship rests on trust, communication and mutual respect, and maintaining it is the responsibility of both sides.\nFor doctors, communication is the first medicine. Explaining a diagnosis in plain language, listening patiently to a patient's worries, and being honest about risks and costs can prevent most misunderstandings before they start. A few extra minutes of explanation is often worth more than another prescription.\nFor patients, the key is rational trust and cooperation. Medicine has limits: no doctor can guarantee every outcome. Following professional advice, describing symptoms accurately, and refraining from using internet searches to challenge a physician's judgment make treatment far more effective.\nWhen disputes do arise, they should be settled through legal channels rather than verbal abuse or violence against medical staff. Only when doctors can practise without fear and patients can seek help without suspicion can the relationship return to its essence: two parties on the same side, fighting the disease together.",
+   "note": "结构同“亲子关系”篇：总起（信任/沟通/尊重）—医生角度—患者角度—纠纷处理—总结。可复用：rests on / in plain language / refrain from / on the same side, fighting the disease together。"
+  },
+  {
+   "section": "cloze",
+   "seq": 1,
+   "translation": "我们都知道，在接触 STEM（科学、技术、工程与数学）课程方面，公共教育体系存在巨大的空白。一位名叫多莉·罗伯茨的教育工作者决定做点什么来改变这一体系。多莉教了 11 年中学工程课。她注意到，公共教育体系的各个层面都缺乏高质量的 STEM 教育。她说：“我创办 Engineering For Kids（EFK），是因为注意到真正缺少可供我自己的孩子参加的数学、科学和工程课程。”\n她决定开办一个课后项目，让孩子们参加以 STEM 为基础的竞赛。俱乐部发展迅速——当成员达到 180 人、项目里的孩子们赢得多项州冠军时，她决定把全部时间投入到培育和发展这个项目上。全球性的企业 EFK 就此诞生。\n多莉起初在弗吉尼亚的家中经营 EFK，随后把它扩展到当地的康乐中心。如今，EFK 项目在美国 32 个州和 21 个国家运营着 144 个以上的分支。销售额从 2014 年的 500 万美元翻番到 2015 年的 1000 万美元，2016 年还计划新增 25 个分支。EFK 网站上写道：“我们的国家培养出的工程师还不够。我们的理念是：在孩子年幼时就启发他们，让他们明白工程是一项了不起的事业。”",
+   "questions": [
+    {
+     "stem": "26",
+     "answer": "G",
+     "analysis": "名词：在“接触”STEM 课程方面存在空白（when it comes to exposure to STEM courses），固定搭配 exposure to。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "27",
+     "answer": "L",
+     "analysis": "名词复数：公共教育体系“各个层面”都缺乏高质量 STEM 教育（at all levels of the public educational system）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "28",
+     "answer": "F",
+     "analysis": "动词不定式：缺少可供“我自己的孩子报名参加”的课程（programs to enroll my own kids in）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "29",
+     "answer": "O",
+     "analysis": "谓语动词过去式：孩子们“参加”以 STEM 为基础的竞赛（where children participated in competitions）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "30",
+     "answer": "C",
+     "analysis": "名词复数：孩子们赢得了多项“州锦标赛”（won several state championships）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "31",
+     "answer": "E",
+     "analysis": "动名词与 cultivating 并列：把全部时间投入“培育和发展”这个项目（cultivating and developing it）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "32",
+     "answer": "M",
+     "analysis": "形容词：随后把业务扩展到“当地的”康乐中心（local recreation centers）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "33",
+     "answer": "N",
+     "analysis": "主语三单谓语动词：EFK 项目如今“运营着”144 个以上分支（the EFK program operates over 144 branches）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "34",
+     "answer": "J",
+     "analysis": "动名词：我们的国家“培养出的”工程师还不够（is not graduating enough engineers），与启发孩子学工程呼应。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "35",
+     "answer": "B",
+     "analysis": "名词：让孩子明白工程是一项了不起的“事业”（a great career），由 understand that 从句可定。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "match",
+   "seq": 1,
+   "translation": "你为什么不好奇发生了什么？\n[A] “我们放出视频之后，你们才停赛了雷·赖斯，”日前，TMZ 的一名记者质问全国橄榄球联盟主席罗杰·古德尔。“你为什么不好奇，自己跑去赌场看看？”这个问题暗含的意思是：一位更好奇的主席总能设法拿到录像带。\n[B] “缺乏好奇”的指责我们时常听到，言下之意是：不想追寻真相，本身就有问题。“这种奇怪的好奇心匮乏困扰我很久了，”新泽西州一位民主党议员七月时说，指的是州长克里斯·克里斯蒂的一名助手对“华盛顿大桥堵门丑闻”不去追问的态度。“主流媒体对发生了什么就一点不好奇吗？”保守派作家珍妮弗·鲁宾今年早些时候写道，指的是美国人在利比亚班加西遭袭一事。\n[C] 每一种指责的言下之意都是：好奇心是好事，缺乏好奇心是个问题。这些指责只是为本党挣政治分的手段？还是说好奇心本身确有特殊价值？\n[D] 记者伊恩·莱斯利在其新书《好奇：求知欲的渴望及其为何决定你的未来》中坚持认为，最后一个问题的答案是“是”。莱斯利认为，好奇心是一项被严重忽视的人类美德，对我们的成功至关重要，而我们正在失去它。\n[E] 他写道，我们正遭受“意外之得赤字”。“意外之得”（serendipity）一词是霍勒斯·沃波尔在 1854 年一封信里，根据三位王子的故事造出来的——他们“总是在无意间发现他们原本没有寻找的东西”。莱斯利担心，除其他社会与技术变革外，互联网的兴起降低了我们对漫无目的冒险的胃口。我们再也没有让自己在知识的原野里闲逛、随时准备被惊喜的心境，而只寻找自己想要的信息。\n[F] 为什么这是个问题？因为没有好奇心，我们就会失去创新与创业精神。我们将看到缺乏想象力的政府和垂死的公司做出灾难性决策。我们将失去让人类整体如此成功的要素中至关重要的一部分。\n[G] 莱斯利为“整个社会正变得不好奇”这一命题提供了大量证据。例如在美欧，互联网的兴起导致读者对境外新闻的消费下降。但并非一切都该怪技术。对文学小说兴趣的下降，也是莱斯利指出的原因之一。他说，阅读文学小说让我们更好奇。\n[H] 此外，要做到好奇，“你首先必须意识到自己的知识存在空白”。虽然莱斯利断言我们多数人意识不到自己有多少东西不知道，可能说得有点过头，但他指出这个问题正在加剧肯定没错：“谷歌能给我们一种强大的错觉——所有问题都有确定的答案。”\n[I] 事实上，莱斯利颇为欣赏的谷歌，也是他常打的替罪羊。他引用谷歌联合创始人拉里·佩奇的话，大意是“完美的搜索引擎”将“准确理解我的意思，准确给我想要的”。在书中的另一处，莱斯利写道：“谷歌的目标是让你彻底免除好奇之渴。”\n[J] 他略带怀旧地引用了凯恩斯对书店那句著名的赞美：“走进书店时应恍恍惚惚，如在梦中，任由那里的东西自由地吸引和打动你的目光。随着好奇心驱使在书架间流连，应当是一种下午的消遣。”要是真能这样！\n[K] 引用心理学家和认知科学家的研究，莱斯利批评了那种“学业成功是智力天赋与努力相结合之结果”的流行看法。他认为，好奇心是第三个关键因素——也是一个难以保持的因素。不加培育，它就无法存活：“童年的好奇心是孩子与大人之间的合作。杀死它最稳当的办法就是放任不管。”\n[L] 他警告说，学校教育的方式常常让孩子变得不好奇。受过教育的、中上层阶级家庭的孩子，即使年幼，也比工薪和下层家庭的孩子好奇得多。好奇心的缺乏造成知识的相对匮乏，而这种匮乏日后即使能弥补也极其困难。\n[M] 虽然莱斯利的书不谈政治，但他并未完全回避这个问题。政治领袖和其他组织的领导者一样应当保持好奇。他们应当在关键时刻提问。他警告：不想知道，会有严重的后果。\n[N] 他举的例子是小布什政府未能为入侵伊拉克的后续影响做好充分准备。莱斯利认为，那些讥讽前国防部长拉姆斯菲尔德 2002 年“要当心未知的未知”一说的人错了。拉姆斯菲尔德的想法，莱斯利写道，“并不荒谬——它很聪明。”他补充说：“悲剧在于他没有遵循自己的建议。”\n[O] 这一切把我们带回到古德尔、克里斯蒂案和班加西。每个例子中的批评者都在用不同的方式指责：掌权者故意不好奇。哪些指控成立——如果有的话——我留给读者根据自己的政治偏好去判断。但请小心：我们总是要求对方的好奇，却对自己的弱点执意不好奇。我们应当乐于为知识本身而追求知识——哪怕查明的是我们并不特别想知道的事。",
+   "questions": [
+    {
+     "stem": "36. To be curious, we need to realize first of all that there are many things we don’t know.",
+     "answer": "H",
+     "analysis": "该段：“要做到好奇，你首先必须意识到自己的知识存在空白”（you have to be aware of a gap in your knowledge in the first place）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "37. According to Leslie, curiosity is essential to one’s success.",
+     "answer": "D",
+     "analysis": "该段：莱斯利认为好奇心是“对我们的成功至关重要的人类美德”（crucial to our success）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "38. We should feel happy when we pursue knowledge for knowledge’s sake.",
+     "answer": "O",
+     "analysis": "该段：“我们应当乐于为知识本身而追求知识”（be delighted to pursue knowledge for its own sake）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "39. Political leaders’ lack of curiosity will result in bad consequences.",
+     "answer": "M",
+     "analysis": "该段：政治领袖应当保持好奇、在关键时刻提问，“不想知道会有严重的后果”（serious consequences in not wanting to know）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "40. There are often accusations about politicians' and the media’s lack of curiosity to find out the truth.",
+     "answer": "B",
+     "analysis": "该段：“‘缺乏好奇’的指责我们时常听到”，并举州议员、保守派作家指责政客与主流媒体的例子。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "41. The less curious a child is, the less knowledge the child may turn out to have.",
+     "answer": "L",
+     "analysis": "该段：“好奇心的缺乏造成知识的相对匮乏”（That lack of curiosity produces a relative lack of knowledge）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "42. It is widely accepted that academic accomplishment lies in both intelligence and diligence.",
+     "answer": "K",
+     "analysis": "该段：莱斯利批评“学业成功源于天赋加努力”的流行看法（the received wisdom），提出好奇心是第三因素。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "43. Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.",
+     "answer": "J",
+     "analysis": "该段引凯恩斯：逛书店“应当是一种下午的消遣”（should be an afternoon's entertainment），随着好奇心驱使在书架间流连。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "44. Both the rise of the Internet and reduced appetite for literary fiction contribute to people’s declining curiosity.",
+     "answer": "G",
+     "analysis": "该段：互联网兴起导致境外新闻消费下降，“对文学小说兴趣的下降也是原因之一”——两个因素都指向好奇心下降。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "45. Mankind wouldn’t be so innovative without curiosity.",
+     "answer": "F",
+     "analysis": "该段：没有好奇心就会“失去创新与创业精神”，失去“让人类整体如此成功的要素中至关重要的一部分”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 1,
+   "translation": "衰老发生在我们每个人身上，通常被视为人生的自然组成部分。把这样一件事称为“疾病”似乎很可笑。\n另一方面，科学家们越来越清楚地了解到：衰老与生物学年龄是两回事，而前者是心脏病、癌症等诸多疾病的关键风险因素。从这个角度看，衰老本身或许可以被视为一种可治疗的东西，就像治疗高血压或维生素缺乏一样。\n生物物理学家亚历山大·扎沃龙科夫认为，衰老应当被视为一种疾病。他说，把衰老描述为疾病会激励人们开发治疗手段。\n“这解开了制药行业的束缚，让他们可以开始治疗疾病本身，而不仅是副作用，”他说。\n“眼下，人们认为衰老是自然的、无法控制的东西，”他说。“在学术圈里，人们把衰老研究仅仅当作一个兴趣领域，可以尝试开发干预手段。医学界也把衰老视为理所当然，除了把人维持在一定的健康范围内，别无他法。”\n但如果衰老被认定为一种疾病，他说，“它将吸引资金，并改变我们提供医疗保健的方式。关键是理解：衰老是可以治愈的。”\n“人们一直知道，身体会不断积累损伤，”他补充说。“治愈衰老的唯一办法，是找到修复这些损伤的方法。我把它看作针对年龄相关疾病的预防医学。”\n加州大学旧金山分校教授伦纳德·海弗利克说，衰老可以治愈这一说法，意味着人类寿命可以延长——一些研究者认为这是可能的，但海弗利克不在其列。\n“许多人从癌症、中风或心脏病中康复。但他们仍会继续衰老，因为衰老与他们的疾病是两回事，”海弗利克说。“即使消除这些死因，预期寿命也不会超过 92 岁太多。”",
+   "questions": [
+    {
+     "stem": "46. What do people generally believe about aging?",
+     "answer": "B",
+     "analysis": "第一、五段：衰老“通常被视为人生的自然组成部分”，“人们认为衰老是自然的、无法控制的”——即人们认为对此无能为力。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "47. How do many scientists view aging now?",
+     "answer": "A",
+     "analysis": "第二段：科学家越来越了解到衰老“或许可以被视为一种可治疗的东西”，如同治疗高血压。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "48. What does Alex Zhavoronkov think of “describing aging as a disease”?",
+     "answer": "D",
+     "analysis": "第三、四段：把衰老描述为疾病会“创造开发治疗的激励”，“解开制药行业的束缚，让他们开始治疗疾病本身”。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "49. What do we learn about the medical community?",
+     "answer": "C",
+     "analysis": "第五段：医学界把衰老视为理所当然，“除了把人维持在一定的健康范围内，别无他法”——即贡献有限。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "50. What does Professor Leonard Hayflick believe?",
+     "answer": "A",
+     "analysis": "第八、九段：海弗利克不认为衰老可治愈、寿命可延长——“即使消除这些死因，预期寿命也不会超过 92 岁太多”。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "reading",
+   "seq": 2,
+   "translation": "申请地球科学博士后职位的女性，获得优秀推荐信的可能性几乎只有男性申请者的一半。克里斯托弗·因塔利亚塔报道。\n与许多其他领域一样，性别偏见在科学界普遍存在。男性起薪更高、获得的指导更多、被雇用的机会也更好。研究表明，在 STEM（科学、技术、工程与数学）领域，人们还认为男性比女性更能干。而新研究显示，男性也更有可能获得优秀的推荐信。\n“比如说，‘这是我带过的最好的学生，’”哥伦比亚大学拉蒙特校区的社会科学家、多元化事务官库赫莉·达特说。“把那些优秀的推荐信与一封仅仅合格的信比一比：‘这位候选人富于产出、聪明，或是一位扎实的科学家’之类，显然是称许，却没有任何让人看出这名候选人出类拔萃、独一无二的内容。”\n达特和同事们研究了 1200 多封地球科学博士后职位的推荐信。这些信都经过编辑，去掉了性别及其他身份信息，这样达特的团队就可以在不知道学生性别的情况下给信件打分。他们发现，女性申请者获得杰出推荐信的可能性只有男性申请者的一半。推荐信来自世界各地，作者自然既有男性也有女性。研究结果发表在《自然·地球科学》杂志上。\n达特说，利用档案中的数据，他们无法评估申请者实际的科研资历。但她表示，这些结果仍然表明：从那些不够杰出的推荐信开始，地球科学领域的女性在职业生涯的一起点上就处于潜在的不利地位。\n“我们不是要归咎谁、批评谁，或者说谁是有意识的性别歧视者。重点是利用这项研究的结果，就不易察觉的性别偏见展开有意义的对话——无论是在院系层面、机构层面，还是学科层面。”这或许会带来一些针对推荐信撰写者的建议。",
+   "questions": [
+    {
+     "stem": "51. What do we learn about applicants to postdoctoral positions in geosciences?",
+     "answer": "C",
+     "analysis": "首段：申请地球科学博士后的女性“获得优秀推荐信的可能性几乎只有男性的一半”——男性更可能拿到杰出推荐信。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "52. What do studies about men and women in scientific research show?",
+     "answer": "C",
+     "analysis": "第二段：“研究表明，在 STEM 领域，人们还认为男性比女性更能干”（perceived as more competent than women）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "53.What do the studies find about the recommendation letters for women applicants?",
+     "answer": "B",
+     "analysis": "第三段：仅仅合格的信“没有任何让人看出这名候选人出类拔萃、独一无二的内容”（nothing that singles out the candidate）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "54.What did Dutt and her colleagues do with the more than 1, 200 letters of recommendation?",
+     "answer": "D",
+     "analysis": "第四段：这些信“都经过编辑，去掉了性别及其他身份信息”（edited for gender and other identifying information）。",
+     "verified": false,
+     "dissent": null
+    },
+    {
+     "stem": "55. What does Dutt aim to do with her study?",
+     "answer": "A",
+     "analysis": "末段：研究是为了就不易察觉的性别偏见展开对话，“这或许会带来一些针对推荐信撰写者的建议”——即提高写信人的偏见意识。",
+     "verified": false,
+     "dissent": null
+    }
+   ]
+  },
+  {
+   "section": "translation",
+   "seq": 1,
+   "translation": "",
+   "questions": [],
+   "reference": "Mount Huangshan, located in the south of Anhui Province, is famous for its unique scenery, especially its sunrise and sea of clouds. To appreciate the magnificence of a great mountain, one usually looks upward; but to enjoy the beauty of Mount Huangshan, one has to look downward. Its humid climate is favorable for the growth of tea trees, making it one of China's major tea-producing areas. There are also many hot springs here, whose waters help prevent and treat skin diseases. Mount Huangshan is one of China's major tourist destinations, and also the most popular subject of photography and traditional Chinese paintings.",
+   "note": "难点：风景独特（unique scenery）、日出和云海（sunrise and sea of clouds）、宏伟壮丽（magnificence）、湿润气候（humid climate）、有利于……生长（favorable for the growth of）、主要产茶地（major tea-producing area）、防治皮肤病（prevent and treat skin diseases）、旅游目的地（tourist destination）、传统国画（traditional Chinese paintings）。"
+  }
+ ],
+ "generatedAt": "2026-10-10T11:40:49.166Z"
+}
