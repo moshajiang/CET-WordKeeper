@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "O",
      "analysis": "语义线索。空格修饰 feeling，句意为乘机常留下的“不愉快”感受，unpleasant 符合语境；其余形容词无法与 feeling 搭配出此含义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "A",
      "analysis": "搭配线索。be adjusted to do/for 表示“被调节以……”，机舱气压被调节以防高原反应，adjusted 作表语修饰 pressure。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "D",
      "analysis": "动词线索。experience 作及物动词意为“感受到”，宾语为 sleepiness or a headache，符合“仍可能感到困倦或头痛”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "C",
      "analysis": "固定搭配。equivalent to 意为“相当于”，说明机舱内氧压相当于 6000-8000 英尺高度的气压。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "G",
      "analysis": "名词线索。certain individuals 指“某些人”，说明氧压下降只会在特定个体身上引发头痛。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "H",
      "analysis": "副词线索。originally thought 意为“原本以为”，与“飞机餐并非那么无味”形成对比，修饰动词 thought。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "K",
      "analysis": "动词线索。reduce taste sensitivity 意为“降低味觉敏感度”，与后文“饮水恢复味觉”构成因果呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "N",
      "analysis": "动词线索。thrive 意为“滋生/繁荣”，主语 infections，说明干燥环境中感染易滋生；thrive 为不及物用法，语法正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "E",
      "analysis": "名词线索。air filters 意为“空气过滤器”，解释为何机舱内染病风险低，与 because of 搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "F",
      "analysis": "副词线索。wash your hands frequently 意为“勤洗手”，修饰动词，与“细菌附着机舱表面”形成照应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.Songdo’s popularity lies more in its quality of life than its business attraction.",
      "answer": "F",
      "analysis": "对应 F 段定位句“Songdo has become a popular Korean city – more popular as a residential area than a business one”，题干 popularity / quality of life / business attraction 与之同义对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.The man who conceived Songdo feels disappointed because it has fallen short of his expectations.",
      "answer": "I",
      "analysis": "对应 I 段首句“Park Yeon Soo, the man who first imagined Songdo, feels frustrated, too”，frustrated 对应题干 disappointed，imagined 对应 conceived。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.A scene in a popular South Korean music video was shot in Songdo.",
      "answer": "D",
      "analysis": "对应 D 段“Songdo appears in the most famous music video... some of the video was filmed in Songdo”，即韩国流行音乐视频（江南 Style）部分场景摄于松岛。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.Songdo still lacks the financial stimulus for businesses to set up shop there.",
      "answer": "G",
      "analysis": "对应 G 段“there needs to be strong economic incentives for companies to locate here”，题干 lacks financial stimulus 与 needs...incentives 同义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Airplanes will increasingly become the chief means of transportation, according to a professor.",
      "answer": "B",
      "analysis": "对应 B 段 Kasarda 所言“the 21st century will increasingly be an aviation century”，aviation 对应 airplanes，chief means of transportation 为同义改写。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.Songdo has ended up different from the city it was supposed to be.",
      "answer": "E",
      "analysis": "对应 E 段“The city was supposed to be a hub for global companies... But that's not how it has turned out”，对应题干 ended up different from what it was supposed to be。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.Some of the people who work in Songdo complain about boredom in the workplace.",
      "answer": "H",
      "analysis": "对应 H 段“I'm, like, in prison for weekdays. That's what we call it in the workplace”，对应题干 work in Songdo / boredom in the workplace。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.A business professor says that a future city should have easy access to international transportation.",
      "answer": "A",
      "analysis": "对应 A 段 Kasarda（business professor）所言“future cities should be built... around or near airports”，对应 easy access to international transportation。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.According to an urban design professor, it is difficult for city designers to foresee what will happen in the future.",
      "answer": "J",
      "analysis": "对应 J 段 Brent Ryan（urban design 教授）末句“it is hard to predict the future”，对应 difficult... foresee what will happen。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Park Y eon Soo, who envisioned Songdo, feels a parental connection with the city.",
      "answer": "C",
      "analysis": "对应 C 段“He considers Songdo his baby”，baby 对应题干 parental connection（亲子般联系）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46.What does the passage say about the newly-approved soda tax in Philadelphia?",
      "answer": "B",
      "analysis": "定位第二段“It sets a new bar for similar initiatives... proof that taxes... can win substantial support outside super-liberal areas”，说明此举可能鼓励其他城市效仿。干扰项 A（改变消费者生活方式）无原文依据；C（减少低收入群体消费）未提及；D（影响营销策略）偷换概念。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What will the opponents probably do to respond to the soda tax proposal?",
      "answer": "C",
      "analysis": "定位第五段 Lauren Kane 所言“take legal action to stop it”，反对者将诉诸法律。干扰项 A（与市议会谈判）、B（拒缴税）、D（争取公众支持）均非原文承诺的应对。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What did the industry-backed anti-tax campaign do about the soda tax proposal?",
      "answer": "D",
      "analysis": "定位第六段“An industry-backed anti-tax campaign has spent... on advertisements. The ads criticized the measure”，反税活动通过广告批评该措施。干扰项 A（煽动消费者敌意）、B（争取杂货商支持）、C（持续致信媒体）原文未提。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What did public health groups think the soda tax would do?",
      "answer": "B",
      "analysis": "定位第七段公共卫生组织称该税是“a step toward fixing certain lasting health issues”，即有助于解决长期健康问题。干扰项 A（警示风险）非重点；C（增加研究经费）、D（惠及全国低收入者）范围扩大。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What do we learn about similar measures concerning the soda tax in some other cities?",
      "answer": "A",
      "analysis": "定位末段“Similar measures... are becoming hot-button issues”，说明类似措施正成为敏感议题。干扰项 B（在汽水行业引发恐慌）、C（降低糖致病发生率）、D（夺走大量利润）均属过度推断。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What is the finding of the new study?",
      "answer": "D",
      "analysis": "定位首段“Europe's stock of these quick-cooking ovens emit as much carbon as nearly 7 million cars... And the problem is growing”，说明微波炉碳排放超出人们想象。干扰项 A（更流行）是现象非发现；B（有害健康）未提及；C（CO2 是主要威胁）偏离。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. Why are the sales of microwaves expected to rise?",
      "answer": "A",
      "analysis": "定位首段“With costs falling and kitchen appliances becoming 'status' items”，成本下降使微波炉更买得起，推动销量上升。干扰项 B（生命周期更短）是结果非原因；C（更易操作）、D（烹饪更快）未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What recommendation does the study by the University of Manchester make?",
      "answer": "B",
      "analysis": "定位第二段曼彻斯特大学研究“efforts to reduce consumption should focus on improving consumer awareness and behaviour”，即改善用户习惯。干扰项 A（烹饪不同种类）、C（少吃）、D（更少使用）均非研究建议。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What does Professor David Reay try to argue?",
      "answer": "A",
      "analysis": "定位第三段 David Reay 观点“their emissions are minor compared to those from cars... These cars emit more than all the microwaves in the EU”，即汽车排放远多于微波炉。干扰项 B（应少用车）非其论点；C（英国排放更少）、D（需更多数据）无依据。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does Professor David Reay think of the use of microwaves?",
      "answer": "C",
      "analysis": "定位末句“rising microwave sales could be seen as a positive thing”，且前文指出微波炉最节能，故 Reay 认为其使用对环保有积极作用。干扰项 A（将不再流行）相反；B（更便利）、D（更耗电）非其环保论点。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点在于：①“姓总是在前，名跟在其后”的语序，宜用“the surname always comes first, followed by the given name”体现对比；②“世代相传”译为 passed down from generation to generation；③“并不罕见”用 it is not uncommon 这一双重否定更地道；④“承载愿望”用 carries the parents' wishes；⑤末句“伴随孩子一生”译为 stay with the child for life。注意 Han Chinese、surname、given name 的准确用词。"
   }
  ],
- "generatedAt": "2026-10-10T12:41:10.607Z"
+ "generatedAt": "2026-10-10T15:13:50.196Z",
+ "reverifiedAt": "2026-10-10T15:13:50.196Z"
 }

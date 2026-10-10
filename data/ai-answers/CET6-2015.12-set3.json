@@ -14,35 +14,35 @@
      "stem": "46.What is traditional educators’ interpretation of the research outcome mentioned in the first paragraph?",
      "answer": "D",
      "analysis": "第一段末句明确指出，传统教育者认为这一结果表明学校教育未能帮助学生思考生态系统和灭绝等重大科学思想，与D同义。A误解了研究结论，B、C原文未体现。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.In what way are college students different from children?",
      "answer": "A",
      "analysis": "第二段显示大学生能就鹰与栖息地相互依存等关键问题提问，并培养了提问能力，这是批判性思维的基石；五年级学生只关注具体特征。B过于笼统，C是儿童的特点，D未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.What is benefit of asking questions with no ready answers?",
      "answer": "B",
      "analysis": "第三段实验表明，教参与者提出无人能答且引发探索的问题后，他们提出更多问题、做更多实验、解释更好，提升了科学探究能力。C只是部分表现，A、D不是主要益处。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49.What is said to be the advantage of informal learning?",
      "answer": "A",
      "analysis": "末段明确说非正式学习环境比学校更能容忍失败，这是其优势。C将“不给分数”曲解为不收学费，B、D原文未提。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50.What does the author seem to encourage educators to do at the end of the passage?",
      "answer": "C",
      "analysis": "作者在结尾强调非正式系统强大、开放，暗示教育者应充分利用非正式学习资源培养学生的提问等能力。A、B、D与结尾重点不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -56,35 +56,35 @@
      "stem": "61.What is said about the failure of VSS Enterprise?",
      "answer": "B",
      "analysis": "文章指出，这次事故“将给太空旅游的未来蒙上长长的阴影”，说明对太空旅游产生了强烈的负面影响。A项破产未提及；C项“劝阻富人”无依据；D项文意重在影响未来，而非公众关注安全问题。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "62.What do we learn about the space-tourism firm Virgin Galactic?",
      "answer": "C",
      "analysis": "文中提到“在本周事故发生前，维珍银河似乎最接近开始定期飞行”，且已收取约800人定金，说明它即将开始常规商业运营。A项姐妹船才完工一半，不是刚建好；B项六名乘客是搭乘俄罗斯飞船，并非维珍银河；D项文中未说它是第一家。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "63.What is the purpose of the 2004 Commercial Space Launch Amendments Act?",
      "answer": "D",
      "analysis": "该法案“旨在鼓励私营太空飞行器和服务”，即促进太空旅游业发展。A项安全不是其目的，它反而限制监管；B项限制联邦航空管理局职能只是手段；C项私营航天并非因此法案才合法。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "64.What might the FAA do after the recent accident in California?",
      "answer": "D",
      "analysis": "文中明确说，在发生严重伤亡后，联邦航空管理局可以吊销维珍银河的飞行许可证，D项直接对应。A项加强安全标准是可能措施之一，但不如D项直接；B项和C项文中均未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "65.What does the author think of private space travel?",
      "answer": "A",
      "analysis": "作者在最后表示，开拓新旅行方式必然伴随风险，但可以通过经验降低风险，说明他认为私人太空旅行值得推进。B项“不应仅限于富人”只是部分涉及“超越游乐场”，非主要观点；C项严格监管未必是作者主张；D项与文意相反。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:22:59.368Z"
+ "generatedAt": "2026-10-10T15:10:27.876Z",
+ "reverifiedAt": "2026-10-10T15:10:27.876Z"
 }

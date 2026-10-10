@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "N",
      "analysis": "名词：用语音邮件给下属“传达警告”（delivered a warning to a subordinate），与道歉场景呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "B",
      "analysis": "名词：指尖上的各种沟通方式对“便利”和效率有好处（good for convenience and productivity）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "F",
      "analysis": "副词：“尤其是”当要传达的消息是坏消息时（particularly when the message is bad）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "L",
      "analysis": "谓语动词完成时：我们“调研”了多位商务沟通顾问（We've surveyed business communication consultants）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "C",
      "analysis": "副词：就“如何有效地”使用这些传递难开口消息的方式给出指南（effectively using）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "E",
      "analysis": "形容词最高级：面对面交流是最“切身”的（the most intimate），与后文排序呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
-     "answer": "J",
+     "answer": "M",
      "analysis": "形容词最高级：“最不友好”的是电子邮件（the most unfriendly is email），与 personalization 排序对照。",
      "verified": false,
-     "dissent": null
+     "dissent": "M"
     },
     {
      "stem": "33",
      "answer": "K",
      "analysis": "形容词：根据“特定的”情境或你自己的偏好（the specific situation or your own preferences）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "G",
      "analysis": "形容词最高级：“我首要的关心是：如何让这条消息柔和些”（My primary concern is），后接 how 从句。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "A",
      "analysis": "动词：用电子邮件道歉是我现在完全“避免”的做法（something I now totally avoid）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. Carême was among the first chefs who stressed both the appearance and flavor of dishes.",
      "answer": "G",
      "analysis": "该段：拿破仑“把卡雷姆召进杜伊勒里宫的厨房”，并为他与第二任妻子的婚礼设计非凡蛋糕。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. Carême wanted to show to later generations that French chefs of his time were most outstanding in the world.",
      "answer": "M",
      "analysis": "该段：“在他的一生中，自信满满的卡雷姆能看到自己在厨房的短暂统治之外”，要“为后世树立标准”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. Carême benefited greatly from serving a French diplomat and his connections.",
      "answer": "F",
      "analysis": "该段：“卡雷姆的作品很快捕获了一位法国外交官挑剔的眼光”，塔列朗的贵族交情成为他的生财之路。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. Carême learned his trade from a famous dessert chef in Paris.",
      "answer": "C",
      "analysis": "该段：“卡雷姆的童年一半是悲剧，一半是谜”——生于贫家、大革命高潮中被遗弃、8 岁做厨房帮工。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. Carême's creative works were exhibited in the shop windows by his master.",
      "answer": "E",
      "analysis": "该段：少年时代他“把 18 世纪末最著名的建筑做成可食用的复制品”——雅典遗址饼干、中式宫殿馅饼。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. Carême's knowledge of art and architecture helped him create extraordinary desserts out of ordinary ingredients.",
      "answer": "D",
      "analysis": "该段：“卡雷姆在厨房里学得很快”（quick at learning in the kitchen），设计与烘焙天赋结合创造杰作。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. Many people in Paris were eager to have a look at the latest sweet food made by Carême.",
      "answer": "A",
      "analysis": "该段：“巴黎繁忙的街道凹凸不平、结着厚泥”——本文开场的历史场景描写。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. Carême became extremely wealthy by cooking for rich and socially ambitious families.",
      "answer": "H",
      "analysis": "该段：1816 年开始的烹饪之旅“将永远确立他作为历史上第一位顶级大厨的地位”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. Carême's writings dealt with fundamental cooking principles in a systematic way.",
      "answer": "K",
      "analysis": "该段：“餐余时间，卡雷姆撰写烹饪书”，首次把基本烹饪原理系统化，影响欧洲厨房一个世纪。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Carême's contribution to French cooking was revolutionary.",
      "answer": "B",
      "analysis": "该段：“他的名字叫玛丽-安托万·卡雷姆”（His name was Marie-Antoine Carême）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46.For what reason may your friends feel reluctant to visit your home?",
      "answer": "A",
      "analysis": "首段：这个“相对无害”的小装置“可能正把朋友们从你家赶走”——摄像头可能侵犯隐私、让客人不适。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.What does Lizzie Post say is new territory?",
      "answer": "D",
      "analysis": "第三段：围绕“是否告知客人你有摄像头、客人能否要求关掉”，“将会形成怎样的礼仪”——即家用摄像头的礼仪是新领域。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What is Lizzie Post mainly discussing with regard to the use of home security cameras?",
-     "answer": "C",
+     "answer": "D",
      "analysis": "第四段：她强调谈的不是法律权利“而是个人偏好”，且“尚无对错之分”——因个人好恶而异。",
      "verified": false,
-     "dissent": null
+     "dissent": "D"
     },
     {
      "stem": "49. What is a host’s responsibility regarding security cameras, according to Lizzie Post?",
      "answer": "A",
      "analysis": "第五段：“确保客人在家里感到自在，是主人的责任”，坦承摄像头是给客人开口表达不适的机会。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. In what way can the home security camera benefit visitors to your home?",
      "answer": "B",
      "analysis": "第六段：“摄像头说不定恰恰能证明他们没偷那 20 美元、没碰倒花瓶”——即能证明施工人员的清白。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51.Why is PepsiCo making a policy change?",
      "answer": "C",
      "analysis": "首段：百事改良产品，“因为消费者要求更健康的选择，而肥胖流行病下的监管压力也在加大”——即满足日益增长的健康食品需求。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What does PepsiCo think it will have to do in the future?",
      "answer": "D",
      "analysis": "第二段：百事已是先行者，“但新的十年计划表明它认为自己仍有很长的路要走”——即还需不断改进产品。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. Why does PepsiCo plan to alter its products, according to Indra Nooyi?",
      "answer": "A",
      "analysis": "第四段：Nooyi 说让产品更健康的计划“对公司的增长十分重要”（important for the company's growth）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What does Indra Nooyi say about the obesity epidemic?",
      "answer": "C",
      "analysis": "第四段：她指出“消费者的生活方式已发生显著变化，许多人更加久坐不动”——肥胖与生活方式改变有关。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What has PepsiCo been doing to achieve its objective?",
      "answer": "B",
      "analysis": "第七段：首席科学官说公司“过去五年研发支出已经翻倍”，并“致力于持续投资”——即增加研发经费。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：离不开（cannot live without）、手机应用程序（mobile apps）、保持联系并拓宽朋友圈（keep in touch and expand their circle of friends）、便于携带（easy to carry around）、过度依赖（rely too much on）、上瘾（be addicted）、面对面的交流（face-to-face communication）。“如此……以至于”用 so...that 结构。"
   }
  ],
- "generatedAt": "2026-10-10T11:54:53.242Z"
+ "generatedAt": "2026-10-10T15:10:19.873Z",
+ "reverifiedAt": "2026-10-10T15:10:19.873Z"
 }

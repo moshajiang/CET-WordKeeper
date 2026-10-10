@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "H",
      "analysis": "过去分词：电站“位于”瓦尔扎扎特市（is located in the city of Ouarzazate），固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "O",
      "analysis": "过去分词：该电站“计划”于不久后竣工（It's scheduled to be completed soon），由 to be + soon 可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "I",
      "analysis": "副词修饰动词：摩洛哥当前的能源“主要”来自进口（comes mostly from imports）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "N",
      "analysis": "现在分词：随着能源需求“以每年 7% 的速度增长”（with demand rising at an annual rate of 7%），with 复合结构。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "C",
      "analysis": "形容词作定语：新电站可能成为实现该目标的“关键”部分（a crucial part of that goal）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "L",
      "analysis": "名词：这使摩洛哥成为太阳能领域的“重要先锋”（a big pioneer in the field），与 a forerunner 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "D",
      "analysis": "谓语动词：许多“依赖”外国能源进口的国家（countries that depend on foreign imports），depend on 固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "M",
      "analysis": "名词：中东和北非在太阳能项目上“潜力”巨大（have huge potential for），不可数名词。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "A",
      "analysis": "形容词作表语：技术在当地的成本变得更“低廉、负担得起”（more affordable）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "G",
      "analysis": "副词：人们已意识到太阳能技术“竟/究竟”多有竞争力（a realization of just how competitive...），just how 强调程度。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.Chase Carey believes greater use should be made of digital technology to make Formula One more\naccessible to its fans.",
      "answer": "G",
      "analysis": "该段：应“为粉丝增加数字渠道”（Increased digital access for fans）、在虚拟现实等领域创新——即更多利用数字技术让 F1 更贴近粉丝。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.Chase Carey was deeply impressed by the ceremony preceding last year's Monaco race.",
      "answer": "L",
      "analysis": "该段：他回忆去年摩纳哥站，“被赛前的仪式深深震撼”（overwhelmed by the ceremony leading up to the event）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.One of Chase Carey's goals is to make Formula One more appealing to Americans.",
      "answer": "D",
      "analysis": "该段：目标之一正是“提升美国市场的兴趣”（increasing interest in the United States）——让 F1 对美国更有吸引力。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.A former motorbike parts dealer led Formula One for the past forty years.",
      "answer": "A",
      "analysis": "该段：过去四十年 F1 的掌门人是“前摩托车零件经销商”伯尼·埃克莱斯顿（a former motorcycle parts dealer）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Chase Carey thought the audience of Formula One could be made to share his feeling about the race.",
      "answer": "M",
      "analysis": "该段：他看赛车呼啸过弯，“你不由得不敬畏”，“我想这种感觉是可以传达给观众的”（can be translated to the viewer）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.Chase Carey used to serve as a top advisor for a major broadcasting company.",
      "answer": "J",
      "analysis": "该段：在福克斯广播公司他“多年担任高级顾问”（a top advisor for years）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.Chase Carey intends to make connections easier between the audience and the Formula One racers.",
      "answer": "F",
      "analysis": "该段：计划的第二部分是改变粉丝体验，“让观众与赛事内部人员之间更容易建立联系”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. The new leader of Formula One admitted he was not super interested in car racing.",
      "answer": "C",
      "analysis": "该段：凯里“据他自己承认并不是狂热的赛车迷”（by his own admission is not a fierce racing fan）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.People's opinions differ as to whether Formula One can be promoted in the U.S.",
      "answer": "H",
      "analysis": "该段：“更大的问题是……F1 还有空间吗？意见不一”（Opinions vary）——人们对 F1 能否在美国推广看法不同。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Compared with other racing series, Formula One focuses more on speed and involves more danger.",
      "answer": "K",
      "analysis": "该段：克雷克斯说“讲的是速度、危险和风险，而 F1 在这方面超过任何其他赛车系列”（more than any other racing series）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What problem have supermarkets been facing?",
      "answer": "B",
      "analysis": "首段：超市是“利润最薄的行业之一”，十多年来遭电商巨头攻击——即一直在流失顾客与利润。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What does the passage say about the idea of a self-service grocery?",
      "answer": "B",
      "analysis": "第二段：自助杂货店的革命性想法“最早出现在美国”（first came about in America）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What did supermarkets do by adopting the Fordist factory approach?",
      "answer": "D",
      "analysis": "第三段：超市模仿福特式工厂，“在当时是分销领域的一场革命”（a revolution in distribution）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What is the typical supermarket layout intended to do?",
      "answer": "C",
      "analysis": "第四段：把日用品放在最里面，让你走遍全店、沿途被诱惑——即诱导顾客做更多计划外购买。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What have people long feared about supermarkets?",
      "answer": "A",
      "analysis": "末段：人们长期担心超市对胃口“使用企业黑魔法”、令顾客在恍惚中随手拿货——即认为商家用诡计促销。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. Why did America's traditional school year have a three-month summer vacation?",
      "answer": "A",
      "analysis": "首段：三个月暑假“最初实行时美国还是农业社会，夏天需要用来干农活”（the summer months were needed for farm work）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What benefit will year-round schooling bring students in addition to improving their learning?",
      "answer": "D",
      "analysis": "第三段：全年制学校“师生关系更亲密”，学生不觉疏离——即除学业外还能促进师生关系。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What do some childhood development experts believe about the long summer vacation?",
      "answer": "D",
      "analysis": "第三段：全年制学生“更自信、对上学体验更积极”，“这些纽带与归属感是有回报的”——即有助于学生健康成长。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What is the argument against the experts' idea of a long summer vacation?",
      "answer": "A",
      "analysis": "第四段：专家称假期利于健康发育，但“大多数孩子待在家里看电视玩游戏，这几乎对他们没有好处”（hardly benefits them）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55.What does the author think of the traditional school year in the U.S. today?",
      "answer": "C",
      "analysis": "末段：美国已转为知识与创新型经济，“学年也随之改变是合理的”——即作者认为传统学年已过时。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：改革开放（reform and opening-up）、越来越重视（attach increasing importance to）、稳步发展阶段（a stage of steady development）、位居世界第一（rank first in the world）、渴望接受高等教育（be eager to receive higher education）、招生人数逐年上升（enrollments have risen year by year）、为……创造机会（create opportunities for）。"
   }
  ],
- "generatedAt": "2026-10-10T13:45:54.795Z"
+ "generatedAt": "2026-10-10T15:14:19.216Z",
+ "reverifiedAt": "2026-10-10T15:14:19.216Z"
 }

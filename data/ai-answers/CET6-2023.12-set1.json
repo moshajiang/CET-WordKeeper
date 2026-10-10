@@ -186,81 +186,81 @@
    "section": "cloze",
    "seq": 1,
    "translation": "沙漠具有欺骗性。乍一看，它显得毫无生机、荒芜贫瘠、干涸无比。对于大多数哼着歌穿过莫哈韦沙漠的人来说——他们或是去拉斯维加斯碰运气，或是前往大峡谷——它不过是一片独特的土地，远处有一些山脉，而且更可能成为一部发生在火星上的电影的取景地。然而，这片沙漠却充满了生命、神秘和魔力。\n莫哈韦沙漠年降水量不足两英寸，而且和大多数沙漠一样，是一片极端之地。温度波动从冰点到酷热，不仅季节之间如此，甚至同一天内也是如此。\n在这片广袤的25,000平方英里的沙漠中心，是莫哈韦国家保护区。在那里管理和工作的人们戴着宽边帽，这种帽子已经与优胜美地等地联系在一起。该保护区拥有丰富的历史、文化、生物多样性，以及激发你兴趣的无穷机会，尤其是对热爱户外的人来说。对摄影师而言，这需要耐心和专业知识，还需要几条备用轮胎来穿行于未铺砌的“道路”网络，但回报是丰厚的。\n在这里拍照需要一双结实的好鞋和大量准备工作。探索这个国家公园体系中面积第三大的单位，需要充足的水、备用轮胎和满满一箱汽油。\n不过，像所有沙漠一样，如果你有耐心，就会得到回报，因为它们往往慢慢揭示自己的秘密。在上一次外出时，我惊讶地发现，这片区域有多少地方是由古代火山和地质力量塑造的，其中许多至今仍保留着，赋予该地区一种多样的感觉，并为拍摄精彩照片提供了色彩斑斓的背景。",
-   "verifyError": "复核响应为空",
    "questions": [
     {
      "stem": "26",
      "answer": "O",
      "analysis": "空格前有 a，后接名词 stretch，需填形容词。a unique stretch of land 表示“独特的一片土地”，符合路人眼中沙漠只是特别/不同寻常的一片土地的语义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "H",
      "analysis": "more 后需副词，构成 more probably to be，表示“更可能成为”。语法上 more 修饰 probably，后接不定式 to be，语义上指这片土地更像火星电影取景地。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "F",
      "analysis": "be overflowing with 为固定搭配，意为“充满”。主语 The desert 与 life, mystery, and magic 搭配，表示沙漠充满生命、神秘和魔力。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "E",
      "analysis": "land of 后接名词复数，a land of extremes 是固定表达“极端之地”，与下句温度从冰点到酷热剧烈波动相呼应。题面词库 E 项 fractions 应为 extremes。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "I",
      "analysis": "scorching hot 为固定搭配，意为“酷热”。此处与 freezing 形成对比，表示温度在冰点和酷热之间波动。题面词库 I 项 sparingly 应为 scorching。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "N",
      "analysis": "become synonymous with 为固定搭配，意为“与……成为同义词/让人联想到”。宽边帽已与优胜美地等地联系在一起，符合语义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "L",
      "analysis": "opportunities to do sth. 中 to 后接动词原形；stimulate your interest 为固定搭配，意为“激发你的兴趣”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "B",
      "analysis": "与 patience 并列作 requires 的宾语，表示摄影师需要耐心和专业知识；后文 a few spare tires 是补充说明。expertise 符合语义和词性。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "M",
      "analysis": "形容词修饰 pair of shoes，a good, sturdy pair of shoes 表示“一双结实的好鞋”，符合沙漠摄影需要耐用鞋子的语境。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "D",
      "analysis": "形容词修饰名词 feel，表示“多样的感觉/多元质感”。火山和地质力量留下多样地貌，使该地区给人多样感受。题面词库 D 项 Diversity 应为形容词 diverse。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:59:30.447Z",
- "prunedAt": "2026-10-10T03:33:14.387Z"
+ "generatedAt": "2026-10-10T15:22:48.784Z",
+ "prunedAt": "2026-10-10T03:33:14.387Z",
+ "reverifiedAt": "2026-10-10T15:22:48.785Z"
 }

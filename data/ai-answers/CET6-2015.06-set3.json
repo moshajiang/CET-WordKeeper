@@ -133,70 +133,70 @@
      "stem": "36. It is best to use an EMV card for international travel.",
      "answer": "H",
      "analysis": "该段提到：“If you travel internationally, the answer is yes.”（如果你出国旅行，答案是肯定的。）",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. Personal information on credit and debit cards is increasingly vulnerable to hacking.",
      "answer": "B",
      "analysis": "该段提到：“cards are increasingly vulnerable to attacks when you make purchases in a store”（购物时信用卡越来越容易受到攻击），并说明黑客获取信用卡、借记卡等信息。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. The French card companies adopted EMV technology partly because of inefficient telephone service.",
      "answer": "G",
      "analysis": "该段提到：“In France, card companies created EMV in part because the telephone monopoly was so maddeningly inefficient and expensive.”（在法国，卡公司创建EMV部分是因为电话垄断企业效率极低且费用高昂。）",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. While many countries use the smarter EMV cards, the U.S. still clings to its old magstripe technology.",
      "answer": "C",
      "analysis": "该段对比：“While American credit cards use the 40-year-old magstripe technology... much of the rest of the world uses smarter cards with a technology called EMV”（美国使用磁条技术，世界其他大部分地区使用更智能的EMV卡）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. Attempts are being made to prevent hackers from carrying out identity theft.",
      "answer": "A",
      "analysis": "该段提到：“banks, law enforcement and technology companies are all trying to stop a network of hackers... used in identity theft”（银行、执法部门和科技公司都在努力阻止黑客进行身份盗窃）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. Credit cards are much safer to use than debit cards.",
      "answer": "I",
      "analysis": "该段提到：“credit cards typically have better liability protection than debit cards”（信用卡通常比借记卡有更好的责任保护），并引述“use credit cards over debit cards because of liability issues.”",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. Big banks have been reluctant to switch to more secure technology because of the higher costs involved.",
      "answer": "D",
      "analysis": "该段开头：“Why haven’t big banks adopted the more secure technology? ... it’s all about relative costs”（为什么大银行没有采用更安全的技术？都是相对成本问题），并说明芯片卡成本接近3美元。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. The potential liability for retailers using magstripe is far more costly than upgrading their registers.",
      "answer": "L",
      "analysis": "该段指出：“the potential liability they now face is dramatically greater”（他们现在面临的潜在责任要大得多），尽管升级需67.5亿美元。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. The use of magstripe cards by American retailers leaves consumers exposed to the risks of losing account information.",
      "answer": "F",
      "analysis": "该段指出：“That leaves American retailers... and leaves consumers vulnerable”（这使得美国零售商……并使得消费者容易受害），且重要账户信息在第二轨道易被黑客捕获。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Consumers will be a driving force behind the conversion from magstripe to EMV technology.",
      "answer": "O",
      "analysis": "该段指出：“it may be up to consumers to move the needle on chip and PIN”（推动芯片加PIN可能要靠消费者），并引述罗伯逊的话。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:22:34.315Z"
+ "generatedAt": "2026-10-10T15:10:22.954Z",
+ "reverifiedAt": "2026-10-10T15:10:22.954Z"
 }

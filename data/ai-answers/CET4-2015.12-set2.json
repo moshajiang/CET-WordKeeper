@@ -14,28 +14,28 @@
      "stem": "56. What is happening to the wallet?",
      "answer": "A",
      "analysis": "文章首句The wallet is heading for extinction直接表明钱包正在消失或灭绝，故选A。B项把周五晚上钱包鼓鼓的感觉曲解为钱包被塞满；C项变得昂贵和D项款式变化文中均未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "57. How are business transactions done in big modern stores?",
      "answer": "B",
      "analysis": "文中以高端商店为例，说明店员配备iPad收款，交易通过电子方式完成，故选B。C项抽象地只是对金钱概念变化的描述，并非具体交易方式；A项单独地和D项通过收银台均与原文不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "58. What makes the author feel uncomfortable nowadays?",
      "answer": "D",
      "analysis": "作者明确说现金概念的抽象化令其不安，并质疑挣钱不易而花钱却在眨眼之间，因此D项花钱如此快速容易符合。A项存钱成为过去和B项周五晚上的愉悦感消退都不是直接原因；C项挣钱越来越难文中并未体现比较。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "59. Why does the author choose to write about what's happening to the wallet?",
      "answer": "A",
      "analysis": "作者说钱包的消亡让他困扰的是它所代表的物理环境变化，说明钱包消失代表现代世界的一种变化，所以选A。B项过于笼统，C项只侧重传统终结，D项错在作者明确把经济问题留给专家。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
@@ -56,70 +56,70 @@
      "stem": "36",
      "answer": "N",
      "analysis": "句子描述过去的天气事件，主语为时间名词短语，需要谓语动词过去式；saw 表示“经历、出现”，常用于时间/地点 + see + 天气现象的结构。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37",
      "answer": "F",
      "analysis": "空格前有数词 two，后需名词复数；for the first time in two decades 意为“二十年来第一次”，是固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38",
      "answer": "H",
      "analysis": "主系表结构已完整，空格需副词修饰全句或形容词最高级；globally 表示“全球范围内”，说明11月是全球有史以来最热的月份。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39",
      "answer": "D",
      "analysis": "空格后为 are good that...，需复数名词作主语；chances are good that... 是固定句型，意为“很可能……”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40",
      "answer": "J",
      "analysis": "主语 El Nino 为单数，后接 when 从句，需一般现在时第三人称单数动词；occurs 表示“发生”，符合厄尔尼诺现象的定义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41",
      "answer": "A",
      "analysis": "空格位于定冠词和名词 energy 之间，需形容词；additional energy 表示“额外的能量”，与前文太平洋变暖产生能量、后文引发天气变化的语义一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42",
      "answer": "B",
      "analysis": "空格前为 are，后接 with，构成 be associated with 固定短语，意为“与……有关”，符合厄尔尼诺与干旱条件的关联。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43",
      "answer": "G",
      "analysis": "主语 southern Africa 为单数，主句用一般现在时，空格处需第三人称单数动词；experiences 表示“经历”，意为南部非洲经历干旱天气。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44",
      "answer": "M",
      "analysis": "空格前有情态动词 can，需动词原形；reduce the rising of... 表示“减少/抑制……上升”，与厄尔尼诺影响海洋上升流的语义相符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45",
      "answer": "K",
      "analysis": "空格前 large fish 作定语，需名词复数；populations 表示“种群”，large fish populations 即“大型鱼类种群”，为常见搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -141,70 +141,70 @@
      "stem": "46. Cooking benefits people in many ways and enables them to connect with one another.",
      "answer": "D",
      "analysis": "该段说下厨应是“安慰、自豪、健康、幸福、放松和社交”的源泉，是“让我们与他人联结”的事（Something that connects us to other humans）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. Abundant information about cooking is available either online or on TV.",
      "answer": "B",
      "analysis": "该段：任何有电脑、手机或电视的人都能找到“大量食谱、教学视频和烹饪课程”，信息多得应接不暇。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. Young people do less cooking at home than the elderly these days.",
      "answer": "F",
      "analysis": "该段：65 岁以上的人 52% 每周在家做饭五次以上，“而年轻人里只有三分之一”（only a third of young people do）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. Cooking skills can be improved with practice.",
      "answer": "O",
      "analysis": "该段：烹饪是一场信心危机，“唯一的良方就是练习”，做得越多越容易（cooking gets easier as you do it more）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. In the mid-20th century, most families ate dinner at home instead of eating out.",
      "answer": "G",
      "analysis": "该段：20 世纪 50 年代“妈妈几乎每晚都做饭”，把家常饭端上桌的意愿几乎是普遍的。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "51. Even those short of time or money should be encouraged to cook for themselves and their family.",
      "answer": "E",
      "analysis": "该段：作者的使命是鼓励“烹饪新手以及缺时间或缺钱的人”自己养活自己（encourage green hands and those lacking time or money）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. Eating food not cooked by ourselves can cause serious consequences.",
      "answer": "J",
      "analysis": "该段：不在家做饭就没吃对东西，“其后果怎么估计都不过分”（the consequences are hard to overstate）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. To eat well and still save money, people should buy fresh food and cook it themselves.",
      "answer": "M",
      "analysis": "该段：对在意钱的人，建议是“买你买得起的，然后自己做”，去超市买新鲜食材。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. We get a fairly large portion of calories from fast food and snacks.",
      "answer": "C",
      "analysis": "该段：近三分之二的人每周吃一次快餐，“约 25% 的日热量来自零食”，至少三分之一的热量来自家外。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. The popularity of TV led to the popularity of frozen food.",
      "answer": "H",
      "analysis": "该段：冷冻餐 40 年代已发明，但“直到电视机普及其流行才爆发”（didn't boom until televisions became popular）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,36 +218,36 @@
      "stem": "61. What does the author say about people's sleeping habits?",
      "answer": "A",
      "analysis": "对应首段：人们熬夜追什么、早起为什么，“因文化而异”（varies by culture），下文以俄、美、加、英、德等为例。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "62. What do we learn about the Russians regarding sleep?",
      "answer": "C",
      "analysis": "对应第三、四段：改为“冬令时”后每天晚起约半小时；新年前夜凌晨三点半才睡，是“世界上最晚的就寝时间”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "63. What is the major cause for Europeans' loss of sleep?",
      "answer": "C",
      "analysis": "对应第二段：平均而言最耗睡眠的是体育赛事、“时间调整”（time changes，即夏令时/冬令时制）和节假日，欧洲人的睡眠损失主要与夏令时等时制变化相关。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "64. What is the most probable reason for some rich people to use a device to record their sleep patterns?",
      "answer": "B",
      "analysis": "对应倒数第二段：并非人人都有记录睡眠的设备，“可能只有最富有的人才用得起”（it's likely that only the richest people do），即设备昂贵。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "65. What does the author imply in the last paragraph?",
-     "answer": "B",
+     "answer": "D",
      "analysis": "末段反问：“最注重健康的人睡眠都有如此剧烈的起伏，那其余的人又丢了多少睡眠？”——暗示普通人的睡眠损失可能更严重。",
      "verified": false,
-     "dissent": null
+     "dissent": "D"
     }
    ]
   },
@@ -260,5 +260,6 @@
    "note": "官方参考译文（源试卷附带，已订正原文拼写 Luang→Lijiang、bom→born）。难点：旅游目的地（tourist attraction）、生活节奏（life tempo）、少数民族（minorities）、以……而闻名（be known as）、流传（circulate among）、爱情和浪漫的天堂（the paradise of love and romance）。"
   }
  ],
- "generatedAt": "2026-10-10T08:32:30.962Z"
+ "generatedAt": "2026-10-10T15:08:59.030Z",
+ "reverifiedAt": "2026-10-10T15:08:59.030Z"
 }

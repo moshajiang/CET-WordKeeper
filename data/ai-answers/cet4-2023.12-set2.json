@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "O",
      "analysis": "语义线索：上文说关于休闲活动影响的研究很少，此处 surprisingly 修饰 little，意为'令人惊讶地，关于休闲活动影响的研究竟如此之少'。依据原文：'there has been 26 little research on the influence of leisure activities'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "N",
      "analysis": "搭配/语义：'how the time spent on their hobbies 27 their work life'，shape 意为'塑造/影响'，shape one's work life 搭配自然，且后文 shaped 词条释义含'影响…的发展'。依据：'how the time spent on their hobbies shaped their work life'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "I",
      "analysis": "词性/语义：normal 在此作名词'正常水平/常态'，longer than normal 意为'超过正常时间'。依据：'when participants spent longer than normal on their leisure activity'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "B",
      "analysis": "固定搭配：be the case 意为'情况/事实如此'，this was only the case when... 表示'仅在…情况下才成立'。依据：'But this was only the case when they had a serious hobby...'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "C",
      "analysis": "词性/语义：casually 副词'随意地'，修饰 did，表示'只是随意地做'。依据：'when their hobby was similar to their work but they only did it casually'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "D",
      "analysis": "固定搭配：work efficiency 意为'工作效率'，且 decreased their work efficiency 与上文'信心增强'形成对比。依据：'spending more time on it actually decreased their work efficiency'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "F",
      "analysis": "语义/并列：exhausted 形容词'筋疲力尽的'，与 unable 并列作补语，说明心理资源被耗尽。依据：'they may be left exhausted and unable to perform well at their job'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "H",
      "analysis": "搭配：interfere 不及物'干扰'，interfere in the same way 搭配成立，与上文'造成干扰'呼应。依据：'it may not interfere in the same way'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "A",
      "analysis": "搭配：boost 及物'提升/增强'，boost one's confidence 固定搭配。依据：'help them develop other knowledge and skills that can boost their confidence at work'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "L",
      "analysis": "固定搭配：removed 形容词'远离的'，far removed from 意为'与…大不相同/相去甚远'。依据：'Since climbing is so far removed from their day-to-day work activities'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. In the absence of Federal legislation, some states in the US have passed laws concerning paid family leave.",
      "answer": "D",
      "analysis": "定位 D 段：'The US is one of only three countries... not to offer statutory paid leave... So far, eight states... have their own paid family leave laws.' 对应'联邦无立法，一些州已通过带薪家庭假法律'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. Most fathers admitted that even during their paternity leave they actually did much less childcare than the\nmother.",
      "answer": "J",
      "analysis": "定位 J 段：'the majority of men and nearly half of women admitted that in reality the female actually did most of it.' 对应'多数父亲承认育儿假期间仍做得比母亲少'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. According to one father, equal parental leave is indispensable to achieving gender equality in the workplace.",
      "answer": "P",
      "analysis": "定位 P 段（一位父亲的话）：'equal parental leave is an essential component to creating gender equality in the workplace.' 对应'平等育儿假对实现职场性别平等不可或缺'。注：hqwx 等误标为 O，O 段讲多米诺效应，正确应为 P。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. One survey indicated there is now less objection to paternity leave.",
      "answer": "B",
      "analysis": "定位 B 段：'81% ... said the notion of fathers taking leave has become more acceptable.' 对应'调查显示对育儿假的反对减少了'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. Compared to five years ago, according to one researcher, many more people said their organisation gave the\nsame support to men and women taking parental leave.",
      "answer": "F",
      "analysis": "定位 F 段 Harrington 对五年前研究与现在的对比：'80% ... equally supportive of women and men taking leave'，对应'与五年前相比更多人说公司给予男女同等支持'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. One study finds that even workers who claim to desire gender equality stick to traditional gender roles both at\nwork and at home.",
      "answer": "I",
      "analysis": "定位 I 段：'traditional gender roles endure both at work... and at home — even among workers who claim to have a strong desire for equality.' 对应'即便声称渴望平等的员工仍固守传统性别角色'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. The majority of workers surveyed said parental leave policies had improved workplace culture.",
      "answer": "C",
      "analysis": "定位 C 段：'over half said leave policies had made workplace culture better.' 对应'多数受访者称育儿假政策改善了职场文化'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. In spite of progress, the number of women in top positions of big companies remains extremely small.",
      "answer": "L",
      "analysis": "定位 L 段：'Despite progress, the struggle for women to reach the highest positions of power is demonstrated in this year's Fortune 500 list, which featured a record 33 female CEOs, but this still represents a tiny fraction.' 对应'大公司高层女性数量仍极少'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. According to one estimate, less than one third of companies in the US provide paid parental leave.",
      "answer": "E",
      "analysis": "定位 E 段 Harrington 估计：'only 20% to 30% of companies in the US offer paid parental leave.' 对应'估计不到三分之一的美国公司提供带薪育儿假'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. A number of lawsuits have pressured companies to formulate gender neutral policies on parental leave.",
      "answer": "H",
      "analysis": "定位 H 段：'a number of legal cases against companies... helped put pressure on companies to make their parental leave policies gender neutral.' 对应'多起诉讼迫使公司制定性别中立的育儿假政策'。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. How can competitive rivalry benefit entrepreneurs according to the passage?",
      "answer": "D",
      "analysis": "定位二段：'Finding someone you're committed to outcompeting can be a great way to stay focused on your goals'（保持目标专注）即 help them stay goal-oriented。干扰项 A/B/C 文中均未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What is one of the traps entrepreneurs may often fall into when competing with rivals?",
      "answer": "B",
      "analysis": "定位二段：'they are more willing to behave unethically to win.' 对应'采取不道德手段超越对手'。干扰项 A（毁掉事业）无依据；C（忽视人力成本）无；D 是 rival 引发的心态而非 trap 的具体表现。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What are entrepreneurs advised to do to avoid traps that often accompany rivalry?",
      "answer": "A",
      "analysis": "定位二段：'One way to avoid this trap is to stop and reflect on what's important.' 对应'思考什么是真正重要的'（Deliberate on what really matters）。干扰项 B（追求即时收益）、C（估计长期后果）、D（反思成功可达性）均不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. How can entrepreneurs avoid making impulsive and insensible decisions?",
      "answer": "A",
      "analysis": "定位三段：'by making a habit of engaging in critical thinking, such as considering opposing viewpoints and conducting cost-benefit analyses' 对应'进行批判性推理'。干扰项 B/C/D 文中未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. How can entrepreneurs overcome the risk-inducing effects of rivalry?",
      "answer": "D",
      "analysis": "定位四段：'remain attentive to your emotional state and actively monitor how such feelings are affecting your decision-making.' 对应'控制情绪以避免糟糕决策'（keep emotions in check）。干扰项 A/B/C 无依据。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What does a “multitasker“ originally refer to?",
      "answer": "A",
      "analysis": "定位二段：'The concept does indeed come from the realms of technology, where it is used to refer to an operating system that can execute multiple tasks at the same time.' 对应'能同时处理多任务的操作系统'。干扰项 B/C/D 均不符原意。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. Why can't people really be multitaskers according to neuroscientists?",
      "answer": "C",
      "analysis": "定位三段：'our brains do not handle multitasking situations well' 对应'大脑不允许人真正多任务'。干扰项 A（接触少）、B（不能与机械系统比）、D（注意力跨度无法扩展）文中均未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What do we learn from the conclusion of a recent study on multitasking?",
      "answer": "B",
      "analysis": "定位四段：'the mere fact that they perceive this activity as multitasking has a positive effect on their performance.' 对应'人们把所做之事视为多任务时，表现受益'。干扰项 A/C/D 不符该研究结论。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. How does the business world view multitasking?",
      "answer": "D",
      "analysis": "定位五段：'many companies look for people who are skilled in multitasking... this ability can also be taught' 对应'多任务是一种可被培养的可取能力'。干扰项 A（稀有）、B（所有员工必备）、C（许多员工缺乏）均不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does the author imply we should do if we have to focus on some task and do it well?",
      "answer": "C",
      "analysis": "定位末段：'having to pay attention to several things at once means that the powers of concentration are reduced and that can lead to more mistakes.' 由此推断：要专注做好一件事应避免多任务。干扰项 A（灵活工作）、B（从错误学习）、D（提高效率）均不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点点评：① \"改革开放\"固定译法 the reform and opening-up；② \"吃得饱\"译为 being full，表过去\"仅求温饱\"；③ \"低脂、低糖、有机食品\"译为 low-fat, low-sugar, organic food；④ \"受到普遍欢迎\"用 gains more popularity among people。时态处理：描述过去用一般过去时，描述现状用一般现在时；\"过去…如今…\"形成对比，注意前后时态切换。"
   }
  ],
- "generatedAt": "2026-10-10T13:01:27.304Z"
+ "generatedAt": "2026-10-10T15:15:44.266Z",
+ "reverifiedAt": "2026-10-10T15:15:44.266Z"
 }

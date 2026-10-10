@@ -99,35 +99,35 @@
      "stem": "46.Why does the author say sarcasm and jazz have something surprisingly in common?",
      "answer": "A",
      "analysis": "文章首句明确指出讽刺和爵士乐的惊人共同点是“你一听到就能认出来”，故选A。B项“完全相同的语调”和C项“都表达相反含义”均为对讽刺特点的片面或错误套用，D项“都暗含明显恼怒”原文未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.How do many people feel when they hear sarcastic comments?",
      "answer": "B",
      "analysis": "文中提到收到讽刺评论的人会感到被贬低（feel put down），并认为讽刺者粗鲁或可鄙，因此B项“感到被轻视和不被尊重”最准确。A项“对讽刺者产生敌意”是讽刺者本身的敌意，不是接收者的感受；C项“想报复”、D项“无法掩饰恼怒”均无依据。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.What happens when a person consistently acts sarcastically?",
      "answer": "B",
      "analysis": "根据文中“when a person consistently acts sarcastically it may only serve to heighten their underlying hostility and insecurity”可知，持续讽刺会加剧其潜在敌意和不安全感，故选B。A项“尊严提高”与原文相反，C项“在幽默伪装下忍受敌意”曲解文意，D项“在愉快互动中尝到苦味”无中生有。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49.What does the author say about people quitting sarcastic comments?",
      "answer": "C",
      "analysis": "文中指出停止讽刺性评论后，他们自己会感到更快乐、更自信，同时生活中的其他人受益更大，因此C项“不仅有益于自己，也有益于周围的人”正确。A项“使他人更快乐、更自信”过度推断，原文只说他人受益更大；B、D项无中生有。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50.What is the chief difference between a speaker's wit and sarcasm?",
      "answer": "D",
      "analysis": "文章末段指出主要区别在于讽刺“意在伤害”，而机智的意图是“理清并澄清问题”，因此核心差异是意图，选D。A项“清晰度”、B项“被欣赏程度”、C项“强调点”均未作为主要区别提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:10:55.457Z"
+ "generatedAt": "2026-10-10T15:10:42.285Z",
+ "reverifiedAt": "2026-10-10T15:10:42.286Z"
 }

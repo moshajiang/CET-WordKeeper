@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "F",
      "analysis": "名词：福利损失中“最严重的损害”发生在发展中国家（the most serious damage），与 die early 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "B",
      "analysis": "过去分词作后置定语：与空气污染“相关”的一系列成本（costs associated with air pollution），固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "M",
      "analysis": "名词复数：室内污染包括家庭取暖和做饭等“来源”（includes sources like home heating and cooking）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "D",
      "analysis": "形容词作表语：尽管有进步，室内污染几十年来一直“保持不变”（remained constant）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "G",
      "analysis": "谓语动词过去式：默里把它“描述”为一份紧急行动倡议（described it as an urgent call to action），describe...as 固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "E",
      "analysis": "名词：个人对我们呼吸的空气几乎没有“控制力”（have little control over），介词 over 提示。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "H",
      "analysis": "主语三单谓语动词：劳动收入损失“相当于”GDP 的近 1%（equals nearly 1% of GDP）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "K",
      "analysis": "副词修饰动词：生活在“经常”经历危险污染水平的地方（regularly experience dangerous levels）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "I",
      "analysis": "副词：这个问题并非“只”限于发展中国家（not limited exclusively to），与下文欧美数据呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "O",
      "analysis": "名词复数：在柴油“车辆”变得更普遍的欧洲国家（where diesel vehicles have become more common）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. More than half of the food Americans eat is factory-produced.",
      "answer": "D",
      "analysis": "该段：纳多明确说“在美国，我们超过 50% 的食物是加工食品”（over 50 percent of our food is processed food）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. There is a special program that assigns doctors to give advice to shoppers in food stores.",
      "answer": "B",
      "analysis": "该段：“与医生一起购物”项目“把医生派到食品杂货店”，与报名的患者及在场购物者见面。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. There is growing evidence from research that food helps patients recover from various illnesses.",
      "answer": "G",
      "analysis": "该段：“研究结果越来越多地表明，食物具有治疗乃至逆转疾病的力量”（Research findings increasingly show the power of food to treat or reverse diseases）——即科研证据不断增多。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. A healthy breakfast can be prepared quickly and easily.",
      "answer": "A",
      "analysis": "该段：“果汁制作又快又容易——前一晚拿出冷冻水果，第二天早上就能喝”（quick and easy to prepare）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. Training a patient to prepare healthy food can change their life.",
      "answer": "I",
      "analysis": "该段：“教人们认识哪些食物健康、如何烹制……真的能改变一个患者的生活”（can actually transform a patient's life）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. One food-as-medicine program not only prescribes food for treatment but teaches patients how to cook it.",
      "answer": "F",
      "analysis": "该段：项目“发放按病情处方的数袋食物，并就如何烹制进行强化培训”（offer bags of food prescribed... along with training in how to cook it）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. Scott is not keen on cooking food herself, thinking it would simply be a waste of time.",
      "answer": "C",
      "analysis": "该段：斯科特说“那我得自己做？”，想到耗时且孩子不买账，“她的热情就消退了”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. Diabetes patients are advised to eat more plant-based food.",
      "answer": "J",
      "analysis": "该段：“许多生活方式医学医生推荐以植物为主的饮食——对糖尿病患者尤其如此”（a plant-based diet — particularly for people with diabetes）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. Using food as medicine is no novel idea, but the movement is making headway these days.",
      "answer": "E",
      "analysis": "该段：这场运动“已存在几十年”，但随着医生与医疗机构把食物正式纳入治疗而“正在取得进展”（been around for decades, but it's making progress）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Americans’ high rates of various illnesses result from the way they eat.",
      "answer": "G",
      "analysis": "该段：美国饮食中的“盐、糖、脂肪和加工食品造成肥胖、糖尿病和心脏病的高发病率”（contribute to the nation's high rates）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,7 +176,7 @@
      "stem": "46.How could California’s drought crisis be solved according to some researchers?",
      "answer": "B",
      "analysis": "第二段：深层之下存在储水层，“此前钻井只能到 1000 英尺，但由于新的抽水做法，更深的水如今也能抽取”——即从地下深处取水。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
@@ -184,27 +184,27 @@
      "answer": "B",
      "analysis": "第三段：深层抽水“直到最近才有利可图”（only recently has it become profitable），可推知此前被认为不值得花这笔钱。",
      "verified": false,
-     "dissent": null
+     "dissent": "C"
     },
     {
      "stem": "48. What is mentioned as a consequence of extracting water from deep underground?",
      "answer": "A",
      "analysis": "第三段：最大隐患是“地表逐渐沉降”——水被抽走后，空隙被上方土层重量压实。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What does the author say about deep wells?",
      "answer": "D",
      "analysis": "第四段：“水井是可靠得多的淡水来源”，加州希望深井成为解决严重水荒的答案。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What may happen when deep aquifers are used as water sources?",
      "answer": "C",
      "analysis": "第五段：深层水含盐量更高，“有些井在抽取后甚至需要脱盐，从而增加成本”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51.What does the author want to show with the example of AlphaGo’s victory?",
      "answer": "D",
      "analysis": "首段：AlphaGo 的胜利展示了“计算机已经变得多么聪明”（how smart computers have become）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52.What does the author mean by AI machines acting ethically?",
      "answer": "C",
      "analysis": "第二、三段：机器讲伦理即“诚实而公正”，无人驾驶汽车在“避让孩子还是危及乘客”的两难中抉择——即面对道德困境做出明智决定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53.What is said to be the bigger challenge facing humans in the AI age?",
      "answer": "B",
      "analysis": "第四段：“给一台比我们聪明得多的机器教伦理，将是更大的挑战”（Teaching ethics to a machine even more intelligent than we are）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54.What do we learn about Microsoft’s “chatbot” Taylor?",
      "answer": "A",
      "analysis": "第五段：Tay 被人教坏，“开始说希特勒的好话”后被微软关停——分不清好坏。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does Eric Schmidt think of artificial intelligence?",
      "answer": "C",
      "analysis": "末段：施密特认为“无论结果如何，人们都将是赢家”，AI 将让人类“更聪明、更能干、更好”——即 AI 将成为人类的资产。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：通信网络（communication networks）、以惊人的速度（at an astonishing rate）、阅读方式（the way many people read）、移动应用程序（mobile apps）、纸质书籍（printed books）、稳步增长（growing steadily）、超半数（more than half of adults）。“因此”用 As a result 衔接。"
   }
  ],
- "generatedAt": "2026-10-10T11:50:23.657Z"
+ "generatedAt": "2026-10-10T15:10:12.400Z",
+ "reverifiedAt": "2026-10-10T15:10:12.400Z"
 }

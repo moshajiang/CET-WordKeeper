@@ -247,7 +247,7 @@
      "stem": "44. With competition from many countries, Antarctica is no longer dominated by the traditional white nations.",
      "answer": "Q",
      "analysis": "Q段称欧洲、澳大拉西亚和北美白人男性主导南极的旧时代已结束，南极地缘政治存在争议。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:53:21.934Z"
+ "generatedAt": "2026-10-10T15:10:30.005Z",
+ "reverifiedAt": "2026-10-10T15:10:30.005Z"
 }

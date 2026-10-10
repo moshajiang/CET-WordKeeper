@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "C",
      "analysis": "空格修饰 predators，需形容词。由 killer whales 及后文 beasts of the sea 可知应填「凶残的」；brutal 符合，且与后句 not fit the image of a cultured creature（与「凶残」形成反差）呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "I",
      "analysis": "the ___ of a cultured creature，需名词。前句说虎鲸是最凶残的食肉动物，本句用 may not fit the image of a cultured creature（不符合「有文化生物」的形象）作转折铺垫，image 正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "K",
      "analysis": "highly ___ behaviors 需形容词。However 表转折：上句说虎鲸不像有文化的生物，本句说它们展现「有教养的」行为，refined（优雅/有教养的）与 cultured 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "J",
      "analysis": "which ___ means 缺副词修饰 means。字面意思「培养」，literally（按字面意思）符合；备选副词仅 deliberately 与 literally，deliberately（故意地）语义不通。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "A",
      "analysis": "is ___ or learnt 与 learnt 并列，用过去分词。culture 指「后天习得或学来的」东西，acquired（习得的）与 learnt 近义并列，对应 rather than instinctive or natural。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "B",
      "analysis": "genetic ___ 填名词。爱斯基摩人进化出遗传「适应性」以帮助消化高脂饮食，adaptations（适应性）符合，且 help them digest 提示生物适应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "O",
      "analysis": "allowing them to ___ in cold climate 填动词原形。前文说适应性帮助消化利用高脂饮食，从而得以在寒冷气候中「繁盛/茁壮成长」，thrive 符合。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "G",
      "analysis": "different ___ 填名词。虎鲸遍布全球不同的「栖息地」，habitats 与 occupying every ocean basin 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "F",
      "analysis": "empire that ___ from pole to pole 缺动词。「从一极延伸到另一极的帝国」，extends（延伸）搭配 from...to... 正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "M",
      "analysis": "leading scientists to ___ that 填动词原形。科学家据此「推测」学习能力推动基因进化，speculate（推测）符合 leading...to 的语境。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.Unemployed young men are more likely to live with their parents than the employed.",
      "answer": "H",
      "analysis": "题干：无业年轻男性比有工作的更可能与父母同住。定位 H 段「Employed young men are much less likely to live at home than young men without a job」，同义改写（比较对象对调）即无业者更可能住家。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.In 2014, the percentage of men aged 18 to 34 living with their parents was greater than that of their female counterparts.",
      "answer": "E",
      "analysis": "题干：2014年18-34岁男性与父母同住比例高于女性。定位 E 段：男性35%与父母同住、女性29%，数字直接支持。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.The percentage of young people who are married or live with a partner has greatly decreased in the past three decades or so.",
      "answer": "G",
      "analysis": "题干：近三十年结婚/同居年轻人比例大幅下降。定位 G 段末「the overall share of young adults either married or living with an unmarried partner has substantially fallen since 1990」，since 1990≈past three decades。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.Around the mid-20th century, only 20 percent of 18- to 34-year-old lived in their parents’ home.",
      "answer": "B",
      "analysis": "题干：20世纪中期仅约20%的18-34岁者住父母家。定位 B 段「around 1960... only one-in-five were living with their parents」，one-in-five=20%，1960≈mid-20th century。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Young adults with a college degree found it easier to live independently of their parents.",
      "answer": "K",
      "analysis": "题干：有大学学位的年轻人更易脱离父母独立居住。定位 K 段末「made it easier to establish their own households」，establish their own households 同义于 live independently of their parents。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.Young men are less likely to end up as single parents than young women.",
      "answer": "F",
      "analysis": "题干：年轻男性成为单亲家长的可能性低于年轻女性。定位 F 段「more young women (16%) than young men (13%) were heading up a household without a spouse or partner」，反向改写即男性更少。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.More young adult women live with their parents than before due to delayed marriage.",
      "answer": "I",
      "analysis": "题干：因晚婚，更多年轻女性与父母同住。定位 I 段「delayed marriage... may explain more of the increase in their living in the family home」，due to delayed marriage 对应 explain more。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.The percentage of young men who live with their parents has grown due to their decreased pay in recent decades.",
      "answer": "H",
      "analysis": "题干：近几十年年轻男性与父母同住比例因收入下降而上升。定位 H 段末「young men's wages... have been on a downward trajectory... As wages have fallen, the share of young men living in the home of their parent(s) has risen」，因果对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.The rise in the number of college students made more young adults live with their parents.",
      "answer": "J",
      "analysis": "题干：大学生数量增加使更多年轻人与父母同住。定位 J 段「college enrollments expanded, boosting the ranks of young adults living at home」，boosting the ranks 即人数壮大。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.One reason for young adults to live with their parents is that get married late or stay single all their lives.",
      "answer": "G",
      "analysis": "题干：年轻人与父母同住的一大原因是晚婚或终身不婚。定位 G 段「The first is the postponement of, if not retreat from, marriage... as many as one-in-four... may never marry」，postponement of marriage 对应 get married late。（G 段被选用两次，符合官方答案允许一段多用的规则）",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46.What do most Americans think of women leaders according to a new Pew Research Center survey?",
      "answer": "D",
      "analysis": "题干问多数美国人对女性领导者的看法（Pew 调查）。定位首段「most Americans find women indistinguishable from men on key leadership traits such as intelligence and capacity for innovation」，与 D「与男性同样聪慧且具创新力」一致。A/B 利用第四段双重标准信息设障，C 将「更富激情有条理」窜改为「意志力更强」。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.What do we learn from previous survey findings about women seeking leadership roles?",
      "answer": "C",
      "analysis": "题干问从既往调查发现中得知什么。定位第三段「previous survey findings have shown that career interruptions related to motherhood may make it harder... women to advance」，即生育导致职业中断、与家庭责任相关，对应 C。D 偷换为「很少女性在职场受阻」且混淆 recent 与 previous survey。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.What is the primary factor keeping women from taking top leadership positions according to the recent survey?",
      "answer": "C",
      "analysis": "题干问近期调查中阻碍女性登上顶层职位的主因。定位第四段「topping the list of reasons, about four-in-ten Americans point to a double standard」（双重标准=性别偏见），故 C 正确。B 家庭责任在第三段被明确排除（仅约1/5视为障碍），属干扰项。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49.What does the passage say about corporate America in the near future?",
      "answer": "D",
      "analysis": "题干问文章关于近期美国企业界的说法。定位末段「the public is divided about whether the imbalance... will change... 53% believe... 44% say...」，公众意见对立，对应 D「人们对此是否会有更多女性领导看法相左」。A/B 与 divided 矛盾，C 为曲解。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50.What do most Americans expect to see soon on America’s political stage?",
      "answer": "A",
      "analysis": "题干问多数美国人期待在政治舞台很快看到什么。定位末段末句「73% expect to see a female president in their lifetime」，即女性担任政府最高职位（女总统），对应 A。D 是商界情形，非政治舞台。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What does the global study tell us about people’s height in the last hundred years?",
      "answer": "B",
      "analysis": "题干问全球研究揭示近百年身高情况。定位首段「People have grown taller over the last century... A global study looked at... 200 countries」，全文围绕「多数国家身高增长」展开，B「多数国家显著增长」正确。A 跨洲差异、C 增速加快、D 女性增幅更大均未体现。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What does James Bentham say about genetics in the increase of people’s height?",
      "answer": "C",
      "analysis": "题干问 James Bentham 对基因在身高增长中作用的看法。定位第三段「An individual's genetics has a big influence... but once you average over whole populations, genetics plays a less key role」，即基因对个人影响大、对总体影响小，C「对个人影响大于对总体」正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What does Elio Riboli say about taller people?",
      "answer": "A",
      "analysis": "题干问 Elio Riboli 对高个子者的说法。定位第四段「Being taller is associated with longer life expectancy」，即高个子往往更长寿，A 正确。C 偷换为「更少致命疾病」，原文是心血管疾病死亡风险更低。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What do we learn about 18-year-olds in Uganda and Niger?",
      "answer": "B",
      "analysis": "题干问乌干达和尼日尔的18岁人群。定位第五段「the trend has reversed in recent years, with height decreasing among 18-year-olds」，即身高下降、比前辈更矮，B「实际比早前世代更矮」正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does James Bentham suggest we do?",
      "answer": "D",
      "analysis": "题干问 James Bentham 建议我们做什么。定位末段「How tall we are now is strongly influenced by the environment... If we give children the best possible start in life now, they will be healthier...」，即给孩子理想成长环境，D「确保孩子在理想环境中成长」正确。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：①「起源于」用 originate in；「东汉」为 the Eastern Han Dynasty。②「安定的生活」译为 peaceful life（不宜直译 settled）。③「色彩鲜艳的薄纸」→ brightly colored thin paper；「形状和尺寸各异」用 come in various shapes and sizes 更地道。④「象征生活美满和生意兴隆」→ symbolize a happy life and prosperous business（prosperous 比 booming 更贴「兴隆」）。⑤节日列举用 such as 引出，「春节/元宵节/国庆」标准译法 Spring Festival / the Lantern Festival / National Day。⑥末句「许多其他地方」用 many other parts of the world。"
   }
  ],
- "generatedAt": "2026-10-10T12:11:02.847Z"
+ "generatedAt": "2026-10-10T15:11:35.499Z",
+ "reverifiedAt": "2026-10-10T15:11:35.499Z"
 }

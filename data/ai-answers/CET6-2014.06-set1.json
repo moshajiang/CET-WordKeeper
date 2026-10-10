@@ -120,7 +120,7 @@
      "stem": "59.Examples like meat and silly are cited to show .",
      "answer": "D",
      "analysis": "第五段举 meat 和 silly 两个词为例，说明它们的词义随时间发生了变化（过去的意思与现在不同），故选 D“词义的逐渐变化”。A 侧重写作与说话之差异、B 侧重发短信中的用词差异、C 侧重人们这样用词的原因，均非这两个例子所证明的观点。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
@@ -260,6 +260,7 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T13:58:50.096Z",
- "prunedAt": "2026-10-10T03:33:14.370Z"
+ "generatedAt": "2026-10-10T15:10:21.391Z",
+ "prunedAt": "2026-10-10T03:33:14.370Z",
+ "reverifiedAt": "2026-10-10T15:10:21.391Z"
 }

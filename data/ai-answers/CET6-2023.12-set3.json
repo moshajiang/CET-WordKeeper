@@ -96,7 +96,8 @@
      "verified": false,
      "dissent": null
     }
-   ]
+   ],
+   "verifyError": "复核响应为空"
   },
   {
    "section": "match",

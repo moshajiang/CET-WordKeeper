@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "B",
      "analysis": "「the ___ of a new study」缺名词，that 指代前句好消息；conclusion（结论）契合「这是一项新研究的结论」，故选 B。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "L",
      "analysis": "宾语从句缺谓语，主语 viruses 为复数；how viruses ___ on airplanes，spread（传播）符合「呼吸道病毒如何在飞机上传播」，选 L。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "K",
      "analysis": "「a very ___ chance」需形容词修饰 chance；slim chance 为固定搭配，意为「极小的机会」，与前文高风险形成对比，选 K。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "A",
      "analysis": "形容词修饰 information；媒体过去未提供「准确」信息，与后文新研究更精确相呼应，accurate（准确的）契合，选 A。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "O",
      "analysis": "「feel less ___ to」需形容词且能与 to 搭配；vulnerable to 为固定搭配「易受…侵害」，新发现让乘客没那么容易感染，选 O。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "C",
      "analysis": "「getting ___ infected」缺副词修饰形容词；directly（直接地）修饰感染方式，意为「直接接触感染」，选 C。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "E",
      "analysis": "「to ___ the risks」不定式表目的，需动词原形；evaluate（评估）与 risks 搭配，意为「评估感染风险」，选 E。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "G",
      "analysis": "「10 different ___」需名词复数；flew on 10 different flights，flights（航班）符合「乘坐 10 趟不同航班」，选 G。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "D",
      "analysis": "「on ___ side」需限定词修饰单数 side；either side 意为「任意一侧」，对应「流感患者两边」，选 D。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "H",
      "analysis": "「were ___ safe」主系表完整，需副词；largely（基本上）修饰 safe，意为「基本上安全」，与不到 3% 风险呼应，选 H。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.According to one professor, obesity is related to a lack of basic awareness of nutrition and health.",
      "answer": "E",
      "analysis": "定位 E 段：阿伯丁大学 Alexandra Johnstone 教授指出不吃早餐者「less knowledgeable about nutrition and health」，与题干「obesity related to lack of basic awareness of nutrition and health」对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.Some scientists claim that people should consume the right kind of food at breakfast.",
      "answer": "I",
      "analysis": "定位 I 段首句「what we eat for breakfast」及高蛋白早餐研究，说明应吃「正确的食物」，对应题干 consume the right kind of food。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.Opinions differ as to whether breakfast is the most important meal of the day.",
      "answer": "B",
      "analysis": "定位 B 段「there's widespread disagreement over whether breakfast should keep its top spot」，与题干 opinions differ whether breakfast is most important 同义转述。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.It has been found that not eating breakfast is related to the incidence of certain diseases in some countries.",
      "answer": "G",
      "analysis": "定位 G 段「Skipping breakfast has been associated with... heart disease... diabetes」，不吃早餐与某些疾病发生率相关，对应题干 incidence of certain diseases。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Researchers found it was a change in eating habits rather than breakfast itself that induced weight loss.",
      "answer": "D",
      "analysis": "定位 D 段末「it wasn't breakfast itself that caused... weight loss: it was changing their normal routine」，对应改变饮食习惯（而非早餐本身）致减重。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.To keep oneself healthy, eating breakfast is more important than choosing what to eat.",
      "answer": "J",
      "analysis": "定位 J 段末「the type of breakfast doesn't matter as much as simply eating something」，吃早餐比选什么吃更重要，对应题干。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.It is widely considered wrong not to eat breakfast.",
      "answer": "A",
      "analysis": "定位 A 段「skipping breakfast is a serious mistake」，广泛认为不吃早餐是错误，对应题干 widely considered wrong。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.More research is needed to prove that breakfast is related to weight loss or food intake.",
      "answer": "F",
      "analysis": "定位 F 段「more evidence is required before breakfast recommendations can be used」，需更多研究证明早餐与减重/摄入的关系，对应题干。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.People who prioritise breakfasts tend to have lower calorie but higher nutritional intake.",
      "answer": "C",
      "analysis": "定位 C 段「lower body mass index... reduce daily calorie intake and improve... diet—higher in fibre and nutrients」，优先吃早餐者热量更低、营养更高，对应题干。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Many studies reveal that eating breakfast helps people memorise and concentrate.",
      "answer": "H",
      "analysis": "定位 H 段「eating breakfast can improve memory... improve concentration」，多项研究揭示早餐助记忆与专注，对应题干。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What does the passage say about open educational resources?",
      "answer": "C",
      "analysis": "定位第 2 段「Textbook publishers connect... in ways that alternatives... simply do not」，开放教育资源无法像教科书那样连接教授与学生；A/B 无依据，D 未提及激烈竞争。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What is the main cause of the publishers’ losses?",
      "answer": "D",
      "analysis": "定位第 3 段「losses, largely due to students renting or buying used print textbooks」，销量下滑（二手/租赁）致亏损；A、B、C 文中均未提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What does the textbook industry need to do?",
      "answer": "A",
      "analysis": "定位第 3 段「A restructuring of the textbook industry may well be in order」，行业需改革结构；B 削减零售价、C 替代印刷本、D 定期改战略文中未提。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What are students expected to do in the learning process?",
      "answer": "C",
      "analysis": "定位第 4 段「students are asked to use their individual experience to come up with answers」，用个人经验答题；A/B/D 均非文中要求学生做的。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What do experts say about students using textbooks?",
      "answer": "B",
      "analysis": "定位第 5 段「engaging with a textbook can be an interactive experience」，专家指学生可交互式学习；A 数字化、C 定制版、D 自行改编文中均未说。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51.What is the distinctive feature of a sea slug?",
      "answer": "D",
      "analysis": "定位第 1 段「truly half animal and half plant」及第 2 段「only known animal that can be truly considered solar-powered」，它从食物和阳光两获能量；A/B 表述不准，C 偷换概念。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What enables the sea slug to live like a plant?",
      "answer": "A",
      "analysis": "定位第 2 段「slugs can manufacture chlorophyll... hold these genes」及 kleptoplasty「using hijacked genes」，使其像植物的是劫持的藻类基因；B 机制、C 营养、D 色素均非关键。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What does the author say about baby sea slugs?",
      "answer": "D",
      "analysis": "定位第 3 段「Their babies retain the ability to produce their own chlorophyll」，幼体可自行产叶绿素；A/B/C 与文意相反（需先吃藻偷基因才能产能）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What does Sidney Pierce say about genes from an alga?",
      "answer": "C",
      "analysis": "定位第 4 段西德尼·皮尔斯语「genes from an alga should work inside an animal cell... And yet here, they do」，通常不在动物细胞运作；A/B/D 均错。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What do we learn about sea slugs from the passage?",
      "answer": "B",
      "analysis": "定位第 5 段「can live up to nine months without having to eat any food」，数月不进食仍可存活；A/C/D 均与文末「不饿死/靠阳光」矛盾。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：「四代同堂」译 four generations live under the same roof；「和睦的大家庭」译 harmonious extended family；「帮清照看」原文笔误，应为「帮着照看」，译 help take care of；「抽时间」用 set aside time 较自然；节日名用专有名词 Spring Festival / Mid-Autumn Festival。整体为说明性文字，宜用一般现在/过去时混用呈现今昔对比。"
   }
  ],
- "generatedAt": "2026-10-10T12:30:00.089Z"
+ "generatedAt": "2026-10-10T15:13:16.350Z",
+ "reverifiedAt": "2026-10-10T15:13:16.350Z"
 }

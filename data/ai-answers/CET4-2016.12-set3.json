@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "K",
      "analysis": "副词修饰动词：说到动物斗殴，事情“很少”那样收场（rarely work out that way），与下文“一半只判缓刑”呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "O",
      "analysis": "过去分词与 killed 并列：斗狗受害者被“折磨”、杀害（tortured and killed）以牟利。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "J",
      "analysis": "形容词作定语：施虐者造成一生痛苦却只受“极轻的”刑罚（a minimal sentence），与下文“只判缓刑”一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "D",
      "analysis": "动词：法官在“确定”刑罚时依赖量刑指南（when they determine penalties）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "G",
      "analysis": "形容词与 outdated 并列：这些指南过时且“极不完备”（extremely inadequate），由下文提高最低刑期可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "B",
      "analysis": "主语三单谓语动词：量刑委员会“制定”这些指南（which creates these sentencing guidelines）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "E",
      "analysis": "固定搭配 a step in the right direction：“朝正确方向迈出的一步”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "M",
      "analysis": "动词不定式：与议员合作在全国“加强”反虐待动物法（strengthen anti-cruelty laws）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "L",
      "analysis": "复数名词：帮助不堪重负的动物“收容所”（animal shelters），由 that care for animal fighting victims 可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "C",
      "analysis": "副词修饰形容词：这种帮助“至关重要”（critically important），由“照料成本高昂”呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.Some famous companies are already using gamification and more are trying to do the same.",
      "answer": "C",
      "analysis": "该段：从谷歌、欧莱雅到 IBM、富国银行“都在使用游戏化”，且“越来越多的公司正在加入”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.Gamification is not a miracle cure for all workplaces as it may have negative results.",
      "answer": "J",
      "analysis": "该段：游戏化“不是灵丹妙药”（not a magic bullet），迪士尼酒店的排行榜被称作“数字皮鞭”，对士气和绩效产生负面影响。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.To enhance morale, one company asks its employees to identify their fellow workers when starting their computers.",
      "answer": "G",
      "analysis": "该段：一家公司用游戏化“提振员工士气”——员工登录电脑时看到同事照片，要“猜出那个人是谁”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.The idea of gamification was practiced by some businesses more than a century ago.",
      "answer": "D",
      "analysis": "该段：Cracker Jacks 一个多世纪前就往零食里放奖品“游戏化”，钢铁巨头施瓦布在地面上写吨数激励下一班。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.There is reason to believe that gamification will be here to stay.",
      "answer": "K",
      "analysis": "该段：游戏化“只会越来越流行”、“远未到达顶峰”、“没有理由认为它会消失”——即会长期存在。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.Video games contributed in some ways to the wide application of gamification.",
      "answer": "E",
      "analysis": "该段：“部分由于电子游戏的缘故”，进入职场的一代对工作游戏化特别容易接受。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.When turning work into a game, it is necessary to understand what makes games interesting.",
      "answer": "B",
      "analysis": "该段：游戏化就是“理解是什么让游戏引人入胜”，再把经验应用到工作场所——即先弄懂游戏的趣味何在。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.Gamification in employee training does not always need technology.",
      "answer": "H",
      "analysis": "该段：“游戏化并不一定非得数字化”（does not have to be digital），培训常不用技术。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.The most successful gamification platforms transform daily work assignments into fun experiences.",
      "answer": "F",
      "analysis": "该段：“最有效的平台把员工的日常任务变成一段丰富冒险叙事的一部分”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.It is necessary to use terms other than “gamification” for some professions.",
      "answer": "I",
      "analysis": "该段：为工程师做设计时“根本不会说‘游戏’”，要说“模拟”——即某些职业需换用其他术语。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -174,37 +174,37 @@
    "questions": [
     {
      "stem": "46.What does the author say about present-day universities?",
-     "answer": "D",
+     "answer": "C",
      "analysis": "第二段：实际问题“在加深”，而雇来的人“不是去教书而是去开会”——即高校缺乏解决日益加深问题的（教学）人才。",
      "verified": false,
-     "dissent": null
+     "dissent": "C"
     },
     {
      "stem": "47.According to the author, what kind of people do universities lack most?",
      "answer": "A",
      "analysis": "第三段：作者主张“雇用一大批好教师”（hiring an army of good teachers）来改善问题——最缺的是好老师。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.What does the author imply about the classes at present?",
      "answer": "D",
      "analysis": "第三段：若以教师替换一半行政人员，“多数班级能恢复到每师 20 人以下”——反推现在班级远大于理想规模。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49.What does the author think of teaching ability?",
      "answer": "A",
      "analysis": "第四段：“教学是一门艺术和手艺，需要天赋与练习”（an art and a craft, talent and practice）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50.What is the author’s suggestion for improving university teaching?",
      "answer": "B",
      "analysis": "第三、四段：削减会议、雇用更多课堂教师，且“教师必须能按自己的方式教学”——即招更多老师并允许他们自主施教。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -216,37 +216,37 @@
    "questions": [
     {
      "stem": "51.What do we learn about McDonald’s inclusion of toys in its Happy Meals?",
-     "answer": "A",
+     "answer": "D",
      "analysis": "首段：开心乐园餐的玩具“能像食物一样刺激大脑奖励中枢”，让人少吃且开心——对儿童来说是一种愉快的减食方式。",
      "verified": false,
-     "dissent": null
+     "dissent": "D"
     },
     {
      "stem": "52.What is the finding of the researchers led by Martin Reimann?",
      "answer": "D",
      "analysis": "第三段：“搭配奖品时，孩子和成人中的多数都选择了半份餐食”（the majority of both kids and adults opted for a half-sized portion），且两种选择同价。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53.What is most interesting in Martin Reimann’s finding?",
      "answer": "B",
      "analysis": "第四段：“更有意思的是，仅凭对未来奖励的许诺，就足以让成年人选择小份”（the promise of a future reward was enough）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54.How does Martin Reimann interpret his finding?",
      "answer": "A",
      "analysis": "第六段：他推测“正是这些无形奖励中的情感成分让它们有效”（the emotional component of these intangible prizes）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55.What can we infer from Martin Reimann’s finding?",
      "answer": "C",
      "analysis": "末段：半份甜点作为“未来某天领取”的奖励，“这会把你带回餐厅——也让你少吃一点”，即既让人少吃又有助餐厅生意。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：独特的象征意义（unique symbolic meaning）、封建社会（feudal society）、权力和权威（power and authority）、专为皇帝使用（exclusively used by the emperor）、皇袍（imperial robes）、禁止（be forbidden to do）、收获的象征（a symbol of harvest）、一片金黄（turn golden yellow）、兴高采烈（with great joy）。"
   }
  ],
- "generatedAt": "2026-10-10T10:59:40.025Z"
+ "generatedAt": "2026-10-10T15:09:19.859Z",
+ "reverifiedAt": "2026-10-10T15:09:19.859Z"
 }

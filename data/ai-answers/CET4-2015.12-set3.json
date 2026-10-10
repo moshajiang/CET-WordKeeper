@@ -22,70 +22,70 @@
      "stem": "36",
      "answer": "G",
      "analysis": "形容词作定语：婴儿“心爱的”玩具（favorite toy）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37",
      "answer": "M",
      "analysis": "情态动词 may 后接动词原形：孩子“抗议/争辩”说姐姐果汁更多（protest that a sister has more fruit juice）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38",
      "answer": "B",
      "analysis": "名词：不是杯子的形状不同，而是果汁的“量”（the amount of juice）不同。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39",
      "answer": "O",
      "analysis": "复数名词：孩子总在检验他们关于事物如何运作的“理论”（child-sized theories），与 how things work 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40",
      "answer": "I",
      "analysis": "副词修饰动词：孩子会“立刻”检验你的话（will immediately test your claim），与第六次扔勺子的情境呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41",
      "answer": "D",
      "analysis": "固定搭配 drive you crazy：“把你逼疯”；由下文“她不是故意作对”可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42",
      "answer": "F",
      "analysis": "复数名词：her desires and yours can differ → “这些分歧”（those differences）有时重要有时不重要。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43",
      "answer": "J",
      "analysis": "副词修饰动词 unfold：认知能力像花开一样“自然地”展开（unfold naturally）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44",
      "answer": "H",
      "analysis": "现在分词：几乎独立于生活中“正在发生”的其他事（what else is happening in their lives）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45",
      "answer": "N",
      "analysis": "过去分词与 modified 并列：他的具体结论多年后被“推翻”或修正（have been rejected or modified）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,35 +99,35 @@
      "stem": "56.What do we learn about Silicon Valley from the passage?",
      "answer": "A",
      "analysis": "对应首段：硅谷难以在其他国家复制，“因为在美国的大部分地方你也复制不了它”，即其成功难以复制。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "57.What makes Miami unfit to produce a Silicon Valley?",
      "answer": "B",
      "analysis": "对应第五段：迈阿密“富人云集，痴迷科研的人却很少”（full of rich people, it has few nerds），缺的是合适的人才。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "58.In what way is Carnegie-Mellon different from Stanford, Berkeley and MIT?",
      "answer": "A",
      "analysis": "对应第六、七段：匹兹堡“书呆子多、有钱人少”，天气糟糕、富人不愿住在那里——即卡内基-梅隆所处的位置对富人缺乏吸引力。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "59.What does the author imply about Boston?",
-     "answer": "B",
+     "answer": "D",
      "analysis": "对应第七段：作者暗示波士顿有有趣的老城弥补坏天气，富人愿意住（财富）且 MIT 在此造就 128 公路高科技区，即“财富与高科技兼产”。",
      "verified": false,
-     "dissent": null
+     "dissent": "D"
     },
     {
      "stem": "60.What does the author say about startup investors?",
      "answer": "C",
      "analysis": "对应末段：创业投资人“除了钱还能提供建议和人脉”（supply advice and connections as well as money），即能做的远不止出钱。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -141,35 +141,35 @@
      "stem": "61.What happens when you have like-minded people around you all the while?",
      "answer": "C",
      "analysis": "对应首段：志同道合者带来的舒适“恰恰会妨碍那种能扩张你的公司和事业的学习”，即可能阻碍公司与事业进步。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "62.What does the author suggest leaders do?",
      "answer": "B",
      "analysis": "对应第三段：作为领导者，要努力营造“人们可以自由异议和争辩”的环境（an environment in which people will freely disagree and argue）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "63.What is the purpose of holding a debate?",
      "answer": "A",
      "analysis": "对应第五段：辩论的目的“不是取胜，而是抵达真相”（not to win but to get to the truth）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "64.What advice does the author give to people engaged in a fierce debate?",
      "answer": "D",
      "analysis": "对应第六段：激烈辩论会伤感情，要与对手沟通、用微笑幽默化解紧张，即注意不伤害彼此感情。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "65.How should we treat our rivals after a successful debate?",
      "answer": "D",
      "analysis": "对应末段：目标达成后要“充分奖励所有参与者，让陪练知道你多么感激他们的贡献”，即认可对手的贡献。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -191,75 +191,76 @@
      "stem": "46.The author was advised against the improper use of figures of speech.",
      "answer": "I",
      "analysis": "该段：作者用了冷僻引文和行话遭批评，母亲“对华丽却不相干的修辞毫无耐心”（no patience for brilliant but irrelevant figures of speech）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.The author's mother taught him a valuable lesson by pointing out lots of flaws in his seemingly perfect essay.",
      "answer": "C",
      "analysis": "该段：母亲的红笔让作者看到“完美无瑕”的作文有多少缺陷，并由此领悟“创造性批评”的更深一课。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.A writer should polish his writing repeatedly so as to get closer to perfection.",
      "answer": "K",
      "analysis": "该段：惠特曼 1855–1891 年间“反复”修改《自己之歌》；写完美作文的意义在于“永远不要甘心收笔”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49.Writers may experience periods of time in their life when they just can't produce anything.",
      "answer": "E",
      "analysis": "该段：作者经历了第一次写作障碍，“整整三年什么都写不出来”（not able to produce anything for three years）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50.The author was not much surprised when his school teacher marked his essay as \"flawless\".",
      "answer": "B",
      "analysis": "该段：作者早听说天才幼年显露，故对 14 岁写出完美作文“只是略微吃了一惊”（only slightly taken aback）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "51.Criticizing someone's speech is said to be easier than coming up with a better one.",
      "answer": "F",
      "analysis": "该段引普鲁塔克：挑毛病“易如反掌”，在原处拿出更好的“才是极其麻烦的工作”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52.The author looks upon his mother as his most demanding and caring instructor.",
      "answer": "A",
      "analysis": "该段：母亲是“真正不可能存在的老师”——期望高得离谱（demanding）却“关心我和我的智识生活”（caring）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53.The criticism the author received from his mother changed him as a person.",
-     "answer": "D",
+     "answer": "H",
      "analysis": "该段：真正的批评不但留下写作的印记，还会“作为一个人留下存在的印记”（an existential imprint on you as a person）。",
      "verified": false,
-     "dissent": null
+     "dissent": "H"
     },
     {
      "stem": "54.The author gradually improved his writing by avoiding fancy language.",
      "answer": "J",
      "analysis": "该段：母亲删削华丽辞藻、划掉感叹号，作者不再嚷嚷虚张声势，“写作也慢慢进步了”（slowly my writing improved）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55.Constructive criticism gives an author a good start to improve his writing.",
      "answer": "G",
      "analysis": "该段：真正的批评为作者“开创一个宝贵的契机”，让他以自己的方式变得更好（creates a precious opening for an author to become better）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
   }
  ],
- "generatedAt": "2026-10-10T10:25:20.450Z",
- "prunedAt": "2026-10-10T10:22:30.001Z"
+ "generatedAt": "2026-10-10T15:09:03.546Z",
+ "prunedAt": "2026-10-10T10:22:30.001Z",
+ "reverifiedAt": "2026-10-10T15:09:03.546Z"
 }

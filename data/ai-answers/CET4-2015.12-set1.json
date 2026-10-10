@@ -14,35 +14,35 @@
      "stem": "56. What does the author think of time displayed everywhere?",
      "answer": "C",
      "analysis": "文章指出时间无处不在可能对工作产生不良影响，基于时钟的工作安排会阻碍士气和创造力，因此可能对创造性工作有负面影响。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "57. How do people usually go about their work according to the author?",
      "answer": "A",
      "analysis": "作者提到人们通常混合使用时钟时间和任务时间两种计划方式，即结合基于时钟和基于任务的规划。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "58. What did Tamar Avnet and Anne-Laure Sellier find in their experiments about clock-timers?",
      "answer": "D",
      "analysis": "实验发现时钟计时者更高效、更有生产力，但感觉对生活控制较少、更不快乐。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "59. What do the researchers say about today's business culture?",
      "answer": "B",
      "analysis": "研究者认为任务型组织在商业文化中被低估和支持不足，即未得到足够重视。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "60. What do the researchers suggest?",
      "answer": "A",
      "analysis": "研究者建议在执行需要更多创造力的工作时应当使用基于任务的时间安排。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -56,35 +56,35 @@
      "stem": "61. What does the well-known columnist's remark about Martha Stewart suggest?",
      "answer": "A",
      "analysis": "专栏作家称她已付出代价、有权重新开始，这暗示其犯罪记录可能成为新生活的障碍。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "62. What do we learn from the second paragraph about many criminals in America?",
      "answer": "B",
      "analysis": "第二段指出许多法律对大量美国人施加定罪后限制，使其无法彻底偿还社会债务，即被剥夺改过自新的机会。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "63. What are the consequences for many Americans with a criminal record?",
      "answer": "C",
      "analysis": "文章指出这些限制使大量人口处于社会边缘，因此有犯罪记录的许多美国人被边缘化。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "64. What does the author think of the post-conviction laws and rules?",
      "answer": "D",
      "analysis": "作者认为许多附随后果与公共安全无关且适得其反，不少定罪后法律对社会有负面影响。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "65. What is the author's main purpose in writing the passage?",
      "answer": "B",
      "analysis": "作者主要呼吁改革美国刑事司法系统，给予有犯罪记录者第二次机会。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -98,70 +98,70 @@
      "stem": "46. It will not be difficult to make learning a source of joy if educators change their way of thinking.",
      "answer": "G",
      "analysis": "该段指出，建立在孩子感受快乐的能力上并不难，只需教育界转变思维方式。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What distinguishes children from adults is their strong ability to derive joy from what they are doing.",
      "answer": "D",
      "analysis": "该段指出，孩子区别于成人的不是无知或技能缺乏，而是他们巨大的快乐能力。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. Children in America are being treated with shocking cruelty.",
      "answer": "A",
      "analysis": "该段提到，斯威夫特讽刺性的提议在美国看来令人震惊，但实际上美国比你想的更接近该提议。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. It is human nature to seek joy in life.",
      "answer": "F",
      "analysis": "该段指出，人类生活由体验快乐的欲望所支配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. Grown-ups are likely to think that learning to children is what medicine is to patients.",
      "answer": "K",
      "analysis": "该段指出，成年人往往把学习说成是药：令人不快但必要且对你有益。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "51. Bad school conditions make it all the more important to turn learning into a joyful experience.",
      "answer": "H",
      "analysis": "该段指出，学校环境越糟糕，快乐对实现任何教育成功就越重要。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. Adults do not consider children's feelings when it comes to education.",
      "answer": "C",
      "analysis": "该段指出，人们考虑教育时，没有考虑作为孩子的感受。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. Administrators seem to believe that only hard work will lead children to their educational goals.",
      "answer": "I",
      "analysis": "该段指出，管理者们似乎认为孩子应延迟快乐以追求抽象目标，如考大学。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. In the so-called \"effective\" schools, children are taught self-control under a set of strict rules.",
      "answer": "B",
      "analysis": "该段描述了所谓'有效'的学校里，孩子们喊口号学自控或站桌后。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. To make learning effective, educators have to ensure that children want to leam.",
      "answer": "J",
      "analysis": "该段指出，为了在学校获得技能和知识，孩子需要想学。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -183,70 +183,70 @@
      "stem": "36",
      "answer": "J",
      "analysis": "副词修饰形容词 different：信息社会的不平等与工业社会的不平等有着“根本”不同（fundamentally different）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37",
      "answer": "G",
      "analysis": "主语三单谓语动词：信息社会“扩大”了成员可获得的信息量（expands the quantity of information available）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38",
      "answer": "O",
      "analysis": "形容词作定语：只依据媒体提供的信息量看问题，是“肤浅的”分析（a superficial analysis）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39",
      "answer": "K",
      "analysis": "名词：把用户实际获取的信息量考虑进去，就可能产生另一种“解读”（a different interpretation）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40",
      "answer": "B",
      "analysis": "过去分词作后置定语：用户实际“获取”的信息（the information acquired by the user）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41",
      "answer": "I",
      "analysis": "谓语动词：整个社会“流动”的信息越多（the more information flows throughout the society），the more...the wider 结构。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42",
      "answer": "F",
      "analysis": "复数名词：数字鸿沟由三大“要素”造成——阶级、性别与代际（three major elements），冒号后列举三项。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43",
      "answer": "M",
      "analysis": "固定搭配 with regard to：“就性别而言”。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44",
      "answer": "H",
      "analysis": "形容词搭配：伴随电脑与互联网长大的“网络一代”对之“熟悉”（familiar with personal computers and the Internet）。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45",
      "answer": "A",
      "analysis": "形容词搭配：老一辈“习惯于”工业社会（accustomed to an industrial society），与 familiar with 形成对照。与官方答案一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "官方参考译文（源试卷附带）。难点：过于关注……以至于（pay too much attention to ... to such an extent that）、首要要求（primary requirement）、竞争激烈的社会（a society full of intense competition）、保证前途光明（ensure a bright future）、受到尊敬（receive respect accordingly）、牺牲自己的时间、爱好和兴趣（sacrifice their own time, hobbies and interests）。"
   }
  ],
- "generatedAt": "2026-10-10T08:26:51.802Z"
+ "generatedAt": "2026-10-10T15:08:39.910Z",
+ "reverifiedAt": "2026-10-10T15:08:39.910Z"
 }

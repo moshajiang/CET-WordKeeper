@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "D",
      "analysis": "固定搭配 focus on：这些行为都“聚焦于”身体健康（they all focus on physical health）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "F",
      "analysis": "形容词作定语：社交健康对“整体”福祉同等重要（overall well-being）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "E",
      "analysis": "名词：社交圈的强度是自评压力的更好“指标”（a better indicator of self-reported stress）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "K",
      "analysis": "过去分词作定语：被无穷健康数据代表的“量化”自我（the quantified self）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "N",
      "analysis": "名词：量化自我并不能说明全部“故事”（doesn't tell the whole story），固定表达。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "M",
      "analysis": "过去分词作表语：这些方面在测量中都没有被“反映”（are not reflected in any of these measurements）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "H",
      "analysis": "形容词作定语：这一观点得到大量“先前的”研究支持（plenty of prior research）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "O",
      "analysis": "副词修饰分词：社会支持与更好的身心健康“密切相关”（strongly associated with）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "L",
      "analysis": "名词作定语：提高疾病“康复”率（improve illness recovery rates），与 illness 搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "C",
      "analysis": "副词：孤独“尤其”在许多国家成为公共卫生问题（especially since loneliness is emerging...），表强调。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. Research has found the use of digital technology benefits not only teenagers* social lives but also their\nstudies.",
      "answer": "C",
      "analysis": "该段：社会科学家发现数字使用“有创造性甚至有益”，“不仅体现在社交生活上，也体现在学业上”（not just in their social lives, but their education too）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. It is urgent that schools teach kids how to verify online information.",
      "answer": "L",
      "analysis": "该段：研究显示学生不会核实网上信息，“聪明地搜索”是学校亟需教授的技能（a skill schools need to teach urgently）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. Students now write longer and more complex essays than their counterparts in previous decades while the\nerror rates remain unchanged.",
      "answer": "H",
      "analysis": "该段：即便错误率保持稳定，学生作文“在篇幅和复杂度上已大大增长”（blossomed in size and complexity）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. Newspaper reports of teenagers give a false picture of their behaviour.",
      "answer": "A",
      "analysis": "该段：报纸上充斥可怕报道，但“并没有真正反映青少年日常社交行为的主体”——即媒体报道给出了失真的图景。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. Parents are advised to mind their own digital behaviour and set a good example for their kids.",
      "answer": "M",
      "analysis": "该段：应对之道是适度和“以身作则”（model good behaviour）——整天看手机的家长会养出同样的孩子。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. Contrary to parents' belief, kids try hard to leave as few traces as possible on the web.",
      "answer": "E",
      "analysis": "该段：家长担心孩子不在乎隐私是错的——“他们会花几小时修改设置……把自己的痕迹降到最少”（minimise their traces）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. Students , ability to learn formal writing is unlikely to be affected by texting.",
      "answer": "I",
      "analysis": "该段：发短信“大概并没有毁掉他们学习正式写作的能力”（probably isn't destroying their ability to learn it）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. Historically, new technologies have always caused great fears among parents.",
      "answer": "B",
      "analysis": "该段：“新技术总会引发代际恐慌”，广播、随身听的例子——历史上新技术总是令家长恐惧。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. The reading culture was seriously affected by cable television some four decades ago.",
      "answer": "J",
      "analysis": "该段：“80 年代冲击这种文化的是有线电视，不是互联网”（it was cable TV not the internet）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Teachers say that kids, writing is too casual, using language characteristic of text messages.",
      "answer": "G",
      "analysis": "该段：教师抱怨孩子的写作“使用过于随意的语言和短信式表达”（overly casual language and text-speak）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What do we learn from the passage about Red Rum the racehorse?",
      "answer": "B",
      "analysis": "首段：很少有马能像“红朗姆”这样“赢得英国公众的喜爱”，退役三十年后仍是最受爱戴的赛马之一。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What did the serious bone disease in Red Rum's foot mean to himself and his trainer?",
      "answer": "A",
      "analysis": "第三段：骨病“对许多马意味着赛马生涯就此终结”，但对金杰和红朗姆而言“只是必须跨越的一道障碍”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What does the author say Red Rum did with his power, speed and jumping ability?",
      "answer": "D",
      "analysis": "第四段：力量、速度与跳跃能力带他 1973 年首夺冠，次年再夺——即 70 年代三次赢得国家大赛。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What did people generally think of Red Rum when he returned to the racecourse in 1977?",
      "answer": "A",
      "analysis": "第五段：1977 年他归来时“人们普遍认为他已过巅峰”（largely regarded as past his prime）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What became of Red Rum after his career ended?",
      "answer": "D",
      "analysis": "末段：退役后“他的公共生活与名气丝毫没有减少”，仍常引领赛前巡游、出席慈善活动——依然著名而受欢迎。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What does the author say businesspeople often do?",
      "answer": "D",
      "analysis": "首段：商界人士常“凭个人感觉或直觉”做决定（based on their own personal feelings or instincts）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What should we take into account in order to make informed decisions?",
      "answer": "B",
      "analysis": "第三段：“数据与分析长期以来与明智决策相连”（Data and analysis have long been associated with informed decisions）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What should people do in a decision-making process if instincts disagree with data?",
      "answer": "C",
      "analysis": "第四段：解法是“把数据与直觉结合使用”（using data and instincts in conjunction）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What should we do when facing various factors that limit the practicality of data?",
      "answer": "C",
      "analysis": "第六段：当数据不实用时，“唯一可行的选项就是依靠直觉”（rely on what your instincts tell you）——即诉诸内在智慧。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does it take for decisions to become the best according to the author?",
      "answer": "A",
      "analysis": "末段：把本能判断与理性分析“结合”起来，才能产生周全的决定——即把直觉与数据结合运用（Combining instinctive and rational analysis）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "官方参考译文。难点：生活水平不断提高（the living standard has been continuously improved）、充分体现（be fully reflected in）、不再满足于吃得饱（be no longer satisfied with eating enough）、更加营养（more nutritiously）、限于本地的农产品（be limited to local produce）、品尝各地特产（taste specialties from all over the country）、为……提供有力保障（provide a strong guarantee for）。"
   }
  ],
- "generatedAt": "2026-10-10T13:54:17.457Z"
+ "generatedAt": "2026-10-10T15:16:05.236Z",
+ "reverifiedAt": "2026-10-10T15:16:05.236Z"
 }

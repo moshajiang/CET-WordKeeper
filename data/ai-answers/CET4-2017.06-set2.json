@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "O",
      "analysis": "形容词作定语：在“剧烈”运动中（during vigorous exercise），与肌肉耗尽燃料的描述呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "I",
      "analysis": "名词：受一种叫“中枢疲劳”的“现象”影响（a phenomenon called central fatigue），由 called 线索可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "E",
      "analysis": "副词修饰分词：化学信使失衡使中枢神经“无法有效地”指挥肌肉运动（effectively directing）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "G",
      "analysis": "过去分词作后置定语：未直接“参与”运动本身的运动系统（motor systems involved in the exercise）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "M",
      "analysis": "名词：让骑手摄入一份碳水化合“溶液”（a carbohydrate solution），与实验设计呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "D",
      "analysis": "名词：在 3 小时的“骑行”中（3 hours of cycling），与志愿骑手（cyclists）呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "C",
      "analysis": "动词：测试大脑还能多好地“控制”视觉系统（control their visual system）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "L",
      "analysis": "现在分词表结果：眼动速度降低 8%，“延缓”了捕捉新视觉信息的能力（slowing their ability）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "N",
      "analysis": "形容词：咖啡因的剂量“足以”逆转这一效应（sufficient to reverse this effect）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "F",
      "analysis": "形容词作定语：有些骑手甚至表现出“更高的”眼动速度（increased eye movement speeds）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.Successful team leaders know exactly where the team should go and are able to take prompt action.",
      "answer": "H",
      "analysis": "该段：最成功的团队的领导者能“设定总体方向并立即采取行动”（set an overall direction and take immediate action）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.Decentralisation of authority was also found to be more effective in military operations.",
      "answer": "D",
      "analysis": "该段：美军在伊拉克战争初期受等级结构拖累，麦克里斯特尔的解法是“把权力下放给自我组织的团队”（decentralise authority）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.In many companies, the conventional form of organisation is giving way to a network of teams.",
      "answer": "B",
      "analysis": "该段：“团队网络正在取代传统的等级体制”（a network of teams is replacing the conventional hierarchy）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.Members of poorly managed teams are easily distracted from their work.",
      "answer": "J",
      "analysis": "该段：“管理松散的团队会沦为分心的温床”，员工因会议太多、办公室嘈杂而做不完工作。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Teamwork is most effective when team members share the same culture.",
      "answer": "G",
      "analysis": "该段：“如果成员拥有共同的文化，团队工作最有效”（Teams work best if their members have a strong common culture）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.According to a report by Deloitte, teamwork is becoming increasingly popular among companies.",
      "answer": "A",
      "analysis": "该段：德勤报告显示“团队协作之风达到了新的高度”（the fashion for teamwork has reached a new high）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.Some team members find it hard to agree on questions like membership and the team’s purpose.",
      "answer": "F",
      "analysis": "该段：120 个高管团队中不到 10% 能就“团队里有谁”达成一致，“就团队目标达成一致更难”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.Some scholars think teamwork may not always be reliable, despite its potential to work wonders.",
      "answer": "E",
      "analysis": "该段：汤普森警告“团队并不总是答案”；哈克曼说团队“可能产生魔法……但别指望它”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.To ensure employees’ commitment, it is advisable to give them more flexibility as to where and how they work.",
      "answer": "I",
      "analysis": "该段：确保员工“投入”的最好办法是“给他们更多控制自己工作地点与方式的权利”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Product transitions take much less time now than in the past.",
      "answer": "C",
      "analysis": "该段：产品换代“过去需要五到七年，现在只要一两年”（used to take five or seven years; now one or two）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46.The market sales of toilet paper have decreased because .",
      "answer": "A",
      "analysis": "第二段：精打细算的消费者为省钱选择折扣店的便宜货，第三段说市场价值因此缩水——即英国人削减了这方面的开支。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47.What does the author think of the future of the tissue paper market in the UK?",
      "answer": "B",
      "analysis": "第三段：市场“前景远谈不上乐观”（far from rosy），销售额预计继续下跌——即前景暗淡。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48.What does Jack Duckett say about toilet paper?",
      "answer": "C",
      "analysis": "第五段达克特：带印花香味的“奢侈”品种被多数人视为不必要，“因为通常比普通卫生纸贵，即使特价时也是”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What do we learn about Britons concerning toilet paper?",
      "answer": "A",
      "analysis": "第六段：英国人对纸质“讲究”（fussy），柔软居愿望清单首位——即对质量很挑剔。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What can we infer from the last paragraph?",
      "answer": "D",
      "analysis": "末段：再生纸仅十分之一买家考虑，“凸显对购物者而言环境远不如产品质量重要”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What does Lindson-Hawley say about her mother?",
      "answer": "B",
      "analysis": "第二段：她妈妈“戒烟的方式是对的——立即彻底地戒断”（quit the right way—by stopping abruptly and completely）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52.What kind of support did smokers receive to quit smoking in Lindson-Hawley’s study?",
      "answer": "D",
      "analysis": "第三段：两组人都使用尼古丁贴片，“外加第二种尼古丁替代形式，如口香糖或喷雾”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. How does Dr. Gabriela Ferreira view the result of Lindson-Hawley’s experiment?",
      "answer": "C",
      "analysis": "第五段费雷拉：引用“五分之一成功戒断”这个具体数字“很有说服力，会给他们真正的勇气”——即结果令人鼓舞。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. The idea of “a marathon” （Line 2, Para. 5) illustrates the popular belief that quitting smoking",
      "answer": "B",
      "analysis": "第五段：马拉松的比喻对应流行观念——“逐渐减量就像练习一样”（it's like practice），即戒烟需要先练习。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What happens when people try to quit smoking gradually?",
      "answer": "A",
      "analysis": "第五段：逐渐减量在戒烟日之前就带来瘾头和戒断症状，“该组坚持到戒烟日的人更少”——即反而更难。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：亚洲最长（the longest in Asia）、多种生态系统（a variety of ecosystems）、濒危物种的栖息地（the habitat of endangered species）、灌溉（irrigating）、流域（river basin）、国民生产总值（gross national product）、水电站（hydroelectric power station）。“坐落在”可译为 be located on。"
   }
  ],
- "generatedAt": "2026-10-10T11:11:19.769Z"
+ "generatedAt": "2026-10-10T15:09:35.916Z",
+ "reverifiedAt": "2026-10-10T15:09:35.916Z"
 }

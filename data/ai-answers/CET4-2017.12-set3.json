@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "G",
      "analysis": "名词：在“接触”STEM 课程方面存在空白（when it comes to exposure to STEM courses），固定搭配 exposure to。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "L",
      "analysis": "名词复数：公共教育体系“各个层面”都缺乏高质量 STEM 教育（at all levels of the public educational system）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "F",
      "analysis": "动词不定式：缺少可供“我自己的孩子报名参加”的课程（programs to enroll my own kids in）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "O",
      "analysis": "谓语动词过去式：孩子们“参加”以 STEM 为基础的竞赛（where children participated in competitions）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "C",
      "analysis": "名词复数：孩子们赢得了多项“州锦标赛”（won several state championships）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "E",
      "analysis": "动名词与 cultivating 并列：把全部时间投入“培育和发展”这个项目（cultivating and developing it）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "M",
      "analysis": "形容词：随后把业务扩展到“当地的”康乐中心（local recreation centers）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "N",
      "analysis": "主语三单谓语动词：EFK 项目如今“运营着”144 个以上分支（the EFK program operates over 144 branches）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "J",
      "analysis": "动名词：我们的国家“培养出的”工程师还不够（is not graduating enough engineers），与启发孩子学工程呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "B",
      "analysis": "名词：让孩子明白工程是一项了不起的“事业”（a great career），由 understand that 从句可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. To be curious, we need to realize first of all that there are many things we don’t know.",
      "answer": "H",
      "analysis": "该段：“要做到好奇，你首先必须意识到自己的知识存在空白”（you have to be aware of a gap in your knowledge in the first place）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. According to Leslie, curiosity is essential to one’s success.",
      "answer": "D",
      "analysis": "该段：莱斯利认为好奇心是“对我们的成功至关重要的人类美德”（crucial to our success）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. We should feel happy when we pursue knowledge for knowledge’s sake.",
      "answer": "O",
      "analysis": "该段：“我们应当乐于为知识本身而追求知识”（be delighted to pursue knowledge for its own sake）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. Political leaders’ lack of curiosity will result in bad consequences.",
      "answer": "M",
      "analysis": "该段：政治领袖应当保持好奇、在关键时刻提问，“不想知道会有严重的后果”（serious consequences in not wanting to know）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. There are often accusations about politicians' and the media’s lack of curiosity to find out the truth.",
      "answer": "B",
      "analysis": "该段：“‘缺乏好奇’的指责我们时常听到”，并举州议员、保守派作家指责政客与主流媒体的例子。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. The less curious a child is, the less knowledge the child may turn out to have.",
      "answer": "L",
      "analysis": "该段：“好奇心的缺乏造成知识的相对匮乏”（That lack of curiosity produces a relative lack of knowledge）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. It is widely accepted that academic accomplishment lies in both intelligence and diligence.",
      "answer": "K",
      "analysis": "该段：莱斯利批评“学业成功源于天赋加努力”的流行看法（the received wisdom），提出好奇心是第三因素。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. Visiting a bookshop as curiosity leads us can be a good way to entertain ourselves.",
      "answer": "J",
      "analysis": "该段引凯恩斯：逛书店“应当是一种下午的消遣”（should be an afternoon's entertainment），随着好奇心驱使在书架间流连。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. Both the rise of the Internet and reduced appetite for literary fiction contribute to people’s declining curiosity.",
      "answer": "G",
      "analysis": "该段：互联网兴起导致境外新闻消费下降，“对文学小说兴趣的下降也是原因之一”——两个因素都指向好奇心下降。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Mankind wouldn’t be so innovative without curiosity.",
      "answer": "F",
      "analysis": "该段：没有好奇心就会“失去创新与创业精神”，失去“让人类整体如此成功的要素中至关重要的一部分”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What do people generally believe about aging?",
      "answer": "B",
      "analysis": "第一、五段：衰老“通常被视为人生的自然组成部分”，“人们认为衰老是自然的、无法控制的”——即人们认为对此无能为力。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. How do many scientists view aging now?",
      "answer": "A",
      "analysis": "第二段：科学家越来越了解到衰老“或许可以被视为一种可治疗的东西”，如同治疗高血压。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What does Alex Zhavoronkov think of “describing aging as a disease”?",
      "answer": "D",
      "analysis": "第三、四段：把衰老描述为疾病会“创造开发治疗的激励”，“解开制药行业的束缚，让他们开始治疗疾病本身”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What do we learn about the medical community?",
      "answer": "C",
      "analysis": "第五段：医学界把衰老视为理所当然，“除了把人维持在一定的健康范围内，别无他法”——即贡献有限。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What does Professor Leonard Hayflick believe?",
      "answer": "A",
      "analysis": "第八、九段：海弗利克不认为衰老可治愈、寿命可延长——“即使消除这些死因，预期寿命也不会超过 92 岁太多”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What do we learn about applicants to postdoctoral positions in geosciences?",
      "answer": "C",
      "analysis": "首段：申请地球科学博士后的女性“获得优秀推荐信的可能性几乎只有男性的一半”——男性更可能拿到杰出推荐信。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What do studies about men and women in scientific research show?",
      "answer": "C",
      "analysis": "第二段：“研究表明，在 STEM 领域，人们还认为男性比女性更能干”（perceived as more competent than women）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53.What do the studies find about the recommendation letters for women applicants?",
      "answer": "B",
      "analysis": "第三段：仅仅合格的信“没有任何让人看出这名候选人出类拔萃、独一无二的内容”（nothing that singles out the candidate）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54.What did Dutt and her colleagues do with the more than 1, 200 letters of recommendation?",
      "answer": "D",
      "analysis": "第四段：这些信“都经过编辑，去掉了性别及其他身份信息”（edited for gender and other identifying information）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does Dutt aim to do with her study?",
      "answer": "A",
      "analysis": "末段：研究是为了就不易察觉的性别偏见展开对话，“这或许会带来一些针对推荐信撰写者的建议”——即提高写信人的偏见意识。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：风景独特（unique scenery）、日出和云海（sunrise and sea of clouds）、宏伟壮丽（magnificence）、湿润气候（humid climate）、有利于……生长（favorable for the growth of）、主要产茶地（major tea-producing area）、防治皮肤病（prevent and treat skin diseases）、旅游目的地（tourist destination）、传统国画（traditional Chinese paintings）。"
   }
  ],
- "generatedAt": "2026-10-10T11:40:49.166Z"
+ "generatedAt": "2026-10-10T15:10:01.211Z",
+ "reverifiedAt": "2026-10-10T15:10:01.211Z"
 }

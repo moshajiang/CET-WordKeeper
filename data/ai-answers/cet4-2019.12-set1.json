@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "B",
      "analysis": "“wandering about on a Thai island or __26__ the ruins of Angkor”中 or 连接并列分词，与 wandering 平行，admiring（欣赏）符合“在小岛闲逛或欣赏吴哥窟遗迹”的语义与语法结构。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "M",
      "analysis": "“The bottle is __27__”描述瓶身状态，后接“标签写着纯净水”，sealed（密封的）符合瓶装水出厂封口的常识，且与上文“safe”呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "I",
      "analysis": "“what is inside is not so __28__”与上文“标签写 pure water”形成转折，natural（天然的）与 pure 近义，质疑内部是否真“天然”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "C",
      "analysis": "“more than 90 percent of all bottled water ... __29__ microplastics”缺谓语动词，主语 water 为单数，contains（含有）作谓语，语义为“瓶装水含有微塑料”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "K",
      "analysis": "“a recently __30__ study”修饰 study，released（发布的）构成“最近发布的研究”，下句“analysed 259 bottles”说明研究已完成发布。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "L",
      "analysis": "“__31__ an average of 325 plastic particles per litre”现在分词作伴随状语，revealing（揭示/显示）引出研究发现的数据。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "O",
      "analysis": "“a __32__ commonly known as PET”a 后接单数名词，substance（物质）指 PET 这种材料，被“广泛用于制造服装和容器”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "G",
      "analysis": "“food and __33__ containers”与 food 并列修饰 containers，liquid（液体的）构成“食品和液体容器”，符合 PET 用途。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "E",
      "analysis": "“Confronted with this __34__”指代上文微塑料研究结论，evidence（证据）作宾语，意为“面对这一证据，厂商自行研究”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "J",
      "analysis": "“the __35__ health risks”修饰 risks，potential（潜在的）指“饮用塑料瓶水的潜在健康风险”，符合 WHO 启动评估的语境。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36.The United States Postal Service has a system to ensure its employees’ safety.",
      "answer": "E",
      "analysis": "对应 E 段（USPS has sophisticated emergency plans...），“top priority is ensuring that employees are safe”说明 USPS 有应急计划确保员工安全。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.One official says USPS is unique in that it has more direct reach to communities compared with other federal agencies.",
      "answer": "I",
      "analysis": "对应 I 段，USPS 官员 Swigart 称“we are unique as a federal agency... in literally every community”，即 USPS 因深入每个社区而独特，比其他联邦机构直达社区。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.Natural disasters can have a long-lasting impact on community life.",
      "answer": "C",
      "analysis": "对应 C 段首句“Natural disasters can wreck a community's infrastructure, disrupting systems for months or years”，说明灾害对社区生活有长期影响。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.Mail delivery service is still responsible for the completion of almost half of payments.",
      "answer": "G",
      "analysis": "对应 G 段“56 percent of bills are paid online, which means that just under half of payments still rely on delivery services to be completed”，即近一半付款仍靠投递完成。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.The sight of a mailman on the street is a reassuring sign of life becoming normal again.",
      "answer": "K",
      "analysis": "对应 K 段末“when they see that carrier back out on the street... life is starting to return to normal”，邮递员回到街上是生活恢复正常的信号。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.After Hurricane Katrina interrupted routine delivery, temporary mail service points were set up.",
      "answer": "F",
      "analysis": "对应 F 段“After Hurricane Katrina hit in 2005, mail facilities were set up in dozens of locations... USPS was unable to provide street delivery”，卡特里娜飓风后设立临时邮件设施。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.Postal service in some regions in the U.S. was suspended due to extreme cold weather.",
      "answer": "B",
      "analysis": "对应 B 段“Even the United States Postal Service suspended mail delivery... suspending delivery Jan. 30 in some 3-digit ZIP Code locations”，因极寒暂停部分地区投递。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.Private postal companies also support disaster relief efforts by distributing urgent supplies.",
      "answer": "J",
      "analysis": "对应 J 段“Private courier companies... FedEx has supported the American Red Cross... distributed more than 1,200 MedPacks”，私营快递公司分发应急物资支援救灾。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.A dedicated USPS employee was on the job carrying out duties in spite of extreme conditions.",
      "answer": "D",
      "analysis": "对应 D 段，USPS 员工 Trevor Smith 在 2017 野火后“driving through burned homes... just another day on the job”，极端条件下仍履职。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Postal services work hard to identify items that require priority treatment.",
      "answer": "H",
      "analysis": "对应 H 段“identify which parcels are carrying crucial items... try their best to prioritize sensitive material”，邮政尽力识别并优先处理关键物品。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What do we learn about Knowledge-Based Artificial Intelligence?",
      "answer": "B",
      "analysis": "首段“This online course is a core requirement of Georgia Tech's online Master of Science in Computer Science program”说明 Knowledge-Based AI 是一门在线课程，B 正确。A 错在它是课程而非机器人；C 的 high-tech device、D 的 computer program aids 均不符。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What problem did Professor Goel meet with?",
      "answer": "C",
      "analysis": "首段“that wasn't enough to deal with the overwhelming number of daily questions from students”说明问题是学生提问太多难以应付，对应 C。A/B/D 文中未提。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What do we learn about Jill Watson?",
      "answer": "A",
      "analysis": "三段“Jill was able to answer... correctly 97% of the time... students didn't know she was a computer... very positive”，说明 Jill 大获成功，A 正确。B/C/D 均与文意相反或未被支持。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. How did the students feel about Jill Watson?",
      "answer": "D",
      "analysis": "三段“the students... couldn't tell it apart from a real human being”直接对应 D“无法将她与真人区分”。A/B/C 均与“very positive”“couldn't tell”矛盾。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What does Professor Goel plan to do next with Jill Watson?",
      "answer": "C",
      "analysis": "末段“next year is to take over answering 40% of all the questions”即让 Jill 承担更多学生提问，对应 C“指派她回答更多学生问题”。A/B/D 文中未提。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What do we learn about the scientists trying to raise money online for their projects?",
      "answer": "C",
      "analysis": "二段“Scientists have tried to tap Internet donors... with mixed success. Some raised... but others have fallen short of reaching even modest targets”说明并非所有科学家都达成目标，C 正确。A 因果错；B 的 mixed strategies、D 的多数放电影均错。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What is the purpose of Mike Schafer’s research of recent crowdfunding campaigns?",
      "answer": "B",
      "analysis": "三段“To determine what separates science crowdfunding triumphs from failures, a team... Mike Schafer... examined...”即研究目的是找出成败差异的原因，对应 B。A/C/D 均非该研究目的。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What trait contributes to the success of a crowdfunding campaign?",
      "answer": "B",
      "analysis": "四段“Most of them engage with potential donors, since projects that answered questions from interested donors fared better”说明与潜在捐助者互动有助成功，对应 B。A/C/D 未在成功特征中提及。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What did the researchers think of the financial targets of crowdfunding projects?",
      "answer": "A",
      "analysis": "四段“they target a small amount of money... The more money a project sought, the lower the chance it reached its goal”说明目标金额应小才易成功，对应 A。B/C/D 未被研究者主张。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What motivates people to donate in a crowdfunding campaign?",
      "answer": "D",
      "analysis": "末段“people give because they feel a connection to the person who is doing the fundraising—not necessarily to the science”说明捐款动机是与募款人之间的联结感，对应 D。A/B/C 均非文中所述动机。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：1) “十分重视”译为 attach great importance to；2) “名牌大学”用 prestigious university 更地道；3) “由于改革开放”用 Thanks to reform and opening-up 作状语；4) “拓宽视野”为固定搭配 broaden one's horizons；5) “发展和繁荣”译为 development and prosperity 并列名词。注意 not only... but also 倒装：Not only are they willing to... but they also... 体现语法亮点。"
   }
  ],
- "generatedAt": "2026-10-10T12:24:36.804Z"
+ "generatedAt": "2026-10-10T15:12:51.917Z",
+ "reverifiedAt": "2026-10-10T15:12:51.917Z"
 }

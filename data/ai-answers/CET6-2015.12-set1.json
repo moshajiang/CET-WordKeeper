@@ -14,70 +14,70 @@
      "stem": "26",
      "answer": "O",
      "analysis": "空格前有系动词is，后接介词to，需要一个形容词作表语，构成固定搭配be vulnerable to，表示“易受……伤害的”。语义上，发育中的大脑容易受到化学物质毒性影响，符合上下文。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "J",
      "analysis": "空格在can be之后作表语，需用形容词。permanent意为“永久的”，说明化学物质对大脑造成的损害可能是永久性的，语义通顺。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "A",
      "analysis": "空格作主语，且位于两个形容词之后，需用名词复数。advocates表示“倡导者”，health and environmental advocates指健康和环境倡导者，符合句意。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "N",
      "analysis": "空格前有不定式to，需用动词原形。tighten the use of…表示“收紧……的使用”，与urge搭配，表示敦促政府机构加强限制某些化学物质的使用。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "K",
      "analysis": "空格在主语the Environmental Protection Agency之后，作谓语动词，且时间状语为In 2001，需用过去式。restricted意为“限制”，表示EPA限制了铅在油漆和土壤中的类型和含量。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "E",
      "analysis": "空格与child-care构成复合名词，需用名词。facilities意为“设施”，child-care facilities为固定搭配，指托儿设施。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "G",
      "analysis": "空格前有is now，构成现在进行时，需用现在分词。investigating意为“调查”，表示该机构正在调查某些化学物质的毒性影响。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "M",
      "analysis": "空格修饰名词evidence，需用形容词。statistical evidence意为“统计证据”，与solid搭配，表示确凿的统计证据，符合上下文。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "C",
      "analysis": "空格前有不定冠词a和形容词direct，需用单数名词。correlation意为“相关性”，direct correlation表示直接相关，与noted strong associations相呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "D",
      "analysis": "空格前有to，需用动词原形。exercise caution为固定搭配，表示“保持谨慎”，句意为谨慎行事是明智的。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T02:18:37.831Z"
+ "generatedAt": "2026-10-10T15:10:32.570Z",
+ "reverifiedAt": "2026-10-10T15:10:32.570Z"
 }

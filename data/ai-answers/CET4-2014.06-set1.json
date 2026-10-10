@@ -4,7 +4,7 @@
  "month": 6,
  "set_no": 1,
  "model": "manual",
- "generatedAt": "2026-10-10T05:30:00.000Z",
+ "generatedAt": "2026-10-10T15:08:29.933Z",
  "passages": [
   {
    "section": "writing",
@@ -23,70 +23,70 @@
      "stem": "36",
      "answer": "N",
      "analysis": "副词修饰动词。Many simply do not want to：许多人“根本就”不想读书，simply（简直、根本）符合语义。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37",
      "answer": "A",
      "analysis": "定冠词后接形容词作定语。The average Brazilian：巴西人“平均”每年读 1.8 本书，与后文人均数据呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38",
      "answer": "M",
      "analysis": "谓语动词过去式。与前文 came 27th out of 30 countries 对应，阿根廷“名列”第 18 位，ranked。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39",
      "answer": "F",
      "analysis": "谓语动词过去式。政府“启动/发起”了一项全国计划，launched a National Plan 为固定搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40",
      "answer": "E",
      "analysis": "表语形容词。由下文“印数少、推高价格”可知，书“贵”（expensive）是阅读的障碍。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41",
      "answer": "H",
      "analysis": "谓语动词过去式。奴隶制历史导致领导人长期“忽视”教育（long neglected education），与下文小学教育普及很晚呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42",
      "answer": "K",
      "analysis": "名词。growth potential：增长“潜力”，由“市场最大增长空间”语义可定。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43",
      "answer": "C",
      "analysis": "过去分词作后置定语。政府“配发/分发”的教科书，textbooks distributed by the government。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44",
      "answer": "L",
      "analysis": "谓语动词过去式。由下文“他抱怨人手不足、白蚁蛀书”可知馆长“辞职”（quit）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45",
      "answer": "B",
      "analysis": "名词。eaten much of the collection：白蚁蛀坏了馆藏（collection）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -100,70 +100,70 @@
      "stem": "46. The author attended the conference, hoping to find some guiding principles for parenting in the electronic age.",
      "answer": "D",
      "analysis": "该段说作者来参会，部分是希望这群热情的家长“能为美国父母提供某种指导原则”（might offer some guiding principle for American parents）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. American parents are becoming more doubtful about the benefits technology is said to bring to their children.",
      "answer": "G",
      "analysis": "该段说随着技术无处不在，美国父母对其影响“不是更放心，而是更不放心”（becoming more, not less, distrustful of what it might be doing to their children）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. Some experts believe that human intelligence develops by the use of hands.",
      "answer": "A",
      "analysis": "该段引用蒙台梭利的名言“双手是人类智慧的工具”（The hands are the instruments of man's intelligence）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. The author found a former Montessori teacher exercising strict control over her kids’ screen time.",
      "answer": "E",
      "analysis": "该段写一位“前蒙台梭利教师”（a former Montessori teacher）的家规：工作日不碰屏幕，周末限半小时。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. Research shows interaction with people is key to babies’ brain development.",
      "answer": "C",
      "analysis": "该段提到 1999 年儿科学会依据大脑发育研究，指出低幼儿童“极其需要与父母及看护人直接互动”（critical need for direct interactions with parents and other significant care givers）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "51. So far there has been no scientific proof of the educational benefits of iPads.",
      "answer": "H",
      "analysis": "该段说“迄今没有任何一批研究证明 iPad 会让学龄前孩子更聪明”（no body of research has proved that the iPad will make your preschooler smarter）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. American parents worry that overuse of tablets will create problems with their kids’ interpersonal relationships.",
      "answer": "G",
      "analysis": "该段写父母担心用得不是地方，孩子会“变成不敢与人对视、女友只存在于虚拟世界的可悲生物”，即人际关系出问题。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. The author expected developers of children’s apps to specify the benefits of the new technology.",
      "answer": "D",
      "analysis": "该段说作者期待这个群体“能清楚地说出新技术的种种好处”（express clearly some benefits of the new technology）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. The kids at the gathering were more fascinated by the iPads than by the helicopter.",
      "answer": "A",
      "analysis": "该段写孩子们对直升机只是抬头一瞥，而“更多时候低头盯着大厅里的 iPad 和其他平板电脑”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. The author permits her children to use the screen for at most half an hour a day.",
      "answer": "F",
      "analysis": "该段说最宽松的家规是“每天半小时”，而“这也差不多是我家的规矩”（which was about my rule at home）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -178,35 +178,35 @@
      "stem": "56. Traditionally, it is believed that women earn less than men because ______.",
      "answer": "C",
      "analysis": "对应第二段：传统理由是“女性因离开职场养育孩子而落后”（fall behind when they leave the workforce to raise kids），即 C“觉得必须在家照顾孩子”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "57. What does the author say about America’s higher education system?",
      "answer": "B",
      "analysis": "对应第三段：高等教育体系“在设计上并未关注学生在校数年的经济后果”（not designed to focus on the economic consequences of our students’ years on campus），即 B。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "58. What does the author say about, today’s college experience?",
      "answer": "A",
      "analysis": "对应第四段：尽管女性已是大学生主体，“大学经历仍是不平等的”（the university experience is still an unequal one），即男女生经历不同。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "59. What does the author say about women students in college?",
      "answer": "D",
      "analysis": "对应第四段：“女孩在中学成绩优于男孩，进入大学后开始落后”（they start to trail off during their college years），即 D“表现不如中学时”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "60. How does the author explain the pay gap between men and women fresh from college?",
      "answer": "D",
      "analysis": "对应末段：“难怪她们一毕业就不去为更高的薪水讨价还价……太疲惫也太怕失败”（they are not negotiating for higher salaries），即 D“不擅长谈薪资”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -221,35 +221,35 @@
      "stem": "61. What does the author think of the leaders he knows?",
      "answer": "B",
      "analysis": "对应第二段：“真正卓有成效的领导者，远少于那些困在领导位置上却能力不足的人”（way fewer truly effective leaders than people stuck in positions of leadership who are sadly incompetent），即 B“很少人胜任其位”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "62. Why are some people eager to grab leadership positions?",
      "answer": "A",
      "analysis": "对应第四段：那种非掌权不可的人“相信自己是天生的领导者”（They believe they're natural born leaders），即 A。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "63. What characterizes a great leader according to the author?",
      "answer": "D",
      "analysis": "对应第五段：“伟大的领导者会就事论事地评估每一个情境，只在职位、形势或当下需要提出要求时才接管”（will assess each situation on its merits, and will only take charge when...），即 D。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "64. How will many business executives respond when their command fails to generate action?",
      "answer": "B",
      "analysis": "对应第六段：靠蛮力活动解决不了时，他们“扬起一团不耐烦的尘雾……要求越来越响、越来越凶”（generate a dust cloud of impatience... louder and harsher），即 B。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "65. What is the author’s advice to leaders?",
      "answer": "C",
      "analysis": "对应末段：“真正的领导者会培养自己的团队，使他们能够达成目标”（A true leader is someone who develops his or her team so that they can and do hit their targets），即 C（选项 mare 为源文排版讹误，应为 team）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -262,5 +262,6 @@
    "note": "难点：占总发电量的比例（account for ... of its total electricity generation）、中止审批（suspend the approval of...）、全国性核安全检查（a nationwide nuclear safety inspection）、谨慎地恢复（cautiously resumed）、降到最低程度（be reduced to a minimum）。末句“换句话说”用 In other words 衔接。",
    "questions": []
   }
- ]
+ ],
+ "reverifiedAt": "2026-10-10T15:08:29.933Z"
 }

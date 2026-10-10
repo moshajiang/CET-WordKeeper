@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "F",
      "analysis": "固定搭配 have a meaningful impact on health（对健康产生有意义的影响），呼应前文 linked to a longer life。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "D",
      "analysis": "空格形容\"每周仅10分钟运动就足够\"这一观点，与后文联邦指南推荐150分钟形成对比，应取 controversial（有争议的）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "H",
      "analysis": "moderate exercise 中等强度运动，与上文 vigorous exercise（高强度）并列对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "I",
      "analysis": "who participated in the survey 参加调查，过去式与 surveyed 时间一致。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "O",
      "analysis": "an upper limit 上限，与后文联邦指南给出的下限建议形成对照。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "M",
      "analysis": "there was seemingly no limit 看似/似乎没有上限，副词 seemingly 修饰全句。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "L",
      "analysis": "lower risk of death 更低的死亡风险，为健康类文本常见搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "J",
      "analysis": "观察性研究只能发现 patterns（规律/模式），无法证明因果，与后文 cannot prove cause and effect 呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "A",
      "analysis": "adjust for certain factors 控制/调整某些因素，是统计与科研常用搭配。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "G",
      "analysis": "Despite these limitations 尽管有这些局限性，总结前文未能控制变量的缺陷。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. One consequence of climate change is that some people may not have adequate access to certain foods.",
      "answer": "D",
      "analysis": "对应 D 段：'some people may struggle to get the same access to certain foods'，题干 not have adequate access 与 struggle to get the same access 对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. People around the world are eating foods more similar than what they used to eat.",
      "answer": "I",
      "analysis": "对应 I 段：'the foods we eat globally today are 36% more similar than they were in 1961'，题干 more similar than what they used to 对应 more similar than... in 1961。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. A recent news report talked about scientific efforts to help crops survive droughts through genetic\nengineering.",
      "answer": "B",
      "analysis": "对应 B 段：'BBC Future explored one scientist's efforts to help crops cope with... droughts. By using the genes from resurrection plants'，题干 scientific efforts... survive droughts... genetic engineering 对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. It is predicted that climate change will affect the availability and price of quality chocolate.",
      "answer": "G",
      "analysis": "对应 G 段：'High quality chocolate will be less available... you'll have to pay a lot more'，题干 availability and price 对应 less available 与 pay a lot more。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. People wonder if certain crops and foodstuffs could disappear like some animal species due to climate\nchange.",
      "answer": "A",
      "analysis": "对应 A 段首句：'one in six animal species could go extinct... Could the same happen to our crops'，题干 disappear like some animal species 对应 go extinct。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. Although farms in the US can move a bit northward, crop yields may decrease.",
      "answer": "F",
      "analysis": "对应 F 段：'farms can move north... yields will likely suffer'，题干 move a bit northward, crop yields may decrease 直接对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. One possible solution to the food security problem is diversification of diet.",
      "answer": "L",
      "analysis": "对应 L 段：'diversifying our diet... could also help'，题干 diversification of diet 直接对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. It remains unsettled whether the global food supply problem can be solved by creating heat-tolerant crops\nthrough genetic engineering.",
      "answer": "J",
      "analysis": "对应 J 段：'create... crops through genetic engineering... the jury is still out as to how successful'，题干 remains unsettled... solved by genetic engineering 对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. Poor people may have to give up eating certain foods because of their high prices.",
      "answer": "H",
      "analysis": "对应 H 段：'for poorer people... price jumps will likely cause certain foods to go extinct from their diets'，题干 give up eating... because of high prices 对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. A number of existing farming technologies could be used to reduce the negative effect of climate change on\nfood production.",
      "answer": "K",
      "analysis": "对应 K 段：'technologies that already exist... General farm management can go a long way'，题干 existing farming technologies... reduce the negative effect 对应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What is a reason for the author to be in the habit of saying \"busy” when asked how he is doing?",
      "answer": "A",
      "analysis": "原文：'That's what important people say. That's what people who get promoted say.' 作者模仿成功/受提拔者说\"忙\"，即 follows successful people's example（seed 选项A文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. Why do we tend to think that busy people are of high status?",
      "answer": "B",
      "analysis": "原文：'the more we believe that one has the opportunity for success based on hard work, the more we tend to think that people who skip leisure... are of higher standing.' 对应 hard work leads to success 的信念（seed 选项B文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What do we learn about the culture of busyness from a recent study?",
      "answer": "D",
      "analysis": "原文：'one in five highly engaged employees is at risk of burnout'，忙碌文化使许多员工面临精疲力竭(burnout)风险，即 does much harm to... well-being（seed 选项D文本）。干扰项A/C是他人观点或被歪曲。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What do such utterances as “I have limited access to email“ sound like according to the author?",
-     "answer": "B",
+     "answer": "C",
      "analysis": "原文这些短语'sound like you're being held against your will from working'，即被迫停止工作，对应 seed 选项B文本（原卷标C）'One is forced by circumstances to stop working'。注意：官方答案字母C指该文本，在本 seed 中位于字母B。",
      "verified": false,
-     "dissent": null
+     "dissent": "C"
     },
     {
      "stem": "50. Why did the author and his colleagues launch the Out of Office Email Generator?",
      "answer": "B",
      "analysis": "原文推出该工具是为了'share loud and proud that you won't be checking email until you're back'，让雇主和员工都真正有时间休息，对应 ensure employees as well as employers truly have time off（seed 选项B文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What did the author's team conclude about the gender difference in airfares from their further investigation?",
      "answer": "A",
      "analysis": "原文：'this gap is largely explained by the fact that women tended to book earlier than men'，即 attributed to women booking earlier than men（seed 选项A文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. What did the researchers want to determine by testing a variety of possible explanations?",
      "answer": "D",
      "analysis": "原文：'We wanted to determine what was causing these gender differences... so we tested a variety of possible explanations'，即探究 what accounted for the gender gap in airfares（seed 选项D文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What happened when the negative reciprocity variable was taken into account?",
      "answer": "C",
      "analysis": "原文：'the gender gap disappears when we plug in the negative reciprocity variable'，即差异 no longer existed（seed 选项C文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. What did prior research on negative reciprocity among workers find?",
      "answer": "C",
      "analysis": "原文：'Prior research... found that it can result in lower employee motivation, business performance and workplace morale'，即 proves to be counterproductive in a number of ways（seed 选项C文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What does the author emphasize about their analysis in the last paragraph?",
      "answer": "A",
      "analysis": "原文末段：'early booking by women can translate into savings of $1 million a year'，即 help companies increase their savings significantly（seed 选项A文本）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：1) \"十分重视\"译为 attaches great importance to；2) \"通过大力提倡健康饮食\"处理为介词短语 By vigorously advocating a healthy diet，作方式状语；3) \"合理营养增进健康\"译为名词短语 reasonable nutrition in promoting health，作 of 的宾语；4) \"吃得安全、吃得营养、吃得健康\"作主语，用动名词短语 Eating safely, nutritiously, and healthily；5) \"必然要求\"译为 inevitable requirement；6) \"推进健康中国的建设\"译为 advance the building of a Healthy China。"
   }
  ],
- "generatedAt": "2026-10-10T12:53:05.993Z"
+ "generatedAt": "2026-10-10T15:15:18.238Z",
+ "reverifiedAt": "2026-10-10T15:15:18.238Z"
 }

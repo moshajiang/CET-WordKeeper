@@ -22,70 +22,70 @@
      "stem": "36.There is general consensus among experts that willpower alone cannot guarantee one's success in changing and maintaining a habit.",
      "answer": "D",
      "analysis": "该段指出：专家们普遍同意，如果仅靠意志力，你无法改变并维持一个习惯（experts do generally agree that you can't change and sustain a habit if you rely on your willpower alone）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37.One need not abandon their goals completely just because they missed their target temporarily; they can start anew.",
      "answer": "I",
      "analysis": "该段指出：仅仅因为你可能暂时偏离了轨道，并不意味着你第二天不能重新开始（Just because you might have temporarily strayed off course doesn't mean you can't start afresh the next day）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38.Research shows it is quite another challenge to maintain a behavioral change after you have initiated it.",
      "answer": "A",
      "analysis": "该段指出：一旦成功做出改变，还必须做出其他调整以继续维持，这本身往往是另一项挑战（which is often a whole other challenge in itself）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39.It is wrong to assume the strategies we use to start a change of behavior will work equally well in helping maintain it.",
      "answer": "K",
      "analysis": "该段指出：我们错误地认为用来启动改变的策略在帮助我们继续改变时同样有效，但事实并非如此（we mistakenly believe the strategies we used to initiate the change will be equally effective in helping us continue the change. But they won't）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40.Sometimes, it may not be successful to simply substitute one activity with anotherto effect a change of habit; you may need extra reinforcement",
      "answer": "H",
      "analysis": "该段以戒掉早晨查邮件和戒掉电子游戏为例，说明仅仅用一项活动替代另一项可能不够，还需要引入额外强化（You might need to introduce another reinforcement）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41.One should introduce something new to replace an old habit instead of simply kicking it",
      "answer": "F",
      "analysis": "该段建议：与其放弃某件事，不如考虑引入某件事来替代它（rather than giving up something, think about introducing something in its place）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42.Perfectionists focus too much on their big target and neglect celebrating the small gains they make in the process. 编者注：“长阅读”题型Directions规定：You may choose a paragraph more than once,即同一个段落可能不止针对一 道题，故会出现本套题第39题和第45题同选K段的情况，请读者知悉。",
      "answer": "J",
      "analysis": "该段指出：完美主义者过于关注大目标，不花时间庆祝过程中的小进步（They focus too much on the big goal and don't take the time to celebrate the small progress）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43.It is of great benefit to us in the long term to conquer the inertia that stops usfrom making behavioral changes.",
      "answer": "L",
      "analysis": "该段指出：克服阻止我们实施新改变的行为惯性，从长远来看对我们有益（overcoming the behavioral inertia... can benefit us in the long run）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44.The strategy that successfully changed one of your behaviors may not work for some other behavior of yours.",
      "answer": "G",
      "analysis": "该段指出：让你改变一个行为的系统可能对另一个行为不起作用（the system that got you to change one behavior might not work for another）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45.Without a happy mood, it seems that our wisdom to adopt a different behavior vanishes",
      "answer": "K",
      "analysis": "该段指出：如果我们情绪低落，以不同方式行事的智慧似乎就消失了（If our mood is low, the wisdom to behave differently seems to disappear）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    ]
   }
  ],
- "generatedAt": "2026-10-10T14:10:26.415Z"
+ "generatedAt": "2026-10-10T15:10:38.949Z",
+ "reverifiedAt": "2026-10-10T15:10:38.949Z"
 }

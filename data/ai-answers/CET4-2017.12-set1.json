@@ -22,70 +22,70 @@
      "stem": "26",
      "answer": "K",
      "analysis": "形容词作定语：这些生物拥有一些“出色的”技能（some superior skills），能帮助治疗人类疾病。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "27",
      "answer": "D",
      "analysis": "名词：鸽子常被视为肮脏的鸟和城市“祸害”（an urban nuisance）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "28",
      "answer": "M",
      "analysis": "名词：鸽子的大脑不过你食指“指尖”大小（the tip of your index finger）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "29",
      "answer": "O",
      "analysis": "形容词作定语：鸽子拥有令人印象深刻的“视觉”记忆（visual memory），与识别图像呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "30",
      "answer": "A",
      "analysis": "固定搭配 be associated with：“与……相关联”——老鼠常被认为与传播疾病有关。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "31",
      "answer": "F",
      "analysis": "动名词与 spreading 并列：是传播疾病“而不是阻止”疾病（rather than preventing it）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "32",
      "answer": "H",
      "analysis": "形容词：这种长尾动物极为“敏感”（highly sensitive），由 1000 种嗅觉感受器呼应。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "33",
      "answer": "I",
      "analysis": "形容词作定语：这使老鼠能察觉“极微弱的”气味（detect slight smells）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "34",
      "answer": "C",
      "analysis": "动词：摩擦双腿以“表明”某个样本已被感染（to indicate a sample is infected）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "35",
      "answer": "B",
      "analysis": "动词不定式：技术员检测一百个样本需两天多（take two days to examine），与老鼠的 20 分钟对比。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -99,70 +99,70 @@
      "stem": "36. Elderly students find it hard to keep up with the rapid changes in education.",
      "answer": "I",
      "analysis": "该段：返校学生感叹“很多东西都变了”“本质上是在重新学习如何学习”——年长学生跟不上教育环境的快速变化。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "37. Some believe take-home exams may affect students' performance in other courses.",
      "answer": "E",
      "analysis": "该段：耶鲁前院长警告，带回家考试不设限时“会危及学生健康，也会影响期末其他功课的表现”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "38. Certain professors believe in-class exams are ultimately more helpful to students.",
      "answer": "C",
      "analysis": "该段：艾森巴赫“更喜欢课内考试”，认为“学生最终学到的东西更多”，还能学会在压力下发挥。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "39. In-class exams are believed to discourage cheating in exams.",
      "answer": "D",
      "analysis": "该段：“课内考试作弊的机会更少”（less chance of cheating with the in-class variety），并举哈佛带回家考试作弊丑闻为例。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "40. The author was happy to learn she could do some exams at home.",
      "answer": "B",
      "analysis": "该段：得知教授布置带回家考试时“我很兴奋”，以为有一整周时间做研究。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "41. Students who put off their work until the last moment often find the exams more difficult than they actually are.",
      "answer": "H",
      "analysis": "该段：“总是拖到最后一刻的人，会把事情弄得比实际更难”（make it much harder than it needs to be）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "42. Different students may prefer different types of exams.",
      "answer": "G",
      "analysis": "该段：“学生对考试形式的偏好也各不相同”，举了三位学生各自的偏好为例。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "43. Most professors agree whether to give an in-class or a take-home exam depends on type of course being taught.",
      "answer": "F",
      "analysis": "该段：“大多数大学教授都同意，选哪种考试主要取决于学科”，量化类适合课内、职业导向类适合带回家。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "44. The author dropped out of college some forty years ago.",
      "answer": "A",
      "analysis": "该段：作者回到大学“去完成四十年前未竟的学位”（the degree I left undone some four decades ago）。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "45. Some students think take-home exams will eat up their free time.",
      "answer": "J",
      "analysis": "该段：作者的儿子“喜欢课内考试，因为时间已被划出，不用占用家里的自由时间来做考试”。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -176,35 +176,35 @@
      "stem": "46. What did researchers find puzzling about the first-night effect?",
      "answer": "D",
      "analysis": "第二段：“令人困惑的是：如果它会影响第二天的表现，那它能带来什么好处呢？”——即这种效应在何种方面有益。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "47. What do we learn about Dr. Yuka Sasaki doing her research?",
      "answer": "C",
      "analysis": "第二段：她“从先前对鸟类和海豚的研究中了解到”半脑睡眠现象，“这让她想到人类是否也如此”——即从前人研究中获得启发。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "48. What did Dr. Sasaki do when she first did her experiment?",
      "answer": "A",
      "analysis": "第二段：团队研究 35 名健康人“在陌生环境中的睡眠”，并用观测大脑活动的技术仔细监测。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "49. What did Dr. Sasaki do when re-running her experiment?",
      "answer": "C",
      "analysis": "第三段：重做实验时向睡眠中的参加者播放规律蜂鸣与不规则蜂鸣两种声音——即施加两种不同刺激。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "50. What did Dr. Sasaki find about the participants in her experiment?",
      "answer": "B",
      "analysis": "第三段：左半球会对不规则蜂鸣作出反应把人搅醒、对规律蜂鸣置之不理，“这正是她发现的”——参加者把不规则蜂鸣当作威胁。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -218,35 +218,35 @@
      "stem": "51. What does the author say is the problem with women?",
      "answer": "D",
      "analysis": "首、三段：在家与职场都超负荷、对任何请求都答“行，我可以”——女性往往把自己逼到能力极限之外。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "52. Why do working women of child-bearing age tend to feel drained of energy?",
      "answer": "A",
      "analysis": "第二、三段：疲惫集中于生育年龄段，因为这正是“努力平衡事业与家庭”的时期——既要满足工作又要满足家庭。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "53. What may hinder the future prospects of career women?",
      "answer": "A",
      "analysis": "第四段：“这种不会说‘不’的状态，既在伤害女性的健康，也在伤害她们的事业”——不会拒绝会妨碍职业前景。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "54. Men and woman differ in their approach to resolving workplace conflicts in that______.",
      "answer": "D",
      "analysis": "第五段：男性从“什么对我最有利”直面争执，女性从“最省事 quickest”的角度处理——“哪怕无聊的活儿自己干”，即女性更愿意妥协。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     },
     {
      "stem": "55. What is important to a good leader?",
      "answer": "B",
      "analysis": "末段：“领导者必须善于分派任务并明智地管理资源”；承担过多工作量反而“凸显你不善分派任务”——即分派能力很重要。",
-     "verified": false,
+     "verified": true,
      "dissent": null
     }
    ]
@@ -260,5 +260,6 @@
    "note": "难点：海拔（above sea level）、方圆约……平方公里（covers an area of about... square kilometers）、雄伟壮观（magnificent）、历史文化名山（a mountain of historical and cultural significance）、朝拜（a place of worship）、据记载（records show）、帝王（emperors）、获取灵感（for inspiration）、文物古迹（cultural relics and historic sites）、旅游景点（tourist attraction）。"
   }
  ],
- "generatedAt": "2026-10-10T11:37:29.417Z"
+ "generatedAt": "2026-10-10T15:09:50.930Z",
+ "reverifiedAt": "2026-10-10T15:09:50.930Z"
 }
