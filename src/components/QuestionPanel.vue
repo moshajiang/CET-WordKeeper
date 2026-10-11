@@ -16,10 +16,11 @@
 
     <div v-for="qs in questions" :key="qs.id" class="qblock">
       <div class="qstem">
-        <span>{{ qs.stem }}</span>
+        <span class="qstem-text">{{ qs.stem }}</span>
         <span v-if="showAnswer && qs.answer" class="qmark" :class="isRight(qs) ? 'ok' : 'no'">
           {{ isRight(qs) ? '✓ 正确' : '✗ 正确答案 ' + qs.answer }}
         </span>
+        <span class="quote-chip" title="把题干与选项引用到 AI 问答" @click.stop="emit('quote', quoteText(qs))">❝ 引用</span>
       </div>
 
       <!-- 选词填空：下拉选择 -->
@@ -75,7 +76,7 @@ const props = defineProps({
   reveal: { type: Boolean, default: false },     // 主动「查看答案解析」
   letters: { type: Array, default: () => [] },   // 匹配题可用的段落字母
 });
-const emit = defineEmits(['pick']);
+const emit = defineEmits(['pick', 'quote']);
 
 const questions = computed(() => (props.passage && props.passage.questions) || []);
 const isCloze = computed(() => props.passage && props.passage.section === 'cloze');
@@ -108,5 +109,14 @@ function optClassByLetter(qs, letter) {
 }
 function optClass(qs, opt) {
   return optClassByLetter(qs, opt[0]);
+}
+
+// 引用到 AI：题干 + 选项（已揭示答案时附带正确答案）
+function quoteText(qs) {
+  let t = String(qs.stem || '').trim();
+  const opts = parseOptions(qs.options);
+  if (opts.length) t += '\n' + opts.join('\n');
+  if (showAnswer.value && qs.answer) t += '\n（正确答案 ' + qs.answer + '）';
+  return t;
 }
 </script>

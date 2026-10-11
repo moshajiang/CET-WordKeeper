@@ -106,6 +106,7 @@
                 >{{ tk.text }}</span>
               </div>
               <div v-show="zhOpen(s)" class="bi-zh">{{ s.zh || '（本句译文缺失）' }}</div>
+              <button class="bi-quote" title="把这句原文引用到 AI 问答" @click.stop="quoteToAI(s.en)">❝ 引用</button>
             </div>
             <div v-if="!bilingual.length" class="bi-tip">本篇暂无可用译文。</div>
           </div>
@@ -172,6 +173,7 @@
           :reveal="revealAnalysis"
           :letters="matchLetters"
           @pick="setAnswer"
+          @quote="quoteToAI"
           style="margin-top: 16px;"
         />
       </div>
@@ -184,6 +186,7 @@
           :reveal="revealAnalysis"
           :letters="matchLetters"
           @pick="setAnswer"
+          @quote="quoteToAI"
         />
       </div>
 
@@ -351,6 +354,15 @@ function setTransMode(m) {
   rowToggle.value = {};
 }
 // 打开独立的「对照背诵」页面，并带上当前篇章下标，进去就停在同篇
+// 把原文句子 / 题干选项引用到 AI 问答（自动打开聊天并带入输入框）
+function quoteToAI(text) {
+  if (!text || !String(text).trim()) return;
+  chatOpen.value = true;
+  const quote = '“' + String(text).trim() + '”';
+  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + quote + '\n';
+  scrollChat();
+}
+
 function openRecite() {
   router.push({ path: '/recite/' + Number(props.examId), query: { p: String(activeIdx.value) } });
 }
@@ -481,7 +493,7 @@ function askAboutSel() {
   const text = selMenu.value.text;
   selMenu.value.show = false;
   chatOpen.value = true;
-  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + text;
+  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + '“' + text + '”\n';
 }
 
 // ---- 作文 / 翻译：作答草稿自动保存 + AI 批改 ----
@@ -624,6 +636,9 @@ async function loadAll() {
 
 async function onWordClick(ev, tk, para) {
   if (tk.t !== 'w') { popover.value.show = false; return; }
+  // 划选复制时鼠标落在词上也会触发 click，此时不弹查词气泡
+  const sel = window.getSelection();
+  if (sel && String(sel).trim().length > 0) return;
   const sentence = sentenceOf(para, para.indexOf(tk));
   popover.value = { show: true, loading: true, data: null, x: ev.clientX, y: ev.clientY, ctx: sentence };
   const data = await window.keeper.lookup(tk.text);

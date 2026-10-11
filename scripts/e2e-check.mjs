@@ -676,6 +676,40 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
     `phase=${up && up.phase} current=${up && up.current} latest=${up && up.latest} error=${up && up.error}`);
 }
 
+// ===== 引用到 AI 与文本可复制（回归闸门）=====
+{
+  await js(`location.hash = '#/library'`); await sleep(500);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2800);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('仔细阅读')); if (t) t.click(); return !!t; })()`);
+  await sleep(1100);
+  await js(`(() => { const b = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.trim() === '逐句对照'); if (b) b.click(); return !!b; })()`);
+  await sleep(900);
+
+  // ① 文本可复制：原文 / 题干区域的 user-select 均为 text（全局 none 的放开区域）
+  const selArticle = await js(`getComputedStyle(document.querySelector('.article')).userSelect`);
+  const selStem = await js(`getComputedStyle(document.querySelector('.qstem')).userSelect`);
+  const selBi = await js(`getComputedStyle(document.querySelector('.bi-en') || document.body).userSelect`);
+  check('原文与题目内容可选中复制', selArticle === 'text' && selStem === 'text' && selBi === 'text',
+    `article=${selArticle} qstem=${selStem} bi-en=${selBi}`);
+
+  // ② 点题目「引用」→ 自动打开 AI 问答，题干+选项带入输入框
+  const stem0 = String(await js(`(document.querySelector('.qstem .qstem-text') || {}).textContent || ''`)).trim().slice(0, 24);
+  await js(`(() => { const c = document.querySelector('.quote-chip'); if (c) c.click(); return !!c; })()`);
+  await sleep(700);
+  const chatOpen = await js(`!!document.querySelector('.chat-card')`);
+  const inputVal = String(await js(`(document.querySelector('.chat-input-row textarea') || {}).value || ''`));
+  check('题目可一键引用到 AI 问答', chatOpen && inputVal.includes(stem0) && inputVal.includes('“'),
+    `聊天已开=${chatOpen} 输入框="${inputVal.slice(0, 36)}…"`);
+
+  // ③ 点逐句对照行的「引用」→ 原文句子带入
+  const sent = String(await js(`(document.querySelector('.bi-en') || {}).textContent || ''`)).trim().slice(0, 24);
+  await js(`(() => { const q = document.querySelector('.bi-quote'); if (q) q.click(); return !!q; })()`);
+  await sleep(700);
+  const inputVal2 = String(await js(`(document.querySelector('.chat-input-row textarea') || {}).value || ''`));
+  check('原文句子可一键引用到 AI 问答', sent.length > 0 && inputVal2.includes(sent) && inputVal2.length > inputVal.length,
+    `句子="${sent}…"`);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。
