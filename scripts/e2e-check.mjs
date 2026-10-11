@@ -907,6 +907,33 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
     `英文小写续行 ${wrapScan && wrapScan.lower} 处 / 中文逗号折行 ${wrapScan && wrapScan.comma} 处`);
 }
 
+// ===== 侧栏「真题库」回到刚在读的卷子（回归闸门）=====
+{
+  // ① 读一套卷子，切到长篇阅读，记住位置
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('长篇阅读')); if (t) t.click(); return !!t; })()`); await sleep(900);
+
+  // ② 点侧栏其他页（生词本）→ 再点侧栏「真题库」→ 应回到刚在读的卷子
+  await js(`(() => { const w = [...document.querySelectorAll('.nav-item')].find(x => x.textContent.includes('生词本')); if (w) w.click(); return !!w; })()`); await sleep(900);
+  const h1 = String(await js(`location.hash`));
+  await js(`(() => { const w = [...document.querySelectorAll('.nav-item')].find(x => x.textContent.includes('真题库')); if (w) w.click(); return !!w; })()`); await sleep(1200);
+  const h2 = String(await js(`location.hash`));
+  const act = String(await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.classList.contains('active')); return b ? b.textContent.trim() : ''; })()`));
+  check('点其他侧栏后点「真题库」回到刚在读的卷子', h1.includes('words') && h2 === '#/reader/' + anchor.id && act.includes('长篇阅读'),
+    `${h1} → ${h2} @${act}`);
+
+  // ③ 正在读它时再点「真题库」→ 进列表换一套
+  await js(`(() => { const w = [...document.querySelectorAll('.nav-item')].find(x => x.textContent.includes('真题库')); if (w) w.click(); return !!w; })()`); await sleep(900);
+  const h3 = String(await js(`location.hash`));
+  check('阅读中再点「真题库」进列表', h3 === '#/library', h3);
+
+  // ④ 列表上再点一次 → 回到卷子（且侧栏高亮真题库）
+  const navActive = await js(`(() => { const w = [...document.querySelectorAll('.nav-item')].find(x => x.textContent.includes('真题库')); return w ? w.classList.contains('active') : false; })()`);
+  await js(`(() => { const w = [...document.querySelectorAll('.nav-item')].find(x => x.textContent.includes('真题库')); if (w) w.click(); return !!w; })()`); await sleep(1200);
+  const h4 = String(await js(`location.hash`));
+  check('列表上再点「真题库」回到卷子（侧栏高亮）', h4 === '#/reader/' + anchor.id && navActive === true, `${h4} / 高亮=${navActive}`);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

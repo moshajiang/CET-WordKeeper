@@ -657,6 +657,9 @@ function showToast(msg) {
 
 async function loadAll() {
   detail.value = await window.keeper.examDetail(Number(props.examId));
+  // 记录「最近在读」：侧栏点真题库时直接回到这套卷子
+  if (detail.value) localStorage.setItem('keeper.lastReading', String(props.examId));
+  else { localStorage.removeItem('keeper.lastReading'); router.push('/library'); return; }
   userWords.value = await window.keeper.allWords();
   if (detail.value && !detail.value.passages.length) {
     showToast('该套真题没有结构化篇章数据');

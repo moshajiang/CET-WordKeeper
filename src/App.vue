@@ -5,8 +5,8 @@
       v-for="n in navs"
       :key="n.path"
       class="nav-item"
-      :class="{ active: $route.path === n.path || (n.path !== '/' && $route.path.startsWith(n.path)) }"
-      @click="$router.push(n.path)"
+      :class="{ active: isNavActive(n) }"
+      @click="onNav(n)"
     >
       <span class="ico">{{ n.ico }}</span>
       <span>{{ n.label }}</span>
@@ -22,9 +22,10 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 
 const route = useRoute();
+const router = useRouter();
 const dueCount = ref(0);
 
 const navs = [
@@ -41,6 +42,25 @@ const isNarrow = computed(() => !route.path.startsWith('/reader'));
 // 夜间模式：localStorage 持久化，启动即应用
 function applyTheme() {
   document.documentElement.classList.toggle('dark', localStorage.getItem('keeper.theme') === 'dark');
+}
+
+// 真题库把阅读器当作自己的子页面：在读的卷子高亮该栏
+function isNavActive(n) {
+  if (n.path === '/library') return route.path.startsWith('/library') || route.path.startsWith('/reader');
+  return route.path === n.path || (n.path !== '/' && route.path.startsWith(n.path));
+}
+
+// 点侧栏「真题库」：刚在读某套卷子 → 回到那套卷子（进度自动恢复）；
+// 正在读它 → 进真题库列表换一套；没读过 → 进列表
+function onNav(n) {
+  if (n.path === '/library') {
+    const last = localStorage.getItem('keeper.lastReading');
+    const reading = !!last && route.path === '/reader/' + last;
+    if (last && !reading) { router.push('/reader/' + last); return; }
+    router.push('/library');
+    return;
+  }
+  router.push(n.path);
 }
 
 onMounted(async () => {
