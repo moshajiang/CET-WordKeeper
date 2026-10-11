@@ -3,6 +3,7 @@
     <div class="reader-topbar">
       <div class="reader-topbar-row">
         <div class="tb-title">
+          <a class="back-lib" @click="router.push('/library')">← 返回真题库</a>
           <h1 class="page-title" style="margin-bottom: 2px;">
             {{ detail.exam.level }} · {{ detail.exam.year }} 年 {{ detail.exam.month }} 月 · 第{{ detail.exam.set_no }}套
           </h1>
@@ -63,37 +64,25 @@
     <div class="reader-layout" :class="layout === 'split' ? 'layout-split' : 'layout-stack'">
       <div class="passage-pane">
         <div class="article" :style="{ fontSize: fontSize + 'px' }">
-          <div v-for="(para, pi) in activeParas" :key="pi" class="para">
-            <span
-              v-for="(tk, ti) in para"
-              :key="ti"
-              class="w"
-              :class="wordClass(tk)"
-              @click.stop="onWordClick($event, tk, para, pi)"
-              @dblclick.stop="onWordDblClick(tk, para, pi)"
-            >{{ tk.text }}</span>
-          </div>
-        </div>
-
-        <!-- 逐句对照：译文插在每句原文下方（背诵模式已独立成页，见顶栏「对照背诵」） -->
-        <div v-if="transMode === 'inline' && hasTranslation" class="card bi-card">
-          <div class="bi-head">
-            <h3 style="font-size: 14px; margin: 0;">
-              逐句对照
-              <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看；点句子切换中/英文）</span>
-            </h3>
-            <div class="bi-actions">
-              <button class="mini-btn" @click="backToQuestions">⮐ 回到题目</button>
-              <button class="mini-btn" @click="openRecite">🗣 进入对照背诵</button>
+          <template v-if="transMode !== 'inline' || !hasTranslation">
+            <div v-for="(para, pi) in activeParas" :key="pi" class="para">
+              <span
+                v-for="(tk, ti) in para"
+                :key="ti"
+                class="w"
+                :class="wordClass(tk)"
+                @click.stop="onWordClick($event, tk, para, pi)"
+                @dblclick.stop="onWordDblClick(tk, para, pi)"
+              >{{ tk.text }}</span>
             </div>
-          </div>
-          <div class="bi-list">
+          </template>
+          <template v-else>
+            <!-- 逐句对照：直接替换原文显示，点句子切换中/英 -->
             <div
               v-for="(s, si) in bilingual"
-              :key="s.para + '-' + s.i"
+              :key="si"
               class="bi-row"
               :class="{ open: zhOpen(s) }"
-              :data-bi-index="si"
               @click="toggleRow(s)"
             >
               <div class="bi-en" :style="{ fontSize: Math.max(13, fontSize - 2) + 'px' }">
@@ -110,8 +99,7 @@
               <button class="bi-quote" title="把这句原文引用到 AI 问答" @click.stop="quoteToAI(s.en)">❝ 引用</button>
             </div>
             <div v-if="!bilingual.length" class="bi-tip">本篇暂无可用译文。</div>
-          </div>
-          <div class="bi-tip">每句原文下方即对应译文；点句子可隐藏/显示译文（切换中/英文）</div>
+          </template>
         </div>
 
         <div v-if="activePassage && isEssaySection" class="card essay-card" style="margin-top: 16px;">

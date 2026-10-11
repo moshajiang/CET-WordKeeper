@@ -746,11 +746,11 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   const idx0 = await js(`[...document.querySelectorAll('.section-tabs button')].findIndex(b => b.classList.contains('active'))`);
   await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: ']', code: 'BracketRight', bubbles: true }))`); await sleep(500);
   const idx1 = await js(`[...document.querySelectorAll('.section-tabs button')].findIndex(b => b.classList.contains('active'))`);
-  const bi0 = await js(`!!document.querySelector('.bi-card')`);
+  const bi0 = (await js(`document.querySelectorAll('.article .bi-row').length`)) > 0;
   await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 't', code: 'KeyT', bubbles: true }))`); await sleep(600);
-  const bi1 = await js(`!!document.querySelector('.bi-card')`);
+  const bi1 = (await js(`document.querySelectorAll('.article .bi-row').length`)) > 0;
   await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 't', code: 'KeyT', bubbles: true }))`); await sleep(600);
-  const bi2 = await js(`!!document.querySelector('.bi-card')`);
+  const bi2 = (await js(`document.querySelectorAll('.article .bi-row').length`)) > 0;
   check('阅读器快捷键（] 切篇 / T 切翻译）', idx1 === idx0 + 1 && bi1 !== bi0 && bi2 === bi0,
     `篇章 ${idx0}→${idx1} / 逐句对照 ${bi0}→${bi1}→${bi2}`);
 
@@ -872,6 +872,39 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   const topAfter = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
   check('对照翻译可一键回到做题区', btnThere && topBefore < 0 && topAfter >= 0 && topAfter < 700,
     `按钮=${btnThere} 题目区 top ${topBefore} → ${topAfter}`);
+}
+
+// ===== 内联对照 / 返回真题库 / 数据换行清理（回归闸门）=====
+{
+  // ① 逐句对照：直接替换原文显示（不再另开一页）
+  await js(`location.hash = '#/library'`); await sleep(500);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('仔细阅读')); if (t) t.click(); return !!t; })()`); await sleep(1100);
+  await js(`(() => { const b = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.trim() === '逐句对照'); if (b) b.click(); return !!b; })()`); await sleep(900);
+  const noCard = await js(`document.querySelectorAll('.bi-card').length`);
+  const inRows = await js(`document.querySelectorAll('.article .bi-row').length`);
+  const noPlain = await js(`document.querySelectorAll('.article .para').length`);
+  const zhVisible = await js(`[...document.querySelectorAll('.article .bi-zh')].filter(e => e.offsetParent !== null).length`);
+  check('逐句对照直接替换原文显示', noCard === 0 && inRows >= 5 && noPlain === 0 && zhVisible >= 5,
+    `内联句对 ${inRows} 行 / 可见译文 ${zhVisible} 条 / 独立卡片 ${noCard}`);
+  // 切回关闭，确认原文恢复
+  await js(`(() => { const b = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.trim() === '关闭'); if (b) b.click(); return !!b; })()`); await sleep(600);
+  const plainBack = await js(`document.querySelectorAll('.article .para').length`);
+  check('关闭对照后原文恢复显示', plainBack >= 3, `段落 ${plainBack}`);
+
+  // ② 返回真题库按钮
+  await js(`(() => { const a = document.querySelector('.back-lib'); if (a) a.click(); return !!a; })()`); await sleep(900);
+  const hash = String(await js(`location.hash`));
+  check('阅读器可返回真题库主页', hash === '#/library', `route=${hash}`);
+  // 回到阅读器（进度记忆应自动定位到上次的仔细阅读）
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  const activeName = await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.classList.contains('active')); return b ? b.textContent.trim() : ''; })()`);
+  check('返回后再进入自动定位上次篇章', activeName.includes('仔细阅读'), `active="${activeName}"`);
+
+  // ③ 数据闸门：全库无句中硬换行（英文小写续行 / 中文逗号结尾换行）
+  const wrapScan = await js(`(async () => { const bad = { lower: 0, comma: 0 }; const ex = await window.keeper.listExams(); for (const e of ex) { const d = await window.keeper.examDetail(e.id); if (!d) continue; for (const p of d.passages) { for (const field of ['content', 'translation']) { const t = String(p[field] || ''); const m1 = t.match(/\\n[a-z]/g); if (m1) bad.lower += m1.length; const m2 = t.match(/[，、]\\n/g); if (m2) bad.comma += m2.length; } } } return bad; })()`);
+  check('篇章无句中硬换行', wrapScan && wrapScan.lower === 0 && wrapScan.comma === 0,
+    `英文小写续行 ${wrapScan && wrapScan.lower} 处 / 中文逗号折行 ${wrapScan && wrapScan.comma} 处`);
 }
 
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====

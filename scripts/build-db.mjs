@@ -129,6 +129,8 @@ function isExamJunkLine(line) {
   const s = String(line).trim();
   if (!s || s.length > 90) return false;
   if (/^(19|20)\d{2}\s*年/.test(s) && /(四级|六级)/.test(s) && (/真题/.test(s) || (/考试/.test(s) && (/第\s*\d+\s*套/.test(s) || /页/.test(s))))) return true;
+  // 截断的页脚碎片（如「六级 2021 年 6 月 4」）：六级/四级开头 + 年份数字、无英文单词、无句末标点
+  if (/^(四级|六级)/.test(s) && /(19|20)\d{2}/.test(s) && s.length <= 30 && !/[。！？]/.test(s) && !/[A-Za-z]{2,}/.test(s)) return true;
   if (/^注意[:：]\s*此部分试题请在答题卡/.test(s)) return true;   // 作答说明行
   if (/^(b\s*)?y\s*[:：]\s*新一文化/.test(s)) return true;        // PDF 水印行
   return false;
@@ -143,12 +145,48 @@ function stripExamJunkLines(text) {
   let out = kept.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\s*b\s*y\s*[:：]\s*新一文化\s*/g, '');
   return out.replace(/^\n+/, '').replace(/\s+$/, '');
 }
+
+// 硬换行合并：源文档在句中断行（段内自动换行）导致「突然换行」。
+// 规则：当前行不以句末标点收尾、且下一行不是新段落标记时，拼接到下一行
+//（英文补空格、中文直接连）；段落标记/板块标题行永不参与拼接。
+function startsBlockMarker(s) {
+  // ⚠️ 板块关键词必须大小写敏感：正文里小写开头的 question / part / direction 开头的
+  // 普通句子，若用 /i 会误判为板块标记而拒绝拼接（已踩坑）
+  return /^[A-O]\s*[)．.、]\s*\S/.test(s) || /^\[[A-O]\]/.test(s)
+    || /^(Section|Part|Directions?|Question|Paragraph)\b/.test(s)
+    || /^(19|20)\d{2}\s*年/.test(s);
+}
+function mergeWrappedLines(text) {
+  const src = String(text || '').replace(/\r/g, '');
+  if (!src.includes('\n')) return src;
+  const paras = [];
+  let cur = null;
+  for (const raw of src.split('\n')) {
+    const s = raw.trim();
+    if (!s) { if (cur !== null) { paras.push(cur); cur = null; } continue; }
+    if (cur === null) {
+      // 空行后的续行：以小写字母开头则并回上一段（源文档段内空行折行）
+      if (paras.length && /^[a-z]/.test(s)) { paras[paras.length - 1] += ' ' + s; continue; }
+      cur = s; continue;
+    }
+    if (startsBlockMarker(s)) { paras.push(cur); cur = s; continue; }
+    // 判定续行：下一行以小写字母开头（英文句中折行几乎都是这样），或当前行以中文逗号/顿号/冒号收尾
+    const joinNext = /^[a-z]/.test(s) || /[，、：]$/.test(cur);
+    if (!joinNext) { paras.push(cur); cur = s; continue; }
+    // 硬折拼接：行尾是英文字母且下行以字母开头时补空格，中文直接连
+    const needSpace = /[A-Za-z]$/.test(cur) && /^[A-Za-z]/.test(s);
+    cur = cur + (needSpace ? ' ' : '') + s;
+  }
+  if (cur !== null) paras.push(cur);
+  return paras.join('\n');
+}
 let junkFixed = 0;
 let glueFixed = 0;
-function healPassage(text) {
+function healPassage(text, section) {
   const stripped = stripExamJunkLines(text);
-  if (stripped !== text) junkFixed++;
-  const fixed = healGlued(stripped);
+  const merged = mergeWrappedLines(stripped);   // 全题型应用：作文题干的 Directions 同样有句中折行
+  if (merged !== text) junkFixed++;
+  const fixed = healGlued(merged);
   if (fixed !== text) glueFixed++;
   return fixed;
 }
@@ -179,7 +217,7 @@ for (const f of files) {
   for (const p of data.passages || []) {
     const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
     db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
-      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) ? healPassage(ovP.translation) : null, (ovP && ovP.reference) || null]);
+      [examId, p.section, p.seq, p.title, healPassage(p.content, p.section), (ovP && ovP.translation) ? healPassage(ovP.translation, p.section) : null, (ovP && ovP.reference) || null]);
     if (ovP && ovP.translation) aiPassages++;
     if (ovP && ovP.reference) aiReferences++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
