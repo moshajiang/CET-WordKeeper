@@ -10,17 +10,27 @@ const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const packaged = !!process.env.ELECTRON_EXE;
 const electronExe = process.env.ELECTRON_EXE || path.join(root, 'node_modules', 'electron', 'dist', 'electron.exe');
 
-// 验证前必须先清空用户数据里的库，否则会拿上一次遗留的数据跑断言
-// （应用只在用户库不存在时才从种子库初始化）
-const userDataDir = path.join(process.env.APPDATA || '', 'cet-wordkeeper');
+// 验证必须使用「隔离的用户数据目录」：
+// ⚠️ 此前直接用 %APPDATA%\cet-wordkeeper（与正式安装的应用同一路径），每次验证
+// 都会把用户真实数据（生词本/API Key/复习记录）删掉——已造成过真实数据丢失，禁止回退。
+// 应用侧由 KEEPER_USER_DATA 环境变量把 userData 指到隔离目录（见 main.cjs）。
+const realUserDataDir = path.join(process.env.APPDATA || '', 'cet-wordkeeper');
+const userDataDir = path.join(root, '.verify-user-data');
+process.env.KEEPER_USER_DATA = userDataDir;
+
 function cleanUserDb(tag) {
+  // 双保险：清理目标绝不允许是真实安装应用的数据目录
+  if (path.resolve(userDataDir) === path.resolve(realUserDataDir)) {
+    console.error('安全中止：清理目标指向了真实用户数据目录！', realUserDataDir);
+    process.exit(1);
+  }
   if (!fs.existsSync(userDataDir)) return;
   for (const f of fs.readdirSync(userDataDir)) {
-    if (f.endsWith('.db')) {
-      // 某些沙箱/杀软环境会拦删除或占用文件；清理失败不应影响验证结论
-      try { fs.unlinkSync(path.join(userDataDir, f)); console.log(`已清理${tag}用户数据:`, f); }
-      catch (e) { console.warn(`清理${tag}用户数据失败（可忽略）:`, f, e.message); }
-    }
+    const p = path.join(userDataDir, f);
+    if (fs.statSync(p).isDirectory()) continue;
+    // 某些沙箱/杀软环境会拦删除或占用文件；清理失败不应影响验证结论
+    try { fs.rmSync(p, { force: true }); console.log(`已清理${tag}用户数据:`, f); }
+    catch (e) { console.warn(`清理${tag}用户数据失败（可忽略）:`, f, e.message); }
   }
 }
 cleanUserDb('残留');
@@ -34,7 +44,7 @@ if (secretScan.status !== 0) {
   process.exit(1);
 }
 
-const env = { ...process.env };
+const env = { ...process.env, KEEPER_USER_DATA: userDataDir };
 delete env.ELECTRON_RUN_AS_NODE;
 
 const flags = [

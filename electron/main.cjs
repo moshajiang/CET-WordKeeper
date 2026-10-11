@@ -6,6 +6,13 @@ const initSqlJs = require('sql.js');
 // 阅读类应用不需要 GPU 加速；同时避免部分环境下 GPU 进程崩溃
 app.disableHardwareAcceleration();
 
+// 测试/开发隔离：verify-all 通过 KEEPER_USER_DATA 把用户库指到隔离目录。
+// ⚠️ 绝不能用真实安装应用的 userData 跑测试——曾因开发验证与装机版共用
+// %APPDATA%\cet-wordkeeper，导致用户的生词本/API Key 被测试清理误删（已踩坑，禁止回退）。
+if (process.env.KEEPER_USER_DATA) {
+  app.setPath('userData', process.env.KEEPER_USER_DATA);
+}
+
 // 兜底词形映射（不规则变形 / 不规则复数 / 常见缩写）。
 // ECDICT 的 exchange 字段并未覆盖全部不规则形式（例如 be 的 exchange 里没有 are / were），
 // 语料实测仍有个别高频词查不到释义，这里做最后一道兜底。
@@ -157,7 +164,10 @@ function run(sql, params = []) {
   db.run(sql, params);
 }
 function persist() {
-  fs.writeFileSync(dbPath, Buffer.from(db.export()));
+  // 原子写：先写临时文件再改名，避免写一半时崩溃/被杀导致库损坏
+  const tmp = dbPath + '.tmp';
+  fs.writeFileSync(tmp, Buffer.from(db.export()));
+  fs.renameSync(tmp, dbPath);
 }
 function now() {
   return new Date().toISOString();
