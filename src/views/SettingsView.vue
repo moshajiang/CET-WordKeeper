@@ -37,6 +37,12 @@
     </div>
 
     <div class="card settings-form">
+      <h3 style="font-size: 15px; margin-bottom: 4px;">外观</h3>
+      <div class="hint" style="margin-bottom: 10px;">夜间模式适合晚上刷题，重启后保持。</div>
+      <button @click="toggleTheme">{{ isDark ? '☀ 切换为浅色模式' : '🌙 切换为夜间模式' }}</button>
+    </div>
+
+    <div class="card settings-form">
       <h3 style="font-size: 15px; margin-bottom: 4px;">数据</h3>
       <div class="hint" style="margin-bottom: 10px;">全部数据存储于本地单文件 keeper.db，备份即复制。</div>
       <button @click="backup">备份到…</button>
@@ -92,6 +98,7 @@ onMounted(async () => {
     api_model: s.api_model || 'deepseek-chat',
   };
   // 版本更新：恢复当前状态并订阅主进程的更新事件推送
+  isDark.value = localStorage.getItem('keeper.theme') === 'dark';
   try {
     const st = await window.keeper.updateState();
     upd.value = { ...upd.value, ...st };
@@ -104,6 +111,15 @@ onBeforeUnmount(() => { if (offUpd) offUpd(); });
 // ---- 版本更新 ----
 const upd = ref({ phase: 'idle', current: '', latest: null, percent: 0, portable: false });
 let offUpd = null;
+
+// ---- 外观：夜间模式 ----
+const isDark = ref(false);
+
+function toggleTheme() {
+  isDark.value = !isDark.value;
+  localStorage.setItem('keeper.theme', isDark.value ? 'dark' : 'light');
+  document.documentElement.classList.toggle('dark', isDark.value);
+}
 
 async function checkUpdate() {
   upd.value = { ...upd.value, phase: 'checking', error: null };

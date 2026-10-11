@@ -710,6 +710,67 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
     `句子="${sent}…"`);
 }
 
+// ===== 打磨批次：夜间模式 / 真题库筛选 / 进度记忆 / 快捷键 / 查词原句 / Markdown =====
+{
+  // ① 夜间模式切换
+  await js(`location.hash = '#/settings'`); await sleep(1300);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('夜间')); if (b) b.click(); return !!b; })()`); await sleep(400);
+  const darkOn = await js(`document.documentElement.classList.contains('dark')`);
+  check('夜间模式可开启', darkOn === true, `dark=${darkOn}`);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('浅色')); if (b) b.click(); return !!b; })()`); await sleep(300);
+  check('夜间模式可切回浅色', (await js(`document.documentElement.classList.contains('dark')`)) === false, '已回浅色');
+
+  // ② 真题库筛选与搜索
+  await js(`location.hash = '#/library'`); await sleep(1300);
+  const all = await js(`document.querySelectorAll('.exam-card').length`);
+  await js(`(() => { const s = document.querySelector('.filter-bar select'); s.value = 'CET6'; s.dispatchEvent(new Event('change', { bubbles: true })); })()`);
+  await sleep(400);
+  const c6 = await js(`document.querySelectorAll('.exam-card').length`);
+  check('真题库按级别筛选', all > c6 && c6 > 0, `全部 ${all} → 六级 ${c6}`);
+  await js(`(() => { const i = document.querySelector('.filter-bar input'); i.value = '2024'; i.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  await sleep(400);
+  const s24 = await js(`document.querySelectorAll('.exam-card').length`);
+  check('真题库搜索 2024', s24 > 0 && s24 <= c6, `六级 2024 共 ${s24} 套`);
+  await js(`(() => { const i = document.querySelector('.filter-bar input'); i.value = ''; i.dispatchEvent(new Event('input', { bubbles: true })); const s = document.querySelector('.filter-bar select'); s.value = 'all'; s.dispatchEvent(new Event('change', { bubbles: true })); })()`);
+  await sleep(300);
+
+  // ③ 阅读进度记忆：切到长篇阅读 → 离开 → 回来应停在同篇
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('长篇阅读')); if (t) t.click(); return !!t; })()`); await sleep(900);
+  await js(`location.hash = '#/library'`); await sleep(500);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  const activeName = await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.classList.contains('active')); return b ? b.textContent.trim() : ''; })()`);
+  check('阅读进度记忆（回到上次篇章）', activeName.includes('长篇阅读'), `active="${activeName}"`);
+
+  // ④ 快捷键：] 切下一篇 / T 切换逐句对照（T 是开关——进度记忆可能恢复为开或关，断言「可切换」而非「必为开」）
+  const idx0 = await js(`[...document.querySelectorAll('.section-tabs button')].findIndex(b => b.classList.contains('active'))`);
+  await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: ']', code: 'BracketRight', bubbles: true }))`); await sleep(500);
+  const idx1 = await js(`[...document.querySelectorAll('.section-tabs button')].findIndex(b => b.classList.contains('active'))`);
+  const bi0 = await js(`!!document.querySelector('.bi-card')`);
+  await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 't', code: 'KeyT', bubbles: true }))`); await sleep(600);
+  const bi1 = await js(`!!document.querySelector('.bi-card')`);
+  await js(`document.dispatchEvent(new KeyboardEvent('keydown', { key: 't', code: 'KeyT', bubbles: true }))`); await sleep(600);
+  const bi2 = await js(`!!document.querySelector('.bi-card')`);
+  check('阅读器快捷键（] 切篇 / T 切翻译）', idx1 === idx0 + 1 && bi1 !== bi0 && bi2 === bi0,
+    `篇章 ${idx0}→${idx1} / 逐句对照 ${bi0}→${bi1}→${bi2}`);
+
+  // ⑤ 查词返回收藏过的真题原句
+  await js(`window.keeper.addWord('serendipity', 'A moment of serendipity changed everything.', null)`); await sleep(400);
+  const lk = await js(`window.keeper.lookup('serendipity')`);
+  check('查词返回收藏的真题原句', lk && Array.isArray(lk.hits) && lk.hits.length > 0, `hits=${lk && lk.hits ? lk.hits.length : 0}`);
+
+  // ⑥ Markdown 渲染器（对 src/utils/md.js 直接做单元断言）
+  const { readFileSync } = await import('node:fs');
+  const src = readFileSync(new URL('../src/utils/md.js', import.meta.url), 'utf8');
+  const md = await import('data:text/javascript;charset=utf-8,' + encodeURIComponent(src));
+  const html = md.renderMarkdown('**加粗** 与 `code`\n\n- 甲\n- 乙\n\n| A | B |\n|---|---|\n| 1 | 2 |');
+  check('AI 回答 Markdown 渲染',
+    html.includes('<b>加粗</b>') && html.includes('<code>code</code>') && html.includes('<li>甲</li>') && html.includes('<th>A</th>'),
+    html.slice(0, 90));
+  const xss = md.renderMarkdown('<script>alert(1)<\/script> 与 **ok**');
+  check('Markdown 渲染防注入', !xss.includes('<script>') && xss.includes('&lt;script&gt;'), xss.slice(0, 70));
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

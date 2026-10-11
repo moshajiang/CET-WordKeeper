@@ -364,13 +364,26 @@ function registerIpc() {
     dbReady: !!db,
   }));
 
-  ipcMain.handle('dict:lookup', (_e, raw) => {
+  ipcMain.  handle('dict:lookup', (_e, raw) => {
     const r = resolveWord(raw);
     const entry = lookupEntry(r.word);
     const tags = entry ? parseTags(entry.tag) : [];
     const inBook = !!q('SELECT 1 FROM user_word WHERE word = ?', [r.word]).length;
     const freq = q('SELECT total, exams FROM word_freq WHERE word = ?', [r.word])[0] || null;
-    return { raw, word: r.word, found: !!entry, entry, tags, inBook, freq };
+    // 你收藏过这个词的真题原句（word_hit），带考次标签，供查词气泡做「语境回顾」
+    const hits = q(
+      `SELECT w.sentence, e.level, e.year, e.month, e.set_no
+       FROM word_hit w
+       LEFT JOIN passage p ON p.id = w.passage_id
+       LEFT JOIN exam e ON e.id = p.exam_id
+       WHERE w.word = ? AND w.sentence != ''
+       ORDER BY w.id DESC LIMIT 3`,
+      [r.word]
+    ).map((h) => ({
+      sentence: h.sentence,
+      label: h.level ? `${h.level} ${h.year}.${h.month} 第${h.set_no}套` : '',
+    }));
+    return { raw, word: r.word, found: !!entry, entry, tags, inBook, freq, hits };
   });
 
   ipcMain.handle('exams:list', () =>

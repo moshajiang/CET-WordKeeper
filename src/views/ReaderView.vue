@@ -47,7 +47,7 @@
       </div>
     </div>
     <div v-if="notice" class="card" style="margin-bottom: 12px; padding: 10px 16px; font-size: 13px;"
-         :style="{ color: noticeOk ? '#2e7d4f' : 'var(--red)' }">{{ notice }}</div>
+         :style="{ color: noticeOk ? 'var(--ok)' : 'var(--red)' }">{{ notice }}</div>
 
     <div class="section-tabs">
       <button
@@ -129,7 +129,7 @@
               {{ (showReference ? '隐藏' : '查看') + (activePassage.section === 'writing' ? '范文' : '参考译文') }}
               <span style="font-size: 11px; color: var(--muted);">（预置，离线可看）</span>
             </button>
-            <span v-if="essayNotice" style="font-size: 12.5px;" :style="{ color: essayNoticeOk ? '#2e7d4f' : 'var(--red)' }">{{ essayNotice }}</span>
+            <span v-if="essayNotice" style="font-size: 12.5px;" :style="{ color: essayNoticeOk ? 'var(--ok)' : 'var(--red)' }">{{ essayNotice }}</span>
           </div>
 
           <div v-if="activePassage.reference && showReference" class="er-ref-box">
@@ -206,7 +206,8 @@
               · 这篇文章的主旨是什么？
             </div>
             <div v-for="(m, i) in chatMsgs" :key="i" class="chat-msg" :class="m.role">
-              <div class="bubble">{{ m.content }}</div>
+              <div v-if="m.role === 'assistant'" class="bubble md-body" v-html="renderMarkdown(m.content)"></div>
+              <div v-else class="bubble">{{ m.content }}</div>
             </div>
             <div v-if="chatBusy" class="chat-msg assistant"><div class="bubble typing">思考中…</div></div>
           </div>
@@ -223,7 +224,7 @@
             {{ aiResult.kind === 'translate' ? '整句翻译' : '语法结构分析' }}
             <span v-if="aiResult.cached" style="font-size: 11px; color: var(--muted); font-weight: 400;">（缓存）</span>
           </h3>
-          <div class="ai-result" style="margin-top: 0;">{{ aiResult.text }}</div>
+          <div class="ai-result md-body" style="margin-top: 0;" v-html="renderMarkdown(aiResult.text)"></div>
           <div v-if="aiResult.source" style="font-size: 12px; color: var(--muted); margin-top: 8px; font-family: Georgia, serif;">{{ aiResult.source }}</div>
         </div>
 
@@ -266,6 +267,13 @@
         </div>
         <div class="trans">{{ popover.data.entry ? (popover.data.entry.translation || popover.data.entry.definition || '（词典暂无释义）') : '词典未收录，可手动加入生词本' }}</div>
         <div v-if="popover.data.freq" class="freq">历年真题中出现约 {{ popover.data.freq.total }} 篇 / {{ popover.data.freq.exams }} 套</div>
+        <div v-if="popover.data.hits && popover.data.hits.length" class="hits">
+          <div class="hits-title">你收藏过它的真题原句</div>
+          <div v-for="(h, hi) in popover.data.hits" :key="hi" class="hit">
+            <div class="hit-sent">{{ h.sentence }}</div>
+            <div v-if="h.label" class="hit-label">— {{ h.label }}</div>
+          </div>
+        </div>
         <div class="acts">
           <button v-if="!popover.data.inBook" class="primary" @click="addFromPopover">★ 加入生词本</button>
           <button v-else class="danger" @click="removeFromPopover">移出生词本</button>
@@ -290,6 +298,7 @@ import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
 import { useRouter } from 'vue-router';
 import { tokenize, simpleNorm, sentenceOf } from '../utils/tokens.js';
 import { alignBilingual, paragraphLetters } from '../utils/bilingual.js';
+import { renderMarkdown } from '../utils/md.js';
 import QuestionPanel from '../components/QuestionPanel.vue';
 
 const props = defineProps({ examId: String });
@@ -349,9 +358,37 @@ function toggleRow(s) {
   const key = s.para + '|' + s.i;
   rowToggle.value = { ...rowToggle.value, [key]: !zhOpen(s) };
 }
+const PROGRESS_KEY = 'keeper.reader.progress';
+
+function saveProgress() {
+  try {
+    if (!detail.value) return;
+    const all = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}');
+    const m = document.querySelector('.main');
+    all[String(props.examId)] = {
+      idx: activeIdx.value,
+      scroll: m ? m.scrollTop : 0,
+      trans: transMode.value,
+      layout: layout.value,
+      fontSize: fontSize.value,
+    };
+    localStorage.setItem(PROGRESS_KEY, JSON.stringify(all));
+  } catch (e) { /* 忽略 */ }
+}
+
+function loadProgress() {
+  try {
+    return JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}')[String(props.examId)] || null;
+  } catch (e) { return null; }
+}
+
+let saveTimer = null;
+function saveProgressSoon() { clearTimeout(saveTimer); saveTimer = setTimeout(saveProgress, 400); }
+
 function setTransMode(m) {
   transMode.value = m;
   rowToggle.value = {};
+  saveProgress();
 }
 // 打开独立的「对照背诵」页面，并带上当前篇章下标，进去就停在同篇
 // 把原文句子 / 题干选项引用到 AI 问答（自动打开聊天并带入输入框）
@@ -631,6 +668,17 @@ async function loadAll() {
   notice.value = '';
   answers.value = {};
   try { await restoreAttempt(); } catch { /* 忽略 */ }
+  // 恢复上次阅读位置与展示偏好（篇章 / 滚动位置 / 翻译模式 / 布局 / 字号）
+  const saved = loadProgress();
+  if (saved) {
+    if (typeof saved.idx === 'number' && detail.value.passages[saved.idx]) activeIdx.value = saved.idx;
+    if (saved.trans === 'inline' || saved.trans === 'off') transMode.value = saved.trans;
+    if (saved.layout === 'split' || saved.layout === 'stack') layout.value = saved.layout;
+    if (typeof saved.fontSize === 'number') fontSize.value = saved.fontSize;
+    if (typeof saved.scroll === 'number' && saved.scroll > 0) {
+      setTimeout(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = saved.scroll; }, 500);
+    }
+  }
   await loadEssay();
 }
 
@@ -732,11 +780,36 @@ async function scanHard() {
   hardWords.value = r || [];
 }
 
-watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); });
+watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); saveProgress(); });
+watch(layout, () => saveProgress());
+watch(fontSize, () => saveProgressSoon());
 watch(scanOn, () => scanHard());
 // 同一个组件实例切换考次（hash 路由参数变化时 Vue 会复用实例）必须重新加载，
 // 否则页面上仍是上一套的篇章与作答
 watch(() => props.examId, () => { loadAll(); });
+
+function movePassage(d) {
+  const total = detail.value ? detail.value.passages.length : 0;
+  if (!total) return;
+  activeIdx.value = Math.min(total - 1, Math.max(0, activeIdx.value + d));
+}
+
+function onReaderKey(ev) {
+  const tag = (ev.target && ev.target.tagName) || '';
+  if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;               // 输入框内不打架
+  if (popover.value.show || selMenu.value.show) return;
+  if (ev.key === ']' || ev.key === '[') {
+    movePassage(ev.key === ']' ? 1 : -1);
+    ev.preventDefault();
+  } else if (ev.key === 't' || ev.key === 'T') {
+    setTransMode(transMode.value === 'inline' ? 'off' : 'inline');
+  } else if (ev.key === 'l' || ev.key === 'L') {
+    layout.value = layout.value === 'stack' ? 'split' : 'stack';
+  } else if (ev.key === 'Enter') {
+    const hasQ = activePassage.value && activePassage.value.questions && activePassage.value.questions.length;
+    if (hasQ && !graded.value && !busy.value) submit();
+  }
+}
 
 onMounted(() => {
   loadAll();
@@ -744,10 +817,17 @@ onMounted(() => {
   loadEssay();
   document.addEventListener('click', onDocClick);
   document.addEventListener('mouseup', onMouseUp);
+  document.addEventListener('keydown', onReaderKey);
+  const m = document.querySelector('.main');
+  if (m) m.addEventListener('scroll', saveProgressSoon, { passive: true });
 });
 onBeforeUnmount(() => {
+  saveProgress();
   document.removeEventListener('click', onDocClick);
   document.removeEventListener('mouseup', onMouseUp);
+  document.removeEventListener('keydown', onReaderKey);
+  const m = document.querySelector('.main');
+  if (m) m.removeEventListener('scroll', saveProgressSoon);
 });
 </script>
 
@@ -769,8 +849,8 @@ onBeforeUnmount(() => {
   max-width: 86%; padding: 7px 10px; border-radius: 10px; font-size: 13px;
   line-height: 1.65; white-space: pre-wrap; word-break: break-word;
 }
-.chat-msg.user .bubble { background: #5b7cfa; color: #fff; border-bottom-right-radius: 3px; }
-.chat-msg.assistant .bubble { background: #fff; border: 1px solid var(--border, #e5e2da); border-bottom-left-radius: 3px; }
+.chat-msg.user .bubble { background: var(--accent); color: #fff; border-bottom-right-radius: 3px; }
+.chat-msg.assistant .bubble { background: var(--card); border: 1px solid var(--border, #e5e2da); border-bottom-left-radius: 3px; }
 .chat-msg .bubble.typing { color: var(--muted, #999); }
 .chat-input-row { display: flex; gap: 8px; margin-top: 8px; align-items: flex-end; }
 .chat-input-row textarea {
@@ -783,18 +863,18 @@ onBeforeUnmount(() => {
 }
 .essay-result { margin-top: 14px; border-top: 1px dashed var(--border, #e5e2da); padding-top: 12px; }
 .er-score { display: flex; align-items: baseline; gap: 6px; }
-.er-num { font-size: 30px; font-weight: 700; color: #c0392b; }
+.er-num { font-size: 30px; font-weight: 700; color: var(--red); }
 .er-denom { font-size: 15px; color: var(--muted, #999); }
 .er-conv { font-size: 12.5px; color: var(--muted, #999); margin-left: 8px; }
-.er-band { font-size: 13.5px; margin-top: 4px; color: #2e7d4f; }
-.er-strengths { font-size: 13px; margin-top: 8px; color: #2e7d4f; }
+.er-band { font-size: 13.5px; margin-top: 4px; color: var(--ok); }
+.er-strengths { font-size: 13px; margin-top: 8px; color: var(--ok); }
 .er-issues { margin-top: 10px; display: flex; flex-direction: column; gap: 8px; }
 .er-issue {
   font-size: 13px; line-height: 1.7; background: var(--bg, #faf8f4);
   border-radius: 8px; padding: 8px 12px;
 }
-.er-quote { font-family: Georgia, serif; color: #c0392b; }
-.er-fix { color: #2e7d4f; }
+.er-quote { font-family: Georgia, serif; color: var(--red); }
+.er-fix { color: var(--ok); }
 .er-ref { margin-top: 12px; font-size: 13.5px; line-height: 1.9; white-space: normal; }
 .er-ref b { display: block; margin-bottom: 4px; font-size: 13px; }
 .er-ref-box {

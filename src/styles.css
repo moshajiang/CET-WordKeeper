@@ -12,6 +12,8 @@
   --green-border: #6fbf8a;
   --purple-dash: #9b8fd6;
   --red: #c0392b;
+  --ok: #2e7d4f;
+  --ok-soft: #e3f2e8;
   --radius: 10px;
 }
 
@@ -96,7 +98,7 @@ h1.page-title { font-size: 21px; font-weight: 700; margin-bottom: 6px; }
 .stat-box .num { font-size: 26px; font-weight: 700; color: var(--accent); }
 .stat-box .lbl { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
 .stat-box.due .num { color: var(--red); }
-.stat-box.done .num { color: #2e7d4f; }
+.stat-box.done .num { color: var(--ok); }
 
 button, .btn {
   font-family: inherit;
@@ -222,13 +224,13 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .qblock { border-left: 3px solid var(--accent-soft); padding-left: 14px; margin-bottom: 18px; user-select: text; }
 .qblock .qstem { font-weight: 600; margin-bottom: 6px; font-size: 14.5px; font-family: inherit; }
 .qblock .qopt { color: var(--muted); font-size: 13.5px; padding-left: 8px; }
-.qblock .qans { margin-top: 6px; font-size: 13px; color: #2e7d4f; }
+.qblock .qans { margin-top: 6px; font-size: 13px; color: var(--ok); }
 .qblock .qanalysis { margin-top: 4px; font-size: 13px; color: var(--muted); white-space: pre-wrap; }
 
 /* ---- 做题：选项、词库、判分标记 ---- */
 .qblock .qstem { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .qblock .qmark { font-size: 12px; font-weight: 500; padding: 1px 7px; border-radius: 5px; }
-.qblock .qmark.ok { color: #1c6b3f; background: #e3f2e8; }
+.qblock .qmark.ok { color: var(--ok); background: var(--ok-soft); }
 .qblock .qmark.no { color: #a32d2d; background: #fbeaea; }
 
 .qblock .qopt.pick {
@@ -238,7 +240,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 }
 .qblock .qopt.pick:hover { background: var(--accent-soft); }
 .qblock .qopt.pick.picked { background: var(--accent-soft); border-color: var(--accent); color: var(--text); font-weight: 500; }
-.qblock .qopt.pick.right { background: #e3f2e8; border-color: #2e7d4f; color: #1c6b3f; font-weight: 500; }
+.qblock .qopt.pick.right { background: var(--ok-soft); border-color: var(--ok); color: var(--ok); font-weight: 500; }
 .qblock .qopt.pick.wrong { background: #fbeaea; border-color: #a32d2d; color: #a32d2d; }
 
 .bank-box { background: var(--bg); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }
@@ -270,7 +272,7 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 
 .status-chip { font-size: 11px; border-radius: 10px; padding: 1px 9px; font-weight: 600; }
 .status-chip.learning { background: var(--yellow); color: #8a6d00; }
-.status-chip.mastered { background: var(--green); color: #2e7d4f; }
+.status-chip.mastered { background: var(--green); color: var(--ok); }
 
 .review-wrap { max-width: 720px; margin: 0 auto; }
 .review-progress { height: 6px; background: var(--border); border-radius: 3px; margin-bottom: 22px; overflow: hidden; }
@@ -408,7 +410,7 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .bi-row:hover { background: var(--accent-soft); border-left-color: var(--accent); }
 .bi-row.open { background: color-mix(in srgb, var(--accent-soft) 55%, transparent); }
 .bi-en { font-family: Georgia, serif; line-height: 1.85; color: var(--text); }
-.bi-zh { font-size: 13.5px; line-height: 1.85; color: #2e7d4f; margin-top: 3px; }
+.bi-zh { font-size: 13.5px; line-height: 1.85; color: var(--ok); margin-top: 3px; }
 .bi-tip { font-size: 12px; color: var(--muted); margin-top: 10px; }
 
 /* 左右分栏：题目与原文同时呈现 */
@@ -461,7 +463,7 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .recite-no { font-size: 11.5px; color: var(--muted); min-width: 20px; flex-shrink: 0; }
 .recite-txt { flex: 1; line-height: 1.9; word-break: break-word; }
 .recite-txt.en { font-family: Georgia, serif; font-size: 16px; color: var(--text); }
-.recite-txt.zh { font-size: 15px; color: #2e7d4f; }
+.recite-txt.zh { font-size: 15px; color: var(--ok); }
 .recite-swap { font-size: 11px; color: var(--muted); opacity: 0; transition: opacity .15s; flex-shrink: 0; }
 .recite-line:hover .recite-swap { opacity: .85; }
 .recite-empty { text-align: center; color: var(--muted); font-size: 13px; padding: 48px 0; }
@@ -502,3 +504,65 @@ table.wtable { width: 100%; border-collapse: collapse; font-size: 13.5px; }
   opacity: 0; transition: opacity .15s;
 }
 .bi-row:hover .bi-quote { opacity: 1; }
+
+
+/* ===== 夜间模式 ===== */
+html.dark {
+  --bg: #17181d;
+  --card: #1f2127;
+  --text: #e7e5e0;
+  --muted: #97958d;
+  --border: #34373e;
+  --accent: #8f86e8;
+  --accent-soft: #2e2b50;
+  --yellow: #454019;
+  --yellow-border: #b5a33f;
+  --green: #1d3a2a;
+  --green-border: #4f9b6c;
+  --red: #d96b5c;
+  --ok: #7cc79a;
+  --ok-soft: #22402f;
+}
+html.dark body { color: var(--text); }
+html.dark ::selection { background: var(--accent); color: #fff; }
+
+/* ===== 真题库搜索框 ===== */
+.filter-bar { flex-wrap: wrap; }
+.filter-bar .filter-search {
+  flex: 0 1 220px; padding: 6px 10px; font-size: 13px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--card); color: var(--text);
+}
+
+/* ===== 查词气泡：真题原句回顾 ===== */
+.popover .hits { margin-top: 10px; border-top: 1px dashed var(--border); padding-top: 8px; }
+.popover .hits-title { font-size: 11.5px; color: var(--muted); margin-bottom: 2px; }
+.popover .hit { margin-top: 6px; }
+.popover .hit-sent { font-size: 12.5px; line-height: 1.6; font-family: Georgia, serif; }
+.popover .hit-label { font-size: 11px; color: var(--muted); margin-top: 2px; }
+
+/* ===== AI 回答 Markdown ===== */
+.md-body p { margin: 6px 0; }
+.md-body h4 { font-size: 14.5px; margin: 10px 0 4px; }
+.md-body ul, .md-body ol { margin: 6px 0 6px 20px; }
+.md-body li { margin: 2px 0; }
+.md-body blockquote {
+  border-left: 3px solid var(--accent); background: var(--bg);
+  margin: 8px 0; padding: 6px 12px; border-radius: 0 8px 8px 0;
+}
+.md-body code {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 4px; padding: 1px 5px;
+  font-family: Consolas, monospace; font-size: 12.5px;
+}
+.md-body pre.md-code {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 10px 12px; margin: 8px 0;
+  font-family: Consolas, monospace; font-size: 12.5px;
+  white-space: pre-wrap; overflow-x: auto;
+}
+.md-body .md-table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+.md-body .md-table th, .md-body .md-table td {
+  border: 1px solid var(--border); padding: 5px 10px; text-align: left;
+}
+.md-body .md-table th { background: var(--bg); }

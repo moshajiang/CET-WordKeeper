@@ -10,6 +10,11 @@
         <option value="CET6">六级 CET6</option>
         <option value="imported">我的导入</option>
       </select>
+      <select v-model="yearFilter">
+        <option value="all">全部年份</option>
+        <option v-for="y in years" :key="y" :value="String(y)">{{ y }} 年</option>
+      </select>
+      <input v-model="q" class="filter-search" placeholder="搜索年份 / 月份 / 套号…" />
       <span style="color: var(--muted); font-size: 12.5px;">共 {{ filtered.length }} 套</span>
     </div>
 
@@ -36,11 +41,24 @@ import { ref, computed, onMounted } from 'vue';
 
 const exams = ref([]);
 const levelFilter = ref('all');
+const yearFilter = ref('all');
+const q = ref('');
+
+const years = computed(() => [...new Set(exams.value.map((e) => e.year))].sort((a, b) => b - a));
 
 const filtered = computed(() => {
-  if (levelFilter.value === 'all') return exams.value;
-  if (levelFilter.value === 'imported') return exams.value.filter((e) => e.imported);
-  return exams.value.filter((e) => e.level === levelFilter.value && !e.imported);
+  let list = exams.value;
+  if (levelFilter.value === 'imported') list = list.filter((e) => e.imported);
+  else if (levelFilter.value !== 'all') list = list.filter((e) => e.level === levelFilter.value && !e.imported);
+  if (yearFilter.value !== 'all') list = list.filter((e) => String(e.year) === yearFilter.value);
+  const kw = q.value.trim();
+  if (kw) {
+    const label = (e) => `${e.year}年${e.month}月第${e.set_no}套 ${e.level}`;
+    if (/^\d{4}$/.test(kw)) list = list.filter((e) => String(e.year) === kw);
+    else if (/^\d{1,2}$/.test(kw)) list = list.filter((e) => String(e.month) === kw || String(e.set_no) === kw);
+    else list = list.filter((e) => label(e).toLowerCase().includes(kw.toLowerCase()));
+  }
+  return list;
 });
 
 onMounted(async () => {

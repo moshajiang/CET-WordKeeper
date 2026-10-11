@@ -38,7 +38,13 @@ const navs = [
 
 const isNarrow = computed(() => !route.path.startsWith('/reader'));
 
+// 夜间模式：localStorage 持久化，启动即应用
+function applyTheme() {
+  document.documentElement.classList.toggle('dark', localStorage.getItem('keeper.theme') === 'dark');
+}
+
 onMounted(async () => {
+  applyTheme();
   try {
     const s = await window.keeper.stats();
     dueCount.value = s.dueNow;
