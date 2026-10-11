@@ -845,6 +845,35 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
     'difference 未误标');
 }
 
+// ===== 对齐质量 + 快速回到做题区（回归闸门）=====
+{
+  // ① 对齐质量：用已知「段落级对应」的篇章（CET4 2014.6 第 1 套长篇阅读）断言段落级对齐
+  const bSrc = fs.readFileSync(new URL('../src/utils/bilingual.js', import.meta.url), 'utf8');
+  const al = await js(`(async () => {
+    const ex = await window.keeper.listExams();
+    const target = ex.find(e => e.level === 'CET4' && e.year === 2014 && e.month === 6 && e.set_no === 1) || ex[0];
+    const d = await window.keeper.examDetail(target.id);
+    const p = d.passages.find(x => x.section === 'match');
+    const mod = await import('data:text/javascript;charset=utf-8,' + encodeURIComponent(${JSON.stringify(bSrc)}));
+    const rows = mod.alignBilingual(p.content, p.translation);
+    return { n: rows.length, empty: rows.filter(x => !x.en || !x.zh).length };
+  })()`);
+  check('长篇阅读对照按段落级对齐（无空缺侧）', al && al.n >= 6 && al.n <= 20 && al.empty === 0,
+    `句对 ${al && al.n} 行 / 空缺 ${al && al.empty}`);
+
+  // ② 快速回到做题区：滚到页尾点悬浮按钮 → 题目区回到视口
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(2600);
+  await js(`(() => { const t = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('仔细阅读')); if (t) t.click(); return !!t; })()`); await sleep(1000);
+  await js(`(() => { const b = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.trim() === '逐句对照'); if (b) b.click(); return !!b; })()`); await sleep(800);
+  const btnThere = await js(`!!document.querySelector('.back-to-q')`);
+  await js(`(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = 999999; })()`); await sleep(600);
+  const topBefore = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
+  await js(`(() => { const b = document.querySelector('.back-to-q'); if (b) b.click(); return 1; })()`); await sleep(900);
+  const topAfter = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
+  check('对照翻译可一键回到做题区', btnThere && topBefore < 0 && topAfter >= 0 && topAfter < 700,
+    `按钮=${btnThere} 题目区 top ${topBefore} → ${topAfter}`);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

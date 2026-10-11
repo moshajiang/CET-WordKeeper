@@ -83,6 +83,7 @@
               <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">（本地缓存，离线可看；点句子切换中/英文）</span>
             </h3>
             <div class="bi-actions">
+              <button class="mini-btn" @click="backToQuestions">⮐ 回到题目</button>
               <button class="mini-btn" @click="openRecite">🗣 进入对照背诵</button>
             </div>
           </div>
@@ -288,6 +289,8 @@
       <button @click="askAboutSel">💬 问 AI</button>
     </div>
 
+    <button v-if="transMode === 'inline' && layout === 'stack' && hasQuestions" class="back-to-q" @click="backToQuestions" title="回到本篇的题目作答区">⮐ 回到做题区</button>
+
     <div v-if="toast" class="toast">{{ toast }}</div>
   </div>
   <div v-else class="empty-state"><div class="big">⏳</div>加载真题中…</div>
@@ -330,6 +333,7 @@ const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点
 const tokenCache = new Map();
 
 const hasTranslation = computed(() => !!(activePassage.value && activePassage.value.translation));
+const hasQuestions = computed(() => !!(activePassage.value && activePassage.value.questions && activePassage.value.questions.length));
 const bilingual = computed(() => {
   const p = activePassage.value;
   if (!p) return [];
@@ -398,6 +402,12 @@ function quoteToAI(text) {
   const quote = '“' + String(text).trim() + '”';
   chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + quote + '\n';
   scrollChat();
+}
+
+// 从逐句对照快速回到本篇的题目作答区（上下布局滚下去很远，一键直达）
+function backToQuestions() {
+  const el = document.querySelector('.question-pane .qpanel') || document.querySelector('.passage-pane .qpanel');
+  if (el) el.scrollIntoView({ block: 'start' });   // 瞬时定位：平滑滚动长距离时反而显得慢
 }
 
 function openRecite() {

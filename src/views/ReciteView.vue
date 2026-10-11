@@ -44,6 +44,7 @@
             <button class="primary" @click="next" :disabled="revealed >= total">下一句 ▶</button>
             <button @click="showAll" :disabled="revealed >= total">全文显示</button>
             <button @click="reset" :disabled="revealed === 0">重来</button>
+            <button @click="backToReader" title="回到阅读器做题">⮐ 返回做题</button>
             <span class="recite-first">
               <span class="tb-label">先显示</span>
               <button :class="{ active: first === 'zh' }" @click="setFirst('zh')">中文</button>
@@ -158,6 +159,7 @@ function next() {
 }
 function showAll() { revealed.value = total.value; }
 function reset() { revealed.value = 0; langMap.value = {}; }
+function backToReader() { router.push('/reader/' + Number(props.examId)); }
 function setFirst(l) { first.value = l; langMap.value = {}; }
 
 function scrollToLast() {
