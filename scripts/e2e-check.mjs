@@ -771,6 +771,57 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   check('Markdown 渲染防注入', !xss.includes('<script>') && xss.includes('&lt;script&gt;'), xss.slice(0, 70));
 }
 
+// ===== 修复批次闸门：预扫评级 / 背诵页补齐挖空 / 夜间表单控件 =====
+{
+  // ① 难词预扫评级：考纲词即使带 toefl/gre 标签也不算难词；六级模式下考研词要标出
+  const cand = ['abandon', 'accelerate', 'accomplish', 'acquire', 'adapt', 'advocate', 'apparent', 'alternative'];
+  let both = '';
+  for (const w of cand) {
+    const lk = await js(`window.keeper.lookup('${w}')`);
+    if (lk && lk.found && Array.isArray(lk.tags) && lk.tags.includes('cet4') && (lk.tags.includes('toefl') || lk.tags.includes('gre'))) { both = w; break; }
+  }
+  if (both) {
+    const scan = await js(`window.keeper.scanHard(${JSON.stringify(both + ' is discussed here.')}, 'CET4')`);
+    check('预扫评级：考纲内带出国标签的词不误标', Array.isArray(scan) && !scan.some((x) => x.word === both),
+      `样例词 ${both} 未被误标`);
+  } else {
+    check('预扫评级：考纲内带出国标签的词不误标', true, '（词库中未找到测试样例，跳过）');
+  }
+  // 正向：四级模式下六级词要标出
+  const c6cand = ['alleviate', 'clarity', 'cognitive', 'intervention', 'mechanism', 'deteriorate'];
+  let c6w = '';
+  for (const w of c6cand) {
+    const lk = await js(`window.keeper.lookup('${w}')`);
+    if (lk && lk.found && Array.isArray(lk.tags) && lk.tags.includes('cet6') && !lk.tags.includes('cet4')) { c6w = w; break; }
+  }
+  if (c6w) {
+    const scan = await js(`window.keeper.scanHard(${JSON.stringify('Researchers ' + c6w + ' the samples carefully.')}, 'CET4')`);
+    const hit = Array.isArray(scan) && scan.find((x) => x.word === c6w);
+    check('预扫评级：四级文本中的六级词被标出', !!hit && /六级|考研/.test(hit.label || ''), hit ? hit.label : '未标出');
+  }
+
+  // ② 背诵页：选词填空挖空已用正确答案补齐
+  const word26 = await js(`(async () => { const d = await window.keeper.examDetail(${anchor.id}); if (!d || !d.passages) return '__NO_DETAIL__'; const p = d.passages.find(x => x.section === 'cloze'); if (!p) return '__NO_CLOZE__'; const qn = (p.questions || []).find(x => String(x.stem).replace(/[^0-9]/g, '') === '26'); if (!qn) return '__NO_Q26__'; const letter = String(qn.answer || '').trim(); let opts = []; try { opts = JSON.parse(qn.options || '[]'); } catch (e) {} const hit = opts.find(o => o.startsWith(letter + ')')); return hit ? hit.replace(/^[A-O][).]\\s*/, '') : '__NO_WORD__'; })()`);
+  const word26bad = String(word26).startsWith('__');
+  await js(`location.hash = '#/recite/${anchor.id}'`); await sleep(2200);
+  await js(`(() => { const t = [...document.querySelectorAll('.recite-tabs button')].find(x => x.textContent.includes('选词填空')); if (t) t.click(); return !!t; })()`); await sleep(900);
+  // 背诵页默认每句显示中文，切到「先显示英文」再校验原文补齐
+  await js(`(() => { const b = [...document.querySelectorAll('.recite-first button')].find(x => x.textContent.trim() === '英文'); if (b) b.click(); return !!b; })()`); await sleep(600);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('全文显示')); if (b) b.click(); return !!b; })()`); await sleep(700);
+  const allText = String(await js(`[...document.querySelectorAll('.recite-txt')].map(e => e.textContent).join(' ')`));
+  check('背诵页选词填空挖空已补齐', !word26bad && allText.includes(word26) && !/\b2[6-9]\b/.test(allText),
+    `首空答案="${word26}" / 残留标记=${/\b2[6-9]\b/.test(allText)}`);
+
+  // ③ 夜间模式下表单控件配色跟随主题
+  await js(`location.hash = '#/settings'`); await sleep(1200);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('夜间')); if (b) b.click(); return 1; })()`); await sleep(300);
+  await js(`location.hash = '#/library'`); await sleep(1200);
+  const selBg = await js(`getComputedStyle(document.querySelector('.filter-bar select')).backgroundColor`);
+  check('夜间模式下拉框/表单控件配色正常', selBg === 'rgb(31, 33, 39)', selBg);
+  await js(`location.hash = '#/settings'`); await sleep(1200);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('浅色')); if (b) b.click(); return 1; })()`); await sleep(300);
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

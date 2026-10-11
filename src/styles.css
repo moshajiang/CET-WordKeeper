@@ -566,3 +566,29 @@ html.dark ::selection { background: var(--accent); color: #fff; }
   border: 1px solid var(--border); padding: 5px 10px; text-align: left;
 }
 .md-body .md-table th { background: var(--bg); }
+
+
+/* ===== 夜间收尾：表单控件 / 徽章 / 滚动条 ===== */
+html.dark input, html.dark select, html.dark textarea {
+  background: var(--card); color: var(--text); border-color: var(--border);
+}
+html.dark select option { background: var(--card); color: var(--text); }
+html.dark .lv.cet4 { background: #173427; color: #7cc79a; }
+html.dark .lv.cet6 { background: #16283c; color: #7fb1e8; }
+html.dark .lv.import { background: #3a2f18; color: #d9b36a; }
+html.dark .w:hover { background: #2e2b50; }
+html.dark .tagchip.lvl4 { background: #173427; color: #7cc79a; }
+html.dark .tagchip.lvl6 { background: #16283c; color: #7fb1e8; }
+html.dark .tagchip.beyond { background: #3a2119; color: #e0957a; }
+html.dark .qmark.no { background: #3a1d1d; color: #e0957a; }
+html.dark .qopt.pick.wrong { background: #3a1d1d; border-color: #a3553f; color: #e0957a; }
+html.dark .wtable tr:hover td { background: #23252b; }
+
+/* 滚动条跟随主题（此前滑块始终是系统浅色，夜间下突兀） */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c9c6bb; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #b0ad9f; }
+html.dark ::-webkit-scrollbar-thumb { background: #3c3f46; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #4a4d55; }
+html.dark ::-webkit-scrollbar-corner { background: transparent; }

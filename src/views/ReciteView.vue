@@ -82,6 +82,47 @@ const langMap = ref({});         // 句子下标 -> 'en' | 'zh'（点击切换�
 
 const exam = computed(() => (detail.value && detail.value.exam) || null);
 
+// options 在库里是 JSON 字符串
+function parseOpts(raw) {
+  try { return JSON.parse(raw || '[]'); } catch (e) { return []; }
+}
+
+// 选词填空：原文挖空处是 26–35 的数字标记，背诵时用正确答案补齐为完整原文。
+// 安全策略：编号在全文只出现一次才替换（避免误伤正文里的真实数字）；
+// 编号可能与相邻单词粘连（如 26stress / stress26，解析时丢空格），替换时补回空格
+function replaceBlank(content, num, word) {
+  let idx = -1, count = 0, at = -1;
+  while ((idx = content.indexOf(num, idx + 1)) !== -1) {
+    const prev = content[idx - 1] || '';
+    const next = content[idx + num.length] || '';
+    if (/\d/.test(prev) || /\d/.test(next)) continue;   // 是更长数字的一部分（如 2026）
+    count++; at = idx;
+  }
+  if (count !== 1) return content;
+  const prev = content[at - 1] || '';
+  const next = content[at + num.length] || '';
+  let rep = word;
+  if (/[A-Za-z]/.test(prev) && /[A-Za-z]/.test(next)) rep = ' ' + word + ' ';
+  else if (/[A-Za-z]/.test(next)) rep = word + ' ';
+  else if (/[A-Za-z]/.test(prev)) rep = ' ' + word;
+  return content.slice(0, at) + rep + content.slice(at + num.length);
+}
+
+function fillClozeBlanks(p) {
+  const wordByNum = {};
+  for (const q of p.questions || []) {
+    const num = parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10);
+    const letter = String(q.answer || '').trim();
+    const hit = parseOpts(q.options).find((o) => o.startsWith(letter + ')') || o.startsWith(letter + '.'));
+    if (num >= 26 && num <= 35 && hit) wordByNum[num] = hit.replace(/^[A-O][).]\s*/, '').trim();
+  }
+  let content = String(p.content || '');
+  for (const [num, word] of Object.entries(wordByNum)) {
+    content = replaceBlank(content, num, word);
+  }
+  return { content: content.replace(/\s+\./g, '.'), filled: Object.keys(wordByNum).length };
+}
+
 // 可背诵的篇章：有译文、且能切出句子
 const items = computed(() => {
   const d = detail.value;
@@ -89,7 +130,8 @@ const items = computed(() => {
   const out = [];
   d.passages.forEach((p, pi) => {
     if (!p.translation) return;
-    const rows = alignBilingual(p.content, p.translation);
+    const content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
+    const rows = alignBilingual(content, p.translation);
     if (!rows.length) return;
     out.push({ pi, name: sectionName(p.section, p.seq), rows });
   });

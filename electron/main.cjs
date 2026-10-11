@@ -559,9 +559,14 @@ function registerIpc() {
       if (!entry) continue;
       const tags = parseTags(entry.tag);
       const has = (k) => tags.includes(k);
+      // 评级修正：先判「是否在当前级别考纲内」——考纲词即使同时带 toefl/gre 标签也不是难词
+      //（此前 gre/toefl 判定在前，四级词带 toefl 标签会被误标为「出国级」）
+      const inLevel = level === 'CET4' ? has('cet4') : level === 'CET6' ? has('cet6') : false;
+      if (inLevel) continue;
       let label = null;
-      if (has('gre') || has('toefl') || has('ielts')) label = 'GRE/出国级';
-      else if (level === 'CET4' && (has('cet6') || has('ky'))) label = '六级/考研级';
+      if (level === 'CET4' && has('cet6')) label = '六级/考研级';
+      else if (has('ky')) label = '考研级';
+      else if (has('gre') || has('toefl') || has('ielts')) label = '出国级（托/雅/GRE）';
       else if (!tags.length && entry.frq > 8000 && !entry.collins) label = '低频生僻';
       if (label) {
         seen.add(r.word);
