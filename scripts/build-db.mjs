@@ -121,9 +121,34 @@ function healGlued(text) {
   }
   return out;
 }
+
+// 页眉页脚 / 水印行清理：源 PDF/DOCX 的页眉（「2026 年 6 月大学英语四级考试真题(第 1 套) 4」）、
+// 页脚（「2022年 6 月英语六级真题第1套 第 1 页 共 1 0页 b y :新一文化」）、翻译标题行、作答说明。
+// 逐行判断，仅删除独立成行且满足「年份开头 + 四级/六级 + 真题或考试+第几套/页码」的行，正文零误伤。
+function isExamJunkLine(line) {
+  const s = String(line).trim();
+  if (!s || s.length > 90) return false;
+  if (/^(19|20)\d{2}\s*年/.test(s) && /(四级|六级)/.test(s) && (/真题/.test(s) || (/考试/.test(s) && (/第\s*\d+\s*套/.test(s) || /页/.test(s))))) return true;
+  if (/^注意[:：]\s*此部分试题请在答题卡/.test(s)) return true;   // 作答说明行
+  if (/^(b\s*)?y\s*[:：]\s*新一文化/.test(s)) return true;        // PDF 水印行
+  return false;
+}
+function stripExamJunkLines(text) {
+  const t = String(text || '');
+  if (!/\n/.test(t)) {
+    // 无换行的短文本：只清粘连的水印碎片
+    return t.replace(/\s*b\s*y\s*[:：]\s*新一文化\s*/g, '');
+  }
+  const kept = t.split(/\r?\n/).filter((l) => !isExamJunkLine(l));
+  let out = kept.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\s*b\s*y\s*[:：]\s*新一文化\s*/g, '');
+  return out.replace(/^\n+/, '').replace(/\s+$/, '');
+}
+let junkFixed = 0;
 let glueFixed = 0;
 function healPassage(text) {
-  const fixed = healGlued(text);
+  const stripped = stripExamJunkLines(text);
+  if (stripped !== text) junkFixed++;
+  const fixed = healGlued(stripped);
   if (fixed !== text) glueFixed++;
   return fixed;
 }
@@ -154,7 +179,7 @@ for (const f of files) {
   for (const p of data.passages || []) {
     const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
     db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
-      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) || null, (ovP && ovP.reference) || null]);
+      [examId, p.section, p.seq, p.title, healPassage(p.content), (ovP && ovP.translation) ? healPassage(ovP.translation) : null, (ovP && ovP.reference) || null]);
     if (ovP && ovP.translation) aiPassages++;
     if (ovP && ovP.reference) aiReferences++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];

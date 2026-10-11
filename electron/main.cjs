@@ -562,7 +562,10 @@ function registerIpc() {
       // 评级修正：先判「是否在当前级别考纲内」——考纲词即使同时带 toefl/gre 标签也不是难词
       //（此前 gre/toefl 判定在前，四级词带 toefl 标签会被误标为「出国级」）
       const inLevel = level === 'CET4' ? has('cet4') : level === 'CET6' ? has('cet6') : false;
-      if (inLevel) continue;
+      // 中考(zk)/高考(gk)/低一级考纲词都比当前级别简单，不算难词
+      //（此前 difference/second 这类高考词带 ielts 标签被误标为「出国级」）
+      const belowLevel = has('zk') || has('gk') || (level === 'CET6' && has('cet4'));
+      if (inLevel || belowLevel) continue;
       let label = null;
       if (level === 'CET4' && has('cet6')) label = '六级/考研级';
       else if (has('ky')) label = '考研级';

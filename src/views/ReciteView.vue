@@ -130,7 +130,9 @@ const items = computed(() => {
   const out = [];
   d.passages.forEach((p, pi) => {
     if (!p.translation) return;
-    const content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
+    let content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
+    // 长篇阅读：段落序号（A) / B) …）只服务于作答定位，背诵时去掉
+    if (p.section === 'match') content = String(content).replace(/^[A-O]\s*[)．.]\s*/gm, '');
     const rows = alignBilingual(content, p.translation);
     if (!rows.length) return;
     out.push({ pi, name: sectionName(p.section, p.seq), rows });

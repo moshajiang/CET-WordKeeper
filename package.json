@@ -1,6 +1,6 @@
 {
   "name": "cet-wordkeeper",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "CET WordKeeper - 真题驱动的四六级学习软件",
   "main": "electron/main.cjs",
   "author": "WorkBuddy",

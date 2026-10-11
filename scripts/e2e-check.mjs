@@ -822,6 +822,29 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('浅色')); if (b) b.click(); return 1; })()`); await sleep(300);
 }
 
+// ===== 数据与评级闸门：页眉页脚清理 / 背诵去序号 / zk-gk 词不误标 =====
+{
+  // ① 全库无页眉页脚残留（所有套 × 所有篇章 × 原文/译文）
+  const junkScan = await js(`(async () => { const bad = []; const ex = await window.keeper.listExams(); for (const e of ex) { const d = await window.keeper.examDetail(e.id); if (!d) continue; for (const p of d.passages) { for (const field of ['content', 'translation']) { const t = String(p[field] || ''); for (const line of t.split('\\n')) { const s = line.trim(); if (s && s.length <= 90 && /^(19|20)\\d{2}\\s*年/.test(s) && /(四级|六级)/.test(s) && (/真题/.test(s) || (/考试/.test(s) && (/第\\s*\\d+\\s*套/.test(s) || /第\\s*[一二三四五六七八九十]+\\s*套/.test(s) || /页/.test(s))))) bad.push(e.id + ':' + p.section + ':' + s.slice(0, 30)); if (/新一文化/.test(s)) bad.push(e.id + ':' + p.section + ':水印'); } } } } return bad; })()`);
+  check('篇章无页眉页脚与水印残留', Array.isArray(junkScan) && junkScan.length === 0,
+    junkScan.length ? junkScan.slice(0, 2).join(' | ') : '81 套全部干净');
+
+  // ② 背诵页：长篇阅读段落序号（A) B) …）已去掉
+  await js(`location.hash = '#/recite/${anchor.id}'`); await sleep(2200);
+  await js(`(() => { const t = [...document.querySelectorAll('.recite-tabs button')].find(x => x.textContent.includes('长篇阅读')); if (t) t.click(); return !!t; })()`); await sleep(900);
+  await js(`(() => { const b = [...document.querySelectorAll('.recite-first button')].find(x => x.textContent.trim() === '英文'); if (b) b.click(); return !!b; })()`); await sleep(500);
+  await js(`(() => { const b = [...document.querySelectorAll('button')].find(x => x.textContent.includes('全文显示')); if (b) b.click(); return !!b; })()`); await sleep(700);
+  const rows = await js(`[...document.querySelectorAll('.recite-txt')].map(e => e.textContent.trim())`);
+  const withLetter = rows.filter((r) => /^[A-O]\s*[)．.]/.test(r));
+  check('背诵页长篇阅读已去掉段落序号', rows.length >= 10 && withLetter.length === 0,
+    `行数 ${rows.length} / 带序号 ${withLetter.length}`);
+
+  // ③ 预扫评级：中考/高考词不误标（difference 带 ielts 标签曾是「出国级」误标重灾区）
+  const scan6 = await js(`window.keeper.scanHard(${JSON.stringify('The difference between them is obvious.')}, 'CET6')`);
+  check('预扫评级：中学/高考词不误标', Array.isArray(scan6) && !scan6.some((x) => x.word === 'difference'),
+    'difference 未误标');
+}
+
 // ===== 数据完整性断言（把历史上踩过的坑固化为闸门）=====
 // 这些坑都真实出现过：词库字母错位/缺词、选项空占位、答案字母不在词库内、翻译正文被答案页污染。
 // 直接读 seed + 覆盖层（不依赖 UI），任何一类回归都会立刻失败。

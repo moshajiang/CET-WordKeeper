@@ -627,6 +627,7 @@ const levelTags = computed(() => {
   const has = (k) => tags.includes(k);
   if (has('cet4')) out.push({ name: '四级考纲', cls: 'lvl4' });
   if (has('cet6')) out.push({ name: '六级考纲', cls: 'lvl6' });
+  if (has('zk') || has('gk')) out.push({ name: '高中考纲', cls: 'lvl4' });
   if (has('ky')) out.push({ name: '考研', cls: '' });
   if (has('toefl') || has('ielts')) out.push({ name: '托福/雅思', cls: 'beyond' });
   if (has('gre')) out.push({ name: 'GRE', cls: 'beyond' });
