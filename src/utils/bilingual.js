@@ -35,10 +35,18 @@ export function splitZh(text) {
 }
 
 // 把一组「英文句」与「中文句」配成句对。
-// 数量相等时一一对应；不等时按累计字符长度比例分配（此前把差额全并入末句，
-// 会出现英文 1 句对中文 8 句、其余行「译文缺失」的糟糕体验——全库实测 311 篇仅 21% 完美）
+// 数量接近（差 ≤2）时按句号一一对应（AI 译文基本逐句翻，这样每行中英文才真正对应），
+// 差的一两条并入末行；数量差得多时才按累计长度比例分配
 function pairProportional(ens, zhs, para) {
   const out = [];
+  if (zhs.length && Math.abs(ens.length - zhs.length) <= 2) {
+    const n = Math.min(ens.length, zhs.length);
+    for (let i = 0; i < n; i++) out.push({ para, i, en: ens[i], zh: zhs[i] });
+    if (zhs.length > ens.length) out[out.length - 1].zh += zhs.slice(n).join('');
+    if (ens.length > zhs.length) out[out.length - 1].en += ' ' + ens.slice(n).join(' ');
+    return out;
+  }
+  const out2 = [];
   const totalEn = ens.reduce((a, s) => a + s.length, 0) || 1;
   if (zhs.length && zhs.length <= ens.length) {
     // 中文句更少：英文按长度比例分组，每组共用一句中文（保证无空缺）
@@ -51,9 +59,9 @@ function pairProportional(ens, zhs, para) {
       while (ei < ens.length && (isLast || grp.length === 0 || cumEn < target)) {
         grp.push(ens[ei]); cumEn += ens[ei].length; ei++;
       }
-      if (grp.length) out.push({ para, i: out.length, en: grp.join(' '), zh: zhs[z] });
+      if (grp.length) out2.push({ para, i: out2.length, en: grp.join(' '), zh: zhs[z] });
     }
-    return out;
+    return out2;
   }
   // 中文句更多（或为空）：按英文句长度比例把中文句分给每句英文
   const totalZh = zhs.reduce((a, s) => a + s.length, 0) || 1;
@@ -66,12 +74,12 @@ function pairProportional(ens, zhs, para) {
     while (zi < zhs.length && (isLast || zh === '' || cumZh < target)) {
       zh += zhs[zi]; cumZh += zhs[zi].length; zi++;
     }
-    out.push({ para, i, en: ens[i], zh });
+    out2.push({ para, i, en: ens[i], zh });
   }
-  if (zi < zhs.length && out.length) out[out.length - 1].zh += zhs.slice(zi).join('');
+  if (zi < zhs.length && out2.length) out2[out2.length - 1].zh += zhs.slice(zi).join('');
   // 兜底：任何一侧为空的行并入相邻行（不留「译文缺失」，也不丢内容）
   const merged = [];
-  for (const row of out) {
+  for (const row of out2) {
     if (!row.zh && merged.length) merged[merged.length - 1].en += ' ' + row.en;
     else if (!row.en && merged.length) merged[merged.length - 1].zh += row.zh;
     else merged.push(row);
@@ -90,15 +98,29 @@ function markerAligned(enParas, zhParas) {
   const enParts = enText.split(/(?=[A-O]\s*[)．.])/).map((s) => s.trim()).filter(Boolean);
   const zhParts = zhText.split(/(?=(?:\[[A-O]\]|[A-O][)．.、]))/).map((s) => s.trim()).filter(Boolean);
   if (enParts.length < 4) return null;
-  const enSecs = enParts.filter((s) => /^[A-O]\s*[)．.]/.test(s));
-  const zhSecs = zhParts.filter((s) => /^(?:\[[A-O]\]|[A-O][)．.、])/.test(s));
-  if (enSecs.length !== zhSecs.length || enSecs.length < 4) return null;
-  // 标题等无序号碎片并入第一份；段落续行（页眉分割残留）由 join 顺序自然并入前一段
-  const enLead = enParts.slice(0, enParts.indexOf(enSecs[0])).join(' ');
-  const zhLead = zhParts.slice(0, zhParts.indexOf(zhSecs[0])).join(' ');
+  const enSecs = enParts
+    .filter((s) => /^[A-O]\s*[)．.]/.test(s))
+    .map((s) => ({ letter: s.match(/^[A-O]/)[0], text: s }));
+  const zhSecs = zhParts
+    .filter((s) => /^(?:\[[A-O]\]|[A-O][)．.、])/.test(s))
+    .map((s) => ({ letter: (s.match(/\[([A-O])\]/) || s.match(/^([A-O])/))[1], text: s }));
+  if (enSecs.length < 4) return null;
+  // 按「字母」配对而非按下标：某侧字母缺失/乱序时宁可放弃段落级对齐，
+  // 也不能让 B 段的英文配上 C 段的中文（已踩坑：英N/中M 的错位就是按下标配对的产物）
+  const zhByLetter = new Map(zhSecs.map((s) => [s.letter, s.text]));
   const rows = [];
-  enSecs.forEach((s, k) => rows.push({ para: k, i: k, en: (k === 0 && enLead ? enLead + ' ' : '') + s, zh: (k === 0 && zhLead ? zhLead + ' ' : '') + (zhSecs[k] || '') }));
-  return rows.length >= 4 ? rows : null;
+  for (const s of enSecs) {
+    const zh = zhByLetter.get(s.letter);
+    if (zh === undefined) return null;
+    rows.push({ para: rows.length, i: rows.length, en: s.text, zh });
+  }
+  if (rows.length < 4) return null;
+  // 标题等无序号碎片并入第一份
+  const enLead = enParts.filter((p) => !/^[A-O]\s*[)．.]/.test(p)).join(' ');
+  const zhLead = zhParts.filter((p) => !/^(?:\[[A-O]\]|[A-O][)．.、])/.test(p)).join(' ');
+  if (enLead) rows[0].en = enLead + ' ' + rows[0].en;
+  if (zhLead) rows[0].zh = zhLead + ' ' + rows[0].zh;
+  return rows;
 }
 
 // 主入口：返回 [{ para, i, en, zh }]

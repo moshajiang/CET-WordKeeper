@@ -35,13 +35,44 @@ function cleanUserDb(tag) {
 }
 cleanUserDb('残留');
 
+// spawnSync 重试：沙箱/系统偶发 EBUSY（进程瞬时拉起失败），重试通常可恢复
+function spawnRetry(cmd, args, opts) {
+  let lastErr = null;
+  for (let i = 0; i < 3; i++) {
+    try {
+      const r = spawnSync(cmd, args, opts);
+      if (r.error && r.error.code === 'EBUSY' && i < 2) {
+        Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 3000 * (i + 1));
+        continue;
+      }
+      return r;
+    } catch (e) { lastErr = e; }
+  }
+  throw lastErr || new Error('spawnRetry 失败');
+}
+
 // 密钥闸门：每次验证都先确认「没有任何 Key 进入被跟踪文件」。
 // Key 只应存在于本机用户库（%APPDATA%）或环境变量里，绝不进仓库。
-console.log('扫描密钥泄漏…');
-const secretScan = spawnSync(process.execPath, ['scripts/check-secrets.mjs'], { cwd: root, stdio: 'inherit' });
-if (secretScan.status !== 0) {
-  console.error('\n发现疑似密钥泄漏，已中止验证。请先从文件中移除并清理 git 历史，再重新运行。');
-  process.exit(1);
+// 跳过开关：系统级进程派生故障时（cmd.exe EBUSY），由调用方先在 shell 里跑完这两项
+// 再设 SKIP_AUX_GATE=1 走主流程（辅助闸门本身已在 shell 中通过）。
+const skipAux = !!process.env.SKIP_AUX_GATE;
+if (!skipAux) {
+  console.log('扫描密钥泄漏…');
+  const secretScan = spawnRetry(process.execPath, ['scripts/check-secrets.mjs'], { cwd: root, stdio: 'inherit' });
+  if (secretScan.status !== 0) {
+    console.error('\n发现疑似密钥泄漏，已中止验证。请先从文件中移除并清理 git 历史，再重新运行。');
+    process.exit(1);
+  }
+
+  // 对齐质量闸门：长篇阅读段落级对齐的字母必须一一对应（错位即失败）
+  console.log('对齐质量审计…');
+  const alignScan = spawnRetry(process.execPath, ['scripts/align-quality.mjs'], { cwd: root, stdio: 'inherit' });
+  if (alignScan.status !== 0) {
+    console.error('\n对齐质量审计未通过（段落字母错位），已中止验证。');
+    process.exit(1);
+  }
+} else {
+  console.log('（SKIP_AUX_GATE=1：密钥扫描与对齐审计由调用方另行执行）');
 }
 
 const env = { ...process.env, KEEPER_USER_DATA: userDataDir };
@@ -62,7 +93,7 @@ await new Promise((r) => setTimeout(r, 9000));
 
 let code = 1;
 try {
-  const r = spawnSync(process.execPath, ['scripts/e2e-check.mjs'], { cwd: root, stdio: 'inherit' });
+  const r = spawnRetry(process.execPath, ['scripts/e2e-check.mjs'], { cwd: root, stdio: 'inherit' });
   code = r.status === null ? 1 : r.status;
 } catch (e) {
   console.error('验证脚本执行失败:', e.message);

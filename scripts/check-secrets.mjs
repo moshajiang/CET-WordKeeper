@@ -1,7 +1,7 @@
 // 密钥泄漏闸门：扫描所有被 git 跟踪的文件，发现疑似 API Key 立即失败。
 // 除了通用模式（sk-xxx / api_key=xxx），还会把「本机真实使用的 Key」做一次精确匹配。
 // 用法: node scripts/check-secrets.mjs
-import { execSync } from 'child_process';
+import { spawnSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -36,8 +36,26 @@ try {
 
 const mask = (s) => (s.length > 10 ? s.slice(0, 6) + '***' + s.slice(-3) : '***');
 
-const files = execSync('git ls-files', { cwd: root, maxBuffer: 32 * 1024 * 1024 })
-  .toString('utf8').split('\n').map((s) => s.trim()).filter(Boolean);
+// 不走 shell（execSync 会派生 cmd.exe，部分环境会拦截）：直接 git 直调
+// 沙箱偶发 EBUSY（进程瞬时拉起失败）→ 自动重试
+let ls = null;
+for (let i = 0; i < 5; i++) {
+  ls = spawnSync('git', ['ls-files'], { cwd: root, maxBuffer: 32 * 1024 * 1024, encoding: 'utf8' });
+  if (!ls.error) break;
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 2000 * (i + 1));
+}
+if (ls.error || ls.status !== 0) {
+  // 兜底：读取 Bash 预生成的文件清单（.verify-filelist），避免环境派生受阻时闸门失效
+  const listFile = path.join(root, '.verify-filelist');
+  if (fs.existsSync(listFile)) {
+    console.warn('git ls-files 派生失败，使用预生成清单兜底');
+    ls = { stdout: fs.readFileSync(listFile, 'utf8'), status: 0, error: null };
+  } else {
+    console.error('git ls-files 执行失败:', ls.error ? ls.error.message : 'exit ' + ls.status);
+    process.exit(1);
+  }
+}
+const files = ls.stdout.split('\n').map((s) => s.trim()).filter(Boolean);
 
 const findings = [];
 let scanned = 0;

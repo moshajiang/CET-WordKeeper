@@ -867,11 +867,15 @@ check('写作范文可离线展开查看', refBtn && refShown.includes('Digital 
   await js(`(() => { const b = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.trim() === '逐句对照'); if (b) b.click(); return !!b; })()`); await sleep(800);
   const btnThere = await js(`!!document.querySelector('.back-to-q')`);
   await js(`(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = 999999; })()`); await sleep(600);
-  const topBefore = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
+  const topBefore0 = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
   await js(`(() => { const b = document.querySelector('.back-to-q'); if (b) b.click(); return 1; })()`); await sleep(900);
-  const topAfter = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); return el ? Math.round(el.getBoundingClientRect().top) : -9999; })()`);
-  check('对照翻译可一键回到做题区', btnThere && topBefore < 0 && topAfter >= 0 && topAfter < 700,
-    `按钮=${btnThere} 题目区 top ${topBefore} → ${topAfter}`);
+  const mAfter = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); const m = document.querySelector('.main'); return { top: el ? Math.round(el.getBoundingClientRect().top) : -9999, scrollTop: m ? Math.round(m.scrollTop) : -1, has: !!el }; })()`);
+  let topAfter = mAfter ? mAfter.top : undefined;
+  if (topAfter === undefined) { await sleep(600); const m2 = await js(`(() => { const el = document.querySelector('.passage-pane .qpanel'); const m = document.querySelector('.main'); return { top: el ? Math.round(el.getBoundingClientRect().top) : -9999, scrollTop: m ? Math.round(m.scrollTop) : -1 }; })()`); topAfter = m2 ? m2.top : undefined; }
+  const scrollFell = mAfter && typeof mAfter.scrollTop === 'number' && mAfter.scrollTop >= 0 && mAfter.scrollTop < topBefore0;
+
+check('对照翻译可一键回到做题区', btnThere && topBefore0 < 0 && topAfter >= 0 && topAfter < 700,
+    `按钮=${btnThere} 题目区 top ${topBefore0} → ${topAfter}`);
 }
 
 // ===== 内联对照 / 返回真题库 / 数据换行清理（回归闸门）=====
