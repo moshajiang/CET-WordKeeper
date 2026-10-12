@@ -125,14 +125,23 @@ function healGlued(text) {
 // 页眉页脚 / 水印行清理：源 PDF/DOCX 的页眉（「2026 年 6 月大学英语四级考试真题(第 1 套) 4」）、
 // 页脚（「2022年 6 月英语六级真题第1套 第 1 页 共 1 0页 b y :新一文化」）、翻译标题行、作答说明。
 // 逐行判断，仅删除独立成行且满足「年份开头 + 四级/六级 + 真题或考试+第几套/页码」的行，正文零误伤。
+// 行首页眉粘连正文时：剥掉页眉部分保留正文（页码+断字年份+套号后跟英文内容）
+function cleanHeaderLine(line) {
+  const m = String(line).match(/^(.{0,50}?(?:四级|六级)[^。！？]{0,30}?套[\s)）·•・«»\u00AD]*\d{0,3}\s*)(\S.*)$/);
+  if (m && /(真题|考试)/.test(m[1]) && /套/.test(m[1]) && m[2].length > 15) return m[2];
+  return line;
+}
 function isExamJunkLine(line) {
   const s = String(line).trim();
-  if (!s || s.length > 90) return false;
-  if (/^(19|20)\d{2}\s*年/.test(s) && /(四级|六级)/.test(s) && (/真题/.test(s) || (/考试/.test(s) && (/第\s*\d+\s*套/.test(s) || /页/.test(s))))) return true;
-  // 截断的页脚碎片（如「六级 2021 年 6 月 4」）：六级/四级开头 + 年份数字、无英文单词、无句末标点
-  if (/^(四级|六级)/.test(s) && /(19|20)\d{2}/.test(s) && s.length <= 30 && !/[。！？]/.test(s) && !/[A-Za-z]{2,}/.test(s)) return true;
-  if (/^注意[:：]\s*此部分试题请在答题卡/.test(s)) return true;   // 作答说明行
-  if (/^(b\s*)?y\s*[:：]\s*新一文化/.test(s)) return true;        // PDF 水印行
+  if (!s || s.length > 95) return false;
+  // 资源站水印 / 说明行
+  if (/^(微信公众号|本资源|说明：|来源：)/.test(s) && /(四级|六级|真题|听力)/.test(s)) return true;
+  if (/^注意[:：]\s*此部分试题请在答题卡/.test(s)) return true;
+  if (/^(b\s*)?y\s*[:：]\s*新一文化/.test(s)) return true;
+  // 通配：去除空格/项目符号/连字符后，仍含「年份 + 四级/六级 + 真题/考试」的行
+  //（覆盖：年份开头的经典页眉、页码开头「13 •2 023年…」、年份断字「2 023年」、日式中点等全部变体）
+  const compact = s.replace(/[\s•·・\-—_\u00AD]/g, '');
+  if (compact.length <= 70 && /(19|20)\d{2}年/.test(compact) && /(四级|六级)/.test(compact) && /(真题|考试)/.test(compact)) return true;
   return false;
 }
 function stripExamJunkLines(text) {
@@ -141,14 +150,14 @@ function stripExamJunkLines(text) {
     // 无换行的短文本：只清粘连的水印碎片
     return t.replace(/\s*b\s*y\s*[:：]\s*新一文化\s*/g, '');
   }
-  const kept = t.split(/\r?\n/).filter((l) => !isExamJunkLine(l));
+  const kept = t.split(/\r?\n/).map((l) => cleanHeaderLine(l)).filter((l) => {
+    const s = l.trim();
+    return s && !isExamJunkLine(s);
+  });
   let out = kept.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\s*b\s*y\s*[:：]\s*新一文化\s*/g, '');
   return out.replace(/^\n+/, '').replace(/\s+$/, '');
 }
 
-// 硬换行合并：源文档在句中断行（段内自动换行）导致「突然换行」。
-// 规则：当前行不以句末标点收尾、且下一行不是新段落标记时，拼接到下一行
-//（英文补空格、中文直接连）；段落标记/板块标题行永不参与拼接。
 function startsBlockMarker(s) {
   // ⚠️ 板块关键词必须大小写敏感：正文里小写开头的 question / part / direction 开头的
   // 普通句子，若用 /i 会误判为板块标记而拒绝拼接（已踩坑）
