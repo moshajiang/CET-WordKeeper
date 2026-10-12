@@ -50,6 +50,33 @@ for (const [level, year, month, set, section, seq, content, translation] of rows
 console.log('篇章总数:', total);
 console.log('长篇阅读：字母对应全部正确', matchOk, '篇 / 存在字母错位', letterBad.length, '篇');
 letterBad.slice(0, 8).forEach((x) => console.log('  ✗', x.tag, ':', x.bad.join(' , ')));
+
+// ③ 数字锚点命中率（排除选词填空 26–35 空号）：信息性指标，反映真实对应水平
+{
+  const anOf = (s) => (String(s).match(/\d+(?:[,.]\d+)*/g) || [])
+    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); });
+  let anTotal = 0, anHit = 0; const lowHit = [];
+  for (const [level, year, month, set, section, seq, content, translation] of rows) {
+    const pairs = alignBilingual(content, translation);
+    let t = 0, h = 0;
+    for (const r of pairs) {
+      const ds = anOf(r.en);
+      if (!ds.length) continue;
+      const zh = String(r.zh);
+      t += ds.length;
+      h += ds.filter((d) => zh.includes(d)).length;
+    }
+    if (t >= 3) {
+      anTotal += t; anHit += h;
+      if (h / t < 0.35) lowHit.push(`${level} ${year}.${month} set${set} ${section}${seq > 1 ? ' ' + seq : ''} (${Math.round(h / t * 100)}%)`);
+    }
+  }
+  const rate = anTotal ? Math.round((anHit / anTotal) * 100) : 0;
+  console.log(`数字锚点命中率：${rate}%（${anHit}/${anTotal}，已排除选词填空空号）`);
+  console.log('命中率 <35% 的篇章:', lowHit.length, '篇');
+  lowHit.slice(0, 6).forEach((x) => console.log('  ◆', x));
+}
+
 console.log('句子级存在比例异常行的篇章:', suspect.length, '篇（比例异常 = 译文颗粒度与原文不同，非错位）');
 suspect.sort((a, b) => b.count - a.count);
 suspect.slice(0, 8).forEach((x) => console.log('  ◆', x.tag, `(${x.count} 行)`));
