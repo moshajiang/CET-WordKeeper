@@ -639,13 +639,16 @@ function sectionName(section, seq) {
 }
 
 function wordClass(tk) {
-  if (tk.t !== 'w') return '';
+  let cls = '';
+  if (tk.t !== 'w') return cls;
   const n = simpleNorm(tk.text);
   const st = userWords.value[n];
-  if (st === 'learning') return 'marked';
-  if (st === 'mastered') return 'marked mastered';
-  if (scanOn.value && hardSet.value.has(n)) return 'hard';
-  return '';
+  if (st === 'learning') cls = 'marked';
+  if (st === 'mastered') cls = 'marked mastered';
+  if (scanOn.value && hardSet.value.has(n)) cls += ' hard';
+  // 选词填空的空位编号（26–35）：渲染为高亮下划线空位，而非普通数字
+  if (activePassage.value && activePassage.value.section === 'cloze' && /^(2[6-9]|3[0-5])$/.test(tk.text)) cls += ' blank-num';
+  return cls.trim();
 }
 
 const hardSet = computed(() => new Set(hardWords.value.map((h) => h.word)));

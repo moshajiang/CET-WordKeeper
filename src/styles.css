@@ -619,3 +619,10 @@ html.dark ::-webkit-scrollbar-corner { background: transparent; }
   cursor: pointer; margin-bottom: 4px;
 }
 .back-lib:hover { color: var(--accent); }
+
+/* 选词填空空位编号 */
+.blank-num {
+  color: var(--accent); font-weight: 600;
+  border-bottom: 2px solid var(--accent);
+  padding: 0 5px; margin: 0 1px;
+}
