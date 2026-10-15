@@ -257,7 +257,10 @@ for (const f of files) {
     // 对齐结果写死绑定：构建期一次性算好每篇的中英句对应（锚点审计见 align-quality）
     let rowsJson = null;
     if (trFinal) {
-      try { rowsJson = JSON.stringify(alignBilingual(contentFinal, trFinal, lexMap)); } catch (e) { console.warn('rows 生成失败:', e.message); }
+      try {
+        const blankNums = new Set((p.questions || []).filter((q) => q.qtype === 'cloze').map((q) => parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10)).filter((x) => !isNaN(x)));
+        rowsJson = JSON.stringify(alignBilingual(contentFinal, trFinal, lexMap, { blankNums }));
+      } catch (e) { console.warn('rows 生成失败:', e.message); }
     }
     db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference, rows) VALUES (?,?,?,?,?,?,?,?)',
       [examId, p.section, p.seq, p.title, contentFinal, trFinal, (ovP && ovP.reference) || null, rowsJson]);

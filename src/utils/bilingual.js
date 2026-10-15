@@ -45,9 +45,9 @@ export function splitZh(text) {
 }
 
 // 数字锚点：≥2 位数字（选词填空的 26–35 空号不算——它们不会出现在译文里）
-function anchorsOf(text) {
+function anchorsOf(text, exclude) {
   return [...new Set((String(text).match(/\d+(?:[,.]\d+)*/g) || [])
-    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); }))];
+    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(exclude && exclude.has(n)) && !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); }))];
 }
 
 const enWordsOf = (s) => (String(s).match(/[A-Za-z']+/g) || []).length;
@@ -104,7 +104,7 @@ function unionLex(sents, from, to) {
 }
 
 /* 预计算句子特征：len / nums / lex（EN 句实词的中文候选集合） */
-function prepEn(text, lex) {
+function prepEn(text, lex, exclude) {
   const words = (String(text).match(/[A-Za-z']+/g) || []).map((w) => w.toLowerCase().replace(/^'|'$/g, ''));
   const lexSet = new Set();
   if (lex) {
@@ -113,10 +113,10 @@ function prepEn(text, lex) {
       if (cands) for (const cand of cands) lexSet.add(cand);
     }
   }
-  return { len: Math.max(1, words.length), nums: new Set(anchorsOf(text)), lex: lexSet };
+  return { len: Math.max(1, words.length), nums: new Set(anchorsOf(text, exclude)), lex: lexSet };
 }
-function prepZh(text) {
-  return { len: Math.max(1, zhCharsOf(text)), nums: new Set(anchorsOf(text)) };
+function prepZh(text, exclude) {
+  return { len: Math.max(1, zhCharsOf(text)), nums: new Set(anchorsOf(text, exclude)) };
 }
 // 轻量词形回退（词典没查到原形时试剥后缀）
 function wordFormsFallback(w) {
@@ -208,12 +208,12 @@ function alignPairDP(enSents, zhSents) {
 function markerAligned(enParas, zhParas) {
   const enText = enParas.join('\n');
   const zhText = zhParas.join('\n');
-  const enParts = enText.split(/(?=[A-O]\s*[)．.])/).map((s) => s.trim()).filter(Boolean);
+  const enParts = enText.split(/(?=(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\]))/).map((s) => s.trim()).filter(Boolean);
   const zhParts = zhText.split(/(?=(?:\[[A-O]\]|[A-O][)．.、]))/).map((s) => s.trim()).filter(Boolean);
   if (enParts.length < 4) return null;
   const enSecs = enParts
-    .filter((s) => /^[A-O]\s*[)．.]/.test(s))
-    .map((s) => ({ letter: s.match(/^[A-O]/)[0], text: s }));
+    .filter((s) => /^(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\])/.test(s))
+    .map((s) => ({ letter: s.match(/[A-O]/)[0], text: s }));
   const zhSecs = zhParts
     .filter((s) => /^(?:\[[A-O]\]|[A-O][)．.、])/.test(s))
     .map((s) => ({ letter: (s.match(/\[([A-O])\]/) || s.match(/^([A-O])/))[1], text: s }));
@@ -229,16 +229,22 @@ function markerAligned(enParas, zhParas) {
   }
   if (rows.length < 4) return null;
   // 标题等无序号碎片并入第一份
-  const enLead = enParts.filter((p) => !/^[A-O]\s*[)．.]/.test(p)).join(' ');
+  const enLead = enParts.filter((p) => !/^(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\])/.test(p)).join(' ');
   const zhLead = zhParts.filter((p) => !/^(?:\[[A-O]\]|[A-O][)．.、])/.test(p)).join(' ');
   if (enLead) rows[0].en = enLead + ' ' + rows[0].en;
   if (zhLead) rows[0].zh = zhLead + ' ' + rows[0].zh;
+  // 内容无损门：段落级配对必须覆盖译文的全部内容，否则回退句级 DP
+  //（此前部分篇章的译文因标记形态差异被整段丢弃，覆盖率最低只剩 44%——已踩坑）
+  const zhTotal = zhCharsOf(zhText);
+  const zhKept = rows.reduce((acc, r) => acc + zhCharsOf(r.zh), 0);
+  if (zhTotal && zhKept / zhTotal < 0.97) return null;
   return mergeEmptyRows(rows);
 }
 
 // ===== 主入口：返回 [{ para, i, en, zh }] =====
 // lex：可选的「英词 → 中文候选串数组」映射（来自 ECDICT），传入后启用词典评分
-export function alignBilingual(content, translation, lex) {
+export function alignBilingual(content, translation, lex, opts) {
+  const exclude = opts && opts.blankNums;
   const enParas = String(content || '').split(/\n+/).map((s) => s.trim()).filter(Boolean);
   const zhParas = String(translation || '').split(/\n+/).map((s) => s.trim()).filter(Boolean);
   const out = [];
@@ -252,9 +258,9 @@ export function alignBilingual(content, translation, lex) {
     out.push(...marked);
     return out;
   }
-  const alignAll = (enText, zhText, para) => {
-    const ens = splitEn(enText).map((s) => ({ text: s, ...prepEn(s, lex) }));
-    const zhs = splitZh(zhText).map((s) => ({ text: s, ...prepZh(s) }));
+  const alignAll = (enText, zhText, para, exclude) => {
+    const ens = splitEn(enText).map((s) => ({ text: s, ...prepEn(s, lex, exclude) }));
+    const zhs = splitZh(zhText).map((s) => ({ text: s, ...prepZh(s, exclude) }));
     const beads = alignPairDP(ens, zhs);
     const rows = [];
     for (const b of beads) {
@@ -268,10 +274,10 @@ export function alignBilingual(content, translation, lex) {
   // 段落数一致时按段对齐（更准）；否则整篇对齐
   if (enParas.length > 1 && enParas.length === zhParas.length) {
     const out2 = [];
-    enParas.forEach((p, pi) => out2.push(...alignAll(p, zhParas[pi], pi)));
+    enParas.forEach((p, pi) => out2.push(...alignAll(p, zhParas[pi], pi, exclude)));
     return out2;
   }
-  return alignAll(enParas.join(' '), zhParas.join(' '), 0);
+  return alignAll(enParas.join(' '), zhParas.join(' '), 0, exclude);
 }
 
 // 取匹配题正文里的段落字母（A) / [A] / A. 三种写法都认），用于生成作答按钮

@@ -143,13 +143,14 @@ const items = computed(() => {
         for (const q of p.questions || []) {
           const num = parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10);
           const letter = String(q.answer || '').trim();
-          const hit = (q.options || []).find?.((o) => String(o).startsWith(letter + ')') || String(o).startsWith(letter + '.'));
+          const hit = parseOpts(q.options).find((o) => o.startsWith(letter + ')') || o.startsWith(letter + '.'));
           if (num >= 26 && num <= 35 && hit) wordByNum[num] = String(hit).replace(/^[A-O][).]\s*/, '').trim();
         }
       }
       rows = p.rows.map((r, i) => {
         let en = String(r.en || '');
-        if (p.section === 'cloze') en = en.replace(/\b(2[6-9]|3[0-5])\b/g, (mm) => wordByNum[+mm] || mm);
+        // 空号形态：数字可紧贴后文（如「26stress」），边界用前后非数字判定
+        if (p.section === 'cloze') en = en.replace(/(?<!\d)(2[6-9]|3[0-5])(?!\d)/g, (mm) => wordByNum[+mm] || mm);
         if (p.section === 'match') en = en.replace(/^\[?[A-O]\]?\s*[)．.]?\s*/, '');
         return { para: r.para ?? 0, i, en, zh: String(r.zh || '') };
       });
