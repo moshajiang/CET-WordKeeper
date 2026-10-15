@@ -1,14 +1,18 @@
-// 逐句对照工具：把「原文」与「整段译文」按句对齐（纯函数，便于测试与复用）
-// 用途：阅读器里的「逐句对照」「对照背诵」两种展示模式
+// 逐句对照对齐引擎 v0.3：Gale-Church 统计 DP + 数字锚点 + ECDICT 词典评分
+// 理论依据：Gale & Church (1993)；Champollion (Ma, LDC 2006) 中英对齐词典路线；
+// DP 骨架参考 multi-align (github.com/tanyaqiong31029/multi-align, MIT)。
+// 用途：阅读器「逐句对照」、对照背诵页 两种展示模式
 //
-// 对齐策略（v0.2.8）：
-// 1. 长篇阅读：两侧 A–O 字标记 → 按字母配对（缺字母软退化：缺失行留空并入邻行）
-// 2. 段落数一致 → 逐段对齐
-// 3. 句子级：句数差 ≤2 → 1:1（AI 译文基本逐句翻）；差得多 → DP 动态规划对齐
-//    DP 允许 1-1/1-2/2-1/2-2/1-0/0-1，代价 = 长度比偏离 + 数字锚点奖励，
-//    单调对齐保证局部差异（标题行/并句/漏译）就地吸收，不扩散成全篇漂移
+// 对齐流程：
+// 1. 长篇阅读：两侧 A–L 字标记 → 按字母配对（软退化：缺失行留空并入邻行）
+// 2. 其余：单调 DP（允许 1-1/1-2/2-1/2-2/1-0/0-1），代价 = 长度概率 + 锚点奖励 + 词典奖励
+//    —— 局部差异（标题行/并句/漏译）被 DP 就地吸收，不再扩散成全篇漂移
 
 const EN_ABBR = /(?:\b(?:Mr|Mrs|Ms|Dr|Prof|St|Jr|Sr|vs|etc|No|Fig|Inc|Ltd|Co|e\.g|i\.e|a\.m|p\.m|U\.S|U\.K|U\.N)\.|\b[A-Z]\.)$/i;
+
+// ===== 校准常量（2026-10 由全库 579 个锚点确认的 1-1 行统计） =====
+const C_RATIO = 1.58;   // 每个英文单词对应的中文汉字数（均值）
+const S2_RATIO = 0.47;  // 该比的方差
 
 // 英文断句：句末标点 + 空白 + 大写/引号开头；避免切小数（1.8）、缩写（Dr.）与序号
 export function splitEn(text) {
@@ -18,7 +22,6 @@ export function splitEn(text) {
   const out = [];
   for (const p of parts) {
     const prev = out[out.length - 1];
-    // 缩写结尾、或以数字+点结尾（1.8 / $5.）→ 与上一句合并
     if (prev && (EN_ABBR.test(prev) || /\d\.$/.test(prev) || prev.length < 12)) out[out.length - 1] = prev + ' ' + p;
     else out.push(p);
   }
@@ -43,9 +46,12 @@ export function splitZh(text) {
 
 // 数字锚点：≥2 位数字（选词填空的 26–35 空号不算——它们不会出现在译文里）
 function anchorsOf(text) {
-  return (String(text).match(/\d+(?:[,.]\d+)*/g) || [])
-    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); });
+  return [...new Set((String(text).match(/\d+(?:[,.]\d+)*/g) || [])
+    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); }))];
 }
+
+const enWordsOf = (s) => (String(s).match(/[A-Za-z']+/g) || []).length;
+const zhCharsOf = (s) => (String(s).match(/[\u4e00-\u9fff]/g) || []).length;
 
 // 空缺侧行合并：一侧为空的行并入相邻行（不留「译文缺失」，也不丢内容）
 function mergeEmptyRows(rows) {
@@ -58,74 +64,147 @@ function mergeEmptyRows(rows) {
   return merged;
 }
 
-// DP 动态规划对齐（Gale-Church 简化版）：
-// 单调、允许 1-1/1-2/2-1/2-2/1-0/0-1；代价 = |log(中文字符/英文长度/基准比)| − 数字锚点奖励
-// 用于句数差大的篇章（比例分配会在这里产生漂移）
-function alignDP(ens, zhs, para, kBase) {
-  const n = ens.length, m = zhs.length;
-  const cost = (enTexts, zhTexts) => {
-    const enLen = enTexts.join(' ').length;
-    const zhLen = zhTexts.join('').length;
-    let c = Math.abs(Math.log(Math.max(1, zhLen) / Math.max(1, enLen * kBase)));
-    const ds = anchorsOf(enTexts.join(' '));
-    if (ds.length) {
-      const zhAll = zhTexts.join('');
-      const hitN = ds.filter((d) => zhAll.includes(d)).length;
-      c -= 2 * hitN;              // 锚点命中强奖励
-      c += 0.5 * (ds.length - hitN); // 未命中轻罚
+// ===== DP 核心 =====
+
+/* 误差函数（Abramowitz & Stegun 7.1.26 近似） */
+function erf(x) {
+  const s = x < 0 ? -1 : 1;
+  x = Math.abs(x);
+  const t = 1 / (1 + 0.3275911 * x);
+  const y = 1 - (((((1.061405429 * t - 1.453152027) * t) + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-x * x);
+  return s * y;
+}
+/* 双侧概率 p = 2(1-Φ(|z|))，下限截断防 log(0) */
+function pd(z) {
+  return Math.max(2 * (1 - 0.5 * (1 + erf(Math.abs(z) / Math.SQRT2))), 1e-9);
+}
+/* 句对类型罚分（Gale-Church Table 5 换算） */
+const PEN = { '11': 0, '12': 230, '21': 230, '22': 440, '10': 450, '01': 450 };
+const OPS = [[1, 1, '11'], [1, 2, '12'], [2, 1, '21'], [2, 2, '22'], [1, 0, '10'], [0, 1, '01']];
+
+const W_NUM = 6;   // 数字锚点 Dice 权重
+const W_LEX = 5;   // 词典词汇命中权重
+
+function dice(a, b) {
+  if (!a || !b || !a.size || !b.size) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return (2 * inter) / (a.size + b.size);
+}
+
+function unionNums(sents, from, to) {
+  const u = new Set();
+  for (let x = from; x < to; x++) for (const v of sents[x].nums) u.add(v);
+  return u;
+}
+function unionLex(sents, from, to) {
+  const u = new Set();
+  for (let x = from; x < to; x++) for (const v of sents[x].lex) u.add(v);
+  return u;
+}
+
+/* 预计算句子特征：len / nums / lex（EN 句实词的中文候选集合） */
+function prepEn(text, lex) {
+  const words = (String(text).match(/[A-Za-z']+/g) || []).map((w) => w.toLowerCase().replace(/^'|'$/g, ''));
+  const lexSet = new Set();
+  if (lex) {
+    for (const w of words) {
+      const cands = lex[w] || lex[wordFormsFallback(w)];
+      if (cands) for (const cand of cands) lexSet.add(cand);
+    }
+  }
+  return { len: Math.max(1, words.length), nums: new Set(anchorsOf(text)), lex: lexSet };
+}
+function prepZh(text) {
+  return { len: Math.max(1, zhCharsOf(text)), nums: new Set(anchorsOf(text)) };
+}
+// 轻量词形回退（词典没查到原形时试剥后缀）
+function wordFormsFallback(w) {
+  if (w.length > 4 && w.endsWith('ing')) return w.slice(0, -3);
+  if (w.length > 4 && w.endsWith('ed')) return w.slice(0, -2);
+  if (w.length > 3 && w.endsWith('es')) return w.slice(0, -2);
+  if (w.length > 3 && w.endsWith('s')) return w.slice(0, -1);
+  return w;
+}
+
+/* 单语对 DP：enSents/zhSents 为预计算的句子对象，返回 beads [{ ai:[], bi:[], type }] */
+function alignPairDP(enSents, zhSents) {
+  const n = enSents.length, m = zhSents.length;
+  if (n === 0 || m === 0) {
+    const beads = [];
+    for (let i = 0; i < n; i++) beads.push({ ai: [i], bi: [], type: '1-0' });
+    for (let j = 0; j < m; j++) beads.push({ ai: [], bi: [j], type: '0-1' });
+    return beads;
+  }
+  const W = m + 1;
+  const size = (n + 1) * (m + 1);
+  const cost = new Float64Array(size).fill(Infinity);
+  const prevIdx = new Int32Array(size).fill(-1);
+  const typeArr = new Int8Array(size).fill(0);
+  cost[0] = 0;
+
+  const beadCost = (i, j, ni, nj, type) => {
+    let la = 0, lb = 0;
+    for (let x = i; x < ni; x++) la += enSents[x].len;
+    for (let x = j; x < nj; x++) lb += zhSents[x].len;
+    // 长度概率代价：z = (中文字数 − c×英文词数) / √(词数×s²)
+    const z = (lb - C_RATIO * la) / Math.sqrt(Math.max(1, la) * S2_RATIO);
+    let c = -100 * Math.log(pd(z));
+    c += PEN[type];
+    if (W_NUM > 0) {
+      const na = unionNums(enSents, i, ni);
+      const nb = unionNums(zhSents, j, nj);
+      if (na.size && nb.size) c -= W_NUM * dice(na, nb);
+      else if (na.size !== nb.size) c += W_NUM * 0.2;
+    }
+    if (W_LEX > 0) {
+      // 词典评分：英句实词的中文候选（并集）在中文文本中的命中比例
+      const cands = unionLex(enSents, i, ni);
+      if (cands.size) {
+        const zhAll = zhSents.slice(j, nj).join('');
+        let hits = 0;
+        for (const cand of cands) if (zhAll.includes(cand)) hits++;
+        c -= W_LEX * (hits / cands.size);
+      }
     }
     return c;
   };
-  const OPS = [[1, 1], [1, 2], [2, 1], [2, 2], [1, 0], [0, 1]];
-  const INF = 1e9;
-  const dp = Array.from({ length: n + 1 }, () => Array(m + 1).fill(INF));
-  const bt = Array.from({ length: n + 1 }, () => Array(m + 1).fill(null));
-  dp[0][0] = 0;
+
   for (let i = 0; i <= n; i++) {
+    const iW = i * W;
     for (let j = 0; j <= m; j++) {
-      if (dp[i][j] >= INF) continue;
-      for (const [a, b] of OPS) {
-        const ni = i + a, nj = j + b;
+      const cur = cost[iW + j];
+      if (!isFinite(cur)) continue;
+      for (let t = 0; t < OPS.length; t++) {
+        const di = OPS[t][0], dj = OPS[t][1], type = OPS[t][2];
+        const ni = i + di, nj = j + dj;
         if (ni > n || nj > m) continue;
-        let c = cost(ens.slice(i, ni), zhs.slice(j, nj));
-        if (a === 0 || b === 0) c += 6;   // 跳过惩罚：优先合并而不是丢内容
-        if (a === 2 && b === 2) c += 1;
-        if (dp[i][j] + c < dp[ni][nj]) { dp[ni][nj] = dp[i][j] + c; bt[ni][nj] = { pi: i, pj: j }; }
+        const c = cur + beadCost(i, j, ni, nj, type);
+        const nidx = ni * W + nj;
+        if (c < cost[nidx]) { cost[nidx] = c; prevIdx[nidx] = iW + j; typeArr[nidx] = t; }
       }
     }
   }
-  const out = [];
+
+  const beads = [];
   let i = n, j = m;
   while (i > 0 || j > 0) {
-    const b = bt[i] && bt[i][j];
-    if (!b) { // 理论不可达；兜底逐句
-      return ens.map((s, k) => ({ para, i: k, en: s, zh: zhs[k] || '' }));
-    }
-    const en = ens.slice(b.pi, i).join(' ');
-    const zh = zhs.slice(b.pj, j).join('');
-    if (en || zh) out.unshift({ para, i: 0, en, zh });
-    i = b.pi; j = b.pj;
+    const idx = i * W + j;
+    const t = typeArr[idx];
+    const p = prevIdx[idx];
+    if (p < 0) break;
+    const pi = (p / W) | 0, pj = p % W;
+    const b = { ai: [], bi: [], type: OPS[t][2] };
+    for (let x = pi; x < i; x++) b.ai.push(x);
+    for (let x = pj; x < j; x++) b.bi.push(x);
+    beads.push(b);
+    i = pi; j = pj;
   }
-  out.forEach((r, k) => (r.i = k));
-  return mergeEmptyRows(out);
+  beads.reverse();
+  return beads;
 }
 
-// 句子级配对主入口
-function pairSentences(ens, zhs, para, kBase) {
-  const out = [];
-  if (zhs.length && Math.abs(ens.length - zhs.length) <= 2) {
-    // 数量接近：按句号一一对应（AI 译文基本逐句翻），差的一两条并入末行
-    const n = Math.min(ens.length, zhs.length);
-    for (let i = 0; i < n; i++) out.push({ para, i, en: ens[i], zh: zhs[i] });
-    if (zhs.length > ens.length) out[out.length - 1].zh += zhs.slice(n).join('');
-    if (ens.length > zhs.length) out[out.length - 1].en += ' ' + ens.slice(n).join(' ');
-    return out;
-  }
-  // 数量差得多：DP 对齐（抗漂移）
-  return alignDP(ens, zhs, para, kBase);
-}
-
-// 长篇阅读：段落序号对齐（按字母配对，软退化）
+// ===== 长篇阅读：段落序号对齐（按字母配对，软退化） =====
 function markerAligned(enParas, zhParas) {
   const enText = enParas.join('\n');
   const zhText = zhParas.join('\n');
@@ -157,8 +236,9 @@ function markerAligned(enParas, zhParas) {
   return mergeEmptyRows(rows);
 }
 
-// 主入口：返回 [{ para, i, en, zh }]
-export function alignBilingual(content, translation) {
+// ===== 主入口：返回 [{ para, i, en, zh }] =====
+// lex：可选的「英词 → 中文候选串数组」映射（来自 ECDICT），传入后启用词典评分
+export function alignBilingual(content, translation, lex) {
   const enParas = String(content || '').split(/\n+/).map((s) => s.trim()).filter(Boolean);
   const zhParas = String(translation || '').split(/\n+/).map((s) => s.trim()).filter(Boolean);
   const out = [];
@@ -172,21 +252,26 @@ export function alignBilingual(content, translation) {
     out.push(...marked);
     return out;
   }
+  const alignAll = (enText, zhText, para) => {
+    const ens = splitEn(enText).map((s) => ({ text: s, ...prepEn(s, lex) }));
+    const zhs = splitZh(zhText).map((s) => ({ text: s, ...prepZh(s) }));
+    const beads = alignPairDP(ens, zhs);
+    const rows = [];
+    for (const b of beads) {
+      const en = b.ai.map((x) => ens[x].text).join(' ');
+      const zh = b.bi.map((x) => zhs[x].text).join('');
+      if (!en && !zh) continue;
+      rows.push({ para, i: rows.length, en, zh });
+    }
+    return mergeEmptyRows(rows);
+  };
   // 段落数一致时按段对齐（更准）；否则整篇对齐
-  const useParas = enParas.length > 1 && enParas.length === zhParas.length;
-  if (useParas) {
-    enParas.forEach((p, pi) => {
-      const zhs = splitZh(zhParas[pi]);
-      const ens = splitEn(p);
-      const k = (zhs.reduce((a, s) => a + s.length, 0) || 1) / (ens.reduce((a, s) => a + s.length, 0) || 1);
-      out.push(...pairSentences(ens, zhs, pi, k));
-    });
-    return out;
+  if (enParas.length > 1 && enParas.length === zhParas.length) {
+    const out2 = [];
+    enParas.forEach((p, pi) => out2.push(...alignAll(p, zhParas[pi], pi)));
+    return out2;
   }
-  const ensAll = splitEn(enParas.join(' '));
-  const zhsAll = splitZh(zhParas.join(' '));
-  const kBase = (zhsAll.reduce((a, s) => a + s.length, 0) || 1) / (ensAll.reduce((a, s) => a + s.length, 0) || 1);
-  return pairSentences(ensAll, zhsAll, 0, kBase);
+  return alignAll(enParas.join(' '), zhParas.join(' '), 0);
 }
 
 // 取匹配题正文里的段落字母（A) / [A] / A. 三种写法都认），用于生成作答按钮
@@ -195,7 +280,6 @@ export function paragraphLetters(content) {
   for (const line of String(content || '').split(/\n/)) {
     const m = line.trim().match(/^\[?([A-Z])\]?\s*[)）．.]?\s+\S/);
     if (!m) continue;
-    // 仅当字母按顺序出现（A→B→C…）才算段落标记，避免把「A good example」当标记
     const next = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[letters.length];
     if (m[1] === next) letters.push(m[1]);
   }

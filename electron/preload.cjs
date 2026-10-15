@@ -9,6 +9,7 @@ const plain = (v) => (v && typeof v === 'object' ? JSON.parse(JSON.stringify(v))
 contextBridge.exposeInMainWorld('keeper', {
   info: () => ipcRenderer.invoke('app:info'),
   lookup: (w) => ipcRenderer.invoke('dict:lookup', w),
+  dictLex: () => ipcRenderer.invoke('dict:lex'),
   listExams: () => ipcRenderer.invoke('exams:list'),
   examDetail: (id) => ipcRenderer.invoke('exam:detail', id),
   addWord: (w, sentence, pid) => ipcRenderer.invoke('words:add', w, sentence, pid),

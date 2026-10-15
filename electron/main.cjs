@@ -150,6 +150,46 @@ function migrate() {
   if (!cols.includes('reference')) run('ALTER TABLE passage ADD COLUMN reference TEXT');
   const qcols = q('PRAGMA table_info(question)').map((c) => c.name);
   if (!qcols.includes('bank')) run('ALTER TABLE question ADD COLUMN bank TEXT');
+  // dict_lex：英词 → 中文候选串数组（对齐引擎的词典评分用，来自 ECDICT 含屈折形式）
+  run('CREATE TABLE IF NOT EXISTS dict_lex (word TEXT PRIMARY KEY, zh TEXT)');
+  const lexCount = q('SELECT COUNT(*) AS c FROM dict_lex')[0].c;
+  if (!lexCount) {
+    const CJK = /[\u4e00-\u9fff]/;
+    const candsOf = (translation) => {
+      const out = [];
+      for (const line of String(translation || '').split(/\n/)) {
+        const seg = line.replace(/^[a-z\.\[\]\s]+/i, '').replace(/\[[^\]]*\]/g, '');
+        for (const part of seg.split(/[，,；;。\/（(）)→]/)) {
+          const w = part.trim().replace(/\s+/g, '');
+          if (w.length >= 1 && w.length <= 12 && CJK.test(w) && !/[A-Za-z0-9]/.test(w)) out.push(w);
+        }
+      }
+      return [...new Set(out)].slice(0, 6);
+    };
+    const seen = new Set();
+    const ins = [];
+    for (const row of q('SELECT word, translation, exchange FROM dict WHERE translation != \'\'')) {
+      const cands = candsOf(row.translation);
+      if (!cands.length) continue;
+      const forms = new Set([String(row.word).toLowerCase()]);
+      if (row.exchange) {
+        for (const kv of String(row.exchange).split('/')) {
+          const km = kv.match(/^([pdi3s]):(.+)$/);
+          if (km) for (const form of km[2].split('\\').map((x) => x.trim().toLowerCase()).filter(Boolean)) forms.add(form);
+        }
+      }
+      const zh = JSON.stringify(cands);
+      for (const form of forms) {
+        if (seen.has(form)) continue;
+        seen.add(form);
+        ins.push([form, zh]);
+      }
+    }
+    run('BEGIN');
+    for (const [w, zh] of ins) run('INSERT OR REPLACE INTO dict_lex (word, zh) VALUES (?, ?)', [w, zh]);
+    run('COMMIT');
+    console.log('dict_lex 已生成:', ins.length, '键');
+  }
 }
 
 function q(sql, params = []) {
@@ -374,7 +414,15 @@ function registerIpc() {
     dbReady: !!db,
   }));
 
-  ipcMain.  handle('dict:lookup', (_e, raw) => {
+  ipcMain.  handle('dict:lex', () => {
+    const map = {};
+    for (const row of q('SELECT word, zh FROM dict_lex')) {
+      try { map[row.word] = JSON.parse(row.zh); } catch { /* 忽略坏行 */ }
+    }
+    return map;
+  });
+
+  ipcMain.handle('dict:lookup', (_e, raw) => {
     const r = resolveWord(raw);
     const entry = lookupEntry(r.word);
     const tags = entry ? parseTags(entry.tag) : [];

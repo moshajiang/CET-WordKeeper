@@ -321,11 +321,14 @@ const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点
 const tokenCache = new Map();
 
 const hasTranslation = computed(() => !!(activePassage.value && activePassage.value.translation));
+// 词典评分映射（ECDICT 英→中候选），一次加载全 view 复用
+let lexCache = null;
+const ensureLex = async () => { if (!lexCache) { try { lexCache = await window.keeper.dictLex(); } catch { lexCache = {}; } } return lexCache; };
 const hasQuestions = computed(() => !!(activePassage.value && activePassage.value.questions && activePassage.value.questions.length));
 const bilingual = computed(() => {
   const p = activePassage.value;
   if (!p) return [];
-  return alignBilingual(p.content, p.translation || '');
+  return alignBilingual(p.content, p.translation || '', lexCache);
 });
 // 匹配题可用的段落字母：从正文段落标记提取；提取不到时回退 A-O，保证永远可作答
 const matchLetters = computed(() => {
@@ -659,6 +662,7 @@ function showToast(msg) {
 }
 
 async function loadAll() {
+  ensureLex();
   detail.value = await window.keeper.examDetail(Number(props.examId));
   // 记录「最近在读」：侧栏点真题库时直接回到这套卷子
   if (detail.value) localStorage.setItem('keeper.lastReading', String(props.examId));

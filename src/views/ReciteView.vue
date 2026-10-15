@@ -71,6 +71,10 @@ import { ref, computed, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { alignBilingual } from '../utils/bilingual.js';
 
+// 词典评分映射（ECDICT 英→中候选），一次加载全 view 复用
+let lexCache = null;
+const ensureLex = async () => { if (!lexCache) { try { lexCache = await window.keeper.dictLex(); } catch { lexCache = {}; } } return lexCache; };
+
 const props = defineProps({ examId: String });
 const router = useRouter();
 
@@ -134,7 +138,7 @@ const items = computed(() => {
     let content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
     // 长篇阅读：段落序号（A) / B) …）只服务于作答定位，背诵时去掉
     if (p.section === 'match') content = String(content).replace(/^[A-O]\s*[)．.]\s*/gm, '');
-    const rows = alignBilingual(content, p.translation);
+    const rows = alignBilingual(content, p.translation, lexCache);
     if (!rows.length) return;
     out.push({ pi, name: sectionName(p.section, p.seq), rows });
   });
@@ -195,6 +199,7 @@ async function load() {
 
 watch(() => props.examId, load);
 onMounted(async () => {
+  ensureLex();
   if (!props.examId) {
     try { exams.value = (await window.keeper.listExams()) || []; } catch (e) { /* 忽略 */ }
   }

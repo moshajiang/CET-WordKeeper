@@ -89,7 +89,20 @@ const el = spawn(
 );
 
 console.log('应用进程已启动 pid=' + el.pid + '，等待就绪…');
-await new Promise((r) => setTimeout(r, 9000));
+// 轮询 CDP 直到页面 target 出现（首次启动含 dict_lex 迁移，可能超过固定等待）
+{
+  const deadline = Date.now() + 45000;
+  let ready = false;
+  while (Date.now() < deadline && !ready) {
+    await new Promise((r) => setTimeout(r, 1500));
+    try {
+      const tg = await (await fetch(`http://127.0.0.1:${PORT}/json`)).json();
+      ready = Array.isArray(tg) && tg.some((x) => x.type === 'page' && (x.url.includes('index.html') || x.url.startsWith('http')));
+      if (ready) console.log('页面 target 已就绪（' + Math.round((45000 - (deadline - Date.now())) / 1000) + 's）');
+    } catch { /* 应用尚未监听 */ }
+  }
+  if (!ready) console.warn('⚠ 45s 内未检测到页面 target，仍尝试运行断言');
+}
 
 let code = 1;
 try {
