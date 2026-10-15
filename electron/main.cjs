@@ -148,6 +148,7 @@ function migrate() {
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
   if (!cols.includes('reference')) run('ALTER TABLE passage ADD COLUMN reference TEXT');
+  if (!cols.includes('rows')) run('ALTER TABLE passage ADD COLUMN rows TEXT');
   const qcols = q('PRAGMA table_info(question)').map((c) => c.name);
   if (!qcols.includes('bank')) run('ALTER TABLE question ADD COLUMN bank TEXT');
   // dict_lex：英词 → 中文候选串数组（对齐引擎的词典评分用，来自 ECDICT 含屈折形式）
@@ -454,6 +455,7 @@ function registerIpc() {
     const passages = q('SELECT * FROM passage WHERE exam_id = ? ORDER BY seq', [examId]);
     for (const p of passages) {
       p.questions = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [p.id]);
+      if (p.rows) { try { p.rows = JSON.parse(p.rows); } catch { p.rows = null; } }
     }
     return { exam, passages };
   });

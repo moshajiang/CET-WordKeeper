@@ -328,6 +328,10 @@ const hasQuestions = computed(() => !!(activePassage.value && activePassage.valu
 const bilingual = computed(() => {
   const p = activePassage.value;
   if (!p) return [];
+  // 写死绑定优先：构建期预置的对齐结果直接渲染，零运行时计算
+  if (Array.isArray(p.rows) && p.rows.length) {
+    return p.rows.map((r, i) => ({ para: r.para ?? 0, i, en: String(r.en || ''), zh: String(r.zh || '') }));
+  }
   return alignBilingual(p.content, p.translation || '', lexCache);
 });
 // 匹配题可用的段落字母：从正文段落标记提取；提取不到时回退 A-O，保证永远可作答

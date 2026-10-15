@@ -12,17 +12,21 @@ const SQL = await initSqlJs({ locateFile: (f) => path.join(root, 'node_modules',
 const db = new SQL.Database(fs.readFileSync(path.join(root, 'data', 'keeper.db')));
 const { alignBilingual } = await import('data:text/javascript;charset=utf-8,' + encodeURIComponent(fs.readFileSync(path.join(root, 'src', 'utils', 'bilingual.js'), 'utf8')));
 
-const rows = db.exec(`SELECT e.level, e.year, e.month, e.set_no, p.section, p.seq, p.content, p.translation
+const rows = db.exec(`SELECT e.level, e.year, e.month, e.set_no, p.section, p.seq, p.content, p.translation, p.rows
   FROM passage p JOIN exam e ON e.id = p.exam_id WHERE p.translation != ''`)[0].values;
+const parseRows = (raw) => { try { const v = JSON.parse(raw); return Array.isArray(v) && v.length ? v : null; } catch { return null; } };
 
 const enWords = (s) => (String(s).match(/[A-Za-z']+/g) || []).length;
 const zhChars = (s) => (String(s).match(/[\u4e00-\u9fff]/g) || []).length;
 
 let total = 0, matchOk = 0, letterBad = [], suspect = [];
-for (const [level, year, month, set, section, seq, content, translation] of rows) {
+for (const [level, year, month, set, section, seq, content, translation, pRowsRaw] of rows) {
   total++;
+  const pRows = pRowsRaw ? parseRows(pRowsRaw) : null;
   const tag = `${level} ${year}.${month} set${set} ${section}${seq > 1 ? ' ' + seq : ''}`;
-  const pairs = alignBilingual(content, translation);
+  let pairs;
+  if (pRows) pairs = pRows;
+  else pairs = alignBilingual(content, translation);
   let bad = [];
 
   // ① 长篇阅读：段落级对齐的字母必须一一对应
@@ -56,8 +60,9 @@ letterBad.slice(0, 8).forEach((x) => console.log('  ✗', x.tag, ':', x.bad.join
   const anOf = (s) => (String(s).match(/\d+(?:[,.]\d+)*/g) || [])
     .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); });
   let anTotal = 0, anHit = 0; const lowHit = [];
-  for (const [level, year, month, set, section, seq, content, translation] of rows) {
-    const pairs = alignBilingual(content, translation);
+  for (const [level, year, month, set, section, seq, content, translation, pRowsRaw] of rows) {
+    const pRows = pRowsRaw ? parseRows(pRowsRaw) : null;
+    const pairs = pRows || alignBilingual(content, translation);
     let t = 0, h = 0;
     for (const r of pairs) {
       const ds = anOf(r.en);

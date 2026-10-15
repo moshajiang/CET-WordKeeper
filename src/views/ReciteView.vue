@@ -135,10 +135,30 @@ const items = computed(() => {
   const out = [];
   d.passages.forEach((p, pi) => {
     if (!p.translation) return;
-    let content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
-    // 长篇阅读：段落序号（A) / B) …）只服务于作答定位，背诵时去掉
-    if (p.section === 'match') content = String(content).replace(/^[A-O]\s*[)．.]\s*/gm, '');
-    const rows = alignBilingual(content, p.translation, lexCache);
+    let rows;
+    if (Array.isArray(p.rows) && p.rows.length) {
+      // 写死绑定直读：cloze 逐行补齐挖空、match 去行首段落标记
+      const wordByNum = {};
+      if (p.section === 'cloze') {
+        for (const q of p.questions || []) {
+          const num = parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10);
+          const letter = String(q.answer || '').trim();
+          const hit = (q.options || []).find?.((o) => String(o).startsWith(letter + ')') || String(o).startsWith(letter + '.'));
+          if (num >= 26 && num <= 35 && hit) wordByNum[num] = String(hit).replace(/^[A-O][).]\s*/, '').trim();
+        }
+      }
+      rows = p.rows.map((r, i) => {
+        let en = String(r.en || '');
+        if (p.section === 'cloze') en = en.replace(/\b(2[6-9]|3[0-5])\b/g, (mm) => wordByNum[+mm] || mm);
+        if (p.section === 'match') en = en.replace(/^\[?[A-O]\]?\s*[)．.]?\s*/, '');
+        return { para: r.para ?? 0, i, en, zh: String(r.zh || '') };
+      });
+    } else {
+      let content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
+      // 长篇阅读：段落序号（A) / B) …）只服务于作答定位，背诵时去掉
+      if (p.section === 'match') content = String(content).replace(/^[A-O]\s*[)．.]\s*/gm, '');
+      rows = alignBilingual(content, p.translation, lexCache);
+    }
     if (!rows.length) return;
     out.push({ pi, name: sectionName(p.section, p.seq), rows });
   });

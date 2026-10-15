@@ -4,6 +4,7 @@ import initSqlJs from 'sql.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { alignBilingual } from '../src/utils/bilingual.js';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const srcDbPath = path.join(root, 'data', 'raw', 'ecdict-sqlite', 'stardict.db');
@@ -37,7 +38,7 @@ db.run(`
 CREATE TABLE exam(id INTEGER PRIMARY KEY AUTOINCREMENT, level TEXT, year INTEGER, month INTEGER,
   set_no INTEGER, title TEXT, imported INTEGER DEFAULT 0, created_at TEXT);
 CREATE TABLE passage(id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, section TEXT,
-  seq INTEGER, title TEXT, content TEXT, translation TEXT, reference TEXT);
+  seq INTEGER, title TEXT, content TEXT, translation TEXT, reference TEXT, rows TEXT);
 CREATE TABLE question(id INTEGER PRIMARY KEY AUTOINCREMENT, passage_id INTEGER, qtype TEXT,
   stem TEXT, options TEXT, answer TEXT, analysis TEXT);
 CREATE TABLE dict(word TEXT PRIMARY KEY, phonetic TEXT, translation TEXT, definition TEXT,
@@ -79,6 +80,32 @@ stmt.free();
 ins.free();
 console.log('词典词条:', dictCount);
 src.close();
+
+// 词典评分映射：英词/屈折形式 → 中文候选串（对齐 DP 的词典评分用）
+const CJK_RE = /[\u4e00-\u9fff]/;
+const lexMap = {};
+db.each('SELECT word, translation, exchange FROM dict WHERE translation != \'\'', (r) => {
+  const cands = [];
+  for (const line of String(r.translation || '').split('\n')) {
+    const seg = line.replace(/^[a-z\.\[\]\s]+/i, '').replace(/\[[^\]]*\]/g, '');
+    for (const part of seg.split(/[，,；;。\/（(）)→]/)) {
+      const w = part.trim().replace(/\s+/g, '');
+      if (w.length >= 1 && w.length <= 12 && CJK_RE.test(w) && !/[A-Za-z0-9]/.test(w)) cands.push(w);
+    }
+  }
+  if (!cands.length) return;
+  const uniq = [...new Set(cands)].slice(0, 6);
+  lexMap[String(r.word).toLowerCase()] = uniq;
+  if (r.exchange) {
+    for (const kv of String(r.exchange).split('/')) {
+      const km = kv.match(/^([pdi3s]):(.+)$/);
+      if (km) for (const form of km[2].split('\\').map((x) => x.trim().toLowerCase()).filter(Boolean)) {
+        if (!lexMap[form]) lexMap[form] = uniq;
+      }
+    }
+  }
+});
+console.log('词典评分映射键数:', Object.keys(lexMap).length);
 
 // 词形索引：0: 字段是原形指针（最高可信），其余字段是变形列表（反向兜底）
 // 提前构建，供后面的「粘连词修补」与「词频归并」共用
@@ -225,8 +252,15 @@ for (const f of files) {
   const examId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
   for (const p of data.passages || []) {
     const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
-    db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
-      [examId, p.section, p.seq, p.title, healPassage(p.content, p.section), (ovP && ovP.translation) ? healPassage(ovP.translation, p.section) : null, (ovP && ovP.reference) || null]);
+    const contentFinal = healPassage(p.content, p.section);
+    const trFinal = (ovP && ovP.translation) ? healPassage(ovP.translation, p.section) : null;
+    // 对齐结果写死绑定：构建期一次性算好每篇的中英句对应（锚点审计见 align-quality）
+    let rowsJson = null;
+    if (trFinal) {
+      try { rowsJson = JSON.stringify(alignBilingual(contentFinal, trFinal, lexMap)); } catch (e) { console.warn('rows 生成失败:', e.message); }
+    }
+    db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference, rows) VALUES (?,?,?,?,?,?,?,?)',
+      [examId, p.section, p.seq, p.title, contentFinal, trFinal, (ovP && ovP.reference) || null, rowsJson]);
     if (ovP && ovP.translation) aiPassages++;
     if (ovP && ovP.reference) aiReferences++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
