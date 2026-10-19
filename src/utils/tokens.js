@@ -9,27 +9,6 @@ export function tokenize(text) {
   return tokens;
 }
 
-export function simpleNorm(w) {
-  let s = w.toLowerCase().replace(/’/g, "'");
-  const rules = [
-    ['ies', (b) => b + 'y'],
-    ['ing', (b) => b],
-    ['ed', (b) => b],
-    ['es', (b) => b],
-    ['ly', (b) => b],
-    ['er', (b) => b],
-    ['est', (b) => b],
-    ['s', (b) => b],
-    ['d', (b) => b],
-  ];
-  for (const [suf, fix] of rules) {
-    if (s.length > suf.length + 3 && s.endsWith(suf)) {
-      return fix(s.slice(0, -suf.length));
-    }
-  }
-  return s;
-}
-
 export function splitSentences(text) {
   const parts = String(text)
     .replace(/\r/g, '')

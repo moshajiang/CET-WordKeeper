@@ -47,7 +47,7 @@ export function splitZh(text) {
 // 数字锚点：≥2 位数字（选词填空的 26–35 空号不算——它们不会出现在译文里）
 function anchorsOf(text, exclude) {
   return [...new Set((String(text).match(/\d+(?:[,.]\d+)*/g) || [])
-    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(exclude && exclude.has(n)) && !(n >= 26 && n <= 35) && (String(n).length >= 2 || d.length >= 3); }))];
+    .filter((d) => { const n = parseInt(d.replace(/\D/g, ''), 10); return !(exclude && exclude.has(n)) && (String(n).length >= 2 || d.length >= 3); }))];
 }
 
 const enWordsOf = (s) => (String(s).match(/[A-Za-z']+/g) || []).length;
@@ -110,7 +110,7 @@ function prepEn(text, lex, exclude) {
   if (lex) {
     for (const w of words) {
       const cands = lex[w] || lex[wordFormsFallback(w)];
-      if (cands) for (const cand of cands) lexSet.add(cand);
+      if (Array.isArray(cands)) for (const cand of cands) if (typeof cand === 'string' && cand.length) lexSet.add(cand);
     }
   }
   return { len: Math.max(1, words.length), nums: new Set(anchorsOf(text, exclude)), lex: lexSet };
@@ -161,7 +161,7 @@ function alignPairDP(enSents, zhSents) {
       // 词典评分：英句实词的中文候选（并集）在中文文本中的命中比例
       const cands = unionLex(enSents, i, ni);
       if (cands.size) {
-        const zhAll = zhSents.slice(j, nj).join('');
+        const zhAll = zhSents.slice(j, nj).map(s => s.text).join('');
         let hits = 0;
         for (const cand of cands) if (zhAll.includes(cand)) hits++;
         c -= W_LEX * (hits / cands.size);
@@ -205,19 +205,45 @@ function alignPairDP(enSents, zhSents) {
 }
 
 // ===== 长篇阅读：段落序号对齐（按字母配对，软退化） =====
+function markedSections(text) {
+  // 括号标记允许译文的行内段落；点号仅认行首，避免误拆 U.N. 或人名首字母。
+  const markers = [...text.matchAll(/(?<![A-Za-z0-9])(?:\[([A-O])\]|([A-O])[ \t]*[)）、])|(?:^|\n)[ \t]*([A-O])[ \t]*[.．]/g)];
+  if (!markers.length) return null;
+  const sections = [];
+  for (let index = 0; index < markers.length; index++) {
+    const match = markers[index];
+    const letter = match[1] || match[2] || match[3];
+    const body = text.slice(match.index, markers[index + 1]?.index ?? text.length).trim();
+    const previous = sections[sections.length - 1];
+    // 部分原文把标题也标成 A)。同一字母的连续片段合并，译文只能使用一次。
+    if (previous?.letter === letter) previous.text += '\n' + body;
+    else {
+      if (previous && letter < previous.letter) return null;
+      sections.push({ letter, text: body });
+    }
+  }
+  return { lead: text.slice(0, markers[0].index).trim(), sections };
+}
+
+function sameCharacters(source, rendered) {
+  const counts = new Map();
+  for (const char of source.replace(/\s/g, '')) counts.set(char, (counts.get(char) || 0) + 1);
+  for (const char of rendered.replace(/\s/g, '')) counts.set(char, (counts.get(char) || 0) - 1);
+  return [...counts.values()].every(value => value === 0);
+}
+
 function markerAligned(enParas, zhParas) {
   const enText = enParas.join('\n');
   const zhText = zhParas.join('\n');
-  const enParts = enText.split(/(?=(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\]))/).map((s) => s.trim()).filter(Boolean);
-  const zhParts = zhText.split(/(?=(?:\[[A-O]\]|[A-O][)．.、]))/).map((s) => s.trim()).filter(Boolean);
-  if (enParts.length < 4) return null;
-  const enSecs = enParts
-    .filter((s) => /^(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\])/.test(s))
-    .map((s) => ({ letter: s.match(/[A-O]/)[0], text: s }));
-  const zhSecs = zhParts
-    .filter((s) => /^(?:\[[A-O]\]|[A-O][)．.、])/.test(s))
-    .map((s) => ({ letter: (s.match(/\[([A-O])\]/) || s.match(/^([A-O])/))[1], text: s }));
-  if (enSecs.length < 4) return null;
+  const en = markedSections(enText);
+  let zh = markedSections(zhText);
+  if (!en || en.sections.length < 4) return null;
+  // 原文有连续 A… 段标记，译文仅有相同数量的独立段落时沿用段落结构。
+  if (!zh && zhParas.length === en.sections.length && en.sections.every((section,index) => section.letter === 'ABCDEFGHIJKLMNO'[index])) {
+    zh = {lead:'',sections:zhParas.map((text,index)=>({letter:en.sections[index].letter,text}))};
+  }
+  if (!zh) return null;
+  const enSecs = en.sections, zhSecs = zh.sections;
   // 软退化：按字母配对；个别字母缺译文 → zh 留空（随后并入邻行），不再整体放弃。
   // 但缺译文的段落超过 1/3 时，说明译文大概率不是本篇的 → 放弃段落级对齐
   const zhByLetter = new Map(zhSecs.map((s) => [s.letter, s.text]));
@@ -229,15 +255,10 @@ function markerAligned(enParas, zhParas) {
   }
   if (rows.length < 4) return null;
   // 标题等无序号碎片并入第一份
-  const enLead = enParts.filter((p) => !/^(?:\[?[A-O]\]?\s*[)．.]|\[[A-O]\])/.test(p)).join(' ');
-  const zhLead = zhParts.filter((p) => !/^(?:\[[A-O]\]|[A-O][)．.、])/.test(p)).join(' ');
-  if (enLead) rows[0].en = enLead + ' ' + rows[0].en;
-  if (zhLead) rows[0].zh = zhLead + ' ' + rows[0].zh;
-  // 内容无损门：段落级配对必须覆盖译文的全部内容，否则回退句级 DP
-  //（此前部分篇章的译文因标记形态差异被整段丢弃，覆盖率最低只剩 44%——已踩坑）
-  const zhTotal = zhCharsOf(zhText);
-  const zhKept = rows.reduce((acc, r) => acc + zhCharsOf(r.zh), 0);
-  if (zhTotal && zhKept / zhTotal < 0.97) return null;
+  if (en.lead) rows[0].en = en.lead + ' ' + rows[0].en;
+  if (zh.lead) rows[0].zh = zh.lead + ' ' + rows[0].zh;
+  // 双向字符守恒：不仅不丢译文，也不能重复译文或原文（包含标点和段落字母）。
+  if (!sameCharacters(enText, rows.map(row => row.en).join('')) || !sameCharacters(zhText, rows.map(row => row.zh).join(''))) return null;
   return mergeEmptyRows(rows);
 }
 
@@ -284,10 +305,55 @@ export function alignBilingual(content, translation, lex, opts) {
 export function paragraphLetters(content) {
   const letters = [];
   for (const line of String(content || '').split(/\n/)) {
-    const m = line.trim().match(/^\[?([A-Z])\]?\s*[)）．.]?\s+\S/);
+    const m = line.trim().match(/^(?:\[([A-Z])\]|([A-Z])[ \t]*[)）．.、])[ \t]*\S/);
     if (!m) continue;
     const next = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[letters.length];
-    if (m[1] === next) letters.push(m[1]);
+    const letter = m[1] || m[2];
+    if (letter === next) letters.push(letter);
   }
   return letters;
+}
+
+// 只移除明确的段落标记；普通的 Are / How / I 等英文开头必须完整保留。
+export function stripParagraphMarkers(text) {
+  return String(text || '').replace(/^[ \t]*(?:\[[A-O]\]|[A-O][ \t]*[)）．.、])[ \t]*/gm, '');
+}
+
+export function blankNumbers(passage) {
+  if (!passage || passage.section !== 'cloze') return new Set();
+  return new Set((passage.questions || []).map(q => String(q.stem || '').match(/^\s*(\d{1,3})(?=\D|$)/))
+    .filter(Boolean).map(m => Number(m[1])));
+}
+
+export function clozeWords(passage) {
+  const result = new Map();
+  if (!passage || passage.section !== 'cloze') return result;
+  for (const q of passage.questions || []) {
+    const number = String(q.stem || '').match(/^\s*(\d{1,3})(?=\D|$)/);
+    const answer = String(q.answer || '').trim().toUpperCase();
+    if (!number || !/^[A-O]$/.test(answer)) continue;
+    let options = q.options;
+    if (typeof options === 'string') { try { options = JSON.parse(options); } catch { options = []; } }
+    if (!Array.isArray(options)) continue;
+    for (const option of options) {
+      const match = String(option).trim().match(/^([A-O])[ \t]*[)）.．][ \t]*(.+)$/);
+      if (match && match[1] === answer) { result.set(Number(number[1]), match[2].trim()); break; }
+    }
+  }
+  return result;
+}
+
+// 只有原文中唯一出现的题号才替换；支持紧贴单词、下划线及 36–45 等非固定题号。
+export function fillClozeText(text, words, source = text) {
+  let out = String(text || '');
+  for (const [number, word] of words) {
+    const pattern = `(?<![\\d_])_*${number}(?:[ \\t]+_+|_*)(?![\\d_])`;
+    if ([...String(source || '').matchAll(new RegExp(pattern, 'g'))].length !== 1) continue;
+    out = out.replace(new RegExp(pattern, 'g'), (match, offset, full) => {
+      const before = full[offset - 1] || '';
+      const after = full[offset + match.length] || '';
+      return (/[A-Za-z]/.test(before) ? ' ' : '') + word + (/[A-Za-z]/.test(after) ? ' ' : '');
+    });
+  }
+  return out;
 }

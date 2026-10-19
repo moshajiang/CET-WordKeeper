@@ -2,6 +2,13 @@ const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const initSqlJs = require('sql.js');
+const { ensureContentSchema, syncBuiltinContent, assessmentRevision } = require('./content-sync.cjs');
+const { createHash } = require('node:crypto');
+const { FREQUENCY_REVISION, buildWordIndex, createWordResolver, escapeHtml, markContext, countWordFrequency } = require('./word-semantics.cjs');
+const { localDayRange } = require('./local-day.cjs');
+const { createAiRequests, requestSignal } = require('./ai-requests.cjs');
+const { AiResultError, parseAiJson, validateEssayResult, analysisContext, validateAnalysisResult } = require('./ai-results.cjs');
+const { ensureStorageIndexes, inspectBackup, atomicWrite, createRestoreStore } = require('./storage.cjs');
 
 // 阅读类应用不需要 GPU 加速；同时避免部分环境下 GPU 进程崩溃
 app.disableHardwareAcceleration();
@@ -23,75 +30,49 @@ const EXTRA_FORMS = {
   ...WORD_FORMS.contractions,
 };
 
+const aiRequests = createAiRequests();
+let chatGeneration = 0;
+async function withAiRequest(event,id,kind,work) {
+  let task;
+  try { task=aiRequests.start(event?.sender?.id || 0,id,kind); return await work(task); }
+  catch (error) { return {ok:false,error:task?.signal.aborted ? 'cancelled' : String(error.message)}; }
+  finally { task?.finish(); }
+}
+
 let win = null;
 let db = null;
 let dbPath = null;
 let formIndex = null;
 let sqlModule = null; // initDb 里拿到，供 syncSeedExams 复用（打开种子库用）
+let contentSyncState = { status: 'pending' };
+let restoreStore = null, restoreState = {epoch:'original'}, restoreShutdown = false;
+function assertWritable() { if (restoreShutdown) throw Error('正在重启恢复数据，请稍候'); }
 
-// ---- 版本更新：electron-updater + GitHub Releases ----
-// 安装版（NSIS）可检测 → 下载 → 一键安装；便携版没有安装器，只能检测新版本并跳转下载页。
+// sql.js 的每个进程持有整库快照，必须在读取用户库之前排除第二个写入者。
+const hasSingleInstanceLock = app.requestSingleInstanceLock();
+if (!hasSingleInstanceLock) app.quit();
+else app.on('second-instance', () => {
+  if (!win || win.isDestroyed()) return;
+  if (win.isMinimized()) win.restore();
+  win.show();
+  win.focus();
+});
+
+// ---- GitHub / 码云 Releases 更新，共用下载与安装校验 ----
 const { autoUpdater } = require('electron-updater');
-const RELEASES_URL = 'https://github.com/moshajiang/CET-WordKeeper/releases/latest';
-const isPortable = !!process.env.PORTABLE_EXECUTABLE_DIR;
-let updateState = { phase: 'idle' };   // idle / checking / not-available / available / downloading / downloaded / error
-
-function pushUpdateEvent(patch) {
-  updateState = { ...updateState, ...patch };
-  try {
-    if (win && !win.isDestroyed()) win.webContents.send('update:event', JSON.parse(JSON.stringify(updateState)));
-  } catch (e) { /* 窗口未就绪时静默 */ }
-}
-
-function setupAutoUpdater() {
-  autoUpdater.autoInstallOnAppQuit = true;
-  autoUpdater.logger = null;
-  if (!app.isPackaged) autoUpdater.forceDevUpdateConfig = true;   // 开发态读取项目根的 dev-app-update.yml
-  autoUpdater.on('checking-for-update', () => pushUpdateEvent({ phase: 'checking', error: null }));
-  autoUpdater.on('update-available', (i) => pushUpdateEvent({ phase: isPortable ? 'available' : 'downloading', latest: i.version, error: null }));
-  autoUpdater.on('update-not-available', (i) => pushUpdateEvent({ phase: 'not-available', latest: i.version, error: null }));
-  autoUpdater.on('download-progress', (p) => pushUpdateEvent({
-    phase: 'downloading',
-    percent: Math.round(p.percent || 0),
-    mbPerSecond: Math.round(((p.bytesPerSecond || 0) / 1048576) * 10) / 10,
-  }));
-  autoUpdater.on('update-downloaded', (i) => pushUpdateEvent({ phase: 'downloaded', latest: i.version, percent: 100 }));
-  autoUpdater.on('error', (e) => pushUpdateEvent({ phase: 'error', error: String((e && e.message) || e).slice(0, 200) }));
-}
-setupAutoUpdater();
-
-ipcMain.handle('update:check', async () => {
-  try {
-    autoUpdater.autoDownload = !isPortable;   // 便携版只检测不下载（没有安装器，装不了）
-    const r = await autoUpdater.checkForUpdates();
-    return {
-      ok: true,
-      current: app.getVersion(),
-      latest: (r && r.updateInfo && r.updateInfo.version) || null,
-      portable: isPortable,
-      ...updateState,
-    };
-  } catch (e) {
-    const msg = String((e && e.message) || e);
-    return { ok: false, phase: 'error', current: app.getVersion(), portable: isPortable, error: msg.slice(0, 200) };
-  }
+const { createUpdates } = require('./updates.cjs');
+const updates = createUpdates({ updater: autoUpdater, current: () => app.getVersion(),
+  portable: !!process.env.PORTABLE_EXECUTABLE_DIR, packaged: app.isPackaged,
+  notify: state => {
+    try { if (win && !win.isDestroyed()) win.webContents.send('update:event', state); } catch { /* 窗口正在关闭 */ }
+  },
 });
-
-ipcMain.handle('update:state', () => ({ ...updateState, current: app.getVersion(), portable: isPortable }));
-
-ipcMain.handle('update:install', () => {
-  try {
-    if (updateState.phase !== 'downloaded') return { ok: false, error: '更新尚未下载完成' };
-    autoUpdater.quitAndInstall(false, true);
-    return { ok: true };
-  } catch (e) {
-    return { ok: false, error: String((e && e.message) || e).slice(0, 200) };
-  }
-});
-
-ipcMain.handle('update:openReleases', async () => {
-  await shell.openExternal(RELEASES_URL);
-  return { ok: true };
+ipcMain.handle('update:check', (_event, source) => updates.check(source));
+ipcMain.handle('update:state', () => updates.snapshot());
+ipcMain.handle('update:install', () => updates.install());
+ipcMain.handle('update:openReleases', async (_event, source) => {
+  try { await shell.openExternal(updates.releasesUrl(source)); return { ok: true }; }
+  catch (error) { return { ok: false, error: String(error.message).slice(0, 200) }; }
 });
 
 const SCHEMA = `
@@ -117,6 +98,8 @@ CREATE TABLE IF NOT EXISTS word_hit(
 CREATE TABLE IF NOT EXISTS review_log(
   id INTEGER PRIMARY KEY AUTOINCREMENT, word_id INTEGER, mode TEXT, rating INTEGER,
   reviewed_at TEXT, interval_days REAL, ease REAL, due TEXT);
+CREATE TABLE IF NOT EXISTS review_operation(
+  operation_id TEXT PRIMARY KEY, word_id INTEGER, rating INTEGER, result TEXT, created_at TEXT);
 CREATE TABLE IF NOT EXISTS mistake(
   id INTEGER PRIMARY KEY AUTOINCREMENT, question_id INTEGER, user_answer TEXT,
   ai_analysis TEXT, created_at TEXT, redone INTEGER DEFAULT 0);
@@ -132,6 +115,9 @@ CREATE TABLE IF NOT EXISTS user_answer(
 CREATE TABLE IF NOT EXISTS attempt(
   id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, submitted_at TEXT,
   total INTEGER, correct INTEGER, score REAL, detail TEXT);
+CREATE TABLE IF NOT EXISTS answer_draft(
+  exam_id INTEGER PRIMARY KEY, generation INTEGER NOT NULL DEFAULT 0,
+  content_revision TEXT, answers TEXT, updated_at TEXT);
 CREATE TABLE IF NOT EXISTS essay(
   id INTEGER PRIMARY KEY AUTOINCREMENT, exam_id INTEGER, section TEXT, content TEXT,
   result TEXT, updated_at TEXT, UNIQUE(exam_id, section));
@@ -144,6 +130,8 @@ CREATE TABLE IF NOT EXISTS kb_entry(
 
 // 给已存在的用户库补列（CREATE TABLE IF NOT EXISTS 不会修改既有表结构）
 function migrate() {
+  ensureContentSchema(db);
+  ensureStorageIndexes(db);
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
@@ -195,16 +183,19 @@ function migrate() {
 
 function q(sql, params = []) {
   const stmt = db.prepare(sql);
-  stmt.bind(params);
-  const rows = [];
-  while (stmt.step()) rows.push(stmt.getAsObject());
-  stmt.free();
-  return rows;
+  try {
+    stmt.bind(params);
+    const rows = [];
+    while (stmt.step()) rows.push(stmt.getAsObject());
+    return rows;
+  } finally { stmt.free(); }
 }
 function run(sql, params = []) {
+  assertWritable();
   db.run(sql, params);
 }
 function persist() {
+  assertWritable();
   // 原子写：先写临时文件再改名，避免写一半时崩溃/被杀导致库损坏
   const tmp = dbPath + '.tmp';
   fs.writeFileSync(tmp, Buffer.from(db.export()));
@@ -213,9 +204,64 @@ function persist() {
 function now() {
   return new Date().toISOString();
 }
+function learningChanged(kind) {
+  try { if (win && !win.isDestroyed()) win.webContents.send('learning:changed',{kind}); } catch { /* 窗口关闭不影响已保存的数据 */ }
+}
+
+// sql.js 提交后才能 export；任何写盘失败恢复修改前的内存，避免后续保存夹带失败结果。
+function persistTransaction(change) {
+  const before = db.export();
+  try {
+    run('BEGIN');
+    const result = change();
+    run('COMMIT');
+    persist();
+    return result;
+  } catch (error) {
+    try { run('ROLLBACK'); } catch { /* 已提交时通过快照恢复 */ }
+    db.close(); db = new sqlModule.Database(before);
+    throw error;
+  }
+}
+function answerSession(examId) {
+  if (!Number.isSafeInteger(examId) || !q('SELECT id FROM exam WHERE id=? AND retired=0', [examId]).length) throw new Error('invalid_exam');
+  const row = q('SELECT * FROM answer_draft WHERE exam_id=?', [examId])[0];
+  return { revision: assessmentRevision(db, examId), generation: row?.generation || 0, row };
+}
+function validateAnswerChoices(examId, answers) {
+  if (!answers || typeof answers !== 'object' || Array.isArray(answers) || Object.keys(answers).length > 40000) throw new Error('invalid_answers');
+  const allowed = new Set(q("SELECT q.id FROM question q JOIN passage p ON p.id=q.passage_id WHERE p.exam_id=? AND p.retired=0 AND q.retired=0 AND p.section IN ('cloze','match','reading')", [examId]).map(x => String(x.id)));
+  const normalized = {};
+  for (const [id, value] of Object.entries(answers)) {
+    if (!allowed.has(id) || typeof value !== 'string' || !/^[A-Z]?$/.test(value)) throw new Error('invalid_answers');
+    if (value) normalized[id] = value;
+  }
+  return normalized;
+}
+function advanceAnswerSession(examId) {
+  run(`INSERT INTO answer_draft(exam_id,generation) VALUES (?,1) ON CONFLICT(exam_id) DO UPDATE SET
+    generation=answer_draft.generation+1, content_revision=NULL,answers=NULL,updated_at=NULL`, [examId]);
+  return q('SELECT generation FROM answer_draft WHERE exam_id=?', [examId])[0].generation;
+}
+
+// 列表与导出使用同一筛选和排序，搜索按字面子串处理，不把 %/_ 当通配符。
+function listBookWords(filter) {
+  const f = filter && typeof filter === 'object' ? filter : {};
+  const where = [], params = [];
+  if (['learning','mastered'].includes(f.status)) { where.push('u.status=?'); params.push(f.status); }
+  const search = typeof f.search === 'string' ? f.search.trim() : '';
+  if (search) {
+    where.push("(instr(lower(u.word),lower(?))>0 OR instr(lower(COALESCE(d.translation,'')),lower(?))>0 OR instr(lower(COALESCE(d.definition,'')),lower(?))>0)");
+    params.push(search,search,search);
+  }
+  const order = f.sortBy === 'word' ? 'u.word COLLATE NOCASE, u.id' : f.sortBy === 'hits' ? 'hits DESC, u.word COLLATE NOCASE, u.id' : 'u.created_at DESC, u.id DESC';
+  return q(`SELECT u.*, d.phonetic, d.translation, d.definition, d.tag,
+    (SELECT COUNT(*) FROM word_hit h WHERE h.word=u.word) AS hits
+    FROM user_word u LEFT JOIN dict d ON d.word=u.word ${where.length ? 'WHERE '+where.join(' AND ') : ''} ORDER BY ${order}`,params);
+}
 
 async function initDb() {
-  const SQL = await initSqlJs({
+  const SQL = sqlModule || await initSqlJs({
     locateFile: (f) => path.join(__dirname, '..', 'node_modules', 'sql.js', 'dist', f),
   });
   sqlModule = SQL;
@@ -228,110 +274,49 @@ async function initDb() {
     }
   }
   dbPath = userDb;
-  db = fs.existsSync(userDb) ? new SQL.Database(fs.readFileSync(userDb)) : new SQL.Database();
+  const originalBytes = fs.existsSync(userDb) ? fs.readFileSync(userDb) : null;
+  db = originalBytes ? new SQL.Database(new Uint8Array(originalBytes)) : new SQL.Database();
   db.run(SCHEMA);
   migrate();
   buildFormIndex();
-  const added = syncSeedExams();
+  const added = syncSeedExams(originalBytes);
   if (added) console.log(`已从内置数据同步 ${added} 套新真题`);
 }
 
-// 内置真题数据会随版本更新（例如补充新考次）。
-// 用户库只在「首次启动」时从种子库拷贝，所以老用户不会自动拿到新真题 —— 这里做一次增量同步：
-// 把种子库里「用户库还没有的考次」补进来。
-// 判定键 = 级别 + 年 + 月 + 套号；只新增、不删除、不覆盖，
-// 绝不触碰 user_word / word_hit / review_log，用户的学习记录始终安全。
-// 把种子库里预置的内容补进用户库中「已存在但内容为空」的字段。
-// 匹配方式：套(level,年份,月,套号) → 篇章(section,seq) → 题目顺序（与 data/ai-answers 覆盖层的对齐语义一致）。
-// 只写内容字段（answer/analysis/translation/reference），绝不触碰任何学习记录。
-function backfillContent(seed) {
-  let filled = 0;
-  const keyOf = (r) => `${r.level}|${r.year}|${r.month}|${r.set_no}`;
-  const mine = new Map(q('SELECT id, level, year, month, set_no FROM exam').map((e) => [keyOf(e), e.id]));
-  const seedExams = [];
-  seed.each('SELECT * FROM exam', (r) => seedExams.push(r));
-  for (const e of seedExams) {
-    const myExamId = mine.get(keyOf(e));
-    if (!myExamId) continue;
-    const myPassages = q('SELECT * FROM passage WHERE exam_id = ?', [myExamId]);
-    const seedPassages = [];
-    seed.each('SELECT * FROM passage WHERE exam_id = ?', [e.id], (p) => seedPassages.push(p));
-    for (const sp of seedPassages) {
-      const mp = myPassages.find((p) => p.section === sp.section && p.seq === sp.seq);
-      if (!mp) continue;                                   // 篇章结构不同则保守跳过，不做结构性改动
-      if (sp.translation && !mp.translation) { run('UPDATE passage SET translation = ? WHERE id = ?', [sp.translation, mp.id]); filled++; }
-      if (sp.reference && !mp.reference) { run('UPDATE passage SET reference = ? WHERE id = ?', [sp.reference, mp.id]); filled++; }
-      const seedQs = [];
-      seed.each('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [sp.id], (x) => seedQs.push(x));
-      const myQs = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [mp.id]);
-      for (let i = 0; i < seedQs.length; i++) {
-        const sq = seedQs[i];
-        if (i < myQs.length) {
-          const mq = myQs[i];
-          if (!mq.answer && sq.answer) {
-            run('UPDATE question SET answer = ?, analysis = ? WHERE id = ?', [sq.answer, sq.analysis || mq.analysis || '', mq.id]);
-            filled++;
-          } else if (!mq.analysis && sq.analysis) {
-            run('UPDATE question SET analysis = ? WHERE id = ?', [sq.analysis, mq.id]);
-            filled++;
-          }
-        } else {
-          // 种子库里新增出来的题目（例如解析器修好题号后补出的题）也要能进老用户库
-          run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
-            [mp.id, sq.qtype, sq.stem, sq.options, sq.answer || '', sq.analysis || '']);
-          filled++;
-        }
-      }
-    }
-  }
-  return filled;
-}
-
-function syncSeedExams() {
+// 迁移先在内存事务中完成；提交后才导出（sql.js export 会关闭连接并回滚未提交事务）。
+// 磁盘保存失败则恢复迁移前的内存，防止下一次普通保存夹带失败迁移。
+function syncSeedExams(originalBytes = null) {
   const seedPath = path.join(__dirname, '..', 'data', 'keeper.db');
-  if (!fs.existsSync(seedPath) || !sqlModule) return 0;
+  if (!fs.existsSync(seedPath) || !sqlModule) { contentSyncState = { status: 'unavailable' }; return 0; }
   let seed = null;
+  const before = db.export();
   try {
     seed = new sqlModule.Database(fs.readFileSync(seedPath));
-    const keyOf = (r) => `${r.level}|${r.year}|${r.month}|${r.set_no}`;
-    const mine = new Set(q('SELECT level, year, month, set_no FROM exam').map(keyOf));
-    const seedExams = [];
-    seed.each('SELECT * FROM exam', (r) => seedExams.push(r));
-
-    let added = 0;
-    for (const e of seedExams) {
-      if (mine.has(keyOf(e))) continue;
-      run('INSERT INTO exam(level, year, month, set_no, title, imported, created_at) VALUES (?,?,?,?,?,0,?)',
-        [e.level, e.year, e.month, e.set_no, e.title, now()]);
-      const examId = q('SELECT last_insert_rowid() AS id')[0].id;
-
-      const pList = [];
-      seed.each('SELECT * FROM passage WHERE exam_id = ?', [e.id], (p) => pList.push(p));
-      for (const p of pList) {
-        run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference) VALUES (?,?,?,?,?,?,?)',
-          [examId, p.section, p.seq, p.title, p.content, p.translation || null, p.reference || null]);
-        const pid = q('SELECT last_insert_rowid() AS id')[0].id;
-        const qList = [];
-        seed.each('SELECT * FROM question WHERE passage_id = ?', [p.id], (x) => qList.push(x));
-        for (const x of qList) {
-          run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
-            [pid, x.qtype, x.stem, x.options, x.answer, x.analysis]);
-        }
+    const summary = syncBuiltinContent(db, seed);
+    const frequencyChanged = q("SELECT revision FROM content_sync_state WHERE source='word-frequency'")[0]?.revision !== FREQUENCY_REVISION;
+    const schemaChanged = !originalBytes || !Buffer.from(before).equals(originalBytes);
+    let backupPath = null;
+    if (summary.changed || schemaChanged || frequencyChanged) {
+      if (originalBytes) {
+        const digest = createHash('sha256').update(originalBytes).digest('hex');
+        backupPath = dbPath + '.pre-content-v1.' + digest + '.bak';
+        // 相同原库只留一份完整备份，不覆盖任何已有文件。
+        if (!fs.existsSync(backupPath)) fs.writeFileSync(backupPath, originalBytes, { flag: 'wx' });
+        if (!fs.readFileSync(backupPath).equals(originalBytes)) throw new Error('迁移备份校验失败');
       }
-      added++;
+      if (summary.changed || frequencyChanged) rebuildWordFreq();
+      persist();
     }
-    // 内容回填：老用户库里这些考次已经存在，上面的「新增」逻辑不会碰它们，
-    // 所以要把种子库里新预置的答案解析/全文翻译/范文参考**补进空字段**。
-    // 只填内容字段，绝不触碰 user_word / word_hit / review_log / user_answer / attempt 等学习记录。
-    const filled = backfillContent(seed);
-    if (added || filled) { rebuildWordFreq(); persist(); }
-    return added;
+    contentSyncState = { status: 'ok', ...summary, frequencyChanged, backupPath };
+    return summary.added;
   } catch (err) {
-    // 同步失败不能影响应用启动，用户原有的数据仍然可用
-    console.error('同步内置真题失败（不影响使用）:', err.message);
+    try { db.close(); } catch { /* 忽略 */ }
+    db = new sqlModule.Database(before);
+    contentSyncState = { status: 'error', error: String(err.message).slice(0,200) };
+    console.error('内置内容迁移未保存，已恢复迁移前内容:', err.message);
     return 0;
   } finally {
-    try { if (seed) seed.close(); } catch { /* 忽略 */ }
+    if (seed) seed.close();
   }
 }
 
@@ -340,62 +325,11 @@ function syncSeedExams() {
 //   p/d/i/3/s/... —— 本词的各类变形
 // 因此正向（变形 -> 原形）以 0: 为准，反向（原形 -> 变形）用其余字段兜底
 function buildFormIndex() {
-  formIndex = new Map();
-  const reverse = new Map();
-  const rows = q('SELECT word, exchange FROM dict WHERE exchange IS NOT NULL AND exchange != ""');
-  for (const r of rows) {
-    const head = String(r.word).toLowerCase();
-    for (const part of String(r.exchange).split('/')) {
-      const [k, v] = part.split(':');
-      if (!v) continue;
-      const form = v.toLowerCase();
-      if (form === head) continue;
-      if (k === '0') formIndex.set(head, form);
-      else if (!reverse.has(form)) reverse.set(form, head);
-    }
-  }
-  for (const [form, head] of reverse) {
-    if (!formIndex.has(form)) formIndex.set(form, head);
-  }
+  formIndex = buildWordIndex(q('SELECT word, exchange FROM dict WHERE exchange IS NOT NULL AND exchange != ""'));
 }
 
-function simpleNorm(w) {
-  let s = w.toLowerCase().replace(/’/g, "'");
-  for (const suf of ['ies', 'ing', 'ed', 'es', 'ly', 'er', 'est', 's', 'd']) {
-    if (s.length > suf.length + 2 && s.endsWith(suf)) {
-      let base = s.slice(0, -suf.length);
-      if (suf === 'ies') base += 'y';
-      if (base.length > 2) {
-        for (const cand of [base, base + 'e', base.slice(0, -1)]) {
-          if (cand && q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [cand]).length) return cand;
-        }
-        const mapped = formIndex.get(base);
-        if (mapped && q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [mapped]).length) return mapped;
-      }
-    }
-  }
-  return s;
-}
-
-// 变形优先：先看是否是某词条的变形（动词/名词变化），再退到精确匹配
 function resolveWord(raw) {
-  const lower = String(raw || '').toLowerCase().replace(/’/g, "'");
-  const mapped = formIndex.get(lower);
-  if (mapped && q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [mapped]).length) {
-    return { word: mapped, exact: true };
-  }
-  if (q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [lower]).length) return { word: lower, exact: true };
-  const sn = simpleNorm(lower);
-  if (sn !== lower) {
-    const m2 = formIndex.get(sn);
-    if (m2 && q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [m2]).length) return { word: m2, exact: true };
-    if (q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [sn]).length) return { word: sn, exact: true };
-  }
-  // 最后兜底：不规则变形 / 缩写。放在词典精确匹配之后，故不会覆盖词典自身释义
-  // （left、found 这类本身是独立词的，前面已经返回，不会走到这里）
-  const extra = EXTRA_FORMS[lower] || EXTRA_FORMS[sn];
-  if (extra && q('SELECT 1 FROM dict WHERE word = ? LIMIT 1', [extra]).length) return { word: extra, exact: true };
-  return { word: sn, exact: false };
+  return createWordResolver(word => q('SELECT 1 FROM dict WHERE word = ? LIMIT 1',[word]).length > 0,formIndex || new Map(),EXTRA_FORMS)(raw);
 }
 
 function lookupEntry(word) {
@@ -413,6 +347,8 @@ function registerIpc() {
     name: 'CET WordKeeper',
     version: app.getVersion(),
     dbReady: !!db,
+    contentSync: { ...contentSyncState },
+    restore: { ...restoreState },
   }));
 
   ipcMain.  handle('dict:lex', () => {
@@ -421,6 +357,11 @@ function registerIpc() {
       try { map[row.word] = JSON.parse(row.zh); } catch { /* 忽略坏行 */ }
     }
     return map;
+  });
+
+  ipcMain.handle('dict:resolveBatch', (_e, words) => {
+    if (!Array.isArray(words) || words.length > 1000 || words.some(w => typeof w !== 'string' || w.length > 128 || !/^[A-Za-z][A-Za-z'’-]*$/.test(w))) throw new Error('invalid_word_batch');
+    return Object.fromEntries([...new Set(words)].map(raw => [raw,resolveWord(raw).word]));
   });
 
   ipcMain.handle('dict:lookup', (_e, raw) => {
@@ -446,67 +387,90 @@ function registerIpc() {
   });
 
   ipcMain.handle('exams:list', () =>
-    q('SELECT e.*, (SELECT COUNT(*) FROM passage p WHERE p.exam_id = e.id) AS passage_count FROM exam e ORDER BY e.level, e.year DESC, e.month DESC, e.set_no')
+    q('SELECT e.*, (SELECT COUNT(*) FROM passage p WHERE p.exam_id = e.id AND p.retired=0) AS passage_count FROM exam e WHERE e.retired=0 ORDER BY e.level, e.year DESC, e.month DESC, e.set_no')
   );
 
   ipcMain.handle('exam:detail', (_e, examId) => {
-    const exam = q('SELECT * FROM exam WHERE id = ?', [examId])[0];
+    const exam = q('SELECT * FROM exam WHERE id = ? AND retired=0', [examId])[0];
     if (!exam) return null;
-    const passages = q('SELECT * FROM passage WHERE exam_id = ? ORDER BY seq', [examId]);
+    const passages = q('SELECT * FROM passage WHERE exam_id = ? AND retired=0 ORDER BY source_order, seq, id', [examId]);
     for (const p of passages) {
-      p.questions = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [p.id]);
+      p.questions = q('SELECT * FROM question WHERE passage_id = ? AND retired=0 ORDER BY source_order, id', [p.id]);
       if (p.rows) { try { p.rows = JSON.parse(p.rows); } catch { p.rows = null; } }
     }
     return { exam, passages };
   });
 
   ipcMain.handle('words:add', (_e, word, sentence, passageId) => {
+    assertWritable();
+    if (typeof word !== 'string' || word.length > 128 || !/^[A-Za-z][A-Za-z'’.-]*$/.test(word)) return {ok:false,error:'invalid_word'};
+    if (sentence != null && typeof sentence !== 'string') return {ok:false,error:'invalid_context'};
+    const pid = passageId == null ? null : passageId;
+    if (pid !== null && (!Number.isSafeInteger(pid) || pid <= 0 || !q('SELECT 1 FROM passage WHERE id=?',[pid]).length)) return {ok:false,error:'invalid_passage'};
     const r = resolveWord(word);
-    const existing = q('SELECT id FROM user_word WHERE word = ?', [r.word]);
-    let added = false;
-    if (!existing.length) {
-      run(
-        'INSERT INTO user_word(word, status, created_at, due) VALUES (?, "learning", ?, ?)',
-        [r.word, now(), new Date(Date.now() + 10 * 60 * 1000).toISOString()]
-      );
-      added = true;
+    const existingWord = q('SELECT status FROM user_word WHERE word=?',[r.word])[0];
+    const duplicateHit = !sentence?.trim() || q('SELECT 1 FROM word_hit WHERE word=? AND passage_id IS ? AND sentence=?',[r.word,pid,sentence]).length;
+    if (existingWord && duplicateHit) {
+      learningChanged('words');
+      return {ok:true,word:r.word,added:false,hitAdded:false,status:existingWord.status};
     }
-    // 词已在生词本时，仍要累计新的出处句（同一词在不同真题中的语境都要保留）
-    let hitAdded = false;
-    if (sentence && sentence.trim()) {
-      const pid = passageId || null;
-      const dup = q('SELECT 1 FROM word_hit WHERE word = ? AND sentence = ?', [r.word, sentence]);
-      if (!dup.length) {
-        run('INSERT INTO word_hit(word, passage_id, sentence) VALUES (?,?,?)', [r.word, pid, sentence]);
-        hitAdded = true;
+    const result = persistTransaction(() => {
+      const existing = q('SELECT id FROM user_word WHERE word = ?', [r.word]);
+      let added = false;
+      if (!existing.length) {
+        run(
+          'INSERT INTO user_word(word, status, created_at, due) VALUES (?, "learning", ?, ?)',
+          [r.word, now(), new Date(Date.now() + 10 * 60 * 1000).toISOString()]
+        );
+        added = true;
       }
-    }
-    persist();
-    return { ok: true, word: r.word, added, hitAdded };
+      // 词已在生词本时，仍要累计新的出处句（同一词在不同真题中的语境都要保留）
+      let hitAdded = false;
+      if (sentence && sentence.trim()) {
+        const dup = q('SELECT 1 FROM word_hit WHERE word = ? AND passage_id IS ? AND sentence = ?', [r.word,pid,sentence]);
+        if (!dup.length) {
+          run('INSERT INTO word_hit(word, passage_id, sentence) VALUES (?,?,?)', [r.word, pid, sentence]);
+          hitAdded = true;
+        }
+      }
+      const status = q('SELECT status FROM user_word WHERE word=?',[r.word])[0].status;
+      return { ok: true, word: r.word, added, hitAdded, status };
+    });
+    learningChanged('words');
+    return result;
   });
 
   ipcMain.handle('words:remove', (_e, word) => {
-    // 返回是否真的删到了行：传错参数（如传 id）时会静默无操作，这里让调用方看得出来
-    const had = q('SELECT id FROM user_word WHERE word = ?', [word]).length > 0;
-    run('DELETE FROM user_word WHERE word = ?', [word]);
-    run('DELETE FROM word_hit WHERE word = ?', [word]);
-    persist();
-    return { ok: true, removed: had };
+    const result = persistTransaction(() => {
+      // 返回是否真的删到了行：传错参数（如传 id）时会静默无操作，这里让调用方看得出来
+      const had = q('SELECT id FROM user_word WHERE word = ?', [word]).length > 0;
+      run('DELETE FROM user_word WHERE word = ?', [word]);
+      run('DELETE FROM word_hit WHERE word = ?', [word]);
+      return { ok: true, removed: had };
+    });
+    learningChanged('words');
+    return result;
   });
 
   ipcMain.handle('words:setStatus', (_e, word, status) => {
-    run('UPDATE user_word SET status = ?, mastered_at = ? WHERE word = ?', [
-      status, status === 'mastered' ? now() : null, word,
-    ]);
-    persist();
-    return { ok: true };
+    if (!['learning','mastered'].includes(status)) return { ok:false,error:'invalid_status' };
+    assertWritable();
+    if (q('SELECT status FROM user_word WHERE word=?',[word])[0]?.status === status) { learningChanged('words'); return {ok:true}; }
+    const result = persistTransaction(() => {
+      run('UPDATE user_word SET status = ?, mastered_at = ? WHERE word = ?', [
+        status, status === 'mastered' ? now() : null, word,
+      ]);
+      return { ok: true };
+    });
+    learningChanged('words');
+    return result;
   });
 
   ipcMain.handle('words:saveNote', (_e, word, note) => {
-    const had = q('SELECT id FROM user_word WHERE word = ?', [word]).length > 0;
-    run('UPDATE user_word SET note = ? WHERE word = ?', [note, word]);
-    persist();
-    return { ok: true, updated: had };
+    assertWritable();
+    const previous = q('SELECT note FROM user_word WHERE word=?',[word])[0];
+    if (previous && previous.note !== note) persistTransaction(() => run('UPDATE user_word SET note=? WHERE word=?',[note,word]));
+    return {ok:true,updated:!!previous};
   });
 
   ipcMain.handle('words:all', () => {
@@ -516,19 +480,7 @@ function registerIpc() {
     return map;
   });
 
-  ipcMain.handle('words:list', (_e, filter) => {
-    const f = filter || {};
-    let sql = `SELECT u.*, d.phonetic, d.translation, d.tag,
-      (SELECT COUNT(*) FROM word_hit h WHERE h.word = u.word) AS hits
-      FROM user_word u LEFT JOIN dict d ON d.word = u.word`;
-    const where = [];
-    const params = [];
-    if (f.status && f.status !== 'all') where.push('u.status = ?'), params.push(f.status);
-    if (f.search) where.push('(u.word LIKE ? OR d.translation LIKE ?)'), params.push(`%${f.search}%`, `%${f.search}%`);
-    if (where.length) sql += ' WHERE ' + where.join(' AND ');
-    sql += ` ORDER BY CASE u.status WHEN 'learning' THEN 0 ELSE 1 END, u.created_at DESC`;
-    return q(sql, params);
-  });
+  ipcMain.handle('words:list', (_e, filter) => listBookWords(filter));
 
   ipcMain.handle('words:detail', (_e, word) => {
     const uw = q('SELECT * FROM user_word WHERE word = ?', [word])[0] || null;
@@ -553,40 +505,66 @@ function registerIpc() {
       `SELECT u.word, d.phonetic, d.translation, u.reps, u.due,
         (SELECT sentence FROM word_hit h WHERE h.word = u.word LIMIT 1) AS sentence
        FROM user_word u LEFT JOIN dict d ON d.word = u.word
-       WHERE u.status = 'learning' AND (u.due IS NULL OR u.reps = 0) AND u.word NOT IN (SELECT word FROM (SELECT word FROM user_word WHERE status='learning' AND due <= ?)) ORDER BY u.created_at DESC LIMIT 20`, [nowStr]);
+       WHERE u.status = 'learning' AND (u.due IS NULL OR (u.reps = 0 AND NOT EXISTS (SELECT 1 FROM review_log l WHERE l.word_id=u.id))) AND u.word NOT IN (SELECT word FROM (SELECT word FROM user_word WHERE status='learning' AND due <= ?)) ORDER BY u.created_at DESC LIMIT 20`, [nowStr]);
+    const cache = new Map();
+    const resolve = raw => { if (!cache.has(raw)) cache.set(raw,resolveWord(raw)); return cache.get(raw); };
+    for (const row of [...due,...fresh]) {
+      row.clozeHtml = '';
+      // 优先最近一条能准确定位目标词的原句；旧空句或错误出处不能泄露答案。
+      for (const hit of q('SELECT sentence FROM word_hit WHERE word=? AND sentence IS NOT NULL AND sentence != "" ORDER BY id DESC',[row.word])) {
+        const marked = markContext(hit.sentence,row.word,resolve);
+        if (marked.count) { row.sentence = hit.sentence; row.clozeHtml = marked.html; break; }
+      }
+    }
     return { due, fresh };
   });
 
-  ipcMain.handle('review:answer', (_e, word, rating) => {
-    const uw = q('SELECT * FROM user_word WHERE word = ?', [word])[0];
-    if (!uw) return { ok: false };
-    let { interval_days: iv, ease, reps, lapses } = uw;
-    iv = iv || 0; ease = ease || 2.5; reps = reps || 0; lapses = lapses || 0;
-    if (rating === 0) {
-      reps = 0; lapses += 1; iv = 0.007; ease = Math.max(1.3, ease - 0.2);
-    } else {
-      reps += 1;
-      if (reps === 1) iv = rating === 1 ? 0.5 : 1;
-      else if (reps === 2) iv = rating === 1 ? 3 : 6;
-      else iv = Math.round(iv * ease * (rating === 1 ? 0.6 : 1) * 10) / 10;
-      ease = rating === 1 ? Math.max(1.3, ease - 0.15) : Math.min(3.0, ease + 0.1);
-    }
-    const due = new Date(Date.now() + iv * 86400000).toISOString();
-    run('UPDATE user_word SET interval_days=?, ease=?, reps=?, lapses=?, due=? WHERE word=?', [iv, ease, reps, lapses, due, word]);
-    run('INSERT INTO review_log(word_id, mode, rating, reviewed_at, interval_days, ease, due) VALUES (?,?,?,?,?,?,?)',
-      [uw.id, 'recognize', rating, now(), iv, ease, due]);
-    persist();
-    return { ok: true, interval: iv, due };
+  ipcMain.handle('review:answer', (_e, word, rating, operationId) => {
+    try {
+      if (![0,1,2].includes(rating)) return { ok:false,error:'invalid_rating' };
+      if (operationId != null && (typeof operationId !== 'string' || !/^[\w-]{1,100}$/.test(operationId))) return { ok:false,error:'invalid_operation' };
+      const uw = q('SELECT * FROM user_word WHERE word = ?', [word])[0];
+      if (!uw) return { ok: false,error:'word_missing' };
+      if (operationId) {
+        const previous = q('SELECT * FROM review_operation WHERE operation_id=?',[operationId])[0];
+        if (previous) return previous.word_id === uw.id && previous.rating === rating
+          ? { ...JSON.parse(previous.result),duplicate:true } : { ok:false,error:'operation_conflict' };
+      }
+      if (uw.status !== 'learning') return { ok:false,error:'word_not_learning' };
+      let { interval_days: iv, ease, reps, lapses } = uw;
+      iv = iv || 0; ease = ease || 2.5; reps = reps || 0; lapses = lapses || 0;
+      if (rating === 0) {
+        reps = 0; lapses += 1; iv = 0.007; ease = Math.max(1.3, ease - 0.2);
+      } else {
+        reps += 1;
+        if (reps === 1) iv = rating === 1 ? 0.5 : 1;
+        else if (reps === 2) iv = rating === 1 ? 3 : 6;
+        else iv = Math.round(iv * ease * (rating === 1 ? 0.6 : 1) * 10) / 10;
+        ease = rating === 1 ? Math.max(1.3, ease - 0.15) : Math.min(3.0, ease + 0.1);
+      }
+      const due = new Date(Date.now() + iv * 86400000).toISOString();
+      const saved = persistTransaction(() => {
+        run('UPDATE user_word SET interval_days=?, ease=?, reps=?, lapses=?, due=? WHERE word=?', [iv, ease, reps, lapses, due, word]);
+        run('INSERT INTO review_log(word_id, mode, rating, reviewed_at, interval_days, ease, due) VALUES (?,?,?,?,?,?,?)',
+          [uw.id, 'recognize', rating, now(), iv, ease, due]);
+        const result = { ok:true,interval:iv,due };
+        if (operationId) run('INSERT INTO review_operation VALUES (?,?,?,?,?)',[operationId,uw.id,rating,JSON.stringify(result),now()]);
+        return result;
+      });
+      learningChanged('review');
+      return saved;
+    } catch (error) { return { ok:false,error:String(error.message) }; }
   });
 
   ipcMain.handle('stats:summary', () => {
+    const current = new Date(), currentIso = current.toISOString(), day = localDayRange(current);
     const learning = q(`SELECT COUNT(*) c FROM user_word WHERE status='learning'`)[0].c;
     const mastered = q(`SELECT COUNT(*) c FROM user_word WHERE status='mastered'`)[0].c;
-    const dueNow = q(`SELECT COUNT(*) c FROM user_word WHERE status='learning' AND due <= ?`, [now()])[0].c;
-    const today = new Date().toISOString().slice(0, 10);
-    const reviewedToday = q(`SELECT COUNT(*) c FROM review_log WHERE reviewed_at LIKE ?`, [today + '%'])[0].c;
-    const exams = q('SELECT COUNT(*) c FROM exam')[0].c;
-    return { learning, mastered, dueNow, reviewedToday, exams };
+    const dueNow = q(`SELECT COUNT(*) c FROM user_word WHERE status='learning' AND due <= ?`, [currentIso])[0].c;
+    const reviewedToday = q('SELECT COUNT(*) c FROM review_log WHERE reviewed_at>=? AND reviewed_at<?',[day.start,day.end])[0].c;
+    const exams = q('SELECT COUNT(*) c FROM exam WHERE retired=0')[0].c;
+    const nextDue = q("SELECT MIN(due) value FROM user_word WHERE status='learning' AND due>?",[currentIso])[0].value;
+    return { learning, mastered, dueNow, reviewedToday, exams, nextDue, dayEnd:day.end };
   });
 
   ipcMain.handle('settings:get', () => {
@@ -597,15 +575,18 @@ function registerIpc() {
   });
 
   ipcMain.handle('settings:set', (_e, obj) => {
-    for (const [k, v] of Object.entries(obj)) {
-      run('INSERT INTO settings(key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value', [k, String(v)]);
-    }
-    persist();
+    assertWritable();
+    const entries = Object.entries(obj).map(([k,v]) => [k,String(v)]).filter(([k,v]) => q('SELECT value FROM settings WHERE key=?',[k])[0]?.value !== v);
+    if (entries.length) persistTransaction(() => {
+      for (const entry of entries) run('INSERT INTO settings(key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value',entry);
+    });
     return { ok: true };
   });
 
-  ipcMain.handle('ai:translate', (_e, text) => aiCall('translate', text));
-  ipcMain.handle('ai:grammar', (_e, text) => aiCall('grammar', text));
+  ipcMain.handle('ai:cancel', (event,id) => ({ok:true,cancelled:aiRequests.cancel(event?.sender?.id || 0,id)}));
+  ipcMain.handle('ai:translate', (event,text,id) => withAiRequest(event,id,'translate',task => aiCall('translate',text,task)));
+  ipcMain.handle('ai:grammar', (event,text,id) => withAiRequest(event,id,'grammar',task => aiCall('grammar',text,task)));
+  ipcMain.handle('ai:testConnection', (event,settings,id) => withAiRequest(event,id,'probe',task => aiComplete(settings,[{role:'user',content:'Reply with OK.'}],0,15000,task)));
 
   ipcMain.handle('scan:hard', (_e, content, level) => {
     const words = [...new Set(String(content || '').toLowerCase().match(/[a-z][a-z'-]*/g) || [])];
@@ -641,20 +622,10 @@ function registerIpc() {
 
   ipcMain.handle('export:anki', async (_e, filter) => {
     const f = filter || {};
-    const rows = q(
-      `SELECT u.word, u.status, u.note, d.phonetic, d.translation, d.definition, d.tag,
-        (SELECT COUNT(*) FROM word_hit h WHERE h.word = u.word) AS hits
-       FROM user_word u LEFT JOIN dict d ON d.word = u.word
-       ${f.status && f.status !== 'all' ? 'WHERE u.status = ?' : ''}
-       ORDER BY u.created_at DESC`,
-      f.status && f.status !== 'all' ? [f.status] : []
-    );
+    const rows = listBookWords(f);
     if (!rows.length) return { ok: false, error: 'empty' };
-    const clean = (s) => String(s || '').replace(/\r?\n/g, '<br>').replace(/\t/g, ' ').trim();
-    const mark = (sentence, word) => {
-      const re = new RegExp('\\b(\\w*' + String(word).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\w*)\\b', 'gi');
-      return clean(sentence).replace(re, '<b>$1</b>');
-    };
+    const clean = s => escapeHtml(s).replace(/\r?\n/g,'<br>').replace(/\t/g,' ').trim();
+    const mark = (sentence,word) => markContext(sentence,word,resolveWord,'bold').html.replace(/\r?\n/g,'<br>').replace(/\t/g,' ');
     const lines = [];
     for (const r of rows) {
       const hit = q('SELECT h.sentence, e.level, e.year, e.month, e.set_no FROM word_hit h LEFT JOIN passage p ON p.id = h.passage_id LEFT JOIN exam e ON e.id = p.exam_id WHERE h.word = ? LIMIT 1', [r.word])[0];
@@ -667,7 +638,7 @@ function registerIpc() {
         r.note ? `笔记：${clean(r.note)}` : '',
       ].filter(Boolean).join('<br><br>');
       const tags = ['CETWordKeeper', r.status === 'mastered' ? 'mastered' : 'learning', ...parseTags(r.tag)];
-      lines.push([front, back, clean(hit ? hit.sentence : ''), source, tags.join(' ')].join('\t'));
+      lines.push([clean(front), back, clean(hit ? hit.sentence : ''), clean(source), clean(tags.join(' '))].join('\t'));
     }
     const header = '#separator:tab\n#html:true\n#columns:Front\tBack\tContext\tSource\tTags\n#tags column:5\n';
     const content = header + lines.join('\n');
@@ -691,56 +662,130 @@ function registerIpc() {
       filters: [{ name: 'SQLite Database', extensions: ['db'] }],
     });
     if (r.canceled || !r.filePath) return { ok: false, canceled: true };
-    persist();
-    fs.copyFileSync(dbPath, r.filePath);
-    return { ok: true, path: r.filePath };
+    return exportBackup(r.filePath);
+  });
+
+  ipcMain.handle('backup:restorePreview', async () => {
+    try {
+      assertWritable(); restoreStore.cancel();
+      const selected = await dialog.showOpenDialog(win,{properties:['openFile'],filters:[{name:'WordKeeper 数据库',extensions:['db','bak']}]});
+      assertWritable();
+      if (selected.canceled || !selected.filePaths?.length) return {ok:false,canceled:true};
+      const file = selected.filePaths[0];
+      if (fs.statSync(file).size > 256*1024*1024) throw Error('备份不能超过 256 MB');
+      return restoreStore.preview(fs.readFileSync(file),file);
+    } catch (error) { return {ok:false,error:error.message}; }
+  });
+  ipcMain.handle('backup:restoreCancel', () => { restoreStore.cancel(); return {ok:true}; });
+  ipcMain.handle('backup:restoreCommit', (_event, token) => {
+    try {
+      assertWritable();
+      const result = restoreStore.queue(token,Buffer.from(db.export()));
+      restoreShutdown = true;
+      aiRequests.cancelAll();
+      // exit bypasses renderer beforeunload/draft writes; startup handles the durable job.
+      // A downloaded updater must not intercept this restore restart.
+      autoUpdater.autoInstallOnAppQuit = false;
+      setTimeout(() => { app.relaunch(); app.exit(0); },500);
+      return result;
+    } catch (error) { return {ok:false,error:error.message}; }
   });
 
   ipcMain.handle('import:exam', (_e, payload) => {
+    let transaction = false;
+    let before = null;
     try {
-      const data = typeof payload === 'string' ? JSON.parse(payload) : payload;
+      if (typeof payload === 'string' && Buffer.byteLength(payload, 'utf8') > 5 * 1024 * 1024) throw new Error('导入文件不能超过 5 MB');
+      const data = validateExamImport(typeof payload === 'string' ? JSON.parse(payload) : payload);
+      before = db.export();
+      run('BEGIN');
+      transaction = true;
       const r = runInsertExam(data);
-      persist();
+      // sql.js export 会关闭并重开连接，必须先提交；写盘失败再恢复导入前快照。
+      run('COMMIT');
+      transaction = false;
+      if (r.ok) persist();
+      if (r.ok) learningChanged('exams');
       return r;
     } catch (err) {
+      if (transaction) run('ROLLBACK');
+      else if (before) { db.close(); db = new sqlModule.Database(before); }
       return { ok: false, error: String(err.message || err) };
     }
   });
 
   ipcMain.handle('backup:export', async (_e, targetPath) => {
-    persist();
-    fs.copyFileSync(dbPath, targetPath);
-    return { ok: true, path: targetPath };
+    return exportBackup(targetPath);
   });
 
   // ---- 做题 / 交卷 / 解析 ----
-  ipcMain.handle('exam:analysis', async (_e, examId) => ensureExamAnalysis(examId));
+  ipcMain.handle('exam:analysis', (event,examId,id) => withAiRequest(event,id,'analysis',task => ensureExamAnalysis(examId,task,true)));
 
   ipcMain.handle('attempt:get', (_e, examId) => {
+    const session = answerSession(examId);
     const answers = q('SELECT question_id, choice, is_correct FROM user_answer WHERE exam_id = ?', [examId]);
     const attempt = q('SELECT * FROM attempt WHERE exam_id = ? ORDER BY id DESC LIMIT 1', [examId])[0] || null;
-    return { answers, attempt };
+    let draft = null;
+    if (session.row?.answers && session.row.content_revision === session.revision) {
+      try { draft = { answers: validateAnswerChoices(examId, JSON.parse(session.row.answers)), updated_at: session.row.updated_at }; } catch { /* 损坏草稿不影响读卷 */ }
+    }
+    return { answers, attempt, revision: session.revision, generation: session.generation, draft,
+      draftStale: !!session.row?.answers && session.row.content_revision !== session.revision,
+      contentChanged: !!attempt?.content_revision && attempt.content_revision !== session.revision };
   });
 
-  ipcMain.handle('attempt:submit', async (_e, examId, userAnswers) => {
-    // 客观题判分依赖正确答案；本地没有就先让 AI 生成并落库（未配置 Key 时明确返回 no_key）
-    const ens = await ensureExamAnalysis(examId);
-    if (!ens.ok) return { ok: false, error: ens.error };
-    return gradeExam(examId, userAnswers);
+  ipcMain.handle('attempt:saveDraft', (_e, examId, payload) => {
+    try {
+      const session = answerSession(examId);
+      if (!payload || payload.revision !== session.revision || payload.generation !== session.generation) return { ok: false, error: 'stale_draft' };
+      const latest = q('SELECT content_revision FROM attempt WHERE exam_id=? ORDER BY id DESC LIMIT 1', [examId])[0];
+      if (latest?.content_revision === session.revision) return { ok: false, error: 'already_graded' };
+      const choices = JSON.stringify(validateAnswerChoices(examId,payload.answers));
+      if (session.row?.answers === choices && session.row.content_revision === session.revision) return { ok: true };
+      return persistTransaction(() => {
+        run(`INSERT INTO answer_draft(exam_id,generation,content_revision,answers,updated_at) VALUES (?,?,?,?,?)
+          ON CONFLICT(exam_id) DO UPDATE SET content_revision=excluded.content_revision,answers=excluded.answers,updated_at=excluded.updated_at`,
+        [examId,session.generation,session.revision,choices,now()]);
+        return { ok: true };
+      });
+    } catch (error) { return { ok: false, error: String(error.message) }; }
   });
 
-  ipcMain.handle('attempt:clear', (_e, examId) => {
-    // 必须同时删掉 attempt 行：否则「重做本套」后 attempt 仍在，
-    // 重进阅读器会被 restoreAttempt 判定为「已交卷」，答案锁死、解析强制显示（无法再作答）
-    const hadAttempt = q('SELECT COUNT(*) AS n FROM attempt WHERE exam_id = ?', [examId])[0].n;
-    run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
-    run('DELETE FROM attempt WHERE exam_id = ?', [examId]);
-    persist();
-    return { ok: true, cleared: hadAttempt };
+  ipcMain.handle('attempt:submit', (event, examId, userAnswers, context, id) => withAiRequest(event,id,'submit',async task => {
+    try {
+      const session = answerSession(examId);
+      if (context && (context.revision !== session.revision || context.generation !== session.generation)) return { ok:false, error:'stale_draft' };
+      const choices = validateAnswerChoices(examId,userAnswers || {});
+      // 客观题判分依赖正确答案；本地没有就先让 AI 生成并落库（未配置 Key 时明确返回 no_key）
+      const ens = await ensureExamAnalysis(examId,task);
+      // AI 请求期间发生重做或另一次交卷，旧请求不能重新写回。
+      const latest = answerSession(examId);
+      if (latest.generation !== session.generation) return { ok:false, error:'stale_draft' };
+      if (!ens.ok) return { ok:false,error:ens.error,revision:latest.revision,generation:latest.generation };
+      task.ensureActive();
+      return gradeExam(examId, choices);
+    } catch (error) { return { ok:false, error:String(error.message) }; }
+  }));
+
+  ipcMain.handle('attempt:clear', (_e, examId, context) => {
+    try {
+      const session = answerSession(examId);
+      if (context && (context.revision !== session.revision || context.generation !== session.generation)) return { ok:false,error:'stale_draft' };
+      // 必须同时删掉 attempt 行：否则「重做本套」后 attempt 仍在，
+      // 重进阅读器会被 restoreAttempt 判定为「已交卷」，答案锁死、解析强制显示（无法再作答）
+      const hadAttempt = q('SELECT COUNT(*) AS n FROM attempt WHERE exam_id = ?', [examId])[0].n;
+      return persistTransaction(() => {
+        run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
+        run('DELETE FROM attempt WHERE exam_id = ?', [examId]);
+        const generation = advanceAnswerSession(examId);
+        return { ok: true, cleared: hadAttempt, revision: session.revision, generation };
+      });
+    } catch (error) { return { ok:false,error:String(error.message) }; }
   });
 
   // ---- 右侧 AI 问答（带知识库与当前文章上下文）----
-  ipcMain.handle('chat:send', async (_e, examId, passageId, text) => {
+  ipcMain.handle('chat:send', (event, examId, passageId, text, id) => withAiRequest(event,id,'chat',async task => {
+    const generation = chatGeneration;
     const msg = String(text || '').trim();
     if (!msg) return { ok: false, error: 'empty' };
     const context = buildChatContext(examId, passageId, msg);
@@ -751,19 +796,23 @@ function registerIpc() {
     const history = q('SELECT role, content FROM chat_message ORDER BY id DESC LIMIT 10')
       .reverse()
       .map((m) => ({ role: m.role, content: m.content }));
-    const r = await aiChat([{ role: 'system', content: system }, ...history, { role: 'user', content: msg }]);
+    const r = await aiChat([{ role: 'system', content: system }, ...history, { role: 'user', content: msg }],task);
     if (!r.ok) return r;
-    run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['user', msg, now()]);
-    run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['assistant', r.response.content, now()]);
-    persist();
+    task.ensureActive();
+    if (generation !== chatGeneration) return {ok:false,error:'cancelled'};
+    persistTransaction(() => {
+      run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['user', msg, now()]);
+      run('INSERT INTO chat_message(role, content, created_at) VALUES (?,?,?)', ['assistant', r.response.content, now()]);
+    });
     return { ok: true, reply: r.response.content };
-  });
+  }));
 
   ipcMain.handle('chat:history', () =>
     q('SELECT role, content, created_at FROM chat_message ORDER BY id DESC LIMIT 200').reverse());
   ipcMain.handle('chat:clear', () => {
-    run('DELETE FROM chat_message');
-    persist();
+    persistTransaction(() => run('DELETE FROM chat_message'));
+    ++chatGeneration;
+    aiRequests.cancelKind('chat');
     return { ok: true };
   });
 
@@ -786,19 +835,25 @@ function registerIpc() {
   });
 
   // ---- 作文与翻译的作答、保存与 AI 批改 ----
-  ipcMain.handle('essay:get', (_e, examId, section) =>
-    q('SELECT content, result FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0]
-    || { content: '', result: null });
+  ipcMain.handle('essay:get', (_e, examId, section) => {
+    const row = q('SELECT content, result FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0] || {content:'',result:null};
+    if (!row.result) return row;
+    try { return {...row,result:JSON.stringify(validateEssayResult(parseAiJson(row.result),section))}; }
+    catch { return {...row,result:null,resultInvalid:true}; } // Preserve the original bytes in DB for recovery.
+  });
 
   ipcMain.handle('essay:save', (_e, examId, section, content) => {
     run(`INSERT INTO essay(exam_id, section, content, updated_at) VALUES (?,?,?,?)
-         ON CONFLICT(exam_id, section) DO UPDATE SET content = excluded.content, updated_at = excluded.updated_at`,
+         ON CONFLICT(exam_id, section) DO UPDATE SET
+         result = CASE WHEN essay.content = excluded.content THEN essay.result ELSE NULL END,
+         content = excluded.content, updated_at = excluded.updated_at`,
       [examId, section, String(content || ''), now()]);
     persist();
     return { ok: true };
   });
 
-  ipcMain.handle('essay:grade', async (_e, examId, section) => {
+  ipcMain.handle('essay:grade', (event, examId, section, id) => withAiRequest(event,id,'essay',async task => {
+    if (!['writing','translation'].includes(section)) return {ok:false,error:'invalid_section'};
     const row = q('SELECT content FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0];
     const text = row ? String(row.content || '') : '';
     if (text.trim().length < 30) return { ok: false, error: 'too_short' };
@@ -808,7 +863,7 @@ function registerIpc() {
 
     const exam = q('SELECT level FROM exam WHERE id = ?', [examId])[0] || {};
     const isWriting = section === 'writing';
-    const src = q('SELECT content FROM passage WHERE exam_id = ? AND section = ? LIMIT 1', [examId, section])[0];
+    const src = q('SELECT content FROM passage WHERE exam_id = ? AND section = ? AND retired=0 LIMIT 1', [examId, section])[0];
     const rubric = isWriting
       ? 'CET 写作 15 分制：14-15 切题、表达思想清楚、文字通顺连贯；11-13 切题、表达清楚、有少量语言错误；8-10 基本切题、部分表达不清；5-7 勉强切题、条理不清；2-4 严重跑题。'
       : 'CET 翻译 15 分制：13-15 准确传达原文意思、语言通顺无重大错误；10-12 基本准确；7-9 大意传达但有较多错误；4-6 只传达部分意思；1-3 基本未传达。';
@@ -826,18 +881,58 @@ function registerIpc() {
       `【学生${isWriting ? '作文' : '译文'}】\n${text}`,
     ].join('\n');
 
-    const r = await aiCall(isWriting ? 'writingGrade' : 'translationGrade', prompt);
+    const r = await aiCall(isWriting ? 'writingGrade' : 'translationGrade',prompt,task,value => validateEssayResult(value,section));
     if (!r.ok) return r;
-    let data;
-    try {
-      data = parseAiJson(r.response.content);
-    } catch {
-      return { ok: false, error: 'bad_json' };
-    }
-    run('UPDATE essay SET result = ? WHERE exam_id = ? AND section = ?', [JSON.stringify(data), examId, section]);
-    persist();
+    const data = r.data;
+    const current = q('SELECT content FROM essay WHERE exam_id = ? AND section = ?', [examId, section])[0];
+    if (!current || current.content !== text) return { ok: false, error: 'stale_draft' };
+    task.ensureActive();
+    persistTransaction(() => run('UPDATE essay SET result = ? WHERE exam_id = ? AND section = ?', [JSON.stringify(data), examId, section]));
     return { ok: true, result: data, cached: !!r.cached };
+  }));
+}
+
+function validateExamImport(data) {
+  const object = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
+  const text = (v, name, max = 500000) => {
+    if (v == null) return '';
+    if (typeof v !== 'string' || v.length > max) throw new Error(`${name} 必须为不超过 ${max} 字的文本`);
+    return v;
+  };
+  const integer = (v, name, min, max) => {
+    if (!Number.isInteger(v) || v < min || v > max) throw new Error(`${name} 必须为 ${min}–${max} 的整数`);
+    return v;
+  };
+  if (!object(data)) throw new Error('真题必须为 JSON 对象');
+  const level = text(data.level, 'level', 32).trim();
+  if (!level) throw new Error('缺少 level');
+  const year = integer(data.year, 'year', 1, 9999);
+  const month = integer(data.month ?? 6, 'month', 1, 12);
+  const set_no = integer(data.set_no ?? 1, 'set_no', 1, 9999);
+  if (!Array.isArray(data.passages) || !data.passages.length || data.passages.length > 200) throw new Error('passages 必须是 1–200 篇的数组');
+  const sections = new Set(['reading', 'cloze', 'match', 'writing', 'translation', 'listening']);
+  const passages = data.passages.map((p, pi) => {
+    if (!object(p)) throw new Error(`第 ${pi + 1} 篇必须为对象`);
+    const section = p.section || 'reading';
+    if (!sections.has(section)) throw new Error(`第 ${pi + 1} 篇 section 无效`);
+    const questions = p.questions ?? [];
+    if (!Array.isArray(questions) || questions.length > 200) throw new Error(`第 ${pi + 1} 篇 questions 必须是不超过 200 题的数组`);
+    return {
+      section, seq: integer(p.seq ?? pi + 1, 'seq', 1, 10000),
+      title: text(p.title, '篇章标题', 500), content: text(p.content, '正文'),
+      translation: text(p.translation, '译文'), reference: text(p.reference, '参考文本'),
+      questions: questions.map((question, qi) => {
+        if (!object(question)) throw new Error(`第 ${pi + 1} 篇第 ${qi + 1} 题必须为对象`);
+        const options = question.options ?? [];
+        if (!Array.isArray(options) || options.length > 50 || options.some(o => typeof o !== 'string' || o.length > 10000)) throw new Error('options 必须是不超过 50 项的文本数组');
+        return { qtype: text(question.qtype, 'qtype', 32), stem: text(question.stem, '题干', 10000), options,
+          answer: text(question.answer, '答案', 32), analysis: text(question.analysis, '解析', 50000) };
+      }),
+    };
   });
+  const normalized = { level, year, month, set_no, title: text(data.title, '标题', 500), passages };
+  if (Buffer.byteLength(JSON.stringify(normalized), 'utf8') > 5 * 1024 * 1024) throw new Error('导入数据不能超过 5 MB');
+  return normalized;
 }
 
 function runInsertExam(data) {
@@ -864,48 +959,65 @@ function runInsertExam(data) {
   return { ok: true, examId };
 }
 
-const STOP_WORDS = new Set(('a an the this that these those it its is are was were be been being am do does did done ' +
-  'have has had having will would shall should can could may might must to of in on at by for with from as and or but if ' +
-  'not no nor so than then there here when where which who whom whose what how why all any both each few more most other ' +
-  'some such only own same too very just also into over under again further once during before after above below up down out ' +
-  'off about against between through i you he she we they me him her us them my your his their our one two three ' +
-  's t d ll re ve m').split(' '));
-
 function rebuildWordFreq() {
-  run('DELETE FROM word_freq');
-  const dictWords = new Set();
-  for (const r of q('SELECT word FROM dict')) dictWords.add(r.word);
-  const passages = q('SELECT id, content, exam_id FROM passage');
-  const freq = new Map();
-  for (const p of passages) {
-    const words = new Set(String(p.content).toLowerCase().match(/[a-z][a-z'-]*/g) || []);
-    for (const raw of words) {
-      if (raw.length < 3 || STOP_WORDS.has(raw)) continue;
-      const r = resolveWord(raw);
-      if (!dictWords.has(r.word)) continue;
-      if (!freq.has(r.word)) freq.set(r.word, { total: 0, exams: new Set() });
-      freq.get(r.word).total += 1;
-      freq.get(r.word).exams.add(p.exam_id);
-    }
+  const rows = countWordFrequency(
+    q('SELECT p.id,p.content,p.exam_id FROM passage p JOIN exam e ON e.id=p.exam_id WHERE p.retired=0 AND e.retired=0'),
+    q('SELECT word,exchange FROM dict'), EXTRA_FORMS);
+  // 可嵌入导入事务，也可独立运行；失败保留旧计数和版本标记。
+  run('SAVEPOINT word_frequency_rebuild');
+  try {
+    run('DELETE FROM word_freq');
+    const stmt = db.prepare('INSERT INTO word_freq(word,total,exams) VALUES (?,?,?)');
+    try { for (const row of rows) stmt.run([row.word,row.total,row.exams]); }
+    finally { stmt.free(); }
+    run("INSERT OR REPLACE INTO content_sync_state VALUES ('word-frequency',?,1,?)",[FREQUENCY_REVISION,now()]);
+    run('RELEASE word_frequency_rebuild');
+  } catch (error) {
+    run('ROLLBACK TO word_frequency_rebuild'); run('RELEASE word_frequency_rebuild'); throw error;
   }
-  const stmt = db.prepare('INSERT INTO word_freq(word, total, exams) VALUES (?,?,?)');
-  for (const [w, v] of freq) {
-    stmt.run([w, v.total, v.exams.size]);
-  }
-  stmt.free();
 }
 
-async function aiCall(kind, text) {
+function readAiSettings() {
+  const settings = {};
+  for (const row of q('SELECT key,value FROM settings')) settings[row.key] = row.value;
+  return settings;
+}
+function aiConfig(settings) {
+  const base = typeof settings?.api_base === 'string' ? settings.api_base.trim().replace(/\/+$/, '') : '';
+  const key = typeof settings?.api_key === 'string' ? settings.api_key.trim() : '';
+  const model = typeof settings?.api_model === 'string' && settings.api_model.trim() ? settings.api_model.trim() : 'deepseek-chat';
+  if (!base || !key) throw new Error('no_key');
+  let url;
+  try { url = new (require('node:url').URL)(base); } catch { throw new Error('bad_base'); }
+  if (!['http:','https:'].includes(url.protocol) || url.username || url.password || url.search || url.hash) throw new Error('bad_base');
+  return { base:url.toString().replace(/\/+$/,''),key,model };
+}
+async function aiComplete(settings,messages,temperature=0.3,timeoutMs=30000,task=null) {
+  try {
+    task?.ensureActive();
+    const config = aiConfig(settings);
+    const response = await fetch(config.base + '/chat/completions', {
+      method:'POST', headers:{'Content-Type':'application/json',Authorization:'Bearer '+config.key},
+      body:JSON.stringify({model:config.model,messages,temperature}),
+      signal:requestSignal(task,timeoutMs),
+    });
+    task?.ensureActive();
+    if (!response.ok) return { ok:false,error:'api_'+response.status };
+    const data = await response.json();
+    task?.ensureActive();
+    const content = data?.choices?.[0]?.message?.content;
+    if (typeof content !== 'string' || !content.trim()) return { ok:false,error:'bad_response' };
+    return { ok:true,response:{content} };
+  } catch (error) {
+    const message = String(error.message);
+    return { ok:false,error:task?.signal.aborted ? 'cancelled' : ['no_key','bad_base'].includes(message) ? message
+      : ['TimeoutError','AbortError'].includes(error.name) ? 'timeout' : 'network: '+message };
+  }
+}
+
+async function aiCall(kind, text, task=null, validate=null) {
+  task?.ensureActive();
   if (!text || !text.trim()) return { ok: false, error: 'empty' };
-  const crypto = require('crypto');
-  const hash = crypto.createHash('sha256').update(kind + ':' + text).digest('hex');
-  const cached = q('SELECT response FROM ai_cache WHERE hash = ?', [hash]);
-  if (cached.length) return { ok: true, kind, text, response: JSON.parse(cached[0].response), cached: true };
-
-  const s = {};
-  for (const r of q('SELECT key, value FROM settings')) s[r.key] = r.value;
-  if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key' };
-
   const prompts = {
     translate: `You are a professional CET exam translator. Translate the following English into natural Chinese. Output ONLY the translation.\n\n${text}`,
     grammar: `You are an English grammar teacher for Chinese CET students. Analyze the sentence below. Output in this exact format (plain text, no markdown):\n主干: <subject-verb-object core>\n从句/结构: <clause types and layers, one per line; write "无" if none>\n语法要点: <2-4 key grammar points with brief explanation in Chinese>\n\nSentence: ${text}`,
@@ -915,24 +1027,30 @@ async function aiCall(kind, text) {
     translationGrade: text,
   };
   try {
-    const resp = await fetch(s.api_base.replace(/\/+$/, '') + '/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + s.api_key },
-      body: JSON.stringify({
-        model: s.api_model || 'deepseek-chat',
-        messages: [{ role: 'user', content: prompts[kind] }],
-        temperature: 0.3,
-      }),
-    });
-    if (!resp.ok) return { ok: false, error: 'api_' + resp.status };
-    const data = await resp.json();
-    const content = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
-    const payload = { content };
-    run('INSERT OR REPLACE INTO ai_cache(hash, kind, response, created_at) VALUES (?,?,?,?)', [hash, kind, JSON.stringify(payload), now()]);
-    persist();
-    return { ok: true, kind, text, response: payload, cached: false };
+    if (!prompts[kind]) return { ok:false,error:'invalid_kind' };
+    const settings = readAiSettings(), config = aiConfig(settings);
+    // 提示词、接口、模型与凭据共同确定缓存身份；不删除旧缓存，也不复用旧身份。
+    const hash = createHash('sha256').update(JSON.stringify(['ai:v2',config.base,config.model,config.key,kind,prompts[kind]])).digest('hex');
+    const cached = q('SELECT response FROM ai_cache WHERE hash=?',[hash])[0];
+    const checked = payload => {
+      if (typeof payload?.content !== 'string' || !payload.content.trim()) throw new AiResultError('payload');
+      return validate ? validate(parseAiJson(payload.content)) : undefined;
+    };
+    if (cached) {
+      try {
+        const payload = JSON.parse(cached.response), data = checked(payload);
+        return {ok:true,kind,text,response:payload,data,cached:true};
+      } catch { /* Invalid cache is never displayed; retry the provider without deleting user data. */ }
+    }
+    const timeoutMs = ['examAnalysis','writingGrade','translationGrade'].includes(kind) ? 120000 : 30000;
+    const result = await aiComplete(settings,[{role:'user',content:prompts[kind]}],0.3,timeoutMs,task);
+    if (!result.ok) return result;
+    task?.ensureActive();
+    const payload = result.response, data = checked(payload);
+    persistTransaction(() => run('INSERT OR REPLACE INTO ai_cache(hash, kind, response, created_at) VALUES (?,?,?,?)',[hash,kind,JSON.stringify(payload),now()]));
+    return { ok: true, kind, text, response: payload, data, cached: false };
   } catch (err) {
-    return { ok: false, error: 'network: ' + err.message };
+    return { ok:false,error:String(err.message),...(err instanceof AiResultError ? {detail:err.code} : {}) };
   }
 }
 
@@ -941,53 +1059,39 @@ async function aiCall(kind, text) {
 // 所以第二次打开是纯本地读取，不再产生任何请求。
 const OBJECTIVE_SECTIONS = ['cloze', 'match', 'reading'];
 
-function buildAnalysisPrompt(passage, questions) {
-  const list = questions
-    .filter((x) => x.stem)
-    .map((x) => {
-      let opts = [];
-      try { opts = JSON.parse(x.options || '[]'); } catch { opts = []; }
-      return `${x.stem}.${opts.length ? ' 选项: ' + opts.join(' | ') : ''}`;
-    })
-    .join('\n');
-  const isChineseSource = passage.section === 'translation';
+function buildAnalysisPrompt(passage, context) {
+  const list = context.targets.map(question => {
+    let options = [];
+    try { options = JSON.parse(question.options || '[]'); } catch { /* imports may omit options */ }
+    return '【题号 n='+question.n+'】'+(question.stem || '（无题干）')+'\n允许答案：'+question.allowed.join('、')
+      +(question.answer ? '\n已知答案：'+question.answer+'，不得改写，只补解析。' : '')
+      +(Array.isArray(options) && options.length ? '\n选项：'+options.join(' | ') : '');
+  }).join('\n\n');
+  const reserved = context.all.filter(q => q.answer && !context.targets.some(target => target.id === q.id)).map(q => q.answer).filter(answer => /^[A-Z]$/.test(answer));
   return [
     '你是中国大学英语四六级（CET）命题与解析专家。下面是一篇真题材料及其题目。',
     '只返回一个 JSON 对象（不要 markdown 代码块、不要任何多余文字），结构严格如下：',
     '{"translation":"...","answers":[{"n":26,"answer":"A","analysis":"..."}]}',
-    '',
-    '要求：',
-    isChineseSource
-      ? '- translation：正文是中文，请给出对应的英文参考译文。'
-      : '- translation：把正文完整、通顺地译成中文，并保留原有分段。',
-    '- answer：只填一个大写字母。仔细阅读题是 A–D；选词填空与长篇阅读是 A–O。',
-    '- 选词填空：从 A–O 词库中为每个空挑一个词，每个词最多使用一次。',
-    '- analysis：60–150 字中文解析，说明为什么选它，并指出最有迷惑性的干扰项错在哪。',
-    '- 题号必须与下面给出的题号完全一致，不要增删题目。',
-    '',
-    `【题型】${passage.section}`,
-    `【正文】\n${passage.content}`,
-    list ? `\n【题目】\n${list}` : '',
+    '', '要求：',
+    context.needTranslation ? '- translation：把正文完整、通顺地译成中文，并保留原有分段。' : '- translation：当前已有译文，请填空字符串，不要改写。',
+    '- 只回答下方列出的题目，answers 数量必须等于 '+context.targets.length+'；没有待补题时必须返回空数组。',
+    '- n 必须是下方明确给出的整数题号，不要从题干中的年份或其他数字猜测，不要重复或遗漏。',
+    '- answer 必须是该题允许答案中的一个大写字母，analysis 必须为非空中文解析。',
+    ...(context.section === 'cloze' ? ['- 选词填空每个词最多使用一次；不能使用这些已有答案：'+(reserved.join('、') || '无')] : []),
+    '【题型】'+passage.section, '【正文】\n'+passage.content,
+    list ? '【本次待补题目】\n'+list : '【本次待补题目】无',
   ].join('\n');
 }
 
-function parseAiJson(content) {
-  let s = String(content || '').trim();
-  s = s.replace(/^```(?:json)?/i, '').replace(/```\s*$/, '').trim();
-  const i = s.indexOf('{');
-  const j = s.lastIndexOf('}');
-  if (i >= 0 && j > i) s = s.slice(i, j + 1);
-  return JSON.parse(s);
-}
-
-async function ensureExamAnalysis(examId) {
-  const passages = q('SELECT * FROM passage WHERE exam_id = ? ORDER BY id', [examId]);
+async function ensureExamAnalysis(examId,task=null,includeDetails=false) {
+  task?.ensureActive();
+  const passages = q('SELECT * FROM passage WHERE exam_id = ? AND retired=0 ORDER BY source_order, id', [examId]);
   const todo = [];
   for (const p of passages) {
-    const qs = q('SELECT * FROM question WHERE passage_id = ? ORDER BY id', [p.id]);
-    const needTranslation = !p.translation && OBJECTIVE_SECTIONS.includes(p.section);
-    const needAnswers = qs.some((x) => !x.answer && x.stem);
-    if (needTranslation || needAnswers) todo.push({ p, qs });
+    const qs = q('SELECT * FROM question WHERE passage_id = ? AND retired=0 ORDER BY source_order, id', [p.id]);
+    if (!OBJECTIVE_SECTIONS.includes(p.section)) continue;
+    const context = analysisContext(p,qs,{includeAnalysis:includeDetails,includeTranslation:includeDetails});
+    if (context.needTranslation || context.targets.length) todo.push({p,qs,context});
   }
   if (!todo.length) return { ok: true, cached: true, pending: 0 };
 
@@ -996,54 +1100,61 @@ async function ensureExamAnalysis(examId) {
   if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key', pending: todo.length };
 
   let generated = 0;
-  for (const { p, qs } of todo) {
-    const r = await aiCall('examAnalysis', buildAnalysisPrompt(p, qs));
-    if (!r.ok) return { ok: false, error: r.error, pending: todo.length - generated };
-    let data;
-    try {
-      data = parseAiJson(r.response.content);
-    } catch {
-      return { ok: false, error: 'bad_json', pending: todo.length - generated };
-    }
-    if (data.translation) run('UPDATE passage SET translation = ? WHERE id = ?', [String(data.translation), p.id]);
-    for (const a of data.answers || []) {
-      const key = String(a.n).replace(/\D/g, '');
-      const hit = qs.find((x) => String(x.stem).replace(/\D/g, '') === key);
-      if (!hit) continue;
-      run('UPDATE question SET answer = ?, analysis = ? WHERE id = ?',
-        [String(a.answer || '').toUpperCase().replace(/[^A-Z]/g, '').slice(0, 2), String(a.analysis || ''), hit.id]);
-    }
+  for (const { p, context } of todo) {
+    task?.ensureActive();
+    const r = await aiCall('examAnalysis',buildAnalysisPrompt(p,context),task,value => validateAnalysisResult(value,context));
+    if (!r.ok) return {ok:false,error:r.error,detail:r.detail,pending:todo.length-generated};
+    const data = r.data;
+    task?.ensureActive();
+    const beforeRevision = assessmentRevision(db,examId);
+    persistTransaction(() => {
+      const current = q('SELECT translation FROM passage WHERE id=?',[p.id])[0];
+      if (data.translation && current && !String(current.translation || '').trim()) run('UPDATE passage SET translation=? WHERE id=?',[data.translation,p.id]);
+      for (const answer of data.answers) {
+        const existing = q('SELECT answer,analysis FROM question WHERE id=?',[answer.id])[0];
+        if (!existing || existing.answer && existing.answer !== answer.answer) continue;
+        const choice = existing.answer || answer.answer;
+        const analysis = String(existing.analysis || '').trim() ? existing.analysis : answer.analysis;
+        if (choice !== existing.answer || analysis !== existing.analysis) run('UPDATE question SET answer=?,analysis=? WHERE id=?',[choice,analysis,answer.id]);
+      }
+      // AI changes answers, not question identity. Rebind only a current valid draft;
+      // otherwise leaving mid-analysis could orphan saved choices before the renderer sees the new revision.
+      const revision = assessmentRevision(db,examId);
+      run('UPDATE answer_draft SET content_revision=? WHERE exam_id=? AND content_revision=? AND answers IS NOT NULL',
+        [revision,examId,beforeRevision]);
+    });
     generated++;
-    persist();
   }
   return { ok: true, cached: false, pending: 0, generated };
 }
 
 function gradeExam(examId, userAnswers) {
-  const ua = userAnswers || {};
-  const questions = q(
-    `SELECT q.id, q.stem, q.answer FROM question q JOIN passage p ON p.id = q.passage_id
-     WHERE p.exam_id = ? AND p.section IN ('cloze','match','reading')`,
-    [examId]
-  );
-  let correct = 0;
-  const detail = [];
-  run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
-  for (const x of questions) {
-    const choice = String(ua[x.id] || '').toUpperCase().replace(/[^A-Z]/g, '');
-    const right = String(x.answer || '').toUpperCase().replace(/[^A-Z]/g, '');
-    const isCorrect = !!choice && !!right && choice === right;
-    if (isCorrect) correct++;
-    run('INSERT INTO user_answer(exam_id, question_id, choice, is_correct, updated_at) VALUES (?,?,?,?,?)',
-      [examId, x.id, choice, isCorrect ? 1 : 0, now()]);
-    detail.push({ question_id: x.id, stem: x.stem, choice, answer: right, correct: isCorrect });
-  }
-  const total = questions.length;
-  const score = total ? Math.round((correct / total) * 1000) / 10 : 0;
-  run('INSERT INTO attempt(exam_id, submitted_at, total, correct, score, detail) VALUES (?,?,?,?,?,?)',
-    [examId, now(), total, correct, score, JSON.stringify(detail)]);
-  persist();
-  return { ok: true, total, correct, score, detail };
+  return persistTransaction(() => {
+    const ua = userAnswers || {};
+    const questions = q(
+      `SELECT q.id, q.stem, q.answer FROM question q JOIN passage p ON p.id = q.passage_id
+       WHERE p.exam_id = ? AND p.retired=0 AND q.retired=0 AND p.section IN ('cloze','match','reading') ORDER BY p.source_order,p.id,q.source_order,q.id`,
+      [examId]
+    );
+    let correct = 0;
+    const detail = [];
+    run('DELETE FROM user_answer WHERE exam_id = ?', [examId]);
+    for (const x of questions) {
+      const choice = String(ua[x.id] || '').toUpperCase().replace(/[^A-Z]/g, '');
+      const right = String(x.answer || '').toUpperCase().replace(/[^A-Z]/g, '');
+      const isCorrect = !!choice && !!right && choice === right;
+      if (isCorrect) correct++;
+      run('INSERT INTO user_answer(exam_id, question_id, choice, is_correct, updated_at) VALUES (?,?,?,?,?)',
+        [examId, x.id, choice, isCorrect ? 1 : 0, now()]);
+      detail.push({ question_id: x.id, stem: x.stem, choice, answer: right, correct: isCorrect });
+    }
+    const total = questions.length;
+    const score = total ? Math.round((correct / total) * 1000) / 10 : 0;
+    run('INSERT INTO attempt(exam_id, submitted_at, total, correct, score, detail, content_revision) VALUES (?,?,?,?,?,?,?)',
+      [examId, now(), total, correct, score, JSON.stringify(detail), assessmentRevision(db, examId)]);
+    const generation = advanceAnswerSession(examId);
+    return { ok: true, total, correct, score, detail, revision: assessmentRevision(db,examId), generation };
+  });
 }
 
 // ---- 内置英语知识库（题型套路 + 语法结构），AI 问答时按关键词命中注入 ----
@@ -1097,23 +1208,8 @@ function pickKb(query, entries, limit) {
 }
 
 // 多轮对话（不缓存：同样的问题在不同上下文/历史下应有不同回答）
-async function aiChat(messages) {
-  const s = {};
-  for (const r of q('SELECT key, value FROM settings')) s[r.key] = r.value;
-  if (!s.api_key || !s.api_base) return { ok: false, error: 'no_key' };
-  try {
-    const resp = await fetch(s.api_base.replace(/\/+$/, '') + '/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + s.api_key },
-      body: JSON.stringify({ model: s.api_model || 'deepseek-chat', messages, temperature: 0.5 }),
-    });
-    if (!resp.ok) return { ok: false, error: 'api_' + resp.status };
-    const data = await resp.json();
-    const content = data.choices && data.choices[0] && data.choices[0].message ? data.choices[0].message.content : '';
-    return { ok: true, response: { content } };
-  } catch (err) {
-    return { ok: false, error: 'network: ' + err.message };
-  }
+async function aiChat(messages,task=null) {
+  return aiComplete(readAiSettings(),messages,0.5,60000,task);
 }
 
 function buildChatContext(examId, passageId, question) {
@@ -1135,6 +1231,38 @@ function buildChatContext(examId, passageId, question) {
   return parts.join('\n\n');
 }
 
+function exportBackup(targetPath) {
+  assertWritable();
+  if (typeof targetPath !== 'string' || !targetPath.trim()) throw Error('备份路径无效');
+  const target = path.resolve(targetPath), live = path.resolve(dbPath);
+  const sameFile = fs.existsSync(target) && fs.existsSync(live) && fs.statSync(target).ino === fs.statSync(live).ino && fs.statSync(target).dev === fs.statSync(live).dev;
+  if (target.toLowerCase() === live.toLowerCase() || sameFile || (path.dirname(target).toLowerCase() === path.dirname(live).toLowerCase() && /^(restore-|keeper\.pre-restore-|restore-pending\.|restore-state\.|keeper\.db\.)/i.test(path.basename(target)))) throw Error('请选择其他备份路径，不能覆盖使用中的数据库或恢复文件');
+  const bytes = Buffer.from(db.export());
+  inspectBackup(sqlModule,bytes,SCHEMA);
+  atomicWrite(target,bytes,fs);
+  return {ok:true,path:target};
+}
+
+async function initializeStorage() {
+  sqlModule = await initSqlJs({locateFile:f => path.join(__dirname,'..','node_modules','sql.js','dist',f)});
+  restoreStore = createRestoreStore({directory:app.getPath('userData'),SQL:sqlModule,schema:SCHEMA});
+  const pending = restoreStore.begin();
+  try {
+    await initDb();
+    if (pending) {
+      if (contentSyncState.status === 'error') throw Error(contentSyncState.error);
+      restoreStore.finish(pending);
+    }
+  } catch (error) {
+    if (!pending) throw error;
+    try { db?.close(); } catch { /* initialization may have already closed it */ }
+    db = null;
+    restoreStore.rollback(pending,error);
+    await initDb();
+  }
+  restoreState = restoreStore.state();
+}
+
 function createWindow() {
   win = new BrowserWindow({
     width: 1360,
@@ -1149,6 +1277,9 @@ function createWindow() {
       nodeIntegration: false,
     },
   });
+  const owner = win.webContents.id;
+  win.webContents.on('destroyed',() => aiRequests.cancelOwner(owner));
+  win.webContents.on('did-start-loading',() => aiRequests.cancelOwner(owner));
   win.setMenuBarVisibility(false);
   const devUrl = process.env.KEEPER_DEV_URL;
   if (devUrl) {
@@ -1158,8 +1289,9 @@ function createWindow() {
   }
 }
 
-app.whenReady().then(async () => {
-  await initDb();
+if (hasSingleInstanceLock) app.whenReady().then(async () => {
+  try { await initializeStorage(); }
+  catch (error) { dialog.showErrorBox('数据初始化失败',String(error.message||error)); app.quit(); return; }
   registerIpc();
   createWindow();
   app.on('activate', () => {

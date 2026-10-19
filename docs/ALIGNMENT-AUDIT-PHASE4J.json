@@ -1,0 +1,6648 @@
+{
+  "database": "data/keeper.db",
+  "counts": {
+    "A": 289,
+    "B": 19,
+    "C": 3
+  },
+  "passages": [
+    {
+      "passageId": 2,
+      "tag": "CET4 2014.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 91%",
+      "rate": 0.9090909090909091,
+      "anT": 11,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 13,
+          "anchor": "decade:1990",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 13,
+          "en": "Primary schooling became universal only in the 1990s.",
+          "zh": "直到 20 世纪 90 年代，小学教育才得以普及。",
+          "ds": "decade:1990"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 3,
+      "tag": "CET4 2014.6 set1 match",
+      "grade": "A",
+      "why": "命中 67%",
+      "rate": 0.6666666666666666,
+      "anT": 6,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:30",
+          "candidateRows": []
+        },
+        {
+          "row": 8,
+          "anchor": "number:20",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) What, really, would Maria Montessori have made of this scene? The 3",
+          "zh": "[B] 说真的，蒙台梭利会如何看待这一幕？在场的三十来个孩子并没有在沙滩上用手指戳沙子、沿石头摸索或捡贝壳，而是都待在室内，",
+          "ds": "number:30"
+        },
+        {
+          "k": 8,
+          "en": "H) Norman Rockwell, a 20th-century artist, never painted Boy Swiping F",
+          "zh": "[H] 二十世纪的画家诺曼·洛克威尔从未画过《在屏幕上划手指的男孩》，我们心目中完美童年的图景也从未调整到能容纳这个如今再寻",
+          "ds": "number:20"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 4,
+      "tag": "CET4 2014.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 5,
+      "tag": "CET4 2014.6 set1 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 8,
+      "tag": "CET4 2015.12 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 9,
+      "tag": "CET4 2015.12 set1 match",
+      "grade": "A",
+      "why": "命中 50%",
+      "rate": 0.5,
+      "anT": 2,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:11",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D) I'm a mother of three, a teacher, and a developmental psychologist.",
+          "zh": "[D] 我是三个孩子的母亲，也是一名教师和发展心理学家。所以我观察过很多孩子——说话、玩耍、争吵、吃饭、学习，以及做孩子本身",
+          "ds": "number:11"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 10,
+      "tag": "CET4 2015.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 11,
+      "tag": "CET4 2015.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 14,
+      "tag": "CET4 2015.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 15,
+      "tag": "CET4 2015.12 set2 match",
+      "grade": "A",
+      "why": "命中 92%",
+      "rate": 0.9166666666666666,
+      "anT": 12,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 7,
+          "anchor": "decade:1950",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 7,
+          "en": "G) Back in the 1950s most of us grew up in households where Mom cooked",
+          "zh": "[G] 回到 20 世纪 50 年代，我们中的大多数人都在“妈妈几乎每晚都做饭”的家庭里长大。把一顿家常饭端上桌的意愿几乎是",
+          "ds": "decade:1950"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 16,
+      "tag": "CET4 2015.12 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 17,
+      "tag": "CET4 2015.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 67%",
+      "rate": 0.6666666666666666,
+      "anT": 3,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 6,
+          "anchor": "number:30",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 6,
+          "en": "On New Year's Eve, Russians have the world's latest bedtime, hitting t",
+          "zh": "新年前夜，俄罗斯人拥有世界上最晚的就寝时间：凌晨三点半左右才上床。",
+          "ds": "number:30"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 20,
+      "tag": "CET4 2015.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 0%",
+      "rate": 0,
+      "anT": 1,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 12,
+          "anchor": "decade:1920",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 12,
+          "en": "In the 1920s, Swiss psychologist Jean Piaget proposed that children's ",
+          "zh": "20 世纪 20 年代，瑞士心理学家让·皮亚杰提出：儿童的认知能力像花开一样自然展开，几乎不受他们生活中其他事情的左右。",
+          "ds": "decade:1920"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 21,
+      "tag": "CET4 2015.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 22,
+      "tag": "CET4 2015.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 23,
+      "tag": "CET4 2015.12 set3 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 26,
+      "tag": "CET4 2016.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 86%",
+      "rate": 0.8571428571428571,
+      "anT": 7,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "century:19",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "They gathered together temperature readings collected by everything fr",
+          "zh": "他们汇集了各种来源的温度读数——从 19 世纪英国海军舰船的一次航行，到现代的自动化海洋探测器。",
+          "ds": "century:19"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 27,
+      "tag": "CET4 2016.12 set2 match",
+      "grade": "A",
+      "why": "命中 80%",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 1,
+          "anchor": "decade:1960",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 1,
+          "en": "The Secret to Raising Smart Kids A) I first began to investigate the b",
+          "zh": "培养聪明孩子的秘诀 [A] 20 世纪 60 年代，我还是耶鲁大学的心理学研究生时，就开始研究人类动机的基础——以及人们在挫",
+          "ds": "decade:1960"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 28,
+      "tag": "CET4 2016.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 29,
+      "tag": "CET4 2016.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 32,
+      "tag": "CET4 2016.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 33,
+      "tag": "CET4 2016.12 set3 match",
+      "grade": "A",
+      "why": "命中 80%",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:100",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D)The concept of gamification is not entirely new, Werbach says. Compa",
+          "zh": "[D] 韦尔巴赫说，游戏化的概念并不全新。公司、营销人员和教师长久以来一直在寻找有趣的方式来调动人们寻求奖励或好胜的天性。他",
+          "ds": "number:100"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 34,
+      "tag": "CET4 2016.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 35,
+      "tag": "CET4 2016.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 38,
+      "tag": "CET4 2017.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 39,
+      "tag": "CET4 2017.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 11,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 40,
+      "tag": "CET4 2017.6 set1 reading",
+      "grade": "A",
+      "why": "命中 94%",
+      "rate": 0.9411764705882353,
+      "anT": 17,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "number:10",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "One in 10 buyers rand toilet rolls made from recycled paper among thei",
+          "zh": "十分之一的买家把再生纸卷厕纸列入首要考虑因素，这凸显出：总体而言，对购物者来说，环境远不如产品质量重要。",
+          "ds": "number:10"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 41,
+      "tag": "CET4 2017.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 44,
+      "tag": "CET4 2017.6 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 45,
+      "tag": "CET4 2017.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 11,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 46,
+      "tag": "CET4 2017.6 set2 reading",
+      "grade": "A",
+      "why": "命中 94%",
+      "rate": 0.9411764705882353,
+      "anT": 17,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "number:10",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "One in 10 buyers rand toilet rolls made from recycled paper among thei",
+          "zh": "十分之一的买家把再生纸卷厕纸列入首要考虑因素，这凸显出：总体而言，对购物者来说，环境远不如产品质量重要。",
+          "ds": "number:10"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 47,
+      "tag": "CET4 2017.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 50,
+      "tag": "CET4 2017.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 75%",
+      "rate": 0.75,
+      "anT": 4,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 9,
+          "anchor": "number:10",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 9,
+          "en": "Over 10 months, Comcast received nearly 12,000 customer complaints, ma",
+          "zh": "十个月内，康卡斯特收到近 1.2 万起客户投诉，许多与其每月流量上限和超量收费有关。",
+          "ds": "number:10"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 51,
+      "tag": "CET4 2017.6 set3 match",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 52,
+      "tag": "CET4 2017.6 set3 reading",
+      "grade": "A",
+      "why": "命中 88%",
+      "rate": 0.875,
+      "anT": 8,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 7,
+          "anchor": "decade:2020",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 7,
+          "en": "This trend will continue into the 2020s, the report projects.",
+          "zh": "报告预计，这一趋势将持续到 2020 年代。",
+          "ds": "decade:2020"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 53,
+      "tag": "CET4 2017.6 set3 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 56,
+      "tag": "CET4 2017.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 57,
+      "tag": "CET4 2017.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 58,
+      "tag": "CET4 2017.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 59,
+      "tag": "CET4 2017.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 62,
+      "tag": "CET4 2017.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 10,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 63,
+      "tag": "CET4 2017.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 64,
+      "tag": "CET4 2017.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 65,
+      "tag": "CET4 2017.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 68,
+      "tag": "CET4 2018.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 75%",
+      "rate": 0.75,
+      "anT": 4,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "number:10",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "Around 9 in 10 people in low-and middle-income countries live in place",
+          "zh": "中低收入国家约十分之九的人，生活在他们会经常经历危险水平室外空气污染的地方。",
+          "ds": "number:10"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 69,
+      "tag": "CET4 2018.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 70,
+      "tag": "CET4 2018.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 71,
+      "tag": "CET4 2018.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 74,
+      "tag": "CET4 2018.12 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 75,
+      "tag": "CET4 2018.12 set2 match",
+      "grade": "A",
+      "why": "命中 83%",
+      "rate": 0.8260869565217391,
+      "anT": 23,
+      "anHit": 19,
+      "anDrift": 0,
+      "anLost": 4,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "century:18",
+          "candidateRows": []
+        },
+        {
+          "row": 7,
+          "anchor": "century:18",
+          "candidateRows": []
+        },
+        {
+          "row": 10,
+          "anchor": "century:19",
+          "candidateRows": []
+        },
+        {
+          "row": 13,
+          "anchor": "century:19",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "E)In his teenage years, Carême fashioned eatable copies of the late 18",
+          "zh": "[E] 少年时代，卡雷姆把 18 世纪末最著名的建筑做成可以吃的复制品——古希腊遗址形状的饼干、中国古代宫殿和庙宇形状的馅饼",
+          "ds": "century:18"
+        },
+        {
+          "k": 7,
+          "en": "G) French Emperor Napoleon Bonaparte was known to be unimpressed by th",
+          "zh": "[G] 法兰西皇帝拿破仑·波拿巴以对 18 世纪早期烹饪口味的堕落不以为然著称，但在款待巴黎上流社会的压力之下，他也把卡雷姆",
+          "ds": "century:18"
+        },
+        {
+          "k": 10,
+          "en": "J)As he traveled through the homes of early 19th century nobility, Car",
+          "zh": "[J] 在 19 世纪早期贵族宅邸间游历的过程中，卡雷姆开创了法国美食的新艺术。在闷热的厨房里，卡雷姆创造了他称之为“母酱”",
+          "ds": "century:19"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 76,
+      "tag": "CET4 2018.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 77,
+      "tag": "CET4 2018.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 80,
+      "tag": "CET4 2018.12 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 81,
+      "tag": "CET4 2018.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 13,
+      "anHit": 13,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 82,
+      "tag": "CET4 2018.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 83,
+      "tag": "CET4 2018.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 86,
+      "tag": "CET4 2019.6 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 87,
+      "tag": "CET4 2019.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 52,
+      "anHit": 52,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 88,
+      "tag": "CET4 2019.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 89,
+      "tag": "CET4 2019.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 15,
+      "anHit": 15,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 92,
+      "tag": "CET4 2019.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 93,
+      "tag": "CET4 2019.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 52,
+      "anHit": 52,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 94,
+      "tag": "CET4 2019.6 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 95,
+      "tag": "CET4 2019.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 15,
+      "anHit": 15,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 98,
+      "tag": "CET4 2019.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 99,
+      "tag": "CET4 2019.6 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 100,
+      "tag": "CET4 2019.6 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 101,
+      "tag": "CET4 2019.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 104,
+      "tag": "CET4 2019.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 105,
+      "tag": "CET4 2019.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 20,
+      "anHit": 20,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 106,
+      "tag": "CET4 2019.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 107,
+      "tag": "CET4 2019.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 110,
+      "tag": "CET4 2019.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 111,
+      "tag": "CET4 2019.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 14,
+      "anHit": 14,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 112,
+      "tag": "CET4 2019.12 set2 reading",
+      "grade": "A",
+      "why": "命中 86%",
+      "rate": 0.8571428571428571,
+      "anT": 7,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 6,
+          "anchor": "percent:0",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 6,
+          "en": "But this can be chalked up to the excessively high cost of their books",
+          "zh": "但这可以归结为他们书价过高——自 1977 年以来已上涨超过 1000%。教科书行业的结构重组或许在所难免。",
+          "ds": "percent:0"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 113,
+      "tag": "CET4 2019.12 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 116,
+      "tag": "CET4 2019.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 117,
+      "tag": "CET4 2019.12 set3 match",
+      "grade": "A",
+      "why": "命中 71%",
+      "rate": 0.7142857142857143,
+      "anT": 14,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 4,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "century:18",
+          "candidateRows": []
+        },
+        {
+          "row": 2,
+          "anchor": "century:19",
+          "candidateRows": []
+        },
+        {
+          "row": 2,
+          "anchor": "century:20",
+          "candidateRows": []
+        },
+        {
+          "row": 2,
+          "anchor": "century:21",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) “The 18th century really was a waterborne（水运的）century, the 19th cen",
+          "zh": "“18 世纪的确是水运的世纪，19 世纪是铁路的世纪，20 世纪是公路、汽车与卡车的世纪——而随着全球通过航空联系日益紧密，",
+          "ds": "century:18,century:19,century:20,century:21"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 118,
+      "tag": "CET4 2019.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 119,
+      "tag": "CET4 2019.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 123,
+      "tag": "CET4 2023.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 124,
+      "tag": "CET4 2023.6 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 125,
+      "tag": "CET4 2023.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 129,
+      "tag": "CET4 2023.6 set3 match",
+      "grade": "A",
+      "why": "命中 95%",
+      "rate": 0.95,
+      "anT": 20,
+      "anHit": 19,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:220",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B)\"You want to play in a circle,\"Victor Fong, aged 24, told his studen",
+          "zh": "B) “你们要围成一个圈，”24岁的Victor Fong在纽约华人共济会体育俱乐部对学生们说，“慢一点，再来一遍。”这支由",
+          "ds": "number:220"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 130,
+      "tag": "CET4 2023.6 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 131,
+      "tag": "CET4 2023.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 134,
+      "tag": "CET4 2023.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 135,
+      "tag": "CET4 2023.12 set1 match",
+      "grade": "A",
+      "why": "命中 89%",
+      "rate": 0.8888888888888888,
+      "anT": 9,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "number:440",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "J） There are ways we could soften the coming blow to the global food s",
+          "zh": "J) 然而，我们有办法缓解即将到来的全球粮食供应冲击。就像 Farrant 对复活作物的研究一样，许多公司、组织和研究人员正",
+          "ds": "number:440"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 136,
+      "tag": "CET4 2023.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 137,
+      "tag": "CET4 2023.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 140,
+      "tag": "CET4 2023.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 141,
+      "tag": "CET4 2023.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 25,
+      "anHit": 25,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 142,
+      "tag": "CET4 2023.12 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 143,
+      "tag": "CET4 2023.12 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 146,
+      "tag": "CET4 2023.12 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 147,
+      "tag": "CET4 2023.12 set3 match",
+      "grade": "A",
+      "why": "命中 78%",
+      "rate": 0.7777777777777778,
+      "anT": 9,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "decade:1930",
+          "candidateRows": []
+        },
+        {
+          "row": 10,
+          "anchor": "decade:1980",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) New technologies always provoke generational panic, which usually h",
+          "zh": "[B] 新技术总会引发代际恐慌，而这通常更多关涉成年人的恐惧，而非青少年的生活。20 世纪 30 年代，家长担心广播“不可抗",
+          "ds": "decade:1930"
+        },
+        {
+          "k": 10,
+          "en": "J) It is probably true that fewer kids are heavy readers compared with",
+          "zh": "[J] 与两代人以前相比，如今热衷读书的孩子可能确实更少——那时廉价平装书提升了阅读率。但即便在当时，也只有少数人（可能 2",
+          "ds": "decade:1980"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 148,
+      "tag": "CET4 2023.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 149,
+      "tag": "CET4 2023.12 set3 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 152,
+      "tag": "CET4 2024.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 153,
+      "tag": "CET4 2024.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 16,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 154,
+      "tag": "CET4 2024.6 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 155,
+      "tag": "CET4 2024.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 158,
+      "tag": "CET4 2024.6 set2 cloze",
+      "grade": "A",
+      "why": "命中 67%",
+      "rate": 0.6666666666666666,
+      "anT": 3,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:600000",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "To arrive at this 28 , the researchers examined the linguistic (语言的) p",
+          "zh": "为得出这一结论，研究人员考察了男女在网站上发布的60多万篇博客文章中的语言模式。",
+          "ds": "number:600000"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 159,
+      "tag": "CET4 2024.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 160,
+      "tag": "CET4 2024.6 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 161,
+      "tag": "CET4 2024.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 164,
+      "tag": "CET4 2024.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 165,
+      "tag": "CET4 2024.6 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 167,
+      "tag": "CET4 2024.6 set3 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 170,
+      "tag": "CET4 2024.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 171,
+      "tag": "CET4 2024.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 10,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 172,
+      "tag": "CET4 2024.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 173,
+      "tag": "CET4 2024.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 8,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 176,
+      "tag": "CET4 2025.6 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 177,
+      "tag": "CET4 2025.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 18,
+      "anHit": 18,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 178,
+      "tag": "CET4 2025.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 179,
+      "tag": "CET4 2025.6 set1 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 182,
+      "tag": "CET4 2025.12 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 183,
+      "tag": "CET4 2025.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 184,
+      "tag": "CET4 2025.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 185,
+      "tag": "CET4 2025.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 10,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 188,
+      "tag": "CET4 2026.6 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 189,
+      "tag": "CET4 2026.6 set1 match",
+      "grade": "A",
+      "why": "命中 89%",
+      "rate": 0.8888888888888888,
+      "anT": 9,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 1,
+          "anchor": "number:30",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 1,
+          "en": "The Star Quality of New Zealand’s Great Barrier Island A) I was glad I",
+          "zh": "A) 我很庆幸自己时差这么严重。凌晨3点半，我和九岁的女儿毫无睡意地坐在小屋阳台上，我凝视了几个小时，那是我见过的最不可思议",
+          "ds": "number:30"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 190,
+      "tag": "CET4 2026.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 191,
+      "tag": "CET4 2026.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 194,
+      "tag": "CET6 2014.6 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 195,
+      "tag": "CET6 2014.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 15,
+      "anHit": 15,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 197,
+      "tag": "CET6 2014.6 set1 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 200,
+      "tag": "CET6 2014.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 201,
+      "tag": "CET6 2014.6 set2 match",
+      "grade": "A",
+      "why": "命中 69%",
+      "rate": 0.6923076923076923,
+      "anT": 13,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 4,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:100",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "number:310",
+          "candidateRows": []
+        },
+        {
+          "row": 56,
+          "anchor": "number:100",
+          "candidateRows": []
+        },
+        {
+          "row": 58,
+          "anchor": "number:43",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "When I was growing up, one of my father’s favorite sayings (borrowed f",
+          "zh": "我小时候，父亲最爱说的一句话（借自幽默作家威尔·罗杰斯）是：“给我们惹麻烦的并不是我们不知道的事，而是我们自以为知道、其实并",
+          "ds": "number:100"
+        },
+        {
+          "k": 12,
+          "en": "But that can be misleading, even to experts. When I asked Rosanne Hagg",
+          "zh": "但这可能具有误导性，甚至对专家也是如此。当我问Common Ground创始人罗珊·哈格蒂——该组织目前运营2310套支持性",
+          "ds": "number:310"
+        },
+        {
+          "k": 56,
+          "en": "For now, I’ll conclude with an update on the 100 000 Homes Campaign.",
+          "zh": "现在，我将以“十万个家”运动的最新进展作结。",
+          "ds": "number:100"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 202,
+      "tag": "CET6 2014.6 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 203,
+      "tag": "CET6 2014.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 206,
+      "tag": "CET6 2015.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 50%",
+      "rate": 0.5,
+      "anT": 2,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:20",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "Over the past 30 years the digital revolution has __27__ many of the m",
+          "zh": "在过去30年里，数字革命已经取代了许多支撑20世纪中产阶级生活的中等技能工作。",
+          "ds": "number:20"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 207,
+      "tag": "CET6 2015.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 208,
+      "tag": "CET6 2015.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 209,
+      "tag": "CET6 2015.6 set1 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 213,
+      "tag": "CET6 2015.6 set2 match",
+      "grade": "A",
+      "why": "命中 92%",
+      "rate": 0.9166666666666666,
+      "anT": 12,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:21",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Over the past year and a half, The Great Divide, a series in The Ne",
+          "zh": "[B] 在过去一年半里，《纽约时报》系列报道《大分化》提供了大量例子，削弱了资本主义存在任何真正基本法则的观念。19世纪帝国",
+          "ds": "number:21"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 214,
+      "tag": "CET6 2015.6 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 215,
+      "tag": "CET6 2015.6 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 218,
+      "tag": "CET6 2015.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 219,
+      "tag": "CET6 2015.6 set3 match",
+      "grade": "A",
+      "why": "命中 90%",
+      "rate": 0.9,
+      "anT": 10,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:5000000000",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "E) Multiply $3 by the more than 5 billion magstripe credit and prepaid",
+          "zh": "[E] 将3美元乘以美国流通中的50多亿张磁条信用卡和预付卡。然后考虑罗伯逊说的全球范围内估计有124亿美元的信用卡欺诈，其",
+          "ds": "number:5000000000"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 220,
+      "tag": "CET6 2015.6 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 221,
+      "tag": "CET6 2015.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 224,
+      "tag": "CET6 2015.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 225,
+      "tag": "CET6 2015.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 226,
+      "tag": "CET6 2015.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 227,
+      "tag": "CET6 2015.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 230,
+      "tag": "CET6 2015.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 231,
+      "tag": "CET6 2015.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 12,
+      "anHit": 12,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 232,
+      "tag": "CET6 2015.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 233,
+      "tag": "CET6 2015.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 236,
+      "tag": "CET6 2015.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 238,
+      "tag": "CET6 2015.12 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 239,
+      "tag": "CET6 2015.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 242,
+      "tag": "CET6 2016.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 243,
+      "tag": "CET6 2016.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 244,
+      "tag": "CET6 2016.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 245,
+      "tag": "CET6 2016.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 248,
+      "tag": "CET6 2016.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 250,
+      "tag": "CET6 2016.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 251,
+      "tag": "CET6 2016.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 254,
+      "tag": "CET6 2016.12 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 255,
+      "tag": "CET6 2016.12 set3 match",
+      "grade": "A",
+      "why": "命中 96%",
+      "rate": 0.9583333333333334,
+      "anT": 24,
+      "anHit": 23,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 11,
+          "anchor": "number:10",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 11,
+          "en": "K) China's newly renovated Great Wall Station on King George Island ma",
+          "zh": "[K] 中国新翻修的乔治王岛长城站使这里的俄罗斯和智利基地显得过时。“我们在这里进行天气监测和其他研究，”53岁的中国基地站",
+          "ds": "number:10"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 257,
+      "tag": "CET6 2016.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 83%",
+      "rate": 0.8333333333333334,
+      "anT": 6,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 14,
+          "anchor": "number:2.1",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 14,
+          "en": "Recruiters circle elite universities like vultures (兀鹰). Many top firm",
+          "zh": "招聘人员像兀鹰一样围着精英大学打转。许多顶级公司甚至不会看那些没有精英大学二等一级学位（即上二等学位）的申请者的简历。",
+          "ds": "number:2.1"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 260,
+      "tag": "CET6 2017.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 261,
+      "tag": "CET6 2017.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 13,
+      "anHit": 13,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 262,
+      "tag": "CET6 2017.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 263,
+      "tag": "CET6 2017.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 12,
+      "anHit": 12,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 266,
+      "tag": "CET6 2017.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 267,
+      "tag": "CET6 2017.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 16,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 268,
+      "tag": "CET6 2017.6 set2 reading",
+      "grade": "A",
+      "why": "命中 0%",
+      "rate": 0,
+      "anT": 2,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 12,
+          "anchor": "decade:1930",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "number:40",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 12,
+          "en": "Of course, much of this argument in the 1930s-40s was advanced because",
+          "zh": "当然，这一论点在20世纪三四十年代被提出，很大程度上是因为当时几乎没有从实用性角度来论证服装的经验。",
+          "ds": "decade:1930,number:40"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 269,
+      "tag": "CET6 2017.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 272,
+      "tag": "CET6 2017.6 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 273,
+      "tag": "CET6 2017.6 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 24,
+      "anHit": 24,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 274,
+      "tag": "CET6 2017.6 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 275,
+      "tag": "CET6 2017.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 279,
+      "tag": "CET6 2017.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 284,
+      "tag": "CET6 2017.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 285,
+      "tag": "CET6 2017.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 286,
+      "tag": "CET6 2017.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 287,
+      "tag": "CET6 2017.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 290,
+      "tag": "CET6 2017.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 13,
+      "anHit": 13,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 291,
+      "tag": "CET6 2017.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 292,
+      "tag": "CET6 2017.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 293,
+      "tag": "CET6 2017.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 296,
+      "tag": "CET6 2019.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 297,
+      "tag": "CET6 2019.6 set1 match",
+      "grade": "A",
+      "why": "命中 94%",
+      "rate": 0.9411764705882353,
+      "anT": 17,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 14,
+          "anchor": "number:100",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 14,
+          "en": "N) The turmoil on the ground in physical retail is hard to square with",
+          "zh": "N）实体零售业的实地动荡很难与人口普查数据相符。遗憾的是，部分解释在于人口普查零售数据不可靠。我们对这些数据及其编制过程的深",
+          "ds": "number:100"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 298,
+      "tag": "CET6 2019.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 299,
+      "tag": "CET6 2019.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 302,
+      "tag": "CET6 2019.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 303,
+      "tag": "CET6 2019.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 13,
+      "anHit": 13,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 304,
+      "tag": "CET6 2019.6 set2 reading",
+      "grade": "A",
+      "why": "命中 92%",
+      "rate": 0.9166666666666666,
+      "anT": 12,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "percent:1",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "“And yet that happens every day in the video game world,” Farley told ",
+          "zh": "“然而在电子游戏行业，这种情况每天都在发生。”法利在周五的新闻发布会上对记者说，“我曾是《辐射4》中的一个主要角色，名叫凯洛",
+          "ds": "percent:1"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 305,
+      "tag": "CET6 2019.6 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 308,
+      "tag": "CET6 2019.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 309,
+      "tag": "CET6 2019.6 set3 match",
+      "grade": "A",
+      "why": "命中 90%",
+      "rate": 0.9,
+      "anT": 10,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:11",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "E) Because they’re so small and light, it costs much less to get a Cub",
+          "zh": "E) 由于它们体积小、重量轻，将立方体卫星送入地球轨道的成本远低于传统通信或GPS卫星。例如，亚利桑那州立大学的一个研究小组",
+          "ds": "number:11"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 310,
+      "tag": "CET6 2019.6 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 311,
+      "tag": "CET6 2019.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 8,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 314,
+      "tag": "CET6 2019.12 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 315,
+      "tag": "CET6 2019.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 22,
+      "anHit": 22,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 316,
+      "tag": "CET6 2019.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 317,
+      "tag": "CET6 2019.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 320,
+      "tag": "CET6 2019.12 set2 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 6,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 321,
+      "tag": "CET6 2019.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 19,
+      "anHit": 19,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 322,
+      "tag": "CET6 2019.12 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 323,
+      "tag": "CET6 2019.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 327,
+      "tag": "CET6 2019.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 29,
+      "anHit": 29,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 328,
+      "tag": "CET6 2019.12 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 329,
+      "tag": "CET6 2019.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 332,
+      "tag": "CET6 2020.7 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 333,
+      "tag": "CET6 2020.7 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 334,
+      "tag": "CET6 2020.7 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 335,
+      "tag": "CET6 2020.7 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 337,
+      "tag": "CET6 2020.9 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 338,
+      "tag": "CET6 2020.9 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 7,
+      "anHit": 7,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 339,
+      "tag": "CET6 2020.9 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 343,
+      "tag": "CET6 2020.9 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 344,
+      "tag": "CET6 2020.9 set2 match",
+      "grade": "A",
+      "why": "命中 92%",
+      "rate": 0.9230769230769231,
+      "anT": 26,
+      "anHit": 24,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:10",
+          "candidateRows": []
+        },
+        {
+          "row": 7,
+          "anchor": "number:24",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Doctors are linking up with patients by phone, email and webcam(网络摄",
+          "zh": "B) 医生通过电话、电子邮件和网络摄像头与患者联系。他们还相互进行电子会诊——有时是为了对心脏病发作和中风做出瞬间决策。与此",
+          "ds": "number:10"
+        },
+        {
+          "k": 7,
+          "en": "G) Do patients trade quality for convenience? The fastest-growing serv",
+          "zh": "G) 患者是否会为了便利而牺牲质量？远程医疗中增长最快的服务将消费者与从未见过的临床医生连接起来，进行电话、视频或电子邮件就",
+          "ds": "number:24"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 345,
+      "tag": "CET6 2020.9 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 8,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 349,
+      "tag": "CET6 2020.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 350,
+      "tag": "CET6 2020.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 351,
+      "tag": "CET6 2020.12 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 352,
+      "tag": "CET6 2020.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 356,
+      "tag": "CET6 2020.12 set2 match",
+      "grade": "A",
+      "why": "命中 94%",
+      "rate": 0.9411764705882353,
+      "anT": 17,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:20",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D) Acceleration is the signature of our time. Populations and economic",
+          "zh": "D) 加速是我们这个时代的标志。在人类历史的大部分时间里，人口和经济活动增长缓慢。数千年来直到近代早期，世界经济几乎没有增长",
+          "ds": "number:20"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 357,
+      "tag": "CET6 2020.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 358,
+      "tag": "CET6 2020.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 361,
+      "tag": "CET6 2020.12 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 362,
+      "tag": "CET6 2020.12 set3 match",
+      "grade": "A",
+      "why": "命中 83%",
+      "rate": 0.8333333333333334,
+      "anT": 6,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:20",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Why? Because universities and curricula are designed along the thre",
+          "zh": "B）为什么？因为大学和课程设置是依照法国古典悲剧的“三一律”设计的：时间、行动和地点。学生们在二十多岁时（时间统一）到大学校",
+          "ds": "number:20"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 363,
+      "tag": "CET6 2020.12 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 364,
+      "tag": "CET6 2020.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 367,
+      "tag": "CET6 2021.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 368,
+      "tag": "CET6 2021.6 set1 match",
+      "grade": "A",
+      "why": "命中 83%",
+      "rate": 0.8333333333333334,
+      "anT": 12,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 10,
+          "anchor": "number:2021",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D) In 1901 he succeeded in signaling across the Atlantic, from the wes",
+          "zh": "D) 1901年，他成功实现了跨大西洋信号传送，从英格兰西海岸到美国纽芬兰，尽管科学界声称这是不可能的。1924年，他说服英",
+          "ds": "number:2021"
+        },
+        {
+          "k": 10,
+          "en": "J) At the same time, Marconi was uncompromisingly independent intellec",
+          "zh": "J) 与此同时，马可尼在思想上又毫不妥协地独立。马可尼去世后不久，核物理学家恩里科·费米——不久后成为曼哈顿计划的主持者——",
+          "ds": "number:2021"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 369,
+      "tag": "CET6 2021.6 set1 reading",
+      "grade": "A",
+      "why": "命中 0%",
+      "rate": 0,
+      "anT": 1,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 13,
+          "anchor": "number:2021",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 13,
+          "en": "While there's an undoubted genetic basis to individual difference, it ",
+          "zh": "虽然个体差异无疑有基因基础，但认为社会定义的群体可以被基因解释是错误的。",
+          "ds": "number:2021"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 373,
+      "tag": "CET6 2021.6 set2 cloze",
+      "grade": "A",
+      "why": "命中 67%",
+      "rate": 0.6666666666666666,
+      "anT": 3,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 9,
+          "anchor": "number:2021",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 9,
+          "en": "She had no stable income, $12,000 in credit-card debt and no plan, but",
+          "zh": "她没有稳定收入，信用卡欠款12,000美元，也没有计划，但令她惊讶的是，做会计的父亲告诉她，她的财务困境并没有她想的那么糟。",
+          "ds": "number:2021"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 374,
+      "tag": "CET6 2021.6 set2 match",
+      "grade": "A",
+      "why": "命中 80%",
+      "rate": 0.8,
+      "anT": 20,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 4,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 5,
+          "anchor": "number:27",
+          "candidateRows": []
+        },
+        {
+          "row": 11,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 11,
+          "anchor": "number:28",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "E) In a surprise televised address on Tuesday evening, Macron said he ",
+          "zh": "E) 周二晚间，马克龙在一次出人意料的电视讲话中表示，他希望五年内重建大教堂。“巴黎圣母院的火灾提醒我们，我们总会有挑战需要",
+          "ds": "number:2021,number:27"
+        },
+        {
+          "k": 11,
+          "en": "K) French political commentators noted the devastating fire had succee",
+          "zh": "K) 法国政治评论员指出，这场毁灭性的大火做到了马克龙未能做到的事——团结了整个国家。但接下来的日子里，对大教堂原状的批评可",
+          "ds": "number:2021,number:28"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 379,
+      "tag": "CET6 2021.6 set3 cloze",
+      "grade": "A",
+      "why": "命中 60%",
+      "rate": 0.6,
+      "anT": 5,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 9,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 9,
+          "anchor": "number:47",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 9,
+          "en": "But it's a narrative often 31 out by the shame that marketers rely on ",
+          "zh": "但这种叙述常常被营销人员赖以向我们兜售减肥药、神奇面霜和透气瑜伽裤的羞耻感所淹没——仿佛自爱是一种可以购买的商品。就我认识的",
+          "ds": "number:2021,number:47"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 380,
+      "tag": "CET6 2021.6 set3 match",
+      "grade": "A",
+      "why": "命中 63%",
+      "rate": 0.625,
+      "anT": 16,
+      "anHit": 10,
+      "anDrift": 0,
+      "anLost": 6,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:20",
+          "candidateRows": []
+        },
+        {
+          "row": 4,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 4,
+          "anchor": "number:48",
+          "candidateRows": []
+        },
+        {
+          "row": 6,
+          "anchor": "number:201",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "number:49",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D) Other actors have been revived, with the permission of their estate",
+          "zh": "D) 其他演员在遗产管理方许可下为广告目的被复活：例如，2011年迪奥广告中当代女演员查理兹·塞隆与20世纪标志性明星玛丽莲",
+          "ds": "number:20,number:2021,number:48"
+        },
+        {
+          "k": 6,
+          "en": "F) A hidden hazard of digitally recreating a deceased ( 已故的) celebrity",
+          "zh": "F) 数字重现已故名人有一个隐藏危险，即损害其遗产的风险。美国数字王国公司的约翰·坎宁说：“我们必须尊重权利持有人的安全和完",
+          "ds": "number:201"
+        },
+        {
+          "k": 12,
+          "en": "L) Webber expects that we will see more digital humans on screen . \"It",
+          "zh": "L) 韦伯预计我们将在银幕上看到更多数字人类。他说：“它正在发生，因为它能够发生。”他引用《侏罗纪公园》中的一句台词补充道：",
+          "ds": "number:2021,number:49"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 381,
+      "tag": "CET6 2021.6 set3 reading",
+      "grade": "A",
+      "why": "命中 50%",
+      "rate": 0.5,
+      "anT": 4,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 16,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 16,
+          "anchor": "number:50",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 16,
+          "en": "It is simply wrong and unfair that most children have a fraction of th",
+          "zh": "大多数孩子接触合唱团、管弦乐队、艺术工作室和戏剧的机会只是其更有特权同龄人的一小部分，这完全是错误和不公平的。",
+          "ds": "number:2021,number:50"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 385,
+      "tag": "CET6 2022.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 386,
+      "tag": "CET6 2022.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 387,
+      "tag": "CET6 2022.6 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 388,
+      "tag": "CET6 2022.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 391,
+      "tag": "CET6 2022.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 392,
+      "tag": "CET6 2022.6 set2 match",
+      "grade": "A",
+      "why": "命中 88%",
+      "rate": 0.875,
+      "anT": 16,
+      "anHit": 14,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "century:20",
+          "candidateRows": []
+        },
+        {
+          "row": 2,
+          "anchor": "number:19",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Economic interests were at the core of this understanding of trees ",
+          "zh": "B) 经济利益是这种对树木和森林理解的核心。又过了三百多年，科学家才开始明白，木材生产并非森林的唯一功能，而且可能并非最重要",
+          "ds": "century:20,number:19"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 393,
+      "tag": "CET6 2022.6 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 394,
+      "tag": "CET6 2022.6 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 397,
+      "tag": "CET6 2022.9 set3 cloze",
+      "grade": "A",
+      "why": "命中 83%",
+      "rate": 0.8333333333333334,
+      "anT": 6,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "century:19",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "Rough 26 of their population went as high as five billion and they acc",
+          "zh": "据粗略估计，其种群数量曾高达50亿只，在19世纪初约占北美本土鸟类总数的40%。尽管数量庞大，旅鸽却很容易受到人类侵入其筑巢",
+          "ds": "century:19"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 398,
+      "tag": "CET6 2022.9 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 22,
+      "anHit": 22,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 399,
+      "tag": "CET6 2022.9 set3 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 400,
+      "tag": "CET6 2022.9 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 403,
+      "tag": "CET6 2023.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 405,
+      "tag": "CET6 2023.12 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 409,
+      "tag": "CET6 2023.12 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 410,
+      "tag": "CET6 2023.12 set2 match",
+      "grade": "A",
+      "why": "命中 94%",
+      "rate": 0.9411764705882353,
+      "anT": 17,
+      "anHit": 16,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 8,
+          "anchor": "number:16",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 8,
+          "en": "H)One day in 2015, the magnetometer(磁力计)picked up metal that turned ou",
+          "zh": "H) 2015年的一天，磁力计探测到金属，结果是一门铁炮；当潜水员吹走沙子时，他们还发现了一门更珍贵的青铜炮，上面的标记表明",
+          "ds": "number:16"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 411,
+      "tag": "CET6 2023.12 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 412,
+      "tag": "CET6 2023.12 set2 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 415,
+      "tag": "CET6 2023.12 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 416,
+      "tag": "CET6 2023.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 4,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 417,
+      "tag": "CET6 2023.12 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 421,
+      "tag": "CET6 2024.6 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 422,
+      "tag": "CET6 2024.6 set1 match",
+      "grade": "A",
+      "why": "命中 96%",
+      "rate": 0.9583333333333334,
+      "anT": 24,
+      "anHit": 23,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "century:20",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D)In time, the tree came to be something ofa tourist attraction, known",
+          "zh": "D)后来，这棵树逐渐成为旅游景点，被称为“拥有自己的树”。然而，在20世纪初，这棵树开始显现出缓慢死亡的迹象，人们对此无能为",
+          "ds": "century:20"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 423,
+      "tag": "CET6 2024.6 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 424,
+      "tag": "CET6 2024.6 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 11,
+      "anHit": 11,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 427,
+      "tag": "CET6 2024.6 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 428,
+      "tag": "CET6 2024.6 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 429,
+      "tag": "CET6 2024.6 set2 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 430,
+      "tag": "CET6 2024.6 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 433,
+      "tag": "CET6 2024.6 set3 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 434,
+      "tag": "CET6 2024.6 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 12,
+      "anHit": 12,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 435,
+      "tag": "CET6 2024.6 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 436,
+      "tag": "CET6 2024.6 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 1,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 439,
+      "tag": "CET6 2024.12 set1 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 440,
+      "tag": "CET6 2024.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 8,
+      "anHit": 8,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 441,
+      "tag": "CET6 2024.12 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 442,
+      "tag": "CET6 2024.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 445,
+      "tag": "CET6 2024.12 set2 cloze",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 446,
+      "tag": "CET6 2024.12 set2 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 9,
+      "anHit": 9,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 447,
+      "tag": "CET6 2024.12 set2 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 448,
+      "tag": "CET6 2024.12 set2 reading 2",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 451,
+      "tag": "CET6 2024.12 set3 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 3,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 452,
+      "tag": "CET6 2024.12 set3 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 453,
+      "tag": "CET6 2024.12 set3 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 454,
+      "tag": "CET6 2024.12 set3 reading 2",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 457,
+      "tag": "CET6 2025.12 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 458,
+      "tag": "CET6 2025.12 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 13,
+      "anHit": 13,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 459,
+      "tag": "CET6 2025.12 set1 reading",
+      "grade": "A",
+      "why": "无锚点",
+      "rate": null,
+      "anT": 0,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 460,
+      "tag": "CET6 2025.12 set1 reading 2",
+      "grade": "A",
+      "why": "命中 75%",
+      "rate": 0.75,
+      "anT": 4,
+      "anHit": 3,
+      "anDrift": 0,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:90",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "A 2020report by Citi indicated that \"Black students could have increas",
+          "zh": "花旗2020年的一份报告指出，如果过去二十年中与高等教育相关的公平问题得到充分解决，“黑人学生本可以将其终身收入增加900亿",
+          "ds": "number:90"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 463,
+      "tag": "CET6 2026.6 set1 cloze",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 5,
+      "anHit": 5,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "cloze"
+    },
+    {
+      "passageId": 464,
+      "tag": "CET6 2026.6 set1 match",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "match"
+    },
+    {
+      "passageId": 465,
+      "tag": "CET6 2026.6 set1 reading",
+      "grade": "A",
+      "why": "命中 100%",
+      "rate": 1,
+      "anT": 2,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [],
+      "cover": 100,
+      "missSamples": [],
+      "section": "reading"
+    },
+    {
+      "passageId": 122,
+      "tag": "CET4 2023.6 set2 cloze",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 1,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:1100000",
+          "candidateRows": [
+            2
+          ]
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "The World Bank estimates it will serve 1.1 million people.",
+          "zh": "该电站计划于不久后竣工。",
+          "ds": "number:1100000"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 128,
+      "tag": "CET4 2023.6 set3 cloze",
+      "grade": "B",
+      "why": "原文/译文同值单位差异 1 处",
+      "rate": 0.5,
+      "anT": 2,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 1,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:60",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "In fact, 60-70 percent of the participants in the study could no longe",
+          "zh": "事实上，研究中60%到70%的参与者甚至不再被归类为抑郁症患者。",
+          "ds": "number:60"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 166,
+      "tag": "CET4 2024.6 set3 reading",
+      "grade": "B",
+      "why": "锚点命中 33%",
+      "rate": 0.3333333333333333,
+      "anT": 3,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 7,
+          "anchor": "decade:1200",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "century:19",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 7,
+          "en": "Through this lens, he shows us that the first laws passed in the 1200s",
+          "zh": "透过这一视角，他向我们表明，13 世纪最早通过的那些确保只有贵族才能穿着某些面料、颜色和饰物的法律，反映了中产阶级的兴起——",
+          "ds": "decade:1200"
+        },
+        {
+          "k": 12,
+          "en": "No one is spared his sharp analysis: not the easy targets of 19th cent",
+          "zh": "没有人能躲过他犀利的分析：无论是 19 世纪摧残女性身体的时尚这种容易攻击的目标，还是硅谷 T 恤这种现代制服，都未能幸免。",
+          "ds": "century:19"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 196,
+      "tag": "CET6 2014.6 set1 reading",
+      "grade": "B",
+      "why": "锚点命中 33%",
+      "rate": 0.3333333333333333,
+      "anT": 3,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 6,
+          "anchor": "number:500",
+          "candidateRows": []
+        },
+        {
+          "row": 6,
+          "anchor": "number:80",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 6,
+          "en": "Writing was only invented 5 500 years ago, whereas language probably t",
+          "zh": "文字只有5500年的历史，而语言大概至少可以追溯到8万年前。",
+          "ds": "number:500,number:80"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 237,
+      "tag": "CET6 2015.12 set3 match",
+      "grade": "B",
+      "why": "原文/译文同值单位差异 1 处",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 1,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:75",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Despite mournful polar bears and charts showing carbon emissions so",
+          "zh": "[B] 尽管有悲伤的北极熊和显示碳排放飙升的图表，大多数人还是很难相信全球变暖会影响到他们个人。华盛顿特区皮尤研究中心最近的",
+          "ds": "number:75"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 249,
+      "tag": "CET6 2016.12 set2 match",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.9047619047619048,
+      "anT": 21,
+      "anHit": 19,
+      "anDrift": 1,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "number:10",
+          "candidateRows": [
+            2
+          ]
+        },
+        {
+          "row": 4,
+          "anchor": "number:24",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "D) Seven in 10 workers say they struggle to maintain work-life balance",
+          "zh": "D) 七成员工表示难以维持工作与生活的平衡。随着技术（以及随之而来的工作邮件）渗入我们生活的方方面面，工作与生活的平衡几乎成",
+          "ds": "number:10,number:24"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 256,
+      "tag": "CET6 2016.12 set3 reading",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.6666666666666666,
+      "anT": 6,
+      "anHit": 4,
+      "anDrift": 1,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 11,
+          "anchor": "number:2010",
+          "candidateRows": [
+            10
+          ]
+        },
+        {
+          "row": 11,
+          "anchor": "number:2012",
+          "candidateRows": [
+            10
+          ]
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 11,
+          "en": "The Department of Health declared its intention to consider the move i",
+          "zh": "但该计划于2013年7月被搁置。人们注意到，戴维·卡梅伦的竞选活动主管林顿·克罗斯比设立的一家游说公司此前曾为菲利普·莫里斯",
+          "ds": "number:2010,number:2012"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 278,
+      "tag": "CET6 2017.12 set1 cloze",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.7777777777777778,
+      "anT": 9,
+      "anHit": 7,
+      "anDrift": 1,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 4,
+          "anchor": "percent:80",
+          "candidateRows": [
+            3
+          ]
+        },
+        {
+          "row": 6,
+          "anchor": "number:50",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 4,
+          "en": "The insect, Tutaabsoluta, has destroyed 80% of farms in Kaduna, Nigeri",
+          "zh": "它繁殖速度惊人，条件适宜时每年最多可繁殖12代。据信它于20世纪初起源于南美洲，后来传播到欧洲，再进入撒哈拉以南非洲。",
+          "ds": "percent:80"
+        },
+        {
+          "k": 6,
+          "en": "Retail prices for a 30 of tomatoes at local markets have risen from $0",
+          "zh": "当地市场上一把番茄的零售价已从0.5美元涨到2.5美元。农户报告了严重损失，一家新建的价值2000万美元的番茄酱工厂也因短缺",
+          "ds": "number:50"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 280,
+      "tag": "CET6 2017.12 set1 reading",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.6666666666666666,
+      "anT": 6,
+      "anHit": 4,
+      "anDrift": 1,
+      "anLost": 1,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "decade:1500",
+          "candidateRows": []
+        },
+        {
+          "row": 14,
+          "anchor": "number:1863",
+          "candidateRows": [
+            13
+          ]
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "Europeans did not know of them until the 1500s, when Portuguese ships ",
+          "zh": "欧洲人直到16世纪葡萄牙船只抵达现在的塞拉利昂海岸时才知道它们。",
+          "ds": "decade:1500"
+        },
+        {
+          "k": 14,
+          "en": "It was created by a French chemist, Angelo Mariani, in 1863. So when P",
+          "zh": "因此，当彭伯顿创造他的饮料时，它代表了一种持续的趋势。当可卡因最终失宠不再作为饮料成分时，含可乐果提取物的可乐变得流行起来。",
+          "ds": "number:1863"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 281,
+      "tag": "CET6 2017.12 set1 reading 2",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.6,
+      "anT": 5,
+      "anHit": 3,
+      "anDrift": 1,
+      "anLost": 0,
+      "anAmbiguous": 1,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:18",
+          "candidateRows": [
+            4,
+            6
+          ]
+        },
+        {
+          "row": 5,
+          "anchor": "number:24",
+          "candidateRows": [
+            6
+          ]
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "What is underlying this new movement in real estate, and why do these ",
+          "zh": "这一房地产新动向的背后原因是什么？这些城市为何有如此大的吸引力？",
+          "ds": "number:18,number:24"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 340,
+      "tag": "CET6 2020.9 set1 reading 2",
+      "grade": "B",
+      "why": "锚点命中 40%",
+      "rate": 0.4,
+      "anT": 5,
+      "anHit": 2,
+      "anDrift": 0,
+      "anLost": 3,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:990",
+          "candidateRows": []
+        },
+        {
+          "row": 3,
+          "anchor": "number:100",
+          "candidateRows": []
+        },
+        {
+          "row": 7,
+          "anchor": "number:554",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "The Coral Sea reserve would cover almost 990 000 square kilometres and",
+          "zh": "珊瑚海保护区将覆盖近99万平方公里，距海岸最远延伸1100公里。",
+          "ds": "number:990,number:100"
+        },
+        {
+          "k": 7,
+          "en": "The world's largest existing marine reserve, established last year by ",
+          "zh": "英国政府去年在印度洋建立的世界上现有最大的海洋保护区，面积达55.4万平方公里，且全部为禁止采捕区。",
+          "ds": "number:554"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 346,
+      "tag": "CET6 2020.9 set2 reading 2",
+      "grade": "B",
+      "why": "原文/译文同值单位差异 1 处",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 1,
+      "details": [
+        {
+          "row": 6,
+          "anchor": "number:10",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 6,
+          "en": "It's true that organic farming produces lower yields, averaging 10 to ",
+          "zh": "确实，有机农业的产量较低，平均比传统农业低10%到20%。",
+          "ds": "number:10"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 355,
+      "tag": "CET6 2020.12 set2 cloze",
+      "grade": "B",
+      "why": "原文/译文同值单位差异 1 处",
+      "rate": 0.8571428571428571,
+      "anT": 7,
+      "anHit": 6,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 1,
+      "details": [
+        {
+          "row": 3,
+          "anchor": "number:70",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 3,
+          "en": "Hotels in San Francisco are experiencing 26 rates between 70 and 80 pe",
+          "zh": "旧金山酒店的空置率在70%到80%之间。",
+          "ds": "number:70"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 370,
+      "tag": "CET6 2021.6 set1 reading 2",
+      "grade": "B",
+      "why": "锚点命中 33%",
+      "rate": 0.3333333333333333,
+      "anT": 3,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 1,
+          "anchor": "number:51",
+          "candidateRows": []
+        },
+        {
+          "row": 12,
+          "anchor": "number:2021",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 1,
+          "en": "Questions 51 to SS are based on the following passage. Nicola Sturgeon",
+          "zh": "尼古拉·斯特金上周二的演讲阐述了苏格兰政府未来一年的立法计划，证实了此前已相当明确的一点。",
+          "ds": "number:51"
+        },
+        {
+          "k": 12,
+          "en": "There is 六级 2021 6 月 7no reason why visitors to the UK, or domestic to",
+          "zh": "没有理由让来英国的游客，或在康沃尔等热门地区度假的国内游客免税——尤其是当废物收集、公园维护以及艺术和文化支出等关键地方服务",
+          "ds": "number:2021"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 375,
+      "tag": "CET6 2021.6 set2 reading",
+      "grade": "B",
+      "why": "锚点命中 25%",
+      "rate": 0.25,
+      "anT": 4,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 3,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 7,
+          "anchor": "number:73",
+          "candidateRows": []
+        },
+        {
+          "row": 16,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 16,
+          "anchor": "number:29",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 7,
+          "en": "Rather, drawing should be recategorized as a symbolic tool . Human bei",
+          "zh": "相反，绘画应该被重新归类为一种象征性工具。人类绘画已有 73,000 年历史。",
+          "ds": "number:73"
+        },
+        {
+          "k": 16,
+          "en": "The human visual system tends to misjudge size, shape, color, and angl",
+          "zh": "人类视觉系统往往会误判大小、形状、颜色和角度，但艺术家比非艺术家更准确地感知这些特质。",
+          "ds": "number:2021,number:29"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 376,
+      "tag": "CET6 2021.6 set2 reading 2",
+      "grade": "B",
+      "why": "锚点命中 0%",
+      "rate": 0,
+      "anT": 3,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 3,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 1,
+          "anchor": "number:51",
+          "candidateRows": []
+        },
+        {
+          "row": 13,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 13,
+          "anchor": "number:30000000",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 1,
+          "en": "Questions 51 to SS are based on the following passage.",
+          "zh": "汽车已经重塑了我们的城市。",
+          "ds": "number:51"
+        },
+        {
+          "k": 13,
+          "en": "The efforts of 六级 2021 6 月 30millions of drivers to get ahead do not m",
+          "zh": "数百万司机努力争先，并不会奇迹般地创造一个人人都比以前更好的局面，反而是一个几乎人人都更糟的局面。中央控制和集体组织能够产生",
+          "ds": "number:2021,number:30000000"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 382,
+      "tag": "CET6 2021.6 set3 reading 2",
+      "grade": "B",
+      "why": "锚点命中 33%",
+      "rate": 0.3333333333333333,
+      "anT": 3,
+      "anHit": 1,
+      "anDrift": 0,
+      "anLost": 2,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 14,
+          "anchor": "number:2021",
+          "candidateRows": []
+        },
+        {
+          "row": 14,
+          "anchor": "number:51",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 14,
+          "en": "Using scientific methods, some of them can 六级 2021 6 月 51define author",
+          "zh": "利用科学方法，其中一些方法能以85%的准确率判定作者身份。",
+          "ds": "number:2021,number:51"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 418,
+      "tag": "CET6 2023.12 set3 reading 2",
+      "grade": "B",
+      "why": "原文/译文同值单位差异 1 处",
+      "rate": 0.8,
+      "anT": 5,
+      "anHit": 4,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 1,
+      "details": [
+        {
+          "row": 10,
+          "anchor": "number:75",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 10,
+          "en": "A recent landmark study identified a 75\u000fall in insect populations betw",
+          "zh": "最近一项具有里程碑意义的研究发现，1989年至2016年间昆虫种群下降了75%，农药使用以及为开发而破坏野生区域被认为是罪魁",
+          "ds": "number:75"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 466,
+      "tag": "CET6 2026.6 set1 reading 2",
+      "grade": "B",
+      "why": "漂移 1 次",
+      "rate": 0.9047619047619048,
+      "anT": 21,
+      "anHit": 19,
+      "anDrift": 1,
+      "anLost": 0,
+      "anAmbiguous": 1,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "decade:1970",
+          "candidateRows": [
+            6,
+            7
+          ]
+        },
+        {
+          "row": 5,
+          "anchor": "percent:2",
+          "candidateRows": [
+            6
+          ]
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "Our findings show a striking pattern of artificial shifting of paper p",
+          "zh": "我们的发现显示出一种惊人的模式：企业将账面利润人为转移到避税天堂，且自20世纪80年代以来这一做法从未停歇。我们发现，201",
+          "ds": "decade:1970,percent:2"
+        }
+      ],
+      "section": "reading"
+    },
+    {
+      "passageId": 212,
+      "tag": "CET6 2015.6 set2 cloze",
+      "grade": "C",
+      "why": "锚点命中 0%（归一化后）",
+      "rate": 0,
+      "anT": 10,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 10,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 0,
+      "details": [
+        {
+          "row": 1,
+          "anchor": "number:26",
+          "candidateRows": []
+        },
+        {
+          "row": 4,
+          "anchor": "number:27",
+          "candidateRows": []
+        },
+        {
+          "row": 4,
+          "anchor": "number:28",
+          "candidateRows": []
+        },
+        {
+          "row": 6,
+          "anchor": "number:29",
+          "candidateRows": []
+        },
+        {
+          "row": 6,
+          "anchor": "number:30",
+          "candidateRows": []
+        },
+        {
+          "row": 7,
+          "anchor": "number:31",
+          "candidateRows": []
+        },
+        {
+          "row": 7,
+          "anchor": "number:32",
+          "candidateRows": []
+        },
+        {
+          "row": 8,
+          "anchor": "number:33",
+          "candidateRows": []
+        },
+        {
+          "row": 9,
+          "anchor": "number:34",
+          "candidateRows": []
+        },
+        {
+          "row": 10,
+          "anchor": "number:35",
+          "candidateRows": []
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 1,
+          "en": "“That which does not kill us makes us stronger.” But parents can’t han",
+          "zh": "“杀不死我们的，会使我们更强大。”但当青少年把这一理念付诸实践时，父母却无法接受。",
+          "ds": "number:26"
+        },
+        {
+          "k": 4,
+          "en": "What they do online often __27__ what they might otherwise do if their",
+          "zh": "在“直升机式育儿”时代，他们的行动自由受到严重限制；他们在网上做的事，往往反映了他们原本在现实世界可能会做的事。",
+          "ds": "number:27,number:28"
+        },
+        {
+          "k": 6,
+          "en": "They want the freedom to __29__ their identity and the world around th",
+          "zh": "他们想要自由地探索自己的身份和周围的世界。他们不是偷偷溜出去，而是跳进网络世界。",
+          "ds": "number:29,number:30"
+        }
+      ],
+      "section": "cloze"
+    },
+    {
+      "passageId": 404,
+      "tag": "CET6 2023.12 set1 match",
+      "grade": "C",
+      "why": "原文/译文同值单位差异 5 处",
+      "rate": 0.8275862068965517,
+      "anT": 29,
+      "anHit": 24,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 5,
+      "details": [
+        {
+          "row": 2,
+          "anchor": "number:40",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 3,
+          "anchor": "number:70",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 5,
+          "anchor": "number:15",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 7,
+          "anchor": "number:40",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 8,
+          "anchor": "number:80",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 2,
+          "en": "B) Although there are huge uncertainties as to the precise impacts of ",
+          "zh": "B) 尽管气候变化的确切影响存在巨大不确定性，但已有足够认识可以说明，全球变暖是非洲繁荣面临的主要威胁之一。该大陆部分地区升",
+          "ds": "number:40"
+        },
+        {
+          "k": 3,
+          "en": "C) Africa is particularly vulnerable, in part because it is already st",
+          "zh": "C) 非洲尤其脆弱，部分原因是它已经在为养活自己而苦苦挣扎；即使没有气候变化，它也必须大幅提高产量和生产率，才能让快速增长的",
+          "ds": "number:70"
+        },
+        {
+          "k": 5,
+          "en": "E) The low productivity of African farmers is reflected in national ec",
+          "zh": "E) 非洲农民的低生产率也反映在各国经济统计数据中——尽管农业吸收了如此多的劳动力，却仅占GDP的15%。“他们甚至养不活自",
+          "ds": "number:15"
+        }
+      ],
+      "section": "match"
+    },
+    {
+      "passageId": 406,
+      "tag": "CET6 2023.12 set1 reading 2",
+      "grade": "C",
+      "why": "原文/译文同值单位差异 3 处 / 锚点命中 0%",
+      "rate": 0,
+      "anT": 3,
+      "anHit": 0,
+      "anDrift": 0,
+      "anLost": 0,
+      "anAmbiguous": 0,
+      "anUnitMismatch": 3,
+      "details": [
+        {
+          "row": 5,
+          "anchor": "number:60",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 8,
+          "anchor": "number:70",
+          "candidateRows": [],
+          "unitMismatch": true
+        },
+        {
+          "row": 8,
+          "anchor": "number:88",
+          "candidateRows": [],
+          "unitMismatch": true
+        }
+      ],
+      "cover": 100,
+      "missSamples": [
+        {
+          "k": 5,
+          "en": "Men were found to account for 60of the editors of psychology journals.",
+          "zh": "研究发现，男性占心理学期刊编辑的60%。",
+          "ds": "number:60"
+        },
+        {
+          "k": 8,
+          "en": "The differences were even starker in the neuroscience journals: 70of e",
+          "zh": "神经科学期刊中的差异更为明显：70%的编辑是男性，在88%的期刊中男性占据了大多数编辑职位。",
+          "ds": "number:70,number:88"
+        }
+      ],
+      "section": "reading"
+    }
+  ],
+  "sha256": "1e86a2a76d8678c1a7027b2dfd4ef4cd3985cdb7e1c885383988bd532a047670"
+}

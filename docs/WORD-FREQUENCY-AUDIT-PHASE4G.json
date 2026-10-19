@@ -1,0 +1,421 @@
+{
+  "passages": 467,
+  "resolverTokens": 16694,
+  "resolverChanges": [],
+  "seedVsLegacy": {
+    "changed": 13,
+    "added": [
+      {
+        "word": "i",
+        "total": 2,
+        "exams": 2
+      }
+    ],
+    "removed": [
+      {
+        "word": "children",
+        "total": 9,
+        "exams": 8
+      },
+      {
+        "word": "us",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "intimidating",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ca",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "men",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "they",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "haunting",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "blinding",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "roe",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "bacteria",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "taken",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "crushing",
+        "total": 1,
+        "exams": 1
+      }
+    ]
+  },
+  "legacyVsLemmaDedup": {
+    "changed": 1402,
+    "added": [],
+    "removed": []
+  },
+  "dedupVsCanonicalFilteringAndTokenizer": {
+    "changed": 69,
+    "added": [
+      {
+        "word": "butler",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "directive",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "impossibly",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "lauder",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "oscar",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "pricey",
+        "total": 1,
+        "exams": 1
+      }
+    ],
+    "removed": [
+      {
+        "word": "can",
+        "total": 47,
+        "exams": 37
+      },
+      {
+        "word": "few",
+        "total": 30,
+        "exams": 28
+      },
+      {
+        "word": "do",
+        "total": 107,
+        "exams": 62
+      },
+      {
+        "word": "go",
+        "total": 88,
+        "exams": 59
+      },
+      {
+        "word": "out",
+        "total": 3,
+        "exams": 3
+      },
+      {
+        "word": "other",
+        "total": 67,
+        "exams": 49
+      },
+      {
+        "word": "have",
+        "total": 13,
+        "exams": 12
+      },
+      {
+        "word": "be",
+        "total": 67,
+        "exams": 39
+      },
+      {
+        "word": "here",
+        "total": 7,
+        "exams": 7
+      },
+      {
+        "word": "it",
+        "total": 73,
+        "exams": 38
+      },
+      {
+        "word": "would",
+        "total": 7,
+        "exams": 7
+      },
+      {
+        "word": "should",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "one",
+        "total": 43,
+        "exams": 38
+      },
+      {
+        "word": "that",
+        "total": 33,
+        "exams": 25
+      },
+      {
+        "word": "will",
+        "total": 23,
+        "exams": 20
+      },
+      {
+        "word": "could",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "what",
+        "total": 10,
+        "exams": 9
+      },
+      {
+        "word": "there",
+        "total": 29,
+        "exams": 26
+      },
+      {
+        "word": "ga",
+        "total": 16,
+        "exams": 15
+      },
+      {
+        "word": "being",
+        "total": 8,
+        "exams": 8
+      },
+      {
+        "word": "me",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "she",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "in",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "bu",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "ni",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "we",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "up",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "sleepiness",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ad",
+        "total": 3,
+        "exams": 3
+      },
+      {
+        "word": "la",
+        "total": 4,
+        "exams": 4
+      },
+      {
+        "word": "or",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ax",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "re",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "ie",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "i",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "ou",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "shortlist",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ba",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "you",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "connell",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "gm",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "uk",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "al",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "gp",
+        "total": 5,
+        "exams": 5
+      },
+      {
+        "word": "mp",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "down",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ha",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "who",
+        "total": 3,
+        "exams": 3
+      },
+      {
+        "word": "nor",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "own",
+        "total": 5,
+        "exams": 5
+      },
+      {
+        "word": "ow",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "he",
+        "total": 3,
+        "exams": 3
+      },
+      {
+        "word": "ho",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "de",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "en",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ailment",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "ma",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "un",
+        "total": 2,
+        "exams": 2
+      },
+      {
+        "word": "mr",
+        "total": 1,
+        "exams": 1
+      },
+      {
+        "word": "mph",
+        "total": 1,
+        "exams": 1
+      }
+    ]
+  },
+  "oldEntries": 7894,
+  "newEntries": 7829
+}

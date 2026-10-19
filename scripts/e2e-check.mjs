@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const PORT = 9222;
+const PORT = Number(process.env.KEEPER_CDP_PORT) || 9222;
 const targets = await (await fetch(`http://127.0.0.1:${PORT}/json`)).json();
 const page = targets.find((t) => t.type === 'page' && t.url.includes('index.html')) || targets.find((t) => t.type === 'page');
 if (!page) {
@@ -985,6 +985,79 @@ check('数据完整性·答案与解析齐全', ansMissing === 0, ansMissing ? `
 check('数据完整性·cloze 答案在词库内', ansOutOfBank.length === 0, ansOutOfBank.slice(0, 3).join('、') || '全部命中');
 check('数据完整性·翻译/范文非空且达标', refBad.length === 0, refBad.slice(0, 3).join('、') || '全部达标');
 check('数据完整性·翻译正文无答案页污染', pollBad.length === 0, pollBad.slice(0, 3).join('、') || seedCount + ' 套干净');
+}
+
+console.log('\n===== 数据安全：草稿快速切换与关闭恢复 =====');
+{
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(1200);
+  await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('写作')); if (b) b.click(); })()`); await sleep(500);
+  const fastDraft = 'Draft saved while switching sections immediately after typing.';
+  const switched = await js(`(() => {
+    const input = document.querySelector('.essay-input');
+    const tab = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('仔细阅读'));
+    if (!input || input.disabled || !tab) return false;
+    input.value = ${JSON.stringify(fastDraft)}; input.dispatchEvent(new Event('input', { bubbles: true })); tab.click(); return true;
+  })()`);
+  await sleep(500);
+  const stored = await js(`window.keeper.essayGet(${anchor.id}, 'writing')`);
+  check('作文输入后立即切换篇章仍正确保存', switched && stored.content === fastDraft);
+
+  await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('写作')); if (b) b.click(); })()`); await sleep(500);
+  const routeDraft = 'Draft saved by navigation guard before leaving the reader.';
+  await js(`(() => { const input = document.querySelector('.essay-input'); input.value = ${JSON.stringify(routeDraft)}; input.dispatchEvent(new Event('input', { bubbles: true })); location.hash = '#/knowledge'; })()`); await sleep(500);
+  const storedRoute = await js(`window.keeper.essayGet(${anchor.id}, 'writing')`);
+  check('离开阅读器前自动保存最新作文', storedRoute.content === routeDraft);
+
+  const recoveredDraft = 'Recovered draft from a window closed before the debounce timer.';
+  await js(`localStorage.setItem('keeper.essay.draft:${anchor.id}:writing', JSON.stringify({examId:${anchor.id}, section:'writing', content:${JSON.stringify(recoveredDraft)}}))`);
+  await js(`location.hash = '#/reader/${anchor.id}'`); await sleep(900);
+  await js(`(() => { const b = [...document.querySelectorAll('.section-tabs button')].find(x => x.textContent.includes('写作')); if (b) b.click(); })()`); await sleep(400);
+  const restoredDraft = await js(`document.querySelector('.essay-input')?.value`);
+  check('重新打开阅读器恢复未写盘草稿', restoredDraft === recoveredDraft);
+  await sleep(1000);
+  const recoveredSaved = await js(`window.keeper.essayGet(${anchor.id}, 'writing')`);
+  const recoveryRemoved = await js(`localStorage.getItem('keeper.essay.draft:${anchor.id}:writing') === null`);
+  check('恢复草稿落库成功后才清理恢复副本', recoveredSaved.content === recoveredDraft && recoveryRemoved);
+}
+
+console.log('\n===== 双语正文保真与跨篇章切换 =====');
+{
+  const fixture = { level: 'CET6', year: 2092, month: 6, set_no: 1, passages: [
+    { section: 'reading', seq: 1, content: 'Alpha begins the first article. Apples grow near the river.', translation: '第一篇文章以阿尔法开始。苹果生长在河流附近。' },
+    { section: 'reading', seq: 2, content: 'Different ideas shape the second article. Birds fly above the forest.', translation: '不同的想法塑造了第二篇文章。鸟儿飞翔在森林上空。' }
+  ] };
+  const imported = await js(`window.keeper.importExam(${JSON.stringify(JSON.stringify(fixture))})`);
+  check('导入跨篇章对照回归材料', imported.ok === true);
+  await js(`location.hash = '#/reader/${imported.examId}'`); await sleep(900);
+  await js(`(() => { const button = [...document.querySelectorAll('.tb-modes button')].find(x => x.textContent.includes('逐句对照')); if (button) button.click(); })()`); await sleep(200);
+  const readEnglish = () => js(`[...document.querySelectorAll('.bi-en')].map(node => node.textContent).join(' ').replace(/\\s/g, '')`);
+  check('第一篇对照英文与原文一致', (await readEnglish()) === fixture.passages[0].content.replace(/\s/g, ''));
+  await js(`(() => { document.querySelector('.bi-row')?.click(); document.querySelectorAll('.section-tabs button')[1]?.click(); })()`); await sleep(300);
+  check('切换篇章不复用上一篇英文', (await readEnglish()) === fixture.passages[1].content.replace(/\s/g, ''));
+  const visibleChinese = await js(`[...document.querySelectorAll('.bi-zh')].every(node => getComputedStyle(node).display !== 'none')`);
+  check('切换篇章不继承上一篇的译文隐藏状态', visibleChinese === true);
+  await js(`document.querySelectorAll('.section-tabs button')[0]?.click()`); await sleep(300);
+  check('切回第一篇仍显示完整原文', (await readEnglish()) === fixture.passages[0].content.replace(/\s/g, ''));
+
+  const sourceModule = await import('data:text/javascript;charset=utf-8,' + encodeURIComponent(fs.readFileSync(new URL('../src/utils/bilingual.js', import.meta.url), 'utf8')));
+  const examsForRecite = await js('window.keeper.listExams()');
+  const target = examsForRecite.find(exam => exam.level === 'CET4' && exam.year === 2015 && exam.month === 12 && exam.set_no === 1);
+  const reciteDetail = await js(`window.keeper.examDetail(${target.id})`);
+  const passageIndex = reciteDetail.passages.findIndex(passage => passage.section === 'match');
+  await js(`location.hash = '#/recite/${target.id}?p=${passageIndex}'`); await sleep(900);
+  await js(`(() => { const english = [...document.querySelectorAll('.recite-first button')].find(x => x.textContent.trim() === '英文'); english?.click(); const all = [...document.querySelectorAll('button')].find(x => x.textContent.includes('全文显示')); all?.click(); })()`); await sleep(200);
+  const displayed = await js(`[...document.querySelectorAll('.recite-txt')].map(node => node.textContent.trim())`);
+  const expected = reciteDetail.passages[passageIndex].rows.map(row => sourceModule.stripParagraphMarkers(row.en).trim());
+  check('背诵英文完整保留，包括 Joy 标题的首字母', JSON.stringify(displayed) === JSON.stringify(expected) && displayed[0].startsWith('Joy'));
+
+  const clozeFixture = { level: 'CET6', year: 2092, month: 6, set_no: 2, passages: [{ section: 'cloze', seq: 1,
+    content: 'The lasting plan can 36 change costs. People choose 37 for lasting value.', translation: '这个持久计划可以显著改变成本。人们会选择清晰性来获得长久价值。',
+    questions: [{ qtype: 'cloze', stem: '36', options: ['A) sharply', 'B) clarity'], answer: 'A' }, { qtype: 'cloze', stem: '37', options: ['A) sharply', 'B) clarity'], answer: 'B' }] }] };
+  const importedCloze = await js(`window.keeper.importExam(${JSON.stringify(JSON.stringify(clozeFixture))})`);
+  await js(`location.hash = '#/recite/${importedCloze.examId}'`); await sleep(800);
+  await js(`(() => { const english = [...document.querySelectorAll('.recite-first button')].find(x => x.textContent.trim() === '英文'); english?.click(); const all = [...document.querySelectorAll('button')].find(x => x.textContent.includes('全文显示')); all?.click(); })()`); await sleep(200);
+  const completed = await js(`[...document.querySelectorAll('.recite-txt')].map(node => node.textContent).join(' ')`);
+  check('自导入选词填空按实际 36–45 题号补全', importedCloze.ok && completed.includes('sharply') && completed.includes('clarity') && !/\b(?:36|37)\b/.test(completed));
 }
 
 const fail = results.filter((r) => !r.ok);

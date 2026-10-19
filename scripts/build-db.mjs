@@ -1,15 +1,22 @@
 // 构建种子数据库: ECDICT 裁剪 + 真题 JSON -> data/keeper.db
 // 用法: node --max-old-space-size=8192 scripts/build-db.mjs
 import initSqlJs from 'sql.js';
+import contentSync from '../electron/content-sync.cjs';
+import wordSemantics from '../electron/word-semantics.cjs';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { alignBilingual } from '../src/utils/bilingual.js';
+import { alignBilingual, blankNumbers } from '../src/utils/bilingual.js';
+import { buildAlignmentLex } from './lib/alignment-lex.mjs';
+import { applyReviewedAlignment } from './lib/reviewed-alignment.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const srcDbPath = path.join(root, 'data', 'raw', 'ecdict-sqlite', 'stardict.db');
 const seedDir = path.join(root, 'data', 'seed');
-const outPath = path.join(root, 'data', 'keeper.db');
+const outputIndex = process.argv.indexOf('--out');
+if (outputIndex >= 0 && (!process.argv[outputIndex + 1] || process.argv[outputIndex + 1].startsWith('--'))) throw new Error('--out 必须指定新候选文件');
+const outPath = outputIndex >= 0 ? path.resolve(process.argv[outputIndex + 1]) : path.join(root, 'data', 'keeper.db');
+if (outputIndex >= 0 && fs.existsSync(outPath)) throw new Error('候选文件已存在，拒绝覆盖');
 
 // 与主进程 resolveWord 共用的兜底词形映射，保证词频归并与查词行为一致
 const WORD_FORMS = JSON.parse(fs.readFileSync(path.join(root, 'electron', 'word-forms.json'), 'utf8'));
@@ -57,6 +64,8 @@ CREATE TABLE word_freq(word TEXT PRIMARY KEY, total INTEGER, exams INTEGER);
 CREATE TABLE settings(key TEXT PRIMARY KEY, value TEXT);
 `);
 
+contentSync.ensureContentSchema(db);
+
 // 1. 裁剪词典
 console.log('裁剪词典（考纲词 + 高频词）…');
 let dictCount = 0;
@@ -82,52 +91,16 @@ console.log('词典词条:', dictCount);
 src.close();
 
 // 词典评分映射：英词/屈折形式 → 中文候选串（对齐 DP 的词典评分用）
-const CJK_RE = /[\u4e00-\u9fff]/;
-const lexMap = {};
-db.each('SELECT word, translation, exchange FROM dict WHERE translation != \'\'', (r) => {
-  const cands = [];
-  for (const line of String(r.translation || '').split('\n')) {
-    const seg = line.replace(/^[a-z\.\[\]\s]+/i, '').replace(/\[[^\]]*\]/g, '');
-    for (const part of seg.split(/[，,；;。\/（(）)→]/)) {
-      const w = part.trim().replace(/\s+/g, '');
-      if (w.length >= 1 && w.length <= 12 && CJK_RE.test(w) && !/[A-Za-z0-9]/.test(w)) cands.push(w);
-    }
-  }
-  if (!cands.length) return;
-  const uniq = [...new Set(cands)].slice(0, 6);
-  lexMap[String(r.word).toLowerCase()] = uniq;
-  if (r.exchange) {
-    for (const kv of String(r.exchange).split('/')) {
-      const km = kv.match(/^([pdi3s]):(.+)$/);
-      if (km) for (const form of km[2].split('\\').map((x) => x.trim().toLowerCase()).filter(Boolean)) {
-        if (!lexMap[form]) lexMap[form] = uniq;
-      }
-    }
-  }
-});
+const dictionaryRows = [];
+db.each('SELECT word, translation, exchange FROM dict WHERE translation != \'\'', row => dictionaryRows.push(row));
+const lexMap = buildAlignmentLex(dictionaryRows);
 console.log('词典评分映射键数:', Object.keys(lexMap).length);
 
 // 词形索引：0: 字段是原形指针（最高可信），其余字段是变形列表（反向兜底）
 // 提前构建，供后面的「粘连词修补」与「词频归并」共用
 const dictWords = new Set();
-const formIndex = new Map();
-const reverse = new Map();
-db.each('SELECT word, exchange FROM dict', (r) => {
-  dictWords.add(r.word);
-  if (!r.exchange) return;
-  const head = String(r.word).toLowerCase();
-  for (const part of String(r.exchange).split('/')) {
-    const [k, v] = part.split(':');
-    if (!v) continue;
-    const form = v.toLowerCase();
-    if (form === head) continue;
-    if (k === '0') formIndex.set(head, form);
-    else if (!reverse.has(form)) reverse.set(form, head);
-  }
-});
-for (const [form, head] of reverse) {
-  if (!formIndex.has(form)) formIndex.set(form, head);
-}
+const wordRows = [];
+db.each('SELECT word, exchange FROM dict', row => { dictWords.add(row.word); wordRows.push(row); });
 
 // 源 docx 偶发「两词粘连」（如 ofdigital、thepassage、theirjob）。
 // 这类瑕疵与合法复合词（smartphone / chatbot / byproduct）无法通用区分，故只修补高精度子集：
@@ -250,6 +223,7 @@ for (const f of files) {
   db.run('INSERT INTO exam(level, year, month, set_no, title, imported, created_at) VALUES (?,?,?,?,?,0,?)',
     [data.level, data.year, data.month, data.set_no, data.title || f, new Date().toISOString()]);
   const examId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
+  if (data.source_id) db.run('UPDATE exam SET source_id=? WHERE id=?', [data.source_id, examId]);
   for (const p of data.passages || []) {
     const ovP = ov && (ov.passages || []).find((x) => x.section === p.section && x.seq === p.seq);
     const contentFinal = healPassage(p.content, p.section);
@@ -258,15 +232,17 @@ for (const f of files) {
     let rowsJson = null;
     if (trFinal) {
       try {
-        const blankNums = new Set((p.questions || []).filter((q) => q.qtype === 'cloze').map((q) => parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10)).filter((x) => !isNaN(x)));
+        const blankNums = blankNumbers(p);
         rowsJson = JSON.stringify(alignBilingual(contentFinal, trFinal, lexMap, { blankNums }));
       } catch (e) { console.warn('rows 生成失败:', e.message); }
+      rowsJson = JSON.stringify(applyReviewedAlignment({...p,level:data.level,year:data.year,month:data.month,set_no:data.set_no,content:contentFinal,translation:trFinal},rowsJson ? JSON.parse(rowsJson) : []));
     }
     db.run('INSERT INTO passage(exam_id, section, seq, title, content, translation, reference, rows) VALUES (?,?,?,?,?,?,?,?)',
       [examId, p.section, p.seq, p.title, contentFinal, trFinal, (ovP && ovP.reference) || null, rowsJson]);
     if (ovP && ovP.translation) aiPassages++;
     if (ovP && ovP.reference) aiReferences++;
     const pid = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
+    if (p.source_id) db.run('UPDATE passage SET source_id=? WHERE id=?', [p.source_id, pid]);
     const qlist = p.questions || [];
     qlist.forEach((qs, qi) => {
       const opts = (qs.options || []).slice().sort((a, b) => (a || '')[0]?.localeCompare(b?.[0] || '')).filter(Boolean);
@@ -281,6 +257,7 @@ for (const f of files) {
       db.run('INSERT INTO question(passage_id, qtype, stem, options, answer, analysis) VALUES (?,?,?,?,?,?)',
         [pid, qs.qtype, healGlued(qs.stem), JSON.stringify(opts),
           (useOv && ovQ.answer) || qs.answer || '', (useOv && ovQ.analysis) || qs.analysis || '']);
+      if (qs.source_id) db.run('UPDATE question SET source_id=? WHERE id=last_insert_rowid()', [qs.source_id]);
     });
   }
   examCount++;
@@ -291,54 +268,17 @@ console.log('修补粘连词篇章数:', glueFixed);
 
 // 3. 全局词频表（过滤停用词，只统计词典收录的实词）
 console.log('构建真题词频表…');
-const STOP = new Set(('a an the this that these those it its is are was were be been being am do does did done ' +
-  'have has had having will would shall should can could may might must to of in on at by for with from as and or but if ' +
-  'not no nor so than then there here when where which who whom whose what how why all any both each few more most other ' +
-  'some such only own same too very just also into over under again further once during before after above below up down out ' +
-  'off about against between through i you he she we they me him her us them my your his their our their one two three ' +
-  's t d ll re ve m').split(' '));
-
-function reduce(w) {
-  const lower = w.toLowerCase();
-  const m = formIndex.get(lower);
-  if (m && dictWords.has(m)) return m;
-  if (dictWords.has(lower)) return lower;
-  for (const suf of ['ies', 'ing', 'ed', 'es', 'ly', 'er', 'est', 's', 'd']) {
-    if (lower.length > suf.length + 2 && lower.endsWith(suf)) {
-      let base = lower.slice(0, -suf.length);
-      if (suf === 'ies') base += 'y';
-      for (const cand of [base, base + 'e', base.slice(0, -1)]) {
-        if (cand && dictWords.has(cand)) return cand;
-        const mm = cand && formIndex.get(cand);
-        if (mm && dictWords.has(mm)) return mm;
-      }
-    }
-  }
-  const extra = EXTRA_FORMS[lower];
-  if (extra && dictWords.has(extra)) return extra;
-  return lower;
-}
-console.log('词形索引规模:', formIndex.size);
-
 const rows = [];
-db.each('SELECT id, content, exam_id FROM passage', (r) => rows.push(r));
-const freq = new Map();
-for (const p of rows) {
-  const words = new Set(String(p.content).toLowerCase().match(/[a-z][a-z'-]*/g) || []);
-  for (const raw of words) {
-    if (raw.length < 3 || STOP.has(raw)) continue;
-    const w = reduce(raw);
-    if (!dictWords.has(w)) continue;
-    if (!freq.has(w)) freq.set(w, { total: 0, exams: new Set() });
-    freq.get(w).total += 1;
-    freq.get(w).exams.add(p.exam_id);
-  }
-}
+db.each('SELECT id,content,exam_id FROM passage', row => rows.push(row));
+const frequencies = wordSemantics.countWordFrequency(rows,wordRows,EXTRA_FORMS);
 const freqIns = db.prepare('INSERT INTO word_freq VALUES (?,?,?)');
-for (const [w, v] of freq) freqIns.run([w, v.total, v.exams.size]);
-freqIns.free();
-console.log('词频条目:', freq.size);
+try { for (const row of frequencies) freqIns.run([row.word,row.total,row.exams]); }
+finally { freqIns.free(); }
+console.log('词频条目:', frequencies.length);
 
+contentSync.stampBuiltinContent(db);
+db.run("INSERT OR REPLACE INTO content_sync_state VALUES ('word-frequency',?,1,?)",[wordSemantics.FREQUENCY_REVISION,new Date().toISOString()]);
+db.run('VACUUM');
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
-fs.writeFileSync(outPath, Buffer.from(db.export()));
+fs.writeFileSync(outPath, Buffer.from(db.export()), outputIndex >= 0 ? { flag: 'wx' } : {});
 console.log('完成 ->', outPath, (fs.statSync(outPath).size / 1048576).toFixed(1) + 'MB');

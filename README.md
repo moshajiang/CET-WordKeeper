@@ -581,3 +581,18 @@ node_modules\electron\dist\electron.exe . --disable-gpu --no-sandbox
 代码以 **MIT** 许可开源，见 [LICENSE](LICENSE)。
 
 **真题原文版权归各自权利人所有。** 本项目仅提供个人学习用途的工具，不随附任何真题原文的商业分发；仓库中的预置数据仅为个人学习索引便利，请勿用于商业用途。
+
+## GitHub 与码云同步
+
+源码仓库：
+
+- GitHub：https://github.com/moshajiang/CET-WordKeeper
+- 码云：https://gitee.com/moyunyi/cet-word-keeper
+
+设置 → 版本更新可选择 GitHub 或码云，记住本机选择。安装版共用 electron-updater 的校验、下载与安装；便携版检查后打开所选发布页。下载期间及待安装时不能切换来源。切换来源不会修改 AI 服务配置。
+
+在码云创建正式语义版本的发行版（例如 v0.3.2），上传同一次构建生成的 latest.yml、CET-WordKeeper-0.3.2-setup.exe，另附便携版供手动下载。附件名须保持不变，安装包必须与 latest.yml 中的大小和 SHA-512 一致。码云渠道只接收稳定版，按语义版本选择最新发行，不依赖 API 返回顺序；重复/缺失附件或错误元数据会拒绝更新。代码推送不等于发布安装包，码云没有 Releases 时会明确报未发布。electron-builder 的 publish 仍为 GitHub；码云附件需另行上传，不使用不受支持的 gitee provider。
+
+配置远程后，运行 npm run push:all：先预检两个仓库，再将当前分支的同一提交依次推送。只推当前分支，不推标签、不覆盖远程历史；跨平台推送无法组成原子事务，任一失败会返回非零并列出各仓库状态，修复后可重跑。要求工作区已提交、两个远程分别命名 origin 和 gitee，并使用上述仓库的 HTTPS 地址。Git 凭据由系统凭据管理器提供，不写入源码。
+
+参考：[electron-builder v26 更新文档](https://www.electron.build/v26/docs/features/auto-update/)、[码云公开 API](https://gitee.com/api/v5/swagger)。

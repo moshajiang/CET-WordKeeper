@@ -2,6 +2,7 @@
   <div class="review-wrap">
     <h1 class="page-title">复习</h1>
     <p class="page-sub">认词 → 翻面核对 → 三键评分 · 语境模式用真题原句挖空</p>
+    <div v-if="errorMsg" class="card" role="alert" style="color: var(--red);">{{ errorMsg }} <button v-if="!started" @click="load">重试</button></div>
 
     <div v-if="!started">
       <div class="card">
@@ -16,7 +17,7 @@
             <label style="font-size: 13px; display: flex; align-items: center; gap: 5px; cursor: pointer;">
               <input type="checkbox" v-model="clozeMode" /> 语境填空模式
             </label>
-            <button class="primary" :disabled="!total" @click="started = true">开始</button>
+            <button class="primary" :disabled="loading || !total" @click="start">开始</button>
           </div>
         </div>
       </div>
@@ -31,7 +32,7 @@
 
       <div v-if="current" class="review-card" :class="{ clickable: !revealed }" @click="flip">
         <template v-if="!revealed">
-          <template v-if="clozeMode && current.sentence">
+          <template v-if="clozeMode && clozeHtml">
             <div class="rctx" v-html="clozeHtml"></div>
             <div class="rhint">回忆句中挖空的词，点击翻面核对</div>
           </template>
@@ -53,15 +54,15 @@
       </div>
 
       <div v-if="current && revealed" class="rate-row">
-        <button class="rate-forgot" @click="answer(0)">😵 忘记</button>
-        <button class="rate-fuzzy" @click="answer(1)">🤔 模糊</button>
-        <button class="rate-got" @click="answer(2)">😀 记得</button>
+        <button class="rate-forgot" :disabled="answering" @click="answer(0)">😵 忘记</button>
+        <button class="rate-fuzzy" :disabled="answering" @click="answer(1)">🤔 模糊</button>
+        <button class="rate-got" :disabled="answering" @click="answer(2)">😀 记得</button>
       </div>
-      <div v-else-if="current" class="flip-hint" style="cursor: pointer;" @click="revealed = true">点击卡片或按空格键翻面</div>
+      <div v-else-if="current" class="flip-hint" style="cursor: pointer;" @click="flip">点击卡片或按空格键翻面</div>
 
       <div v-if="!current" class="card empty-state">
         <div class="big">✅</div>
-        本轮复习完成！共复习 {{ doneCount }} 词。
+        本轮复习完成！共完成 {{ doneCount }} 次复习。
         <div style="margin-top: 10px;"><button class="primary" @click="restart">再来一轮</button>
         <button style="margin-left: 8px;" @click="$router.push('/')">回首页</button></div>
       </div>
@@ -80,24 +81,30 @@ const idx = ref(0);
 const revealed = ref(false);
 const lastResult = ref(null);
 const doneCount = ref(0);
+const answering = ref(false);
+const loading = ref(false);
+const errorMsg = ref('');
+let loadSequence = 0, disposed = false, operationId = null, pendingRating = null;
 
 const total = computed(() => queue.value.due.length + queue.value.fresh.length);
 const current = computed(() => list.value[idx.value] || null);
-const progress = computed(() => (total.value ? Math.round((idx.value / total.value) * 100) : 0));
+const progress = computed(() => (list.value.length ? Math.round((idx.value / list.value.length) * 100) : 0));
 
-const clozeHtml = computed(() => {
-  if (!current.value || !current.value.sentence) return '';
-  const w = current.value.word;
-  const re = new RegExp('\\b(' + w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '|\\w*(' + w + ')\\w*)\\b', 'gi');
-  const esc = current.value.sentence.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  return esc.replace(re, '<span class="blank">$1</span>');
-});
+const clozeHtml = computed(() => current.value?.clozeHtml || '');
 
 async function load() {
-  queue.value = await window.keeper.reviewQueue();
-  list.value = [...queue.value.due, ...queue.value.fresh];
-  idx.value = 0;
-  revealed.value = false;
+  if (answering.value) return;
+  const sequence = ++loadSequence;
+  loading.value = true; errorMsg.value = '';
+  try {
+    const result = await window.keeper.reviewQueue();
+    if (disposed || sequence !== loadSequence) return;
+    queue.value = result;
+    list.value = [...result.due, ...result.fresh];
+    idx.value = 0; revealed.value = false; lastResult.value = null;
+    operationId = null; pendingRating = null;
+  } catch (error) { if (!disposed && sequence === loadSequence) errorMsg.value = '复习加载失败：' + error.message; }
+  finally { if (!disposed && sequence === loadSequence) loading.value = false; }
 }
 
 async function start() {
@@ -106,23 +113,35 @@ async function start() {
 }
 
 async function answer(rating) {
-  if (!current.value) return;
-  const r = await window.keeper.reviewAnswer(current.value.word, rating);
-  lastResult.value = r;
-  if (rating === 0) {
-    list.value.push(current.value);
+  if (answering.value || !started.value || !revealed.value || !current.value) return;
+  answering.value = true;
+  const card = current.value, index = idx.value, sequence = loadSequence;
+  // 失败重试复用同一操作身份和评分，避免“服务端成功、回执丢失”导致再次记忆调度。
+  if (!operationId) {
+    operationId = globalThis.crypto?.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    pendingRating = rating;
   }
-  doneCount.value += 1;
-  idx.value += 1;
-  revealed.value = false;
+  errorMsg.value = '';
+  try {
+    const result = await window.keeper.reviewAnswer(card.word,pendingRating,operationId);
+    if (disposed || sequence !== loadSequence || idx.value !== index) return;
+    if (!result?.ok) throw new Error(result?.error || '保存失败');
+    lastResult.value = result;
+    if (pendingRating === 0) list.value.push(card);
+    doneCount.value += 1; idx.value += 1; revealed.value = false;
+    operationId = null; pendingRating = null;
+  } catch (error) {
+    if (!disposed && sequence === loadSequence) errorMsg.value = '评分保存未确认，点击任意评分键重试本次评分：' + error.message;
+  } finally { if (!disposed && sequence === loadSequence) answering.value = false; }
 }
 
 // 点击卡面翻面核对（历史 bug：卡面本体没有绑定点击，只有下方一行小字可点）
 function flip() {
-  if (current.value && !revealed.value) revealed.value = true;
+  if (!answering.value && current.value && !revealed.value) revealed.value = true;
 }
 
 async function restart() {
+  if (answering.value) return;
   started.value = false;
   doneCount.value = 0;
   await load();
@@ -138,9 +157,10 @@ function speak(word) {
 }
 
 function onKey(ev) {
-  if (!started.value || !current.value) return;
+  if (answering.value || ev.repeat || /INPUT|TEXTAREA|SELECT/.test(ev.target?.tagName || '') || !started.value || !current.value) return;
   if (ev.code === 'Space' && !revealed.value) { ev.preventDefault(); revealed.value = true; return; }
   if (revealed.value) {
+    if (['1','2','3'].includes(ev.key)) ev.preventDefault();
     if (ev.key === '1') answer(0);
     if (ev.key === '2') answer(1);
     if (ev.key === '3') answer(2);
@@ -149,7 +169,7 @@ function onKey(ev) {
 
 onMounted(async () => {
   await load();
-  document.addEventListener('keydown', onKey);
+  if (!disposed) document.addEventListener('keydown', onKey);
 });
-onBeforeUnmount(() => document.removeEventListener('keydown', onKey));
+onBeforeUnmount(() => { disposed = true; ++loadSequence; document.removeEventListener('keydown', onKey); });
 </script>

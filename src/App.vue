@@ -21,12 +21,14 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue';
+import { computed, onMounted, onBeforeUnmount } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import { useLearningState } from './composables/useLearningState.js';
 
 const route = useRoute();
 const router = useRouter();
-const dueCount = ref(0);
+const learning = useLearningState();
+const dueCount = computed(() => learning.stats.value.dueNow);
 
 const navs = [
   { path: '/', label: '今日', ico: '🏠' },
@@ -63,11 +65,9 @@ function onNav(n) {
   router.push(n.path);
 }
 
-onMounted(async () => {
+onMounted(() => {
   applyTheme();
-  try {
-    const s = await window.keeper.stats();
-    dueCount.value = s.dueNow;
-  } catch (e) { /* db not ready */ }
+  void learning.start();
 });
+onBeforeUnmount(() => learning.stop());
 </script>

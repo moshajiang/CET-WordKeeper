@@ -1,5 +1,5 @@
 <template>
-  <div v-if="detail">
+  <div v-if="detail" @scroll.passive="saveProgressSoon">
     <div class="reader-topbar">
       <div class="reader-topbar-row">
         <div class="tb-title">
@@ -15,10 +15,11 @@
           </label>
           <button @click="chatOpen = !chatOpen">💬 问 AI</button>
           <button @click="openRecite" :disabled="!hasTranslation" title="打开独立页面，逐句背诵本篇">🗣 对照背诵</button>
-          <button class="primary" @click="submit" :disabled="busy">交卷核对</button>
+          <button class="primary" @click="submit" :disabled="busy || answersLoading || graded">交卷核对</button>
           <button class="reveal-btn" @click="toggleAnalysis" :disabled="busy">
             {{ busy ? '处理中…' : (revealAnalysis && !graded ? '隐藏解析' : '查看解析与翻译') }}
           </button>
+          <button v-if="busy" @click="cancelAssessment" :disabled="assessmentCancelling">{{ assessmentCancelling ? '取消中…' : '取消处理' }}</button>
           <button @click="fontSize = Math.max(14, fontSize - 1)">A-</button>
           <button @click="fontSize = Math.min(22, fontSize + 1)">A+</button>
         </div>
@@ -39,6 +40,7 @@
       </div>
     </div>
 
+    <div v-if="answerDraftStatus && !graded" class="answer-draft-status" role="status" style="font-size: 12.5px; color: var(--muted); margin-bottom: 10px;">{{ answerDraftStatus }}</div>
     <div v-if="result" class="card" style="margin-bottom: 12px; padding: 12px 18px;">
       <div style="display: flex; align-items: center; gap: 14px;">
         <span style="font-size: 15px; font-weight: 500;">
@@ -110,10 +112,11 @@
             </h3>
             <span style="font-size: 12.5px; color: var(--muted);">{{ essayText.length }} 词</span>
           </div>
-          <textarea v-model="essayText" class="essay-input" rows="10"
+          <textarea v-model="essayText" class="essay-input" rows="10" :disabled="essayLoading"
             :placeholder="activePassage.section === 'writing' ? '在此写作，草稿会自动保存到本地…' : '在此输入你的英文译文，草稿会自动保存到本地…'"></textarea>
           <div style="margin-top: 10px; display: flex; gap: 10px; align-items: center;">
             <button class="primary" @click="gradeEssay" :disabled="essayBusy">{{ essayBusy ? '批改中…' : 'AI 批改' }}</button>
+            <button v-if="essayBusy" @click="cancelGrade">取消批改</button>
             <button v-if="activePassage.reference" @click="showReference = !showReference">
               {{ (showReference ? '隐藏' : '查看') + (activePassage.section === 'writing' ? '范文' : '参考译文') }}
               <span style="font-size: 11px; color: var(--muted);">（预置，离线可看）</span>
@@ -159,6 +162,7 @@
           :passage="activePassage"
           :answers="answers"
           :graded="graded"
+          :disabled="busy || answersLoading"
           :reveal="revealAnalysis"
           :letters="matchLetters"
           @pick="setAnswer"
@@ -172,6 +176,7 @@
           :passage="activePassage"
           :answers="answers"
           :graded="graded"
+          :disabled="busy || answersLoading"
           :reveal="revealAnalysis"
           :letters="matchLetters"
           @pick="setAnswer"
@@ -185,7 +190,7 @@
             <h3 style="font-size: 14px; margin: 0;">💬 AI 助手
               <span style="font-size: 11px; color: var(--muted); font-weight: 400;">知识库 + 当前文章作上下文</span>
             </h3>
-            <button class="mini-btn" @click="clearChat" title="清空历史">清空</button>
+            <button class="mini-btn" @click="clearChat" :disabled="chatClearing" title="清空历史">清空</button>
           </div>
           <div class="chat-msgs" ref="chatMsgsEl">
             <div v-if="!chatMsgs.length" class="chat-empty">
@@ -203,7 +208,8 @@
           <div class="chat-input-row">
             <textarea v-model="chatInput" rows="2" placeholder="输入问题，Enter 发送，Shift+Enter 换行"
               @keydown.enter.exact.prevent="sendChat"></textarea>
-            <button class="primary" @click="sendChat" :disabled="chatBusy || !chatInput.trim()">发送</button>
+            <button class="primary" @click="sendChat" :disabled="chatBusy || chatClearing || !chatInput.trim()">发送</button>
+            <button v-if="chatBusy" @click="stopChat()">停止生成</button>
           </div>
           <div v-if="chatNotice" style="font-size: 12px; color: var(--red); margin-top: 6px;">{{ chatNotice }}</div>
         </div>
@@ -213,6 +219,7 @@
             {{ aiResult.kind === 'translate' ? '整句翻译' : '语法结构分析' }}
             <span v-if="aiResult.cached" style="font-size: 11px; color: var(--muted); font-weight: 400;">（缓存）</span>
           </h3>
+          <button v-if="aiResult.loading" @click="cancelSelection">取消请求</button>
           <div class="ai-result md-body" style="margin-top: 0;" v-html="renderMarkdown(aiResult.text)"></div>
           <div v-if="aiResult.source" style="font-size: 12px; color: var(--muted); margin-top: 8px; font-family: Georgia, serif;">{{ aiResult.source }}</div>
         </div>
@@ -264,11 +271,12 @@
           </div>
         </div>
         <div class="acts">
-          <button v-if="!popover.data.inBook" class="primary" @click="addFromPopover">★ 加入生词本</button>
-          <button v-else class="danger" @click="removeFromPopover">移出生词本</button>
+          <button v-if="!popover.data.inBook" class="primary" :disabled="wordBusy(popover.data.word)" @click="addFromPopover">★ 加入生词本</button>
+          <button v-else class="danger" :disabled="wordBusy(popover.data.word)" @click="removeFromPopover">移出生词本</button>
           <button @click="speak(popover.data.word)">🔊 朗读</button>
         </div>
       </template>
+      <div v-if="popover.error" role="alert" style="font-size: 12.5px; color: var(--red); margin-top: 8px;">{{ popover.error }} <button @click="retryLookup" :disabled="popover.loading">重新查询</button></div>
     </div>
 
     <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle">
@@ -281,28 +289,48 @@
 
     <div v-if="toast" class="toast">{{ toast }}</div>
   </div>
+  <div v-else-if="readerError" class="card" role="alert">{{ readerError }} <button @click="loadAll">重试</button></div>
   <div v-else class="empty-state"><div class="big">⏳</div>加载真题中…</div>
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted, onBeforeUnmount } from 'vue';
-import { useRouter } from 'vue-router';
-import { tokenize, simpleNorm, sentenceOf } from '../utils/tokens.js';
-import { alignBilingual, paragraphLetters } from '../utils/bilingual.js';
+import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from 'vue';
+import { createAiTasks } from '../utils/ai-tasks.js';
+import { useRouter, onBeforeRouteLeave, onBeforeRouteUpdate } from 'vue-router';
+import { tokenize, sentenceOf } from '../utils/tokens.js';
+import { useWordLemmas } from '../composables/useWordLemmas.js';
+import { alignBilingual, paragraphLetters, blankNumbers } from '../utils/bilingual.js';
+import { useAlignmentLex } from '../composables/useAlignmentLex.js';
 import { renderMarkdown } from '../utils/md.js';
 import QuestionPanel from '../components/QuestionPanel.vue';
+import { createEssayDrafts } from '../utils/essay-drafts.js';
+import { createAnswerDrafts } from '../utils/answer-drafts.js';
 
 const props = defineProps({ examId: String });
 const router = useRouter();
 
 const detail = ref(null);
+const readerError = ref('');
+let progressExamId = null, progressReady = false;
 const activeIdx = ref(0);
 const userWords = ref({});
+const { lemmaOf,ensureWords } = useWordLemmas();
+let wordsSequence = 0, wordSnapshotVersion = 0, offLearning = null;
+async function refreshUserWords() {
+  const sequence = ++wordsSequence;
+  const words = await window.keeper.allWords();
+  if (!readerDisposed && sequence === wordsSequence) {
+    userWords.value = words; ++wordSnapshotVersion;
+    if (popover.value.show && popover.value.data) popover.value.data.inBook = Object.hasOwn(words,popover.value.data.word);
+  }
+}
 const fontSize = ref(16.5);
 const scanOn = ref(false);
 const hardWords = ref([]);
 const toast = ref('');
 const aiResult = ref(null);
+const aiTasks = createAiTasks(id => window.keeper.cancelAi?.(id));
+const assessmentCancelling = ref(false);
 
 // ---- 做题 / 交卷 / 解析与翻译 ----
 const answers = ref({});        // questionId -> 所选字母
@@ -312,18 +340,32 @@ const notice = ref('');
 const noticeOk = ref(false);
 const busy = ref(false);
 const revealAnalysis = ref(false);   // 「查看解析与翻译」直接揭示答案与解析（不必先交卷）
+const answersLoading = ref(true);
+const answerDraftStatus = ref('');
+let loadedAnswer = null;
+let readerLoadSequence = 0;
+let answerLoadSequence = 0;
+let readerDisposed = false;
+const answerIsCurrent = target => !readerDisposed && target?.examId === Number(props.examId) && loadedAnswer?.examId === target.examId && loadedAnswer?.revision === target.revision && loadedAnswer?.generation === target.generation;
+const answerDrafts = createAnswerDrafts({
+  storage: localStorage,
+  save: (examId, draft) => window.keeper.attemptSaveDraft(examId,draft),
+  onState(state,target,error) {
+    if (!answerIsCurrent(target)) return;
+    answerDraftStatus.value = state === 'saved' ? '作答草稿已保存' : state === 'saving' ? '正在保存作答…'
+      : '作答保存未完成，请重试或稍后返回：' + error.message;
+  },
+});
 
 // 展示模式：翻译呈现方式（closing / 逐句对照）与布局（上下 / 左右）
 // 「对照背诵」已独立成页（见 ReciteView），此处只保留入口按钮
 const transMode = ref('off');
 const layout = ref('stack');
 const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点击句子切换）
-const tokenCache = new Map();
 
 const hasTranslation = computed(() => !!(activePassage.value && activePassage.value.translation));
 // 词典评分映射（ECDICT 英→中候选），一次加载全 view 复用
-let lexCache = null;
-const ensureLex = async () => { if (!lexCache) { try { lexCache = await window.keeper.dictLex(); } catch { lexCache = {}; } } return lexCache; };
+const { lex, ensureLex } = useAlignmentLex();
 const hasQuestions = computed(() => !!(activePassage.value && activePassage.value.questions && activePassage.value.questions.length));
 const bilingual = computed(() => {
   const p = activePassage.value;
@@ -332,8 +374,9 @@ const bilingual = computed(() => {
   if (Array.isArray(p.rows) && p.rows.length) {
     return p.rows.map((r, i) => ({ para: r.para ?? 0, i, en: String(r.en || ''), zh: String(r.zh || '') }));
   }
-  return alignBilingual(p.content, p.translation || '', lexCache);
+  return alignBilingual(p.content, p.translation || '', lex.value, { blankNums: blankNumbers(p) });
 });
+const rowTokenCache = computed(() => new Map(bilingual.value.map(row => [row, tokenize(row.en)])));
 // 匹配题可用的段落字母：从正文段落标记提取；提取不到时回退 A-O，保证永远可作答
 const matchLetters = computed(() => {
   const p = activePassage.value;
@@ -344,9 +387,7 @@ const matchLetters = computed(() => {
 });
 
 function rowTokens(s) {
-  const key = s.para + '|' + s.i;
-  if (!tokenCache.has(key)) tokenCache.set(key, tokenize(s.en));
-  return tokenCache.get(key);
+  return rowTokenCache.value.get(s) || tokenize(s.en);
 }
 function zhOpen(s) {
   const key = s.para + '|' + s.i;
@@ -361,11 +402,14 @@ const PROGRESS_KEY = 'keeper.reader.progress';
 
 function saveProgress() {
   try {
-    if (!detail.value) return;
-    const all = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}');
+    if (!progressReady || progressExamId !== Number(props.examId) || detail.value?.exam?.id !== progressExamId) return;
+    let parsed;
+    try { parsed = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}'); } catch { parsed = {}; }
+    const all = parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
     const m = document.querySelector('.main');
-    all[String(props.examId)] = {
+    all[String(progressExamId)] = {
       idx: activeIdx.value,
+      passageId: activePassage.value?.id,
       scroll: m ? m.scrollTop : 0,
       trans: transMode.value,
       layout: layout.value,
@@ -377,8 +421,25 @@ function saveProgress() {
 
 function loadProgress() {
   try {
-    return JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}')[String(props.examId)] || null;
+    const value = JSON.parse(localStorage.getItem(PROGRESS_KEY) || '{}')?.[String(props.examId)];
+    return value && typeof value === 'object' && !Array.isArray(value) ? value : null;
   } catch (e) { return null; }
+}
+
+// 新链接按稳定篇章 ID 定位；保留旧 ?p=<下标> 链接兼容。
+function requestedPassageIndex() {
+  const query = router.currentRoute?.value?.query || {};
+  const passages = detail.value?.passages || [];
+  if (typeof query.passage === 'string' && /^[1-9]\d*$/.test(query.passage)) return passages.findIndex(p => String(p.id) === query.passage);
+  if (typeof query.p === 'string' && /^\d+$/.test(query.p)) {
+    const index = Number(query.p); if (Number.isSafeInteger(index) && passages[index]) return index;
+  }
+  return -1;
+}
+function applyRequestedPassage() {
+  if (!progressReady || progressExamId !== Number(props.examId)) return;
+  const index = requestedPassageIndex();
+  if (index >= 0 && index !== activeIdx.value) { activeIdx.value = index; const main = document.querySelector('.main'); if (main) main.scrollTop = 0; }
 }
 
 let saveTimer = null;
@@ -406,45 +467,95 @@ function backToQuestions() {
 }
 
 function openRecite() {
-  router.push({ path: '/recite/' + Number(props.examId), query: { p: String(activeIdx.value) } });
+  router.push({ path: '/recite/' + Number(props.examId), query: { p: String(activeIdx.value), passage: String(activePassage.value.id) } });
 }
 function setAnswer(qid, letter) {
-  if (graded.value) return;   // 已交卷锁定；「查看解析」只是临时揭示，不锁作答
+  if (graded.value || busy.value || answersLoading.value || !answerIsCurrent(loadedAnswer)) return;
   answers.value = { ...answers.value, [qid]: letter };
+  answerDrafts.schedule({ ...loadedAnswer, answers: answers.value });
 }
 
 async function reloadDetail() {
-  detail.value = await window.keeper.examDetail(Number(props.examId));
+  const examId = Number(props.examId), sequence = readerLoadSequence;
+  const value = await window.keeper.examDetail(examId);
+  if (!readerDisposed && sequence === readerLoadSequence && examId === Number(props.examId)) detail.value = value;
 }
 
 async function restoreAttempt() {
-  const r = await window.keeper.attemptGet(Number(props.examId));
-  const map = {};
-  for (const a of r.answers || []) map[a.question_id] = a.choice;
-  answers.value = map;
-  if (r.attempt && r.attempt.total) {
-    result.value = { total: r.attempt.total, correct: r.attempt.correct, score: r.attempt.score };
+  const examId = Number(props.examId), sequence = ++answerLoadSequence;
+  loadedAnswer = null; answersLoading.value = true;
+  const r = await window.keeper.attemptGet(examId);
+  if (readerDisposed || sequence !== answerLoadSequence || examId !== Number(props.examId)) return;
+  loadedAnswer = typeof r.revision === 'string' ? { examId,revision:r.revision,generation:r.generation } : null;
+  answersLoading.value = false;
+  answerDraftStatus.value = '';
+  graded.value = false; result.value = null;
+  if (r.attempt?.total && !r.contentChanged) {
+    const map = {};
+    for (const a of r.answers || []) map[a.question_id] = a.choice;
+    answers.value = map;
+    result.value = { total:r.attempt.total,correct:r.attempt.correct,score:r.attempt.score };
     graded.value = true;
+    return;
+  }
+  const recovery = loadedAnswer && answerDrafts.recover(loadedAnswer);
+  answers.value = { ...(recovery?.answers || r.draft?.answers || {}) };
+  if (r.contentChanged) {
+    noticeOk.value = true;
+    notice.value = '本套题目或答案已更新，历史交卷和作答已保留，请重新核对并交卷。';
+  }
+  if (recovery) {
+    answerDrafts.schedule(recovery);
+  } else if (r.draft) {
+    answerDraftStatus.value = '已恢复未交卷作答，可继续答题';
+  } else if (r.draftStale || loadedAnswer && answerDrafts.peek(loadedAnswer)) {
+    answerDraftStatus.value = '试题或作答状态已更新，旧草稿未套用，请重新作答';
   }
 }
 
 async function loadAnalysis() {
+  if (busy.value || answersLoading.value) return;
+  const target = loadedAnswer, sequence = readerLoadSequence;
+  const task = aiTasks.start('assessment');
+  assessmentCancelling.value = false;
   busy.value = true;
   notice.value = '';
-  const r = await window.keeper.examAnalysis(Number(props.examId));
-  busy.value = false;
+  let r;
+  try {
+    if (!(await answerDrafts.flush())) throw new Error('作答草稿尚未保存');
+    if (!task.isCurrent()) return;
+    r = await window.keeper.examAnalysis(target.examId,task.id);
+    if (!task.isCurrent()) return;
+    if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
+    // AI 补全答案会改变内容版本，原选项身份不变，继续保存当前作答。
+    const state = await window.keeper.attemptGet(target.examId);
+    if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
+    if (!graded.value && state.generation === target.generation && state.revision !== target.revision) {
+      answerDrafts.discard(target);
+      loadedAnswer = { ...target,revision:state.revision };
+      answerDrafts.schedule({ ...loadedAnswer,answers:answers.value });
+    }
+  } catch (error) { r = { ok:false,error:error.message }; }
+  finally { if (task.isCurrent() && sequence === readerLoadSequence) { busy.value = false; assessmentCancelling.value = false; } }
+  if (!task.isCurrent()) return;
+  if (readerDisposed || sequence !== readerLoadSequence) return;
   if (!r.ok) {
+    task.finish();
     noticeOk.value = false;
-    notice.value = r.error === 'no_key'
+    notice.value = badAiResult(r) ? 'AI 返回数据格式异常，未保存当前篇章，请重试；此前已完成的篇章仍保留。' : r.error === 'cancelled' ? '已取消，已保存的篇章结果仍保留。' : r.error === 'no_key'
       ? '中文解析与全文翻译由 AI 按需生成（首次），请先在「设置」里填写 API 地址与 Key；生成后会保存到本地，之后永久离线可看。'
       : '生成失败：' + r.error;
     return;
   }
   await reloadDetail();
+  if (!task.isCurrent() || readerDisposed || sequence !== readerLoadSequence) return;
+  task.finish();
   revealAnalysis.value = true;   // 关键：点了就直接展示答案与解析（此前只加载不改状态，点了没反应）
   noticeOk.value = true;
   notice.value = r.cached ? '已显示本地缓存的解析与全文翻译（点「逐句对照」可左右/上下对照阅读）。' : `已生成 ${r.generated} 个篇章的解析与翻译，并已保存到本地。`;
 }
+
+function cancelAssessment() { assessmentCancelling.value = true; aiTasks.requestCancel('assessment'); }
 
 // 「查看解析与翻译」按钮做成开关：揭示后可再点一次收起，回到纯作答态
 async function toggleAnalysis() {
@@ -458,30 +569,66 @@ async function toggleAnalysis() {
 }
 
 async function submit() {
+  if (busy.value || answersLoading.value || graded.value || !answerIsCurrent(loadedAnswer)) return;
+  const target = { ...loadedAnswer }, sequence = readerLoadSequence, choices = { ...answers.value };
+  const task = aiTasks.start('assessment');
+  assessmentCancelling.value = false;
   busy.value = true;
   notice.value = '';
-  const r = await window.keeper.attemptSubmit(Number(props.examId), { ...answers.value });
-  busy.value = false;
+  let r;
+  try {
+    if (!(await answerDrafts.flush())) throw new Error('作答草稿尚未保存，请稍后重试');
+    if (!task.isCurrent()) return;
+    r = await window.keeper.attemptSubmit(target.examId,choices,target,task.id);
+    if (!task.isCurrent()) return;
+    if (r.ok) answerDrafts.discard(target);
+  } catch (error) { r = { ok:false,error:error.message }; }
+  finally { if (task.isCurrent() && sequence === readerLoadSequence) { busy.value = false; assessmentCancelling.value = false; } }
+  if (!task.isCurrent()) return;
+  task.finish();
+  if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
   if (!r.ok) {
+    if (r.revision && r.revision !== target.revision && r.generation === target.generation) {
+      // AI 已保存部分答案后失败，当前选项仍有效，换新版本继续保存。
+      answerDrafts.discard(target);
+      loadedAnswer = { ...target,revision:r.revision };
+      answerDrafts.schedule({ ...loadedAnswer,answers:choices });
+    }
     noticeOk.value = false;
-    notice.value = r.error === 'no_key'
+    notice.value = badAiResult(r) ? 'AI 返回数据格式异常，未交卷作答已保留，请重试。' : r.error === 'cancelled' ? '已取消交卷，未交卷作答已保留。' : r.error === 'no_key'
       ? '自动核对需要正确答案：首次由 AI 生成（请在「设置」里配置 Key），生成后永久离线可用。'
       : '交卷失败：' + r.error;
     return;
   }
-  await reloadDetail();
   graded.value = true;
+  await reloadDetail();
+  if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
+  loadedAnswer = { examId:target.examId,revision:r.revision,generation:r.generation };
   result.value = r;
   noticeOk.value = true;
   notice.value = `已交卷：客观题 ${r.correct} / ${r.total} 正确，得分 ${r.score} 分。`;
 }
 
 async function clearAttempt() {
-  await window.keeper.attemptClear(Number(props.examId));
+  if (busy.value || answersLoading.value || !answerIsCurrent(loadedAnswer)) return;
+  const target = { ...loadedAnswer }, sequence = readerLoadSequence;
+  busy.value = true;
+  try {
+    if (!(await answerDrafts.flush())) throw new Error('作答草稿尚未保存');
+    const r = await window.keeper.attemptClear(target.examId,target);
+    if (!r.ok) throw new Error(r.error);
+    answerDrafts.discard(target);
+    if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
+    loadedAnswer = { examId:target.examId,revision:r.revision,generation:r.generation };
+  } catch (error) {
+    if (answerIsCurrent(target)) { noticeOk.value = false; notice.value = '重做失败：' + error.message; }
+    return;
+  } finally { if (sequence === readerLoadSequence) busy.value = false; }
   graded.value = false;
   result.value = null;
   notice.value = '';
   answers.value = {};
+  answerDraftStatus.value = '';
   revealAnalysis.value = false;   // 重做时收起答案解析，重新进入作答状态
   await reloadDetail();
 }
@@ -494,40 +641,66 @@ const chatBusy = ref(false);
 const chatNotice = ref('');
 const chatMsgsEl = ref(null);
 
+let chatSequence = 0;
+const chatClearing = ref(false);
 async function loadChat() {
-  try { chatMsgs.value = (await window.keeper.chatHistory()) || []; } catch (e) { /* 忽略 */ }
+  const sequence = ++chatSequence;
+  try {
+    const rows = await window.keeper.chatHistory();
+    if (!readerDisposed && sequence === chatSequence) chatMsgs.value = rows || [];
+  } catch (error) { if (!readerDisposed && sequence === chatSequence) chatNotice.value = '历史加载失败：'+error.message; }
 }
-
 function scrollChat() {
-  setTimeout(() => {
-    const el = chatMsgsEl.value;
-    if (el) el.scrollTop = el.scrollHeight;
-  }, 50);
+  setTimeout(() => { const el = chatMsgsEl.value; if (el && !readerDisposed) el.scrollTop = el.scrollHeight; },50);
 }
-
+function stopChat(restoreInput = true) {
+  aiTasks.cancel('chat'); ++chatSequence;
+  const pending = chatMsgs.value.find(message => message.pending);
+  chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
+  if (pending && restoreInput && !chatInput.value) chatInput.value = pending.content;
+  if (chatBusy.value && restoreInput) chatNotice.value = '已停止生成，可重新发送。';
+  chatBusy.value = false;
+}
 async function sendChat() {
   const text = chatInput.value.trim();
-  if (!text || chatBusy.value) return;
-  chatInput.value = '';
-  chatNotice.value = '';
-  chatMsgs.value.push({ role: 'user', content: text });
-  chatBusy.value = true;
-  const pid = activePassage.value ? activePassage.value.id : null;
-  const r = await window.keeper.chatSend(Number(props.examId), pid, text);
-  chatBusy.value = false;
-  if (r.ok) {
-    chatMsgs.value.push({ role: 'assistant', content: r.reply });
-  } else if (r.error === 'no_key') {
-    chatNotice.value = '尚未配置 AI 服务：请到「设置」页填写 API 地址与 Key 后重试。';
-  } else {
-    chatNotice.value = '发送失败：' + r.error;
-  }
-  scrollChat();
+  if (!text || chatBusy.value || chatClearing.value) return;
+  const task = aiTasks.start('chat'); ++chatSequence;
+  chatInput.value = ''; chatNotice.value = '';
+  const pending = {role:'user',content:text,pending:true};
+  chatMsgs.value.push(pending); chatBusy.value = true; scrollChat();
+  try {
+    const r = await window.keeper.chatSend(Number(props.examId),activePassage.value?.id || null,text,task.id);
+    if (!task.isCurrent() || readerDisposed) return;
+    if (r.ok) {
+      chatMsgs.value = chatMsgs.value.map(message => message.pending ? {role:'user',content:text} : message);
+      chatMsgs.value.push({role:'assistant',content:r.reply});
+    } else {
+      chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
+      if (!chatInput.value) chatInput.value = text;
+      chatNotice.value = r.error === 'no_key' ? '尚未配置 AI 服务：请到「设置」页填写 API 地址与 Key 后重试。'
+        : r.error === 'cancelled' ? '已停止生成，可重新发送。' : '发送失败：'+r.error;
+    }
+    scrollChat();
+  } catch (error) {
+    if (task.isCurrent() && !readerDisposed) {
+      chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
+      if (!chatInput.value) chatInput.value = text;
+      chatNotice.value = '发送失败：'+error.message;
+    }
+  } finally { if (task.isCurrent()) chatBusy.value = false; task.finish(); }
 }
-
 async function clearChat() {
-  await window.keeper.chatClear();
-  chatMsgs.value = [];
+  if (chatClearing.value) return;
+  stopChat(false); const sequence = ++chatSequence;
+  chatClearing.value = true; chatNotice.value = '';
+  try {
+    const r = await window.keeper.chatClear();
+    if (readerDisposed || sequence !== chatSequence) return;
+    if (!r.ok) throw Error(r.error || '未知错误');
+    chatMsgs.value = [];
+  } catch (error) {
+    if (!readerDisposed && sequence === chatSequence) { chatNotice.value = '清空失败，历史已保留：'+error.message; chatClearing.value = false; await loadChat(); }
+  } finally { if (!readerDisposed && sequence === chatSequence) chatClearing.value = false; }
 }
 
 // 划选句子 → 打开聊天并带入原文
@@ -550,41 +723,85 @@ const essayNotice = ref('');
 const essayNoticeOk = ref(false);
 const essaySavedAt = ref('');
 const showReference = ref(false);   // 是否展开预置范文 / 参考译文（离线可看）
-let essayTimer = null;
-let essayLoadedKey = '';
+const essayLoading = ref(false);
+let loadedEssay = null;
+let essayLoadSequence = 0;
+const essayKey = () => isEssaySection.value && activePassage.value ? `${props.examId}:${activePassage.value.section}` : '';
+const essayDrafts = createEssayDrafts({
+  save: (...args) => window.keeper.essaySave(...args), storage: localStorage,
+  onSaved(draft) {
+    if (essayKey() !== `${draft.examId}:${draft.section}` || essayText.value !== draft.content) return;
+    const d = new Date();
+    essaySavedAt.value = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+  },
+  onError(error) {
+    essayNoticeOk.value = false;
+    essayNotice.value = '草稿保存失败，请重试：' + error.message;
+  },
+});
 
 async function loadEssay() {
-  if (!activePassage.value || !isEssaySection.value) return;
-  const key = props.examId + ':' + activePassage.value.section;
-  if (key === essayLoadedKey) return;
-  essayLoadedKey = key;
-  const r = await window.keeper.essayGet(Number(props.examId), activePassage.value.section);
-  essayText.value = r.content || '';
-  try { essayResult.value = r.result ? JSON.parse(r.result) : null; } catch (e) { essayResult.value = null; }
-  essaySavedAt.value = '';
-  showReference.value = false;
+  const sequence = ++essayLoadSequence;
+  const key = essayKey();
+  if (loadedEssay && key === `${loadedEssay.examId}:${loadedEssay.section}`) return;
+  const target = key ? { examId: Number(props.examId), section: activePassage.value.section } : null;
+  loadedEssay = null;
+  essayLoading.value = !!target;
+  await essayDrafts.flush();
+  if (!target || sequence !== essayLoadSequence || key !== essayKey()) return;
+  try {
+    const r = await window.keeper.essayGet(target.examId, target.section);
+    if (sequence !== essayLoadSequence || key !== essayKey()) return;
+    const recovery = essayDrafts.recover(target);
+    essayText.value = recovery ? recovery.content : r.content || '';
+    essayNotice.value = r.resultInvalid ? '历史批改结果格式异常，已保留草稿，请重新批改。' : '';
+    essayNoticeOk.value = false;
+    try { essayResult.value = r.result && (!recovery || recovery.content === r.content) ? JSON.parse(r.result) : null; } catch { essayResult.value = null; }
+    essaySavedAt.value = '';
+    showReference.value = false;
+    loadedEssay = target;
+    if (recovery && recovery.content !== r.content) essayDrafts.schedule(recovery);
+  } catch (error) {
+    if (sequence === essayLoadSequence && key === essayKey()) {
+      essayNotice.value = '草稿加载失败：' + error.message;
+      essayNoticeOk.value = false;
+    }
+  } finally {
+    if (sequence === essayLoadSequence) essayLoading.value = false;
+  }
 }
 
 function scheduleSave() {
-  clearTimeout(essayTimer);
-  essayTimer = setTimeout(async () => {
-    if (!activePassage.value || !isEssaySection.value) return;
-    await window.keeper.essaySave(Number(props.examId), activePassage.value.section, essayText.value);
-    const d = new Date();
-    essaySavedAt.value = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
-  }, 800);
+  if (!loadedEssay || essayLoading.value) return;
+  if (essayBusy.value) cancelGrade();
+  essaySavedAt.value = '';
+  essayResult.value = null;
+  essayDrafts.schedule({ ...loadedEssay, content: essayText.value });
 }
 
-watch(essayText, () => { if (isEssaySection.value) scheduleSave(); });
+watch(essayText, scheduleSave, { flush: 'sync' });
+async function flushReaderDrafts() { return (await Promise.all([essayDrafts.flush(),answerDrafts.flush()])).every(Boolean); }
+async function leaveReader() { saveProgress(); const saved = await flushReaderDrafts(); if (saved) { cancelReaderAi(); invalidateWordContext(); } return saved; }
+onBeforeRouteLeave(leaveReader);
+onBeforeRouteUpdate(leaveReader);
+function flushEssayOnClose() { saveProgress(); void flushReaderDrafts(); }
 
 async function gradeEssay() {
-  if (!activePassage.value || essayBusy.value) return;
+  if (!loadedEssay || essayLoading.value || essayBusy.value) return;
+  const target = { ...loadedEssay, content: essayText.value };
+  const task = aiTasks.start('essay');
   essayBusy.value = true;
   essayNotice.value = '';
-  clearTimeout(essayTimer);
-  await window.keeper.essaySave(Number(props.examId), activePassage.value.section, essayText.value);
-  const r = await window.keeper.essayGrade(Number(props.examId), activePassage.value.section);
-  essayBusy.value = false;
+  let r;
+  try {
+    if (!(await essayDrafts.flush())) { r = {ok:false,error:'草稿尚未保存'}; }
+    else if (task.isCurrent()) r = await window.keeper.essayGrade(target.examId,target.section,task.id);
+  } catch (error) {
+    r = { ok: false, error: error.message };
+  } finally { if (task.isCurrent()) essayBusy.value = false; }
+  if (!task.isCurrent() || readerDisposed) return;
+  task.finish();
+  if (essayKey() !== `${target.examId}:${target.section}` || essayText.value !== target.content) return;
   if (r.ok) {
     essayResult.value = r.result;
     essayNoticeOk.value = true;
@@ -595,13 +812,22 @@ async function gradeEssay() {
   } else if (r.error === 'too_short') {
     essayNoticeOk.value = false;
     essayNotice.value = '内容太短，先写一点再来批改吧。';
+  } else if (r.error === 'stale_draft') {
+    essayNoticeOk.value = false;
+    essayNotice.value = '草稿已修改，请重新批改。';
   } else {
     essayNoticeOk.value = false;
-    essayNotice.value = '批改失败：' + r.error;
+    essayNotice.value = badAiResult(r) ? 'AI 返回批改格式异常，未保存评分，请重试。' : r.error === 'cancelled' ? '已取消批改。' : '批改失败：' + r.error;
   }
 }
 
-const popover = ref({ show: false, loading: false, data: null, x: 0, y: 0, ctx: '' });
+function badAiResult(result) { return ['bad_json','bad_ai_result','bad_response'].includes(result.error); }
+
+function cancelGrade() { aiTasks.cancel('essay'); essayBusy.value = false; essayNoticeOk.value = true; essayNotice.value = '已取消批改。'; }
+
+const popover = ref({ show:false,loading:false,data:null,error:'',x:0,y:0,ctx:'' });
+const wordOperations = ref(new Set());
+let lookupSequence = 0, selectionSequence = 0;
 const selMenu = ref({ show: false, x: 0, y: 0, text: '' });
 
 const activePassage = computed(() => (detail.value && detail.value.passages[activeIdx.value]) || null);
@@ -648,7 +874,7 @@ function sectionName(section, seq) {
 function wordClass(tk) {
   let cls = '';
   if (tk.t !== 'w') return cls;
-  const n = simpleNorm(tk.text);
+  const n = lemmaOf(tk.text);
   const st = userWords.value[n];
   if (st === 'learning') cls = 'marked';
   if (st === 'mastered') cls = 'marked mastered';
@@ -660,85 +886,159 @@ function wordClass(tk) {
 
 const hardSet = computed(() => new Set(hardWords.value.map((h) => h.word)));
 
+let toastTimer = null;
 function showToast(msg) {
-  toast.value = msg;
-  setTimeout(() => (toast.value = ''), 1800);
+  clearTimeout(toastTimer); toast.value = msg;
+  toastTimer = setTimeout(() => (toast.value = ''), 1800);
 }
 
 async function loadAll() {
+  const examId = Number(props.examId), sequence = ++readerLoadSequence;
+  progressReady = false; progressExamId = null; clearTimeout(saveTimer);
+  readerError.value = ''; cancelReaderAi();
+  ++answerLoadSequence; loadedAnswer = null; answersLoading.value = true; busy.value = false;
+  answers.value = {}; graded.value = false; result.value = null; notice.value = ''; answerDraftStatus.value = '';
+  detail.value = null; activeIdx.value = 0;
+  transMode.value = 'off'; layout.value = 'stack'; fontSize.value = 16.5;
+  revealAnalysis.value = false; rowToggle.value = {};
   ensureLex();
-  detail.value = await window.keeper.examDetail(Number(props.examId));
-  // 记录「最近在读」：侧栏点真题库时直接回到这套卷子
-  if (detail.value) localStorage.setItem('keeper.lastReading', String(props.examId));
-  else { localStorage.removeItem('keeper.lastReading'); router.push('/library'); return; }
-  userWords.value = await window.keeper.allWords();
-  if (detail.value && !detail.value.passages.length) {
-    showToast('该套真题没有结构化篇章数据');
+  invalidateWordContext();
+  let loadedDetail;
+  try { loadedDetail = await window.keeper.examDetail(examId); }
+  catch (error) {
+    if (!readerDisposed && sequence === readerLoadSequence) readerError.value = '真题加载失败：' + error.message;
+    return;
   }
-  // 恢复上次的作答与交卷结果（换套或重开应用都还在）
-  graded.value = false;
-  result.value = null;
-  notice.value = '';
-  answers.value = {};
-  try { await restoreAttempt(); } catch { /* 忽略 */ }
-  // 恢复上次阅读位置与展示偏好（篇章 / 滚动位置 / 翻译模式 / 布局 / 字号）
-  const saved = loadProgress();
+  if (readerDisposed || sequence !== readerLoadSequence || examId !== Number(props.examId)) return;
+  if (!loadedDetail) {
+    try { if (localStorage.getItem('keeper.lastReading') === String(examId)) localStorage.removeItem('keeper.lastReading'); } catch { /* 阅读偏好不是作答 */ }
+    router.push('/library'); return;
+  }
+  const saved = loadProgress(); // 在任何展示 watcher 保存前读取原快照。
+  detail.value = loadedDetail; progressExamId = examId;
+  try { localStorage.setItem('keeper.lastReading',String(examId)); } catch { /* 不阻止离线阅读 */ }
+  let savedIndex = -1;
   if (saved) {
-    if (typeof saved.idx === 'number' && detail.value.passages[saved.idx]) activeIdx.value = saved.idx;
-    if (saved.trans === 'inline' || saved.trans === 'off') transMode.value = saved.trans;
-    if (saved.layout === 'split' || saved.layout === 'stack') layout.value = saved.layout;
-    if (typeof saved.fontSize === 'number') fontSize.value = saved.fontSize;
-    if (typeof saved.scroll === 'number' && saved.scroll > 0) {
-      setTimeout(() => { const m = document.querySelector('.main'); if (m) m.scrollTop = saved.scroll; }, 500);
-    }
+    if (Number.isSafeInteger(saved.passageId) && saved.passageId > 0) savedIndex = detail.value.passages.findIndex(p => p.id === saved.passageId);
+    else if (Number.isSafeInteger(saved.idx) && saved.idx >= 0 && detail.value.passages[saved.idx]) savedIndex = saved.idx;
+    if (['inline','off'].includes(saved.trans)) transMode.value = saved.trans;
+    if (['split','stack'].includes(saved.layout)) layout.value = saved.layout;
+    if (Number.isFinite(saved.fontSize)) fontSize.value = Math.max(14,Math.min(22,saved.fontSize));
   }
+  const requested = requestedPassageIndex();
+  activeIdx.value = requested >= 0 ? requested : savedIndex >= 0 ? savedIndex : 0;
+  const initialIndex = activeIdx.value;
+  // 渲染完成即恢复，替换会覆盖用户操作的固定 500ms 延迟。
+  await nextTick();
+  if (readerDisposed || sequence !== readerLoadSequence || examId !== Number(props.examId)) return;
+  const main = document.querySelector('.main');
+  if (main && activeIdx.value === initialIndex) main.scrollTop = requested < 0 && savedIndex >= 0 && Number.isFinite(saved?.scroll) ? Math.max(0,Math.min(10000000,saved.scroll)) : 0;
+  progressReady = true;
+  saveProgress();
+  if (!detail.value.passages.length) showToast('该套真题没有结构化篇章数据');
+  try { await refreshUserWords(); } catch { /* 收藏高亮读取失败不阻止正文与作答恢复 */ }
+  if (readerDisposed || sequence !== readerLoadSequence) return;
+  try { await restoreAttempt(); } catch (error) {
+    if (sequence === readerLoadSequence) answerDraftStatus.value = '作答加载失败，请重新打开试卷：' + error.message;
+  }
+  if (readerDisposed || sequence !== readerLoadSequence) return;
   await loadEssay();
 }
 
-async function onWordClick(ev, tk, para) {
-  if (tk.t !== 'w') { popover.value.show = false; return; }
-  // 划选复制时鼠标落在词上也会触发 click，此时不弹查词气泡
-  const sel = window.getSelection();
-  if (sel && String(sel).trim().length > 0) return;
-  const sentence = sentenceOf(para, para.indexOf(tk));
-  popover.value = { show: true, loading: true, data: null, x: ev.clientX, y: ev.clientY, ctx: sentence };
-  const data = await window.keeper.lookup(tk.text);
-  popover.value.loading = false;
-  popover.value.data = data;
+function wordContext() {
+  return {examId:Number(props.examId),passageId:activePassage.value?.id ?? null,loadSequence:readerLoadSequence};
 }
-
-async function onWordDblClick(tk, para) {
+function wordContextCurrent(target) {
+  return !readerDisposed && target.examId === Number(props.examId) && target.passageId === (activePassage.value?.id ?? null) && target.loadSequence === readerLoadSequence;
+}
+function closePopover() { ++lookupSequence; popover.value.show = false; }
+function invalidateWordContext() {
+  closePopover(); ++selectionSequence; selMenu.value.show = false;
+  clearTimeout(toastTimer); toast.value = '';
+}
+function lookupCurrent(target) { return wordContextCurrent(target) && target.sequence === lookupSequence && popover.value.show; }
+async function lookupWord(raw,sentence,x,y) {
+  const target = {...wordContext(),sequence:++lookupSequence}, snapshotVersion = wordSnapshotVersion;
+  popover.value = {show:true,loading:true,data:null,error:'',raw,ctx:sentence,x,y,target};
+  try {
+    const data = await window.keeper.lookup(raw);
+    if (!lookupCurrent(target)) return;
+    if (!data || typeof data.word !== 'string') throw new Error('无效查词结果');
+    if (snapshotVersion !== wordSnapshotVersion) data.inBook = Object.hasOwn(userWords.value,data.word);
+    popover.value.data = data;
+  } catch (error) {
+    if (lookupCurrent(target)) popover.value.error = '查词失败：' + error.message;
+  } finally { if (lookupCurrent(target)) popover.value.loading = false; }
+}
+function retryLookup() {
+  const view = popover.value;
+  if (view.loading || !view.target || !lookupCurrent(view.target)) return;
+  return lookupWord(view.raw,view.ctx,view.x,view.y);
+}
+async function onWordClick(ev,tk,para) {
+  if (tk.t !== 'w') { closePopover(); return; }
+  const selection = window.getSelection();
+  if (selection && String(selection).trim()) { closePopover(); return; }
+  return lookupWord(tk.text,sentenceOf(para,para.indexOf(tk)),ev.clientX,ev.clientY);
+}
+const wordOperationKey = word => lemmaOf(word);
+function wordBusy(word) { const key = wordOperationKey(word); return [...wordOperations.value].some(pending => wordOperationKey(pending) === key); }
+async function changeWord(action,word,sentence,target,popupSequence = lookupSequence) {
+  if (!wordContextCurrent(target)) return;
+  const key = wordOperationKey(word);
+  if (wordBusy(word)) return;
+  wordOperations.value = new Set([...wordOperations.value,key]);
+  ++wordsSequence; // 使修改前正在读取的收藏快照失效。
+  const feedbackCurrent = () => wordContextCurrent(target) && popupSequence === lookupSequence;
+  if (feedbackCurrent()) popover.value.error = '';
+  try {
+    const result = action === 'add' ? await window.keeper.addWord(word,sentence,sentence ? target.passageId : null) : await window.keeper.removeWord(word);
+    if (!result?.ok) throw new Error(result?.error === 'invalid_passage' ? '原句所属篇章已失效，请重新打开后收藏' : result?.error || '保存失败');
+    if (readerDisposed) return;
+    let refreshed = true;
+    try { await refreshUserWords(); } catch { refreshed = false; }
+    const view = popover.value;
+    if (feedbackCurrent() && view.show && view.data && wordOperationKey(view.data.word) === wordOperationKey(word)) {
+      try {
+        const data = await window.keeper.lookup(view.raw);
+        if (!data || typeof data.word !== 'string') throw new Error('无效查词结果');
+        if (feedbackCurrent()) {
+          if (refreshed) data.inBook = Object.hasOwn(userWords.value,data.word);
+          popover.value.data = data; // 同步最新出处与收藏状态，不改变当前原句身份。
+        }
+      } catch { refreshed = false; }
+    }
+    if (feedbackCurrent()) {
+      if (!refreshed) {
+        popover.value.error = '保存已完成，状态刷新失败，请重新查询。';
+        showToast('保存已完成，请重新查询收藏状态');
+      } else showToast(action === 'remove' ? `「${word}」已移出` : result.added ? `「${result.word}」已加入生词本` : `「${result.word}」已在生词本中`);
+    }
+  } catch (error) {
+    if (feedbackCurrent()) {
+      const message = (action === 'remove' ? '移除失败：' : '收藏失败：') + error.message;
+      if (popover.value.show) popover.value.error = message;
+      else showToast(message);
+    }
+  } finally {
+    const pending = new Set(wordOperations.value); pending.delete(key); wordOperations.value = pending;
+  }
+}
+function onWordDblClick(tk,para) {
   if (tk.t !== 'w') return;
-  const sentence = sentenceOf(para, para.indexOf(tk));
-  const r = await window.keeper.addWord(tk.text, sentence, activePassage.value ? activePassage.value.id : null);
-  userWords.value[r.word] = 'learning';
-  showToast(r.added ? `「${r.word}」已加入生词本` : `「${r.word}」已在生词本中`);
-  if (popover.value.data) popover.value.data.inBook = true;
+  return changeWord('add',tk.text,sentenceOf(para,para.indexOf(tk)),wordContext());
 }
-
-async function addFromPopover() {
-  const d = popover.value.data;
-  if (!d) return;
-  const r = await window.keeper.addWord(d.word, popover.value.ctx, activePassage.value ? activePassage.value.id : null);
-  userWords.value[r.word] = 'learning';
-  d.inBook = true;
-  showToast(r.added ? `「${r.word}」已加入生词本` : `「${r.word}」已在生词本中`);
+function addFromPopover() {
+  const view = popover.value;
+  if (!view.data || !view.target || !lookupCurrent(view.target)) return;
+  return changeWord('add',view.data.word,view.ctx,view.target,view.target.sequence);
 }
-
-async function removeFromPopover() {
-  const d = popover.value.data;
-  if (!d) return;
-  await window.keeper.removeWord(d.word);
-  delete userWords.value[d.word];
-  d.inBook = false;
-  showToast(`「${d.word}」已移出`);
+function removeFromPopover() {
+  const view = popover.value;
+  if (!view.data || !view.target || !lookupCurrent(view.target)) return;
+  return changeWord('remove',view.data.word,'',view.target,view.target.sequence);
 }
-
-async function quickAdd(word) {
-  const r = await window.keeper.addWord(word, '', null);
-  userWords.value[r.word] = 'learning';
-  showToast(`「${r.word}」已加入生词本`);
-}
+function quickAdd(word) { return changeWord('add',word,'',wordContext()); }
 
 function speak(word) {
   try {
@@ -751,12 +1051,14 @@ function speak(word) {
 }
 
 function onDocClick() {
-  popover.value.show = false;
+  closePopover();
   selMenu.value.show = false;
 }
 
 function onMouseUp(ev) {
+  const target = wordContext(), sequence = ++selectionSequence;
   setTimeout(() => {
+    if (!wordContextCurrent(target) || sequence !== selectionSequence || ev.target.isConnected === false) return;
     const sel = window.getSelection();
     const text = sel ? String(sel).trim() : '';
     if (text && text.length > 3 && /^[A-Za-z]/.test(text) && ev.target.closest && ev.target.closest('.article')) {
@@ -767,39 +1069,54 @@ function onMouseUp(ev) {
   }, 10);
 }
 
-async function doTranslate() {
-  const text = selMenu.value.text;
-  selMenu.value.show = false;
-  aiResult.value = { kind: 'translate', text: '翻译中…（需在设置页配置 AI）', source: text };
-  const r = await window.keeper.translate(text);
-  if (r.ok) aiResult.value = { kind: 'translate', text: r.response.content, source: text, cached: r.cached };
-  else if (r.error === 'no_key') aiResult.value = { kind: 'translate', text: '尚未配置 AI 服务。请到「设置」页填写 API 地址与 Key 后重试。', source: text };
-  else aiResult.value = { kind: 'translate', text: '请求失败：' + r.error, source: text };
+function cancelSelection() {
+  aiTasks.cancel('selection');
+  if (aiResult.value?.loading) aiResult.value = {...aiResult.value,loading:false,text:'已取消。'};
 }
-
-async function doGrammar() {
-  const text = selMenu.value.text;
+async function runSelection(kind) {
+  const text = selMenu.value.text, task = aiTasks.start('selection');
   selMenu.value.show = false;
-  aiResult.value = { kind: 'grammar', text: '分析中…（需在设置页配置 AI）', source: text };
-  const r = await window.keeper.grammar(text);
-  if (r.ok) aiResult.value = { kind: 'grammar', text: r.response.content, source: text, cached: r.cached };
-  else if (r.error === 'no_key') aiResult.value = { kind: 'grammar', text: '尚未配置 AI 服务。请到「设置」页填写 API 地址与 Key 后重试。', source: text };
-  else aiResult.value = { kind: 'grammar', text: '请求失败：' + r.error, source: text };
+  aiResult.value = {kind,text:kind === 'translate' ? '翻译中…（需在设置页配置 AI）' : '分析中…（需在设置页配置 AI）',source:text,loading:true};
+  try {
+    const r = await window.keeper[kind === 'translate' ? 'translate' : 'grammar'](text,task.id);
+    if (!task.isCurrent() || readerDisposed) return;
+    aiResult.value = {kind,source:text,loading:false,text:r.ok ? r.response.content
+      : r.error === 'no_key' ? '尚未配置 AI 服务。请到「设置」页填写 API 地址与 Key 后重试。'
+      : r.error === 'cancelled' ? '已取消。' : '请求失败：'+r.error,cached:r.cached};
+  } catch (error) {
+    if (task.isCurrent() && !readerDisposed) aiResult.value = {kind,source:text,loading:false,text:'请求失败：'+error.message};
+  } finally { task.finish(); }
+}
+function doTranslate() { return runSelection('translate'); }
+function doGrammar() { return runSelection('grammar'); }
+function cancelReaderAi() {
+  aiTasks.cancelAll(); ++chatSequence;
+  stopChat(false); chatClearing.value = false;
+  busy.value = false; assessmentCancelling.value = false; essayBusy.value = false; aiResult.value = null;
 }
 
 async function scanHard() {
   if (!scanOn.value || !activePassage.value) return;
-  const r = await window.keeper.scanHard(activePassage.value.content, detail.value.exam.level);
-  hardWords.value = r || [];
+  const passage = activePassage.value, sequence = readerLoadSequence;
+  try {
+    const r = await window.keeper.scanHard(passage.content, detail.value.exam.level);
+    if (!readerDisposed && sequence === readerLoadSequence && scanOn.value && activePassage.value?.id === passage.id) hardWords.value = r || [];
+  } catch { /* 预扫失败不影响正文和离线查词 */ }
 }
 
 watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); saveProgress(); });
+watch(() => activePassage.value && activePassage.value.id, () => { invalidateWordContext(); cancelSelection(); aiResult.value = null; if (essayBusy.value) cancelGrade(); stopChat(false); chatClearing.value = false; if (!readerDisposed) loadChat(); rowToggle.value = {}; hardWords.value = []; });
+watch(() => activePassage.value?.content, text => {
+  const words = tokenize(text || '').filter(token => token.t === 'w').map(token => token.text);
+  void ensureWords(words);
+}, {immediate:true});
 watch(layout, () => saveProgress());
 watch(fontSize, () => saveProgressSoon());
 watch(scanOn, () => scanHard());
 // 同一个组件实例切换考次（hash 路由参数变化时 Vue 会复用实例）必须重新加载，
 // 否则页面上仍是上一套的篇章与作答
-watch(() => props.examId, () => { loadAll(); });
+watch(() => props.examId, () => { loadAll(); loadChat(); });
+watch(() => [router.currentRoute?.value?.query?.passage,router.currentRoute?.value?.query?.p], applyRequestedPassage);
 
 function movePassage(d) {
   const total = detail.value ? detail.value.passages.length : 0;
@@ -825,22 +1142,34 @@ function onReaderKey(ev) {
 }
 
 onMounted(() => {
+  offLearning = window.keeper.onLearningChanged(event => {
+    if (event.kind === 'words') void refreshUserWords().catch(() => {});
+  });
   loadAll();
   loadChat();
   loadEssay();
   document.addEventListener('click', onDocClick);
   document.addEventListener('mouseup', onMouseUp);
   document.addEventListener('keydown', onReaderKey);
-  const m = document.querySelector('.main');
-  if (m) m.addEventListener('scroll', saveProgressSoon, { passive: true });
+  window.addEventListener('beforeunload', flushEssayOnClose);
 });
 onBeforeUnmount(() => {
+  ++wordsSequence;
+  offLearning?.();
+  readerDisposed = true;
+  invalidateWordContext();
+  cancelReaderAi();
+  readerLoadSequence++;
+  answerLoadSequence++;
+  void answerDrafts.flush();
+  essayLoadSequence++;
+  void essayDrafts.flush();
+  clearTimeout(saveTimer);
+  window.removeEventListener('beforeunload', flushEssayOnClose);
   saveProgress();
   document.removeEventListener('click', onDocClick);
   document.removeEventListener('mouseup', onMouseUp);
   document.removeEventListener('keydown', onReaderKey);
-  const m = document.querySelector('.main');
-  if (m) m.removeEventListener('scroll', saveProgressSoon);
 });
 </script>
 

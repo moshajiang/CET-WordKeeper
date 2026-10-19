@@ -25,7 +25,7 @@
 
       <!-- 选词填空：下拉选择 -->
       <template v-if="isCloze">
-        <select :value="answers[qs.id] || ''" :disabled="graded" @change="emit('pick', qs.id, $event.target.value)">
+        <select :value="answers[qs.id] || ''" :disabled="graded || disabled" @change="emit('pick', qs.id, $event.target.value)">
           <option value="">未选</option>
           <option v-for="o in parseOptions(qs.options)" :key="o" :value="o[0]">{{ o }}</option>
         </select>
@@ -40,7 +40,7 @@
             :key="L"
             class="qopt pick letter"
             :class="optClassByLetter(qs, L)"
-            @click="emit('pick', qs.id, L)"
+            @click="!disabled && emit('pick', qs.id, L)"
           >{{ L }}</span>
         </div>
       </template>
@@ -52,7 +52,7 @@
           :key="oi"
           class="qopt pick"
           :class="optClass(qs, opt)"
-          @click="emit('pick', qs.id, opt[0])"
+          @click="!disabled && emit('pick', qs.id, opt[0])"
         >{{ opt }}</div>
       </template>
 
@@ -73,6 +73,7 @@ const props = defineProps({
   passage: { type: Object, required: true },
   answers: { type: Object, default: () => ({}) },
   graded: { type: Boolean, default: false },     // 已交卷
+  disabled: { type: Boolean, default: false },
   reveal: { type: Boolean, default: false },     // 主动「查看答案解析」
   letters: { type: Array, default: () => [] },   // 匹配题可用的段落字母
 });

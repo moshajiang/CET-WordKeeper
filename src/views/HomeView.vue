@@ -38,12 +38,14 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useLearningState } from '../composables/useLearningState.js';
 
-const stats = ref({ learning: 0, mastered: 0, dueNow: 0, reviewedToday: 0, exams: 0 });
+const learning = useLearningState();
+const stats = learning.stats;
 const recent = ref([]);
 
 onMounted(async () => {
-  stats.value = await window.keeper.stats();
+  await learning.refresh();
   const exams = await window.keeper.listExams();
   recent.value = exams.slice(0, 4);
 });

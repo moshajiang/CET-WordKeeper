@@ -10,6 +10,8 @@
       </div>
     </div>
 
+    <div v-if="errorMsg" class="card" role="alert">{{ errorMsg }} <button @click="load">重试</button> <button v-if="examId" @click="pickOther">选择其他真题</button></div>
+
     <!-- 未指定考次：先选一套 -->
     <div v-if="!examId" class="card">
       <h3 style="font-size: 15px; margin-bottom: 10px;">选择一套真题开始</h3>
@@ -23,13 +25,13 @@
     </div>
 
     <template v-else>
-      <div v-if="!detail" class="empty-state"><div class="big">⏳</div>加载中…</div>
+      <div v-if="!detail && !errorMsg" class="empty-state"><div class="big">⏳</div>加载中…</div>
 
-      <div v-else-if="!items.length" class="card" style="font-size: 13.5px; color: var(--muted);">
+      <div v-else-if="detail && !items.length" class="card" style="font-size: 13.5px; color: var(--muted);">
         本篇暂无可用于背诵的译文。
       </div>
 
-      <template v-else>
+      <template v-else-if="detail">
         <div class="recite-bar card">
           <div class="recite-tabs">
             <button
@@ -67,66 +69,27 @@
 </template>
 
 <script setup>
-import { ref, computed, watch, onMounted } from 'vue';
+import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from 'vue';
 import { useRouter } from 'vue-router';
-import { alignBilingual } from '../utils/bilingual.js';
+import { alignBilingual, blankNumbers, clozeWords, fillClozeText, stripParagraphMarkers } from '../utils/bilingual.js';
+import { useAlignmentLex } from '../composables/useAlignmentLex.js';
 
 // 词典评分映射（ECDICT 英→中候选），一次加载全 view 复用
-let lexCache = null;
-const ensureLex = async () => { if (!lexCache) { try { lexCache = await window.keeper.dictLex(); } catch { lexCache = {}; } } return lexCache; };
+const { lex, ensureLex } = useAlignmentLex();
 
 const props = defineProps({ examId: String });
 const router = useRouter();
 
 const exams = ref([]);
 const detail = ref(null);
+const errorMsg = ref('');
+let loadSequence = 0, disposed = false;
 const cur = ref(0);              // 当前篇章（items 下标）
 const revealed = ref(0);         // 已呈现的句子数（初始 0 → 页面空白）
 const first = ref('zh');         // 每句率先显示的语言：zh=先中文（回忆英文）/ en=先英文
 const langMap = ref({});         // 句子下标 -> 'en' | 'zh'（点击切换后的覆盖值）
 
 const exam = computed(() => (detail.value && detail.value.exam) || null);
-
-// options 在库里是 JSON 字符串
-function parseOpts(raw) {
-  try { return JSON.parse(raw || '[]'); } catch (e) { return []; }
-}
-
-// 选词填空：原文挖空处是 26–35 的数字标记，背诵时用正确答案补齐为完整原文。
-// 安全策略：编号在全文只出现一次才替换（避免误伤正文里的真实数字）；
-// 编号可能与相邻单词粘连（如 26stress / stress26，解析时丢空格），替换时补回空格
-function replaceBlank(content, num, word) {
-  let idx = -1, count = 0, at = -1;
-  while ((idx = content.indexOf(num, idx + 1)) !== -1) {
-    const prev = content[idx - 1] || '';
-    const next = content[idx + num.length] || '';
-    if (/\d/.test(prev) || /\d/.test(next)) continue;   // 是更长数字的一部分（如 2026）
-    count++; at = idx;
-  }
-  if (count !== 1) return content;
-  const prev = content[at - 1] || '';
-  const next = content[at + num.length] || '';
-  let rep = word;
-  if (/[A-Za-z]/.test(prev) && /[A-Za-z]/.test(next)) rep = ' ' + word + ' ';
-  else if (/[A-Za-z]/.test(next)) rep = word + ' ';
-  else if (/[A-Za-z]/.test(prev)) rep = ' ' + word;
-  return content.slice(0, at) + rep + content.slice(at + num.length);
-}
-
-function fillClozeBlanks(p) {
-  const wordByNum = {};
-  for (const q of p.questions || []) {
-    const num = parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10);
-    const letter = String(q.answer || '').trim();
-    const hit = parseOpts(q.options).find((o) => o.startsWith(letter + ')') || o.startsWith(letter + '.'));
-    if (num >= 26 && num <= 35 && hit) wordByNum[num] = hit.replace(/^[A-O][).]\s*/, '').trim();
-  }
-  let content = String(p.content || '');
-  for (const [num, word] of Object.entries(wordByNum)) {
-    content = replaceBlank(content, num, word);
-  }
-  return { content: content.replace(/\s+\./g, '.'), filled: Object.keys(wordByNum).length };
-}
 
 // 可背诵的篇章：有译文、且能切出句子
 const items = computed(() => {
@@ -135,33 +98,18 @@ const items = computed(() => {
   const out = [];
   d.passages.forEach((p, pi) => {
     if (!p.translation) return;
-    let rows;
-    if (Array.isArray(p.rows) && p.rows.length) {
-      // 写死绑定直读：cloze 逐行补齐挖空、match 去行首段落标记
-      const wordByNum = {};
-      if (p.section === 'cloze') {
-        for (const q of p.questions || []) {
-          const num = parseInt(String(q.stem).replace(/[^0-9]/g, ''), 10);
-          const letter = String(q.answer || '').trim();
-          const hit = parseOpts(q.options).find((o) => o.startsWith(letter + ')') || o.startsWith(letter + '.'));
-          if (num >= 26 && num <= 35 && hit) wordByNum[num] = String(hit).replace(/^[A-O][).]\s*/, '').trim();
-        }
-      }
-      rows = p.rows.map((r, i) => {
-        let en = String(r.en || '');
-        // 空号形态：数字可紧贴后文（如「26stress」），边界用前后非数字判定
-        if (p.section === 'cloze') en = en.replace(/(?<!\d)(2[6-9]|3[0-5])(?!\d)/g, (mm) => wordByNum[+mm] || mm);
-        if (p.section === 'match') en = en.replace(/^\[?[A-O]\]?\s*[)．.]?\s*/, '');
-        return { para: r.para ?? 0, i, en, zh: String(r.zh || '') };
-      });
-    } else {
-      let content = p.section === 'cloze' ? fillClozeBlanks(p).content : p.content;
-      // 长篇阅读：段落序号（A) / B) …）只服务于作答定位，背诵时去掉
-      if (p.section === 'match') content = String(content).replace(/^[A-O]\s*[)．.]\s*/gm, '');
-      rows = alignBilingual(content, p.translation, lexCache);
-    }
+    const words = clozeWords(p);
+    // 先对齐原文，再做展示转换；回退路径也保留段落标记作为对齐证据。
+    const sourceRows = Array.isArray(p.rows) && p.rows.length ? p.rows
+      : alignBilingual(p.content, p.translation, lex.value, { blankNums: blankNumbers(p) });
+    const rows = sourceRows.map((r, i) => {
+      let en = String(r.en || '');
+      if (p.section === 'cloze') en = fillClozeText(en, words, p.content);
+      if (p.section === 'match') en = stripParagraphMarkers(en);
+      return { para: r.para ?? 0, i, en, zh: String(r.zh || '') };
+    });
     if (!rows.length) return;
-    out.push({ pi, name: sectionName(p.section, p.seq), rows });
+    out.push({ pi, id: p.id, name: sectionName(p.section, p.seq), rows });
   });
   return out;
 });
@@ -184,15 +132,15 @@ function next() {
 }
 function showAll() { revealed.value = total.value; }
 function reset() { revealed.value = 0; langMap.value = {}; }
-function backToReader() { router.push('/reader/' + Number(props.examId)); }
+function backToReader() { router.push({path:'/reader/' + Number(props.examId),query:{passage:String(active.value.id),p:String(active.value.pi)}}); }
 function setFirst(l) { first.value = l; langMap.value = {}; }
 
-function scrollToLast() {
-  setTimeout(() => {
-    const els = document.querySelectorAll('.recite-line');
-    const el = els[els.length - 1];
-    if (el && el.scrollIntoView) el.scrollIntoView({ block: 'center', behavior: 'smooth' });
-  }, 60);
+async function scrollToLast() {
+  const sequence = loadSequence, passageId = active.value?.id;
+  await nextTick();
+  if (disposed || sequence !== loadSequence || passageId !== active.value?.id) return;
+  const els = document.querySelectorAll('.recite-line');
+  els[els.length - 1]?.scrollIntoView?.({block:'center',behavior:'smooth'});
 }
 
 function label(e) { return `${e.level} · ${e.year}年${e.month}月 · 第${e.set_no}套`; }
@@ -202,28 +150,39 @@ function sectionName(section, seq) {
   return (map[section] || section || '篇章') + (seq > 1 ? ' ' + seq : '');
 }
 
+function pickOther() { router.push('/recite'); }
+function locateRequestedPassage() {
+  const query = router.currentRoute?.value?.query || {};
+  let index = -1;
+  if (typeof query.passage === 'string' && /^[1-9]\d*$/.test(query.passage)) index = items.value.findIndex(item => String(item.id) === query.passage);
+  else if (typeof query.p === 'string' && /^\d+$/.test(query.p)) index = items.value.findIndex(item => item.pi === Number(query.p));
+  if (index >= 0 && index !== cur.value) { cur.value = index; reset(); }
+}
 async function load() {
-  reset();
-  cur.value = 0;
-  detail.value = null;
-  if (!props.examId) return;
-  const d = await window.keeper.examDetail(Number(props.examId));
-  detail.value = d;
-  // 从阅读器跳转过来时带 ?p=<passages 下标>，直接定位到同一篇
-  const q = new URLSearchParams(String(location.hash).split('?')[1] || '').get('p');
-  const n = Number(q);
-  if (Number.isFinite(n)) {
-    const idx = items.value.findIndex((it) => it.pi === n);
-    if (idx >= 0) cur.value = idx;
+  const sequence = ++loadSequence, examId = props.examId;
+  reset(); cur.value = 0; detail.value = null; errorMsg.value = '';
+  ensureLex();
+  try {
+    if (!examId) {
+      const value = await window.keeper.listExams();
+      if (!disposed && sequence === loadSequence) exams.value = value || [];
+      return;
+    }
+    const value = await window.keeper.examDetail(Number(examId));
+    if (disposed || sequence !== loadSequence || examId !== props.examId) return;
+    if (!value) { errorMsg.value = '未找到该套真题，请选择其他真题。'; return; }
+    detail.value = value;
+    locateRequestedPassage();
+  } catch (error) {
+    if (!disposed && sequence === loadSequence) errorMsg.value = '背诵材料加载失败：' + error.message;
   }
 }
 
 watch(() => props.examId, load);
-onMounted(async () => {
-  ensureLex();
-  if (!props.examId) {
-    try { exams.value = (await window.keeper.listExams()) || []; } catch (e) { /* 忽略 */ }
-  }
-  await load();
-});
+watch(() => [router.currentRoute?.value?.query?.passage,router.currentRoute?.value?.query?.p], locateRequestedPassage);
+// 词典异步就绪时可能重新对齐句子，清理原句下标上的语言覆盖与呈现进度。
+watch(() => JSON.stringify(active.value?.rows || []), reset);
+onMounted(load);
+onBeforeUnmount(() => { disposed = true; ++loadSequence; });
+
 </script>
