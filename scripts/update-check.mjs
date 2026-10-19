@@ -1,9 +1,11 @@
 // 独占临时 userData；--live-gitee 仅检查公开码云版本，不下载/安装、不打开浏览器。
 import {spawn} from 'node:child_process';
 import path from 'node:path';
+import fs from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {createTestSession,availablePort,waitForPage,connectCdp,stopChild} from './lib/test-session.mjs';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),session=createTestSession('updates');
+const expectedVersion=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')).version;
 let child,cdp,passed=0;
 const check=(name,ok)=>{if(!ok)throw Error(name);passed++;console.log('✓ '+name);};
 async function until(code){const end=Date.now()+20000;while(Date.now()<end){if(await cdp.js(code))return;await new Promise(resolve=>setTimeout(resolve,50));}throw Error('等待超时: '+code);}
@@ -13,7 +15,7 @@ try{
     {cwd:root,env:{...session.env,PORTABLE_EXECUTABLE_DIR:session.dir},stdio:'ignore'});
   cdp=await connectCdp(await waitForPage(port,child));
   const state=await cdp.js('window.keeper.updateState()');
-  check('真实更新 IPC 初始化为 GitHub 来源并识别便携测试环境',state.source==='github'&&state.phase==='idle'&&state.portable===true&&state.current==='0.3.1');
+  check('真实更新 IPC 初始化为 GitHub 来源并识别便携测试环境',state.source==='github'&&state.phase==='idle'&&state.portable===true&&state.current===expectedVersion);
   check('真实 IPC 拒绝任意更新 URL',(await cdp.js(`window.keeper.updateCheck('https://example.invalid')`)).ok===false);
   check('发布页 IPC 拒绝未授权来源且不打开浏览器',(await cdp.js(`window.keeper.updateOpenReleases('invalid')`)).ok===false);
   check('未下载时真实安装 IPC 拒绝执行',(await cdp.js('window.keeper.updateInstall()')).ok===false);
