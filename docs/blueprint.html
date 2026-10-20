@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CET WordKeeper 开发方案 — 四六级真题驱动的学习软件</title>
+<style>
+  :root {
+    --bg: #f7f6f3;
+    --card: #ffffff;
+    --text: #2c2c2a;
+    --muted: #5f5e5a;
+    --border: #e3e1d8;
+    --accent: #534ab7;
+    --accent-light: #eeedfe;
+    --teal: #0f6e56;
+    --teal-light: #e1f5ee;
+    --amber: #854f0b;
+    --amber-light: #faeeda;
+    --red: #a32d2d;
+    --red-light: #fcebeb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 15px;
+    padding: 40px 20px 80px;
+  }
+  .page { max-width: 880px; margin: 0 auto; }
+  header.hero {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 36px 40px;
+    margin-bottom: 32px;
+  }
+  .hero h1 { font-size: 26px; font-weight: 600; letter-spacing: 0.5px; }
+  .hero .sub { color: var(--muted); margin-top: 8px; font-size: 15px; }
+  .hero .meta {
+    display: flex; gap: 24px; margin-top: 20px; flex-wrap: wrap;
+    font-size: 13px; color: var(--muted);
+  }
+  .meta span b { color: var(--text); font-weight: 500; }
+  nav.toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 28px;
+    margin-bottom: 32px;
+    font-size: 14px;
+  }
+  nav.toc b { display: block; margin-bottom: 8px; font-weight: 500; }
+  nav.toc a { color: var(--accent); text-decoration: none; margin-right: 22px; line-height: 2; white-space: nowrap; }
+  nav.toc a:hover { text-decoration: underline; }
+  section.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 36px;
+    margin-bottom: 28px;
+  }
+  h2 {
+    font-size: 20px; font-weight: 600; margin-bottom: 18px;
+    padding-bottom: 10px; border-bottom: 1px solid var(--border);
+  }
+  h2 .num { color: var(--accent); margin-right: 8px; }
+  h3 { font-size: 16px; font-weight: 600; margin: 22px 0 10px; }
+  p { margin-bottom: 10px; }
+  ul, ol { padding-left: 24px; margin-bottom: 10px; }
+  li { margin-bottom: 6px; }
+  code {
+    font-family: Consolas, "Courier New", monospace;
+    background: #f1efe8;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  pre {
+    background: #2c2c2a;
+    color: #e8e6dd;
+    border-radius: 8px;
+    padding: 18px 22px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 12px 0;
+    font-family: Consolas, "Courier New", monospace;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th {
+    text-align: left; background: #f1efe8; font-weight: 600;
+    padding: 9px 14px; border: 1px solid var(--border);
+  }
+  td { padding: 9px 14px; border: 1px solid var(--border); vertical-align: top; }
+  .tag {
+    display: inline-block; padding: 1px 10px; border-radius: 20px;
+    font-size: 12.5px; font-weight: 500; margin-right: 6px;
+  }
+  .tag.decided { background: var(--teal-light); color: var(--teal); }
+  .tag.pending { background: var(--amber-light); color: var(--amber); }
+  .callout {
+    border-radius: 8px; padding: 14px 20px; margin: 14px 0; font-size: 14px;
+  }
+  .callout.info { background: var(--accent-light); color: #3c3489; }
+  .callout.warn { background: var(--red-light); color: var(--red); }
+  .flow {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+    background: #f1efe8; border-radius: 8px; padding: 14px 18px; margin: 12px 0;
+    font-size: 14px;
+  }
+  .flow .step { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; }
+  .flow .ar { color: var(--accent); font-weight: 600; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <h1>CET WordKeeper · 开发方案</h1>
+  <div class="sub">四六级真题驱动的桌面学习软件 — 在真题中标注生词、语境记忆、科学复习</div>
+  <div class="meta">
+    <span>形态 <b>Windows 桌面应用</b></span>
+    <span>技术 <b>Electron + Vue 3 + SQLite</b></span>
+    <span>日期 <b>2026-10-09</b></span>
+    <span>状态 <b>方案评审中</b></span>
+  </div>
+</header>
+
+<nav class="toc">
+  <b>目录</b>
+  <a href="#s1">1 项目概述</a>
+  <a href="#s2">2 需求确认</a>
+  <a href="#s3">3 技术选型</a>
+  <a href="#s4">4 系统架构</a>
+  <a href="#s5">5 功能模块设计</a>
+  <a href="#s6">6 数据模型</a>
+  <a href="#s7">7 数据工程管线</a>
+  <a href="#s8">8 界面与交互</a>
+  <a href="#s9">9 开发计划</a>
+  <a href="#s10">10 风险与应对</a>
+  <a href="#s11">11 待确认事项</a>
+</nav>
+
+<section class="card" id="s1">
+  <h2><span class="num">1</span>项目概述</h2>
+  <p><b>一句话定位：</b>一款把「刷真题」和「背单词」合并成一个动作的桌面学习软件。你在真题原文和解析里阅读时，点一下不认识的词，它就带着<b>出处句子</b>进入你的专属生词库，之后按遗忘曲线安排复习。</p>
+  <div class="flow">
+    <span class="step">阅读真题</span><span class="ar">→</span>
+    <span class="step">点词标注</span><span class="ar">→</span>
+    <span class="step">生词入库（带真题语境）</span><span class="ar">→</span>
+    <span class="step">SM-2 间隔复习</span><span class="ar">→</span>
+    <span class="step">语境中真正掌握</span>
+  </div>
+  <p>与传统背单词 App 的核心差异：<b>每个生词都自带你在真题里遇见它的那句话</b>。复习时看到的不只是孤立的词，而是真实考试语境，同时系统天然统计出「这个词在历年真题中出现了多少次」，高频考词一目了然。</p>
+</section>
+
+<section class="card" id="s2">
+  <h2><span class="num">2</span>需求确认</h2>
+  <h3>2.1 已确认的决策</h3>
+  <table>
+    <tr><th>决策项</th><th>结论</th><th>说明</th></tr>
+    <tr><td>软件形态</td><td><span class="tag decided">Windows 桌面应用</span></td><td>数据全本地存储，离线刷题复习，不受浏览器干扰</td></tr>
+    <tr><td>智能能力</td><td><span class="tag decided">本地词典 + AI 混合</span></td><td>查词走本地 ECDICT（毫秒级、离线）；整句翻译与语法分析按需调用 AI API</td></tr>
+    <tr><td>真题数据</td><td><span class="tag decided">软件预置结构化真题</span></td><td>从开源真题库提取整理为结构化文本，开箱即用</td></tr>
+    <tr><td>附加功能</td><td><span class="tag decided">错题本 · Anki 导出 · 难词预扫</span></td><td>按你的多选确认，听力对照与统计看板暂不做（架构预留）</td></tr>
+  </table>
+  <h3>2.2 核心功能需求明细</h3>
+  <table>
+    <tr><th style="width:110px">功能</th><th>具体需求</th></tr>
+    <tr>
+      <td><b>真题标注</b></td>
+      <td>在真题原文与解析的任意文本中，<b>单击</b>单词弹出查询浮层，浮层内一键「加入生词本」并黄色高亮；已标注词可一键移除；同一词多次标注自动累计真题出现次数</td>
+    </tr>
+    <tr>
+      <td><b>单词解析</b></td>
+      <td>音标（英/美）、中文释义、考试分级标签（CET4/CET6/考研/GRE）、词形变化（went→go 自动还原）、真题例句、发音朗读</td>
+    </tr>
+    <tr>
+      <td><b>整句翻译</b></td>
+      <td>划选任意句子 → 浮动菜单 → AI 整句翻译（中英对照展示），结果缓存避免重复请求</td>
+    </tr>
+    <tr>
+      <td><b>语法结构分析</b></td>
+      <td>AI 对选中句子输出：主干（主谓宾）、从句类型与层次、重点语法点讲解，结构化展示</td>
+    </tr>
+    <tr>
+      <td><b>生词库</b></td>
+      <td>独立生词本，支持按来源考次 / 掌握状态 / 真题出现次数筛选；每词详情页展示全部真题出处句</td>
+    </tr>
+    <tr>
+      <td><b>复习学习</b></td>
+      <td>SM-2 间隔重复算法（Anki 同源）安排每日复习队列；四种模式：认词 / 听音辨词 / 听音拼写 / 真题语境填空；「忘记 / 模糊 / 记得」三键评分；已掌握词移出队列</td>
+    </tr>
+  </table>
+</section>
+
+<section class="card" id="s3">
+  <h2><span class="num">3</span>技术选型</h2>
+  <table>
+    <tr><th style="width:150px">层</th><th>选型</th><th>理由</th></tr>
+    <tr><td>应用壳</td><td><b>Electron 33+</b></td><td>本机已有 Node 22 无 Rust 工具链，Electron 零原生编译、生态最成熟；安装包约 90MB，桌面场景可接受</td></tr>
+    <tr><td>前端</td><td><b>Vue 3 + Vite + TypeScript</b></td><td>阅读器是重交互场景，Vue 响应式适合词级高亮状态管理；Vite 热更新快</td></tr>
+    <tr><td>本地数据库</td><td><b>sql.js（WASM 版 SQLite）</b></td><td>纯 WASM 无需 node-gyp 编译（规避 better-sqlite3 在 Windows 上的 MSVC 依赖坑）；数据落盘为单文件 <code>keeper.db</code></td></tr>
+    <tr><td>词典数据</td><td><b>ECDICT 裁剪版</b></td><td>77 万词条开源词典（含音标/释义/考纲标签/词频/词形交换），裁剪保留 CET 考纲 + 高频词约 4 万条，体积约 15MB</td></tr>
+    <tr><td>AI 服务</td><td><b>OpenAI 兼容协议网关</b></td><td>默认适配 DeepSeek（便宜），兼容 Kimi / GLM / OpenAI；仅句子翻译、语法分析、错因分析走 API，全部结果本地缓存</td></tr>
+    <tr><td>语音朗读</td><td><b>Chromium SpeechSynthesis</b></td><td>Electron 内置，离线免费，支持英/美音切换与语速调节</td></tr>
+    <tr><td>真题处理</td><td><b>Python + pdfplumber（构建期工具）</b></td><td>数据工程阶段离线处理，不进入运行时</td></tr>
+  </table>
+  <div class="callout info">查词 100% 离线可用（本地词典 + 本地 TTS）。只有用到「整句翻译 / 语法分析 / AI 错因」时才需要联网和 API Key，且全部结果缓存，同一句话只请求一次。</div>
+</section>
+
+<section class="card" id="s4">
+  <h2><span class="num">4</span>系统架构</h2>
+  <p>三层架构，全部业务数据本地化，云端仅 AI 推理（按需、可缓存、可关闭）：</p>
+  <pre>
+┌─────────────────────── Electron 桌面应用（本地运行）───────────────────────┐
+│                                                                          │
+│  界面层（渲染进程 · Vue 3）                                               │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐                    │
+│  │ 真题阅读器 │ │  生词本   │ │ 复习训练  │ │  错题本   │                    │
+│  └──────────┘ └──────────┘ └──────────┘ └──────────┘                    │
+│        ↓ IPC                                                            │
+│  服务层（主进程 · Node.js）                                              │
+│  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐                    │
+│  │ 词典查询  │ │ SM-2 复习 │ │ AI 网关   │ │ 导入导出  │                    │
+│  │  服务     │ │  引擎    │ │(缓存/降级)│ │ (Anki等) │                    │
+│  └──────────┘ └──────────┘ └────┬─────┘ └──────────┘                    │
+│        ↓ sql.js                  │ HTTPS（仅 AI 按需）                    │
+│  数据层 ┌───────────────────────┐│   ┌────────────────┐                 │
+│  ┌──────┴────────────────────┐ ││   │  DeepSeek API   │                 │
+│  │ SQLite：用户库+ECDICT+真题库│ │↔──│ （OpenAI 兼容）   │                 │
+│  └───────────────────────────┘ │   └────────────────┘                 │
+└──────────────────────────────────────────────────────────────────────────┘
+  </pre>
+  <p><b>关键设计点：</b></p>
+  <ul>
+    <li><b>词级渲染</b>：文章在渲染层按 token 切分为 <code>&lt;span class="w" data-word&gt;</code>，高亮只是 class 切换，万词长文流畅</li>
+    <li><b>词形归一</b>：查询前经 ECDICT <code>exchange</code> 字段还原原形（went→go, studies→study），标注按原形聚合</li>
+    <li><b>AI 网关统一出口</b>：请求签名哈希入 <code>ai_cache</code> 表；无 Key 或断网时自动降级（句子翻译隐藏、语法分析提示），不阻塞其他功能</li>
+    <li><b>数据安全</b>：单文件 SQLite + 一键备份/恢复（复制文件），换电脑迁移零成本</li>
+  </ul>
+</section>
+
+<section class="card" id="s5">
+  <h2><span class="num">5</span>功能模块设计</h2>
+
+  <h3>5.1 真题阅读器（核心）</h3>
+  <ul>
+    <li><b>结构</b>：左侧文章流（听力原文 / 阅读篇章 / 翻译原文 / 写作题目），右侧对应题目与答案解析，联动滚动定位</li>
+    <li><b>单击单词</b> → 查询浮层（见 5.2）；浮层内「★ 加入生词本」即高亮</li>
+    <li><b>双击单词</b> → 直接入库（无浮层，最快路径，可撤销 toast）</li>
+    <li><b>划选文本</b> → 浮动菜单：「整句翻译」「语法结构分析」「加入生词本（多词）」</li>
+    <li><b>做题模式</b>：题目可直接作答，即时判分；答错自动进错题本</li>
+    <li><b>颜色约定</b>：生词 = 黄色底纹；已掌握 = 绿色底纹；超纲词（难词预扫开启时）= 紫色虚线下划线</li>
+  </ul>
+
+  <h3>5.2 查询浮层（本地词典）</h3>
+  <p>单击词后 10ms 内展示（纯本地查询）：</p>
+  <ul>
+    <li>单词 + 音标（英/美）+ 🔊 发音按钮（TTS）</li>
+    <li>考试分级标签：CET4 / CET6 / 考研 / 雅思托福 / GRE（来自 ECDICT tag 字段）</li>
+    <li>中文释义 + 英文简单释义；词频星级（BNC/COCA 词频）</li>
+    <li>该词在<b>全部真题中的出现次数</b>及例句（点击跳转到出处）</li>
+    <li>操作区：★ 加入/移出生词本 · ✎ 添加私人笔记</li>
+  </ul>
+
+  <h3>5.3 生词本与复习系统</h3>
+  <p><b>SM-2 间隔重复算法</b>（Anki 的经典内核）：</p>
+  <pre>
+新词 → 1天后复习 → 6天后 → interval × ease_factor 逐次拉长
+评分：忘记(重置,10分钟后再现) / 模糊(间隔×1.2) / 记得(间隔×EF)
+连续 3 次「记得」且间隔 ≥ 21 天 → 提示可标记「已掌握」
+  </pre>
+  <ul>
+    <li><b>每日队列</b> = 到期复习词 + 每日新词配额（默认 20，可调）</li>
+    <li><b>四种复习模式</b>（可单选或混合）：
+      <ol>
+        <li><b>认词</b>：看词 → 心中回忆 → 翻面看释义与真题语境句</li>
+        <li><b>听音辨词</b>：TTS 播放 → 选出正确拼写</li>
+        <li><b>听音拼写</b>：TTS 播放 → 键盘拼写出词</li>
+        <li><b>语境填空</b>：你的真题出处句挖空该词 → 填入（最高效模式）</li>
+      </ol>
+    </li>
+    <li><b>生词列表</b>：按来源考次 / 状态（学习中·已掌握）/ 真题出现次数 / 添加时间筛选排序，支持批量导出</li>
+  </ul>
+
+  <h3>5.4 难词预扫</h3>
+  <ul>
+    <li>打开任意篇章时后台分词，逐词查 ECDICT 考纲标签</li>
+    <li>识别两类：① <b>超纲词</b>（超出当前级别考纲的词，如四级卷中的 GRE 词）② <b>高频考词</b>（真题出现 ≥ 3 次的考纲词）</li>
+    <li>侧栏展示清单 + 正文紫色虚线微标注；支持「一键将本篇超纲词全部加入生词本」</li>
+    <li>用于读前心理预期管理：先扫一眼难词，再读文章，阅读流畅度显著提升</li>
+  </ul>
+
+  <h3>5.5 错题本</h3>
+  <ul>
+    <li>阅读器内作答即判分，错题自动入库（含题目、你的答案、正确答案、原文出处句、官方解析）</li>
+    <li><b>AI 错因分析</b>（可选，走 API）：分析错误选项为何错、原文证据在哪、属于词汇问题还是逻辑问题</li>
+    <li>按题型（选词填空 / 仔细阅读 / 长篇阅读）分组，支持「重做错题」二次作答</li>
+  </ul>
+
+  <h3>5.6 Anki 导出</h3>
+  <ul>
+    <li>生词本（可按筛选条件）一键导出为 Anki 可导入的 TSV：<b>正面</b> = 单词 + 音标 + 出处句（挖空），<b>背面</b> = 释义 + 解析</li>
+    <li>兼容 Anki 直导（文件 → 导入 → 选择字段分隔符），二期可升级直接生成 <code>.apkg</code> 牌组（含发音媒体）</li>
+  </ul>
+
+  <h3>5.7 真题导入与扩展（用户自定义数据）</h3>
+  <p>软件内置真题之外，用户可随时导入自己的真题/学习材料，与内置数据完全同权：</p>
+  <ul>
+    <li><b>导入格式</b>：结构化 JSON（软件提供模板与字段说明）；纯文本可快速导入（自动按段落切分篇章，不带题目）</li>
+    <li><b>导入来源</b>：任意考次（含更早年份、模拟题）、其他考试材料（考研英语阅读等）均可</li>
+    <li><b>自动处理</b>：导入即触发分词统计 → 更新全局词频表（高频考词识别随之更新）→ 纳入难词预扫与标注体系</li>
+    <li><b>管理</b>：真题库中「我的导入」分组展示，支持删除/重新导入；生词出处照常记录与跳转</li>
+  </ul>
+</section>
+
+<section class="card" id="s6">
+  <h2><span class="num">6</span>数据模型</h2>
+  <p>单文件 SQLite（<code>keeper.db</code>），用户数据与内置数据同库分表，备份 = 复制一个文件：</p>
+  <pre>
+-- 真题库（软件预置，只读）
+exam(id, level, year, month)                    -- 考次：CET4/CET6 × 年月
+passage(id, exam_id, section, seq, content)     -- 篇章：听力/阅读/翻译/写作
+question(id, passage_id, qtype, stem,
+         options_json, answer, analysis)         -- 题目+选项+答案+官方解析
+
+-- 词典（ECDICT 裁剪，只读）
+dict(word PRIMARY KEY, phonetic_us, phonetic_uk,
+     translation, definition, tag,              -- 考纲分级标签
+     frq, exchange, collins)                    -- 词频 / 词形交换 / 星级
+
+-- 用户数据（读写）
+user_word(id, word UNIQUE, status, note,        -- status: learning|mastered
+          created_at, mastered_at)
+word_hit(id, word, passage_id, sentence)        -- 真题出现记录（自动统计）
+review_log(id, word_id, mode, rating,
+           reviewed_at, interval, ease, due)     -- SM-2 调度数据
+mistake(id, question_id, user_answer,
+        ai_analysis, created_at, redone)         -- 错题本
+ai_cache(hash PRIMARY KEY, kind, response)      -- 翻译/语法分析缓存
+settings(key PRIMARY KEY, value)                -- API Key / 每日新词量等
+  </pre>
+</section>
+
+<section class="card" id="s7">
+  <h2><span class="num">7</span>数据工程管线（构建期）</h2>
+  <div class="flow">
+    <span class="step">CET46-Resources 真题 PDF</span><span class="ar">→</span>
+    <span class="step">pdfplumber 文本抽取</span><span class="ar">→</span>
+    <span class="step">清洗（去页眉脚/还原双栏）</span><span class="ar">→</span>
+    <span class="step">AI 辅助按题型分块</span><span class="ar">→</span>
+    <span class="step">人工抽检校对</span><span class="ar">→</span>
+    <span class="step">结构化 JSON</span><span class="ar">→</span>
+    <span class="step">导入 SQLite</span>
+  </div>
+  <ul>
+    <li><b>首发范围</b>：2020–2026 年四六级共 14 个考次（每考次多套卷），约 90+ 篇文章；后续版本可滚动补全至 2014 年起全量 55 考次</li>
+    <li>分词统计产出<b>真题词频表</b>（供高频考词识别与「出现次数」展示），随数据包内置</li>
+    <li>ECDICT 裁剪：保留 tag 含 cet4/cet6/ky（考研）及 BNC 词频前 2 万的词条，约 4 万条、15MB</li>
+  </ul>
+  <div class="callout warn"><b>版权说明：</b>真题数据仅供个人学习使用，软件不分发真题原文；若未来公开分发安装包，真题数据包需用户自行导入（软件提供导入功能作为合规通道）。</div>
+</section>
+
+<section class="card" id="s8">
+  <h2><span class="num">8</span>界面与交互</h2>
+  <table>
+    <tr><th style="width:120px">页面</th><th>布局与要点</th></tr>
+    <tr><td>今日首页</td><td>到期复习数 · 新词配额 · 一键开始复习；最近阅读的真题快捷入口</td></tr>
+    <tr><td>真题库</td><td>四级/六级 → 年份 → 考次列表；标注「已读/进行中」状态和本套生词数</td></tr>
+    <tr><td>阅读器</td><td>左文章右题目双栏（可切单栏）；顶部工具栏：难词预扫开关 · 字号 · 主题；快捷键 <code>1</code>加入生词 <code>2</code>发音 <code>Esc</code>关浮层</td></tr>
+    <tr><td>生词本</td><td>列表 + 筛选器；详情抽屉展示笔记、全部真题出处句、复习历史</td></tr>
+    <tr><td>复习页</td><td>全屏卡片流；顶部进度条；底部三键评分（忘记/模糊/记得）；语境模式展示出处句挖空</td></tr>
+    <tr><td>错题本</td><td>按题型分组卡片；展开显示原文证据句与 AI 错因；「重做」按钮</td></tr>
+    <tr><td>设置</td><td>AI 服务商与 API Key（连接测试按钮）· 每日新词量 · TTS 音色语速 · 数据备份/恢复 · Anki 导出</td></tr>
+  </table>
+  <p><b>视觉基调：</b>浅色护眼纸感底色、衬线正文（长文阅读舒适）、高亮色仅黄/绿/紫三色对应三种词状态，克制不花哨。</p>
+</section>
+
+<section class="card" id="s9">
+  <h2><span class="num">9</span>开发计划</h2>
+  <table>
+    <tr><th style="width:80px">阶段</th><th>内容</th><th style="width:100px">性质</th></tr>
+    <tr><td><b>M1 数据工程</b></td><td>真题 PDF 解析管线跑通 + ECDICT 裁剪入库 + 真题词频表，产出 <code>keeper.db</code> 种子库</td><td>Python 脚本</td></tr>
+    <tr><td><b>M2 核心 MVP</b></td><td>Electron+Vue 骨架 · 阅读器与词级标注 · 本地词典浮层与 TTS · 生词本 · SM-2 复习（认词+语境两模式）</td><td>应用主体</td></tr>
+    <tr><td><b>M3 智能+扩展</b></td><td>AI 网关（翻译/语法分析/缓存降级）· 错题本与判分 · 难词预扫 · 听音/拼写复习模式</td><td>功能完整</td></tr>
+    <tr><td><b>M4 打磨发布</b></td><td>Anki 导出 · 设置页 · 备份恢复 · electron-builder 打包 NSIS 安装程序</td><td>交付</td></tr>
+  </table>
+  <p>每个阶段结束交付可运行版本供你试用反馈，滚动修正。</p>
+</section>
+
+<section class="card" id="s10">
+  <h2><span class="num">10</span>风险与应对</h2>
+  <table>
+    <tr><th style="width:200px">风险</th><th>应对</th></tr>
+    <tr><td>真题 PDF 解析质量参差（双栏/表格/页眉噪声）</td><td>AI 辅助分块 + 人工抽检双保险；首发只做近 6 年控制校对成本；解析失败的考次宁缺毋滥</td></tr>
+    <tr><td>无 API Key / 断网时功能不可用</td><td>核心链路（查词/标注/复习）100% 离线；AI 功能自动降级并明确提示，不阻塞</td></tr>
+    <tr><td>ECDICT 全量体积过大（CSV 700MB）</td><td>构建期裁剪至 4 万词 15MB；词典缺失词回退「手动加入 + AI 补全释义（联网时）」</td></tr>
+    <tr><td>sql.js 性能（万词长文首渲染）</td><td>词级 span 虚拟化 + 分章渲染；词典查询建内存索引（启动加载一次）</td></tr>
+    <tr><td>真题版权</td><td>个人学习使用；安装包不含真题数据时提供「自行导入」合规通道</td></tr>
+  </table>
+</section>
+
+<section class="card" id="s11">
+  <h2><span class="num">11</span>需求确认结果（已全部确认）</h2>
+  <table>
+    <tr><th>事项</th><th>结论</th></tr>
+    <tr><td>AI 服务商</td><td><span class="tag decided">API 由用户自行配置</span> 设置页填写 Key，OpenAI 兼容协议（DeepSeek/Kimi/GLM 均可），连接测试按钮验证</td></tr>
+    <tr><td>真题首发范围</td><td><span class="tag decided">2020–2026 共 14 考次</span> 确认够用</td></tr>
+    <tr><td>软件命名</td><td><span class="tag decided">CET WordKeeper</span> 正式定名</td></tr>
+    <tr><td>复习默认参数</td><td><span class="tag decided">每日新词 20</span> 确认足够，设置页可随时调整</td></tr>
+    <tr><td>数据扩展</td><td><span class="tag decided">支持用户自行导入真题</span> 已升级为正式功能模块（见 5.7）</td></tr>
+  </table>
+  <div class="callout info">方案定稿，进入开发阶段：M1 数据工程 → M2 核心 MVP → M3 智能+扩展 → M4 打包发布。</div>
+</section>
+
+<footer>CET WordKeeper 开发方案 · 2026-10-09 · 确认后即进入 M1 数据工程阶段</footer>
+</div>
+</body>
+</html>
