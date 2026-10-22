@@ -13,8 +13,15 @@ function field(value, max, name) {
   if (typeof value !== 'string' || !value.trim() || value.length > max) throw Error(`${name}不能为空，且不能超过 ${max} 字`);
   return value.trim();
 }
+// Derive browse tags from the existing heading convention; titles remain stable entry IDs.
+function builtinTags(title) {
+  const [section, subject=''] = title.split(' · ');
+  const topic = subject.replace(/（.*$/, '').trim();
+  const group = section === '题型套路' ? (subject.includes('写作') ? '写作' : subject.includes('翻译') ? '翻译' : '阅读') : section;
+  return [...new Set([...(section === '题型套路' ? ['题型方法'] : []), group, topic].filter(Boolean))];
+}
 function createKnowledgeStore({q,run,persistTransaction,now,builtin}) {
-  const builtinEntries = () => builtin().map(e => ({...e,key:'builtin:'+createHash('sha256').update(e.title).digest('hex').slice(0,20),source:'builtin',category:'基础知识',tags:[e.title.startsWith('语法')?'语法':'题型方法'],origin:'builtin',anchor:null}));
+  const builtinEntries = () => builtin().map(e => ({...e,key:'builtin:'+createHash('sha256').update(e.title).digest('hex').slice(0,20),source:'builtin',category:'基础知识',tags:builtinTags(e.title),origin:'builtin',anchor:null}));
   const userEntry = e => ({...e,key:'user:'+e.id,category:e.category||'未分类',tags:parse(e.tags,[]),origin:e.origin||'manual',anchor:parse(e.anchor,null),updated_at:e.updated_at||e.created_at});
   function get(key) {
     if (typeof key !== 'string') throw Error('条目不存在');

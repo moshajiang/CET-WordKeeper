@@ -19,6 +19,25 @@ const test=async(name,fn)=>{await fn();passed++;console.log('✓ '+name);};
   const before=h.bytes();ensureKnowledgeSchema(h.db());assert.deepEqual(h.bytes(),before);
   const old=new SQL.Database();old.run(h.schema);assert.ok(inspectBackup(SQL,Buffer.from(old.export()),h.schema));old.close();
  });
+ await test('扩充的内置资料经真实加载器完整读取，标题不重复且按主题检索',()=>{
+  const entries=call('kb:search',{source:'builtin'}).entries;
+  assert.ok(entries.length>=36);assert.equal(new Set(entries.map(e=>e.key)).size,entries.length);
+  for(const tag of ['语法','阅读','词汇','写作','翻译','学习方法']) {
+   const group=call('kb:search',{source:'builtin',tag}).entries;assert.ok(group.length>=3,tag);
+   for(const entry of group)assert.ok(call('kb:get',entry.key).content.length>100);
+  }
+  for(const [query,title] of [['百分点','翻译 · 数字、倍数与百分比'],['look forward to','词汇 · 高频搭配与介词 to'],['推断题','阅读 · 推断题、相关关系与因果关系']]) {
+   assert.ok(call('kb:search',{source:'builtin',query}).entries.some(e=>e.title===title),query);
+  }
+  const legacy=call('kb:search',{source:'builtin',tag:'题型方法'}).entries;assert.equal(legacy.length,5);
+ });
+ await test('AI 关键词上下文可以召回新增知识，旧条目标题与稳定 key 保持兼容',()=>{
+  const contextText=vm.runInContext("buildChatContext(null,null,'百分比和百分点')",context);
+  assert.ok(contextText.includes('【知识库 · 翻译 · 数字、倍数与百分比】'));assert.ok(contextText.includes('10 percentage points'));
+  const old=call('kb:search',{source:'builtin',query:'三大从句'}).entries.find(e=>e.title==='语法 · 三大从句（名词性/定语/状语）');assert.ok(old);
+  const expected='builtin:'+require('node:crypto').createHash('sha256').update(old.title).digest('hex').slice(0,20);assert.equal(old.key,expected);
+  assert.ok(call('kb:get',old.key).content.includes('非限制性从句'));
+ });
  const built=call('kb:search',{source:'builtin'}).entries[0];
  await test('内置资料可读取完整正文，保持只读，旧列表接口兼容',()=>{
   const full=call('kb:get',built.key);assert.ok(full.content.length>60);assert.equal(call('kb:save',{...full,title:'篡改'}).ok,false);assert.ok(call('kb:list').builtin.includes(full.title));assert.equal(call('kb:list').user[0].preview,'完整旧正文');

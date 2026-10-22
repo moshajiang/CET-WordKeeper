@@ -21,6 +21,14 @@ try{
  await protocol('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
  await cdp.js("location.hash='#/knowledge'");await until("!!document.querySelector('.kb-body')");
  check('内置条目可阅读全文，不再只有标题',await cdp.js("document.querySelectorAll('.kb-item').length>=12&&document.querySelector('.kb-body').textContent.length>100&&!document.querySelector('.kb-detail button.danger')"));
+ await input('[aria-label=搜索知识库]','百分点');await until("[...document.querySelectorAll('.kb-item')].some(e=>e.textContent.includes('数字、倍数与百分比'))");
+ await cdp.js("[...document.querySelectorAll('.kb-item')].find(e=>e.textContent.includes('数字、倍数与百分比')).click()");await until("document.querySelector('.kb-title')?.textContent==='翻译 · 数字、倍数与百分比'");
+ check('新增翻译资料可全文检索并渲染数字对照表',await cdp.js("document.querySelector('.kb-body table')?.textContent.includes('increase by 50%')&&document.querySelector('.kb-body').textContent.includes('答案与依据')"));
+ await input('[aria-label=搜索知识库]','');await input('.kb-toolbar label:nth-child(4) select','词汇');await until("document.querySelectorAll('.kb-item').length===4");
+ check('新增主题标签可单独筛选词汇资料',await cdp.js("[...document.querySelectorAll('.kb-item strong')].every(e=>e.textContent.startsWith('词汇 · '))"));
+ await cdp.js("[...document.querySelectorAll('.kb-item')].find(e=>e.textContent.includes('高频搭配与介词 to')).click()");await until("document.querySelector('.kb-title')?.textContent==='词汇 · 高频搭配与介词 to'");
+ check('新增词汇条目包含例句与可核对的自测答案',await cdp.js("document.querySelector('.kb-body').textContent.includes('look forward to')&&document.querySelector('.kb-body').textContent.includes('hearing，此处 to 是介词')"));
+ await input('.kb-toolbar label:nth-child(4) select','');await until("document.querySelectorAll('.kb-item').length>=36");await cdp.js("document.querySelector('.kb-item').click()");await until("document.querySelector('.kb-title')?.textContent.includes('选词填空')");
  await click('复制为新笔记');await until("!!document.querySelector('.kb-editor')");check('内置资料可复制为自己的可编辑草稿',await cdp.js("document.querySelector('[aria-label=笔记内容]').value.length>100&&document.querySelector('[aria-label=笔记标题]').value.includes('笔记')"));await click('取消');
  await click('＋ 新建笔记');await input('[aria-label=笔记标题]','我的非谓语整理');await input('[aria-label=笔记分类]','我的薄弱点');await input('[aria-label=笔记标签]','语法, 非谓语');await input('[aria-label=笔记内容]','普通笔记内容。'.repeat(400)+'\n\n尾部搜索词 <script>window.badKnowledge=true</script>');await click('保存笔记');
  await until("document.querySelector('.kb-title')?.textContent==='我的非谓语整理'");
