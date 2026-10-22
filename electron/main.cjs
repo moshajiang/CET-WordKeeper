@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const initSqlJs = require('sql.js');
+const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const { ensureContentSchema, syncBuiltinContent, assessmentRevision } = require('./content-sync.cjs');
 const { createHash } = require('node:crypto');
 const { FREQUENCY_REVISION, buildWordIndex, createWordResolver, escapeHtml, markContext, countWordFrequency } = require('./word-semantics.cjs');
@@ -132,6 +133,7 @@ CREATE TABLE IF NOT EXISTS kb_entry(
 function migrate() {
   ensureContentSchema(db);
   ensureStorageIndexes(db);
+  ensureKnowledgeSchema(db);
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
@@ -859,23 +861,19 @@ function registerIpc() {
     return { ok: true };
   });
 
-  // ---- 知识库管理（内置只读，用户可增删自己的条目）----
+  // ---- Knowledge library: full entries, editable notes, and validated source anchors ----
+  const kb = createKnowledgeStore({q,run,persistTransaction,now,builtin:loadBuiltinKb});
+  const kbWrite = work => {try{return work();}catch(error){return {ok:false,error:error.message};}};
   ipcMain.handle('kb:list', () => ({
-    builtin: loadBuiltinKb().map((e) => e.title),
-    user: q("SELECT id, title, substr(content, 1, 60) AS preview FROM kb_entry WHERE source = 'user' ORDER BY id DESC"),
+    builtin:loadBuiltinKb().map(e=>e.title),
+    user:q("SELECT id,title,substr(content,1,60) AS preview FROM kb_entry WHERE source='user' ORDER BY id DESC"),
   }));
-  ipcMain.handle('kb:add', (_e, title, content) => {
-    if (!String(title || '').trim() || !String(content || '').trim()) return { ok: false, error: 'empty' };
-    run("INSERT INTO kb_entry(title, content, source, created_at) VALUES (?,?,'user',?)",
-      [String(title).trim(), String(content), now()]);
-    persist();
-    return { ok: true };
-  });
-  ipcMain.handle('kb:remove', (_e, id) => {
-    run("DELETE FROM kb_entry WHERE id = ? AND source = 'user'", [id]);
-    persist();
-    return { ok: true };
-  });
+  ipcMain.handle('kb:search', (_event,filters) => kb.list(filters||{}));
+  ipcMain.handle('kb:get', (_event,key) => kb.get(key));
+  ipcMain.handle('kb:save', (_event,payload) => kbWrite(()=>kb.save(payload)));
+  ipcMain.handle('kb:source', (_event,key) => kb.source(key));
+  ipcMain.handle('kb:add', (_event,title,content) => kbWrite(()=>kb.save({title,content})));
+  ipcMain.handle('kb:remove', (_event,id) => kbWrite(()=>kb.remove(id)));
 
   // ---- 作文与翻译的作答、保存与 AI 批改 ----
   ipcMain.handle('essay:get', (_e, examId, section) => {

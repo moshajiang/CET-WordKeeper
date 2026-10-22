@@ -1,6 +1,7 @@
 <template>
   <div class="reader-ai-controls">
     <span>✦ 划选原文后可就地讲解，也可让 AI 定位证据与题目</span>
+    <span v-if="sourceNotice" role="status">{{ sourceNotice }}</span>
     <button v-if="notes.length" @click="reopen">查看讲解 {{ active+1 }}/{{ notes.length }}</button>
     <button v-if="notes.length" @click="clear">清除 AI 标注</button>
   </div>
@@ -9,19 +10,23 @@
       <header><strong>✦ {{ note.title || 'AI 讲解' }}</strong><div><button v-if="notes.length>1" @click="change(-1)" aria-label="上一处讲解">‹</button><span v-if="notes.length>1">{{ active+1 }}/{{ notes.length }}</span><button v-if="notes.length>1" @click="change(1)" aria-label="下一处讲解">›</button><button @click="visible=false" aria-label="收起原文讲解">×</button></div></header>
       <blockquote>{{ note.quote }}</blockquote>
       <div class="inline-explanation-body ai-result md-body" aria-live="polite" v-html="renderMarkdown(note.explanation)"></div>
-      <footer><button v-if="result?.loading" @click="emit('cancel')">取消请求</button><button @click="followUp">继续追问</button><button @click="locate">定位原文</button><button @click="clear">清除标注</button></footer>
+      <footer><button v-if="result?.loading" @click="emit('cancel')">取消请求</button><button @click="followUp">继续追问</button><button @click="saveKnowledge" :disabled="result?.loading">存入知识库</button><button @click="locate">定位原文</button><button @click="clear">清除标注</button></footer>
     </section>
   </Teleport>
 </template>
 <script setup>
 import {ref,computed,watch,nextTick,onMounted,onBeforeUnmount} from 'vue';
 import {usePageAssistant} from '../composables/usePageAssistant.js';
+import {useRoute,useRouter} from 'vue-router';
+import {prepareKnowledgeDraft} from '../composables/useKnowledgeDraft.js';
 import {findArticleRange,normalizedText,placeExplanation} from '../utils/page-anchors.js';
 import {renderMarkdown} from '../utils/md.js';
 const props=defineProps({detail:Object,passageId:Number,layout:String,translation:String,fontSize:Number,result:Object});
 const emit=defineEmits(['passage','view','cancel','close-result']);
 const assistant=usePageAssistant(),notes=ref([]),active=ref(0),visible=ref(false),card=ref(null);
-const position=ref({left:'240px',top:'200px'}),selection=ref('');
+const position=ref({left:'240px',top:'200px'}),selection=ref(''),sourceNotice=ref('');
+const route=useRoute(),router=useRouter();
+let sourceSequence=0,restoredKey='';
 const note=computed(()=>notes.value[active.value] || null);
 let ranges=[],unregister=null,frame=0,resizeObserver=null,disposed=false,applying=false,selectionOccurrence=0,revision=0;
 const article=()=>document.querySelector('.article');
@@ -55,6 +60,24 @@ function locate(){
 }
 function change(delta){active.value=(active.value+delta+notes.value.length)%notes.value.length;paint();locate();}
 function followUp(){selection.value=note.value.quote;selectionOccurrence=note.value.occurrence||0;assistant.compose(note.value.quote);}
+async function saveKnowledge(){
+  if(!note.value||props.result?.loading)return;
+  const exam=props.detail?.exam,passage=current();if(!exam||!passage)return;
+  prepareKnowledgeDraft({title:note.value.title||note.value.quote.slice(0,80),content:note.value.explanation,category:'真题笔记',tags:[],origin:'ai',anchor:{examId:exam.id,passageId:passage.id,quote:note.value.quote,occurrence:note.value.occurrence||0,label:[exam.level,exam.year+' 年 '+exam.month+' 月','第 '+exam.set_no+' 套',passage.title||passage.section].join(' · ')}});
+  try{await router.push('/knowledge');}catch(error){sourceNotice.value='笔记草稿打开失败：'+error.message;}
+}
+async function restoreKnowledgeSource(){
+  const sequence=++sourceSequence,key=route.query.knowledge;sourceNotice.value='';
+  if(typeof key!=='string'||!props.detail||!current()||key===restoredKey)return;
+  const examId=props.detail.exam.id,passageId=props.passageId;
+  const stillCurrent=()=>!disposed&&sequence===sourceSequence&&props.detail?.exam.id===examId&&props.passageId===passageId&&route.query.knowledge===key;
+  try{
+    const found=await window.keeper.kbSource(key);if(!stillCurrent())return;
+    if(found.examId!==examId||found.passageId!==passageId)return;
+    await apply([{type:'highlight',passageId,quote:found.quote,occurrence:found.occurrence,title:found.title,explanation:found.explanation}],stillCurrent);
+    if(stillCurrent())restoredKey=key;
+  }catch(error){if(stillCurrent())sourceNotice.value='笔记原文定位失败：'+error.message;}
+}
 function selectEvidence(){
   const selected=window.getSelection();
   if(!selected?.rangeCount||selected.isCollapsed)return;
@@ -139,8 +162,10 @@ watch(()=>props.result,async value=>{
   active.value=0;visible.value=true;await nextTick();refreshRanges();
 });
 watch([visible,note],()=>nextTick(schedulePosition));
+watch(()=>[props.detail?.exam.id,props.passageId,route.query.knowledge],restoreKnowledgeSource,{flush:'post'});
 onMounted(()=>{
   unregister=assistant.register({label:'当前真题与文章',snapshot,matches,apply});
+  restoreKnowledgeSource();
   document.addEventListener('mouseup',selectEvidence);document.addEventListener('click',hit,true);
   window.addEventListener('scroll',schedulePosition,true);window.addEventListener('resize',schedulePosition);
   resizeObserver=new ResizeObserver(schedulePosition);if(article())resizeObserver.observe(article());
