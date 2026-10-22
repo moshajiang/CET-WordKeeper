@@ -17,7 +17,7 @@ async function protocol(method,params){const ws=new WebSocket(page.webSocketDebu
 async function screenshot(name){if(!output)return;fs.mkdirSync(output,{recursive:true});const shot=await protocol('Page.captureScreenshot',{format:'png'});fs.writeFileSync(path.join(output,name),Buffer.from(shot.data,'base64'));}
 try{
  await new Promise(r=>server.listen(0,'127.0.0.1',r));
- const port=await availablePort();child=spawn(path.join(root,'node_modules/electron/dist/electron.exe'),['.',`--remote-debugging-port=${port}`,'--no-sandbox','--disable-gpu'],{cwd:root,env:session.env,stdio:'ignore'});page=await waitForPage(port,child);cdp=await connectCdp(page);
+ const port=await availablePort();child=spawn(process.env.ELECTRON_EXE||path.join(root,'node_modules/electron/dist/electron.exe'),[...(process.env.ELECTRON_EXE?[]:['.']),`--remote-debugging-port=${port}`,'--no-sandbox','--disable-gpu'],{cwd:root,env:session.env,stdio:'ignore'});page=await waitForPage(port,child);cdp=await connectCdp(page);
  await protocol('Emulation.setDeviceMetricsOverride',{width:1280,height:900,deviceScaleFactor:1,mobile:false});
  await cdp.js("location.hash='#/knowledge'");await until("!!document.querySelector('.kb-body')");
  check('内置条目可阅读全文，不再只有标题',await cdp.js("document.querySelectorAll('.kb-item').length>=12&&document.querySelector('.kb-body').textContent.length>100&&!document.querySelector('.kb-detail button.danger')"));

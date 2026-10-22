@@ -45,7 +45,7 @@ async function screenshot(file){
 }
 try{
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const base=`http://127.0.0.1:${server.address().port}/v1`;
- const port=await availablePort();child=spawn(path.join(root,'node_modules/electron/dist/electron.exe'),['.',`--remote-debugging-port=${port}`,'--no-sandbox','--disable-gpu'],{cwd:root,env:session.env,stdio:'ignore'});page=await waitForPage(port,child);cdp=await connectCdp(page);
+ const port=await availablePort();child=spawn(process.env.ELECTRON_EXE||path.join(root,'node_modules/electron/dist/electron.exe'),[...(process.env.ELECTRON_EXE?[]:['.']),`--remote-debugging-port=${port}`,'--no-sandbox','--disable-gpu'],{cwd:root,env:session.env,stdio:'ignore'});page=await waitForPage(port,child);cdp=await connectCdp(page);
  await cdp.js(`window.keeper.setSettings({api_base:${JSON.stringify(base)},api_key:'fixture-only',api_model:'fixture'})`);
  check('首页提供全局助手入口',await cdp.js("!!document.querySelector('.assistant-launcher')"));
  await open();await cdp.js("document.querySelector('button[aria-label=展开助手]').click()");check('助手可展开为宽面板',await cdp.js("document.querySelector('.assistant-panel').getBoundingClientRect().width>=700"));await screenshot('assistant-workspace.png');
