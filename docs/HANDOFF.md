@@ -175,3 +175,8 @@ node scripts/word-audit.mjs      # 改词典/词形后，查得率应 100%
 ## 2026-10-22 v0.3.3 安装包
 
 已在 release/v0.3.3 分支生成 Windows x64 安装版、便携版与自动更新配套文件。实际成品的 AI 助手 29 项、知识库 16 项界面检查通过，17 个运行文件与源码一致，分发库无个人数据，更新元数据摘要一致。本轮未运行无关功能测试。尚未上传线上 Releases，未替换真实安装目录，详见 [RELEASE-0.3.3.md](RELEASE-0.3.3.md)。
+
+
+## 2026-10-22 v0.3.3 双仓库发布
+
+GitHub 与码云的 release/v0.3.3 分支及 v0.3.3 标签已同步，标签固定于安装包源码提交 0820a08450d15c27f47ed4c1b072eb410f38b276。两个发行版均为正式版本，包含 setup.exe、portable.exe、setup.exe.blockmap 与 latest.yml。GitHub 服务端四个附件的大小及 SHA-256 与本地一致；码云四个公开附件经完整下载计算，大小及 SHA-256 均一致。使用项目实际 GiteeProvider 读取线上版本与清单，确认识别 0.3.3 且安装包大小及 SHA-512 正确；GitHub latest 接口和公开 latest.yml 同样通过核对。未改动真实安装目录或用户数据库。发布详情见 [RELEASE-0.3.3.md](RELEASE-0.3.3.md)。

@@ -1,6 +1,6 @@
 # CET WordKeeper v0.3.3
 
-2026-10-22。本地安装包已构建；源码基于 3c783a9，打包分支 release/v0.3.3。尚未上传 GitHub / 码云 Releases。
+2026-10-22。Windows x64 安装版、便携版和自动更新配套文件已正式发布到 [GitHub](https://github.com/moshajiang/CET-WordKeeper/releases/tag/v0.3.3) 与 [码云](https://gitee.com/moyunyi/cet-word-keeper/releases/tag/v0.3.3)。打包分支 release/v0.3.3，发布标签 v0.3.3 固定于 0820a08450d15c27f47ed4c1b072eb410f38b276。
 
 ## 本次更新
 
@@ -14,7 +14,7 @@
 
 - CET-WordKeeper-0.3.3-setup.exe：Windows x64 安装版。沿用原应用身份和用户数据目录，未通过本次打包覆盖已安装程序。
 - CET-WordKeeper-0.3.3-portable.exe：Windows x64 便携版。
-- latest.yml 与 setup.exe.blockmap：同一次构建的自动更新文件。将来发布时需与安装包一起上传，当前在线更新仍取决于既有 Releases。
+- latest.yml 与 setup.exe.blockmap：同一次构建的自动更新文件，已与安装包一起上传至两个发行版。
 
 ## 本轮验证
 
@@ -32,3 +32,7 @@
 | CET-WordKeeper-0.3.3-portable.exe | 81543991 | f6b9ae6b611aaa275414559907238b98cea813796d688297b9d57301d1c24154 |
 | CET-WordKeeper-0.3.3-setup.exe.blockmap | 86986 | f803f8910d3a92b3a29173bd28c170c755cad2efde4f39915ccc8ad37abf895e |
 | latest.yml | 356 | 880dfbd85049c949293d2a33caadd51fad63f8cbb1cc6e352942be2820a31e45 |
+
+## 线上发布核对
+
+两个发行版均为正式版本。GitHub 服务端四个附件的大小与 SHA-256 均匹配；码云四个公开附件完整下载后的大小与 SHA-256 均匹配。实际 GiteeProvider 可从线上读取 0.3.3，并正确解析安装包大小及 SHA-512；GitHub latest 与公开 latest.yml 核对通过。
