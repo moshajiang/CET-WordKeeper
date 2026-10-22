@@ -63,11 +63,14 @@
       </button>
     </div>
 
+    <ReaderAssistant ref="readerAssistant" :detail="detail" :passage-id="activePassage?.id" :layout="layout" :translation="transMode" :font-size="fontSize" :result="aiResult"
+      @passage="selectAssistantPassage" @view="applyAssistantView" @cancel="cancelSelection" @close-result="aiResult = null" />
+
     <div class="reader-layout" :class="layout === 'split' ? 'layout-split' : 'layout-stack'">
       <div class="passage-pane">
         <div class="article" :style="{ fontSize: fontSize + 'px' }">
           <template v-if="transMode !== 'inline' || !hasTranslation">
-            <div v-for="(para, pi) in activeParas" :key="pi" class="para">
+            <div v-for="(para, pi) in activeParas" :key="pi" class="para" data-ai-text>
               <span
                 v-for="(tk, ti) in para"
                 :key="ti"
@@ -87,7 +90,7 @@
               :class="{ open: zhOpen(s) }"
               @click="toggleRow(s)"
             >
-              <div class="bi-en" :style="{ fontSize: Math.max(13, fontSize - 2) + 'px' }">
+              <div class="bi-en" data-ai-text :style="{ fontSize: Math.max(13, fontSize - 2) + 'px' }">
                 <span
                   v-for="(tk, ti) in rowTokens(s)"
                   :key="ti"
@@ -184,47 +187,8 @@
         />
       </div>
 
-      <div class="side-pane">
-        <div v-if="chatOpen" class="card chat-card">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
-            <h3 style="font-size: 14px; margin: 0;">💬 AI 助手
-              <span style="font-size: 11px; color: var(--muted); font-weight: 400;">知识库 + 当前文章作上下文</span>
-            </h3>
-            <button class="mini-btn" @click="clearChat" :disabled="chatClearing" title="清空历史">清空</button>
-          </div>
-          <div class="chat-msgs" ref="chatMsgsEl">
-            <div v-if="!chatMsgs.length" class="chat-empty">
-              问点什么吧，例如：<br>
-              · 虚拟语气怎么用？<br>
-              · 选词填空有什么套路？<br>
-              · 这篇文章的主旨是什么？
-            </div>
-            <div v-for="(m, i) in chatMsgs" :key="i" class="chat-msg" :class="m.role">
-              <div v-if="m.role === 'assistant'" class="bubble md-body" v-html="renderMarkdown(m.content)"></div>
-              <div v-else class="bubble">{{ m.content }}</div>
-            </div>
-            <div v-if="chatBusy" class="chat-msg assistant"><div class="bubble typing">思考中…</div></div>
-          </div>
-          <div class="chat-input-row">
-            <textarea v-model="chatInput" rows="2" placeholder="输入问题，Enter 发送，Shift+Enter 换行"
-              @keydown.enter.exact.prevent="sendChat"></textarea>
-            <button class="primary" @click="sendChat" :disabled="chatBusy || chatClearing || !chatInput.trim()">发送</button>
-            <button v-if="chatBusy" @click="stopChat()">停止生成</button>
-          </div>
-          <div v-if="chatNotice" style="font-size: 12px; color: var(--red); margin-top: 6px;">{{ chatNotice }}</div>
-        </div>
-
-        <div v-if="aiResult" class="card">
-          <h3 style="font-size: 14px; margin-bottom: 8px;">
-            {{ aiResult.kind === 'translate' ? '整句翻译' : '语法结构分析' }}
-            <span v-if="aiResult.cached" style="font-size: 11px; color: var(--muted); font-weight: 400;">（缓存）</span>
-          </h3>
-          <button v-if="aiResult.loading" @click="cancelSelection">取消请求</button>
-          <div class="ai-result md-body" style="margin-top: 0;" v-html="renderMarkdown(aiResult.text)"></div>
-          <div v-if="aiResult.source" style="font-size: 12px; color: var(--muted); margin-top: 8px; font-family: Georgia, serif;">{{ aiResult.source }}</div>
-        </div>
-
-        <div v-if="scanOn" class="card">
+      <div v-if="scanOn" class="side-pane">
+        <div class="card">
           <h3 style="font-size: 14px; margin-bottom: 10px;">难词预扫 <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">本篇超纲/高级词</span></h3>
           <div v-if="hardWords.length" class="hardword-list">
             <div v-for="h in hardWords" :key="h.word" class="hw-item" @click="quickAdd(h.word)">
@@ -235,16 +199,7 @@
           <div v-else style="color: var(--muted); font-size: 13px;">本篇没有发现超纲词 👍</div>
         </div>
 
-        <div class="card">
-          <h3 style="font-size: 14px; margin-bottom: 8px;">使用小贴士</h3>
-          <div style="font-size: 12.5px; color: var(--muted); line-height: 1.8;">
-            · 单击单词：查看释义与分级<br>
-            · 双击单词：直接加入生词本<br>
-            · 划选句子：翻译 / 语法分析<br>
-            · 黄色 = 生词 · 绿色 = 已掌握<br>
-            · 紫色虚线 = 预扫出的难词
-          </div>
-        </div>
+
       </div>
     </div>
 
@@ -279,7 +234,8 @@
       <div v-if="popover.error" role="alert" style="font-size: 12.5px; color: var(--red); margin-top: 8px;">{{ popover.error }} <button @click="retryLookup" :disabled="popover.loading">重新查询</button></div>
     </div>
 
-    <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle">
+    <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle" @mousedown.prevent @click.stop>
+      <button @click="explainSelection">✦ 就地讲解</button>
       <button @click="doTranslate">🌐 整句翻译</button>
       <button @click="doGrammar">🧩 语法分析</button>
       <button @click="askAboutSel">💬 问 AI</button>
@@ -301,13 +257,19 @@ import { tokenize, sentenceOf } from '../utils/tokens.js';
 import { useWordLemmas } from '../composables/useWordLemmas.js';
 import { alignBilingual, paragraphLetters, blankNumbers } from '../utils/bilingual.js';
 import { useAlignmentLex } from '../composables/useAlignmentLex.js';
-import { renderMarkdown } from '../utils/md.js';
 import QuestionPanel from '../components/QuestionPanel.vue';
+import ReaderAssistant from '../components/ReaderAssistant.vue';
+import { usePageAssistant } from '../composables/usePageAssistant.js';
 import { createEssayDrafts } from '../utils/essay-drafts.js';
 import { createAnswerDrafts } from '../utils/answer-drafts.js';
 
 const props = defineProps({ examId: String });
 const router = useRouter();
+const pageAssistant = usePageAssistant();
+const readerAssistant = ref(null);
+function selectAssistantPassage(id) { const index = detail.value?.passages.findIndex(p => p.id === id); if (index >= 0) activeIdx.value = index; }
+function applyAssistantView(view) { if (view.layout) layout.value = view.layout; if (view.translation) setTransMode(view.translation); if (view.fontSize) fontSize.value = view.fontSize; }
+function explainSelection() { selMenu.value.show = false; readerAssistant.value?.explainSelection(); }
 
 const detail = ref(null);
 const readerError = ref('');
@@ -454,10 +416,8 @@ function setTransMode(m) {
 // 把原文句子 / 题干选项引用到 AI 问答（自动打开聊天并带入输入框）
 function quoteToAI(text) {
   if (!text || !String(text).trim()) return;
-  chatOpen.value = true;
-  const quote = '“' + String(text).trim() + '”';
-  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + quote + '\n';
-  scrollChat();
+  if (readerAssistant.value) readerAssistant.value.quote(String(text).trim());
+  else pageAssistant.compose(String(text).trim());
 }
 
 // 从逐句对照快速回到本篇的题目作答区（上下布局滚下去很远，一键直达）
@@ -633,83 +593,11 @@ async function clearAttempt() {
   await reloadDetail();
 }
 
-// ---- 右侧 AI 聊天（知识库 + 当前文章上下文，历史持久化）----
-const chatOpen = ref(false);
-const chatMsgs = ref([]);
-const chatInput = ref('');
-const chatBusy = ref(false);
-const chatNotice = ref('');
-const chatMsgsEl = ref(null);
-
-let chatSequence = 0;
-const chatClearing = ref(false);
-async function loadChat() {
-  const sequence = ++chatSequence;
-  try {
-    const rows = await window.keeper.chatHistory();
-    if (!readerDisposed && sequence === chatSequence) chatMsgs.value = rows || [];
-  } catch (error) { if (!readerDisposed && sequence === chatSequence) chatNotice.value = '历史加载失败：'+error.message; }
-}
-function scrollChat() {
-  setTimeout(() => { const el = chatMsgsEl.value; if (el && !readerDisposed) el.scrollTop = el.scrollHeight; },50);
-}
-function stopChat(restoreInput = true) {
-  aiTasks.cancel('chat'); ++chatSequence;
-  const pending = chatMsgs.value.find(message => message.pending);
-  chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
-  if (pending && restoreInput && !chatInput.value) chatInput.value = pending.content;
-  if (chatBusy.value && restoreInput) chatNotice.value = '已停止生成，可重新发送。';
-  chatBusy.value = false;
-}
-async function sendChat() {
-  const text = chatInput.value.trim();
-  if (!text || chatBusy.value || chatClearing.value) return;
-  const task = aiTasks.start('chat'); ++chatSequence;
-  chatInput.value = ''; chatNotice.value = '';
-  const pending = {role:'user',content:text,pending:true};
-  chatMsgs.value.push(pending); chatBusy.value = true; scrollChat();
-  try {
-    const r = await window.keeper.chatSend(Number(props.examId),activePassage.value?.id || null,text,task.id);
-    if (!task.isCurrent() || readerDisposed) return;
-    if (r.ok) {
-      chatMsgs.value = chatMsgs.value.map(message => message.pending ? {role:'user',content:text} : message);
-      chatMsgs.value.push({role:'assistant',content:r.reply});
-    } else {
-      chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
-      if (!chatInput.value) chatInput.value = text;
-      chatNotice.value = r.error === 'no_key' ? '尚未配置 AI 服务：请到「设置」页填写 API 地址与 Key 后重试。'
-        : r.error === 'cancelled' ? '已停止生成，可重新发送。' : '发送失败：'+r.error;
-    }
-    scrollChat();
-  } catch (error) {
-    if (task.isCurrent() && !readerDisposed) {
-      chatMsgs.value = chatMsgs.value.filter(message => !message.pending);
-      if (!chatInput.value) chatInput.value = text;
-      chatNotice.value = '发送失败：'+error.message;
-    }
-  } finally { if (task.isCurrent()) chatBusy.value = false; task.finish(); }
-}
-async function clearChat() {
-  if (chatClearing.value) return;
-  stopChat(false); const sequence = ++chatSequence;
-  chatClearing.value = true; chatNotice.value = '';
-  try {
-    const r = await window.keeper.chatClear();
-    if (readerDisposed || sequence !== chatSequence) return;
-    if (!r.ok) throw Error(r.error || '未知错误');
-    chatMsgs.value = [];
-  } catch (error) {
-    if (!readerDisposed && sequence === chatSequence) { chatNotice.value = '清空失败，历史已保留：'+error.message; chatClearing.value = false; await loadChat(); }
-  } finally { if (!readerDisposed && sequence === chatSequence) chatClearing.value = false; }
-}
-
-// 划选句子 → 打开聊天并带入原文
-function askAboutSel() {
-  const text = selMenu.value.text;
-  selMenu.value.show = false;
-  chatOpen.value = true;
-  chatInput.value = (chatInput.value ? chatInput.value + '\n' : '') + '“' + text + '”\n';
-}
+// Shared conversation follows the user across pages; effects are owned by ReaderAssistant.
+const {open:chatOpen,messages:chatMsgs,input:chatInput,busy:chatBusy,notice:chatNotice,clearing:chatClearing}=pageAssistant;
+const loadChat=pageAssistant.loadHistory,clearChat=pageAssistant.clear,stopChat=pageAssistant.stop;
+const sendChat=()=>pageAssistant.send();
+function askAboutSel() { const text=selMenu.value.text; selMenu.value.show=false; quoteToAI(text); }
 
 // ---- 作文 / 翻译：作答草稿自动保存 + AI 批改 ----
 const isEssaySection = computed(() => {
@@ -849,7 +737,7 @@ const popoverStyle = computed(() => {
 
 const selMenuStyle = computed(() => {
   const m = selMenu.value;
-  return { left: Math.min(m.x, window.innerWidth - 220) + 'px', top: Math.max(8, m.y - 44) + 'px' };
+  return { left: Math.max(8, Math.min(m.x, window.innerWidth - 390)) + 'px', top: Math.max(8, m.y - 44) + 'px' };
 });
 
 const levelTags = computed(() => {
@@ -1050,7 +938,8 @@ function speak(word) {
   } catch (e) { /* no tts */ }
 }
 
-function onDocClick() {
+function onDocClick(event) {
+  if (event?.target?.closest?.('.inline-explanation,.assistant-panel')) return;
   closePopover();
   selMenu.value.show = false;
 }
@@ -1074,6 +963,7 @@ function cancelSelection() {
   if (aiResult.value?.loading) aiResult.value = {...aiResult.value,loading:false,text:'已取消。'};
 }
 async function runSelection(kind) {
+  if (pageAssistant.busy.value) pageAssistant.stop(false);
   const text = selMenu.value.text, task = aiTasks.start('selection');
   selMenu.value.show = false;
   aiResult.value = {kind,text:kind === 'translate' ? '翻译中…（需在设置页配置 AI）' : '分析中…（需在设置页配置 AI）',source:text,loading:true};
@@ -1090,7 +980,7 @@ async function runSelection(kind) {
 function doTranslate() { return runSelection('translate'); }
 function doGrammar() { return runSelection('grammar'); }
 function cancelReaderAi() {
-  aiTasks.cancelAll(); ++chatSequence;
+  aiTasks.cancelAll();
   stopChat(false); chatClearing.value = false;
   busy.value = false; assessmentCancelling.value = false; essayBusy.value = false; aiResult.value = null;
 }
@@ -1105,7 +995,7 @@ async function scanHard() {
 }
 
 watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); saveProgress(); });
-watch(() => activePassage.value && activePassage.value.id, () => { invalidateWordContext(); cancelSelection(); aiResult.value = null; if (essayBusy.value) cancelGrade(); stopChat(false); chatClearing.value = false; if (!readerDisposed) loadChat(); rowToggle.value = {}; hardWords.value = []; });
+watch(() => activePassage.value && activePassage.value.id, () => { invalidateWordContext(); cancelSelection(); aiResult.value = null; if (essayBusy.value) cancelGrade();  rowToggle.value = {}; hardWords.value = []; });
 watch(() => activePassage.value?.content, text => {
   const words = tokenize(text || '').filter(token => token.t === 'w').map(token => token.text);
   void ensureWords(words);
@@ -1125,8 +1015,10 @@ function movePassage(d) {
 }
 
 function onReaderKey(ev) {
+  if (ev.isComposing || ev.repeat || ev.ctrlKey || ev.metaKey || ev.altKey) return;
   const tag = (ev.target && ev.target.tagName) || '';
-  if (/INPUT|TEXTAREA|SELECT/.test(tag)) return;               // 输入框内不打架
+  if (ev.target?.isContentEditable || ev.target?.closest?.('.assistant-panel,.inline-explanation')) return;
+  if (/INPUT|TEXTAREA|SELECT|BUTTON|A/.test(tag)) return;               // 输入框内不打架
   if (popover.value.show || selMenu.value.show) return;
   if (ev.key === ']' || ev.key === '[') {
     movePassage(ev.key === ']' ? 1 : -1);

@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createRequire}=require('node:module');
 const root=path.resolve(__dirname,'..'),dep=process.env.KEEPER_DEPENDENCY_ROOT||root,req=createRequire(path.join(dep,'package.json'));
@@ -128,8 +129,8 @@ const answer=(n,letter='A')=>({n,answer:letter,analysis:'依据原文的解析�
  });
  await test('真实阅读器不展示异常历史评分，重试失败提示清楚并恢复按钮',async()=>{
   const Vue=req('vue'),createAiTasks=req(path.join(dep,'scripts/lib/load-ai-tasks.cjs'))(path.join(dep,'scripts'));
-  const code=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
-  const ctx=vm.createContext({...Vue,createAiTasks,defineProps:()=>({examId:'1'}),useRouter:()=>({}),useWordLemmas:()=>({lemmaOf:x=>x,ensureWords:async()=>{}}),useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}}),createAnswerDrafts:()=>({flush:async()=>true}),createEssayDrafts:()=>({flush:async()=>true,recover:()=>null,schedule(){}}),window:{keeper:{essayGet:async()=>({content:'A sufficiently long essay fixture for grading.',result:null,resultInvalid:true}),essayGrade:async()=>({ok:false,error:'bad_ai_result',detail:'score'})}},document:{},localStorage:{},onMounted(){},onBeforeUnmount(){},onBeforeRouteLeave(){},onBeforeRouteUpdate(){},watch(){},setTimeout:()=>0,clearTimeout(){},tokenize:()=>[]});
+  const code=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
+  const ctx=vm.createContext({...Vue,createAiTasks,createPageAssistant,defineProps:()=>({examId:'1'}),useRouter:()=>({}),useWordLemmas:()=>({lemmaOf:x=>x,ensureWords:async()=>{}}),useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}}),createAnswerDrafts:()=>({flush:async()=>true}),createEssayDrafts:()=>({flush:async()=>true,recover:()=>null,schedule(){}}),window:{keeper:{essayGet:async()=>({content:'A sufficiently long essay fixture for grading.',result:null,resultInvalid:true}),essayGrade:async()=>({ok:false,error:'bad_ai_result',detail:'score'})}},document:{},localStorage:{},onMounted(){},onBeforeUnmount(){},onBeforeRouteLeave(){},onBeforeRouteUpdate(){},watch(){},setTimeout:()=>0,clearTimeout(){},tokenize:()=>[]});
   vm.runInContext(code+'\nglobalThis.v={detail,loadEssay,gradeEssay,essayText,essayResult,essayNotice,essayBusy};',ctx);const v=ctx.v;v.detail.value={exam:{id:1},passages:[{id:1,section:'writing'}]};await v.loadEssay();assert.equal(v.essayResult.value,null);assert.match(v.essayNotice.value,/历史批改结果格式异常/);assert.ok(v.essayText.value.includes('fixture'));await v.gradeEssay();assert.equal(v.essayBusy.value,false);assert.equal(v.essayResult.value,null);assert.match(v.essayNotice.value,/未保存评分/);
  });
  console.log(`AI 结构化结果回归 ${passed}/${passed} 通过`);

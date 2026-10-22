@@ -18,15 +18,26 @@
     </div>
   </nav>
   <router-view class="main" :class="{ narrow: isNarrow }" />
+  <PageAssistant />
 </template>
 
 <script setup>
-import { computed, onMounted, onBeforeUnmount } from 'vue';
+import { computed, onMounted, onBeforeUnmount, watch } from 'vue';
+import PageAssistant from './components/PageAssistant.vue';
+import { usePageAssistant } from './composables/usePageAssistant.js';
 import { useRoute, useRouter } from 'vue-router';
 import { useLearningState } from './composables/useLearningState.js';
 
 const route = useRoute();
 const router = useRouter();
+const assistant = usePageAssistant();
+const pagePaths = { home:'/',library:'/library',words:'/words',review:'/review',knowledge:'/knowledge',settings:'/settings',recite:'/recite' };
+assistant.setNavigate(async (page,context) => {
+  const target=page === 'recite' && context?.examId && context?.passageId ? {path:'/recite/'+context.examId,query:{passage:String(context.passageId)}} : pagePaths[page];
+  await router.push(target);
+  if(router.currentRoute.value.fullPath !== router.resolve(target).fullPath) throw Error('页面未切换，请先处理当前页面的保存提示。');
+});
+watch(() => route.name, name => assistant.setPage(({home:'home',library:'library',words:'words',review:'review',knowledge:'knowledge',settings:'settings',recite:'recite',reader:'reader'})[name] || 'home'), {immediate:true});
 const learning = useLearningState();
 const dueCount = computed(() => learning.stats.value.dueNow);
 

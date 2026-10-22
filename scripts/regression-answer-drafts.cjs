@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const createAiTasks = require('./lib/load-ai-tasks.cjs')(__dirname);
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createRequire}=require('node:module');
@@ -13,7 +14,7 @@ const test=async(name,run)=>{await run();passed++;console.log('✓ '+name);};
  const SQL=await req('sql.js')({locateFile:f=>path.join(dependencies,'node_modules/sql.js/dist',f)});
  function backend(){
   const handlers=new Map();let writes=0,fail=false,disk=null;
-  const context=vm.createContext({createAiTasks,Buffer,Date,console:{log(){},error(){}},__dirname:path.join(root,'electron'),process:{env:{},platform:'win32'},require(name){
+  const context=vm.createContext({createAiTasks,createPageAssistant,Buffer,Date,console:{log(){},error(){}},__dirname:path.join(root,'electron'),process:{env:{},platform:'win32'},require(name){
    if(name==='electron')return{app:{disableHardwareAcceleration(){},requestSingleInstanceLock:()=>true,on(){},whenReady:()=>({then(){}})},ipcMain:{handle:(n,f)=>handlers.set(n,f)},dialog:{},shell:{}};
    if(name==='electron-updater')return{autoUpdater:{on(){}}};
    if(name==='fs')return{...fs,writeFileSync(_p,bytes){if(fail)throw Error('disk full');disk=Buffer.from(bytes);writes++;},renameSync(){}};
@@ -110,8 +111,8 @@ const test=async(name,run)=>{await run();passed++;console.log('✓ '+name);};
   const useWordLemmas = vm.runInNewContext(lemmaSource+'\nuseWordLemmas;', { shallowRef:Vue.shallowRef });
  function reader(keeper,store=storage()){
   const props=Vue.reactive({examId:'1'});
-  const script=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
-  const context=vm.createContext({createAiTasks,...Vue,...tokens,...bilingual,useWordLemmas,localStorage:store,defineProps:()=>props,useRouter:()=>({push(){}}),window:{keeper},document:{querySelector:()=>null},renderMarkdown:String,
+  const script=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
+  const context=vm.createContext({createAiTasks,createPageAssistant,...Vue,...tokens,...bilingual,useWordLemmas,localStorage:store,defineProps:()=>props,useRouter:()=>({push(){}}),window:{keeper},document:{querySelector:()=>null},renderMarkdown:String,
    watch(){},onMounted(){},onBeforeUnmount(){},onBeforeRouteLeave(){},onBeforeRouteUpdate(){},setTimeout:()=>1,clearTimeout(){},
    createAnswerDrafts:opts=>createAnswerDrafts({...opts,...timers}),createEssayDrafts:opts=>createEssayDrafts({...opts,...timers}),useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}})});
   vm.runInContext(script+`\nglobalThis.reader={detail,answers,graded,result,notice,busy,answersLoading,answerDraftStatus,setAnswer,restoreAttempt,submit,clearAttempt,loadAnalysis,loadAll,answerDrafts};`,context);

@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const createAiTasks = require('./lib/load-ai-tasks.cjs')(__dirname);
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createRequire}=require('node:module'),{spawnSync}=require('node:child_process');
@@ -6,13 +7,13 @@ const req=createRequire(path.join(dependencies,'package.json')),Vue=req('vue');
 const main=fs.readFileSync(path.join(root,'electron/main.cjs'),'utf8');
 const plain=v=>JSON.parse(JSON.stringify(v));
 let passed=0;const test=async(name,run)=>{await run();passed++;console.log('✓ '+name);};
-function loadComposable(file,name){const code=fs.readFileSync(path.join(root,'src/composables',file),'utf8').replace(/^import .*;\r?$/gm,'').replace(/^export /gm,'');return vm.runInNewContext(code+'\n'+name+';',{...Vue,Promise,Map,Set,Date,setTimeout,clearTimeout});}
+function loadComposable(file,name){const code=fs.readFileSync(path.join(root,'src/composables',file),'utf8').replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});').replace(/^export /gm,'');return vm.runInNewContext(code+'\n'+name+';',{...Vue,Promise,Map,Set,Date,setTimeout,clearTimeout});}
 (async()=>{
  const SQL=await req('sql.js')({locateFile:f=>path.join(dependencies,'node_modules/sql.js/dist',f)});
  function backend({seed=false,clock=Date.now()}={}){
   const handlers=new Map(),events=[];let fail=false;
   class ClockDate extends Date {constructor(...args){super(...(args.length?args:[clock]));}static now(){return clock;}}
-  const context=vm.createContext({createAiTasks,Buffer,Date:ClockDate,console:{log(){},error(){}},__dirname:path.join(root,'electron'),process:{env:{},platform:'win32'},require(name){
+  const context=vm.createContext({createAiTasks,createPageAssistant,Buffer,Date:ClockDate,console:{log(){},error(){}},__dirname:path.join(root,'electron'),process:{env:{},platform:'win32'},require(name){
    if(name==='electron')return{app:{disableHardwareAcceleration(){},requestSingleInstanceLock:()=>true,on(){},whenReady:()=>({then(){}})},ipcMain:{handle:(n,f)=>handlers.set(n,f)},dialog:{},shell:{}};
    if(name==='electron-updater')return{autoUpdater:{on(){}}};
    if(name==='fs')return{...fs,writeFileSync(){if(fail)throw Error('disk full');},renameSync(){}};
@@ -104,8 +105,8 @@ function loadComposable(file,name){const code=fs.readFileSync(path.join(root,'sr
   const second=state.start();pending.shift()(snapshot({dueNow:99}));await tick();assert.equal(state.stats.value.dueNow,0);pending.shift()(snapshot({dueNow:3}));await Promise.all([first,second]);assert.equal(state.stats.value.dueNow,3);state.stop();
  });
  await test('真实阅读器 computed 随后端词形结果重算，高亮与难词标记都使用原形',async()=>{
-  let finish;const mapping=useWordLemmas(()=>new Promise(r=>{finish=r;}));const script=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
-  const context=vm.createContext({createAiTasks,...Vue,useWordLemmas:()=>mapping,useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}}),createEssayDrafts:()=>({flush:async()=>true}),createAnswerDrafts:()=>({flush:async()=>true}),defineProps:()=>({examId:'1'}),useRouter:()=>({}),localStorage:{},window:{keeper:{}},document:{},tokenize:()=>[],onMounted(){},onBeforeUnmount(){},onBeforeRouteLeave(){},onBeforeRouteUpdate(){},watch(){},setTimeout:()=>1,clearTimeout(){}});
+  let finish;const mapping=useWordLemmas(()=>new Promise(r=>{finish=r;}));const script=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
+  const context=vm.createContext({createAiTasks,createPageAssistant,...Vue,useWordLemmas:()=>mapping,useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}}),createEssayDrafts:()=>({flush:async()=>true}),createAnswerDrafts:()=>({flush:async()=>true}),defineProps:()=>({examId:'1'}),useRouter:()=>({}),localStorage:{},window:{keeper:{}},document:{},tokenize:()=>[],onMounted(){},onBeforeUnmount(){},onBeforeRouteLeave(){},onBeforeRouteUpdate(){},watch(){},setTimeout:()=>1,clearTimeout(){}});
   vm.runInContext(script+'\nglobalThis.r={wordClass,userWords,scanOn,hardWords,detail,activeIdx,scanHard};',context);const r=context.r;r.userWords.value={run:'learning',go:'mastered'};r.scanOn.value=true;r.hardWords.value=[{word:'run'}];const color=Vue.computed(()=>r.wordClass({t:'w',text:'running'}));assert.equal(color.value,'');const loading=mapping.ensureWords(['running','went']);await Promise.resolve();finish({running:'run',went:'go'});await loading;assert.equal(color.value,'marked hard');assert.equal(r.wordClass({t:'w',text:'went'}),'marked mastered');
   r.detail.value={exam:{level:'CET4'},passages:[{id:1,content:'old'},{id:2,content:'new'}]};let scanned;context.window.keeper.scanHard=()=>new Promise(resolve=>{scanned=resolve;});const pending=r.scanHard();r.activeIdx.value=1;r.hardWords.value=[];scanned([{word:'old'}]);await pending;assert.equal(r.hardWords.value.length,0);
  });

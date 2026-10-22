@@ -48,6 +48,7 @@ contextBridge.exposeInMainWorld('keeper', {
   attemptSubmit: (examId, answers, context, id) => ipcRenderer.invoke('attempt:submit', examId, plain(answers), plain(context), id),
   attemptClear: (examId, context) => ipcRenderer.invoke('attempt:clear', examId, plain(context)),
   chatSend: (examId, passageId, text, id) => ipcRenderer.invoke('chat:send', examId, passageId, text, id),
+  assistantRun: (payload, id) => ipcRenderer.invoke('assistant:run', plain(payload), id),
   chatHistory: () => ipcRenderer.invoke('chat:history'),
   chatClear: () => ipcRenderer.invoke('chat:clear'),
   kbList: () => ipcRenderer.invoke('kb:list'),

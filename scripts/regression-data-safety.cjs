@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const createAiTasks = require('./lib/load-ai-tasks.cjs')(__dirname);
 // 定向回归：原主进程代码在内存 DB 上运行，所有写盘均拦截，不读取真实用户库。
 const fs = require('node:fs');
@@ -18,7 +19,7 @@ const test = async (name, run) => { await run(); passed++; console.log(`✓ ${na
   function harness({ lock = true } = {}) {
     const handlers = new Map(), events = new Map();
     let readyCalls = 0, quitCalls = 0, writes = 0, failWrite = false;
-    const context = vm.createContext({createAiTasks,
+    const context = vm.createContext({createAiTasks,createPageAssistant,
       require(name) {
         if (name === 'electron') return {
           app: { disableHardwareAcceleration() {}, setPath() {}, requestSingleInstanceLock: () => lock,
@@ -135,8 +136,8 @@ const test = async (name, run) => { await run(); passed++; console.log(`✓ ${na
   const useWordLemmas = vm.runInNewContext(lemmaSource+'\nuseWordLemmas;', { shallowRef:Vue.shallowRef });
   function readerHarness(keeper) {
     const stops = [];
-    const script = fs.readFileSync(path.join(root, 'src/views/ReaderView.vue'), 'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm, '');
-    const context = vm.createContext({createAiTasks, ...Vue, ...tokens, ...bilingual, createAnswerDrafts, useWordLemmas, localStorage: storage(),
+    const script = fs.readFileSync(path.join(root, 'src/views/ReaderView.vue'), 'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm, '').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
+    const context = vm.createContext({createAiTasks,createPageAssistant, ...Vue, ...tokens, ...bilingual, createAnswerDrafts, useWordLemmas, localStorage: storage(),
       watch(...args) { const stop = Vue.watch(...args); stops.push(stop); return stop; },
       onMounted() {}, onBeforeUnmount() {}, onBeforeRouteLeave() {}, onBeforeRouteUpdate() {},
       defineProps: () => ({ examId: '1' }), useRouter: () => ({ push() {} }), window: { keeper }, renderMarkdown: String,

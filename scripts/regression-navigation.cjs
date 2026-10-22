@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createRequire}=require('node:module');
 const root=path.resolve(__dirname,'..'),dependencies=process.env.KEEPER_DEPENDENCY_ROOT||root,req=createRequire(path.join(dependencies,'package.json')),Vue=req('vue');
@@ -14,11 +15,11 @@ const store=initial=>{const values=new Map(Object.entries(initial||{}));return{g
   const props=Vue.reactive({examId}),route=Vue.ref({query}),pushes=[],hooks={leave:[],update:[],unmount:[]},stops=[],timers=new Map();let timerId=0,scrolled=0;
   const main={scrollTop:0,addEventListener(){},removeEventListener(){}},router={currentRoute:route,push:value=>pushes.push(plain(value))};
   const api={examDetail:async id=>fixture(id),allWords:async()=>({}),attemptGet:async()=>({revision:'r',generation:0,answers:[],attempt:null}),chatHistory:async()=>[],...keeper};
-  const context=vm.createContext({...Vue,...bilingual,...tokens,createAiTasks,createEssayDrafts,createAnswerDrafts,defineProps:()=>props,useRouter:()=>router,localStorage:storage,
+  const context=vm.createContext({...Vue,...bilingual,...tokens,createAiTasks,createPageAssistant,createEssayDrafts,createAnswerDrafts,defineProps:()=>props,useRouter:()=>router,localStorage:storage,
    window:{keeper:api,addEventListener(){},removeEventListener(){}},document:{addEventListener(){},removeEventListener(){},querySelector:()=>main,querySelectorAll:()=>[{scrollIntoView(){scrolled++;}}]},useAlignmentLex:()=>({lex,ensureLex:async()=>lex.value}),useWordLemmas:()=>({lemmaOf:value=>value,ensureWords:async()=>{}}),renderMarkdown:String,
    onMounted(){},onBeforeRouteLeave:hook=>hooks.leave.push(hook),onBeforeRouteUpdate:hook=>hooks.update.push(hook),onBeforeUnmount:hook=>hooks.unmount.push(hook),
    watch(...args){const stop=Vue.watch(...args);stops.push(stop);return stop;},setTimeout(fn){timers.set(++timerId,fn);return timerId;},clearTimeout:id=>timers.delete(id),URLSearchParams,location:{hash:''},console});
-  const code=fs.readFileSync(path.join(root,'src/views',file),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
+  const code=fs.readFileSync(path.join(root,'src/views',file),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
   const names=file==='ReaderView.vue'?'loadAll,detail,activeIdx,saveProgress,fontSize,transMode,layout,revealAnalysis,readerError,openRecite,applyRequestedPassage,flushEssayOnClose':'load,detail,cur,items,active,revealed,langMap,first,next,toggle,backToReader,errorMsg,exams,scrollToLast';
   vm.runInContext(code+'\nglobalThis.view={'+names+'};',context);
   return{...context.view,props,route,router,storage,main,timers,pushes,hooks,lex,get scrolled(){return scrolled;},stop(){hooks.unmount.forEach(fn=>fn());stops.forEach(stop=>stop());}};

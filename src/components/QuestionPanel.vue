@@ -14,7 +14,7 @@
       </div>
     </div>
 
-    <div v-for="qs in questions" :key="qs.id" class="qblock">
+    <div v-for="qs in questions" :key="qs.id" class="qblock" :data-question-id="qs.id" tabindex="-1">
       <div class="qstem">
         <span class="qstem-text">{{ qs.stem }}</span>
         <span v-if="showAnswer && qs.answer" class="qmark" :class="isRight(qs) ? 'ok' : 'no'">

@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
 const {createRequire}=require('node:module');
 const root=path.resolve(__dirname,'..'),dependencies=process.env.KEEPER_DEPENDENCY_ROOT||root,req=createRequire(path.join(dependencies,'package.json')),Vue=req('vue');
@@ -7,11 +8,11 @@ let passed=0;const test=async(name,work)=>{await work();passed++;console.log('âœ
 (async()=>{
  const load=async file=>import('data:text/javascript,'+encodeURIComponent(fs.readFileSync(path.join(dependencies,'src',file),'utf8')));
  const tokens=await load('utils/tokens.js'),bilingual=await load('utils/bilingual.js'),{createAiTasks}=await load('utils/ai-tasks.js');
- const source=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
+ const source=fs.readFileSync(path.join(root,'src/views/ReaderView.vue'),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
  const response=word=>({word,inBook:false,found:true,entry:{translation:word},tags:[]});
  async function reader(keeper={}){
   const props=Vue.reactive({examId:'1'}),stops=[],unmount=[],timers=new Map();let timer=0,selection='',now=0;
-  const context=vm.createContext({...Vue,...tokens,...bilingual,createAiTasks,defineProps:()=>props,useRouter:()=>({}),localStorage:{getItem:()=>null,setItem(){}},
+  const context=vm.createContext({...Vue,...tokens,...bilingual,createAiTasks,createPageAssistant,defineProps:()=>props,useRouter:()=>({}),localStorage:{getItem:()=>null,setItem(){}},
    window:{keeper:{allWords:async()=>({}),chatHistory:async()=>[],...keeper},getSelection:()=>selection,removeEventListener(){}},document:{querySelector:()=>null,removeEventListener(){}},
    createAnswerDrafts:()=>({flush:async()=>true}),createEssayDrafts:()=>({flush:async()=>true,recover:()=>null}),useWordLemmas:()=>({lemmaOf:keeper.lemmaOf || (word=>word.toLowerCase()==='running'?'run':word.toLowerCase()),ensureWords:async()=>{}}),useAlignmentLex:()=>({lex:Vue.ref(null),ensureLex(){}}),
    onMounted(){},onBeforeUnmount:fn=>unmount.push(fn),onBeforeRouteLeave(){},onBeforeRouteUpdate(){},watch(...args){const stop=Vue.watch(...args);stops.push(stop);return stop;},setTimeout(fn,delay){timers.set(++timer,{fn,at:now+delay});return timer;},clearTimeout:id=>timers.delete(id),renderMarkdown:String,console});

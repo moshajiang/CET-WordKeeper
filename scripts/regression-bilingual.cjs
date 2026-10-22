@@ -1,3 +1,4 @@
+const createPageAssistant = require('./lib/load-page-assistant.cjs');
 const createAiTasks = require('./lib/load-ai-tasks.cjs')(__dirname);
 const fs = require('node:fs'), path = require('node:path'), vm = require('node:vm');
 const assert = require('node:assert/strict');
@@ -104,8 +105,8 @@ const moduleFrom = file => import('data:text/javascript,' + encodeURIComponent(f
   const lemmaSource = fs.readFileSync(path.join(root,'src/composables/useWordLemmas.js'),'utf8').replace(/^import .*;\r?$/gm,'').replace(/^export /gm,'');
   const useWordLemmas = vm.runInNewContext(lemmaSource+'\nuseWordLemmas;', { shallowRef:Vue.shallowRef });
   function view(file, exports, load = async () => ({})) {
-    const script = fs.readFileSync(path.join(root, 'src/views', file), 'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm, '');
-    const context = vm.createContext({createAiTasks, ...Vue, ...tokens, ...bilingual, useWordLemmas, createEssayDrafts, createAnswerDrafts,
+    const script = fs.readFileSync(path.join(root, 'src/views', file), 'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm, '').replace('const pageAssistant = usePageAssistant();', 'const pageAssistant = createPageAssistant({getApi:()=>window.keeper});');
+    const context = vm.createContext({createAiTasks,createPageAssistant, ...Vue, ...tokens, ...bilingual, useWordLemmas, createEssayDrafts, createAnswerDrafts,
       useAlignmentLex: () => useAlignmentLex(load), onMounted() {}, onBeforeUnmount() {},
       watch() {}, onBeforeRouteLeave() {}, onBeforeRouteUpdate() {},
       defineProps: () => ({ examId: '1' }), useRouter: () => ({ push() {} }),
