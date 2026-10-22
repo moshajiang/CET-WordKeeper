@@ -155,7 +155,8 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
   user-select: text;
 }
 .article .para { margin-bottom: 16px; }
-.w { cursor: pointer; border-radius: 3px; padding: 0 1px; transition: background 0.1s; }
+/* Token padding leaves unpainted gaps in text highlights; retain only the original spaces. */
+.w { cursor: pointer; border-radius: 3px; transition: background 0.1s; }
 .w:hover { background: #eceaff; }
 .w.marked { background: var(--yellow); box-shadow: 0 0 0 1px var(--yellow-border) inset; }
 .w.marked.mastered { background: var(--green); box-shadow: 0 0 0 1px var(--green-border) inset; }
