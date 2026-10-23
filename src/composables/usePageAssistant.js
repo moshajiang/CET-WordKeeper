@@ -3,10 +3,12 @@ import { createAiTasks } from '../utils/ai-tasks.js';
 
 export function createPageAssistant({getApi = () => window.keeper, navigate = () => {}} = {}) {
   const open = ref(false), expanded = ref(false), messages = ref([]), input = ref('');
+  const preview=ref(''),section=ref('');
   const busy = ref(false), notice = ref(''), clearing = ref(false), contextLabel = ref('当前页面');
   const tasks = createAiTasks(id => getApi().cancelAi?.(id));
   let adapter = null, epoch = 0, historySequence = 0, page = 'home', navigateTo = navigate;
   function stop(restoreInput = true) {
+    preview.value='';
     tasks.cancel('chat'); ++historySequence;
     const pending = messages.value.find(m => m.pending);
     messages.value = messages.value.filter(m => !m.pending);
@@ -15,9 +17,9 @@ export function createPageAssistant({getApi = () => window.keeper, navigate = ()
     busy.value = false;
   }
   function invalidate() { ++epoch; stop(); }
-  function setPage(value) { invalidate(); adapter = null; page = value; contextLabel.value = '当前页面'; }
+  function setPage(value) { invalidate(); adapter = null; page = value; section.value=''; contextLabel.value = '当前页面'; }
   function register(value) {
-    invalidate(); adapter = value; contextLabel.value = value.label || '当前文章';
+    invalidate(); adapter = value;section.value=value.section?.()||''; contextLabel.value = value.label || '当前文章';
     return () => { if (adapter === value) { invalidate(); adapter = null; contextLabel.value = '当前页面'; } };
   }
   async function loadHistory() {
@@ -50,7 +52,8 @@ export function createPageAssistant({getApi = () => window.keeper, navigate = ()
     const task = tasks.start('chat'); ++historySequence;
     let applying = false;
     const isCurrent = () => task.isCurrent() && version === epoch && adapter === source && (applying || !source || source.matches(snapshot));
-    input.value = ''; notice.value = ''; busy.value = true;
+    input.value = ''; notice.value = ''; preview.value=''; busy.value = true;
+    const offProgress=getApi().onAssistantProgress?.(event=>{if(isCurrent()&&event.id===task.id&&typeof event.text==='string')preview.value=event.text;});
     messages.value.push({role:'user',content:text,pending:true});
     try {
       const payload = {...(snapshot?.context || {page}),text,inline:!!options.inline};
@@ -63,7 +66,7 @@ export function createPageAssistant({getApi = () => window.keeper, navigate = ()
         throw Error(hints[result.error] || '请求失败：' + result.error);
       }
       messages.value = messages.value.map(m => m.pending ? {role:'user',content:text} : m);
-      const message = {role:'assistant',content:result.reply}; messages.value.push(message);
+      const message = {role:'assistant',content:result.reply,sources:result.sources||[]}; messages.value.push(message);
       if (result.actions?.length) {
         const route = result.actions.find(a => a.type === 'navigate_page');
         if (route) {
@@ -86,9 +89,9 @@ export function createPageAssistant({getApi = () => window.keeper, navigate = ()
       if (!input.value) input.value = text;
       notice.value = error.message;
       open.value = true;
-    } finally { if (task.isCurrent()) busy.value = false; task.finish(); }
+    } finally { offProgress?.();if (task.isCurrent()) {busy.value = false;preview.value='';} task.finish(); }
   }
-  return {open,expanded,messages,input,busy,notice,clearing,contextLabel,stop,invalidate,setPage,register,loadHistory,clear,compose,send,setNavigate:fn=>{navigateTo=fn;}};
+  return {open,expanded,messages,input,busy,preview,section,notice,clearing,contextLabel,stop,invalidate,setPage,register,loadHistory,clear,compose,send,setNavigate:fn=>{navigateTo=fn;}};
 }
 let shared;
 export function usePageAssistant() { return shared ||= createPageAssistant(); }

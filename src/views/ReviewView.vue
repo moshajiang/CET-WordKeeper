@@ -1,6 +1,10 @@
 <template>
   <div class="review-wrap">
     <h1 class="page-title">复习</h1>
+    <div class="review-tabs"><button @click="tab='words'" :class="{active:tab==='words'}">生词复习</button><button @click="tab='knowledge'" :class="{active:tab==='knowledge'}">知识点复习</button><button @click="openMistakes" :class="{active:tab==='mistakes'}">错题复盘</button></div>
+    <KnowledgeReview v-if="tab==='knowledge'" />
+    <section v-else-if="tab==='mistakes'" class="card"><p v-if="mistakeError" role="alert">{{ mistakeError }} <button @click="openMistakes">重试</button></p><p v-if="!mistakes.length">还没有错题复盘。核对答案后可在题目下整理错因并关联知识。</p><div v-for="m in mistakes" :key="m.question_id" class="mistake-review-item"><strong>{{ m.cause }} · {{ m.stem }}</strong><p>{{ m.note }}</p><button @click="$router.push({path:'/reader/'+m.exam_id,query:{passage:String(m.passage_id),question:String(m.question_id)}})">返回题目</button><button v-if="m.entry_key" @click="$router.push({path:'/knowledge',query:{entry:m.entry_key}})">关联知识与练习</button></div></section>
+    <template v-else>
     <p class="page-sub">认词 → 翻面核对 → 三键评分 · 语境模式用真题原句挖空</p>
     <div v-if="errorMsg" class="card" role="alert" style="color: var(--red);">{{ errorMsg }} <button v-if="!started" @click="load">重试</button></div>
 
@@ -67,11 +71,18 @@
         <button style="margin-left: 8px;" @click="$router.push('/')">回首页</button></div>
       </div>
     </template>
+    </template>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount,watch } from 'vue';
+import {useRoute} from 'vue-router';
+import KnowledgeReview from '../components/KnowledgeReview.vue';
+const route=useRoute(),tab=ref(route.query.tab==='knowledge'?'knowledge':'words'),mistakes=ref([]),mistakeError=ref('');
+async function openMistakes(){tab.value='mistakes';mistakeError.value='';try{mistakes.value=await window.keeper.studyMistakeList();}catch(error){mistakeError.value=error.message;}}
+watch(tab,()=>{revealed.value=false;});
+watch(()=>route.query.tab,value=>{if(value==='knowledge')tab.value='knowledge';});
 
 const queue = ref({ due: [], fresh: [] });
 const started = ref(false);
@@ -157,7 +168,7 @@ function speak(word) {
 }
 
 function onKey(ev) {
-  if (answering.value || ev.repeat || /INPUT|TEXTAREA|SELECT/.test(ev.target?.tagName || '') || !started.value || !current.value) return;
+  if (tab.value!=='words' || answering.value || ev.repeat || /INPUT|TEXTAREA|SELECT/.test(ev.target?.tagName || '') || !started.value || !current.value) return;
   if (ev.code === 'Space' && !revealed.value) { ev.preventDefault(); revealed.value = true; return; }
   if (revealed.value) {
     if (['1','2','3'].includes(ev.key)) ev.preventDefault();
@@ -173,3 +184,5 @@ onMounted(async () => {
 });
 onBeforeUnmount(() => { disposed = true; ++loadSequence; document.removeEventListener('keydown', onKey); });
 </script>
+
+<style scoped>.review-tabs{display:flex;gap:8px;margin:16px 0}.review-tabs .active{background:var(--accent);color:white}.mistake-review-item{padding:16px;border-bottom:1px solid var(--border)}.mistake-review-item button{margin-right:8px}</style>

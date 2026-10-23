@@ -3,6 +3,8 @@
     <div class="kb-heading"><div><h1 class="page-title">英语知识库</h1><p class="page-sub">查阅方法，整理真题笔记，积累自己的学习资料</p></div><button class="primary" @click="createEntry">＋ 新建笔记</button></div>
     <div v-if="error" class="kb-notice error" role="alert">{{ error }} <button @click="reload">重新加载</button></div>
     <div v-if="message" class="kb-notice" role="status">{{ message }}</div>
+    <button @click="toggleTrash">{{ showTrash?'返回资料库':'回收站' }}</button>
+    <section v-if="showTrash" class="card kb-trash"><p>删除的个人笔记可以在这里恢复。</p><p v-if="!trash.length">回收站为空</p><div v-for="e in trash" :key="e.id">{{ e.title }} <button @click="restoreEntry(e.id)">恢复笔记</button></div></section>
     <div class="kb-toolbar card">
       <label class="kb-search">搜索资料<input v-model="query" type="search" maxlength="200" placeholder="搜索标题、正文或标签" aria-label="搜索知识库" /></label>
       <label>来源<select v-model="source"><option value="">全部来源</option><option value="builtin">内置资料</option><option value="user">我的笔记</option></select></label>
@@ -36,6 +38,7 @@
           <div v-if="selected.anchor" class="kb-origin"><strong>真题来源</strong><blockquote>{{ selected.anchor.quote }}</blockquote><small>{{ selected.anchor.label }}</small><button @click="openSource" :disabled="locating">{{ locating?'定位中…':'返回原文并高亮' }}</button></div>
           <div v-if="deleting" class="kb-delete" role="alert">确定删除这篇笔记？<button class="danger" @click="removeEntry" :disabled="saving">确认删除</button><button @click="deleting=false">保留笔记</button></div>
           <article class="md-body kb-body" v-html="renderMarkdown(selected.content)"></article>
+          <KnowledgePractice :entry="selected" />
           <p v-if="selected.updated_at" class="kb-muted">最近更新：{{ new Date(selected.updated_at).toLocaleString() }}</p>
         </template>
         <div v-else class="kb-empty">{{ detailLoading?'正在加载正文…':'从左侧选择资料开始阅读，或新建自己的笔记。' }}</div>
@@ -45,9 +48,15 @@
 </template>
 <script setup>
 import {ref,computed,watch,onMounted,onBeforeUnmount} from 'vue';
-import {useRouter,onBeforeRouteLeave} from 'vue-router';
+import {useRouter,useRoute,onBeforeRouteLeave} from 'vue-router';
+import KnowledgePractice from '../components/KnowledgePractice.vue';
+import {usePageAssistant} from '../composables/usePageAssistant.js';
 import {renderMarkdown} from '../utils/md.js';
 import {knowledgeDraft} from '../composables/useKnowledgeDraft.js';
+const route=useRoute(),pageAssistant=usePageAssistant();let unregisterAssistant=null;
+const showTrash=ref(false),trash=ref([]);
+async function toggleTrash(){showTrash.value=!showTrash.value;if(showTrash.value)try{trash.value=await window.keeper.kbTrash();}catch(e){error.value=e.message;}}
+async function restoreEntry(id){try{const r=await window.keeper.kbRestore(id);if(!r.ok)throw Error(r.error);trash.value=await window.keeper.kbTrash();await reload();message.value='笔记已恢复';}catch(e){error.value=e.message;}}
 const router=useRouter(),query=ref(''),source=ref(''),category=ref(''),tag=ref('');
 const entries=ref([]),total=ref(0),categories=ref(['基础知识','真题笔记','我的薄弱点','未分类']),tags=ref([]);
 const selectedKey=ref(''),selected=ref(null),loading=ref(false),detailLoading=ref(false),error=ref(''),message=ref('');
@@ -86,7 +95,7 @@ async function save(){
 }
 async function removeEntry(){
   if(saving.value)return;saving.value=true;error.value='';
-  try{const result=await window.keeper.kbRemove(selected.value.id);if(!result.ok)throw Error(result.error);selectedKey.value='';selected.value=null;deleting.value=false;saving.value=false;await reload();message.value='笔记已删除';}
+  try{const result=await window.keeper.kbRemove(selected.value.id);if(!result.ok)throw Error(result.error);selectedKey.value='';selected.value=null;deleting.value=false;saving.value=false;await reload();message.value='笔记已移入回收站，可恢复';}
   catch(e){error.value='删除失败：'+e.message;}finally{saving.value=false;}
 }
 async function openSource(){
@@ -97,8 +106,10 @@ async function openSource(){
 function resetFilters(){query.value='';source.value='';category.value='';tag.value='';}
 watch([query,source,category,tag],()=>{clearTimeout(timer);timer=setTimeout(reload,180);});
 onBeforeRouteLeave(()=>canDiscard());
-onMounted(()=>{if(knowledgeDraft.value)startEdit({...knowledgeDraft.value});reload();});
-onBeforeUnmount(()=>{disposed=true;++listSequence;++detailSequence;clearTimeout(timer);});
+watch(selectedKey,key=>{unregisterAssistant?.();unregisterAssistant=pageAssistant.register({label:'当前知识资料',snapshot:()=>({key:selectedKey.value,context:{page:'knowledge',knowledgeKey:selectedKey.value}}),matches:value=>value.key===selectedKey.value,apply:()=>{throw Error('当前资料仅支持问答');}});});
+watch(()=>route.query.entry,key=>{if(typeof key==='string')selectEntry(key);});
+onMounted(async()=>{if(knowledgeDraft.value)startEdit({...knowledgeDraft.value});await reload();if(typeof route.query.entry==='string'&&!editing.value)await selectEntry(route.query.entry);});
+onBeforeUnmount(()=>{unregisterAssistant?.();disposed=true;++listSequence;++detailSequence;clearTimeout(timer);});
 </script>
 <style scoped>
 .kb-heading,.kb-detail-top,.kb-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.kb-heading{margin-bottom:18px}.kb-heading .page-sub{margin-bottom:0}.kb-heading>.primary{flex-shrink:0}.kb-toolbar{display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:16px;padding:16px}.kb-toolbar label{font-size:12px;color:var(--muted)}.kb-search{flex:1;min-width:180px}.kb-count,.kb-muted{font-size:12px;color:var(--muted)}.kb-count{padding-bottom:8px}.kb-workspace{display:grid;grid-template-columns:minmax(220px,300px) minmax(0,1fr);gap:16px;align-items:start}.kb-list{padding:8px;max-height:calc(100vh - 260px);overflow-y:auto;position:sticky;top:20px}.kb-item{display:flex;flex-direction:column;gap:7px;width:100%;text-align:left;border:1px solid transparent;background:transparent;padding:14px 12px;border-radius:9px;margin-bottom:4px;overflow-wrap:anywhere}.kb-item.selected{border-color:var(--accent);background:var(--accent-soft)}.kb-item:hover{background:var(--bg)}.kb-item strong{font-size:14px;line-height:1.5}.kb-item-meta,.kb-item-tags{font-size:11px;color:var(--muted)}.kb-preview{font-size:12px;color:var(--muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.kb-detail{padding:26px;min-height:420px;min-width:0}.kb-detail-top h2{font-size:19px;margin:0}.kb-detail-top button{font-size:12px;padding:5px 9px}.kb-title{font-size:24px;line-height:1.5;margin:20px 0 12px;overflow-wrap:anywhere}.kb-tags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}.kb-body{line-height:1.9;font-size:14px;overflow-wrap:anywhere;user-select:text;margin:24px 0}.kb-origin{padding:14px 16px;background:var(--accent-soft);border-radius:10px;font-size:12px;margin:16px 0;overflow-wrap:anywhere}.kb-origin blockquote{font:15px/1.7 Georgia,serif;margin:9px 0;white-space:pre-wrap}.kb-origin button{display:block;margin-top:12px;font-size:12px}.kb-origin small{color:var(--muted)}.kb-editor label{display:block;font-size:13px;margin:16px 0}.kb-editor label small{color:var(--muted);font-weight:400;margin-left:6px}.kb-editor-meta{display:flex;gap:14px}.kb-editor-meta>label{flex:1;min-width:0}.knowledge-page input,.knowledge-page select,.knowledge-page textarea{display:block;width:100%;box-sizing:border-box;margin-top:7px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text);font:inherit}.knowledge-page input:focus,.knowledge-page textarea:focus,.knowledge-page select:focus{outline:2px solid var(--accent);outline-offset:1px}.knowledge-page textarea{line-height:1.8;resize:vertical;min-height:240px;font-size:14px}.kb-actions{justify-content:flex-start}.kb-notice{padding:12px 16px;background:var(--accent-soft);border-radius:8px;margin-bottom:14px;font-size:13px}.error{color:var(--red)}.kb-empty{padding:30px 16px;color:var(--muted);line-height:1.8;font-size:13px}.kb-empty button{display:block;margin-top:12px}.kb-delete{display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:var(--bg);padding:12px;border-radius:8px;margin-top:16px;font-size:13px}

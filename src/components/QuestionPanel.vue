@@ -59,6 +59,7 @@
       <div v-if="showAnswer && qs.answer" class="qanalysis">
         <b>正确答案：{{ qs.answer }}</b>
         <div style="margin-top: 4px;">{{ qs.analysis || '（暂无解析）' }}</div>
+        <MistakeNote :key="qs.id" :question-id="qs.id" />
       </div>
     </div>
 
@@ -68,6 +69,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import MistakeNote from './MistakeNote.vue';
 
 const props = defineProps({
   passage: { type: Object, required: true },
@@ -75,6 +77,7 @@ const props = defineProps({
   graded: { type: Boolean, default: false },     // 已交卷
   disabled: { type: Boolean, default: false },
   reveal: { type: Boolean, default: false },     // 主动「查看答案解析」
+  mode: {type:String,default:'custom'},
   letters: { type: Array, default: () => [] },   // 匹配题可用的段落字母
 });
 const emit = defineEmits(['pick', 'quote']);
@@ -82,7 +85,7 @@ const emit = defineEmits(['pick', 'quote']);
 const questions = computed(() => (props.passage && props.passage.questions) || []);
 const isCloze = computed(() => props.passage && props.passage.section === 'cloze');
 const isMatch = computed(() => props.passage && props.passage.section === 'match');
-const showAnswer = computed(() => props.graded || props.reveal);
+const showAnswer = computed(() => props.mode!=='practice' && (props.graded || props.reveal));
 
 const answeredCount = computed(() => questions.value.filter((q) => props.answers[q.id]).length);
 

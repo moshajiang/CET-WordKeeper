@@ -1,15 +1,18 @@
 <template>
   <div class="reader-ai-controls">
     <span>✦ 划选原文后可就地讲解，也可让 AI 定位证据与题目</span>
+    <button @click="markSelection">保存划选批注</button><button @click="savedOpen=!savedOpen">我的批注 {{ savedNotes.length }}</button><button v-if="undoState" @click="undoOperation">撤销上次页面操作</button>
     <span v-if="sourceNotice" role="status">{{ sourceNotice }}</span>
     <button v-if="notes.length" @click="reopen">查看讲解 {{ active+1 }}/{{ notes.length }}</button>
     <button v-if="notes.length" @click="clear">清除 AI 标注</button>
   </div>
+  <div v-if="savedOpen" class="saved-annotations"><p v-if="!savedNotes.length">本篇还没有已保存批注。划选原文后可添加。</p><div v-for="saved in savedNotes" :key="saved.id"><button @click="openSaved(saved)">{{ saved.stale?'原文已变化 · ':'' }}{{ saved.title }} · {{ saved.quote.slice(0,70) }}</button><p>{{ saved.note }}</p><button @click="removeSaved(saved)">删除批注</button></div></div>
   <Teleport to="body">
     <section v-if="visible && note" ref="card" class="inline-explanation" :style="position" role="dialog" aria-label="原文旁 AI 讲解" @click.stop @mouseup.stop @keydown.esc.stop="visible=false">
       <header><strong>✦ {{ note.title || 'AI 讲解' }}</strong><div><button v-if="notes.length>1" @click="change(-1)" aria-label="上一处讲解">‹</button><span v-if="notes.length>1">{{ active+1 }}/{{ notes.length }}</span><button v-if="notes.length>1" @click="change(1)" aria-label="下一处讲解">›</button><button @click="visible=false" aria-label="收起原文讲解">×</button></div></header>
       <blockquote>{{ note.quote }}</blockquote>
       <div class="inline-explanation-body ai-result md-body" aria-live="polite" v-html="renderMarkdown(note.explanation)"></div>
+      <div class="annotation-editor"><label>备注<textarea v-model="annotationNote" rows="2" maxlength="5000" aria-label="批注备注" /></label><label>颜色<select v-model="annotationColor" aria-label="批注颜色"><option value="yellow">黄色</option><option value="green">绿色</option><option value="purple">紫色</option></select></label><button @click="saveAnnotation" :disabled="annotationBusy||result?.loading">{{ note.savedId?'更新批注':'保存批注' }}</button></div>
       <footer><button v-if="result?.loading" @click="emit('cancel')">取消请求</button><button @click="followUp">继续追问</button><button @click="saveKnowledge" :disabled="result?.loading">存入知识库</button><button @click="locate">定位原文</button><button @click="clear">清除标注</button></footer>
     </section>
   </Teleport>
@@ -21,7 +24,7 @@ import {useRoute,useRouter} from 'vue-router';
 import {prepareKnowledgeDraft} from '../composables/useKnowledgeDraft.js';
 import {findArticleRange,normalizedText,placeExplanation} from '../utils/page-anchors.js';
 import {renderMarkdown} from '../utils/md.js';
-const props=defineProps({detail:Object,passageId:Number,layout:String,translation:String,fontSize:Number,result:Object});
+const props=defineProps({detail:Object,passageId:Number,layout:String,translation:String,fontSize:Number,result:Object,draft:String});
 const emit=defineEmits(['passage','view','cancel','close-result']);
 const assistant=usePageAssistant(),notes=ref([]),active=ref(0),visible=ref(false),card=ref(null);
 const position=ref({left:'240px',top:'200px'}),selection=ref(''),sourceNotice=ref('');
@@ -31,7 +34,7 @@ const note=computed(()=>notes.value[active.value] || null);
 let ranges=[],unregister=null,frame=0,resizeObserver=null,disposed=false,applying=false,selectionOccurrence=0,revision=0;
 const article=()=>document.querySelector('.article');
 const current=()=>props.detail?.passages.find(p=>p.id===props.passageId);
-function snapshot(){return {key:JSON.stringify([props.detail?.exam.id,props.passageId,current()?.content]),context:{page:'reader',examId:props.detail?.exam.id,passageId:props.passageId,selection:selection.value,selectionOccurrence,view:{layout:props.layout,translation:props.translation,fontSize:props.fontSize}}};}
+function snapshot(){return {key:JSON.stringify([props.detail?.exam.id,props.passageId,current()?.content,props.draft]),context:{page:'reader',examId:props.detail?.exam.id,passageId:props.passageId,selection:selection.value,selectionOccurrence,draft:props.draft||'',view:{layout:props.layout,translation:props.translation,fontSize:props.fontSize}}};}
 const matches=value=>value?.key===snapshot().key;
 function paint(){
   if(!globalThis.CSS?.highlights||typeof Highlight==='undefined')return;
@@ -50,7 +53,7 @@ function reposition(){
   position.value={left:point.left+'px',top:point.top+'px'};
 }
 function schedulePosition(){cancelAnimationFrame(frame);frame=requestAnimationFrame(reposition);}
-function refreshRanges(){ranges=notes.value.map(n=>findArticleRange(article(),n.quote,n.occurrence||0));paint();schedulePosition();}
+function refreshRanges(){ranges=notes.value.map(n=>findArticleRange(article(),n.quote,n.occurrence||0));paint();refreshSavedRanges();schedulePosition();}
 function clear(invalidate=true){if(invalidate)++revision;notes.value=[];ranges=[];visible.value=false;paint();emit('close-result');}
 function reopen(){visible.value=true;nextTick(schedulePosition);}
 function locate(){
@@ -78,6 +81,32 @@ async function restoreKnowledgeSource(){
     if(stillCurrent())restoredKey=key;
   }catch(error){if(stillCurrent())sourceNotice.value='笔记原文定位失败：'+error.message;}
 }
+const savedNotes=ref([]),savedOpen=ref(false),annotationBusy=ref(false),annotationNote=ref(''),annotationColor=ref('yellow'),undoState=ref(null);
+let annotationSequence=0,savedRanges=[];
+async function loadAnnotations(){
+ const version=++annotationSequence,examId=props.detail?.exam.id,passageId=props.passageId;savedNotes.value=[];savedRanges=[];paintSaved();
+ if(!examId||!passageId)return;
+ try{const values=await window.keeper.annotationList(examId,passageId);if(disposed||version!==annotationSequence||passageId!==props.passageId)return;savedNotes.value=values;await nextTick();refreshSavedRanges();if(values.some(e=>e.stale))sourceNotice.value='部分已保存批注的原文发生变化，保留内容但不自动高亮。';}catch(error){if(version===annotationSequence)sourceNotice.value='批注读取失败：'+error.message;}
+}
+function paintSaved(){if(!globalThis.CSS?.highlights||typeof Highlight==='undefined')return;for(const color of ['yellow','green','purple']){const valid=savedRanges.filter((r,i)=>r?.startContainer.isConnected&&savedNotes.value[i].color===color);CSS.highlights.delete('keeper-note-'+color);if(valid.length)CSS.highlights.set('keeper-note-'+color,new Highlight(...valid));}}
+function refreshSavedRanges(){savedRanges=savedNotes.value.map(n=>n.stale?null:findArticleRange(article(),n.quote,n.occurrence||0));paintSaved();}
+function openSaved(value){if(value.stale){sourceNotice.value='原文已变化。保存的引文：'+value.quote+'；备注：'+value.note;return;}notes.value=[{quote:value.quote,occurrence:value.occurrence,title:value.title,explanation:value.explanation,savedId:value.id,expectedUpdatedAt:value.updated_at}];active.value=0;visible.value=true;annotationNote.value=value.note;annotationColor.value=value.color;nextTick(()=>{refreshRanges();locate();});}
+async function saveAnnotation(){
+ if(!note.value||props.result?.loading||annotationBusy.value)return;
+ const target={examId:props.detail.exam.id,passageId:props.passageId,quote:note.value.quote,occurrence:note.value.occurrence||0,title:note.value.title||'原文批注',explanation:note.value.explanation,note:annotationNote.value,color:annotationColor.value};
+ if(note.value.savedId){target.id=note.value.savedId;target.expectedUpdatedAt=note.value.expectedUpdatedAt;}
+ annotationBusy.value=true;
+ try{const r=await window.keeper.annotationSave(target);if(!r.ok)throw Error(r.error);if(props.passageId===target.passageId){sourceNotice.value='批注已保存，重新打开本篇会恢复。';await loadAnnotations();const saved=savedNotes.value.find(e=>e.id===r.id);if(saved)openSaved(saved);}}catch(error){sourceNotice.value='保存失败：'+error.message;}finally{annotationBusy.value=false;}
+}
+function markSelection(){selectEvidence();if(!selection.value){sourceNotice.value='请先划选英文原文。';return;}notes.value=[{quote:selection.value,occurrence:selectionOccurrence,title:'我的批注',explanation:'为选中的原文添加备注。'}];active.value=0;visible.value=true;annotationNote.value='';nextTick(refreshRanges);}
+async function removeSaved(value){if(!window.confirm('删除这条已保存批注？'))return;try{const r=await window.keeper.annotationRemove(value.id);if(!r.ok)throw Error(r.error);await loadAnnotations();if(note.value?.savedId===value.id)clear();}catch(error){sourceNotice.value=error.message;}}
+async function undoOperation(){
+ const previous=undoState.value;if(!previous)return;
+ if(props.detail!==previous.source||current()?.content!==previous.targetContent){undoState.value=null;sourceNotice.value='原文已变化，无法恢复旧页面操作。';return;}
+ assistant.invalidate();undoState.value=null;applying=true;
+ try{emit('passage',previous.passageId);emit('view',previous.view);await nextTick();if(disposed||props.detail!==previous.source||props.passageId!==previous.passageId)return;notes.value=previous.notes;active.value=previous.active;visible.value=previous.visible;await nextTick();refreshRanges();const main=document.querySelector('.main');if(main)main.scrollTop=previous.scroll;sourceNotice.value='已撤销上次页面操作。';}finally{applying=false;}
+}
+
 function selectEvidence(){
   const selected=window.getSelection();
   if(!selected?.rangeCount||selected.isCollapsed)return;
@@ -122,6 +151,7 @@ async function apply(actions,isCurrent){
   }
   if(targets.size>1)throw Error('请一次操作一个篇章');
   if(view.translation==='inline'&&!passages.find(p=>p.id===target)?.translation)throw Error('该篇章暂无译文');
+  const previous={source,passageId:props.passageId,view:{layout:props.layout,translation:props.translation,fontSize:props.fontSize},notes:notes.value.map(e=>({...e})),active:active.value,visible:visible.value,scroll:document.querySelector('.main')?.scrollTop||0,targetContent:passages.find(p=>p.id===target)?.content};
   const operation=++revision;applying=true;
   try{
     if(target!==props.passageId)emit('passage',target);
@@ -140,7 +170,11 @@ async function apply(actions,isCurrent){
       const block=document.querySelector(`[data-question-id="${questionId}"]`);
       if(block){block.scrollIntoView({block:'center'});block.focus({preventScroll:true});}
     }
+    undoState.value=previous;
     return nextNotes.length?`已在原文高亮 ${nextNotes.length} 处，讲解显示在附近。`:questionId?'已定位题目。':'已调整阅读页面。';
+   }catch(error){
+    if(!disposed&&isCurrent()&&operation===revision&&props.detail===source&&props.passageId===target){emit('passage',previous.passageId);emit('view',previous.view);await nextTick();if(!disposed&&props.detail===source&&props.passageId===previous.passageId){notes.value=previous.notes;active.value=previous.active;visible.value=previous.visible;await nextTick();refreshRanges();}undoState.value=null;}
+    throw error;
   }finally{applying=false;}
 }
 function hit(event){
@@ -148,33 +182,37 @@ function hit(event){
   if(event.target.closest?.('.inline-explanation,.assistant-panel,.selmenu,.popover'))return;
   if(window.getSelection()?.toString().trim())return;
   const index=ranges.findIndex(range=>range&&[...range.getClientRects()].some(rect=>event.clientX>=rect.left&&event.clientX<=rect.right&&event.clientY>=rect.top&&event.clientY<=rect.bottom));
+  if(index<0){const savedIndex=savedRanges.findIndex(range=>range&&[...range.getClientRects()].some(rect=>event.clientX>=rect.left&&event.clientX<=rect.right&&event.clientY>=rect.top&&event.clientY<=rect.bottom));if(savedIndex>=0){event.preventDefault();event.stopPropagation();openSaved(savedNotes.value[savedIndex]);return;}}
   if(index>=0){event.preventDefault();event.stopPropagation();active.value=index;visible.value=true;paint();schedulePosition();}
 }
 watch(()=>[props.passageId,current()?.content],()=>{
-  if(!applying){assistant.invalidate();clear();}
+  if(!applying){assistant.invalidate();clear();undoState.value=null;}
   else clear(false);
-  selection.value='';selectionOccurrence=0;
+  assistant.section.value=current()?.section||'';
+  selection.value='';selectionOccurrence=0;loadAnnotations();
 });
 watch(()=>[props.layout,props.translation,props.fontSize],async()=>{await nextTick();refreshRanges();});
+watch(()=>props.draft,()=>assistant.invalidate());
 watch(()=>props.result,async value=>{
   if(!value)return;
   notes.value=[{quote:value.source,occurrence:selectionOccurrence,title:value.kind==='translate'?'整句翻译':'语法分析',explanation:value.text}];
   active.value=0;visible.value=true;await nextTick();refreshRanges();
 });
+watch(note,value=>{if(!value?.savedId){annotationNote.value='';annotationColor.value='yellow';}});
 watch([visible,note],()=>nextTick(schedulePosition));
 watch(()=>[props.detail?.exam.id,props.passageId,route.query.knowledge],restoreKnowledgeSource,{flush:'post'});
 onMounted(()=>{
-  unregister=assistant.register({label:'当前真题与文章',snapshot,matches,apply});
-  restoreKnowledgeSource();
+  unregister=assistant.register({label:'当前真题与文章',section:()=>current()?.section,snapshot,matches,apply});
+  restoreKnowledgeSource();loadAnnotations();
   document.addEventListener('mouseup',selectEvidence);document.addEventListener('click',hit,true);
   window.addEventListener('scroll',schedulePosition,true);window.addEventListener('resize',schedulePosition);
   resizeObserver=new ResizeObserver(schedulePosition);if(article())resizeObserver.observe(article());
 });
 onBeforeUnmount(()=>{
-  disposed=true;++revision;unregister?.();cancelAnimationFrame(frame);resizeObserver?.disconnect();
+  disposed=true;++revision;++annotationSequence;unregister?.();cancelAnimationFrame(frame);resizeObserver?.disconnect();
   document.removeEventListener('mouseup',selectEvidence);document.removeEventListener('click',hit,true);
   window.removeEventListener('scroll',schedulePosition,true);window.removeEventListener('resize',schedulePosition);
-  notes.value=[];ranges=[];paint();
+  notes.value=[];ranges=[];savedRanges=[];paint();paintSaved();
 });
 defineExpose({explainSelection,quote,clear});
 </script>
@@ -188,3 +226,5 @@ defineExpose({explainSelection,quote,clear});
 .inline-explanation .inline-explanation-body{overflow:auto;padding:14px;max-height:45vh;min-height:48px;margin:0;font-size:13px;line-height:1.8}.inline-explanation footer{display:flex;gap:8px;flex-wrap:wrap;padding:10px 14px;border-top:1px solid var(--border)}.inline-explanation footer button{font-size:11px;padding:4px 8px}
 .qblock[data-question-id]:focus{outline:2px solid var(--accent);outline-offset:5px;scroll-margin-top:180px}
 </style>
+
+<style>::highlight(keeper-note-yellow){background:#ffe09a;color:#2c2c2a}::highlight(keeper-note-green){background:#b9e7c5;color:#153e25}::highlight(keeper-note-purple){background:#d7ccff;color:#211747}.annotation-editor{padding:10px 14px;display:flex;gap:8px;align-items:flex-end;flex-wrap:wrap;border-top:1px solid var(--border);font-size:12px}.annotation-editor label:first-child{flex:1;min-width:160px}.annotation-editor textarea,.annotation-editor select{display:block;width:100%;box-sizing:border-box;padding:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);border-radius:6px}.saved-annotations{padding:12px;margin-bottom:16px;background:var(--card);border:1px solid var(--border);border-radius:8px;font-size:12px}.saved-annotations>div{padding:8px;border-bottom:1px solid var(--border)}.saved-annotations button{text-align:left;font-size:12px}</style>

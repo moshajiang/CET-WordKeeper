@@ -26,7 +26,7 @@ function validateEssayResult(value, section) {
   if (!Array.isArray(value.issues) || value.issues.length > 100) fail('issues');
   const issues = value.issues.map(issue => {
     if (!record(issue)) fail('issue');
-    return {quote:text(issue.quote,'quote',10000,true),problem:text(issue.problem,'problem',20000),fix:text(issue.fix,'fix',20000)};
+    return {quote:text(issue.quote,'quote',10000,true),problem:text(issue.problem,'problem',20000),fix:text(issue.fix,'fix',20000),...(issue.replacement!==undefined?{replacement:text(issue.replacement,'replacement',20000,true)}:{})};
   });
   const normalized = {score:Math.round(value.score*10)/10,band,issues};
   if (section === 'writing') {

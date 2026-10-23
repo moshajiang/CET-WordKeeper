@@ -19,11 +19,14 @@
           <small>{{ message.role === 'user' ? '你' : 'AI 助手' }}{{ message.pending ? ' · 正在处理' : '' }}</small>
           <div v-if="message.role === 'assistant'" class="bubble md-body" v-html="renderMarkdown(message.content)"></div>
           <div v-else class="bubble">{{ message.content }}</div>
+          <div v-if="message.sources?.length" class="assistant-sources"><small>参考资料与原文定位（请结合回答核对）</small><button v-for="(source,i) in message.sources" :key="i" @click="openSource(source)">{{ source.title }}</button></div>
         </article>
-        <div v-if="busy" class="assistant-thinking" role="status">正在理解问题与页面内容… <button @click="stop()">停止生成</button></div>
+        <div v-if="busy && preview" class="md-body assistant-preview" v-html="renderMarkdown(preview)"></div>
+        <div v-if="busy" class="assistant-thinking" role="status">{{ preview?'正在生成讲解，完成校验后执行页面操作…':'正在阅读问题与当前材料…' }} <button @click="stop()">停止生成</button></div>
       </div>
       <footer>
         <div v-if="notice" class="assistant-notice" role="status">{{ notice }} <button v-if="notice.includes('尚未配置')" @click="settings">打开设置</button></div>
+        <div v-if="messages.length" class="assistant-quick-actions"><button v-for="prompt in suggestions" :key="prompt" @click="ask(prompt)" :disabled="busy||clearing">{{ prompt }}</button></div>
         <div class="chat-input-row">
           <textarea ref="composer" v-model="input" rows="3" maxlength="8000" aria-label="向 AI 提问或请求页面操作" placeholder="例如：高亮这篇文章的转折句，并在旁边解释" @keydown.enter.exact="onEnter" @keydown.enter.ctrl="onEnter"></textarea>
           <button class="primary" @click="send()" :disabled="busy || clearing || !input.trim()">发送</button>
@@ -39,10 +42,12 @@ import {useRouter,useRoute} from 'vue-router';
 import {usePageAssistant} from '../composables/usePageAssistant.js';
 import {renderMarkdown} from '../utils/md.js';
 const assistant=usePageAssistant();
-const {open,expanded,messages,input,busy,notice,clearing,contextLabel,send,stop,clear}=assistant;
+const {open,expanded,messages,input,busy,preview,notice,clearing,contextLabel,send,stop,clear}=assistant;
 const router=useRouter(),route=useRoute(),panel=ref(null),history=ref(null),composer=ref(null);
 let previousFocus=null;
-const suggestions=computed(()=>route.path.startsWith('/reader') ? ['高亮这篇文章的主旨句，并在原文旁解释','切换为左右布局，让题目和原文并排','定位到本篇第一道题'] : ['打开真题库','我应该怎样结合真题记单词？','打开生词本']);
+const suggestions=computed(()=>route.path.startsWith('/reader')&&assistant.section.value==='writing'?['检查当前作文的论点与例子是否对应','检查当前作文的语法，解释修改原因']:route.path.startsWith('/reader')&&assistant.section.value==='translation'?['检查当前译文是否漏掉条件与数字','解释当前译文中需要修改的表达']:route.path.startsWith('/reader') ? ['高亮这篇文章的主旨句，并在原文旁解释','切换为左右布局，让题目和原文并排','定位到本篇第一道题'] : route.name==='knowledge'?['解释当前知识点，给一个新例子','根据当前知识点出一道自测题，先不展示答案']:route.name==='review'?['怎样区分模糊和真正会用？','打开知识库']:route.name==='words'?['怎样结合原句记住一个词？','打开复习']:route.name==='settings'?['怎样配置兼容的 AI 服务？']:['打开真题库','我应该怎样结合真题记单词？','打开生词本']);
+function openSource(source){if(source.kind==='knowledge'&&typeof source.key==='string')router.push({path:'/knowledge',query:{entry:source.key}});else if(source.kind==='passage'&&Number.isSafeInteger(source.examId)&&Number.isSafeInteger(source.passageId))router.push({path:'/reader/'+source.examId,query:{passage:String(source.passageId)}});}
+
 function show(){open.value=true;}
 function hide(){open.value=false;previousFocus?.focus?.();}
 function ask(text){input.value=text;send();}
@@ -54,7 +59,7 @@ function onKey(event){
   if(event.key==='Escape'&&open.value){event.preventDefault();hide();}
 }
 watch(open,async value=>{if(value){previousFocus=document.activeElement;if(!busy.value)assistant.loadHistory();await nextTick();composer.value?.focus();history.value?.scrollTo(0,history.value.scrollHeight);}});
-watch(()=>[messages.value.length,busy.value],async()=>{await nextTick();history.value?.scrollTo(0,history.value.scrollHeight);});
+watch(()=>[messages.value.length,busy.value,preview.value],async()=>{await nextTick();history.value?.scrollTo(0,history.value.scrollHeight);});
 onMounted(()=>{assistant.loadHistory();document.addEventListener('keydown',onKey);});
 onBeforeUnmount(()=>{assistant.stop();document.removeEventListener('keydown',onKey);});
 </script>
@@ -72,3 +77,7 @@ onBeforeUnmount(()=>{assistant.stop();document.removeEventListener('keydown',onK
 .assistant-panel footer{border-top:1px solid var(--border);padding:14px 18px;background:var(--card)}.assistant-panel .chat-input-row{display:flex;gap:8px;align-items:flex-end}.assistant-panel textarea{flex:1;min-width:0;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:10px;padding:12px;font:14px inherit;resize:vertical;max-height:210px;min-height:82px}.assistant-panel textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
 .assistant-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;font-size:11px;color:var(--muted)}.assistant-footer button{font-size:11px;padding:3px 7px}.assistant-notice{font-size:12px;color:var(--muted);margin-bottom:10px}.assistant-thinking{font-size:13px;color:var(--muted)}.assistant-thinking button{margin-left:8px;font-size:12px}
 </style>
+
+<style>.assistant-sources{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}.assistant-sources small{width:100%}.assistant-sources button{font-size:11px;padding:4px 7px;text-align:left}.assistant-preview{font-size:14px;line-height:1.8;overflow-wrap:anywhere;margin:16px 0}</style>
+
+<style>.assistant-quick-actions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px}.assistant-quick-actions button{font-size:11px;padding:4px 7px;text-align:left}</style>

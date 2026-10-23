@@ -14,7 +14,7 @@ const store=initial=>{const values=new Map(Object.entries(initial||{}));return{g
  function view(file,{examId='1',query={},storage=store(),keeper={},lex=Vue.ref(null)}={}){
   const props=Vue.reactive({examId}),route=Vue.ref({query}),pushes=[],hooks={leave:[],update:[],unmount:[]},stops=[],timers=new Map();let timerId=0,scrolled=0;
   const main={scrollTop:0,addEventListener(){},removeEventListener(){}},router={currentRoute:route,push:value=>pushes.push(plain(value))};
-  const api={examDetail:async id=>fixture(id),allWords:async()=>({}),attemptGet:async()=>({revision:'r',generation:0,answers:[],attempt:null}),chatHistory:async()=>[],...keeper};
+  const api={studyVisit:async()=>({ok:true}),examDetail:async id=>fixture(id),allWords:async()=>({}),attemptGet:async()=>({revision:'r',generation:0,answers:[],attempt:null}),chatHistory:async()=>[],...keeper};
   const context=vm.createContext({...Vue,...bilingual,...tokens,createAiTasks,createPageAssistant,createEssayDrafts,createAnswerDrafts,defineProps:()=>props,useRouter:()=>router,localStorage:storage,
    window:{keeper:api,addEventListener(){},removeEventListener(){}},document:{addEventListener(){},removeEventListener(){},querySelector:()=>main,querySelectorAll:()=>[{scrollIntoView(){scrolled++;}}]},useAlignmentLex:()=>({lex,ensureLex:async()=>lex.value}),useWordLemmas:()=>({lemmaOf:value=>value,ensureWords:async()=>{}}),renderMarkdown:String,
    onMounted(){},onBeforeRouteLeave:hook=>hooks.leave.push(hook),onBeforeRouteUpdate:hook=>hooks.update.push(hook),onBeforeUnmount:hook=>hooks.unmount.push(hook),

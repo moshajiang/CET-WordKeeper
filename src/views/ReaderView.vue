@@ -26,6 +26,8 @@
       </div>
 
       <!-- 展示模式：翻译呈现方式 + 题目布局 -->
+      <div class="study-modes" aria-label="阅读模式"><button v-for="(label,mode) in {practice:'练题',intensive:'精读',review:'复盘'}" :key="mode" :class="{active:readerMode===mode}" @click="setReaderMode(mode)">{{ label }}</button><span>{{ readerMode==='practice'?'先作答，再核对依据':readerMode==='intensive'?'原文、译文与词句理解':'结合答案整理错因与知识点' }}</span></div>
+      <details class="reader-settings"><summary>阅读设置 · 翻译、布局与字号</summary>
       <div class="reader-topbar-row tb-modes">
         <span class="tb-label">翻译</span>
         <button :class="{ active: transMode === 'off' }" @click="setTransMode('off')">关闭</button>
@@ -38,6 +40,7 @@
         <button :class="{ active: layout === 'stack' }" @click="layout = 'stack'">上下</button>
         <button :class="{ active: layout === 'split' }" @click="layout = 'split'">左右（题目并排）</button>
       </div>
+      </details>
     </div>
 
     <div v-if="answerDraftStatus && !graded" class="answer-draft-status" role="status" style="font-size: 12.5px; color: var(--muted); margin-bottom: 10px;">{{ answerDraftStatus }}</div>
@@ -63,10 +66,10 @@
       </button>
     </div>
 
-    <ReaderAssistant ref="readerAssistant" :detail="detail" :passage-id="activePassage?.id" :layout="layout" :translation="transMode" :font-size="fontSize" :result="aiResult"
+    <ReaderAssistant ref="readerAssistant" :detail="detail" :passage-id="activePassage?.id" :layout="layout" :translation="transMode" :font-size="fontSize" :result="aiResult" :draft="isEssaySection?essayText:''"
       @passage="selectAssistantPassage" @view="applyAssistantView" @cancel="cancelSelection" @close-result="aiResult = null" />
 
-    <div class="reader-layout" :class="layout === 'split' ? 'layout-split' : 'layout-stack'">
+    <div class="reader-layout" :class="layout === 'split' && hasQuestions ? 'layout-split' : 'layout-stack'">
       <div class="passage-pane">
         <div class="article" :style="{ fontSize: fontSize + 'px' }">
           <template v-if="transMode !== 'inline' || !hasTranslation">
@@ -113,7 +116,7 @@
               {{ activePassage.section === 'writing' ? '✍️ 在此作答作文' : '🌐 在此作答翻译' }}
               <span style="font-size: 11.5px; color: var(--muted); font-weight: 400;">草稿自动保存{{ essaySavedAt ? ' · ' + essaySavedAt : '' }}</span>
             </h3>
-            <span style="font-size: 12.5px; color: var(--muted);">{{ essayText.length }} 词</span>
+            <span style="font-size: 12.5px; color: var(--muted);">{{ essayWordCount }} 词 · {{ essayText.length }} 字符</span>
           </div>
           <textarea v-model="essayText" class="essay-input" rows="10" :disabled="essayLoading"
             :placeholder="activePassage.section === 'writing' ? '在此写作，草稿会自动保存到本地…' : '在此输入你的英文译文，草稿会自动保存到本地…'"></textarea>
@@ -134,6 +137,7 @@
             <div class="er-ref-text">{{ activePassage.reference }}</div>
           </div>
 
+          <EssayRevisions :key="props.examId+':'+activePassage.section" :result="essayResult" :text="essayText" :section="activePassage.section" @update="essayText=$event" />
           <div v-if="essayResult" class="essay-result">
             <div class="er-score">
               <span class="er-num">{{ essayResult.score }}</span>
@@ -161,12 +165,12 @@
         </div>
 
         <QuestionPanel
-          v-if="layout === 'stack'"
+          v-if="layout === 'stack' && hasQuestions"
           :passage="activePassage"
           :answers="answers"
           :graded="graded"
           :disabled="busy || answersLoading"
-          :reveal="revealAnalysis"
+          :reveal="revealAnalysis" :mode="readerMode"
           :letters="matchLetters"
           @pick="setAnswer"
           @quote="quoteToAI"
@@ -174,13 +178,13 @@
         />
       </div>
 
-      <div v-if="layout === 'split'" class="question-pane">
+      <div v-if="layout === 'split' && hasQuestions" class="question-pane">
         <QuestionPanel
           :passage="activePassage"
           :answers="answers"
           :graded="graded"
           :disabled="busy || answersLoading"
-          :reveal="revealAnalysis"
+          :reveal="revealAnalysis" :mode="readerMode"
           :letters="matchLetters"
           @pick="setAnswer"
           @quote="quoteToAI"
@@ -259,6 +263,7 @@ import { alignBilingual, paragraphLetters, blankNumbers } from '../utils/bilingu
 import { useAlignmentLex } from '../composables/useAlignmentLex.js';
 import QuestionPanel from '../components/QuestionPanel.vue';
 import ReaderAssistant from '../components/ReaderAssistant.vue';
+import EssayRevisions from '../components/EssayRevisions.vue';
 import { usePageAssistant } from '../composables/usePageAssistant.js';
 import { createEssayDrafts } from '../utils/essay-drafts.js';
 import { createAnswerDrafts } from '../utils/answer-drafts.js';
@@ -323,6 +328,9 @@ const answerDrafts = createAnswerDrafts({
 // 「对照背诵」已独立成页（见 ReciteView），此处只保留入口按钮
 const transMode = ref('off');
 const layout = ref('stack');
+const readerMode=ref('practice');
+function setReaderMode(mode){readerMode.value=mode;setTransMode(mode==='practice'?'off':hasTranslation.value?'inline':'off');layout.value=mode==='intensive'?'stack':'split';revealAnalysis.value=mode==='review';saveProgress();}
+function recordVisit(){if(!progressReady||!activePassage.value)return;window.keeper.studyVisit(Number(props.examId),activePassage.value.id).then(r=>{if(!r.ok)throw Error(r.error);}).catch(error=>{readerError.value='学习位置未能保存：'+error.message;});}
 const rowToggle = ref({});           // 句子下标 -> 是否显示译文（点击句子切换）
 
 const hasTranslation = computed(() => !!(activePassage.value && activePassage.value.translation));
@@ -376,6 +384,8 @@ function saveProgress() {
       trans: transMode.value,
       layout: layout.value,
       fontSize: fontSize.value,
+      mode: readerMode.value,
+      updatedAt: Date.now(),
     };
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(all));
   } catch (e) { /* 忽略 */ }
@@ -398,10 +408,12 @@ function requestedPassageIndex() {
   }
   return -1;
 }
+async function focusRequestedQuestion(){await nextTick();const id=Number(router.currentRoute.value.query.question);if(!activePassage.value?.questions.some(q=>q.id===id))return;const block=document.querySelector('[data-question-id="'+id+'"]');block?.scrollIntoView({block:'center'});block?.focus({preventScroll:true});}
 function applyRequestedPassage() {
   if (!progressReady || progressExamId !== Number(props.examId)) return;
   const index = requestedPassageIndex();
   if (index >= 0 && index !== activeIdx.value) { activeIdx.value = index; const main = document.querySelector('.main'); if (main) main.scrollTop = 0; }
+  focusRequestedQuestion();
 }
 
 let saveTimer = null;
@@ -510,6 +522,7 @@ async function loadAnalysis() {
   await reloadDetail();
   if (!task.isCurrent() || readerDisposed || sequence !== readerLoadSequence) return;
   task.finish();
+  readerMode.value='review';
   revealAnalysis.value = true;   // 关键：点了就直接展示答案与解析（此前只加载不改状态，点了没反应）
   noticeOk.value = true;
   notice.value = r.cached ? '已显示本地缓存的解析与全文翻译（点「逐句对照」可左右/上下对照阅读）。' : `已生成 ${r.generated} 个篇章的解析与翻译，并已保存到本地。`;
@@ -564,6 +577,7 @@ async function submit() {
   await reloadDetail();
   if (!answerIsCurrent(target) || sequence !== readerLoadSequence) return;
   loadedAnswer = { examId:target.examId,revision:r.revision,generation:r.generation };
+  readerMode.value='review';
   result.value = r;
   noticeOk.value = true;
   notice.value = `已交卷：客观题 ${r.correct} / ${r.total} 正确，得分 ${r.score} 分。`;
@@ -605,6 +619,7 @@ const isEssaySection = computed(() => {
   return s === 'writing' || s === 'translation';
 });
 const essayText = ref('');
+const essayWordCount=computed(()=>(essayText.value.match(/[A-Za-z0-9]+(?:['’\-][A-Za-z0-9]+)*/g)||[]).length);
 const essayResult = ref(null);
 const essayBusy = ref(false);
 const essayNotice = ref('');
@@ -787,7 +802,7 @@ async function loadAll() {
   ++answerLoadSequence; loadedAnswer = null; answersLoading.value = true; busy.value = false;
   answers.value = {}; graded.value = false; result.value = null; notice.value = ''; answerDraftStatus.value = '';
   detail.value = null; activeIdx.value = 0;
-  transMode.value = 'off'; layout.value = 'stack'; fontSize.value = 16.5;
+  transMode.value = 'off'; layout.value = 'stack'; fontSize.value = 16.5; readerMode.value='practice';
   revealAnalysis.value = false; rowToggle.value = {};
   ensureLex();
   invalidateWordContext();
@@ -811,6 +826,7 @@ async function loadAll() {
     else if (Number.isSafeInteger(saved.idx) && saved.idx >= 0 && detail.value.passages[saved.idx]) savedIndex = saved.idx;
     if (['inline','off'].includes(saved.trans)) transMode.value = saved.trans;
     if (['split','stack'].includes(saved.layout)) layout.value = saved.layout;
+    if (['practice','intensive','review'].includes(saved.mode)) {readerMode.value=saved.mode;revealAnalysis.value=saved.mode==='review';}
     if (Number.isFinite(saved.fontSize)) fontSize.value = Math.max(14,Math.min(22,saved.fontSize));
   }
   const requested = requestedPassageIndex();
@@ -822,7 +838,7 @@ async function loadAll() {
   const main = document.querySelector('.main');
   if (main && activeIdx.value === initialIndex) main.scrollTop = requested < 0 && savedIndex >= 0 && Number.isFinite(saved?.scroll) ? Math.max(0,Math.min(10000000,saved.scroll)) : 0;
   progressReady = true;
-  saveProgress();
+  saveProgress();recordVisit();
   if (!detail.value.passages.length) showToast('该套真题没有结构化篇章数据');
   try { await refreshUserWords(); } catch { /* 收藏高亮读取失败不阻止正文与作答恢复 */ }
   if (readerDisposed || sequence !== readerLoadSequence) return;
@@ -831,6 +847,8 @@ async function loadAll() {
   }
   if (readerDisposed || sequence !== readerLoadSequence) return;
   await loadEssay();
+  if(graded.value&&readerMode.value==='practice')readerMode.value='review';
+  focusRequestedQuestion();
 }
 
 function wordContext() {
@@ -994,7 +1012,7 @@ async function scanHard() {
   } catch { /* 预扫失败不影响正文和离线查词 */ }
 }
 
-watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); saveProgress(); });
+watch(activeIdx, () => { aiResult.value = null; scanHard(); loadEssay(); saveProgress(); recordVisit(); });
 watch(() => activePassage.value && activePassage.value.id, () => { invalidateWordContext(); cancelSelection(); aiResult.value = null; if (essayBusy.value) cancelGrade();  rowToggle.value = {}; hardWords.value = []; });
 watch(() => activePassage.value?.content, text => {
   const words = tokenize(text || '').filter(token => token.t === 'w').map(token => token.text);
@@ -1006,7 +1024,7 @@ watch(scanOn, () => scanHard());
 // 同一个组件实例切换考次（hash 路由参数变化时 Vue 会复用实例）必须重新加载，
 // 否则页面上仍是上一套的篇章与作答
 watch(() => props.examId, () => { loadAll(); loadChat(); });
-watch(() => [router.currentRoute?.value?.query?.passage,router.currentRoute?.value?.query?.p], applyRequestedPassage);
+watch(() => [router.currentRoute?.value?.query?.passage,router.currentRoute?.value?.query?.p,router.currentRoute?.value?.query?.question], applyRequestedPassage);
 
 function movePassage(d) {
   const total = detail.value ? detail.value.passages.length : 0;
@@ -1120,3 +1138,5 @@ onBeforeUnmount(() => {
   white-space: pre-wrap; word-break: break-word;
 }
 </style>
+
+<style scoped>.study-modes{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.study-modes span{font-size:12px;color:var(--muted)}.study-modes .active{background:var(--accent);color:white}.reader-settings summary{cursor:pointer;font-size:12px;color:var(--muted);padding:8px 0}</style>

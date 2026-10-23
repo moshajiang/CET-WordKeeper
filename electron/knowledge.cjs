@@ -4,7 +4,7 @@ const CATEGORIES = ['基础知识', '真题笔记', '我的薄弱点', '未分�
 // Additive migration: keep the original SCHEMA so backups from earlier versions still pass inspection.
 function ensureKnowledgeSchema(db) {
   const columns = new Set(db.exec('PRAGMA table_info(kb_entry)')[0].values.map(row => row[1]));
-  for (const [name, definition] of Object.entries({category:"TEXT DEFAULT '未分类'",tags:"TEXT DEFAULT '[]'",updated_at:'TEXT',origin:"TEXT DEFAULT 'manual'",anchor:'TEXT'})) {
+  for (const [name, definition] of Object.entries({category:"TEXT DEFAULT '未分类'",tags:"TEXT DEFAULT '[]'",updated_at:'TEXT',origin:"TEXT DEFAULT 'manual'",anchor:'TEXT',deleted_at:'TEXT'})) {
     if (!columns.has(name)) db.run(`ALTER TABLE kb_entry ADD COLUMN ${name} ${definition}`);
   }
 }
@@ -26,12 +26,12 @@ function createKnowledgeStore({q,run,persistTransaction,now,builtin}) {
   function get(key) {
     if (typeof key !== 'string') throw Error('条目不存在');
     if (key.startsWith('builtin:')) { const e=builtinEntries().find(e=>e.key===key);if(e)return e; }
-    else if (/^user:[1-9]\d*$/.test(key)) { const e=q("SELECT * FROM kb_entry WHERE source='user' AND id=?",[Number(key.slice(5))])[0];if(e)return userEntry(e); }
+    else if (/^user:[1-9]\d*$/.test(key)) { const e=q("SELECT * FROM kb_entry WHERE source='user' AND deleted_at IS NULL AND id=?",[Number(key.slice(5))])[0];if(e)return userEntry(e); }
     throw Error('条目不存在或已删除');
   }
   function list(filters={}) {
     const query=String(filters.query||'').trim().toLowerCase().slice(0,200),terms=query.split(/\s+/).filter(Boolean);
-    const all=[...q("SELECT * FROM kb_entry WHERE source='user' ORDER BY COALESCE(updated_at,created_at) DESC,id DESC").map(userEntry),...builtinEntries()];
+    const all=[...q("SELECT * FROM kb_entry WHERE source='user' AND deleted_at IS NULL ORDER BY COALESCE(updated_at,created_at) DESC,id DESC").map(userEntry),...builtinEntries()];
     const entries=all.filter(e=>(!filters.source||e.source===filters.source)&&(!filters.category||e.category===filters.category)&&(!filters.tag||e.tags.includes(filters.tag))&&terms.every(t=>(e.title+'\n'+e.content+'\n'+e.tags.join(' ')).toLowerCase().includes(t)))
       .map(({content,...e})=>{const index=query?content.toLowerCase().indexOf(terms[0]):-1;return {...e,preview:content.slice(Math.max(0,index-25),Math.max(0,index-25)+110),length:content.length};});
     return {entries,total:all.length,categories:CATEGORIES,tags:[...new Set(all.flatMap(e=>e.tags))].sort()};
@@ -63,10 +63,12 @@ function createKnowledgeStore({q,run,persistTransaction,now,builtin}) {
   }
   function remove(id) {
     if(!Number.isSafeInteger(id)||id<=0)throw Error('条目编号无效');
-    if(!q("SELECT id FROM kb_entry WHERE source='user' AND id=?",[id]).length)throw Error('条目不存在或已删除');
-    return persistTransaction(()=>{run("DELETE FROM kb_entry WHERE id=? AND source='user'",[id]);return {ok:true};});
+    if(!q("SELECT id FROM kb_entry WHERE source='user' AND deleted_at IS NULL AND id=?",[id]).length)throw Error('条目不存在或已删除');
+    return persistTransaction(()=>{run("UPDATE kb_entry SET deleted_at=?,updated_at=? WHERE id=? AND source='user'",[now(),now(),id]);return {ok:true};});
   }
   function source(key) {const entry=get(key);if(!entry.anchor)throw Error('此条目没有关联原文');return {...resolveAnchor(entry.anchor),title:entry.title,explanation:entry.content,key:entry.key};}
-  return {get,list,save,remove,source};
+  function trash(){return q("SELECT id,title,deleted_at FROM kb_entry WHERE source='user' AND deleted_at IS NOT NULL ORDER BY deleted_at DESC");}
+  function restore(id){if(!Number.isSafeInteger(id)||!q("SELECT id FROM kb_entry WHERE id=? AND source='user' AND deleted_at IS NOT NULL",[id]).length)throw Error('回收站条目不存在');return persistTransaction(()=>{run("UPDATE kb_entry SET deleted_at=NULL,updated_at=? WHERE id=?",[now(),id]);return {ok:true};});}
+  return {get,list,save,remove,source,trash,restore};
 }
 module.exports={ensureKnowledgeSchema,createKnowledgeStore,CATEGORIES};

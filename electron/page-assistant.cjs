@@ -88,7 +88,7 @@ function assistantPrompt(context) {
     const snippet=p.content.slice(0,Math.min(p.id===context.passageId?18000:4000,remaining));
     snippets.set(p.id,snippet);remaining-=snippet.length;
   }
-  const material = {page:context.page,examId:context.examId,passageId:context.passageId,selection:context.selection || '',selectionOccurrence:context.selectionOccurrence,view:context.view || {},
+  const material = {page:context.page,examId:context.examId,passageId:context.passageId,studentDraft:context.studentDraft||'',selection:context.selection || '',selectionOccurrence:context.selectionOccurrence,view:context.view || {},
     passages:(context.passages || []).map(p => ({id:p.id,title:p.title,section:p.section,hasTranslation:p.hasTranslation,
       content:snippets.get(p.id),questions:p.questions.map(q => ({id:q.id,stem:q.stem,options:q.options}))}))};
   return '你是 CET WordKeeper 页面学习助手。用中文帮助用户学习，必要时操作页面。只返回 JSON：'
