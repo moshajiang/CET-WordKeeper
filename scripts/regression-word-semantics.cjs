@@ -71,7 +71,7 @@ let passed=0;const test=async(name,run)=>{await run();passed++;console.log('✓ 
   const card=local.call('review:queue').fresh[0];assert.equal(card.clozeHtml,'');
   const vue=req('vue'),file=fs.readFileSync(path.join(root,'src/views/ReviewView.vue'),'utf8');
   const script=file.match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
-  const component=vm.runInNewContext(script+'\n({list,clozeHtml});',{...vue,onMounted(){},onBeforeUnmount(){}});component.list.value=[card];assert.equal(component.clozeHtml.value,'');assert.match(file,/clozeMode && clozeHtml/);
+  const component=vm.runInNewContext(script+'\n({list,clozeHtml});',{...vue,useRoute:()=>({query:{}}),onMounted(){},onBeforeUnmount(){}});component.list.value=[card];assert.equal(component.clozeHtml.value,'');assert.match(file,/clozeMode && clozeHtml/);
  });
  await test('Anki 原句按相同词形定位，保留原句并转义字段里的 HTML 与制表符',async()=>{
   const local=harness(seedBytes);local.run("INSERT INTO user_word(word,status,note) VALUES ('run','learning',?)",['<b>note</b>\tend']);local.run("INSERT INTO word_hit(word,sentence) VALUES ('run',?)",['Running runners run <img src=x>.']);

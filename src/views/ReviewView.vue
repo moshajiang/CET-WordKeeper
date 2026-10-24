@@ -9,6 +9,7 @@
     <p class="page-sub">认词 → 翻面核对 → 三键评分 · 语境模式用真题原句挖空</p>
     <div v-if="errorMsg" class="card" role="alert" style="color: var(--red);">{{ errorMsg }} <button v-if="!started" @click="load">重试</button></div>
 
+    <ReviewPlanPanel v-if="!started" :budget="queue.budget" :due-only="dueOnly" :disabled="loading||answering" @change="changeDueOnly" />
     <div v-if="!started">
       <div class="card">
         <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -28,11 +29,12 @@
       </div>
       <div v-if="!total" class="card empty-state">
         <div class="big">🎉</div>
-        没有待复习的生词。去<a @click="$router.push('/library')">真题库</a>继续阅读、积累新词吧。
+        {{ queue.budget?.fresh?'当前新词暂未安排，额度与模式见上方。去':'没有待复习的生词。去' }}<a @click="$router.push('/library')">真题库</a>继续阅读、积累新词吧。
       </div>
     </div>
 
     <template v-else>
+      <button v-if="current" @click="endRound" :disabled="answering">结束本轮</button>
       <div class="review-progress"><div class="fill" :style="{ width: progress + '%' }"></div></div>
 
       <div v-if="current" class="review-card" :class="{ clickable: !revealed }" @click="flip">
@@ -67,7 +69,7 @@
 
       <div v-if="!current" class="card empty-state">
         <div class="big">✅</div>
-        本轮复习完成！共完成 {{ doneCount }} 次复习。
+        本轮复习完成！共完成 {{ doneCount }} 次复习。忘记的词会稍后到期。
         <div style="margin-top: 10px;"><button class="primary" @click="restart">再来一轮</button>
         <button style="margin-left: 8px;" @click="$router.push('/')">回首页</button></div>
       </div>
@@ -79,6 +81,7 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount,watch } from 'vue';
 import {useRoute} from 'vue-router';
+import ReviewPlanPanel from '../components/ReviewPlanPanel.vue';
 import KnowledgeReview from '../components/KnowledgeReview.vue';
 import PracticeCardReview from '../components/PracticeCardReview.vue';
 const route=useRoute(),tab=ref(['knowledge','cards'].includes(route.query.tab)?route.query.tab:'words'),mistakes=ref([]),mistakeError=ref('');
@@ -88,7 +91,7 @@ watch(()=>route.query.tab,value=>{if(['knowledge','cards'].includes(value))tab.v
 
 const queue = ref({ due: [], fresh: [] });
 const started = ref(false);
-const clozeMode = ref(false);
+const clozeMode = ref(false),dueOnly=ref(false);
 const list = ref([]);
 const idx = ref(0);
 const revealed = ref(false);
@@ -110,7 +113,7 @@ async function load() {
   const sequence = ++loadSequence;
   loading.value = true; errorMsg.value = '';
   try {
-    const result = await window.keeper.reviewQueue();
+    const result = await window.keeper.reviewQueue({dueOnly:dueOnly.value});
     if (disposed || sequence !== loadSequence) return;
     queue.value = result;
     list.value = [...result.due, ...result.fresh];
@@ -121,9 +124,12 @@ async function load() {
 }
 
 async function start() {
-  started.value = true;
-  if (!list.value.length) await load();
+  if(loading.value||answering.value)return;
+  await load();
+  if(!errorMsg.value&&list.value.length){doneCount.value=0;started.value=true;}
 }
+async function endRound(){if(answering.value)return;if(operationId&&!window.confirm('当前评分尚未确认，结束后已保存的记录会保留，确定继续？'))return;started.value=false;await load();}
+function changeDueOnly(event){dueOnly.value=event.target.checked;load();}
 
 async function answer(rating) {
   if (answering.value || !started.value || !revealed.value || !current.value) return;
@@ -140,7 +146,7 @@ async function answer(rating) {
     if (disposed || sequence !== loadSequence || idx.value !== index) return;
     if (!result?.ok) throw new Error(result?.error || '保存失败');
     lastResult.value = result;
-    if (pendingRating === 0) list.value.push(card);
+    // 忘记的词按原间隔稍后到期，不立即追加、拉长本轮。
     doneCount.value += 1; idx.value += 1; revealed.value = false;
     operationId = null; pendingRating = null;
   } catch (error) {

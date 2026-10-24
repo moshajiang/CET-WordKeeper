@@ -3,6 +3,8 @@
     <h1 class="page-title">设置</h1>
     <p class="page-sub">AI 服务、复习节奏与数据管理</p>
 
+    <ReviewPreferences />
+
     <div class="card settings-form">
       <h3 style="font-size: 15px; margin-bottom: 4px;">AI 服务（整句翻译 / 语法分析 / 错因分析）</h3>
       <div class="hint" style="margin-bottom: 10px;">不配置也不影响查词、标注、复习等核心功能（100% 离线）。支持 OpenAI 兼容协议。</div>
@@ -104,6 +106,7 @@
 
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
+import ReviewPreferences from '../components/ReviewPreferences.vue';
 import { createAiTasks } from '../utils/ai-tasks.js';
 
 const form = ref({ api_base: '', api_key: '', api_model: '' });

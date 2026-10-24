@@ -55,3 +55,8 @@ npm run test:experience
 - `src/components/PracticeCardReview.vue`：先作答后核对、评分重试、独立到期批次。
 - `electron/main.cjs`、`electron/preload.cjs`：IPC 与 AI 候选校验；`electron/study.cjs`：首页到期统计。
 - `scripts/regression-practice-cards.cjs`、`scripts/practice-cards-check.mjs`：18 项数据、31 项界面检查；`test:cards` 已加入 npm 脚本，相关入口接入 CI。
+
+
+## P2 复习节奏更新（2026-10-25）
+
+原固定 30 张的练习卡批次现改为按设置的每日新卡额度、每轮数量和目标时长组成本轮。已学到期内容优先，可暂缓新卡或提前结束；首次作答计额度，编辑后重学不再次计为新卡。原有来源快照、版本校验和作答历史保留。详见 [REVIEW-PACING.md](REVIEW-PACING.md)。

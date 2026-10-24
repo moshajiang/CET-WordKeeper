@@ -13,6 +13,7 @@
    <button v-if="reviewDue" @click="$router.push({path:'/review',query:{tab:'knowledge'}})">复习 {{ reviewDue }} 个知识点</button>
    <button v-if="cardDue" @click="$router.push({path:'/review',query:{tab:'cards'}})">复习 {{ cardDue }} 张练习卡</button>
   </section>
+  <ReviewWorkloadSummary />
   <div class="stat-row" aria-label="学习概况">
    <div class="stat-box due"><div class="num">{{ stats.dueNow }}</div><div class="lbl">待复习</div></div>
    <div class="stat-box"><div class="num">{{ stats.learning }}</div><div class="lbl">学习中的生词</div></div>
@@ -25,6 +26,7 @@
  </div>
 </template>
 <script setup>
+import ReviewWorkloadSummary from '../components/ReviewWorkloadSummary.vue';
 import {ref,onMounted,onBeforeUnmount} from 'vue';import {useRouter} from 'vue-router';import {useLearningState} from '../composables/useLearningState.js';
 const router=useRouter(),learning=useLearningState(),stats=learning.stats,recent=ref([]),recommendations=ref([]),reviewDue=ref(0),cardDue=ref(0),error=ref('');let disposed=false,sequence=0;
 const label=e=>`${e.level} · ${e.year} 年 ${e.month} 月 · 第 ${e.set_no} 套`;

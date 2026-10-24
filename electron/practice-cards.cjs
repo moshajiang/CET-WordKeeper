@@ -1,4 +1,5 @@
 const {createHash,randomUUID}=require('node:crypto');
+const {NEW_CARD}=require('./review-budget.cjs');
 const TYPES=['recall','translation','judgment','choice'];
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const sourceHash=entry=>hash(JSON.stringify([entry.title,entry.content]));
@@ -38,7 +39,7 @@ function ensurePracticeSchema(db){
   response TEXT NOT NULL,rating INTEGER NOT NULL,correct INTEGER,reviewed_at TEXT NOT NULL,due TEXT NOT NULL,payload_hash TEXT NOT NULL);
  CREATE INDEX IF NOT EXISTS idx_practice_history ON practice_attempt(card_id,reviewed_at);`);
 }
-function createPracticeStore({q,run,persistTransaction,now,kb}){
+function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
  function identity(id){if(typeof id!=='string'||! /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/.test(id))throw Error('卡片或操作编号无效');return id;}
  function raw(id){identity(id);const row=q('SELECT * FROM practice_card WHERE id=?',[id])[0];if(!row)throw Error('卡片不存在');return row;}
  function decode(row,withSource=false){
@@ -103,7 +104,13 @@ function createPracticeStore({q,run,persistTransaction,now,kb}){
   else throw Error('卡片状态操作无效');
   return persistTransaction(()=>{run('UPDATE practice_card SET status=?,due=?,revision=revision+1,updated_at=? WHERE id=?',[status,due,now(),row.id]);return {ok:true,id:row.id};});
  }
- function queue(){return q("SELECT * FROM practice_card WHERE status='active' AND due IS NOT NULL AND due<=? ORDER BY due,created_at,id LIMIT 30",[now()]).map(row=>decode(row,true));}
+ function session(options){
+  const instant=now();
+  if(!budget)return {cards:q("SELECT * FROM practice_card WHERE status='active' AND due IS NOT NULL AND due<=? ORDER BY due,created_at,id LIMIT 30",[instant]).map(row=>decode(row,true)),budget:null};
+  const plan=budget.plan('cards',options,instant),select=(fresh,limit)=>q(`SELECT c.* FROM practice_card c WHERE c.status='active' AND c.due IS NOT NULL AND c.due<=? AND ${fresh?'':'NOT'}(${NEW_CARD}) ORDER BY c.due,c.created_at,c.id LIMIT ?`,[instant,limit]);
+  return {cards:[...select(false,plan.plannedDue),...select(true,plan.plannedNew)].map(row=>decode(row,true)),budget:plan};
+ }
+ function queue(options){return session(options).cards;}
  function rate(payload){
   identity(payload?.operationId);identity(payload?.id);
   const response=text(payload.response??'',10000,'作答',true);
@@ -111,9 +118,10 @@ function createPracticeStore({q,run,persistTransaction,now,kb}){
   const payloadHash=hash(JSON.stringify([payload.id,payload.expectedRevision,response,payload.rating]));
   const cached=q('SELECT * FROM practice_attempt WHERE id=?',[payload.operationId])[0];
   if(cached){if(cached.payload_hash!==payloadHash)throw Error('评分请求与原操作不一致');return {ok:true,due:cached.due,correct:cached.correct===null?null:!!cached.correct,duplicate:true};}
-  const row=raw(payload.id);
+  const row=raw(payload.id),reviewedAt=now();
   if(row.revision!==payload.expectedRevision)throw Error('卡片已修改或已经评分，请重新开始这张卡');
-  if(row.status!=='active'||!row.due||row.due>now())throw Error('这张卡当前不在到期复习队列');
+  if(row.status!=='active'||!row.due||row.due>reviewedAt)throw Error('这张卡当前不在到期复习队列');
+  budget?.assertIntroduction('cards',row.id,reviewedAt);
   let correct=null;
   if(['judgment','choice'].includes(row.type)){
    const allowed=row.type==='judgment'?['正确','错误']:parse(row.options,[]).map((_,i)=>String.fromCharCode(65+i));
@@ -121,14 +129,15 @@ function createPracticeStore({q,run,persistTransaction,now,kb}){
    if(!correct&&payload.rating===2)throw Error('答案不匹配，请如实选择不会或模糊');
   }
   const reps=payload.rating===0?0:row.reps+1,days=payload.rating===0?0:payload.rating===1?1:Math.min(30,2**Math.min(5,reps));
-  const due=new Date(Date.parse(now())+(days?days*86400000:600000)).toISOString();
+  const due=new Date(Date.parse(reviewedAt)+(days?days*86400000:600000)).toISOString();
   return persistTransaction(()=>{
-   run('UPDATE practice_card SET due=?,reps=?,interval_days=?,revision=revision+1,updated_at=? WHERE id=?',[due,reps,days||10/1440,now(),row.id]);
-   run('INSERT INTO practice_attempt VALUES(?,?,?,?,?,?,?,?,?,?)',[payload.operationId,row.id,row.revision,JSON.stringify(decode(row,true)),response,payload.rating,correct===null?null:Number(correct),now(),due,payloadHash]);
+   budget?.recordIntroduction('cards',row.id,reviewedAt);
+   run('UPDATE practice_card SET due=?,reps=?,interval_days=?,revision=revision+1,updated_at=? WHERE id=?',[due,reps,days||10/1440,reviewedAt,row.id]);
+   run('INSERT INTO practice_attempt VALUES(?,?,?,?,?,?,?,?,?,?)',[payload.operationId,row.id,row.revision,JSON.stringify(decode(row,true)),response,payload.rating,correct===null?null:Number(correct),reviewedAt,due,payloadHash]);
    return {ok:true,due,correct};
   });
  }
  function history(id){raw(id);return q('SELECT * FROM practice_attempt WHERE card_id=? ORDER BY reviewed_at DESC,id DESC LIMIT 50',[id]).map(row=>({...row,snapshot:parse(row.snapshot,{}),correct:row.correct===null?null:!!row.correct}));}
- return {get,list,dueCount,saveBatch,save,state,queue,rate,history};
+ return {get,list,dueCount,saveBatch,save,state,queue,session,rate,history};
 }
 module.exports={ensurePracticeSchema,createPracticeStore,validateCard,validateGeneratedCards,sourceHash,TYPES};

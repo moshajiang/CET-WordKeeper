@@ -4,6 +4,7 @@ const fs = require('fs');
 const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
+const {createReviewBudget,ensureReviewBudgetSchema,validateReviewSettings,NEW_WORD}=require('./review-budget.cjs');
 const {ensurePracticeSchema,createPracticeStore,validateGeneratedCards,sourceHash}=require('./practice-cards.cjs');
 const {completionContent,replyPreview}=require('./ai-stream.cjs');
 const { ensureContentSchema, syncBuiltinContent, assessmentRevision } = require('./content-sync.cjs');
@@ -139,6 +140,7 @@ function migrate() {
   ensureKnowledgeSchema(db);
   ensureStudySchema(db);
   ensurePracticeSchema(db);
+  ensureReviewBudgetSchema(db);
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
@@ -350,6 +352,8 @@ function parseTags(tag) {
 }
 
 function registerIpc() {
+  const reviewBudget=createReviewBudget({q,run,now});
+  ipcMain.handle('review:workload',()=>reviewBudget.workload());
   ipcMain.handle('app:info', () => ({
     name: 'CET WordKeeper',
     version: app.getVersion(),
@@ -501,18 +505,18 @@ function registerIpc() {
     return { word, userWord: uw, entry, tags: entry ? parseTags(entry.tag) : [], hits, logs, freq };
   });
 
-  ipcMain.handle('review:queue', () => {
-    const nowStr = now();
+  ipcMain.handle('review:queue', (_event,options) => {
+    const nowStr = now(),budget=reviewBudget.plan('words',options,nowStr);
     const due = q(
       `SELECT u.word, d.phonetic, d.translation, u.reps, u.due,
         (SELECT sentence FROM word_hit h WHERE h.word = u.word LIMIT 1) AS sentence
        FROM user_word u LEFT JOIN dict d ON d.word = u.word
-       WHERE u.status = 'learning' AND u.due <= ? ORDER BY u.due LIMIT 100`, [nowStr]);
+       WHERE u.status='learning' AND NOT(${NEW_WORD}) AND (u.due IS NULL OR u.due<=?) ORDER BY u.due,u.id LIMIT ?`, [nowStr,budget.plannedDue]);
     const fresh = q(
       `SELECT u.word, d.phonetic, d.translation, u.reps, u.due,
         (SELECT sentence FROM word_hit h WHERE h.word = u.word LIMIT 1) AS sentence
        FROM user_word u LEFT JOIN dict d ON d.word = u.word
-       WHERE u.status = 'learning' AND (u.due IS NULL OR (u.reps = 0 AND NOT EXISTS (SELECT 1 FROM review_log l WHERE l.word_id=u.id))) AND u.word NOT IN (SELECT word FROM (SELECT word FROM user_word WHERE status='learning' AND due <= ?)) ORDER BY u.created_at DESC LIMIT 20`, [nowStr]);
+       WHERE u.status='learning' AND ${NEW_WORD} ORDER BY u.created_at,u.id LIMIT ?`, [budget.plannedNew]);
     const cache = new Map();
     const resolve = raw => { if (!cache.has(raw)) cache.set(raw,resolveWord(raw)); return cache.get(raw); };
     for (const row of [...due,...fresh]) {
@@ -523,7 +527,7 @@ function registerIpc() {
         if (marked.count) { row.sentence = hit.sentence; row.clozeHtml = marked.html; break; }
       }
     }
-    return { due, fresh };
+    return { due, fresh, budget };
   });
 
   ipcMain.handle('review:answer', (_e, word, rating, operationId) => {
@@ -538,6 +542,8 @@ function registerIpc() {
           ? { ...JSON.parse(previous.result),duplicate:true } : { ok:false,error:'operation_conflict' };
       }
       if (uw.status !== 'learning') return { ok:false,error:'word_not_learning' };
+      const reviewedAt=now();
+      reviewBudget.assertIntroduction('words',uw.id,reviewedAt);
       let { interval_days: iv, ease, reps, lapses } = uw;
       iv = iv || 0; ease = ease || 2.5; reps = reps || 0; lapses = lapses || 0;
       if (rating === 0) {
@@ -546,16 +552,17 @@ function registerIpc() {
         reps += 1;
         if (reps === 1) iv = rating === 1 ? 0.5 : 1;
         else if (reps === 2) iv = rating === 1 ? 3 : 6;
-        else iv = Math.round(iv * ease * (rating === 1 ? 0.6 : 1) * 10) / 10;
+        else iv = Math.max(1, Math.round(iv * ease * (rating === 1 ? 0.6 : 1) * 10) / 10); // 兼容旧记录缺失有效间隔，成功评分后至少延后一天。
         ease = rating === 1 ? Math.max(1.3, ease - 0.15) : Math.min(3.0, ease + 0.1);
       }
-      const due = new Date(Date.now() + iv * 86400000).toISOString();
+      const due = new Date(Date.parse(reviewedAt) + iv * 86400000).toISOString();
       const saved = persistTransaction(() => {
+        reviewBudget.recordIntroduction('words',uw.id,reviewedAt);
         run('UPDATE user_word SET interval_days=?, ease=?, reps=?, lapses=?, due=? WHERE word=?', [iv, ease, reps, lapses, due, word]);
         run('INSERT INTO review_log(word_id, mode, rating, reviewed_at, interval_days, ease, due) VALUES (?,?,?,?,?,?,?)',
-          [uw.id, 'recognize', rating, now(), iv, ease, due]);
+          [uw.id, 'recognize', rating, reviewedAt, iv, ease, due]);
         const result = { ok:true,interval:iv,due };
-        if (operationId) run('INSERT INTO review_operation VALUES (?,?,?,?,?)',[operationId,uw.id,rating,JSON.stringify(result),now()]);
+        if (operationId) run('INSERT INTO review_operation VALUES (?,?,?,?,?)',[operationId,uw.id,rating,JSON.stringify(result),reviewedAt]);
         return result;
       });
       learningChanged('review');
@@ -583,10 +590,12 @@ function registerIpc() {
 
   ipcMain.handle('settings:set', (_e, obj) => {
     assertWritable();
+    validateReviewSettings(obj);
     const entries = Object.entries(obj).map(([k,v]) => [k,String(v)]).filter(([k,v]) => q('SELECT value FROM settings WHERE key=?',[k])[0]?.value !== v);
     if (entries.length) persistTransaction(() => {
       for (const entry of entries) run('INSERT INTO settings(key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value',entry);
     });
+    if(entries.some(([key])=>key.startsWith('review_')))learningChanged('preferences');
     return { ok: true };
   });
 
@@ -877,11 +886,12 @@ function registerIpc() {
   // ---- Knowledge library: full entries, editable notes, and validated source anchors ----
   const kb = createKnowledgeStore({q,run,persistTransaction,now,builtin:loadBuiltinKb});
   const kbWrite = work => {try{return work();}catch(error){return {ok:false,error:error.message};}};
-  const practice=createPracticeStore({q,run,persistTransaction,now,kb});
+  const practice=createPracticeStore({q,run,persistTransaction,now,kb,budget:reviewBudget});
+  ipcMain.handle('practice:session',(_event,options)=>practice.session(options));
   ipcMain.handle('practice:source',(_event,key)=>{const entry=kb.get(key);return {...entry,sourceHash:sourceHash(entry)};});
   for(const [channel,method] of Object.entries({'practice:list':'list','practice:get':'get','practice:saveBatch':'saveBatch','practice:save':'save','practice:state':'state','practice:queue':'queue','practice:rate':'rate','practice:history':'history'}))ipcMain.handle(channel,(_event,...args)=>{
     if(['list','get','queue','history'].includes(method))return practice[method](...args);
-    return kbWrite(()=>practice[method](...args));
+    const result=kbWrite(()=>practice[method](...args));if(result.ok)learningChanged('practice');return result;
   });
   ipcMain.handle('practice:generate',(event,payload,id)=>withAiRequest(event,id,'practiceCards',async task=>{
     const count=payload?.count??3;if(!Number.isSafeInteger(count)||count<1||count>8)throw Error('每次生成 1 至 8 张候选卡');

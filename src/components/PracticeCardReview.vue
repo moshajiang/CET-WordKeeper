@@ -1,6 +1,7 @@
 <template>
  <section class="card-review">
-  <p class="page-sub">先独立作答，再核对答案并评分。每批最多 30 张，到期后可继续加载。</p>
+  <p class="page-sub">先独立作答，再核对答案并评分。本轮按设置的数量与目标时长安排，到期内容优先。</p>
+  <ReviewPlanPanel :budget="budget" :due-only="dueOnly" :disabled="busy||loading||!!pending" @change="changeDueOnly" />
   <p v-if="error" class="card-review-error" role="alert">{{ error }} <button v-if="pending&&!busy" @click="submit()">重试本次评分</button><button :disabled="busy" @click="reload">重新加载队列</button></p>
   <p v-if="notice" role="status">{{ notice }}</p>
   <p v-if="loading">正在加载练习卡…</p>
@@ -17,19 +18,24 @@
    </section>
    <p class="card-review-meta">来源：{{ current.source_title }} <strong v-if="current.sourceStatus==='changed'">（资料已变化，卡片使用制作时的版本）</strong><strong v-if="current.sourceStatus==='unavailable'">（资料暂不可用，快照仍保留）</strong></p>
    <details v-if="revealed"><summary>制作时的来源快照</summary><article class="md-body" v-html="renderMarkdown(current.source_content)"></article></details>
+   <button :disabled="busy" @click="endRound">结束本轮</button>
    <button :disabled="busy||!!pending" @click="$router.push({path:'/cards',query:{entry:current.source_key,card:current.id}})">管理当前卡片</button>
   </section>
-  <section v-else class="card card-review-empty"><h2>{{ completed?'本批练习卡复习完成':'当前没有到期的练习卡' }}</h2><p>已完成 {{ completed }} 张。新卡需要先在练习卡页面加入复习。</p><button class="primary" @click="load" :disabled="busy">重新加载到期卡片</button><button @click="$router.push('/cards')">制作与管理卡片</button></section>
+  <section v-else class="card card-review-empty"><h2>{{ ended?'本轮已结束':completed?'本批练习卡复习完成':'当前没有到期的练习卡' }}</h2><p>已完成 {{ completed }} 张。新卡需要先加入复习；达到今日额度或暂缓新内容时，可稍后继续，安排见上方。</p><button class="primary" @click="load" :disabled="busy">重新加载到期卡片</button><button @click="$router.push('/cards')">制作与管理卡片</button></section>
  </section>
 </template>
 <script setup>
 import {ref,computed,onMounted,onBeforeUnmount} from 'vue';
+import ReviewPlanPanel from './ReviewPlanPanel.vue';
 import {renderMarkdown} from '../utils/md.js';
+const budget=ref(null),dueOnly=ref(false),ended=ref(false);
 const cards=ref([]),response=ref(''),revealed=ref(false),busy=ref(false),loading=ref(false),error=ref(''),notice=ref(''),completed=ref(0),pending=ref(null);
 const labels={recall:'问答',translation:'翻译',judgment:'判断',choice:'选择'};let disposed=false,sequence=0;
 const current=computed(()=>cards.value[0]),objective=computed(()=>['choice','judgment'].includes(current.value?.type)),matches=computed(()=>response.value===current.value?.answer),nextDays=computed(()=>Math.min(30,2**Math.min(5,(current.value?.reps||0)+1)));
 const choices=computed(()=>current.value?.type==='judgment'?['正确','错误'].map(value=>({value,label:value})):(current.value?.options||[]).map((label,i)=>({value:String.fromCharCode(65+i),label:String.fromCharCode(65+i)+'. '+label})));
-async function load(){if(busy.value||pending.value)return;const version=++sequence;loading.value=true;error.value='';try{const result=await window.keeper.practiceQueue();if(disposed||version!==sequence)return;cards.value=result;response.value='';revealed.value=false;}catch(e){if(!disposed&&version===sequence)error.value='卡片加载失败：'+e.message;}finally{if(!disposed&&version===sequence)loading.value=false;}}
+async function load(){if(busy.value||pending.value)return;const version=++sequence;loading.value=true;error.value='';try{const result=await window.keeper.practiceSession({dueOnly:dueOnly.value});if(disposed||version!==sequence)return;budget.value=result.budget;cards.value=result.cards;ended.value=false;response.value='';revealed.value=false;}catch(e){if(!disposed&&version===sequence)error.value='卡片加载失败：'+e.message;}finally{if(!disposed&&version===sequence)loading.value=false;}}
+function endRound(){if(busy.value)return;if((pending.value||response.value||revealed.value)&&!window.confirm('结束本轮会放弃当前未确认作答，已保存记录会保留，确定继续？'))return;notice.value='本轮已结束，'+cards.value.length+' 张未确认完成的卡片保留原到期安排。';pending.value=null;cards.value=[];response.value='';revealed.value=false;ended.value=true;}
+function changeDueOnly(event){if((revealed.value||response.value)&&!window.confirm('切换本轮模式会放弃当前未保存的作答，确定继续？')){event.target.checked=dueOnly.value;return;}dueOnly.value=event.target.checked;load();}
 function reveal(){if(current.value&&!busy.value&&(!objective.value||response.value))revealed.value=true;}
 function reload(){if(busy.value)return;if(pending.value&&!window.confirm('重新加载会放弃当前未确认的作答，已保存的记录会保留。确定继续？'))return;pending.value=null;load();}
 async function submit(rating){

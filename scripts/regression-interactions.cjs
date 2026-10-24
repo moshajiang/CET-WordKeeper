@@ -101,7 +101,7 @@ let passed=0;const test=async(name,run)=>{await run();passed++;console.log('✓ 
  function component(file,exports,keeper,{timers=false}={}){
   const stops=[],unmount=[],scheduled=new Map();let id=0;
   const script=fs.readFileSync(path.join(root,'src/views',file),'utf8').match(/<script setup>([\s\S]*?)<\/script>/)[1].replace(/^import .*;\r?$/gm,'');
-  const context=vm.createContext({createAiTasks,...Vue,window:{keeper},console,Date,Math,crypto:globalThis.crypto,localStorage:{getItem:()=>null},document:{documentElement:{classList:{toggle(){}}},addEventListener(){},removeEventListener(){}},
+  const context=vm.createContext({createAiTasks,...Vue,useRoute:()=>({query:{}}),window:{keeper},console,Date,Math,crypto:globalThis.crypto,localStorage:{getItem:()=>null},document:{documentElement:{classList:{toggle(){}}},addEventListener(){},removeEventListener(){}},
    watch(...args){const stop=Vue.watch(...args);stops.push(stop);return stop;},onMounted(){},onBeforeUnmount:fn=>unmount.push(fn),
    setTimeout:timers?(fn=>{scheduled.set(++id,fn);return id;}):setTimeout,clearTimeout:timers?(n=>scheduled.delete(n)):clearTimeout});
   vm.runInContext(script+'\nglobalThis.view={'+exports+'};',context);
@@ -134,7 +134,7 @@ let passed=0;const test=async(name,run)=>{await run();passed++;console.log('✓ 
  });
  await test('复习请求失败不前进；回执丢失重试复用操作 ID 和原评分',async()=>{
   const calls=[];let failed=true;const r=review({reviewAnswer:async(...args)=>{calls.push(args);if(failed){failed=false;throw Error('lost reply');}return{ok:true,interval:1,duplicate:true};}});prepare(r);
-  try{await r.answer(0);assert.equal(r.idx.value,0);assert.equal(r.revealed.value,true);assert.match(r.errorMsg.value,/重试/);await r.answer(2);assert.equal(calls[0][2],calls[1][2]);assert.equal(calls[1][1],0);assert.equal(r.idx.value,1);assert.equal(r.list.value.at(-1).word,'alpha');}finally{r.stop();}
+  try{await r.answer(0);assert.equal(r.idx.value,0);assert.equal(r.revealed.value,true);assert.match(r.errorMsg.value,/重试/);await r.answer(2);assert.equal(calls[0][2],calls[1][2]);assert.equal(calls[1][1],0);assert.equal(r.idx.value,1);assert.equal(r.list.value.at(-1).word,'gamma');assert.equal(r.list.value.length,3);}finally{r.stop();}
  });
  await test('复习组件离开后忽略迟到结果，键盘长按和输入控件不评分',async()=>{
   let finish,calls=0;const r=review({reviewAnswer:()=>{calls++;return new Promise(resolve=>{finish=resolve;});}});prepare(r);
