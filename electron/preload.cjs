@@ -21,6 +21,7 @@ contextBridge.exposeInMainWorld('keeper', {
   listWords: (f) => ipcRenderer.invoke('words:list', plain(f)),
   wordDetail: (w) => ipcRenderer.invoke('words:detail', w),
   reviewQueue: options => ipcRenderer.invoke('review:queue',plain(options)),
+  reviewCompare: options=>ipcRenderer.invoke('review:compare',plain(options)),
   reviewWorkload: ()=>ipcRenderer.invoke('review:workload'),
   reviewAnswer: (w, r, operationId) => ipcRenderer.invoke('review:answer', w, r, operationId),
   stats: () => ipcRenderer.invoke('stats:summary'),

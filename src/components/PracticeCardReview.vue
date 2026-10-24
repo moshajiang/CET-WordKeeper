@@ -14,7 +14,8 @@
    <section v-else class="practice-review-answer">
     <p v-if="objective" :class="{mismatch:!matches}">{{ matches?'与卡片答案一致':'与卡片答案不一致，请重新理解' }}</p><p v-else class="card-review-meta">请根据答案和依据自行判断掌握程度；文字作答未自动判分。</p>
     <h3>答案</h3><article class="md-body" v-html="renderMarkdown(current.answer)"></article><h3>解析</h3><article class="md-body" v-html="renderMarkdown(current.explanation)"></article>
-    <div class="card-review-ratings"><button :disabled="busy||!!pending" @click="submit(0)">不会 · 10 分钟</button><button :disabled="busy||!!pending" @click="submit(1)">模糊 · 1 天</button><button class="primary" :disabled="busy||!!pending||(objective&&!matches)" @click="submit(2)">会用 · {{ nextDays }} 天</button></div>
+    <SchedulePreview :schedule="current.schedule" />
+    <div class="card-review-ratings"><button :disabled="busy||!!pending" @click="submit(0)">不会 · {{ intervalLabels[0] }}</button><button :disabled="busy||!!pending" @click="submit(1)">模糊 · {{ intervalLabels[1] }}</button><button class="primary" :disabled="busy||!!pending||(objective&&!matches)" @click="submit(2)">会用 · {{ intervalLabels[2] }}</button></div>
    </section>
    <p class="card-review-meta">来源：{{ current.source_title }} <strong v-if="current.sourceStatus==='changed'">（资料已变化，卡片使用制作时的版本）</strong><strong v-if="current.sourceStatus==='unavailable'">（资料暂不可用，快照仍保留）</strong></p>
    <details v-if="revealed"><summary>制作时的来源快照</summary><article class="md-body" v-html="renderMarkdown(current.source_content)"></article></details>
@@ -26,12 +27,13 @@
 </template>
 <script setup>
 import {ref,computed,onMounted,onBeforeUnmount} from 'vue';
+import SchedulePreview from './SchedulePreview.vue';
 import ReviewPlanPanel from './ReviewPlanPanel.vue';
 import {renderMarkdown} from '../utils/md.js';
 const budget=ref(null),dueOnly=ref(false),ended=ref(false);
 const cards=ref([]),response=ref(''),revealed=ref(false),busy=ref(false),loading=ref(false),error=ref(''),notice=ref(''),completed=ref(0),pending=ref(null);
 const labels={recall:'问答',translation:'翻译',judgment:'判断',choice:'选择'};let disposed=false,sequence=0;
-const current=computed(()=>cards.value[0]),objective=computed(()=>['choice','judgment'].includes(current.value?.type)),matches=computed(()=>response.value===current.value?.answer),nextDays=computed(()=>Math.min(30,2**Math.min(5,(current.value?.reps||0)+1)));
+const current=computed(()=>cards.value[0]),objective=computed(()=>['choice','judgment'].includes(current.value?.type)),matches=computed(()=>response.value===current.value?.answer),intervalLabels=computed(()=>current.value?.schedule?.options?.map(option=>option.label)||['—','—','—']);
 const choices=computed(()=>current.value?.type==='judgment'?['正确','错误'].map(value=>({value,label:value})):(current.value?.options||[]).map((label,i)=>({value:String.fromCharCode(65+i),label:String.fromCharCode(65+i)+'. '+label})));
 async function load(){if(busy.value||pending.value)return;const version=++sequence;loading.value=true;error.value='';try{const result=await window.keeper.practiceSession({dueOnly:dueOnly.value});if(disposed||version!==sequence)return;budget.value=result.budget;cards.value=result.cards;ended.value=false;response.value='';revealed.value=false;}catch(e){if(!disposed&&version===sequence)error.value='卡片加载失败：'+e.message;}finally{if(!disposed&&version===sequence)loading.value=false;}}
 function endRound(){if(busy.value)return;if((pending.value||response.value||revealed.value)&&!window.confirm('结束本轮会放弃当前未确认作答，已保存记录会保留，确定继续？'))return;notice.value='本轮已结束，'+cards.value.length+' 张未确认完成的卡片保留原到期安排。';pending.value=null;cards.value=[];response.value='';revealed.value=false;ended.value=true;}

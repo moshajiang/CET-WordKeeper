@@ -4,6 +4,7 @@
     <p class="page-sub">AI 服务、复习节奏与数据管理</p>
 
     <ReviewPreferences />
+    <ScheduleLab />
 
     <div class="card settings-form">
       <h3 style="font-size: 15px; margin-bottom: 4px;">AI 服务（整句翻译 / 语法分析 / 错因分析）</h3>
@@ -106,6 +107,7 @@
 
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
+import ScheduleLab from '../components/ScheduleLab.vue';
 import ReviewPreferences from '../components/ReviewPreferences.vue';
 import { createAiTasks } from '../utils/ai-tasks.js';
 

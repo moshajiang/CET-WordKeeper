@@ -60,6 +60,7 @@
         </template>
       </div>
 
+      <SchedulePreview v-if="current && revealed" :schedule="current.schedule" />
       <div v-if="current && revealed" class="rate-row">
         <button class="rate-forgot" :disabled="answering" @click="answer(0)">😵 忘记</button>
         <button class="rate-fuzzy" :disabled="answering" @click="answer(1)">🤔 模糊</button>
@@ -81,6 +82,7 @@
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount,watch } from 'vue';
 import {useRoute} from 'vue-router';
+import SchedulePreview from '../components/SchedulePreview.vue';
 import ReviewPlanPanel from '../components/ReviewPlanPanel.vue';
 import KnowledgeReview from '../components/KnowledgeReview.vue';
 import PracticeCardReview from '../components/PracticeCardReview.vue';

@@ -1,4 +1,5 @@
 const {createHash,randomUUID}=require('node:crypto');
+const {schedule,preview:previewSchedule,recordSchedule,contentKey}=require('./review-scheduler.cjs');
 const {NEW_CARD}=require('./review-budget.cjs');
 const TYPES=['recall','translation','judgment','choice'];
 const hash=value=>createHash('sha256').update(value).digest('hex');
@@ -108,7 +109,7 @@ function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
   const instant=now();
   if(!budget)return {cards:q("SELECT * FROM practice_card WHERE status='active' AND due IS NOT NULL AND due<=? ORDER BY due,created_at,id LIMIT 30",[instant]).map(row=>decode(row,true)),budget:null};
   const plan=budget.plan('cards',options,instant),select=(fresh,limit)=>q(`SELECT c.* FROM practice_card c WHERE c.status='active' AND c.due IS NOT NULL AND c.due<=? AND ${fresh?'':'NOT'}(${NEW_CARD}) ORDER BY c.due,c.created_at,c.id LIMIT ?`,[instant,limit]);
-  return {cards:[...select(false,plan.plannedDue),...select(true,plan.plannedNew)].map(row=>decode(row,true)),budget:plan};
+  return {cards:[...select(false,plan.plannedDue),...select(true,plan.plannedNew)].map(row=>({...decode(row,true),schedule:previewSchedule('cards',row,instant)})),budget:plan};
  }
  function queue(options){return session(options).cards;}
  function rate(payload){
@@ -128,12 +129,12 @@ function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
    if(!allowed.includes(response))throw Error('请先选择你的答案');correct=response===row.answer;
    if(!correct&&payload.rating===2)throw Error('答案不匹配，请如实选择不会或模糊');
   }
-  const reps=payload.rating===0?0:row.reps+1,days=payload.rating===0?0:payload.rating===1?1:Math.min(30,2**Math.min(5,reps));
-  const due=new Date(Date.parse(reviewedAt)+(days?days*86400000:600000)).toISOString();
+  const next=schedule('cards',row,payload.rating,reviewedAt),{reps,due}=next;
   return persistTransaction(()=>{
    budget?.recordIntroduction('cards',row.id,reviewedAt);
-   run('UPDATE practice_card SET due=?,reps=?,interval_days=?,revision=revision+1,updated_at=? WHERE id=?',[due,reps,days||10/1440,reviewedAt,row.id]);
+   run('UPDATE practice_card SET due=?,reps=?,interval_days=?,revision=revision+1,updated_at=? WHERE id=?',[due,reps,next.interval_days,reviewedAt,row.id]);
    run('INSERT INTO practice_attempt VALUES(?,?,?,?,?,?,?,?,?,?)',[payload.operationId,row.id,row.revision,JSON.stringify(decode(row,true)),response,payload.rating,correct===null?null:Number(correct),reviewedAt,due,payloadHash]);
+   recordSchedule(run,{kind:'cards',id:row.id,logId:payload.operationId,rating:payload.rating,at:reviewedAt,before:row,after:next,key:contentKey(row)});
    return {ok:true,due,correct};
   });
  }

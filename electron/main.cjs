@@ -4,6 +4,7 @@ const fs = require('fs');
 const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
+const {schedule,preview:previewSchedule,ensureSchedulerSchema,recordSchedule}=require('./review-scheduler.cjs');
 const {createReviewBudget,ensureReviewBudgetSchema,validateReviewSettings,NEW_WORD}=require('./review-budget.cjs');
 const {ensurePracticeSchema,createPracticeStore,validateGeneratedCards,sourceHash}=require('./practice-cards.cjs');
 const {completionContent,replyPreview}=require('./ai-stream.cjs');
@@ -141,6 +142,7 @@ function migrate() {
   ensureStudySchema(db);
   ensurePracticeSchema(db);
   ensureReviewBudgetSchema(db);
+  ensureSchedulerSchema(db);
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
@@ -354,6 +356,7 @@ function parseTags(tag) {
 function registerIpc() {
   const reviewBudget=createReviewBudget({q,run,now});
   ipcMain.handle('review:workload',()=>reviewBudget.workload());
+  ipcMain.handle('review:compare',(_event,options)=>require('./fsrs-lab.cjs').compareFsrs({q,now},options));
   ipcMain.handle('app:info', () => ({
     name: 'CET WordKeeper',
     version: app.getVersion(),
@@ -508,18 +511,19 @@ function registerIpc() {
   ipcMain.handle('review:queue', (_event,options) => {
     const nowStr = now(),budget=reviewBudget.plan('words',options,nowStr);
     const due = q(
-      `SELECT u.word, d.phonetic, d.translation, u.reps, u.due,
+      `SELECT u.word, d.phonetic, d.translation, u.reps, u.due, u.interval_days, u.ease, u.lapses,
         (SELECT sentence FROM word_hit h WHERE h.word = u.word LIMIT 1) AS sentence
        FROM user_word u LEFT JOIN dict d ON d.word = u.word
        WHERE u.status='learning' AND NOT(${NEW_WORD}) AND (u.due IS NULL OR u.due<=?) ORDER BY u.due,u.id LIMIT ?`, [nowStr,budget.plannedDue]);
     const fresh = q(
-      `SELECT u.word, d.phonetic, d.translation, u.reps, u.due,
+      `SELECT u.word, d.phonetic, d.translation, u.reps, u.due, u.interval_days, u.ease, u.lapses,
         (SELECT sentence FROM word_hit h WHERE h.word = u.word LIMIT 1) AS sentence
        FROM user_word u LEFT JOIN dict d ON d.word = u.word
        WHERE u.status='learning' AND ${NEW_WORD} ORDER BY u.created_at,u.id LIMIT ?`, [budget.plannedNew]);
     const cache = new Map();
     const resolve = raw => { if (!cache.has(raw)) cache.set(raw,resolveWord(raw)); return cache.get(raw); };
     for (const row of [...due,...fresh]) {
+      row.schedule=previewSchedule('words',row,nowStr);
       row.clozeHtml = '';
       // 优先最近一条能准确定位目标词的原句；旧空句或错误出处不能泄露答案。
       for (const hit of q('SELECT sentence FROM word_hit WHERE word=? AND sentence IS NOT NULL AND sentence != "" ORDER BY id DESC',[row.word])) {
@@ -544,23 +548,13 @@ function registerIpc() {
       if (uw.status !== 'learning') return { ok:false,error:'word_not_learning' };
       const reviewedAt=now();
       reviewBudget.assertIntroduction('words',uw.id,reviewedAt);
-      let { interval_days: iv, ease, reps, lapses } = uw;
-      iv = iv || 0; ease = ease || 2.5; reps = reps || 0; lapses = lapses || 0;
-      if (rating === 0) {
-        reps = 0; lapses += 1; iv = 0.007; ease = Math.max(1.3, ease - 0.2);
-      } else {
-        reps += 1;
-        if (reps === 1) iv = rating === 1 ? 0.5 : 1;
-        else if (reps === 2) iv = rating === 1 ? 3 : 6;
-        else iv = Math.max(1, Math.round(iv * ease * (rating === 1 ? 0.6 : 1) * 10) / 10); // 兼容旧记录缺失有效间隔，成功评分后至少延后一天。
-        ease = rating === 1 ? Math.max(1.3, ease - 0.15) : Math.min(3.0, ease + 0.1);
-      }
-      const due = new Date(Date.parse(reviewedAt) + iv * 86400000).toISOString();
+      const next=schedule('words',uw,rating,reviewedAt),{interval_days:iv,ease,reps,lapses,due}=next;
       const saved = persistTransaction(() => {
         reviewBudget.recordIntroduction('words',uw.id,reviewedAt);
         run('UPDATE user_word SET interval_days=?, ease=?, reps=?, lapses=?, due=? WHERE word=?', [iv, ease, reps, lapses, due, word]);
         run('INSERT INTO review_log(word_id, mode, rating, reviewed_at, interval_days, ease, due) VALUES (?,?,?,?,?,?,?)',
           [uw.id, 'recognize', rating, reviewedAt, iv, ease, due]);
+        recordSchedule(run,{kind:'words',id:uw.id,logId:q('SELECT last_insert_rowid() id')[0].id,rating,at:reviewedAt,before:uw,after:next});
         const result = { ok:true,interval:iv,due };
         if (operationId) run('INSERT INTO review_operation VALUES (?,?,?,?,?)',[operationId,uw.id,rating,JSON.stringify(result),reviewedAt]);
         return result;
