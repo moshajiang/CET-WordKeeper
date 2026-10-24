@@ -239,6 +239,7 @@
     </div>
 
     <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle" @mousedown.prevent @click.stop>
+      <button @click="readerAssistant?.collectPhrase();selMenu.show=false">收藏短语</button>
       <button @click="explainSelection">✦ 就地讲解</button>
       <button @click="doTranslate">🌐 整句翻译</button>
       <button @click="doGrammar">🧩 语法分析</button>

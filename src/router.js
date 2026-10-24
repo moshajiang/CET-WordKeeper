@@ -8,6 +8,7 @@ import SettingsView from './views/SettingsView.vue';
 import KnowledgeView from './views/KnowledgeView.vue';
 import ReciteView from './views/ReciteView.vue';
 import PracticeCardsView from './views/PracticeCardsView.vue';
+import PhrasesView from './views/PhrasesView.vue';
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -19,6 +20,7 @@ export default createRouter({
     { path: '/words', name: 'words', component: WordBook },
     { path: '/review', name: 'review', component: ReviewView },
     { path: '/knowledge', name: 'knowledge', component: KnowledgeView },
+    { path: '/phrases', name: 'phrases', component: PhrasesView },
     { path: '/cards', name: 'cards', component: PracticeCardsView },
     { path: '/settings', name: 'settings', component: SettingsView },
   ],
