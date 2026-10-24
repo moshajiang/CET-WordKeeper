@@ -37,7 +37,7 @@ assistant.setNavigate(async (page,context) => {
   await router.push(target);
   if(router.currentRoute.value.fullPath !== router.resolve(target).fullPath) throw Error('页面未切换，请先处理当前页面的保存提示。');
 });
-watch(() => route.name, name => assistant.setPage(({home:'home',library:'library',words:'words',review:'review',knowledge:'knowledge',settings:'settings',recite:'recite',reader:'reader'})[name] || 'home'), {immediate:true});
+watch(() => route.name, name => assistant.setPage(({home:'home',library:'library',words:'words',review:'review',knowledge:'knowledge',cards:'knowledge',settings:'settings',recite:'recite',reader:'reader'})[name] || 'home'), {immediate:true});
 const learning = useLearningState();
 const dueCount = computed(() => learning.stats.value.dueNow);
 
@@ -48,6 +48,7 @@ const navs = [
   { path: '/words', label: '生词本', ico: '📖' },
   { path: '/review', label: '复习', ico: '🔁', key: 'review' },
   { path: '/knowledge', label: '知识库', ico: '🧠' },
+  { path: '/cards', label: '练习卡', ico: '🗂' },
 ];
 
 const isNarrow = computed(() => !route.path.startsWith('/reader'));

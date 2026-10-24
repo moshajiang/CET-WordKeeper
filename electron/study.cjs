@@ -12,7 +12,7 @@ function ensureStudySchema(db){
  const columns=db.exec('PRAGMA table_info(chat_message)')[0].values.map(r=>r[1]);
  if(!columns.includes('sources'))db.run("ALTER TABLE chat_message ADD COLUMN sources TEXT DEFAULT '[]'");
 }
-function createStudyStore({q,run,persistTransaction,now,kb}){
+function createStudyStore({q,run,persistTransaction,now,kb,cardDue=()=>0}){
  const text=(value,max,name,empty=false)=>{if(typeof value!=='string'||value.length>max||(!empty&&!value.trim()))throw Error(name+'无效');return value.trim();};
  function passage(examId,passageId){
   if(!Number.isSafeInteger(examId)||!Number.isSafeInteger(passageId))throw Error('篇章编号无效');
@@ -26,7 +26,7 @@ function createStudyStore({q,run,persistTransaction,now,kb}){
    e.draftCount=Object.values(answers||{}).filter(Boolean).length;
    e.essays=q("SELECT section,updated_at FROM essay WHERE exam_id=? AND trim(content)!='' ORDER BY updated_at DESC",[e.id]);
   }
-  return {recent,reviewDue:reviewList().filter(e=>e.due<=now()).length};
+  return {recent,cardDue:cardDue(),reviewDue:reviewList().filter(e=>e.due<=now()).length};
  }
  function annotations(examId,passageId){const p=passage(examId,passageId);return q('SELECT * FROM reader_annotation WHERE exam_id=? AND passage_id=? ORDER BY id',[examId,passageId]).map(e=>({...e,stale:e.content_hash!==digest(p.content)}));}
  function saveAnnotation(value){

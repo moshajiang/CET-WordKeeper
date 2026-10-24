@@ -11,6 +11,7 @@
    <div><strong>{{ stats.dueNow>0?`有 ${stats.dueNow} 个生词已到复习时间`:'当前没有到期的生词' }}</strong><p class="page-sub">{{ stats.dueNow>0?'按自己的节奏完成一轮复习。':'可以继续阅读，积累新词和笔记。' }}</p></div>
    <button class="primary" @click="primaryAction">{{ stats.dueNow>0?'开始复习':recent.length?'继续阅读':'选择真题' }}</button>
    <button v-if="reviewDue" @click="$router.push({path:'/review',query:{tab:'knowledge'}})">复习 {{ reviewDue }} 个知识点</button>
+   <button v-if="cardDue" @click="$router.push({path:'/review',query:{tab:'cards'}})">复习 {{ cardDue }} 张练习卡</button>
   </section>
   <div class="stat-row" aria-label="学习概况">
    <div class="stat-box due"><div class="num">{{ stats.dueNow }}</div><div class="lbl">待复习</div></div>
@@ -25,14 +26,14 @@
 </template>
 <script setup>
 import {ref,onMounted,onBeforeUnmount} from 'vue';import {useRouter} from 'vue-router';import {useLearningState} from '../composables/useLearningState.js';
-const router=useRouter(),learning=useLearningState(),stats=learning.stats,recent=ref([]),recommendations=ref([]),reviewDue=ref(0),error=ref('');let disposed=false,sequence=0;
+const router=useRouter(),learning=useLearningState(),stats=learning.stats,recent=ref([]),recommendations=ref([]),reviewDue=ref(0),cardDue=ref(0),error=ref('');let disposed=false,sequence=0;
 const label=e=>`${e.level} · ${e.year} 年 ${e.month} 月 · 第 ${e.set_no} 套`;
 const sectionLabel=s=>({writing:'写作',translation:'翻译',reading:'仔细阅读',match:'长篇阅读',cloze:'选词填空'})[s]||'阅读';
 const draftLabel=e=>[e.draftCount?'未交卷作答 '+e.draftCount+' 题':'',e.essays?.length?'有写作/翻译草稿':'',e.visited_at?'上次学习 '+new Date(e.visited_at).toLocaleString():''].filter(Boolean).join(' · ');
 function resume(e){router.push('/reader/'+e.id);}
 async function resumeEssay(e,section){try{const detail=await window.keeper.examDetail(e.id),p=detail?.passages.find(p=>p.section===section);if(!p)throw Error('该草稿对应的篇章已移除');router.push({path:'/reader/'+e.id,query:{passage:String(p.id)}});}catch(cause){error.value=cause.message;}}
 function primaryAction(){stats.value.dueNow>0?router.push('/review'):recent.value.length?resume(recent.value[0]):router.push('/library');}
-async function load(){const version=++sequence;error.value='';try{const [summary,exams]=await Promise.all([window.keeper.studySummary(),window.keeper.listExams(),learning.refresh()]);if(disposed||version!==sequence)return;recent.value=summary.recent;reviewDue.value=summary.reviewDue;recommendations.value=exams.slice(0,4);
+async function load(){const version=++sequence;error.value='';try{const [summary,exams]=await Promise.all([window.keeper.studySummary(),window.keeper.listExams(),learning.refresh()]);if(disposed||version!==sequence)return;recent.value=summary.recent;reviewDue.value=summary.reviewDue;cardDue.value=summary.cardDue||0;recommendations.value=exams.slice(0,4);
  // Older releases kept visit order only in local preferences. Import the last valid visit once.
  if(!recent.value.length){let old;try{old=Number(localStorage.getItem('keeper.lastReading'));}catch{}if(exams.some(e=>e.id===old)){const detail=await window.keeper.examDetail(old);if(disposed||version!==sequence)return;const p=detail?.passages[0];if(p){const r=await window.keeper.studyVisit(old,p.id);if(!r.ok)throw Error(r.error);const migrated=await window.keeper.studySummary();if(!disposed&&version===sequence)recent.value=migrated.recent;}}}
  }catch(cause){if(!disposed&&version===sequence)error.value='学习记录加载失败：'+cause.message;}}

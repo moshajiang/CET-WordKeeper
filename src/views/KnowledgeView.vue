@@ -38,6 +38,7 @@
           <div v-if="selected.anchor" class="kb-origin"><strong>真题来源</strong><blockquote>{{ selected.anchor.quote }}</blockquote><small>{{ selected.anchor.label }}</small><button @click="openSource" :disabled="locating">{{ locating?'定位中…':'返回原文并高亮' }}</button></div>
           <div v-if="deleting" class="kb-delete" role="alert">确定删除这篇笔记？<button class="danger" @click="removeEntry" :disabled="saving">确认删除</button><button @click="deleting=false">保留笔记</button></div>
           <article class="md-body kb-body" v-html="renderMarkdown(selected.content)"></article>
+          <button @click="$router.push({path:'/cards',query:{entry:selected.key}})">制作练习卡</button>
           <KnowledgePractice :entry="selected" />
           <p v-if="selected.updated_at" class="kb-muted">最近更新：{{ new Date(selected.updated_at).toLocaleString() }}</p>
         </template>

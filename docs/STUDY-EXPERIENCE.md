@@ -55,3 +55,8 @@ npm run test:experience
 - `src/components/KnowledgePractice.vue`、`KnowledgeReview.vue`、`MistakeNote.vue`：自测、复习、复盘联动。
 - `src/components/EssayRevisions.vue`、`src/utils/essay-revisions.js`：唯一引文替换及撤销。
 - `scripts/regression-study.cjs`、`scripts/experience-check.mjs`：专项验证入口，已接入 test:experience 与 CI。
+
+
+## 2026-10-25 独立练习卡复习
+
+复习页新增练习卡分页，首页新增对应到期入口。四类题独立保存和调度，客观题作答后对照，主观题由用户自评；每次作答保留当时快照。既有词汇、知识点及错题流程继续保留。新增 18 项数据、31 项界面检查通过，本文件原有 14 项数据、27 项界面回归通过。实现及边界见 [PRACTICE-CARDS.md](PRACTICE-CARDS.md)，下一阶段先推进每日复习量和积压管理。
