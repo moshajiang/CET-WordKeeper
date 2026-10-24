@@ -15,7 +15,7 @@
 </template>
 <script setup>
 import {ref,onBeforeUnmount} from 'vue';const retention=ref(0.9),busy=ref(false),report=ref(null),error=ref('');let disposed=false,version=0;
-const reasons={ambiguous:'含有无法确定回忆结果的“模糊”评分',missing_events:'缺少完整调度快照',invalid_history:'评分、时间或调度记录异常',changed_content:'题目或答案发生过变化',state_changed:'学习状态与连续历史不一致',too_long:'记录超过本次每项 200 次的回放上限',not_new_start:'首条记录不是可确认的新学习起点'};
+const reasons={trial_history:'含有 FSRS 试用或回退历史，独立保留，不混入旧策略对照',ambiguous:'含有无法确定回忆结果的“模糊”评分',missing_events:'缺少完整调度快照',invalid_history:'评分、时间或调度记录异常',changed_content:'题目或答案发生过变化',state_changed:'学习状态与连续历史不一致',too_long:'记录超过本次每项 200 次的回放上限',not_new_start:'首条记录不是可确认的新学习起点'};
 const format=value=>new Date(value).toLocaleString();
 async function compare(){if(busy.value)return;const current=++version;busy.value=true;error.value='';report.value=null;try{const result=await window.keeper.reviewCompare({retention:retention.value});if(disposed||current!==version)return;report.value=result;}catch(e){if(!disposed&&current===version)error.value='对照未完成：'+e.message;}finally{if(!disposed&&current===version)busy.value=false;}}
 onBeforeUnmount(()=>{disposed=true;++version;});

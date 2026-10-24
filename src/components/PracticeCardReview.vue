@@ -15,7 +15,8 @@
     <p v-if="objective" :class="{mismatch:!matches}">{{ matches?'与卡片答案一致':'与卡片答案不一致，请重新理解' }}</p><p v-else class="card-review-meta">请根据答案和依据自行判断掌握程度；文字作答未自动判分。</p>
     <h3>答案</h3><article class="md-body" v-html="renderMarkdown(current.answer)"></article><h3>解析</h3><article class="md-body" v-html="renderMarkdown(current.explanation)"></article>
     <SchedulePreview :schedule="current.schedule" />
-    <div class="card-review-ratings"><button :disabled="busy||!!pending" @click="submit(0)">不会 · {{ intervalLabels[0] }}</button><button :disabled="busy||!!pending" @click="submit(1)">模糊 · {{ intervalLabels[1] }}</button><button class="primary" :disabled="busy||!!pending||(objective&&!matches)" @click="submit(2)">会用 · {{ intervalLabels[2] }}</button></div>
+    <template v-if="isFsrs"><p class="card-review-meta">FSRS 四档：没想起请选择第一档；费力想起仅用于已经回忆成功。旧调度记录与本次四档分别保留。</p><div class="card-review-ratings fsrs-ratings"><button v-for="option in current.schedule.options" :key="option.rating" :disabled="busy||!!pending||(objective&&!matches&&option.rating!==1)" @click="submit(option.rating)">{{ option.name }} · {{ option.label }}</button></div></template>
+    <div v-else class="card-review-ratings"><button :disabled="busy||!!pending" @click="submit(0)">不会 · {{ intervalLabels[0] }}</button><button :disabled="busy||!!pending" @click="submit(1)">模糊 · {{ intervalLabels[1] }}</button><button class="primary" :disabled="busy||!!pending||(objective&&!matches)" @click="submit(2)">会用 · {{ intervalLabels[2] }}</button></div>
    </section>
    <p class="card-review-meta">来源：{{ current.source_title }} <strong v-if="current.sourceStatus==='changed'">（资料已变化，卡片使用制作时的版本）</strong><strong v-if="current.sourceStatus==='unavailable'">（资料暂不可用，快照仍保留）</strong></p>
    <details v-if="revealed"><summary>制作时的来源快照</summary><article class="md-body" v-html="renderMarkdown(current.source_content)"></article></details>
@@ -33,7 +34,7 @@ import {renderMarkdown} from '../utils/md.js';
 const budget=ref(null),dueOnly=ref(false),ended=ref(false);
 const cards=ref([]),response=ref(''),revealed=ref(false),busy=ref(false),loading=ref(false),error=ref(''),notice=ref(''),completed=ref(0),pending=ref(null);
 const labels={recall:'问答',translation:'翻译',judgment:'判断',choice:'选择'};let disposed=false,sequence=0;
-const current=computed(()=>cards.value[0]),objective=computed(()=>['choice','judgment'].includes(current.value?.type)),matches=computed(()=>response.value===current.value?.answer),intervalLabels=computed(()=>current.value?.schedule?.options?.map(option=>option.label)||['—','—','—']);
+const current=computed(()=>cards.value[0]),isFsrs=computed(()=>current.value?.schedule?.ratingScale==='fsrs-4-v1'),objective=computed(()=>['choice','judgment'].includes(current.value?.type)),matches=computed(()=>response.value===current.value?.answer),intervalLabels=computed(()=>current.value?.schedule?.options?.map(option=>option.label)||['—','—','—']);
 const choices=computed(()=>current.value?.type==='judgment'?['正确','错误'].map(value=>({value,label:value})):(current.value?.options||[]).map((label,i)=>({value:String.fromCharCode(65+i),label:String.fromCharCode(65+i)+'. '+label})));
 async function load(){if(busy.value||pending.value)return;const version=++sequence;loading.value=true;error.value='';try{const result=await window.keeper.practiceSession({dueOnly:dueOnly.value});if(disposed||version!==sequence)return;budget.value=result.budget;cards.value=result.cards;ended.value=false;response.value='';revealed.value=false;}catch(e){if(!disposed&&version===sequence)error.value='卡片加载失败：'+e.message;}finally{if(!disposed&&version===sequence)loading.value=false;}}
 function endRound(){if(busy.value)return;if((pending.value||response.value||revealed.value)&&!window.confirm('结束本轮会放弃当前未确认作答，已保存记录会保留，确定继续？'))return;notice.value='本轮已结束，'+cards.value.length+' 张未确认完成的卡片保留原到期安排。';pending.value=null;cards.value=[];response.value='';revealed.value=false;ended.value=true;}
@@ -42,7 +43,7 @@ function reveal(){if(current.value&&!busy.value&&(!objective.value||response.val
 function reload(){if(busy.value)return;if(pending.value&&!window.confirm('重新加载会放弃当前未确认的作答，已保存的记录会保留。确定继续？'))return;pending.value=null;load();}
 async function submit(rating){
  if(busy.value||!revealed.value||!current.value)return;
- if(!pending.value){if(![0,1,2].includes(rating)||(objective.value&&!matches.value&&rating===2))return;pending.value={operationId:crypto.randomUUID(),id:current.value.id,expectedRevision:current.value.revision,response:response.value,rating};}
+ if(!pending.value){if(!(isFsrs.value?[1,2,3,4]:[0,1,2]).includes(rating)||(objective.value&&!matches.value&&(isFsrs.value?rating!==1:rating===2)))return;pending.value={operationId:crypto.randomUUID(),id:current.value.id,expectedRevision:current.value.revision,response:response.value,rating,...(isFsrs.value?{ratingScale:'fsrs-4-v1'}:{})};}
  busy.value=true;error.value='';const version=sequence;
  try{const result=await window.keeper.practiceRate(JSON.parse(JSON.stringify(pending.value)));if(disposed||version!==sequence)return;if(!result.ok)throw Error(result.error);notice.value='已保存本次作答，下次复习：'+new Date(result.due).toLocaleString();cards.value.shift();completed.value++;response.value='';revealed.value=false;pending.value=null;}
  catch(e){if(!disposed&&version===sequence)error.value='评分尚未确认，请重试本次评分：'+e.message;}

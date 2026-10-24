@@ -4,6 +4,8 @@ const fs = require('fs');
 const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
+const {createPracticeFsrs,ensurePracticeFsrsSchema}=require('./practice-fsrs.cjs');
+const {writeTrialBackup}=require('./scheduler-backup.cjs');
 const {schedule,preview:previewSchedule,ensureSchedulerSchema,recordSchedule}=require('./review-scheduler.cjs');
 const {createReviewBudget,ensureReviewBudgetSchema,validateReviewSettings,NEW_WORD}=require('./review-budget.cjs');
 const {ensurePracticeSchema,createPracticeStore,validateGeneratedCards,sourceHash}=require('./practice-cards.cjs');
@@ -143,6 +145,7 @@ function migrate() {
   ensurePracticeSchema(db);
   ensureReviewBudgetSchema(db);
   ensureSchedulerSchema(db);
+  ensurePracticeFsrsSchema(db);
   const cols = q('PRAGMA table_info(passage)').map((c) => c.name);
   if (!cols.includes('translation')) run('ALTER TABLE passage ADD COLUMN translation TEXT');
   // reference：写作范文 / 翻译参考译文（构建期预置，主观题没有客观答案）
@@ -880,7 +883,10 @@ function registerIpc() {
   // ---- Knowledge library: full entries, editable notes, and validated source anchors ----
   const kb = createKnowledgeStore({q,run,persistTransaction,now,builtin:loadBuiltinKb});
   const kbWrite = work => {try{return work();}catch(error){return {ok:false,error:error.message};}};
-  const practice=createPracticeStore({q,run,persistTransaction,now,kb,budget:reviewBudget});
+  const trials=createPracticeFsrs({q,run,persistTransaction,now,backup:operationId=>{assertWritable();return writeTrialBackup({directory:app.getPath('userData'),bytes:Buffer.from(db.export()),operationId,io:fs});}});
+  const practice=createPracticeStore({q,run,persistTransaction,now,kb,budget:reviewBudget,trials});
+  ipcMain.handle('practice:trialPreview',(_event,payload)=>kbWrite(()=>trials.plan(payload)));
+  ipcMain.handle('practice:trialCommit',(_event,payload)=>{const result=kbWrite(()=>trials.commit(payload));if(result.ok)learningChanged('practice');return result;});
   ipcMain.handle('practice:session',(_event,options)=>practice.session(options));
   ipcMain.handle('practice:source',(_event,key)=>{const entry=kb.get(key);return {...entry,sourceHash:sourceHash(entry)};});
   for(const [channel,method] of Object.entries({'practice:list':'list','practice:get':'get','practice:saveBatch':'saveBatch','practice:save':'save','practice:state':'state','practice:queue':'queue','practice:rate':'rate','practice:history':'history'}))ipcMain.handle(channel,(_event,...args)=>{

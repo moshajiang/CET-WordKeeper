@@ -40,11 +40,12 @@ function ensurePracticeSchema(db){
   response TEXT NOT NULL,rating INTEGER NOT NULL,correct INTEGER,reviewed_at TEXT NOT NULL,due TEXT NOT NULL,payload_hash TEXT NOT NULL);
  CREATE INDEX IF NOT EXISTS idx_practice_history ON practice_attempt(card_id,reviewed_at);`);
 }
-function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
+function createPracticeStore({q,run,persistTransaction,now,kb,budget,trials}){
  function identity(id){if(typeof id!=='string'||! /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/.test(id))throw Error('卡片或操作编号无效');return id;}
  function raw(id){identity(id);const row=q('SELECT * FROM practice_card WHERE id=?',[id])[0];if(!row)throw Error('卡片不存在');return row;}
  function decode(row,withSource=false){
   const entry={...row,options:parse(row.options,[]),tags:parse(row.tags,[])};
+  if(withSource&&trials)entry.trial=trials.summary(row);
   if(withSource){try{const current=kb.get(row.source_key);entry.sourceStatus=sourceHash(current)===row.source_hash?'current':'changed';}catch{entry.sourceStatus='unavailable';}}
   else delete entry.source_content;
   delete entry.fingerprint;return entry;
@@ -86,17 +87,18 @@ function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
   if(row.revision!==payload.expectedRevision)throw Error('卡片已更新，请重新打开后编辑');
   const idHash=fingerprint(row.source_key,card),duplicate=q('SELECT id FROM practice_card WHERE fingerprint=? AND id!=?',[idHash,row.id])[0];
   if(duplicate)throw Error('已存在同题卡片，请编辑原卡片');
-  const changed=row.type!==card.type||row.question!==card.question||row.answer!==card.answer||row.options!==JSON.stringify(card.options);
+  const changed=row.type!==card.type||row.question!==card.question||row.answer!==card.answer||row.options!==JSON.stringify(card.options),editedAt=now();
   return persistTransaction(()=>{
+   if(changed)trials?.onEdit(row,card,editedAt);
    run('UPDATE practice_card SET type=?,question=?,answer=?,explanation=?,options=?,tags=?,fingerprint=?,reps=?,interval_days=?,due=?,revision=revision+1,updated_at=? WHERE id=?',
-    [card.type,card.question,card.answer,card.explanation,JSON.stringify(card.options),JSON.stringify(card.tags),idHash,changed?0:row.reps,changed?0:row.interval_days,changed&&row.due?now():row.due,now(),row.id]);
+    [card.type,card.question,card.answer,card.explanation,JSON.stringify(card.options),JSON.stringify(card.tags),idHash,changed?0:row.reps,changed?0:row.interval_days,changed&&row.due?editedAt:row.due,editedAt,row.id]);
    return {ok:true,id:row.id,relearning:changed&&!!row.due};
   });
  }
  function state(payload){
   const row=raw(payload?.id);if(row.revision!==payload.expectedRevision)throw Error('卡片状态已更新，请重新加载');
   let status=row.status,due=row.due;
-  if(payload.action==='enroll'){if(status==='archived')throw Error('请先恢复归档卡片');status='active';due??=now();}
+  if(payload.action==='enroll'){if(status==='archived')throw Error('请先恢复归档卡片');status='active';due??=trials?.enrollmentDue(row,now())??now();}
   else if(payload.action==='pause'){if(status==='archived')throw Error('归档卡片不能暂停');status='paused';}
   else if(payload.action==='resume'){if(status!=='paused')throw Error('当前卡片没有暂停');status='active';}
   else if(payload.action==='archive')status='archived';
@@ -109,36 +111,36 @@ function createPracticeStore({q,run,persistTransaction,now,kb,budget}){
   const instant=now();
   if(!budget)return {cards:q("SELECT * FROM practice_card WHERE status='active' AND due IS NOT NULL AND due<=? ORDER BY due,created_at,id LIMIT 30",[instant]).map(row=>decode(row,true)),budget:null};
   const plan=budget.plan('cards',options,instant),select=(fresh,limit)=>q(`SELECT c.* FROM practice_card c WHERE c.status='active' AND c.due IS NOT NULL AND c.due<=? AND ${fresh?'':'NOT'}(${NEW_CARD}) ORDER BY c.due,c.created_at,c.id LIMIT ?`,[instant,limit]);
-  return {cards:[...select(false,plan.plannedDue),...select(true,plan.plannedNew)].map(row=>({...decode(row,true),schedule:previewSchedule('cards',row,instant)})),budget:plan};
+  return {cards:[...select(false,plan.plannedDue),...select(true,plan.plannedNew)].map(row=>({...decode(row,true),schedule:trials?.isActive(row.id)?trials.preview(row,instant):previewSchedule('cards',row,instant)})),budget:plan};
  }
  function queue(options){return session(options).cards;}
  function rate(payload){
-  identity(payload?.operationId);identity(payload?.id);
-  const response=text(payload.response??'',10000,'作答',true);
-  if(![0,1,2].includes(payload.rating)||!Number.isSafeInteger(payload.expectedRevision))throw Error('评分无效');
-  const payloadHash=hash(JSON.stringify([payload.id,payload.expectedRevision,response,payload.rating]));
+  identity(payload?.operationId);identity(payload?.id);const response=text(payload.response??'',10000,'作答',true),isFsrsRequest=payload.ratingScale==='fsrs-4-v1';
+  if(payload.ratingScale!==undefined&&!isFsrsRequest)throw Error('评分语义版本无效');
+  if(!(isFsrsRequest?[1,2,3,4]:[0,1,2]).includes(payload.rating)||!Number.isSafeInteger(payload.expectedRevision))throw Error('评分无效');
+  const identityFields=[payload.id,payload.expectedRevision,response,payload.rating];if(isFsrsRequest)identityFields.push(payload.ratingScale);const payloadHash=hash(JSON.stringify(identityFields));
   const cached=q('SELECT * FROM practice_attempt WHERE id=?',[payload.operationId])[0];
   if(cached){if(cached.payload_hash!==payloadHash)throw Error('评分请求与原操作不一致');return {ok:true,due:cached.due,correct:cached.correct===null?null:!!cached.correct,duplicate:true};}
-  const row=raw(payload.id),reviewedAt=now();
+  const row=raw(payload.id),reviewedAt=now(),activeFsrs=!!trials?.isActive(row.id);
   if(row.revision!==payload.expectedRevision)throw Error('卡片已修改或已经评分，请重新开始这张卡');
+  if(isFsrsRequest!==activeFsrs)throw Error('卡片调度已切换，请重新加载后按当前评分方式作答');
   if(row.status!=='active'||!row.due||row.due>reviewedAt)throw Error('这张卡当前不在到期复习队列');
-  budget?.assertIntroduction('cards',row.id,reviewedAt);
-  let correct=null;
+  budget?.assertIntroduction('cards',row.id,reviewedAt);let correct=null;
   if(['judgment','choice'].includes(row.type)){
    const allowed=row.type==='judgment'?['正确','错误']:parse(row.options,[]).map((_,i)=>String.fromCharCode(65+i));
    if(!allowed.includes(response))throw Error('请先选择你的答案');correct=response===row.answer;
-   if(!correct&&payload.rating===2)throw Error('答案不匹配，请如实选择不会或模糊');
+   if(!correct&&(activeFsrs?payload.rating!==1:payload.rating===2))throw Error(activeFsrs?'答案不匹配；未回忆成功请选择没想起':'答案不匹配，请如实选择不会或模糊');
   }
-  const next=schedule('cards',row,payload.rating,reviewedAt),{reps,due}=next;
+  const fsrsResult=activeFsrs?trials.step(row,payload.rating,reviewedAt):null,mappedRating=fsrsResult?.mapped??payload.rating,next=fsrsResult?.actual??schedule('cards',row,payload.rating,reviewedAt),{reps,due}=next;
   return persistTransaction(()=>{
    budget?.recordIntroduction('cards',row.id,reviewedAt);
    run('UPDATE practice_card SET due=?,reps=?,interval_days=?,revision=revision+1,updated_at=? WHERE id=?',[due,reps,next.interval_days,reviewedAt,row.id]);
-   run('INSERT INTO practice_attempt VALUES(?,?,?,?,?,?,?,?,?,?)',[payload.operationId,row.id,row.revision,JSON.stringify(decode(row,true)),response,payload.rating,correct===null?null:Number(correct),reviewedAt,due,payloadHash]);
-   recordSchedule(run,{kind:'cards',id:row.id,logId:payload.operationId,rating:payload.rating,at:reviewedAt,before:row,after:next,key:contentKey(row)});
+   run('INSERT INTO practice_attempt VALUES(?,?,?,?,?,?,?,?,?,?)',[payload.operationId,row.id,row.revision,JSON.stringify(decode(row,true)),response,mappedRating,correct===null?null:Number(correct),reviewedAt,due,payloadHash]);
+   if(fsrsResult)trials.persistReview(row,payload.operationId,fsrsResult);else recordSchedule(run,{kind:'cards',id:row.id,logId:payload.operationId,rating:payload.rating,at:reviewedAt,before:row,after:next,key:contentKey(row)});
    return {ok:true,due,correct};
   });
  }
- function history(id){raw(id);return q('SELECT * FROM practice_attempt WHERE card_id=? ORDER BY reviewed_at DESC,id DESC LIMIT 50',[id]).map(row=>({...row,snapshot:parse(row.snapshot,{}),correct:row.correct===null?null:!!row.correct}));}
+ function history(id){raw(id);return q('SELECT * FROM practice_attempt WHERE card_id=? ORDER BY reviewed_at DESC,id DESC LIMIT 50',[id]).map(row=>({...row,snapshot:parse(row.snapshot,{}),fsrs:trials?.reviewInfo(row.id)||null,correct:row.correct===null?null:!!row.correct}));}
  return {get,list,dueCount,saveBatch,save,state,queue,session,rate,history};
 }
 module.exports={ensurePracticeSchema,createPracticeStore,validateCard,validateGeneratedCards,sourceHash,TYPES};

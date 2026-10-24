@@ -35,10 +35,11 @@ function compareFsrs({q,now},options={}){
   for(const row of q(`SELECT ${s.fields},(SELECT MAX(reviewed_at) FROM ${s.logs} l WHERE l.${s.column}=c.id) last_at FROM ${s.table} c WHERE ${condition} ORDER BY last_at DESC,c.id LIMIT ?`,[MAX_ITEMS]))candidates.push({kind,row,last:row.last_at,title:String(row[s.title]).slice(0,120)});
  }
  candidates.sort((a,b)=>String(b.last).localeCompare(String(a.last))||a.kind.localeCompare(b.kind)||String(a.row.id).localeCompare(String(b.row.id)));
- const reasons={ambiguous:0,missing_events:0,invalid_history:0,changed_content:0,state_changed:0,too_long:0,not_new_start:0},examples=[],skipped=[];
+ const reasons={ambiguous:0,missing_events:0,invalid_history:0,changed_content:0,state_changed:0,too_long:0,not_new_start:0,trial_history:0},examples=[],skipped=[];
  for(const item of candidates.slice(0,MAX_ITEMS)){
   const {kind,row,title}=item,s=sources[kind];
   try{
+   if(kind==='cards'&&q('SELECT 1 FROM practice_fsrs WHERE card_id=?',[row.id]).length)throw Error('trial_history');
    const count=q(`SELECT COUNT(*) n FROM ${s.logs} WHERE ${s.column}=?`,[row.id])[0].n;if(count>MAX_HISTORY)throw Error('too_long');
    const logs=q(`SELECT id,rating,reviewed_at,due${kind==='words'?',interval_days,ease':''} FROM ${s.logs} WHERE ${s.column}=? ORDER BY ${kind==='words'?'id':'card_revision,id'} LIMIT ?`,[row.id,MAX_HISTORY]);
    const events=q('SELECT * FROM review_schedule_event WHERE kind=? AND item_id=? LIMIT ?',[kind,String(row.id),MAX_HISTORY+1]);

@@ -54,6 +54,8 @@ contextBridge.exposeInMainWorld('keeper', {
   chatHistory: () => ipcRenderer.invoke('chat:history'),
   chatClear: () => ipcRenderer.invoke('chat:clear'),
   onAssistantProgress: callback => {const listener=(_event,data)=>callback(plain(data));ipcRenderer.on('assistant:progress',listener);return ()=>ipcRenderer.removeListener('assistant:progress',listener);},
+  practiceTrialPreview: payload=>ipcRenderer.invoke('practice:trialPreview',plain(payload)),
+  practiceTrialCommit: payload=>ipcRenderer.invoke('practice:trialCommit',plain(payload)),
   practiceSource: key=>ipcRenderer.invoke('practice:source',key),
   practiceList: filters=>ipcRenderer.invoke('practice:list',plain(filters)),
   practiceGet: id=>ipcRenderer.invoke('practice:get',id),
