@@ -1,15 +1,15 @@
 <template>
   <div class="reader-ai-controls">
     <span>✦ 划选原文后可就地讲解，也可让 AI 定位证据与题目</span>
-    <button @mousedown.prevent @click="collectPhrase">收藏划选短语</button><button @click="markSelection">保存划选批注</button><button @click="savedOpen=!savedOpen">我的批注 {{ savedNotes.length }}</button><button v-if="undoState" @click="undoOperation">撤销上次页面操作</button>
+    <button @mousedown.prevent @click="collectPhrase('sense')">保存划选词义</button><button @mousedown.prevent @click="collectPhrase()">收藏划选短语</button><button @click="markSelection">保存划选批注</button><button @click="savedOpen=!savedOpen">我的批注 {{ savedNotes.length }}</button><button v-if="undoState" @click="undoOperation">撤销上次页面操作</button>
     <span v-if="sourceNotice" role="status">{{ sourceNotice }}</span>
     <button v-if="notes.length" @click="reopen">查看讲解 {{ active+1 }}/{{ notes.length }}</button>
-    <button v-if="notes.length" @click="clear">清除 {{ note?.origin==='phrase'?'短语':'AI' }} 标注</button>
+    <button v-if="notes.length" @click="clear">清除 {{ note?.origin==='sense'?'词义':note?.origin==='phrase'?'短语':'AI' }} 标注</button>
   </div>
   <div v-if="savedOpen" class="saved-annotations"><p v-if="!savedNotes.length">本篇还没有已保存批注。划选原文后可添加。</p><div v-for="saved in savedNotes" :key="saved.id"><button @click="openSaved(saved)">{{ saved.stale?'原文已变化 · ':'' }}{{ saved.title }} · {{ saved.quote.slice(0,70) }}</button><p>{{ saved.note }}</p><button @click="removeSaved(saved)">删除批注</button></div></div>
   <PhraseCapture v-if="phraseSelection" :key="JSON.stringify(phraseSelection)" :selection="phraseSelection" @close="phraseSelection=null" />
   <Teleport to="body">
-    <section v-if="visible && note" ref="card" class="inline-explanation" :style="position" role="dialog" :aria-label="note.origin==='phrase'?'原文旁短语释义':'原文旁 AI 讲解'" @click.stop @mouseup.stop @keydown.esc.stop="visible=false">
+    <section v-if="visible && note" ref="card" class="inline-explanation" :style="position" role="dialog" :aria-label="note.origin==='sense'?'原文旁语境义':note.origin==='phrase'?'原文旁短语释义':'原文旁 AI 讲解'" @click.stop @mouseup.stop @keydown.esc.stop="visible=false">
       <header><strong>✦ {{ note.title || 'AI 讲解' }}</strong><div><button v-if="notes.length>1" @click="change(-1)" aria-label="上一处讲解">‹</button><span v-if="notes.length>1">{{ active+1 }}/{{ notes.length }}</span><button v-if="notes.length>1" @click="change(1)" aria-label="下一处讲解">›</button><button @click="visible=false" aria-label="收起原文讲解">×</button></div></header>
       <blockquote>{{ note.quote }}</blockquote>
       <div class="inline-explanation-body ai-result md-body" aria-live="polite" v-html="renderMarkdown(note.explanation)"></div>
@@ -23,18 +23,19 @@ import {ref,computed,watch,nextTick,onMounted,onBeforeUnmount} from 'vue';
 import {usePageAssistant} from '../composables/usePageAssistant.js';
 import {useRoute,useRouter} from 'vue-router';
 import {prepareKnowledgeDraft} from '../composables/useKnowledgeDraft.js';
-import {findArticleRange,normalizedText,placeExplanation} from '../utils/page-anchors.js';
+import {findArticleRange,selectedArticleAnchor,normalizedText,placeExplanation} from '../utils/page-anchors.js';
 import {renderMarkdown} from '../utils/md.js';
 import PhraseCapture from './PhraseCapture.vue';
 const props=defineProps({detail:Object,passageId:Number,layout:String,translation:String,fontSize:Number,result:Object,draft:String});
 const emit=defineEmits(['passage','view','cancel','close-result']);
 const assistant=usePageAssistant(),notes=ref([]),active=ref(0),visible=ref(false),card=ref(null);
 const phraseSelection=ref(null);
-function collectPhrase(){selection.value='';selectEvidence();if(!selection.value){sourceNotice.value='请先完整划选英文原文中的短语。';return;}phraseSelection.value={examId:props.detail.exam.id,passageId:props.passageId,quote:selection.value,occurrence:selectionOccurrence};}
+function collectPhrase(kind='phrase'){selection.value='';selectEvidence();if(!selection.value){sourceNotice.value=kind==='sense'?'请先完整划选一个英文单词。':'请先完整划选英文原文中的短语。';return;}phraseSelection.value={kind,examId:props.detail.exam.id,passageId:props.passageId,quote:selection.value,occurrence:selectionOccurrence};}
+function collectWord(element){if(!element?.isConnected||!article()?.contains(element))return;const range=document.createRange();range.selectNodeContents(element);const selected=window.getSelection();selected.removeAllRanges();selected.addRange(range);collectPhrase('sense');selected.removeAllRanges();}
 const position=ref({left:'240px',top:'200px'}),selection=ref(''),sourceNotice=ref('');
 const route=useRoute(),router=useRouter();
 let sourceSequence=0,restoredKey='',phraseSequence=0,restoredPhrase='';
-async function restorePhraseSource(){const version=++phraseSequence,id=route.query.phrase;if(typeof id!=='string'||!props.detail||!current()||restoredPhrase===id)return;const examId=props.detail.exam.id,passageId=props.passageId;const valid=()=>!disposed&&version===phraseSequence&&props.detail?.exam.id===examId&&props.passageId===passageId&&route.query.phrase===id;try{const a=await window.keeper.phraseAnchor(id);if(!valid()||a.examId!==examId||a.passageId!==passageId)return;await apply([{type:'highlight',passageId,quote:a.quote,occurrence:a.occurrence,title:'短语 · '+a.title,explanation:a.explanation,origin:'phrase'}],valid);if(valid())restoredPhrase=id;}catch(e){if(valid())sourceNotice.value='短语原文定位失败：'+e.message;}}
+async function restorePhraseSource(){const version=++phraseSequence,id=route.query.sense??route.query.phrase;if(typeof id!=='string'||!props.detail||!current()||restoredPhrase===id)return;const examId=props.detail.exam.id,passageId=props.passageId;const valid=()=>!disposed&&version===phraseSequence&&props.detail?.exam.id===examId&&props.passageId===passageId&&(route.query.sense??route.query.phrase)===id;try{const a=await window.keeper.phraseAnchor(id);if(!valid()||a.examId!==examId||a.passageId!==passageId)return;await apply([{type:'highlight',passageId,quote:a.quote,occurrence:a.occurrence,title:(a.kind==='sense'?'此处词义 · ':'短语 · ')+a.title,explanation:a.explanation,origin:a.kind==='sense'?'sense':'phrase'}],valid);if(valid())restoredPhrase=id;}catch(e){if(valid())sourceNotice.value='收藏原文定位失败：'+e.message;}}
 const note=computed(()=>notes.value[active.value] || null);
 let ranges=[],unregister=null,frame=0,resizeObserver=null,disposed=false,applying=false,selectionOccurrence=0,revision=0;
 const article=()=>document.querySelector('.article');
@@ -71,7 +72,7 @@ function followUp(){selection.value=note.value.quote;selectionOccurrence=note.va
 async function saveKnowledge(){
   if(!note.value||props.result?.loading)return;
   const exam=props.detail?.exam,passage=current();if(!exam||!passage)return;
-  prepareKnowledgeDraft({title:note.value.title||note.value.quote.slice(0,80),content:note.value.explanation,category:'真题笔记',tags:[],origin:note.value.origin==='phrase'?'manual':'ai',anchor:{examId:exam.id,passageId:passage.id,quote:note.value.quote,occurrence:note.value.occurrence||0,label:[exam.level,exam.year+' 年 '+exam.month+' 月','第 '+exam.set_no+' 套',passage.title||passage.section].join(' · ')}});
+  prepareKnowledgeDraft({title:note.value.title||note.value.quote.slice(0,80),content:note.value.explanation,category:'真题笔记',tags:[],origin:['phrase','sense'].includes(note.value.origin)?'manual':'ai',anchor:{examId:exam.id,passageId:passage.id,quote:note.value.quote,occurrence:note.value.occurrence||0,label:[exam.level,exam.year+' 年 '+exam.month+' 月','第 '+exam.set_no+' 套',passage.title||passage.section].join(' · ')}});
   try{await router.push('/knowledge');}catch(error){sourceNotice.value='笔记草稿打开失败：'+error.message;}
 }
 async function restoreKnowledgeSource(){
@@ -121,12 +122,7 @@ function selectEvidence(){
   const start=containingBlock(range.startContainer)||(range.startContainer===root?root.querySelector('[data-ai-text]'):null),end=containingBlock(range.endContainer)||(range.endContainer===root?root.querySelector('[data-ai-text]:last-child'):null);
   if(!start||!end){selection.value='';return;}
   const text=selected.toString().trim();if(!text||text.length>4000){selection.value='';return;}
-  selection.value=text;selectionOccurrence=0;
-  for(let i=0;i<100;i++){
-    const candidate=findArticleRange(root,text,i);
-    if(!candidate)break;
-    if(range.comparePoint(candidate.startContainer,candidate.startOffset)===0 && range.comparePoint(candidate.endContainer,candidate.endOffset)===0){selectionOccurrence=i;break;}
-  }
+  const anchor=selectedArticleAnchor(root,range,text);selection.value=anchor?text:'';selectionOccurrence=anchor?.occurrence??0;
 }
 function explainSelection(){selectEvidence();assistant.open.value=true;if(!selection.value){assistant.notice.value='请先划选英文原文，再点击就地讲解。';return;}emit('cancel');emit('close-result');if(assistant.busy.value)assistant.stop(false);assistant.send('请讲解我选中的原文，说明句意、句子结构和关键用法，并在原文附近展示讲解。',{inline:true});}
 function quote(text){selection.value=normalizedText(current()?.content||'').text.includes(normalizedText(text).text.trim())?text:'';selectionOccurrence=0;assistant.compose(text);}
@@ -206,7 +202,7 @@ watch(()=>props.result,async value=>{
 watch(note,value=>{if(!value?.savedId){annotationNote.value='';annotationColor.value='yellow';}});
 watch([visible,note],()=>nextTick(schedulePosition));
 watch(()=>[props.detail?.exam.id,props.passageId,route.query.knowledge],restoreKnowledgeSource,{flush:'post'});
-watch(()=>[props.detail?.exam.id,props.passageId,route.query.phrase],restorePhraseSource,{flush:'post'});
+watch(()=>[props.detail?.exam.id,props.passageId,route.query.phrase,route.query.sense],restorePhraseSource,{flush:'post'});
 onMounted(()=>{
   unregister=assistant.register({label:'当前真题与文章',section:()=>current()?.section,snapshot,matches,apply});
   restoreKnowledgeSource();restorePhraseSource();loadAnnotations();
@@ -220,7 +216,7 @@ onBeforeUnmount(()=>{
   window.removeEventListener('scroll',schedulePosition,true);window.removeEventListener('resize',schedulePosition);
   notes.value=[];ranges=[];savedRanges=[];paint();paintSaved();
 });
-defineExpose({explainSelection,quote,clear,collectPhrase});
+defineExpose({explainSelection,quote,clear,collectPhrase,collectWord});
 </script>
 <style>
 ::highlight(keeper-ai-evidence){background:#ffe09a;color:#2c2c2a;text-decoration:underline solid #aa6900 2px}

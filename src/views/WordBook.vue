@@ -15,7 +15,7 @@
         <option value="hits">按真题出现次数</option>
         <option value="word">按字母</option>
       </select>
-      <button class="primary" @click="$router.push('/review')">开始复习</button>
+      <button @click="$router.push('/senses')">查看语境义</button><button class="primary" @click="$router.push('/review')">开始复习</button>
       <button @click="exportAnki" :disabled="loading || exporting || !rows.length">{{ exporting ? '正在导出…' : '导出当前结果到 Anki' }}</button>
     </div>
     <div v-if="ankiMsg" style="font-size: 13px; margin: -6px 0 12px;" :style="{ color: ankiOk ? '#2e7d4f' : 'var(--red)' }">{{ ankiMsg }}</div>
@@ -51,7 +51,7 @@
     <template v-if="drawer.word">
       <div class="drawer-mask" @click="closeDetail"></div>
       <div class="drawer">
-        <h3>{{ drawer.word }}</h3>
+        <h3>{{ drawer.word }}</h3><button @click="$router.push({path:'/senses',query:{lemma:drawer.word}})">查看这个词的语境义</button>
         <div v-if="actionError" role="alert" style="color: var(--red);">{{ actionError }}</div>
         <span v-if="drawer.data && drawer.data.entry && drawer.data.entry.phonetic" style="color: var(--muted);">/{{ drawer.data.entry.phonetic }}/</span>
         <div class="tags" style="margin-top: 6px;" v-if="drawer.data">

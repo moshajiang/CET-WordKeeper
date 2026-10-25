@@ -232,14 +232,14 @@
         <div class="acts">
           <button v-if="!popover.data.inBook" class="primary" :disabled="wordBusy(popover.data.word)" @click="addFromPopover">★ 加入生词本</button>
           <button v-else class="danger" :disabled="wordBusy(popover.data.word)" @click="removeFromPopover">移出生词本</button>
-          <button @click="speak(popover.data.word)">🔊 朗读</button>
+          <button @click="collectPopoverSense" :disabled="!senseTargetElement">保存此处词义</button><button @click="speak(popover.data.word)">🔊 朗读</button>
         </div>
       </template>
       <div v-if="popover.error" role="alert" style="font-size: 12.5px; color: var(--red); margin-top: 8px;">{{ popover.error }} <button @click="retryLookup" :disabled="popover.loading">重新查询</button></div>
     </div>
 
     <div v-if="selMenu.show" class="selmenu" :style="selMenuStyle" @mousedown.prevent @click.stop>
-      <button @click="readerAssistant?.collectPhrase();selMenu.show=false">收藏短语</button>
+      <button @click="readerAssistant?.collectPhrase('sense');selMenu.show=false">保存此处词义</button><button @click="readerAssistant?.collectPhrase();selMenu.show=false">收藏短语</button>
       <button @click="explainSelection">✦ 就地讲解</button>
       <button @click="doTranslate">🌐 整句翻译</button>
       <button @click="doGrammar">🧩 语法分析</button>
@@ -858,7 +858,9 @@ function wordContext() {
 function wordContextCurrent(target) {
   return !readerDisposed && target.examId === Number(props.examId) && target.passageId === (activePassage.value?.id ?? null) && target.loadSequence === readerLoadSequence;
 }
-function closePopover() { ++lookupSequence; popover.value.show = false; }
+let senseTargetElement=null;
+function collectPopoverSense(){const view=popover.value;if(!view.target||!lookupCurrent(view.target)||!senseTargetElement?.isConnected)return;readerAssistant.value?.collectWord(senseTargetElement);closePopover();}
+function closePopover() { senseTargetElement=null;++lookupSequence; popover.value.show = false; }
 function invalidateWordContext() {
   closePopover(); ++selectionSequence; selMenu.value.show = false;
   clearTimeout(toastTimer); toast.value = '';
@@ -886,7 +888,7 @@ async function onWordClick(ev,tk,para) {
   if (tk.t !== 'w') { closePopover(); return; }
   const selection = window.getSelection();
   if (selection && String(selection).trim()) { closePopover(); return; }
-  return lookupWord(tk.text,sentenceOf(para,para.indexOf(tk)),ev.clientX,ev.clientY);
+  senseTargetElement=ev.currentTarget;return lookupWord(tk.text,sentenceOf(para,para.indexOf(tk)),ev.clientX,ev.clientY);
 }
 const wordOperationKey = word => lemmaOf(word);
 function wordBusy(word) { const key = wordOperationKey(word); return [...wordOperations.value].some(pending => wordOperationKey(pending) === key); }
@@ -969,7 +971,7 @@ function onMouseUp(ev) {
     if (!wordContextCurrent(target) || sequence !== selectionSequence || ev.target.isConnected === false) return;
     const sel = window.getSelection();
     const text = sel ? String(sel).trim() : '';
-    if (text && text.length > 3 && /^[A-Za-z]/.test(text) && ev.target.closest && ev.target.closest('.article')) {
+    if (text && text.length > 0 && /^[A-Za-z]/.test(text) && ev.target.closest && ev.target.closest('.article')) {
       selMenu.value = { show: true, x: ev.clientX, y: ev.clientY, text };
     } else {
       selMenu.value.show = false;

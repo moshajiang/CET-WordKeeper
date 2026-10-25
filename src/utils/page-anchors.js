@@ -8,8 +8,7 @@ export function normalizedText(value) {
   }
   return {text,offsets};
 }
-export function findArticleRange(root,quote,occurrence=0) {
-  if(!root||typeof quote!=='string'||!Number.isInteger(occurrence)||occurrence<0)return null;
+function articleText(root){
   let text='',positions=[];
   for(const block of root.querySelectorAll('[data-ai-text]')){
     if(text){text+='\n';positions.push(null);}
@@ -18,6 +17,19 @@ export function findArticleRange(root,quote,occurrence=0) {
       for(let i=0;i<node.textContent.length;i++){text+=node.textContent[i];positions.push({node,offset:i});}
     }
   }
+  return {text,positions};
+}
+// Resolve the exact selected occurrence in one DOM walk; common words may occur hundreds of times.
+export function selectedArticleAnchor(root,range,quote){
+ if(!root||!range||!root.contains(range.startContainer)||!root.contains(range.endContainer))return null;
+ const {text,positions}=articleText(root),source=normalizedText(text),needle=normalizedText(quote).text.trim();if(!needle)return null;
+ let index=-1,occurrence=0;
+ while((index=source.text.indexOf(needle,index+1))>=0){const first=positions[source.offsets[index]],last=positions[source.offsets[index+needle.length-1]];if(first&&last&&range.comparePoint(first.node,first.offset)===0&&range.comparePoint(last.node,last.offset+1)===0)return {quote,occurrence};occurrence++;}
+ return null;
+}
+export function findArticleRange(root,quote,occurrence=0) {
+ if(!root||typeof quote!=='string'||!Number.isInteger(occurrence)||occurrence<0)return null;
+ const {text,positions}=articleText(root);
   const source=normalizedText(text),needle=normalizedText(quote).text.trim();
   if(!needle)return null;
   let start=-1;

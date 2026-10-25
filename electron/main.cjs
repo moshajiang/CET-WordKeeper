@@ -886,14 +886,14 @@ function registerIpc() {
   const kb = createKnowledgeStore({q,run,persistTransaction,now,builtin:loadBuiltinKb});
   const kbWrite = work => {try{return work();}catch(error){return {ok:false,error:error.message};}};
   const trials=createPracticeFsrs({q,run,persistTransaction,now,backup:operationId=>{assertWritable();return writeTrialBackup({directory:app.getPath('userData'),bytes:Buffer.from(db.export()),operationId,io:fs});}});
-  const phrases=createPhraseStore({q,run,persistTransaction,now});
-  const practiceSource=key=>typeof key==='string'&&key.startsWith('phrase:')?phrases.source(key):kb.get(key);
+  const phrases=createPhraseStore({q,run,persistTransaction,now,resolveWord});
+  const practiceSource=key=>typeof key==='string'&&/^(phrase|sense):/.test(key)?phrases.source(key):kb.get(key);
   const practice=createPracticeStore({q,run,persistTransaction,now,kb:{get:practiceSource},budget:reviewBudget,trials});
   for(const [channel,method] of Object.entries({'phrase:prepare':'prepare','phrase:list':'list','phrase:get':'get','phrase:anchor':'anchor','phrase:save':'save','phrase:edit':'edit','phrase:state':'state'}))ipcMain.handle(channel,(_event,...args)=>{
     if(['prepare','list','get','anchor'].includes(method))return phrases[method](...args);
     const result=kbWrite(()=>phrases[method](...args));if(result.ok)learningChanged('phrase');return result;
   });
-  ipcMain.handle('practice:sources',()=>({entries:[...kb.list({}).entries,...phrases.list({}).entries.map(e=>({key:'phrase:'+e.id,title:'短语 · '+e.quote}))]}));
+  ipcMain.handle('practice:sources',()=>({entries:[...kb.list({}).entries,...phrases.list({}).entries.map(e=>({key:'phrase:'+e.id,title:'短语 · '+e.quote})),...phrases.list({kind:'sense'}).entries.map(e=>({key:'sense:'+e.id,title:'语境义 · '+e.lemma+' · '+e.meaning.slice(0,40)}))]}));
   ipcMain.handle('practice:trialPreview',(_event,payload)=>kbWrite(()=>trials.plan(payload)));
   ipcMain.handle('practice:trialCommit',(_event,payload)=>{const result=kbWrite(()=>trials.commit(payload));if(result.ok)learningChanged('practice');return result;});
   ipcMain.handle('practice:session',(_event,options)=>practice.session(options));
