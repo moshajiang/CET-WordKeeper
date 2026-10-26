@@ -63,6 +63,8 @@ contextBridge.exposeInMainWorld('keeper', {
   phraseSave: payload=>ipcRenderer.invoke('phrase:save',plain(payload)),
   phraseEdit: payload=>ipcRenderer.invoke('phrase:edit',plain(payload)),
   phraseState: payload=>ipcRenderer.invoke('phrase:state',plain(payload)),
+  practiceCheck: payload=>ipcRenderer.invoke('practice:check',plain(payload)),
+  practiceExerciseDraft: payload=>ipcRenderer.invoke('practice:exerciseDraft',plain(payload)),
   practiceSources: ()=>ipcRenderer.invoke('practice:sources'),
   practiceSource: key=>ipcRenderer.invoke('practice:source',key),
   practiceList: filters=>ipcRenderer.invoke('practice:list',plain(filters)),

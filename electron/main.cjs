@@ -4,6 +4,7 @@ const fs = require('fs');
 const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
+const {contextExercise}=require('./practice-exercises.cjs');
 const {ensurePhraseSchema,createPhraseStore}=require('./phrases.cjs');
 const {createPracticeFsrs,ensurePracticeFsrsSchema}=require('./practice-fsrs.cjs');
 const {writeTrialBackup}=require('./scheduler-backup.cjs');
@@ -897,6 +898,8 @@ function registerIpc() {
   ipcMain.handle('practice:trialPreview',(_event,payload)=>kbWrite(()=>trials.plan(payload)));
   ipcMain.handle('practice:trialCommit',(_event,payload)=>{const result=kbWrite(()=>trials.commit(payload));if(result.ok)learningChanged('practice');return result;});
   ipcMain.handle('practice:session',(_event,options)=>practice.session(options));
+  ipcMain.handle('practice:check',(_event,payload)=>kbWrite(()=>practice.check(payload)));
+  ipcMain.handle('practice:exerciseDraft',(_event,payload)=>kbWrite(()=>{const source=practiceSource(payload?.sourceKey),card=contextExercise(source,payload?.mode,resolveWord);return {ok:true,sourceKey:source.key,sourceHash:sourceHash(source),cards:[card]};}));
   ipcMain.handle('practice:source',(_event,key)=>{const entry=practiceSource(key);return {...entry,sourceHash:sourceHash(entry)};});
   for(const [channel,method] of Object.entries({'practice:list':'list','practice:get':'get','practice:saveBatch':'saveBatch','practice:save':'save','practice:state':'state','practice:queue':'queue','practice:rate':'rate','practice:history':'history'}))ipcMain.handle(channel,(_event,...args)=>{
     if(['list','get','queue','history'].includes(method))return practice[method](...args);
