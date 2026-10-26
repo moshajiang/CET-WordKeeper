@@ -75,3 +75,8 @@ npm run test:experience
 ## P3 拼写与原句填空（2026-10-26）
 
 卡片新增 spelling / cloze 类型。收藏详情可选择练习方式，先审阅候选再保存；编辑器也可手动编题。复习先输入再核对，错误只能按未想起评分，核对本身不保存成绩或消耗额度。新增 practice_answer_check 保存规则版本、规范化答案/输入及结果，与实际评分同事务。原四类题、已有记录、旧备份和调度保留。使用方式、规则和验证见 [TYPED-PRACTICE.md](TYPED-PRACTICE.md)。
+
+
+## 带出处导出（2026-10-26）
+
+管理页支持按当前筛选预览并导出 JSON 资料档案或 Anki 导入文本，保留原文与出处。练习卡 JSON 可选全部作答与调度记录，完整恢复仍使用数据库备份。格式、范围与使用步骤见 [LEARNING-EXPORT.md](LEARNING-EXPORT.md)。

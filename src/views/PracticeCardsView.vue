@@ -12,6 +12,7 @@
    <label class="practice-enroll"><input v-model="enroll" :disabled="saving" type="checkbox" /> 保存后加入复习</label><div class="practice-actions"><button class="primary" @click="saveCandidates" :disabled="working||!candidates.some(e=>e.selected)">保存勾选卡片</button><button @click="discardCandidates" :disabled="saving">放弃候选卡</button></div>
   </section>
   <section class="card practice-filters"><input v-model="query" type="search" aria-label="搜索练习卡" placeholder="搜索题目、答案、解析或标签" maxlength="200" /><select v-model="status" aria-label="卡片状态"><option value="active">使用中</option><option value="paused">暂停</option><option value="archived">归档</option><option value="all">全部状态</option></select><select v-model="type" aria-label="筛选卡片题型"><option value="">全部题型</option><option v-for="(label,key) in typeLabels" :key="key" :value="key">{{ label }}</option></select><select v-model="tag" aria-label="筛选练习卡标签"><option value="">全部标签</option><option v-for="t in tags" :key="t">{{ t }}</option></select><span>{{ entries.length }} / {{ total }} 张</span></section>
+  <LearningExport scope="cards" :filters="{query,status,type,tag,sourceKey}" :disabled="working" :unsaved="dirty" />
   <div class="practice-workspace">
    <aside class="card practice-list"><button v-for="e in entries" :key="e.id" class="practice-item" :class="{selected:selected?.id===e.id}" @click="select(e.id)"><small>{{ typeLabels[e.type] }} · {{ e.status==='paused'?'暂停':e.status==='archived'?'归档':e.due?'已加入复习':'尚未加入复习' }}</small><strong>{{ e.question }}</strong><small>{{ e.source_title }}</small><small>{{ e.tags.map(t=>'#'+t).join(' ') }}</small></button><p v-if="!entries.length">没有匹配的练习卡。选择来源资料后可制作第一张。</p></aside>
    <section class="card practice-detail">
@@ -32,6 +33,7 @@
 </template>
 <script setup>
 import PracticeScheduler from '../components/PracticeScheduler.vue';
+import LearningExport from '../components/LearningExport.vue';
 import {ref,computed,watch,onMounted,onBeforeUnmount} from 'vue';import {useRoute,useRouter,onBeforeRouteLeave,onBeforeRouteUpdate} from 'vue-router';import PracticeCardEditor from '../components/PracticeCardEditor.vue';import {renderMarkdown} from '../utils/md.js';import {createAiTasks} from '../utils/ai-tasks.js';
 const route=useRoute(),router=useRouter(),sources=ref([]),sourceKey=ref(typeof route.query.entry==='string'?route.query.entry:''),entries=ref([]),tags=ref([]),total=ref(0),due=ref(0),query=ref(''),status=ref('active'),type=ref(''),tag=ref(''),count=ref(3),candidates=ref([]),enroll=ref(false),selected=ref(null),history=ref([]),editing=ref(false),draft=ref({}),baseline=ref(''),trialBusy=ref(false),saving=ref(false),preparing=ref(false),generating=ref(false),error=ref(''),notice=ref('');
 const typeLabels={recall:'问答',translation:'翻译',judgment:'判断',choice:'选择',spelling:'拼写',cloze:'原句填空'},tasks=createAiTasks(id=>window.keeper.cancelAi(id));let disposed=false,listVersion=0,detailVersion=0,actionVersion=0,timer,batchOperation=null;

@@ -4,6 +4,7 @@ const fs = require('fs');
 const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
+const {createLearningExport}=require('./learning-export.cjs');
 const {contextExercise}=require('./practice-exercises.cjs');
 const {ensurePhraseSchema,createPhraseStore}=require('./phrases.cjs');
 const {createPracticeFsrs,ensurePracticeFsrsSchema}=require('./practice-fsrs.cjs');
@@ -894,6 +895,17 @@ function registerIpc() {
     if(['prepare','list','get','anchor'].includes(method))return phrases[method](...args);
     const result=kbWrite(()=>phrases[method](...args));if(result.ok)learningChanged('phrase');return result;
   });
+  const learningExport=createLearningExport({q,phrases,practice,source:practiceSource,now,io:fs,getPaths:()=>({userData:app.getPath('userData'),appDir:app.isPackaged?path.dirname(process.execPath):app.getAppPath?.()||path.join(__dirname,'..'),database:dbPath})});
+  const exportOwners=new Set();
+  ipcMain.handle('learningExport:preview',(event,payload)=>{const owner=event.sender?.id||0;if(!exportOwners.has(owner)){exportOwners.add(owner);event.sender?.once?.('destroyed',()=>{learningExport.cancel(owner);exportOwners.delete(owner);});}return kbWrite(()=>learningExport.preview(owner,payload));});
+  ipcMain.handle('learningExport:cancel',(event,token)=>learningExport.cancel(event.sender?.id||0,token));
+  ipcMain.handle('learningExport:save',async(event,payload)=>{try{
+    if(!payload||typeof payload!=='object'||Array.isArray(payload)||Object.keys(payload).some(k=>!['token','targetPath'].includes(k)))throw Error('导出请求无效');
+    const owner=event.sender?.id||0,summary=learningExport.describe(owner,payload.token);if(summary.saved)return learningExport.save(owner,payload.token,payload.targetPath);
+    let target=payload.targetPath,overwrite=false;
+    if(target===undefined){const choice=await dialog.showSaveDialog(win,{defaultPath:summary.defaultName,filters:summary.format==='json'?[{name:'WordKeeper 资料档案',extensions:['json']}]:[{name:'Anki 导入文本',extensions:['txt','tsv']}]});if(choice.canceled||!choice.filePath)return {ok:false,canceled:true};target=choice.filePath;overwrite=true;}
+    return learningExport.save(owner,payload.token,target,overwrite);
+  }catch(error){return {ok:false,error:error.message};}});
   ipcMain.handle('practice:sources',()=>({entries:[...kb.list({}).entries,...phrases.list({}).entries.map(e=>({key:'phrase:'+e.id,title:'短语 · '+e.quote})),...phrases.list({kind:'sense'}).entries.map(e=>({key:'sense:'+e.id,title:'语境义 · '+e.lemma+' · '+e.meaning.slice(0,40)}))]}));
   ipcMain.handle('practice:trialPreview',(_event,payload)=>kbWrite(()=>trials.plan(payload)));
   ipcMain.handle('practice:trialCommit',(_event,payload)=>{const result=kbWrite(()=>trials.commit(payload));if(result.ok)learningChanged('practice');return result;});

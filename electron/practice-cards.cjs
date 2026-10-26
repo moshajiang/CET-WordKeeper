@@ -2,6 +2,7 @@ const {createHash,randomUUID}=require('node:crypto');
 const {schedule,preview:previewSchedule,recordSchedule,contentKey}=require('./review-scheduler.cjs');
 const {NEW_CARD}=require('./review-budget.cjs');
 const {TYPED_TYPES,validateTyped,checkAnswer,ensureAnswerCheckSchema,savedCheck,recordCheck}=require('./practice-exercises.cjs');
+const {captureSourceAnchor}=require('./source-provenance.cjs');
 const TYPES=['recall','translation','judgment','choice',...TYPED_TYPES];
 const hash=value=>createHash('sha256').update(value).digest('hex');
 const sourceHash=entry=>hash(JSON.stringify([entry.title,entry.content]));
@@ -42,12 +43,14 @@ function ensurePracticeSchema(db){
   response TEXT NOT NULL,rating INTEGER NOT NULL,correct INTEGER,reviewed_at TEXT NOT NULL,due TEXT NOT NULL,payload_hash TEXT NOT NULL);
  CREATE INDEX IF NOT EXISTS idx_practice_history ON practice_attempt(card_id,reviewed_at);`);
  ensureAnswerCheckSchema(db);
+ if(!db.exec('PRAGMA table_info(practice_card)')[0].values.some(r=>r[1]==='source_anchor'))db.run('ALTER TABLE practice_card ADD COLUMN source_anchor TEXT');
 }
 function createPracticeStore({q,run,persistTransaction,now,kb,budget,trials}){
  function identity(id){if(typeof id!=='string'||! /^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/.test(id))throw Error('卡片或操作编号无效');return id;}
  function raw(id){identity(id);const row=q('SELECT * FROM practice_card WHERE id=?',[id])[0];if(!row)throw Error('卡片不存在');return row;}
  function decode(row,withSource=false){
   const entry={...row,options:parse(row.options,[]),tags:parse(row.tags,[])};
+  if(withSource)entry.sourceAnchor=parse(row.source_anchor,null);delete entry.source_anchor;
   if(withSource&&trials)entry.trial=trials.summary(row);
   if(withSource){try{const current=kb.get(row.source_key);entry.sourceStatus=sourceHash(current)===row.source_hash?'current':'changed';}catch{entry.sourceStatus='unavailable';}}
   else delete entry.source_content;
@@ -78,8 +81,8 @@ function createPracticeStore({q,run,persistTransaction,now,kb,budget,trials}){
     const existing=q('SELECT id,status FROM practice_card WHERE fingerprint=?',[item.fingerprint])[0];
     if(existing){result.duplicates.push(existing);continue;}
     const id=randomUUID(),time=now(),card=item.card;
-    run('INSERT INTO practice_card(id,source_key,source_title,source_content,source_hash,type,question,answer,explanation,options,tags,origin,fingerprint,status,due,reps,interval_days,revision,created_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
-     [id,item.sourceKey,item.source.title,item.source.content,item.revision,card.type,card.question,card.answer,card.explanation,JSON.stringify(card.options),JSON.stringify(card.tags),item.origin,item.fingerprint,'active',payload.enroll?time:null,0,0,1,time,time]);
+    run('INSERT INTO practice_card(id,source_key,source_title,source_content,source_hash,type,question,answer,explanation,options,tags,origin,fingerprint,status,due,reps,interval_days,revision,created_at,updated_at,source_anchor) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',
+     [id,item.sourceKey,item.source.title,item.source.content,item.revision,card.type,card.question,card.answer,card.explanation,JSON.stringify(card.options),JSON.stringify(card.tags),item.origin,item.fingerprint,'active',payload.enroll?time:null,0,0,1,time,time,JSON.stringify(captureSourceAnchor(item.source))]);
     result.created.push(id);
    }
    run('INSERT INTO practice_card_batch VALUES(?,?,?)',[payload.operationId,payloadHash,JSON.stringify(result)]);return result;
