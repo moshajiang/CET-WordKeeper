@@ -59,6 +59,7 @@ contextBridge.exposeInMainWorld('keeper', {
   learningExportCancel: token=>ipcRenderer.invoke('learningExport:cancel',token),
   practiceTrialPreview: payload=>ipcRenderer.invoke('practice:trialPreview',plain(payload)),
   practiceTrialCommit: payload=>ipcRenderer.invoke('practice:trialCommit',plain(payload)),
+  phraseSuggest: (payload,id)=>ipcRenderer.invoke('phrase:suggest',plain(payload),id),
   phrasePrepare: payload=>ipcRenderer.invoke('phrase:prepare',plain(payload)),
   phraseList: filters=>ipcRenderer.invoke('phrase:list',plain(filters)),
   phraseGet: id=>ipcRenderer.invoke('phrase:get',id),

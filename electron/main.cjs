@@ -5,6 +5,7 @@ const initSqlJs = require('sql.js');
 const {ensureKnowledgeSchema,createKnowledgeStore} = require('./knowledge.cjs');
 const {ensureStudySchema,createStudyStore,CAUSES}=require('./study.cjs');
 const {createLearningExport}=require('./learning-export.cjs');
+const {createPhraseSuggestions}=require('./phrase-suggestions.cjs');
 const {contextExercise}=require('./practice-exercises.cjs');
 const {ensurePhraseSchema,createPhraseStore}=require('./phrases.cjs');
 const {createPracticeFsrs,ensurePracticeFsrsSchema}=require('./practice-fsrs.cjs');
@@ -889,11 +890,14 @@ function registerIpc() {
   const kbWrite = work => {try{return work();}catch(error){return {ok:false,error:error.message};}};
   const trials=createPracticeFsrs({q,run,persistTransaction,now,backup:operationId=>{assertWritable();return writeTrialBackup({directory:app.getPath('userData'),bytes:Buffer.from(db.export()),operationId,io:fs});}});
   const phrases=createPhraseStore({q,run,persistTransaction,now,resolveWord});
+  const phraseSuggestions=createPhraseSuggestions({phrases,now});
+  const suggestionOwners=new Set();
+  ipcMain.handle('phrase:suggest',(event,payload,id)=>withAiRequest(event,id,'phrase-suggestion',async task=>{const owner=event.sender?.id||0;if(!suggestionOwners.has(owner)){suggestionOwners.add(owner);event.sender?.once?.('destroyed',()=>{phraseSuggestions.clear(owner);suggestionOwners.delete(owner);});}const settings=readAiSettings(),config=aiConfig(settings);return phraseSuggestions.generate(owner,payload,task,(messages,request)=>aiComplete(settings,messages,0.2,60000,request),config.model);}));
   const practiceSource=key=>typeof key==='string'&&/^(phrase|sense):/.test(key)?phrases.source(key):kb.get(key);
   const practice=createPracticeStore({q,run,persistTransaction,now,kb:{get:practiceSource},budget:reviewBudget,trials});
-  for(const [channel,method] of Object.entries({'phrase:prepare':'prepare','phrase:list':'list','phrase:get':'get','phrase:anchor':'anchor','phrase:save':'save','phrase:edit':'edit','phrase:state':'state'}))ipcMain.handle(channel,(_event,...args)=>{
+  for(const [channel,method] of Object.entries({'phrase:prepare':'prepare','phrase:list':'list','phrase:get':'get','phrase:anchor':'anchor','phrase:save':'save','phrase:edit':'edit','phrase:state':'state'}))ipcMain.handle(channel,(event,...args)=>{
     if(['prepare','list','get','anchor'].includes(method))return phrases[method](...args);
-    const result=kbWrite(()=>phrases[method](...args));if(result.ok)learningChanged('phrase');return result;
+    const result=kbWrite(()=>['save','edit'].includes(method)?phrases[method](args[0],()=>phraseSuggestions.adopt(event.sender?.id||0,args[0])):phrases[method](...args));if(result.ok)learningChanged('phrase');return result;
   });
   const learningExport=createLearningExport({q,phrases,practice,source:practiceSource,now,io:fs,getPaths:()=>({userData:app.getPath('userData'),appDir:app.isPackaged?path.dirname(process.execPath):app.getAppPath?.()||path.join(__dirname,'..'),database:dbPath})});
   const exportOwners=new Set();

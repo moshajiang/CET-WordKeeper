@@ -51,3 +51,8 @@ ID 使用 `CETWordKeeper:phrase:<uuid>`、`CETWordKeeper:sense:<uuid>` 或 `CETW
 ## 开发验证
 
 运行 `npm run test:learning-export`：20 项数据/状态检查与 22 项真实 Electron 界面及文件检查。覆盖筛选、回收/归档、来源修改与退休、旧卡兼容、完整历史、FSRS/拼写记录、稳定 ID、转义、预览只读与冻结、取消/迟到请求、原子写入故障、路径保护、超限与重启。保存对话框只在隔离测试进程中替换，无产品测试开关。相关练习卡、FSRS、拼写、短语与语境义专项另外回归，全部使用隔离数据库，不触碰真实用户数据。
+
+
+## AI 辅助来源（2026-10-26）
+
+确认保存的 AI 释义在 JSON 收藏档案中附带 meaningProvenance，包含模型、生成/确认时间、原候选、解释、原文依据及人工修改标记；未确认候选不导出。Anki 收藏背面与新制卡来源正文保留 AI 辅助标记。流程见 [AI-CONTEXT-MEANING.md](AI-CONTEXT-MEANING.md)。
