@@ -82,7 +82,7 @@ CET WordKeeper 把顺序倒过来：**先把真题读懂，生词在阅读过程
 
 源码中的[复习节奏](docs/REVIEW-PACING.md)现支持每日新词/新卡额度、每轮数量和目标分钟，优先复习已学内容，可暂缓新内容或提前结束。
 
-移动复习与同步正在按 [P4 开发设计](docs/MOBILE-REVIEW-DESIGN.md)推进，目前完成离线协议与技术验证，尚未提供手机端入口。
+移动复习已交付[独立演示原型](docs/MOBILE-REVIEW-PROTOTYPE.md)：六类题、浏览器本地记录、待确认/冲突示例与重启恢复。运行 npm run dev:mobile 本地预览；当前只有原创演示包，正式配对、签名包导入及同步尚未开放。后续按 [P4 开发设计](docs/MOBILE-REVIEW-DESIGN.md)推进。
 
 源码开发进度与后续安排见 [开发方案](docs/LEARNING-ROADMAP.md)。当前源码新增[独立练习卡](docs/PRACTICE-CARDS.md)：从资料手动制作、整理自测或生成 AI 候选，审阅编辑后保存，支持独立复习、来源快照与作答历史。已发布的 v0.3.3 安装包尚不包含这些后续改动。
 
