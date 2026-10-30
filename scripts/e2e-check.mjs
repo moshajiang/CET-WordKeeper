@@ -344,8 +344,12 @@ console.log('\n===== 知识库与聊天界面级回归 =====');
 // 知识库页面真实渲染内置条目
 await js(`location.hash = '#/knowledge'`);
 await sleep(2000);
-const kbChips = await js('document.querySelectorAll(".kb-grid .tagchip").length');
-check('知识库页面渲染内置条目', kbChips >= 10, kbChips + ' 条');
+const kbRendered = await js(`(async () => {
+  const expected = (await window.keeper.kbSearch({source:'builtin'})).total;
+  const rendered = [...document.querySelectorAll('.kb-list .kb-item')].filter(node => node.querySelector('.kb-item-meta')?.textContent.includes('内置资料')).length;
+  return {expected, rendered, detail: !!document.querySelector('.kb-detail h2')};
+})()`);
+check('知识库页面渲染内置条目', kbRendered.expected >= 36 && kbRendered.rendered === kbRendered.expected && kbRendered.detail, kbRendered.rendered + ' / ' + kbRendered.expected + ' 条');
 
 // 阅读器：头部「问 AI」按钮展开聊天面板
 await js(`location.hash = '#/reader/${anchor.id}'`);
