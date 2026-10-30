@@ -66,3 +66,4 @@ release-v25/
 
 # 独立移动复习构建
 dist-mobile/
+scripts/dev-archive/
