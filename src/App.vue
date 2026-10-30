@@ -19,11 +19,13 @@
   </nav>
   <router-view class="main" :class="{ narrow: isNarrow }" />
   <PageAssistant />
+  <UpdateNotice />
 </template>
 
 <script setup>
 import { computed, onMounted, onBeforeUnmount, watch } from 'vue';
 import PageAssistant from './components/PageAssistant.vue';
+import UpdateNotice from './components/UpdateNotice.vue';
 import { usePageAssistant } from './composables/usePageAssistant.js';
 import { useRoute, useRouter } from 'vue-router';
 import { useLearningState } from './composables/useLearningState.js';

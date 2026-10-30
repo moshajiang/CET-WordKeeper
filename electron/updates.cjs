@@ -69,16 +69,17 @@ function giteeProviderClass() {
 
 function createUpdates({ updater, current, portable = false, packaged = true, notify = () => {} }) {
   let state = { phase: 'idle', source: 'github', latest: null, percent: 0, error: null, revision: 0 };
-  let checking = null, downloading = null;
-  const snapshot = () => ({ ...state, current: current(), portable });
+  let checking = null, downloading = null, downloadReady = false;
+  const busy = () => checking || downloading || ['checking','downloading','downloaded'].includes(state.phase);
+  const snapshot = () => ({ ...state, current: current(), portable, canDownload: downloadReady && !portable && ['available','error'].includes(state.phase) });
   const push = patch => { state = { ...state, ...patch, revision: state.revision + 1 }; notify(snapshot()); };
   const message = error => String(error?.message || error).slice(0, 250);
-  updater.autoInstallOnAppQuit = true;
+  updater.autoInstallOnAppQuit = false;
   updater.autoDownload = false;
   updater.logger = null;
   if (!packaged) updater.forceDevUpdateConfig = true;
   updater.on('checking-for-update', () => push({ phase: 'checking', error: null }));
-  updater.on('update-available', info => push({ phase: 'available', latest: info.version }));
+  updater.on('update-available', info => {downloadReady=true;push({ phase: 'available', latest: info.version });});
   updater.on('update-not-available', info => push({ phase: 'not-available', latest: info.version }));
   updater.on('download-progress', progress => push({ phase: 'downloading',
     percent: Math.max(0, Math.min(100, Math.round(progress.percent || 0))),
@@ -86,8 +87,14 @@ function createUpdates({ updater, current, portable = false, packaged = true, no
   updater.on('update-downloaded', info => push({ phase: 'downloaded', latest: info.version, percent: 100, error: null }));
   updater.on('error', error => push({ phase: 'error', error: message(error) }));
 
-  async function run(source) {
-    push({ phase: 'checking', source, latest: null, percent: 0, mbPerSecond: 0, error: null });
+  function download() {
+    if (portable || !downloadReady || checking || downloading || !['available','error'].includes(state.phase)) return Promise.resolve({ok:false,...snapshot(),error:'当前没有可下载的更新或已有更新正在处理'});
+    push({phase:'downloading',trigger:'manual',error:null,percent:0});
+    downloading=Promise.resolve().then(()=>updater.downloadUpdate()).then(()=>({ok:true,...snapshot()})).catch(error=>{push({phase:'error',error:message(error)});return {ok:false,...snapshot()};}).finally(()=>{downloading=null;});return downloading;
+  }
+  async function run(source,options) {
+    downloadReady=false;
+    push({ phase: 'checking', source, trigger:options.trigger, latest: null, percent: 0, mbPerSecond: 0, error: null });
     try {
       updater.setFeedURL(source === 'gitee' ? { provider: 'custom', updateProvider: giteeProviderClass() }
         : { provider: 'github', owner: 'moshajiang', repo: 'CET-WordKeeper' });
@@ -95,7 +102,9 @@ function createUpdates({ updater, current, portable = false, packaged = true, no
       updater.autoDownload = false;
       const result = await updater.checkForUpdates();
       if (!result) throw Error('当前环境未启用版本更新');
-      if (result.isUpdateAvailable && !portable) {
+      if (!result.isUpdateAvailable && state.phase==='checking') push({phase:'not-available',latest:result.updateInfo?.version||current()});
+      if (result.isUpdateAvailable && state.phase==='checking' && result.updateInfo?.version) {downloadReady=true;push({phase:'available',latest:result.updateInfo.version});}
+      if (result.isUpdateAvailable && !portable && options.download) {
         push({ phase: 'downloading' });
         downloading = Promise.resolve().then(() => updater.downloadUpdate())
           .catch(error => push({ phase: 'error', error: message(error) })).finally(() => { downloading = null; });
@@ -108,13 +117,17 @@ function createUpdates({ updater, current, portable = false, packaged = true, no
   }
   return {
     snapshot,
-    check(source = 'github') {
+    isBusy:()=>!!busy(),
+    download,
+    selectSource(source) {if(!Object.hasOwn(SOURCES,source)||busy())throw Error('当前无法切换更新来源');downloadReady=false;push({phase:'idle',source,latest:null,error:null,percent:0});},
+    check(source = 'github', options = {download:true,trigger:'manual'}) {
+      if(!options||typeof options.download!=='boolean'||!['manual','automatic'].includes(options.trigger))return Promise.resolve({ok:false,...snapshot(),error:'更新检查选项无效'});
       if (!Object.hasOwn(SOURCES, source)) return Promise.resolve({ ok: false, ...snapshot(), error: '未知更新来源' });
       if (checking || downloading || state.phase === 'downloading' || state.phase === 'downloaded') {
         if (checking && source === state.source) return checking;
         return Promise.resolve({ ok: false, ...snapshot(), error: '请等待当前更新完成或安装后重试' });
       }
-      checking = run(source).finally(() => { checking = null; });
+      checking = run(source,options).finally(() => { checking = null; });
       return checking;
     },
     releasesUrl(source = state.source) {

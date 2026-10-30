@@ -110,6 +110,9 @@ contextBridge.exposeInMainWorld('keeper', {
   // 版本更新
   updateCheck: (source) => ipcRenderer.invoke('update:check', source),
   updateState: () => ipcRenderer.invoke('update:state'),
+  updateDownload:()=>ipcRenderer.invoke('update:download'),
+  updatePreferences:patch=>ipcRenderer.invoke('update:preferences',plain(patch)),
+  updateDismiss:action=>ipcRenderer.invoke('update:dismiss',action),
   updateInstall: () => ipcRenderer.invoke('update:install'),
   updateOpenReleases: (source) => ipcRenderer.invoke('update:openReleases', source),
   onUpdateEvent: (cb) => {

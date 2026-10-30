@@ -324,3 +324,16 @@ mobile/lib/store.mjs 复用 shared/mobile-review-contract.mjs，实现演示作�
 新增 scripts/regression-mobile-model.mjs 12 项、scripts/mobile-review-check.mjs 39 项真实移动页面/存储检查；加上 A0 28+13 项共 92 项相关检查及桌面/移动构建通过。覆盖实际事务中止/重试、并发、未知字段保护、重启、断网、下载、清理、跨页草稿保护和 320/390/768 像素布局，实际渲染截图已审阅。测试只用专用临时目录和隐藏浏览器，结束清理，没有产品测试开关、真实数据或模型请求，未跑无关全量 CI。
 
 运行 npm run dev:mobile 本机预览、npm run build:mobile 独立构建、npm run test:mobile-review 专项。详细说明见 [MOBILE-REVIEW-PROTOTYPE.md](MOBILE-REVIEW-PROTOTYPE.md)。当前只交付源码，不修改正式数据/迁移、不重建分发库、不覆盖安装目录、不打包上传，v0.3.3 原标签/附件不动。提交后同步 GitHub、码云；下一批 A2 先设备配对与签名，再实际文件往返和联合事务。
+
+
+## 2026-10-30 自动检查更新与提醒
+
+新增 electron/automatic-updates.cjs、UpdateNotice.vue、AutomaticUpdateSettings.vue。默认开启，打包环境启动约 15 秒后及每 6 小时自动元数据检查，重启保留节流；首选源失败尝试另一来源，失败退避 30 分钟至 6 小时。全局非模态提醒跨页面显示，可稍后 24 小时或跳过当前版；新版本不受旧版延后影响，手动检查仍可发现被跳过版。开发态不自动联网。
+
+原更新模块增加 metadata-only 选项、显式下载、切源在途锁；自动检查不下载/重启，安装仅显式调用。关闭 autoInstallOnAppQuit，普通退出不再自动安装已下载附件。手动安装版“检查并下载更新”保持检查后下载行为，便携版只检查并打开固定发布页。新增 update:download/preferences/dismiss IPC、统一递增状态，启动、系统恢复、恢复数据库和退出生命周期已接通。
+
+独立 update-preferences.json 原子保存开关、首选、时间、失败次数与提醒元数据，不进学习 DB/备份、不含 AI 设置。首次迁移旧 localStorage 来源；损坏文件暂停自动检查且不自动覆盖，明确保存后可恢复。关闭设置防护在途迟到提醒，下载/待安装锁阻止切源；时间回退重新安排。
+
+原更新 25 项、新自动状态 20 项、原设置界面 7 项、新提醒界面 19 项共 71 项及构建通过。真实 UI 只在隔离启动脚本替换更新器/安装器/时钟，无产品测试开关、真实附件下载或安装、外部网页或真实用户数据修改。未跑无关全量 CI。运行 npm run test:updates，说明见 [AUTOMATIC-UPDATES.md](AUTOMATIC-UPDATES.md)。
+
+当前只交付源码，不更改版本号、不重建分发库、不覆盖安装目录、不打包上传新版本，v0.3.3 标签/附件不变；新机制需随新安装包发布后生效。同步 GitHub、码云后，继续原 P4 A2 设备与签名文件计划。

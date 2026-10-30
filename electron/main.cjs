@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
+const { app, BrowserWindow, ipcMain, dialog, shell, powerMonitor } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const initSqlJs = require('sql.js');
@@ -73,14 +73,18 @@ else app.on('second-instance', () => {
 // ---- GitHub / 码云 Releases 更新，共用下载与安装校验 ----
 const { autoUpdater } = require('electron-updater');
 const { createUpdates } = require('./updates.cjs');
+let automaticUpdates=null;
+const updateSnapshot=()=>{const state=updates.snapshot(),automatic=automaticUpdates?.snapshot()||null;return {...state,automatic,revision:state.revision+(automatic?.revision||0),showReminder:automaticUpdates?.shouldRemind(state)||false};};
+function publishUpdate(){try{if(win&&!win.isDestroyed())win.webContents.send('update:event',updateSnapshot());}catch{}}
 const updates = createUpdates({ updater: autoUpdater, current: () => app.getVersion(),
   portable: !!process.env.PORTABLE_EXECUTABLE_DIR, packaged: app.isPackaged,
-  notify: state => {
-    try { if (win && !win.isDestroyed()) win.webContents.send('update:event', state); } catch { /* 窗口正在关闭 */ }
-  },
+  notify: publishUpdate,
 });
-ipcMain.handle('update:check', (_event, source) => updates.check(source));
-ipcMain.handle('update:state', () => updates.snapshot());
+ipcMain.handle('update:check', async (_event, source) => {const result=await updates.check(source);return {...updateSnapshot(),ok:result.ok,...(!result.ok?{error:result.error}:{})};});
+ipcMain.handle('update:state', () => updateSnapshot());
+ipcMain.handle('update:download',async()=>{const work=updates.download();if(updates.snapshot().phase==='downloading')return {ok:true,...updateSnapshot()};const result=await work;return {...updateSnapshot(),ok:result.ok,...(!result.ok?{error:result.error}:{})};});
+ipcMain.handle('update:preferences',(_event,patch)=>{try{automaticUpdates.configure(patch);return {ok:true,...updateSnapshot()};}catch(e){return {...updateSnapshot(),ok:false,error:e.message};}});
+ipcMain.handle('update:dismiss',(_event,action)=>{try{automaticUpdates.dismiss(action);return {ok:true,...updateSnapshot()};}catch(e){return {...updateSnapshot(),ok:false,error:e.message};}});
 ipcMain.handle('update:install', () => updates.install());
 ipcMain.handle('update:openReleases', async (_event, source) => {
   try { await shell.openExternal(updates.releasesUrl(source)); return { ok: true }; }
@@ -700,6 +704,7 @@ function registerIpc() {
       assertWritable();
       const result = restoreStore.queue(token,Buffer.from(db.export()));
       restoreShutdown = true;
+      automaticUpdates?.stop();
       aiRequests.cancelAll();
       // exit bypasses renderer beforeunload/draft writes; startup handles the durable job.
       // A downloaded updater must not intercept this restore restart.
@@ -1411,6 +1416,7 @@ function createWindow() {
   const owner = win.webContents.id;
   win.webContents.on('destroyed',() => aiRequests.cancelOwner(owner));
   win.webContents.on('did-start-loading',() => aiRequests.cancelOwner(owner));
+  win.webContents.once('did-finish-load',()=>automaticUpdates?.start());
   win.setMenuBarVisibility(false);
   const devUrl = process.env.KEEPER_DEV_URL;
   if (devUrl) {
@@ -1423,6 +1429,11 @@ function createWindow() {
 if (hasSingleInstanceLock) app.whenReady().then(async () => {
   try { await initializeStorage(); }
   catch (error) { dialog.showErrorBox('数据初始化失败',String(error.message||error)); app.quit(); return; }
+  const {createAutomaticUpdates}=require('./automatic-updates.cjs');
+  const preferenceFile=path.join(app.getPath('userData'),'update-preferences.json');
+  automaticUpdates=createAutomaticUpdates({updates,packaged:app.isPackaged,canRun:()=>!restoreShutdown,read:()=>fs.existsSync(preferenceFile)?JSON.parse(fs.readFileSync(preferenceFile,'utf8')):null,write:value=>atomicWrite(preferenceFile,Buffer.from(JSON.stringify(value,null,2)+'\n')),notify:publishUpdate});
+  powerMonitor?.on?.('resume',()=>automaticUpdates?.wake());
+  app.on('before-quit',()=>automaticUpdates?.stop());
   registerIpc();
   createWindow();
   app.on('activate', () => {

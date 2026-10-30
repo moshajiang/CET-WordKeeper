@@ -76,6 +76,7 @@
       <div class="hint" style="margin-bottom: 10px;">
         当前版本 v{{ upd.current || '…' }}<span v-if="upd.portable">（便携版）</span> · 支持 GitHub / 码云 Releases
       </div>
+      <AutomaticUpdateSettings :state="upd" @changed="receiveUpdate" />
       <label for="update-source">更新来源</label>
       <select id="update-source" v-model="updateSource" @change="changeUpdateSource" :disabled="['checking', 'downloading', 'downloaded'].includes(upd.phase)" style="margin-bottom: 10px;">
         <option value="github">GitHub</option>
@@ -83,10 +84,11 @@
       </select>
       <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
         <button class="primary" @click="checkUpdate" :disabled="['checking', 'downloading', 'downloaded'].includes(upd.phase)">
-          {{ upd.phase === 'checking' ? '正在检查…' : '检查更新' }}
+          {{ upd.phase === 'checking' ? '正在检查…' : upd.portable?'检查更新':'检查并下载更新' }}
         </button>
         <button v-if="upd.phase === 'downloaded'" class="primary" @click="installUpdate">立即安装并重启</button>
-        <button v-if="upd.phase === 'available'" @click="openReleases">前往下载 v{{ upd.latest }}</button>
+        <button v-if="upd.canDownload" @click="downloadUpdate">下载更新 v{{ upd.latest }}</button>
+        <button v-if="upd.phase === 'available'&&upd.portable" @click="openReleases(upd.source)">前往下载 v{{ upd.latest }}</button>
         <button @click="openReleases">打开{{ updateSource === 'gitee' ? '码云' : 'GitHub' }}发布页</button>
       </div>
       <div v-if="upd.phase === 'downloading'" style="margin-top: 12px;">
@@ -98,7 +100,7 @@
       </div>
       <div v-if="upd.phase === 'not-available'" class="hint" style="margin-top: 8px;">已是最新版本 ✓</div>
       <div v-if="upd.phase === 'available'" class="hint" style="margin-top: 8px;">
-        发现新版本 v{{ upd.latest }}：便携版无法应用内自更新，点「前往下载」获取新文件替换即可（keeper.db 数据不受影响）。
+        发现新版本 v{{ upd.latest }}：{{ upd.portable?'便携版请前往发布页下载新版，学习数据保留。':'可点击下载更新，下载完成后再安装并重启。' }}
       </div>
       <div v-if="upd.phase === 'error'" class="hint" style="color: var(--red); margin-top: 8px;">检查失败：{{ upd.error }}（可重试或切换更新来源）</div>
     </div>
@@ -108,6 +110,7 @@
 <script setup>
 import { ref, watch, onMounted, onBeforeUnmount } from 'vue';
 import ScheduleLab from '../components/ScheduleLab.vue';
+import AutomaticUpdateSettings from '../components/AutomaticUpdateSettings.vue';
 import ReviewPreferences from '../components/ReviewPreferences.vue';
 import { createAiTasks } from '../utils/ai-tasks.js';
 
@@ -144,6 +147,7 @@ onMounted(async () => {
     if (disposed) return;
     receiveUpdate(st);
     if (['checking', 'downloading', 'downloaded'].includes(upd.value.phase)) updateSource.value = upd.value.source;
+    else if(upd.value.automatic?.configured)updateSource.value=upd.value.automatic.source;
     else { try { const saved = localStorage.getItem('keeper.update.source'); if (['github','gitee'].includes(saved)) updateSource.value = saved; } catch {} }
   } catch (e) { /* 更新模块不可用时静默 */ }
 });
@@ -167,11 +171,14 @@ function toggleTheme() {
 function receiveUpdate(value) {
   if (disposed || (value.revision ?? 0) < (upd.value.revision ?? 0)) return;
   upd.value = { ...upd.value, ...value };
+  if(value.automatic?.configured&&!['checking','downloading','downloaded'].includes(upd.value.phase))updateSource.value=value.automatic.source;
 }
-function changeUpdateSource() {
+async function changeUpdateSource() {
   try { localStorage.setItem('keeper.update.source', updateSource.value); } catch {}
-  upd.value = { ...upd.value, phase: 'idle', source: updateSource.value, error: null, latest: null, percent: 0 };
+  if(window.keeper.updatePreferences){try{const result=await window.keeper.updatePreferences({source:updateSource.value});if(disposed)return;if(!result.ok)throw Error(result.error);receiveUpdate(result);}catch(error){if(!disposed){updateSource.value=upd.value.automatic?.source||upd.value.source;upd.value={...upd.value,phase:'error',error:error.message};}}}
+  else upd.value = { ...upd.value, phase: 'idle', source: updateSource.value, error: null, latest: null, percent: 0 };
 }
+async function downloadUpdate(){try{receiveUpdate(await window.keeper.updateDownload());}catch(error){if(!disposed)upd.value={...upd.value,phase:'error',error:error.message};}}
 async function checkUpdate() {
   if (['checking', 'downloading', 'downloaded'].includes(upd.value.phase)) return;
   upd.value = { ...upd.value, phase: 'checking', source: updateSource.value, error: null };
@@ -186,9 +193,9 @@ async function installUpdate() {
   } catch (error) { if (!disposed) upd.value = { ...upd.value, phase: 'error', error: String(error.message || error) }; }
 }
 
-async function openReleases() {
+async function openReleases(source) {
   try {
-    const result = await window.keeper.updateOpenReleases(updateSource.value);
+    const result = await window.keeper.updateOpenReleases(typeof source==='string'?source:updateSource.value);
     if (result?.ok === false) throw Error(result.error);
   } catch (error) { if (!disposed) upd.value = { ...upd.value, phase: 'error', error: String(error.message || error) }; }
 }
